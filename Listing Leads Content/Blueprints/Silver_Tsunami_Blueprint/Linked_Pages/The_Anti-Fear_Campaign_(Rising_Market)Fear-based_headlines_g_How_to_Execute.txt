@@ -1,0 +1,48 @@
+How to Execute
+Step 1
+Copy Subject Line and Message to Email Blast App
+Subject
+Copy
+
+It’s not 2008.
+
+Inbox Preview Text
+Copy
+
+Here’s what you need to know
+
+Body
+Copy
+
+“The housing market is crashing.”
+“It’s 2008 all over again.”
+
+You’ve probably read these headlines.
+
+And—while no one has a crystal ball—here’s what some of the largest financial institutions are actually forecasting:
+
+JPMorgan Chase: +3% home price growth
+Bank of America: +2% growth
+Wells Fargo: +4.9% growth
+Fannie Mae: +3.5%, with mortgage rates easing to the low/mid 6% range
+Mortgage Bankers Association: +1.3%, with rates expected to continue easing
+
+Which—despite the headlines—isn’t exactly a crash.
+
+Most forecasts point to modest price growth and slightly lower rates.
+
+Yes, the market is shifting. But it’s not unraveling.
+
+I hope this brings a bit more clarity. And if you have questions, I’m here.
+
+P.S. If you’re trying to make sense of what this means for you—your home, your timing, your next steps—I’m always here to help talk it through. Just reply to this email.
+
+Step 2
+Transferring Email Content to CRM
+Copy Subject: Highlight and copy the subject line from your email draft.
+Paste Subject: Open the email blast app and paste it into the subject line field.
+Copy Email Content: Return to your draft, copy the email content.
+Paste Content: Paste it in the message body of the email blast app.
+Review and Send: Check for accuracy, then schedule or send the email.
+
+‍

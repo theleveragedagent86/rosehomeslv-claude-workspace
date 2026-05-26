@@ -1,0 +1,354 @@
+
+**Situation**
+You are creating HTML-formatted sales letters designed for physical printing and mailing on standard US Letter paper (8.5" x 11"). These letters will be printed, folded, inserted into envelopes, and mailed to recipients, so print quality and readability are critical.
+
+**Task**
+When provided with a template prompt, read and fully understand the template prompt request first before applying any system-level formatting standards. Generate print-ready HTML sales letters that meet professional printing standards and collect any required personalization information before generating the output.
+
+**Objective**
+Produce sales letters that print perfectly on US Letter paper with optimal readability, professional appearance, and accurate personalization without requiring manual adjustments, while prioritizing the specific requirements outlined in any template prompt provided.
+
+**Knowledge**
+The assistant should follow this processing order and these production standards:
+
+**Processing Priority:**
+1. **Template Prompt First**: When a template prompt is provided, read it completely and understand all specific requirements, instructions, and constraints it contains.
+2. **Conflict Resolution**: If there is any conflict between the template prompt requirements and the system standards below, always prioritize the template prompt instructions.
+3. **System Standards Application**: Apply the system-level production standards below only after processing the template prompt and in ways that do not conflict with template-specific instructions.
+
+**Production Standards:**
+
+1. **Page Setup**: Set HTML to exactly 8.5" x 11" dimensions with no shadows, borders, or margins extending beyond the page boundaries. The output must be contained within the letter dimensions.
+
+2. **Typography Standards**: Use font sizes of 11pt minimum for all body text. Select medium to bold font weights (400-700) that ensure clear printing. Avoid light or thin font weights (100-300) that may appear faded or illegible when printed.
+
+3. **Personalization Protocol**: Before generating any letter, identify all placeholder fields that require personalization (such as recipient name, company name, address, specific details, dates, or custom information). Ask the user to provide this information explicitly. Do not proceed with generation until all required personalization data is collected.
+
+4. **Accuracy Requirement**: Generate content based strictly on information provided by the user. Do not invent, assume, or fabricate any details, statistics, claims, or personalization data. If information is missing or unclear, ask for clarification rather than filling gaps with assumed content.
+
+5. **Output Format**: Deliver clean HTML code optimized for printing with proper page break handling and print-friendly CSS.
+
+---
+
+# Template Customization Request
+
+Create an HTML artifact with the customized template that I can preview directly in this chat.
+
+## CRITICAL: Output Format
+**You MUST create a previewable HTML artifact** using Claude's artifact feature:
+- The artifact MUST be visible and renderable in the Claude UI
+- I need to see a live preview of the HTML, not just code
+- Use artifact type "text/html" so it renders as a webpage preview
+- Do NOT just paste HTML code in the chat message
+
+## Print Size Requirements
+**This template is designed for: 8.5x11 inches**
+
+You MUST ensure the output:
+- Fits exactly within 8.5x11 inches when printed
+- Does NOT exceed the boundaries of 8.5x11 inches
+- Maintains proper margins for printing (at least 0.25" / 6mm on all sides)
+- All content, images, and text must be contained within the printable area
+- Do NOT add content that would cause the document to overflow onto additional pages
+
+## Instructions
+You are helping customize an HTML marketing template called "Sales Letter #6: Advanced Tactics" for print size: 8.5x11 inches. Please modify the HTML below by:
+1. Replacing placeholder variables (like {{variable_name}}) with the provided information
+2. Applying the brand accent color to appropriate accent elements (buttons, highlights, borders)
+3. Inserting images at appropriate locations using the provided URLs
+4. Maintaining the exact layout and structure of the template
+5. **IMPORTANT: Ensuring ALL content fits within 8.5x11 inches - do not exceed this size**
+
+## User Profile Information
+
+### Contact Details
+- First Name: Ryan
+- Last Name: Rose
+- Email Address: ryan@rosehomeslv.com
+- Phone Number: 7027475921
+
+### Business Details
+- Company/Brokerage Name: Real Broker, LLC
+- Area We Serve: Las Vegas
+- Job Title: Nevada
+- License Number: S.0185572
+- Short Bio: Hey! I'm Ryan Rose, The Ethical Vegas Realtor. I'm a local agent on a Top Producing Las Vegas Real Estate Team with globally recognized marketing strategies for selling homes faster using Social Media and old school ideas (like actually picking up the phone and calling people!). I am honored to help people in the Las Vegas area buy, sell, and invest. My approach is simple: No pressure. No BS. Only genuine guidance from start to close. I look forward to hearing from you and showing you what I do above and beyond any other agents in the city!
+
+### Branding
+
+### Social & Web Links
+- Website: https://www.rosehomeslv.com
+- YouTube Channel: https://www.youtube.com/@rosehomeslv
+- Instagram: https://www.instagram.com/rosehomeslv
+
+## Image URLs
+Use these image URLs directly in the HTML output. Insert them as `<img src="URL">` tags at the appropriate locations:
+- Professional Headshot: https://ik.imagekit.io/listingleads/_personalization/1773467947159_blob_9noJLCXIy?tr=w-300
+- Company Logo: https://ik.imagekit.io/listingleads/_personalization/1773468120260_Real_Logo_Outline_White_kHJXcZ1A9q.png?tr=w-300
+
+## HTML Template Code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Letter - Advanced Tactics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: 8.5in 11in;
+      margin: 0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 8.5in;
+      height: 11in;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 11.5pt;
+      line-height: 1.55;
+      color: #2c2c2c;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      position: relative;
+      width: 8.5in;
+      height: 11in;
+      padding: 0.75in 1in 1in 1in;
+      background: #fff;
+    }
+
+    .logo-area {
+      height: 80px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed #d0d0d0;
+      border-radius: 4px;
+      color: #999999;
+      font-size: 10pt;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .salutation {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 13pt;
+      margin-bottom: 0.8em;
+      color: #1a1a1a;
+    }
+
+    .body p {
+      margin-bottom: 0.6em;
+      text-align: left;
+    }
+
+    .emphasis {
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .italic-emphasis {
+      font-style: italic;
+      color: #1a1a1a;
+    }
+
+    .tactics-section {
+      margin: 1em 0;
+      padding: 18px 22px;
+      background-color: #fafafa;
+      border-left: 3px solid #d0d0d0;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .tactics-intro {
+      font-style: italic;
+      color: #555555;
+      margin-bottom: 0.8em;
+      font-size: 10.5pt;
+    }
+
+    .tactic-item {
+      margin-bottom: 0.7em;
+      padding-left: 0;
+    }
+
+    .tactic-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .tactic-number {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .tactic-name {
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .tactic-description {
+      color: #444444;
+    }
+
+    .closing {
+      margin-top: 1em;
+      margin-bottom: 0.9em;
+    }
+
+    .signature-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 0.8em;
+    }
+
+    .headshot-area {
+      width: 80px;
+      height: 80px;
+      border: 2px dashed #d0d0d0;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999999;
+      font-size: 7pt;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+
+    .signature-block {
+      line-height: 1.4;
+    }
+
+    .signature-block .name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 600;
+      font-size: 12pt;
+      color: #1a1a1a;
+    }
+
+    .signature-block .details {
+      font-size: 10.5pt;
+      color: #555555;
+    }
+
+    .phone-highlight {
+      font-weight: 600;
+      color: #1a1a1a;
+      background-color: #fff3b0;
+      padding: 2px 8px;
+      border-radius: 2px;
+    }
+
+    .disclaimer {
+      position: absolute;
+      bottom: 0.5in;
+      left: 1in;
+      right: 1in;
+      font-size: 8.5pt;
+      font-style: italic;
+      color: #888888;
+      line-height: 1.45;
+    }
+
+    @media print {
+      html, body {
+        width: auto;
+        height: auto;
+      }
+      .page {
+        width: auto;
+        height: 11in;
+        padding: 0.75in 0.25in 1in 0.25in;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    
+    <div class="logo-area">
+      Your Logo Here
+    </div>
+
+    <p class="salutation">Hi [First Name],</p>
+
+    <div class="body">
+      <p>I've sold <span class="emphasis">[#] homes</span> in the past [#] months. [#] of them were previously listed with another agent.</p>
+
+      <p>In almost every case, the issue wasn't the property… it was the <span class="italic-emphasis">strategy</span> behind it.</p>
+
+      <p>That's where I can really make a difference.</p>
+
+      <p>If we were to relist your home, there are [#] advanced tactics I'd recommend that directly influence buyer behavior.</p>
+
+      <div class="tactics-section">
+        <p class="tactics-intro">These are three of them:</p>
+        
+        <p class="tactic-item">
+          <span class="tactic-number">1.</span> <span class="tactic-name">Reverse prospecting.</span> <span class="tactic-description">I reach out directly to agents with clients whose saved searches already match your home.</span>
+        </p>
+        
+        <p class="tactic-item">
+          <span class="tactic-number">2.</span> <span class="tactic-name">72-hour launch window.</span> <span class="tactic-description">Compressed showings create urgency and quicker feedback.</span>
+        </p>
+        
+        <p class="tactic-item">
+          <span class="tactic-number">3.</span> <span class="tactic-name">Geo-fenced social retargeting.</span> <span class="tactic-description">Follow-up ads to every phone that visits the property.</span>
+        </p>
+      </div>
+
+      <p>These are proven methods that give your home more visibility, stronger positioning, and better engagement right from the start.</p>
+
+      <p>This is the last letter I'll send you, but if you want to explore what a stronger relaunch could look like, call or text me at <span class="phone-highlight">[Your Phone Number]</span>.</p>
+
+      <p class="closing">Sincerely,</p>
+
+      <div class="signature-wrapper">
+        <div class="headshot-area">
+          Headshot
+        </div>
+        <div class="signature-block">
+          <p class="name">Agent Full Name</p>
+          <p class="details">Email</p>
+          <p class="details">Phone</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="disclaimer">If your property is listed with a Real Estate Broker, please disregard. It is not our intention to solicit the offerings or clients of other Real Estate Brokers.</p>
+
+  </div>
+</body>
+</html>
+```
+
+## Output Requirements
+- **CREATE A PREVIEWABLE HTML ARTIFACT** - Use the artifact feature with type "text/html"
+- The artifact MUST render as a visual preview in the Claude UI (not just code)
+- The artifact should contain the complete, modified HTML document starting with <!DOCTYPE html>
+- Preserve all existing styles and structure
+- Keep the same responsive layout
+- Replace all {{placeholder}} variables with the appropriate values from above
+- **CRITICAL: Output MUST fit within 8.5x11 inches when printed - do not exceed this print size**
+
+⚠️ IMPORTANT: I need to SEE the rendered HTML preview in the artifact panel, not read code. Make sure the artifact is previewable.

@@ -1,0 +1,68 @@
+{
+  "description": "Vendor configuration for TNG Property Management work order email processing. Fill all [PLACEHOLDER] values before first run.",
+  "last_updated": "2026-04-05",
+  "gmail_account": "[NICK_GMAIL_ADDRESS]",
+  "naming_convention": {
+    "format": "Investor Last Name – Address – Tenant Name – Vendor – Date",
+    "delimiter": " – ",
+    "date_format": "[DATE_FORMAT_NICK_USES]"
+  },
+  "search_defaults": {
+    "max_results": 20,
+    "lookback_query": "newer_than:1d",
+    "exclude_sent": true
+  },
+  "vendors": [
+    {
+      "id": "campbells-appliance",
+      "display_name": "Campbell's Appliance",
+      "from_email": "[CAMPBELLS_EMAIL_ADDRESS]",
+      "from_domain": "[CAMPBELLS_EMAIL_DOMAIN]",
+      "estimate_keywords": [
+        "[CAMPBELLS_ESTIMATE_KEYWORD_1]",
+        "[CAMPBELLS_ESTIMATE_KEYWORD_2]"
+      ],
+      "approved_keywords": [
+        "[CAMPBELLS_APPROVED_KEYWORD_1]",
+        "[CAMPBELLS_APPROVED_KEYWORD_2]"
+      ],
+      "notes": "Appliance vendor. Subject lines clearly indicate estimate vs. approved per Nick."
+    },
+    {
+      "id": "nwhs",
+      "display_name": "NWHS (Northwest Handyman Service)",
+      "from_email": "[NWHS_EMAIL_ADDRESS]",
+      "from_domain": "[NWHS_EMAIL_DOMAIN]",
+      "estimate_keywords": [
+        "[NWHS_ESTIMATE_KEYWORD_1]",
+        "[NWHS_ESTIMATE_KEYWORD_2]"
+      ],
+      "approved_keywords": [
+        "[NWHS_APPROVED_KEYWORD_1]",
+        "[NWHS_APPROVED_KEYWORD_2]"
+      ],
+      "notes": "Primary maintenance vendor. Handles approximately 75% of all work orders. Approximately 95% acceptance rate."
+    }
+  ],
+  "dedup": {
+    "method": "time_window",
+    "lookback_query": "newer_than:1d",
+    "notes": "Duplicate prevention uses the Gmail search time window (newer_than:1d) combined with tracking processed message IDs during each run. No Gmail labels are created or modified. Nick's Gmail stays untouched."
+  },
+  "google_drive": {
+    "enabled": false,
+    "base_path": "[GOOGLE_DRIVE_BASE_PATH]",
+    "work_completed_subfolder": "Work Completed",
+    "notes": "File attachments following naming convention into: Investor Name/Property Address/Work Completed/. Enable when Drive integration is ready."
+  },
+  "appfolio": {
+    "enabled": false,
+    "base_url": "[APPFOLIO_URL]",
+    "notes": "AppFolio integration TBD. Nick creating a dedicated Claude user login with full permissions."
+  },
+  "notification": {
+    "summary_recipient": "[NICK_GMAIL_ADDRESS]",
+    "cc_recipient": "[RYAN_NOTIFICATION_EMAIL]",
+    "send_summary": true
+  }
+}

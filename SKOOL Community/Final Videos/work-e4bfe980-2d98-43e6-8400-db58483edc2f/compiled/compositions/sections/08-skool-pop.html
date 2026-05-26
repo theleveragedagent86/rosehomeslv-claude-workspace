@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/brand-tokens.css" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+      [data-composition-id="08-skool-pop"] {
+        position: relative; width: 1920px; height: 1080px; overflow: hidden;
+        font-family: var(--font-display);
+      }
+      /* Mid-video Skool community pop — bottom-right card, smaller than the
+         outro CTA. Triggers when Ryan plugs the Skool community / weekly Q&A. */
+      [data-composition-id="08-skool-pop"] .pop {
+        position: absolute;
+        bottom: 80px; right: 80px;
+        display: flex; align-items: center; gap: 18px;
+        background: var(--ink); color: var(--bg-alt);
+        border-left: 8px solid var(--warn);
+        border-radius: 14px;
+        padding: 18px 26px 18px 22px;
+        box-shadow: 0 18px 40px rgba(15,76,92,0.5);
+        opacity: 0;
+        transform: translateX(60px);
+        will-change: transform, opacity;
+      }
+      [data-composition-id="08-skool-pop"] .pop .icon {
+        width: 56px; height: 56px;
+        border-radius: 12px;
+        background: var(--warn);
+        color: var(--ink);
+        display: flex; align-items: center; justify-content: center;
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 30px;
+        flex-shrink: 0;
+      }
+      [data-composition-id="08-skool-pop"] .pop .copy {
+        display: flex; flex-direction: column; gap: 4px;
+      }
+      [data-composition-id="08-skool-pop"] .pop .kicker {
+        font-family: var(--font-mono);
+        font-weight: 700; font-size: 16px;
+        letter-spacing: 0.28em;
+        color: var(--warn);
+        text-transform: uppercase;
+      }
+      [data-composition-id="08-skool-pop"] .pop .head {
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 30px; line-height: 1;
+        letter-spacing: -0.01em;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="sec08"
+      data-composition-id="08-skool-pop"
+      data-duration="5"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="pop clip" data-start="0" data-duration="5" data-track-index="0">
+        <div class="icon">S</div>
+        <div class="copy">
+          <div class="kicker">Inside the community</div>
+          <div class="head">Drop your 5 posts in Wins</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const SLOT = 5;
+      const tl = gsap.timeline({ paused: true });
+
+      tl.to('[data-composition-id="08-skool-pop"] .pop',
+        { opacity: 1, x: 0, duration: 0.5, ease: 'back.out(1.5)' }, 0.10);
+      tl.to('[data-composition-id="08-skool-pop"] .pop',
+        { scale: 1.03, duration: 0.7, yoyo: true, repeat: 2, ease: 'sine.inOut' }, 1.00);
+      tl.to('[data-composition-id="08-skool-pop"] .pop',
+        { opacity: 0, x: 60, duration: 0.4, ease: 'power2.in' }, 4.40);
+
+      tl.to({}, { duration: SLOT }, 0);
+      window.__timelines["08-skool-pop"] = tl;
+    </script>
+  </body>
+</html>

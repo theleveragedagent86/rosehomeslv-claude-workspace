@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyeView Terra by Century Communities | New Homes from $489,990 in Skye Canyon, Las Vegas</title>
+    <meta name="description" content="Explore SkyeView Terra by Century Communities in Skye Canyon, NW Las Vegas. 3 floor plans, 1,792 to 2,119 sq ft, 3-5 beds. 3.375% rate available. Get pricing and floor plans from Ryan Rose, Real Broker LLC.">
+    <meta property="og:title" content="SkyeView Terra by Century Communities | New Homes in Skye Canyon">
+    <meta property="og:description" content="New construction from $489,990. 3 floor plans, up to 2,119 sq ft, 3-5 bedrooms. Skye Canyon amenities included.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Force full-bleed in Lofty CMS */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        html, body {
+            width: 100%; max-width: 100%;
+            overflow-x: hidden;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            line-height: 1.6;
+            background: #0b0b0b;
+            -webkit-font-smoothing: antialiased;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        /* Override Lofty CMS container */
+        body > div, body > section, body > header, body > footer,
+        .lofty-page, .cms-content, [class*="wrapper"], [class*="container-fluid"] {
+            max-width: 100% !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+        img { max-width: 100%; display: block; }
+        a { color: inherit; text-decoration: none; }
+
+        /* ============================
+           DESIGN TOKENS — Century Communities
+           ============================ */
+        :root {
+            --dark: #0b0b0b;
+            --dark-surface: #111111;
+            --dark-card: #171717;
+            --accent: #1a3a5c;
+            --accent-hover: #244d73;
+            --accent-muted: rgba(26,58,92,0.12);
+            --white: #ffffff;
+            --w60: rgba(255,255,255,0.6);
+            --w40: rgba(255,255,255,0.4);
+            --w20: rgba(255,255,255,0.2);
+            --w08: rgba(255,255,255,0.08);
+            --w04: rgba(255,255,255,0.04);
+            --radius: 10px;
+            --radius-sm: 6px;
+            --t: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .container { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+
+        /* Reveal */
+        .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ============================
+           SECTION LABEL
+           ============================ */
+        .section-label {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            display: flex; align-items: center; gap: 14px;
+            margin-bottom: 20px;
+        }
+        .section-label::after {
+            content: ''; flex: 1; max-width: 50px; height: 1px;
+        }
+        .section-label--accent { color: var(--accent); }
+        .section-label--accent::after { background: var(--accent); }
+        .section-label--dark { color: var(--w40); }
+        .section-label--dark::after { background: var(--w20); }
+
+        /* ============================
+           INCENTIVE BAR
+           ============================ */
+        .incentive-bar {
+            background: var(--accent);
+            padding: 12px 28px;
+            text-align: center;
+        }
+        .incentive-bar p {
+            font-size: 13px; font-weight: 500; color: var(--white);
+        }
+        .incentive-bar strong { font-weight: 700; }
+
+        /* ============================
+           STICKY HEADER
+           ============================ */
+        .header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(11,11,11,0.92);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--w08);
+            padding: 0;
+        }
+        .header-inner {
+            display: flex; align-items: center; justify-content: space-between;
+            height: 60px;
+        }
+        .header-left {
+            display: flex; align-items: center; gap: 16px;
+            min-width: 0; overflow: hidden;
+        }
+        .header-logo { height: 24px; width: auto; }
+        .header-agent {
+            font-size: 12px; font-weight: 500;
+            letter-spacing: 1px; text-transform: uppercase;
+            color: var(--w60);
+        }
+        .header-divider {
+            width: 1px; height: 20px;
+            background: var(--w20);
+        }
+        .header-community {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px; letter-spacing: 2px;
+            color: var(--white);
+        }
+        .header-right {
+            display: flex; align-items: center; gap: 20px;
+        }
+        .header-link {
+            font-size: 12px; font-weight: 500;
+            letter-spacing: 1px; text-transform: uppercase;
+            color: var(--w40); transition: color var(--t);
+        }
+        .header-link:hover { color: var(--white); }
+        .header-cta {
+            background: var(--accent) !important;
+            color: #ffffff !important;
+            padding: 9px 22px; border-radius: 50px;
+            font-size: 12px; font-weight: 600;
+            letter-spacing: 0.5px; text-transform: uppercase;
+            transition: background var(--t);
+            border: none;
+        }
+        .header-cta:hover { background: var(--accent-hover) !important; color: #ffffff !important; }
+
+        /* ============================
+           HERO — scrolling image background
+           ============================ */
+        .hero {
+            padding: 80px 28px 40px;
+            background: var(--dark);
+            position: relative; overflow: hidden;
+            min-height: 420px;
+        }
+        .hero-bg {
+            position: absolute; inset: 0; z-index: 0;
+            display: flex; width: max-content;
+            animation: heroScroll 24s linear infinite;
+            will-change: transform;
+        }
+        .hero-bg img {
+            height: 100%; width: auto; min-width: 50vw;
+            object-fit: cover; flex-shrink: 0;
+        }
+        @keyframes heroScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .hero-overlay {
+            position: absolute; inset: 0; z-index: 1;
+            background: linear-gradient(to right, rgba(11,11,11,0.92) 0%, rgba(11,11,11,0.75) 40%, rgba(11,11,11,0.6) 100%);
+        }
+        .hero-inner {
+            max-width: 1120px; margin: 0 auto;
+            display: flex; align-items: flex-end; justify-content: space-between;
+            gap: 40px; position: relative; z-index: 2;
+        }
+        .hero-text { max-width: 600px; }
+        .hero-kicker {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(72px, 12vw, 140px);
+            line-height: 0.9; color: var(--white);
+            letter-spacing: 4px; margin-bottom: 16px;
+        }
+        .hero-sub {
+            font-size: 16px; font-weight: 300;
+            color: var(--w40); max-width: 420px;
+            line-height: 1.7; margin-bottom: 24px;
+        }
+        .hero-cta {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: var(--accent) !important; color: #ffffff !important;
+            padding: 14px 32px; border-radius: 50px;
+            font-size: 13px; font-weight: 600;
+            letter-spacing: 1px; text-transform: uppercase;
+            transition: background var(--t), transform var(--t);
+            border: none;
+        }
+        .hero-cta:hover { background: var(--accent-hover) !important; color: #ffffff !important; transform: translateY(-2px); }
+        .hero-stats {
+            display: flex; gap: 32px; padding-bottom: 10px;
+        }
+        .hero-stat { text-align: center; }
+        .hero-stat-val {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px; letter-spacing: 2px;
+            color: var(--white); line-height: 1; margin-bottom: 4px;
+        }
+        .hero-stat-lbl {
+            font-size: 10px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+        }
+
+        /* ============================
+           AMENITIES — horizontal scroll
+           ============================ */
+        .amenities-section {
+            padding: 60px 0 0;
+            background: var(--dark-surface);
+            overflow: hidden;
+        }
+        .amenities-label {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 28px;
+            display: flex; align-items: center; gap: 14px;
+        }
+        .amenities-label::after {
+            content: ''; flex: 1; max-width: 50px; height: 1px;
+            background: var(--accent);
+        }
+        .amenities-scroll {
+            display: flex; gap: 16px;
+            overflow-x: auto; padding-bottom: 20px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .amenities-scroll::-webkit-scrollbar { height: 3px; }
+        .amenities-scroll::-webkit-scrollbar-track { background: var(--w04); }
+        .amenities-scroll::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+        .amenity-card {
+            flex: 0 0 280px;
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            transition: border-color var(--t), transform var(--t);
+        }
+        .amenity-card:hover {
+            border-color: var(--w20);
+            transform: translateY(-3px);
+        }
+        .amenity-card-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px; letter-spacing: 1px;
+            color: var(--white); margin-bottom: 8px;
+        }
+        .amenity-card-desc {
+            font-size: 13px; color: var(--w40); line-height: 1.6;
+        }
+
+        /* ============================
+           ABOUT
+           ============================ */
+        .about-section {
+            padding: 60px 0;
+            background: var(--dark);
+        }
+        .about-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 48px; align-items: start;
+        }
+        .about-headline {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 44px; letter-spacing: 2px;
+            line-height: 1.05; color: var(--white);
+        }
+        .about-text p {
+            font-size: 15px; line-height: 1.85;
+            color: var(--w40); margin-bottom: 16px;
+        }
+        .about-text p:last-child { margin-bottom: 0; }
+
+        /* ============================
+           FLOOR PLANS
+           ============================ */
+        .plans-section {
+            padding: 60px 0;
+            background: var(--dark);
+        }
+        .plans-header {
+            display: flex; justify-content: space-between;
+            align-items: flex-end; margin-bottom: 40px; gap: 24px;
+        }
+        .plans-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px; letter-spacing: 2px; line-height: 1.05;
+            color: var(--white);
+        }
+        .plans-subtitle {
+            font-size: 14px; color: var(--w40);
+            max-width: 320px; text-align: right;
+        }
+
+        /* Plan tabs */
+        .plan-tabs {
+            display: flex; gap: 0;
+            border-bottom: 1px solid var(--w08);
+            margin-bottom: 32px;
+        }
+        .plan-tab {
+            flex: 1; padding: 16px 12px;
+            text-align: center; cursor: pointer;
+            position: relative; transition: all var(--t);
+        }
+        .plan-tab::after {
+            content: ''; position: absolute;
+            bottom: -1px; left: 0; right: 0; height: 2px;
+            background: var(--accent);
+            transform: scaleX(0); transition: transform var(--t);
+        }
+        .plan-tab.active::after { transform: scaleX(1); }
+        .plan-tab-top {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            margin-bottom: 4px;
+        }
+        .plan-tab-indicator {
+            width: 10px; height: 10px; border-radius: 50%;
+            border: 2px solid var(--w20);
+            transition: all var(--t);
+        }
+        .plan-tab.active .plan-tab-indicator {
+            border-color: var(--accent);
+            background: var(--accent);
+        }
+        .plan-tab-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 22px; letter-spacing: 2px;
+            color: var(--w20); transition: color var(--t);
+        }
+        .plan-tab.active .plan-tab-name { color: var(--white); }
+        .plan-tab:hover .plan-tab-name { color: var(--w60); }
+        .plan-tab-price {
+            font-size: 12px; color: var(--w20);
+        }
+        .plan-tab.active .plan-tab-price { color: var(--w40); }
+
+        /* Plan display */
+        .plan-display {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            align-items: start;
+        }
+        .plan-image-panel {
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            opacity: 0; transform: scale(0.97);
+            transition: opacity var(--t), transform var(--t);
+        }
+        .plan-image-panel.visible { opacity: 1; transform: scale(1); }
+        .plan-image-label {
+            padding: 12px 20px;
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+            border-bottom: 1px solid var(--w08);
+        }
+        .plan-image-area {
+            aspect-ratio: 4 / 3;
+            display: flex; align-items: center; justify-content: center;
+            background: #0e0e0e;
+            overflow: hidden;
+        }
+        .plan-image-area img { width: 100%; height: 100%; object-fit: contain; max-width: 100%; }
+        .plan-image-source {
+            padding: 6px 20px 8px;
+            font-size: 10px; font-style: italic;
+            color: var(--w20);
+            text-align: right;
+        }
+        .plan-image-source a { color: var(--w20); text-decoration: underline; transition: color var(--t); }
+        .plan-image-source a:hover { color: var(--w40); }
+
+        .plan-detail-panel {
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            border-radius: var(--radius);
+            padding: 32px;
+            border-top: 3px solid var(--accent);
+            opacity: 0; transform: translateY(12px);
+            transition: opacity var(--t), transform var(--t);
+        }
+        .plan-detail-panel.visible { opacity: 1; transform: translateY(0); }
+        .plan-detail-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 32px; letter-spacing: 2px;
+            color: var(--white); margin-bottom: 4px;
+        }
+        .plan-detail-builder {
+            font-size: 11px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40); margin-bottom: 24px;
+        }
+        .plan-spec-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 12px; margin-bottom: 24px;
+        }
+        .plan-spec-item {
+            text-align: center; padding: 16px 8px;
+            border-radius: var(--radius-sm);
+            background: var(--w04);
+            border: 1px solid var(--w04);
+        }
+        .plan-spec-val {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 24px; letter-spacing: 1px;
+            color: var(--white); margin-bottom: 2px;
+        }
+        .plan-spec-lbl {
+            font-size: 10px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+        }
+        .plan-features {
+            list-style: none;
+        }
+        .plan-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--w04);
+            font-size: 13px; color: var(--w40);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .plan-features li:last-child { border-bottom: none; }
+        .plan-features li::before {
+            content: ''; width: 5px; height: 5px;
+            border-radius: 50%; background: var(--accent);
+            flex-shrink: 0;
+        }
+        .plan-detail-cta {
+            margin-top: 20px;
+            display: block; text-align: center;
+            padding: 12px;
+            background: var(--accent) !important;
+            color: #ffffff !important;
+            border-radius: 50px;
+            font-size: 12px; font-weight: 600;
+            letter-spacing: 1px; text-transform: uppercase;
+            transition: background var(--t);
+            border: none;
+        }
+        .plan-detail-cta:hover { background: var(--accent-hover) !important; color: #ffffff !important; }
+        .plan-compare-hint {
+            text-align: center; margin-top: 16px;
+            font-size: 12px; color: var(--w20);
+        }
+
+        /* ============================
+           COMBINED CTA + FORM SECTION
+           ============================ */
+        .form-section {
+            padding: 60px 0;
+            background: var(--dark-surface);
+        }
+        .form-band-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(36px, 7vw, 64px);
+            letter-spacing: 4px; line-height: 0.95;
+            color: var(--white); text-align: center;
+            margin-bottom: 8px;
+        }
+        .form-band-title span { color: var(--accent); }
+        .form-band-sub {
+            text-align: center;
+            font-size: 15px; color: var(--w40);
+            margin-bottom: 40px;
+        }
+        .form-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 60px; align-items: start;
+        }
+        .form-left h3 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 28px; letter-spacing: 2px;
+            color: var(--white); margin-bottom: 12px;
+        }
+        .form-left-desc {
+            font-size: 15px; color: var(--w40);
+            line-height: 1.8; margin-bottom: 24px;
+        }
+        .form-left-contact {
+            font-size: 14px; color: var(--w40); line-height: 2;
+        }
+        .form-left-contact strong { color: var(--white); }
+        .form-left-contact a { color: var(--accent); transition: color var(--t); }
+        .form-left-contact a:hover { color: var(--accent-hover); }
+        .form-box {
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            border-radius: var(--radius);
+            padding: 36px 32px;
+        }
+        .form-box label {
+            display: block; font-size: 11px; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40); margin-bottom: 6px;
+        }
+        .form-box input[type="text"],
+        .form-box input[type="email"],
+        .form-box input[type="tel"] {
+            width: 100%; padding: 12px 14px; margin-bottom: 18px;
+            border: 1px solid var(--w08); border-radius: var(--radius-sm);
+            font-size: 16px; font-family: 'Inter', sans-serif;
+            background: var(--w04); color: var(--white);
+            transition: border-color var(--t);
+        }
+        .form-box input::placeholder { color: var(--w20); }
+        .form-box input:focus { outline: none; border-color: var(--accent); }
+        .form-box button {
+            width: 100%; padding: 14px;
+            background: var(--accent); color: var(--white);
+            border: none; border-radius: 50px;
+            font-size: 13px; font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 1px; text-transform: uppercase;
+            cursor: pointer; transition: background var(--t);
+        }
+        .form-box button:hover { background: var(--accent-hover); }
+        .form-box--gform {
+            padding: 0;
+            background: var(--white);
+            overflow: hidden;
+        }
+        .form-box--gform iframe {
+            display: block; width: 100%;
+            border: 0; min-height: 900px;
+            background: var(--white);
+        }
+        .form-box--gform .privacy-note {
+            background: var(--dark-card);
+            color: var(--w20);
+            padding: 14px 24px 20px;
+            margin-top: 0;
+        }
+        .privacy-note {
+            font-size: 11px; color: var(--w20);
+            text-align: center; margin-top: 12px; line-height: 1.6;
+        }
+
+        /* ============================
+           FOOTER
+           ============================ */
+        .footer {
+            background: var(--dark);
+            border-top: 1px solid var(--w08);
+            padding: 36px 28px;
+            text-align: center;
+        }
+        .footer-agent {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 18px; letter-spacing: 2px;
+            color: var(--white); margin-bottom: 4px;
+        }
+        .footer-brokerage {
+            font-size: 13px; color: var(--w40); margin-bottom: 4px;
+        }
+        .footer-links {
+            font-size: 13px; color: var(--w40); margin-bottom: 12px;
+        }
+        .footer-links a { color: var(--w40); transition: color var(--t); }
+        .footer-links a:hover { color: var(--accent); }
+        .footer-source {
+            font-size: 11px; color: var(--w20); margin-bottom: 8px;
+        }
+        .footer-source a { color: var(--w20); text-decoration: underline; transition: color var(--t); }
+        .footer-source a:hover { color: var(--w40); }
+        .footer-disc {
+            font-size: 11px; color: var(--w20);
+            max-width: 600px; margin: 0 auto;
+        }
+
+        /* ============================
+           RESPONSIVE
+           ============================ */
+        @media (max-width: 900px) {
+            .about-grid { grid-template-columns: 1fr; gap: 24px; }
+            .form-grid { grid-template-columns: 1fr; gap: 36px; }
+            .plans-header { flex-direction: column; align-items: flex-start; }
+            .plans-subtitle { text-align: left; }
+            .plan-display { grid-template-columns: 1fr; }
+            .hero-inner { flex-direction: column; align-items: flex-start; }
+            .hero-stats { gap: 24px; }
+        }
+        @media (max-width: 768px) {
+            .header-agent { display: none; }
+            .header-divider { display: none; }
+            .header-link { display: none; }
+            .header-inner { height: 52px; }
+            .header-logo { height: 20px; }
+            .header-community { font-size: 17px; }
+            .header-cta { padding: 7px 16px; font-size: 11px; }
+
+            .hero { padding: 64px 20px 32px; min-height: 360px; }
+            .hero h1 { font-size: 56px; letter-spacing: 2px; }
+            .hero-sub { font-size: 15px; margin-bottom: 20px; }
+            .hero-cta { padding: 12px 24px; font-size: 12px; }
+            .hero-stats { flex-wrap: wrap; gap: 16px; }
+            .hero-stat-val { font-size: 28px; }
+            .hero-stat-lbl { font-size: 9px; letter-spacing: 1.5px; }
+
+            .incentive-bar { padding: 10px 16px; }
+            .incentive-bar p { font-size: 12px; }
+
+            .about-section { padding: 40px 0; }
+            .about-headline { font-size: 32px; }
+            .about-text p { font-size: 14px; }
+
+            .plans-section { padding: 40px 0; }
+            .plans-title { font-size: 28px; }
+            .plan-tabs { flex-wrap: wrap; }
+            .plan-tab { flex: 1 1 45%; padding: 12px 8px; }
+            .plan-tab-name { font-size: 16px; }
+            .plan-tab-price { font-size: 11px; }
+            .plan-detail-panel { padding: 24px 20px; }
+            .plan-detail-name { font-size: 26px; }
+            .plan-spec-val { font-size: 20px; }
+            .plan-image-label { padding: 10px 16px; font-size: 10px; }
+
+            .amenities-section { padding: 40px 0 0; }
+            .amenity-card { flex: 0 0 220px; padding: 22px 18px; }
+            .amenity-card-name { font-size: 18px; }
+            .amenity-card-desc { font-size: 12px; }
+
+            .form-section { padding: 40px 0; }
+            .form-band-title { font-size: 32px; letter-spacing: 2px; }
+            .form-band-sub { font-size: 14px; margin-bottom: 28px; }
+            .form-left h3 { font-size: 22px; }
+            .form-left-desc { font-size: 14px; }
+            .form-box { padding: 24px 18px; }
+            .form-box--gform { padding: 0; }
+            .form-box--gform iframe { min-height: 1100px; }
+            .form-box input[type="text"],
+            .form-box input[type="email"],
+            .form-box input[type="tel"] { padding: 11px 12px; font-size: 14px; margin-bottom: 14px; }
+            .form-box button { padding: 13px; font-size: 12px; }
+
+            .footer { padding: 28px 20px; }
+            .footer-agent { font-size: 16px; }
+            .footer-links { font-size: 12px; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 44px; }
+            .hero-kicker { font-size: 10px; letter-spacing: 2px; }
+            .hero-stat { min-width: 60px; }
+            .hero-stat-val { font-size: 24px; }
+            .hero-stats { gap: 12px; }
+
+            .plan-tab { flex: 1 1 100%; }
+            .plan-tab-top { gap: 6px; }
+            .plan-tab-indicator { width: 8px; height: 8px; }
+            .plan-spec-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+            .plan-spec-item { padding: 12px 6px; }
+            .plan-spec-val { font-size: 18px; }
+            .plan-features li { font-size: 12px; padding: 8px 0; }
+
+            .amenity-card { flex: 0 0 200px; padding: 20px 16px; }
+
+            .form-band-title { font-size: 26px; letter-spacing: 1px; }
+            .form-grid { gap: 28px; }
+
+            .container { padding: 0 20px; }
+        }
+        @media (max-width: 360px) {
+            .hero h1 { font-size: 36px; }
+            .hero-stat-val { font-size: 20px; }
+            .header-community { font-size: 15px; letter-spacing: 1px; }
+            .plan-detail-name { font-size: 22px; }
+            .form-band-title { font-size: 22px; }
+        }
+    </style>
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org", "@type": "RealEstateAgent",
+        "name": "Ryan Rose", "url": "https://rosehomeslv.com",
+        "telephone": "+1-702-747-5921", "email": "ryan@rosehomeslv.com",
+        "description": "Las Vegas new construction specialist helping buyers find homes at SkyeView Terra by Century Communities in Skye Canyon, NW Las Vegas.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Las Vegas", "addressRegion": "NV", "postalCode": "89166", "addressCountry": "US" },
+        "worksFor": { "@type": "RealEstateAgent", "name": "Real Broker LLC" },
+        "areaServed": { "@type": "City", "name": "Las Vegas" }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ======== HEADER ======== -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="header-left">
+                <img src="https://www.dropbox.com/scl/fi/iylyhqb6tsecef8mlyc56/real-logo-white.png?rlkey=q060phklshu7euevn2a9rlvnb&raw=1" alt="Real Broker" class="header-logo">
+                <span class="header-agent">Ryan Rose</span>
+                <span class="header-divider"></span>
+                <span class="header-community">SKYEVIEW TERRA</span>
+            </div>
+            <div class="header-right">
+                <a href="#floorplans" class="header-link">Floor Plans</a>
+                <a href="#contact" class="header-cta">Get Pricing</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/764470518-764221713-vanhoy-crk-st-print-quality-004-02-exterior-front.jpg" alt="SkyeView Terra exterior">
+            <img src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/1943/model/vanhoy-crk-st---web-quality---015---13-kitchen.jpg" alt="SkyeView Terra kitchen">
+            <img src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/1943/model/vanhoy-crk-st---web-quality---011---09-living-room.jpg" alt="SkyeView Terra living room">
+            <img src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/1943/model/vanhoy-crk-st---web-quality---023---22-2nd-floor-primary-bedroom.jpg" alt="SkyeView Terra primary bedroom">
+            <img src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/2119/model/vanhoy-crk-st---web-quality---014---12-kitchen.jpg" alt="SkyeView Terra kitchen 2119">
+            <img src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/764470507-764221526-vanhoy-crk-st-print-quality-003-02-exterior-front.jpg" alt="SkyeView Terra exterior 1943">
+            <!-- Duplicate for seamless loop -->
+            <img src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/764470518-764221713-vanhoy-crk-st-print-quality-004-02-exterior-front.jpg" alt="SkyeView Terra exterior">
+            <img src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/1943/model/vanhoy-crk-st---web-quality---015---13-kitchen.jpg" alt="SkyeView Terra kitchen">
+            <img src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/1943/model/vanhoy-crk-st---web-quality---011---09-living-room.jpg" alt="SkyeView Terra living room">
+            <img src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/1943/model/vanhoy-crk-st---web-quality---023---22-2nd-floor-primary-bedroom.jpg" alt="SkyeView Terra primary bedroom">
+            <img src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/2119/model/vanhoy-crk-st---web-quality---014---12-kitchen.jpg" alt="SkyeView Terra kitchen 2119">
+            <img src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/764470507-764221526-vanhoy-crk-st-print-quality-003-02-exterior-front.jpg" alt="SkyeView Terra exterior 1943">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-kicker">Century Communities</div>
+                <h1>SKYEVIEW TERRA</h1>
+                <p class="hero-sub">New two-story homes in Skye Canyon, NW Las Vegas. 196 homes with resort-style amenities, top-rated trails, and on-site shopping. Starting from $489,990.</p>
+                <a href="#contact" class="hero-cta">Get Floor Plans &amp; Pricing &#8599;</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-val">$489K+</div>
+                    <div class="hero-stat-lbl">Starting</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-val">2,119</div>
+                    <div class="hero-stat-lbl">Up To Sq Ft</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-val">3-5</div>
+                    <div class="hero-stat-lbl">Beds</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-val">3</div>
+                    <div class="hero-stat-lbl">Plans</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== INCENTIVE BAR ======== -->
+    <div class="incentive-bar">
+        <p><strong>Flash Sale:</strong> 3.375% Interest Rate Available. Up to $3,000 in Closing Cost Credits with Inspire Home Loans.</p>
+    </div>
+
+    <!-- ======== ABOUT ======== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-label section-label--accent">About</div>
+            <div class="about-grid">
+                <div class="reveal">
+                    <h2 class="about-headline">YOUR NEW HOME<br>IN SKYE CANYON</h2>
+                </div>
+                <div class="about-text reveal">
+                    <p>SkyeView Terra is a gated community of 196 new two-story homes by Century Communities in Skye Canyon, one of the most popular master plans in northwest Las Vegas. Homes range from 1,792 to 2,119 square feet with 3 to 5 bedrooms and up to 3 bathrooms. Three floor plans offer open layouts, center island kitchens, and spacious primary suites.</p>
+                    <p>Skye Canyon is a 1,700-acre master-planned community with resort-style living built in. Residents enjoy the Skye Center clubhouse, Skye Fitness with a junior Olympic pool, 15-acre Skye Canyon Park, miles of trails and bike lanes, splash pads, dog parks, and year-round events like outdoor movie nights and farmers' markets.</p>
+                    <p>Daily errands are easy with Smith's Marketplace, restaurants, and shops right inside the community. US-95 is less than a mile away for a quick commute. The model home is at 8592 Vanhoy Creek Street, Las Vegas, NV 89166. Open daily, with self-guided NterNow tours also available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FLOOR PLANS ======== -->
+    <section class="plans-section" id="floorplans">
+        <div class="container">
+            <div class="section-label section-label--dark">Floor Plans</div>
+            <div class="plans-header">
+                <h2 class="plans-title">CHOOSE YOUR<br>FLOOR PLAN</h2>
+                <p class="plans-subtitle">Select a plan to explore details and see the first-floor layout.</p>
+            </div>
+
+            <div class="plan-tabs" id="planTabs"></div>
+            <div class="plan-display" id="planDisplay"></div>
+
+            <div class="plan-compare-hint">
+                <a href="#contact" style="color:var(--accent);text-decoration:underline;">Want to see the full floor plans for every level?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== AMENITIES ======== -->
+    <section class="amenities-section">
+        <div class="container">
+            <div class="amenities-label">Skye Canyon Amenities</div>
+        </div>
+        <div class="container">
+            <div class="amenities-scroll">
+                <div class="amenity-card"><div class="amenity-card-name">SKYE CENTER</div><div class="amenity-card-desc">8,000 sq ft rustic-modern clubhouse with Aspire Coffee House and community event space.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">SKYE FITNESS &amp; POOL</div><div class="amenity-card-desc">State-of-the-art fitness center with classes, personal training, and a junior Olympic swimming pool.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">SKYE CANYON PARK</div><div class="amenity-card-desc">15-acre park with a multifunctional playfield, soccer field, basketball courts, and event space.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">EAGLE CANYON PARK</div><div class="amenity-card-desc">Sports field, walking path, basketball court, splash pad, tot lot, and two covered gazebos.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">TRAILS &amp; BIKE LANES</div><div class="amenity-card-desc">Extensive network of walking trails and bike lanes connecting parks, schools, and shopping.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">SMITH'S MARKETPLACE</div><div class="amenity-card-desc">Full-service grocery, restaurants, cafes, salons, banks, and pet care right inside the community.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== JAVASCRIPT ======== -->
+    <script>
+    (function() {
+        'use strict';
+
+        var PLANS = [
+            {
+                id: 'residence-1792',
+                name: 'Residence 1792',
+                price: 489990,
+                priceLabel: 'From $489,990',
+                sqft: 1792,
+                sqftLabel: '1,792 sq ft',
+                beds: '3-4',
+                baths: '2.5',
+                bathsLabel: '2.5',
+                garage: '2-car',
+                features: ['Open-concept layout', 'Two-story foyer', 'Center island kitchen', 'Walk-in pantry', 'Loft or optional 4th bedroom'],
+                image: 'https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/1792/residence-1792-skyeview-floor-1.jpg'
+            },
+            {
+                id: 'residence-1943',
+                name: 'Residence 1943',
+                price: 504990,
+                priceLabel: 'From $504,990',
+                sqft: 1943,
+                sqftLabel: '1,943 sq ft',
+                beds: '3-4',
+                baths: '2.5',
+                bathsLabel: '2.5',
+                garage: '2-car',
+                features: ['Generous center island', 'Breakfast nook', 'Great room', 'Dual walk-in closets in primary', 'Walk-in shower'],
+                image: 'https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/1943/residence-1943-skyeview-floor-1.jpg'
+            },
+            {
+                id: 'residence-2119',
+                name: 'Residence 2119',
+                price: 519990,
+                priceLabel: 'From $519,990',
+                sqft: 2119,
+                sqftLabel: '2,119 sq ft',
+                beds: '3-5',
+                baths: '2.5-3',
+                bathsLabel: '2.5-3',
+                garage: '2-car',
+                features: ['Secluded main-floor den', 'Expansive great room', 'Versatile loft', 'Up to 5 bedrooms', 'Dual-sink primary bath'],
+                image: 'https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/terra/2119/residence-2119-skyeview-floor-1.jpg'
+            }
+        ];
+
+        var selectedId = PLANS[0].id;
+        function getPlan(id) { return PLANS.find(function(p) { return p.id === id; }); }
+
+        var tabsEl = document.getElementById('planTabs');
+        var displayEl = document.getElementById('planDisplay');
+
+        function renderTabs() {
+            tabsEl.innerHTML = '';
+            PLANS.forEach(function(plan) {
+                var tab = document.createElement('div');
+                tab.className = 'plan-tab' + (plan.id === selectedId ? ' active' : '');
+                tab.innerHTML =
+                    '<div class="plan-tab-top">' +
+                        '<div class="plan-tab-indicator"></div>' +
+                        '<div class="plan-tab-name">' + plan.name.toUpperCase() + '</div>' +
+                    '</div>' +
+                    '<div class="plan-tab-price">' + plan.priceLabel + '</div>';
+                tab.addEventListener('click', function() {
+                    selectedId = plan.id; update();
+                });
+                tabsEl.appendChild(tab);
+            });
+        }
+
+        function renderDisplay() {
+            displayEl.innerHTML = '';
+            var plan = getPlan(selectedId);
+
+            // Image panel
+            var imgPanel = document.createElement('div');
+            imgPanel.className = 'plan-image-panel';
+            imgPanel.innerHTML =
+                '<div class="plan-image-label">' + plan.name + ' Floor Plan - First Floor</div>' +
+                '<div class="plan-image-area">' +
+                    (plan.image ? '<img src="' + plan.image + '" alt="' + plan.name + ' first floor plan">' : '') +
+                '</div>' +
+                '<div class="plan-image-source">Image courtesy of <a href="https://www.centurycommunities.com/find-your-new-home/nevada/las-vegas-metro/las-vegas/skye-canyon/skyeview---terra/" target="_blank" rel="noopener">Century Communities</a></div>';
+            displayEl.appendChild(imgPanel);
+
+            // Detail panel
+            var detPanel = document.createElement('div');
+            detPanel.className = 'plan-detail-panel';
+            detPanel.innerHTML =
+                '<div class="plan-detail-name">' + plan.name.toUpperCase() + '</div>' +
+                '<div class="plan-detail-builder">Century Communities</div>' +
+                '<div class="plan-spec-grid">' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.priceLabel.replace('From ','') + '</div><div class="plan-spec-lbl">Price</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.sqftLabel + '</div><div class="plan-spec-lbl">Sq Ft</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.beds + '</div><div class="plan-spec-lbl">Beds</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.bathsLabel + '</div><div class="plan-spec-lbl">Baths</div></div>' +
+                '</div>' +
+                '<ul class="plan-features">' + plan.features.map(function(f) { return '<li>' + f + '</li>'; }).join('') + '</ul>' +
+                '<a href="#contact" class="plan-detail-cta">Get Full Floor Plans</a>';
+            displayEl.appendChild(detPanel);
+
+            // Animate in
+            requestAnimationFrame(function() { requestAnimationFrame(function() {
+                imgPanel.classList.add('visible');
+                detPanel.classList.add('visible');
+            }); });
+        }
+
+        function update() { renderTabs(); renderDisplay(); }
+        update();
+
+        /* Scroll reveal */
+        var reveals = document.querySelectorAll('.reveal');
+        var obs = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(function(el) { obs.observe(el); });
+
+        /* Scroll #contact CTAs to the bottom of the page where the embedded Lofty form lives */
+        function scrollToBottom(e) {
+            if (e) e.preventDefault();
+            var target = Math.max(
+                document.body.scrollHeight,
+                document.documentElement.scrollHeight
+            );
+            window.scrollTo({ top: target, behavior: 'smooth' });
+        }
+        function bindContactScroll(root) {
+            var links = (root || document).querySelectorAll('a[href="#contact"]');
+            links.forEach(function(a) {
+                if (a.dataset.scrollBound) return;
+                a.dataset.scrollBound = '1';
+                a.addEventListener('click', scrollToBottom);
+            });
+        }
+        bindContactScroll();
+        /* The floor plan tabs re-render the detail panel CTA after every selection,
+           so re-bind whenever new #contact links appear. */
+        var displayObserver = new MutationObserver(function() { bindContactScroll(); });
+        var displayEl2 = document.getElementById('planDisplay');
+        if (displayEl2) displayObserver.observe(displayEl2, { childList: true, subtree: true });
+
+    })();
+    </script>
+
+</body>
+</html>

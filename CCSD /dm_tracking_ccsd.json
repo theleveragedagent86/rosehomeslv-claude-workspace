@@ -1,0 +1,467 @@
+{
+  "source_accounts": [
+    "southernhillshospitallv",
+    "newmomschool_swlasvegas"
+  ],
+  "total_count": 91,
+  "sent_count": 58,
+  "skipped_count": 33,
+  "batch_size": 3,
+  "followers": {
+    "lets_go_youknowthething": {
+      "source": "southernhillshospitallv",
+      "display": "NORM",
+      "status": "skipped"
+    },
+    "jazmine_lizettee": {
+      "source": "southernhillshospitallv",
+      "display": "Jazmine",
+      "status": true
+    },
+    "gov.josh": {
+      "source": "southernhillshospitallv",
+      "display": "Joshua Govenor",
+      "status": true
+    },
+    "mydragonrose": {
+      "source": "southernhillshospitallv",
+      "display": "MACRINA ROSE",
+      "status": "skipped-realtor"
+    },
+    "lasvegaspromisewalk": {
+      "source": "southernhillshospitallv",
+      "display": "Las Vegas Promise Walk for Preeclampsia",
+      "status": true
+    },
+    "allcaresupport": {
+      "source": "southernhillshospitallv",
+      "display": "All Care Support | Veronica Perez",
+      "status": true
+    },
+    "massmediacc": {
+      "source": "southernhillshospitallv",
+      "display": "massmediacc",
+      "status": true
+    },
+    "daintylinxlv": {
+      "source": "southernhillshospitallv",
+      "display": "Dainty Linx Permanent Jewelry",
+      "status": true
+    },
+    "donutnvlasvegas": {
+      "source": "southernhillshospitallv",
+      "display": "DonutNV Las Vegas",
+      "status": true
+    },
+    "thrivetreatsvouwell": {
+      "source": "southernhillshospitallv",
+      "display": "THRIVE Solutions Mental Health",
+      "status": "skipped-unavailable"
+    },
+    "dopesoul.702": {
+      "source": "southernhillshospitallv",
+      "display": "Melissa Marie",
+      "status": true
+    },
+    "caminoalcielofuneralchapel": {
+      "source": "southernhillshospitallv",
+      "display": "Camino Al Cielo Funeral Chapels",
+      "status": true
+    },
+    "subvet1972": {
+      "source": "southernhillshospitallv",
+      "display": "Richard Santomauro",
+      "status": "skipped-private"
+    },
+    "aschleiko": {
+      "source": "southernhillshospitallv",
+      "display": "Andrew Schleikorn",
+      "status": "skipped-no-message"
+    },
+    "lancehendron": {
+      "source": "southernhillshospitallv",
+      "display": "Lance Hendron",
+      "status": true
+    },
+    "coffee_run_lv": {
+      "source": "southernhillshospitallv",
+      "display": "COFFEE RUN",
+      "status": true
+    },
+    "kanto.lv": {
+      "source": "southernhillshospitallv",
+      "display": "KANTO",
+      "status": true
+    },
+    "ictwildflowerphoto": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Amanda Mauro / Vegas Photographer",
+      "status": true
+    },
+    "executivepropertysolution": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Executive Property Solutions LV",
+      "status": "skipped-competitor"
+    },
+    "swimming_4_kids": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Coach Nas | Swimming Instructor",
+      "status": "skipped-out-of-area"
+    },
+    "vivalittlerenters": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Viva Little Renters",
+      "status": true
+    },
+    "carry_me_luna": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Yoselyn | Babywearing and Doula Support",
+      "status": true
+    },
+    "busybee_eventsllc": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Busybee Events LLC",
+      "status": true
+    },
+    "candeecommunications": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Candee Co. | Public Relations",
+      "status": true
+    },
+    "dr.chanijia": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Dr. Chanijia Rene' | Ancestral Medium",
+      "status": "skipped-no-message"
+    },
+    "pilates.person": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Alecia Mulligan | Pilates Instructor",
+      "status": true
+    },
+    "momsclubsummerlincentral": {
+      "source": "newmomschool_swlasvegas",
+      "display": "MOMS Club of LV | Summerlin Central",
+      "status": true
+    },
+    "pylvfamily": {
+      "source": "newmomschool_swlasvegas",
+      "display": "PY LV Family | Family Yoga",
+      "status": true
+    },
+    "lasvegasparentconnection": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Las Vegas Parent Connection",
+      "status": true
+    },
+    "the_cristinarose": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Cristina Rose | Speaker/Author/Coach",
+      "status": true
+    },
+    "shirt.mommy": {
+      "source": "newmomschool_swlasvegas",
+      "display": "The Merch Mommy",
+      "status": true
+    },
+    "communityambulancelv": {
+      "source": "southernhillshospitallv",
+      "display": "Community Ambulance",
+      "status": true
+    },
+    "project.marilyn.lv": {
+      "source": "southernhillshospitallv",
+      "display": "Project Marilyn",
+      "status": true
+    },
+    "the.mobility.project": {
+      "source": "southernhillshospitallv",
+      "display": "Dr. Kelsey PT | Serving Vegas & Henderson",
+      "status": "skipped-unavailable"
+    },
+    "reelmom.media": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Reel Mom Media - Vegas Content Creator",
+      "status": true
+    },
+    "penandpaper23_": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Pen & Paper Resume Services",
+      "status": true
+    },
+    "thebarlv": {
+      "source": "southernhillshospitallv",
+      "display": "The Bar Drink\u00b7Dine\u00b7Play",
+      "status": true
+    },
+    "drtabassiobgyn": {
+      "source": "southernhillshospitallv",
+      "display": "Dr. Tabassi OB-GYN",
+      "status": true
+    },
+    "consultingwithcecia": {
+      "source": "southernhillshospitallv",
+      "display": "Cecia | Consulting & Coaching",
+      "status": true
+    },
+    "houndstown.centennial.hills": {
+      "source": "southernhillshospitallv",
+      "display": "Hounds Town Centennial Hills",
+      "status": "skipped-unavailable"
+    },
+    "evolvepelvicpt": {
+      "source": "southernhillshospitallv",
+      "display": "Dr. Josephine Razon | Pelvic Floor PT",
+      "status": true
+    },
+    "quantoneural_ai": {
+      "source": "southernhillshospitallv",
+      "display": "Quanto Neural | AI Transformation Partner",
+      "status": true
+    },
+    "lasvegas_mike": {
+      "source": "southernhillshospitallv",
+      "display": "Las Vegas Mike | Realtor",
+      "status": "skipped-realtor"
+    },
+    "beautiful_soul1119": {
+      "source": "southernhillshospitallv",
+      "display": "Beautiful Soul",
+      "status": "skipped-private"
+    },
+    "minutemanpress_silverado_ranch": {
+      "source": "southernhillshospitallv",
+      "display": "Minuteman Press Silverado Ranch",
+      "status": "skipped-no-message"
+    },
+    "lvmpdsac": {
+      "source": "southernhillshospitallv",
+      "display": "LVMPD Summerlin Area Command",
+      "status": true
+    },
+    "nevada_crnas": {
+      "source": "southernhillshospitallv",
+      "display": "Nevada Association of Nurse Anesthetists",
+      "status": "skipped-no-message"
+    },
+    "kinadollxo": {
+      "source": "southernhillshospitallv",
+      "display": "Kina | Influencer/Model/Realtor",
+      "status": "skipped-realtor"
+    },
+    "maintenancematelv": {
+      "source": "southernhillshospitallv",
+      "display": "Maintenance Mate | Carpenter/Handyman",
+      "status": true
+    },
+    "dogtopiasuncitylv": {
+      "source": "southernhillshospitallv",
+      "display": "Dogtopia of Sun City Las Vegas",
+      "status": true
+    },
+    "maeveandrayne": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Maeve & Rayne Play Lounge",
+      "status": true
+    },
+    "storyplayco.lv": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Story & Play Co. | Sensory Experiences",
+      "status": true
+    },
+    "florenavan": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Florena | Flowers+Coffee",
+      "status": true
+    },
+    "clubmomi": {
+      "source": "newmomschool_swlasvegas",
+      "display": "CLUB MOMI",
+      "status": true
+    },
+    "lvmpdfoundation": {
+      "source": "southernhillshospitallv",
+      "display": "LVMPD Foundation",
+      "status": true
+    },
+    "lvmpdoce": {
+      "source": "southernhillshospitallv",
+      "display": "LVMPD Office of Community Engagement",
+      "status": true
+    },
+    "rockyoutwest": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Rocky / Vegas Vibes Lifestyle",
+      "status": true
+    },
+    "doulatiff": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Tiffany / Vegas Family Doulas",
+      "status": true
+    },
+    "houseofvictorialv": {
+      "source": "southernhillshospitallv",
+      "display": "House of Victoria Personal Training",
+      "status": true
+    },
+    "miracleinprogresslv": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Miracle in Progress 3D/4D Ultrasound",
+      "status": true
+    },
+    "fmdmomonamission": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Kacey Chong, mom of 3",
+      "status": true
+    },
+    "thejennydreamy": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Jenny Driebe, Yoga/Aerial/Cirque",
+      "status": true
+    },
+    "mindful_lactation": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Beth Nangano, Lactation Consultant",
+      "status": true
+    },
+    "grazeandsip_": {
+      "source": "southernhillshospitallv",
+      "display": "GRAZE Charcuterie + Snack Cart",
+      "status": true
+    },
+    "lifedentistrylv": {
+      "source": "southernhillshospitallv",
+      "display": "Life Dentistry, Dr. Mason Duff DMD",
+      "status": true
+    },
+    "evidence_cleaning": {
+      "source": "southernhillshospitallv",
+      "display": "Evidence Cleaning, Residential/Office",
+      "status": true
+    },
+    "wildflowerfizz": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Wildflower Fizz Pop-Up Soda Shop",
+      "status": true
+    },
+    "gracerunclub": {
+      "source": "newmomschool_swlasvegas",
+      "display": "GRACE Women's Run Club",
+      "status": true
+    },
+    "lonemountainll": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Lone Mountain Little League",
+      "status": true
+    },
+    "lejazmynphotography": {
+      "source": "southernhillshospitallv",
+      "display": "LEJAZMYN LLC Photography",
+      "status": true
+    },
+    "vegasfamilyevents": {
+      "source": "southernhillshospitallv",
+      "display": "Vegas Family Events Guide",
+      "status": true
+    },
+    "awesomelandscapeservices": {
+      "source": "southernhillshospitallv",
+      "display": "Awesome Landscape Services LLC",
+      "status": true
+    },
+    "abelsbagelslv": {
+      "source": "southernhillshospitallv",
+      "display": "Abel's Bagels, Craft Bagels In Vegas",
+      "status": true
+    },
+    "nicric8": {
+      "source": "newmomschool_swlasvegas",
+      "display": "nicric8",
+      "status": "skipped-private"
+    },
+    "hmetalmaster_ems": {
+      "source": "newmomschool_swlasvegas",
+      "display": "hmetalmaster_ems",
+      "status": "skipped-private"
+    },
+    "justalrakain": {
+      "source": "newmomschool_swlasvegas",
+      "display": "justalrakain",
+      "status": "skipped-private"
+    },
+    "i_amzuri": {
+      "source": "newmomschool_swlasvegas",
+      "display": "i_amzuri",
+      "status": "skipped-private"
+    },
+    "jaayleeeen": {
+      "source": "newmomschool_swlasvegas",
+      "display": "jaayleeeen",
+      "status": "skipped-private"
+    },
+    "natalietrendy": {
+      "source": "newmomschool_swlasvegas",
+      "display": "natalietrendy",
+      "status": "skipped-private"
+    },
+    "kenmanvanderpool": {
+      "source": "southernhillshospitallv",
+      "display": "kenmanvanderpool",
+      "status": "skipped-private"
+    },
+    "nicolejyoung": {
+      "source": "newmomschool_swlasvegas",
+      "display": "nicolejyoung",
+      "status": "skipped-private"
+    },
+    "paradicelv": {
+      "source": "southernhillshospitallv",
+      "display": "paradicelv",
+      "status": "skipped-unavailable"
+    },
+    "redrockrunningcompany": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Red Rock Running Company",
+      "status": "skipped-unavailable"
+    },
+    "relax.renew23": {
+      "source": "newmomschool_swlasvegas",
+      "display": "relax.renew23",
+      "status": "skipped-no-message"
+    },
+    "kellymaxinelong": {
+      "source": "southernhillshospitallv",
+      "display": "kellymaxinelong",
+      "status": "skipped-no-message"
+    },
+    "citizensvegas": {
+      "source": "southernhillshospitallv",
+      "display": "Citizens Kitchen Strip Restaurant",
+      "status": "skipped"
+    },
+    "straightflushcrossfit": {
+      "source": "southernhillshospitallv",
+      "display": "Straight Flush CrossFit",
+      "status": "skipped"
+    },
+    "nestinginvegas": {
+      "source": "southernhillshospitallv",
+      "display": "Nesting in Vegas",
+      "status": "skipped-realtor"
+    },
+    "vegas_communiity": {
+      "source": "southernhillshospitallv",
+      "display": "vegas_communiity",
+      "status": "skipped"
+    },
+    "lasvegas_vibeess": {
+      "source": "southernhillshospitallv",
+      "display": "lasvegas_vibeess",
+      "status": "skipped"
+    },
+    "kellynkindred": {
+      "source": "newmomschool_swlasvegas",
+      "display": "Kelly Nicole",
+      "status": "skipped-no-message"
+    }
+  }
+}

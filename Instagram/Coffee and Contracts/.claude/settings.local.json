@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp /Users/ryanrose/.claude/skills/ig-carousel/SKILL.md \"/Users/ryanrose/Downloads/Claude/Instagram/ig-carousel-plugin/skills/ig-carousel/SKILL.md\")",
+      "Read(//Users/ryanrose/.claude/skills/ig-carousel/**)"
+    ]
+  }
+}

@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delamar by Pulte Homes - Complete Buyer Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ============================
+           PAGE & PRINT
+           ============================ */
+        @page {
+            size: letter;
+            margin: 0.6in 0.75in 0.75in 0.75in;
+        }
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .card, .plan-card, .cost-card, .cost-total, .step-card, .faq-item, table, .incentive-bar { break-inside: avoid; }
+            .section { break-inside: auto; }
+            .page-break { break-after: page; }
+        }
+        .page-break { break-after: page; }
+
+        /* ============================
+           TOKENS
+           ============================ */
+        :root {
+            --white: #ffffff;
+            --light: #f7f8fa;
+            --light-card: #f0f2f5;
+            --border: #e2e5ea;
+            --border-light: #eef0f3;
+            --text-primary: #1a1a1a;
+            --text-body: #3d3d3d;
+            --text-secondary: #6b6b6b;
+            --text-tertiary: #999999;
+            --accent: #1b75a1;
+            --accent-light: rgba(27,117,161,0.08);
+            --accent-muted: rgba(27,117,161,0.12);
+            --radius: 8px;
+            --radius-sm: 5px;
+        }
+
+        /* ============================
+           RESET & BASE
+           ============================ */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 15px; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-body);
+            line-height: 1.7;
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ============================
+           LAYOUT
+           ============================ */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* ============================
+           SECTIONS
+           ============================ */
+        .section {
+            padding: 36px 0;
+        }
+        .section--white {
+            background: var(--white);
+        }
+        .section--alt {
+            background: var(--light);
+        }
+
+        /* ============================
+           SECTION LABEL
+           ============================ */
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .section-label::after {
+            content: '';
+            flex: 0 0 50px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        /* ============================
+           TYPOGRAPHY
+           ============================ */
+        .headline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            line-height: 1.15;
+            margin-bottom: 14px;
+        }
+        .headline--sm {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        p + p {
+            margin-top: 10px;
+        }
+        .text-accent {
+            color: var(--accent);
+        }
+
+        /* ============================
+           HERO
+           ============================ */
+        .hero {
+            background: var(--light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 0 0;
+        }
+        .hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero-bottom {
+            background: var(--accent);
+            color: #ffffff;
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-top: auto;
+        }
+        .hero-kicker {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 64px;
+            letter-spacing: 6px;
+            color: var(--text-primary);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .hero-subtitle {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 4px;
+            color: var(--text-tertiary);
+            margin-bottom: 20px;
+        }
+        .hero-tagline {
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 520px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+        .facts-bar {
+            border-top: 1px solid var(--border);
+            padding-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .fact-item {
+            text-align: center;
+        }
+        .fact-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+        }
+        .fact-label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+        }
+
+        /* ============================
+           INCENTIVE BAR
+           ============================ */
+        .incentive-bar {
+            background: var(--accent);
+            color: var(--white);
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+        }
+
+        /* ============================
+           TABLES
+           ============================ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        table th {
+            text-align: left;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            padding: 12px 14px;
+            border-bottom: 2px solid var(--accent);
+        }
+        table td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-body);
+        }
+        table tr:last-child td {
+            border-bottom: none;
+        }
+        table td:first-child {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           BUILDER CARD
+           ============================ */
+        .builder-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-top: 3px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+        .builder-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .builder-card p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .builder-feature {
+            margin-top: 6px;
+        }
+        .builder-feature strong {
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           PLAN TABLE
+           ============================ */
+        .plan-table {
+            margin-top: 20px;
+        }
+
+        /* ============================
+           PLAN CARDS (Floor Plan Images)
+           ============================ */
+        .plan-card {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 2px solid var(--accent);
+        }
+        .plan-card-label {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 36px;
+            letter-spacing: 3px;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .plan-card-images {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .plan-card-image-wrap {
+            flex: 1;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+        .plan-card-image-level {
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            padding: 6px 10px;
+            background: var(--light);
+            border-bottom: 1px solid var(--border);
+        }
+        .plan-card-img {
+            width: 100%;
+            display: block;
+            max-height: 280px;
+            object-fit: contain;
+            background: #f5f2ed;
+        }
+        .plan-card-desc {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 1.6;
+            text-align: center;
+            margin-top: 12px;
+        }
+        .plan-card-source {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            text-align: center;
+            margin-top: 6px;
+        }
+        .plan-card-source a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .plan-card-source a:hover {
+            text-decoration: underline;
+        }
+
+        /* ============================
+           COST GRID
+           ============================ */
+        .cost-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin: 24px 0;
+        }
+        .cost-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 18px 16px;
+            text-align: center;
+        }
+        .cost-card-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 26px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+        }
+        .cost-card-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .cost-total {
+            background: var(--accent-light);
+            border: 1px solid var(--accent-muted);
+            border-radius: var(--radius-sm);
+            padding: 20px 16px;
+            text-align: center;
+            grid-column: 1 / -1;
+        }
+        .cost-total-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 34px;
+            letter-spacing: 1px;
+            color: var(--accent);
+        }
+        .cost-total-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .cost-note {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+        .calc-link {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 12px 28px;
+            background: var(--accent);
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+        /* ============================
+           COMPARE TABLE
+           ============================ */
+        .compare-table {
+            margin-top: 20px;
+        }
+        .compare-table tr.highlight td {
+            background: var(--accent-light);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           STEP GRID
+           ============================ */
+        /* Vertical timeline roadmap */
+        .roadmap {
+            position: relative;
+            margin-top: 24px;
+            padding-left: 48px;
+        }
+        .roadmap::before {
+            content: '';
+            position: absolute;
+            left: 18px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent), var(--border) 95%);
+        }
+        .roadmap-step {
+            position: relative;
+            padding-bottom: 16px;
+            break-inside: avoid;
+        }
+        .roadmap-step:last-child {
+            padding-bottom: 0;
+        }
+        .roadmap-node {
+            position: absolute;
+            left: -48px;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 15px;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+        }
+        .roadmap-step:last-child .roadmap-node {
+            background: var(--accent);
+            color: var(--white);
+        }
+        .roadmap-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+        .roadmap-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ============================
+           FAQ
+           ============================ */
+        .faq-item {
+            border-bottom: 1px solid var(--border-light);
+            padding: 20px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .faq-a {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 1.7;
+        }
+
+        /* ============================
+           INCENTIVE LIST
+           ============================ */
+        .incentive-list {
+            list-style: none;
+            margin: 16px 0;
+        }
+        .incentive-list li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .incentive-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 17px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        /* ============================
+           AMENITY LIST
+           ============================ */
+        .amenity-group {
+            margin-top: 20px;
+        }
+        .amenity-group h4 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .amenity-list {
+            list-style: none;
+            columns: 2;
+            column-gap: 24px;
+        }
+        .amenity-list li {
+            padding: 5px 0 5px 18px;
+            position: relative;
+            font-size: 14px;
+            color: var(--text-body);
+        }
+        .amenity-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        /* ============================
+           CTA SECTION
+           ============================ */
+        .cta-section {
+            text-align: center;
+            padding: 56px 0;
+            background: var(--light);
+        }
+        .cta-headline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            letter-spacing: 2px;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .cta-sub {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        .cta-contact {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 2;
+        }
+        .cta-contact strong {
+            color: var(--text-primary);
+        }
+        .cta-contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* ============================
+           CTA LAST PAGE (FULL PAGE CENTERED)
+           ============================ */
+        .cta-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--light);
+        }
+        .cta-disclaimer {
+            font-size: 11px;
+            color: var(--text-tertiary);
+            margin-top: 32px;
+            line-height: 1.6;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================
+           PRO TIP
+           ============================ */
+        .pro-tip {
+            background: var(--accent-light);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin-top: 16px;
+            font-size: 14px;
+            color: var(--text-body);
+        }
+        .pro-tip strong {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================
+         HERO
+         ======================== -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-kicker">A Pulte Homes Community</div>
+                <h1>DELAMAR</h1>
+                <div class="hero-subtitle">COMPLETE BUYER GUIDE</div>
+                <p class="hero-tagline">New construction homes in SW Las Vegas, inside Southern Highlands. Starting from $574,990.</p>
+                <div class="facts-bar">
+                    <div class="fact-item">
+                        <div class="fact-value">$574K+</div>
+                        <div class="fact-label">Starting</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">4,220</div>
+                        <div class="fact-label">Max Sq Ft</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">4-5</div>
+                        <div class="fact-label">Beds</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">4</div>
+                        <div class="fact-label">Plans</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bottom">
+            Current Incentive: Up to $20,000 in closing cost credits + 4.99% fixed rate for 30 years through Pulte Mortgage
+        </div>
+    </header>
+    <div class="page-break"></div>
+
+    <!-- ========================
+         QUICK FACTS
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Quick Facts</div>
+            <div class="headline headline--sm">AT A GLANCE</div>
+            <table>
+                <tbody>
+                    <tr><td>Builder</td><td>Pulte Homes</td></tr>
+                    <tr><td>Location</td><td>SW Las Vegas, 89141 (Enterprise / Southern Highlands)</td></tr>
+                    <tr><td>Floor Plans</td><td>4 plans, 2,990 to 4,220 sqft</td></tr>
+                    <tr><td>Bedrooms</td><td>4 to 5</td></tr>
+                    <tr><td>Base Pricing</td><td>$574,990 to $775,990</td></tr>
+                    <tr><td>QMI Range</td><td>$640K to $876K</td></tr>
+                    <tr><td>HOA</td><td>~$150/month (possible secondary master HOA)</td></tr>
+                    <tr><td>Schools</td><td>Ries Elementary, Tarkanian Middle, Desert Oasis High (CCSD)</td></tr>
+                    <tr><td>Distance to Strip</td><td>~6 miles / 20 minutes</td></tr>
+                    <tr><td>Model Home</td><td>10123 Goswell Park Street, Las Vegas, NV 89141</td></tr>
+                    <tr><td>Model Hours</td><td>Mon-Sat 10am-6pm (Wed 12pm-6pm), Sun 10am-6pm</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+<!-- ========================
+         ABOUT
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white" style="padding-bottom: 16px;">
+        <div class="container">
+            <div class="section-label">About</div>
+            <div class="headline">A NEW STANDARD IN SOUTHERN HIGHLANDS</div>
+            <p>Delamar is one of the most exciting new-construction communities in southwest Las Vegas right now. Built by Pulte Homes, it sits inside the Highlands Ranch area of Southern Highlands. That means you get access to some of the best amenities in the entire valley.</p>
+            <p>If you want a brand-new home with serious square footage, resort-style living, and a short drive to the Strip, Delamar deserves a close look. This guide will walk you through everything you need to know before you visit the model home or sign a contract.</p>
+            <p>Whether you are a first-time buyer, moving up, or relocating to Vegas, this guide is designed to help you make a confident and informed decision.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         BUILDER
+         ======================== -->
+    <section class="section section--alt" style="padding-top: 20px;">
+        <div class="container">
+            <div class="section-label">Builder</div>
+            <div class="headline">ABOUT PULTE HOMES</div>
+            <div class="builder-card">
+                <h3>PULTE HOMES</h3>
+                <p>Pulte Homes is the sole builder at Delamar. One of the largest homebuilders in the country with over 70 years of experience. Known for their "Life Tested" design approach, they build floor plans around how families actually live. At Delamar, they are delivering some of the largest plans in Las Vegas new construction.</p>
+
+                <p class="builder-feature"><strong>Built-in organization.</strong> Pulte includes planning centers, drop zones, and flexible living spaces in most plans.</p>
+                <p class="builder-feature"><strong>Energy efficiency.</strong> Their homes come standard with energy-saving features that can lower your monthly utility bills.</p>
+                <p class="builder-feature"><strong>Pulte Mortgage.</strong> They have their own lending arm, which often means smoother closings and exclusive rate incentives.</p>
+                <p class="builder-feature"><strong>Design center experience.</strong> You get to personalize your home at a dedicated design studio with guidance from a professional designer.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- ========================
+         FLOOR PLANS
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Floor Plans</div>
+            <div class="headline">PLANS AND PRICING</div>
+
+            <table class="plan-table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Sq Ft</th>
+                        <th>Beds</th>
+                        <th>Baths</th>
+                        <th>Stories</th>
+                        <th>Base Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Calico</td>
+                        <td>2,990-3,097</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>From $574,990</td>
+                    </tr>
+                    <tr>
+                        <td>Egan</td>
+                        <td>3,097</td>
+                        <td>4</td>
+                        <td>3-4</td>
+                        <td>2</td>
+                        <td>From $578,990</td>
+                    </tr>
+                    <tr>
+                        <td>Delano</td>
+                        <td>2,990-3,158</td>
+                        <td>4-5</td>
+                        <td>3-4</td>
+                        <td>2</td>
+                        <td>From $586,990</td>
+                    </tr>
+                    <tr>
+                        <td>White Pine</td>
+                        <td>4,220</td>
+                        <td>5</td>
+                        <td>4.5</td>
+                        <td>3</td>
+                        <td>From $775,990</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- CALICO -->
+            <div class="plan-card">
+                <div class="plan-card-label">CALICO</div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">First Floor</div>
+                        <img class="plan-card-img" src="https://www.dropbox.com/scl/fi/m9ugg4pn68hemjs4npmd4/calico-1st.jpg?rlkey=rp4uwt7m0m8s15m7n8e1wxzuq&raw=1" alt="Calico First Floor Plan">
+                    </div>
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">Second Floor</div>
+                        <img class="plan-card-img" src="https://prodlisting.livabl.com/imageFloorPlans/Large/2024_04_21_06_07_03_521_13" alt="Calico Second Floor Plan">
+                    </div>
+                </div>
+                <p class="plan-card-desc">Entry point at nearly 3,000 sqft with four bedrooms. Great for families who want space without going over budget.</p>
+                <p class="plan-card-source">Source: <a href="https://www.pulte.com" target="_blank" rel="noopener">pulte.com</a></p>
+            </div>
+
+<!-- EGAN + DELANO on same page -->
+            <div style="break-before: page;">
+            <div class="plan-card" style="margin-top: 0; padding-top: 0; margin-bottom: 0;">
+                <div class="plan-card-label">EGAN</div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">First Floor</div>
+                        <img class="plan-card-img" style="max-height: 200px;" src="https://www.dropbox.com/scl/fi/521fwx94koh8piv1uie2h/egan-1st.jpg?rlkey=utkxcwthdv6zh82ivu3xy4myn&raw=1" alt="Egan First Floor Plan">
+                    </div>
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">Second Floor</div>
+                        <img class="plan-card-img" style="max-height: 200px;" src="https://prodlisting.livabl.com/imageFloorPlans/Large/2024_06_09_09_23_53_337_13" alt="Egan Second Floor Plan">
+                    </div>
+                </div>
+                <p class="plan-card-desc" style="margin: 4px 0 2px;">Similar footprint, adds option for fourth bathroom. Good for frequent guests.</p>
+                <p class="plan-card-source" style="margin: 0;">Source: <a href="https://www.pulte.com" target="_blank" rel="noopener">pulte.com</a></p>
+            </div>
+
+            <div class="plan-card" style="margin-top: 40px; padding-top: 0;">
+                <div class="plan-card-label">DELANO</div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">First Floor</div>
+                        <img class="plan-card-img" style="max-height: 200px;" src="https://www.dropbox.com/scl/fi/bmt4zqdzgp43k1d9xqssz/delano-1st.jpg?rlkey=7lctm43h29d9zgr22xcklqxyk&raw=1" alt="Delano First Floor Plan">
+                    </div>
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">Second Floor</div>
+                        <img class="plan-card-img" style="max-height: 200px;" src="https://prodlisting.livabl.com/imageFloorPlans/Large/2024_07_20_08_12_35_2024_07_20_04_12_33_052_13.webp" alt="Delano Second Floor Plan">
+                    </div>
+                </div>
+                <p class="plan-card-desc" style="margin: 4px 0 2px;">Configure up to five beds and four baths. Extra bedroom works as office, playroom, or guest suite.</p>
+                <p class="plan-card-source" style="margin: 0;">Source: <a href="https://www.pulte.com" target="_blank" rel="noopener">pulte.com</a></p>
+            </div>
+            </div>
+
+            <!-- WHITE PINE (3-story: first floor full-width, 2nd + 3rd side by side) -->
+            <div class="plan-card">
+                <div class="plan-card-label">WHITE PINE</div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">First Floor</div>
+                        <img class="plan-card-img" src="https://www.dropbox.com/scl/fi/m7nt1jb2qy2r68z1d4mkp/whitepine-1st.jpg?rlkey=84xh5xsuyf0h7b0hr9lcx2yk9&raw=1" alt="White Pine First Floor Plan">
+                    </div>
+                </div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">Second Floor</div>
+                        <img class="plan-card-img" src="https://prodlisting.livabl.com/imageFloorPlans/Large/2024_04_21_06_07_01_365_13" alt="White Pine Second Floor Plan">
+                    </div>
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">Third Floor</div>
+                        <img class="plan-card-img" src="https://prodlisting.livabl.com/imageFloorPlans/Large/2024_04_21_06_06_57_583_13" alt="White Pine Third Floor Plan">
+                    </div>
+                </div>
+                <p class="plan-card-desc">Over 4,200 sqft across three stories with rooftop deck. Mountain and city views. One of the largest plans in the valley.</p>
+                <p class="plan-card-source">Source: <a href="https://www.pulte.com" target="_blank" rel="noopener">pulte.com</a></p>
+            </div>
+
+            <p style="margin-top: 24px; font-size: 14px; color: var(--text-secondary);"><strong>Quick-move-in homes</strong> are priced between $640K and $876K and often include upgraded features. If you need to move in quickly, a QMI home can save you months of build time.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         TRUE MONTHLY COST
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Monthly Cost</div>
+            <div class="headline">TRUE MONTHLY COST ESTIMATE</div>
+            <p style="margin-bottom: 8px;">Based on a $640,000 home with 5% down at 4.99% for 30 years.</p>
+
+            <div class="cost-grid">
+                <div class="cost-card">
+                    <div class="cost-card-value">$3,250</div>
+                    <div class="cost-card-label">Mortgage (P&amp;I)</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$453</div>
+                    <div class="cost-card-label">Property Tax</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$150</div>
+                    <div class="cost-card-label">Insurance</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$150</div>
+                    <div class="cost-card-label">HOA</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$75</div>
+                    <div class="cost-card-label">Master HOA (est.)</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$150</div>
+                    <div class="cost-card-label">SID/LID (est.)</div>
+                </div>
+                <div class="cost-total">
+                    <div class="cost-total-value">$4,228</div>
+                    <div class="cost-total-label">Estimated Total Monthly Payment</div>
+                </div>
+            </div>
+
+            <p class="cost-note">These are estimates only. Your actual costs will depend on your loan terms, credit score, down payment, and tax assessment. Always get a full quote from your lender.</p>
+            <a href="https://www.rosehomeslv.com/mortgage-calculator" target="_blank" class="calc-link">Run Your Own Numbers With Our Mortgage Calculator &#8599;</a>
+        </div>
+    </section>
+
+    <!-- ========================
+         HOA / SID / LID
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Fees</div>
+            <div class="headline">HOA, SID, AND LID EXPLAINED</div>
+            <p><strong>HOA (Homeowners Association):</strong> Delamar has an HOA of approximately $150 per month. This covers common area maintenance, landscaping, and community upkeep. There may also be a secondary master HOA through Southern Highlands, which could add $50 to $100 per month. Ask the sales team for the exact amounts.</p>
+            <p><strong>SID (Special Improvement District):</strong> A SID is a tax assessment that pays for public infrastructure like roads, sewers, and parks. SID charges are not confirmed at Delamar, but they are common in newer Las Vegas communities. If one exists, it will appear on your property tax bill as a separate line item.</p>
+            <p><strong>LID (Local Improvement District):</strong> A LID works similarly to a SID but covers a smaller geographic area. This has not been confirmed at Delamar but is plausible. Ask Pulte directly about any SID or LID assessments before you write an offer. Your real estate agent can also pull this information during the due diligence period. These charges can add $100 to $200+ per month, so it is important to know upfront.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         SCHOOLS
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Schools</div>
+            <div class="headline">SCHOOLS AND FAMILY LIFE</div>
+            <p style="margin-bottom: 8px;">Delamar is zoned for the Clark County School District (CCSD). Here are the assigned schools:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th>Type</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ries Elementary</td>
+                        <td>K-5</td>
+                        <td>5/10</td>
+                    </tr>
+                    <tr>
+                        <td>Tarkanian Middle</td>
+                        <td>6-8</td>
+                        <td>7/10</td>
+                    </tr>
+                    <tr>
+                        <td>Desert Oasis High</td>
+                        <td>9-12</td>
+                        <td>5/10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 16px;">Tarkanian Middle School is the standout with a 7 out of 10 rating. The elementary and high school ratings are average for the area. Many families in Southern Highlands also explore charter and private school options nearby. The Southern Highlands area is very family-friendly. The streets are well-maintained, parks are plentiful, and the community has a suburban feel while still being close to everything Las Vegas has to offer.</p>
+        </div>
+    </section>
+
+<div class="page-break"></div>
+    <!-- ========================
+         AMENITIES
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Amenities</div>
+            <div class="headline">AMENITIES AND LIFESTYLE</div>
+            <p>Living at Delamar means you are part of the broader Southern Highlands community. The amenities here are some of the best in the valley.</p>
+
+            <div class="amenity-group">
+                <h4>SOUTHERN HIGHLANDS AMENITIES</h4>
+                <ul class="amenity-list">
+                    <li>13,000 sqft clubhouse</li>
+                    <li>Resort-style swimming pools and spa</li>
+                    <li>Full fitness center</li>
+                    <li>Tennis and basketball courts</li>
+                    <li>7 community parks</li>
+                    <li>Walking and biking trails</li>
+                    <li>Southern Highlands Golf Club</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>OLYMPIA SPORTS PARK</h4>
+                <ul class="amenity-list">
+                    <li>Youth and adult sports leagues</li>
+                    <li>Open fields and play areas</li>
+                    <li>Community events throughout the year</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>EVERYDAY ESSENTIALS NEARBY</h4>
+                <ul class="amenity-list">
+                    <li>Smith's and Albertsons grocery stores</li>
+                    <li>Target</li>
+                    <li>Urgent care on Southern Highlands Pkwy</li>
+                    <li>Restaurants and retail along Southern Highlands Pkwy and St. Rose Pkwy</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>GETTING AROUND</h4>
+                <ul class="amenity-list">
+                    <li>I-15 is just 1 to 2 miles away</li>
+                    <li>The Las Vegas Strip is roughly 6 miles / 20 minutes</li>
+                    <li>Harry Reid International Airport is about 15 to 20 minutes</li>
+                </ul>
+            </div>
+
+            <p style="margin-top: 16px;">You truly get the best of both worlds here. Quiet suburban living with easy access to world-class entertainment, dining, and travel.</p>
+        </div>
+    </section>
+
+<div class="page-break"></div>
+    <!-- ========================
+         INCENTIVES
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Incentives</div>
+            <div class="headline">CURRENT BUYER INCENTIVES</div>
+            <p>Pulte is currently offering strong buyer incentives at Delamar. These can change at any time, so always verify with the sales team.</p>
+
+            <ul class="incentive-list">
+                <li><strong>$20,000 in closing cost credits</strong> when you use Pulte Mortgage</li>
+                <li><strong>4.99% interest rate</strong> available through Pulte Mortgage (subject to qualification)</li>
+                <li><strong>Design center credits</strong> to help you personalize your home with upgraded finishes</li>
+            </ul>
+
+            <p>These incentives can save you tens of thousands of dollars over the life of your loan. The 4.99% rate alone is well below the current market average and can make a major difference in your monthly payment.</p>
+
+            <div class="pro-tip">
+                <strong>Pro tip:</strong> Even if you plan to shop other lenders, get a quote from Pulte Mortgage first. You can use their offer as leverage, and in many cases their package will be hard to beat because of the bundled credits.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         COMPARISON
+         ======================== -->
+    <section class="section section--white" style="padding-top: 24px; padding-bottom: 16px;">
+        <div class="container">
+            <div class="section-label">Comparison</div>
+            <div class="headline" style="font-size: 28px; margin-bottom: 12px;">HOW DELAMAR COMPARES</div>
+
+            <table class="compare-table" style="font-size: 13px;">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Delamar</th>
+                        <th>Inspirada</th>
+                        <th>Aven</th>
+                        <th>Cadence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <td>Builder</td>
+                        <td>Pulte Homes</td>
+                        <td>Toll Brothers</td>
+                        <td>KB Home</td>
+                        <td>Woodside Homes</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Starting Price</td>
+                        <td>$574,990</td>
+                        <td>~$470,000</td>
+                        <td>~$533,000</td>
+                        <td>High $400Ks</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Sq Ft Range</td>
+                        <td>2,990-4,220</td>
+                        <td>Varies</td>
+                        <td>Varies</td>
+                        <td>Varies</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>To Strip</td>
+                        <td>~6 miles</td>
+                        <td>~15 miles</td>
+                        <td>~10 miles</td>
+                        <td>~15 miles</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+<!-- ========================
+         BUYING PROCESS
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Process</div>
+            <div class="headline">THE BUYING PROCESS: 9 STEPS</div>
+
+            <div class="roadmap">
+                <div class="roadmap-step">
+                    <div class="roadmap-node">01</div>
+                    <div class="roadmap-title">CONNECT WITH AN AGENT</div>
+                    <div class="roadmap-desc">Partner with an agent who knows new construction before visiting the model home. The builder pays the agent's commission.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">02</div>
+                    <div class="roadmap-title">GET PRE-APPROVED</div>
+                    <div class="roadmap-desc">Get a mortgage pre-approval so you know your budget. Pulte Mortgage can handle this step quickly if you choose them.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">03</div>
+                    <div class="roadmap-title">VISIT THE MODEL HOME</div>
+                    <div class="roadmap-desc">Tour the models at 10123 Goswell Park Street. Walk through each floor plan and ask about lot availability and timelines.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">04</div>
+                    <div class="roadmap-title">CHOOSE PLAN AND LOT</div>
+                    <div class="roadmap-desc">Pick the plan that fits your family and select an available homesite. Corner lots and premium views may come with a lot premium.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">05</div>
+                    <div class="roadmap-title">SIGN THE AGREEMENT</div>
+                    <div class="roadmap-desc">Sign the purchase agreement and put down an earnest money deposit. Have your agent review every page before you sign.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">06</div>
+                    <div class="roadmap-title">DESIGN CENTER</div>
+                    <div class="roadmap-desc">Visit the Pulte Design Center to choose countertops, cabinets, flooring, fixtures, and more. Bring your budget and wish list.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">07</div>
+                    <div class="roadmap-title">CONSTRUCTION PHASE</div>
+                    <div class="roadmap-desc">Your home will be built over several months. Pulte provides updates and walkthroughs at key milestones like framing and drywall.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">08</div>
+                    <div class="roadmap-title">FINAL WALKTHROUGH</div>
+                    <div class="roadmap-desc">Do a detailed walkthrough of your finished home. Bring your agent. Note any items that need attention before closing.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">09</div>
+                    <div class="roadmap-title">CLOSE AND MOVE IN</div>
+                    <div class="roadmap-desc">Sign your final paperwork, get your keys, and move into your brand-new home. Welcome to Delamar!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FAQ
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">FAQ</div>
+            <div class="headline">FREQUENTLY ASKED QUESTIONS</div>
+
+            <div class="faq-item">
+                <div class="faq-q">Can I use my own real estate agent at Delamar?</div>
+                <div class="faq-a">Yes, absolutely. In fact, it is highly recommended. Your agent must register with you on your first visit to the model home. The builder pays the agent's commission, so it costs you nothing.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">How long does it take to build a new home here?</div>
+                <div class="faq-a">Build times vary, but most new-construction homes in Las Vegas take 6 to 10 months from contract to close. QMI homes that are already under construction can be ready much sooner.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Are the base prices all-inclusive?</div>
+                <div class="faq-a">No. Base prices reflect the starting cost before lot premiums, structural options, and design upgrades. Your final price will depend on the options you choose. QMI homes are typically priced with upgrades already included.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Is there a SID or LID at Delamar?</div>
+                <div class="faq-a">This has not been officially confirmed. SIDs and LIDs are common in newer Las Vegas communities. Ask the Pulte sales team directly and request a copy of any SID/LID disclosure before signing.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What is the HOA, and is there more than one?</div>
+                <div class="faq-a">The sub-association HOA is approximately $150/month. There may be a secondary master HOA through Southern Highlands. Confirm both amounts with the sales office.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Can I negotiate the price on a new-construction home?</div>
+                <div class="faq-a">Builders rarely lower the base price because it affects comps for the entire community. However, you can often negotiate for additional upgrades, design credits, or closing cost assistance. Current incentives at Delamar are already quite strong.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What are the resale values like in this area?</div>
+                <div class="faq-a">Resale comps in the 89141 zip code currently range from $199 to $210 per sqft. New construction at Delamar falls in the $192 to $208 per sqft range. Southern Highlands has historically held its value well due to the desirable location and amenities.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Do I have to use Pulte Mortgage?</div>
+                <div class="faq-a">No, you are free to use any lender. However, Pulte's current incentives (including the $20K closing cost credit and 4.99% rate) are tied to using Pulte Mortgage. Compare offers before deciding.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What warranty comes with a Pulte home?</div>
+                <div class="faq-a">Pulte typically offers a limited warranty that covers workmanship and materials for 1 to 2 years and structural components for up to 10 years. Ask for the full warranty details in writing.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Is Delamar a gated community?</div>
+                <div class="faq-a">Confirm gating and access details directly with the Pulte sales team during your visit. Community access features can vary by section.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         CTA (LAST PAGE - CENTERED)
+         ======================== -->
+<div class="page-break"></div>
+    <section class="cta-page">
+        <div class="container">
+            <div class="cta-headline">READY TO <span class="text-accent">EXPLORE DELAMAR</span>?</div>
+            <p class="cta-sub">Buying new construction is one of the biggest financial decisions you will make. Having the right agent on your side makes all the difference. I can help you navigate the builder's contract, negotiate for extras, and make sure nothing falls through the cracks.</p>
+            <div class="cta-contact">
+                <strong>Ryan Rose</strong><br>
+                Real Estate Agent | New Construction Specialist<br>
+                702-747-5921 | ryan@rosehomeslv.com<br>
+                rosehomeslv.com
+            </div>
+            <p class="cta-disclaimer">This guide is for informational purposes only. Pricing, incentives, availability, and community details are subject to change without notice. Always verify all information directly with the builder and your real estate professional.</p>
+        </div>
+    </section>
+
+
+</body>
+</html>

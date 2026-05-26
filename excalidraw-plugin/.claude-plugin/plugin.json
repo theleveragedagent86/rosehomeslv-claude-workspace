@@ -1,0 +1,11 @@
+{
+  "name": "excalidraw",
+  "version": "1.0.0",
+  "description": "Generates hand-drawn whiteboard-style infographics as native Excalidraw JSON files. Takes a transcript or content brief, picks the right diagram type (comparison, weekly grid, pillars, layered stack, flowchart), and produces a .excalidraw file that drops into excalidraw.com with the Virgil font, hachure fills, and pastel palette already applied.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": ["excalidraw", "graphics", "infographic", "content", "diagram", "visual"],
+  "skills": "./skills/"
+}

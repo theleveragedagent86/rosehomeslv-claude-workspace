@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- COMMUNITY NAME -->
+    <title>Delamar by Pulte Homes | New Construction in SW Las Vegas</title>
+    <meta name="description" content="New construction homes at Delamar by Pulte Homes in SW Las Vegas. 4-6 bedrooms, 2,990-4,220 sq ft. Starting from $640,990. Southern Highlands amenities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            line-height: 1.6;
+            background: #0a0a0a;
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; display: block; }
+        a { color: inherit; text-decoration: none; }
+
+        :root {
+            --bg: #0a0a0a;
+            --surface: #111;
+            --card: #161616;
+            --card-hover: #1c1c1c;
+            --copper: #c4956a;
+            --copper-hover: #d4a57a;
+            --copper-muted: rgba(196,149,106,0.12);
+            --green: #7ab8a0;
+            --white: #ffffff;
+            --white-60: rgba(255,255,255,0.6);
+            --white-40: rgba(255,255,255,0.4);
+            --white-20: rgba(255,255,255,0.2);
+            --white-08: rgba(255,255,255,0.08);
+            --white-04: rgba(255,255,255,0.04);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --t: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 32px; }
+
+        /* Reveal */
+        .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ============================
+           STICKY NAV
+           ============================ */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            padding: 0;
+            transition: background 0.4s ease;
+        }
+        .nav.scrolled {
+            background: rgba(10,10,10,0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--white-08);
+        }
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 68px;
+        }
+        .nav-brand {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 24px;
+            letter-spacing: 3px;
+            color: var(--white);
+        }
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+        .nav-link {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--white-40);
+            transition: color var(--t);
+        }
+        .nav-link:hover { color: var(--white); }
+        .nav-btn {
+            background: var(--copper);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background var(--t);
+        }
+        .nav-btn:hover { background: var(--copper-hover); }
+
+        /* ============================
+           HERO — Full screen split
+           ============================ */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .hero-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 60px 80px 60px;
+            padding-top: 100px;
+            position: relative;
+        }
+        .hero-left::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                radial-gradient(ellipse 60% 40% at 30% 70%, rgba(196,149,106,0.06) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero-kicker {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(64px, 8vw, 120px);
+            line-height: 0.92;
+            color: var(--white);
+            letter-spacing: 3px;
+            margin-bottom: 24px;
+            position: relative;
+        }
+        .hero-sub {
+            font-size: 17px;
+            font-weight: 300;
+            color: var(--white-40);
+            max-width: 380px;
+            line-height: 1.75;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            position: relative;
+        }
+        .hero-primary-btn {
+            background: var(--copper);
+            color: var(--white);
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background var(--t), transform var(--t);
+        }
+        .hero-primary-btn:hover { background: var(--copper-hover); transform: translateY(-2px); }
+        .hero-ghost-btn {
+            color: var(--white-60);
+            padding: 16px 24px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--white-20);
+            transition: color var(--t), border-color var(--t);
+        }
+        .hero-ghost-btn:hover { color: var(--white); border-color: var(--white-40); }
+
+        /* Hero right — stats grid on dark surface */
+        .hero-right {
+            background: var(--surface);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            border-left: 1px solid var(--white-08);
+        }
+        .hero-stat-cell {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 24px;
+            border-bottom: 1px solid var(--white-08);
+            border-right: 1px solid var(--white-08);
+            transition: background var(--t);
+        }
+        .hero-stat-cell:nth-child(even) { border-right: none; }
+        .hero-stat-cell:nth-child(n+3) { border-bottom: none; }
+        .hero-stat-cell:hover { background: var(--card); }
+        .hero-stat-val {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 48px;
+            letter-spacing: 2px;
+            color: var(--white);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .hero-stat-lbl {
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white-40);
+        }
+
+        /* ============================
+           INCENTIVE
+           ============================ */
+        .incentive {
+            background: var(--copper);
+            padding: 16px 28px;
+            text-align: center;
+        }
+        .incentive p { font-size: 14px; font-weight: 500; color: var(--white); }
+        .incentive strong { font-weight: 700; }
+
+        /* ============================
+           ABOUT — offset cards
+           ============================ */
+        .about-section {
+            padding: 120px 0;
+            background: var(--bg);
+        }
+        .about-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 60px;
+            gap: 40px;
+        }
+        .about-tag {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 16px;
+        }
+        .about-headline {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 52px;
+            letter-spacing: 2px;
+            line-height: 1.05;
+        }
+        .about-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .about-card {
+            background: var(--card);
+            border: 1px solid var(--white-08);
+            border-radius: var(--radius);
+            padding: 36px 28px;
+            transition: transform var(--t), border-color var(--t);
+        }
+        .about-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--white-20);
+        }
+        .about-card-num {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px;
+            color: var(--copper);
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+        .about-card p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--white-40);
+        }
+
+        /* ============================
+           FLOOR PLANS — horizontal card scroll
+           ============================ */
+        .plans-section {
+            padding: 100px 0;
+            background: var(--surface);
+            overflow: hidden;
+        }
+        .plans-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 48px;
+            gap: 40px;
+        }
+        .plans-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 48px;
+            letter-spacing: 2px;
+            line-height: 1.05;
+        }
+        .plans-sub {
+            font-size: 14px;
+            color: var(--white-40);
+            max-width: 320px;
+            text-align: right;
+        }
+
+        /* Horizontal scroll cards */
+        .plan-scroll {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .plan-scroll::-webkit-scrollbar { height: 3px; }
+        .plan-scroll::-webkit-scrollbar-track { background: var(--white-04); border-radius: 2px; }
+        .plan-scroll::-webkit-scrollbar-thumb { background: var(--copper); border-radius: 2px; }
+
+        .plan-card {
+            flex: 0 0 300px;
+            background: var(--card);
+            border: 1px solid var(--white-08);
+            border-radius: var(--radius);
+            overflow: hidden;
+            cursor: pointer;
+            scroll-snap-align: start;
+            transition: border-color var(--t), transform var(--t);
+        }
+        .plan-card:hover {
+            border-color: var(--white-20);
+            transform: translateY(-4px);
+        }
+        .plan-card.active {
+            border-color: var(--copper);
+        }
+        .plan-card-top {
+            padding: 28px 24px;
+            border-bottom: 1px solid var(--white-08);
+        }
+        .plan-card-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 32px;
+            letter-spacing: 2px;
+            margin-bottom: 4px;
+        }
+        .plan-card-price {
+            font-size: 13px;
+            color: var(--white-40);
+        }
+        .plan-card-specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .plan-card-spec {
+            padding: 16px;
+            text-align: center;
+            border-right: 1px solid var(--white-08);
+            border-bottom: 1px solid var(--white-08);
+        }
+        .plan-card-spec:nth-child(even) { border-right: none; }
+        .plan-card-spec:nth-child(n+3) { border-bottom: none; }
+        .plan-card-spec-val {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 22px;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+        .plan-card-spec-lbl {
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--white-40);
+        }
+        .plan-card-features {
+            list-style: none;
+            padding: 20px 24px;
+        }
+        .plan-card-features li {
+            padding: 8px 0;
+            font-size: 13px;
+            color: var(--white-40);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--white-04);
+        }
+        .plan-card-features li:last-child { border-bottom: none; }
+        .plan-card-features li::before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--copper);
+            flex-shrink: 0;
+        }
+        .plan-card-btn {
+            display: block;
+            padding: 16px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--copper);
+            border-top: 1px solid var(--white-08);
+            transition: background var(--t), color var(--t);
+        }
+        .plan-card-btn:hover {
+            background: var(--copper-muted);
+        }
+        .plan-card.active .plan-card-btn {
+            background: var(--copper);
+            color: var(--white);
+        }
+
+        /* ============================
+           GALLERY — dark
+           ============================ */
+        .gallery-section {
+            padding: 100px 0;
+            background: var(--bg);
+        }
+        .gallery-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 40px;
+        }
+        .gallery-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 48px;
+            letter-spacing: 2px;
+        }
+        .gallery-tabs {
+            display: flex;
+            gap: 4px;
+        }
+        .gallery-tab {
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all var(--t);
+            background: transparent;
+            border: 1px solid var(--white-08);
+            color: var(--white-40);
+        }
+        .gallery-tab:hover { border-color: var(--white-20); color: var(--white-60); }
+        .gallery-tab.active {
+            background: var(--white);
+            color: var(--bg);
+            border-color: var(--white);
+        }
+        .gallery-display {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+        }
+        .gallery-panel {
+            flex: 1;
+            max-width: 540px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--card);
+            border: 1px solid var(--white-08);
+            opacity: 0;
+            transform: scale(0.97);
+            transition: opacity var(--t), transform var(--t);
+        }
+        .gallery-panel.visible { opacity: 1; transform: scale(1); }
+        .gallery-panel-label {
+            padding: 14px 24px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white-40);
+            border-bottom: 1px solid var(--white-08);
+        }
+        .gallery-panel-img {
+            aspect-ratio: 4 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0f0f0f;
+        }
+        .gallery-panel-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Gallery CTA */
+        .gallery-cta {
+            text-align: center;
+            margin-top: 48px;
+            padding: 48px 24px;
+            border: 1px solid var(--white-08);
+            border-radius: var(--radius);
+            background: var(--surface);
+        }
+        .gallery-cta p {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 32px;
+            letter-spacing: 2px;
+            margin-bottom: 24px;
+        }
+        .gallery-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--copper);
+            color: var(--white);
+            padding: 16px 36px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            transition: background var(--t), transform var(--t);
+        }
+        .gallery-cta-btn:hover { background: var(--copper-hover); transform: translateY(-2px); }
+
+        /* ============================
+           AMENITIES — horizontal stripe
+           ============================ */
+        .amenities-section {
+            background: var(--surface);
+            padding: 80px 0;
+            overflow: hidden;
+        }
+        .amenities-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 32px;
+        }
+        .amenities-marquee {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            padding-bottom: 12px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .amenities-marquee::-webkit-scrollbar { height: 3px; }
+        .amenities-marquee::-webkit-scrollbar-track { background: var(--white-04); }
+        .amenities-marquee::-webkit-scrollbar-thumb { background: var(--white-20); border-radius: 2px; }
+        .amenity-pill {
+            flex: 0 0 auto;
+            background: var(--card);
+            border: 1px solid var(--white-08);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            min-width: 240px;
+            transition: border-color var(--t);
+        }
+        .amenity-pill:hover { border-color: var(--white-20); }
+        .amenity-pill-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 22px;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .amenity-pill-desc {
+            font-size: 13px;
+            color: var(--white-40);
+            line-height: 1.6;
+        }
+
+        /* ============================
+           CTA BAND — massive type
+           ============================ */
+        .cta-band {
+            padding: 100px 0;
+            background: var(--bg);
+            text-align: center;
+            border-top: 1px solid var(--white-08);
+            border-bottom: 1px solid var(--white-08);
+        }
+        .cta-band h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(48px, 10vw, 110px);
+            letter-spacing: 6px;
+            line-height: 0.95;
+            margin-bottom: 40px;
+        }
+        .cta-band h2 .copper { color: var(--copper); }
+        .cta-band-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--copper);
+            color: var(--white);
+            padding: 18px 44px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background var(--t), transform var(--t);
+        }
+        .cta-band-btn:hover { background: var(--copper-hover); transform: translateY(-2px); }
+
+        /* ============================
+           LEAD FORM
+           ============================ */
+        .form-section {
+            padding: 100px 0;
+            background: var(--surface);
+        }
+        .form-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .form-info-tag {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 16px;
+        }
+        .form-info h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 48px;
+            letter-spacing: 2px;
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+        .form-info-sub {
+            font-size: 16px;
+            color: var(--white-40);
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+        .form-info-contact {
+            font-size: 14px;
+            color: var(--white-40);
+            line-height: 2;
+        }
+        .form-info-contact strong { color: var(--white); }
+        .form-info-contact a { color: var(--copper); transition: color var(--t); }
+        .form-info-contact a:hover { color: var(--copper-hover); }
+        .form-box {
+            background: var(--card);
+            border: 1px solid var(--white-08);
+            border-radius: var(--radius);
+            padding: 48px 40px;
+        }
+        .form-box label {
+            display: block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white-40);
+            margin-bottom: 8px;
+        }
+        .form-box input[type="text"],
+        .form-box input[type="email"],
+        .form-box input[type="tel"] {
+            width: 100%;
+            padding: 14px 16px;
+            margin-bottom: 24px;
+            border: 1px solid var(--white-08);
+            border-radius: var(--radius-sm);
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            background: var(--white-04);
+            color: var(--white);
+            transition: border-color var(--t);
+        }
+        .form-box input::placeholder { color: var(--white-20); }
+        .form-box input:focus { outline: none; border-color: var(--copper); }
+        .form-box button {
+            width: 100%;
+            padding: 16px;
+            background: var(--copper);
+            color: var(--white);
+            border: none;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background var(--t);
+        }
+        .form-box button:hover { background: var(--copper-hover); }
+        .privacy-note {
+            font-size: 12px;
+            color: var(--white-20);
+            text-align: center;
+            margin-top: 16px;
+            line-height: 1.6;
+        }
+
+        /* ============================
+           FOOTER
+           ============================ */
+        .footer {
+            background: var(--bg);
+            border-top: 1px solid var(--white-08);
+            padding: 48px 32px;
+        }
+        .footer-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1140px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .footer-brand {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        .footer-links {
+            font-size: 14px;
+            color: var(--white-40);
+        }
+        .footer-links a { color: var(--white-40); transition: color var(--t); }
+        .footer-links a:hover { color: var(--copper); }
+        .footer-disc {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: var(--white-20);
+            margin-top: 16px;
+        }
+
+        /* ============================
+           RESPONSIVE
+           ============================ */
+        @media (max-width: 900px) {
+            .hero { grid-template-columns: 1fr; min-height: auto; }
+            .hero-left { padding: 120px 32px 60px; }
+            .hero-right { grid-template-columns: 1fr 1fr; border-left: none; border-top: 1px solid var(--white-08); }
+            .about-cards { grid-template-columns: 1fr; }
+            .about-top { flex-direction: column; align-items: flex-start; }
+            .form-split { grid-template-columns: 1fr; gap: 48px; }
+            .plans-top { flex-direction: column; align-items: flex-start; }
+            .plans-sub { text-align: left; }
+            .gallery-top { flex-direction: column; align-items: flex-start; gap: 20px; }
+        }
+        @media (max-width: 768px) {
+            .nav-link { display: none; }
+            .hero h1 { font-size: 56px; }
+            .hero-actions { flex-direction: column; align-items: flex-start; }
+            .hero-stat-val { font-size: 36px; }
+            .about-headline { font-size: 38px; }
+            .plans-title, .gallery-title { font-size: 36px; }
+            .form-info h2 { font-size: 36px; }
+            .form-box { padding: 32px 24px; }
+            .gallery-display { flex-direction: column; align-items: center; }
+            .gallery-panel { max-width: 100%; }
+            .gallery-tabs { flex-wrap: wrap; }
+            .footer-flex { flex-direction: column; text-align: center; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 44px; }
+            .hero-stat-cell { padding: 24px 16px; }
+            .hero-stat-val { font-size: 30px; }
+            .plan-card { flex: 0 0 260px; }
+            .cta-band h2 { letter-spacing: 3px; }
+        }
+    </style>
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Ryan Rose", "url": "https://rosehomeslv.com",
+        "telephone": "+1-702-747-5921", "email": "ryan@rosehomeslv.com",
+        "description": "Las Vegas new construction specialist helping buyers find homes at Delamar by Pulte Homes and other SW Las Vegas communities.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Las Vegas", "addressRegion": "NV", "postalCode": "89141", "addressCountry": "US" },
+        "worksFor": { "@type": "RealEstateAgent", "name": "Real Broker LLC" },
+        "areaServed": { "@type": "City", "name": "Las Vegas" }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ======== NAV ======== -->
+    <nav class="nav" id="mainNav">
+        <div class="container nav-inner">
+            <div class="nav-brand">DELAMAR</div>
+            <div class="nav-right">
+                <a href="#floorplans" class="nav-link">Floor Plans</a>
+                <a href="#fpGallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-btn">Get Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero">
+        <div class="hero-left">
+            <div class="hero-kicker">A Pulte Homes Community</div>
+            <h1>DELAMAR</h1>
+            <p class="hero-sub">New construction in Southern Highlands, SW Las Vegas. From $640,990 to $787,990.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="hero-primary-btn">Get Floor Plans</a>
+                <a href="#floorplans" class="hero-ghost-btn">Explore Plans</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-stat-cell">
+                <div class="hero-stat-val">$640K+</div>
+                <div class="hero-stat-lbl">Starting Price</div>
+            </div>
+            <div class="hero-stat-cell">
+                <div class="hero-stat-val">4,220</div>
+                <div class="hero-stat-lbl">Max Sq Ft</div>
+            </div>
+            <div class="hero-stat-cell">
+                <div class="hero-stat-val">4 – 6</div>
+                <div class="hero-stat-lbl">Bedrooms</div>
+            </div>
+            <div class="hero-stat-cell">
+                <div class="hero-stat-val">4</div>
+                <div class="hero-stat-lbl">Floor Plans</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== INCENTIVE ======== -->
+    <div class="incentive">
+        <p><strong>Current Incentive:</strong> Up to $20,000 in closing cost credits + 4.99% fixed rate for 30 years through Pulte Mortgage</p>
+    </div>
+
+    <!-- ======== ABOUT ======== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-top">
+                <div>
+                    <div class="about-tag">About the Community</div>
+                    <h2 class="about-headline reveal">A NEW STANDARD IN<br>SOUTHERN HIGHLANDS</h2>
+                </div>
+            </div>
+            <div class="about-cards">
+                <div class="about-card reveal">
+                    <div class="about-card-num">01</div>
+                    <p>Delamar is a new-construction community by Pulte Homes in southwest Las Vegas. Located within the Highlands Ranch area of Southern Highlands, it puts you close to resort-style amenities, top-rated golf, and everyday shopping. Just 6 miles from the Strip.</p>
+                </div>
+                <div class="about-card reveal">
+                    <div class="about-card-num">02</div>
+                    <p>Homes range from 2,990 to 4,220 square feet with 4 to 6 bedrooms and four floor plans, including two-story and three-story layouts. Built by Pulte — known for Life Tested designs that focus on how families actually use their space.</p>
+                </div>
+                <div class="about-card reveal">
+                    <div class="about-card-num">03</div>
+                    <p>The $150/mo HOA covers common area upkeep and landscaping. Residents enjoy a 13,000 sq ft clubhouse, multiple pools, spa, and the Olympia Sports Park. Model home at 10123 Goswell Park Street, Las Vegas, NV 89141.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FLOOR PLANS — horizontal scroll cards ======== -->
+    <section class="plans-section" id="floorplans">
+        <div class="container">
+            <div class="plans-top">
+                <h2 class="plans-title">CHOOSE YOUR<br>FLOOR PLAN</h2>
+                <p class="plans-sub">Scroll through all four plans. Click "Select" to see details below.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="plan-scroll" id="planScroll">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== GALLERY ======== -->
+    <section class="gallery-section" id="fpGallery">
+        <div class="container">
+            <div class="gallery-top">
+                <h2 class="gallery-title">FIRST FLOOR PLANS</h2>
+                <div class="gallery-tabs" id="galleryTabs"></div>
+            </div>
+            <div class="gallery-display" id="galleryDisplay"></div>
+            <div class="gallery-cta">
+                <p>WANT EVERY FLOOR OF EVERY PLAN?</p>
+                <a href="#contact" class="gallery-cta-btn">Get the Complete Floor Plans &#8599;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== AMENITIES ======== -->
+    <section class="amenities-section">
+        <div class="container">
+            <div class="amenities-label">Southern Highlands Amenities</div>
+        </div>
+        <div class="container">
+            <div class="amenities-marquee">
+                <div class="amenity-pill"><div class="amenity-pill-name">GOLF CLUB</div><div class="amenity-pill-desc">Championship course for serious players and casual golfers alike.</div></div>
+                <div class="amenity-pill"><div class="amenity-pill-name">CLUBHOUSE</div><div class="amenity-pill-desc">13,000 sq ft with 4,000 sq ft fitness center, spa, and social spaces.</div></div>
+                <div class="amenity-pill"><div class="amenity-pill-name">POOLS & SPA</div><div class="amenity-pill-desc">25m lap pool, outdoor pool with cabanas, children's pool, oversized Jacuzzi.</div></div>
+                <div class="amenity-pill"><div class="amenity-pill-name">SPORTS PARK</div><div class="amenity-pill-desc">Lighted fields, basketball courts, water play area, workout stations.</div></div>
+                <div class="amenity-pill"><div class="amenity-pill-name">PARKS & TRAILS</div><div class="amenity-pill-desc">Seven parks with covered play areas, gazebos, and the Paseo trail.</div></div>
+                <div class="amenity-pill"><div class="amenity-pill-name">PROXIMITY</div><div class="amenity-pill-desc">~6 miles from the Strip. Quick access to I-15, shopping, dining.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== CTA BAND ======== -->
+    <section class="cta-band">
+        <h2>LET'S FIND YOUR<br><span class="copper">FUTURE HOME</span></h2>
+        <a href="#contact" class="cta-band-btn">Schedule a Tour &#8599;</a>
+    </section>
+
+    <!-- ======== LEAD FORM ======== -->
+    <section class="form-section" id="contact">
+        <div class="container">
+            <div class="form-split">
+                <div>
+                    <div class="form-info-tag">Get in Touch</div>
+                    <div class="form-info">
+                        <h2>GET THE<br>DELAMAR GUIDE</h2>
+                        <p class="form-info-sub">Floor plans, pricing, incentives, and availability — straight to your inbox.</p>
+                        <div class="form-info-contact">
+                            <strong>Ryan Rose</strong><br>
+                            Real Broker LLC<br>
+                            <a href="tel:7027475921">702-747-5921</a><br>
+                            <a href="mailto:ryan@rosehomeslv.com">ryan@rosehomeslv.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-box">
+                    <form action="#" method="POST">
+                        <input type="hidden" name="tag" value="delemar-by-pulte">
+                        <input type="hidden" name="source" value="new-construction-landing-page">
+                        <label for="n1">Full Name</label>
+                        <input type="text" id="n1" name="name" placeholder="Your full name" required>
+                        <label for="e1">Email</label>
+                        <input type="email" id="e1" name="email" placeholder="you@example.com" required>
+                        <label for="p1">Phone</label>
+                        <input type="tel" id="p1" name="phone" placeholder="(702) 555-1234">
+                        <button type="submit">Send Me the Guide</button>
+                        <p class="privacy-note">Your information is kept private and never shared. By submitting, you agree to be contacted about Delamar and other new-construction opportunities.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="footer-flex">
+            <div class="footer-brand">RYAN ROSE</div>
+            <div class="footer-links">
+                Real Broker LLC &nbsp;|&nbsp;
+                <a href="tel:7027475921">702-747-5921</a> &nbsp;|&nbsp;
+                <a href="mailto:ryan@rosehomeslv.com">ryan@rosehomeslv.com</a> &nbsp;|&nbsp;
+                <a href="https://rosehomeslv.com" target="_blank">rosehomeslv.com</a>
+            </div>
+            <div class="footer-disc">Prices, incentives, and availability are subject to change without notice.</div>
+        </div>
+    </footer>
+
+    <!-- ======== JAVASCRIPT ======== -->
+    <script>
+    (function() {
+        'use strict';
+
+        const PLANS = [
+            { id: 'calico', name: 'Calico', price: 648990, priceLabel: 'From $648,990', sqft: 2990, sqftLabel: '2,990+', beds: '4-5', baths: '3-4', bathsLabel: '3-4', stories: 2, garage: '3-car', features: ['1st-floor bedroom + bath', 'Gathering room + cafe', "Owner's suite with WIC", '2-story / 3-car garage'], image: 'images/calico-1st.jpg' },
+            { id: 'egan', name: 'Egan', price: 640990, priceLabel: 'From $640,990', sqft: 3097, sqftLabel: '3,097+', beds: '4-6', baths: '2-4', bathsLabel: '2-4', stories: 2, garage: '2-car', features: ['Gathering room / living room', "Private owner's retreat", 'Flex room + game room', '2-story / 2-car garage'], image: 'images/egan-1st.jpg' },
+            { id: 'delano', name: 'Delano', price: 643990, priceLabel: 'From $643,990', sqft: 3158, sqftLabel: '3,158+', beds: '4-5', baths: '2-4', bathsLabel: '2-4', stories: 2, garage: '2-car', features: ['Gathering room + den', "Owner's suite with WIC", 'Loft + 5th bedroom option', '2-story / 2-car garage'], image: 'images/delano-1st.jpg' },
+            { id: 'whitepine', name: 'White Pine', price: 787990, priceLabel: 'From $787,990', sqft: 4220, sqftLabel: '4,220+', beds: '4-5', baths: '2-4', bathsLabel: '2-4', stories: 3, garage: '3-car', features: ['Rooftop deck + balcony', "Chef's kitchen + game room", "Owner's suite with dual WIC", '3-story / 3-car garage'], image: 'images/whitepine-1st.jpg' }
+        ];
+
+        let selectedId = PLANS[0].id;
+        function getPlan(id) { return PLANS.find(function(p) { return p.id === id; }); }
+
+        /* Scroll cards */
+        var planScrollEl = document.getElementById('planScroll');
+
+        function renderPlanCards() {
+            planScrollEl.innerHTML = '';
+            PLANS.forEach(function(plan) {
+                var card = document.createElement('div');
+                card.className = 'plan-card' + (plan.id === selectedId ? ' active' : '');
+                card.innerHTML =
+                    '<div class="plan-card-top"><div class="plan-card-name">' + plan.name.toUpperCase() + '</div><div class="plan-card-price">' + plan.priceLabel + '</div></div>' +
+                    '<div class="plan-card-specs">' +
+                        '<div class="plan-card-spec"><div class="plan-card-spec-val">' + plan.sqftLabel + '</div><div class="plan-card-spec-lbl">Sq Ft</div></div>' +
+                        '<div class="plan-card-spec"><div class="plan-card-spec-val">' + plan.beds + '</div><div class="plan-card-spec-lbl">Beds</div></div>' +
+                        '<div class="plan-card-spec"><div class="plan-card-spec-val">' + plan.bathsLabel + '</div><div class="plan-card-spec-lbl">Baths</div></div>' +
+                        '<div class="plan-card-spec"><div class="plan-card-spec-val">' + plan.garage + '</div><div class="plan-card-spec-lbl">Garage</div></div>' +
+                    '</div>' +
+                    '<ul class="plan-card-features">' + plan.features.map(function(f) { return '<li>' + f + '</li>'; }).join('') + '</ul>' +
+                    '<a href="#fpGallery" class="plan-card-btn">Select &darr;</a>';
+                card.querySelector('.plan-card-btn').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    selectedId = plan.id;
+                    update();
+                    document.getElementById('fpGallery').scrollIntoView({ behavior: 'smooth' });
+                });
+                planScrollEl.appendChild(card);
+            });
+        }
+
+        /* Gallery */
+        var galleryTabsEl = document.getElementById('galleryTabs');
+        var galleryDisplayEl = document.getElementById('galleryDisplay');
+
+        function renderGalleryTabs() {
+            galleryTabsEl.innerHTML = '';
+            PLANS.forEach(function(plan) {
+                var tab = document.createElement('div');
+                tab.className = 'gallery-tab' + (plan.id === selectedId ? ' active' : '');
+                tab.textContent = plan.name;
+                tab.addEventListener('click', function() { selectedId = plan.id; update(); });
+                galleryTabsEl.appendChild(tab);
+            });
+        }
+
+        function renderGalleryDisplay() {
+            galleryDisplayEl.innerHTML = '';
+            var plan = getPlan(selectedId);
+            var panel = document.createElement('div');
+            panel.className = 'gallery-panel';
+            panel.innerHTML =
+                '<div class="gallery-panel-label">' + plan.name + ' Floor Plan \u2014 First Floor</div>' +
+                '<div class="gallery-panel-img">' +
+                    (plan.image ? '<img src="' + plan.image + '" alt="' + plan.name + ' floor plan">' : '') +
+                '</div>';
+            galleryDisplayEl.appendChild(panel);
+            requestAnimationFrame(function() { requestAnimationFrame(function() { panel.classList.add('visible'); }); });
+        }
+
+        function update() {
+            renderPlanCards();
+            renderGalleryTabs();
+            renderGalleryDisplay();
+        }
+        update();
+
+        /* Nav scroll effect */
+        var nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', function() {
+            nav.classList.toggle('scrolled', window.scrollY > 40);
+        });
+
+        /* Scroll reveal */
+        var reveals = document.querySelectorAll('.reveal');
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(function(el) { observer.observe(el); });
+
+    })();
+    </script>
+
+</body>
+</html>

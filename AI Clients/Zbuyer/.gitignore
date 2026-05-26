@@ -1,0 +1,5 @@
+.zbuyer_session/
+leads.csv
+__pycache__/
+*.pyc
+.venv/

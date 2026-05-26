@@ -1,0 +1,31 @@
+# Batch 8 SEO Package: Homes Near Public Safety Facilities (Posts 36-40)
+
+### Post 36: Las Vegas Homes Near Fire Stations and Police Precincts
+**SEO Title**: Las Vegas Homes Near Fire Stations & Police Precincts | 2026
+**Slug**: las-vegas-homes-near-fire-police-stations
+**Meta Description**: Find Las Vegas homes near fire stations and police precincts. Public safety workers qualify for $20,000 in down payment assistance through the Worker Advantage Program.
+**Keywords**: Las Vegas homes near fire stations, homes near police precincts Las Vegas, LVMPD area command homes, firefighter homes near station Las Vegas, police officer homes near precinct, public safety homes Las Vegas, Worker Advantage fire police, CCFD station homes Las Vegas, first responder neighborhoods Las Vegas, homes near NWAC Las Vegas, homes near SEAC Las Vegas, fire station proximity homes Nevada, police precinct homes Las Vegas, public safety housing Las Vegas, first responder real estate Las Vegas, DTAC homes Las Vegas, Enterprise Area Command homes, Spring Valley Area Command homes, fire station commute Las Vegas, police officer housing Las Vegas, LVMPD housing Las Vegas, Centennial Hills fire station homes, Mountains Edge police homes, southwest Las Vegas first responders, northwest Las Vegas public safety homes
+
+### Post 37: Henderson Homes for First Responders Near Public Safety Facilities
+**SEO Title**: Henderson Homes for First Responders Near Facilities | 2026
+**Slug**: henderson-homes-first-responders-facilities
+**Meta Description**: Henderson first responders can find homes near fire stations and police facilities with $20,000 in down payment assistance from Nevada's Worker Advantage Program.
+**Keywords**: Henderson homes first responders, Henderson Fire Department homes, Henderson Police Department homes, first responder housing Henderson NV, Green Valley homes firefighters, Inspirada homes police officers, Henderson public safety homes, Worker Advantage Henderson NV, Henderson fire station homes, Henderson police officer neighborhoods, $20000 grant Henderson homes, Henderson firefighter housing, Henderson EMT homes, public safety facilities Henderson, Anthem homes first responders, Cadence homes public safety, Henderson NV affordable homes, Water Street Henderson homes, Henderson safe neighborhoods, Henderson home prices first responders, Henderson police housing, Henderson fire EMT housing, first responder real estate Henderson, Henderson city homes public safety, Henderson NV Worker Advantage
+
+### Post 38: North Las Vegas Homes Near Emergency Services Facilities
+**SEO Title**: North Las Vegas Homes Near Emergency Services | $20K Grant
+**Slug**: north-las-vegas-homes-near-emergency-services
+**Meta Description**: North Las Vegas offers affordable homes near fire stations and police facilities. First responders qualify for $20,000 in Worker Advantage down payment assistance.
+**Keywords**: North Las Vegas homes first responders, NLV Fire Department homes, North Las Vegas Police homes, Aliante homes firefighters, emergency services North Las Vegas, NLV affordable homes public safety, Worker Advantage North Las Vegas, first responder housing NLV, North Las Vegas fire station homes, NLV police officer neighborhoods, $20000 grant North Las Vegas, Elkhorn homes first responders, North Valley homes NLV, North Las Vegas EMT housing, public safety homes NLV, North Las Vegas affordable homes, NLV emergency services housing, Craig Road homes NLV, NLV first responder real estate, North Las Vegas home prices, Aliante public safety homes, NLV firefighter housing, North Las Vegas police housing, NLV Worker Advantage homes, North Las Vegas neighborhoods first responders
+
+### Post 39: Southern Nevada Homes with Short Commutes for First Responders
+**SEO Title**: Short Commute Homes for First Responders | Southern NV
+**Slug**: southern-nevada-short-commute-first-responders
+**Meta Description**: Find Southern Nevada homes with short commutes to fire stations and police precincts. First responders qualify for $20,000 in Worker Advantage down payment assistance.
+**Keywords**: short commute first responders Las Vegas, first responder homes near station, Southern Nevada public safety homes, firefighter short commute homes, police officer commute Las Vegas, first responder neighborhoods Las Vegas, Worker Advantage commute homes, close to station homes Las Vegas, LVMPD area command homes, CCFD station proximity homes, Henderson first responder commute, North Las Vegas short commute, public safety housing Southern Nevada, first responder real estate Nevada, shift worker homes Las Vegas, first responder commute time Las Vegas, public safety duty station homes, rotating shift homes Las Vegas, 48 96 schedule homes, firefighter commute Las Vegas, police shift worker housing, Southern Nevada first responder neighborhoods, short drive fire station homes, close to precinct homes Nevada, first responder housing strategy Las Vegas
+
+### Post 40: Las Vegas Metro Area Homes Near Correctional Facilities
+**SEO Title**: Homes Near Correctional Facilities Las Vegas | $20K Grant
+**Slug**: las-vegas-homes-near-correctional-facilities
+**Meta Description**: Find homes near correctional facilities in Las Vegas. Correctional officers qualify for $20,000 in Worker Advantage down payment assistance. CCDC, High Desert, and more.
+**Keywords**: homes near correctional facilities Las Vegas, CCDC homes Las Vegas, correctional officer housing Las Vegas, High Desert State Prison homes, Clark County Detention Center homes, jail staff homes Las Vegas, correctional worker housing Nevada, Worker Advantage correctional officers, detention center homes Las Vegas, Henderson jail staff homes, North Las Vegas corrections homes, prison staff housing Nevada, correctional officer neighborhoods Las Vegas, $20000 grant corrections Nevada, corrections worker real estate Las Vegas, Las Vegas City Detention homes, NLV Community Correctional homes, correctional officer commute Las Vegas, jail officer housing Las Vegas, detention specialist homes Nevada, corrections housing Las Vegas, High Desert Prison commute homes, downtown Las Vegas corrections homes, northwest Las Vegas prison staff, correctional facility proximity homes

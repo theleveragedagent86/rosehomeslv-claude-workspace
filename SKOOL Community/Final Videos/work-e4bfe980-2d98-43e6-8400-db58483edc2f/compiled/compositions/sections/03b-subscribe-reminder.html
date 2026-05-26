@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/brand-tokens.css" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+      [data-composition-id="03b-subscribe-reminder"] {
+        position: relative; width: 1920px; height: 1080px; overflow: hidden;
+        font-family: var(--font-display);
+      }
+      [data-composition-id="03b-subscribe-reminder"] .yt-sub {
+        position: absolute;
+        top: 60px; right: 60px;
+        display: inline-flex; align-items: center; gap: 16px;
+        background: #FF0000; color: #ffffff;
+        padding: 18px 32px;
+        border-radius: 12px;
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 36px;
+        letter-spacing: 0.04em;
+        box-shadow: 0 14px 36px rgba(255,0,0,0.45), 0 0 0 3px rgba(255,255,255,0.22);
+        opacity: 0; transform: translateX(60px);
+        will-change: transform, opacity;
+      }
+      [data-composition-id="03b-subscribe-reminder"] .yt-sub .bell {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 44px; height: 44px;
+        border-radius: 50%; background: #ffffff; color: #FF0000;
+        font-size: 24px; font-weight: 900;
+      }
+      [data-composition-id="03b-subscribe-reminder"] .yt-sub .label { line-height: 1; }
+    </style>
+  </head>
+  <body>
+    <div
+      id="sec03"
+      data-composition-id="03b-subscribe-reminder"
+      data-duration="4"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="yt-sub clip" data-start="0" data-duration="4" data-track-index="0">
+        <div class="bell">&#9733;</div>
+        <div class="label">SUBSCRIBE</div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const SLOT = 4;
+      const tl = gsap.timeline({ paused: true });
+
+      tl.to('[data-composition-id="03b-subscribe-reminder"] .yt-sub',
+        { opacity: 1, x: 0, duration: 0.4, ease: 'back.out(1.8)' }, 0);
+      tl.to('[data-composition-id="03b-subscribe-reminder"] .yt-sub',
+        { scale: 1.05, duration: 0.55, yoyo: true, repeat: 3, ease: 'sine.inOut' }, 0.80);
+      tl.to('[data-composition-id="03b-subscribe-reminder"] .yt-sub',
+        { opacity: 0, x: 60, duration: 0.4, ease: 'power2.in' }, 3.6);
+
+      tl.to({}, { duration: SLOT }, 0);
+      window.__timelines["03b-subscribe-reminder"] = tl;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,264 @@
+{
+  "description": "One-off calendar events and appointments. Add new events here or ask the daily-checklist skill to add them for you.",
+  "last_updated": "2026-04-14",
+  "events": [
+    {
+      "date": "2026-04-01",
+      "time": "1:00 PM",
+      "title": "Meeting with Nick Nolf — AI Integration",
+      "location": "Summerlin Library — 1771 Inner Circle Dr, Las Vegas, NV 89134",
+      "notes": "Discuss AI integration for Nick's property management business",
+      "added": "2026-03-25"
+    },
+    {
+      "date": "2026-03-17",
+      "time": "11:00 AM",
+      "title": "Meeting at Starbucks",
+      "location": "Starbucks — 1260 N Town Center Dr, Las Vegas, NV 89144",
+      "notes": "Off Town Center near Summerlin Pkwy",
+      "added": "2026-03-16"
+    },
+    {
+      "date": "2026-03-27",
+      "time": "12:00 PM",
+      "title": "Look at homes with Jerred and Anne",
+      "location": null,
+      "notes": "12–3 PM showing homes",
+      "added": "2026-03-25"
+    },
+    {
+      "date": "TBD",
+      "time": null,
+      "title": "COE — 3550 All Hallows Ave",
+      "location": "3550 All Hallows Ave, Las Vegas, NV 89141",
+      "notes": "Buyer: Nick and Kayla Middleton | $660,000 | New Construction - Pulte Homes Delamar | COE date TBD (est. May-June 2026)",
+      "transaction": "3550-All-Hallows-Ave",
+      "type": "coe"
+    },
+    {
+      "date": "TBD",
+      "time": null,
+      "title": "Final Walkthrough — 3550 All Hallows Ave",
+      "location": "3550 All Hallows Ave, Las Vegas, NV 89141",
+      "notes": "Buyer: Nick and Kayla Middleton | Typically 1-2 days before COE",
+      "transaction": "3550-All-Hallows-Ave",
+      "type": "walkthrough"
+    },
+    {
+      "date": "TBD",
+      "time": null,
+      "title": "Signing — 3550 All Hallows Ave",
+      "location": null,
+      "notes": "Buyer: Nick and Kayla Middleton | Ryan attends all signings",
+      "transaction": "3550-All-Hallows-Ave",
+      "type": "signing"
+    },
+    {
+      "date": "TBD",
+      "time": null,
+      "title": "Builder Walkthrough — 3550 All Hallows Ave",
+      "location": "3550 All Hallows Ave, Las Vegas, NV 89141",
+      "notes": "Buyer: Nick and Kayla Middleton | Builder schedules orientation/walkthrough",
+      "transaction": "3550-All-Hallows-Ave",
+      "type": "builder-walkthrough"
+    },
+    {
+      "date": "TBD",
+      "time": null,
+      "title": "Punch List Deadline — 3550 All Hallows Ave",
+      "location": "3550 All Hallows Ave, Las Vegas, NV 89141",
+      "notes": "Buyer: Nick and Kayla Middleton | Builder punch list items to be completed before COE",
+      "transaction": "3550-All-Hallows-Ave",
+      "type": "punch-list"
+    },
+    {
+      "date": "TBD",
+      "time": null,
+      "title": "Transfer Utilities — 3550 All Hallows Ave",
+      "location": null,
+      "notes": "Buyer: Nick and Kayla Middleton | Remind buyers to transfer utilities ~5 days before COE",
+      "transaction": "3550-All-Hallows-Ave",
+      "type": "utility-transfer"
+    },
+    {
+      "date": "2026-04-14",
+      "time": null,
+      "title": "Earnest Money Deadline — 8320 Moapa Water ST",
+      "location": null,
+      "notes": "Buyer: Anne Ayre & Jerred Mares | $7,500 wire transfer to Fidelity National Title",
+      "transaction": "8320-Moapa-Water-ST",
+      "type": "contingency-deadline"
+    },
+    {
+      "date": "2026-04-19",
+      "time": null,
+      "title": "Due Diligence / Inspection Deadline — 8320 Moapa Water ST",
+      "location": null,
+      "notes": "Buyer: Anne Ayre & Jerred Mares | 10 calendar days from acceptance | Must remove or cancel by this date",
+      "transaction": "8320-Moapa-Water-ST",
+      "type": "contingency-deadline"
+    },
+    {
+      "date": "2026-04-24",
+      "time": null,
+      "title": "Appraisal Contingency Deadline — 8320 Moapa Water ST",
+      "location": null,
+      "notes": "Buyer: Anne Ayre & Jerred Mares | 15 calendar days from acceptance | Must remove or cancel by this date",
+      "transaction": "8320-Moapa-Water-ST",
+      "type": "contingency-deadline"
+    },
+    {
+      "date": "2026-04-30",
+      "time": null,
+      "title": "Loan Contingency Deadline — 8320 Moapa Water ST",
+      "location": null,
+      "notes": "Buyer: Anne Ayre & Jerred Mares | 21 calendar days from acceptance | Must remove or cancel by this date",
+      "transaction": "8320-Moapa-Water-ST",
+      "type": "contingency-deadline"
+    },
+    {
+      "date": "2026-05-19",
+      "time": null,
+      "title": "COE — 8320 Moapa Water ST",
+      "location": "8320 Moapa Water ST, Las Vegas, NV 89131",
+      "notes": "Buyer: Anne Ayre & Jerred Mares | $630,000 | Resale | Escrow: Kathie Salas, Fidelity National",
+      "transaction": "8320-Moapa-Water-ST",
+      "type": "coe"
+    },
+    {
+      "date": "TBD",
+      "time": null,
+      "title": "Final Walkthrough — 8320 Moapa Water ST",
+      "location": "8320 Moapa Water ST, Las Vegas, NV 89131",
+      "notes": "Buyer: Anne Ayre & Jerred Mares | Within 3 calendar days before COE (~5/16)",
+      "transaction": "8320-Moapa-Water-ST",
+      "type": "walkthrough"
+    },
+    {
+      "date": "TBD",
+      "time": null,
+      "title": "Signing — 8320 Moapa Water ST",
+      "location": null,
+      "notes": "Buyer: Anne Ayre & Jerred Mares | Ryan attends all signings",
+      "transaction": "8320-Moapa-Water-ST",
+      "type": "signing"
+    },
+    {
+      "date": "2026-04-15",
+      "time": null,
+      "title": "Open Escrow — 29 Amber Rock St",
+      "location": null,
+      "notes": "Seller: Vasquez Family Trust | Buyer: George Tasci | Send executed RPA to WFG National / Angelica Flores | Dual agency",
+      "transaction": "29-Amber-Rock-St",
+      "type": "contingency-deadline"
+    },
+    {
+      "date": "2026-04-16",
+      "time": null,
+      "title": "EMD Due — 29 Amber Rock St",
+      "location": null,
+      "notes": "Buyer: George Tasci | $5,000 wire transfer to WFG National | 2 business days from acceptance",
+      "transaction": "29-Amber-Rock-St",
+      "type": "earnest-money"
+    },
+    {
+      "date": "2026-04-16",
+      "time": null,
+      "title": "Loan Application + Preapproval Due — 29 Amber Rock St",
+      "location": null,
+      "notes": "Buyer: George Tasci | Submit loan application and deliver preapproval letter | 2 business days from acceptance",
+      "transaction": "29-Amber-Rock-St",
+      "type": "contingency-deadline"
+    },
+    {
+      "date": "2026-04-16",
+      "time": null,
+      "title": "Request HOA Resale Package — 29 Amber Rock St",
+      "location": null,
+      "notes": "Seller: Vasquez Family Trust | Seller must request CIC resale package | 2 business days from acceptance",
+      "transaction": "29-Amber-Rock-St",
+      "type": "disclosure-deadline"
+    },
+    {
+      "date": "2026-04-19",
+      "time": null,
+      "title": "Seller Disclosures Delivery Deadline — 29 Amber Rock St",
+      "location": null,
+      "notes": "Seller: Vasquez Family Trust | SRPD + Construction Defect Claims Disclosure | 5 calendar days from acceptance",
+      "transaction": "29-Amber-Rock-St",
+      "type": "disclosure-deadline"
+    },
+    {
+      "date": "2026-04-24",
+      "time": null,
+      "title": "Due Diligence Deadline — 29 Amber Rock St",
+      "location": null,
+      "notes": "Buyer: George Tasci | Home inspection + termite inspection | 10 calendar days from acceptance | Must cancel or resolve objections by this date",
+      "transaction": "29-Amber-Rock-St",
+      "type": "contingency-deadline"
+    },
+    {
+      "date": "2026-04-29",
+      "time": null,
+      "title": "Appraisal Contingency Deadline — 29 Amber Rock St",
+      "location": null,
+      "notes": "Buyer: George Tasci | $475,000 purchase price | 15 calendar days from acceptance | Must cancel by this date if appraisal is low",
+      "transaction": "29-Amber-Rock-St",
+      "type": "appraisal"
+    },
+    {
+      "date": "2026-05-05",
+      "time": null,
+      "title": "Loan Contingency Deadline — 29 Amber Rock St",
+      "location": null,
+      "notes": "Buyer: George Tasci | $380,000 Conventional | 21 calendar days from acceptance | Remove or cancel by this date",
+      "transaction": "29-Amber-Rock-St",
+      "type": "loan-contingency"
+    },
+    {
+      "date": "2026-05-09",
+      "time": null,
+      "title": "Transfer Utilities — 29 Amber Rock St",
+      "location": null,
+      "notes": "Buyer: George Tasci | Remind buyer to transfer utilities ~5 days before COE",
+      "transaction": "29-Amber-Rock-St",
+      "type": "utility-transfer"
+    },
+    {
+      "date": "2026-05-12",
+      "time": null,
+      "title": "Seller Vacate Deadline — 29 Amber Rock St",
+      "location": "29 Amber Rock St, Henderson, NV 89012",
+      "notes": "Seller: Vasquez Family Trust | Must vacate at least 2 calendar days before COE per Additional Terms #2",
+      "transaction": "29-Amber-Rock-St",
+      "type": "disclosure-deadline"
+    },
+    {
+      "date": "TBD",
+      "time": null,
+      "title": "Final Walkthrough — 29 Amber Rock St",
+      "location": "29 Amber Rock St, Henderson, NV 89012",
+      "notes": "Buyer: George Tasci | Walkthrough window 5/11-5/14 (within 3 calendar days prior to COE)",
+      "transaction": "29-Amber-Rock-St",
+      "type": "walkthrough"
+    },
+    {
+      "date": "2026-05-14",
+      "time": null,
+      "title": "COE — 29 Amber Rock St",
+      "location": "29 Amber Rock St, Henderson, NV 89012",
+      "notes": "Seller: Vasquez Family Trust | Buyer: George Tasci | $475,000 | Conventional | WFG National / Angelica Flores | Dual agency",
+      "transaction": "29-Amber-Rock-St",
+      "type": "coe"
+    },
+    {
+      "date": "TBD",
+      "time": null,
+      "title": "Signing — 29 Amber Rock St",
+      "location": null,
+      "notes": "Both buyer (George Tasci) and seller (Vasquez Family Trust) signings | Ryan attends both",
+      "transaction": "29-Amber-Rock-St",
+      "type": "signing"
+    }
+  ]
+}

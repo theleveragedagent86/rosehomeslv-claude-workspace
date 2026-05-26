@@ -1,0 +1,1956 @@
+{
+  "total_posts": 3627,
+  "posts_with_broken_links": 60,
+  "unique_fixable_slugs": 107,
+  "details": [
+    {
+      "url": "https://www.rosehomeslv.com/blog/1880-grille-sun-city-mesquite",
+      "fixable": [
+        {
+          "from": "/sun-city-mesquite-55-plus",
+          "to": "/blog/sun-city-mesquite-55-plus",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-retiring-retirees",
+          "to": "/blog/mesquite-nv-retiring-retirees",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-things-to-do",
+          "to": "/blog/mesquite-nv-things-to-do",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/88-seats-chinese-mesquite-nv",
+      "fixable": [
+        {
+          "from": "/mesquite-nv-restaurants-guide",
+          "to": "/blog/mesquite-nv-restaurants-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-things-to-do",
+          "to": "/blog/mesquite-nv-things-to-do",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-living-guide",
+          "to": "/blog/mesquite-nv-living-guide",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/affordable-las-vegas-homes-400k-essential",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-home-is-possible-lenders",
+          "to": "/blog/worker-advantage-home-is-possible-lenders",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-las-vegas-guide",
+          "to": "/blog/essential-workers-homes-las-vegas-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/how-far-20000-goes-las-vegas-home-2026",
+          "to": "/blog/how-far-20000-goes-las-vegas-home-2026",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/affordable-henderson-homes-essential-2026",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-home-is-possible-lenders",
+          "to": "/blog/worker-advantage-home-is-possible-lenders",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-henderson-20000",
+          "to": "/blog/essential-workers-homes-henderson-20000",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/complete-guide-worker-advantage-las-vegas",
+          "to": "/blog/complete-guide-worker-advantage-las-vegas",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/affordable-north-las-vegas-essential-workers",
+      "fixable": [
+        {
+          "from": "/worker-advantage-home-is-possible-lenders",
+          "to": "/blog/worker-advantage-home-is-possible-lenders",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-north-las-vegas-homes",
+          "to": "/blog/essential-workers-north-las-vegas-homes",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/las-vegas-home-prices-essential-workers-2026",
+          "to": "/blog/las-vegas-home-prices-essential-workers-2026",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/aliante-centennial-hills-worker-advantage",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-aliante-20000",
+          "to": "/blog/essential-workers-homes-aliante-20000",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-centennial-hills",
+          "to": "/blog/essential-workers-homes-centennial-hills",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/north-las-vegas-prices-essential-workers-2026",
+          "to": "/blog/north-las-vegas-prices-essential-workers-2026",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-las-vegas-guide",
+          "to": "/blog/essential-workers-homes-las-vegas-guide",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/best-time-buy-willows-summerlin",
+      "fixable": [
+        {
+          "from": "/buying-home-willows-summerlin",
+          "to": "/blog/buying-home-willows-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/property-taxes-willows-summerlin",
+          "to": "/blog/property-taxes-willows-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/best-value-homes-nevada-worker-advantage",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/affordable-north-las-vegas-essential-workers",
+          "to": "/blog/affordable-north-las-vegas-essential-workers",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/affordable-henderson-homes-essential-2026",
+          "to": "/blog/affordable-henderson-homes-essential-2026",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/affordable-las-vegas-homes-400k-essential",
+          "to": "/blog/affordable-las-vegas-homes-400k-essential",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-home-is-possible-lenders",
+          "to": "/blog/worker-advantage-home-is-possible-lenders",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/complete-guide-worker-advantage-las-vegas",
+          "to": "/blog/complete-guide-worker-advantage-las-vegas",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/bryce-canyon-from-mesquite-nv",
+      "fixable": [
+        {
+          "from": "/zion-national-park-from-mesquite",
+          "to": "/blog/zion-national-park-from-mesquite",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/grand-canyon-from-mesquite-nv",
+          "to": "/blog/grand-canyon-from-mesquite-nv",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-things-to-do",
+          "to": "/blog/mesquite-nv-things-to-do",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/combine-worker-advantage-nevada-programs",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/who-qualifies-worker-advantage-nevada",
+          "to": "/blog/who-qualifies-worker-advantage-nevada",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-vs-fha-loans-essential",
+          "to": "/blog/worker-advantage-vs-fha-loans-essential",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-home-is-possible-lenders",
+          "to": "/blog/worker-advantage-home-is-possible-lenders",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/las-vegas-new-construction-500k-essential",
+          "to": "/blog/las-vegas-new-construction-500k-essential",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/affordable-las-vegas-homes-400k-essential",
+          "to": "/blog/affordable-las-vegas-homes-400k-essential",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-program-available-2026",
+          "to": "/blog/worker-advantage-program-available-2026",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/complete-guide-worker-advantage-las-vegas",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/buy-down-interest-rate-worker-advantage",
+          "to": "/blog/buy-down-interest-rate-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-program-available-2026",
+          "to": "/blog/worker-advantage-program-available-2026",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-vs-fha-loans-essential",
+          "to": "/blog/worker-advantage-vs-fha-loans-essential",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/who-qualifies-worker-advantage-nevada",
+          "to": "/blog/who-qualifies-worker-advantage-nevada",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-home-is-possible-lenders",
+          "to": "/blog/worker-advantage-home-is-possible-lenders",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/how-far-20000-goes-las-vegas-home-2026",
+          "to": "/blog/how-far-20000-goes-las-vegas-home-2026",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-las-vegas-guide",
+          "to": "/blog/essential-workers-homes-las-vegas-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-henderson-20000",
+          "to": "/blog/essential-workers-homes-henderson-20000",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-green-valley",
+          "to": "/blog/essential-workers-homes-green-valley",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-north-las-vegas-homes",
+          "to": "/blog/essential-workers-north-las-vegas-homes",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-aliante-20000",
+          "to": "/blog/essential-workers-homes-aliante-20000",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-centennial-hills",
+          "to": "/blog/essential-workers-homes-centennial-hills",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-mountains-edge",
+          "to": "/blog/essential-workers-homes-mountains-edge",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-southern-highlands-20000",
+          "to": "/blog/essential-workers-southern-highlands-20000",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-summerlin",
+          "to": "/blog/essential-workers-homes-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-inspirada-20000",
+          "to": "/blog/essential-workers-homes-inspirada-20000",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-skye-canyon",
+          "to": "/blog/essential-workers-homes-skye-canyon",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/affordable-las-vegas-homes-400k-essential",
+          "to": "/blog/affordable-las-vegas-homes-400k-essential",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/combine-worker-advantage-nevada-programs",
+          "to": "/blog/combine-worker-advantage-nevada-programs",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nevada-housing-market-essential-workers-2026",
+          "to": "/blog/nevada-housing-market-essential-workers-2026",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/first-time-homebuyer-essential-workers-vegas",
+          "to": "/blog/first-time-homebuyer-essential-workers-vegas",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/condos-townhomes-willows-summerlin",
+      "fixable": [
+        {
+          "from": "/willows-summerlin-community-guide",
+          "to": "/blog/willows-summerlin-community-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/single-story-homes-willows-summerlin",
+          "to": "/blog/single-story-homes-willows-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/willows-summerlin-hoa-fees",
+          "to": "/blog/willows-summerlin-hoa-fees",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/cottonwood-canyon-park-mountain-trails",
+      "fixable": [
+        {
+          "from": "/red-rock-canyon-near-mountain-trails",
+          "to": "/blog/red-rock-canyon-near-mountain-trails",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mountain-trails-pet-friendly-dog-walking",
+          "to": "/blog/mountain-trails-pet-friendly-dog-walking",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/summerlin-trail-system-mountain-trails",
+          "to": "/blog/summerlin-trail-system-mountain-trails",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/eagle-hills-89134-zip-code-guide",
+      "fixable": [
+        {
+          "from": "/eagle-hills-las-vegas-community-guide",
+          "to": "/blog/eagle-hills-las-vegas-community-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/eagle-hills-summerlin-home-prices-2026",
+          "to": "/blog/eagle-hills-summerlin-home-prices-2026",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/is-eagle-hills-good-place-to-live",
+          "to": "/blog/is-eagle-hills-good-place-to-live",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/eagle-hills-distance-las-vegas-strip",
+      "fixable": [
+        {
+          "from": "/eagle-hills-commute-times-las-vegas",
+          "to": "/blog/eagle-hills-commute-times-las-vegas",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/is-eagle-hills-good-place-to-live",
+          "to": "/blog/is-eagle-hills-good-place-to-live",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/eagle-hills-amenities-community-features",
+          "to": "/blog/eagle-hills-amenities-community-features",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/eagle-hills-amenities-community-features",
+      "fixable": [
+        {
+          "from": "/eagle-hills-community-park-summerlin",
+          "to": "/blog/eagle-hills-community-park-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/tpc-summerlin-golf-course-eagle-hills",
+          "to": "/blog/tpc-summerlin-golf-course-eagle-hills",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/eagle-hills-guard-gate-security",
+          "to": "/blog/eagle-hills-guard-gate-security",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/eagle-hills-guard-gate-security",
+      "fixable": [
+        {
+          "from": "/eagle-hills-safety-security-summerlin",
+          "to": "/blog/eagle-hills-safety-security-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/eagle-hills-guard-gated-community",
+          "to": "/blog/eagle-hills-guard-gated-community",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/eagle-hills-las-vegas-community-guide",
+          "to": "/blog/eagle-hills-las-vegas-community-guide",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/eagle-hills-homes-for-sale-guide",
+      "fixable": [
+        {
+          "from": "/eagle-hills-summerlin-home-prices-2026",
+          "to": "/blog/eagle-hills-summerlin-home-prices-2026",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/eagle-hills-luxury-custom-homes",
+          "to": "/blog/eagle-hills-luxury-custom-homes",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/eagle-hills-hoa-fees-las-vegas",
+          "to": "/blog/eagle-hills-hoa-fees-las-vegas",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/essential-workers-homes-aliante-20000",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-income-credit-requirements",
+          "to": "/blog/worker-advantage-income-credit-requirements",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-home-is-possible-lenders",
+          "to": "/blog/worker-advantage-home-is-possible-lenders",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/aliante-centennial-hills-worker-advantage",
+          "to": "/blog/aliante-centennial-hills-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/north-las-vegas-prices-essential-workers-2026",
+          "to": "/blog/north-las-vegas-prices-essential-workers-2026",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/essential-workers-homes-centennial-hills",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-north-las-vegas-homes",
+          "to": "/blog/essential-workers-north-las-vegas-homes",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-aliante-20000",
+          "to": "/blog/essential-workers-homes-aliante-20000",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/aliante-centennial-hills-worker-advantage",
+          "to": "/blog/aliante-centennial-hills-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/north-las-vegas-prices-essential-workers-2026",
+          "to": "/blog/north-las-vegas-prices-essential-workers-2026",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/essential-workers-north-las-vegas-homes",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-home-is-possible-lenders",
+          "to": "/blog/worker-advantage-home-is-possible-lenders",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/affordable-north-las-vegas-essential-workers",
+          "to": "/blog/affordable-north-las-vegas-essential-workers",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-las-vegas-guide",
+          "to": "/blog/essential-workers-homes-las-vegas-guide",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/grand-canyon-from-mesquite-nv",
+      "fixable": [
+        {
+          "from": "/mesquite-nv-things-to-do",
+          "to": "/blog/mesquite-nv-things-to-do",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/zion-national-park-from-mesquite",
+          "to": "/blog/zion-national-park-from-mesquite",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/valley-of-fire-state-park-mesquite",
+          "to": "/blog/valley-of-fire-state-park-mesquite",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/gregorys-mesquite-grill",
+      "fixable": [
+        {
+          "from": "/eureka-casino-resort-mesquite-nv",
+          "to": "/blog/eureka-casino-resort-mesquite-nv",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-fine-dining",
+          "to": "/blog/mesquite-nv-fine-dining",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-retiring-retirees",
+          "to": "/blog/mesquite-nv-retiring-retirees",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/healthcare-workers-henderson-prices-2026",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/healthcare-workers-north-vegas-prices-2026",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/north-las-vegas-homes-near-va-medical",
+          "to": "/blog/north-las-vegas-homes-near-va-medical",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/healthcare-workers-henderson-prices-2026",
+          "to": "/blog/healthcare-workers-henderson-prices-2026",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/henderson-homes-first-responders-facilities",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/police-officers-homes-henderson-worker-advantage",
+          "to": "/blog/police-officers-homes-henderson-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/firefighters-emts-20000-down-payment",
+          "to": "/blog/firefighters-emts-20000-down-payment",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/complete-guide-worker-advantage-las-vegas",
+          "to": "/blog/complete-guide-worker-advantage-las-vegas",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/henderson-homes-near-st-rose-hospital",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nurses-buying-homes-las-vegas-worker-advantage",
+          "to": "/blog/nurses-buying-homes-las-vegas-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-henderson-20000",
+          "to": "/blog/essential-workers-homes-henderson-20000",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nurses-homes-henderson-st-rose",
+          "to": "/blog/nurses-homes-henderson-st-rose",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/how-far-20000-goes-las-vegas-home-2026",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-vs-fha-loans-essential",
+          "to": "/blog/worker-advantage-vs-fha-loans-essential",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/buy-down-interest-rate-worker-advantage",
+          "to": "/blog/buy-down-interest-rate-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-program-closing-costs",
+          "to": "/blog/worker-advantage-program-closing-costs",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/affordable-las-vegas-homes-400k-essential",
+          "to": "/blog/affordable-las-vegas-homes-400k-essential",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/investment-properties-willows-summerlin",
+      "fixable": [
+        {
+          "from": "/willows-summerlin-community-guide",
+          "to": "/blog/willows-summerlin-community-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/buying-home-willows-summerlin",
+          "to": "/blog/buying-home-willows-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/katherines-steakhouse-mesquite",
+      "fixable": [
+        {
+          "from": "/mesquite-nv-fine-dining",
+          "to": "/blog/mesquite-nv-fine-dining",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-restaurants-guide",
+          "to": "/blog/mesquite-nv-restaurants-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-things-to-do",
+          "to": "/blog/mesquite-nv-things-to-do",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/lake-mead-mesquite-nv",
+      "fixable": [
+        {
+          "from": "/mesquite-nv-things-to-do",
+          "to": "/blog/mesquite-nv-things-to-do",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/zion-national-park-from-mesquite",
+          "to": "/blog/zion-national-park-from-mesquite",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-living-guide",
+          "to": "/blog/mesquite-nv-living-guide",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/las-vegas-homes-near-fire-police-stations",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/police-officers-homes-las-vegas-worker-advantage",
+          "to": "/blog/police-officers-homes-las-vegas-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/firefighters-emts-20000-down-payment",
+          "to": "/blog/firefighters-emts-20000-down-payment",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/correctional-officers-dispatchers-worker-advantage",
+          "to": "/blog/correctional-officers-dispatchers-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/first-responder-home-buying-guide-nevada-2026",
+          "to": "/blog/first-responder-home-buying-guide-nevada-2026",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/las-vegas-homes-near-correctional-facilities",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/correctional-officers-dispatchers-worker-advantage",
+          "to": "/blog/correctional-officers-dispatchers-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/las-vegas-homes-near-fire-police-stations",
+          "to": "/blog/las-vegas-homes-near-fire-police-stations",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/complete-guide-worker-advantage-las-vegas",
+          "to": "/blog/complete-guide-worker-advantage-las-vegas",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/las-vegas-homes-near-hospitals-medical",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nurses-buying-homes-las-vegas-worker-advantage",
+          "to": "/blog/nurses-buying-homes-las-vegas-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/las-vegas-new-construction-500k-essential",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-home-is-possible-lenders",
+          "to": "/blog/worker-advantage-home-is-possible-lenders",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/complete-guide-worker-advantage-las-vegas",
+          "to": "/blog/complete-guide-worker-advantage-las-vegas",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/how-far-20000-goes-las-vegas-home-2026",
+          "to": "/blog/how-far-20000-goes-las-vegas-home-2026",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/los-lupes-mexican-mesquite-nv",
+      "fixable": [
+        {
+          "from": "/mesquite-nv-restaurants-guide",
+          "to": "/blog/mesquite-nv-restaurants-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-living-guide",
+          "to": "/blog/mesquite-nv-living-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-things-to-do",
+          "to": "/blog/mesquite-nv-things-to-do",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/mason-street-courtyard-mesquite",
+      "fixable": [
+        {
+          "from": "/mesquite-nv-restaurants-guide",
+          "to": "/blog/mesquite-nv-restaurants-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-things-to-do",
+          "to": "/blog/mesquite-nv-things-to-do",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-living-guide",
+          "to": "/blog/mesquite-nv-living-guide",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/mesquite-fine-arts-center",
+      "fixable": [
+        {
+          "from": "/virgin-valley-heritage-museum",
+          "to": "/blog/virgin-valley-heritage-museum",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-living-guide",
+          "to": "/blog/mesquite-nv-living-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-things-to-do",
+          "to": "/blog/mesquite-nv-things-to-do",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/mesquite-nv-fine-dining",
+      "fixable": [
+        {
+          "from": "/gregorys-mesquite-grill",
+          "to": "/blog/gregorys-mesquite-grill",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/eureka-casino-resort-mesquite-nv",
+          "to": "/blog/eureka-casino-resort-mesquite-nv",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-retiring-retirees",
+          "to": "/blog/mesquite-nv-retiring-retirees",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/mountain-trails-community-park",
+      "fixable": [
+        {
+          "from": "/mountain-trails-summerlin-community-guide",
+          "to": "/blog/mountain-trails-summerlin-community-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/the-trails-park-summerlin",
+          "to": "/blog/the-trails-park-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mountain-trails-amenities-features",
+          "to": "/blog/mountain-trails-amenities-features",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/nevada-housing-market-essential-workers-2026",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-north-las-vegas-homes",
+          "to": "/blog/essential-workers-north-las-vegas-homes",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-henderson-20000",
+          "to": "/blog/essential-workers-homes-henderson-20000",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-southwest-las-vegas",
+          "to": "/blog/essential-workers-southwest-las-vegas",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/how-far-20000-goes-las-vegas-home-2026",
+          "to": "/blog/how-far-20000-goes-las-vegas-home-2026",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/buy-down-interest-rate-worker-advantage",
+          "to": "/blog/buy-down-interest-rate-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-program-closing-costs",
+          "to": "/blog/worker-advantage-program-closing-costs",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/who-qualifies-worker-advantage-nevada",
+          "to": "/blog/who-qualifies-worker-advantage-nevada",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/affordable-north-las-vegas-essential-workers",
+          "to": "/blog/affordable-north-las-vegas-essential-workers",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/las-vegas-new-construction-500k-essential",
+          "to": "/blog/las-vegas-new-construction-500k-essential",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/combine-worker-advantage-nevada-programs",
+          "to": "/blog/combine-worker-advantage-nevada-programs",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/summerlin-prices-essential-workers-2026",
+          "to": "/blog/summerlin-prices-essential-workers-2026",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-home-is-possible-lenders",
+          "to": "/blog/worker-advantage-home-is-possible-lenders",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/north-las-vegas-homes-near-emergency-services",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/police-officers-homes-las-vegas-worker-advantage",
+          "to": "/blog/police-officers-homes-las-vegas-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/firefighters-emts-20000-down-payment",
+          "to": "/blog/firefighters-emts-20000-down-payment",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/firefighters-homes-north-las-vegas-20000",
+          "to": "/blog/firefighters-homes-north-las-vegas-20000",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/southern-nevada-short-commute-first-responders",
+          "to": "/blog/southern-nevada-short-commute-first-responders",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/first-responder-home-buying-guide-nevada-2026",
+          "to": "/blog/first-responder-home-buying-guide-nevada-2026",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/north-las-vegas-homes-near-va-medical",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nurses-homes-north-las-vegas-va-medical",
+          "to": "/blog/nurses-homes-north-las-vegas-va-medical",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/north-las-vegas-prices-essential-workers-2026",
+      "fixable": [
+        {
+          "from": "/worker-advantage-income-credit-requirements",
+          "to": "/blog/worker-advantage-income-credit-requirements",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-home-is-possible-lenders",
+          "to": "/blog/worker-advantage-home-is-possible-lenders",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-aliante-20000",
+          "to": "/blog/essential-workers-homes-aliante-20000",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-centennial-hills",
+          "to": "/blog/essential-workers-homes-centennial-hills",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-las-vegas-guide",
+          "to": "/blog/essential-workers-homes-las-vegas-guide",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/nurses-homes-henderson-st-rose",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nurses-buying-homes-las-vegas-worker-advantage",
+          "to": "/blog/nurses-buying-homes-las-vegas-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/nurses-homes-north-las-vegas-va-medical",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nurses-buying-homes-las-vegas-worker-advantage",
+          "to": "/blog/nurses-buying-homes-las-vegas-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nurses-homes-summerlin-hospital-area",
+          "to": "/blog/nurses-homes-summerlin-hospital-area",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nurses-homes-henderson-st-rose",
+          "to": "/blog/nurses-homes-henderson-st-rose",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/nurses-homes-summerlin-hospital-area",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/apply-nevada-20000-down-payment-assistance",
+          "to": "/blog/apply-nevada-20000-down-payment-assistance",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nurses-buying-homes-las-vegas-worker-advantage",
+          "to": "/blog/nurses-buying-homes-las-vegas-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/henderson-homes-near-st-rose-hospital",
+          "to": "/blog/henderson-homes-near-st-rose-hospital",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/north-las-vegas-homes-near-va-medical",
+          "to": "/blog/north-las-vegas-homes-near-va-medical",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/pool-homes-willows-summerlin",
+      "fixable": [
+        {
+          "from": "/luxury-homes-willows-summerlin",
+          "to": "/blog/luxury-homes-willows-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/custom-homes-willows-summerlin",
+          "to": "/blog/custom-homes-willows-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/subdivisions-willows-summerlin",
+          "to": "/blog/subdivisions-willows-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/property-taxes-willows-summerlin",
+      "fixable": [
+        {
+          "from": "/willows-summerlin-hoa-fees",
+          "to": "/blog/willows-summerlin-hoa-fees",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/investment-properties-willows-summerlin",
+          "to": "/blog/investment-properties-willows-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/seven-wonders-loop-valley-of-fire",
+      "fixable": [
+        {
+          "from": "/seven-wonders-loop-valley-of-fire",
+          "to": "/blog/seven-wonders-loop-valley-of-fire",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/valley-of-fire-state-park-mesquite",
+          "to": "/blog/valley-of-fire-state-park-mesquite",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-hiking-trails",
+          "to": "/blog/mesquite-nv-hiking-trails",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/southern-nevada-homes-short-commute-medical",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/las-vegas-homes-near-hospitals-medical",
+          "to": "/blog/las-vegas-homes-near-hospitals-medical",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/henderson-homes-near-st-rose-hospital",
+          "to": "/blog/henderson-homes-near-st-rose-hospital",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/north-las-vegas-homes-near-va-medical",
+          "to": "/blog/north-las-vegas-homes-near-va-medical",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/summerlin-homes-near-summerlin-hospital",
+          "to": "/blog/summerlin-homes-near-summerlin-hospital",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/affordable-las-vegas-homes-400k-essential",
+          "to": "/blog/affordable-las-vegas-homes-400k-essential",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/essential-workers-homes-las-vegas-guide",
+          "to": "/blog/essential-workers-homes-las-vegas-guide",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/southern-nevada-short-commute-first-responders",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/police-officers-homes-las-vegas-worker-advantage",
+          "to": "/blog/police-officers-homes-las-vegas-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/firefighters-emts-20000-down-payment",
+          "to": "/blog/firefighters-emts-20000-down-payment",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/las-vegas-homes-near-fire-police-stations",
+          "to": "/blog/las-vegas-homes-near-fire-police-stations",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/henderson-homes-first-responders-facilities",
+          "to": "/blog/henderson-homes-first-responders-facilities",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/north-las-vegas-homes-near-emergency-services",
+          "to": "/blog/north-las-vegas-homes-near-emergency-services",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/summerlin-homes-near-summerlin-hospital",
+      "fixable": [
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nurses-homes-summerlin-hospital-area",
+          "to": "/blog/nurses-homes-summerlin-hospital-area",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/summerlin-trail-system-mountain-trails",
+      "fixable": [
+        {
+          "from": "/cottonwood-canyon-park-mountain-trails",
+          "to": "/blog/cottonwood-canyon-park-mountain-trails",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/the-trails-paseo-park-summerlin",
+          "to": "/blog/the-trails-paseo-park-summerlin",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mountain-trails-pet-friendly-dog-walking",
+          "to": "/blog/mountain-trails-pet-friendly-dog-walking",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/the-trails-park-summerlin",
+      "fixable": [
+        {
+          "from": "/the-trails-village-summerlin-overview",
+          "to": "/blog/the-trails-village-summerlin-overview",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mountain-trails-community-park",
+          "to": "/blog/mountain-trails-community-park",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mountain-trails-summerlin-families",
+          "to": "/blog/mountain-trails-summerlin-families",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/the-trails-paseo-park-summerlin",
+      "fixable": [
+        {
+          "from": "/the-trails-village-summerlin-overview",
+          "to": "/blog/the-trails-village-summerlin-overview",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/summerlin-trail-system-mountain-trails",
+          "to": "/blog/summerlin-trail-system-mountain-trails",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/is-mountain-trails-good-place-to-live",
+          "to": "/blog/is-mountain-trails-good-place-to-live",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/valley-of-fire-state-park-mesquite",
+      "fixable": [
+        {
+          "from": "/fire-wave-trail-valley-of-fire",
+          "to": "/blog/fire-wave-trail-valley-of-fire",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/white-domes-loop-valley-of-fire",
+          "to": "/blog/white-domes-loop-valley-of-fire",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mouse-tank-trail-valley-of-fire",
+          "to": "/blog/mouse-tank-trail-valley-of-fire",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/virgin-valley-heritage-museum",
+      "fixable": [
+        {
+          "from": "/mesquite-nv-living-guide",
+          "to": "/blog/mesquite-nv-living-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-fine-arts-center",
+          "to": "/blog/mesquite-fine-arts-center",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/mesquite-nv-things-to-do",
+          "to": "/blog/mesquite-nv-things-to-do",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/worker-advantage-vs-fha-loans-essential",
+      "fixable": [
+        {
+          "from": "/essential-workers-homes-las-vegas-guide",
+          "to": "/blog/essential-workers-homes-las-vegas-guide",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nevada-worker-advantage-program-explained",
+          "to": "/blog/nevada-worker-advantage-program-explained",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-home-is-possible-lenders",
+          "to": "/blog/worker-advantage-home-is-possible-lenders",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/worker-advantage-program-closing-costs",
+          "to": "/blog/worker-advantage-program-closing-costs",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/how-far-20000-goes-las-vegas-home-2026",
+          "to": "/blog/how-far-20000-goes-las-vegas-home-2026",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/jobs-qualifying-worker-advantage-grant",
+          "to": "/blog/jobs-qualifying-worker-advantage-grant",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/who-qualifies-worker-advantage-nevada",
+          "to": "/blog/who-qualifies-worker-advantage-nevada",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/nurses-buying-homes-las-vegas-worker-advantage",
+          "to": "/blog/nurses-buying-homes-las-vegas-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/teachers-buying-homes-las-vegas-worker-advantage",
+          "to": "/blog/teachers-buying-homes-las-vegas-worker-advantage",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/firefighters-emts-20000-down-payment",
+          "to": "/blog/firefighters-emts-20000-down-payment",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://www.rosehomeslv.com/blog/zion-national-park-from-mesquite",
+      "fixable": [
+        {
+          "from": "/mesquite-nv-hiking-trails",
+          "to": "/blog/mesquite-nv-hiking-trails",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/bryce-canyon-from-mesquite-nv",
+          "to": "/blog/bryce-canyon-from-mesquite-nv",
+          "root_status": 404,
+          "blog_status": 200
+        },
+        {
+          "from": "/valley-of-fire-state-park-mesquite",
+          "to": "/blog/valley-of-fire-state-park-mesquite",
+          "root_status": 404,
+          "blog_status": 200
+        }
+      ]
+    }
+  ],
+  "verdict_summary": {
+    "fixable": 107,
+    "ok-as-is": 0,
+    "unknown": 1
+  }
+}

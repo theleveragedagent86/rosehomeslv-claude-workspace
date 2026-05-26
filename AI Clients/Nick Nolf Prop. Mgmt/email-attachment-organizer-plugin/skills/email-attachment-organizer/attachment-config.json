@@ -1,0 +1,120 @@
+{
+  "description": "Configuration for TNG Property Management email attachment downloader and file organizer. Fill all [PLACEHOLDER] values before first run.",
+  "last_updated": "2026-04-05",
+  "gmail_account": "[NICK_GMAIL_ADDRESS]",
+  "naming_convention": {
+    "format": "Investor Last Name – Address – Tenant Name – Vendor – Date",
+    "delimiter": " – ",
+    "date_format": "[DATE_FORMAT_NICK_USES]",
+    "examples": [
+      "Smith – 1234 Desert Rose Dr – Johnson – Campbell's Appliance – 04-05-2026.pdf",
+      "Williams – 5678 Sahara Ave – Garcia – NWHS – 04-05-2026.pdf"
+    ]
+  },
+  "search_defaults": {
+    "max_results": 25,
+    "lookback_query": "newer_than:1d",
+    "attachment_filter": "has:attachment",
+    "exclude_sent": true
+  },
+  "google_drive": {
+    "base_path": "[GOOGLE_DRIVE_BASE_PATH]",
+    "folder_structure": {
+      "level_1": "Investor Name",
+      "level_2": "Property Address",
+      "subfolders": ["HOA", "Owners", "Tenants", "Photos", "Work Completed"]
+    },
+    "access_method": "[DRIVE_ACCESS_METHOD]",
+    "notes": "Set access_method to 'local_sync' if Drive is synced locally, or 'browser' if using Cowork browser automation. Provide the local sync path or leave as browser for Cowork."
+  },
+  "document_types": [
+    {
+      "id": "invoice",
+      "keywords": ["invoice", "inv", "payment due", "bill"],
+      "subfolder": "Work Completed",
+      "file_extensions": [".pdf", ".jpg", ".png"]
+    },
+    {
+      "id": "estimate",
+      "keywords": ["estimate", "quote", "bid", "proposal"],
+      "subfolder": "Work Completed",
+      "file_extensions": [".pdf", ".jpg", ".png"]
+    },
+    {
+      "id": "hoa_notice",
+      "keywords": ["hoa", "violation", "homeowner", "association", "architectural"],
+      "subfolder": "HOA",
+      "file_extensions": [".pdf", ".jpg", ".png"]
+    },
+    {
+      "id": "lease",
+      "keywords": ["lease", "rental agreement", "addendum", "amendment"],
+      "subfolder": "Tenants",
+      "file_extensions": [".pdf"]
+    },
+    {
+      "id": "owner_document",
+      "keywords": ["owner", "investor", "property tax", "insurance", "deed"],
+      "subfolder": "Owners",
+      "file_extensions": [".pdf", ".jpg", ".png"]
+    },
+    {
+      "id": "photos",
+      "keywords": ["photo", "photos", "picture", "image", "move-in", "move-out", "inspection"],
+      "subfolder": "Photos",
+      "file_extensions": [".jpg", ".jpeg", ".png", ".heic"]
+    },
+    {
+      "id": "work_completed",
+      "keywords": ["completed", "finished", "done", "before and after", "repair"],
+      "subfolder": "Work Completed",
+      "file_extensions": [".pdf", ".jpg", ".png"]
+    }
+  ],
+  "known_senders": [
+    {
+      "name": "Campbell's Appliance",
+      "email": "[CAMPBELLS_EMAIL_ADDRESS]",
+      "default_type": "invoice",
+      "default_subfolder": "Work Completed"
+    },
+    {
+      "name": "NWHS (Northwest Handyman Service)",
+      "email": "[NWHS_EMAIL_ADDRESS]",
+      "default_type": "invoice",
+      "default_subfolder": "Work Completed"
+    },
+    {
+      "name": "Matt (Move-In Photos)",
+      "email": "[MATT_EMAIL_ADDRESS]",
+      "default_type": "photos",
+      "default_subfolder": "Photos"
+    },
+    {
+      "name": "[KNOWN_SENDER_4_NAME]",
+      "email": "[KNOWN_SENDER_4_EMAIL]",
+      "default_type": "[KNOWN_SENDER_4_TYPE]",
+      "default_subfolder": "[KNOWN_SENDER_4_SUBFOLDER]"
+    }
+  ],
+  "investor_lookup": {
+    "method": "[INVESTOR_LOOKUP_METHOD]",
+    "notes": "How to determine which investor/property an email relates to. Options: 'subject_line' (parse Nick's naming convention from subject), 'sender_mapping' (map known senders to properties), 'email_body' (scan body for address/name references), or 'all' (try all methods in order). Default to 'all'."
+  },
+  "compression": {
+    "enabled": true,
+    "max_file_size_mb": 5,
+    "photo_quality": 80,
+    "notes": "Photos from phones are often 5-15MB. Compress to under max_file_size_mb while maintaining photo_quality (1-100 scale). PDFs are not compressed."
+  },
+  "notification": {
+    "summary_recipient": "[NICK_GMAIL_ADDRESS]",
+    "send_summary": true,
+    "summary_subject_format": "Attachment Filing Report – [Date]"
+  },
+  "dedup": {
+    "method": "time_window_and_draft",
+    "lookback_query": "newer_than:1d",
+    "notes": "No Gmail labels created or modified. Nick's Gmail stays untouched. Dedup via search time window and checking if attachments have already been filed to the same Drive path."
+  }
+}

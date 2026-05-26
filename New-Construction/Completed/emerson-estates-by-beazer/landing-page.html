@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: Community Landing Page (verbatim from SEO package) -->
+    <title>Emerson Estates by Beazer Homes | 47 Gated Homes from $549K</title>
+    <meta name="description" content="Emerson Estates by Beazer Homes in Las Vegas 89121. 3 plans, 2,191 to 2,735 sq ft from $549,990, owned solar, gated, final lots. Buyer guide from Ryan Rose, Real Broker LLC.">
+    <meta name="keywords" content="Emerson Estates by Beazer Homes, Emerson Estates Las Vegas, Beazer Homes 89121, new construction Las Vegas 89121, gated new homes Las Vegas, Emerson Estates floor plans, new homes near Las Vegas National Golf Course, Beazer Choice Plans Las Vegas">
+    <link rel="canonical" href="https://rosehomeslv.com/emerson-estates-by-beazer">
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Emerson Estates by Beazer Homes | Gated New Homes in Las Vegas 89121 from $549K">
+    <meta property="og:description" content="Emerson Estates is a 47 home gated Beazer community in East Las Vegas, 89121. Three Choice Plans from 2,191 to 2,735 sq ft, base prices $549,990 to $615,990, owned rooftop solar included with claimed annual savings up to $4,859, walking distance to Las Vegas National Golf Course, 4 to 5 miles to the Strip. Final lots, 2026 buildout. Free buyer guide and incentive review from Ryan Rose, Real Broker LLC.">
+    <meta property="og:url" content="https://rosehomeslv.com/emerson-estates-by-beazer">
+    <meta property="og:image" content="https://rosehomeslv.com/images/emerson-estates-by-beazer/hero.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Rose Homes LV">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Emerson Estates by Beazer Homes | Gated New Homes 89121 from $549K">
+    <meta name="twitter:description" content="47 gated homes by Beazer in Las Vegas 89121. Zion, Valencia, Everett plans, 2,191 to 2,735 sq ft from $549,990, owned solar included. Final lots. Buyer guide by Ryan Rose, Real Broker LLC.">
+    <meta name="twitter:image" content="https://rosehomeslv.com/images/emerson-estates-by-beazer/hero.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset + Lofty CMS full-bleed escape */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html {
+            scroll-behavior: smooth;
+            background: #faf8f3;
+            overflow-x: hidden;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2a2520;
+            line-height: 1.6;
+            background: #faf8f3;
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        img { max-width: 100%; display: block; }
+        a { color: inherit; text-decoration: none; }
+
+        /* ============================
+           DESIGN TOKENS, Beazer Homes brand (Beazer Red + Beazer Gray)
+           ============================ */
+        :root {
+            --dark: #faf8f3;
+            --dark-surface: #f2efe7;
+            --dark-card: #ffffff;
+            --cream: #f4f1e7;
+            --text-dark: #2a2520;
+            --text-body: #2a2520;
+            --accent: #A7122A;          /* Beazer Red (PMS 187) */
+            --accent-hover: #c4283f;
+            --accent-muted: rgba(167, 18, 42, 0.12);
+            --navy: #707271;            /* Beazer Gray (secondary) */
+            --white: #ffffff;
+            --w60: rgba(42,37,32,0.7);
+            --w40: rgba(42,37,32,0.55);
+            --w20: rgba(42,37,32,0.3);
+            --w08: rgba(42,37,32,0.1);
+            --w04: rgba(42,37,32,0.04);
+            --radius: 10px;
+            --radius-sm: 6px;
+            --t: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .container { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+
+        /* Reveal */
+        .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ============================
+           SECTION LABEL
+           ============================ */
+        .section-label {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            display: flex; align-items: center; gap: 14px;
+            margin-bottom: 20px;
+        }
+        .section-label::after {
+            content: ''; flex: 1; max-width: 50px; height: 1px;
+        }
+        .section-label--accent { color: var(--accent); }
+        .section-label--accent::after { background: var(--accent); }
+        .section-label--dark { color: var(--w40); }
+        .section-label--dark::after { background: var(--w20); }
+
+        /* ============================
+           INCENTIVE BAR
+           ============================ */
+        .incentive-bar {
+            background: var(--accent);
+            padding: 12px 28px;
+            text-align: center;
+        }
+        .incentive-bar p {
+            font-size: 13px; font-weight: 500; color: var(--white);
+        }
+        .incentive-bar strong { font-weight: 700; }
+
+        /* ============================
+           STICKY HEADER
+           ============================ */
+        .header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(250,248,243,0.92);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--w08);
+            padding: 0;
+        }
+        .header-inner {
+            display: flex; align-items: center; justify-content: space-between;
+            height: 60px;
+        }
+        .header-left {
+            display: flex; align-items: center; gap: 16px;
+            min-width: 0; overflow: hidden;
+        }
+        .header-logo {
+            height: 24px; width: auto;
+            filter: invert(1);
+        }
+        .header-agent {
+            font-size: 12px; font-weight: 500;
+            letter-spacing: 1px; text-transform: uppercase;
+            color: var(--w60);
+        }
+        .header-divider {
+            width: 1px; height: 20px;
+            background: var(--w20);
+        }
+        .header-community {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px; letter-spacing: 2px;
+            color: var(--text-dark);
+        }
+        .header-right {
+            display: flex; align-items: center; gap: 20px;
+        }
+        .header-link {
+            font-size: 12px; font-weight: 500;
+            letter-spacing: 1px; text-transform: uppercase;
+            color: var(--w40); transition: color var(--t);
+        }
+        .header-link:hover { color: var(--text-dark); }
+        .header-cta {
+            background: var(--accent) !important;
+            color: #ffffff !important;
+            padding: 9px 22px; border-radius: 50px;
+            font-size: 12px; font-weight: 600;
+            letter-spacing: 0.5px; text-transform: uppercase;
+            transition: background var(--t);
+            border: none;
+        }
+        .header-cta:hover { background: var(--accent-hover) !important; color: #ffffff !important; }
+
+        /* ============================
+           HERO
+           ============================ */
+        .hero {
+            padding: 80px 28px 40px;
+            background: var(--dark);
+            position: relative; overflow: hidden;
+            min-height: 460px;
+        }
+        .hero-bg {
+            position: absolute; inset: 0; z-index: 0;
+            display: flex; width: max-content;
+            animation: heroScroll 48s linear infinite;
+            will-change: transform;
+            opacity: 1;
+        }
+        .hero-bg img {
+            height: 100%; width: auto; min-width: 50vw;
+            object-fit: cover; flex-shrink: 0;
+        }
+        @keyframes heroScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .hero-overlay {
+            position: absolute; inset: 0; z-index: 1;
+            background: linear-gradient(to right,
+                rgba(250,248,243,0.85) 0%,
+                rgba(250,248,243,0.55) 35%,
+                rgba(250,248,243,0.2) 70%,
+                rgba(250,248,243,0.05) 100%);
+        }
+        .hero::before {
+            content: ''; position: absolute; inset: 0; z-index: 1;
+            background: radial-gradient(ellipse 60% 50% at 70% 50%, rgba(167,18,42,0.06) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero-inner {
+            max-width: 1120px; margin: 0 auto;
+            display: flex; align-items: flex-end; justify-content: space-between;
+            gap: 40px; position: relative; z-index: 2;
+        }
+        .hero-text { max-width: 600px; }
+        .hero-kicker {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(64px, 11vw, 128px);
+            line-height: 0.9; color: var(--text-dark);
+            letter-spacing: 4px; margin-bottom: 16px;
+            text-shadow: 0 1px 12px rgba(250,248,243,0.6);
+        }
+        .hero-sub {
+            font-size: 16px; font-weight: 400;
+            color: var(--text-dark); max-width: 460px;
+            line-height: 1.7; margin-bottom: 24px;
+            text-shadow: 0 1px 8px rgba(250,248,243,0.9);
+        }
+        .hero-cta {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: var(--accent) !important; color: #ffffff !important;
+            padding: 14px 32px; border-radius: 50px;
+            font-size: 13px; font-weight: 600;
+            letter-spacing: 1px; text-transform: uppercase;
+            transition: background var(--t), transform var(--t);
+            border: none;
+        }
+        .hero-cta:hover { background: var(--accent-hover) !important; color: #ffffff !important; transform: translateY(-2px); }
+        .hero-stats {
+            display: flex; gap: 24px;
+            padding: 18px 24px;
+            background: rgba(250,248,243,0.78);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(42,37,32,0.06);
+            border-radius: 12px;
+        }
+        .hero-stat { text-align: center; }
+        .hero-stat-val {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px; letter-spacing: 2px;
+            color: var(--text-dark); line-height: 1; margin-bottom: 4px;
+        }
+        .hero-stat-lbl {
+            font-size: 10px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w60);
+        }
+
+        .hero-photo-credit {
+            position: absolute;
+            bottom: -32px; right: 0;
+            z-index: 3;
+            font-size: 10px; font-style: italic;
+            color: rgba(42,37,32,0.55);
+            background: rgba(250,248,243,0.7);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            padding: 4px 10px;
+            border-radius: 4px;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+        }
+        .hero-photo-credit a {
+            color: rgba(42,37,32,0.75);
+            text-decoration: underline;
+            transition: color var(--t);
+        }
+        .hero-photo-credit a:hover { color: var(--text-dark); }
+
+        /* ============================
+           AMENITIES
+           ============================ */
+        .amenities-section {
+            padding: 60px 0;
+            background: var(--dark-surface);
+            overflow: hidden;
+        }
+        .amenities-label {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 28px;
+            display: flex; align-items: center; gap: 14px;
+        }
+        .amenities-label::after {
+            content: ''; flex: 1; max-width: 50px; height: 1px;
+            background: var(--accent);
+        }
+        .amenities-scroll {
+            display: flex; gap: 16px;
+            overflow-x: auto; padding-bottom: 20px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .amenities-scroll::-webkit-scrollbar { height: 3px; }
+        .amenities-scroll::-webkit-scrollbar-track { background: var(--w04); }
+        .amenities-scroll::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+        .amenity-card {
+            flex: 0 0 280px;
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            transition: border-color var(--t), transform var(--t);
+        }
+        .amenity-card:hover {
+            border-color: var(--w20);
+            transform: translateY(-3px);
+        }
+        .amenity-card-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px; letter-spacing: 1px;
+            color: var(--text-dark); margin-bottom: 4px;
+        }
+        .amenity-card-time {
+            font-size: 10px; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 10px;
+        }
+        .amenity-card-desc {
+            font-size: 13px; color: var(--w40); line-height: 1.6;
+        }
+
+        /* ============================
+           ABOUT
+           ============================ */
+        .about-section {
+            padding: 60px 0;
+            background: var(--dark);
+        }
+        .about-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 48px; align-items: start;
+        }
+        .about-headline {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 44px; letter-spacing: 2px;
+            line-height: 1.05; color: var(--text-dark);
+        }
+        .about-text p {
+            font-size: 15px; line-height: 1.85;
+            color: var(--w40); margin-bottom: 16px;
+        }
+        .about-text p:last-child { margin-bottom: 0; }
+
+        /* ============================
+           FLOOR PLANS
+           ============================ */
+        .plans-section {
+            padding: 60px 0;
+            background: var(--dark);
+        }
+        .plans-header {
+            display: flex; justify-content: space-between;
+            align-items: flex-end; margin-bottom: 40px; gap: 24px;
+        }
+        .plans-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px; letter-spacing: 2px; line-height: 1.05;
+            color: var(--text-dark);
+        }
+        .plans-subtitle {
+            font-size: 14px; color: var(--w40);
+            max-width: 320px; text-align: right;
+        }
+
+        .plan-tabs {
+            display: flex; gap: 0;
+            border-bottom: 1px solid var(--w08);
+            margin-bottom: 32px;
+        }
+        .plan-tab {
+            flex: 1; padding: 16px 12px;
+            text-align: center; cursor: pointer;
+            position: relative; transition: all var(--t);
+        }
+        .plan-tab::after {
+            content: ''; position: absolute;
+            bottom: -1px; left: 0; right: 0; height: 2px;
+            background: var(--accent);
+            transform: scaleX(0); transition: transform var(--t);
+        }
+        .plan-tab.active::after { transform: scaleX(1); }
+        .plan-tab-top {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            margin-bottom: 4px;
+        }
+        .plan-tab-indicator {
+            width: 10px; height: 10px; border-radius: 50%;
+            border: 2px solid var(--w20);
+            transition: all var(--t);
+        }
+        .plan-tab.active .plan-tab-indicator {
+            border-color: var(--accent);
+            background: var(--accent);
+        }
+        .plan-tab-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 22px; letter-spacing: 2px;
+            color: var(--w20); transition: color var(--t);
+        }
+        .plan-tab.active .plan-tab-name { color: var(--text-dark); }
+        .plan-tab:hover .plan-tab-name { color: var(--w60); }
+        .plan-tab-price {
+            font-size: 12px; color: var(--w20);
+        }
+        .plan-tab.active .plan-tab-price { color: var(--w40); }
+
+        .plan-display {
+            display: grid;
+            grid-template-columns: 1.35fr 1fr;
+            gap: 24px;
+            align-items: start;
+        }
+        .plan-image-panel {
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            opacity: 0; transform: scale(0.97);
+            transition: opacity var(--t), transform var(--t);
+        }
+        .plan-image-panel.visible { opacity: 1; transform: scale(1); }
+        .plan-image-label {
+            padding: 12px 20px;
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w60);
+            border-bottom: 1px solid var(--w08);
+            display: flex; justify-content: space-between; align-items: center;
+            gap: 12px;
+        }
+        .plan-image-toggle { display: flex; gap: 4px; }
+        .plan-image-toggle-btn {
+            background: transparent; border: 1px solid var(--w08);
+            color: var(--w60); font-family: 'Inter', sans-serif;
+            font-size: 10px; font-weight: 600; letter-spacing: 1px;
+            text-transform: uppercase; padding: 5px 10px;
+            border-radius: 4px; cursor: pointer;
+            transition: color var(--t), background var(--t), border-color var(--t);
+        }
+        .plan-image-toggle-btn:hover { color: var(--text-dark); border-color: var(--w20); }
+        .plan-image-toggle-btn.active {
+            background: var(--accent); border-color: var(--accent); color: var(--white);
+        }
+        .plan-image-area {
+            aspect-ratio: 5 / 4;
+            display: flex; align-items: center; justify-content: center;
+            background: #fbfaf6;
+            overflow: hidden; position: relative;
+            cursor: zoom-in;
+        }
+        .plan-image-area img { width: 100%; height: 100%; object-fit: contain; max-width: 100%; }
+        .plan-zoom-hint {
+            position: absolute; bottom: 10px; right: 10px;
+            background: rgba(42,37,32,0.78); color: #faf8f3;
+            font-size: 10px; font-weight: 600; letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 5px 10px; border-radius: 4px;
+            display: flex; align-items: center; gap: 6px;
+            pointer-events: none;
+        }
+        .plan-image-source {
+            padding: 6px 20px 8px;
+            font-size: 10px; font-style: italic;
+            color: var(--w20);
+            text-align: right;
+        }
+        .plan-image-source a { color: var(--w20); text-decoration: underline; transition: color var(--t); }
+        .plan-image-source a:hover { color: var(--w40); }
+
+        .plan-detail-panel {
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            border-radius: var(--radius);
+            padding: 32px;
+            border-top: 3px solid var(--accent);
+            opacity: 0; transform: translateY(12px);
+            transition: opacity var(--t), transform var(--t);
+        }
+        .plan-detail-panel.visible { opacity: 1; transform: translateY(0); }
+        .plan-detail-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 32px; letter-spacing: 2px;
+            color: var(--text-dark); margin-bottom: 4px;
+        }
+        .plan-detail-builder {
+            font-size: 11px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40); margin-bottom: 24px;
+        }
+        .plan-spec-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 12px; margin-bottom: 24px;
+        }
+        .plan-spec-item {
+            text-align: center; padding: 16px 8px;
+            border-radius: var(--radius-sm);
+            background: var(--cream);
+            border: 1px solid var(--w08);
+        }
+        .plan-spec-val {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 24px; letter-spacing: 1px;
+            color: var(--text-dark); margin-bottom: 2px;
+        }
+        .plan-spec-val.highlight { color: var(--navy); }
+        .plan-spec-lbl {
+            font-size: 10px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+        }
+        .plan-features {
+            list-style: none;
+        }
+        .plan-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--w04);
+            font-size: 13px; color: var(--w40);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .plan-features li:last-child { border-bottom: none; }
+        .plan-features li::before {
+            content: ''; width: 5px; height: 5px;
+            border-radius: 50%; background: var(--accent);
+            flex-shrink: 0;
+        }
+        .plan-detail-cta {
+            margin-top: 20px;
+            display: block; text-align: center;
+            padding: 12px;
+            background: var(--accent) !important;
+            color: #ffffff !important;
+            border-radius: 50px;
+            font-size: 12px; font-weight: 600;
+            letter-spacing: 1px; text-transform: uppercase;
+            transition: background var(--t);
+            border: none;
+        }
+        .plan-detail-cta:hover { background: var(--accent-hover) !important; color: #ffffff !important; }
+        .plan-compare-hint {
+            text-align: center; margin-top: 16px;
+            font-size: 12px; color: var(--w20);
+        }
+
+        /* ============================
+           FLOOR PLAN ZOOM LIGHTBOX
+           ============================ */
+        .fp-lightbox {
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.92);
+            z-index: 9999;
+            display: none;
+            align-items: center; justify-content: center;
+            padding: 40px 20px;
+            animation: fpFade 0.25s ease;
+        }
+        .fp-lightbox.open { display: flex; }
+        @keyframes fpFade { from { opacity: 0; } to { opacity: 1; } }
+        .fp-lightbox-inner {
+            position: relative;
+            max-width: 90vw; max-height: 90vh;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            gap: 16px;
+        }
+        .fp-lightbox img {
+            max-width: 90vw; max-height: 78vh;
+            object-fit: contain;
+            border-radius: 6px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            background: #fbfaf6;
+        }
+        .fp-lightbox-caption {
+            color: rgba(255,255,255,0.85);
+            font-size: 13px;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .fp-lightbox-caption strong {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 18px; letter-spacing: 2px;
+            display: block; margin-bottom: 4px;
+            color: #ffffff;
+        }
+        .fp-lightbox-caption em {
+            font-style: italic; font-size: 11px;
+            color: rgba(255,255,255,0.55);
+        }
+        .fp-lightbox-close {
+            position: absolute;
+            top: -12px; right: -12px;
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: #1a1a1a;
+            border: 2px solid rgba(255,255,255,0.2);
+            color: #ffffff;
+            font-size: 22px; line-height: 1;
+            cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: background var(--t), transform var(--t);
+            font-family: 'Inter', sans-serif;
+        }
+        .fp-lightbox-close:hover {
+            background: #A7122A;
+            transform: scale(1.05);
+        }
+        body.fp-lock { overflow: hidden; }
+
+        /* ============================
+           RESPONSIVE
+           ============================ */
+        @media (max-width: 900px) {
+            .about-grid { grid-template-columns: 1fr; gap: 24px; }
+            .plans-header { flex-direction: column; align-items: flex-start; }
+            .plans-subtitle { text-align: left; }
+            .plan-display { grid-template-columns: 1fr; }
+            .hero-inner { flex-direction: column; align-items: flex-start; }
+            .hero-stats { gap: 24px; }
+        }
+        @media (max-width: 768px) {
+            .header-agent { display: none; }
+            .header-divider { display: none; }
+            .header-link { display: none; }
+            .header-inner { height: 52px; }
+            .header-logo { height: 20px; }
+            .header-community { font-size: 17px; }
+            .header-cta { padding: 7px 16px; font-size: 11px; }
+
+            .hero { padding: 64px 20px 32px; }
+            .hero h1 { font-size: 56px; letter-spacing: 2px; }
+            .hero-sub { font-size: 15px; margin-bottom: 20px; }
+            .hero-cta { padding: 12px 24px; font-size: 12px; }
+            .hero-stats { flex-wrap: wrap; gap: 16px; }
+            .hero-stat-val { font-size: 28px; }
+            .hero-stat-lbl { font-size: 9px; letter-spacing: 1.5px; }
+
+            .incentive-bar { padding: 10px 16px; }
+            .incentive-bar p { font-size: 12px; }
+
+            .about-section { padding: 40px 0; }
+            .about-headline { font-size: 32px; }
+            .about-text p { font-size: 14px; }
+
+            .plans-section { padding: 40px 0; }
+            .plans-title { font-size: 28px; }
+            .plan-tabs { flex-wrap: wrap; }
+            .plan-tab { flex: 1 1 45%; padding: 12px 8px; }
+            .plan-tab-name { font-size: 16px; }
+            .plan-tab-price { font-size: 11px; }
+            .plan-detail-panel { padding: 24px 20px; }
+            .plan-detail-name { font-size: 26px; }
+            .plan-spec-val { font-size: 20px; }
+            .plan-image-label { padding: 10px 16px; font-size: 10px; flex-wrap: wrap; }
+
+            .amenities-section { padding: 40px 0; }
+            .amenity-card { flex: 0 0 220px; padding: 22px 18px; }
+            .amenity-card-name { font-size: 18px; }
+            .amenity-card-desc { font-size: 12px; }
+
+            .fp-lightbox-close { top: -8px; right: -8px; width: 36px; height: 36px; font-size: 20px; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 44px; }
+            .hero-kicker { font-size: 10px; letter-spacing: 2px; }
+            .hero-stat { min-width: 60px; }
+            .hero-stat-val { font-size: 24px; }
+            .hero-stats { gap: 12px; }
+
+            .plan-tab { flex: 1 1 100%; }
+            .plan-tab-top { gap: 6px; }
+            .plan-tab-indicator { width: 8px; height: 8px; }
+            .plan-spec-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+            .plan-spec-item { padding: 12px 6px; }
+            .plan-spec-val { font-size: 18px; }
+            .plan-features li { font-size: 12px; padding: 8px 0; }
+
+            .amenity-card { flex: 0 0 200px; padding: 20px 16px; }
+
+            .container { padding: 0 20px; }
+        }
+        @media (max-width: 360px) {
+            .hero h1 { font-size: 36px; }
+            .hero-stat-val { font-size: 20px; }
+            .header-community { font-size: 15px; letter-spacing: 1px; }
+            .plan-detail-name { font-size: 22px; }
+        }
+    </style>
+
+    <!-- ======== JSON-LD: Combined Place + RealEstateAgent + ItemList (verbatim from SEO package) ======== -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Place",
+        "name": "Emerson Estates by Beazer Homes",
+        "description": "Gated 47 home Beazer Homes new construction community in East Las Vegas 89121. Three Choice Plans from 2,191 to 2,735 sq ft, base prices $549,990 to $615,990, owned rooftop solar included, walking distance to Las Vegas National Golf Course.",
+        "url": "https://rosehomeslv.com/emerson-estates-by-beazer",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2583 Regency Cove Court",
+          "addressLocality": "Las Vegas",
+          "addressRegion": "NV",
+          "postalCode": "89121",
+          "addressCountry": "US"
+        },
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Clark County, Nevada"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Ryan Rose",
+        "url": "https://rosehomeslv.com",
+        "telephone": "+1-702-747-5921",
+        "email": "ryan@rosehomeslv.com",
+        "image": "https://rosehomeslv.com/images/ryan-rose-headshot.jpg",
+        "description": "Las Vegas new construction specialist helping buyers at Emerson Estates and other Clark County NV communities. Ryan Rose, Real Broker LLC.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Las Vegas",
+          "addressRegion": "NV",
+          "postalCode": "89121",
+          "addressCountry": "US"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Real Broker LLC"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Las Vegas" },
+          { "@type": "City", "name": "Henderson" },
+          { "@type": "City", "name": "North Las Vegas" }
+        ],
+        "knowsAbout": [
+          "Beazer Homes Las Vegas",
+          "Emerson Estates",
+          "New construction 89121",
+          "Owned solar new homes Las Vegas",
+          "Beazer Choice Plans"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Emerson Estates Floor Plans",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Product",
+              "name": "Zion",
+              "description": "Single-story Beazer Choice Plan at Emerson Estates with 2,191 sq ft, 3 to 4 bedrooms, 2.5 to 3 baths, 2-car garage, primary suite separated from secondary bedrooms, open kitchen with quartz island, owned rooftop solar, DOE Zero Energy Ready and ENERGY STAR certified.",
+              "brand": { "@type": "Brand", "name": "Beazer Homes" },
+              "category": "Single-Family Home",
+              "offers": {
+                "@type": "Offer",
+                "price": "551990",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": "https://rosehomeslv.com/blog/emerson-estates-by-beazer-zion",
+                "seller": { "@type": "Organization", "name": "Beazer Homes" }
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Product",
+              "name": "Valencia",
+              "description": "Two-story Beazer Choice Plan at Emerson Estates with 2,532 sq ft, 4 bedrooms, 3 baths, 2-car garage, main-level guest suite with full bath, second-floor flex loft, owned rooftop solar, DOE Zero Energy Ready and ENERGY STAR certified.",
+              "brand": { "@type": "Brand", "name": "Beazer Homes" },
+              "category": "Single-Family Home",
+              "offers": {
+                "@type": "Offer",
+                "price": "549990",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": "https://rosehomeslv.com/blog/emerson-estates-by-beazer-valencia",
+                "seller": { "@type": "Organization", "name": "Beazer Homes" }
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Product",
+              "name": "Everett",
+              "description": "Single-story-plus-loft Beazer Choice Plan at Emerson Estates with 2,735 sq ft, 4 bedrooms, 3 baths, 2-car garage, dedicated study, expansive primary suite, quasi pop-top upper loft, owned rooftop solar, DOE Zero Energy Ready and ENERGY STAR certified.",
+              "brand": { "@type": "Brand", "name": "Beazer Homes" },
+              "category": "Single-Family Home",
+              "offers": {
+                "@type": "Offer",
+                "price": "615990",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": "https://rosehomeslv.com/blog/emerson-estates-by-beazer-everett",
+                "seller": { "@type": "Organization", "name": "Beazer Homes" }
+              }
+            }
+          }
+        ]
+      }
+    ]
+    </script>
+</head>
+<body>
+
+    <!-- ======== LOFTY WRAPPER ESCAPE ======== -->
+    <script>
+    (function() {
+        function stripConstraints() {
+            var el = document.body.parentElement;
+            while (el && el !== document.documentElement) {
+                el.style.setProperty('max-width', 'none', 'important');
+                el.style.setProperty('width', '100%', 'important');
+                el.style.setProperty('padding', '0', 'important');
+                el.style.setProperty('margin', '0', 'important');
+                el.style.setProperty('overflow', 'visible', 'important');
+                el.style.setProperty('background', '#faf8f3', 'important');
+                el = el.parentElement;
+            }
+            var bodyKids = document.body.children;
+            for (var i = 0; i < bodyKids.length; i++) {
+                var p = bodyKids[i].parentElement;
+                while (p && p !== document.body) {
+                    p.style.setProperty('max-width', 'none', 'important');
+                    p.style.setProperty('width', '100%', 'important');
+                    p.style.setProperty('padding', '0', 'important');
+                    p.style.setProperty('margin', '0', 'important');
+                    p.style.setProperty('overflow', 'visible', 'important');
+                    p = p.parentElement;
+                }
+            }
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', stripConstraints);
+        } else {
+            stripConstraints();
+        }
+        setTimeout(stripConstraints, 100);
+        setTimeout(stripConstraints, 500);
+    })();
+    </script>
+
+    <!-- ======== HEADER ======== -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="header-left">
+                <img src="https://www.dropbox.com/scl/fi/iylyhqb6tsecef8mlyc56/real-logo-white.png?rlkey=q060phklshu7euevn2a9rlvnb&raw=1" alt="Real Broker" class="header-logo">
+                <span class="header-agent">Ryan Rose</span>
+                <span class="header-divider"></span>
+                <span class="header-community">EMERSON ESTATES</span>
+            </div>
+            <div class="header-right">
+                <a href="#floorplans" class="header-link">Floor Plans</a>
+                <a href="#contact" class="header-cta">Get Pricing</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://cmp.beazer.com/images/assets/Emerson%20Estates/Zz0wZjBlNDU2YTk2NDYxMWYwOWVhNjBhMWZkZGI2NjAyYg==?width=1920" alt="Emerson Estates community entry">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://cmp.beazer.com/images/assets/Everett%20Arts%20and%20Crafts%20Exterior/Zz0wZmI0NmVmZTk2NDYxMWYwYTI0OTIyZGM5MGViMGFjMA==?width=1920" alt="Everett model home Arts and Crafts elevation">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://cmp.beazer.com/images/assets/Everett%20Great%20Room/Zz1iZTdlNDQ2NDk1Y2UxMWYwOTVjNTZhNzdiODJiM2NmYQ==?width=1920" alt="Everett model great room">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://cmp.beazer.com/images/assets/Everett%20Kitchen/Zz1iZWVkMDk5NDk1Y2UxMWYwYjNmODEyZDMzNTA1MWIwMQ==?width=1920" alt="Everett model kitchen with quartz island">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://cmp.beazer.com/images/assets/Everett%20Primary%20Bedroom/Zz1iZTAyNjI4Njk1Y2UxMWYwYTQ1ZjEyZDMzNTA1MWIwMQ==?width=1920" alt="Everett model primary bedroom">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://cmp.beazer.com/images/assets/Everett%20Exterior/Zz1iZWUxN2Y1Mjk1Y2UxMWYwOTM2MGRhNmQ4MmU0NjY2NQ==?width=1920" alt="Everett model exterior at dusk">
+            <!-- Duplicate for seamless loop -->
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://cmp.beazer.com/images/assets/Emerson%20Estates/Zz0wZjBlNDU2YTk2NDYxMWYwOWVhNjBhMWZkZGI2NjAyYg==?width=1920" alt="">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://cmp.beazer.com/images/assets/Everett%20Arts%20and%20Crafts%20Exterior/Zz0wZmI0NmVmZTk2NDYxMWYwYTI0OTIyZGM5MGViMGFjMA==?width=1920" alt="">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://cmp.beazer.com/images/assets/Everett%20Great%20Room/Zz1iZTdlNDQ2NDk1Y2UxMWYwOTVjNTZhNzdiODJiM2NmYQ==?width=1920" alt="">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://cmp.beazer.com/images/assets/Everett%20Kitchen/Zz1iZWVkMDk5NDk1Y2UxMWYwYjNmODEyZDMzNTA1MWIwMQ==?width=1920" alt="">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://cmp.beazer.com/images/assets/Everett%20Primary%20Bedroom/Zz1iZTAyNjI4Njk1Y2UxMWYwYTQ1ZjEyZDMzNTA1MWIwMQ==?width=1920" alt="">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://cmp.beazer.com/images/assets/Everett%20Exterior/Zz1iZWUxN2Y1Mjk1Y2UxMWYwOTM2MGRhNmQ4MmU0NjY2NQ==?width=1920" alt="">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-kicker">Beazer Homes</div>
+                <h1>EMERSON ESTATES</h1>
+                <p class="hero-sub">A gated final phase community of 47 homes in East Las Vegas 89121. Three Beazer Choice Plans from 2,191 to 2,735 sqft, owned rooftop solar included, walking distance to Las Vegas National Golf Course.</p>
+                <a href="#contact" class="hero-cta">Get the Buyer Guide &#8599;</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-val">$549,990</div>
+                    <div class="hero-stat-lbl">Starting</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-val">2,735</div>
+                    <div class="hero-stat-lbl">Max Sq Ft</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-val">3-4</div>
+                    <div class="hero-stat-lbl">Beds</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-val">3</div>
+                    <div class="hero-stat-lbl">Plans</div>
+                </div>
+            </div>
+            <div class="hero-photo-credit">
+                Photos courtesy of <a href="https://www.beazer.com/las-vegas-nv/emerson-estates" target="_blank" rel="noopener">Beazer Homes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== INCENTIVE DIVIDER ======== -->
+    <div class="incentive-bar">
+        <p><strong>Final Lots:</strong> Owned rooftop solar included on every home, with claimed annual savings up to $4,859. Call Ryan at 702-747-5921 for current Beazer incentives.</p>
+    </div>
+
+    <!-- ======== ABOUT ======== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-label section-label--accent">About</div>
+            <div class="about-grid">
+                <div class="reveal">
+                    <h2 class="about-headline">A GATED 47 HOME<br>COMMUNITY IN<br>EAST LAS VEGAS</h2>
+                </div>
+                <div class="about-text reveal">
+                    <p>Emerson Estates is a small gated Beazer Homes community tucked into 89121 on Pacific Street, just off Eastern Avenue and Flamingo Road. Only 47 homes inside the gates, and the builder is now down to the final lots with a 2026 buildout target.</p>
+                    <p>Every home comes with owned rooftop solar at no upcharge. Beazer claims annual energy savings of up to $4,859. All homes are DOE Zero Energy Ready, ENERGY STAR certified, and Indoor airPLUS qualified. Three flexible Beazer Choice Plans give you room to pick the layout that fits your life, including a true single-story option.</p>
+                    <p>The model home is open at 2583 Regency Cove Court. Las Vegas National Golf Course sits right next door. The Las Vegas Strip and Harry Reid International Airport are both 4 to 5 miles west. Call Ryan at 702-747-5921 to walk a model in person.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FLOOR PLANS ======== -->
+    <section class="plans-section" id="floorplans">
+        <div class="container">
+            <div class="section-label section-label--dark">Floor Plans</div>
+            <div class="plans-header">
+                <h2 class="plans-title">CHOOSE YOUR<br>FLOOR PLAN</h2>
+                <p class="plans-subtitle">Three Beazer Choice Plans. One true single story. Click any image to zoom in.</p>
+            </div>
+
+            <div class="plan-tabs" id="planTabs"></div>
+            <div class="plan-display" id="planDisplay"></div>
+
+            <div class="plan-compare-hint">
+                <a href="#contact" style="color:var(--accent);text-decoration:underline;">Want every floor for every plan, plus pricing, options, and elevations?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== AMENITIES ======== -->
+    <section class="amenities-section">
+        <div class="container">
+            <div class="amenities-label">Around Emerson Estates</div>
+        </div>
+        <div class="container">
+            <div class="amenities-scroll">
+                <div class="amenity-card">
+                    <div class="amenity-card-name">LAS VEGAS NATIONAL GOLF</div>
+                    <div class="amenity-card-time">Walking Distance</div>
+                    <div class="amenity-card-desc">18 hole course immediately adjacent to the community. Tee off without driving across town.</div>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-card-name">LAS VEGAS STRIP</div>
+                    <div class="amenity-card-time">10-15 Min</div>
+                    <div class="amenity-card-desc">4 to 5 miles west. Quick run to the resorts, dining, and entertainment of the Strip.</div>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-card-name">HARRY REID AIRPORT</div>
+                    <div class="amenity-card-time">10 Min</div>
+                    <div class="amenity-card-desc">About 4 miles to LAS. Easy in and out for travel and pickup runs.</div>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-card-name">UNLV</div>
+                    <div class="amenity-card-time">8 Min</div>
+                    <div class="amenity-card-desc">Roughly 2 to 3 miles west on Maryland Parkway. Campus, Thomas and Mack, and the Boyd School of Law.</div>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-card-name">BOULEVARD MALL</div>
+                    <div class="amenity-card-time">8 Min</div>
+                    <div class="amenity-card-desc">Maryland Parkway and Desert Inn. Anchor retail, food court, and everyday shopping.</div>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-card-name">SUNRISE HOSPITAL</div>
+                    <div class="amenity-card-time">8 Min</div>
+                    <div class="amenity-card-desc">Sunrise Hospital and Medical Center on Maryland Parkway, about 3 miles away.</div>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-card-name">TRADER JOE'S &amp; WHOLE FOODS</div>
+                    <div class="amenity-card-time">10 Min</div>
+                    <div class="amenity-card-desc">Tropicana and Pecos for Trader Joe's and Whole Foods. Smith's and Albertsons even closer.</div>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-card-name">I-215 BELTWAY ACCESS</div>
+                    <div class="amenity-card-time">5 Min</div>
+                    <div class="amenity-card-desc">Tropicana and Russell exits roughly 1.5 to 2 miles south. I-15 and US-95 also within easy reach.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FLOOR PLAN ZOOM LIGHTBOX ======== -->
+    <div class="fp-lightbox" id="fpLightbox" role="dialog" aria-modal="true" aria-label="Floor plan zoom view">
+        <div class="fp-lightbox-inner">
+            <button class="fp-lightbox-close" id="fpLightboxClose" aria-label="Close floor plan zoom">&times;</button>
+            <img id="fpLightboxImg" src="" alt="">
+            <div class="fp-lightbox-caption" id="fpLightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- ======== JAVASCRIPT ======== -->
+    <script>
+    (function() {
+        'use strict';
+
+        var BUILDER_NAME = 'Beazer Homes';
+        var BUILDER_URL = 'https://www.beazer.com/las-vegas-nv/emerson-estates';
+
+        /* Floor plan image URLs preserved from the prior Beazer-sourced CDN. */
+        var PLANS = [
+            {
+                id: 'zion',
+                name: 'Zion',
+                price: 551990,
+                priceLabel: 'From $551,990',
+                sqft: 2191,
+                sqftLabel: '2,191 sq ft',
+                beds: '3-4',
+                baths: '2.5-3',
+                bathsLabel: '2.5-3',
+                garage: '2-car',
+                stories: '1 Story',
+                features: [
+                    'True single story, no stairs',
+                    'Primary suite separated for privacy',
+                    'Open kitchen with quartz island',
+                    'Owned rooftop solar included',
+                    'DOE Zero Energy Ready certified',
+                    'Beazer Choice Plans flexibility'
+                ],
+                imageFloor1: 'https://cmp.beazer.com/images/assets/89e066a6-7708-450f-a492-28170de6e33c/Zz1jMTAxZGY3NDliNGMxMWYwYjVkNThhYTgzNzJhOTRlOQ==',
+                imageFloor2: '',
+                imageFloor3: '',
+                builderUrl: 'https://www.beazer.com/las-vegas-nv/emerson-estates/emerson-estates/zion'
+            },
+            {
+                id: 'valencia',
+                name: 'Valencia',
+                price: 549990,
+                priceLabel: 'From $549,990',
+                sqft: 2532,
+                sqftLabel: '2,532 sq ft',
+                beds: '4',
+                baths: '3',
+                bathsLabel: '3',
+                garage: '2-car',
+                stories: '2 Story',
+                features: [
+                    'Main level guest suite with full bath',
+                    'Second floor flexible loft',
+                    'Quick Move-In available now',
+                    'Owned rooftop solar included',
+                    'ENERGY STAR and Indoor airPLUS',
+                    'Beazer Choice Plans flexibility'
+                ],
+                imageFloor1: 'https://cmp.beazer.com/images/assets/bc7ad829-060d-4c15-85dc-5021ad550dfd/Zz1jOWQwMzMxMjliNGMxMWYwOGNkZDY2ZmQyOTQ5ZmNlOQ==',
+                imageFloor2: '',
+                imageFloor3: '',
+                builderUrl: 'https://www.beazer.com/las-vegas-nv/emerson-estates/emerson-estates/valencia'
+            },
+            {
+                id: 'everett',
+                name: 'Everett',
+                price: 615990,
+                priceLabel: 'From $615,990',
+                sqft: 2735,
+                sqftLabel: '2,735 sq ft',
+                beds: '4',
+                baths: '3',
+                bathsLabel: '3',
+                garage: '2-car',
+                stories: '1 + Loft',
+                features: [
+                    'Single story plus upper loft, quasi pop-top',
+                    'Expansive primary suite with walk-in closet',
+                    'Dedicated study off main living',
+                    'Largest plan at 2,735 sq ft',
+                    'Owned rooftop solar included',
+                    'DOE Zero Energy Ready certified'
+                ],
+                imageFloor1: 'https://cmp.beazer.com/images/assets/92077247-5e6b-40cf-afa9-31f12d37a566/Zz1kNmNhNjk4ZTliNGMxMWYwODc3Yzg2OTc0OWZhYTMxOQ==',
+                imageFloor2: '',
+                imageFloor3: '',
+                builderUrl: 'https://www.beazer.com/las-vegas-nv/emerson-estates/emerson-estates/everett'
+            }
+        ];
+
+        var selectedId = PLANS[0].id;
+        var selectedFloor = 1;
+
+        function getPlan(id) { return PLANS.find(function(p) { return p.id === id; }); }
+
+        var tabsEl = document.getElementById('planTabs');
+        var displayEl = document.getElementById('planDisplay');
+
+        function renderTabs() {
+            tabsEl.innerHTML = '';
+            PLANS.forEach(function(plan) {
+                var tab = document.createElement('div');
+                tab.className = 'plan-tab' + (plan.id === selectedId ? ' active' : '');
+                tab.innerHTML =
+                    '<div class="plan-tab-top">' +
+                        '<div class="plan-tab-indicator"></div>' +
+                        '<div class="plan-tab-name">' + plan.name.toUpperCase() + '</div>' +
+                    '</div>' +
+                    '<div class="plan-tab-price">' + plan.priceLabel + '</div>';
+                tab.addEventListener('click', function() {
+                    selectedId = plan.id;
+                    selectedFloor = 1;
+                    update();
+                });
+                tabsEl.appendChild(tab);
+            });
+        }
+
+        function renderDisplay() {
+            displayEl.innerHTML = '';
+            var plan = getPlan(selectedId);
+
+            var floors = [];
+            if (plan.imageFloor1) floors.push({ n: 1, label: 'Floor 1' });
+            if (plan.imageFloor2) floors.push({ n: 2, label: 'Floor 2' });
+            if (plan.imageFloor3) floors.push({ n: 3, label: 'Floor 3' });
+            if (floors.length && !floors.some(function(f) { return f.n === selectedFloor; })) {
+                selectedFloor = floors[0].n;
+            }
+            var currentImg = plan['imageFloor' + selectedFloor];
+            var floorLabel = ['First', 'Second', 'Third'][selectedFloor - 1] + ' Floor';
+
+            var imgPanel = document.createElement('div');
+            imgPanel.className = 'plan-image-panel';
+            imgPanel.innerHTML =
+                '<div class="plan-image-label">' +
+                    '<span>' + plan.name + ' Floor Plan, ' + floorLabel + '</span>' +
+                    (floors.length > 1 ?
+                        '<span class="plan-image-toggle">' +
+                            floors.map(function(f) {
+                                return '<button type="button" class="plan-image-toggle-btn' +
+                                    (selectedFloor === f.n ? ' active' : '') +
+                                    '" data-floor="' + f.n + '">' + f.label + '</button>';
+                            }).join('') +
+                        '</span>'
+                    : '') +
+                '</div>' +
+                '<div class="plan-image-area" tabindex="0" role="button" aria-label="View full size floor plan">' +
+                    (currentImg
+                        ? '<img src="' + currentImg + '" alt="' + plan.name + ' ' + floorLabel.toLowerCase() + ' plan at Emerson Estates by Beazer Homes" loading="lazy">'
+                        : '<div style="color:var(--w40);font-size:13px;padding:40px;text-align:center;">Floor plan image, verify at sales office.</div>') +
+                    '<div class="plan-zoom-hint">Click to zoom &#8599;</div>' +
+                '</div>' +
+                '<div class="plan-image-source">First-floor preview shown. Full plan set with dimensions and elevations is in the buyer guide. Image courtesy of ' +
+                    '<a href="' + plan.builderUrl + '" target="_blank" rel="noopener">' + BUILDER_NAME + '</a></div>';
+            displayEl.appendChild(imgPanel);
+
+            // Bind floor toggle buttons (stopPropagation so the lightbox doesn't open)
+            var toggleBtns = imgPanel.querySelectorAll('.plan-image-toggle-btn');
+            toggleBtns.forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    selectedFloor = parseInt(btn.getAttribute('data-floor'), 10);
+                    renderDisplay();
+                });
+            });
+
+            // Bind zoom on the image area
+            var zoomArea = imgPanel.querySelector('.plan-image-area');
+            if (zoomArea && currentImg) {
+                zoomArea.addEventListener('click', function() {
+                    openLightbox(currentImg, plan.name, floorLabel);
+                });
+                zoomArea.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openLightbox(currentImg, plan.name, floorLabel);
+                    }
+                });
+            }
+
+            var detPanel = document.createElement('div');
+            detPanel.className = 'plan-detail-panel';
+            detPanel.innerHTML =
+                '<div class="plan-detail-name">' + plan.name.toUpperCase() + '</div>' +
+                '<div class="plan-detail-builder">Beazer Homes, ' + plan.stories + '</div>' +
+                '<div class="plan-spec-grid">' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.priceLabel.replace('From ','').replace('Up to ','') + '</div><div class="plan-spec-lbl">Price</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.sqftLabel + '</div><div class="plan-spec-lbl">Sq Ft</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.beds + '</div><div class="plan-spec-lbl">Beds</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.bathsLabel + '</div><div class="plan-spec-lbl">Baths</div></div>' +
+                '</div>' +
+                '<ul class="plan-features">' + plan.features.map(function(f) { return '<li>' + f + '</li>'; }).join('') + '</ul>' +
+                '<a href="#contact" class="plan-detail-cta">Get Full Floor Plans</a>';
+            displayEl.appendChild(detPanel);
+
+            requestAnimationFrame(function() { requestAnimationFrame(function() {
+                imgPanel.classList.add('visible');
+                detPanel.classList.add('visible');
+            }); });
+        }
+
+        function update() { renderTabs(); renderDisplay(); }
+        update();
+
+        /* ============================
+           FLOOR PLAN ZOOM LIGHTBOX
+           ============================ */
+        var lightbox = document.getElementById('fpLightbox');
+        var lightboxImg = document.getElementById('fpLightboxImg');
+        var lightboxCaption = document.getElementById('fpLightboxCaption');
+        var lightboxClose = document.getElementById('fpLightboxClose');
+
+        function openLightbox(src, planName, floorLabel) {
+            if (!src) return;
+            lightboxImg.src = src;
+            lightboxImg.alt = planName + ' ' + floorLabel.toLowerCase() + ' plan, full size';
+            lightboxCaption.innerHTML =
+                '<strong>' + planName.toUpperCase() + ', ' + floorLabel.toUpperCase() + '</strong>' +
+                '<em>Image courtesy of ' + BUILDER_NAME + '</em>';
+            lightbox.classList.add('open');
+            document.body.classList.add('fp-lock');
+        }
+        function closeLightbox() {
+            lightbox.classList.remove('open');
+            document.body.classList.remove('fp-lock');
+            lightboxImg.src = '';
+        }
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) closeLightbox();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+        });
+
+        /* Scroll reveal */
+        var reveals = document.querySelectorAll('.reveal');
+        var obs = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(function(el) { obs.observe(el); });
+
+        /* Scroll #contact CTAs to bottom (where Lofty form lives once wired) */
+        function scrollToBottom(e) {
+            if (e) e.preventDefault();
+            var target = Math.max(
+                document.body.scrollHeight,
+                document.documentElement.scrollHeight
+            );
+            window.scrollTo({ top: target, behavior: 'smooth' });
+        }
+        function bindContactScroll(root) {
+            var links = (root || document).querySelectorAll('a[href="#contact"]');
+            links.forEach(function(a) {
+                if (a.dataset.scrollBound) return;
+                a.dataset.scrollBound = '1';
+                a.addEventListener('click', scrollToBottom);
+            });
+        }
+        bindContactScroll();
+        var displayObserver = new MutationObserver(function() { bindContactScroll(); });
+        var displayEl2 = document.getElementById('planDisplay');
+        if (displayEl2) displayObserver.observe(displayEl2, { childList: true, subtree: true });
+
+    })();
+    </script>
+
+</body>
+</html>

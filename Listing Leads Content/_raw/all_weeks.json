@@ -1,0 +1,915 @@
+[
+  {
+    "week_date": "2026-03-16",
+    "header_text": "Mar 16 - 20",
+    "days": [
+      {
+        "day_name": "Monday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Email Campaigns",
+            "title": "Deal of the Week",
+            "url": "https://www.listingleads.com/campaigns/email-campaigns/deal-of-the-week",
+            "slug": "deal-of-the-week",
+            "detail_text": "[Copy Block 1] Subject | [Copy Block 2] Inbox Preview Text | [Copy Block 3] Body | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1773665057608_deal-of-the-week-thumbnail_60vYYNBxb.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1773665058973_deal-of-the-week-full-preview_7ufl882Op.png",
+                "alt": "Example 1",
+                "size": "640x592"
+              }
+            ]
+          },
+          {
+            "category": "Social Shareables",
+            "title": "Deal of the Week: AirDrop",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/deal-of-the-week-airdrop",
+            "slug": "deal-of-the-week-airdrop",
+            "detail_text": "Introduction\n\nIf it doesn’t already, the “Deal of the Week” should live in your weekly SOPs. Every week, find the hottest new listing in your market - and turn it into a reason for people to stop, share, and engage.\n\nWe know: you can’t always get the listing agent’s permission to share the photos of your Deal of the Week. That’s why we created this template.\n\nFollow the instructions below on how to edit the template in Canva and post to Instagram.\n\nNot sure which listing to feature?\n\nFilter for ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Social%20Shareables/deal-of-the-week-airdrop/thumbnail-deal-of-the-week-airdrop.png?updatedAt=1764245968998",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Social%20Shareables/deal-of-the-week-airdrop/example-deal-of-the-week-airdrop.png?updatedAt=1764245969315",
+                "alt": "Example 1",
+                "size": "640x1001"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Tuesday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Email Campaigns",
+            "title": "EOTW: Most homeowners forget to ask this",
+            "url": "https://www.listingleads.com/campaigns/email-campaigns/eotw-most-homeowners-forget-to-ask-this",
+            "slug": "eotw-most-homeowners-forget-to-ask-this",
+            "detail_text": "[Copy Block 1] Subject | [Copy Block 2] Inbox Preview Text | [Copy Block 3] Body | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1773660029460_eotw-most-homeowners-forget-to-ask-this-thumbnail_YepHFXc6k.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1773660030985_eotw-most-homeowners-forget-to-ask-this-full-preview_4nm6GFtQQS.png",
+                "alt": "Example 1",
+                "size": "640x619"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Wednesday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Phone & Text Scripts",
+            "title": "TOTW: Equity Update",
+            "url": "https://www.listingleads.com/campaigns/phone-text-scripts/totw-equity-update",
+            "slug": "totw-equity-update",
+            "detail_text": "[Copy Block 1] Text Message 1 | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/TextScripts/1773667631498_totw-equity-update-thumbnail_wYiNElX0h.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/TextScripts/1773667632654_totw-equity-update-full-preview_DAa__McBI.png",
+                "alt": "Example 1",
+                "size": "640x1000"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Thursday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "IG Post: Overpriced Homes Sell For Less",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/ig-post-overpriced-homes-sell-for-less",
+            "slug": "ig-post-overpriced-homes-sell-for-less",
+            "detail_text": "[Copy Block 1] Prompt | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/ig-post-overpriced-homes-sell-for-less/1773661600049_2Main_Image_To_upload_fUaxrRRTS.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/ig-post-overpriced-homes-sell-for-less/1773661607812_Social_post_Overpriced_Homes_Sell_For_Less_Y8LLXyXy7.png",
+                "alt": "Example 1",
+                "size": "640x853"
+              }
+            ]
+          },
+          {
+            "category": "Direct Mail Templates",
+            "title": "Overpriced Homes Sell For Less",
+            "url": "https://www.listingleads.com/campaigns/direct-mail/overpriced-homes-sell-for-less",
+            "slug": "overpriced-homes-sell-for-less",
+            "detail_text": "Introduction\n\nFarming is a long game. But some pieces do double duty.\n\nThis postcard builds your presence in the neighborhood and plants a seed before sellers ever think about calling you. The front delivers a data point they'll remember. The back delivers a truth their current agent probably never said out loud — that overpricing doesn't just slow a sale, it poisons one.\n\nThat's not a controversial opinion. It's math. And when it arrives in their mailbox with your name on it, you become the age",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Direct-Mail/1773662191957_Main_Image_To_upload--421412-1_XSAu-9k5f.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Direct-Mail/1773662189055_Main_Image_To_upload--421412-1-1_CXPW5Xo91.png",
+                "alt": "Example 1",
+                "size": "640x891"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Friday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "VOTW: If I Were Moving To [AREA] in 2026, I’d Move Here",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/votw-if-i-were-moving-to-area-in-2026-id-move-here",
+            "slug": "votw-if-i-were-moving-to-area-in-2026-id-move-here",
+            "detail_text": "[Copy Block 1] Video Title | [Copy Block 2] Video Description | [Copy Block 3] Hashtags | ",
+            "downloads": [
+              {
+                "href": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-if-i-were-moving-to-area-in-2026-id-move-here/SHOWFLOW_%20If%20I%20Were%20Moving%20To%20_AREA_%20in%202026,%20I_d%20Move%20Here.pdf",
+                "text": "View PDF"
+              }
+            ],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-if-i-were-moving-to-area-in-2026-id-move-here/1773661700768_VOTW__If_I_Were_Moving_To__AREA__in_2026__I_d_Move_Here__1__ih3kkGnQio.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-if-i-were-moving-to-area-in-2026-id-move-here/1773661706707_VOTW_If_I_Were_Moving_To__AREA__in_2026__I_d_Move_Here__1__lBZx_G0hSc.png",
+                "alt": "Example 1",
+                "size": "640x360"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "week_index": 0
+  },
+  {
+    "week_date": "2026-03-09",
+    "header_text": "Mar 9 - 13",
+    "days": [
+      {
+        "day_name": "Monday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "Deal of the Week:",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/deal-of-the-week-",
+            "slug": "deal-of-the-week-",
+            "detail_text": "Introduction\n\nIf it doesn’t already, the “Deal of the Week” should live in your weekly SOPs. Every week, find the hottest new listing in your market - and turn it into a reason for people to stop, share, and engage.\n\nWe know: you can’t always get the listing agent’s permission to share the photos of your Deal of the Week. That’s why we created this template.\n\nFollow the instructions below on how to edit the template in Canva and post to Instagram.\n\nNot sure which listing to feature?\n\nFilter for ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/deal-of-the-week-/1773061126515_Deal_of_the_Week__MrLQJ_oAK.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/deal-of-the-week-/1773061450118_Deal_of_the_Week_-1_EmQ1uimGI.png",
+                "alt": "Example 1",
+                "size": "640x1000"
+              }
+            ]
+          },
+          {
+            "category": "Email Campaigns",
+            "title": "Deal of the Week: POV: You’re house hunting in {{neighborhood}} and...",
+            "url": "https://www.listingleads.com/campaigns/email-campaigns/deal-of-the-week-pov-youre-house-hunting-in-neighborhood-and",
+            "slug": "deal-of-the-week-pov-youre-house-hunting-in-neighborhood-and",
+            "detail_text": "[Copy Block 1] Subject | [Copy Block 2] Inbox Preview Text | [Copy Block 3] Body | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1773016574411_deal-of-the-week-pov-youre-house-hunting-in-neighborhood-and-thumbnail_eh63mZKzX.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1773016575537_deal-of-the-week-pov-youre-house-hunting-in-neighborhood-and-full-preview_3bOUZfCm1.png",
+                "alt": "Example 1",
+                "size": "640x592"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Tuesday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Email Campaigns",
+            "title": "Haven’t seen this in 10 years",
+            "url": "https://www.listingleads.com/campaigns/email-campaigns/havent-seen-this-in-10-years",
+            "slug": "havent-seen-this-in-10-years",
+            "detail_text": "[Copy Block 1] Subject | [Copy Block 2] Inbox Preview Text | [Copy Block 3] Body | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1773061477585_havent-seen-this-in-10-years-thumbnail_2LUqNyLN1.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1773061478969_havent-seen-this-in-10-years-full-preview_B5KJYVRan0.png",
+                "alt": "Example 1",
+                "size": "640x815"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Wednesday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Phone & Text Scripts",
+            "title": "TOTW: 2026 ZMA",
+            "url": "https://www.listingleads.com/campaigns/phone-text-scripts/totw-2026-zma",
+            "slug": "totw-2026-zma",
+            "detail_text": "[Copy Block 1] Text Message 1 | [Copy Block 2] Text Message 2 | [Copy Block 3] Text Message 4 | ",
+            "downloads": [
+              {
+                "href": "https://ik.imagekit.io/listingleads/Campaigns/TextScripts/Messages/1773061934315_Screenshot_2026-03-09_at_9.11.23_AM_yNzrL2WQR.png",
+                "text": "Download"
+              }
+            ],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/TextScripts/1773061948197_totw-2026-zma-thumbnail_pMDBotgbF.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/TextScripts/Messages/1773061934315_Screenshot_2026-03-09_at_9.11.23_AM_yNzrL2WQR.png",
+                "alt": "Message image 3",
+                "size": "654x320"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/TextScripts/1773061949766_totw-2026-zma-full-preview_8h5ki9nM2.png",
+                "alt": "Example 1",
+                "size": "640x1000"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Thursday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "IG Carousel: Magic Buyer",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/ig-carousel-magic-buyer",
+            "slug": "ig-carousel-magic-buyer",
+            "detail_text": "Introduction\n\nIf you’re working with qualified buyers but struggling to find the right homes, you’re not stuck—you’re set up for a Magic Buyer strategy.\n\nThis approach doesn’t just help your buyers; it sparks conversations, builds relationships, and uncovers off-market opportunities.\n\nThis carousel does the work. Each slide introduces a real, qualified buyer with specific criteria -pre-approved, motivated, ready. For a homeowner who's been quietly thinking about a move, seeing their neighbourhoo",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/ig-carousel-magic-buyer/1773057316005_Main_Image_To_upload__1__k4yokW8UP.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/ig-carousel-magic-buyer/1773057323503_Frame_1000011081__1__njnze6wNN.png",
+                "alt": "Example 1",
+                "size": "640x1416"
+              }
+            ]
+          },
+          {
+            "category": "Direct Mail Templates",
+            "title": "2026 Magic Buyer Letter",
+            "url": "https://www.listingleads.com/campaigns/direct-mail/2026-magic-buyer-letter",
+            "slug": "2026-magic-buyer-letter",
+            "detail_text": "Introduction\n\nIf you’re working with qualified buyers but struggling to find the right homes, you’re not stuck—you’re set up for a Magic Buyer strategy.\n\nThis approach doesn’t just help your buyers; it sparks conversations, builds relationships, and uncovers off-market opportunities.\n\nTiffany Vasquez put this strategy into action, sending out 88 Magic Buyer Letters. Here’s what happened:\n\n15 responses\n10 interested parties\n6 tours completed\n5 potential listings\n\n\n\nHer secret? Specificity and a p",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Direct-Mail/1773076512987_2026_Magic_Buyer_Letter-1_0wobHBOfkv.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Direct-Mail/1773076521891_2026_Magic_Buyer_Letter_m1xiE8bUS.png",
+                "alt": "Example 1",
+                "size": "640x803"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Friday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "VOTW: The Best [AREA] Suburbs for Families in 2026 (Top 10 Ranked)",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/votw-the-best-area-suburbs-for-families-in-2026-top-10-ranked",
+            "slug": "votw-the-best-area-suburbs-for-families-in-2026-top-10-ranked",
+            "detail_text": "[Copy Block 1] Video Title | [Copy Block 2] Video Description | [Copy Block 3] Hashtags | ",
+            "downloads": [
+              {
+                "href": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-the-best-area-suburbs-for-families-in-2026-top-10-ranked/SHOWFLOW_%20VOTW_%20AVOID%20Moving%20to%20The%20Wrong%20Area%20in%20_AREA_%20in%202026.pdf",
+                "text": "View PDF"
+              }
+            ],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-the-best-area-suburbs-for-families-in-2026-top-10-ranked/1773058431081_The_Best__AREA__Suburbs_for_Families_in_2026__Top_10_Ranked___1__picQo05Wp.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-the-best-area-suburbs-for-families-in-2026-top-10-ranked/1773058434335_Copy_of_VOTW_Don_t_Live_in_This__AREA__City_Unless_You_Can_Handle_These_5_Facts__1__cLyWbZ408.png",
+                "alt": "Example 1",
+                "size": "640x360"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "week_index": 1
+  },
+  {
+    "week_date": "2026-03-02",
+    "header_text": "Mar 2 - 6",
+    "days": [
+      {
+        "day_name": "Monday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "Deal of the Week: Google Maps",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/deal-of-the-week-google-maps",
+            "slug": "deal-of-the-week-google-maps",
+            "detail_text": "Introduction\n\nIf it doesn’t already, the “Deal of the Week” should live in your weekly SOPs. Every week, find the hottest new listing in your market - and turn it into a reason for people to stop, share, and engage.\n\nWe know: you can’t always get the listing agent’s permission to share the photos of your Deal of the Week. That’s why we created this template.\n\nFollow the instructions below on how to edit the template in Canva and post to Instagram.\n\nNot sure which listing to feature?\n\nFilter for ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/deal-of-the-week-google-maps/1772449936907_Deal_of_the_Week__AI_Sketch_4v75nxez0.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/deal-of-the-week-google-maps/1772449940966_Deal_of_the_Week__AI_Sketch-1_YzOjjA3jK.png",
+                "alt": "Example 1",
+                "size": "640x1000"
+              }
+            ]
+          },
+          {
+            "category": "Email Campaigns",
+            "title": "Deal of the Week: Already turning heads…",
+            "url": "https://www.listingleads.com/campaigns/email-campaigns/deal-of-the-week-already-turning-heads",
+            "slug": "deal-of-the-week-already-turning-heads",
+            "detail_text": "[Copy Block 1] Subject | [Copy Block 2] Inbox Preview Text | [Copy Block 3] Body | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/deal-of-the-week-already-turning-heads/thumbnail-deal-of-the-week-already-turning-heads.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/deal-of-the-week-already-turning-heads/example-deal-of-the-week-already-turning-heads.png",
+                "alt": "Example 1",
+                "size": "640x524"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Tuesday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Email Campaigns",
+            "title": "Why are so many homeowners searching this?",
+            "url": "https://www.listingleads.com/campaigns/email-campaigns/why-are-so-many-homeowners-searching-this-",
+            "slug": "why-are-so-many-homeowners-searching-this-",
+            "detail_text": "[Copy Block 1] Subject | [Copy Block 2] Inbox Preview Text | [Copy Block 3] Body | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1772471588843_why-are-so-many-homeowners-searching-this--thumbnail_kosABIHCQ.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1772471590185_why-are-so-many-homeowners-searching-this--full-preview_gere6tHXh.png",
+                "alt": "Example 1",
+                "size": "640x886"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Wednesday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Phone & Text Scripts",
+            "title": "TOTW: The Open Loop",
+            "url": "https://www.listingleads.com/campaigns/phone-text-scripts/totw-the-open-loop",
+            "slug": "totw-the-open-loop",
+            "detail_text": "[Copy Block 1] Text Message 1 | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/TextScripts/1772411188913_totw-the-open-loop-thumbnail_-q31WAZ6o.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/TextScripts/1772411190384_totw-the-open-loop-full-preview_PiHD5d_yg.png",
+                "alt": "Example 1",
+                "size": "640x1000"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Thursday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "IG Poll: Buyer Hot Zones",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/ig-poll-buyer-hot-zones",
+            "slug": "ig-poll-buyer-hot-zones",
+            "detail_text": "Introduction\n\nThis Instagram poll takes real buyer activity from February and turns it into something your audience can't scroll past. You're showing them exactly where buyers are competing right now -specific neighborhoods, specific price points - and then you cut it off. The blur isn't a gimmick. It's a trigger. It turns passive scrollers into active engagers who raise their hand and say, \"I want to know more.\"\n\nAnd here's what makes this smart: the poll answers are both a yes. \"Yes!\" or \"Curi",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/ig-poll-buyer-hot-zones/1772451862667_Deal_of_the_Week__AI_Sketch_SAQngZKQXM.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/ig-poll-buyer-hot-zones/1772451868016_Deal_of_the_Week__AI_Sketch-1_ClL2rA51g.png",
+                "alt": "Example 1",
+                "size": "640x1000"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Friday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "VOTW: Don’t Live in This [AREA] City Unless You Can Handle These 5 Facts",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/votw-dont-live-in-this-area-city-unless-you-can-handle-these-5-facts",
+            "slug": "votw-dont-live-in-this-area-city-unless-you-can-handle-these-5-facts",
+            "detail_text": "[Copy Block 1] Video Title | [Copy Block 2] Video Description | [Copy Block 3] Hashtags | ",
+            "downloads": [
+              {
+                "href": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-dont-live-in-this-area-city-unless-you-can-handle-these-5-facts/SHOWFLOW_%20VOTW_%20Don_t%20Live%20in%20This%20_AREA_%20City%20Unless%20You%20Can%20Handle%20These%205%20Facts.pdf",
+                "text": "View PDF"
+              }
+            ],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-dont-live-in-this-area-city-unless-you-can-handle-these-5-facts/1772454427086_VOTW__Don_t_Live_in_This__AREA__City_Unless_You_Can_Handle_These_5_Facts_l6KycyPBG.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-dont-live-in-this-area-city-unless-you-can-handle-these-5-facts/1772454583823_Copy_of_VOTW_AVOID_Moving_to_The_Wrong_Area_in__AREA__in_2026__1__IhzzMUmbKX.png",
+                "alt": "Example 1",
+                "size": "640x360"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "week_index": 2
+  },
+  {
+    "week_date": "2026-02-23",
+    "header_text": "Feb 23 - 27",
+    "days": [
+      {
+        "day_name": "Monday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "Deal of the Week: Sketch",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/deal-of-the-week-sketch",
+            "slug": "deal-of-the-week-sketch",
+            "detail_text": "Introduction\n\nIf it doesn’t already, the “Deal of the Week” should live in your weekly SOPs. Every week, find the hottest new listing in your market - and turn it into a reason for people to stop, share, and engage.\n\nWe know: you can’t always get the listing agent’s permission to share the photos of your Deal of the Week. That’s why we created this template.\n\nFollow the instructions below on how to edit the template in Canva and post to Instagram.\n\nNot sure which listing to feature?\n\nFilter for ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/deal-of-the-week-sketch/1771802902649_Deal_of_the_Week__AI_Sketch_fUrWh_x-H.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/deal-of-the-week-sketch/1771802909735_Deal_of_the_Week__AI_Sketch-1_-V4e0qRzE.png",
+                "alt": "Example 1",
+                "size": "640x1000"
+              }
+            ]
+          },
+          {
+            "category": "Email Campaigns",
+            "title": "Deal of the Week: How is this still on the market?",
+            "url": "https://www.listingleads.com/campaigns/email-campaigns/deal-of-the-week-how-is-this-still-on-the-market",
+            "slug": "deal-of-the-week-how-is-this-still-on-the-market",
+            "detail_text": "[Copy Block 1] Subject | [Copy Block 2] Inbox Preview Text | [Copy Block 3] Body | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1771603866028_deal-of-the-week-how-is-this-still-on-the-market-thumbnail_HFYyR1Nya.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1771603867352_deal-of-the-week-how-is-this-still-on-the-market-full-preview_7jhwnzp3D.png",
+                "alt": "Example 1",
+                "size": "640x592"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Tuesday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Email Campaigns",
+            "title": "EOTW: Your timeline (storytelling version)",
+            "url": "https://www.listingleads.com/campaigns/email-campaigns/eotw-your-timeline-storytelling-version",
+            "slug": "eotw-your-timeline-storytelling-version",
+            "detail_text": "[Copy Block 1] Subject | [Copy Block 2] Inbox Preview Text | [Copy Block 3] Body | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1771856095179_eotw-your-timeline-storytelling-version-thumbnail_ADM5TFJPp.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1771856096447_eotw-your-timeline-storytelling-version-full-preview_fVV-2xT14.png",
+                "alt": "Example 1",
+                "size": "640x592"
+              }
+            ]
+          },
+          {
+            "category": "Email Campaigns",
+            "title": "EOTW: Your timeline",
+            "url": "https://www.listingleads.com/campaigns/email-campaigns/eotw-your-timeline",
+            "slug": "eotw-your-timeline",
+            "detail_text": "[Copy Block 1] Subject | [Copy Block 2] Inbox Preview Text | [Copy Block 3] Body | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1771603895765_eotw-your-timeline-thumbnail_QXepn7LGB.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1771603897063_eotw-your-timeline-full-preview_zIKG5yIct.png",
+                "alt": "Example 1",
+                "size": "640x592"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Wednesday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Phone & Text Scripts",
+            "title": "TOTW: Have you thought about your timeline?",
+            "url": "https://www.listingleads.com/campaigns/phone-text-scripts/totw-have-you-thought-about-your-timeline",
+            "slug": "totw-have-you-thought-about-your-timeline",
+            "detail_text": "[Copy Block 1] Text Message 1 | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/TextScripts/1771604810296_totw-have-you-thought-about-your-timeline-thumbnail_2Gg1rPc55.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/TextScripts/1771604811895_totw-have-you-thought-about-your-timeline-full-preview_LIab-IvPr.png",
+                "alt": "Example 1",
+                "size": "640x1000"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Thursday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "IG Poll: Your timeline",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/ig-poll-your-timeline",
+            "slug": "ig-poll-your-timeline",
+            "detail_text": "Introduction\n\nYour next listing is probably already following you on Instagram. They're just waiting for a reason to reach out.\n\nThe problem isn't that homeowners don't want to sell. It's that they think calling an agent means they're committed to something. So they wait. And while they're waiting, they're watching - your posts, your stories, your content. This poll meets them exactly there.\n\nThe visual does the heavy lifting. It shows the gap between when people think they should reach out and ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/ig-poll-your-timeline/1771803957881_IG_Poll__Your_timeline_iuTnT_v3d.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/ig-poll-your-timeline/1771803966329_IG_Poll__Your_timeline-1_r4nEuxBbS.png",
+                "alt": "Example 1",
+                "size": "640x1000"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Friday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "VOTW: AVOID Moving to The Wrong Area in [AREA] in 2026",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/votw-avoid-moving-to-the-wrong-area-in-area-in-2026",
+            "slug": "votw-avoid-moving-to-the-wrong-area-in-area-in-2026",
+            "detail_text": "[Copy Block 1] Video Title | [Copy Block 2] Video Description | [Copy Block 3] Hashtags | ",
+            "downloads": [
+              {
+                "href": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-avoid-moving-to-the-wrong-area-in-area-in-2026/SHOWFLOW_%20VOTW_%20AVOID%20Moving%20to%20The%20Wrong%20Area%20in%20_AREA_%20in%202026.pdf",
+                "text": "View PDF"
+              }
+            ],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-avoid-moving-to-the-wrong-area-in-area-in-2026/1771801360654_VOTW__AVOID_Moving_to_The_Wrong_Area_in__AREA__in_2026__1__oYENcrX2Ss.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-avoid-moving-to-the-wrong-area-in-area-in-2026/1771801355128_VOTW_AVOID_Moving_to_The_Wrong_Area_in__AREA__in_2026__1__MDYGa6fVV.png",
+                "alt": "Example 1",
+                "size": "640x360"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "week_index": 3
+  },
+  {
+    "week_date": "2026-02-16",
+    "header_text": "Feb 16 - 20",
+    "days": [
+      {
+        "day_name": "Monday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "Deal of the Week: AI Book",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/deal-of-the-week-ai-book",
+            "slug": "deal-of-the-week-ai-book",
+            "detail_text": "[Copy Block 1] Prompt | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/deal-of-the-week-ai-book/1771237197965_Deal_of_the_Week__AI_Book_aAuH0FqTY.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/deal-of-the-week-ai-book/1771237205092_Deal_of_the_Week__AI_Book-1__kT0x1FAI.png",
+                "alt": "Example 1",
+                "size": "640x1000"
+              }
+            ]
+          },
+          {
+            "category": "Email Campaigns",
+            "title": "Deal of the Week: 2,780 people have looked at this home (here's why)",
+            "url": "https://www.listingleads.com/campaigns/email-campaigns/deal-of-the-week-2-780-people-have-looked-at-this-home-heres-why",
+            "slug": "deal-of-the-week-2-780-people-have-looked-at-this-home-heres-why",
+            "detail_text": "[Copy Block 1] Subject | [Copy Block 2] Body | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1770331601271_deal-of-the-week-2-780-people-have-looked-at-this-home-heres-why-thumbnail_JjXt7VqKA.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/Deal%20of%20the%20Week:%202,780%20people%20have%20looked%20at%20this%20home%20(here_s%20why)/Deal%20of%20the%20Week_%202,780%20people%20have%20looked%20at%20this%20home%20(here_s%20why)@1x-1.png",
+                "alt": "Example 1",
+                "size": "640x510"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Tuesday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Email Campaigns",
+            "title": "EOTW: The Spring Seller Cheatsheet",
+            "url": "https://www.listingleads.com/campaigns/email-campaigns/eotw-the-spring-seller-cheatsheet",
+            "slug": "eotw-the-spring-seller-cheatsheet",
+            "detail_text": "[Copy Block 1] Subject | [Copy Block 2] Inbox Preview Text | [Copy Block 3] Body | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1771207508225_eotw-the-spring-seller-cheatsheet-thumbnail_Heaxw_01S.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/Email/1771207509450_eotw-the-spring-seller-cheatsheet-full-preview_X2YeDee3x.png",
+                "alt": "Example 1",
+                "size": "640x592"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Wednesday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Phone & Text Scripts",
+            "title": "TOTW: Net Profit Sheet",
+            "url": "https://www.listingleads.com/campaigns/phone-text-scripts/totw-net-profit-sheet",
+            "slug": "totw-net-profit-sheet",
+            "detail_text": "[Copy Block 1] Text Message 1 | ",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/TextScripts/1771208559481_totw-net-profit-sheet-thumbnail_wuV-DSO0i.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/Campaigns/TextScripts/1771208560648_totw-net-profit-sheet-full-preview_6ZQoHQS3O.png",
+                "alt": "Example 1",
+                "size": "640x1000"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Thursday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "IG Poll: Working In Public",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/ig-poll-working-in-public",
+            "slug": "ig-poll-working-in-public",
+            "detail_text": "Introduction\n\nThis one takes a little legwork upfront, and that's what makes it work.\n\nPull CMAs for a few of your recent clients or homeowners in your farm. Find the one where the gap between their online estimate and actual market value is the biggest. That gap is your hook.\n\nTurn it into a two-slide Instagram story. First slide builds curiosity - you just ran a report for a client and the number surprised them. Second slide reveals the gap and drops a poll: \"Want one for your place?\" Both ans",
+            "downloads": [],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/ig-poll-working-in-public/1771239379907_IG_Poll__Working_In_Public_5S7zp97cS.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/ig-poll-working-in-public/1771239384745_IG_Poll__Working_In_Public-1_9Qo_vYsnR.png",
+                "alt": "Example 1",
+                "size": "640x2000"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day_name": "Friday",
+        "date": "",
+        "campaigns": [
+          {
+            "category": "Social Shareables",
+            "title": "VOTW: Where [Area]’s Ultra Wealthy Choose to Live",
+            "url": "https://www.listingleads.com/campaigns/social-shareables/votw-where-areas-ultra-wealthy-choose-to-live",
+            "slug": "votw-where-areas-ultra-wealthy-choose-to-live",
+            "detail_text": "[Copy Block 1] Video Title | [Copy Block 2] Video Description | [Copy Block 3] Hashtags | ",
+            "downloads": [
+              {
+                "href": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-where-areas-ultra-wealthy-choose-to-live/Show%20Flow%20-%20Where%20_Area__s%20Ultra%20Wealthy%20Choose%20to%20Live.pdf",
+                "text": "View PDF"
+              }
+            ],
+            "videos": [],
+            "images": [
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-where-areas-ultra-wealthy-choose-to-live/1771240370064_Where__Area__s_Ultra_Wealthy_Choose_to_Live__1__BBwLgxmnU.png",
+                "alt": "Campaign preview",
+                "size": "500x375"
+              },
+              {
+                "src": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-where-areas-ultra-wealthy-choose-to-live/1771240386026_VOTW_Where__Area__s_Ultra_Wealthy_Choose_to_Live__1__s4eET_DTq.png",
+                "alt": "Example 1",
+                "size": "640x360"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "week_index": 4
+  }
+]

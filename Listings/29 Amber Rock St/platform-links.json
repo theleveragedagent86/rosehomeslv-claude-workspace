@@ -1,0 +1,46 @@
+{
+  "address": "29 Amber Rock St, Henderson, NV 89012",
+  "lastUpdated": "2026-04-10",
+  "seller": {
+    "name": "Maria Vasquez",
+    "firstName": "Jessie",
+    "email": "envymetiti@me.com"
+  },
+  "competition": {
+    "note": "Zillow links to nearby competing properties. Used in weekly seller emails only, not in the landing page report.",
+    "listings": [
+      "https://www.zillow.com/homedetails/1109-Thunder-Canyon-Ave-Henderson-NV-89012/7194798_zpid/",
+      "https://www.zillow.com/homedetails/1100-Blitzen-Dr-Henderson-NV-89012/7194674_zpid/",
+      "https://www.zillow.com/homedetails/59-Sterling-Meadow-St-Henderson-NV-89012/7204406_zpid/",
+      "https://www.zillow.com/homedetails/15-Hatten-Bay-St-Henderson-NV-89012/7194694_zpid/",
+      "https://www.zillow.com/homedetails/1078-Las-Palmas-Entrada-Ave-Henderson-NV-89012/7194660_zpid/"
+    ]
+  },
+  "platforms": {
+    "zillow": {
+      "url": "https://www.zillow.com/homedetails/29-Amber-Rock-St-Henderson-NV-89012/7194804_zpid/",
+      "lastViews": 2592,
+      "lastSaves": 76
+    },
+    "redfin": {
+      "url": "https://www.redfin.com/NV/Henderson/29-Amber-Rock-St-89012/home/29672171",
+      "lastViews": 728
+    },
+    "homes": {
+      "url": "https://www.homes.com/property/29-amber-rock-st-henderson-nv/xw9j33emsyv3y/",
+      "dashboardUrl": "https://www.homes.com/customer/dashboard/listings/?t=3&s=14",
+      "lastViews": 1874,
+      "lastFavorites": 1
+    },
+    "realtor": {
+      "url": "https://www.realtor.com/realestateandhomes-detail/29-Amber-Rock-St_Henderson_NV_89012_M18383-49659",
+      "lastViews": 318,
+      "lastSaves": 10
+    },
+    "lofty_landing_page": {
+      "url": "https://www.rosehomeslv.com/weekly-update-29-amber-rock",
+      "lastViews": 54,
+      "note": "Need to check Lofty CMS - Content - Landing Pages"
+    }
+  }
+}

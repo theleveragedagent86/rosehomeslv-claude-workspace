@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Relaunch Roadmap - Ryan Rose</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: 8.5in 11in;
+      margin: 0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 8.5in;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+    body {
+      font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.5;
+      color: #2c2c2c;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      width: 8.5in;
+      height: 11in;
+      background: #fff;
+      margin: 0 auto 0.4in auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      page-break-after: always;
+    }
+
+    /* Header band */
+    .header-band {
+      background-color: #222222;
+      padding: 0.22in 0.75in;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .header-band img.logo {
+      height: 32px;
+      width: auto;
+    }
+    .header-contact {
+      text-align: right;
+      color: #c8b98a;
+      font-size: 8.5pt;
+      line-height: 1.45;
+    }
+    .header-contact strong {
+      color: #fff;
+      font-size: 9.5pt;
+      display: block;
+    }
+    .accent-rule {
+      height: 3px;
+      background: linear-gradient(to right, #b8a88a, #d4cabb, #b8a88a);
+      flex-shrink: 0;
+    }
+
+    /* Page title block */
+    .title-block {
+      text-align: center;
+      padding: 0.25in 0.75in 0.2in 0.75in;
+      border-bottom: 1px solid #e8e0d5;
+      flex-shrink: 0;
+    }
+    .title-eyebrow {
+      font-size: 7pt;
+      font-weight: 600;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: #b8a88a;
+      margin-bottom: 0.04in;
+    }
+    .title-main {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24pt;
+      font-weight: 400;
+      color: #222222;
+      line-height: 1.15;
+    }
+    .title-main em { font-style: italic; }
+    .title-sub {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 10.5pt;
+      font-style: italic;
+      color: #888;
+      margin-top: 0.04in;
+    }
+
+    /* Page 1 two-column layout */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      flex: 1;
+      overflow: hidden;
+    }
+    .col {
+      padding: 0.22in 0.35in;
+    }
+    .col-left {
+      border-right: 1px solid #e8e0d5;
+      background: #fdfcfa;
+    }
+    .col-right {
+      background: #fff;
+    }
+    .col-header {
+      margin-bottom: 0.15in;
+      padding-bottom: 0.1in;
+      border-bottom: 2px solid #b8a88a;
+    }
+    .col-eyebrow {
+      font-size: 7pt;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #b8a88a;
+      margin-bottom: 0.03in;
+    }
+    .col-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 14pt;
+      font-weight: 600;
+      color: #222222;
+      line-height: 1.2;
+    }
+    .col-subtitle {
+      font-size: 9.5pt;
+      color: #888;
+      font-style: italic;
+      margin-top: 0.02in;
+    }
+
+    /* Issue / Solution items */
+    .item {
+      display: flex;
+      gap: 0.1in;
+      margin-bottom: 0.14in;
+      align-items: flex-start;
+    }
+    .item-icon {
+      font-size: 10pt;
+      line-height: 1.3;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .item-left .item-icon { color: #c0977a; }
+    .item-right .item-icon { color: #7aaa8a; }
+    .item-body {}
+    .item-title {
+      font-weight: 600;
+      font-size: 10pt;
+      color: #1a1a1a;
+      line-height: 1.3;
+    }
+    .item-desc {
+      font-size: 9.5pt;
+      color: #555;
+      line-height: 1.4;
+      margin-top: 1px;
+    }
+
+    /* Footer band */
+    .footer-band {
+      background-color: #222222;
+      padding: 0.1in 0.75in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.3in;
+      flex-shrink: 0;
+    }
+    .footer-band span {
+      font-size: 8.5pt;
+      color: #c8b98a;
+    }
+    .footer-band .divider { color: #4a4a6a; }
+
+    /* ---- PAGE 2 ---- */
+    .page2-body {
+      flex: 1;
+      padding: 0.25in 0.75in 0.2in 0.75in;
+      display: flex;
+      flex-direction: column;
+      gap: 0.18in;
+      overflow: hidden;
+    }
+
+    /* Timeline steps */
+    .timeline-label {
+      font-size: 7pt;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #b8a88a;
+      margin-bottom: 0.08in;
+    }
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.12in;
+    }
+    .step {
+      background: #fafaf7;
+      border-top: 3px solid #b8a88a;
+      padding: 0.13in 0.14in;
+      border-radius: 0 0 3px 3px;
+    }
+    .step-num {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 18pt;
+      font-weight: 400;
+      color: #d4cabb;
+      line-height: 1;
+      margin-bottom: 0.05in;
+    }
+    .step-title {
+      font-weight: 600;
+      font-size: 9.5pt;
+      color: #222222;
+      line-height: 1.3;
+      margin-bottom: 0.04in;
+    }
+    .step-desc {
+      font-size: 8.5pt;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    /* What makes Ryan different */
+    .diff-section {}
+    .diff-label {
+      font-size: 7pt;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #b8a88a;
+      margin-bottom: 0.1in;
+    }
+    .diff-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.12in;
+    }
+    .diff-card {
+      padding: 0.13in 0.15in;
+      background: #fafaf7;
+      border-left: 2px solid #d4cabb;
+      border-radius: 0 3px 3px 0;
+    }
+    .diff-card-icon {
+      color: #b8a88a;
+      font-size: 11pt;
+      margin-bottom: 0.04in;
+    }
+    .diff-card-title {
+      font-weight: 600;
+      font-size: 9.5pt;
+      color: #222222;
+      margin-bottom: 0.03in;
+      line-height: 1.3;
+    }
+    .diff-card-desc {
+      font-size: 8.5pt;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    /* CTA section */
+    .cta-section {
+      background: #222222;
+      padding: 0.18in 0.25in;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 0.2in;
+    }
+    .cta-photo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 2px solid #b8a88a;
+    }
+    .cta-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cta-text {}
+    .cta-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 13pt;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 0.03in;
+    }
+    .cta-body {
+      font-size: 9.5pt;
+      color: #c8b98a;
+      line-height: 1.4;
+    }
+    .cta-body strong {
+      color: #fff;
+    }
+
+    @media print {
+      html, body { background: white; }
+      .page { box-shadow: none; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== PAGE 1 ===================== -->
+  <div class="page">
+    <div class="header-band">
+      <img class="logo" src="https://ik.imagekit.io/listingleads/_personalization/1773468120260_Real_Logo_Outline_White_kHJXcZ1A9q.png?tr=w-300" alt="Real Broker, LLC">
+      <div class="header-contact">
+        <strong>Ryan Rose</strong>
+        702-747-5921 &nbsp;|&nbsp; ryan@rosehomeslv.com<br>
+        rosehomeslv.com &nbsp;|&nbsp; Lic. S.0185572
+      </div>
+    </div>
+    <div class="accent-rule"></div>
+
+    <div class="title-block">
+      <div class="title-eyebrow">Your Personalized Strategy</div>
+      <div class="title-main">The <em>Relaunch</em> Plan</div>
+      <div class="title-sub">Understanding what went wrong is the first step toward getting it right.</div>
+    </div>
+
+    <div class="two-col">
+      <!-- LEFT: What Happened -->
+      <div class="col col-left">
+        <div class="col-header">
+          <div class="col-eyebrow">The Problem</div>
+          <div class="col-title">What Happened</div>
+          <div class="col-subtitle">Why most listings expire without selling</div>
+        </div>
+
+        <div class="item item-left">
+          <div class="item-icon">✕</div>
+          <div class="item-body">
+            <div class="item-title">Photos That Don't Do the Home Justice</div>
+            <div class="item-desc">Dark, flat, or amateur photography fails to create the emotional pull that makes buyers want to schedule a showing.</div>
+          </div>
+        </div>
+        <div class="item item-left">
+          <div class="item-icon">✕</div>
+          <div class="item-body">
+            <div class="item-title">No Video or Virtual Tour</div>
+            <div class="item-desc">Today's buyers expect to walk through a home before they ever set foot inside. Without video, you're invisible to a large portion of the market.</div>
+          </div>
+        </div>
+        <div class="item item-left">
+          <div class="item-icon">✕</div>
+          <div class="item-body">
+            <div class="item-title">Over-Reliance on the MLS</div>
+            <div class="item-desc">The listing sat and waited for buyers to find it. Serious sellers need a proactive strategy that goes out and finds the right buyers.</div>
+          </div>
+        </div>
+        <div class="item item-left">
+          <div class="item-icon">✕</div>
+          <div class="item-body">
+            <div class="item-title">No Targeted Digital Advertising</div>
+            <div class="item-desc">The home never reached qualified local buyers on social platforms where they spend their time searching and scrolling.</div>
+          </div>
+        </div>
+        <div class="item item-left">
+          <div class="item-icon">✕</div>
+          <div class="item-body">
+            <div class="item-title">Pricing Missed the Market Window</div>
+            <div class="item-desc">It started too high and chased the market down. A well-priced home generates competition in the first two weeks.</div>
+          </div>
+        </div>
+        <div class="item item-left">
+          <div class="item-icon">✕</div>
+          <div class="item-body">
+            <div class="item-title">No Compelling Coming-Soon Strategy</div>
+            <div class="item-desc">The listing launched quietly instead of building anticipation, meaning it never created a sense of urgency or demand.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: What's Different Now -->
+      <div class="col col-right">
+        <div class="col-header">
+          <div class="col-eyebrow">The Solution</div>
+          <div class="col-title">What's Different Now</div>
+          <div class="col-subtitle">The relaunch strategy that changes the outcome</div>
+        </div>
+
+        <div class="item item-right">
+          <div class="item-icon">✓</div>
+          <div class="item-body">
+            <div class="item-title">Professional Photography + Staging Guidance</div>
+            <div class="item-desc">High-quality photos and staging advice that make buyers stop scrolling and start planning a visit.</div>
+          </div>
+        </div>
+        <div class="item item-right">
+          <div class="item-icon">✓</div>
+          <div class="item-body">
+            <div class="item-title">Social Media Video Tour</div>
+            <div class="item-desc">A produced walkthrough video distributed across Instagram, YouTube, and Facebook to reach active and passive buyers alike.</div>
+          </div>
+        </div>
+        <div class="item item-right">
+          <div class="item-icon">✓</div>
+          <div class="item-body">
+            <div class="item-title">72-Hour Launch Window</div>
+            <div class="item-desc">Compressed showings create urgency and quicker feedback. Your home gets more attention in the first 72 hours than most get in weeks.</div>
+          </div>
+        </div>
+        <div class="item item-right">
+          <div class="item-icon">✓</div>
+          <div class="item-body">
+            <div class="item-title">Go-Fenced Social Retargeting</div>
+            <div class="item-desc">Paid ads follow up with every phone that visits the property, nearby open houses, and local competitors' listings.</div>
+          </div>
+        </div>
+        <div class="item item-right">
+          <div class="item-icon">✓</div>
+          <div class="item-body">
+            <div class="item-title">Honest Pricing Strategy</div>
+            <div class="item-desc">A data-driven price position designed to attract competition and maximize your final sale price, not just generate activity.</div>
+          </div>
+        </div>
+        <div class="item item-right">
+          <div class="item-icon">✓</div>
+          <div class="item-body">
+            <div class="item-title">Reverse Prospecting to Active Buyer Agents</div>
+            <div class="item-desc">I reach out directly to agents with clients whose saved searches already match your home before the listing even goes live.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-band">
+      <span>Ryan Rose &nbsp;&middot;&nbsp; Real Broker, LLC</span>
+      <span class="divider">|</span>
+      <span>702-747-5921 &nbsp;&middot;&nbsp; ryan@rosehomeslv.com</span>
+      <span class="divider">|</span>
+      <span>Page 1 of 2</span>
+    </div>
+  </div>
+
+  <!-- ===================== PAGE 2 ===================== -->
+  <div class="page">
+    <div class="header-band">
+      <img class="logo" src="https://ik.imagekit.io/listingleads/_personalization/1773468120260_Real_Logo_Outline_White_kHJXcZ1A9q.png?tr=w-300" alt="Real Broker, LLC">
+      <div class="header-contact">
+        <strong>Ryan Rose</strong>
+        702-747-5921 &nbsp;|&nbsp; ryan@rosehomeslv.com<br>
+        rosehomeslv.com &nbsp;|&nbsp; Lic. S.0185572
+      </div>
+    </div>
+    <div class="accent-rule"></div>
+
+    <div class="title-block">
+      <div class="title-eyebrow">The Execution Plan</div>
+      <div class="title-main">From <em>Listed</em> to <em>Sold</em></div>
+      <div class="title-sub">A clear, step-by-step timeline so you always know exactly what's happening and when.</div>
+    </div>
+
+    <div class="page2-body">
+
+      <!-- Timeline -->
+      <div>
+        <div class="timeline-label">The Relaunch Timeline</div>
+        <div class="timeline">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-title">Consultation + Pricing Strategy</div>
+            <div class="step-desc">We walk the home together, review comparable sales, and set a price that creates competition rather than silence.</div>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-title">Pre-Launch Marketing Blitz</div>
+            <div class="step-desc">Coming-soon social posts, reverse prospecting to buyer agents, and geo-fenced ads begin building demand before Day 1.</div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-title">Professional Photography + Video</div>
+            <div class="step-desc">High-quality photos, a walkthrough video, and a social reel are produced and scheduled for the launch window.</div>
+          </div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <div class="step-title">72-Hour Launch + Weekly Updates</div>
+            <div class="step-desc">Compressed showings, real-time feedback reports, and weekly seller updates so you're never left wondering what's happening.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- What makes Ryan different -->
+      <div class="diff-section">
+        <div class="diff-label">What Makes This Approach Different</div>
+        <div class="diff-grid">
+          <div class="diff-card">
+            <div class="diff-card-icon">◆</div>
+            <div class="diff-card-title">I Actually Pick Up the Phone</div>
+            <div class="diff-card-desc">No unanswered calls, no waiting three days for a reply. You get direct access to me from contract to close.</div>
+          </div>
+          <div class="diff-card">
+            <div class="diff-card-icon">◆</div>
+            <div class="diff-card-title">Social Media as a Marketing Tool</div>
+            <div class="diff-card-desc">Globally recognized digital marketing strategies used to actively find buyers rather than passively waiting for them.</div>
+          </div>
+          <div class="diff-card">
+            <div class="diff-card-icon">◆</div>
+            <div class="diff-card-title">No Pressure. No BS.</div>
+            <div class="diff-card-desc">Genuine guidance from start to close. I'll give you my honest opinion even if that means telling you something you don't want to hear.</div>
+          </div>
+          <div class="diff-card">
+            <div class="diff-card-icon">◆</div>
+            <div class="diff-card-title">Proven Negotiation Record</div>
+            <div class="diff-card-desc">Clients consistently close with repair concessions, price adjustments, and terms that protect their bottom line.</div>
+          </div>
+          <div class="diff-card">
+            <div class="diff-card-icon">◆</div>
+            <div class="diff-card-title">Deep Las Vegas Market Knowledge</div>
+            <div class="diff-card-desc">From Spring Valley to Henderson to Summerlin, I know what buyers in each pocket of this city are looking for right now.</div>
+          </div>
+          <div class="diff-card">
+            <div class="diff-card-icon">◆</div>
+            <div class="diff-card-title">No Hand-Offs to Junior Agents</div>
+            <div class="diff-card-desc">You hired me. I stay with your transaction personally from the first showing through the closing table.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-section">
+        <div class="cta-photo">
+          <img src="https://ik.imagekit.io/listingleads/_personalization/1773467947159_blob_9noJLCXIy?tr=w-300" alt="Ryan Rose">
+        </div>
+        <div class="cta-text">
+          <div class="cta-title">Let's Talk About Your Home</div>
+          <div class="cta-body">I'll be reaching out in the next few days. Or call me directly anytime at <strong>702-747-5921</strong>. A 20-minute conversation costs you nothing and could change everything about your next attempt.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-band">
+      <span>Ryan Rose &nbsp;&middot;&nbsp; Real Broker, LLC</span>
+      <span class="divider">|</span>
+      <span>702-747-5921 &nbsp;&middot;&nbsp; ryan@rosehomeslv.com</span>
+      <span class="divider">|</span>
+      <span>Lic. S.0185572 &nbsp;&middot;&nbsp; Page 2 of 2</span>
+    </div>
+  </div>
+
+</body>
+</html>

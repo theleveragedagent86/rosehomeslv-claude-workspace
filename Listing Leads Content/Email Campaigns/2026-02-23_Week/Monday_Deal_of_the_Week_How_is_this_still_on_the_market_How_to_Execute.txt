@@ -1,0 +1,26 @@
+How to Execute
+Step 1
+Copy Subject Line and Message to Email Blast App
+Subject
+Copy
+
+Deal of the week: {{neighborhood}} at a number that surprises
+
+Inbox Preview Text
+Copy
+
+How is this still on the market?
+
+Body
+Copy
+
+This one was easy to find (and harder to explain why it's still available).
+
+{{neighborhood}} rarely surfaces at {{price_range}}, which is why this listing stands out as the deal of the week: the numbers hold up against recent closes in ways that are worth paying attention to.
+
+1. {{standout_stat}} - the detail that separates it from comparable listings
+2. {{high_roi_feature}} - reduces near-term costs or adds long-term flexibility
+3. {{layout_or_size_note}} - functional advantage most homes at this price don't offer
+
+
+Want me to send over the details?

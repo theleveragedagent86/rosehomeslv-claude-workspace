@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(zip -r \"/Users/ryanrose/Downloads/Claude/cma-skill.zip\" SKILL.md cma-template.md)",
+      "Bash(mkdir -p /tmp/cma-plugin/.claude-plugin)",
+      "Bash(mkdir -p /tmp/cma-plugin/skills/cma)",
+      "Bash(cp /Users/ryanrose/.claude/skills/cma/SKILL.md /tmp/cma-plugin/skills/cma/SKILL.md)",
+      "Bash(cp /Users/ryanrose/.claude/skills/cma/cma-template.md /tmp/cma-plugin/skills/cma/cma-template.md)",
+      "Bash(zip -r \"/Users/ryanrose/Downloads/Claude/cma-report-plugin.zip\" .claude-plugin/ skills/)"
+    ]
+  }
+}

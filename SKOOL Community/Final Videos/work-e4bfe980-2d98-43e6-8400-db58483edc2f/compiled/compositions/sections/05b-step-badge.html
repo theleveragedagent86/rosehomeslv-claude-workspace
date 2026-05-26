@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/brand-tokens.css" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+      [data-composition-id="05b-step-badge"] {
+        position: relative; width: 1920px; height: 1080px; overflow: hidden;
+        font-family: var(--font-display);
+      }
+      /* Step badge — bottom-left corner. Big amber numeral + ink panel + label.
+         Used at each major walkthrough phase transition (install / address / refine). */
+      [data-composition-id="05b-step-badge"] .step-card {
+        position: absolute;
+        bottom: 100px; left: 80px;
+        display: inline-flex; align-items: center;
+        background: var(--bg-alt);
+        border: 3px solid var(--ink);
+        border-bottom: 10px solid var(--warn);
+        border-radius: 16px;
+        padding: 22px 32px 22px 22px;
+        gap: 22px;
+        box-shadow: 0 18px 48px rgba(15,76,92,0.4);
+        opacity: 0;
+        transform: translateX(-60px);
+        will-change: transform, opacity;
+      }
+      [data-composition-id="05b-step-badge"] .step-card .num-tile {
+        background: var(--ink);
+        color: var(--warn);
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 64px; line-height: 0.85;
+        width: 92px; height: 92px;
+        border-radius: 12px;
+        display: flex; align-items: center; justify-content: center;
+        letter-spacing: -0.04em;
+        box-shadow: inset 0 0 0 3px var(--warn);
+      }
+      [data-composition-id="05b-step-badge"] .step-card .copy {
+        display: flex; flex-direction: column; gap: 4px;
+      }
+      [data-composition-id="05b-step-badge"] .step-card .kicker {
+        font-family: var(--font-mono);
+        font-weight: 700; font-size: 18px;
+        letter-spacing: 0.32em;
+        color: var(--ink-soft);
+        text-transform: uppercase;
+      }
+      [data-composition-id="05b-step-badge"] .step-card .head {
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 40px; line-height: 1.05;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="sec05"
+      data-composition-id="05b-step-badge"
+      data-duration="6"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="step-card clip" data-start="0" data-duration="6" data-track-index="0">
+        <div class="num-tile" data-step-num>2</div>
+        <div class="copy">
+          <div class="kicker" data-step-kicker>Step 2 of 3</div>
+          <div class="head" data-step-head>Run the multiplier prompt</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const SLOT = 6;
+      const tl = gsap.timeline({ paused: true });
+
+      tl.to('[data-composition-id="05b-step-badge"] .step-card',
+        { opacity: 1, x: 0, duration: 0.5, ease: 'back.out(1.6)' }, 0.10);
+      tl.to('[data-composition-id="05b-step-badge"] .step-card',
+        { opacity: 0, x: -60, duration: 0.4, ease: 'power2.in' }, 5.40);
+
+      tl.to({}, { duration: SLOT }, 0);
+      window.__timelines["05b-step-badge"] = tl;
+    </script>
+  </body>
+</html>

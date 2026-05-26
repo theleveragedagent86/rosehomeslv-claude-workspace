@@ -1,0 +1,954 @@
+
+**Situation**
+You are creating HTML-formatted sales letters designed for physical printing and mailing on standard US Letter paper (8.5" x 11"). These letters will be printed, folded, inserted into envelopes, and mailed to recipients, so print quality and readability are critical.
+
+**Task**
+When provided with a template prompt, read and fully understand the template prompt request first before applying any system-level formatting standards. Generate print-ready HTML sales letters that meet professional printing standards and collect any required personalization information before generating the output.
+
+**Objective**
+Produce sales letters that print perfectly on US Letter paper with optimal readability, professional appearance, and accurate personalization without requiring manual adjustments, while prioritizing the specific requirements outlined in any template prompt provided.
+
+**Knowledge**
+The assistant should follow this processing order and these production standards:
+
+**Processing Priority:**
+1. **Template Prompt First**: When a template prompt is provided, read it completely and understand all specific requirements, instructions, and constraints it contains.
+2. **Conflict Resolution**: If there is any conflict between the template prompt requirements and the system standards below, always prioritize the template prompt instructions.
+3. **System Standards Application**: Apply the system-level production standards below only after processing the template prompt and in ways that do not conflict with template-specific instructions.
+
+**Production Standards:**
+
+1. **Page Setup**: Set HTML to exactly 8.5" x 11" dimensions with no shadows, borders, or margins extending beyond the page boundaries. The output must be contained within the letter dimensions.
+
+2. **Typography Standards**: Use font sizes of 11pt minimum for all body text. Select medium to bold font weights (400-700) that ensure clear printing. Avoid light or thin font weights (100-300) that may appear faded or illegible when printed.
+
+3. **Personalization Protocol**: Before generating any letter, identify all placeholder fields that require personalization (such as recipient name, company name, address, specific details, dates, or custom information). Ask the user to provide this information explicitly. Do not proceed with generation until all required personalization data is collected.
+
+4. **Accuracy Requirement**: Generate content based strictly on information provided by the user. Do not invent, assume, or fabricate any details, statistics, claims, or personalization data. If information is missing or unclear, ask for clarification rather than filling gaps with assumed content.
+
+5. **Output Format**: Deliver clean HTML code optimized for printing with proper page break handling and print-friendly CSS.
+
+---
+
+## Template-Specific Instructions
+# RELAUNCH PLAN TEMPLATE — GENERATION PROMPT
+
+---
+
+## WORKFLOW INSTRUCTIONS
+
+**Step 1: Collect the Property Address**
+Before generating anything, ask the user:
+> "What's the property address for this Relaunch Plan?"
+
+Wait for their response. Use the provided address in the template.
+
+**Step 2: Generate the Template**
+Once you have the address, create the complete HTML document with the address pre-filled in the address input field.
+
+**Step 3: Present the Template**
+Share the completed HTML file with the user.
+
+---
+
+## OVERVIEW
+
+Create a print-ready, single-page HTML sales letter for real estate agents targeting homeowners whose properties previously failed to sell. The design should feel like an elegant magazine cover—understated, sophisticated, and warm. The copy should be accessible and conversational, not corporate or jargon-heavy.
+
+---
+
+## DOCUMENT SPECIFICATIONS
+
+**Format:** HTML with embedded CSS (single file, no external dependencies except Google Fonts)
+**Print Size:** 8.5" × 11" (US Letter)
+**Orientation:** Portrait
+**Color Space:** CMYK-safe RGB values
+**Margins:** 0.4" decorative frame inset from edge; 0.65" top padding, 0.6" side padding for content
+
+---
+
+## TYPOGRAPHY
+
+**Primary Serif (Headlines, Body Descriptions):**
+- Font: Cormorant Garamond (Google Fonts)
+- Weights: 300, 400, 500, 600 + italics
+
+**Secondary Sans-Serif (Labels, Item Titles):**
+- Font: Montserrat (Google Fonts)
+- Weights: 300, 400, 500, 600
+
+**Type Hierarchy:**
+| Element | Font | Size | Weight | Style | Color |
+|---------|------|------|--------|-------|-------|
+| Masthead subtitle | Montserrat | 7pt | 500 | Uppercase, letter-spacing: 4px | #9a9590 |
+| Main title | Cormorant Garamond | 42pt | 300 | "The" in italic | #1a1a1a |
+| Address label | Montserrat | 7pt | 500 | Uppercase, letter-spacing: 3px | #b8a88a |
+| Address input | Cormorant Garamond | 18pt | 400 | Italic | #3d3d3d |
+| Column part label | Cormorant Garamond | 11pt | 400 | Normal | #b8a88a |
+| Column title | Cormorant Garamond | 16pt | 400 | Normal | #1a1a1a (right) / #6b6b6b (left) |
+| Item marker | Cormorant Garamond | 14pt | 400 | Roman numerals | #b8a88a |
+| Item title | Montserrat | 8.5pt | 500 | Normal, letter-spacing: 0.5px | #3d3d3d (right) / #6b6b6b (left) |
+| Item description | Cormorant Garamond | 10pt | 400 | Italic (left) / Normal (right) | #6b6b6b (left) / #3d3d3d (right) |
+| Pull quote | Cormorant Garamond | 13pt | 400 | Italic | #3d3d3d |
+| Agent name | Cormorant Garamond | 12pt | 500 | Normal | #1a1a1a |
+| Agent title | Cormorant Garamond | 9pt | 400 | Italic | #6b6b6b |
+| Contact info | Montserrat | 8pt | 400 | Normal | #6b6b6b |
+
+---
+
+## COLOR PALETTE
+
+| Name | Hex | Usage |
+|------|-----|-------|
+| Ink | #1a1a1a | Main title, agent name |
+| Charcoal | #3d3d3d | Right column text, pull quote |
+| Stone | #6b6b6b | Left column text, descriptions |
+| Warm Gray | #9a9590 | Subtle labels |
+| Cream | #fdfcfa | Page background |
+| Gold | #b8a88a | Accent color (labels, markers, quote marks) |
+| Gold Muted | #d4cabb | Borders, dividers, frame |
+
+---
+
+## LAYOUT STRUCTURE
+
+```
+┌─────────────────────────────────────────────────────┐
+│ ┌─┐                                             ┌─┐ │  ← Corner accents (40px L-shapes)
+│                                                     │
+│    ┌─────────────────────────────────────────┐     │  ← Inner frame (1px gold-muted border)
+│    │                                         │     │
+│    │         [MASTHEAD SUBTITLE]             │     │
+│    │         The Relaunch Plan               │     │
+│    │      ─────────────────────────          │     │  ← Border below masthead
+│    │                                         │     │
+│    │           Prepared For                  │     │
+│    │      [ADDRESS INPUT FIELD]              │     │
+│    │                                         │     │
+│    │  ┌──────────┐   │   ┌──────────┐       │     │
+│    │  │ Part One │   │   │ Part Two │       │     │
+│    │  │What      │   │   │What's    │       │     │
+│    │  │Happened  │   │   │Different │       │     │
+│    │  │──────────│   │   │──────────│       │     │
+│    │  │ i. Item  │   │   │ i. Item  │       │     │
+│    │  │ ii. Item │   │   │ ii. Item │       │     │
+│    │  │ iii.Item │   │   │ iii.Item │       │     │
+│    │  │ iv. Item │   │   │ iv. Item │       │     │
+│    │  │ v. Item  │   │   │ v. Item  │       │     │
+│    │  │ vi. Item │   │   │ vi. Item │       │     │
+│    │  └──────────┘   │   └──────────┘       │     │
+│    │                 │ ← Center divider (gradient) │
+│    │                                         │     │
+│    │    "Pull quote text here."              │     │
+│    │                                         │     │
+│    │  ─────────────────────────────────      │     │  ← Border above footer
+│    │  Agent Name              (555) 123-4567 │     │
+│    │  Title · DRE#            email@email.com│     │
+│    │                                         │     │
+│    └─────────────────────────────────────────┘     │
+│ └─┘                                             └─┘ │  ← Corner accents
+└─────────────────────────────────────────────────────┘
+```
+
+---
+
+## DECORATIVE ELEMENTS
+
+**Corner Accents:**
+- Position: 0.25" from each corner
+- Size: 40px × 40px L-shapes
+- Style: 1px solid #d4cabb
+- Only two sides per corner (forming an L)
+
+**Inner Frame:**
+- Inset: 0.4" from all edges
+- Style: 1px solid #d4cabb
+- Does not obstruct content (pointer-events: none)
+
+**Center Divider:**
+- Width: 1px
+- Style: Vertical gradient that fades at top and bottom (transparent 0%, #d4cabb 15%, #d4cabb 85%, transparent 100%)
+
+**Section Borders:**
+- Below masthead: 1px solid #d4cabb
+- Below each column header: 1px solid #d4cabb
+- Above footer: 1px solid #d4cabb
+
+---
+
+## CONTENT — EXACT COPY
+
+**Masthead:**
+- Subtitle: "A Fresh Start for Your Home Sale"
+- Title: "*The* Relaunch Plan" (The in italics)
+
+**Address Section:**
+- Label: "Prepared For"
+- Value: [USE THE ADDRESS PROVIDED BY THE USER]
+
+**Left Column — "What Happened"**
+
+| # | Title | Description |
+|---|-------|-------------|
+| i | Not Enough Buyers Saw It | Your home was listed, but it didn't reach the people who were actually looking to buy. |
+| ii | The Photos Didn't Do It Justice | Dark rooms, odd angles—the pictures didn't show what makes your home special. |
+| iii | The Price Felt Off | Maybe too high to start, or price drops that made buyers wonder what was wrong. |
+| iv | You Were Left Guessing | Weeks without updates. No idea what buyers thought after showings. |
+| v | Cookie-Cutter Marketing | Same approach used for every listing—nothing tailored to your home or neighborhood. |
+| vi | Money Left on the Table | Offers weren't negotiated well. You gave up more than you needed to. |
+
+**Right Column — "What's Different Now"**
+
+| # | Title | Description |
+|---|-------|-------------|
+| i | We'll Get It In Front of Real Buyers | Targeted ads, agent networks, and smart distribution so the right people actually see your home. |
+| ii | Photos That Make People Stop Scrolling | Professional photography, video walkthrough, and twilight shots that show your home at its best. |
+| iii | A Price That Creates Momentum | Fresh market data and smart positioning to attract serious offers, not bargain hunters. |
+| iv | You'll Always Know Where Things Stand | Showing feedback within 24 hours. Weekly updates. Direct access whenever you have questions. |
+| v | A Plan Built Around Your Home | Custom marketing that highlights what makes your property unique—not a template. |
+| vi | Every Dollar Fought For | Strong negotiation from offer to closing. We protect your bottom line. |
+
+**Pull Quote:**
+"You did everything right. Your home just needs the right plan—and the right partner."
+
+**Footer:**
+- Left side: Agent Name (editable), Title · DRE# (editable)
+- Right side: Phone number, Email (both editable)
+
+---
+
+## FUNCTIONAL REQUIREMENTS
+
+1. **Address field** should display the user-provided address (not a placeholder)
+2. **All other text content must be editable** (contenteditable="true")
+3. **Hover state** on editable elements: subtle gold background tint (rgba(184, 168, 138, 0.08))
+4. **Focus state** on editable elements: slightly stronger gold tint (rgba(184, 168, 138, 0.12))
+5. **Print styles** must remove:
+   - Body background color
+   - Document box-shadow
+   - Hover/focus backgrounds on editables
+
+---
+
+## CSS SPECIFICATIONS
+
+**Page Setup:**
+```css
+@page {
+    size: 8.5in 11in;
+    margin: 0;
+}
+```
+
+**Document Container:**
+```css
+.document {
+    width: 8.5in;
+    height: 11in;
+    background: #fdfcfa;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: none;
+}
+```
+
+**Body (No spacing around document):**
+```css
+body {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+```
+
+**Content Padding:**
+```css
+.content {
+    padding: 0.65in 0.6in;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+```
+
+**Comparison Section (Flexbox):**
+```css
+.comparison-section {
+    flex: 1;
+    display: flex;
+    gap: 0.5in;
+    padding: 0.25in 0;
+}
+```
+
+**Item Spacing:**
+```css
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.18in;
+}
+```
+
+---
+
+## DESIGN PRINCIPLES
+
+1. **Understated elegance** — No bold colors, heavy borders, or aggressive typography
+2. **Generous whitespace** — Let the content breathe
+3. **Visual hierarchy through weight and color, not size** — Subtle distinctions
+4. **Left column feels faded/past** — Gray tones, italic descriptions
+5. **Right column feels present/confident** — Darker text, upright descriptions
+6. **Warm, not cold** — Cream background, gold accents, serif typography
+7. **Magazine editorial aesthetic** — Like a feature spread, not a flyer
+8. **Accessible copy** — Conversational, empathetic, no jargon
+
+---
+
+## OUTPUT FORMAT
+
+Single HTML file with:
+- All CSS embedded in `<style>` tags
+- Google Fonts imported via @import
+- No external JavaScript dependencies
+- Print-ready at exact 8.5" × 11" dimensions
+- No margin, padding, or spacing around the document
+- No box-shadow on the document
+- Body background: none (just the letter, nothing else)
+- User's address pre-filled
+- All other text editable for customization
+
+---
+
+## QUALITY CHECKLIST
+
+- [ ] Asked user for property address before generating
+- [ ] Address is pre-filled in the template (not placeholder)
+- [ ] Document renders at exactly 8.5" × 11"
+- [ ] No margin, padding, or spacing around the document
+- [ ] No box-shadow on the document
+- [ ] Body has no background color (just the letter)
+- [ ] All fonts load from Google Fonts
+- [ ] Corner accents appear in all four corners
+- [ ] Inner frame is visible but doesn't block interaction
+- [ ] Center divider fades at top and bottom
+- [ ] Left column text is visibly lighter/grayer than right
+- [ ] Left column descriptions are italic; right are not
+- [ ] Roman numerals (i, ii, iii, iv, v, vi) used as markers
+- [ ] Pull quote has gold quotation marks
+- [ ] All content (except address) is editable on click
+- [ ] Print preview shows clean output without shadows/backgrounds
+
+---
+
+# Template Customization Request
+
+Create an HTML artifact with the customized template that I can preview directly in this chat.
+
+## CRITICAL: Output Format
+**You MUST create a previewable HTML artifact** using Claude's artifact feature:
+- The artifact MUST be visible and renderable in the Claude UI
+- I need to see a live preview of the HTML, not just code
+- Use artifact type "text/html" so it renders as a webpage preview
+- Do NOT just paste HTML code in the chat message
+
+## Print Size Requirements
+**This template is designed for: 8.5x11 inches**
+
+You MUST ensure the output:
+- Fits exactly within 8.5x11 inches when printed
+- Does NOT exceed the boundaries of 8.5x11 inches
+- Maintains proper margins for printing (at least 0.25" / 6mm on all sides)
+- All content, images, and text must be contained within the printable area
+- Do NOT add content that would cause the document to overflow onto additional pages
+
+## Instructions
+You are helping customize an HTML marketing template called "Cannonball: The Personalized Cover Letter" for print size: 8.5x11 inches. Please modify the HTML below by:
+1. Replacing placeholder variables (like {{variable_name}}) with the provided information
+2. Applying the brand accent color to appropriate accent elements (buttons, highlights, borders)
+3. Inserting images at appropriate locations using the provided URLs
+4. Maintaining the exact layout and structure of the template
+5. **IMPORTANT: Ensuring ALL content fits within 8.5x11 inches - do not exceed this size**
+
+## User Profile Information
+
+### Contact Details
+- First Name: Ryan
+- Last Name: Rose
+- Email Address: ryan@rosehomeslv.com
+- Phone Number: 7027475921
+
+### Business Details
+- Company/Brokerage Name: Real Broker, LLC
+- Area We Serve: Las Vegas
+- Job Title: Nevada
+- License Number: S.0185572
+- Short Bio: Hey! I'm Ryan Rose, The Ethical Vegas Realtor. I'm a local agent on a Top Producing Las Vegas Real Estate Team with globally recognized marketing strategies for selling homes faster using Social Media and old school ideas (like actually picking up the phone and calling people!). I am honored to help people in the Las Vegas area buy, sell, and invest. My approach is simple: No pressure. No BS. Only genuine guidance from start to close. I look forward to hearing from you and showing you what I do above and beyond any other agents in the city!
+
+### Branding
+
+### Social & Web Links
+- Website: https://www.rosehomeslv.com
+- YouTube Channel: https://www.youtube.com/@rosehomeslv
+- Instagram: https://www.instagram.com/rosehomeslv
+
+## Image URLs
+Use these image URLs directly in the HTML output. Insert them as `<img src="URL">` tags at the appropriate locations:
+- Professional Headshot: https://ik.imagekit.io/listingleads/_personalization/1773467947159_blob_9noJLCXIy?tr=w-300
+- Company Logo: https://ik.imagekit.io/listingleads/_personalization/1773468120260_Real_Logo_Outline_White_kHJXcZ1A9q.png?tr=w-300
+
+## HTML Template Code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Relaunch Plan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --ink: #1a1a1a;
+            --charcoal: #3d3d3d;
+            --stone: #6b6b6b;
+            --warm-gray: #9a9590;
+            --silk: #f7f6f4;
+            --cream: #fdfcfa;
+            --gold: #b8a88a;
+            --gold-muted: #d4cabb;
+        }
+        
+        @page {
+            size: 8.5in 11in;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #e8e6e4;
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .document {
+            width: 8.5in;
+            height: 11in;
+            background: var(--cream);
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+        }
+        
+        /* Subtle Border Frame */
+        .inner-frame {
+            position: absolute;
+            top: 0.4in;
+            left: 0.4in;
+            right: 0.4in;
+            bottom: 0.4in;
+            border: 1px solid var(--gold-muted);
+            pointer-events: none;
+        }
+        
+        /* Content Area */
+        .content {
+            padding: 0.65in 0.6in;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Masthead */
+        .masthead {
+            text-align: center;
+            padding-bottom: 0.3in;
+            border-bottom: 1px solid var(--gold-muted);
+        }
+        
+        .issue-line {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 7pt;
+            font-weight: 500;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--warm-gray);
+            margin-bottom: 0.15in;
+        }
+        
+        .logo-text {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 42pt;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: var(--ink);
+            line-height: 1;
+        }
+        
+        .logo-text em {
+            font-style: italic;
+            font-weight: 300;
+        }
+        
+        /* Address Feature */
+        .address-feature {
+            text-align: center;
+            padding: 0.35in 0 0.3in 0;
+        }
+        
+        .address-label {
+            font-size: 7pt;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 0.08in;
+        }
+        
+        .address-input {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 18pt;
+            font-weight: 400;
+            font-style: italic;
+            color: var(--charcoal);
+            border: none;
+            border-bottom: 1px solid var(--gold-muted);
+            background: transparent;
+            text-align: center;
+            width: 5in;
+            padding: 4px 0;
+            outline: none;
+        }
+        
+        .address-input::placeholder {
+            color: var(--warm-gray);
+        }
+        
+        /* Main Comparison Section */
+        .comparison-section {
+            flex: 1;
+            display: flex;
+            gap: 0.5in;
+            padding: 0.25in 0;
+        }
+        
+        .column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .column-header {
+            margin-bottom: 0.25in;
+            padding-bottom: 0.12in;
+            border-bottom: 1px solid var(--gold-muted);
+        }
+        
+        .column-number {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 11pt;
+            font-weight: 400;
+            color: var(--gold);
+            margin-bottom: 0.03in;
+        }
+        
+        .column-title {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 16pt;
+            font-weight: 400;
+            color: var(--ink);
+            letter-spacing: 0.5px;
+        }
+        
+        .column-left .column-title {
+            color: var(--stone);
+        }
+        
+        /* Items */
+        .items {
+            display: flex;
+            flex-direction: column;
+            gap: 0.18in;
+        }
+        
+        .item {
+            display: flex;
+            gap: 0.12in;
+            align-items: flex-start;
+        }
+        
+        .item-marker {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 14pt;
+            font-weight: 400;
+            color: var(--gold);
+            line-height: 1.2;
+            width: 0.2in;
+            flex-shrink: 0;
+        }
+        
+        .item-content {
+            flex: 1;
+        }
+        
+        .item-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 8.5pt;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.03in;
+            line-height: 1.3;
+        }
+        
+        .column-left .item-title {
+            color: var(--stone);
+        }
+        
+        .column-right .item-title {
+            color: var(--charcoal);
+        }
+        
+        .item-description {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 10pt;
+            font-weight: 400;
+            color: var(--stone);
+            line-height: 1.45;
+            font-style: italic;
+        }
+        
+        .column-right .item-description {
+            color: var(--charcoal);
+            font-style: normal;
+        }
+        
+        /* Center Divider */
+        .center-divider {
+            width: 1px;
+            background: linear-gradient(
+                to bottom,
+                transparent 0%,
+                var(--gold-muted) 15%,
+                var(--gold-muted) 85%,
+                transparent 100%
+            );
+            flex-shrink: 0;
+        }
+        
+        /* Pull Quote */
+        .pull-quote {
+            text-align: center;
+            padding: 0.25in 0.5in;
+            margin-top: auto;
+        }
+        
+        .pull-quote-text {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 13pt;
+            font-weight: 400;
+            font-style: italic;
+            color: var(--charcoal);
+            line-height: 1.5;
+        }
+        
+        .pull-quote-text::before,
+        .pull-quote-text::after {
+            content: '"';
+            color: var(--gold);
+        }
+        
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--gold-muted);
+            padding-top: 0.2in;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        
+        .footer-agent {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+        }
+        
+        .agent-name {
+            font-size: 12pt;
+            font-weight: 500;
+            color: var(--ink);
+            letter-spacing: 0.5px;
+        }
+        
+        .agent-title {
+            font-size: 9pt;
+            font-style: italic;
+            color: var(--stone);
+            margin-top: 2px;
+        }
+        
+        .footer-contact {
+            text-align: right;
+            font-size: 8pt;
+            color: var(--stone);
+            line-height: 1.6;
+        }
+        
+        .footer-contact a {
+            color: var(--stone);
+            text-decoration: none;
+        }
+        
+        /* Editable Styles */
+        [contenteditable="true"] {
+            outline: none;
+            transition: background 0.2s;
+            border-radius: 2px;
+        }
+        
+        [contenteditable="true"]:hover {
+            background: rgba(184, 168, 138, 0.08);
+        }
+        
+        [contenteditable="true"]:focus {
+            background: rgba(184, 168, 138, 0.12);
+        }
+        
+        /* Decorative Elements */
+        .corner-accent {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-color: var(--gold-muted);
+            border-style: solid;
+            border-width: 0;
+        }
+        
+        .corner-accent.top-left {
+            top: 0.25in;
+            left: 0.25in;
+            border-top-width: 1px;
+            border-left-width: 1px;
+        }
+        
+        .corner-accent.top-right {
+            top: 0.25in;
+            right: 0.25in;
+            border-top-width: 1px;
+            border-right-width: 1px;
+        }
+        
+        .corner-accent.bottom-left {
+            bottom: 0.25in;
+            left: 0.25in;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+        }
+        
+        .corner-accent.bottom-right {
+            bottom: 0.25in;
+            right: 0.25in;
+            border-bottom-width: 1px;
+            border-right-width: 1px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .document {
+                margin: 0;
+                box-shadow: none;
+            }
+            [contenteditable="true"]:hover,
+            [contenteditable="true"]:focus {
+                background: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="document">
+        <!-- Corner Accents -->
+        <div class="corner-accent top-left"></div>
+        <div class="corner-accent top-right"></div>
+        <div class="corner-accent bottom-left"></div>
+        <div class="corner-accent bottom-right"></div>
+        
+        <!-- Inner Frame -->
+        <div class="inner-frame"></div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Masthead -->
+            <header class="masthead">
+                <div class="issue-line">A Fresh Start for Your Home Sale</div>
+                <h1 class="logo-text"><em>The</em> Relaunch Plan</h1>
+            </header>
+            
+            <!-- Address Feature -->
+            <div class="address-feature">
+                <div class="address-label">Prepared For</div>
+                <input type="text" class="address-input" placeholder="123 Main Street, City, State">
+            </div>
+            
+            <!-- Comparison Section -->
+            <div class="comparison-section">
+                <!-- Left Column: What Was -->
+                <div class="column column-left">
+                    <div class="column-header">
+                        <div class="column-number">Part One</div>
+                        <div class="column-title">What Happened</div>
+                    </div>
+                    
+                    <div class="items">
+                        <div class="item">
+                            <div class="item-marker">i</div>
+                            <div class="item-content">
+                                <div class="item-title" contenteditable="true">Not Enough Buyers Saw It</div>
+                                <div class="item-description" contenteditable="true">Your home was listed, but it didn't reach the people who were actually looking to buy.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="item-marker">ii</div>
+                            <div class="item-content">
+                                <div class="item-title" contenteditable="true">The Photos Didn't Do It Justice</div>
+                                <div class="item-description" contenteditable="true">Dark rooms, odd angles—the pictures didn't show what makes your home special.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="item-marker">iii</div>
+                            <div class="item-content">
+                                <div class="item-title" contenteditable="true">The Price Felt Off</div>
+                                <div class="item-description" contenteditable="true">Maybe too high to start, or price drops that made buyers wonder what was wrong.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="item-marker">iv</div>
+                            <div class="item-content">
+                                <div class="item-title" contenteditable="true">You Were Left Guessing</div>
+                                <div class="item-description" contenteditable="true">Weeks without updates. No idea what buyers thought after showings.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="item-marker">v</div>
+                            <div class="item-content">
+                                <div class="item-title" contenteditable="true">Cookie-Cutter Marketing</div>
+                                <div class="item-description" contenteditable="true">Same approach used for every listing—nothing tailored to your home or neighborhood.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="item-marker">vi</div>
+                            <div class="item-content">
+                                <div class="item-title" contenteditable="true">Money Left on the Table</div>
+                                <div class="item-description" contenteditable="true">Offers weren't negotiated well. You gave up more than you needed to.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Center Divider -->
+                <div class="center-divider"></div>
+                
+                <!-- Right Column: What Will Be -->
+                <div class="column column-right">
+                    <div class="column-header">
+                        <div class="column-number">Part Two</div>
+                        <div class="column-title">What's Different Now</div>
+                    </div>
+                    
+                    <div class="items">
+                        <div class="item">
+                            <div class="item-marker">i</div>
+                            <div class="item-content">
+                                <div class="item-title" contenteditable="true">We'll Get It In Front of Real Buyers</div>
+                                <div class="item-description" contenteditable="true">Targeted ads, agent networks, and smart distribution so the right people actually see your home.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="item-marker">ii</div>
+                            <div class="item-content">
+                                <div class="item-title" contenteditable="true">Photos That Make People Stop Scrolling</div>
+                                <div class="item-description" contenteditable="true">Professional photography, video walkthrough, and twilight shots that show your home at its best.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="item-marker">iii</div>
+                            <div class="item-content">
+                                <div class="item-title" contenteditable="true">A Price That Creates Momentum</div>
+                                <div class="item-description" contenteditable="true">Fresh market data and smart positioning to attract serious offers, not bargain hunters.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="item-marker">iv</div>
+                            <div class="item-content">
+                                <div class="item-title" contenteditable="true">You'll Always Know Where Things Stand</div>
+                                <div class="item-description" contenteditable="true">Showing feedback within 24 hours. Weekly updates. Direct access whenever you have questions.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="item-marker">v</div>
+                            <div class="item-content">
+                                <div class="item-title" contenteditable="true">A Plan Built Around Your Home</div>
+                                <div class="item-description" contenteditable="true">Custom marketing that highlights what makes your property unique—not a template.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="item-marker">vi</div>
+                            <div class="item-content">
+                                <div class="item-title" contenteditable="true">Every Dollar Fought For</div>
+                                <div class="item-description" contenteditable="true">Strong negotiation from offer to closing. We protect your bottom line.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pull Quote -->
+            <div class="pull-quote">
+                <p class="pull-quote-text" contenteditable="true">You did everything right. Your home just needs the right plan—and the right partner.</p>
+            </div>
+            
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-agent">
+                    <div class="agent-name" contenteditable="true">Agent Name</div>
+                    <div class="agent-title" contenteditable="true">Realtor · DRE# 00000000</div>
+                </div>
+                <div class="footer-contact">
+                    <span contenteditable="true">(555) 123-4567</span><br>
+                    <span contenteditable="true">agent@email.com</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+## Output Requirements
+- **CREATE A PREVIEWABLE HTML ARTIFACT** - Use the artifact feature with type "text/html"
+- The artifact MUST render as a visual preview in the Claude UI (not just code)
+- The artifact should contain the complete, modified HTML document starting with <!DOCTYPE html>
+- Preserve all existing styles and structure
+- Keep the same responsive layout
+- Replace all {{placeholder}} variables with the appropriate values from above
+- **CRITICAL: Output MUST fit within 8.5x11 inches when printed - do not exceed this print size**
+
+⚠️ IMPORTANT: I need to SEE the rendered HTML preview in the artifact panel, not read code. Make sure the artifact is previewable.

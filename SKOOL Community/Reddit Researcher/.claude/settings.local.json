@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/ryanrose/Downloads/Claude/SKOOL Community/Reddit Researcher/**)",
+      "Bash(python3 /tmp/merge_posts.py)"
+    ]
+  }
+}

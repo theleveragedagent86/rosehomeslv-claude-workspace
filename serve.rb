@@ -1,0 +1,4 @@
+require 'webrick'
+server = WEBrick::HTTPServer.new(:Port => 8091, :DocumentRoot => Dir.pwd)
+trap('INT') { server.shutdown }
+server.start

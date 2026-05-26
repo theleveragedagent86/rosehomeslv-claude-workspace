@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(pip3 install:*)",
+      "Bash(head:*)",
+      "Bash(wc -l \"Hotsheet \\(18\\).csv\")",
+      "Bash(tail -n +2 \"/Users/ryanrose/Downloads/Hotsheet \\(19\\).csv\")",
+      "Bash(zip -r \"/Users/ryanrose/Downloads/Claude/Expireds/Elise_Attachments/expired-workflow.zip\" expired-workflow/)",
+      "Bash(mkdir -p /tmp/expired-workflow/.claude-plugin)",
+      "Bash(mkdir -p /tmp/expired-workflow/skills/expired-workflow)",
+      "Read(//private/tmp/**)",
+      "Bash(rm -f \"/Users/ryanrose/Downloads/Claude/Expireds/Elise_Attachments/expired-workflow.zip\")",
+      "Bash(unzip -l \"/Users/ryanrose/Downloads/Claude/Expireds/Elise_Attachments/expired-workflow.zip\")"
+    ]
+  }
+}

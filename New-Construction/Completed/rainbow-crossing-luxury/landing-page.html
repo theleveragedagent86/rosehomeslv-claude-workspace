@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- COMMUNITY: Rainbow Crossing Luxury -->
+    <title>Rainbow Crossing Luxury by Pulte | New Homes 89139 Las Vegas</title>
+    <meta name="description" content="Rainbow Crossing Luxury by Pulte Homes: 4 floor plans, 1,642 to 3,072+ sq ft, from $621,990 in 89139 southwest Las Vegas. Get the buyer guide from Ryan Rose.">
+    <meta name="keywords" content="Rainbow Crossing Luxury, Rainbow Crossing Luxury Pulte, Pulte Homes 89139, new construction southwest Las Vegas, Beckham floor plan, Ella floor plan, Duncan floor plan, Harper floor plan, Rainbow Crossing Luxury prices, new homes Enterprise Las Vegas">
+    <link rel="canonical" href="https://rosehomeslv.com/pulte-rainbow-crossings-luxury">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rainbow Crossing Luxury by Pulte Homes | 4 Plans, 1,642 to 3,072+ sq ft, 89139 Las Vegas">
+    <meta property="og:description" content="Rainbow Crossing Luxury by Pulte Homes in southwest Las Vegas (89139) offers 4 floor plans from $621,990. Single-story and two-story homes from 1,642 to 3,072+ sq ft, 3 to 6 bedrooms, minutes to the 215 and the Strip. Buyer guide from Ryan Rose, Real Broker LLC.">
+    <meta property="og:url" content="https://rosehomeslv.com/pulte-rainbow-crossings-luxury">
+    <meta property="og:image" content="https://rosehomeslv.com/images/rainbow-crossing-luxury/hero.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Rose Homes LV">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rainbow Crossing Luxury by Pulte | 89139 Las Vegas New Homes">
+    <meta name="twitter:description" content="4 Pulte floor plans from $621,990 in 89139 southwest Las Vegas. 1,642 to 3,072+ sq ft, 3 to 6 bedrooms. Buyer guide from Ryan Rose.">
+    <meta name="twitter:image" content="https://rosehomeslv.com/images/rainbow-crossing-luxury/hero.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset + Lofty CMS full-bleed escape */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html {
+            scroll-behavior: smooth;
+            background: #faf8f3;
+            overflow-x: hidden;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2a2520;
+            line-height: 1.6;
+            background: #faf8f3;
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        /* Force every top-level section to span the full viewport width */
+        .hero, .incentive-bar, .about-section,
+        .plans-section, .amenities-section {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+        img { max-width: 100%; display: block; }
+        a { color: inherit; text-decoration: none; }
+
+        /* ============================
+           DESIGN TOKENS — Pulte Astronaut Blue
+           ============================ */
+        :root {
+            --dark: #faf8f3;
+            --dark-surface: #f2efe7;
+            --dark-card: #ffffff;
+            --accent: #033764;          /* Pulte Astronaut Blue (verified primary) */
+            --accent-hover: #0a4882;
+            --accent-muted: rgba(3, 55, 100, 0.12);
+            --navy: #022845;
+            --navy-light: rgba(2, 40, 69, 0.08);
+            --cream: #f4f1e7;
+            --light-grey: #f2f5f7;
+            --white: #ffffff;
+            --w60: rgba(42,37,32,0.7);
+            --w40: rgba(42,37,32,0.55);
+            --w20: rgba(42,37,32,0.3);
+            --w08: rgba(42,37,32,0.1);
+            --w04: rgba(42,37,32,0.04);
+            --text-dark: #2a2520;
+            --text-body: #2a2520;
+            --radius: 10px;
+            --radius-sm: 6px;
+            --t: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .container { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+
+        /* Reveal */
+        .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ============================
+           SECTION LABEL
+           ============================ */
+        .section-label {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            display: flex; align-items: center; gap: 14px;
+            margin-bottom: 20px;
+        }
+        .section-label::after {
+            content: ''; flex: 1; max-width: 50px; height: 1px;
+        }
+        .section-label--blue { color: var(--accent); }
+        .section-label--blue::after { background: var(--accent); }
+        .section-label--dark { color: var(--w40); }
+        .section-label--dark::after { background: var(--w20); }
+
+        /* ============================
+           INCENTIVE BAR
+           ============================ */
+        .incentive-bar {
+            background: var(--accent);
+            padding: 12px 28px;
+            text-align: center;
+        }
+        .incentive-bar p {
+            font-size: 13px; font-weight: 500; color: var(--white);
+        }
+        .incentive-bar strong { font-weight: 700; }
+
+        /* ============================
+           STICKY HEADER
+           ============================ */
+        .header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(250,248,243,0.92);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--w08);
+            padding: 0;
+        }
+        .header-inner {
+            display: flex; align-items: center; justify-content: space-between;
+            height: 60px;
+        }
+        .header-left {
+            display: flex; align-items: center; gap: 16px;
+            min-width: 0; overflow: hidden;
+        }
+        .header-logo {
+            height: 24px; width: auto;
+            filter: invert(1);
+        }
+        .header-agent {
+            font-size: 12px; font-weight: 500;
+            letter-spacing: 1px; text-transform: uppercase;
+            color: var(--w60);
+        }
+        .header-divider {
+            width: 1px; height: 20px;
+            background: var(--w20);
+        }
+        .header-community {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px; letter-spacing: 2px;
+            color: var(--text-dark);
+        }
+        .header-right {
+            display: flex; align-items: center; gap: 20px;
+        }
+        .header-link {
+            font-size: 12px; font-weight: 500;
+            letter-spacing: 1px; text-transform: uppercase;
+            color: var(--w40); transition: color var(--t);
+        }
+        .header-link:hover { color: var(--text-dark); }
+        .header-cta {
+            background: var(--accent) !important;
+            color: #ffffff !important;
+            padding: 9px 22px; border-radius: 50px;
+            font-size: 12px; font-weight: 600;
+            letter-spacing: 0.5px; text-transform: uppercase;
+            transition: background var(--t);
+            border: none;
+        }
+        .header-cta:hover { background: var(--accent-hover) !important; color: #ffffff !important; }
+
+        /* ============================
+           HERO — scrolling photo strip + cream overlay
+           ============================ */
+        .hero {
+            padding: 80px 28px 40px;
+            background: var(--dark);
+            position: relative; overflow: hidden;
+            min-height: 460px;
+        }
+        /* Scrolling photo strip behind the text */
+        .hero-bg {
+            position: absolute; inset: 0; z-index: 0;
+            display: flex; width: max-content;
+            animation: heroScroll 50s linear infinite;
+            will-change: transform;
+        }
+        .hero-bg img {
+            height: 100%; width: auto; min-width: 50vw;
+            object-fit: cover; flex-shrink: 0;
+        }
+        @keyframes heroScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        /* Cream overlay layer keeps text readable over photos */
+        .hero-overlay {
+            position: absolute; inset: 0; z-index: 1;
+            background: linear-gradient(to right,
+                rgba(250,248,243,0.85) 0%,
+                rgba(250,248,243,0.55) 35%,
+                rgba(250,248,243,0.2) 70%,
+                rgba(250,248,243,0.05) 100%);
+            pointer-events: none;
+        }
+        /* Subtle accent radial glow behind text for depth */
+        .hero::before {
+            content: ''; position: absolute; inset: 0; z-index: 1;
+            background: radial-gradient(ellipse 60% 50% at 70% 50%, rgba(3,55,100,0.08) 0%, transparent 65%);
+            pointer-events: none;
+        }
+        .hero::after {
+            content: ''; position: absolute; inset: 0; z-index: 1;
+            background: radial-gradient(ellipse 40% 60% at 20% 30%, rgba(2,40,69,0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero-inner {
+            max-width: 1120px; margin: 0 auto;
+            display: flex; align-items: flex-end; justify-content: space-between;
+            gap: 40px; position: relative; z-index: 2;
+        }
+        .hero-text { max-width: 600px; }
+        .hero-kicker {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(72px, 12vw, 140px);
+            line-height: 0.9; color: var(--text-dark);
+            letter-spacing: 4px; margin-bottom: 16px;
+            text-shadow: 0 1px 12px rgba(250,248,243,0.6);
+        }
+        .hero-sub {
+            font-size: 16px; font-weight: 400;
+            color: var(--text-dark); max-width: 460px;
+            line-height: 1.7; margin-bottom: 24px;
+            text-shadow: 0 1px 8px rgba(250,248,243,0.9);
+        }
+        .hero-cta {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: var(--accent) !important; color: #ffffff !important;
+            padding: 14px 32px; border-radius: 50px;
+            font-size: 13px; font-weight: 600;
+            letter-spacing: 1px; text-transform: uppercase;
+            transition: background var(--t), transform var(--t);
+            border: none;
+        }
+        .hero-cta:hover { background: var(--accent-hover) !important; color: #ffffff !important; transform: translateY(-2px); }
+        .hero-stats {
+            display: flex; gap: 24px;
+            padding: 18px 24px;
+            background: rgba(250,248,243,0.78);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(42,37,32,0.06);
+            border-radius: 12px;
+        }
+        .hero-stat { text-align: center; }
+        .hero-stat-val {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px; letter-spacing: 2px;
+            color: var(--text-dark); line-height: 1; margin-bottom: 4px;
+        }
+        .hero-stat-lbl {
+            font-size: 10px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w60);
+        }
+
+        /* ============================
+           AMENITIES — horizontal scroll
+           ============================ */
+        .amenities-section {
+            padding: 60px 0 0;
+            background: var(--dark-surface);
+            overflow: hidden;
+        }
+        .amenities-label {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 28px;
+            display: flex; align-items: center; gap: 14px;
+        }
+        .amenities-label::after {
+            content: ''; flex: 1; max-width: 50px; height: 1px;
+            background: var(--accent);
+        }
+        .amenities-scroll {
+            display: flex; gap: 16px;
+            overflow-x: auto; padding-bottom: 20px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .amenities-scroll::-webkit-scrollbar { height: 3px; }
+        .amenities-scroll::-webkit-scrollbar-track { background: var(--w04); }
+        .amenities-scroll::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+        .amenity-card {
+            flex: 0 0 280px;
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            transition: border-color var(--t), transform var(--t);
+        }
+        .amenity-card:hover {
+            border-color: var(--w20);
+            transform: translateY(-3px);
+        }
+        .amenity-card-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px; letter-spacing: 1px;
+            color: var(--text-dark); margin-bottom: 8px;
+        }
+        .amenity-card-desc {
+            font-size: 13px; color: var(--w40); line-height: 1.6;
+        }
+
+        /* ============================
+           ABOUT
+           ============================ */
+        .about-section {
+            padding: 60px 0;
+            background: var(--dark);
+        }
+        .about-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 48px; align-items: start;
+        }
+        .about-headline {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 44px; letter-spacing: 2px;
+            line-height: 1.05; color: var(--text-dark);
+        }
+        .about-text p {
+            font-size: 15px; line-height: 1.85;
+            color: var(--w40); margin-bottom: 16px;
+        }
+        .about-text p:last-child { margin-bottom: 0; }
+
+        /* ============================
+           FLOOR PLANS
+           ============================ */
+        .plans-section {
+            padding: 60px 0;
+            background: var(--dark);
+        }
+        .plans-header {
+            display: flex; justify-content: space-between;
+            align-items: flex-end; margin-bottom: 40px; gap: 24px;
+        }
+        .plans-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px; letter-spacing: 2px; line-height: 1.05;
+            color: var(--text-dark);
+        }
+        .plans-subtitle {
+            font-size: 14px; color: var(--w40);
+            max-width: 320px; text-align: right;
+        }
+
+        /* Plan tabs */
+        .plan-tabs {
+            display: flex; gap: 0;
+            border-bottom: 1px solid var(--w08);
+            margin-bottom: 32px;
+        }
+        .plan-tab {
+            flex: 1; padding: 16px 12px;
+            text-align: center; cursor: pointer;
+            position: relative; transition: all var(--t);
+        }
+        .plan-tab::after {
+            content: ''; position: absolute;
+            bottom: -1px; left: 0; right: 0; height: 2px;
+            background: var(--accent);
+            transform: scaleX(0); transition: transform var(--t);
+        }
+        .plan-tab.active::after { transform: scaleX(1); }
+        .plan-tab-top {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            margin-bottom: 4px;
+        }
+        .plan-tab-indicator {
+            width: 10px; height: 10px; border-radius: 50%;
+            border: 2px solid var(--w20);
+            transition: all var(--t);
+        }
+        .plan-tab.active .plan-tab-indicator {
+            border-color: var(--accent);
+            background: var(--accent);
+        }
+        .plan-tab-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 22px; letter-spacing: 2px;
+            color: var(--w20); transition: color var(--t);
+        }
+        .plan-tab.active .plan-tab-name { color: var(--text-dark); }
+        .plan-tab:hover .plan-tab-name { color: var(--w60); }
+        .plan-tab-price {
+            font-size: 12px; color: var(--w20);
+        }
+        .plan-tab.active .plan-tab-price { color: var(--w40); }
+
+        /* Plan display */
+        .plan-display {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            align-items: start;
+        }
+        .plan-image-panel {
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            opacity: 0; transform: scale(0.97);
+            transition: opacity var(--t), transform var(--t);
+        }
+        .plan-image-panel.visible { opacity: 1; transform: scale(1); }
+        .plan-image-label {
+            padding: 12px 20px;
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+            border-bottom: 1px solid var(--w08);
+        }
+        .plan-image-area {
+            display: flex; flex-direction: column; gap: 18px;
+            align-items: stretch; justify-content: flex-start;
+            background: #faf8f3;
+            padding: 18px;
+        }
+        .plan-floor {
+            display: flex; flex-direction: column; gap: 8px;
+        }
+        .plan-floor-label {
+            font-size: 10px; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40); text-align: center;
+        }
+        .plan-floor img { width: 100%; height: auto; display: block; }
+        /* Placeholder when no plan image is available */
+        .plan-image-placeholder {
+            width: 100%; height: 100%;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #f4f1e7 0%, #ffffff 60%, #eee9dc 100%);
+            border: 1px dashed var(--w20);
+            border-radius: var(--radius-sm);
+            padding: 24px;
+            gap: 12px;
+        }
+        .plan-image-placeholder-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 56px; letter-spacing: 4px;
+            color: var(--accent);
+            line-height: 1;
+        }
+        .plan-image-placeholder-caption {
+            font-size: 11px; font-weight: 500;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            color: var(--w40);
+            max-width: 240px;
+        }
+        .plan-image-source {
+            padding: 6px 20px 8px;
+            font-size: 10px; font-style: italic;
+            color: var(--w20);
+            text-align: right;
+        }
+        .plan-image-source a { color: var(--w20); text-decoration: underline; transition: color var(--t); }
+        .plan-image-source a:hover { color: var(--w40); }
+
+        .plan-detail-panel {
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            border-radius: var(--radius);
+            padding: 32px;
+            border-top: 3px solid var(--accent);
+            opacity: 0; transform: translateY(12px);
+            transition: opacity var(--t), transform var(--t);
+        }
+        .plan-detail-panel.visible { opacity: 1; transform: translateY(0); }
+        .plan-detail-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 32px; letter-spacing: 2px;
+            color: var(--text-dark); margin-bottom: 4px;
+        }
+        .plan-detail-builder {
+            font-size: 11px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40); margin-bottom: 24px;
+        }
+        .plan-spec-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 12px; margin-bottom: 24px;
+        }
+        .plan-spec-item {
+            text-align: center; padding: 16px 8px;
+            border-radius: var(--radius-sm);
+            background: var(--cream);
+            border: 1px solid var(--w08);
+        }
+        .plan-spec-val {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 24px; letter-spacing: 1px;
+            color: var(--text-dark); margin-bottom: 2px;
+        }
+        .plan-spec-val.highlight { color: var(--navy); }
+        .plan-spec-lbl {
+            font-size: 10px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+        }
+        .plan-features {
+            list-style: none;
+        }
+        .plan-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--w04);
+            font-size: 13px; color: var(--w40);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .plan-features li:last-child { border-bottom: none; }
+        .plan-features li::before {
+            content: ''; width: 5px; height: 5px;
+            border-radius: 50%; background: var(--accent);
+            flex-shrink: 0;
+        }
+        .plan-detail-cta {
+            margin-top: 20px;
+            display: block; text-align: center;
+            padding: 12px;
+            background: var(--accent) !important;
+            color: #ffffff !important;
+            border-radius: 50px;
+            font-size: 12px; font-weight: 600;
+            letter-spacing: 1px; text-transform: uppercase;
+            transition: background var(--t);
+            border: none;
+        }
+        .plan-detail-cta:hover { background: var(--accent-hover) !important; color: #ffffff !important; }
+        .plan-compare-hint {
+            text-align: center; margin-top: 16px;
+            font-size: 12px; color: var(--w20);
+        }
+
+        /* ============================
+           RESPONSIVE
+           ============================ */
+        @media (max-width: 900px) {
+            .about-grid { grid-template-columns: 1fr; gap: 24px; }
+            .plans-header { flex-direction: column; align-items: flex-start; }
+            .plans-subtitle { text-align: left; }
+            .plan-display { grid-template-columns: 1fr; }
+            .hero-inner { flex-direction: column; align-items: flex-start; }
+            .hero-stats { gap: 24px; }
+        }
+        @media (max-width: 768px) {
+            .header-agent { display: none; }
+            .header-divider { display: none; }
+            .header-link { display: none; }
+            .header-inner { height: 52px; }
+            .header-logo { height: 20px; }
+            .header-community { font-size: 15px; letter-spacing: 1.5px; }
+            .header-cta { padding: 7px 16px; font-size: 11px; }
+
+            .hero { padding: 64px 20px 32px; }
+            .hero h1 { font-size: 56px; letter-spacing: 2px; }
+            .hero-sub { font-size: 15px; margin-bottom: 20px; }
+            .hero-cta { padding: 12px 24px; font-size: 12px; }
+            .hero-stats { flex-wrap: wrap; gap: 16px; }
+            .hero-stat-val { font-size: 28px; }
+            .hero-stat-lbl { font-size: 9px; letter-spacing: 1.5px; }
+
+            .incentive-bar { padding: 10px 16px; }
+            .incentive-bar p { font-size: 12px; }
+
+            .about-section { padding: 40px 0; }
+            .about-headline { font-size: 32px; }
+            .about-text p { font-size: 14px; }
+
+            .plans-section { padding: 40px 0; }
+            .plans-title { font-size: 28px; }
+            .plan-tabs { flex-wrap: wrap; }
+            .plan-tab { flex: 1 1 45%; padding: 12px 8px; }
+            .plan-tab-name { font-size: 16px; }
+            .plan-tab-price { font-size: 11px; }
+            .plan-detail-panel { padding: 24px 20px; }
+            .plan-detail-name { font-size: 26px; }
+            .plan-spec-val { font-size: 20px; }
+            .plan-image-label { padding: 10px 16px; font-size: 10px; }
+            .plan-image-placeholder-name { font-size: 40px; letter-spacing: 3px; }
+
+            .amenities-section { padding: 40px 0 0; }
+            .amenity-card { flex: 0 0 220px; padding: 22px 18px; }
+            .amenity-card-name { font-size: 18px; }
+            .amenity-card-desc { font-size: 12px; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 44px; }
+            .hero-kicker { font-size: 10px; letter-spacing: 2px; }
+            .hero-stat { min-width: 60px; }
+            .hero-stat-val { font-size: 24px; }
+            .hero-stats { gap: 12px; }
+
+            .plan-tab { flex: 1 1 100%; }
+            .plan-tab-top { gap: 6px; }
+            .plan-tab-indicator { width: 8px; height: 8px; }
+            .plan-spec-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+            .plan-spec-item { padding: 12px 6px; }
+            .plan-spec-val { font-size: 18px; }
+            .plan-features li { font-size: 12px; padding: 8px 0; }
+
+            .amenity-card { flex: 0 0 200px; padding: 20px 16px; }
+
+            .container { padding: 0 20px; }
+        }
+        @media (max-width: 360px) {
+            .hero h1 { font-size: 36px; }
+            .hero-stat-val { font-size: 20px; }
+            .header-community { font-size: 13px; letter-spacing: 1px; }
+            .plan-detail-name { font-size: 22px; }
+            .plan-image-placeholder-name { font-size: 32px; }
+        }
+    </style>
+
+    <!-- ======== JSON-LD #1: Place ======== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "name": "Rainbow Crossing Luxury",
+      "description": "Rainbow Crossing Luxury is a Pulte Homes community in southwest Las Vegas (ZIP 89139) with 4 floor plans ranging from 1,642 to 3,072+ sq ft and pricing from $621,990. The collection includes single-story and two-story homes with 3 to 6 bedrooms and 2-car or 3-car garages.",
+      "url": "https://rosehomeslv.com/pulte-rainbow-crossings-luxury",
+      "address": {"@type":"PostalAddress","streetAddress":"8704 Indigo Spring Rd","addressLocality":"Las Vegas","addressRegion":"NV","postalCode":"89139","addressCountry":"US"},
+      "geo": {"@type":"GeoCoordinates","latitude":"36.0167","longitude":"-115.2433"}
+    }
+    </script>
+
+    <!-- ======== JSON-LD #2: RealEstateAgent ======== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Ryan Rose",
+      "url": "https://rosehomeslv.com",
+      "telephone": "+1-702-747-5921",
+      "email": "ryan@rosehomeslv.com",
+      "description": "Las Vegas new construction specialist helping buyers at Rainbow Crossing Luxury and other Clark County NV communities, including Pulte Homes neighborhoods in 89139.",
+      "address": {"@type":"PostalAddress","addressLocality":"Las Vegas","addressRegion":"NV","postalCode":"89139","addressCountry":"US"},
+      "worksFor": {"@type":"Organization","name":"Real Broker LLC"},
+      "areaServed": [{"@type":"City","name":"Las Vegas"},{"@type":"City","name":"Henderson"},{"@type":"City","name":"North Las Vegas"}]
+    }
+    </script>
+
+    <!-- ======== JSON-LD #3: ItemList of Plans ======== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Rainbow Crossing Luxury Floor Plans",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Beckham","description":"1-story Pulte plan with 1,642 sq ft, 3 bedrooms, 2 baths, 2-car garage.","brand":{"@type":"Brand","name":"Pulte Homes"},"offers":{"@type":"Offer","price":"621990","priceCurrency":"USD","availability":"https://schema.org/InStock"}}},
+        {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Harper","description":"2-story Pulte plan with 2,940+ sq ft, 4-5 bedrooms, 3-4 baths, 3-car garage.","brand":{"@type":"Brand","name":"Pulte Homes"},"offers":{"@type":"Offer","price":"704990","priceCurrency":"USD","availability":"https://schema.org/InStock"}}},
+        {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Duncan","description":"2-story Pulte plan with 3,021+ sq ft, 3-5 bedrooms, 2.5-4 baths, 2-car garage.","brand":{"@type":"Brand","name":"Pulte Homes"},"offers":{"@type":"Offer","price":"683990","priceCurrency":"USD","availability":"https://schema.org/InStock"}}},
+        {"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Ella","description":"2-story Pulte plan with 3,072+ sq ft, 3-6 bedrooms, 2.5-4 baths, 2-car garage.","brand":{"@type":"Brand","name":"Pulte Homes"},"offers":{"@type":"Offer","price":"680990","priceCurrency":"USD","availability":"https://schema.org/InStock"}}}
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ======== LOFTY WRAPPER ESCAPE ======== -->
+    <script>
+    (function() {
+        function stripConstraints() {
+            var el = document.body.parentElement;
+            while (el && el !== document.documentElement) {
+                el.style.setProperty('max-width', 'none', 'important');
+                el.style.setProperty('width', '100%', 'important');
+                el.style.setProperty('padding', '0', 'important');
+                el.style.setProperty('margin', '0', 'important');
+                el.style.setProperty('overflow', 'visible', 'important');
+                el.style.setProperty('background', '#faf8f3', 'important');
+                el = el.parentElement;
+            }
+            var bodyKids = document.body.children;
+            for (var i = 0; i < bodyKids.length; i++) {
+                var p = bodyKids[i].parentElement;
+                while (p && p !== document.body) {
+                    p.style.setProperty('max-width', 'none', 'important');
+                    p.style.setProperty('width', '100%', 'important');
+                    p.style.setProperty('padding', '0', 'important');
+                    p.style.setProperty('margin', '0', 'important');
+                    p.style.setProperty('overflow', 'visible', 'important');
+                    p = p.parentElement;
+                }
+            }
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', stripConstraints);
+        } else {
+            stripConstraints();
+        }
+        setTimeout(stripConstraints, 100);
+        setTimeout(stripConstraints, 500);
+    })();
+    </script>
+
+    <!-- ======== HEADER ======== -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="header-left">
+                <img src="https://www.dropbox.com/scl/fi/iylyhqb6tsecef8mlyc56/real-logo-white.png?rlkey=q060phklshu7euevn2a9rlvnb&raw=1" alt="Real Broker" class="header-logo">
+                <span class="header-agent">Ryan Rose</span>
+                <span class="header-divider"></span>
+                <span class="header-community">RAINBOW CROSSING LUXURY</span>
+            </div>
+            <div class="header-right">
+                <a href="#floorplans" class="header-link">Floor Plans</a>
+                <a href="#contact" class="header-cta">Get Pricing</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero">
+        <!-- HERO IMAGE SCROLL — Pulte Rainbow Crossing Luxury elevation + lifestyle photos.
+             Duplicate the same images at the end for a seamless infinite-loop scroll. -->
+        <div class="hero-bg">
+            <img src="https://www.dropbox.com/scl/fi/qk6g25ad1wmthyw61yavg/Screenshot-2026-05-03-at-1.29.03-PM.png?rlkey=6lesxffzdztyf0jb0f4vkuoci&raw=1" alt="Rainbow Crossing Luxury exterior">
+            <img src="https://www.dropbox.com/scl/fi/5wd797pnk0ci5ycham5fz/Screenshot-2026-05-03-at-1.28.47-PM.png?rlkey=kily9v8epas987zc1h177sp36&raw=1" alt="Open living room">
+            <img src="https://www.dropbox.com/scl/fi/afn4xebtff937tbaby3no/Screenshot-2026-05-03-at-1.29.15-PM.png?rlkey=n8n6rl18nt1wmertm49vdxnuk&raw=1" alt="Stone exterior at twilight">
+            <img src="https://www.dropbox.com/scl/fi/5yhne8esvpg0c0n9xq1rn/Screenshot-2026-05-03-at-1.28.34-PM.png?rlkey=uyxdx8z7pa63ogeqnebbxr6rk&raw=1" alt="Owner suite with mountain views">
+            <img src="https://www.dropbox.com/scl/fi/0n6y4try4pl7zs7ommaa1/Screenshot-2026-05-03-at-1.29.40-PM.png?rlkey=vds4lc0axfraxfmx0f9ctdol1&raw=1" alt="Modern Pulte exterior">
+            <img src="https://www.dropbox.com/scl/fi/o0adye3j31lezrwrl2rdq/Screenshot-2026-05-03-at-1.29.54-PM.png?rlkey=utcdbgkg8ydkqj77i36fh2phe&raw=1" alt="Family living space">
+            <!-- Duplicate for seamless loop -->
+            <img src="https://www.dropbox.com/scl/fi/qk6g25ad1wmthyw61yavg/Screenshot-2026-05-03-at-1.29.03-PM.png?rlkey=6lesxffzdztyf0jb0f4vkuoci&raw=1" alt="">
+            <img src="https://www.dropbox.com/scl/fi/5wd797pnk0ci5ycham5fz/Screenshot-2026-05-03-at-1.28.47-PM.png?rlkey=kily9v8epas987zc1h177sp36&raw=1" alt="">
+            <img src="https://www.dropbox.com/scl/fi/afn4xebtff937tbaby3no/Screenshot-2026-05-03-at-1.29.15-PM.png?rlkey=n8n6rl18nt1wmertm49vdxnuk&raw=1" alt="">
+            <img src="https://www.dropbox.com/scl/fi/5yhne8esvpg0c0n9xq1rn/Screenshot-2026-05-03-at-1.28.34-PM.png?rlkey=uyxdx8z7pa63ogeqnebbxr6rk&raw=1" alt="">
+            <img src="https://www.dropbox.com/scl/fi/0n6y4try4pl7zs7ommaa1/Screenshot-2026-05-03-at-1.29.40-PM.png?rlkey=vds4lc0axfraxfmx0f9ctdol1&raw=1" alt="">
+            <img src="https://www.dropbox.com/scl/fi/o0adye3j31lezrwrl2rdq/Screenshot-2026-05-03-at-1.29.54-PM.png?rlkey=utcdbgkg8ydkqj77i36fh2phe&raw=1" alt="">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-kicker">Pulte Homes</div>
+                <h1>RAINBOW<br>CROSSING<br>LUXURY</h1>
+                <p class="hero-sub">New construction homes in 89139 southwest Las Vegas. Four Pulte floor plans from $621,990, single-story and two-story homes with 3 to 6 bedrooms.</p>
+                <a href="#contact" class="hero-cta">Get the Buyer Guide &#8599;</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-val">$621K+</div>
+                    <div class="hero-stat-lbl">Starting</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-val">3,072+</div>
+                    <div class="hero-stat-lbl">Max Sq Ft</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-val">3-6</div>
+                    <div class="hero-stat-lbl">Beds</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-val">4</div>
+                    <div class="hero-stat-lbl">Plans</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== INCENTIVE DIVIDER ======== -->
+    <div class="incentive-bar">
+        <p><strong>Current Offers:</strong> Pulte Mortgage rate buydowns and closing cost credits available. Contact Ryan for current offers.</p>
+    </div>
+
+    <!-- ======== ABOUT ======== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-label section-label--blue">About</div>
+            <div class="about-grid">
+                <div class="reveal">
+                    <h2 class="about-headline">SOUTHWEST<br>LAS VEGAS<br>NEW HOMES</h2>
+                </div>
+                <div class="about-text reveal">
+                    <p>Rainbow Crossing Luxury is a new Pulte Homes community in southwest Las Vegas, ZIP code 89139. The community sits near the corner of Rainbow Boulevard and Blue Diamond Road in the Enterprise area, with the 215 Beltway just 5 to 10 minutes away and the Strip about 15 to 20 minutes from your front door.</p>
+                    <p>Pulte is one of the largest national homebuilders. Their floor plans focus on how families really use their space, with flexible rooms, large kitchens, and clean modern finishes. At Rainbow Crossing Luxury you can choose from four plans, ranging from 1,642 sq ft up to 3,072+ sq ft, with three to six bedrooms.</p>
+                    <p>The lineup includes the single-story Beckham for buyers who want everything on one level, and three two-story plans, the Harper, Duncan, and Ella, with flexible bedroom counts up to six. School zones include Sierra Vista High School, and you are minutes from Mountain's Edge Marketplace, Smith's, Costco at Rainbow and Blue Diamond, and Red Rock Canyon for weekend hikes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== INCENTIVE DIVIDER ======== -->
+    <div class="incentive-bar">
+        <p><strong>Current Offers:</strong> Pulte Mortgage rate buydowns and closing cost credits available. Contact Ryan for current offers.</p>
+    </div>
+
+    <!-- ======== FLOOR PLANS ======== -->
+    <section class="plans-section" id="floorplans">
+        <div class="container">
+            <div class="section-label section-label--dark">Floor Plans</div>
+            <div class="plans-header">
+                <h2 class="plans-title">CHOOSE YOUR<br>FLOOR PLAN</h2>
+                <p class="plans-subtitle">Select a plan to explore details. Full floor plans are in the buyer guide.</p>
+            </div>
+
+            <div class="plan-tabs" id="planTabs"></div>
+            <div class="plan-display" id="planDisplay"></div>
+
+            <div class="plan-compare-hint">
+                <a href="#contact" style="color:var(--accent);text-decoration:underline;">Want the full floor plans for every level?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== AMENITIES ======== -->
+    <section class="amenities-section">
+        <div class="container">
+            <div class="amenities-label">Location &amp; Lifestyle</div>
+        </div>
+        <div class="container">
+            <div class="amenities-scroll">
+                <div class="amenity-card"><div class="amenity-card-name">SOUTHWEST LAS VEGAS</div><div class="amenity-card-desc">ZIP 89139 in the Enterprise area. 215 Beltway is 5 to 10 minutes away. The Strip is 15 to 20 minutes.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">PULTE HOMES</div><div class="amenity-card-desc">One of the top national builders. Life Tested floor plans built around how families actually use their homes.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">MOUNTAIN'S EDGE MARKETPLACE</div><div class="amenity-card-desc">Nearby shopping, restaurants, and everyday errands a few minutes from the community.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">SMITH'S &amp; COSTCO</div><div class="amenity-card-desc">Grocery and warehouse shopping at the Rainbow and Blue Diamond intersection.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">RED ROCK CANYON</div><div class="amenity-card-desc">Hiking, climbing, and the scenic drive about 15 to 20 minutes from home.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">SIERRA VISTA HIGH SCHOOL</div><div class="amenity-card-desc">CCSD high school zone serving the southwest valley.</div></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======== JAVASCRIPT ======== -->
+    <script>
+    (function() {
+        'use strict';
+
+        const PLANS = [
+            { id:'beckham', name:'Beckham', price:621990, priceLabel:'From $621,990', sqft:1642, sqftLabel:'1,642+ sq ft', beds:'3', baths:'2', bathsLabel:'2', garage:'2-car', features:['Single-story','Open great room','Owner suite at rear','2-car garage'], floors:[{label:'Single Story', src:'https://www.dropbox.com/scl/fi/4cnsb22rmeem7wnoooo9p/Beckham-floor-1.png?rlkey=e1sslvifx5dx469lxu8sccpvb&raw=1'}] },
+            { id:'ella', name:'Ella', price:680990, priceLabel:'From $680,990', sqft:3072, sqftLabel:'3,072+ sq ft', beds:'3-6', baths:'2.5-4', bathsLabel:'2.5-4', garage:'2-car', features:['Up to 6 bedrooms','Multi-gen flexibility','Bonus loft','2-car garage'], floors:[{label:'First Floor', src:'https://www.dropbox.com/scl/fi/f3gug4yectmf7vtnicgim/Ella-floor-1.png?rlkey=fe8udh2wj2s41c7j20ciyrun5&raw=1'}] },
+            { id:'duncan', name:'Duncan', price:683990, priceLabel:'From $683,990', sqft:3021, sqftLabel:'3,021+ sq ft', beds:'3-5', baths:'2.5-4', bathsLabel:'2.5-4', garage:'2-car', features:['Flexible bedroom count','Open kitchen and great room','Owner suite upstairs','2-car garage'], floors:[{label:'First Floor', src:'https://www.dropbox.com/scl/fi/29vmzxc7jwrhlzy68risn/Duncan-floor-1.png?rlkey=nzkztmfjxuh6npb4thwz3s94i&raw=1'}] },
+            { id:'harper', name:'Harper', price:704990, priceLabel:'From $704,990', sqft:2940, sqftLabel:'2,940+ sq ft', beds:'4-5', baths:'3-4', bathsLabel:'3-4', garage:'3-car', features:['3-car garage','Up to 5 bedrooms','Open kitchen island','Family-ready layout'], floors:[{label:'First Floor', src:'https://www.dropbox.com/scl/fi/f0u78r7ma9rt85aa6cumv/Harper-floor-1.png?rlkey=kzl9hlz9pbllol3f1gqjm4vto&raw=1'}] }
+        ];
+
+        let selectedId = PLANS[0].id;
+        function getPlan(id) { return PLANS.find(function(p) { return p.id === id; }); }
+
+        var tabsEl = document.getElementById('planTabs');
+        var displayEl = document.getElementById('planDisplay');
+
+        function renderTabs() {
+            tabsEl.innerHTML = '';
+            PLANS.forEach(function(plan) {
+                var tab = document.createElement('div');
+                tab.className = 'plan-tab' + (plan.id === selectedId ? ' active' : '');
+                tab.innerHTML =
+                    '<div class="plan-tab-top">' +
+                        '<div class="plan-tab-indicator"></div>' +
+                        '<div class="plan-tab-name">' + plan.name.toUpperCase() + '</div>' +
+                    '</div>' +
+                    '<div class="plan-tab-price">' + plan.priceLabel + '</div>';
+                tab.addEventListener('click', function() {
+                    selectedId = plan.id; update();
+                });
+                tabsEl.appendChild(tab);
+            });
+        }
+
+        function renderDisplay() {
+            displayEl.innerHTML = '';
+            var plan = getPlan(selectedId);
+
+            // Image panel (placeholder when no images available)
+            var imgPanel = document.createElement('div');
+            imgPanel.className = 'plan-image-panel';
+            var placeholderHTML =
+                '<div class="plan-image-placeholder">' +
+                    '<div class="plan-image-placeholder-name">' + plan.name.toUpperCase() + '</div>' +
+                    '<div class="plan-image-placeholder-caption">Floor plan available in the buyer guide</div>' +
+                '</div>';
+            var floors = plan.floors && plan.floors.length ? plan.floors : [];
+            var imageInner = floors.length
+                ? floors.map(function(f) {
+                    return '<div class="plan-floor">' +
+                        '<div class="plan-floor-label">' + f.label + '</div>' +
+                        '<img src="' + f.src + '" alt="' + plan.name + ' ' + f.label + '" onerror="this.parentNode.style.display=\'none\';">' +
+                    '</div>';
+                  }).join('')
+                : placeholderHTML;
+            imgPanel.innerHTML =
+                '<div class="plan-image-label">' + plan.name + ' Floor Plan</div>' +
+                '<div class="plan-image-area">' + imageInner + '</div>' +
+                '<div class="plan-image-source">Plan details courtesy of <a href="https://www.pulte.com" target="_blank" rel="noopener">Pulte Homes</a></div>';
+            displayEl.appendChild(imgPanel);
+
+            // Detail panel
+            var detPanel = document.createElement('div');
+            detPanel.className = 'plan-detail-panel';
+            detPanel.innerHTML =
+                '<div class="plan-detail-name">' + plan.name.toUpperCase() + '</div>' +
+                '<div class="plan-detail-builder">Pulte Homes</div>' +
+                '<div class="plan-spec-grid">' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.priceLabel.replace('From ','') + '</div><div class="plan-spec-lbl">Price</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.sqftLabel + '</div><div class="plan-spec-lbl">Sq Ft</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.beds + '</div><div class="plan-spec-lbl">Beds</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.bathsLabel + '</div><div class="plan-spec-lbl">Baths</div></div>' +
+                '</div>' +
+                '<ul class="plan-features">' + plan.features.map(function(f) { return '<li>' + f + '</li>'; }).join('') + '</ul>' +
+                '<a href="#contact" class="plan-detail-cta">Get Full Floor Plans</a>';
+            displayEl.appendChild(detPanel);
+
+            requestAnimationFrame(function() { requestAnimationFrame(function() {
+                imgPanel.classList.add('visible');
+                detPanel.classList.add('visible');
+            }); });
+        }
+
+        function update() { renderTabs(); renderDisplay(); }
+        update();
+
+        /* Scroll reveal */
+        var reveals = document.querySelectorAll('.reveal');
+        var obs = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(function(el) { obs.observe(el); });
+
+        /* #contact CTAs scroll to bottom for the embedded Lofty form */
+        function scrollToBottom(e) {
+            if (e) e.preventDefault();
+            var target = Math.max(
+                document.body.scrollHeight,
+                document.documentElement.scrollHeight
+            );
+            window.scrollTo({ top: target, behavior: 'smooth' });
+        }
+        function bindContactScroll(root) {
+            var links = (root || document).querySelectorAll('a[href="#contact"]');
+            links.forEach(function(a) {
+                if (a.dataset.scrollBound) return;
+                a.dataset.scrollBound = '1';
+                a.addEventListener('click', scrollToBottom);
+            });
+        }
+        bindContactScroll();
+        var displayObserver = new MutationObserver(function() { bindContactScroll(); });
+        var displayEl2 = document.getElementById('planDisplay');
+        if (displayEl2) displayObserver.observe(displayEl2, { childList: true, subtree: true });
+
+    })();
+    </script>
+
+</body>
+</html>

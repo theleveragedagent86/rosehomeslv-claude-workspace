@@ -1,0 +1,33 @@
+{
+  "name": "first-responder-engagement",
+  "version": "1.0.0",
+  "description": "Instagram community presence engagement with Las Vegas first responders for genuine relationship building",
+  "author": {
+    "name": "Ryan Rose",
+    "email": "ryan@rosehomeslv.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "instagram",
+    "engagement",
+    "community",
+    "first-responders",
+    "military",
+    "veterans",
+    "police",
+    "fire",
+    "healthcare",
+    "las-vegas",
+    "browser-automation"
+  ],
+  "mcpServers": {
+    "playwright-instagram": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--user-data-dir",
+        "~/.cache/playwright-instagram-profile"
+      ]
+    }
+  }
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/brand-tokens.css" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+      [data-composition-id="07-pull-quote"] {
+        position: relative; width: 1920px; height: 1080px; overflow: hidden;
+        font-family: var(--font-display);
+      }
+      /* Hero pull-quote — bottom band with a teal scrim + giant amber quote.
+         Lands on Ryan's thesis line ("the whole point of this video is how fast it is"). */
+      [data-composition-id="07-pull-quote"] .scrim {
+        position: absolute; bottom: 0; left: 0; right: 0; height: 380px;
+        background: linear-gradient(0deg, rgba(15,76,92,0.85) 0%, rgba(15,76,92,0.05) 100%);
+        opacity: 0;
+      }
+      [data-composition-id="07-pull-quote"] .quote-wrap {
+        position: absolute;
+        bottom: 90px; left: 90px; right: 90px;
+        display: flex; align-items: flex-end; gap: 32px;
+        opacity: 0;
+        transform: translateY(40px);
+        will-change: transform, opacity;
+      }
+      [data-composition-id="07-pull-quote"] .quote-mark {
+        font-family: 'Georgia', serif;
+        font-size: 240px; line-height: 0.65;
+        color: var(--warn);
+        text-shadow: 0 0 32px rgba(232,163,61,0.6);
+        flex-shrink: 0;
+      }
+      [data-composition-id="07-pull-quote"] .quote-body {
+        flex: 1;
+      }
+      [data-composition-id="07-pull-quote"] .quote-body .quote {
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 64px; line-height: 1.05;
+        letter-spacing: -0.015em;
+        color: var(--bg-alt);
+        margin-bottom: 16px;
+      }
+      [data-composition-id="07-pull-quote"] .quote-body .quote em {
+        font-style: normal;
+        background: linear-gradient(180deg, var(--warn) 0%, var(--warn-hot) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 24px rgba(232,163,61,0.3);
+      }
+      [data-composition-id="07-pull-quote"] .quote-body .attribution {
+        font-family: var(--font-mono);
+        font-weight: 700; font-size: 22px;
+        letter-spacing: 0.32em;
+        color: var(--warn);
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="sec07"
+      data-composition-id="07-pull-quote"
+      data-duration="7"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="scrim clip" data-start="0" data-duration="7" data-track-index="0"></div>
+      <div class="quote-wrap clip" data-start="0" data-duration="7" data-track-index="1">
+        <div class="quote-mark">&ldquo;</div>
+        <div class="quote-body">
+          <div class="quote"><em>1 listing.</em> 5 posts. 10 minutes.</div>
+          <div class="attribution">— Ryan Rose</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const SLOT = 7;
+      const tl = gsap.timeline({ paused: true });
+
+      tl.to('[data-composition-id="07-pull-quote"] .scrim',
+        { opacity: 1, duration: 0.5, ease: 'power2.out' }, 0.10);
+      tl.to('[data-composition-id="07-pull-quote"] .quote-wrap',
+        { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, 0.30);
+
+      tl.to('[data-composition-id="07-pull-quote"] .quote-wrap',
+        { opacity: 0, y: 20, duration: 0.5, ease: 'power2.in' }, 6.20);
+      tl.to('[data-composition-id="07-pull-quote"] .scrim',
+        { opacity: 0, duration: 0.5, ease: 'power2.in' }, 6.30);
+
+      tl.to({}, { duration: SLOT }, 0);
+      window.__timelines["07-pull-quote"] = tl;
+    </script>
+  </body>
+</html>

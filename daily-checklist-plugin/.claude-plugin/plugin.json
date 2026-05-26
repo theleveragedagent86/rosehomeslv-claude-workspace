@@ -1,0 +1,11 @@
+{
+  "name": "daily-checklist",
+  "version": "1.0.0",
+  "description": "Daily checklist and calendar skill. Shows today's tasks, recurring weekly marketing plan, and calendar events. Updateable — add meetings, appointments, and recurring tasks on the fly.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": ["checklist", "calendar", "daily", "schedule", "tasks", "marketing", "listing-leads"],
+  "skills": "./skills/"
+}

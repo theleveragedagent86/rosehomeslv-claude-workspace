@@ -1,0 +1,224 @@
+<!--
+  SUBJECT LINE: Your buyer might be a match | Ref #{{ subscriber.ref_number }} | Just Listed in Henderson
+  NOTE: {{ subscriber.ref_number }} is a Kit custom field personalized per agent.
+  Import the MLS "Ref #" column as "ref_number" during Kit subscriber import.
+
+  KIT (CONVERTKIT) SETUP NOTES:
+  -----------------------------------------------------------------------
+  1. In Kit, create a new Broadcast
+  2. Add a "Custom HTML" content block and paste the <body> contents, OR
+     use File > Import HTML if your Kit plan supports it
+  3. Before sending, upload these two photos to Kit's Image Library:
+       PHOTO 1 (hero):    dji_20260223130017_0005_d_twilight_2f4cf81d-fd19-448e-8bdf-7d1f6b1b85dc.jpg
+       PHOTO 2 (interior): dsc05510.jpg
+     Then replace the two src="[KIT IMAGE URL ...]" placeholders below
+     with the hosted URLs Kit gives you after upload
+  4. Kit personalization tag used: {{ subscriber.first_name | default: "there" }}
+     Verify this matches your Kit account's tag format
+  -----------------------------------------------------------------------
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Coming Soon | Agent Preview | 29 Amber Rock St | MLS# 2759238</title>
+  <style>
+    @media only screen and (max-width: 600px) {
+      .email-wrapper { width: 100% !important; }
+      .stat-cell { display: block !important; width: 100% !important; text-align: left !important; padding: 4px 0 !important; }
+      .stat-divider { display: none !important; }
+      .pad-mobile { padding-left: 24px !important; padding-right: 24px !important; }
+    }
+  </style>
+</head>
+<body style="margin:0;padding:0;background-color:#efefef;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#efefef;">
+    <tr>
+      <td align="center" style="padding:28px 16px 36px;">
+
+        <!-- Email Container -->
+        <table class="email-wrapper" width="580" cellpadding="0" cellspacing="0" border="0" style="max-width:580px;width:100%;background-color:#ffffff;border:1px solid #d8d8d8;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1c2340;padding:16px 32px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0;font-size:12px;color:#a0a8c0;letter-spacing:0.08em;text-transform:uppercase;">Ryan Rose &nbsp;|&nbsp; Real Broker LLC</p>
+                  </td>
+                  <td align="right">
+                    <span style="display:inline-block;background-color:#c8a96e;color:#ffffff;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:4px 11px;">Just Listed</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Hero Image -->
+          <!-- PHOTO 1: Upload dji_20260223130017_0005_d_twilight_2f4cf81d-fd19-448e-8bdf-7d1f6b1b85dc.jpg to Kit -->
+          <tr>
+            <td style="padding:0;line-height:0;font-size:0;">
+              <img
+                src="https://embed.filekitcdn.com/e/ecmHLDjCvJA41Lj354EKz4/3NeRqdY8xw81NsogD6EvpY"
+                alt="29 Amber Rock St — Henderson, NV | Twilight Exterior"
+                width="580"
+                style="display:block;width:100%;max-width:580px;height:auto;border:0;"
+              >
+            </td>
+          </tr>
+
+          <!-- Address + Price -->
+          <tr>
+            <td class="pad-mobile" style="padding:28px 32px 0;">
+              <p style="margin:0 0 4px;font-size:22px;font-weight:700;color:#1a1a1a;line-height:1.2;letter-spacing:-0.01em;">29 Amber Rock St, Henderson, NV 89012</p>
+              <p style="margin:0;font-size:15px;color:#444444;font-weight:500;">$485,000 &nbsp;&middot;&nbsp; MLS# 2759238 &nbsp;&middot;&nbsp; Active Date: March 11, 2026</p>
+            </td>
+          </tr>
+
+          <!-- Stat Bar -->
+          <tr>
+            <td class="pad-mobile" style="padding:16px 32px 0;">
+              <table cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f4f2;width:100%;">
+                <tr>
+                  <td class="stat-cell" align="center" style="padding:12px 0;width:25%;">
+                    <p style="margin:0;font-size:18px;font-weight:700;color:#1c2340;">3 / 2</p>
+                    <p style="margin:2px 0 0;font-size:10px;color:#888888;letter-spacing:0.07em;text-transform:uppercase;">Bed / Bath</p>
+                  </td>
+                  <td class="stat-divider" style="width:1px;background-color:#dddddd;">&nbsp;</td>
+                  <td class="stat-cell" align="center" style="padding:12px 0;width:25%;">
+                    <p style="margin:0;font-size:18px;font-weight:700;color:#1c2340;">1,796</p>
+                    <p style="margin:2px 0 0;font-size:10px;color:#888888;letter-spacing:0.07em;text-transform:uppercase;">Sq Ft</p>
+                  </td>
+                  <td class="stat-divider" style="width:1px;background-color:#dddddd;">&nbsp;</td>
+                  <td class="stat-cell" align="center" style="padding:12px 0;width:25%;">
+                    <p style="margin:0;font-size:18px;font-weight:700;color:#1c2340;">3-Car</p>
+                    <p style="margin:2px 0 0;font-size:10px;color:#888888;letter-spacing:0.07em;text-transform:uppercase;">Garage</p>
+                  </td>
+                  <td class="stat-divider" style="width:1px;background-color:#dddddd;">&nbsp;</td>
+                  <td class="stat-cell" align="center" style="padding:12px 0;width:25%;">
+                    <p style="margin:0;font-size:18px;font-weight:700;color:#1c2340;">Single</p>
+                    <p style="margin:2px 0 0;font-size:10px;color:#888888;letter-spacing:0.07em;text-transform:uppercase;">Story</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Rule -->
+          <tr>
+            <td class="pad-mobile" style="padding:24px 32px 0;">
+              <hr style="border:none;border-top:1px solid #ebebeb;margin:0;">
+            </td>
+          </tr>
+
+          <!-- Agent Note -->
+          <tr>
+            <td class="pad-mobile" style="padding:22px 32px 0;">
+              <p style="margin:0;font-size:15px;color:#333333;line-height:1.75;">
+                Hey {{ subscriber.first_name | default: "there" }}, I noticed your buyer saved this listing in MLS, so I wanted to reach out directly. If they're looking for a single-story in Henderson with a 3-car garage, this is worth a closer look.
+              </p>
+              <p style="margin:14px 0 0;font-size:15px;color:#333333;line-height:1.75;">
+                The home is in Champion Village, built in 2000. Kitchen has a center island with bar stools, gas range, and a walk-in pantry. Open to the family room with a fireplace. Primary suite is 16x14 with a walk-in closet. Solar is leased. It's vacant right now and available for showings through ShowingTime anytime.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Interior Photo -->
+          <!-- PHOTO 2: Upload dsc05510.jpg to Kit -->
+          <tr>
+            <td class="pad-mobile" style="padding:22px 32px 0;">
+              <img
+                src="https://embed.filekitcdn.com/e/ecmHLDjCvJA41Lj354EKz4/7Kiog9wgEJRtMeEHTXfVaF"
+                alt="29 Amber Rock St — Kitchen with Center Island"
+                width="516"
+                style="display:block;width:100%;max-width:516px;height:auto;border:0;"
+              >
+              <p style="margin:6px 0 0;font-size:11px;color:#aaaaaa;font-style:italic;">Kitchen — center island with bar seating, gas range, walk-in pantry access</p>
+            </td>
+          </tr>
+
+          <!-- Quick Details -->
+          <tr>
+            <td class="pad-mobile" style="padding:22px 32px 0;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-left:3px solid #1c2340;background-color:#f8f8f6;">
+                <tr>
+                  <td style="padding:18px 22px;">
+                    <p style="margin:0 0 10px;font-size:11px;color:#999999;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;">Quick Details</p>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="padding:3px 0;font-size:13px;color:#555555;width:40%;">Subdivision</td>
+                        <td style="padding:3px 0;font-size:13px;color:#222222;font-weight:600;">Champion Village</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:3px 0;font-size:13px;color:#555555;">Lot Size</td>
+                        <td style="padding:3px 0;font-size:13px;color:#222222;font-weight:600;">6,534 SF (0.15 ac)</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:3px 0;font-size:13px;color:#555555;">Year Built</td>
+                        <td style="padding:3px 0;font-size:13px;color:#222222;font-weight:600;">2000</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:3px 0;font-size:13px;color:#555555;">Solar</td>
+                        <td style="padding:3px 0;font-size:13px;color:#222222;font-weight:600;">Leased</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:3px 0;font-size:13px;color:#555555;">Occupancy</td>
+                        <td style="padding:3px 0;font-size:13px;color:#222222;font-weight:600;">Vacant</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:3px 0;font-size:13px;color:#555555;">Showing Method</td>
+                        <td style="padding:3px 0;font-size:13px;color:#222222;font-weight:600;">ShowingTime</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Rule -->
+          <tr>
+            <td style="padding:28px 32px 0;">
+              <hr style="border:none;border-top:1px solid #ebebeb;margin:0;">
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:22px 32px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td valign="top">
+                    <p style="margin:0 0 2px;font-size:14px;font-weight:700;color:#1a1a1a;">Ryan Rose</p>
+                    <p style="margin:0 0 2px;font-size:12px;color:#777777;">Real Broker, LLC &nbsp;&middot;&nbsp; Nevada License #S.0185572</p>
+                    <p style="margin:0 0 2px;font-size:12px;color:#777777;">702.747.5921</p>
+                    <p style="margin:0;font-size:12px;"><a href="mailto:ryan@rosehomeslv.com" style="color:#1c2340;text-decoration:none;">ryan@rosehomeslv.com</a></p>
+                  </td>
+                  <td align="right" valign="bottom">
+                    <p style="margin:0;font-size:10px;color:#cccccc;text-align:right;">Equal Housing Opportunity</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Unsubscribe -->
+          <tr>
+            <td style="padding:0 32px 24px;text-align:center;">
+              <p style="margin:0;font-size:11px;color:#cccccc;line-height:1.6;">You're receiving this because your buyer has a saved search that matches this property in the Nevada MLS reverse prospecting system. Kit unsubscribe link will appear here automatically.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!-- End Email Container -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

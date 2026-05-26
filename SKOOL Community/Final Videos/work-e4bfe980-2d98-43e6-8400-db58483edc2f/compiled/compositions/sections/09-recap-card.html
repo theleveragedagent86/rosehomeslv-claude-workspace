@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/brand-tokens.css" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+      [data-composition-id="09-recap-card"] {
+        position: relative; width: 1920px; height: 1080px; overflow: hidden;
+        font-family: var(--font-display);
+      }
+      /* Right-side recap card — three-row stat list of what was built.
+         Lands as Ryan's wrap-up summary ("just like that, you guys, we built..."). */
+      [data-composition-id="09-recap-card"] .recap {
+        position: absolute;
+        top: 140px; right: 80px;
+        width: 540px;
+        background: var(--bg-alt);
+        border: 3px solid var(--ink);
+        border-top: 12px solid var(--warn);
+        border-radius: 16px;
+        padding: 26px 32px 30px 32px;
+        box-shadow: 0 22px 60px rgba(15,76,92,0.45);
+        opacity: 0;
+        transform: translateX(60px);
+        will-change: transform, opacity;
+      }
+      [data-composition-id="09-recap-card"] .recap .kicker {
+        font-family: var(--font-mono);
+        font-weight: 700; font-size: 18px;
+        letter-spacing: 0.32em;
+        color: var(--warn);
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+      [data-composition-id="09-recap-card"] .recap .head {
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 38px; line-height: 1.05;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        margin-bottom: 18px;
+      }
+      [data-composition-id="09-recap-card"] .recap .row {
+        display: flex; align-items: center; gap: 14px;
+        padding: 12px 0;
+        border-top: 1px solid var(--border);
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      [data-composition-id="09-recap-card"] .recap .row .check {
+        width: 32px; height: 32px;
+        border-radius: 50%;
+        background: var(--warn);
+        color: var(--bg-alt);
+        display: flex; align-items: center; justify-content: center;
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 18px;
+        flex-shrink: 0;
+      }
+      [data-composition-id="09-recap-card"] .recap .row .label {
+        font-family: var(--font-mono);
+        font-weight: 500; font-size: 22px;
+        color: var(--ink-soft);
+        letter-spacing: 0.04em;
+        flex: 1;
+      }
+      [data-composition-id="09-recap-card"] .recap .row .label strong {
+        color: var(--ink);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="sec09"
+      data-composition-id="09-recap-card"
+      data-duration="8"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="recap clip" data-start="0" data-duration="8" data-track-index="0">
+        <div class="kicker">All 5 posts</div>
+        <div class="head">From 1 listing.</div>
+        <div class="row r1"><div class="check">&#10003;</div><div class="label">Instagram <strong>caption</strong></div></div>
+        <div class="row r2"><div class="check">&#10003;</div><div class="label">Facebook <strong>lifestyle post</strong></div></div>
+        <div class="row r3"><div class="check">&#10003;</div><div class="label">&ldquo;Just Listed&rdquo; <strong>announcement</strong></div></div>
+        <div class="row r4"><div class="check">&#10003;</div><div class="label">Reel / Story <strong>5-line script</strong></div></div>
+        <div class="row r5"><div class="check">&#10003;</div><div class="label">Agent-to-agent <strong>group post</strong></div></div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const SLOT = 8;
+      const tl = gsap.timeline({ paused: true });
+
+      tl.to('[data-composition-id="09-recap-card"] .recap',
+        { opacity: 1, x: 0, duration: 0.55, ease: 'back.out(1.5)' }, 0.10);
+      tl.to('[data-composition-id="09-recap-card"] .recap .row',
+        { opacity: 1, x: 0, duration: 0.4, ease: 'power3.out', stagger: 0.18 }, 0.55);
+
+      tl.to('[data-composition-id="09-recap-card"] .recap',
+        { opacity: 0, x: 60, duration: 0.45, ease: 'power2.in' }, 7.30);
+
+      tl.to({}, { duration: SLOT }, 0);
+      window.__timelines["09-recap-card"] = tl;
+    </script>
+  </body>
+</html>

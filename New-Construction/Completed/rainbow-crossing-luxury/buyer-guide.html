@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Crossing Luxury by Pulte Homes - Complete Buyer Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ============================
+           PAGE & PRINT
+           ============================ */
+        @page {
+            size: letter;
+            margin: 0.75in;
+        }
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .card, .plan-card, .cost-card, .cost-total, .step-card, .faq-item, table, .incentive-bar { break-inside: avoid; }
+            .section { break-inside: auto; }
+            .page-break { break-after: page; }
+        }
+        .page-break { break-after: page; }
+
+        /* ============================
+           TOKENS (Pulte accent #033764)
+           ============================ */
+        :root {
+            --white: #ffffff;
+            --light: #f7f8fa;
+            --light-card: #f0f2f5;
+            --border: #e2e5ea;
+            --border-light: #eef0f3;
+            --text-primary: #1a1a1a;
+            --text-body: #3d3d3d;
+            --text-secondary: #6b6b6b;
+            --text-tertiary: #999999;
+            --accent: #033764;
+            --accent-hover: #0a4882;
+            --accent-light: rgba(3, 55, 100, 0.08);
+            --accent-muted: rgba(3, 55, 100, 0.12);
+            --radius: 8px;
+            --radius-sm: 5px;
+        }
+
+        /* ============================
+           RESET & BASE
+           ============================ */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 15px; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-body);
+            line-height: 1.7;
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ============================
+           LAYOUT
+           ============================ */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* ============================
+           SECTIONS
+           ============================ */
+        .section {
+            padding: 36px 0;
+        }
+        .section--white {
+            background: var(--white);
+        }
+        .section--alt {
+            background: var(--light);
+        }
+
+        /* ============================
+           SECTION LABEL
+           ============================ */
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .section-label::after {
+            content: '';
+            flex: 0 0 50px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        /* ============================
+           TYPOGRAPHY
+           ============================ */
+        .headline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            line-height: 1.15;
+            margin-bottom: 14px;
+        }
+        .headline--sm {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        p + p {
+            margin-top: 10px;
+        }
+        .text-accent {
+            color: var(--accent);
+        }
+
+        /* ============================
+           HERO
+           ============================ */
+        .hero {
+            background: var(--light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 0 0;
+        }
+        .hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero-bottom {
+            background: var(--accent);
+            color: #ffffff;
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-top: auto;
+        }
+        .hero-kicker {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 60px;
+            letter-spacing: 5px;
+            color: var(--text-primary);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .hero-subtitle {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 4px;
+            color: var(--text-tertiary);
+            margin-bottom: 20px;
+        }
+        .hero-tagline {
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 520px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+        .facts-bar {
+            border-top: 1px solid var(--border);
+            padding-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .fact-item {
+            text-align: center;
+        }
+        .fact-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+        }
+        .fact-label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+        }
+
+        /* ============================
+           INCENTIVE BAR
+           ============================ */
+        .incentive-bar {
+            background: var(--accent);
+            color: var(--white);
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+        }
+
+        /* ============================
+           TABLES
+           ============================ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        table th {
+            text-align: left;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            padding: 12px 14px;
+            border-bottom: 2px solid var(--accent);
+        }
+        table td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-body);
+        }
+        table tr:last-child td {
+            border-bottom: none;
+        }
+        table td:first-child {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           BUILDER CARD
+           ============================ */
+        .builder-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-top: 3px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+        .builder-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .builder-card p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .builder-feature {
+            margin-top: 6px;
+        }
+        .builder-feature strong {
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           PLAN TABLE
+           ============================ */
+        .plan-table {
+            margin-top: 20px;
+        }
+
+        /* ============================
+           PLAN CARDS (Floor Plan Images)
+           ============================ */
+        .plan-card {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 2px solid var(--accent);
+        }
+        .plan-card-label {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 36px;
+            letter-spacing: 3px;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .plan-card-images {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .plan-card-image-wrap {
+            flex: 1;
+            max-width: 460px;
+            margin: 0 auto;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+        .plan-card-image-level {
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            padding: 6px 10px;
+            background: var(--light);
+            border-bottom: 1px solid var(--border);
+        }
+        .plan-card-img {
+            width: 100%;
+            display: block;
+            max-height: 480px;
+            object-fit: contain;
+            background: #f5f2ed;
+        }
+        .plan-card-desc {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 1.6;
+            text-align: center;
+            margin-top: 12px;
+        }
+        .plan-card-source {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            text-align: center;
+            margin-top: 6px;
+        }
+        .plan-card-source a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .plan-card-source a:hover {
+            text-decoration: underline;
+        }
+
+        /* ============================
+           COST GRID
+           ============================ */
+        .cost-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin: 24px 0;
+        }
+        .cost-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 18px 16px;
+            text-align: center;
+        }
+        .cost-card-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 26px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+        }
+        .cost-card-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .cost-total {
+            background: var(--accent-light);
+            border: 1px solid var(--accent-muted);
+            border-radius: var(--radius-sm);
+            padding: 20px 16px;
+            text-align: center;
+            grid-column: 1 / -1;
+        }
+        .cost-total-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 34px;
+            letter-spacing: 1px;
+            color: var(--accent);
+        }
+        .cost-total-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .cost-note {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+        .calc-link {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 12px 28px;
+            background: var(--accent);
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+        /* ============================
+           COMPARE TABLE
+           ============================ */
+        .compare-table {
+            margin-top: 20px;
+        }
+        .compare-table tr.highlight td {
+            background: var(--accent-light);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           ROADMAP / STEPS
+           ============================ */
+        .roadmap {
+            position: relative;
+            margin-top: 24px;
+            padding-left: 48px;
+        }
+        .roadmap::before {
+            content: '';
+            position: absolute;
+            left: 18px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent), var(--border) 95%);
+        }
+        .roadmap-step {
+            position: relative;
+            padding-bottom: 16px;
+            break-inside: avoid;
+        }
+        .roadmap-step:last-child {
+            padding-bottom: 0;
+        }
+        .roadmap-node {
+            position: absolute;
+            left: -48px;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 15px;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+        }
+        .roadmap-step:last-child .roadmap-node {
+            background: var(--accent);
+            color: var(--white);
+        }
+        .roadmap-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+        .roadmap-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ============================
+           FAQ
+           ============================ */
+        .faq-item {
+            border-bottom: 1px solid var(--border-light);
+            padding: 20px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .faq-a {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 1.7;
+        }
+
+        /* ============================
+           INCENTIVE LIST
+           ============================ */
+        .incentive-list {
+            list-style: none;
+            margin: 16px 0;
+        }
+        .incentive-list li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .incentive-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 17px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        /* ============================
+           AMENITY LIST
+           ============================ */
+        .amenity-group {
+            margin-top: 20px;
+        }
+        .amenity-group h4 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .amenity-list {
+            list-style: none;
+            columns: 2;
+            column-gap: 24px;
+        }
+        .amenity-list li {
+            padding: 5px 0 5px 18px;
+            position: relative;
+            font-size: 14px;
+            color: var(--text-body);
+        }
+        .amenity-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        /* ============================
+           CTA SECTION
+           ============================ */
+        .cta-section {
+            text-align: center;
+            padding: 56px 0;
+            background: var(--light);
+        }
+        .cta-headline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            letter-spacing: 2px;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .cta-sub {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        .cta-contact {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 2;
+        }
+        .cta-contact strong {
+            color: var(--text-primary);
+        }
+        .cta-contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* ============================
+           CTA LAST PAGE
+           ============================ */
+        .cta-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--light);
+        }
+        .cta-disclaimer {
+            font-size: 11px;
+            color: var(--text-tertiary);
+            margin-top: 32px;
+            line-height: 1.6;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================
+           PRO TIP
+           ============================ */
+        .pro-tip {
+            background: var(--accent-light);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin-top: 16px;
+            font-size: 14px;
+            color: var(--text-body);
+        }
+        .pro-tip strong {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================
+         HERO
+         ======================== -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-kicker">A Pulte Homes Community</div>
+                <h1>RAINBOW CROSSING LUXURY</h1>
+                <div class="hero-subtitle">COMPLETE BUYER GUIDE</div>
+                <p class="hero-tagline">New construction homes in southwest Las Vegas, 89139. Four Pulte plans including a flexible up-to-6-bedroom Ella for multi-generational families. Starting from $621,990.</p>
+                <div class="facts-bar">
+                    <div class="fact-item">
+                        <div class="fact-value">$621K+</div>
+                        <div class="fact-label">Starting</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">3,072+</div>
+                        <div class="fact-label">Max Sq Ft</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">3-6</div>
+                        <div class="fact-label">Beds</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">4</div>
+                        <div class="fact-label">Plans</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bottom">
+            Pulte Mortgage rate buydowns and closing cost credits available. Contact Ryan for current offers.
+        </div>
+    </header>
+    <div class="page-break"></div>
+
+    <!-- ========================
+         QUICK FACTS
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Quick Facts</div>
+            <div class="headline headline--sm">AT A GLANCE</div>
+            <table>
+                <tbody>
+                    <tr><td>Builder</td><td>Pulte Homes</td></tr>
+                    <tr><td>Location</td><td>Southwest Las Vegas, 89139 (near Rainbow Blvd & Blue Diamond)</td></tr>
+                    <tr><td>Floor Plans</td><td>4 plans, 1,642 to 3,072+ sqft</td></tr>
+                    <tr><td>Bedrooms</td><td>3 to 6</td></tr>
+                    <tr><td>Base Pricing</td><td>$621,990 to $704,990+</td></tr>
+                    <tr><td>HOA</td><td>~$150/month (estimated, based on sister community)</td></tr>
+                    <tr><td>SID/LID</td><td>Confirm with Ryan / onsite sales</td></tr>
+                    <tr><td>Schools</td><td>Mark L. Fine Elementary, Canarelli Middle, Sierra Vista High (CCSD)</td></tr>
+                    <tr><td>Distance to Strip</td><td>15 to 20 minutes</td></tr>
+                    <tr><td>Distance to Red Rock</td><td>15 to 20 minutes</td></tr>
+                    <tr><td>Model Home</td><td>Confirm with Ryan / onsite sales</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ========================
+         ABOUT
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white" style="padding-bottom: 16px;">
+        <div class="container">
+            <div class="section-label">About</div>
+            <div class="headline">SPACE, RANGE, AND REAL FLEXIBILITY</div>
+            <p>Rainbow Crossing Luxury is Pulte's larger-floorplan collection in the 89139 zip code of southwest Las Vegas. It sits a few minutes off the 215 Beltway near Rainbow and Blue Diamond. You get fast access to the Strip, Red Rock Canyon, and the airport without paying a mid-Strip price tag.</p>
+            <p>The collection covers a wide range. The smallest plan is a 1,642 sqft single-story Beckham for buyers who want easy living. The largest is a 3,072+ sqft 2-story Ella that flexes up to 6 bedrooms, perfect for multi-generational families who want room for grandparents, kids, and a home office. That kind of variety is rare in one community.</p>
+            <p>This guide is built to help you compare plans, understand the true cost of ownership, and walk into the sales office prepared. Whether you are downsizing, upsizing, or relocating to Las Vegas, the information here is meant to save you time and money.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         BUILDER
+         ======================== -->
+    <section class="section section--alt" style="padding-top: 20px;">
+        <div class="container">
+            <div class="section-label">Builder</div>
+            <div class="headline">ABOUT PULTE HOMES</div>
+            <div class="builder-card">
+                <h3>PULTE HOMES</h3>
+                <p>Pulte Homes is the sole builder at Rainbow Crossing Luxury. Pulte is one of the largest homebuilders in the country with more than 70 years of experience. They are known for their "Life Tested" design approach, which means they study how families actually live and build floor plans around real daily routines.</p>
+                <p class="builder-feature"><strong>Built-in organization.</strong> Pulte includes planning centers, drop zones, and flexible spaces in most plans.</p>
+                <p class="builder-feature"><strong>Energy efficiency.</strong> Their homes come standard with energy-saving features that can help lower your monthly utility bills.</p>
+                <p class="builder-feature"><strong>Pulte Mortgage.</strong> Their in-house lender often offers rate buydowns and closing cost credits you cannot get from outside lenders.</p>
+                <p class="builder-feature"><strong>Design center experience.</strong> You personalize your home at a dedicated design studio with a professional designer guiding the choices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FLOOR PLANS
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Floor Plans</div>
+            <div class="headline">PLANS AND PRICING</div>
+
+            <table class="plan-table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Sq Ft</th>
+                        <th>Beds</th>
+                        <th>Baths</th>
+                        <th>Garage</th>
+                        <th>Base Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beckham</td>
+                        <td>1,642+</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>2-car</td>
+                        <td>From $621,990</td>
+                    </tr>
+                    <tr>
+                        <td>Ella</td>
+                        <td>3,072+</td>
+                        <td>3-6</td>
+                        <td>2.5-4</td>
+                        <td>2-car</td>
+                        <td>From $680,990</td>
+                    </tr>
+                    <tr>
+                        <td>Duncan</td>
+                        <td>3,021+</td>
+                        <td>3-5</td>
+                        <td>2.5-4</td>
+                        <td>2-car</td>
+                        <td>From $683,990</td>
+                    </tr>
+                    <tr>
+                        <td>Harper</td>
+                        <td>2,940+</td>
+                        <td>4-5</td>
+                        <td>3-4</td>
+                        <td>3-car</td>
+                        <td>From $704,990</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- BECKHAM + HARPER on same page (single-story Beckham + 2-story Harper) -->
+            <div class="plan-card">
+                <div class="plan-card-label">BECKHAM</div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">Single Story</div>
+                        <img class="plan-card-img" src="https://www.dropbox.com/scl/fi/4cnsb22rmeem7wnoooo9p/Beckham-floor-1.png?rlkey=e1sslvifx5dx469lxu8sccpvb&raw=1" alt="Beckham single story plan" onerror="this.style.display='none';">
+                    </div>
+                </div>
+                <p class="plan-card-desc">A 1,642 sqft single-story plan with 3 bedrooms and a 2-car garage. Best for buyers who want easy living without stairs and a smaller footprint to maintain.</p>
+                <p class="plan-card-source">Source: <a href="https://www.pulte.com" target="_blank" rel="noopener">pulte.com</a></p>
+            </div>
+
+            <div class="plan-card" style="margin-top: 32px;">
+                <div class="plan-card-label">HARPER</div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">First Floor</div>
+                        <img class="plan-card-img" src="https://www.dropbox.com/scl/fi/f0u78r7ma9rt85aa6cumv/Harper-floor-1.png?rlkey=kzl9hlz9pbllol3f1gqjm4vto&raw=1" alt="Harper first floor plan" onerror="this.style.display='none';">
+                    </div>
+                </div>
+                <p class="plan-card-desc">A 2,940+ sqft 2-story with up to 5 bedrooms and a full 3-car garage. Built for growing families that need space for cars, gear, and everything else.</p>
+                <p class="plan-card-source">Source: <a href="https://www.pulte.com" target="_blank" rel="noopener">pulte.com</a></p>
+            </div>
+
+            <!-- DUNCAN + ELLA on same page -->
+            <div style="break-before: page;">
+                <div class="plan-card" style="margin-top: 0; padding-top: 0;">
+                    <div class="plan-card-label">DUNCAN</div>
+                    <div class="plan-card-images">
+                        <div class="plan-card-image-wrap">
+                            <div class="plan-card-image-level">First Floor</div>
+                            <img class="plan-card-img" src="https://www.dropbox.com/scl/fi/29vmzxc7jwrhlzy68risn/Duncan-floor-1.png?rlkey=nzkztmfjxuh6npb4thwz3s94i&raw=1" alt="Duncan first floor plan" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+                    <p class="plan-card-desc" style="margin: 4px 0 2px;">A 3,021+ sqft 2-story with flexible bedroom and bath options that scale up to 5 bedrooms. Good fit for buyers who want options without locking in a layout.</p>
+                    <p class="plan-card-source" style="margin: 0;">Source: <a href="https://www.pulte.com" target="_blank" rel="noopener">pulte.com</a></p>
+                </div>
+
+                <div class="plan-card" style="margin-top: 40px; padding-top: 0;">
+                    <div class="plan-card-label">ELLA</div>
+                    <div class="plan-card-images">
+                        <div class="plan-card-image-wrap">
+                            <div class="plan-card-image-level">First Floor</div>
+                            <img class="plan-card-img" src="https://www.dropbox.com/scl/fi/f3gug4yectmf7vtnicgim/Ella-floor-1.png?rlkey=fe8udh2wj2s41c7j20ciyrun5&raw=1" alt="Ella first floor plan" onerror="this.style.display='none';">
+                        </div>
+                    </div>
+                    <p class="plan-card-desc" style="margin: 4px 0 2px;">A 3,072+ sqft 2-story that flexes up to 6 bedrooms. The right pick for multi-generational households or families who want a guest suite, office, and game room without compromise.</p>
+                    <p class="plan-card-source" style="margin: 0;">Source: <a href="https://www.pulte.com" target="_blank" rel="noopener">pulte.com</a></p>
+                </div>
+            </div>
+
+            <p style="margin-top: 24px; font-size: 14px; color: var(--text-secondary);"><strong>Quick move-in homes.</strong> Inventory turns fast at this community. Lot 02208 (Duncan plan) is currently available. Ask Ryan for the latest list before your visit.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         TRUE MONTHLY COST
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Monthly Cost</div>
+            <div class="headline">TRUE MONTHLY COST ESTIMATE</div>
+            <p style="margin-bottom: 8px;">Based on a $705,000 home (median price across the collection) with 20% down at 7% for 30 years.</p>
+
+            <div class="cost-grid">
+                <div class="cost-card">
+                    <div class="cost-card-value">$3,754</div>
+                    <div class="cost-card-label">Mortgage (P&amp;I)</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$306</div>
+                    <div class="cost-card-label">Property Tax</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$110</div>
+                    <div class="cost-card-label">Insurance</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$150</div>
+                    <div class="cost-card-label">HOA (est.)</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">TBD</div>
+                    <div class="cost-card-label">SID/LID</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$0</div>
+                    <div class="cost-card-label">PMI (20% down)</div>
+                </div>
+                <div class="cost-total">
+                    <div class="cost-total-value">$4,320</div>
+                    <div class="cost-total-label">Estimated Total Monthly Payment</div>
+                </div>
+            </div>
+
+            <p class="cost-note">This is a working estimate that excludes SID/LID until verified. Property tax uses Clark County's effective rate of about 0.52%. Confirm exact numbers with the builder and your lender.</p>
+            <a href="https://www.rosehomeslv.com/mortgage-calculator" target="_blank" class="calc-link">Run Your Own Numbers With Our Mortgage Calculator &#8599;</a>
+        </div>
+    </section>
+
+    <!-- ========================
+         HOA / SID / LID
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Fees</div>
+            <div class="headline">HOA, SID, AND LID EXPLAINED</div>
+            <p><strong>HOA (Homeowners Association):</strong> The HOA covers shared landscaping and street maintenance for the subdivision. Sister community Rainbow Crossing Estates publishes a $150 monthly HOA, so the Luxury collection is likely in the same range. Confirm the exact amount with the Pulte sales team before you write your offer.</p>
+            <p><strong>SID (Special Improvement District):</strong> A SID is an annual tax assessment that funds public infrastructure like roads, sewers, and parks. SIDs are common in newer southwest Las Vegas communities. The amount for Rainbow Crossing Luxury is not posted publicly. Always verify via the Clark County Treasurer special assessments lookup before writing your offer.</p>
+            <p><strong>LID (Local Improvement District):</strong> A LID works similarly to a SID but covers a smaller geographic area. Like the SID, the status here is not confirmed publicly. Ask Pulte directly for any SID or LID disclosure documents. Your real estate agent can also pull this information during the due diligence period. Combined SID/LID assessments can add $100 to $300+ per month in some southwest communities, so it is critical to know upfront.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         SCHOOLS
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Schools</div>
+            <div class="headline">SCHOOLS AND FAMILY LIFE</div>
+            <p style="margin-bottom: 8px;">Rainbow Crossing Luxury is zoned for the Clark County School District (CCSD). Here are the assigned schools.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th>Type</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mark L. Fine Elementary</td>
+                        <td>K-5</td>
+                        <td>4/10 (GreatSchools)</td>
+                    </tr>
+                    <tr>
+                        <td>Lawrence &amp; Heidi Canarelli Middle</td>
+                        <td>6-8</td>
+                        <td>6/10 (GreatSchools)</td>
+                    </tr>
+                    <tr>
+                        <td>Sierra Vista High</td>
+                        <td>9-12</td>
+                        <td>3/5 (SchoolDigger)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 16px;">Canarelli Middle is the standout of the three at a 6 out of 10. The elementary and high school ratings are average for the area. Many southwest Las Vegas families also explore charter and private school options, including the Pinecrest and Doral charter networks. The neighborhood has a quiet suburban feel with good street layout and easy access to parks.</p>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+    <!-- ========================
+         AMENITIES
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Amenities</div>
+            <div class="headline">AMENITIES AND LIFESTYLE</div>
+            <p>Rainbow Crossing Luxury does not have a private amenity center inside the subdivision. The trade is location. You give up a clubhouse and pool to gain a short drive to almost everything in the valley.</p>
+
+            <div class="amenity-group">
+                <h4>DRIVE TIMES</h4>
+                <ul class="amenity-list">
+                    <li>215 Beltway: 5 to 10 minutes</li>
+                    <li>Las Vegas Strip: 15 to 20 minutes</li>
+                    <li>Red Rock Canyon: 15 to 20 minutes</li>
+                    <li>Harry Reid Airport: about 10 miles</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>EVERYDAY ESSENTIALS</h4>
+                <ul class="amenity-list">
+                    <li>Smith's at Rainbow &amp; Blue Diamond (closest grocery)</li>
+                    <li>Costco at Blue Diamond &amp; I-15 (10 minutes)</li>
+                    <li>Mountain's Edge Marketplace (dining and retail)</li>
+                    <li>Multiple urgent care options nearby</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>OUTDOOR ACCESS</h4>
+                <ul class="amenity-list">
+                    <li>Red Rock Canyon hiking and scenic drive</li>
+                    <li>Mountain's Edge regional trail system</li>
+                    <li>Exploration Peak Park</li>
+                    <li>Multiple neighborhood parks within 5 minutes</li>
+                </ul>
+            </div>
+
+            <p style="margin-top: 16px;">If you value being close to everything more than a private amenity center, this location works hard for you. The Strip, Red Rock, the airport, and Costco are all inside a 20 minute drive.</p>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+    <!-- ========================
+         INCENTIVES
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Incentives</div>
+            <div class="headline">CURRENT BUYER INCENTIVES</div>
+            <p>Pulte regularly runs incentive programs at Rainbow Crossing Luxury. Specific offers change month to month and are not always public, so reach out for the latest details before your visit.</p>
+
+            <ul class="incentive-list">
+                <li><strong>Pulte Mortgage rate buydowns</strong> when you finance through their in-house lender</li>
+                <li><strong>Closing cost credits</strong> available on select plans and quick move-in homes</li>
+                <li><strong>Design center credits</strong> sometimes offered to help personalize finishes</li>
+            </ul>
+
+            <p>The biggest savings usually come from financing incentives, not price cuts. A rate buydown can lower your monthly payment by hundreds of dollars compared to standard market rates.</p>
+
+            <div class="pro-tip">
+                <strong>Pro tip:</strong> Get a quote from Pulte Mortgage and one outside lender before you sign anything. Use whichever offer is stronger. The bundled incentives often make Pulte Mortgage the winner, but you should always verify.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         COMPARISON
+         ======================== -->
+    <section class="section section--white" style="padding-top: 24px; padding-bottom: 16px;">
+        <div class="container">
+            <div class="section-label">Comparison</div>
+            <div class="headline" style="font-size: 28px; margin-bottom: 12px;">HOW RAINBOW CROSSING LUXURY COMPARES</div>
+
+            <table class="compare-table" style="font-size: 13px;">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Rainbow Luxury</th>
+                        <th>RC Estates</th>
+                        <th>Paldona</th>
+                        <th>Hayford</th>
+                        <th>Daylight</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <td>Builder</td>
+                        <td>Pulte</td>
+                        <td>Pulte</td>
+                        <td>Pulte</td>
+                        <td>Pulte</td>
+                        <td>Pulte</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Base Price</td>
+                        <td>$621,990</td>
+                        <td>$618,990</td>
+                        <td>$473,990</td>
+                        <td>$633,990</td>
+                        <td>$1.01M</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Sq Ft Range</td>
+                        <td>1,642-3,072+</td>
+                        <td>2,215-4,910</td>
+                        <td>1,866-3,023</td>
+                        <td>2,180-4,820</td>
+                        <td>3,488-4,952</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>HOA</td>
+                        <td>~$150</td>
+                        <td>$150</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Up to 6 Bedrooms</td>
+                        <td>YES (Ella)</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 16px; font-size: 13px; color: var(--text-secondary);">The Ella plan is what sets Rainbow Crossing Luxury apart for multi-generational families. Up to 6 bedrooms means real room for grandparents, kids, a guest suite, and an office without compromise. The Beckham single-story is the entry point for buyers who want one level living. If you want a lower entry price under $500K, look at Paldona instead.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         BUYING PROCESS
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Process</div>
+            <div class="headline">THE BUYING PROCESS: 9 STEPS</div>
+
+            <div class="roadmap">
+                <div class="roadmap-step">
+                    <div class="roadmap-node">01</div>
+                    <div class="roadmap-title">CHOOSE YOUR BUILDER AND FLOOR PLAN</div>
+                    <div class="roadmap-desc">Tour the model, compare the 4 plans, and pick what fits. The builder pays your agent's commission, so bring me along to your first visit.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">02</div>
+                    <div class="roadmap-title">SIGN THE PURCHASE AGREEMENT</div>
+                    <div class="roadmap-desc">Put down earnest money and lock in your lot. Have me review every page before you sign. The Pulte contract is a long document with builder-friendly clauses.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">03</div>
+                    <div class="roadmap-title">SECURE FINANCING</div>
+                    <div class="roadmap-desc">Compare Pulte Mortgage to your own lender. Pulte often has the best bundled deal, but you should verify by getting at least one outside quote.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">04</div>
+                    <div class="roadmap-title">DESIGN CENTER APPOINTMENT</div>
+                    <div class="roadmap-desc">Choose countertops, cabinets, flooring, fixtures, and tech upgrades at the Pulte Design Studio. Bring a budget. Markups are highest on flooring.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">05</div>
+                    <div class="roadmap-title">PRE-DRYWALL INSPECTION</div>
+                    <div class="roadmap-desc">Hire your own inspector before drywall goes up. Cost is $200 to $400. This catches framing, plumbing, and electrical issues that get hidden later.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">06</div>
+                    <div class="roadmap-title">CONSTRUCTION UPDATES</div>
+                    <div class="roadmap-desc">Pulte typically delivers in 5 to 8 months once dirt is broken on your lot. Expect updates at framing, drywall, and pre-finish milestones.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">07</div>
+                    <div class="roadmap-title">BLUE TAPE WALKTHROUGH</div>
+                    <div class="roadmap-desc">Walk the home with the builder rep and tape any cosmetic issues. Bring a flashlight, a tape measure, and a critical eye.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">08</div>
+                    <div class="roadmap-title">FINAL INSPECTION</div>
+                    <div class="roadmap-desc">Hire an inspector again before close. Cost is $310 to $730. Do not skip this step. It is the last chance to catch issues before your warranty clock starts.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">09</div>
+                    <div class="roadmap-title">CLOSING DAY</div>
+                    <div class="roadmap-desc">Sign your final paperwork, get your keys, and move in. Welcome to Rainbow Crossing Luxury.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FAQ
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">FAQ</div>
+            <div class="headline">FREQUENTLY ASKED QUESTIONS</div>
+
+            <div class="faq-item">
+                <div class="faq-q">Do I need my own agent?</div>
+                <div class="faq-a">Yes. The Pulte sales rep works for the builder, not for you. I represent your side of the deal, and the builder pays my fee. It costs you nothing to bring me in.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Can I negotiate with Pulte?</div>
+                <div class="faq-a">Yes, on incentives, design center credits, and quick move-in pricing. Base prices are firmer because they affect comps for the entire community. Most savings come from financing and upgrade credits, not price cuts.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What upgrades are worth it?</div>
+                <div class="faq-a">Structural changes that are hard to add later, electrical pre-wires, and the multi-gen suite on the Ella if you need it. Skip flooring upgrades if possible. The markup is highest there and the work is easy to redo after close.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">How long does it take to build?</div>
+                <div class="faq-a">5 to 8 months is typical for Pulte once dirt is broken on your lot. Quick move-in homes that are already framed can close much faster, sometimes in 30 to 60 days.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What is a SID?</div>
+                <div class="faq-a">A Special Improvement District. It is an annual tax assessment that funds infrastructure like roads, sewers, and parks. SIDs are common in newer southwest Las Vegas communities and can add $100 to $300+ per month to your housing cost. Always verify before writing an offer.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What does the warranty cover?</div>
+                <div class="faq-a">Nevada uses the 1-2-10 warranty standard. Year 1 covers workmanship, Year 2 covers mechanical systems, and Years 3 through 10 cover structural defects. Ask Pulte for the full warranty document in writing before you sign.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Can I use VA or FHA?</div>
+                <div class="faq-a">Yes. The 2026 FHA limit for Clark County is $541,287. Most base prices here exceed that limit, so plan on conventional financing for the larger plans. VA loans have no firm cap but are subject to entitlement and lender review.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What if construction is delayed?</div>
+                <div class="faq-a">Pulte contracts include delay language that protects the builder more than the buyer. Have me review your purchase agreement before you sign. Knowing your options if the home is late saves stress and money.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Are quick move-in homes available?</div>
+                <div class="faq-a">Yes. Lot 02208 (Duncan plan) is currently listed. Inventory turns fast. Reach out before your visit for the latest available list and any QMI-specific incentives.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         CTA (LAST PAGE - CENTERED)
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="cta-page">
+        <div class="container">
+            <div class="cta-headline">READY TO <span class="text-accent">EXPLORE RAINBOW CROSSING LUXURY</span>?</div>
+            <p class="cta-sub">Buying new construction is one of the biggest financial decisions you will make. Having the right agent on your side makes a real difference. I help you read the Pulte contract, negotiate for credits, line up inspections, and make sure nothing falls through the cracks.</p>
+            <div class="cta-contact">
+                <strong>Ryan Rose</strong><br>
+                Real Broker, LLC | New Construction Specialist<br>
+                702-747-5921 | ryan@rosehomeslv.com<br>
+                rosehomeslv.com
+            </div>
+            <p class="cta-disclaimer">This guide is for informational purposes only. Pricing, incentives, availability, and community details are subject to change without notice. Always verify all information directly with the builder and your real estate professional.</p>
+        </div>
+    </section>
+
+</body>
+</html>

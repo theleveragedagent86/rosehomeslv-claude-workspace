@@ -1,0 +1,29 @@
+{
+  "name": "lender-engagement",
+  "version": "1.0.0",
+  "description": "Instagram engagement automation for mortgage branch recruiting via value-provided marketing",
+  "author": {
+    "name": "Ryan Rose",
+    "email": "ryan@rosehomeslv.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "instagram",
+    "engagement",
+    "mortgage",
+    "recruiting",
+    "lender",
+    "las-vegas",
+    "browser-automation"
+  ],
+  "mcpServers": {
+    "playwright-instagram": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--user-data-dir",
+        "~/.cache/playwright-instagram-profile"
+      ]
+    }
+  }
+}

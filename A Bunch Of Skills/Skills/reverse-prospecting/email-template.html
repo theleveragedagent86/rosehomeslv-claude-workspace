@@ -1,0 +1,234 @@
+<!--
+  SUBJECT LINE: [SUBJECT_LINE]
+
+  KIT (CONVERTKIT) SETUP NOTES:
+  -----------------------------------------------------------------------
+  1. In Kit, create a new Broadcast
+  2. Add a "Custom HTML" content block and paste the <body> contents, OR
+     use File > Import HTML if your Kit plan supports it
+  3. Before sending, upload these two photos to Kit's Image Library:
+       PHOTO 1 (hero):     [HERO_IMAGE_FILENAME]
+       PHOTO 2 (interior): [INTERIOR_IMAGE_FILENAME]
+     Then replace the two src="[KIT IMAGE URL ...]" placeholders below
+     with the hosted URLs Kit gives you after upload
+  4. Kit personalization tag used: {{ subscriber.first_name | default: "there" }}
+     Verify this matches your Kit account's tag format
+  -----------------------------------------------------------------------
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>[BADGE_TEXT] | Agent Preview | [STREET_ADDRESS] | MLS# [MLS_NUMBER]</title>
+  <style>
+    @media only screen and (max-width: 600px) {
+      .email-wrapper { width: 100% !important; }
+      .stat-cell { display: block !important; width: 100% !important; text-align: left !important; padding: 4px 0 !important; }
+      .stat-divider { display: none !important; }
+      .pad-mobile { padding-left: 24px !important; padding-right: 24px !important; }
+    }
+  </style>
+</head>
+<body style="margin:0;padding:0;background-color:#efefef;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#efefef;">
+    <tr>
+      <td align="center" style="padding:28px 16px 36px;">
+
+        <!-- Email Container -->
+        <table class="email-wrapper" width="580" cellpadding="0" cellspacing="0" border="0" style="max-width:580px;width:100%;background-color:#ffffff;border:1px solid #d8d8d8;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1c2340;padding:16px 32px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0;font-size:12px;color:#a0a8c0;letter-spacing:0.08em;text-transform:uppercase;">Ryan Rose &nbsp;|&nbsp; Real Broker LLC</p>
+                  </td>
+                  <td align="right">
+                    <span style="display:inline-block;background-color:#c8a96e;color:#ffffff;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:4px 11px;">[BADGE_TEXT]</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Hero Image -->
+          <tr>
+            <td style="padding:0;line-height:0;font-size:0;">
+              <img
+                src="[KIT IMAGE URL: [HERO_IMAGE_FILENAME]]"
+                alt="[HERO_IMAGE_ALT]"
+                width="580"
+                style="display:block;width:100%;max-width:580px;height:auto;border:0;"
+              >
+            </td>
+          </tr>
+
+          <!-- Address + Price -->
+          <tr>
+            <td class="pad-mobile" style="padding:28px 32px 0;">
+              <p style="margin:0 0 4px;font-size:22px;font-weight:700;color:#1a1a1a;line-height:1.2;letter-spacing:-0.01em;">[FULL_ADDRESS]</p>
+              <p style="margin:0;font-size:15px;color:#444444;font-weight:500;">[LIST_PRICE] &nbsp;&middot;&nbsp; MLS# [MLS_NUMBER] &nbsp;&middot;&nbsp; Active Date: [ACTIVE_DATE]</p>
+            </td>
+          </tr>
+
+          <!-- Stat Bar -->
+          <tr>
+            <td class="pad-mobile" style="padding:16px 32px 0;">
+              <table cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f4f2;width:100%;">
+                <tr>
+                  <td class="stat-cell" align="center" style="padding:12px 0;width:25%;">
+                    <p style="margin:0;font-size:18px;font-weight:700;color:#1c2340;">[BEDS_BATHS]</p>
+                    <p style="margin:2px 0 0;font-size:10px;color:#888888;letter-spacing:0.07em;text-transform:uppercase;">Bed / Bath</p>
+                  </td>
+                  <td class="stat-divider" style="width:1px;background-color:#dddddd;">&nbsp;</td>
+                  <td class="stat-cell" align="center" style="padding:12px 0;width:25%;">
+                    <p style="margin:0;font-size:18px;font-weight:700;color:#1c2340;">[SQ_FT]</p>
+                    <p style="margin:2px 0 0;font-size:10px;color:#888888;letter-spacing:0.07em;text-transform:uppercase;">Sq Ft</p>
+                  </td>
+                  <td class="stat-divider" style="width:1px;background-color:#dddddd;">&nbsp;</td>
+                  <td class="stat-cell" align="center" style="padding:12px 0;width:25%;">
+                    <p style="margin:0;font-size:18px;font-weight:700;color:#1c2340;">[GARAGE]</p>
+                    <p style="margin:2px 0 0;font-size:10px;color:#888888;letter-spacing:0.07em;text-transform:uppercase;">Garage</p>
+                  </td>
+                  <td class="stat-divider" style="width:1px;background-color:#dddddd;">&nbsp;</td>
+                  <td class="stat-cell" align="center" style="padding:12px 0;width:25%;">
+                    <p style="margin:0;font-size:18px;font-weight:700;color:#1c2340;">[STORY_TYPE]</p>
+                    <p style="margin:2px 0 0;font-size:10px;color:#888888;letter-spacing:0.07em;text-transform:uppercase;">Story</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Rule -->
+          <tr>
+            <td class="pad-mobile" style="padding:24px 32px 0;">
+              <hr style="border:none;border-top:1px solid #ebebeb;margin:0;">
+            </td>
+          </tr>
+
+          <!-- Agent Note -->
+          <tr>
+            <td class="pad-mobile" style="padding:22px 32px 0;">
+              <p style="margin:0;font-size:15px;color:#333333;line-height:1.75;">
+                Hey {{ subscriber.first_name | default: "there" }}, [AGENT_NOTE_P1]
+              </p>
+              <p style="margin:14px 0 0;font-size:15px;color:#333333;line-height:1.75;">
+                [AGENT_NOTE_P2]
+              </p>
+            </td>
+          </tr>
+
+          <!-- Interior Photo -->
+          <tr>
+            <td class="pad-mobile" style="padding:22px 32px 0;">
+              <img
+                src="[KIT IMAGE URL: [INTERIOR_IMAGE_FILENAME]]"
+                alt="[INTERIOR_IMAGE_ALT]"
+                width="516"
+                style="display:block;width:100%;max-width:516px;height:auto;border:0;"
+              >
+              <p style="margin:6px 0 0;font-size:11px;color:#aaaaaa;font-style:italic;">[INTERIOR_IMAGE_CAPTION]</p>
+            </td>
+          </tr>
+
+          <!-- Quick Details -->
+          <tr>
+            <td class="pad-mobile" style="padding:22px 32px 0;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-left:3px solid #1c2340;background-color:#f8f8f6;">
+                <tr>
+                  <td style="padding:18px 22px;">
+                    <p style="margin:0 0 10px;font-size:11px;color:#999999;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;">Quick Details</p>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="padding:3px 0;font-size:13px;color:#555555;width:40%;">[QD_ROW1_LABEL]</td>
+                        <td style="padding:3px 0;font-size:13px;color:#222222;font-weight:600;">[QD_ROW1_VALUE]</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:3px 0;font-size:13px;color:#555555;">[QD_ROW2_LABEL]</td>
+                        <td style="padding:3px 0;font-size:13px;color:#222222;font-weight:600;">[QD_ROW2_VALUE]</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:3px 0;font-size:13px;color:#555555;">[QD_ROW3_LABEL]</td>
+                        <td style="padding:3px 0;font-size:13px;color:#222222;font-weight:600;">[QD_ROW3_VALUE]</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:3px 0;font-size:13px;color:#555555;">[QD_ROW4_LABEL]</td>
+                        <td style="padding:3px 0;font-size:13px;color:#222222;font-weight:600;">[QD_ROW4_VALUE]</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:3px 0;font-size:13px;color:#555555;">[QD_ROW5_LABEL]</td>
+                        <td style="padding:3px 0;font-size:13px;color:#222222;font-weight:600;">[QD_ROW5_VALUE]</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:3px 0;font-size:13px;color:#555555;">[QD_ROW6_LABEL]</td>
+                        <td style="padding:3px 0;font-size:13px;color:#222222;font-weight:600;">[QD_ROW6_VALUE]</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- CTA Button -->
+          <tr>
+            <td class="pad-mobile" style="padding:28px 32px 0;text-align:center;">
+              <a href="[SHOWINGTIME_LINK]" style="display:inline-block;background-color:#1c2340;color:#ffffff;font-size:13px;font-weight:700;text-decoration:none;padding:15px 40px;letter-spacing:0.07em;text-transform:uppercase;">Schedule a Showing via ShowingTime</a>
+            </td>
+          </tr>
+
+          <!-- Secondary CTA -->
+          <tr>
+            <td class="pad-mobile" style="padding:14px 32px 0;text-align:center;">
+              <p style="margin:0;font-size:13px;color:#777777;">Questions about the listing? <a href="mailto:ryan@rosehomeslv.com" style="color:#1c2340;text-decoration:underline;">Reply to this email</a> or call/text <a href="tel:7027475921" style="color:#1c2340;text-decoration:underline;">702.747.5921</a>.</p>
+            </td>
+          </tr>
+
+          <!-- Rule -->
+          <tr>
+            <td style="padding:28px 32px 0;">
+              <hr style="border:none;border-top:1px solid #ebebeb;margin:0;">
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:22px 32px 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td valign="top">
+                    <p style="margin:0 0 2px;font-size:14px;font-weight:700;color:#1a1a1a;">Ryan Rose</p>
+                    <p style="margin:0 0 2px;font-size:12px;color:#777777;">Real Broker, LLC &nbsp;&middot;&nbsp; Nevada License #S.0185572</p>
+                    <p style="margin:0 0 2px;font-size:12px;color:#777777;"><a href="tel:7027475921" style="color:#777777;text-decoration:none;">702.747.5921</a></p>
+                    <p style="margin:0;font-size:12px;"><a href="mailto:ryan@rosehomeslv.com" style="color:#1c2340;text-decoration:none;">ryan@rosehomeslv.com</a></p>
+                  </td>
+                  <td align="right" valign="bottom">
+                    <p style="margin:0;font-size:10px;color:#cccccc;text-align:right;">Equal Housing Opportunity</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Unsubscribe -->
+          <tr>
+            <td style="padding:0 32px 24px;text-align:center;">
+              <p style="margin:0;font-size:11px;color:#cccccc;line-height:1.6;">You're receiving this because your buyer has a saved search that matches this property in the Nevada MLS reverse prospecting system. Kit unsubscribe link will appear here automatically.</p>
+            </td>
+          </tr>
+
+        </table>
+        <!-- End Email Container -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

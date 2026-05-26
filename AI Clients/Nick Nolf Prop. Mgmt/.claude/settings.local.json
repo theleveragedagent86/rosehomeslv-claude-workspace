@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(zip -r vendor-work-order-plugin.zip vendor-work-order-plugin/)"
+    ]
+  }
+}

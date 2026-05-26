@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rose Homes LV — Moapa Water Carousel</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  :root{
+    --navy:#1C2333; --gold:#C9A86E; --gold-soft:#E2C896; --warm:#F7F5F0;
+    --slate:#8A8FA8; --white:#fff;
+    --gold-hair:rgba(201,168,110,0.35);
+    --slide-w:1080px; --slide-h:1350px;
+    --safe:120px;
+    --pad:96px;
+  }
+  html,body{margin:0;background:#0a0d16;color:#fff;font-family:'Inter',sans-serif;}
+  body{padding:64px 48px 96px;}
+
+  /* ===== Page chrome ===== */
+  .page-head{max-width:2360px;margin:0 auto 56px;display:flex;justify-content:space-between;align-items:flex-end;gap:48px;color:#fff;}
+  .page-head h1{font-family:'Playfair Display',serif;font-weight:700;font-size:36px;letter-spacing:-0.01em;margin:0 0 8px;}
+  .page-head .sub{font-family:'Montserrat',sans-serif;font-weight:600;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);}
+  .page-head .meta{font-family:'Inter',sans-serif;font-size:13px;color:#8A8FA8;line-height:1.6;text-align:right;}
+
+  .grid{
+    max-width:2360px;margin:0 auto;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:48px 40px;
+  }
+  .cell{display:flex;flex-direction:column;gap:14px;}
+  .cell .num{font-family:'Montserrat',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:#8A8FA8;display:flex;justify-content:space-between;align-items:center;}
+  .cell .num b{color:var(--gold);font-weight:600;}
+
+  /* ===== Slide stage — scales 1080x1350 down to fit grid cell ===== */
+  .stage{position:relative;width:100%;aspect-ratio:1080/1350;background:#000;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,0.7), 0 8px 24px -12px rgba(0,0,0,0.5);}
+  .slide{
+    position:absolute;top:0;left:0;
+    width:var(--slide-w);height:var(--slide-h);
+    transform-origin:top left;
+    box-sizing:border-box;overflow:hidden;
+    font-family:'Inter',sans-serif;
+  }
+  /* scale calculated by JS to fit cell exactly */
+
+  /* ===== Templates ===== */
+  .slide.dk{background:var(--navy);color:#fff;}
+  .slide.lt{background:var(--warm);color:var(--navy);}
+  .slide.wh{background:#fff;color:var(--navy);}
+
+  /* ===== Shared chrome inside each slide ===== */
+  .wordmark{font-family:'Playfair Display',serif;font-weight:700;font-size:26px;letter-spacing:-0.01em;display:inline-flex;align-items:baseline;gap:8px;line-height:1;}
+  .wordmark .lv{color:var(--gold);font-size:16px;font-weight:700;}
+  .dk .wordmark{color:#fff;} .lt .wordmark,.wh .wordmark{color:var(--navy);}
+  .agency{font-family:'Montserrat',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.24em;text-transform:uppercase;line-height:1;margin-top:8px;}
+  .dk .agency{color:var(--gold);} .lt .agency,.wh .agency{color:var(--slate);}
+
+  /* Safe zone — content area between IG top/bottom UI */
+  .safe{position:absolute;left:var(--pad);right:var(--pad);top:var(--safe);bottom:var(--safe);display:flex;flex-direction:column;}
+
+  /* Page counter chip */
+  .counter{position:absolute;top:var(--safe);right:var(--pad);font-family:'Montserrat',sans-serif;font-weight:600;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;display:flex;align-items:center;gap:12px;}
+  .counter .rule{width:32px;height:1px;background:var(--gold);}
+  .dk .counter{color:#fff;} .lt .counter,.wh .counter{color:var(--navy);}
+
+  /* L brackets */
+  .brk{position:absolute;inset:48px 56px;pointer-events:none;}
+  .brk::before,.brk::after,.brk>i,.brk>b{content:"";position:absolute;width:28px;height:28px;border:1px solid var(--gold);}
+  .brk::before{top:0;left:0;border-right:0;border-bottom:0;}
+  .brk::after{top:0;right:0;border-left:0;border-bottom:0;}
+  .brk>i{bottom:0;left:0;border-right:0;border-top:0;}
+  .brk>b{bottom:0;right:0;border-left:0;border-top:0;}
+
+  /* ===== Type primitives ===== */
+  .eyebrow{font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.28em;text-transform:uppercase;display:inline-flex;align-items:center;gap:14px;line-height:1;}
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--gold);}
+  .dk .eyebrow{color:var(--gold);} .lt .eyebrow,.wh .eyebrow{color:var(--navy);}
+
+  .display{font-family:'Playfair Display',serif;font-weight:700;font-size:112px;line-height:0.98;letter-spacing:-0.02em;text-wrap:balance;}
+  .h1{font-family:'Playfair Display',serif;font-weight:700;font-size:88px;line-height:1.03;letter-spacing:-0.018em;}
+  .h2{font-family:'Playfair Display',serif;font-weight:700;font-size:64px;line-height:1.05;letter-spacing:-0.012em;}
+  .body{font-family:'Inter',sans-serif;font-weight:400;font-size:28px;line-height:1.5;text-wrap:pretty;}
+  .body-lg{font-size:32px;line-height:1.45;}
+  .label{font-family:'Montserrat',sans-serif;font-weight:600;font-size:13px;letter-spacing:0.24em;text-transform:uppercase;line-height:1;}
+  .muted{color:var(--slate);}
+  .gold{color:var(--gold);}
+  hr.rule{border:0;height:1px;background:var(--gold);width:72px;margin:0;}
+
+  /* ===== Photo placeholder ===== */
+  .photo{position:absolute;inset:0;background:
+    radial-gradient(70% 50% at 65% 30%, rgba(255,255,255,0.10), transparent 65%),
+    linear-gradient(170deg, #5a4a36 0%, #3a2e22 40%, #1C2333 100%);
+  }
+  .photo.dusk{background:
+    linear-gradient(180deg, #2c3650 0%, #5a4a6e 35%, #c9a86e 72%, #6f4b2a 95%, #1C2333 100%);
+  }
+  .photo .scrim{position:absolute;inset:0;background:linear-gradient(180deg, rgba(28,35,51,0.05) 0%, rgba(28,35,51,0.35) 55%, rgba(28,35,51,0.92) 100%);}
+  .ph-tag{position:absolute;bottom:18px;left:20px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:rgba(255,255,255,0.55);}
+
+  /* ===== Motion badge — denotes slides with animation ===== */
+  .motion-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,110,0.12);color:var(--gold);padding:6px 10px;border:1px solid rgba(201,168,110,0.4);font-family:'Montserrat',sans-serif;font-weight:600;font-size:9px;letter-spacing:0.22em;text-transform:uppercase;border-radius:2px;}
+  .motion-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:mb-pulse 1.8s ease-in-out infinite;}
+  @keyframes mb-pulse{0%,100%{opacity:1;}50%{opacity:0.35;}}
+  .cell.has-motion .num b{color:var(--gold);}
+
+  /* ===== Animations ===== */
+  /* Ken Burns on slide 1 photo */
+  @keyframes kenburns{0%{transform:scale(1.06) translate(0,0);}100%{transform:scale(1.14) translate(-2%,-1.5%);}}
+  .slide.anim .photo,.slide.anim .photo-img{animation:kenburns 16s cubic-bezier(0.4,0,0.6,1) infinite alternate;}
+
+  /* Title word reveal */
+  @keyframes word-in{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+  .word-reveal>span{display:inline-block;opacity:0;animation:word-in 800ms cubic-bezier(0.25,0.1,0.25,1) forwards;}
+
+  /* Generic fade up */
+  @keyframes fade-up{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+  .fade-up{opacity:0;animation:fade-up 900ms cubic-bezier(0.25,0.1,0.25,1) forwards;}
+
+  /* Path draw on slide 5 */
+  @keyframes path-draw{from{stroke-dashoffset:1200;}to{stroke-dashoffset:0;}}
+  .slide.anim .path-line{stroke-dasharray:1200;animation:path-draw 4s cubic-bezier(0.25,0.1,0.25,1) forwards;}
+
+  /* End dot pulse */
+  @keyframes dot-pulse{0%,100%{transform:scale(1);opacity:0.5;}50%{transform:scale(1.6);opacity:0;}}
+  .slide.anim .end-dot-ring{transform-origin:center;animation:dot-pulse 2.2s ease-out infinite;animation-delay:3.5s;}
+
+  /* Number counter — uses CSS counter animation via opacity flash */
+  @keyframes num-pop{0%{opacity:0;transform:translateY(40px) scale(0.94);}60%{transform:translateY(0) scale(1);}100%{opacity:1;transform:translateY(0) scale(1);}}
+  .slide.anim .num-pop{opacity:0;animation:num-pop 900ms cubic-bezier(0.2,0.6,0.3,1) forwards;}
+
+  /* Confetti fall + twinkle */
+  @keyframes conf-fall{0%{transform:translate(-50%,-180%) rotate(var(--r));opacity:0;}10%{opacity:1;}90%{opacity:1;}100%{transform:translate(-50%,40%) rotate(var(--r));opacity:0;}}
+  @keyframes conf-twinkle{0%,100%{opacity:0.25;}50%{opacity:0.95;}}
+  .slide.anim .confetti span{--r:0deg;animation:conf-twinkle 2.2s ease-in-out infinite;}
+  .slide.anim .confetti span.fall{animation:conf-fall 4.2s cubic-bezier(0.4,0,0.6,1) infinite;}
+
+  /* CTA arrow nudge */
+  @keyframes arr-nudge{0%,100%{transform:translateX(0);}50%{transform:translateX(6px);}}
+  .slide.anim .cta-arr{animation:arr-nudge 1.8s ease-in-out infinite;}
+
+
+  /* ===== Confetti — subtle gold strokes ===== */
+  .confetti{position:absolute;inset:0;pointer-events:none;z-index:1;}
+  .confetti span{position:absolute;background:var(--gold);transform-origin:center;}
+  .confetti span.d{width:6px;height:6px;border-radius:50%;background:var(--gold);}
+  .confetti span.s{width:18px;height:1.5px;}
+  .confetti span.o{width:8px;height:8px;border:1px solid var(--gold);background:transparent;border-radius:50%;}
+
+  /* ===== Export panel ===== */
+  .xp{position:fixed;bottom:24px;right:24px;z-index:100;background:#1C2333;color:#fff;border:1px solid rgba(201,168,110,0.4);box-shadow:0 30px 60px -20px rgba(0,0,0,0.7);font-family:'Inter',sans-serif;font-size:13px;width:300px;max-height:78vh;overflow:auto;}
+  .xp.collapsed{width:auto;max-height:none;}
+  .xp.collapsed .xp-body{display:none;}
+  .xp-head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid rgba(201,168,110,0.25);cursor:pointer;}
+  .xp.collapsed .xp-head{border-bottom:0;}
+  .xp-head .ttl{font-family:'Montserrat',sans-serif;font-weight:600;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);}
+  .xp-head .tog{font-family:'Inter',sans-serif;font-size:18px;color:#fff;opacity:0.7;line-height:1;}
+  .xp-body{padding:16px;display:flex;flex-direction:column;gap:14px;}
+  .xp h4{margin:0 0 4px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);}
+  .xp button, .xp a.btn{appearance:none;background:transparent;color:#fff;border:1px solid rgba(201,168,110,0.5);padding:10px 12px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:flex;align-items:center;justify-content:space-between;gap:8px;transition:background 200ms var(--rh-ease,ease);}
+  .xp button:hover, .xp a.btn:hover{background:rgba(201,168,110,0.12);}
+  .xp button.primary{background:var(--gold);color:var(--navy);border-color:var(--gold);}
+  .xp button.primary:hover{background:var(--gold-soft);}
+  .xp button:disabled{opacity:0.5;cursor:wait;}
+  .xp .row{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+  .xp .row a, .xp .row button{padding:8px 10px;font-size:10px;letter-spacing:0.14em;justify-content:center;}
+  .xp .note{font-size:11px;color:#8A8FA8;line-height:1.5;}
+  .xp .status{font-size:11px;color:var(--gold);min-height:14px;}
+
+  /* ===== Single-slide fullscreen view (?slide=N) ===== */
+  body.solo{padding:0;background:#000;display:flex;align-items:center;justify-content:center;min-height:100vh;}
+  body.solo .page-head, body.solo .grid, body.solo .xp{display:none;}
+  body.solo .solo-stage{width:1080px;height:1350px;position:relative;background:#000;}
+  body.solo .solo-stage .slide{position:absolute;inset:0;transform:none !important;}
+
+  /* ===== Print: one slide per page ===== */
+  @media print {
+    @page { size: 1080px 1350px; margin: 0; }
+    html, body { background: #fff !important; margin: 0 !important; padding: 0 !important; }
+    .page-head, .xp, .cell .num { display: none !important; }
+    .grid { display: block !important; max-width: none !important; margin: 0 !important; gap: 0 !important; }
+    .cell { page-break-after: always; break-after: page; margin: 0 !important; }
+    .cell:last-child { page-break-after: auto; }
+    .stage { width: 1080px !important; height: 1350px !important; aspect-ratio: auto !important; box-shadow: none !important; overflow: hidden; }
+    .stage .slide { transform: scale(1) !important; transform-origin: top left !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-head">
+  <div>
+    <div class="sub">Instagram Carousel · 1080 × 1350 · 8 slides</div>
+    <h1>From Seattle to Moapa Water</h1>
+  </div>
+  <div class="meta">
+    Anne &amp; Jerred · 8320 Moapa Water St · Closed May 19, 2026<br/>
+    Rose Homes LV · Ryan Rose · Real Broker, LLC
+  </div>
+</div>
+
+<div class="grid" id="grid">
+
+  <!-- ====================================================== 1 — HOOK ====================================================== -->
+  <div class="cell has-motion">
+    <div class="num"><span>01 / 08</span><b>Hook · Motion</b></div>
+    <div class="stage">
+      <div class="slide dk anim" data-screen-label="01 Hook">
+        <!-- real photo if present, else gradient fallback -->
+        <img class="photo-img" src="hero.png" alt="" onerror="this.style.display='none'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;">
+        <div class="photo dusk" style="z-index:-1;"></div>
+        <div class="scrim" style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(28,35,51,0.45) 0%, rgba(28,35,51,0.12) 25%, rgba(28,35,51,0.18) 45%, rgba(28,35,51,0.72) 75%, rgba(28,35,51,0.98) 100%);"></div>
+        <div class="ph-tag" style="left:auto;right:24px;bottom:auto;top:24px;color:rgba(255,255,255,0.5);">8320 Moapa Water St · Las Vegas, NV</div>
+
+        <!-- top chrome -->
+        <div style="position:absolute;top:var(--safe);left:var(--pad);display:flex;align-items:center;gap:16px;">
+          <div style="width:34px;height:1px;background:var(--gold);"></div>
+          <span class="label" style="color:var(--gold);">A True Story · Vegas Valley</span>
+        </div>
+
+        <!-- main copy bottom-left -->
+        <div style="position:absolute;left:var(--pad);right:var(--pad);bottom:var(--safe);display:flex;flex-direction:column;gap:32px;">
+          <div class="display word-reveal" style="font-size:124px;letter-spacing:-0.025em;">
+            <span style="animation-delay:0.1s;">From</span> <span style="animation-delay:0.35s;">Seattle</span><br/>
+            <span style="animation-delay:0.6s;">to</span> <span style="animation-delay:0.85s;">Moapa</span> <span style="animation-delay:1.1s;">Water</span>
+          </div>
+          <hr class="rule fade-up" style="width:96px;animation-delay:1.4s;">
+          <div class="h2 fade-up" style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:42px;color:#fff;opacity:0;animation-delay:1.55s;">A three-month journey home</div>
+          <div class="fade-up" style="display:flex;align-items:center;gap:14px;margin-top:24px;animation-delay:1.8s;">
+            <div class="wordmark">Rose Homes <span class="lv">LV</span></div>
+            <div style="width:1px;height:28px;background:var(--gold);opacity:0.5;"></div>
+            <div class="agency" style="margin-top:0;">Ryan Rose · Las Vegas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================== 2 — MEET ====================================================== -->
+  <div class="cell">
+    <div class="num"><span>02 / 08</span><b>The Setup</b></div>
+    <div class="stage">
+      <div class="slide lt" data-screen-label="02 Meet Anne &amp; Jerred">
+        <div class="brk"><i></i><b></b></div>
+
+        <!-- top chrome -->
+        <div style="position:absolute;top:var(--safe);left:var(--pad);">
+          <div class="wordmark">Rose Homes <span class="lv">LV</span></div>
+          <div class="agency">Ryan Rose · Las Vegas</div>
+        </div>
+        <div class="counter"><span class="rule"></span><span>02 · 08</span></div>
+
+        <div class="safe" style="justify-content:center;gap:36px;">
+          <span class="eyebrow">The setup</span>
+          <div class="display" style="font-size:120px;">Meet Anne<br/>&amp; Jerred</div>
+          <hr class="rule">
+          <div class="body body-lg" style="max-width:780px;">
+            They moved from Seattle for work. They were living in an Airbnb with their dog. They wanted a forever home with a pool, a spa, and a kitchen they could actually cook in.
+          </div>
+
+          <!-- icon row -->
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:32px;border-top:1px solid rgba(28,35,51,0.15);padding-top:36px;">
+            <div style="display:flex;flex-direction:column;align-items:flex-start;gap:14px;">
+              <!-- truck -->
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#1C2333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>
+              <div class="label muted">Relocating</div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-start;gap:14px;">
+              <!-- dog -->
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#1C2333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5"/><path d="M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/><path d="M4.5 13.5c.5-1.5 2.5-2 3.5-1s.5 2.5 0 3"/><path d="M8 14c0 3 1 5 4 5s4-2 4-5"/><path d="M7.5 9c.5-2 2-3 4.5-3s4 1 4.5 3"/></svg>
+              <div class="label muted">Plus the dog</div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-start;gap:14px;">
+              <!-- pool -->
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#1C2333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"/><path d="M2 16a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"/><path d="M6 5a2 2 0 0 1 2-2h.5a2 2 0 0 1 2 2v9"/><path d="M14 5a2 2 0 0 1 2-2h.5a2 2 0 0 1 2 2v9"/><path d="M10 9h4"/></svg>
+              <div class="label muted">Pool &amp; spa</div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-start;gap:14px;">
+              <!-- chef hat -->
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#1C2333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg>
+              <div class="label muted">A real kitchen</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================== 3 — PHILOSOPHY ====================================================== -->
+  <div class="cell">
+    <div class="num"><span>03 / 08</span><b>The Philosophy</b></div>
+    <div class="stage">
+      <div class="slide dk" data-screen-label="03 Philosophy">
+        <div class="brk"><i></i><b></b></div>
+
+        <div style="position:absolute;top:var(--safe);left:var(--pad);">
+          <div class="wordmark">Rose Homes <span class="lv">LV</span></div>
+          <div class="agency">Ryan Rose · Las Vegas</div>
+        </div>
+        <div class="counter"><span class="rule"></span><span>03 · 08</span></div>
+
+        <div class="safe" style="justify-content:center;gap:48px;">
+          <div style="display:flex;align-items:center;gap:20px;">
+            <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:140px;color:var(--gold);line-height:0.7;">&ldquo;</div>
+            <span class="label" style="color:var(--gold);">In her own words</span>
+          </div>
+          <div style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:96px;line-height:1.05;letter-spacing:-0.02em;text-wrap:balance;">
+            Rather lose it<br/>than come in<br/>too high.
+          </div>
+          <hr class="rule">
+          <div class="label gold" style="font-size:16px;letter-spacing:0.28em;">— Anne</div>
+          <div class="body body-lg muted" style="max-width:680px;margin-top:32px;font-style:italic;font-family:'Playfair Display',serif;font-size:36px;line-height:1.35;color:rgba(255,255,255,0.78);">
+            Buyers who knew<br/>what they wanted.
+          </div>
+          <div class="label" style="color:var(--gold);opacity:0.7;margin-top:8px;">— Ryan</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================== 4 — NUMBERS ====================================================== -->
+  <div class="cell has-motion">
+    <div class="num"><span>04 / 08</span><b>The Search · Motion</b></div>
+    <div class="stage">
+      <div class="slide lt anim" data-screen-label="04 The Numbers">
+        <div style="position:absolute;top:var(--safe);left:var(--pad);">
+          <div class="wordmark">Rose Homes <span class="lv">LV</span></div>
+          <div class="agency">Ryan Rose · Las Vegas</div>
+        </div>
+        <div class="counter"><span class="rule"></span><span>04 · 08</span></div>
+
+        <div class="safe" style="justify-content:center;gap:40px;">
+          <span class="eyebrow">The search</span>
+          <div class="h1" style="font-size:96px;">The numbers</div>
+          <hr class="rule">
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:32px;border-top:1px solid var(--gold);border-left:1px solid var(--gold);">
+            <div style="padding:40px 32px;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold);display:flex;flex-direction:column;gap:14px;min-height:240px;justify-content:space-between;">
+              <div class="label muted">Homes toured</div>
+              <div class="num-pop" style="font-family:'Playfair Display',serif;font-weight:700;font-size:144px;line-height:0.85;letter-spacing:-0.025em;animation-delay:0.2s;">15<span style="color:var(--gold);font-size:96px;">+</span></div>
+            </div>
+            <div style="padding:40px 32px;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold);display:flex;flex-direction:column;gap:14px;min-height:240px;justify-content:space-between;">
+              <div class="label muted">Offer walked away from</div>
+              <div class="num-pop" style="font-family:'Playfair Display',serif;font-weight:700;font-size:144px;line-height:0.85;letter-spacing:-0.025em;animation-delay:0.55s;">1</div>
+            </div>
+            <div style="padding:40px 32px;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold);display:flex;flex-direction:column;gap:14px;min-height:240px;justify-content:space-between;">
+              <div class="label muted">Months searching</div>
+              <div class="num-pop" style="font-family:'Playfair Display',serif;font-weight:700;font-size:144px;line-height:0.85;letter-spacing:-0.025em;animation-delay:0.9s;">3</div>
+            </div>
+            <div style="padding:40px 32px;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold);display:flex;flex-direction:column;gap:14px;min-height:240px;justify-content:space-between;">
+              <div class="label muted">Under asking price</div>
+              <div class="num-pop" style="font-family:'Playfair Display',serif;font-weight:700;font-size:108px;line-height:0.85;letter-spacing:-0.025em;animation-delay:1.25s;"><span style="color:var(--gold);font-size:72px;vertical-align:18px;">$</span>19<span style="color:var(--gold);font-size:72px;">K</span></div>
+            </div>
+          </div>
+
+          <div class="label muted" style="margin-top:24px;font-size:11px;">February → May 2026 · Vegas Valley</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================== 5 — TWIST ====================================================== -->
+  <div class="cell has-motion">
+    <div class="num"><span>05 / 08</span><b>The Twist · Motion</b></div>
+    <div class="stage">
+      <div class="slide dk anim" data-screen-label="05 Plot Twist">
+        <div class="brk"><i></i><b></b></div>
+
+        <div style="position:absolute;top:var(--safe);left:var(--pad);">
+          <div class="wordmark">Rose Homes <span class="lv">LV</span></div>
+          <div class="agency">Ryan Rose · Las Vegas</div>
+        </div>
+        <div class="counter"><span class="rule"></span><span>05 · 08</span></div>
+
+        <div class="safe" style="justify-content:center;gap:40px;">
+          <span class="eyebrow">Chapter three</span>
+          <div class="display" style="font-size:144px;letter-spacing:-0.03em;">Plot<br/>twist.</div>
+          <hr class="rule">
+          <div class="body body-lg" style="max-width:840px;font-size:34px;line-height:1.45;">
+            Their first offer fell through after a tough counter. They walked. A week later we found 8320 Moapa Water. Sometimes the right house waits for you.
+          </div>
+
+          <!-- path illustration -->
+          <div style="margin-top:32px;display:flex;flex-direction:column;gap:14px;">
+            <svg width="100%" height="120" viewBox="0 0 880 120" fill="none" preserveAspectRatio="none">
+              <!-- start dot -->
+              <circle cx="40" cy="60" r="5" fill="#C9A86E"/>
+              <!-- curve forward then loop back then forward to end -->
+              <path class="path-line" d="M 40 60 Q 220 10 360 60 Q 440 95 360 60 Q 280 25 600 60 Q 760 90 840 60" stroke="#C9A86E" stroke-width="1.5" stroke-dasharray="4 8" stroke-linecap="round" fill="none" opacity="0.85"/>
+              <!-- midway "walked" dot -->
+              <circle cx="360" cy="60" r="4" fill="none" stroke="#C9A86E" stroke-width="1.5"/>
+              <!-- end dot, larger -->
+              <circle cx="840" cy="60" r="7" fill="#C9A86E"/>
+              <circle class="end-dot-ring" cx="840" cy="60" r="14" fill="none" stroke="#C9A86E" stroke-width="1" opacity="0.5"/>
+            </svg>
+            <div style="display:flex;justify-content:space-between;font-family:'Montserrat',sans-serif;font-weight:600;font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--slate);">
+              <span>February · House hunt begins</span>
+              <span style="color:rgba(255,255,255,0.5);">Walked away</span>
+              <span style="color:var(--gold);">May · 8320 Moapa Water</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================== 6 — WIN ====================================================== -->
+  <div class="cell">
+    <div class="num"><span>06 / 08</span><b>The Win</b></div>
+    <div class="stage">
+      <div class="slide lt" data-screen-label="06 The Deal">
+        <div style="position:absolute;top:var(--safe);left:var(--pad);">
+          <div class="wordmark">Rose Homes <span class="lv">LV</span></div>
+          <div class="agency">Ryan Rose · Las Vegas</div>
+        </div>
+        <div class="counter"><span class="rule"></span><span>06 · 08</span></div>
+
+        <div class="safe" style="justify-content:center;gap:32px;">
+          <span class="eyebrow">The deal</span>
+          <div class="h1" style="font-size:96px;">Home, finally.</div>
+          <hr class="rule">
+
+          <div style="display:flex;flex-direction:column;margin-top:32px;">
+            <div style="display:flex;align-items:baseline;gap:32px;padding:36px 0;border-top:1px solid rgba(28,35,51,0.15);">
+              <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:var(--gold);letter-spacing:0.04em;width:48px;">01</div>
+              <div style="flex:1;">
+                <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:52px;line-height:1.05;letter-spacing:-0.012em;">Closed at <span style="color:var(--gold);">$630,000</span></div>
+                <div class="body muted" style="margin-top:10px;font-size:22px;">Asked $649K. They came in with conviction.</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:32px;padding:36px 0;border-top:1px solid rgba(28,35,51,0.15);">
+              <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:var(--gold);letter-spacing:0.04em;width:48px;">02</div>
+              <div style="flex:1;">
+                <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:52px;line-height:1.05;letter-spacing:-0.012em;">Pool, spa, fire pit</div>
+                <div class="body muted" style="margin-top:10px;font-size:22px;">Festoon-lit backyard, just like they pictured.</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:32px;padding:36px 0;border-top:1px solid rgba(28,35,51,0.15);border-bottom:1px solid rgba(28,35,51,0.15);">
+              <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:var(--gold);letter-spacing:0.04em;width:48px;">03</div>
+              <div style="flex:1;">
+                <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:52px;line-height:1.05;letter-spacing:-0.012em;"><span style="color:var(--gold);">41</span> days, on time</div>
+                <div class="body muted" style="margin-top:10px;font-size:22px;">Offer to close. No surprises at the table.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================== 7 — MOMENT ====================================================== -->
+  <div class="cell has-motion">
+    <div class="num"><span>07 / 08</span><b>The Moment · Motion</b></div>
+    <div class="stage">
+      <div class="slide dk anim" data-screen-label="07 Closing Day">
+        <div class="brk"><i></i><b></b></div>
+
+        <!-- confetti accents -->
+        <div class="confetti" aria-hidden="true"></div>
+
+        <div style="position:absolute;top:var(--safe);left:var(--pad);">
+          <div class="wordmark">Rose Homes <span class="lv">LV</span></div>
+          <div class="agency">Ryan Rose · Las Vegas</div>
+        </div>
+        <div class="counter"><span class="rule"></span><span>07 · 08</span></div>
+
+        <div class="safe" style="justify-content:space-between;gap:40px;position:relative;z-index:2;padding-top:80px;padding-bottom:24px;">
+          <!-- quote group, upper half -->
+          <div style="display:flex;flex-direction:column;gap:40px;">
+            <div style="display:flex;align-items:center;gap:20px;">
+              <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:140px;color:var(--gold);line-height:0.7;">&ldquo;</div>
+              <span class="label" style="color:var(--gold);">Closing day · May 19, 2026</span>
+            </div>
+            <div style="font-family:'Playfair Display',serif;font-weight:400;font-size:84px;line-height:1.08;letter-spacing:-0.018em;text-wrap:balance;">
+              <span style="font-style:italic;">Just got the news.<br/>It has recorded.</span><br/>
+              <span style="font-weight:700;color:var(--gold);letter-spacing:0.01em;">CONGRATULATIONS!</span>
+            </div>
+            <hr class="rule">
+            <div class="label gold" style="font-size:16px;letter-spacing:0.28em;">— Ryan · to Anne &amp; Jerred</div>
+          </div>
+
+          <!-- postmark stamp + tagline, lower half -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:28px;">
+            <div style="display:flex;align-items:center;gap:32px;width:100%;">
+              <hr class="rule" style="flex:1;width:auto;opacity:0.45;">
+              <!-- circular postmark -->
+              <svg viewBox="0 0 200 200" width="220" height="220" style="flex-shrink:0;">
+                <defs>
+                  <path id="ring-top" d="M 100 100 m -78 0 a 78 78 0 1 1 156 0"/>
+                  <path id="ring-bot" d="M 22 100 a 78 78 0 1 0 156 0"/>
+                </defs>
+                <circle cx="100" cy="100" r="92" fill="none" stroke="#C9A86E" stroke-width="1"/>
+                <circle cx="100" cy="100" r="84" fill="none" stroke="#C9A86E" stroke-width="0.5" opacity="0.5"/>
+                <text font-family="Montserrat, sans-serif" font-weight="600" font-size="9" letter-spacing="2.6" fill="#C9A86E">
+                  <textPath href="#ring-top" startOffset="50%" text-anchor="middle">RECORDED · 8320 MOAPA WATER ST</textPath>
+                </text>
+                <text font-family="Montserrat, sans-serif" font-weight="600" font-size="9" letter-spacing="2.6" fill="#C9A86E">
+                  <textPath href="#ring-bot" startOffset="50%" text-anchor="middle">LAS VEGAS · NEVADA · 89131</textPath>
+                </text>
+                <!-- center -->
+                <line x1="100" y1="58" x2="100" y2="66" stroke="#C9A86E" stroke-width="1"/>
+                <line x1="100" y1="134" x2="100" y2="142" stroke="#C9A86E" stroke-width="1"/>
+                <text x="100" y="98" font-family="Playfair Display, serif" font-weight="700" font-size="26" fill="#fff" text-anchor="middle" letter-spacing="-0.5">5 · 19 · 26</text>
+                <text x="100" y="120" font-family="Montserrat, sans-serif" font-weight="600" font-size="9" letter-spacing="2.6" fill="#C9A86E" text-anchor="middle">3:19 PM PT</text>
+              </svg>
+              <hr class="rule" style="flex:1;width:auto;opacity:0.45;">
+            </div>
+            <div style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:34px;color:rgba(255,255,255,0.78);text-align:center;letter-spacing:-0.005em;">
+              On the record. Officially home.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================== 8 — CTA ====================================================== -->
+  <div class="cell has-motion">
+    <div class="num"><span>08 / 08</span><b>The CTA · Motion</b></div>
+    <div class="stage">
+      <div class="slide lt anim" data-screen-label="08 CTA">
+        <div class="brk"><i></i><b></b></div>
+
+        <div style="position:absolute;top:var(--safe);left:var(--pad);right:var(--pad);display:flex;justify-content:space-between;align-items:flex-start;">
+          <div>
+            <div class="wordmark" style="font-size:32px;">Rose Homes <span class="lv" style="font-size:20px;">LV</span></div>
+            <div class="agency">Ryan Rose · Las Vegas</div>
+          </div>
+          <span class="label muted">08 · 08</span>
+        </div>
+
+        <div class="safe" style="justify-content:center;gap:36px;top:200px;">
+          <span class="eyebrow">Life won&rsquo;t wait</span>
+          <div class="display" style="font-size:108px;">Thinking about<br/>your move?</div>
+          <div style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:36px;color:var(--slate);letter-spacing:-0.005em;margin-top:-8px;">Borrowing the seller&rsquo;s trust name. Felt right.</div>
+          <hr class="rule">
+          <div class="body body-lg" style="max-width:820px;font-size:32px;">
+            Whether you're relocating to Vegas or just ready for the next chapter, I'd love to help you find your Moapa Water.
+          </div>
+
+          <!-- CTA button -->
+          <div style="display:inline-flex;align-items:center;gap:20px;background:var(--navy);color:#fff;padding:28px 40px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;letter-spacing:0.24em;text-transform:uppercase;width:max-content;margin-top:16px;">
+            <span>DM me or visit rosehomeslv.com</span>
+            <span class="cta-arr" style="position:relative;width:24px;height:1px;background:var(--gold);display:inline-block;">
+              <span style="position:absolute;right:-1px;top:-5px;width:11px;height:11px;border-top:1px solid var(--gold);border-right:1px solid var(--gold);transform:rotate(45deg);"></span>
+            </span>
+          </div>
+
+          <!-- contact strip -->
+          <div style="margin-top:48px;border-top:1px solid rgba(28,35,51,0.15);padding-top:32px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;">
+            <div>
+              <div class="label muted" style="font-size:11px;">Agent</div>
+              <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:28px;margin-top:8px;letter-spacing:-0.005em;">Ryan Rose</div>
+            </div>
+            <div>
+              <div class="label muted" style="font-size:11px;">Brokerage</div>
+              <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:28px;margin-top:8px;letter-spacing:-0.005em;">Real Broker, LLC</div>
+            </div>
+            <div>
+              <div class="label muted" style="font-size:11px;">Direct</div>
+              <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:28px;margin-top:8px;letter-spacing:-0.005em;">702 · 747 · 5921</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // Auto-scale each .slide to fit its .stage container
+  function fit(){
+    document.querySelectorAll('.stage').forEach(stage=>{
+      const slide = stage.querySelector('.slide');
+      if(!slide) return;
+      const w = stage.clientWidth;
+      const scale = w / 1080;
+      slide.style.transform = `scale(${scale})`;
+    });
+  }
+  window.addEventListener('resize', fit);
+  window.addEventListener('load', fit);
+  setTimeout(fit, 50);
+
+  // Deterministic confetti — gold dots / lines / rings scattered around edges
+  function confetti(){
+    const host = document.querySelector('.confetti');
+    if(!host) return;
+    // seeded positions [x%, y%, kind, rotation]
+    const items = [
+      [6,12,'s',-20],[12,22,'d',0],[18,8,'o',0],[26,16,'s',30],[34,9,'d',0],
+      [44,14,'s',-10],[58,8,'o',0],[68,12,'d',0],[78,18,'s',45],[88,9,'d',0],
+      [92,22,'o',0],[4,38,'d',0],[8,55,'s',-30],[3,72,'o',0],[6,86,'d',0],
+      [12,92,'s',20],[22,88,'o',0],[34,94,'d',0],[46,90,'s',-15],[58,93,'d',0],
+      [70,89,'o',0],[82,94,'s',30],[92,90,'d',0],[95,76,'o',0],[93,58,'s',-45],
+      [96,42,'d',0],[88,30,'o',0],[2,28,'s',60],[16,82,'d',0],[80,82,'o',0]
+    ];
+    host.innerHTML = items.map(([x,y,k,r],i)=>{
+      const delay = (i % 8) * 0.22;
+      return `<span class="${k}" style="left:${x}%;top:${y}%;transform:translate(-50%,-50%) rotate(${r}deg);opacity:${k==='o'?0.55:0.75};animation-delay:${delay}s;"></span>`;
+    }).join('');
+  }
+  confetti();
+</script>
+
+<!-- ===== Export panel ===== -->
+<div class="xp" id="xp">
+  <div class="xp-head" onclick="document.getElementById('xp').classList.toggle('collapsed')">
+    <span class="ttl">Export &amp; Download</span>
+    <span class="tog">−</span>
+  </div>
+  <div class="xp-body">
+    <h4>All slides</h4>
+    <button class="primary" onclick="downloadZip()">Download 8 PNGs (.zip)</button>
+    <button onclick="window.print()">Print / Save as PDF</button>
+    <div class="status" id="xp-status"></div>
+
+    <h4>Individual PNG</h4>
+    <div class="row" id="xp-png-rows"></div>
+
+    <h4>Motion slides — record as video</h4>
+    <div class="note" style="margin-bottom:2px;">Opens slide at exact 1080×1350 with looping animation. Use a screen recorder (Cmd+Shift+5 on Mac, Xbox Game Bar on PC) to capture, then convert to MP4 for Instagram.</div>
+    <div class="row" id="xp-rec-rows"></div>
+  </div>
+</div>
+
+<!-- CDN libs (loaded lazily) -->
+<script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.13/dist/html-to-image.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+
+<script>
+  // Solo mode — ?slide=N renders just that slide at full size for recording
+  (function soloMode(){
+    const params = new URLSearchParams(location.search);
+    const n = parseInt(params.get('slide'), 10);
+    if(!n || n<1 || n>8) return;
+    document.body.classList.add('solo');
+    document.title = `Slide ${n} · Moapa Water Carousel`;
+    window.addEventListener('load', ()=>{
+      const slide = document.querySelectorAll('.slide')[n-1];
+      const stage = document.createElement('div');
+      stage.className = 'solo-stage';
+      document.body.appendChild(stage);
+      stage.appendChild(slide);
+      // Auto-replay one-shot animations every 7s so screen recorder catches a loop
+      const replay = ()=>{
+        const hasAnim = slide.classList.contains('anim');
+        if(hasAnim){ slide.classList.remove('anim'); void slide.offsetWidth; slide.classList.add('anim'); }
+      };
+      setInterval(replay, 7000);
+    });
+  })();
+
+  // Populate per-slide button rows
+  (function buildRows(){
+    const labels = ['Hook','Setup','Quote','Numbers','Twist','Win','Moment','CTA'];
+    const motion = [1,4,5,7,8];
+    const pngRow = document.getElementById('xp-png-rows');
+    const recRow = document.getElementById('xp-rec-rows');
+    if(!pngRow) return;
+    labels.forEach((l, i)=>{
+      const n = i+1;
+      const num = String(n).padStart(2,'0');
+      const b = document.createElement('button');
+      b.textContent = `${num} ${l}`;
+      b.onclick = ()=> downloadOne(n);
+      pngRow.appendChild(b);
+    });
+    motion.forEach(n=>{
+      const num = String(n).padStart(2,'0');
+      const a = document.createElement('a');
+      a.className = 'btn';
+      a.href = `?slide=${n}`;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = `${num} ↗`;
+      recRow.appendChild(a);
+    });
+  })();
+
+  // === PNG export via html-to-image ===
+  async function captureSlide(slideEl){
+    // Temporarily clear scale so html-to-image captures at native 1080x1350
+    const old = slideEl.style.transform;
+    slideEl.style.transform = 'scale(1)';
+    slideEl.style.transformOrigin = 'top left';
+    await new Promise(r=>setTimeout(r,80));
+    const blob = await htmlToImage.toBlob(slideEl, {
+      width: 1080, height: 1350,
+      pixelRatio: 2, cacheBust: true,
+      backgroundColor: getComputedStyle(slideEl).backgroundColor || '#000',
+    });
+    slideEl.style.transform = old;
+    return blob;
+  }
+
+  async function downloadOne(n){
+    const status = document.getElementById('xp-status');
+    status.textContent = `Rendering slide ${n}…`;
+    try{
+      const slide = document.querySelectorAll('.slide')[n-1];
+      const blob = await captureSlide(slide);
+      const link = document.createElement('a');
+      link.download = `Moapa-Water-${String(n).padStart(2,'0')}.png`;
+      link.href = URL.createObjectURL(blob);
+      link.click();
+      URL.revokeObjectURL(link.href);
+      status.textContent = `Slide ${n} downloaded.`;
+    }catch(err){
+      console.error(err);
+      status.textContent = `Slide ${n} failed: ${err.message}`;
+    }
+  }
+
+  async function downloadZip(){
+    const status = document.getElementById('xp-status');
+    const btns = document.querySelectorAll('.xp button');
+    btns.forEach(b=>b.disabled=true);
+    try{
+      const zip = new JSZip();
+      const slides = document.querySelectorAll('.slide');
+      for(let i=0;i<slides.length;i++){
+        status.textContent = `Rendering ${i+1}/${slides.length}…`;
+        const blob = await captureSlide(slides[i]);
+        zip.file(`Moapa-Water-${String(i+1).padStart(2,'0')}.png`, blob);
+      }
+      status.textContent = `Building zip…`;
+      const zipBlob = await zip.generateAsync({type:'blob'});
+      const link = document.createElement('a');
+      link.download = 'Moapa-Water-Carousel.zip';
+      link.href = URL.createObjectURL(zipBlob);
+      link.click();
+      URL.revokeObjectURL(link.href);
+      status.textContent = `Downloaded zip (8 PNGs, 1080×1350).`;
+    }catch(err){
+      console.error(err);
+      status.textContent = `Failed: ${err.message}`;
+    }finally{
+      btns.forEach(b=>b.disabled=false);
+    }
+  }
+</script>
+
+</body>
+</html>

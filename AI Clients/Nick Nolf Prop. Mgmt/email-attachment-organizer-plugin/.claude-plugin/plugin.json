@@ -1,0 +1,20 @@
+{
+  "name": "email-attachment-organizer",
+  "version": "1.0.0",
+  "description": "Use when someone asks to organize email attachments, file invoices or estimates to Google Drive, download and rename attachments from Gmail, or manage TNG Property Management document filing.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": [
+    "property-management",
+    "email",
+    "attachments",
+    "google-drive",
+    "filing",
+    "invoices",
+    "tng",
+    "nick-nolf"
+  ],
+  "skills": "./skills/"
+}

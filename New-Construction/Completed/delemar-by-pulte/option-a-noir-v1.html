@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- COMMUNITY NAME -->
+    <title>Delamar by Pulte Homes | New Construction in SW Las Vegas</title>
+    <meta name="description" content="New construction homes at Delamar by Pulte Homes in SW Las Vegas. 4-6 bedrooms, 2,990-4,220 sq ft. Starting from $640,990. Southern Highlands amenities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* ============================
+           RESET & BASE
+           ============================ */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            line-height: 1.6;
+            background: #0b0b0b;
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; display: block; }
+        a { color: inherit; text-decoration: none; }
+
+        /* ============================
+           DESIGN TOKENS
+           ============================ */
+        :root {
+            --dark: #0b0b0b;
+            --dark-surface: #141414;
+            --dark-card: #1a1a1a;
+            --light: #f5f3ef;
+            --light-alt: #eae7e1;
+            --copper: #c4956a;
+            --copper-hover: #d4a57a;
+            --copper-muted: rgba(196,149,106,0.15);
+            --text-dark: #ffffff;
+            --text-dark-muted: rgba(255,255,255,0.55);
+            --text-light: #1a1a1a;
+            --text-light-muted: #777;
+            --radius: 12px;
+            --radius-sm: 8px;
+            --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow: 0 4px 24px rgba(0,0,0,0.12);
+        }
+
+        /* ============================
+           UTILITY
+           ============================ */
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+        .section-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .section-label::after {
+            content: '';
+            flex: 1;
+            max-width: 60px;
+            height: 1px;
+        }
+        .section-label--light {
+            color: var(--text-light-muted);
+        }
+        .section-label--light::after {
+            background: rgba(0,0,0,0.15);
+        }
+        .section-label--dark {
+            color: var(--text-dark-muted);
+        }
+        .section-label--dark::after {
+            background: rgba(255,255,255,0.2);
+        }
+        .section-label--copper {
+            color: var(--copper);
+        }
+        .section-label--copper::after {
+            background: var(--copper);
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================
+           STICKY LEAD BAR
+           ============================ */
+        .lead-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(11,11,11,0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            padding: 12px 0;
+        }
+        .lead-bar-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .lead-bar-brand {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 22px;
+            letter-spacing: 2px;
+            color: #fff;
+            white-space: nowrap;
+        }
+        .lead-bar-form {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .lead-bar-form input {
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-size: 13px;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            width: 160px;
+            transition: border-color var(--transition);
+        }
+        .lead-bar-form input::placeholder {
+            color: rgba(255,255,255,0.35);
+        }
+        .lead-bar-form input:focus {
+            outline: none;
+            border-color: var(--copper);
+        }
+        .lead-bar-form button {
+            background: var(--copper);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: background var(--transition);
+            white-space: nowrap;
+        }
+        .lead-bar-form button:hover {
+            background: var(--copper-hover);
+        }
+        /* LOFTY TAG */
+        .lead-bar-form input[type="hidden"] { display: none; }
+
+        /* ============================
+           HERO
+           ============================ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 28px 80px;
+            padding-top: 80px;
+            background: var(--dark);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 70% 40%, rgba(196,149,106,0.06) 0%, transparent 70%),
+                radial-gradient(ellipse 50% 50% at 20% 80%, rgba(196,149,106,0.04) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero-content {
+            max-width: 1120px;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-eyebrow {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(80px, 15vw, 180px);
+            line-height: 0.9;
+            color: #fff;
+            letter-spacing: 4px;
+            margin-bottom: 24px;
+        }
+        .hero-sub {
+            font-size: 18px;
+            font-weight: 300;
+            color: var(--text-dark-muted);
+            max-width: 460px;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 16px 0;
+            border-bottom: 2px solid var(--copper);
+            transition: gap var(--transition);
+        }
+        .hero-cta:hover {
+            gap: 18px;
+        }
+        .hero-cta .arrow {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--copper);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            transition: transform var(--transition);
+        }
+        .hero-cta:hover .arrow {
+            transform: translateX(4px);
+        }
+        .hero-scroll {
+            position: absolute;
+            bottom: 28px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--text-dark-muted);
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            animation: pulseDown 2s ease-in-out infinite;
+        }
+        .hero-scroll .line {
+            width: 1px;
+            height: 40px;
+            background: linear-gradient(to bottom, var(--copper), transparent);
+        }
+        @keyframes pulseDown {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(6px); }
+        }
+
+        /* ============================
+           STATS
+           ============================ */
+        .stats-section {
+            background: var(--dark);
+            padding: 0 0 80px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 40px 20px;
+            border-right: 1px solid rgba(255,255,255,0.06);
+        }
+        .stat-item:last-child { border-right: none; }
+        .stat-value {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 52px;
+            color: #fff;
+            letter-spacing: 2px;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .stat-label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-dark-muted);
+        }
+
+        /* ============================
+           INCENTIVE
+           ============================ */
+        .incentive {
+            background: var(--copper);
+            padding: 18px 28px;
+            text-align: center;
+        }
+        .incentive p {
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            letter-spacing: 0.5px;
+        }
+        .incentive strong {
+            font-weight: 700;
+        }
+
+        /* ============================
+           ABOUT (light section)
+           ============================ */
+        .about-section {
+            background: var(--light);
+            padding: 100px 0;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .about-headline {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 52px;
+            line-height: 1.05;
+            letter-spacing: 2px;
+            color: var(--text-light);
+        }
+        .about-text p {
+            font-size: 16px;
+            line-height: 1.85;
+            color: var(--text-light-muted);
+            margin-bottom: 20px;
+        }
+        .about-text p:last-child { margin-bottom: 0; }
+
+        /* ============================
+           FLOOR PLANS (dark section)
+           ============================ */
+        .plans-section {
+            background: var(--dark);
+            padding: 100px 0;
+        }
+        .plans-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 60px;
+            gap: 40px;
+        }
+        .plans-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 48px;
+            color: #fff;
+            letter-spacing: 2px;
+            line-height: 1.05;
+        }
+        .plans-subtitle {
+            font-size: 15px;
+            color: var(--text-dark-muted);
+            max-width: 360px;
+            text-align: right;
+        }
+
+        /* Plan switcher */
+        .plan-tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            margin-bottom: 48px;
+        }
+        .plan-tab {
+            flex: 1;
+            padding: 20px 16px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            transition: all var(--transition);
+        }
+        .plan-tab::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--copper);
+            transform: scaleX(0);
+            transition: transform var(--transition);
+        }
+        .plan-tab.active::after {
+            transform: scaleX(1);
+        }
+        .plan-tab-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 26px;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.3);
+            transition: color var(--transition);
+            margin-bottom: 4px;
+        }
+        .plan-tab.active .plan-tab-name {
+            color: #fff;
+        }
+        .plan-tab:hover .plan-tab-name {
+            color: rgba(255,255,255,0.7);
+        }
+        .plan-tab-price {
+            font-size: 13px;
+            color: var(--text-dark-muted);
+        }
+        .plan-tab .pin-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 1.5px solid rgba(255,255,255,0.15);
+            background: transparent;
+            color: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            transition: all var(--transition);
+        }
+        .plan-tab .pin-btn:hover {
+            border-color: rgba(255,255,255,0.4);
+        }
+        .plan-tab.pinned .pin-btn {
+            background: var(--copper);
+            border-color: var(--copper);
+            color: #fff;
+        }
+
+        /* Spec panel */
+        .plan-panels {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+        }
+        .plan-panel {
+            flex: 1;
+            max-width: 520px;
+            background: var(--dark-card);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: var(--radius);
+            padding: 40px;
+            border-top: 3px solid var(--copper);
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity var(--transition), transform var(--transition);
+        }
+        .plan-panel.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .plan-panel-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 36px;
+            letter-spacing: 2px;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        .plan-panel-builder {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-dark-muted);
+            margin-bottom: 32px;
+        }
+        .plan-spec-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .plan-spec-item {
+            text-align: center;
+            padding: 20px 12px;
+            border-radius: var(--radius-sm);
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.04);
+        }
+        .plan-spec-value {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 28px;
+            letter-spacing: 1px;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        .plan-spec-value.highlight {
+            color: var(--copper);
+        }
+        .plan-spec-label {
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-dark-muted);
+        }
+        .plan-features {
+            list-style: none;
+        }
+        .plan-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            font-size: 14px;
+            color: var(--text-dark-muted);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .plan-features li:last-child { border-bottom: none; }
+        .plan-features li::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--copper);
+            flex-shrink: 0;
+        }
+        .plan-compare-hint {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 13px;
+            color: var(--text-dark-muted);
+        }
+
+        /* ============================
+           GALLERY (light section)
+           ============================ */
+        .gallery-section {
+            background: var(--light);
+            padding: 100px 0;
+        }
+        .gallery-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 48px;
+            letter-spacing: 2px;
+            color: var(--text-light);
+            margin-bottom: 48px;
+        }
+        .gallery-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .gallery-tab {
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition);
+            background: transparent;
+            border: 1px solid rgba(0,0,0,0.12);
+            color: var(--text-light-muted);
+        }
+        .gallery-tab:hover {
+            border-color: rgba(0,0,0,0.25);
+            color: var(--text-light);
+        }
+        .gallery-tab.active {
+            background: var(--text-light);
+            color: #fff;
+            border-color: var(--text-light);
+        }
+        .gallery-display {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+        }
+        .gallery-panel {
+            flex: 1;
+            max-width: 540px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: #fff;
+            border: 1px solid rgba(0,0,0,0.06);
+            box-shadow: var(--shadow);
+            opacity: 0;
+            transform: scale(0.97);
+            transition: opacity var(--transition), transform var(--transition);
+        }
+        .gallery-panel.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .gallery-panel-label {
+            padding: 16px 24px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-light-muted);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .gallery-image-area {
+            aspect-ratio: 4 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--light-alt);
+            position: relative;
+        }
+        .gallery-image-area img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Gallery CTA */
+        .gallery-cta {
+            text-align: center;
+            margin-top: 48px;
+            padding: 40px 24px;
+            background: #fff;
+            border: 1px solid rgba(0,0,0,0.06);
+            border-radius: var(--radius);
+        }
+        .gallery-cta p {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+        .gallery-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--text-light);
+            color: #fff;
+            padding: 14px 32px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            transition: background var(--transition), transform var(--transition);
+        }
+        .gallery-cta-btn:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+
+        /* ============================
+           CTA BAND
+           ============================ */
+        .cta-band {
+            background: var(--dark);
+            padding: 80px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .cta-band h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(40px, 8vw, 90px);
+            color: #fff;
+            letter-spacing: 4px;
+            line-height: 1;
+            margin-bottom: 32px;
+        }
+        .cta-band h2 span {
+            color: var(--copper);
+        }
+        .cta-band-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--copper);
+            color: #fff;
+            padding: 18px 40px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            transition: background var(--transition), transform var(--transition);
+        }
+        .cta-band-btn:hover {
+            background: var(--copper-hover);
+            transform: translateY(-2px);
+        }
+
+        /* ============================
+           LEAD FORM (dark section)
+           ============================ */
+        .form-section {
+            background: var(--dark-surface);
+            padding: 100px 0;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .form-left-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 48px;
+            letter-spacing: 2px;
+            color: #fff;
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+        .form-left-sub {
+            font-size: 16px;
+            color: var(--text-dark-muted);
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+        .form-left-contact {
+            font-size: 14px;
+            color: var(--text-dark-muted);
+            line-height: 2;
+        }
+        .form-left-contact a {
+            color: var(--copper);
+            transition: color var(--transition);
+        }
+        .form-left-contact a:hover {
+            color: var(--copper-hover);
+        }
+        .form-wrapper {
+            background: var(--dark-card);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: var(--radius);
+            padding: 48px 40px;
+        }
+        .lead-form label {
+            display: block;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-dark-muted);
+            margin-bottom: 8px;
+        }
+        .lead-form input[type="text"],
+        .lead-form input[type="email"],
+        .lead-form input[type="tel"] {
+            width: 100%;
+            padding: 14px 16px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: var(--radius-sm);
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            background: rgba(255,255,255,0.04);
+            color: #fff;
+            transition: border-color var(--transition);
+        }
+        .lead-form input::placeholder {
+            color: rgba(255,255,255,0.25);
+        }
+        .lead-form input:focus {
+            outline: none;
+            border-color: var(--copper);
+        }
+        .lead-form button {
+            width: 100%;
+            padding: 16px;
+            background: var(--copper);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background var(--transition), transform var(--transition);
+        }
+        .lead-form button:hover {
+            background: var(--copper-hover);
+            transform: translateY(-1px);
+        }
+        .privacy-note {
+            font-size: 12px;
+            color: rgba(255,255,255,0.25);
+            text-align: center;
+            margin-top: 16px;
+            line-height: 1.6;
+        }
+
+        /* ============================
+           FOOTER
+           ============================ */
+        .footer {
+            background: var(--dark);
+            border-top: 1px solid rgba(255,255,255,0.06);
+            color: var(--text-dark-muted);
+            text-align: center;
+            padding: 48px 24px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .footer .agent-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 22px;
+            letter-spacing: 2px;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        .footer a {
+            color: rgba(255,255,255,0.5);
+            transition: color var(--transition);
+        }
+        .footer a:hover { color: var(--copper); }
+        .footer .disclaimer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: rgba(255,255,255,0.2);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================
+           FLOATING CTA CIRCLE
+           ============================ */
+        .floating-cta {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 999;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--copper);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(196,149,106,0.4);
+            transition: transform var(--transition), box-shadow var(--transition);
+            cursor: pointer;
+        }
+        .floating-cta:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 28px rgba(196,149,106,0.5);
+        }
+        .floating-cta svg {
+            width: 20px;
+            height: 20px;
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* ============================
+           RESPONSIVE
+           ============================ */
+        @media (max-width: 900px) {
+            .about-grid { grid-template-columns: 1fr; gap: 32px; }
+            .form-grid { grid-template-columns: 1fr; gap: 48px; }
+            .plans-header { flex-direction: column; align-items: flex-start; }
+            .plans-subtitle { text-align: left; }
+        }
+
+        @media (max-width: 768px) {
+            .lead-bar-inner { flex-direction: column; gap: 8px; }
+            .lead-bar-form { width: 100%; }
+            .lead-bar-form input { flex: 1; min-width: 0; }
+            .lead-bar { padding: 10px 0; }
+            .hero { padding-top: 120px; min-height: 85vh; }
+            .hero h1 { font-size: 64px; }
+
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .stat-item { border-bottom: 1px solid rgba(255,255,255,0.06); }
+            .stat-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.06); }
+            .stat-item:nth-child(even) { border-right: none; }
+            .stat-item:nth-child(n+3) { border-bottom: none; }
+
+            .plan-tabs { flex-wrap: wrap; }
+            .plan-tab { flex: 1 1 45%; }
+            .plan-panels { flex-direction: column; align-items: center; }
+            .plan-panel { max-width: 100%; }
+
+            .gallery-display { flex-direction: column; align-items: center; }
+            .gallery-panel { max-width: 100%; }
+
+            .about-headline { font-size: 40px; }
+            .plans-title, .gallery-title { font-size: 38px; }
+            .form-left-title { font-size: 38px; }
+            .form-wrapper { padding: 36px 24px; }
+        }
+
+        @media (max-width: 480px) {
+            .hero { padding-bottom: 60px; min-height: 75vh; }
+            .hero h1 { font-size: 48px; }
+            .stat-value { font-size: 40px; }
+            .plan-tab { flex: 1 1 100%; }
+            .plan-spec-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .gallery-tabs { gap: 6px; }
+            .gallery-tab { padding: 8px 14px; font-size: 12px; }
+            .cta-band h2 { letter-spacing: 2px; }
+            .floating-cta { bottom: 20px; right: 20px; width: 48px; height: 48px; }
+        }
+    </style>
+
+    <!-- RealEstateAgent Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Ryan Rose",
+        "url": "https://rosehomeslv.com",
+        "telephone": "+1-702-747-5921",
+        "email": "ryan@rosehomeslv.com",
+        "description": "Las Vegas new construction specialist helping buyers find homes at Delamar by Pulte Homes and other SW Las Vegas communities.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Las Vegas",
+            "addressRegion": "NV",
+            "postalCode": "89141",
+            "addressCountry": "US"
+        },
+        "worksFor": {
+            "@type": "RealEstateAgent",
+            "name": "Real Broker LLC"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Las Vegas"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ======== STICKY LEAD BAR ======== -->
+    <div class="lead-bar">
+        <div class="container lead-bar-inner">
+            <!-- COMMUNITY NAME -->
+            <div class="lead-bar-brand">DELAMAR</div>
+            <form class="lead-bar-form" action="#" method="POST">
+                <!-- LOFTY TAG -->
+                <input type="hidden" name="tag" value="delemar-by-pulte">
+                <input type="hidden" name="source" value="new-construction-landing-page">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="tel" name="phone" placeholder="Phone number" required>
+                <button type="submit">Get Info</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- BUILDER NAME -->
+            <div class="hero-eyebrow">A Pulte Homes Community</div>
+            <!-- COMMUNITY NAME -->
+            <h1>DELAMAR</h1>
+            <!-- COMMUNITY TAGLINE -->
+            <p class="hero-sub">New construction homes in SW Las Vegas, nestled within the Southern Highlands community. Starting from <!-- STARTING PRICE -->$640,990.</p>
+            <a href="#contact" class="hero-cta">
+                Explore Floor Plans
+                <span class="arrow">&#8599;</span>
+            </a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- ======== STATS ======== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <!-- STARTING PRICE -->
+                    <div class="stat-value" data-count="640">$640K+</div>
+                    <div class="stat-label">Starting Price</div>
+                </div>
+                <div class="stat-item">
+                    <!-- SQ FT MAX -->
+                    <div class="stat-value" data-count="4220">4,220</div>
+                    <div class="stat-label">Max Square Feet</div>
+                </div>
+                <div class="stat-item">
+                    <!-- BEDROOM RANGE -->
+                    <div class="stat-value">4 &ndash; 6</div>
+                    <div class="stat-label">Bedrooms</div>
+                </div>
+                <div class="stat-item">
+                    <!-- FLOOR PLANS -->
+                    <div class="stat-value" data-count="4">4</div>
+                    <div class="stat-label">Floor Plans</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== INCENTIVE BANNER ======== -->
+    <div class="incentive">
+        <!-- INCENTIVE TEXT -->
+        <p><strong>Current Incentive:</strong> Up to $20,000 in closing cost credits + 4.99% fixed rate for 30 years through Pulte Mortgage</p>
+    </div>
+
+    <!-- ======== ABOUT ======== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-label section-label--copper">About</div>
+            <div class="about-grid">
+                <div class="reveal">
+                    <!-- COMMUNITY NAME -->
+                    <h2 class="about-headline">A NEW STANDARD<br>IN SOUTHERN<br>HIGHLANDS</h2>
+                </div>
+                <div class="about-text reveal">
+                    <p>Delamar is a new-construction community by Pulte Homes in southwest Las Vegas. Located within the Highlands Ranch area of Southern Highlands, it puts you close to resort-style amenities, top-rated golf, and everyday shopping. The community sits just 6 miles from the Las Vegas Strip with easy access to I-15.</p>
+                    <p>Homes at Delamar range from 2,990 to 4,220 square feet with 4 to 6 bedrooms. There are four floor plans to choose from, including two-story and three-story layouts. Every home is built by Pulte, a national builder known for Life Tested designs that focus on how families actually use their space.</p>
+                    <!-- HOA AMOUNT -->
+                    <p>The HOA is $150 per month and covers common area upkeep and landscaping. Residents enjoy access to Southern Highlands amenities, including a 13,000 square foot clubhouse, multiple pools, a spa, and the Olympia Sports Park. <!-- MODEL HOME ADDRESS -->The model home is open for tours at 10123 Goswell Park Street, Las Vegas, NV 89141.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FLOOR PLANS ======== -->
+    <!-- FLOOR PLAN MODULE — swap plan data in the JS config object at the top of the script block -->
+    <section class="plans-section" id="floorplans">
+        <div class="container">
+            <div class="section-label section-label--dark">Floor Plans</div>
+            <div class="plans-header">
+                <h2 class="plans-title">CHOOSE YOUR<br>FLOOR PLAN</h2>
+                <p class="plans-subtitle">Select a plan to explore details. Pin up to two plans to compare side by side.</p>
+            </div>
+
+            <div class="plan-tabs" id="planTabs">
+                <!-- Rendered by JS -->
+            </div>
+
+            <div class="plan-panels" id="planPanels">
+                <!-- Rendered by JS -->
+            </div>
+
+            <div class="plan-compare-hint" id="planHint">
+                Click the + icon on any tab to pin it for comparison
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== GALLERY ======== -->
+    <section class="gallery-section" id="fpGallery">
+        <div class="container">
+            <div class="section-label section-label--copper">Gallery</div>
+            <h2 class="gallery-title">FIRST FLOOR PLANS</h2>
+
+            <div class="gallery-tabs" id="galleryTabs">
+                <!-- Rendered by JS -->
+            </div>
+
+            <div class="gallery-display" id="galleryDisplay">
+                <!-- Rendered by JS -->
+            </div>
+
+            <div class="gallery-cta">
+                <p>Want to see the full floor plans for every level?</p>
+                <a href="#contact" class="gallery-cta-btn">Get the Complete Floor Plans &#8599;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== CTA BAND ======== -->
+    <section class="cta-band">
+        <h2>LET'S FIND YOUR<br><span>FUTURE HOME</span></h2>
+        <a href="#contact" class="cta-band-btn">Schedule a Tour &#8599;</a>
+    </section>
+
+    <!-- ======== LEAD FORM ======== -->
+    <section class="form-section" id="contact">
+        <div class="container">
+            <div class="form-grid">
+                <div>
+                    <div class="section-label section-label--copper">Get in Touch</div>
+                    <!-- COMMUNITY NAME -->
+                    <h2 class="form-left-title">GET THE<br>DELAMAR GUIDE</h2>
+                    <p class="form-left-sub">Floor plans, pricing, incentives, and availability sent to your inbox. No obligation.</p>
+                    <div class="form-left-contact">
+                        <!-- AGENT NAME -->
+                        <strong style="color:#fff">Ryan Rose</strong><br>
+                        Real Broker LLC<br>
+                        <!-- AGENT PHONE -->
+                        <a href="tel:7027475921">702-747-5921</a><br>
+                        <!-- AGENT EMAIL -->
+                        <a href="mailto:ryan@rosehomeslv.com">ryan@rosehomeslv.com</a>
+                    </div>
+                </div>
+                <div class="form-wrapper">
+                    <form class="lead-form" action="#" method="POST">
+                        <!-- LOFTY TAG -->
+                        <input type="hidden" name="tag" value="delemar-by-pulte">
+                        <input type="hidden" name="source" value="new-construction-landing-page">
+
+                        <label for="name2">Full Name</label>
+                        <input type="text" id="name2" name="name" placeholder="Your full name" required>
+
+                        <label for="email2">Email</label>
+                        <input type="email" id="email2" name="email" placeholder="you@example.com" required>
+
+                        <label for="phone2">Phone</label>
+                        <input type="tel" id="phone2" name="phone" placeholder="(702) 555-1234">
+
+                        <button type="submit">Send Me the Guide</button>
+                        <!-- COMMUNITY NAME -->
+                        <p class="privacy-note">Your information is kept private and never shared. By submitting, you agree to be contacted about Delamar and other new-construction opportunities.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <!-- AGENT NAME -->
+        <div class="agent-name">RYAN ROSE</div>
+        <div>Real Broker LLC</div>
+        <!-- AGENT PHONE --> <!-- AGENT EMAIL -->
+        <div><a href="tel:7027475921">702-747-5921</a> &nbsp;|&nbsp; <a href="mailto:ryan@rosehomeslv.com">ryan@rosehomeslv.com</a></div>
+        <div><a href="https://rosehomeslv.com" target="_blank">rosehomeslv.com</a></div>
+        <p class="disclaimer">Prices, incentives, and availability are subject to change without notice. Contact the builder or your agent for the most current information.</p>
+    </footer>
+
+    <!-- ======== FLOATING CTA ======== -->
+    <a href="#contact" class="floating-cta" title="Get in touch">
+        <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+    </a>
+
+    <!-- ======== JAVASCRIPT ======== -->
+    <script>
+    (function() {
+        'use strict';
+
+        /* ====================================================
+           FLOOR PLAN CONFIG
+           ==================================================== */
+        const PLANS = [
+            {
+                id: 'calico', name: 'Calico', price: 648990, priceLabel: 'From $648,990',
+                sqft: 2990, sqftLabel: '2,990+ sq ft', beds: '4-5', baths: '3-4', bathsLabel: '3-4',
+                stories: 2, garage: '3-car', accent: 'copper',
+                features: ['1st-floor bedroom + bath', 'Gathering room + cafe', "Owner's suite with WIC", '2-story / 3-car garage'],
+                image: 'images/calico-1st.jpg'
+            },
+            {
+                id: 'egan', name: 'Egan', price: 640990, priceLabel: 'From $640,990',
+                sqft: 3097, sqftLabel: '3,097+ sq ft', beds: '4-6', baths: '2-4', bathsLabel: '2-4',
+                stories: 2, garage: '2-car', accent: 'copper',
+                features: ['Gathering room / living room', "Private owner's retreat", 'Flex room + game room', '2-story / 2-car garage'],
+                image: 'images/egan-1st.jpg'
+            },
+            {
+                id: 'delano', name: 'Delano', price: 643990, priceLabel: 'From $643,990',
+                sqft: 3158, sqftLabel: '3,158+ sq ft', beds: '4-5', baths: '2-4', bathsLabel: '2-4',
+                stories: 2, garage: '2-car', accent: 'copper',
+                features: ['Gathering room + den', "Owner's suite with WIC", 'Loft + 5th bedroom option', '2-story / 2-car garage'],
+                image: 'images/delano-1st.jpg'
+            },
+            {
+                id: 'whitepine', name: 'White Pine', price: 787990, priceLabel: 'From $787,990',
+                sqft: 4220, sqftLabel: '4,220+ sq ft', beds: '4-5', baths: '2-4', bathsLabel: '2-4',
+                stories: 3, garage: '3-car', accent: 'copper',
+                features: ['Rooftop deck + balcony', "Chef's kitchen + game room", "Owner's suite with dual WIC", '3-story / 3-car garage'],
+                image: 'images/whitepine-1st.jpg'
+            }
+        ];
+
+        /* ====================================================
+           STATE
+           ==================================================== */
+        let selectedId = PLANS[0].id;
+        let pinnedIds = [];
+        function getPlan(id) { return PLANS.find(p => p.id === id); }
+
+        /* ====================================================
+           PLAN TABS + PANELS
+           ==================================================== */
+        const tabsEl = document.getElementById('planTabs');
+        const panelsEl = document.getElementById('planPanels');
+        const hintEl = document.getElementById('planHint');
+
+        function renderTabs() {
+            tabsEl.innerHTML = '';
+            PLANS.forEach(plan => {
+                const tab = document.createElement('div');
+                tab.className = 'plan-tab';
+                if (plan.id === selectedId) tab.classList.add('active');
+                if (pinnedIds.includes(plan.id)) tab.classList.add('pinned');
+
+                tab.innerHTML = '<div class="plan-tab-name">' + plan.name + '</div>' +
+                    '<div class="plan-tab-price">' + plan.priceLabel + '</div>' +
+                    '<button class="pin-btn" title="Pin for comparison">+</button>';
+
+                tab.addEventListener('click', function(e) {
+                    if (e.target.closest('.pin-btn')) return;
+                    selectedId = plan.id;
+                    update();
+                });
+                tab.querySelector('.pin-btn').addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    togglePin(plan.id);
+                });
+                tabsEl.appendChild(tab);
+            });
+        }
+
+        function togglePin(id) {
+            var idx = pinnedIds.indexOf(id);
+            if (idx > -1) { pinnedIds.splice(idx, 1); }
+            else { if (pinnedIds.length >= 2) pinnedIds.shift(); pinnedIds.push(id); }
+            update();
+        }
+
+        function buildPanel(plan, compareWith) {
+            var panel = document.createElement('div');
+            panel.className = 'plan-panel';
+            var hp = compareWith && plan.price > compareWith.price;
+            var hs = compareWith && plan.sqft > compareWith.sqft;
+            panel.innerHTML =
+                '<div class="plan-panel-name">' + plan.name + '</div>' +
+                '<div class="plan-panel-builder">Pulte Homes</div>' +
+                '<div class="plan-spec-grid">' +
+                    '<div class="plan-spec-item"><div class="plan-spec-value' + (hp ? ' highlight' : '') + '">' + plan.priceLabel.replace('From ', '') + '</div><div class="plan-spec-label">Starting Price</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-value' + (hs ? ' highlight' : '') + '">' + plan.sqftLabel + '</div><div class="plan-spec-label">Square Feet</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-value">' + plan.beds + ' bed</div><div class="plan-spec-label">Bedrooms</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-value">' + plan.bathsLabel + ' bath</div><div class="plan-spec-label">Bathrooms</div></div>' +
+                '</div>' +
+                '<ul class="plan-features">' + plan.features.map(function(f) { return '<li>' + f + '</li>'; }).join('') + '</ul>';
+            requestAnimationFrame(function() { requestAnimationFrame(function() { panel.classList.add('visible'); }); });
+            return panel;
+        }
+
+        function renderPanels() {
+            panelsEl.innerHTML = '';
+            if (pinnedIds.length === 2) {
+                var a = getPlan(pinnedIds[0]), b = getPlan(pinnedIds[1]);
+                panelsEl.appendChild(buildPanel(a, b));
+                panelsEl.appendChild(buildPanel(b, a));
+                hintEl.textContent = 'Comparing ' + a.name + ' and ' + b.name + '. Click a pin to remove.';
+            } else {
+                panelsEl.appendChild(buildPanel(getPlan(selectedId), null));
+                hintEl.textContent = 'Click the + icon on any tab to pin it for comparison';
+            }
+        }
+
+        /* ====================================================
+           GALLERY
+           ==================================================== */
+        var galleryTabsEl = document.getElementById('galleryTabs');
+        var galleryDisplayEl = document.getElementById('galleryDisplay');
+
+        function renderGalleryTabs() {
+            galleryTabsEl.innerHTML = '';
+            PLANS.forEach(function(plan) {
+                var tab = document.createElement('div');
+                tab.className = 'gallery-tab';
+                var isActive = pinnedIds.length === 2 ? pinnedIds.includes(plan.id) : plan.id === selectedId;
+                if (isActive) tab.classList.add('active');
+                tab.textContent = plan.name;
+                tab.addEventListener('click', function() { selectedId = plan.id; update(); });
+                galleryTabsEl.appendChild(tab);
+            });
+        }
+
+        function buildGalleryPanel(plan) {
+            var panel = document.createElement('div');
+            panel.className = 'gallery-panel';
+            var label = document.createElement('div');
+            label.className = 'gallery-panel-label';
+            label.textContent = plan.name + ' Floor Plan \u2014 First Floor';
+            panel.appendChild(label);
+            var area = document.createElement('div');
+            area.className = 'gallery-image-area';
+            if (plan.image) {
+                var img = document.createElement('img');
+                img.src = plan.image;
+                img.alt = plan.name + ' floor plan - first floor';
+                area.appendChild(img);
+            }
+            panel.appendChild(area);
+            requestAnimationFrame(function() { requestAnimationFrame(function() { panel.classList.add('visible'); }); });
+            return panel;
+        }
+
+        function renderGallery() {
+            renderGalleryTabs();
+            galleryDisplayEl.innerHTML = '';
+            if (pinnedIds.length === 2) {
+                galleryDisplayEl.appendChild(buildGalleryPanel(getPlan(pinnedIds[0])));
+                galleryDisplayEl.appendChild(buildGalleryPanel(getPlan(pinnedIds[1])));
+            } else {
+                galleryDisplayEl.appendChild(buildGalleryPanel(getPlan(selectedId)));
+            }
+        }
+
+        /* ====================================================
+           UPDATE
+           ==================================================== */
+        function update() {
+            renderTabs();
+            renderPanels();
+            renderGallery();
+        }
+        update();
+
+        /* ====================================================
+           SCROLL REVEAL
+           ==================================================== */
+        var reveals = document.querySelectorAll('.reveal');
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(function(el) { observer.observe(el); });
+
+    })();
+    </script>
+
+</body>
+</html>

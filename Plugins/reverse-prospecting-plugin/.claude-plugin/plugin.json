@@ -1,0 +1,11 @@
+{
+  "name": "reverse-prospecting",
+  "version": "1.0.0",
+  "description": "Generates HTML reverse prospecting emails for listings, then automates the MLS agent extraction and Kit broadcast setup via browser. Targets agents whose buyers have saved searches matching the property.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": ["real-estate", "email", "mls", "kit", "reverse-prospecting", "listing"],
+  "skills": "./skills/"
+}

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delamar by Pulte Homes | New Construction in SW Las Vegas</title>
+    <meta name="description" content="New construction homes at Delamar by Pulte Homes in SW Las Vegas. 4-6 bedrooms, 2,990-4,220 sq ft. Starting from $640,990. Southern Highlands amenities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            background: #0a0a0a;
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.6;
+        }
+        img { max-width: 100%; display: block; }
+        a { color: inherit; text-decoration: none; }
+
+        :root {
+            --bg: #0a0a0a;
+            --card: #131313;
+            --copper: #c4956a;
+            --copper-hover: #d4a57a;
+            --w: #ffffff;
+            --w60: rgba(255,255,255,0.6);
+            --w40: rgba(255,255,255,0.4);
+            --w20: rgba(255,255,255,0.2);
+            --w08: rgba(255,255,255,0.08);
+            --w04: rgba(255,255,255,0.04);
+            --r: 10px;
+            --t: 300ms cubic-bezier(0.4,0,0.2,1);
+        }
+        .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+        .wrap-wide { max-width: 1000px; margin: 0 auto; padding: 0 28px; }
+
+        .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ============================
+           TOP BAR — ultra compact
+           ============================ */
+        .topbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(10,10,10,0.92);
+            backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--w08);
+        }
+        .topbar-inner {
+            max-width: 720px; margin: 0 auto; padding: 0 28px;
+            display: flex; align-items: center; justify-content: space-between; height: 52px;
+        }
+        .topbar-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 18px; letter-spacing: 3px;
+        }
+        .topbar-btn {
+            background: var(--copper);
+            color: var(--w);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 1px; text-transform: uppercase;
+            transition: background var(--t);
+        }
+        .topbar-btn:hover { background: var(--copper-hover); }
+
+        /* ============================
+           HERO — single column, massive type
+           ============================ */
+        .hero {
+            padding: 160px 0 80px;
+            text-align: left;
+        }
+        .hero-kicker {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 4px; text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 32px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(72px, 16vw, 140px);
+            line-height: 0.88;
+            letter-spacing: 4px;
+            margin-bottom: 32px;
+        }
+        .hero-line {
+            width: 60px; height: 2px;
+            background: var(--copper);
+            margin-bottom: 32px;
+        }
+        .hero-desc {
+            font-size: 17px; font-weight: 300;
+            color: var(--w40);
+            max-width: 420px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+        .hero-form {
+            display: flex; gap: 8px;
+            flex-wrap: wrap;
+            max-width: 440px;
+        }
+        .hero-form input {
+            flex: 1; min-width: 120px;
+            padding: 14px 16px;
+            background: var(--w04);
+            border: 1px solid var(--w08);
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            color: var(--w);
+            transition: border-color var(--t);
+        }
+        .hero-form input::placeholder { color: var(--w20); }
+        .hero-form input:focus { outline: none; border-color: var(--copper); }
+        .hero-form button {
+            padding: 14px 28px;
+            background: var(--copper);
+            color: var(--w); border: none;
+            border-radius: 6px;
+            font-size: 13px; font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background var(--t);
+        }
+        .hero-form button:hover { background: var(--copper-hover); }
+
+        /* ============================
+           STATS — large counter row
+           ============================ */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            border-top: 1px solid var(--w08);
+            border-bottom: 1px solid var(--w08);
+        }
+        .stat-cell {
+            text-align: center;
+            padding: 40px 16px;
+            border-right: 1px solid var(--w08);
+        }
+        .stat-cell:last-child { border-right: none; }
+        .stat-num {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 44px;
+            letter-spacing: 2px;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .stat-lbl {
+            font-size: 10px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+        }
+
+        /* ============================
+           INCENTIVE — understated
+           ============================ */
+        .incentive {
+            padding: 16px 0;
+            text-align: center;
+            background: rgba(196,149,106,0.08);
+            border-bottom: 1px solid var(--w08);
+        }
+        .incentive p { font-size: 13px; color: var(--w60); }
+        .incentive strong { color: var(--copper); font-weight: 600; }
+
+        /* ============================
+           TEXT SECTION — minimal
+           ============================ */
+        .text-section {
+            padding: 100px 0;
+            border-bottom: 1px solid var(--w08);
+        }
+        .text-section-tag {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 40px;
+        }
+        .text-section p {
+            font-size: 17px;
+            line-height: 2;
+            color: var(--w40);
+            margin-bottom: 24px;
+        }
+        .text-section p:last-child { margin-bottom: 0; }
+
+        /* ============================
+           FLOOR PLAN LIST — stacked rows
+           ============================ */
+        .plans-section {
+            padding: 100px 0;
+            border-bottom: 1px solid var(--w08);
+        }
+        .plans-tag {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 40px;
+        }
+        .plan-rows {
+            border-top: 1px solid var(--w08);
+        }
+        .plan-row {
+            display: grid;
+            grid-template-columns: 48px 1fr auto auto;
+            align-items: center;
+            gap: 24px;
+            padding: 28px 0;
+            border-bottom: 1px solid var(--w08);
+            cursor: pointer;
+            transition: padding-left var(--t);
+        }
+        .plan-row:hover { padding-left: 8px; }
+        .plan-row.active { padding-left: 8px; }
+        .plan-row-num {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 28px;
+            color: var(--w20);
+            transition: color var(--t);
+        }
+        .plan-row.active .plan-row-num { color: var(--copper); }
+        .plan-row-info {}
+        .plan-row-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 28px;
+            letter-spacing: 2px;
+            color: var(--w20);
+            transition: color var(--t);
+            margin-bottom: 2px;
+        }
+        .plan-row.active .plan-row-name { color: var(--w); }
+        .plan-row:hover .plan-row-name { color: var(--w60); }
+        .plan-row-meta {
+            font-size: 12px;
+            color: var(--w20);
+            transition: color var(--t);
+        }
+        .plan-row.active .plan-row-meta { color: var(--w40); }
+        .plan-row-price {
+            font-size: 15px;
+            color: var(--w20);
+            transition: color var(--t);
+            white-space: nowrap;
+        }
+        .plan-row.active .plan-row-price { color: var(--w60); }
+        .plan-row-arrow {
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            border: 1px solid var(--w08);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 14px;
+            color: var(--w20);
+            transition: all var(--t);
+        }
+        .plan-row.active .plan-row-arrow {
+            background: var(--copper);
+            border-color: var(--copper);
+            color: var(--w);
+        }
+
+        /* Detail panel under rows */
+        .plan-detail-area {
+            margin-top: 40px;
+        }
+        .plan-detail-panel {
+            background: var(--card);
+            border: 1px solid var(--w08);
+            border-radius: var(--r);
+            padding: 40px;
+            opacity: 0;
+            transform: translateY(12px);
+            transition: opacity var(--t), transform var(--t);
+        }
+        .plan-detail-panel.visible { opacity: 1; transform: translateY(0); }
+        .plan-detail-panel-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 36px; letter-spacing: 2px;
+            margin-bottom: 4px;
+        }
+        .plan-detail-panel-sub {
+            font-size: 11px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+            margin-bottom: 28px;
+        }
+        .plan-detail-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            border: 1px solid var(--w08);
+            border-radius: var(--r);
+            overflow: hidden;
+            margin-bottom: 28px;
+        }
+        .plan-detail-cell {
+            text-align: center;
+            padding: 20px 12px;
+            border-right: 1px solid var(--w08);
+        }
+        .plan-detail-cell:last-child { border-right: none; }
+        .plan-detail-cell-val {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 26px; letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+        .plan-detail-cell-lbl {
+            font-size: 10px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+        }
+        .plan-detail-features {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        .plan-detail-features li {
+            padding: 12px 0;
+            font-size: 14px;
+            color: var(--w40);
+            display: flex; align-items: center; gap: 10px;
+            border-bottom: 1px solid var(--w04);
+        }
+        .plan-detail-features li::before {
+            content: ''; width: 5px; height: 5px;
+            border-radius: 50%; background: var(--copper);
+            flex-shrink: 0;
+        }
+
+        /* ============================
+           GALLERY
+           ============================ */
+        .gallery-section {
+            padding: 100px 0;
+            border-bottom: 1px solid var(--w08);
+        }
+        .gallery-tag {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 40px;
+        }
+        .gallery-frame {
+            border-radius: var(--r);
+            overflow: hidden;
+            background: var(--card);
+            border: 1px solid var(--w08);
+            opacity: 0;
+            transform: scale(0.98);
+            transition: opacity var(--t), transform var(--t);
+        }
+        .gallery-frame.visible { opacity: 1; transform: scale(1); }
+        .gallery-frame-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 24px;
+            border-bottom: 1px solid var(--w08);
+        }
+        .gallery-frame-label {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+        }
+        .gallery-frame-tabs {
+            display: flex; gap: 4px;
+        }
+        .gallery-frame-tab {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            border: 1px solid var(--w08);
+            color: var(--w40);
+            transition: all var(--t);
+        }
+        .gallery-frame-tab:hover { border-color: var(--w20); color: var(--w60); }
+        .gallery-frame-tab.active {
+            background: var(--w); color: var(--bg); border-color: var(--w);
+        }
+        .gallery-frame-img {
+            aspect-ratio: 4 / 3;
+            display: flex; align-items: center; justify-content: center;
+            background: #0e0e0e;
+        }
+        .gallery-frame-img img {
+            width: 100%; height: 100%; object-fit: contain;
+        }
+
+        /* Gallery CTA */
+        .gallery-cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .gallery-cta p {
+            font-size: 15px;
+            color: var(--w40);
+            margin-bottom: 16px;
+        }
+        .gallery-cta-link {
+            display: inline-flex;
+            align-items: center; gap: 8px;
+            color: var(--copper);
+            font-size: 13px; font-weight: 600;
+            letter-spacing: 1px; text-transform: uppercase;
+            border-bottom: 1px solid var(--copper);
+            padding-bottom: 4px;
+            transition: gap var(--t);
+        }
+        .gallery-cta-link:hover { gap: 14px; }
+
+        /* ============================
+           LEAD FORM — single column
+           ============================ */
+        .form-section {
+            padding: 100px 0;
+        }
+        .form-tag {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 24px;
+        }
+        .form-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 48px; letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+        .form-sub {
+            font-size: 15px; color: var(--w40);
+            margin-bottom: 40px;
+        }
+        .form-card {
+            background: var(--card);
+            border: 1px solid var(--w08);
+            border-radius: var(--r);
+            padding: 40px;
+        }
+        .form-card label {
+            display: block;
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+            margin-bottom: 8px;
+        }
+        .form-card input[type="text"],
+        .form-card input[type="email"],
+        .form-card input[type="tel"] {
+            width: 100%;
+            padding: 14px 16px;
+            margin-bottom: 20px;
+            border: 1px solid var(--w08);
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            background: var(--w04);
+            color: var(--w);
+            transition: border-color var(--t);
+        }
+        .form-card input::placeholder { color: var(--w20); }
+        .form-card input:focus { outline: none; border-color: var(--copper); }
+        .form-card button {
+            width: 100%;
+            padding: 16px;
+            background: var(--copper);
+            color: var(--w); border: none;
+            border-radius: 50px;
+            font-size: 14px; font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 1px; text-transform: uppercase;
+            cursor: pointer;
+            transition: background var(--t);
+        }
+        .form-card button:hover { background: var(--copper-hover); }
+        .form-card .priv {
+            font-size: 12px;
+            color: var(--w20);
+            text-align: center;
+            margin-top: 16px;
+            line-height: 1.6;
+        }
+        .form-agent {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid var(--w08);
+            font-size: 14px;
+            color: var(--w40);
+            line-height: 2;
+        }
+        .form-agent strong { color: var(--w); }
+        .form-agent a { color: var(--copper); transition: color var(--t); }
+        .form-agent a:hover { color: var(--copper-hover); }
+
+        /* ============================
+           FOOTER — minimal
+           ============================ */
+        .footer {
+            border-top: 1px solid var(--w08);
+            padding: 40px 0;
+            text-align: center;
+            font-size: 13px;
+            color: var(--w20);
+        }
+        .footer a { color: var(--w40); transition: color var(--t); }
+        .footer a:hover { color: var(--copper); }
+
+        /* ============================
+           RESPONSIVE
+           ============================ */
+        @media (max-width: 768px) {
+            .hero { padding-top: 120px; }
+            .hero h1 { font-size: 64px; }
+            .stats-row { grid-template-columns: 1fr 1fr; }
+            .stat-cell { border-bottom: 1px solid var(--w08); }
+            .stat-cell:nth-child(odd) { border-right: 1px solid var(--w08); }
+            .stat-cell:nth-child(even) { border-right: none; }
+            .stat-cell:nth-child(n+3) { border-bottom: none; }
+            .plan-row { grid-template-columns: 36px 1fr auto; gap: 16px; }
+            .plan-row-price { display: none; }
+            .plan-detail-grid { grid-template-columns: 1fr 1fr; }
+            .plan-detail-cell { border-bottom: 1px solid var(--w08); }
+            .plan-detail-cell:nth-child(n+3) { border-bottom: none; }
+            .plan-detail-features { grid-template-columns: 1fr; }
+            .form-title { font-size: 36px; }
+            .hero-form { flex-direction: column; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 48px; }
+            .stat-num { font-size: 36px; }
+            .plan-row-name { font-size: 22px; }
+            .plan-row-num { font-size: 22px; }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org", "@type": "RealEstateAgent",
+        "name": "Ryan Rose", "url": "https://rosehomeslv.com",
+        "telephone": "+1-702-747-5921", "email": "ryan@rosehomeslv.com",
+        "description": "Las Vegas new construction specialist.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Las Vegas", "addressRegion": "NV", "postalCode": "89141", "addressCountry": "US" },
+        "worksFor": { "@type": "RealEstateAgent", "name": "Real Broker LLC" },
+        "areaServed": { "@type": "City", "name": "Las Vegas" }
+    }
+    </script>
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="topbar-name">DELAMAR</div>
+            <a href="#contact" class="topbar-btn">Get Info</a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="wrap">
+            <div class="hero-kicker">A Pulte Homes Community &middot; Southern Highlands</div>
+            <h1>DELAMAR</h1>
+            <div class="hero-line"></div>
+            <p class="hero-desc">New construction homes in SW Las Vegas. Four floor plans from 2,990 to 4,220 sq ft. Starting from $640,990.</p>
+            <form class="hero-form" action="#" method="POST">
+                <input type="hidden" name="tag" value="delemar-by-pulte">
+                <input type="hidden" name="source" value="new-construction-landing-page">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
+                <button type="submit">Get Details</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="wrap-wide">
+        <div class="stats-row">
+            <div class="stat-cell"><div class="stat-num">$640K+</div><div class="stat-lbl">Starting</div></div>
+            <div class="stat-cell"><div class="stat-num">4,220</div><div class="stat-lbl">Max Sq Ft</div></div>
+            <div class="stat-cell"><div class="stat-num">4 – 6</div><div class="stat-lbl">Beds</div></div>
+            <div class="stat-cell"><div class="stat-num">$150</div><div class="stat-lbl">Monthly HOA</div></div>
+        </div>
+    </div>
+
+    <div class="incentive">
+        <p><strong>Current Incentive:</strong> Up to $20,000 in closing cost credits + 4.99% fixed rate for 30 years</p>
+    </div>
+
+    <section class="text-section">
+        <div class="wrap">
+            <div class="text-section-tag reveal">About the Community</div>
+            <p class="reveal">Delamar is a new-construction community by Pulte Homes in southwest Las Vegas. Located within the Highlands Ranch area of Southern Highlands, it puts you close to resort-style amenities, top-rated golf, and everyday shopping. Just 6 miles from the Strip.</p>
+            <p class="reveal">Homes range from 2,990 to 4,220 square feet with 4 to 6 bedrooms. Four floor plans include two-story and three-story layouts. Built by Pulte — known for Life Tested designs focused on how families actually use their space.</p>
+            <p class="reveal">The $150/mo HOA covers common area upkeep. Residents enjoy a 13,000 sq ft clubhouse, multiple pools, spa, and the Olympia Sports Park. Model home open at 10123 Goswell Park Street, Las Vegas, NV 89141.</p>
+        </div>
+    </section>
+
+    <section class="plans-section" id="floorplans">
+        <div class="wrap">
+            <div class="plans-tag">Floor Plans</div>
+            <div class="plan-rows" id="planRows"></div>
+            <div class="plan-detail-area" id="planDetail"></div>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="fpGallery">
+        <div class="wrap">
+            <div class="gallery-tag">First Floor Plan</div>
+            <div id="galleryFrame"></div>
+            <div class="gallery-cta">
+                <p>Want to see every level of every plan?</p>
+                <a href="#contact" class="gallery-cta-link">Get the complete floor plans &#8599;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="contact">
+        <div class="wrap">
+            <div class="form-tag">Get in Touch</div>
+            <h2 class="form-title">GET THE DELAMAR GUIDE</h2>
+            <p class="form-sub">Floor plans, pricing, incentives, and availability — no obligation.</p>
+            <div class="form-card">
+                <form action="#" method="POST">
+                    <input type="hidden" name="tag" value="delemar-by-pulte">
+                    <input type="hidden" name="source" value="new-construction-landing-page">
+                    <label for="fn">Full Name</label>
+                    <input type="text" id="fn" name="name" placeholder="Your full name" required>
+                    <label for="em">Email</label>
+                    <input type="email" id="em" name="email" placeholder="you@example.com" required>
+                    <label for="ph">Phone</label>
+                    <input type="tel" id="ph" name="phone" placeholder="(702) 555-1234">
+                    <button type="submit">Send Me the Guide</button>
+                    <p class="priv">Your information is kept private and never shared.</p>
+                </form>
+                <div class="form-agent">
+                    <strong>Ryan Rose</strong><br>
+                    Real Broker LLC<br>
+                    <a href="tel:7027475921">702-747-5921</a> &middot;
+                    <a href="mailto:ryan@rosehomeslv.com">ryan@rosehomeslv.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrap">
+            <a href="https://rosehomeslv.com" target="_blank">rosehomeslv.com</a><br>
+            <span style="font-size:11px;margin-top:8px;display:inline-block;">Prices, incentives, and availability are subject to change without notice.</span>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        'use strict';
+
+        const PLANS = [
+            { id: 'calico', name: 'Calico', price: 648990, priceLabel: '$648,990', sqft: '2,990+', beds: '4-5', baths: '3-4', garage: '3-car', features: ['1st-floor bedroom + bath', 'Gathering room + cafe', "Owner's suite with WIC", '3-car garage'], image: 'images/calico-1st.jpg' },
+            { id: 'egan', name: 'Egan', price: 640990, priceLabel: '$640,990', sqft: '3,097+', beds: '4-6', baths: '2-4', garage: '2-car', features: ['Gathering room / living room', "Private owner's retreat", 'Flex room + game room', '2-car garage'], image: 'images/egan-1st.jpg' },
+            { id: 'delano', name: 'Delano', price: 643990, priceLabel: '$643,990', sqft: '3,158+', beds: '4-5', baths: '2-4', garage: '2-car', features: ['Gathering room + den', "Owner's suite with WIC", 'Loft + 5th bedroom option', '2-car garage'], image: 'images/delano-1st.jpg' },
+            { id: 'whitepine', name: 'White Pine', price: 787990, priceLabel: '$787,990', sqft: '4,220+', beds: '4-5', baths: '2-4', garage: '3-car', features: ['Rooftop deck + balcony', "Chef's kitchen + game room", "Owner's suite with dual WIC", '3-car garage'], image: 'images/whitepine-1st.jpg' }
+        ];
+
+        let selected = PLANS[0].id;
+        function get(id) { return PLANS.find(function(p) { return p.id === id; }); }
+
+        var rowsEl = document.getElementById('planRows');
+        var detailEl = document.getElementById('planDetail');
+        var frameEl = document.getElementById('galleryFrame');
+
+        function renderRows() {
+            rowsEl.innerHTML = '';
+            PLANS.forEach(function(p, i) {
+                var row = document.createElement('div');
+                row.className = 'plan-row' + (p.id === selected ? ' active' : '');
+                row.innerHTML =
+                    '<div class="plan-row-num">0' + (i+1) + '</div>' +
+                    '<div class="plan-row-info"><div class="plan-row-name">' + p.name.toUpperCase() + '</div><div class="plan-row-meta">' + p.sqft + ' sq ft &middot; ' + p.beds + ' bed &middot; ' + p.baths + ' bath</div></div>' +
+                    '<div class="plan-row-price">' + p.priceLabel + '</div>' +
+                    '<div class="plan-row-arrow">&#8599;</div>';
+                row.addEventListener('click', function() { selected = p.id; update(); });
+                rowsEl.appendChild(row);
+            });
+        }
+
+        function renderDetail() {
+            detailEl.innerHTML = '';
+            var p = get(selected);
+            var panel = document.createElement('div');
+            panel.className = 'plan-detail-panel';
+            panel.innerHTML =
+                '<div class="plan-detail-panel-name">' + p.name.toUpperCase() + '</div>' +
+                '<div class="plan-detail-panel-sub">Pulte Homes &middot; Delamar</div>' +
+                '<div class="plan-detail-grid">' +
+                    '<div class="plan-detail-cell"><div class="plan-detail-cell-val">' + p.priceLabel + '</div><div class="plan-detail-cell-lbl">Price</div></div>' +
+                    '<div class="plan-detail-cell"><div class="plan-detail-cell-val">' + p.sqft + '</div><div class="plan-detail-cell-lbl">Sq Ft</div></div>' +
+                    '<div class="plan-detail-cell"><div class="plan-detail-cell-val">' + p.beds + '</div><div class="plan-detail-cell-lbl">Beds</div></div>' +
+                    '<div class="plan-detail-cell"><div class="plan-detail-cell-val">' + p.baths + '</div><div class="plan-detail-cell-lbl">Baths</div></div>' +
+                '</div>' +
+                '<ul class="plan-detail-features">' + p.features.map(function(f) { return '<li>' + f + '</li>'; }).join('') + '</ul>';
+            detailEl.appendChild(panel);
+            requestAnimationFrame(function() { requestAnimationFrame(function() { panel.classList.add('visible'); }); });
+        }
+
+        function renderGallery() {
+            frameEl.innerHTML = '';
+            var p = get(selected);
+            var frame = document.createElement('div');
+            frame.className = 'gallery-frame';
+            var tabsHtml = PLANS.map(function(pl) {
+                return '<div class="gallery-frame-tab' + (pl.id === selected ? ' active' : '') + '" data-id="' + pl.id + '">' + pl.name + '</div>';
+            }).join('');
+            frame.innerHTML =
+                '<div class="gallery-frame-top"><div class="gallery-frame-label">' + p.name + ' Floor Plan \u2014 First Floor</div><div class="gallery-frame-tabs">' + tabsHtml + '</div></div>' +
+                '<div class="gallery-frame-img">' + (p.image ? '<img src="' + p.image + '" alt="' + p.name + ' floor plan">' : '') + '</div>';
+            frame.querySelectorAll('.gallery-frame-tab').forEach(function(tab) {
+                tab.addEventListener('click', function() { selected = tab.dataset.id; update(); });
+            });
+            frameEl.appendChild(frame);
+            requestAnimationFrame(function() { requestAnimationFrame(function() { frame.classList.add('visible'); }); });
+        }
+
+        function update() { renderRows(); renderDetail(); renderGallery(); }
+        update();
+
+        var reveals = document.querySelectorAll('.reveal');
+        var obs = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+        }, { threshold: 0.15 });
+        reveals.forEach(function(el) { obs.observe(el); });
+    })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 /Users/ryanrose/Downloads/Claude/publish-blogs-plugin/publish.py \"THE WILLOWS OF SUMMERLIN\" --tab 3 --yes)",
+      "Bash(python3 /Users/ryanrose/Downloads/Claude/publish-blogs-plugin/publish.py \"THE WILLOWS OF SUMMERLIN\" --tab 3 --category \"The Willows\" --no-publish)",
+      "Bash(python3 /Users/ryanrose/Downloads/Claude/publish-blogs-plugin/publish.py \"THE WILLOWS OF SUMMERLIN\" --tab 3 --category \"The Willows\" --yes)"
+    ]
+  }
+}

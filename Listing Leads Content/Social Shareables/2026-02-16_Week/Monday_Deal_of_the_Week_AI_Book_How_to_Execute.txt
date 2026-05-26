@@ -1,0 +1,22 @@
+How to Execute
+Step 1
+Prompt
+Copy
+
+{
+
+  "model": "Nano Banana",
+
+  "prompt": "9:16 flat-lay photo of a textured off-white book page on wood. Top half has black typewriter text: 'Auburn’s Deal of the Week' and 4 checkmark bullet points with property stats. Bottom half is completely blank.",
+
+  "detailed_description": "Clean, photorealistic real estate marketing template. Vintage book aesthetic but well-preserved.",
+
+  "typography": "Classic black typewriter font, high-fidelity text rendering.",
+
+  "lighting_and_composition": "Soft overhead natural light, warm tone. Empty bottom half for easy text overlay.",
+
+  "aspect_ratio": "9:16",
+
+  "negative_prompt": "glossy paper, modern tablet, text on bottom half,"
+
+}

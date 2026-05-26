@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/brand-tokens.css" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+      [data-composition-id="01-intro-lower-third"] {
+        position: relative; width: 1920px; height: 1080px; overflow: hidden;
+        font-family: var(--font-display); color: var(--ink);
+      }
+      /* Lower-third bar — sits in lower-left third, leaving room for the speaker. */
+      [data-composition-id="01-intro-lower-third"] .lt-bar {
+        position: absolute;
+        bottom: 120px; left: 80px;
+        display: flex; align-items: center;
+        background: var(--bg);
+        border-left: 8px solid var(--warn);
+        padding: 26px 36px 26px 28px;
+        border-radius: 8px;
+        box-shadow: 0 18px 48px rgba(15,76,92,0.35);
+        opacity: 0;
+        transform: translateX(-60px);
+        max-width: 880px;
+      }
+      [data-composition-id="01-intro-lower-third"] .lt-mark {
+        width: 72px; height: 72px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: var(--bg-alt);
+        margin-right: 24px;
+        flex-shrink: 0;
+        box-shadow: 0 0 0 3px var(--warn), 0 0 0 5px var(--bg);
+      }
+      [data-composition-id="01-intro-lower-third"] .lt-mark img {
+        width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
+      }
+      [data-composition-id="01-intro-lower-third"] .lt-text { display: flex; flex-direction: column; gap: 4px; }
+      [data-composition-id="01-intro-lower-third"] .lt-name {
+        font-family: var(--font-display);
+        font-weight: 900;
+        font-size: 56px;
+        line-height: 1;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+      }
+      [data-composition-id="01-intro-lower-third"] .lt-role {
+        font-family: var(--font-mono);
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 0.22em;
+        color: var(--warn);
+        text-transform: uppercase;
+      }
+      /* Subtle bottom scrim so the bar reads cleanly over a busy talking-head shot. */
+      [data-composition-id="01-intro-lower-third"] .scrim {
+        position: absolute; bottom: 0; left: 0; right: 0; height: 320px;
+        background: linear-gradient(0deg, rgba(15,76,92,0.55) 0%, rgba(15,76,92,0) 100%);
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="sec01"
+      data-composition-id="01-intro-lower-third"
+      data-duration="40"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="scrim clip" data-start="0" data-duration="40" data-track-index="0"></div>
+
+      <div class="lt-bar clip" data-start="0" data-duration="40" data-track-index="1">
+        <div class="lt-mark">
+          <img src="../../assets/leveraged-agent-logo-small.png" alt="" />
+        </div>
+        <div class="lt-text">
+          <div class="lt-name">RYAN ROSE</div>
+          <div class="lt-role">The Leveraged Agent</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const SLOT = 40;
+      const tl = gsap.timeline({ paused: true });
+
+      // Enter at 1.5s — speaker has had a moment of pure face before the chyron lands.
+      tl.to('[data-composition-id="01-intro-lower-third"] .scrim',
+        { opacity: 1, duration: 0.5, ease: 'power2.out' }, 1.50);
+      tl.to('[data-composition-id="01-intro-lower-third"] .lt-bar',
+        { opacity: 1, x: 0, duration: 0.55, ease: 'back.out(1.4)' }, 1.65);
+
+      // Hold visible from ~2.2s to ~10s, then exit. Re-enters NEVER — the chyron
+      // is a single name-tag event, not a recurring badge.
+      tl.to('[data-composition-id="01-intro-lower-third"] .lt-bar',
+        { opacity: 0, x: -60, duration: 0.45, ease: 'power2.in' }, 10.50);
+      tl.to('[data-composition-id="01-intro-lower-third"] .scrim',
+        { opacity: 0, duration: 0.6, ease: 'power2.in' }, 10.40);
+
+      // Anchor to slot duration so HF doesn't hide the composition early
+      // (composition lives the full 40s of intro, even though chyron only shows ~9s).
+      tl.to({}, { duration: SLOT }, 0);
+
+      window.__timelines["01-intro-lower-third"] = tl;
+    </script>
+  </body>
+</html>

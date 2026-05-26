@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- COMMUNITY NAME -->
+    <title>Delamar by Pulte Homes | New Homes from $640K in Southern Highlands, Las Vegas</title>
+    <meta name="description" content="Explore Delamar by Pulte Homes — new construction in Southern Highlands, SW Las Vegas. 4 floor plans, 2,990–4,220 sq ft, 4-6 beds. Up to $20K in closing credits. Get pricing and floor plans from Ryan Rose, Real Broker LLC.">
+    <meta property="og:title" content="Delamar by Pulte Homes | New Homes in Southern Highlands">
+    <meta property="og:description" content="New construction from $640,990. 4 floor plans, up to 4,220 sq ft, 4-6 bedrooms. Southern Highlands amenities included.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset + Lofty CMS full-bleed escape */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html {
+            scroll-behavior: smooth;
+            background: #faf8f3;          /* Match page bg so any wrapper gap reads cream, not white */
+            overflow-x: hidden;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2a2520;
+            line-height: 1.6;
+            background: #faf8f3;
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        /* Force every top-level section to span the full viewport width,
+           breaking out of any Lofty CMS parent container that constrains width */
+        .hero, .incentive-bar, .about-section,
+        .plans-section, .amenities-section {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+        /* Header is position:fixed so it already escapes parent — leave it alone */
+        img { max-width: 100%; display: block; }
+        a { color: inherit; text-decoration: none; }
+
+        /* ============================
+           DESIGN TOKENS — Pulte brand
+           ============================ */
+        :root {
+            /* Cream/taupe inverse palette */
+            --dark: #faf8f3;        /* base background — soft off-white cream */
+            --dark-surface: #f2efe7; /* slightly darker section for contrast */
+            --dark-card: #ffffff;   /* cards float on cream */
+            --navy: #003048;
+            --navy-light: rgba(0,48,72,0.08);
+            --blue: #1b75a1;
+            --blue-hover: #2181b3;
+            --blue-muted: rgba(27,117,161,0.1);
+            --sky: #58c1de;
+            --cream: #f4f1e7;
+            --light-grey: #f2f5f7;
+            --white: #ffffff;
+            /* Alpha-dark replaces alpha-white for muted text/borders on cream */
+            --w60: rgba(42,37,32,0.7);    /* primary muted text */
+            --w40: rgba(42,37,32,0.55);   /* secondary muted text */
+            --w20: rgba(42,37,32,0.3);    /* tertiary text */
+            --w08: rgba(42,37,32,0.1);    /* borders */
+            --w04: rgba(42,37,32,0.04);   /* faint surfaces / inputs */
+            --text-dark: #2a2520;
+            --text-body: #2a2520;
+            --radius: 10px;
+            --radius-sm: 6px;
+            --t: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .container { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+
+        /* Reveal */
+        .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ============================
+           SECTION LABEL
+           ============================ */
+        .section-label {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            display: flex; align-items: center; gap: 14px;
+            margin-bottom: 20px;
+        }
+        .section-label::after {
+            content: ''; flex: 1; max-width: 50px; height: 1px;
+        }
+        .section-label--blue { color: var(--blue); }
+        .section-label--blue::after { background: var(--blue); }
+        .section-label--dark { color: var(--w40); }
+        .section-label--dark::after { background: var(--w20); }
+
+        /* ============================
+           INCENTIVE BAR — section divider
+           ============================ */
+        .incentive-bar {
+            background: var(--blue);
+            padding: 12px 28px;
+            text-align: center;
+        }
+        .incentive-bar p {
+            font-size: 13px; font-weight: 500; color: var(--white);
+        }
+        .incentive-bar strong { font-weight: 700; }
+
+        /* ============================
+           STICKY HEADER
+           ============================ */
+        .header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(250,248,243,0.92);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--w08);
+            padding: 0;
+        }
+        .header-inner {
+            display: flex; align-items: center; justify-content: space-between;
+            height: 60px;
+        }
+        .header-left {
+            display: flex; align-items: center; gap: 16px;
+            min-width: 0; overflow: hidden;
+        }
+        .header-logo {
+            height: 24px; width: auto;
+            filter: invert(1); /* invert white logo to dark for cream theme */
+        }
+        .header-agent {
+            font-size: 12px; font-weight: 500;
+            letter-spacing: 1px; text-transform: uppercase;
+            color: var(--w60);
+        }
+        .header-divider {
+            width: 1px; height: 20px;
+            background: var(--w20);
+        }
+        /* COMMUNITY NAME in header */
+        .header-community {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px; letter-spacing: 2px;
+            color: var(--text-dark);
+        }
+        .header-right {
+            display: flex; align-items: center; gap: 20px;
+        }
+        .header-link {
+            font-size: 12px; font-weight: 500;
+            letter-spacing: 1px; text-transform: uppercase;
+            color: var(--w40); transition: color var(--t);
+        }
+        .header-link:hover { color: var(--text-dark); }
+        .header-cta {
+            background: var(--blue) !important;
+            color: #ffffff !important;
+            padding: 9px 22px; border-radius: 50px;
+            font-size: 12px; font-weight: 600;
+            letter-spacing: 0.5px; text-transform: uppercase;
+            transition: background var(--t);
+            border: none;
+        }
+        .header-cta:hover { background: var(--blue-hover) !important; color: #ffffff !important; }
+
+        /* ============================
+           HERO — scrolling image background
+           ============================ */
+        .hero {
+            padding: 80px 28px 40px;
+            background: var(--dark);
+            position: relative; overflow: hidden;
+            min-height: 460px;
+        }
+        /* Scrolling photo strip behind the text */
+        .hero-bg {
+            position: absolute; inset: 0; z-index: 0;
+            display: flex; width: max-content;
+            animation: heroScroll 40s linear infinite;
+            will-change: transform;
+            opacity: 1; /* full opacity — overlay handles readability */
+        }
+        .hero-bg img {
+            height: 100%; width: auto; min-width: 50vw;
+            object-fit: cover; flex-shrink: 0;
+        }
+        @keyframes heroScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        /* Cream overlay — strong on the left where text sits, fades right so photos show */
+        .hero-overlay {
+            position: absolute; inset: 0; z-index: 1;
+            background: linear-gradient(to right,
+                rgba(250,248,243,0.85) 0%,
+                rgba(250,248,243,0.55) 35%,
+                rgba(250,248,243,0.2) 70%,
+                rgba(250,248,243,0.05) 100%);
+        }
+        /* Subtle navy radial glow behind text for depth */
+        .hero::before {
+            content: ''; position: absolute; inset: 0; z-index: 1;
+            background: radial-gradient(ellipse 60% 50% at 70% 50%, rgba(0,48,72,0.06) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero-inner {
+            max-width: 1120px; margin: 0 auto;
+            display: flex; align-items: flex-end; justify-content: space-between;
+            gap: 40px; position: relative; z-index: 2;
+        }
+        .hero-text { max-width: 600px; }
+        .hero-kicker {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--blue); margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(72px, 12vw, 140px);
+            line-height: 0.9; color: var(--text-dark);
+            letter-spacing: 4px; margin-bottom: 16px;
+            text-shadow: 0 1px 12px rgba(250,248,243,0.6);
+        }
+        .hero-sub {
+            font-size: 16px; font-weight: 400;
+            color: var(--text-dark); max-width: 420px;
+            line-height: 1.7; margin-bottom: 24px;
+            text-shadow: 0 1px 8px rgba(250,248,243,0.9);
+        }
+        .hero-cta {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: var(--blue) !important; color: #ffffff !important;
+            padding: 14px 32px; border-radius: 50px;
+            font-size: 13px; font-weight: 600;
+            letter-spacing: 1px; text-transform: uppercase;
+            transition: background var(--t), transform var(--t);
+            border: none;
+        }
+        .hero-cta:hover { background: var(--blue-hover) !important; color: #ffffff !important; transform: translateY(-2px); }
+        /* Hero stats mini-column — frosted cream backdrop keeps numbers legible over photos */
+        .hero-stats {
+            display: flex; gap: 24px;
+            padding: 18px 24px;
+            background: rgba(250,248,243,0.78);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(42,37,32,0.06);
+            border-radius: 12px;
+        }
+        .hero-stat { text-align: center; }
+        .hero-stat-val {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px; letter-spacing: 2px;
+            color: var(--text-dark); line-height: 1; margin-bottom: 4px;
+        }
+        .hero-stat-lbl {
+            font-size: 10px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w60);
+        }
+
+        /* Photo credit pinned to bottom-right of hero — sits inside the 1120px container
+           to avoid being clipped by Lofty's wrapper edge or the page scrollbar */
+        .hero-photo-credit {
+            position: absolute;
+            bottom: -32px; right: 0;
+            z-index: 3;
+            font-size: 10px; font-style: italic;
+            color: rgba(42,37,32,0.55);
+            background: rgba(250,248,243,0.7);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            padding: 4px 10px;
+            border-radius: 4px;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+        }
+        .hero-photo-credit a {
+            color: rgba(42,37,32,0.75);
+            text-decoration: underline;
+            transition: color var(--t);
+        }
+        .hero-photo-credit a:hover { color: var(--text-dark); }
+
+        /* ============================
+           AMENITIES — horizontal scroll
+           ============================ */
+        .amenities-section {
+            padding: 60px 0 0;
+            background: var(--dark-surface);
+            overflow: hidden;
+        }
+        .amenities-label {
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--blue); margin-bottom: 28px;
+            display: flex; align-items: center; gap: 14px;
+        }
+        .amenities-label::after {
+            content: ''; flex: 1; max-width: 50px; height: 1px;
+            background: var(--blue);
+        }
+        .amenities-scroll {
+            display: flex; gap: 16px;
+            overflow-x: auto; padding-bottom: 20px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .amenities-scroll::-webkit-scrollbar { height: 3px; }
+        .amenities-scroll::-webkit-scrollbar-track { background: var(--w04); }
+        .amenities-scroll::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 2px; }
+        .amenity-card {
+            flex: 0 0 280px;
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            transition: border-color var(--t), transform var(--t);
+        }
+        .amenity-card:hover {
+            border-color: var(--w20);
+            transform: translateY(-3px);
+        }
+        .amenity-card-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px; letter-spacing: 1px;
+            color: var(--text-dark); margin-bottom: 8px;
+        }
+        .amenity-card-desc {
+            font-size: 13px; color: var(--w40); line-height: 1.6;
+        }
+
+        /* ============================
+           ABOUT
+           ============================ */
+        .about-section {
+            padding: 60px 0;
+            background: var(--dark);
+        }
+        .about-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 48px; align-items: start;
+        }
+        .about-headline {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 44px; letter-spacing: 2px;
+            line-height: 1.05; color: var(--text-dark);
+        }
+        .about-text p {
+            font-size: 15px; line-height: 1.85;
+            color: var(--w40); margin-bottom: 16px;
+        }
+        .about-text p:last-child { margin-bottom: 0; }
+
+        /* ============================
+           FLOOR PLANS — image + details side by side
+           ============================ */
+        .plans-section {
+            padding: 60px 0;
+            background: var(--dark);
+        }
+        .plans-header {
+            display: flex; justify-content: space-between;
+            align-items: flex-end; margin-bottom: 40px; gap: 24px;
+        }
+        .plans-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px; letter-spacing: 2px; line-height: 1.05;
+            color: var(--text-dark);
+        }
+        .plans-subtitle {
+            font-size: 14px; color: var(--w40);
+            max-width: 320px; text-align: right;
+        }
+
+        /* Plan tabs */
+        .plan-tabs {
+            display: flex; gap: 0;
+            border-bottom: 1px solid var(--w08);
+            margin-bottom: 32px;
+        }
+        .plan-tab {
+            flex: 1; padding: 16px 12px;
+            text-align: center; cursor: pointer;
+            position: relative; transition: all var(--t);
+        }
+        .plan-tab::after {
+            content: ''; position: absolute;
+            bottom: -1px; left: 0; right: 0; height: 2px;
+            background: var(--blue);
+            transform: scaleX(0); transition: transform var(--t);
+        }
+        .plan-tab.active::after { transform: scaleX(1); }
+        .plan-tab-top {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            margin-bottom: 4px;
+        }
+        .plan-tab-indicator {
+            width: 10px; height: 10px; border-radius: 50%;
+            border: 2px solid var(--w20);
+            transition: all var(--t);
+        }
+        .plan-tab.active .plan-tab-indicator {
+            border-color: var(--blue);
+            background: var(--blue);
+        }
+        .plan-tab-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 22px; letter-spacing: 2px;
+            color: var(--w20); transition: color var(--t);
+        }
+        .plan-tab.active .plan-tab-name { color: var(--text-dark); }
+        .plan-tab:hover .plan-tab-name { color: var(--w60); }
+        .plan-tab-price {
+            font-size: 12px; color: var(--w20);
+        }
+        .plan-tab.active .plan-tab-price { color: var(--w40); }
+
+        /* Plan display — image + details side by side */
+        .plan-display {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            align-items: start;
+        }
+        .plan-image-panel {
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            opacity: 0; transform: scale(0.97);
+            transition: opacity var(--t), transform var(--t);
+        }
+        .plan-image-panel.visible { opacity: 1; transform: scale(1); }
+        .plan-image-label {
+            padding: 12px 20px;
+            font-size: 11px; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+            border-bottom: 1px solid var(--w08);
+        }
+        .plan-image-area {
+            aspect-ratio: 4 / 3;
+            display: flex; align-items: center; justify-content: center;
+            background: #faf8f3;
+            overflow: hidden;
+        }
+        .plan-image-area img { width: 100%; height: 100%; object-fit: contain; max-width: 100%; }
+        .plan-image-source {
+            padding: 6px 20px 8px;
+            font-size: 10px; font-style: italic;
+            color: var(--w20);
+            text-align: right;
+        }
+        .plan-image-source a { color: var(--w20); text-decoration: underline; transition: color var(--t); }
+        .plan-image-source a:hover { color: var(--w40); }
+
+        .plan-detail-panel {
+            background: var(--dark-card);
+            border: 1px solid var(--w08);
+            border-radius: var(--radius);
+            padding: 32px;
+            border-top: 3px solid var(--blue);
+            opacity: 0; transform: translateY(12px);
+            transition: opacity var(--t), transform var(--t);
+        }
+        .plan-detail-panel.visible { opacity: 1; transform: translateY(0); }
+        .plan-detail-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 32px; letter-spacing: 2px;
+            color: var(--text-dark); margin-bottom: 4px;
+        }
+        .plan-detail-builder {
+            font-size: 11px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40); margin-bottom: 24px;
+        }
+        .plan-spec-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 12px; margin-bottom: 24px;
+        }
+        .plan-spec-item {
+            text-align: center; padding: 16px 8px;
+            border-radius: var(--radius-sm);
+            background: var(--cream);
+            border: 1px solid var(--w08);
+        }
+        .plan-spec-val {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 24px; letter-spacing: 1px;
+            color: var(--text-dark); margin-bottom: 2px;
+        }
+        .plan-spec-val.highlight { color: var(--navy); }
+        .plan-spec-lbl {
+            font-size: 10px; font-weight: 500;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--w40);
+        }
+        .plan-features {
+            list-style: none;
+        }
+        .plan-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--w04);
+            font-size: 13px; color: var(--w40);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .plan-features li:last-child { border-bottom: none; }
+        .plan-features li::before {
+            content: ''; width: 5px; height: 5px;
+            border-radius: 50%; background: var(--blue);
+            flex-shrink: 0;
+        }
+        .plan-detail-cta {
+            margin-top: 20px;
+            display: block; text-align: center;
+            padding: 12px;
+            background: var(--blue) !important;
+            color: #ffffff !important;
+            border-radius: 50px;
+            font-size: 12px; font-weight: 600;
+            letter-spacing: 1px; text-transform: uppercase;
+            transition: background var(--t);
+            border: none;
+        }
+        .plan-detail-cta:hover { background: var(--blue-hover) !important; color: #ffffff !important; }
+        .plan-compare-hint {
+            text-align: center; margin-top: 16px;
+            font-size: 12px; color: var(--w20);
+        }
+
+        /* ============================
+           RESPONSIVE
+           ============================ */
+        @media (max-width: 900px) {
+            .about-grid { grid-template-columns: 1fr; gap: 24px; }
+            .plans-header { flex-direction: column; align-items: flex-start; }
+            .plans-subtitle { text-align: left; }
+            .plan-display { grid-template-columns: 1fr; }
+            .hero-inner { flex-direction: column; align-items: flex-start; }
+            .hero-stats { gap: 24px; }
+        }
+        @media (max-width: 768px) {
+            /* Header */
+            .header-agent { display: none; }
+            .header-divider { display: none; }
+            .header-link { display: none; }
+            .header-inner { height: 52px; }
+            .header-logo { height: 20px; }
+            .header-community { font-size: 17px; }
+            .header-cta { padding: 7px 16px; font-size: 11px; }
+
+            /* Hero */
+            .hero { padding: 64px 20px 32px; }
+            .hero h1 { font-size: 56px; letter-spacing: 2px; }
+            .hero-sub { font-size: 15px; margin-bottom: 20px; }
+            .hero-cta { padding: 12px 24px; font-size: 12px; }
+            .hero-stats { flex-wrap: wrap; gap: 16px; }
+            .hero-stat-val { font-size: 28px; }
+            .hero-stat-lbl { font-size: 9px; letter-spacing: 1.5px; }
+
+            /* Incentive */
+            .incentive-bar { padding: 10px 16px; }
+            .incentive-bar p { font-size: 12px; }
+
+            /* About */
+            .about-section { padding: 40px 0; }
+            .about-headline { font-size: 32px; }
+            .about-text p { font-size: 14px; }
+
+            /* Floor plans */
+            .plans-section { padding: 40px 0; }
+            .plans-title { font-size: 28px; }
+            .plan-tabs { flex-wrap: wrap; }
+            .plan-tab { flex: 1 1 45%; padding: 12px 8px; }
+            .plan-tab-name { font-size: 16px; }
+            .plan-tab-price { font-size: 11px; }
+            .plan-detail-panel { padding: 24px 20px; }
+            .plan-detail-name { font-size: 26px; }
+            .plan-spec-val { font-size: 20px; }
+            .plan-image-label { padding: 10px 16px; font-size: 10px; }
+
+            /* Amenities */
+            .amenities-section { padding: 40px 0 0; }
+            .amenity-card { flex: 0 0 220px; padding: 22px 18px; }
+            .amenity-card-name { font-size: 18px; }
+            .amenity-card-desc { font-size: 12px; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 44px; }
+            .hero-kicker { font-size: 10px; letter-spacing: 2px; }
+            .hero-stat { min-width: 60px; }
+            .hero-stat-val { font-size: 24px; }
+            .hero-stats { gap: 12px; }
+
+            .plan-tab { flex: 1 1 100%; }
+            .plan-tab-top { gap: 6px; }
+            .plan-tab-indicator { width: 8px; height: 8px; }
+            .plan-spec-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+            .plan-spec-item { padding: 12px 6px; }
+            .plan-spec-val { font-size: 18px; }
+            .plan-features li { font-size: 12px; padding: 8px 0; }
+
+            .amenity-card { flex: 0 0 200px; padding: 20px 16px; }
+
+            .container { padding: 0 20px; }
+        }
+        @media (max-width: 360px) {
+            .hero h1 { font-size: 36px; }
+            .hero-stat-val { font-size: 20px; }
+            .header-community { font-size: 15px; letter-spacing: 1px; }
+            .plan-detail-name { font-size: 22px; }
+        }
+    </style>
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org", "@type": "RealEstateAgent",
+        "name": "Ryan Rose", "url": "https://rosehomeslv.com",
+        "telephone": "+1-702-747-5921", "email": "ryan@rosehomeslv.com",
+        "description": "Las Vegas new construction specialist helping buyers find homes at Delamar by Pulte Homes and other SW Las Vegas communities.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Las Vegas", "addressRegion": "NV", "postalCode": "89141", "addressCountry": "US" },
+        "worksFor": { "@type": "RealEstateAgent", "name": "Real Broker LLC" },
+        "areaServed": { "@type": "City", "name": "Las Vegas" }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ======== LOFTY WRAPPER ESCAPE ========
+         Walks up the DOM at page load and force-strips width/padding constraints
+         from any Lofty CMS wrapper element so all sections render full-bleed.
+    -->
+    <script>
+    (function() {
+        function stripConstraints() {
+            var el = document.body.parentElement;
+            while (el && el !== document.documentElement) {
+                el.style.setProperty('max-width', 'none', 'important');
+                el.style.setProperty('width', '100%', 'important');
+                el.style.setProperty('padding', '0', 'important');
+                el.style.setProperty('margin', '0', 'important');
+                el.style.setProperty('overflow', 'visible', 'important');
+                el.style.setProperty('background', '#faf8f3', 'important');
+                el = el.parentElement;
+            }
+            /* Also walk up from any inserted wrapper around our body content */
+            var bodyKids = document.body.children;
+            for (var i = 0; i < bodyKids.length; i++) {
+                var p = bodyKids[i].parentElement;
+                while (p && p !== document.body) {
+                    p.style.setProperty('max-width', 'none', 'important');
+                    p.style.setProperty('width', '100%', 'important');
+                    p.style.setProperty('padding', '0', 'important');
+                    p.style.setProperty('margin', '0', 'important');
+                    p.style.setProperty('overflow', 'visible', 'important');
+                    p = p.parentElement;
+                }
+            }
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', stripConstraints);
+        } else {
+            stripConstraints();
+        }
+        /* Run again after a short delay in case Lofty injects its wrapper async */
+        setTimeout(stripConstraints, 100);
+        setTimeout(stripConstraints, 500);
+    })();
+    </script>
+
+    <!-- ======== HEADER ======== -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="header-left">
+                <!-- AGENT LOGO -->
+                <img src="https://www.dropbox.com/scl/fi/iylyhqb6tsecef8mlyc56/real-logo-white.png?rlkey=q060phklshu7euevn2a9rlvnb&raw=1" alt="Real Broker" class="header-logo">
+                <!-- AGENT NAME -->
+                <span class="header-agent">Ryan Rose</span>
+                <span class="header-divider"></span>
+                <!-- COMMUNITY NAME -->
+                <span class="header-community">DELAMAR</span>
+            </div>
+            <div class="header-right">
+                <a href="#floorplans" class="header-link">Floor Plans</a>
+                <a href="#contact" class="header-cta">Get Pricing</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero">
+        <!-- HERO IMAGE SCROLL — Pulte Delamar lifestyle/exterior/interior photos.
+             Duplicate the same images at the end for a seamless infinite-loop scroll. -->
+        <div class="hero-bg">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/yJNhQuM1/V/408306/13" alt="Calico exterior">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/1C9D7CEg/V/417495/13" alt="Calico kitchen">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/Xg8VPhfY/V/408305/13" alt="White Pine exterior">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/Hruj5cYW/V/417522/13" alt="White Pine living room">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/VazGuV3Y/V/408308/13" alt="Egan exterior">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/IWavyuJZ/V/417120/13" alt="Delano owner's suite">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/6dvGNzEX/V/343921/13" alt="Outdoor patio living">
+            <!-- Duplicate for seamless loop -->
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/yJNhQuM1/V/408306/13" alt="">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/1C9D7CEg/V/417495/13" alt="">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/Xg8VPhfY/V/408305/13" alt="">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/Hruj5cYW/V/417522/13" alt="">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/VazGuV3Y/V/408308/13" alt="">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/IWavyuJZ/V/417120/13" alt="">
+            <img src="https://res.cloudinary.com/dv0jqjrc3/image/fetch/c_fill,q_auto,f_auto,h_700/https://pultegroup.picturepark.com/Go/6dvGNzEX/V/343921/13" alt="">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+            <div class="hero-text">
+                <!-- BUILDER NAME -->
+                <div class="hero-kicker">A Pulte Homes Community</div>
+                <!-- COMMUNITY NAME -->
+                <h1>DELAMAR</h1>
+                <p class="hero-sub">New construction homes in SW Las Vegas, nestled within Southern Highlands. Starting from $640,990.</p>
+                <a href="#contact" class="hero-cta">Get Floor Plans &amp; Pricing &#8599;</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-val">$640K+</div>
+                    <div class="hero-stat-lbl">Starting</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-val">4,220</div>
+                    <div class="hero-stat-lbl">Max Sq Ft</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-val">4–6</div>
+                    <div class="hero-stat-lbl">Beds</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-val">4</div>
+                    <div class="hero-stat-lbl">Plans</div>
+                </div>
+            </div>
+            <!-- BUILDER PHOTO CREDIT — pinned bottom-right, aligned to content container -->
+            <div class="hero-photo-credit">
+                Photos courtesy of <a href="https://www.pulte.com" target="_blank" rel="noopener">Pulte Homes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== INCENTIVE DIVIDER ======== -->
+    <div class="incentive-bar">
+        <p><strong>Current Incentive:</strong> Up to $20,000 in closing cost credits + 4.99% fixed rate for 30 years through Pulte Mortgage</p>
+    </div>
+
+    <!-- ======== ABOUT ======== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-label section-label--blue">About</div>
+            <div class="about-grid">
+                <div class="reveal">
+                    <h2 class="about-headline">A NEW STANDARD<br>IN SOUTHERN<br>HIGHLANDS</h2>
+                </div>
+                <div class="about-text reveal">
+                    <p>Delamar is a new-construction community by Pulte Homes in southwest Las Vegas. Located within the Highlands Ranch area of Southern Highlands, it puts you close to resort-style amenities, top-rated golf, and everyday shopping. The community sits just 6 miles from the Las Vegas Strip with easy access to I-15.</p>
+                    <p>Homes range from 2,990 to 4,220 square feet with 4 to 6 bedrooms. Four floor plans include two-story and three-story layouts. Every home is built by Pulte, a national builder known for Life Tested designs that focus on how families actually use their space.</p>
+                    <p>The $150/mo HOA covers common area upkeep and landscaping. Residents enjoy a 13,000 sq ft clubhouse, multiple pools, spa, and the Olympia Sports Park. Model home at 10123 Goswell Park Street, Las Vegas, NV 89141.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== INCENTIVE DIVIDER ======== -->
+    <div class="incentive-bar">
+        <p><strong>Current Incentive:</strong> Up to $20,000 in closing cost credits + 4.99% fixed rate for 30 years through Pulte Mortgage</p>
+    </div>
+
+    <!-- ======== FLOOR PLANS ======== -->
+    <section class="plans-section" id="floorplans">
+        <div class="container">
+            <div class="section-label section-label--dark">Floor Plans</div>
+            <div class="plans-header">
+                <h2 class="plans-title">CHOOSE YOUR<br>FLOOR PLAN</h2>
+                <p class="plans-subtitle">Select a plan to explore details and see the first-floor layout.</p>
+            </div>
+
+            <div class="plan-tabs" id="planTabs"></div>
+            <div class="plan-display" id="planDisplay"></div>
+
+            <div class="plan-compare-hint">
+                <a href="#contact" style="color:var(--blue);text-decoration:underline;">Want to see the full floor plans for every level?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== AMENITIES ======== -->
+    <section class="amenities-section">
+        <div class="container">
+            <div class="amenities-label">Southern Highlands Amenities</div>
+        </div>
+        <div class="container">
+            <div class="amenities-scroll">
+                <div class="amenity-card"><div class="amenity-card-name">GOLF CLUB</div><div class="amenity-card-desc">Championship course for serious players and casual golfers alike.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">CLUBHOUSE</div><div class="amenity-card-desc">13,000 sq ft with 4,000 sq ft fitness center, spa, and social spaces.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">POOLS &amp; SPA</div><div class="amenity-card-desc">25m lap pool, outdoor pool with cabanas, children's pool, oversized Jacuzzi.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">SPORTS PARK</div><div class="amenity-card-desc">Lighted fields, basketball courts, water play area, workout stations.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">PARKS &amp; TRAILS</div><div class="amenity-card-desc">Seven parks with covered play areas, gazebos, and the Paseo hiking trail.</div></div>
+                <div class="amenity-card"><div class="amenity-card-name">PROXIMITY</div><div class="amenity-card-desc">~6 miles from the Strip. Quick access to I-15, shopping, dining.</div></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======== JAVASCRIPT ======== -->
+    <script>
+    (function() {
+        'use strict';
+
+        const PLANS = [
+            { id: 'calico', name: 'Calico', price: 648990, priceLabel: 'From $648,990', sqft: 2990, sqftLabel: '2,990+ sq ft', beds: '4-5', baths: '3-4', bathsLabel: '3-4', garage: '3-car', features: ['1st-floor bedroom + bath', 'Gathering room + cafe', "Owner's suite with WIC", '2-story / 3-car garage'], image: 'https://www.dropbox.com/scl/fi/m9ugg4pn68hemjs4npmd4/calico-1st.jpg?rlkey=rp4uwt7m0m8s15m7n8e1wxzuq&raw=1' },
+            { id: 'egan', name: 'Egan', price: 640990, priceLabel: 'From $640,990', sqft: 3097, sqftLabel: '3,097+ sq ft', beds: '4-6', baths: '2-4', bathsLabel: '2-4', garage: '2-car', features: ['Gathering room / living room', "Private owner's retreat", 'Flex room + game room', '2-story / 2-car garage'], image: 'https://www.dropbox.com/scl/fi/521fwx94koh8piv1uie2h/egan-1st.jpg?rlkey=utkxcwthdv6zh82ivu3xy4myn&raw=1' },
+            { id: 'delano', name: 'Delano', price: 643990, priceLabel: 'From $643,990', sqft: 3158, sqftLabel: '3,158+ sq ft', beds: '4-5', baths: '2-4', bathsLabel: '2-4', garage: '2-car', features: ['Gathering room + den', "Owner's suite with WIC", 'Loft + 5th bedroom option', '2-story / 2-car garage'], image: 'https://www.dropbox.com/scl/fi/bmt4zqdzgp43k1d9xqssz/delano-1st.jpg?rlkey=7lctm43h29d9zgr22xcklqxyk&raw=1' },
+            { id: 'whitepine', name: 'White Pine', price: 787990, priceLabel: 'From $787,990', sqft: 4220, sqftLabel: '4,220+ sq ft', beds: '4-5', baths: '2-4', bathsLabel: '2-4', garage: '3-car', features: ['Rooftop deck + balcony', "Chef's kitchen + game room", "Owner's suite with dual WIC", '3-story / 3-car garage'], image: 'https://www.dropbox.com/scl/fi/m7nt1jb2qy2r68z1d4mkp/whitepine-1st.jpg?rlkey=84xh5xsuyf0h7b0hr9lcx2yk9&raw=1' }
+        ];
+
+        let selectedId = PLANS[0].id;
+        function getPlan(id) { return PLANS.find(function(p) { return p.id === id; }); }
+
+        var tabsEl = document.getElementById('planTabs');
+        var displayEl = document.getElementById('planDisplay');
+
+        function renderTabs() {
+            tabsEl.innerHTML = '';
+            PLANS.forEach(function(plan) {
+                var tab = document.createElement('div');
+                tab.className = 'plan-tab' + (plan.id === selectedId ? ' active' : '');
+                tab.innerHTML =
+                    '<div class="plan-tab-top">' +
+                        '<div class="plan-tab-indicator"></div>' +
+                        '<div class="plan-tab-name">' + plan.name.toUpperCase() + '</div>' +
+                    '</div>' +
+                    '<div class="plan-tab-price">' + plan.priceLabel + '</div>';
+                tab.addEventListener('click', function() {
+                    selectedId = plan.id; update();
+                });
+                tabsEl.appendChild(tab);
+            });
+        }
+
+        function renderDisplay() {
+            displayEl.innerHTML = '';
+            var plan = getPlan(selectedId);
+
+            // Image panel
+            var imgPanel = document.createElement('div');
+            imgPanel.className = 'plan-image-panel';
+            imgPanel.innerHTML =
+                '<div class="plan-image-label">' + plan.name + ' Floor Plan \u2014 First Floor</div>' +
+                '<div class="plan-image-area">' +
+                    (plan.image ? '<img src="' + plan.image + '" alt="' + plan.name + ' floor plan">' : '') +
+                '</div>' +
+                '<div class="plan-image-source">Image courtesy of <a href="https://www.pulte.com" target="_blank" rel="noopener">Pulte Homes</a></div>';
+            displayEl.appendChild(imgPanel);
+
+            // Detail panel
+            var detPanel = document.createElement('div');
+            detPanel.className = 'plan-detail-panel';
+            detPanel.innerHTML =
+                '<div class="plan-detail-name">' + plan.name.toUpperCase() + '</div>' +
+                '<div class="plan-detail-builder">Pulte Homes</div>' +
+                '<div class="plan-spec-grid">' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.priceLabel.replace('From ','') + '</div><div class="plan-spec-lbl">Price</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.sqftLabel + '</div><div class="plan-spec-lbl">Sq Ft</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.beds + '</div><div class="plan-spec-lbl">Beds</div></div>' +
+                    '<div class="plan-spec-item"><div class="plan-spec-val">' + plan.bathsLabel + '</div><div class="plan-spec-lbl">Baths</div></div>' +
+                '</div>' +
+                '<ul class="plan-features">' + plan.features.map(function(f) { return '<li>' + f + '</li>'; }).join('') + '</ul>' +
+                '<a href="#contact" class="plan-detail-cta">Get Full Floor Plans</a>';
+            displayEl.appendChild(detPanel);
+
+            // Animate in
+            requestAnimationFrame(function() { requestAnimationFrame(function() {
+                imgPanel.classList.add('visible');
+                detPanel.classList.add('visible');
+            }); });
+        }
+
+        function update() { renderTabs(); renderDisplay(); }
+        update();
+
+        /* Scroll reveal */
+        var reveals = document.querySelectorAll('.reveal');
+        var obs = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(function(el) { obs.observe(el); });
+
+        /* Scroll #contact CTAs to the bottom of the page where the embedded Lofty form lives */
+        function scrollToBottom(e) {
+            if (e) e.preventDefault();
+            var target = Math.max(
+                document.body.scrollHeight,
+                document.documentElement.scrollHeight
+            );
+            window.scrollTo({ top: target, behavior: 'smooth' });
+        }
+        function bindContactScroll(root) {
+            var links = (root || document).querySelectorAll('a[href="#contact"]');
+            links.forEach(function(a) {
+                if (a.dataset.scrollBound) return;
+                a.dataset.scrollBound = '1';
+                a.addEventListener('click', scrollToBottom);
+            });
+        }
+        bindContactScroll();
+        /* The floor plan tabs re-render the detail panel CTA after every selection,
+           so re-bind whenever new #contact links appear. */
+        var displayObserver = new MutationObserver(function() { bindContactScroll(); });
+        var displayEl2 = document.getElementById('planDisplay');
+        if (displayEl2) displayObserver.observe(displayEl2, { childList: true, subtree: true });
+
+    })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+How to Execute
+Step 1
+Copy Subject Line and Message to Email Blast App
+Subject
+Copy
+
+2,780 people have looked at this home (here's why)
+
+Body
+Copy
+
+Everyone's waiting for the spring market, but this is the kind of home that could pull you off the sidelines early.
+
+At {{square_footage}} with {{bedrooms}} beds and {{bathrooms}} baths, it offers the kind of space and layout that's getting harder to find without major tradeoffs.
+
+{{unique_feature_1}}.
+{{unique_feature_2}}.
+
+Oh, and it's under {{price threshold}}.
+
+If you know someone in your circle who might be interested, just reply to this email and I'll send over more details.
+
+Step 2
+Copy Subject: Highlight and copy the subject line from your email draft.
+Paste Subject: Open the email blast app and paste it into the subject line field.
+Copy Email Content: Return to your draft, copy the email content.
+Paste Content: Paste it in the message body of the email blast app.
+Review and Send: Check for accuracy, then schedule or send the email.

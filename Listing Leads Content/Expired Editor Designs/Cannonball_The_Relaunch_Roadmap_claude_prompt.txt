@@ -1,0 +1,953 @@
+
+**Situation**
+You are creating HTML-formatted sales letters designed for physical printing and mailing on standard US Letter paper (8.5" x 11"). These letters will be printed, folded, inserted into envelopes, and mailed to recipients, so print quality and readability are critical.
+
+**Task**
+When provided with a template prompt, read and fully understand the template prompt request first before applying any system-level formatting standards. Generate print-ready HTML sales letters that meet professional printing standards and collect any required personalization information before generating the output.
+
+**Objective**
+Produce sales letters that print perfectly on US Letter paper with optimal readability, professional appearance, and accurate personalization without requiring manual adjustments, while prioritizing the specific requirements outlined in any template prompt provided.
+
+**Knowledge**
+The assistant should follow this processing order and these production standards:
+
+**Processing Priority:**
+1. **Template Prompt First**: When a template prompt is provided, read it completely and understand all specific requirements, instructions, and constraints it contains.
+2. **Conflict Resolution**: If there is any conflict between the template prompt requirements and the system standards below, always prioritize the template prompt instructions.
+3. **System Standards Application**: Apply the system-level production standards below only after processing the template prompt and in ways that do not conflict with template-specific instructions.
+
+**Production Standards:**
+
+1. **Page Setup**: Set HTML to exactly 8.5" x 11" dimensions with no shadows, borders, or margins extending beyond the page boundaries. The output must be contained within the letter dimensions.
+
+2. **Typography Standards**: Use font sizes of 11pt minimum for all body text. Select medium to bold font weights (400-700) that ensure clear printing. Avoid light or thin font weights (100-300) that may appear faded or illegible when printed.
+
+3. **Personalization Protocol**: Before generating any letter, identify all placeholder fields that require personalization (such as recipient name, company name, address, specific details, dates, or custom information). Ask the user to provide this information explicitly. Do not proceed with generation until all required personalization data is collected.
+
+4. **Accuracy Requirement**: Generate content based strictly on information provided by the user. Do not invent, assume, or fabricate any details, statistics, claims, or personalization data. If information is missing or unclear, ask for clarification rather than filling gaps with assumed content.
+
+5. **Output Format**: Deliver clean HTML code optimized for printing with proper page break handling and print-friendly CSS.
+
+---
+
+## Template-Specific Instructions
+Create a "Relaunch Roadmap" print template for real estate agents targeting expired listings.
+Format & Technical Constraints:
+
+4-page single-column layout
+US Letter size (8.5in × 11in) with no margins, shadows, or spacing around pages
+Print-ready HTML output
+System fonts only (Georgia for serif, system UI stack for sans-serif)—no external font imports or Google Fonts
+All text fields should be contenteditable for agent customization
+Page break after each page
+
+Design Aesthetic:
+
+Elegant, magazine-style editorial look
+Cream/warm white background (#fdfcfa)
+Gold accent color for numbers and decorative elements (#b8a88a)
+Subtle gold border frame inset from page edges
+Muted red (#a67c7c) for "problems" section title
+Muted green (#7c9a7c) for "solutions" section title
+Italicized descriptions on problem pages; non-italic on solution pages
+
+Structure:
+Page 1: Full masthead with "The Relaunch Roadmap" title, section header "Part One: 25 Common Reasons Listings Expire" with subtitle "Understanding what went wrong is the first step toward getting it right.", items 1–12, agent footer
+Page 2: Minimal header (eyebrow only), italicized "25 Common Reasons Listings Expire, continued" line, items 13–25, agent footer
+Page 3: Minimal header, section header "Part Two: The Path Forward — 25 Strategic Moves" with subtitle "A proven plan to get your home sold—at the best possible terms.", items 1–12, agent footer
+Page 4: Minimal header, italicized "The Path Forward, continued" line, items 13–25, agent footer
+Item Format:
+
+Large serif number (gold) aligned right
+Bold sans-serif title
+Serif description underneath
+
+Footer (all pages):
+
+Agent name and title (left)
+Phone and email (right)
+Centered page number
+
+
+PART ONE: 25 Common Reasons Listings Expire
+
+Photos Didn't Do the Home Justice — Dark rooms, poor angles, or missing key spaces failed to create desire.
+No Video or Virtual Tour — Buyers scroll past homes they can't experience online.
+Over-Reliance on the MLS — The listing waited for buyers instead of going out to find them.
+No Targeted Digital Advertising — The home wasn't shown to qualified local buyers on social platforms.
+Pricing Missed the Market Window — It started too high and lost momentum in the first two weeks.
+No Compelling Opening Weekend Strategy — The listing quietly launched instead of making a statement.
+Generic Listing Description — Features were listed, but no lifestyle or emotional story was told.
+Lack of Agent-to-Agent Promotion — Other agents weren't personally invited or motivated to show it.
+Limited Showing Availability — Buyers with tight schedules moved on.
+Weak Curb Appeal — The first impression didn't earn a second look.
+Outdated or Distracting Interiors — Small issues created big hesitation.
+No Clear Buyer Profile — Marketing wasn't tailored to who would love this home most.
+Inconsistent Follow-Up — Buyer interest wasn't nurtured or converted.
+No Showing Feedback Strategy — Feedback was collected—but not acted on.
+Lack of Transparency on Performance — You weren't shown what was working and what wasn't.
+Too Many Price Reductions, Too Late — Adjustments felt reactive instead of strategic.
+No Sense of Urgency Created — Buyers felt they could "wait and see."
+Poor Timing with Market Conditions — Seasonality and local trends weren't fully leveraged.
+No Open House Game Plan — Events lacked promotion or follow-up.
+Unclear Value Compared to Competing Homes — Buyers didn't see why this one was the better choice.
+Inconsistent Branding Across Platforms — The home looked different everywhere it appeared.
+No Retargeting Ads — Interested buyers weren't reminded to come back.
+Lack of Pre-Listing Preparation — Small fixes that matter were missed.
+Emotion Over Strategy — Decisions were made with hope, not data.
+No Real-Time Course Correction — The plan stayed the same—even when the market responded differently.
+
+
+PART TWO: The Path Forward — 25 Strategic Moves
+
+Professional Photography & Twilight Shots — Bright, polished images that stop the scroll.
+Cinematic Video Tour — A walkthrough that creates emotion and context.
+Lifestyle-Focused Listing Narrative — We sell the feeling, not just the features.
+Pre-Listing Walkthrough & Prep Plan — Clear guidance on what matters—and what doesn't.
+Strategic Pricing Based on Buyer Behavior — Not just comps—momentum and demand.
+Launch-Week Marketing Blitz — Designed to create urgency immediately.
+Targeted Facebook & Instagram Ads — Reaching qualified buyers where they already are.
+YouTube & Video Placement — Capturing buyers actively researching homes.
+Retargeting Campaigns — Staying in front of buyers who already showed interest.
+Agent Network Outreach — Direct calls to agents with buyers in your price range.
+Broker Preview & Private Showings — Creating early buzz before the public rush.
+Flexible, Buyer-Friendly Showing Access — Removing friction from the process.
+Enhanced Curb Appeal Strategy — Small upgrades that deliver big first impressions.
+Staging Consultation — Making the space feel larger, brighter, and more inviting.
+Clear Buyer Positioning — Defining exactly who this home is perfect for.
+Open Houses with a Purpose — Promoted, staffed, and followed up properly.
+Weekly Performance Reports — You'll know exactly what buyers are doing.
+Real-Time Strategy Adjustments — We pivot early—before momentum is lost.
+Competitive Market Monitoring — Staying ahead of new listings and price changes.
+Strong Offer Strategy Planning — Setting the stage for clean, confident offers.
+Transparent Communication — No guessing. No sugarcoating.
+Data-Driven Decision Making — Every move backed by real market signals.
+Clear Next-Step Guidance — You'll always know what's coming next.
+A Calm, Professional Reset — New energy without desperation.
+One Goal, One Focus — Getting your home sold—at the best possible terms.
+
+
+Agent Footer Defaults:
+
+Agent Name
+Realtor · DRE# 00000000
+(555) 123-4567
+agent@email.com
+
+---
+
+# Template Customization Request
+
+Create an HTML artifact with the customized template that I can preview directly in this chat.
+
+## CRITICAL: Output Format
+**You MUST create a previewable HTML artifact** using Claude's artifact feature:
+- The artifact MUST be visible and renderable in the Claude UI
+- I need to see a live preview of the HTML, not just code
+- Use artifact type "text/html" so it renders as a webpage preview
+- Do NOT just paste HTML code in the chat message
+
+## Print Size Requirements
+**This template is designed for: 8.5x11 inches**
+
+You MUST ensure the output:
+- Fits exactly within 8.5x11 inches when printed
+- Does NOT exceed the boundaries of 8.5x11 inches
+- Maintains proper margins for printing (at least 0.25" / 6mm on all sides)
+- All content, images, and text must be contained within the printable area
+- Do NOT add content that would cause the document to overflow onto additional pages
+
+## Instructions
+You are helping customize an HTML marketing template called "Cannonball: The Relaunch Roadmap " for print size: 8.5x11 inches. Please modify the HTML below by:
+1. Replacing placeholder variables (like {{variable_name}}) with the provided information
+2. Applying the brand accent color to appropriate accent elements (buttons, highlights, borders)
+3. Inserting images at appropriate locations using the provided URLs
+4. Maintaining the exact layout and structure of the template
+5. **IMPORTANT: Ensuring ALL content fits within 8.5x11 inches - do not exceed this size**
+
+## User Profile Information
+
+### Contact Details
+- First Name: Ryan
+- Last Name: Rose
+- Email Address: ryan@rosehomeslv.com
+- Phone Number: 7027475921
+
+### Business Details
+- Company/Brokerage Name: Real Broker, LLC
+- Area We Serve: Las Vegas
+- Job Title: Nevada
+- License Number: S.0185572
+- Short Bio: Hey! I'm Ryan Rose, The Ethical Vegas Realtor. I'm a local agent on a Top Producing Las Vegas Real Estate Team with globally recognized marketing strategies for selling homes faster using Social Media and old school ideas (like actually picking up the phone and calling people!). I am honored to help people in the Las Vegas area buy, sell, and invest. My approach is simple: No pressure. No BS. Only genuine guidance from start to close. I look forward to hearing from you and showing you what I do above and beyond any other agents in the city!
+
+### Branding
+
+### Social & Web Links
+- Website: https://www.rosehomeslv.com
+- YouTube Channel: https://www.youtube.com/@rosehomeslv
+- Instagram: https://www.instagram.com/rosehomeslv
+
+## Image URLs
+Use these image URLs directly in the HTML output. Insert them as `<img src="URL">` tags at the appropriate locations:
+- Professional Headshot: https://ik.imagekit.io/listingleads/_personalization/1773467947159_blob_9noJLCXIy?tr=w-300
+- Company Logo: https://ik.imagekit.io/listingleads/_personalization/1773468120260_Real_Logo_Outline_White_kHJXcZ1A9q.png?tr=w-300
+
+## HTML Template Code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Relaunch Roadmap</title>
+    <style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --ink: #1a1a1a;
+            --charcoal: #3d3d3d;
+            --stone: #6b6b6b;
+            --warm-gray: #9a9590;
+            --silk: #f7f6f4;
+            --cream: #fdfcfa;
+            --gold: #b8a88a;
+            --gold-muted: #d4cabb;
+            --red-muted: #a67c7c;
+            --green-muted: #7c9a7c;
+        }
+        
+        @page {
+            size: 8.5in 11in;
+            margin: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--cream);
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            height: 11in;
+            background: var(--cream);
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            page-break-after: always;
+        }
+        
+        .inner-frame {
+            position: absolute;
+            top: 0.4in;
+            left: 0.4in;
+            right: 0.4in;
+            bottom: 0.4in;
+            border: 1px solid var(--gold-muted);
+            pointer-events: none;
+        }
+        
+        .content {
+            padding: 0.55in 0.7in 1in 0.7in;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding-bottom: 0.25in;
+            border-bottom: 1px solid var(--gold-muted);
+            margin-bottom: 0.25in;
+        }
+        
+        .header-eyebrow {
+            font-size: 7pt;
+            font-weight: 500;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            color: var(--warm-gray);
+            margin-bottom: 0.08in;
+        }
+        
+        .header-title {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 32pt;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: var(--ink);
+            line-height: 1;
+        }
+        
+        .header-title em {
+            font-style: italic;
+        }
+        
+        /* Minimal Header for continuation pages */
+        .header-minimal {
+            text-align: center;
+            padding-bottom: 0.2in;
+            border-bottom: 1px solid var(--gold-muted);
+            margin-bottom: 0.25in;
+        }
+        
+        .header-minimal .header-eyebrow {
+            margin-bottom: 0;
+        }
+        
+        /* Section Title */
+        .section-title-block {
+            text-align: center;
+            margin-bottom: 0.3in;
+        }
+        
+        .section-part {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 10pt;
+            color: var(--gold);
+            margin-bottom: 0.06in;
+        }
+        
+        .section-title {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 18pt;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.06in;
+        }
+        
+        .section-title.problems {
+            color: var(--red-muted);
+        }
+        
+        .section-title.solutions {
+            color: var(--green-muted);
+        }
+        
+        .section-subtitle {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 11pt;
+            font-style: italic;
+            color: var(--stone);
+        }
+        
+        /* Continuation indicator */
+        .continued {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 10pt;
+            font-style: italic;
+            color: var(--warm-gray);
+            text-align: center;
+            margin-bottom: 0.25in;
+        }
+        
+        /* Items - Single Column */
+        .items {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.18in;
+        }
+        
+        .item {
+            display: flex;
+            gap: 0.18in;
+            align-items: flex-start;
+        }
+        
+        .item-number {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 14pt;
+            font-weight: 500;
+            color: var(--gold);
+            width: 0.35in;
+            flex-shrink: 0;
+            text-align: right;
+            line-height: 1.15;
+        }
+        
+        .item-content {
+            flex: 1;
+            padding-top: 0.02in;
+        }
+        
+        .item-title {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-size: 9pt;
+            font-weight: 600;
+            color: var(--charcoal);
+            line-height: 1.3;
+            margin-bottom: 0.04in;
+        }
+        
+        .item-desc {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 10.5pt;
+            font-weight: 400;
+            color: var(--stone);
+            line-height: 1.4;
+            font-style: italic;
+        }
+        
+        .solutions-section .item-desc {
+            font-style: normal;
+            color: var(--charcoal);
+        }
+        
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--gold-muted);
+            padding-top: 0.15in;
+            position: absolute;
+            bottom: 0.55in;
+            left: 0.7in;
+            right: 0.7in;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-agent {
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+        
+        .agent-name {
+            font-size: 11pt;
+            font-weight: 500;
+            color: var(--ink);
+        }
+        
+        .agent-title {
+            font-size: 9pt;
+            font-style: italic;
+            color: var(--stone);
+        }
+        
+        .footer-contact {
+            text-align: right;
+            font-size: 8pt;
+            color: var(--stone);
+            line-height: 1.6;
+        }
+        
+        .footer-page {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 9pt;
+            color: var(--warm-gray);
+            position: absolute;
+            bottom: 0.25in;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Editable */
+        [contenteditable="true"] {
+            outline: none;
+            border-radius: 2px;
+        }
+        
+        [contenteditable="true"]:hover {
+            background: rgba(184, 168, 138, 0.08);
+        }
+        
+        [contenteditable="true"]:focus {
+            background: rgba(184, 168, 138, 0.12);
+        }
+        
+        @media print {
+            body { background: white; }
+            .page { margin: 0; box-shadow: none; }
+            [contenteditable="true"]:hover,
+            [contenteditable="true"]:focus { background: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <!-- PAGE 1: Reasons 1-12 -->
+    <div class="page">
+        <div class="inner-frame"></div>
+        <div class="content">
+            <header class="header">
+                <div class="header-eyebrow">The Relaunch Roadmap</div>
+                <h1 class="header-title"><em>A Fresh Start</em> for Your Home Sale</h1>
+            </header>
+            
+            <div class="section-title-block">
+                <div class="section-part">Part One</div>
+                <h2 class="section-title problems">25 Common Reasons Listings Expire</h2>
+                <p class="section-subtitle">Understanding what went wrong is the first step toward getting it right.</p>
+            </div>
+            
+            <div class="items">
+                <div class="item">
+                    <div class="item-number">1</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Photos Didn't Do the Home Justice</div>
+                        <div class="item-desc" contenteditable="true">Dark rooms, poor angles, or missing key spaces failed to create desire.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">2</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">No Video or Virtual Tour</div>
+                        <div class="item-desc" contenteditable="true">Buyers scroll past homes they can't experience online.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">3</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Over-Reliance on the MLS</div>
+                        <div class="item-desc" contenteditable="true">The listing waited for buyers instead of going out to find them.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">4</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">No Targeted Digital Advertising</div>
+                        <div class="item-desc" contenteditable="true">The home wasn't shown to qualified local buyers on social platforms.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">5</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Pricing Missed the Market Window</div>
+                        <div class="item-desc" contenteditable="true">It started too high and lost momentum in the first two weeks.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">6</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">No Compelling Opening Weekend Strategy</div>
+                        <div class="item-desc" contenteditable="true">The listing quietly launched instead of making a statement.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">7</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Generic Listing Description</div>
+                        <div class="item-desc" contenteditable="true">Features were listed, but no lifestyle or emotional story was told.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">8</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Lack of Agent-to-Agent Promotion</div>
+                        <div class="item-desc" contenteditable="true">Other agents weren't personally invited or motivated to show it.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">9</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Limited Showing Availability</div>
+                        <div class="item-desc" contenteditable="true">Buyers with tight schedules moved on.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">10</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Weak Curb Appeal</div>
+                        <div class="item-desc" contenteditable="true">The first impression didn't earn a second look.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">11</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Outdated or Distracting Interiors</div>
+                        <div class="item-desc" contenteditable="true">Small issues created big hesitation.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">12</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">No Clear Buyer Profile</div>
+                        <div class="item-desc" contenteditable="true">Marketing wasn't tailored to who would love this home most.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <div class="footer-agent">
+                    <div class="agent-name" contenteditable="true">Agent Name</div>
+                    <div class="agent-title" contenteditable="true">Realtor · DRE# 00000000</div>
+                </div>
+                <div class="footer-contact">
+                    <span contenteditable="true">(555) 123-4567</span><br>
+                    <span contenteditable="true">agent@email.com</span>
+                </div>
+            </footer>
+            <div class="footer-page">1</div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: Reasons 13-25 -->
+    <div class="page">
+        <div class="inner-frame"></div>
+        <div class="content">
+            <header class="header-minimal">
+                <div class="header-eyebrow">The Relaunch Roadmap</div>
+            </header>
+            
+            <div class="continued">25 Common Reasons Listings Expire, continued</div>
+            
+            <div class="items">
+                <div class="item">
+                    <div class="item-number">13</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Inconsistent Follow-Up</div>
+                        <div class="item-desc" contenteditable="true">Buyer interest wasn't nurtured or converted.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">14</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">No Showing Feedback Strategy</div>
+                        <div class="item-desc" contenteditable="true">Feedback was collected—but not acted on.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">15</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Lack of Transparency on Performance</div>
+                        <div class="item-desc" contenteditable="true">You weren't shown what was working and what wasn't.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">16</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Too Many Price Reductions, Too Late</div>
+                        <div class="item-desc" contenteditable="true">Adjustments felt reactive instead of strategic.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">17</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">No Sense of Urgency Created</div>
+                        <div class="item-desc" contenteditable="true">Buyers felt they could "wait and see."</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">18</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Poor Timing with Market Conditions</div>
+                        <div class="item-desc" contenteditable="true">Seasonality and local trends weren't fully leveraged.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">19</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">No Open House Game Plan</div>
+                        <div class="item-desc" contenteditable="true">Events lacked promotion or follow-up.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">20</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Unclear Value Compared to Competing Homes</div>
+                        <div class="item-desc" contenteditable="true">Buyers didn't see why this one was the better choice.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">21</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Inconsistent Branding Across Platforms</div>
+                        <div class="item-desc" contenteditable="true">The home looked different everywhere it appeared.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">22</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">No Retargeting Ads</div>
+                        <div class="item-desc" contenteditable="true">Interested buyers weren't reminded to come back.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">23</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Lack of Pre-Listing Preparation</div>
+                        <div class="item-desc" contenteditable="true">Small fixes that matter were missed.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">24</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Emotion Over Strategy</div>
+                        <div class="item-desc" contenteditable="true">Decisions were made with hope, not data.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">25</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">No Real-Time Course Correction</div>
+                        <div class="item-desc" contenteditable="true">The plan stayed the same—even when the market responded differently.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <div class="footer-agent">
+                    <div class="agent-name" contenteditable="true">Agent Name</div>
+                    <div class="agent-title" contenteditable="true">Realtor · DRE# 00000000</div>
+                </div>
+                <div class="footer-contact">
+                    <span contenteditable="true">(555) 123-4567</span><br>
+                    <span contenteditable="true">agent@email.com</span>
+                </div>
+            </footer>
+            <div class="footer-page">2</div>
+        </div>
+    </div>
+
+    <!-- PAGE 3: Solutions 1-12 -->
+    <div class="page solutions-section">
+        <div class="inner-frame"></div>
+        <div class="content">
+            <header class="header-minimal">
+                <div class="header-eyebrow">The Relaunch Roadmap</div>
+            </header>
+            
+            <div class="section-title-block">
+                <div class="section-part">Part Two</div>
+                <h2 class="section-title solutions">The Path Forward: 25 Strategic Moves</h2>
+                <p class="section-subtitle">A proven plan to get your home sold—at the best possible terms.</p>
+            </div>
+            
+            <div class="items">
+                <div class="item">
+                    <div class="item-number">1</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Professional Photography & Twilight Shots</div>
+                        <div class="item-desc" contenteditable="true">Bright, polished images that stop the scroll.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">2</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Cinematic Video Tour</div>
+                        <div class="item-desc" contenteditable="true">A walkthrough that creates emotion and context.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">3</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Lifestyle-Focused Listing Narrative</div>
+                        <div class="item-desc" contenteditable="true">We sell the feeling, not just the features.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">4</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Pre-Listing Walkthrough & Prep Plan</div>
+                        <div class="item-desc" contenteditable="true">Clear guidance on what matters—and what doesn't.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">5</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Strategic Pricing Based on Buyer Behavior</div>
+                        <div class="item-desc" contenteditable="true">Not just comps—momentum and demand.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">6</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Launch-Week Marketing Blitz</div>
+                        <div class="item-desc" contenteditable="true">Designed to create urgency immediately.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">7</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Targeted Facebook & Instagram Ads</div>
+                        <div class="item-desc" contenteditable="true">Reaching qualified buyers where they already are.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">8</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">YouTube & Video Placement</div>
+                        <div class="item-desc" contenteditable="true">Capturing buyers actively researching homes.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">9</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Retargeting Campaigns</div>
+                        <div class="item-desc" contenteditable="true">Staying in front of buyers who already showed interest.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">10</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Agent Network Outreach</div>
+                        <div class="item-desc" contenteditable="true">Direct calls to agents with buyers in your price range.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">11</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Broker Preview & Private Showings</div>
+                        <div class="item-desc" contenteditable="true">Creating early buzz before the public rush.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">12</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Flexible, Buyer-Friendly Showing Access</div>
+                        <div class="item-desc" contenteditable="true">Removing friction from the process.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <div class="footer-agent">
+                    <div class="agent-name" contenteditable="true">Agent Name</div>
+                    <div class="agent-title" contenteditable="true">Realtor · DRE# 00000000</div>
+                </div>
+                <div class="footer-contact">
+                    <span contenteditable="true">(555) 123-4567</span><br>
+                    <span contenteditable="true">agent@email.com</span>
+                </div>
+            </footer>
+            <div class="footer-page">3</div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: Solutions 13-25 -->
+    <div class="page solutions-section">
+        <div class="inner-frame"></div>
+        <div class="content">
+            <header class="header-minimal">
+                <div class="header-eyebrow">The Relaunch Roadmap</div>
+            </header>
+            
+            <div class="continued">The Path Forward, continued</div>
+            
+            <div class="items">
+                <div class="item">
+                    <div class="item-number">13</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Enhanced Curb Appeal Strategy</div>
+                        <div class="item-desc" contenteditable="true">Small upgrades that deliver big first impressions.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">14</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Staging Consultation</div>
+                        <div class="item-desc" contenteditable="true">Making the space feel larger, brighter, and more inviting.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">15</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Clear Buyer Positioning</div>
+                        <div class="item-desc" contenteditable="true">Defining exactly who this home is perfect for.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">16</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Open Houses with a Purpose</div>
+                        <div class="item-desc" contenteditable="true">Promoted, staffed, and followed up properly.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">17</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Weekly Performance Reports</div>
+                        <div class="item-desc" contenteditable="true">You'll know exactly what buyers are doing.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">18</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Real-Time Strategy Adjustments</div>
+                        <div class="item-desc" contenteditable="true">We pivot early—before momentum is lost.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">19</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Competitive Market Monitoring</div>
+                        <div class="item-desc" contenteditable="true">Staying ahead of new listings and price changes.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">20</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Strong Offer Strategy Planning</div>
+                        <div class="item-desc" contenteditable="true">Setting the stage for clean, confident offers.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">21</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Transparent Communication</div>
+                        <div class="item-desc" contenteditable="true">No guessing. No sugarcoating.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">22</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Data-Driven Decision Making</div>
+                        <div class="item-desc" contenteditable="true">Every move backed by real market signals.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">23</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">Clear Next-Step Guidance</div>
+                        <div class="item-desc" contenteditable="true">You'll always know what's coming next.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">24</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">A Calm, Professional Reset</div>
+                        <div class="item-desc" contenteditable="true">New energy without desperation.</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-number">25</div>
+                    <div class="item-content">
+                        <div class="item-title" contenteditable="true">One Goal, One Focus</div>
+                        <div class="item-desc" contenteditable="true">Getting your home sold—at the best possible terms.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <div class="footer-agent">
+                    <div class="agent-name" contenteditable="true">Agent Name</div>
+                    <div class="agent-title" contenteditable="true">Realtor · DRE# 00000000</div>
+                </div>
+                <div class="footer-contact">
+                    <span contenteditable="true">(555) 123-4567</span><br>
+                    <span contenteditable="true">agent@email.com</span>
+                </div>
+            </footer>
+            <div class="footer-page">4</div>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+## Output Requirements
+- **CREATE A PREVIEWABLE HTML ARTIFACT** - Use the artifact feature with type "text/html"
+- The artifact MUST render as a visual preview in the Claude UI (not just code)
+- The artifact should contain the complete, modified HTML document starting with <!DOCTYPE html>
+- Preserve all existing styles and structure
+- Keep the same responsive layout
+- Replace all {{placeholder}} variables with the appropriate values from above
+- **CRITICAL: Output MUST fit within 8.5x11 inches when printed - do not exceed this print size**
+
+⚠️ IMPORTANT: I need to SEE the rendered HTML preview in the artifact panel, not read code. Make sure the artifact is previewable.

@@ -1,0 +1,58 @@
+SEO PACKAGE — BATCH 17: NLV AND SOUTHWEST (MIXED CATEGORIES)
+==================================================
+NOTE: Create these categories in Lofty if they do not exist:
+  - New Construction North Las Vegas
+  - New Construction Southwest Las Vegas
+
+Category assignments per post are listed individually below.
+==================================================
+
+
+POST 1: North Las Vegas New Construction: Maximum Value in the Valley
+LOFTY CMS CATEGORY: New Construction North Las Vegas
+-----------------------------------------------------
+SEO Title (max 60 chars): North Las Vegas New Construction Value | Ryan Rose
+Meta Description (max 150 chars): North Las Vegas offers the most sq ft per dollar in Las Vegas. Discover why it's NV's fastest-growing city and top value for new homes in 2026.
+Keywords (max 500 chars, comma-separated): North Las Vegas new construction, North Las Vegas homes 2026, new construction North Las Vegas value, affordable new homes Las Vegas, UNLV North Campus real estate, Aliante new homes, North Las Vegas fastest growing city Nevada, North Las Vegas home builders, North Las Vegas square footage value, Del Webb North Ranch, Tule Springs Las Vegas, new construction under 400k Las Vegas, North Las Vegas vs Henderson
+Slug: north-las-vegas-new-construction-value
+AI Image Prompt: Photorealistic image of a modern new construction home in a North Las Vegas master-planned community, Nevada. Wide residential street with desert landscaping, clear blue sky, and distant mountain backdrop. Style: photorealistic lifestyle. Mood: bright, aspirational, value-focused. Key elements: two-story home with three-car garage, xeriscape front yard, neighborhood street, Las Vegas mountain range in background. Natural lighting, high quality.
+
+
+POST 2: Skye Summit Las Vegas: Everything About the Newest 3,500 Home Community
+LOFTY CMS CATEGORY: New Construction North Las Vegas
+-----------------------------------------------------
+SEO Title (max 60 chars): Skye Summit Las Vegas New Community | Ryan Rose
+Meta Description (max 150 chars): Skye Summit: 505 acres, 3,500 homes, 6 top builders, sales opening 2027. Everything you need to know about Las Vegas's most anticipated new community.
+Keywords (max 500 chars, comma-separated): Skye Summit Las Vegas, Skye Summit new construction, Skye Summit 2027 sales, northwest Las Vegas new community, KB Home Skye Summit, Pulte Skye Summit, Taylor Morrison Skye Summit, Tri Pointe Skye Summit, Century Communities Skye Summit, DR Horton Skye Summit, 3500 homes Las Vegas, new master planned community Las Vegas 2027, Skye Summit 505 acres, interest list Skye Summit
+Slug: skye-summit-las-vegas-newest-community
+AI Image Prompt: Photorealistic aerial image of a large master-planned community under early development in northwest Las Vegas, Nevada. Expansive desert terrain with graded home pads, new streets, mountain range visible in distance, bright Nevada sky. Style: aerial photorealistic. Mood: exciting, growth-focused, large scale. Key elements: curved community streets, model homes, construction activity, desert mountains, blue sky. Natural lighting, high quality.
+
+
+POST 3: Skye Canyon vs Summerlin: Northwest Las Vegas New Construction Compared
+LOFTY CMS CATEGORY: New Construction Las Vegas
+-----------------------------------------------------
+SEO Title (max 60 chars): Skye Canyon vs Summerlin New Construction | Ryan Rose
+Meta Description (max 150 chars): Deciding between Skye Canyon and Summerlin for new construction? Compare pricing, amenities, school zones, SID fees, and long-term value for 2026 buyers.
+Keywords (max 500 chars, comma-separated): Skye Canyon vs Summerlin, northwest Las Vegas new construction, Skye Canyon new homes 2026, Summerlin new construction 2026, Skye Canyon SID fees, Summerlin school zones, best northwest Las Vegas community, Skye Canyon Century Communities, Toll Brothers northwest Las Vegas, Summerlin master planned community, Skye Center amenities, Summerlin trails golf parks, northwest Las Vegas comparison, Las Vegas new home community comparison 2026
+Slug: skye-canyon-vs-summerlin-northwest-las-vegas
+AI Image Prompt: Photorealistic split-comparison image of two northwest Las Vegas communities side by side. Left: outdoor fitness center and community park at Skye Canyon with desert mountain backdrop. Right: tree-lined Summerlin trail with Red Rock Canyon visible in distance. Style: photorealistic lifestyle. Mood: active, community-focused, inviting. Key elements: community amenities, desert landscaping, mountain views, Nevada sky. Natural lighting, high quality.
+
+
+POST 4: Southern Highlands New Construction: Guard Gated Luxury in Southwest Las Vegas
+LOFTY CMS CATEGORY: New Construction Southwest Las Vegas
+-----------------------------------------------------
+SEO Title (max 60 chars): Southern Highlands New Construction Luxury | Ryan Rose
+Meta Description (max 150 chars): Southern Highlands offers guard-gated new construction from $400K to $1.5M+ in southwest Las Vegas, anchored by a Robert Trent Jones Jr. golf course.
+Keywords (max 500 chars, comma-separated): Southern Highlands new construction, Southern Highlands Las Vegas luxury, guard gated Las Vegas new homes, southwest Las Vegas new construction 2026, Southern Highlands golf course homes, Robert Trent Jones Jr golf Las Vegas, Southern Highlands gated community, Southern Highlands home builders, Las Vegas luxury gated community, Southern Highlands real estate 2026, southwest Las Vegas luxury homes, Southern Highlands HOA, Las Vegas guard gated master planned
+Slug: southern-highlands-new-construction-luxury
+AI Image Prompt: Photorealistic image of a guard gate entrance to a luxury Las Vegas community at golden hour, lush desert landscaping flanking a grand entry, palm trees and manicured shrubs lining the arrival road. Style: photorealistic lifestyle. Mood: prestigious, secure, luxurious. Key elements: guard gate booth, stone columns, palm-lined entry boulevard, luxury homes visible behind gate, warm Nevada sunset light. High quality, editorial feel.
+
+
+POST 5: Mountains Edge New Construction: The Family Friendly Sweet Spot
+LOFTY CMS CATEGORY: New Construction Southwest Las Vegas
+-----------------------------------------------------
+SEO Title (max 60 chars): Mountains Edge New Construction Families | Ryan Rose
+Meta Description (max 150 chars): Mountains Edge in southwest Las Vegas delivers family-focused new construction from the mid-$300Ks, anchored by Exploration Peak Park and miles of trails.
+Keywords (max 500 chars, comma-separated): Mountains Edge new construction, Mountains Edge Las Vegas families, southwest Las Vegas new homes 2026, Mountains Edge home builders, Exploration Peak Park Las Vegas, Mountains Edge family community, affordable southwest Las Vegas new construction, Mountains Edge price range 2026, Mountains Edge master planned community, best family communities Las Vegas, Mountains Edge trails parks, southwest Las Vegas family real estate, Mountains Edge HOA, new homes southwest Las Vegas
+Slug: mountains-edge-new-construction-family-friendly
+AI Image Prompt: Photorealistic image of a family walking on a desert trail at Exploration Peak Park in Mountains Edge, Las Vegas, Nevada. Wide paved path with desert scrub, elevated ridge overlooking the Las Vegas valley, clear blue sky and distant cityscape. Style: photorealistic lifestyle. Mood: active, family-friendly, community-oriented. Key elements: family with children on trail, valley view, desert landscape, Mountains Edge neighborhood rooftops visible below. Natural lighting, golden afternoon light, high quality.

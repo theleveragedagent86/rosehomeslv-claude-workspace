@@ -1,0 +1,165 @@
+{
+  "description": "New construction buyer TC cadence. Steps are either day-offset from contract acceptance or trigger-based on external events. Reverse-engineered from Lisa Jones TC process.",
+  "transaction_type": "buyer-new-construction",
+  "follow_up_rule": "Never let more than 1 business day pass without following up on open items.",
+  "steps": [
+    {
+      "id": "day0-accepted-offer-email",
+      "day": 0,
+      "type": "email",
+      "trigger": "day-based",
+      "title": "Send Accepted Offer Email to Buyer",
+      "template_ref": "buyer-new-construction:template-1",
+      "notes": "Send immediately after offer is accepted. Attach purchase agreement PDF."
+    },
+    {
+      "id": "day0-inspection-options",
+      "day": 0,
+      "type": "email",
+      "trigger": "day-based",
+      "title": "Send Home Inspection Options to Buyer",
+      "template_ref": "buyer-new-construction:template-2",
+      "notes": "Send same day. Buyer needs to choose an inspector."
+    },
+    {
+      "id": "day0-request-escrow-lender",
+      "day": 0,
+      "type": "email",
+      "trigger": "day-based",
+      "title": "Request Escrow/Lender Info from Builder",
+      "template_ref": "buyer-new-construction:template-3",
+      "notes": "Send same day as accepted offer."
+    },
+    {
+      "id": "day0-calendar-events",
+      "day": 0,
+      "type": "calendar",
+      "trigger": "day-based",
+      "title": "Create All Calendar Events from Contract",
+      "notes": "Add COE, all contingency deadlines, earnest money deadline to calendar.json. See shared.md for full list."
+    },
+    {
+      "id": "day0-home-warranty-options",
+      "day": 0,
+      "type": "email",
+      "trigger": "day-based",
+      "condition": "contract includes seller/builder-paid home warranty / Home Protection Plan with buyer-choice provider",
+      "title": "Send Home Warranty Options to Buyer",
+      "template_ref": "shared:home-warranty-options",
+      "attachments": [
+        "assets/home-warranty-brochures/Old Republic HW.pdf",
+        "assets/home-warranty-brochures/American Home Shield.pdf",
+        "assets/home-warranty-brochures/FNHW.pdf",
+        "assets/home-warranty-brochures/CHW_Realty_Brochure_NA-2023.pdf"
+      ],
+      "notes": "CANONICAL: Always attach all 4 brochures from assets/home-warranty-brochures/. Always use the wording from shared.md. Only variables are [PROPERTY ADDRESS], [BUYER FIRST NAME], and [WARRANTY CREDIT] (dollar amount). Skip this step when the builder includes their own warranty program only."
+    },
+    {
+      "id": "day1-followup-inspection",
+      "day": 1,
+      "type": "email",
+      "trigger": "day-based",
+      "condition": "buyer has NOT responded to inspection options",
+      "title": "Follow Up on Inspection Choice",
+      "template_ref": "buyer-new-construction:template-4",
+      "notes": "Send 1 business day after inspection options email if no response."
+    },
+    {
+      "id": "day3-followup-escrow-contact",
+      "day": 3,
+      "type": "email",
+      "trigger": "day-based",
+      "condition": "builder has NOT provided escrow info",
+      "title": "Follow Up on Escrow Contact from Builder",
+      "template_ref": "buyer-new-construction:template-6",
+      "notes": "Follow up if builder has not responded to escrow/lender request."
+    },
+    {
+      "id": "trigger-initiate-inspection",
+      "day": null,
+      "type": "email",
+      "trigger": "event-based",
+      "trigger_event": "buyer-selects-inspector",
+      "title": "Initiate Inspection with Builder + Inspector",
+      "template_ref": "buyer-new-construction:template-5",
+      "notes": "Connects builder rep, inspector, and provides buyer contact info."
+    },
+    {
+      "id": "trigger-intro-all-parties",
+      "day": null,
+      "type": "email",
+      "trigger": "event-based",
+      "trigger_event": "escrow-info-received",
+      "title": "Introduction Email to All Transaction Parties",
+      "template_ref": "buyer-new-construction:template-7",
+      "notes": "Send once escrow officer info is obtained."
+    },
+    {
+      "id": "trigger-send-w9",
+      "day": null,
+      "type": "email",
+      "trigger": "event-based",
+      "trigger_event": "escrow-info-received",
+      "title": "Send W9 to Builder",
+      "template_ref": "shared:w9-to-builder",
+      "attachment": "assets/Real Broker LLC W9 01-01-2026.pdf",
+      "notes": "Attach Real Broker LLC W9. Can send same day as intro email."
+    },
+    {
+      "id": "trigger-prelim-to-buyer",
+      "day": null,
+      "type": "email",
+      "trigger": "event-based",
+      "trigger_event": "prelim-title-received",
+      "title": "Send Preliminary Title Report to Buyer",
+      "template_ref": "buyer-new-construction:template-8",
+      "notes": "Forward prelim PDF to buyer with template explanation."
+    },
+    {
+      "id": "trigger-inspection-calendar",
+      "day": null,
+      "type": "calendar",
+      "trigger": "event-based",
+      "trigger_event": "inspection-date-confirmed",
+      "title": "Add Inspection Date to Calendar",
+      "notes": "Add confirmed inspection date/time to calendar.json."
+    },
+    {
+      "id": "trigger-walkthrough-calendar",
+      "day": null,
+      "type": "calendar",
+      "trigger": "event-based",
+      "trigger_event": "walkthrough-date-confirmed",
+      "title": "Add Final Walkthrough to Calendar",
+      "notes": "Usually 1-2 days before COE. Add to calendar.json."
+    },
+    {
+      "id": "trigger-signing-calendar",
+      "day": null,
+      "type": "calendar",
+      "trigger": "event-based",
+      "trigger_event": "signing-date-confirmed",
+      "title": "Add Signing Appointment to Calendar",
+      "notes": "Add signing date/time to calendar.json. Attend all signings."
+    },
+    {
+      "id": "trigger-builder-walkthrough-calendar",
+      "day": null,
+      "type": "calendar",
+      "trigger": "event-based",
+      "trigger_event": "builder-walkthrough-confirmed",
+      "title": "Add Builder Walkthrough/Orientation to Calendar",
+      "notes": "Builder schedules this. Add to calendar.json when confirmed."
+    },
+    {
+      "id": "trigger-post-recording-closeout",
+      "day": null,
+      "type": "email",
+      "trigger": "event-based",
+      "trigger_event": "transaction-recorded",
+      "title": "Request Final Settlement Statement + Proof of Commission Payment",
+      "template_ref": "shared:post-recording-closeout",
+      "notes": "Send same day escrow confirms recording (reply to their 'We Are Recorded' email). Requests buyer-side and combined final settlement statements + commission wire/check confirmation. Buyer side routes to REAL/Urban Nest back office unless deal-specific routing differs."
+    }
+  ]
+}

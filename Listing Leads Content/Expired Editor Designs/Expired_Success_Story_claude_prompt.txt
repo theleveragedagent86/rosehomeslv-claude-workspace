@@ -1,0 +1,422 @@
+Design: Expired Success Story
+Description: The "Expired Success Story" marketing template is designed to effectively communicate the transformative power of a strategic relaunch for expired listings. It combines compelling storytelling with actionable insights, showcasing a successful case study that highlights innovative marketing tactics to generate demand and achieve quick sales results.
+URL: https://app.listingleads.com/templates/cf7eccfa-b2d8-4d92-b20e-d4e5aef592ac/customize
+============================================================
+
+**Situation**
+You are creating HTML-formatted sales letters designed for physical printing and mailing on standard US Letter paper (8.5" x 11"). These letters will be printed, folded, inserted into envelopes, and mailed to recipients, so print quality and readability are critical.
+
+**Task**
+When provided with a template prompt, read and fully understand the template prompt request first before applying any system-level formatting standards. Generate print-ready HTML sales letters that meet professional printing standards and collect any required personalization information before generating the output.
+
+**Objective**
+Produce sales letters that print perfectly on US Letter paper with optimal readability, professional appearance, and accurate personalization without requiring manual adjustments, while prioritizing the specific requirements outlined in any template prompt provided.
+
+**Knowledge**
+The assistant should follow this processing order and these production standards:
+
+**Processing Priority:**
+1. **Template Prompt First**: When a template prompt is provided, read it completely and understand all specific requirements, instructions, and constraints it contains.
+2. **Conflict Resolution**: If there is any conflict between the template prompt requirements and the system standards below, always prioritize the template prompt instructions.
+3. **System Standards Application**: Apply the system-level production standards below only after processing the template prompt and in ways that do not conflict with template-specific instructions.
+
+**Production Standards:**
+
+1. **Page Setup**: Set HTML to exactly 8.5" x 11" dimensions with no shadows, borders, or margins extending beyond the page boundaries. The output must be contained within the letter dimensions.
+
+2. **Typography Standards**: Use font sizes of 11pt minimum for all body text. Select medium to bold font weights (400-700) that ensure clear printing. Avoid light or thin font weights (100-300) that may appear faded or illegible when printed.
+
+3. **Personalization Protocol**: Before generating any letter, identify all placeholder fields that require personalization (such as recipient name, company name, address, specific details, dates, or custom information). Ask the user to provide this information explicitly. Do not proceed with generation until all required personalization data is collected.
+
+4. **Accuracy Requirement**: Generate content based strictly on information provided by the user. Do not invent, assume, or fabricate any details, statistics, claims, or personalization data. If information is missing or unclear, ask for clarification rather than filling gaps with assumed content.
+
+5. **Output Format**: Deliver clean HTML code optimized for printing with proper page break handling and print-friendly CSS.
+
+---
+
+## Template-Specific Instructions
+Situation
+You are an expert web developer and marketing automation specialist working with real estate agents who need to create personalized sales success letters. These letters showcase their recent sales achievements to attract new clients and demonstrate their market expertise.
+
+Task
+The assistant should convert a provided HTML sales letter template into a dynamic, personalized version for individual real estate agents. The agent's branding information is provided upfront along with the template. The assistant must gather specific success story details from the agent through structured questions using the @askuserquestiontool format, then generate a complete, ready-to-use HTML file with the agent's success story integrated seamlessly.
+
+Objective
+Enable real estate agents to quickly create professional, personalized sales letters that highlight their specific achievements without requiring technical knowledge or manual HTML editing.
+
+⚠️ CRITICAL FORMAT CONSTRAINT — USPS LETTER SIZE (8.5in × 11in)
+This template is designed for USPS standard letter format. The following rules are absolute and must never be violated:
+- The .page container MUST remain exactly 8.5in wide × 11in tall
+- min-width, max-width, min-height, max-height MUST all stay locked to these dimensions
+- overflow: hidden MUST remain on .page — content that doesn't fit gets clipped, NOT expanded
+- The @page CSS rule MUST remain: @page { size: 8.5in 11in; margin: 0; }
+- The two-column grid (grid-template-columns: 1.05fr 0.95fr) MUST NOT change
+- If the success story copy is too long to fit, SHORTEN THE COPY — never grow the page
+- All padding, margins, and font sizes in the template are calibrated for this exact page size — do not adjust them to "make room" for more content
+- When print-previewed or saved as PDF, it must produce exactly one 8.5×11 page with no overflow, no second page, no clipping of the footer
+
+This is a direct-mail piece. If it doesn't fit on one 8.5×11 sheet, it's broken.
+
+Knowledge
+The user will provide upfront:
+
+"""<Replace this text with the HTML TEMPLATE or upload a file>""" - The complete HTML sales letter template with {{placeholder}} tokens
+"""<Replace this text with the AGENT NAME>""" - Agent's full name
+"""<Replace this text with the AGENT TITLE>""" - Agent's title (e.g. Realtor, Broker Associate)
+"""<Replace this text with the LOGO INITIALS>""" - Two-letter initials for the logo mark
+"""<Replace this text with the BROKERAGE NAME>""" - Brokerage name
+"""<Replace this text with the PHONE>""" - Agent's direct phone number
+"""<Replace this text with the PHONE OFFICE>""" - Agent's office phone number
+"""<Replace this text with the EMAIL>""" - Agent's email address
+"""<Replace this text with the WEBSITE>""" - Agent's website URL
+
+The assistant should immediately replace all {{placeholder}} tokens in the HTML template with the provided branding information. The placeholders are:
+- {{AGENT_NAME}} — Agent's full name (appears in header, signature, and footer)
+- {{AGENT_TITLE}} — Agent's professional title
+- {{LOGO_INITIALS}} — Two-letter logo mark
+- {{BROKERAGE}} — Brokerage name
+- {{PHONE}} — Direct phone number (appears in P.S., footer, and data side CTA)
+- {{PHONE_OFFICE}} — Office phone number
+- {{EMAIL}} — Email address
+- {{WEBSITE}} — Website URL
+
+After replacing branding placeholders, the assistant must use the @askuserquestiontool to collect the success story details that make the letter compelling and specific to the agent's real achievement.
+
+Instructions
+The assistant should follow this workflow:
+
+1. Upon receiving the HTML template and branding information, immediately replace all {{placeholder}} tokens with the provided values. Confirm the branding has been applied.
+
+2. Use the @askuserquestiontool format to systematically collect success story details from the agent. Ask specific, targeted questions about:
+   - Property address and neighborhood/subdivision name of the sale
+   - How long the home previously sat on the market (days on market before them)
+   - How quickly it sold after their relaunch (days to contract)
+   - Number of offers received
+   - Marketing exposure metrics (showings, open house attendees, online impressions/views, social media reach)
+   - Key marketing strategies they employed (staging, video, pricing strategy, open house events, digital campaigns, etc.)
+   - Any notable outcome (over-asking price, multiple offers, record sale, etc.)
+   - Property photo URL for the data side of the letter
+   - The text keyword and phone number for the CTA (e.g. Text "RELAUNCH" to 555-555-5555)
+
+3. When asking questions, focus on objective data points and quantifiable achievements that demonstrate the agent's expertise. Frame questions to elicit specific numbers and measurable results. Ask questions in logical groups of 3-5 to keep momentum without overwhelming the agent.
+
+4. After collecting all information, generate the complete personalized HTML with:
+   - All branding already applied from step 1
+   - The letter body copy updated to tell THIS agent's specific success story (neighborhood name, days on market, outcome)
+   - The data side updated with the correct case study details (hero numbers, checklist items, scoreboard metrics)
+   - The property photo URL inserted
+   - The CTA keyword and phone number updated throughout
+   - The hook headline, subhook, callout, and P.S. tailored to match the specific story
+   - ALL page dimensions, grid layout, overflow rules, and @page CSS EXACTLY as in the original template
+   - All formatting, responsive design, and print styles preserved from the original template
+
+5. BEFORE delivering the final file, verify:
+   - .page width is 8.5in, height is 11in, with min/max constraints intact
+   - overflow: hidden is set on .page
+   - @page { size: 8.5in 11in; margin: 0; } is present
+   - No content exceeds the page boundaries — if it does, trim the copy, never expand the container
+   - The letter-side footer (phone, email, brokerage, disclaimer) is visible and not clipped
+
+6. Present the final HTML as a downloadable file. Provide brief instructions on how to deploy (save as .html, open in browser to preview, print to PDF at 100% scale with no margins, use in direct mail campaigns).
+
+---
+
+# Template Customization Request
+
+Create an HTML artifact with the customized template that I can preview directly in this chat.
+
+## CRITICAL: Output Format
+**You MUST create a previewable HTML artifact** using Claude's artifact feature:
+- The artifact MUST be visible and renderable in the Claude UI
+- I need to see a live preview of the HTML, not just code
+- Use artifact type "text/html" so it renders as a webpage preview
+- Do NOT just paste HTML code in the chat message
+
+## Print Size Requirements
+**This template is designed for: 8.5x11 inches**
+
+You MUST ensure the output:
+- Fits exactly within 8.5x11 inches when printed
+- Does NOT exceed the boundaries of 8.5x11 inches
+- Maintains proper margins for printing (at least 0.25" / 6mm on all sides)
+- All content, images, and text must be contained within the printable area
+- Do NOT add content that would cause the document to overflow onto additional pages
+
+## Instructions
+You are helping customize an HTML marketing template called "Expired Success Story " for print size: 8.5x11 inches. Please modify the HTML below by:
+1. Replacing placeholder variables (like {{variable_name}}) with the provided information
+2. Applying the brand accent color to appropriate accent elements (buttons, highlights, borders)
+3. Inserting images at appropriate locations using the provided URLs
+4. Maintaining the exact layout and structure of the template
+5. **IMPORTANT: Ensuring ALL content fits within 8.5x11 inches - do not exceed this size**
+
+## User Profile Information
+
+### Contact Details
+- First Name: Ryan
+- Last Name: Rose
+- Email Address: ryan@rosehomeslv.com
+- Phone Number: 7027475921
+
+### Business Details
+- Company/Brokerage Name: Real Broker, LLC
+- Area We Serve: Las Vegas
+- Job Title: Nevada
+- License Number: S.0185572
+- Short Bio: Hey! I'm Ryan Rose, The Ethical Vegas Realtor. I'm a local agent on a Top Producing Las Vegas Real Estate Team with globally recognized marketing strategies for selling homes faster using Social Media and old school ideas (like actually picking up the phone and calling people!). I am honored to help people in the Las Vegas area buy, sell, and invest. My approach is simple: No pressure. No BS. Only genuine guidance from start to close. I look forward to hearing from you and showing you what I do above and beyond any other agents in the city!
+
+### Branding
+
+### Social & Web Links
+- Website: https://www.rosehomeslv.com
+- YouTube Channel: https://www.youtube.com/@rosehomeslv
+- Instagram: https://www.instagram.com/rosehomeslv
+
+## Image URLs
+Use these image URLs directly in the HTML output. Insert them as `<img src="URL">` tags at the appropriate locations:
+- Professional Headshot: https://ik.imagekit.io/listingleads/_personalization/1773467947159_blob_9noJLCXIy?tr=w-300
+- Company Logo: https://ik.imagekit.io/listingleads/_personalization/1773468120260_Real_Logo_Outline_White_kHJXcZ1A9q.png?tr=w-300
+
+## HTML Template Code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nik Shewmaker Sales Letter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        @page { size: 8.5in 11in; margin: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --white: #ffffff;
+            --black: #0a0a0a;
+            --gray-200: #e8e8e8;
+            --gray-400: #a0a0a0;
+            --gray-500: #666666;
+            --green: #22c55e;
+        }
+        body { font-family: 'Inter', sans-serif; background: #e0e0e0; }
+        .page {
+            width: 8.5in; height: 11in; margin: 0 auto;
+            background: var(--white); display: grid;
+            grid-template-columns: 1.05fr 0.95fr; overflow: hidden;
+        }
+        .letter-side {
+            padding: 0.5in 0.4in 0.45in 0.55in;
+            display: flex; flex-direction: column;
+            border-right: 1px solid var(--gray-200);
+        }
+        .header { display: flex; align-items: center; gap: 10px; margin-bottom: 0.32in; }
+        .logo-mark {
+            width: 32px; height: 32px; background: var(--black);
+            border-radius: 6px; display: flex; align-items: center;
+            justify-content: center; font-weight: 700; font-size: 12px; color: var(--white);
+        }
+        .logo-text { font-family: 'Instrument Serif', serif; font-size: 17px; color: var(--black); }
+        .logo-sub { font-size: 7.5px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray-500); margin-top: 1px; }
+        .letter-body { flex: 1; display: flex; flex-direction: column; }
+        .hook {
+            font-family: 'Instrument Serif', serif;
+            font-size: 21px; line-height: 1.3; color: var(--black);
+            margin-bottom: 0.18in;
+        }
+        .subhook {
+            font-size: 10.5px; line-height: 1.6; color: var(--black);
+            margin-bottom: 0.18in;
+        }
+        p {
+            font-size: 10.5px; line-height: 1.7; color: var(--black);
+            margin-bottom: 0.1in;
+        }
+        .callout {
+            font-size: 11px; font-weight: 600; color: var(--black);
+            padding: 9px 0; margin: 0.04in 0 0.1in 0;
+            border-top: 1px solid var(--gray-200);
+            border-bottom: 1px solid var(--gray-200);
+        }
+        .ps {
+            font-size: 9.5px; line-height: 1.6; color: var(--gray-500);
+            padding-top: 0.1in; border-top: 1px solid var(--gray-200);
+            margin-top: 0.06in;
+        }
+        .ps strong { color: var(--black); font-weight: 600; }
+        .letter-footer {
+            margin-top: auto; padding-top: 0.14in;
+            border-top: 1px solid var(--gray-200);
+        }
+        .contact-phone { font-size: 14px; font-weight: 600; color: var(--black); margin-bottom: 3px; }
+        .contact-details { font-size: 8.5px; color: var(--gray-500); line-height: 1.5; }
+        .brokerage { font-size: 7.5px; color: #999; margin-top: 6px; }
+        .disclaimer { font-size: 6.5px; color: #999; margin-top: 5px; font-style: italic; }
+        .data-side {
+            background: var(--black); padding: 0.45in 0.4in;
+            display: flex; flex-direction: column; color: var(--white);
+        }
+        .data-eyebrow {
+            font-size: 8px; font-weight: 600; letter-spacing: 0.2em;
+            text-transform: uppercase; opacity: 0.35; margin-bottom: 0.2in;
+        }
+        .data-hero { margin-bottom: 0.18in; }
+        .data-hero-number {
+            font-size: 68px; font-weight: 700; line-height: 0.85;
+            letter-spacing: -0.04em;
+        }
+        .data-hero-number span { font-weight: 300; opacity: 0.2; }
+        .data-hero-label {
+            font-family: 'Instrument Serif', serif; font-size: 13px;
+            font-style: italic; opacity: 0.4; margin-top: 5px;
+        }
+        .photo-slot {
+            width: calc(100% + 1.2in); height: 3.2in; border-radius: 0;
+            margin-left: -0.4in; margin-right: -0.8in;
+            margin-bottom: 0.2in; overflow: hidden;
+            background: rgba(255,255,255,0.04);
+        }
+        .photo-slot img {
+            width: 100%; height: 100%; object-fit: cover; object-position: 98% center; display: block;
+        }
+        .section-label {
+            font-size: 8px; font-weight: 600; letter-spacing: 0.2em;
+            text-transform: uppercase; opacity: 0.3; margin-bottom: 10px;
+        }
+        .checklist {
+            margin-bottom: 0.18in; padding-bottom: 0.16in;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+        }
+        .check-item {
+            display: flex; align-items: center; gap: 9px;
+            padding: 4.5px 0;
+        }
+        .check-icon {
+            width: 14px; height: 14px; border-radius: 50%;
+            background: rgba(255,255,255,0.06); display: flex;
+            align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .check-icon svg { width: 7px; height: 7px; }
+        .check-label { font-size: 9.5px; font-weight: 400; opacity: 0.6; }
+        .scoreboard { display: flex; flex-direction: column; }
+        .score-row {
+            display: flex; justify-content: space-between; align-items: baseline;
+            padding: 9px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .score-row:last-child { border-bottom: none; }
+        .score-label { font-size: 10.5px; font-weight: 400; opacity: 0.4; }
+        .score-value { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; }
+        .score-value.pop { color: var(--green); }
+        .data-footer {
+            margin-top: auto; text-align: center;
+            padding-top: 0.12in; border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        .data-footer-cta {
+            font-size: 10px; font-weight: 600; opacity: 0.5; margin-bottom: 3px;
+        }
+        .data-footer-sub {
+            font-family: 'Instrument Serif', serif;
+            font-size: 12px; font-style: italic; opacity: 0.25;
+        }
+        @media print {
+            body { background: white; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+            .page { box-shadow: none; margin: 0; }
+        }
+        @media screen { .page { box-shadow: 0 8px 40px rgba(0,0,0,0.15); margin: 30px auto; } }
+    
+        .signature {
+            margin-top: 0.15in; margin-bottom: 0.12in;
+        }
+        .sig-line {
+            font-family: 'Instrument Serif', serif; font-style: italic;
+            font-size: 11px; color: var(--gray-500); margin-bottom: 4px;
+        }
+        .sig-name {
+            font-size: 13px; font-weight: 700; color: var(--black);
+        }
+        .sig-title {
+            font-size: 9px; color: var(--gray-500); margin-top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="letter-side">
+            <header class="header">
+                <div class="logo-mark">NK</div>
+                <div>
+                    <div class="logo-text">Nik Shewmaker</div>
+                    <div class="logo-sub">Realtor &bull; Real Broker</div>
+                </div>
+            </header>
+            <div class="letter-body">
+                <div class="hook">The real reason homes don't sell has nothing to do with the market.</div>
+                <div class="subhook">It wasn't the price. It wasn't the location. It wasn't the interest rates.<br>It was the strategy.</div>
+                <p>I know that's a bold claim. So let me show you what I mean.</p>
+                <p>A home in <strong>The Reserve</strong> in Mount Juliet sat on the market for 92 days. Low offers. Minimal showings. The sellers were frustrated and ready to walk away.</p>
+                <p>Then they called us.</p>
+                <p>We didn't just relist it. We <em>relaunched</em> it — professional staging, cinematic video, a completely new pricing strategy, and a Mega Open House designed to create urgency, not just foot traffic.</p>
+                <div class="callout">It sold on day one with multiple offers.</div>
+                <p>Here's the myth most sellers believe after an expired listing: <em>"My home is the problem."</em></p>
+                <p>Here's the reality: Almost every expired listing I've taken over had nothing wrong with the home. It had a marketing plan that didn't create demand. Same home. Different strategy. Completely different result.</p>
+                <p>If this letter resonates, I'd love to show you exactly what I'd do differently. No pressure, no pitch — just an honest look at a new plan for your home.</p>
+                <div class="signature">
+                    <div class="sig-line">Warmly,</div>
+                    <div class="sig-name">Nik Shewmaker</div>
+                    <div class="sig-title">Realtor &bull; Real Broker</div>
+                </div>
+                <div class="ps">
+                    <strong>P.S.</strong> Your home isn't the problem. The strategy was. Text me <strong>"RELAUNCH"</strong> at 615.943.5557 and I'll send you a custom plan — no strings attached.
+                </div>
+            </div>
+            <footer class="letter-footer">
+                <div class="contact-phone">615.943.5557</div>
+                <div class="contact-details">NashvillesNik@gmail.com &bull; www.NashvillesNik.com<br>615.943.5557 Direct &bull; 844.591.7325 Office</div>
+                <div class="brokerage">Nik Shewmaker, Realtor &bull; REAL BROKER</div>
+                <div class="disclaimer">If you have a current contract with a Broker, please disregard this letter.</div>
+            </footer>
+        </div>
+        <div class="data-side">
+            <div class="data-eyebrow">Case Study &bull; The Reserve, Mount Juliet</div>
+            <div class="data-hero">
+                <div class="data-hero-number">92<span> → 1</span></div>
+                <div class="data-hero-label">days on market → days to sold</div>
+            </div>
+            <div class="photo-slot">
+                <img src="REPLACE_WITH_PROPERTY_PHOTO_URL" alt="1322 Rothmon Blvd, Mount Juliet">
+            </div>
+            <div class="checklist">
+                <div class="section-label">The Relaunch Strategy</div>
+                <div class="check-item"><div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span class="check-label">Professional staging & design refresh</span></div>
+                <div class="check-item"><div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span class="check-label">Cinematic video & photography</span></div>
+                <div class="check-item"><div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span class="check-label">New pricing strategy</span></div>
+                <div class="check-item"><div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span class="check-label">Targeted digital marketing campaign</span></div>
+                <div class="check-item"><div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span class="check-label">Mega Open House event</span></div>
+            </div>
+            <div class="scoreboard">
+                <div class="section-label">The Results</div>
+                <div class="score-row"><span class="score-label">Marketing Impressions</span><span class="score-value">24,500</span></div>
+                <div class="score-row"><span class="score-label">Open House Attendees</span><span class="score-value">47</span></div>
+                <div class="score-row"><span class="score-label">Offers Received</span><span class="score-value pop">5</span></div>
+                <div class="score-row"><span class="score-label">Days to Contract</span><span class="score-value pop">1</span></div>
+            </div>
+            <div class="data-footer">
+                <div class="data-footer-cta">Text "RELAUNCH" to 615.943.5557</div>
+                <div class="data-footer-sub">Get your custom relaunch plan</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+## Output Requirements
+- **CREATE A PREVIEWABLE HTML ARTIFACT** - Use the artifact feature with type "text/html"
+- The artifact MUST render as a visual preview in the Claude UI (not just code)
+- The artifact should contain the complete, modified HTML document starting with <!DOCTYPE html>
+- Preserve all existing styles and structure
+- Keep the same responsive layout
+- Replace all {{placeholder}} variables with the appropriate values from above
+- **CRITICAL: Output MUST fit within 8.5x11 inches when printed - do not exceed this print size**
+
+⚠️ IMPORTANT: I need to SEE the rendered HTML preview in the artifact panel, not read code. Make sure the artifact is previewable.

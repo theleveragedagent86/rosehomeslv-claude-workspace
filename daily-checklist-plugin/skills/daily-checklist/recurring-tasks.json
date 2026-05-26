@@ -1,0 +1,339 @@
+{
+  "description": "Recurring weekly tasks. Edit this file to add/remove/update recurring items.",
+  "last_updated": "2026-03-17",
+  "content_library": "/Users/ryanrose/Downloads/Claude/Listing Leads Content",
+  "content_week": "2026-03-16",
+  "weekly": {
+    "Monday": [
+      {
+        "id": "daily-expired-workflow",
+        "category": "Expired Marketing",
+        "title": "Process New Expired Listings",
+        "time_suggestion": "First Thing",
+        "dynamic": true,
+        "skill_trigger": "/expired",
+        "steps": [
+          "Run /expired to check for new emails from Elise and process any new expired attachments",
+          "This downloads new Expired .xlsx files, cross-references the hotsheet, filters rentals/price/cities, and creates a mailing list",
+          "New listings matching the cannonball buy box ($600k-$2M in target zips) will auto-populate into the cannonball tracker"
+        ],
+        "audience": "Internal -- feeds cannonball tracker + mailing list",
+        "channel": "Automated workflow",
+        "notes": "Run this BEFORE the cannonball actions so the tracker has fresh data. If no new emails from Elise, it will tell you and you can skip."
+      },
+      {
+        "id": "daily-expired-cannonball",
+        "category": "Expired Marketing",
+        "title": "Expired Cannonball -- Today's Actions",
+        "time_suggestion": "First Thing",
+        "dynamic": true,
+        "data_source": "expired-cannonball-tracker.json",
+        "steps": [
+          "Read expired-cannonball-tracker.json for active campaigns",
+          "Check hotsheet CSV to verify listings are NOT back on market",
+          "Calculate which steps are due today (start_date + day offset from cannonball-cadence.json)",
+          "For new cannonballs: Go to app.listingleads.com/designs, use Expired Editor to generate personalized Sales Letter + Cover Letter",
+          "For follow-up letters: Generate using the Claude prompt from cadence file, print and mail via regular mail",
+          "For calls: Display the call script inline from Blueprints/Linked_Pages",
+          "Mark completed steps in tracker, update next_step and next_step_date"
+        ],
+        "audience": "Expired Sellers ($600k-$2M in target zips)",
+        "channel": "FedEx Mail / Phone / Regular Mail",
+        "notes": "This task is dynamic -- the checklist reads the tracker file and shows only what's due today. If nothing is due, it shows 'No expired actions today.'"
+      },
+      {
+        "id": "mon-dotw-email",
+        "category": "Listing Leads",
+        "title": "Deal of the Week — Email Blast",
+        "time_suggestion": "Morning",
+        "steps": [
+          "Pick hottest new listing (highest saves/views on Zillow, last 7 days)",
+          "Focus on target price point in your farm area",
+          "Copy the email template below into your email blast app",
+          "Fill in the {{variables}} with your listing's details",
+          "Send to ENTIRE database"
+        ],
+        "audience": "Entire Database",
+        "channel": "Email",
+        "content_files": {
+          "email_template": "Email Campaigns/{{WEEK}}_Week/Monday_Deal_of_the_Week_How_to_Execute.txt",
+          "description": "Read this file and display the Subject, Preview Text, and Body directly"
+        },
+        "ready_to_use": {
+          "subject": "Deal of the week: {{sqft}}+ sq ft under {{price_bracket}} in {{neighborhood}}",
+          "preview_text": "{{save_count}} Zillow saves before you saw this.",
+          "body": "{{save_count}} saves on Zillow - not a coincidence when you look at the price.\n\n{{sqft}}+ square feet in {{neighborhood}}, under {{price_bracket}}, and the comps support why it's drawing attention.\n\n{{bed_count}} beds, {{bath_count}} baths\n{{bonus_feature}} (e.g. bonus room, attached garage, finished basement)\nUnder {{price_threshold}} — rare for this size in {{neighborhood}}\n{{sqft}} sq ft with a {{layout_descriptor}} layout\n\nWant the link sent over?",
+          "tool_link": "https://automate.listingleads.com/deal"
+        }
+      },
+      {
+        "id": "mon-dotw-social",
+        "category": "Listing Leads",
+        "title": "Deal of the Week — Instagram Story",
+        "time_suggestion": "Late Morning",
+        "steps": [
+          "Open the Canva template link below",
+          "Customize with your DOTW listing details",
+          "Download as PNG, post as Instagram Story",
+          "Add Poll sticker ('Yesss!!!' / 'Yes!')",
+          "Follow up with poll responders via DM"
+        ],
+        "audience": "Instagram Followers",
+        "channel": "Instagram Story",
+        "content_files": {
+          "canva_and_instructions": "Social Shareables/{{WEEK}}_Week/Monday_Deal_of_the_Week*resources.txt",
+          "description": "Read this file for the Canva template link"
+        },
+        "ready_to_use": {
+          "canva_templates": {
+            "AirDrop Style": "https://www.canva.com/design/DAG2CagZiqk/mfnZ4ecbWEPovWbEXvHDWw/view?utm_content=DAG2CagZiqk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",
+            "Google Maps Style": "https://www.canva.com/design/DAHCycl4u4o/UBrt0gQ6JQMSku34lXgOCA/view?utm_content=DAHCycl4u4o&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",
+            "Sketch Style": "https://www.canva.com/design/DAHCF9Rd03U/QjuZrBGSjEqRT9pBr1rcow/view?utm_content=DAHCF9Rd03U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
+          }
+        }
+      }
+      ,
+      {
+        "id": "daily-tc-actions",
+        "category": "Transaction Coordination",
+        "title": "TC Actions -- Today's Tasks",
+        "time_suggestion": "Morning",
+        "dynamic": true,
+        "data_source": "active-transactions.json",
+        "cadence_source": "/Users/ryanrose/Downloads/Claude/tc-plugin/skills/transaction-coordination/cadences",
+        "templates_source": "/Users/ryanrose/Downloads/Claude/tc-plugin/skills/transaction-coordination/templates",
+        "steps": [
+          "Read active-transactions.json for active transactions",
+          "For each active transaction, read its Transactions/[slug]/transaction.json",
+          "Load the matching cadence file based on transaction type",
+          "Calculate which day-based steps are due (contract_date + day offset)",
+          "Show overdue steps at the TOP with OVERDUE label",
+          "For trigger-based steps, show as 'Awaiting: [trigger]' unless the event has been triggered",
+          "Display ready-to-send email templates with all variables filled in from transaction data",
+          "Mark completed steps and update next_step/next_step_date in transaction.json"
+        ],
+        "audience": "Internal -- transaction management",
+        "channel": "Email / Calendar",
+        "notes": "This task is dynamic. If no active transactions, show 'No TC actions today.'"
+      }
+    ],
+    "Tuesday": [
+      {
+        "id": "daily-expired-cannonball",
+        "category": "Expired Marketing",
+        "title": "Expired Cannonball -- Today's Actions",
+        "time_suggestion": "First Thing",
+        "dynamic": true,
+        "data_source": "expired-cannonball-tracker.json"
+      },
+      {
+        "id": "daily-tc-actions",
+        "category": "Transaction Coordination",
+        "title": "TC Actions -- Today's Tasks",
+        "time_suggestion": "Morning",
+        "dynamic": true,
+        "data_source": "active-transactions.json",
+        "cadence_source": "/Users/ryanrose/Downloads/Claude/tc-plugin/skills/transaction-coordination/cadences",
+        "templates_source": "/Users/ryanrose/Downloads/Claude/tc-plugin/skills/transaction-coordination/templates",
+        "notes": "Dynamic — see Monday definition for full steps. If no active transactions, show 'No TC actions today.'"
+      },
+      {
+        "id": "tue-eotw-email",
+        "category": "Listing Leads",
+        "title": "Email of the Week (EOTW) — Value Email",
+        "time_suggestion": "Morning",
+        "steps": [
+          "Copy the email template below into your email blast app",
+          "Customize for your market and personal voice",
+          "Send to ENTIRE database"
+        ],
+        "audience": "Entire Database",
+        "channel": "Email",
+        "content_files": {
+          "email_template": "Email Campaigns/{{WEEK}}_Week/Tuesday_*How_to_Execute.txt",
+          "description": "Read this file and display Subject, Preview Text, and Body directly"
+        },
+        "ready_to_use": {
+          "subject": "Most homeowners forget to ask this",
+          "preview_text": "(I didn't want you to be one of them)",
+          "body": "With everything happening in the market right now, a lot of people I talk to have no idea what their home is actually worth.\n\nMost homeowners settle for the online estimate and move on.\n\nBut the difference between what Zillow says and what your home actually worth has been bigger than most people expect - sometimes significantly.\n\nNot everyone thinks to ask this, but I thought you might want to know.\n\nIt's why I put together a proper equity update for my clients - actual comps, a full analysis of recent sales, and details that algorithms overlook.\n\nIt takes me some time to get it right, but there's no catch here.\n\nWould it be helpful if I prepared one for your home?"
+        },
+        "theme_ideas": [
+          "Equity updates / home value curiosity",
+          "Market timing and seller psychology",
+          "Spring selling prep",
+          "Timeline (when to list)",
+          "Hidden costs homeowners don't think about"
+        ]
+      }
+    ],
+    "Wednesday": [
+      {
+        "id": "daily-expired-cannonball",
+        "category": "Expired Marketing",
+        "title": "Expired Cannonball -- Today's Actions",
+        "time_suggestion": "First Thing",
+        "dynamic": true,
+        "data_source": "expired-cannonball-tracker.json"
+      },
+      {
+        "id": "daily-tc-actions",
+        "category": "Transaction Coordination",
+        "title": "TC Actions -- Today's Tasks",
+        "time_suggestion": "Morning",
+        "dynamic": true,
+        "data_source": "active-transactions.json",
+        "cadence_source": "/Users/ryanrose/Downloads/Claude/tc-plugin/skills/transaction-coordination/cadences",
+        "templates_source": "/Users/ryanrose/Downloads/Claude/tc-plugin/skills/transaction-coordination/templates",
+        "notes": "Dynamic — see Monday definition for full steps. If no active transactions, show 'No TC actions today.'"
+      },
+      {
+        "id": "wed-totw-text",
+        "category": "Listing Leads",
+        "title": "Text of the Week (TOTW) — Personal Text to SOI",
+        "time_suggestion": "Late Morning",
+        "steps": [
+          "Pick contacts from your sphere of influence (SOI)",
+          "Copy the text template below",
+          "Personalize with their first name and a local data point",
+          "Send as personal text (not mass blast)",
+          "Follow up on any responses"
+        ],
+        "audience": "SOI (Sphere of Influence) — warm contacts only",
+        "channel": "Text Message",
+        "content_files": {
+          "text_script": "Phone & Text Scripts/{{WEEK}}_Week/Wednesday_*How_to_Execute.txt",
+          "description": "Read this file and display the exact text message to copy-paste"
+        },
+        "ready_to_use": {
+          "text_message": "Hi [First Name], it's [Your Name].\nJust ran the equity on a home about 2 minutes from yours. They gained about $14k in the last 12 months.\n[Area]'s been quietly moving. Some homes more than others.\nHave you checked your numbers recently?"
+        }
+      }
+    ],
+    "Thursday": [
+      {
+        "id": "daily-expired-cannonball",
+        "category": "Expired Marketing",
+        "title": "Expired Cannonball -- Today's Actions",
+        "time_suggestion": "First Thing",
+        "dynamic": true,
+        "data_source": "expired-cannonball-tracker.json"
+      },
+      {
+        "id": "daily-tc-actions",
+        "category": "Transaction Coordination",
+        "title": "TC Actions -- Today's Tasks",
+        "time_suggestion": "Morning",
+        "dynamic": true,
+        "data_source": "active-transactions.json",
+        "cadence_source": "/Users/ryanrose/Downloads/Claude/tc-plugin/skills/transaction-coordination/cadences",
+        "templates_source": "/Users/ryanrose/Downloads/Claude/tc-plugin/skills/transaction-coordination/templates",
+        "notes": "Dynamic — see Monday definition for full steps. If no active transactions, show 'No TC actions today.'"
+      },
+      {
+        "id": "thu-ig-content",
+        "category": "Listing Leads",
+        "title": "Instagram Content — Post, Poll, or Carousel",
+        "time_suggestion": "Morning",
+        "steps": [
+          "Open the Canva template link below",
+          "Customize for this week's topic",
+          "Download and post to Instagram",
+          "For Polls: Add Poll sticker, follow up with responders",
+          "For Posts: Use the caption below"
+        ],
+        "audience": "Instagram Followers",
+        "channel": "Instagram Feed/Story",
+        "content_files": {
+          "canva_link": "Social Shareables/{{WEEK}}_Week/Thursday_*resources.txt",
+          "caption": "Social Shareables/{{WEEK}}_Week/Thursday_*templates.txt",
+          "description": "Read resources file for Canva link, templates file for caption"
+        },
+        "ready_to_use": {
+          "canva_template": "https://www.canva.com/design/DAHEGiPGMKE/NXIA6R7BOS1r22WGG-Sckw/view?utm_content=DAHEGiPGMKE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",
+          "caption": "When I studied the sales in our market, the homes that sold closest to their asking price averaged about 12 days on market.\n\nThe homes that started 10% or more above market averaged 147 days.\n\nSame neighborhoods. Same buyers. Different pricing strategy.\n\nAnd once a home sits, the psychology changes.\n\nAfter about 30 days, buyers stop asking \"How much is it?\"\n\nThey start asking \"What's wrong with it?\"\n\nWhich is why pricing isn't really about the number. It's about the bracket.\n\nBuyers don't compare your home to your neighbor's home. They compare your home to the 10-12 other homes in the same price range they're touring that weekend.\n\nThere's a number where your home gets 15 showings in a weekend. And there's a number where it gets two. That gap is smaller than most sellers think."
+        }
+      },
+      {
+        "id": "thu-direct-mail",
+        "category": "Listing Leads",
+        "title": "Direct Mail (every other week)",
+        "time_suggestion": "Afternoon",
+        "frequency_note": "Every other week (~2x per month)",
+        "steps": [
+          "Open the Canva template link below",
+          "Edit with your info",
+          "Download as flattened PDF (Share → Download → PDF Print → Flatten)",
+          "Submit to print shop",
+          "Mail to farm area"
+        ],
+        "audience": "Farm Area (geographic)",
+        "channel": "Print → Mail",
+        "content_files": {
+          "canva_link": "Direct Mail Templates/{{WEEK}}_Week/Thursday_*resources.txt",
+          "description": "Read for Canva template link"
+        },
+        "ready_to_use": {
+          "canva_template": "https://www.canva.com/design/DAHEGoa16H0/nIOfCLbtmb3tBW5r6tB9xA/view?utm_content=DAHEGoa16H0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview"
+        }
+      }
+    ],
+    "Friday": [
+      {
+        "id": "daily-expired-cannonball",
+        "category": "Expired Marketing",
+        "title": "Expired Cannonball -- Today's Actions",
+        "time_suggestion": "First Thing",
+        "dynamic": true,
+        "data_source": "expired-cannonball-tracker.json"
+      },
+      {
+        "id": "daily-tc-actions",
+        "category": "Transaction Coordination",
+        "title": "TC Actions -- Today's Tasks",
+        "time_suggestion": "Morning",
+        "dynamic": true,
+        "data_source": "active-transactions.json",
+        "cadence_source": "/Users/ryanrose/Downloads/Claude/tc-plugin/skills/transaction-coordination/cadences",
+        "templates_source": "/Users/ryanrose/Downloads/Claude/tc-plugin/skills/transaction-coordination/templates",
+        "notes": "Dynamic — see Monday definition for full steps. If no active transactions, show 'No TC actions today.'"
+      },
+      {
+        "id": "fri-votw-video",
+        "category": "Listing Leads",
+        "title": "Video of the Week (VOTW) — YouTube Video",
+        "time_suggestion": "Morning",
+        "steps": [
+          "Download the Showflow PDF (video script) from the link below",
+          "Open the Canva thumbnail template and customize for your area",
+          "Record 5-15 minute video following the script",
+          "Upload to YouTube with the title, description, and hashtags below",
+          "Cross-post to Instagram Reels and TikTok"
+        ],
+        "audience": "Public (SEO-driven)",
+        "channel": "YouTube",
+        "content_files": {
+          "video_resources": "Social Shareables/{{WEEK}}_Week/Friday_*resources.txt",
+          "video_copy": "Social Shareables/{{WEEK}}_Week/Friday_*templates.txt",
+          "description": "Read resources for Showflow PDF + Canva thumbnail link, templates for title/description/hashtags"
+        },
+        "ready_to_use": {
+          "showflow_pdf": "https://ik.imagekit.io/listingleads/campaigns/Social-Shareables/votw-if-i-were-moving-to-area-in-2026-id-move-here/SHOWFLOW_%20If%20I%20Were%20Moving%20To%20_AREA_%20in%202026,%20I_d%20Move%20Here.pdf",
+          "canva_thumbnail": "https://www.canva.com/design/DAHEGkWjzdc/N9QqJHdP2nVnZSuq79QCKg/view?utm_content=DAHEGkWjzdc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview",
+          "video_title": "If I Were Moving To [AREA] in 2026, I'd Move Here",
+          "video_description": "Everyone knows [WELL-KNOWN CITY 1], [WELL-KNOWN CITY 2], and [WELL-KNOWN CITY 3]. But if you're relocating to [STATE/REGION], the communities that belong on your short list might surprise you.\n\nIn this video, I'm sharing [NUMBER] under-the-radar places I'd seriously consider if I were making the move myself — with real price ranges, honest lifestyle breakdowns, and exactly who each community is right for.\n\n📍 COMMUNITIES COVERED\n[TIMESTAMP] — [COMMUNITY 1]\n[TIMESTAMP] — [COMMUNITY 2]\n[TIMESTAMP] — [COMMUNITY 3]\n\n🏡 QUICK COMPARISON\n[COMMUNITY A] — Best for [LIFESTYLE DRIVER] | $[X] – $[Y]\n[COMMUNITY B] — Best for [LIFESTYLE DRIVER] | $[X] – $[Y]\n\n🔑 KEY TAKEAWAYS\n✅ [TAKEAWAY 1]\n✅ [TAKEAWAY 2]",
+          "hashtags": "#realestate #relocation #movingto #[AREA] #homebuying #2026"
+        },
+        "title_patterns": [
+          "If I Were Moving To [AREA] in 2026, I'd Move Here",
+          "The Best [AREA] Suburbs for Families in 2026 (Top 10 Ranked)",
+          "AVOID Moving to The Wrong Area in [AREA] in 2026",
+          "Don't Live in This [AREA] City Unless You Can Handle These 5 Facts",
+          "Where [Area]'s Ultra Wealthy Choose to Live"
+        ]
+      }
+    ],
+    "Saturday": [],
+    "Sunday": []
+  }
+}

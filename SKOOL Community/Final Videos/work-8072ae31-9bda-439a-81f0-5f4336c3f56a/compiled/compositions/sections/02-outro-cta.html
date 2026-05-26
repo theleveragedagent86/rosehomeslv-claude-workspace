@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/brand-tokens.css" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+      [data-composition-id="02-outro-cta"] {
+        position: relative; width: 1920px; height: 1080px; overflow: hidden;
+        font-family: var(--font-display); color: var(--ink);
+      }
+
+      /* Bottom scrim — improves CTA legibility over face video for first 5s. */
+      [data-composition-id="02-outro-cta"] .scrim-bottom {
+        position: absolute; left: 0; right: 0; bottom: 0; height: 420px;
+        background: linear-gradient(0deg, rgba(15,76,92,0.78) 0%, rgba(15,76,92,0.15) 70%, rgba(15,76,92,0) 100%);
+        opacity: 0;
+      }
+
+      /* YouTube-style subscribe button (bottom-left). Red pill + white SUBSCRIBE + bell. */
+      [data-composition-id="02-outro-cta"] .yt-sub {
+        position: absolute;
+        bottom: 120px; left: 100px;
+        display: inline-flex; align-items: center; gap: 18px;
+        background: #FF0000; color: #ffffff;
+        padding: 22px 38px;
+        border-radius: 14px;
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 44px;
+        letter-spacing: 0.04em;
+        box-shadow: 0 18px 48px rgba(255,0,0,0.45), 0 0 0 4px rgba(255,255,255,0.18);
+        opacity: 0; transform: scale(0.8);
+        will-change: transform, opacity;
+      }
+      [data-composition-id="02-outro-cta"] .yt-sub .bell {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 52px; height: 52px;
+        border-radius: 50%; background: #ffffff; color: #FF0000;
+        font-size: 30px; font-weight: 900;
+      }
+      [data-composition-id="02-outro-cta"] .yt-sub .label { line-height: 1; }
+
+      /* Skool community CTA card (bottom-right). Cream panel + amber stripe + LA logo. */
+      [data-composition-id="02-outro-cta"] .skool-cta {
+        position: absolute;
+        bottom: 100px; right: 100px;
+        width: 720px;
+        background: var(--bg-alt);
+        border: 3px solid var(--ink);
+        border-left: 12px solid var(--warn);
+        border-radius: 18px;
+        padding: 26px 32px 30px 32px;
+        box-shadow: 0 24px 64px rgba(15,76,92,0.4);
+        opacity: 0; transform: translateX(40px);
+        will-change: transform, opacity;
+      }
+      [data-composition-id="02-outro-cta"] .skool-cta .kicker {
+        font-family: var(--font-mono);
+        font-size: 22px; font-weight: 700;
+        letter-spacing: 0.28em;
+        color: var(--warn);
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+      [data-composition-id="02-outro-cta"] .skool-cta .head {
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 44px; line-height: 1.05;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        margin-bottom: 14px;
+      }
+      [data-composition-id="02-outro-cta"] .skool-cta .sub {
+        font-family: var(--font-mono);
+        font-size: 22px; font-weight: 500;
+        letter-spacing: 0.06em;
+        color: var(--ink-soft);
+      }
+
+      /* Skool badge — endorsement chip floating above-right of the Skool card. */
+      [data-composition-id="02-outro-cta"] .skool-badge {
+        position: absolute;
+        bottom: 360px; right: 100px;
+        display: inline-flex; align-items: center; gap: 12px;
+        background: var(--ink); color: var(--bg-alt);
+        border-radius: 100px; padding: 12px 26px;
+        font-family: var(--font-mono);
+        font-weight: 700; font-size: 22px;
+        letter-spacing: 0.18em;
+        box-shadow: 0 12px 28px rgba(15,76,92,0.45);
+        opacity: 0;
+      }
+      [data-composition-id="02-outro-cta"] .skool-badge .dot {
+        width: 12px; height: 12px; border-radius: 50%; background: var(--warn);
+      }
+
+      /* Hold-frame stage — appears at section local t=5s, masking the now-ended DJI video.
+         Adds a centered wordmark + thanks line to anchor the stillness. */
+      [data-composition-id="02-outro-cta"] .hold-anchor {
+        position: absolute;
+        top: 220px; left: 0; right: 0;
+        text-align: center;
+        opacity: 0;
+      }
+      [data-composition-id="02-outro-cta"] .hold-anchor .thanks {
+        font-family: var(--font-mono);
+        font-size: 30px; font-weight: 700;
+        letter-spacing: 0.32em;
+        color: var(--warn);
+        text-transform: uppercase;
+        margin-bottom: 18px;
+      }
+      [data-composition-id="02-outro-cta"] .hold-anchor .signoff {
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 88px; line-height: 1;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="sec02"
+      data-composition-id="02-outro-cta"
+      data-duration="10"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="scrim-bottom clip" data-start="0" data-duration="10" data-track-index="0"></div>
+
+      <div class="yt-sub clip" data-start="0" data-duration="10" data-track-index="1">
+        <div class="bell">&#9733;</div>
+        <div class="label">SUBSCRIBE</div>
+      </div>
+
+      <div class="skool-badge clip" data-start="0" data-duration="10" data-track-index="2">
+        <div class="dot"></div>SKOOL COMMUNITY
+      </div>
+
+      <div class="skool-cta clip" data-start="0" data-duration="10" data-track-index="3">
+        <div class="kicker">JOIN THE COMMUNITY</div>
+        <div class="head">The Leveraged Agent</div>
+        <div class="sub">For agents using AI to win back their week.</div>
+      </div>
+
+      <div class="hold-anchor clip" data-start="0" data-duration="10" data-track-index="4">
+        <div class="thanks">THANKS FOR WATCHING</div>
+        <div class="signoff">See you in the community.</div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const SLOT = 10;
+      const tl = gsap.timeline({ paused: true });
+
+      // First 5s — CTAs animate in over the still-running DJI fullscreen.
+      tl.to('[data-composition-id="02-outro-cta"] .scrim-bottom',
+        { opacity: 1, duration: 0.6, ease: 'power2.out' }, 0.20);
+
+      tl.to('[data-composition-id="02-outro-cta"] .yt-sub',
+        { opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(1.8)' }, 0.50);
+      tl.to('[data-composition-id="02-outro-cta"] .yt-sub',
+        { scale: 1.06, duration: 0.6, yoyo: true, repeat: 4, ease: 'sine.inOut' }, 1.10);
+
+      tl.to('[data-composition-id="02-outro-cta"] .skool-badge',
+        { opacity: 1, duration: 0.35, ease: 'power2.out' }, 1.20);
+      tl.to('[data-composition-id="02-outro-cta"] .skool-cta',
+        { opacity: 1, x: 0, duration: 0.55, ease: 'back.out(1.5)' }, 1.40);
+
+      // At 5s — hold-frame anchor appears (sits above CTAs as outro stage cream backdrop fades up
+      // behind this composition). Brand watermark + thanks line make the stillness feel intentional.
+      tl.to('[data-composition-id="02-outro-cta"] .hold-anchor',
+        { opacity: 1, duration: 0.6, ease: 'power2.out' }, 5.20);
+
+      // Subtle continuous Skool CTA glow during the hold (5s-10s).
+      tl.to('[data-composition-id="02-outro-cta"] .skool-cta',
+        { boxShadow: '0 32px 80px rgba(232,163,61,0.45)',
+          duration: 1.4, yoyo: true, repeat: 2, ease: 'sine.inOut' }, 5.50);
+
+      // Anchor to slot duration so HF doesn't hide the composition early.
+      tl.to({}, { duration: SLOT }, 0);
+
+      window.__timelines["02-outro-cta"] = tl;
+    </script>
+  </body>
+</html>

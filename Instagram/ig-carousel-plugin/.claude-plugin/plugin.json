@@ -1,0 +1,11 @@
+{
+  "name": "ig-carousel",
+  "version": "1.0.0",
+  "description": "Creates copy-paste-ready content for Instagram carousel posts from Coffee & Contracts monthly Canva templates. Researches real Las Vegas events, restaurant openings, seasonal activities, and verified housing market stats, then outputs a slide-by-slide markdown document with an IG caption.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": ["instagram", "carousel", "coffee-and-contracts", "las-vegas", "real-estate", "social-media", "canva"],
+  "skills": "./skills/"
+}

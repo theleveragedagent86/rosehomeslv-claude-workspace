@@ -1,0 +1,160 @@
+{
+  "description": "The 45-day expired marketing cadence from the 2026 Expired Marketing Blueprint. Each step has a day offset from the campaign start date.",
+  "source": "https://www.listingleads.com/blueprints/the-2026-expired-marketing-blueprint",
+  "static_pieces": {
+    "description": "These 3 pieces are built ONCE and reused in every cannonball. No per-listing personalization needed.",
+    "pieces": [
+      {
+        "name": "Destroy the Objections",
+        "claude_prompt": "/Users/ryanrose/Downloads/Claude/Listing Leads Content/Expired Editor Designs/Cannonball_Destroy_The_Objections_claude_prompt.txt",
+        "notes": "Uses your Zillow reviews categorized by seller objections. Build once, print copies."
+      },
+      {
+        "name": "The Perfect Resume",
+        "claude_prompt": "/Users/ryanrose/Downloads/Claude/Listing Leads Content/Expired Editor Designs/Cannonball_The_Perfect_Resume_claude_prompt.txt",
+        "notes": "Your stats, volume, achievements. Build once, print copies."
+      },
+      {
+        "name": "The Relaunch Roadmap",
+        "claude_prompt": "/Users/ryanrose/Downloads/Claude/Listing Leads Content/Expired Editor Designs/Cannonball_The_Relaunch_Roadmap_claude_prompt.txt",
+        "notes": "Strategy overview. Build once, print copies."
+      }
+    ]
+  },
+  "personalized_pieces": {
+    "description": "These are personalized PER LISTING and must be generated for each cannonball.",
+    "pieces": [
+      {
+        "name": "Relaunch Cover Letter",
+        "claude_prompt": "/Users/ryanrose/Downloads/Claude/Listing Leads Content/Expired Editor Designs/Cannonball_The_Personalized_Cover_Letter_claude_prompt.txt",
+        "personalize": "Add the property address. That's it."
+      },
+      {
+        "name": "Sales Letter",
+        "claude_prompt": "/Users/ryanrose/Downloads/Claude/Listing Leads Content/Expired Editor Designs/Cannonball_Sales_Letter_claude_prompt.txt",
+        "personalize": "Fully personalized per listing using expired editor prompt."
+      }
+    ]
+  },
+  "steps": [
+    {
+      "id": "day1-cannonball",
+      "day": 1,
+      "type": "mail-fedex",
+      "title": "Send Cannonball Package (FedEx/Priority)",
+      "pieces": ["Relaunch Cover Letter", "Sales Letter", "Destroy the Objections", "The Perfect Resume", "The Relaunch Roadmap"],
+      "notes": "5 pieces in one FedEx or USPS Priority envelope. Gold envelope with black handwriting, or black with gold. Sales letter + cover letter personalized per listing.",
+      "cost_estimate": "$7-15 per package"
+    },
+    {
+      "id": "day1-call",
+      "day": 1,
+      "type": "call",
+      "title": "Intro Call/Voicemail",
+      "script_ref": "Cannonball Call Script",
+      "script_file": "2026_Expired_Listing_Blueprint_Cannonball_Call_ScriptThis_ca",
+      "notes": "Let them know a package is on its way. 'Should be there by 3pm today.' If voicemail, tell them you'll call back after delivery."
+    },
+    {
+      "id": "day3-call",
+      "day": 3,
+      "type": "call",
+      "title": "Follow-Up Call — Did you get the package?",
+      "script_ref": "Call Script 1",
+      "script_file": "2026_Expired_Listing_Blueprint_Call_Script_1This_call_script",
+      "notes": "Lower resistance first. Lead with empathy. Ask permission before giving advice."
+    },
+    {
+      "id": "day7-letter1",
+      "day": 7,
+      "type": "mail-regular",
+      "title": "Sales Letter #1: This Isn't the Outcome You Expected",
+      "letter_prompt": "/Users/ryanrose/Downloads/Claude/Listing Leads Content/Expired Editor Designs/Sales_Letter_#1_This_Isn't_the_Outcome_You_Expected_claude_prompt.txt",
+      "notes": "Regular mail. Can automate via Breakthrough Broker or print shop."
+    },
+    {
+      "id": "day7-call",
+      "day": 7,
+      "type": "call",
+      "title": "Follow-Up Call",
+      "script_ref": "Call Script 1",
+      "script_file": "2026_Expired_Listing_Blueprint_Call_Script_1This_call_script"
+    },
+    {
+      "id": "day14-letter2",
+      "day": 14,
+      "type": "mail-regular",
+      "title": "Sales Letter #2: The Path Forward",
+      "letter_prompt": "/Users/ryanrose/Downloads/Claude/Listing Leads Content/Expired Editor Designs/Sales_Letter_#2_The_Path_Forward_claude_prompt.txt"
+    },
+    {
+      "id": "day14-call",
+      "day": 14,
+      "type": "call",
+      "title": "Follow-Up Call",
+      "script_ref": "Call Script 2",
+      "script_file": "2026_Expired_Listing_Blueprint_Call_Script_2This_call_script"
+    },
+    {
+      "id": "day21-letter3",
+      "day": 21,
+      "type": "mail-regular",
+      "title": "Sales Letter #3: The Hidden Cost of Overpricing",
+      "letter_prompt": "/Users/ryanrose/Downloads/Claude/Listing Leads Content/Expired Editor Designs/Sales_Letter_#3_The_Hidden_Cost_of_Overpricing_Your_Home_claude_prompt.txt"
+    },
+    {
+      "id": "day21-call",
+      "day": 21,
+      "type": "call",
+      "title": "Follow-Up Call",
+      "script_ref": "Call Script 3",
+      "script_file": "2026_Expired_Listing_Blueprint_Call_Script_3This_call_script"
+    },
+    {
+      "id": "day28-letter4",
+      "day": 28,
+      "type": "mail-regular",
+      "title": "Sales Letter #4: Reasons to Feel Optimistic",
+      "letter_prompt": "/Users/ryanrose/Downloads/Claude/Listing Leads Content/Expired Editor Designs/Sales_Letter_#4_Reasons_to_Feel_Optimistic_claude_prompt.txt"
+    },
+    {
+      "id": "day28-call",
+      "day": 28,
+      "type": "call",
+      "title": "Follow-Up Call",
+      "script_ref": "Call Script 4",
+      "script_file": "2026_Expired_Listing_Blueprint_Call_Script_4This_call_script"
+    },
+    {
+      "id": "day35-letter5",
+      "day": 35,
+      "type": "mail-regular",
+      "title": "Sales Letter #5: Proof That the Right Strategy Works",
+      "letter_prompt": "/Users/ryanrose/Downloads/Claude/Listing Leads Content/Expired Editor Designs/Sales_Letter_#5_Proof_That_the_Right_Strategy_Works_claude_prompt.txt"
+    },
+    {
+      "id": "day35-call",
+      "day": 35,
+      "type": "call",
+      "title": "Follow-Up Call",
+      "script_ref": "Call Script 5",
+      "script_file": "2026_Expired_Listing_Blueprint_Call_Script_5This_call_script"
+    },
+    {
+      "id": "day42-letter6",
+      "day": 42,
+      "type": "mail-regular",
+      "title": "Sales Letter #6: Advanced Tactics",
+      "letter_prompt": "/Users/ryanrose/Downloads/Claude/Listing Leads Content/Expired Editor Designs/Sales_Letter_#6_Advanced_Tactics_claude_prompt.txt"
+    },
+    {
+      "id": "day45-call",
+      "day": 45,
+      "type": "call",
+      "title": "Final Check-In Call (optional)",
+      "script_ref": "Call Script 6",
+      "script_file": "2026_Expired_Listing_Blueprint_Call_Script_6This_call_script",
+      "notes": "Last outreach. Position yourself as the professional with a plan, let them decide."
+    }
+  ]
+}

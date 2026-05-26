@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.rosehomeslv.com)",
+      "Bash(python3 -c \":*)",
+      "Bash(python3 -c \"import ast; ast.parse\\(open\\(''/Users/ryanrose/Downloads/Claude/Claude Blogs/New Construction/update-schema.py''\\).read\\(\\)\\); print\\(''Syntax OK''\\)\")",
+      "Bash(python3 update-schema.py --dry-run --tab 1)",
+      "Bash(python3 update-schema.py --tab 1 --yes)",
+      "Bash(python3 update-schema.py --yes --start 1 --end 1)",
+      "Bash(python3 update-schema.py --yes --start 2 --end 2)",
+      "Bash(python3 update-schema.py --dry-run --max-pages 1 --yes)",
+      "Bash(python3 update-schema.py --max-pages 1 --yes)"
+    ]
+  }
+}

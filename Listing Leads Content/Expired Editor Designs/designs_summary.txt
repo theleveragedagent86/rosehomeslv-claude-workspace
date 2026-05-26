@@ -1,0 +1,74 @@
+Expired Editor Designs - Claude Prompts
+==================================================
+
+1. Expired Success Story
+   The "Expired Success Story" marketing template is designed to effectively communicate the transformative power of a strategic relaunch for expired listings. It combines compelling storytelling with ac
+   Prompt captured: YES
+   Prompt size: 25,517 chars
+   URL: https://app.listingleads.com/templates/cf7eccfa-b2d8-4d92-b20e-d4e5aef592ac/customize
+
+2. Cannonball: The Personalized Cover Letter
+   The Personalized Cover Letter template is designed to effectively communicate a tailored relaunch strategy for home sales. It highlights the unique aspects of a property, addresses past challenges, an
+   Prompt captured: YES
+   Prompt size: 36,589 chars
+   URL: https://app.listingleads.com/templates/5bbe0c67-d295-450c-b3b1-1759bf3ec14e/customize
+
+3. Cannonball: Sales Letter
+   This sales letter template is designed to effectively communicate a relaunch strategy to homeowners, encouraging them to reconsider their selling approach. Using local sales data and timing insight, y
+   Prompt captured: YES
+   Prompt size: 12,763 chars
+   URL: https://app.listingleads.com/templates/1fd2445f-f5f4-4d1e-91b8-e6113840123c/customize
+
+4. Cannonball: Destroy The Objections
+   This marketing template showcases your dedication to client satisfaction through testimonials that address common seller concerns. Its professional layout emphasizes your team's expertise and personal
+   Prompt captured: YES
+   Prompt size: 42,727 chars
+   URL: https://app.listingleads.com/templates/7e51b6ff-c666-47e5-ab12-601441000fd4/customize
+
+5. Cannonball: The Perfect Resume
+   The Perfect Resume template showcases your real estate achievements with a clean, professional layout that highlights your sales volume, notable transactions, and years of experience. This eye-catchin
+   Prompt captured: YES
+   Prompt size: 59,572 chars
+   URL: https://app.listingleads.com/templates/19b26348-ede5-4fdb-be12-bc73b1112547/customize
+
+6. Cannonball: The Relaunch Roadmap
+   The Relaunch Roadmap is a strategic marketing template designed to guide homeowners through the process of successfully relisting their property. It identifies common pitfalls that lead to expired lis
+   Prompt captured: YES
+   Prompt size: 45,329 chars
+   URL: https://app.listingleads.com/templates/39586c3f-12a5-4e20-b27a-4d624b430a09/customize
+
+7. Sales Letter #1: This Isn’t the Outcome You Expected
+   This campaign walks homeowners through why their last listing stalled - breaking it down into presentation, promotion, and price - so you can reset the conversation from emotion to clarity and positio
+   Prompt captured: YES
+   Prompt size: 13,741 chars
+   URL: https://app.listingleads.com/templates/febc4ec0-5cce-4394-9484-2f07c0d0ac31/customize
+
+8. Sales Letter #2: The Path Forward
+   This campaign is designed to help you acknowledge what sellers already sense (that something was missing) then calmly sort their options while drawing a clear line between “lowering the price” and cho
+   Prompt captured: YES
+   Prompt size: 13,052 chars
+   URL: https://app.listingleads.com/templates/69702575-a0e1-4229-ae56-61469d53e829/customize
+
+9. Sales Letter #3: The Hidden Cost of Overpricing Your Home
+   This campaign tackles pricing head-on - coaching sellers on why “testing the market” can work against them, how the first 72 hours really drive demand, and how a smart relaunch pairs the right price w
+   Prompt captured: YES
+   Prompt size: 12,515 chars
+   URL: https://app.listingleads.com/templates/fb369608-ed59-4c92-8262-ba4e729c5d58/customize
+
+10. Sales Letter #4: Reasons to Feel Optimistic
+   This campaign counters the headline noise with real, local proof - arming you with concrete activity and buyer demand so you can reframe the conversation from “bad market timing” to the real issue: mi
+   Prompt captured: YES
+   Prompt size: 12,624 chars
+   URL: https://app.listingleads.com/templates/04c003f0-0321-44ca-bb76-b8380aef24f3/customize
+
+11. Sales Letter #5: Proof That the Right Strategy Works
+   This campaign uses a real relaunch case study to replace doubt with evidence - showing how a failed listing can turn into multiple offers when presentation, promotion, and positioning are rebuilt the 
+   Prompt captured: YES
+   Prompt size: 11,785 chars
+   URL: https://app.listingleads.com/templates/c2305e3a-2a5d-4f0b-8a97-37363993451c/customize
+
+12. Sales Letter #6: Advanced Tactics
+   This campaign shifts you from “just another agent” to a strategic operator - using concrete relaunch tactics and real results to prove that when listings fail, it’s rarely the house and almost always 
+   Prompt captured: YES
+   Prompt size: 12,735 chars
+   URL: https://app.listingleads.com/templates/35e58797-a0cb-46e8-b32c-c55c574a26a4/customize

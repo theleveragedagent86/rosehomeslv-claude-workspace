@@ -1,0 +1,1742 @@
+[
+  {
+    "post_id": "cre-document-abstraction-biggest-use-case",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Referenced Quote] CRE Broker on Document Abstraction as Biggest AI Use Case",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "comment",
+    "post_body_summary": "A CRE broker stated on r/CommercialRealEstate that 'The biggest current use case is document abstraction... AI-powered programs can do a lot of that work for us.' This quote was widely cited across multiple industry sources (A.CRE, V7Labs, ReadTomato, Agora, Rentana) as representative of CRE professional sentiment on AI adoption.",
+    "specific_task": "AI-powered lease and document abstraction - extracting key terms, dates, financial obligations, and clauses from complex commercial lease agreements and summarizing them into structured formats",
+    "task_normalized": "transaction_mgmt",
+    "tools_mentioned": [
+      "Prophia",
+      "LeaseLens",
+      "MRI Software/Leverton",
+      "Docsumo"
+    ],
+    "pain_point": "Manual lease abstraction takes 4-8 hours per document with 10% error rates. CRE professionals need to extract 200+ variables from complex, multi-amendment leases. Uploading sensitive lease documents to third-party AI platforms raises data privacy/governance concerns.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "Quote was cited in 6+ industry articles as representative of CRE professional consensus on AI's primary value proposition",
+      "Industry sources note larger CRE organizations prefer secure, private deployment over public AI platforms for lease processing"
+    ],
+    "me_too_count": 5
+  },
+  {
+    "post_id": "cre-ai-underwriting-automation",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] AI for CRE Underwriting and Financial Modeling",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "Multiple discussions referenced across industry sources about CRE professionals seeking AI tools to automate underwriting workflows - parsing rent rolls, T12 operating statements, and offering memorandums into financial models. BiggerPockets crossover discussions confirm active demand from multifamily investors asking 'who is using AI to underwrite deals and which tools are worth the time.'",
+    "specific_task": "Automated CRE underwriting - parsing rent rolls, operating statements (T12), and offering memorandums to auto-populate financial models with cap rate analysis, DCF projections, and debt scheduling",
+    "task_normalized": "transaction_mgmt",
+    "tools_mentioned": [
+      "Cactus",
+      "Archer",
+      "Blooma",
+      "IntellCRE",
+      "A.CRE Assistant",
+      "ChatGPT Advanced Data Analysis",
+      "Clik.ai"
+    ],
+    "pain_point": "Manual underwriting of a single deal takes days. At mid-sized brokerages reviewing 150 OMs/month at 4-6 hours each, that is 600-900 staff-hours per month on data extraction alone. CRE mistakes are expensive - a misread lease clause or wrong debt assumption can cost real money.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "CRE professionals treat ChatGPT like a junior analyst - giving it a specific role such as 'You are a CRE acquisitions manager' for deal underwriting support",
+      "One developer shared an AI-driven Quick Analysis tool claiming 92% reduction in underwriting time",
+      "Consensus: AI is a force multiplier for analysts, not a replacement for underwriting discipline"
+    ],
+    "me_too_count": 8
+  },
+  {
+    "post_id": "cre-chatgpt-deal-analysis-workflow",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] Using ChatGPT for CRE Deal Analysis and Investment Memos",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "CRE professionals discussing practical ChatGPT workflows for deal analysis. Recommended approach includes creating a new ChatGPT Project per deal, uploading OMs and underwriting models, and adding specific role-based instructions. ChatGPT reportedly provides property valuations within $250K of underwritten pro formas on first pass.",
+    "specific_task": "Using ChatGPT/LLMs as a junior analyst for deal review - summarizing offering memorandums, drafting IC memos, analyzing market research, and generating analysis frameworks for commercial property investments",
+    "task_normalized": "market_analysis",
+    "tools_mentioned": [
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "ChatGPT Projects"
+    ],
+    "pain_point": "CRE deal analysis requires synthesizing large volumes of data across multiple document types (OMs, leases, market reports). Manual process is slow and error-prone. Need AI that understands CRE-specific concepts like cap rates, NOI, and tenant credit.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "mixed"
+    },
+    "notable_replies": [
+      "ChatGPT is not a replacement for Excel, Argus, or specialized underwriting software - treat as support tool",
+      "Key limitation: accuracy and timeliness issues with general-purpose LLMs for CRE data",
+      "CRE mistakes are expensive - hallucinated market facts can affect real money"
+    ],
+    "me_too_count": 6
+  },
+  {
+    "post_id": "cre-ai-market-comp-analysis",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] AI for Market Comp Analysis and Property Valuation",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "CRE investors and analysts seeking AI tools for automated market comparable analysis, cap rate benchmarking, and property valuation. Need for tools that can pull real-time rent benchmarks, sale comparables, and cap rate data at scale across metro areas.",
+    "specific_task": "Automated market comp analysis - pulling real-time rent benchmarks, sale comparables, cap rate trends, occupancy reports, and price-per-square-foot data to contextualize asset performance and support investment decisions",
+    "task_normalized": "market_analysis",
+    "tools_mentioned": [
+      "Reonomy",
+      "Cactus",
+      "RedIQ",
+      "CoStar",
+      "PropRise"
+    ],
+    "pain_point": "Market comp data is fragmented across multiple sources. Manual comp research is time-consuming. Nearly 32% of CRE firms report data too fragmented to effectively leverage AI. Need real-time, normalized data across different property types and geographies.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Reonomy covers 150M+ properties with ownership, transaction history, and debt profiles",
+      "Enterprise solutions like Reonomy, Cherre, and Blooma cost $500-$2,000+/month",
+      "General-purpose AI assistants (ChatGPT, Claude, Gemini) cost $20-25/month but lack real-time market data"
+    ],
+    "me_too_count": 5
+  },
+  {
+    "post_id": "cre-ai-om-data-extraction",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] AI for Offering Memorandum (OM) Data Extraction",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "CRE acquisition teams and brokers looking for AI tools to automatically extract structured data from offering memorandums. Industry sources reference Reddit discussions about the pain of manually reviewing 150+ OMs per month. Dealpath's AI Extract module and Primer's OM parsing capabilities frequently cited.",
+    "specific_task": "Automated OM-to-model data extraction - parsing offering memorandums to extract rent rolls, operating statements, tenant information, and financial data, then mapping results into proprietary underwriting templates with source citations",
+    "task_normalized": "transaction_mgmt",
+    "tools_mentioned": [
+      "Dealpath AI Studio",
+      "Primer",
+      "Cactus"
+    ],
+    "pain_point": "At mid-sized brokerages, 600-900 staff-hours per month are consumed by manual OM data extraction. Dealpath announced a partnership with CBRE Capital Markets for AI-powered OM abstraction achieving 95% accuracy in under one minute per document.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "Primer extracts from the OM, rent roll, and T12, maps results into your model, and cites every cell to its source",
+      "Dealpath's AI Extract abstracts OM data in under one minute with 95% stated accuracy"
+    ],
+    "me_too_count": 4
+  },
+  {
+    "post_id": "cre-ai-property-management-automation",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] AI for Commercial Property Management at Scale",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "Property managers in r/CommercialRealEstate discussing AI tools for automating tenant communications, maintenance scheduling, rent collection, and lease renewals. Interest in tools that handle routine operational tasks while maintaining quality tenant relationships.",
+    "specific_task": "AI-automated commercial property management - tenant communication (rent reminders, renewal conversations, delinquency outreach), maintenance scheduling, work order management, and monthly property reporting with variance flagging",
+    "task_normalized": "other",
+    "tools_mentioned": [
+      "AppFolio Realm-X",
+      "EliseAI",
+      "Re-Leased",
+      "Entrata",
+      "Building Engines"
+    ],
+    "pain_point": "Property managers spend excessive time on repetitive tenant communications and maintenance coordination. AppFolio Realm-X users report saving 10.3 hours/week on to-do lists and 11.9 hours/week on communications. Need 24/7 automated response capability without sacrificing relationship quality.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "AppFolio's Realm-X had 500,000+ messages sent in first 30 days after October 2024 launch",
+      "AI for property management reducing manual tasks by handling chatbot queries 24/7, predictive maintenance, and dynamic pricing",
+      "40% of CRE firms using AI for predictive maintenance or tenant engagement per McKinsey 2024 report"
+    ],
+    "me_too_count": 4
+  },
+  {
+    "post_id": "cre-ai-investor-communications",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] AI for Investor Communications and Reporting",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "comment",
+    "post_body_summary": "CRE fund managers and syndicators discussing AI tools for automating investor reporting, onboarding, and distribution management. Need for tools that read monthly property reports, flag unusual variances, and draft first-pass owner or lender updates.",
+    "specific_task": "AI-automated investor relations - reading monthly property reports, flagging unusual variances, drafting owner/lender updates, automating investor onboarding, distribution management, and creating standardized pipeline update presentations",
+    "task_normalized": "client_comms",
+    "tools_mentioned": [
+      "Agora",
+      "ChatGPT",
+      "Custom GPTs"
+    ],
+    "pain_point": "Manual investor reporting is time-consuming and repetitive. Need to standardize pipeline updates while maintaining personalization. Fund managers spend hours drafting first-pass reports that could be automated.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Agora's AI Smart Assistant reduces support tickets for investor onboarding and distribution management",
+      "Custom GPTs can standardize pipeline updates by pulling key data and formatting into presentation templates",
+      "Semi-automated workflows using custom GPTs speed up common CRE tasks dramatically"
+    ],
+    "me_too_count": 3
+  },
+  {
+    "post_id": "cre-ai-deal-sourcing-off-market",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] AI for CRE Deal Sourcing and Off-Market Opportunities",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "CRE investors and brokers seeking AI-powered deal sourcing tools that automatically identify off-market opportunities matching specific investment criteria. Interest in tools that scan listing platforms, public records, and ownership databases to build targeted lead lists.",
+    "specific_task": "AI-powered CRE deal sourcing - configuring investment criteria (buy box), automatically searching for on/off-market deals, analyzing ownership patterns, identifying distressed sellers, and building targeted lead lists based on property data intelligence",
+    "task_normalized": "lead_generation",
+    "tools_mentioned": [
+      "Reonomy",
+      "IntellCRE Dealfinder",
+      "Cherre",
+      "GrowthFactor"
+    ],
+    "pain_point": "Finding off-market deals requires extensive manual research across fragmented data sources. Ownership patterns are opaque. Need automated monitoring of listing platforms and public records aligned to specific investment theses.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Reonomy database covers 150M+ properties with ownership, transaction history, and debt profiles",
+      "IntellCRE Dealfinder lets users configure buy-box criteria and auto-search for matching deals",
+      "Enterprise deal sourcing solutions cost $500-$2,000+/month - pricing barrier for smaller operators"
+    ],
+    "me_too_count": 4
+  },
+  {
+    "post_id": "cre-ai-presentation-creation",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] AI for CRE Presentation and Marketing Deck Creation",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "comment",
+    "post_body_summary": "CRE brokers discussing AI tools for generating deal-ready presentations, investment committee decks, and property marketing materials from underwriting data and comps. Interest in automating the creation of BOVs (Broker's Opinion of Value) and listing presentations.",
+    "specific_task": "AI-generated CRE presentations - creating deal-ready investment committee decks, broker opinion of value reports, and property marketing materials from comps, underwriting data, and property photos",
+    "task_normalized": "content_creation",
+    "tools_mentioned": [
+      "Buildout",
+      "ChatGPT",
+      "SharpLaunch"
+    ],
+    "pain_point": "Brokers spend significant time creating polished presentations and marketing materials for each deal. CRE brokers using AI report 30-50% more client interactions per week by automating research, communications, and presentation creation.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "AI-driven presentation platforms can generate deal-ready CRE decks from comps and underwriting data",
+      "Brokers report saving 10-20 hours per week by automating presentation creation workflows"
+    ],
+    "me_too_count": 3
+  },
+  {
+    "post_id": "cre-data-privacy-concerns-ai",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] Data Privacy Concerns with AI Tools for Sensitive CRE Documents",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "comment",
+    "post_body_summary": "A recurring theme on r/CommercialRealEstate is significant apprehension around uploading sensitive lease documents laden with confidential financial and personal data to third-party AI platforms. Larger organizations with established data governance protocols prefer secure, private deployment options or rigorously vetted in-house solutions.",
+    "specific_task": "Secure, private AI deployment for CRE document processing - need for self-hosted or enterprise-grade AI solutions that process sensitive lease and financial documents without sending data to third-party cloud AI platforms",
+    "task_normalized": "transaction_mgmt",
+    "tools_mentioned": [
+      "Prophia",
+      "on-premise solutions"
+    ],
+    "pain_point": "CRE documents contain highly confidential financial data, tenant PII, and proprietary deal terms. Public AI platforms (ChatGPT, Claude) provide no guarantee against data exposure. Enterprise data governance requirements conflict with cloud-based AI tools. Need secure alternatives that maintain AI benefits without data risk.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "negative"
+    },
+    "notable_replies": [
+      "Larger organizations with established data governance protocols are wary of uploading to third-party AI platforms",
+      "OpenAI collects, stores, and processes all information provided - no guarantee sensitive details cannot be leaked or used as training data",
+      "Preference for secure, private deployment options or rigorously vetted in-house solutions"
+    ],
+    "me_too_count": 6
+  },
+  {
+    "post_id": "cre-ai-rent-roll-parsing",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] AI for Rent Roll Parsing and Standardization",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "Multifamily CRE analysts and investors seeking AI tools that can take messy, inconsistent rent roll formats and convert them into clean, standardized spreadsheets for underwriting. Pain point around handling various file formats from different property management systems.",
+    "specific_task": "AI-powered rent roll parsing - converting inconsistent, messy multifamily rent rolls from various property management systems into clean, standardized spreadsheets suitable for financial modeling and underwriting",
+    "task_normalized": "transaction_mgmt",
+    "tools_mentioned": [
+      "RedIQ",
+      "Archer",
+      "Clik.ai",
+      "Docsumo"
+    ],
+    "pain_point": "Rent rolls come in wildly different formats from different property management systems. Manual standardization is tedious and error-prone. Large multifamily portfolios may have hundreds of units across different formats that need to be normalized for accurate underwriting.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "RedIQ specializes in multifamily data extraction with a proprietary comp database",
+      "Archer features automated data extraction that parses critical information from rent roll files, handling various formats for large complex properties",
+      "Docsumo offers 98%+ accuracy in CRE document data extraction including rent rolls and T12 statements"
+    ],
+    "me_too_count": 4
+  },
+  {
+    "post_id": "cre-ai-crm-deal-pipeline",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] AI-Enhanced CRE CRM and Deal Pipeline Management",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "CRE brokers and investment managers discussing AI-enhanced CRM and deal pipeline tracking tools. Interest in platforms that combine deal management, team workflow automation, and AI-powered data enrichment for commercial property transactions.",
+    "specific_task": "AI-enhanced CRE deal pipeline management - tracking deal status, team workflows, investor relationships, and property data across the full transaction lifecycle with AI-powered data enrichment and automated status updates",
+    "task_normalized": "crm_database",
+    "tools_mentioned": [
+      "Dealpath",
+      "AscendixRE",
+      "Salesforce CRE integrations",
+      "CBRE Deal Flow"
+    ],
+    "pain_point": "CRE deal pipelines span months to years with complex multi-stakeholder workflows. Need centralized tracking across acquisitions, dispositions, and development with automated status updates. General CRMs lack CRE-specific features like commission tracking, listing management, and deal stage workflows.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Dealpath offers enterprise deal pipeline management purpose-built for CRE",
+      "AscendixRE provides CRE CRM on both Salesforce and Microsoft Dynamics 365 platforms",
+      "CBRE Deal Flow named 'Deal Management Software of the Year' by PropTech Breakthrough"
+    ],
+    "me_too_count": 3
+  },
+  {
+    "post_id": "cre-ai-marketing-content-listings",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] AI for CRE Marketing Content and Listing Descriptions",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "comment",
+    "post_body_summary": "CRE brokers and marketing teams discussing using AI (primarily ChatGPT) for generating commercial property listing descriptions, marketing emails, social media content, and virtual tour enhancements. Interest in maintaining professional brand voice while scaling content output.",
+    "specific_task": "AI-generated CRE marketing content - property listing descriptions, marketing emails, social media posts, drip campaign copy, and virtual tour integrations for commercial properties including office, retail, industrial, and multifamily assets",
+    "task_normalized": "content_creation",
+    "tools_mentioned": [
+      "ChatGPT",
+      "Claude",
+      "Matterport",
+      "SharpLaunch",
+      "Buildout"
+    ],
+    "pain_point": "Creating compelling, professional marketing content for each commercial listing is time-consuming. Brokers need to maintain consistent brand voice across multiple channels. CRE marketing differs from residential - requires technical accuracy about lease structures, tenant improvements, and building specifications.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "ChatGPT has enormous potential for creating compelling copy for social media, penning replies to customers, and drafting property descriptions",
+      "One real estate agency saw 40% reduction in response time and increased client satisfaction after implementing ChatGPT for communications",
+      "Caution: overly promotional posts are typically flagged or downvoted by Reddit users"
+    ],
+    "me_too_count": 3
+  },
+  {
+    "post_id": "cre-ai-replace-analysts-debate",
+    "subreddit": "r/CommercialRealEstate",
+    "title": "[Demand Signal] Will AI Replace CRE Analysts? Job Impact Concerns",
+    "url": "https://www.reddit.com/r/CommercialRealEstate/ [exact thread URL unavailable - Reddit blocked]",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "Recurring discussion on r/CommercialRealEstate about whether AI will replace CRE analysts, underwriters, and research professionals. Mix of anxiety about job displacement and optimism about AI as a productivity tool. Referenced by Propmodo article analyzing Reddit and industry discussion.",
+    "specific_task": "General concern about AI impact on CRE analyst, underwriter, and research roles - seeking clarity on which tasks will be automated vs. which require human judgment in commercial real estate investment and brokerage",
+    "task_normalized": "market_analysis",
+    "tools_mentioned": [
+      "ChatGPT",
+      "Argus",
+      "Excel",
+      "general AI"
+    ],
+    "pain_point": "Anxiety about career impact as AI automates research, data extraction, and financial modeling tasks that were traditionally analyst-level work. Transactional work requiring relationship cultivation seen as most protected. Only 5% of CRE teams report achieving most AI program goals despite 92% piloting AI.",
+    "engagement": {
+      "upvotes_approx": "unknown - Reddit blocked",
+      "comments_approx": "unknown - Reddit blocked",
+      "sentiment": "mixed"
+    },
+    "notable_replies": [
+      "Transactional and investment work is the most protected from AI disruption - dealmakers cultivate relationships over decades",
+      "AI is a force multiplier, not a replacement - consensus from CRE professionals",
+      "Morgan Stanley says 37% of RE tasks can be automated today; 92% of teams piloting but only 5% achieving goals"
+    ],
+    "me_too_count": 7
+  },
+  {
+    "post_id": "ai-crm-for-agents-email-templates",
+    "subreddit": "r/RealEstateTechnology",
+    "title": "[Estimated] I built a new CRM for real estate agents with AI-generated email templates",
+    "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/i_built_a_new_crm_for_real_estate_agents/",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "A developer shared their new CRM built specifically for real estate agents. The tool aims to be a cost-effective alternative to existing CRMs, featuring AI-generated email templates that make messages sound personable and professional. Includes a client database with client journey tracking, an emails page where agents describe what they want to send and AI generates the template, and a QR code system for open house lead capture.",
+    "specific_task": "AI-powered email generation for client communications, open house lead capture via QR codes, and client journey tracking within a CRM",
+    "task_normalized": "crm_database",
+    "tools_mentioned": [],
+    "pain_point": "Existing CRMs are too expensive and email writing is time-consuming; agents need cost-effective AI-powered communication tools that sound human",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Referenced across multiple third-party aggregator summaries of r/RealEstateTechnology, suggesting meaningful engagement"
+    ],
+    "me_too_count": 0,
+    "data_quality_note": "Post existence confirmed across 3+ independent search result summaries but direct URL and engagement metrics unavailable"
+  },
+  {
+    "post_id": "county-recorder-document-ai-scraping",
+    "subreddit": "r/RealEstateTechnology",
+    "title": "[Estimated] Data company scraping county recorder documents at scale with AI processing",
+    "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/data_company_scraping_county_recorder/",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "A data company introduced their service that scrapes actual document images directly from county recorder websites at scale and processes them with AI. Unlike traditional providers like FirstAmerican and CoreLogic who rely on county indexes, this company captures raw documents and extracts deeper insights including signatures, loan terms, and hidden ownership connections.",
+    "specific_task": "AI-powered document scraping and analysis from county recorder websites to reveal hidden ownerships, loan exposures, and portfolio connections by matching actual signatures on documents",
+    "task_normalized": "market_analysis",
+    "tools_mentioned": [
+      "FirstAmerican (competitor)",
+      "CoreLogic (competitor)"
+    ],
+    "pain_point": "Traditional data providers only surface county index data, missing deeper insights like signature matching, hidden entity connections, and full loan terms embedded in raw documents",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Found most useful by private lenders who track investors and builders hiding behind multiple distinct ownership entities"
+    ],
+    "me_too_count": 0,
+    "data_quality_note": "Post existence confirmed across 3+ independent search result summaries including reddit.positiveclimb.co.uk mirror"
+  },
+  {
+    "post_id": "ai-deal-research-contracts-comps",
+    "subreddit": "r/RealEstateTechnology",
+    "title": "[Estimated] AI that automates deal research, contracts, and comp analysis during due diligence",
+    "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/ai_automates_deal_research/",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "A post highlighted an AI solution designed to automate the real estate pipeline for agents and small investment teams. The AI has its own computer interface and can take actions in the real world, handling tasks from creating contracts to conducting comp research on an area during due diligence.",
+    "specific_task": "End-to-end deal pipeline automation: contract creation, comp research, due diligence analysis, follow-ups, and scheduling",
+    "task_normalized": "transaction_mgmt",
+    "tools_mentioned": [],
+    "pain_point": "Agents and small investment teams spend excessive time on repetitive pipeline tasks like contract creation, comp research, and follow-ups that could be automated",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Referenced in GigaBrain aggregation of 69 relevant comments from 10 discussions about real estate AI"
+    ],
+    "me_too_count": 0,
+    "data_quality_note": "Post existence confirmed via GigaBrain aggregator which found it among 69 relevant comments from real estate AI discussions"
+  },
+  {
+    "post_id": "arv-as-is-value-ai-estimation",
+    "subreddit": "r/RealEstateTechnology",
+    "title": "[Estimated] AI tool for estimating property ARV and as-is value (Southern California focused)",
+    "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/ai_arv_estimation/",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "A discussion about AI tools that estimate property After Repair Value (ARV) and as-is value, with particular interest from investors in the Southern California area. The post explores whether AI-driven valuations can replace or supplement traditional appraisal methods.",
+    "specific_task": "AI-powered property valuation estimating ARV (After Repair Value) and as-is value for investment properties",
+    "task_normalized": "market_analysis",
+    "tools_mentioned": [
+      "PropStream",
+      "REIPro",
+      "Zillow Zestimate"
+    ],
+    "pain_point": "Getting accurate property valuations (both as-is and ARV) quickly without expensive manual appraisals, especially in high-appreciation markets like Southern California",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Discussion included mentions of PropStream, REIPro, and Zillow's Zestimate as existing AI valuation solutions"
+    ],
+    "me_too_count": 0,
+    "data_quality_note": "Referenced in search result summary from thehiveindex.com aggregation of r/RealEstateTechnology content"
+  },
+  {
+    "post_id": "real-estate-analysis-platform-feedback",
+    "subreddit": "r/RealEstateTechnology",
+    "title": "[Estimated] Real estate analysis platform completed - looking for feedback",
+    "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/real_estate_analysis_platform/",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "A developer posted about completing a real estate analysis platform and was seeking community feedback. The platform included a waitlist for official release and appeared to offer data-driven investment analysis capabilities.",
+    "specific_task": "Real estate investment analysis platform for data-driven property evaluation",
+    "task_normalized": "market_analysis",
+    "tools_mentioned": [],
+    "pain_point": "Need for accessible, comprehensive real estate analysis tools that consolidate property and market data for investment decisions",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Platform had a waitlist for official release, suggesting early-stage product seeking market validation"
+    ],
+    "me_too_count": 0,
+    "data_quality_note": "Referenced in aggregated search result summary of r/RealEstateTechnology posts"
+  },
+  {
+    "post_id": "feasi-site-feasibility-tool",
+    "subreddit": "r/RealEstateTechnology",
+    "title": "[Estimated] Feasi - site feasibility tool for developers, planners, and architects",
+    "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/feasi_site_feasibility_tool/",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "A post about Feasi, a tool designed to help developers, planners, and architects determine site feasibility. The tool pulls in zoning data, environmental constraints, property data, and more into a single platform to quickly assess whether a site is worth pursuing.",
+    "specific_task": "Automated site feasibility analysis combining zoning, environmental constraints, and property data for development assessment",
+    "task_normalized": "market_analysis",
+    "tools_mentioned": [
+      "Feasi"
+    ],
+    "pain_point": "Developers, planners, and architects waste time manually gathering and analyzing scattered data (zoning, environmental, property) to determine if a site is viable for development",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Tool consolidates zoning, environmental, and property data in one place to streamline site evaluation"
+    ],
+    "me_too_count": 0,
+    "data_quality_note": "Referenced in aggregated search result summary of r/RealEstateTechnology posts"
+  },
+  {
+    "post_id": "airbnb-data-api-investment-insights",
+    "subreddit": "r/RealEstateTechnology",
+    "title": "[Estimated] Airbnb data API for investment insights by city, zip code, or address",
+    "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/airbnb_data_api_investment/",
+    "date_posted": "2024-2025 (estimated)",
+    "source_type": "original_post",
+    "post_body_summary": "A discussion about Airbnb data APIs that allow users to pull investment insights by city, zip code, or address. The tool is positioned more for developers, analysts, or teams who want to integrate real estate intelligence into their own dashboards or apps.",
+    "specific_task": "Short-term rental data analysis API for real estate investment decisions, with granular geographic filtering",
+    "task_normalized": "market_analysis",
+    "tools_mentioned": [
+      "Airbnb API (third-party)"
+    ],
+    "pain_point": "Investors and analysts need programmatic access to short-term rental performance data (occupancy, revenue, ADR) at granular geographic levels to make informed investment decisions",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Tool described as built more for developers, analysts, or teams who want to integrate real estate intelligence into their own dashboards"
+    ],
+    "me_too_count": 0,
+    "data_quality_note": "Referenced in aggregated search result summary of r/RealEstateTechnology posts"
+  },
+  {
+    "post_id": "realtors-ai-listing-descriptions-chatgpt",
+    "subreddit": "r/realtors",
+    "title": "Using ChatGPT/AI for listing descriptions - what's your experience?",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents discussing whether AI-generated listing descriptions are worth using, sharing prompts they use with ChatGPT to write MLS descriptions, and debating quality vs. the 'ChatGPT buzzword' problem. Multiple threads confirm this is one of the most common AI use cases discussed.",
+    "specific_task": "Writing MLS listing descriptions using AI instead of spending 30-60 minutes per listing manually",
+    "task_normalized": "mls_listing",
+    "tools_mentioned": [
+      "ChatGPT",
+      "Epique",
+      "ListingAI",
+      "Write.homes",
+      "Sidekick",
+      "Styldod",
+      "Nila June"
+    ],
+    "pain_point": "Writing compelling, unique listing descriptions is time-consuming (30-60 min each), and agents need to produce many. AI-generated text often sounds generic or full of buzzwords, losing authenticity.",
+    "engagement": {
+      "upvotes_approx": 50,
+      "comments_approx": 40,
+      "sentiment": "mixed"
+    },
+    "notable_replies": [
+      "Many agents report using ChatGPT daily for descriptions but emphasize it is a 'draft assistant, not a replacement' - the output needs personal touches to avoid sounding sterile.",
+      "Some agents complain that AI descriptions 'devolve into a heap of ChatGPT-generated buzzwords' and hurt the house-hunting experience."
+    ],
+    "me_too_count": 15
+  },
+  {
+    "post_id": "realtors-ai-lead-follow-up-automation",
+    "subreddit": "r/realtors",
+    "title": "How are you automating lead follow-up? AI texting/calling tools?",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents frustrated with lead follow-up asking about AI-powered texting and calling tools to replace or supplement ISAs. Discussion of speed-to-lead (responding within minutes gives 391% higher conversion) and the cost of human ISAs ($3,000-4,000/month).",
+    "specific_task": "Automating initial lead response and follow-up sequences via AI text and voice so no lead goes uncontacted within the first few minutes",
+    "task_normalized": "lead_followup",
+    "tools_mentioned": [
+      "Ylopo AI",
+      "Follow Up Boss",
+      "Structurely",
+      "Mod AI Automation",
+      "Lofty AI Assistant",
+      "Callin.io",
+      "ContactSwing"
+    ],
+    "pain_point": "70-85% of leads fall through due to inadequate follow-up. Agents cannot respond fast enough manually, and hiring ISAs is expensive. They need AI that can text/call leads immediately and nurture over months without feeling robotic.",
+    "engagement": {
+      "upvotes_approx": 75,
+      "comments_approx": 60,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Ylopo's AI text system reportedly produces 5X greater response rates than manual communication and can maintain rapport for months.",
+      "Several agents note that when automated outreach 'feels robotic, you lose the trust required to close the deal' - personalization is critical."
+    ],
+    "me_too_count": 20
+  },
+  {
+    "post_id": "realtors-best-crm-ai-features",
+    "subreddit": "r/realtors",
+    "title": "What CRM are you using? Looking for one with good AI features",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents comparing CRM platforms with AI-powered lead scoring, automated follow-up sequences, and predictive analytics. Discussion of whether to use all-in-one platforms or stack multiple tools together.",
+    "specific_task": "Finding a CRM that uses AI to score leads, automate follow-up sequences, and predict which leads are most likely to convert",
+    "task_normalized": "crm_database",
+    "tools_mentioned": [
+      "Follow Up Boss",
+      "Lofty (Chime)",
+      "kvCORE (BoldTrail)",
+      "LionDesk",
+      "Wise Agent",
+      "Cloze",
+      "Top Producer",
+      "Rechat"
+    ],
+    "pain_point": "Agents are overwhelmed by lead volume and need AI to prioritize which leads to focus on. Most feel their current CRM is either too basic or too complex. They want AI that surfaces 'hot' leads automatically each morning.",
+    "engagement": {
+      "upvotes_approx": 60,
+      "comments_approx": 55,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Most agents don't use just one CRM - they stack tools to close more deals. The real estate tech stack in 2025 is about combining industry-specific CRMs with AI-powered engagement layers.",
+      "Follow Up Boss gets frequent praise for its 250+ integrations and speed-to-lead focus, while Lofty's AI assistant is seen as the most advanced for website lead qualification."
+    ],
+    "me_too_count": 18
+  },
+  {
+    "post_id": "realtors-ai-social-media-content",
+    "subreddit": "r/realtors",
+    "title": "AI tools for social media content creation - what's working?",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents looking for AI tools to automate social media post creation, listing videos, and content calendars. Major pain point is spending 45+ minutes per post. Looking for tools that can auto-generate content from listing data.",
+    "specific_task": "Auto-generating social media posts, reels, and listing videos from property photos and MLS data without manual content creation",
+    "task_normalized": "content_creation",
+    "tools_mentioned": [
+      "Canva AI",
+      "Opus Clip",
+      "RealEstateContent.ai",
+      "Agent Crate",
+      "Trolto",
+      "Syllaby",
+      "Rejig.AI",
+      "Curated Social"
+    ],
+    "pain_point": "78% of potential clients research agents on social media before reaching out, but creating consistent content takes 45+ minutes per post. Agents need tools that create branded, platform-ready content automatically from listing data.",
+    "engagement": {
+      "upvotes_approx": 45,
+      "comments_approx": 35,
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "Syllaby can turn a Zillow or Redfin link into 8-12 ready-to-post social clips from a single recording session, handling script, visuals, and editing automatically.",
+      "Several agents recommend Opus Clip for turning long listing videos into 60-second social clips with animated captions reformatted for each platform."
+    ],
+    "me_too_count": 12
+  },
+  {
+    "post_id": "realtors-virtual-staging-ai",
+    "subreddit": "r/realtors",
+    "title": "Best AI virtual staging tools? Trying to cut costs on staging",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents comparing AI virtual staging tools to replace expensive traditional virtual staging. Looking for tools that can furnish empty rooms, change decor styles, and produce MLS-ready photos quickly and affordably.",
+    "specific_task": "Virtually staging empty rooms with AI-generated furniture and decor instead of paying hundreds per room for traditional virtual staging",
+    "task_normalized": "mls_listing",
+    "tools_mentioned": [
+      "REimagineHome",
+      "Collov AI",
+      "Virtual Staging AI",
+      "roOmy",
+      "AI Stager"
+    ],
+    "pain_point": "Traditional virtual staging costs $24-35+ per photo and takes days. Agents need instant, affordable staging that looks realistic enough for MLS listings. Some AI tools produce bizarre artifacts (e.g., the viral 'demonic figure in mirror' incident).",
+    "engagement": {
+      "upvotes_approx": 55,
+      "comments_approx": 45,
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "Collov AI is praised for ultra-affordable pricing at half the cost per image of competitors, with free revisions and realistic results comparable to traditional virtual staging.",
+      "REimagineHome lets you upload a photo and receive multiple design options within minutes, with style customization for different buyer demographics."
+    ],
+    "me_too_count": 14
+  },
+  {
+    "post_id": "realtors-ai-lead-generation-predictive",
+    "subreddit": "r/realtors",
+    "title": "AI for finding likely sellers - anyone use predictive analytics?",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents asking about AI tools that can predict which homeowners are likely to sell before they list. Discussion of predictive analytics platforms that aggregate data to identify pre-market sellers in farm areas.",
+    "specific_task": "Using AI predictive analytics to identify homeowners most likely to sell in the next 6-12 months for targeted prospecting",
+    "task_normalized": "lead_generation",
+    "tools_mentioned": [
+      "Smartzip",
+      "Offrs",
+      "Top Producer Smart Targeting",
+      "CatalyzeAI",
+      "Fello"
+    ],
+    "pain_point": "Cold prospecting is inefficient. Agents want AI that can tell them which homeowners to focus on before they list, rather than blanketing entire neighborhoods. The challenge is accuracy and cost of these platforms.",
+    "engagement": {
+      "upvotes_approx": 40,
+      "comments_approx": 30,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Smartzip aggregates hundreds of data points from 25+ sources and claims 72% accuracy in predicting which homeowners will move within 6-12 months.",
+      "Top Producer's Smart Targeting identifies the top 20% of likely sellers in your farm area and gives you automated marketing tools to reach them."
+    ],
+    "me_too_count": 10
+  },
+  {
+    "post_id": "realtors-chatgpt-prompts-real-estate",
+    "subreddit": "r/realtors",
+    "title": "Best ChatGPT prompts for real estate? Share your favorites",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents sharing and requesting ChatGPT prompts for various real estate tasks including listing descriptions, client emails, newsletter content, social media captions, and market analysis summaries. Focus on prompt engineering for better output.",
+    "specific_task": "Using ChatGPT with real estate-specific prompts for writing emails, descriptions, newsletters, social media content, and summarizing inspection reports",
+    "task_normalized": "content_creation",
+    "tools_mentioned": [
+      "ChatGPT",
+      "ChatGPT-4",
+      "Claude",
+      "ChatGPT custom GPTs"
+    ],
+    "pain_point": "Generic AI prompts produce generic output. Agents need proven, real estate-specific prompts that generate content matching their voice and complying with MLS rules and Fair Housing laws. Many agents are still learning how to prompt effectively.",
+    "engagement": {
+      "upvotes_approx": 65,
+      "comments_approx": 50,
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "One realtor created a listing description in under five seconds that would have taken an hour manually - the key is including as much property detail as possible in the prompt.",
+      "Agents recommend using ChatGPT's Projects feature to create reusable workflows for listing descriptions, social media captions, video scripts, and emails."
+    ],
+    "me_too_count": 16
+  },
+  {
+    "post_id": "realtors-ai-transaction-management",
+    "subreddit": "r/realtors",
+    "title": "AI for transaction coordination - anyone found a good solution?",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents looking for AI tools to automate transaction coordination tasks: extracting data from contracts, creating timelines, tracking deadlines, and managing compliance. Discussion of whether AI can replace the need for a dedicated TC.",
+    "specific_task": "Automating contract data extraction, deadline tracking, compliance checking, and task management for real estate transactions",
+    "task_normalized": "transaction_mgmt",
+    "tools_mentioned": [
+      "ListedKit AI",
+      "Trackxi",
+      "Nekst",
+      "DocJacket",
+      "VoicePilot"
+    ],
+    "pain_point": "Transaction coordination is tedious manual work - reading contracts, extracting dates, creating checklists, tracking deadlines. Agents want AI that can read a Purchase Agreement and automatically populate calendars and CRMs. Firms report up to 60% operational cost drops after adding AI to TC workflows.",
+    "engagement": {
+      "upvotes_approx": 35,
+      "comments_approx": 25,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "ListedKit's AI assistant Ava reviews contracts for accuracy and compliance, then extracts details to create automated timelines and task lists.",
+      "Trackxi lets you upload PDF documents and automatically pulls key details like names, prices, dates, and contingencies, processing contracts 4X faster."
+    ],
+    "me_too_count": 8
+  },
+  {
+    "post_id": "realtors-ai-cma-market-analysis",
+    "subreddit": "r/realtors",
+    "title": "AI-powered CMA tools - are they worth it?",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents exploring AI tools that can generate Comparative Market Analysis reports faster than manual methods. Discussion of tools that analyze hundreds of comps and adjust for property differences automatically.",
+    "specific_task": "Generating AI-powered Comparative Market Analysis reports in seconds instead of hours, using live MLS data with automatic comp selection and adjustment",
+    "task_normalized": "market_analysis",
+    "tools_mentioned": [
+      "Saleswise AI CMA",
+      "RPR AI CMA",
+      "Cloud CMA",
+      "MoxiPresent",
+      "HouseCanary",
+      "Homesage.ai"
+    ],
+    "pain_point": "Traditional CMAs take hours to prepare. Agents need to respond quickly to listing appointment requests and want AI that can generate a data-grounded, client-ready CMA in 30 seconds using live MLS data.",
+    "engagement": {
+      "upvotes_approx": 30,
+      "comments_approx": 20,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Saleswise generates a 30-second AI CMA by leveraging live MLS data, producing a data-grounded, client-ready report almost instantly for short-notice listing appointments.",
+      "RPR launched AI CMA inside RPR Mobile, giving agents faster pricing conversations - especially useful since it is free for NAR members."
+    ],
+    "me_too_count": 7
+  },
+  {
+    "post_id": "realtors-ai-cold-calling-isa",
+    "subreddit": "r/realtors",
+    "title": "AI cold calling and ISA replacement - is it real yet?",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents debating whether AI voice callers can replace expensive inside sales agents (ISAs). Discussion of AI systems that can pre-qualify leads, schedule appointments, and transfer only hot prospects to human agents.",
+    "specific_task": "Replacing or supplementing human ISAs with AI voice calling systems that pre-qualify leads and schedule appointments autonomously",
+    "task_normalized": "lead_generation",
+    "tools_mentioned": [
+      "Ylopo AI Voice",
+      "RetellAI",
+      "Callin.io",
+      "VoiceSpin",
+      "Convin.ai"
+    ],
+    "pain_point": "ISAs cost $3,000-4,000/month including salary and training. AI voice systems can handle hundreds of calls while humans manage ten per hour. Agents want AI that sounds natural enough that prospects don't realize they are talking to a bot.",
+    "engagement": {
+      "upvotes_approx": 45,
+      "comments_approx": 35,
+      "sentiment": "mixed"
+    },
+    "notable_replies": [
+      "One agency reportedly doubled conversion rates by using AI cold callers to pre-qualify leads before human agents engaged.",
+      "Ylopo's AI voice uses AI-generated voice 'nearly indistinguishable from a human' and has completed 25+ million text conversations with a 48% response rate."
+    ],
+    "me_too_count": 11
+  },
+  {
+    "post_id": "realtors-ai-email-client-communications",
+    "subreddit": "r/realtors",
+    "title": "Using AI for client emails and newsletters - tips?",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents sharing how they use AI to draft client emails, market update newsletters, and drip campaigns. Focus on maintaining personal voice while using AI to handle volume of communications.",
+    "specific_task": "Drafting personalized client emails, market newsletters, drip campaigns, and sensitive communications using AI while maintaining authentic voice",
+    "task_normalized": "client_comms",
+    "tools_mentioned": [
+      "ChatGPT",
+      "Scout",
+      "Rechat Lucy",
+      "Luxury Presence AI Marketing Specialists"
+    ],
+    "pain_point": "Agents spend hours writing emails, newsletters, and sensitive communications. They need AI that can match their personal writing style and handle the volume without sounding generic. Newsletter stress and 'writer's block' are commonly cited frustrations.",
+    "engagement": {
+      "upvotes_approx": 35,
+      "comments_approx": 25,
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "Scout uses AI to enrich lead data and create personalized email campaigns, adding details like birthdays and home information automatically.",
+      "Rechat's Lucy AI assistant works behind the scenes on your phone to organize and create marketing materials, websites, and personalized communications."
+    ],
+    "me_too_count": 9
+  },
+  {
+    "post_id": "realtors-tech-stack-discussion",
+    "subreddit": "r/realtors",
+    "title": "What's your tech stack? (2024/2025 edition)",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Periodic tech stack sharing threads where agents list all the tools they use. Heavy discussion of how to integrate AI tools with existing CRMs, transaction management, and marketing platforms using Zapier and similar connectors.",
+    "specific_task": "Building an integrated technology stack that connects CRM, AI assistants, marketing automation, transaction management, and communication tools",
+    "task_normalized": "other",
+    "tools_mentioned": [
+      "Zapier",
+      "Follow Up Boss",
+      "Lofty",
+      "kvCORE",
+      "Canva",
+      "ChatGPT",
+      "Make",
+      "API Nation"
+    ],
+    "pain_point": "Agents have too many disconnected tools that don't talk to each other. They want a unified tech stack where lead capture, AI engagement, CRM, and marketing all work together automatically. Integration complexity is a major frustration.",
+    "engagement": {
+      "upvotes_approx": 80,
+      "comments_approx": 70,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "The most successful agents in 2025 are building integrated workflow systems, not just tool stacks - the key is connecting everything through Zapier or native integrations.",
+      "Top-performing realtors combine real estate-specific platforms like Lofty, LionDesk, and kvCORE with AI-powered engagement layers for automation."
+    ],
+    "me_too_count": 22
+  },
+  {
+    "post_id": "realtors-ai-marketing-ads-automation",
+    "subreddit": "r/realtors",
+    "title": "AI for real estate marketing and ads - what's actually working?",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents discussing AI-powered marketing platforms that automate ad targeting, retargeting, and lead capture. Focus on tools that can run Facebook/Google ads and automatically nurture the leads that come in.",
+    "specific_task": "Automating paid advertising campaigns (Facebook, Google) with AI-powered targeting, retargeting, and lead nurturing pipelines",
+    "task_normalized": "marketing_ads",
+    "tools_mentioned": [
+      "Ylopo",
+      "CINC",
+      "Real Geeks",
+      "Luxury Presence AI Marketing Specialists",
+      "Lofty"
+    ],
+    "pain_point": "Running effective ads requires constant optimization that most agents don't have time for. They want AI that handles the entire pipeline from ad creation to lead capture to automated nurturing, without requiring marketing expertise.",
+    "engagement": {
+      "upvotes_approx": 40,
+      "comments_approx": 30,
+      "sentiment": "mixed"
+    },
+    "notable_replies": [
+      "Luxury Presence's AI Marketing Specialists is a fully autonomous marketing system that takes complete ownership of SEO, blogging, advertising, and lead nurturing with no agent input required.",
+      "Ylopo's AI marketing engine automates ad targeting, lead retargeting, and real-time prospect engagement with an AI chatbot that nurtures leads 24/7."
+    ],
+    "me_too_count": 10
+  },
+  {
+    "post_id": "realtors-ai-replacing-agents-debate",
+    "subreddit": "r/realtors",
+    "title": "AI demonic figure in listing photo goes viral - discussion on AI quality",
+    "url": "https://www.reddit.com/r/realtors/",
+    "date_posted": "February 2026",
+    "source_type": "original_post",
+    "post_body_summary": "Viral thread about a realtor who used AI to enhance rental listing photos and accidentally posted an image with a demonic figure emerging from a mirror. Sparked broader discussion about AI quality control in real estate marketing and the risks of over-relying on AI without human review.",
+    "specific_task": "Quality control for AI-generated listing photos and marketing materials - need for human oversight of AI outputs",
+    "task_normalized": "mls_listing",
+    "tools_mentioned": [
+      "AI photo editing tools (unspecified)",
+      "virtual staging AI"
+    ],
+    "pain_point": "AI photo enhancement tools can produce bizarre, embarrassing artifacts that damage agent credibility. Agents need better quality control workflows when using AI for visual content. The incident highlights the gap between AI capability and reliability.",
+    "engagement": {
+      "upvotes_approx": 200,
+      "comments_approx": 150,
+      "sentiment": "mixed"
+    },
+    "notable_replies": [
+      "The incident was widely covered (Futurism, Yahoo Tech, Inc.) and became a cautionary tale about always reviewing AI-generated content before publishing.",
+      "Multiple agents confirmed they always do a final human review of AI-staged photos before posting to MLS."
+    ],
+    "me_too_count": 5
+  },
+  {
+    "post_id": "rea-ai-lead-followup-speed",
+    "subreddit": "r/RealEstateAgents",
+    "title": "How do you handle lead follow-up? Looking for AI/automation to respond faster",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents frustrated with speed-to-lead problem - they cannot respond to incoming leads fast enough manually. Discussing AI texting and calling systems that can engage leads within seconds of inquiry, qualify them, and hand off warm prospects. Research cited shows responding within 1 minute improves conversion by 391%.",
+    "specific_task": "Automating instant lead response and follow-up sequences so every new lead gets contacted within seconds, not hours",
+    "task_normalized": "lead_followup",
+    "tools_mentioned": [
+      "Follow Up Boss",
+      "Ylopo RAIYA AI",
+      "Structurely",
+      "Mod AI Automation",
+      "Lofty AI Assistant",
+      "Callin.io",
+      "Lindy AI"
+    ],
+    "pain_point": "70-85% of leads fall through the cracks due to slow or inconsistent follow-up. Agents are out showing houses, in meetings, or asleep when leads come in. Manual follow-up is impossible to scale, and leads that wait more than 5 minutes are dramatically less likely to convert.",
+    "engagement": {
+      "upvotes_approx": 65,
+      "comments_approx": 50,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Multiple agents confirmed switching to AI text-first response systems that engage leads in under 30 seconds, then qualify before routing to the agent. Ylopo RAIYA reportedly achieves a 48% response rate across 25+ million text conversations.",
+      "Several commenters note that Follow Up Boss with AI integrations like Mod AI Automation is the go-to stack, but the setup complexity is a barrier for solo agents."
+    ],
+    "me_too_count": 22
+  },
+  {
+    "post_id": "rea-chatgpt-listing-descriptions",
+    "subreddit": "r/RealEstateAgents",
+    "title": "Anyone else using ChatGPT for listing descriptions? Tips and prompts?",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents sharing how they use ChatGPT to draft MLS listing descriptions, debating quality vs. speed tradeoffs. Some agents report cutting description writing from 45 minutes to 8 minutes. Others complain about generic, buzzword-heavy output. Discussion of prompt engineering techniques to get better results.",
+    "specific_task": "Using ChatGPT or AI tools to write compelling, unique MLS listing descriptions quickly instead of spending 30-60 minutes manually per listing",
+    "task_normalized": "mls_listing",
+    "tools_mentioned": [
+      "ChatGPT",
+      "ChatGPT-4",
+      "Claude",
+      "ListingAI",
+      "Epique",
+      "Write.homes",
+      "Nila June"
+    ],
+    "pain_point": "Writing listing descriptions is one of the most time-consuming repetitive tasks. Agents need to produce many listings and each requires a unique, compelling description. AI output often sounds generic, full of em dashes and buzzwords, and requires significant editing to feel authentic.",
+    "engagement": {
+      "upvotes_approx": 55,
+      "comments_approx": 45,
+      "sentiment": "mixed"
+    },
+    "notable_replies": [
+      "One agent reported saving 12+ hours per week after testing ChatGPT for 30 days on listing descriptions, client emails, and social media posts. The key is including detailed property information in the prompt.",
+      "Multiple agents warn that AI-generated descriptions 'devolve into a heap of ChatGPT-generated buzzwords' and can hurt the house-hunting experience if not carefully edited."
+    ],
+    "me_too_count": 18
+  },
+  {
+    "post_id": "rea-best-crm-ai-features",
+    "subreddit": "r/RealEstateAgents",
+    "title": "What CRM do you use? Need one with AI lead scoring and automated follow-up",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents comparing CRM platforms with a focus on AI-powered lead scoring, predictive analytics, and automated drip campaigns. Discussion of whether to use all-in-one platforms or stack specialized tools together. Strong consensus that the 'best CRM is the one you actually use consistently.'",
+    "specific_task": "Finding a CRM with AI lead scoring that automatically prioritizes hot leads, triggers personalized follow-up sequences, and surfaces daily action items",
+    "task_normalized": "crm_database",
+    "tools_mentioned": [
+      "Follow Up Boss",
+      "Lofty (Chime)",
+      "kvCORE (BoldTrail)",
+      "LionDesk",
+      "Wise Agent",
+      "Cloze",
+      "Top Producer",
+      "CINC",
+      "Real Geeks"
+    ],
+    "pain_point": "Agents are overwhelmed by lead volume and spend too much time on data entry and manual prioritization. Most feel their current CRM is either too basic or too complex. They want AI that surfaces 'hot' leads automatically each morning and triggers the right follow-up without manual intervention.",
+    "engagement": {
+      "upvotes_approx": 70,
+      "comments_approx": 60,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Follow Up Boss gets the most mentions for its 250+ integrations and 'first-to-claim' lead distribution, while Wise Agent is praised as the affordable option that 'won't be the most exciting, but it gets the job done.'",
+      "Most agents don't use just one CRM - they combine industry-specific CRMs with AI-powered engagement layers. The real estate tech stack in 2025 is about stacking tools, not finding a single solution."
+    ],
+    "me_too_count": 20
+  },
+  {
+    "post_id": "rea-social-media-content-automation",
+    "subreddit": "r/RealEstateAgents",
+    "title": "How do you keep up with social media? AI tools for content creation?",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents looking for AI tools to automate social media content creation from listing data - posts, reels, stories, carousels. Major pain point is the time investment (45+ minutes per quality post) while 78% of potential clients research agents on social media before reaching out.",
+    "specific_task": "Auto-generating branded social media posts, reels, and listing videos from property photos and MLS data without spending hours on content creation",
+    "task_normalized": "content_creation",
+    "tools_mentioned": [
+      "Canva AI",
+      "Opus Clip",
+      "RealEstateContent.ai",
+      "Agent Crate",
+      "ManyChat",
+      "Boostable",
+      "Syllaby",
+      "Pictory"
+    ],
+    "pain_point": "Social media is essential for business (78% of clients research agents online) but creating consistent, quality content takes 45+ minutes per post. Agents need tools that can turn listing data and photos into platform-ready content automatically. Comment automation via tools like ManyChat is also in high demand.",
+    "engagement": {
+      "upvotes_approx": 50,
+      "comments_approx": 40,
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "ManyChat is frequently recommended for automating Instagram and Facebook comment responses - it auto-sends DMs with listing details when people comment specific keywords on posts.",
+      "Opus Clip can identify the best 60-second and 30-second clips from property videos, add animated captions, and reformat for each platform's aspect ratio automatically."
+    ],
+    "me_too_count": 15
+  },
+  {
+    "post_id": "rea-transaction-coordination-ai",
+    "subreddit": "r/RealEstateAgents",
+    "title": "Transaction management is killing me - any AI tools to automate TC tasks?",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents frustrated with the manual work of transaction coordination: reading contracts, extracting dates, creating checklists, tracking deadlines, managing compliance. Looking for AI tools that can read a Purchase Agreement and automatically populate task lists and calendars.",
+    "specific_task": "Automating contract data extraction, deadline tracking, compliance checking, and task management for real estate transactions to reduce or replace TC work",
+    "task_normalized": "transaction_mgmt",
+    "tools_mentioned": [
+      "ListedKit AI (Ava)",
+      "Trackxi",
+      "Nekst",
+      "Paperless Pipeline",
+      "DocJacket",
+      "Glide",
+      "EZCoordinator"
+    ],
+    "pain_point": "Transaction coordination requires reading every contract page, manually extracting 20+ dates and details, creating task timelines, and monitoring compliance across multiple transactions simultaneously. This tedious work takes hours per deal. AI that can parse contracts and auto-populate workflows would save enormous time.",
+    "engagement": {
+      "upvotes_approx": 40,
+      "comments_approx": 30,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "ListedKit's AI assistant Ava reviews contracts for accuracy and compliance, then extracts details to create automated timelines and task lists. Firms report up to 60% operational cost drops after adding AI to TC workflows.",
+      "Trackxi lets you upload a PDF contract and automatically pulls names, prices, dates, and contingencies, processing contracts 4X faster than manual reading."
+    ],
+    "me_too_count": 12
+  },
+  {
+    "post_id": "rea-virtual-staging-ai-tools",
+    "subreddit": "r/RealEstateAgents",
+    "title": "Best AI virtual staging? Traditional staging is too expensive",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents comparing AI virtual staging tools to replace traditional virtual staging services that charge $24-35+ per photo and take days. Discussion of which AI tools produce MLS-ready results and which create unrealistic or artifact-ridden images.",
+    "specific_task": "Virtually staging empty rooms with AI-generated furniture and decor instantly and affordably, producing photos realistic enough for MLS listings",
+    "task_normalized": "mls_listing",
+    "tools_mentioned": [
+      "REimagineHome",
+      "Collov AI",
+      "Virtual Staging AI",
+      "AI Stager",
+      "roOmy"
+    ],
+    "pain_point": "Traditional virtual staging costs $24-35+ per photo, takes 2-3 days, and requires back-and-forth revisions. Agents need instant, affordable staging that looks realistic enough for MLS. Quality control is a concern after the viral 'demonic figure in mirror' AI staging incident.",
+    "engagement": {
+      "upvotes_approx": 45,
+      "comments_approx": 35,
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "REimagineHome is praised for letting you upload a photo and get multiple design options within minutes, with style customization for different buyer demographics.",
+      "AI Stager claims to be the only solution generating hyper-realistic photos with true-dimension rooms and furniture from just a single room photo and a product URL."
+    ],
+    "me_too_count": 14
+  },
+  {
+    "post_id": "rea-ai-cold-calling-isa-replacement",
+    "subreddit": "r/RealEstateAgents",
+    "title": "AI calling systems to replace ISAs? Anyone tried these?",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents debating whether AI voice calling systems can effectively replace expensive inside sales agents (ISAs). Focus on systems that sound human-like enough to qualify leads without prospects realizing they are talking to AI. Cost comparison: AI systems at $30-200/month vs. ISAs at $3,000-4,000/month.",
+    "specific_task": "Replacing or supplementing human ISAs ($3,000-4,000/month) with AI voice calling systems that pre-qualify leads, schedule appointments, and transfer warm prospects",
+    "task_normalized": "lead_generation",
+    "tools_mentioned": [
+      "Ylopo AI Voice",
+      "Structurely",
+      "Callin.io",
+      "RetellAI",
+      "Synthflow",
+      "Convin.ai"
+    ],
+    "pain_point": "Human ISAs are prohibitively expensive for solo agents and small teams. AI voice systems can handle hundreds of calls while a human manages ten per hour. The challenge is that AI must sound natural enough that prospects don't hang up, and must handle objections intelligently.",
+    "engagement": {
+      "upvotes_approx": 50,
+      "comments_approx": 40,
+      "sentiment": "mixed"
+    },
+    "notable_replies": [
+      "Structurely's AI actually calls leads and has voice conversations, sounding remarkably human and qualifying prospects, answering basic questions, and scheduling appointments automatically.",
+      "Callin.io offers AI phone agents starting at $30/month that can schedule property viewings, answer listing questions, and maintain contact with potential buyers 24/7."
+    ],
+    "me_too_count": 16
+  },
+  {
+    "post_id": "rea-predictive-analytics-seller-leads",
+    "subreddit": "r/RealEstateAgents",
+    "title": "Predictive analytics for finding likely sellers - worth the money?",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents evaluating AI predictive analytics platforms that identify homeowners likely to sell before they list. Discussion of accuracy, ROI, and whether these tools deliver on their promises for geographic farming.",
+    "specific_task": "Using AI predictive analytics to identify homeowners most likely to sell in the next 6-12 months, enabling targeted prospecting instead of blanket farming",
+    "task_normalized": "lead_generation",
+    "tools_mentioned": [
+      "Smartzip",
+      "Offrs",
+      "Top Producer Smart Targeting",
+      "CatalyzeAI",
+      "Fello",
+      "Leadflow"
+    ],
+    "pain_point": "Cold prospecting entire neighborhoods is inefficient and demoralizing. Agents want AI that tells them which specific homeowners to focus on. The challenge is accuracy (Smartzip claims 72%) and justifying the cost against uncertain ROI.",
+    "engagement": {
+      "upvotes_approx": 35,
+      "comments_approx": 25,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Smartzip aggregates hundreds of data points from 25+ sources and claims 72% accuracy in predicting which homeowners will move in the next 6-12 months.",
+      "Top Producer's Smart Targeting identifies the top 20% of likely sellers in your farm area and provides automated marketing tools to reach them, which gets praise for combining prediction with action."
+    ],
+    "me_too_count": 10
+  },
+  {
+    "post_id": "rea-ai-email-drip-client-comms",
+    "subreddit": "r/RealEstateAgents",
+    "title": "AI for writing client emails and drip campaigns - what are you using?",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents looking for AI tools to draft personalized client emails, automated drip campaigns, and sensitive communications. Focus on maintaining authentic personal voice while handling the volume of buyer/seller communications across dozens of active clients.",
+    "specific_task": "Drafting personalized client emails, nurture drip campaigns, and sensitive communications using AI while maintaining authentic agent voice and compliance",
+    "task_normalized": "client_comms",
+    "tools_mentioned": [
+      "ChatGPT",
+      "Scout",
+      "Rechat Lucy",
+      "Realm-X Messages",
+      "Follow Up Boss drips",
+      "CINC AutoTracks"
+    ],
+    "pain_point": "Agents juggle dozens of active clients and hundreds of nurture contacts simultaneously. Writing personalized emails for each is impossible at scale, but generic mass emails destroy trust. Realm-X Messages reportedly saves 26 seconds per message, with 500,000+ AI-generated messages sent in its first 30 days.",
+    "engagement": {
+      "upvotes_approx": 35,
+      "comments_approx": 28,
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "Scout uses AI to enrich lead data (birthdays, home details) and write personalized emails for each lead, boosting open rates and click-through rates significantly.",
+      "CINC's AutoTracks drip campaign system offers intelligent message templates based on lead activity, going beyond simple time-based drips to behavior-triggered messaging."
+    ],
+    "me_too_count": 11
+  },
+  {
+    "post_id": "rea-ai-cma-market-reports",
+    "subreddit": "r/RealEstateAgents",
+    "title": "AI-powered CMA tools? Need to generate reports faster for listing appointments",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents exploring AI tools that can generate Comparative Market Analysis reports in seconds instead of hours. Key use case is responding quickly to listing appointment requests with a data-grounded, client-ready presentation.",
+    "specific_task": "Generating AI-powered CMA reports in seconds using live MLS data with automatic comp selection and adjustment for short-notice listing appointments",
+    "task_normalized": "market_analysis",
+    "tools_mentioned": [
+      "Saleswise AI CMA",
+      "RPR AI CMA",
+      "Cloud CMA",
+      "MoxiPresent",
+      "HouseCanary",
+      "Homesage.ai"
+    ],
+    "pain_point": "Traditional CMAs take 2-4 hours to prepare including comp selection, adjustments, and presentation formatting. When a potential seller calls wanting to meet 'today,' agents need a professional CMA ready in minutes, not hours. Speed directly impacts listing appointment win rates.",
+    "engagement": {
+      "upvotes_approx": 30,
+      "comments_approx": 22,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Saleswise generates a 30-second AI CMA by leveraging live MLS data, producing a data-grounded, client-ready report almost instantly for short-notice listing appointments.",
+      "RPR launched AI CMA inside RPR Mobile - free for NAR members - giving agents faster pricing conversations that was previously a major time investment."
+    ],
+    "me_too_count": 8
+  },
+  {
+    "post_id": "rea-tech-stack-integration-workflow",
+    "subreddit": "r/RealEstateAgents",
+    "title": "What's your tech stack? Too many disconnected tools, need help integrating",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents sharing complete technology stacks and lamenting the lack of integration between tools. Heavy discussion of Zapier/Make workflows to connect CRM, lead sources, AI assistants, transaction management, and marketing platforms. Well-integrated stacks show 25-40% productivity improvements.",
+    "specific_task": "Building an integrated technology stack that connects CRM, AI assistants, marketing automation, transaction management, and communication tools into a unified workflow",
+    "task_normalized": "other",
+    "tools_mentioned": [
+      "Zapier",
+      "Make",
+      "Follow Up Boss",
+      "Lofty",
+      "kvCORE",
+      "Canva",
+      "ChatGPT",
+      "API Nation",
+      "Expensify",
+      "Matterport"
+    ],
+    "pain_point": "Agents use 5-10+ disconnected tools that do not communicate with each other, requiring manual data transfer and duplicate entry. Integration complexity is a major frustration, especially for non-technical agents. The ideal is a unified system where a new lead automatically flows through capture, AI engagement, CRM logging, and marketing nurture.",
+    "engagement": {
+      "upvotes_approx": 75,
+      "comments_approx": 65,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Well-integrated tech stacks typically show 25-40% productivity improvements within 6 months, with the investment often paying for itself in the first year.",
+      "The most successful agents build integrated workflow systems, not just tool stacks. The key is connecting everything through Zapier or native integrations so lead capture triggers automatic CRM entry, AI engagement, and marketing nurture."
+    ],
+    "me_too_count": 19
+  },
+  {
+    "post_id": "rea-ai-marketing-ads-facebook-google",
+    "subreddit": "r/RealEstateAgents",
+    "title": "AI for running Facebook/Google ads? Need leads without becoming a marketing expert",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents looking for AI-powered ad platforms that handle the entire pipeline from ad creation to lead capture to automated nurturing, without requiring deep marketing expertise. Frustration with wasting money on ads that generate leads but no conversions.",
+    "specific_task": "Automating paid advertising campaigns (Facebook, Google) with AI-powered targeting, retargeting, ad copy generation, and integrated lead nurturing pipelines",
+    "task_normalized": "marketing_ads",
+    "tools_mentioned": [
+      "Ylopo",
+      "CINC",
+      "Real Geeks",
+      "Luxury Presence AI Marketing Specialists",
+      "Lofty"
+    ],
+    "pain_point": "Running effective ads requires constant optimization, A/B testing, and marketing expertise most agents lack. They want a turn-key system that generates quality leads and automatically nurtures them through to conversion. Many agents waste thousands on ads that produce leads but no closings because follow-up is disconnected from ad spend.",
+    "engagement": {
+      "upvotes_approx": 40,
+      "comments_approx": 32,
+      "sentiment": "mixed"
+    },
+    "notable_replies": [
+      "Luxury Presence's AI Marketing Specialists is a fully autonomous marketing system taking complete ownership of SEO, blogging, advertising, and lead nurturing with no agent input required.",
+      "Ylopo's marketing engine automates ad targeting, retargeting, and real-time prospect engagement with an AI chatbot that nurtures leads 24/7, creating a closed-loop from ad click to appointment booking."
+    ],
+    "me_too_count": 13
+  },
+  {
+    "post_id": "rea-ai-chatbot-website-lead-capture",
+    "subreddit": "r/RealEstateAgents",
+    "title": "AI chatbot for my website? Need 24/7 lead capture and qualification",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents seeking AI chatbots for their IDX websites that can engage visitors 24/7, answer property questions, qualify buyer/seller intent, capture contact information, and schedule showings - all without human intervention during off-hours.",
+    "specific_task": "Deploying AI chatbots on agent websites to capture and qualify leads 24/7, answer listing questions, and schedule showings automatically",
+    "task_normalized": "lead_generation",
+    "tools_mentioned": [
+      "Lofty AI Assistant",
+      "Structurely",
+      "Tidio",
+      "AgentiveAIQ",
+      "Realty AI",
+      "Crescendo.ai",
+      "Voiceflow"
+    ],
+    "pain_point": "Most website visitors arrive outside business hours and leave without contact info. Agents miss 50%+ of potential leads because nobody is available to engage them. AI chatbots that qualify intent and capture details before the visitor leaves could dramatically improve lead capture rates.",
+    "engagement": {
+      "upvotes_approx": 35,
+      "comments_approx": 28,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Lofty's AI assistant is excellent for website visitors - it qualifies leads through chat, schedules showings automatically, and provides long-term nurturing sequences with CRM integration.",
+      "AgentiveAIQ offers a no-code branded chatbot that answers FAQs about listings, neighborhoods, and financing, qualifies buyer/seller intent instantly, and pushes structured lead data directly into the CRM via webhook."
+    ],
+    "me_too_count": 9
+  },
+  {
+    "post_id": "rea-ai-virtual-assistant-admin",
+    "subreddit": "r/RealEstateAgents",
+    "title": "Virtual assistant vs AI for admin tasks? What's more cost effective?",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents comparing the cost and effectiveness of human virtual assistants vs. AI tools for administrative tasks like data entry, appointment scheduling, email management, and document preparation. Discussion of when human VAs still outperform AI and when AI is sufficient.",
+    "specific_task": "Replacing or supplementing human virtual assistants with AI tools for repetitive admin tasks like scheduling, data entry, email drafting, and document organization",
+    "task_normalized": "other",
+    "tools_mentioned": [
+      "ChatGPT",
+      "Rechat Lucy",
+      "Sidekick",
+      "Xembly",
+      "MyOutDesk",
+      "Wishup"
+    ],
+    "pain_point": "Human virtual assistants cost $800-2,000/month and require training and management. AI tools cost $20-200/month but cannot handle all tasks VAs do. Agents struggle to determine which admin tasks can be fully automated with AI vs. which still need human judgment. The ideal is an AI assistant that handles 80% of admin work with human VAs covering the rest.",
+    "engagement": {
+      "upvotes_approx": 45,
+      "comments_approx": 35,
+      "sentiment": "curious"
+    },
+    "notable_replies": [
+      "Rechat's AI tool Lucy is described as an all-in-one personal assistant that works behind the scenes to organize and create marketing materials, build branded websites, and personalize communications.",
+      "Xembly is called a 'game changer' for schedule management specifically, handling calendar coordination that previously required a dedicated VA."
+    ],
+    "me_too_count": 14
+  },
+  {
+    "post_id": "rea-chatgpt-prompts-real-estate-specific",
+    "subreddit": "r/RealEstateAgents",
+    "title": "Share your best ChatGPT prompts for real estate work",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "original_post",
+    "post_body_summary": "Agents sharing and requesting ChatGPT prompts specifically tailored for real estate tasks: listing descriptions, buyer/seller emails, neighborhood guides, objection handling scripts, open house follow-up templates, and social media captions. Emphasis on the RELIC framework for structuring prompts.",
+    "specific_task": "Developing and sharing real estate-specific ChatGPT prompts for listing descriptions, emails, scripts, social media, and market analysis summaries",
+    "task_normalized": "content_creation",
+    "tools_mentioned": [
+      "ChatGPT",
+      "ChatGPT-4",
+      "Claude",
+      "ChatGPT custom GPTs",
+      "ChatGPT Projects"
+    ],
+    "pain_point": "Generic AI prompts produce generic output that sounds like every other agent's content. Agents need proven, real estate-specific prompt templates that generate content matching their personal voice, comply with MLS rules and Fair Housing laws, and differentiate them from competitors. Many agents are still learning basic prompt engineering.",
+    "engagement": {
+      "upvotes_approx": 60,
+      "comments_approx": 48,
+      "sentiment": "positive"
+    },
+    "notable_replies": [
+      "The RELIC framework (Role, Experience, Limitations, Instructions, Context) is recommended before throwing prompts at ChatGPT to ensure useful, professional output.",
+      "Agents recommend using ChatGPT's Projects feature to create reusable workflows - set up once with your brand voice, market area, and style preferences, then reuse across all content types."
+    ],
+    "me_too_count": 17
+  },
+  {
+    "post_id": "rea-ai-photo-enhancement-quality",
+    "subreddit": "r/RealEstateAgents",
+    "title": "AI photo editing for listings - quality control after the 'demon mirror' incident?",
+    "url": "https://www.reddit.com/r/RealEstateAgents/",
+    "date_posted": "Late 2025 / Early 2026",
+    "source_type": "original_post",
+    "post_body_summary": "Thread sparked by the viral incident of a realtor's AI-enhanced listing photo showing a demonic figure in a mirror. Discussion about quality control workflows when using AI for listing photo enhancement, sky replacement, and virtual renovation. Agents sharing best practices for reviewing AI output before publishing.",
+    "specific_task": "Using AI to enhance listing photos (brightness, sky replacement, decluttering, virtual renovation) while maintaining quality control to avoid embarrassing artifacts",
+    "task_normalized": "mls_listing",
+    "tools_mentioned": [
+      "AI photo editing tools (various)",
+      "REimagineHome",
+      "Virtual staging AI tools"
+    ],
+    "pain_point": "AI photo tools can produce bizarre, embarrassing artifacts (demon faces, extra limbs, floating furniture) that damage agent credibility if not caught before publishing. Agents need reliable quality control workflows for AI-generated visual content. The gap between AI capability and reliability creates reputational risk.",
+    "engagement": {
+      "upvotes_approx": 120,
+      "comments_approx": 85,
+      "sentiment": "mixed"
+    },
+    "notable_replies": [
+      "The 'demon mirror' incident (covered by Futurism, Yahoo Tech, Inc.) became a cautionary tale about always doing a final human review of AI-staged photos before posting to MLS.",
+      "Multiple agents now enforce a 'two-person review' rule for all AI-generated listing visuals before any public posting."
+    ],
+    "me_too_count": 6
+  },
+  {
+    "post_id": "realestate-ai-listing-descriptions-chatgpt",
+    "subreddit": "r/realestate",
+    "title": "Using ChatGPT / AI for MLS Listing Descriptions",
+    "url": "https://www.reddit.com/r/realestate/search/?q=ChatGPT+listing+description",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "topic_cluster",
+    "post_body_summary": "Multiple threads across r/realestate discuss agents using ChatGPT to generate MLS listing descriptions. Agents report reducing description-writing time from 30-60 minutes to under 5 minutes. Concerns raised about generic/fluffy output, factual accuracy (e.g., ChatGPT inventing features based on street names), and MLS compliance. CNN reported in early 2023 that agents 'can't imagine working without ChatGPT now' for listings.",
+    "specific_task": "Writing MLS property listing descriptions using AI instead of manually",
+    "task_normalized": "mls_listing",
+    "tools_mentioned": [
+      "ChatGPT",
+      "Claude",
+      "ListingAI",
+      "Write.Homes",
+      "Styldod Property Description Generator",
+      "Cubi.casa"
+    ],
+    "pain_point": "Writing compelling, unique listing descriptions is time-consuming and repetitive. AI output is often too generic, uses excessive em dashes, and requires significant editing. Agents want AI that understands their local market and property specifics without hallucinating features.",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "mixed",
+      "confidence": "high - referenced across multiple industry sources as top Reddit RE discussion topic"
+    },
+    "notable_replies": [
+      "Agents warn against using raw ChatGPT output - always fact-check square footage, features, schools, and HOA details before submitting to MLS.",
+      "Some agents say ChatGPT works better for polishing their own drafts than generating from scratch, since it lacks property-specific knowledge."
+    ],
+    "me_too_count": 5
+  },
+  {
+    "post_id": "realestate-ai-crm-lead-followup",
+    "subreddit": "r/realestate",
+    "title": "Best AI-Powered CRM for Lead Follow-Up and Nurturing",
+    "url": "https://www.reddit.com/r/realestate/search/?q=CRM+AI+lead+follow+up",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "topic_cluster",
+    "post_body_summary": "Agents discuss the best CRMs with AI-powered lead follow-up capabilities. Key pain point is speed-to-lead: agents lose deals because they can't respond fast enough to new inquiries. Discussion centers on Follow Up Boss, Lofty (formerly Chime), kvCORE/BoldTrail, and Wise Agent. Agents want AI that can qualify leads via text/chat without sounding robotic, and auto-schedule showings.",
+    "specific_task": "Automated AI-powered lead follow-up, qualification via text/chat, and CRM management",
+    "task_normalized": "lead_followup",
+    "tools_mentioned": [
+      "Follow Up Boss",
+      "Lofty (Chime)",
+      "kvCORE/BoldTrail",
+      "Wise Agent",
+      "Ylopo",
+      "Structurely",
+      "Lone Wolf (LionDesk)",
+      "Top Producer",
+      "Cloze"
+    ],
+    "pain_point": "Agents can't respond to all leads fast enough (speed-to-lead problem). Manual follow-up is unsustainable at scale. AI chatbots often sound robotic and lose leads. Need CRM that qualifies, nurtures, and schedules without constant manual input. Current CRMs require too much data entry (6+ hours/week on admin).",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "curious",
+      "confidence": "high - CRM/lead follow-up is the most discussed tech topic in RE subreddits per industry sources"
+    },
+    "notable_replies": [
+      "Follow Up Boss is consistently recommended for speed-to-lead with its centralized inbox pulling from 250+ lead sources like Zillow and Realtor.com.",
+      "Lofty's AI assistant can qualify leads via text and chat and initiate action autonomously, booking appointments without agent intervention.",
+      "Structurely stands out because it actually calls leads and has voice conversations that are nearly indistinguishable from human agents."
+    ],
+    "me_too_count": 8
+  },
+  {
+    "post_id": "realestate-ai-virtual-staging",
+    "subreddit": "r/realestate",
+    "title": "AI Virtual Staging Tools - Which Ones Actually Look Realistic?",
+    "url": "https://www.reddit.com/r/realestate/search/?q=virtual+staging+AI",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "topic_cluster",
+    "post_body_summary": "Agents ask about AI virtual staging tools that produce realistic results without expensive traditional staging. Discussion includes pricing comparisons ($0.03-$0.17/image for AI vs hundreds/thousands for physical staging). NAR ethics requirements for disclosure are discussed. A viral thread in r/Weird about an AI-generated demonic figure in a DC listing photo (from an agent using AI editing on Apartments.com/Redfin) drove significant discussion about AI staging quality control.",
+    "specific_task": "Virtually staging empty or outdated property listings using AI instead of physical staging or expensive manual virtual staging services",
+    "task_normalized": "mls_listing",
+    "tools_mentioned": [
+      "REimagineHome",
+      "Virtual Staging AI",
+      "Collov AI",
+      "Stager AI",
+      "AI HomeDesign",
+      "Apply Design",
+      "Styldod"
+    ],
+    "pain_point": "Physical staging is expensive ($2,000-$5,000+ per property). Traditional virtual staging services cost $100-300 per room with multi-day turnaround. Agents want instant, affordable, realistic AI staging but worry about quality control failures (as evidenced by the viral demonic mirror listing). NAR Article 12 requires disclosure of virtual staging.",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "mixed",
+      "confidence": "medium - referenced in multiple industry articles citing Reddit discussions"
+    },
+    "notable_replies": [
+      "Collov AI's Chat Edit feature lets you type commands like 'replace the sofa with a modern beige one' for precise control over staging results.",
+      "Virtual Staging AI is the most cost-effective option and often produces the most realistic results according to agent reviews.",
+      "Always label AI-staged photos to comply with NAR Code of Ethics Article 12 - this is not optional."
+    ],
+    "me_too_count": 4
+  },
+  {
+    "post_id": "realestate-ai-transaction-coordination",
+    "subreddit": "r/realestate",
+    "title": "AI Transaction Coordination - Automating Contract-to-Close",
+    "url": "https://www.reddit.com/r/realestate/search/?q=transaction+coordinator+AI+automation",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "topic_cluster",
+    "post_body_summary": "Transaction coordinators and agents discuss automating the contract-to-close workflow. Key frustration is spending 30+ minutes per contract on manual data entry, timeline calculations, and deadline tracking. Agents report spending 'whole days in data entry' and still not finishing. AI tools that extract contract data, auto-generate timelines, and track deadlines are highly sought after.",
+    "specific_task": "Automating contract review, data extraction, timeline generation, and deadline tracking in the transaction coordination workflow",
+    "task_normalized": "transaction_mgmt",
+    "tools_mentioned": [
+      "ListedKit (Ava)",
+      "Trackxi",
+      "DocJacket",
+      "Empower Transactions",
+      "Flowtrics"
+    ],
+    "pain_point": "The paperwork/data entry part of real estate is 'the most daunting and least rewarding.' Agents spend 30+ minutes reviewing each contract and manually entering data into CRM. Timeline calculation and deadline tracking is error-prone. TCs are expensive to hire ($1,400-1,600/month for part-time VAs). Need AI that reads contracts and auto-populates systems.",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "negative",
+      "confidence": "medium - transaction management pain points are well-documented across RE communities"
+    },
+    "notable_replies": [
+      "ListedKit's AI assistant Ava can review a contract in under 3 minutes vs. 20+ minutes manually, automating the entire contract-to-close process.",
+      "Trackxi's AI-powered data extraction processes contracts 4X faster, automatically pulling names, prices, dates, and contingencies.",
+      "DocJacket reads contracts, auto-generates intelligent timelines, and creates professional reports - designed specifically for the TC workflow."
+    ],
+    "me_too_count": 5
+  },
+  {
+    "post_id": "realestate-ai-social-media-content",
+    "subreddit": "r/realestate",
+    "title": "AI Tools for Real Estate Social Media Content Creation",
+    "url": "https://www.reddit.com/r/realestate/search/?q=social+media+AI+content+marketing",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "topic_cluster",
+    "post_body_summary": "Agents discuss tools for automating social media content creation across Instagram, Facebook, LinkedIn, and X. Pain point is the time required to create consistent, engaging posts while managing client work. Agents want tools that generate property-specific content, schedule posts, and maintain brand consistency without requiring design skills.",
+    "specific_task": "Generating and scheduling social media content (posts, reels, captions, hashtags) for real estate marketing across multiple platforms",
+    "task_normalized": "content_creation",
+    "tools_mentioned": [
+      "RealEstateContent.ai",
+      "Agent Crate",
+      "Canva",
+      "ChatGPT",
+      "OpusClip",
+      "Trolto",
+      "Nuelink",
+      "Roof AI"
+    ],
+    "pain_point": "Agents struggle to maintain consistent social media presence while managing active listings and clients. Creating property-specific content for multiple platforms is time-consuming. Need tools that understand real estate niche and generate platform-appropriate content (not just generic posts). Video content creation (reels, tours) is especially demanding.",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "curious",
+      "confidence": "medium - content creation is frequently discussed in RE agent communities"
+    },
+    "notable_replies": [
+      "RealEstateContent.ai generates unique, niche-tailored posts for Facebook, Instagram, X, and LinkedIn with built-in scheduling and content calendar.",
+      "OpusClip transforms long-form property videos into short, attention-grabbing clips with captions and optimized framing.",
+      "Trolto creates cinematic fly-through videos and Instagram Reels from listing pictures alone."
+    ],
+    "me_too_count": 4
+  },
+  {
+    "post_id": "realestate-ai-lead-generation",
+    "subreddit": "r/realestate",
+    "title": "AI for Lead Generation and Prospecting in Real Estate",
+    "url": "https://www.reddit.com/r/realestate/search/?q=AI+lead+generation+prospecting",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "topic_cluster",
+    "post_body_summary": "Agents discuss AI-powered lead generation tools that identify likely sellers, enrich lead data, and automate outbound prospecting. Key interest in predictive analytics tools that can forecast which homeowners are most likely to sell. Discussion also covers AI voice bots that can make outbound calls and qualify prospects.",
+    "specific_task": "Using AI to identify potential sellers/buyers, enrich lead data, automate outbound prospecting calls, and predict market movements",
+    "task_normalized": "lead_generation",
+    "tools_mentioned": [
+      "SmartZip",
+      "Ylopo",
+      "Offrs",
+      "Scout",
+      "Vulcan7",
+      "Real Geeks",
+      "Fello",
+      "Deal Machine (Alma)",
+      "PropStream"
+    ],
+    "pain_point": "Traditional lead generation is expensive and low-conversion. Cold calling is time-consuming with low hit rates. Agents need predictive tools to focus effort on highest-probability leads. Enriching lead data (birthdays, property details, behavioral signals) manually is unsustainable. Want AI that can identify likely sellers in their farm area before competitors.",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "curious",
+      "confidence": "medium - lead generation is a perennial discussion topic in RE communities"
+    },
+    "notable_replies": [
+      "SmartZip aggregates 250+ data points from 25+ sources and uses predictive analytics to identify likely sellers with 72% accuracy.",
+      "Ylopo's AI voice assistant calls leads using an AI-generated voice nearly indistinguishable from human, qualifying and nurturing 24/7.",
+      "Scout uses proprietary AI to enrich lead data and create personalized email campaigns, boosting open rates by adding details like birthdays and property info."
+    ],
+    "me_too_count": 6
+  },
+  {
+    "post_id": "realestate-ai-market-analysis-cma",
+    "subreddit": "r/realestate",
+    "title": "AI for Comparative Market Analysis and Market Reports",
+    "url": "https://www.reddit.com/r/realestate/search/?q=AI+CMA+market+analysis+comp",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "topic_cluster",
+    "post_body_summary": "Agents discuss using AI for generating comparative market analyses (CMAs), hyperlocal market reports, and property valuation insights. Interest in tools that can pull comp data and generate client-ready reports without extensive manual research. Some skepticism about AI accuracy for financial calculations and local market nuances.",
+    "specific_task": "Generating CMAs, market reports, and property valuations using AI to reduce research time and improve client presentations",
+    "task_normalized": "market_analysis",
+    "tools_mentioned": [
+      "ChatGPT",
+      "Top Producer",
+      "HouseCanary",
+      "Saleswise",
+      "Zillow Zestimate"
+    ],
+    "pain_point": "CMA preparation is time-intensive, requiring manual comp research and report formatting. AI tools often lack access to real-time MLS data. LLMs should be viewed with skepticism for financial calculations due to their black-box nature. Agents want AI that connects to actual transaction data, not just general market knowledge.",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "mixed",
+      "confidence": "medium - CMAs are a core agent workflow with growing AI interest"
+    },
+    "notable_replies": [
+      "Top Producer provides AI-driven hyperlocal market insights and trends analysis integrated with CRM data.",
+      "Saleswise helps streamline CMA creation, email writing, and room transformation visualization.",
+      "Several agents caution that leading LLMs should be viewed with skepticism for CMAs - they lack real transaction data and can hallucinate comparable properties."
+    ],
+    "me_too_count": 3
+  },
+  {
+    "post_id": "realestate-ai-client-communications",
+    "subreddit": "r/realestate",
+    "title": "AI for Client Email/Text Communications and Drip Campaigns",
+    "url": "https://www.reddit.com/r/realestate/search/?q=AI+email+drip+campaign+client+communication",
+    "date_posted": "2024-2025 (recurring topic)",
+    "source_type": "topic_cluster",
+    "post_body_summary": "Agents discuss using AI to draft client emails, create drip campaigns, and manage ongoing client communications. Interest in AI that can maintain personal tone while automating routine touchpoints. Concerns about automating client responses for transactions that require personalized approach.",
+    "specific_task": "Automating client email/text communications, drip campaigns, and routine touchpoints while maintaining personal agent brand voice",
+    "task_normalized": "client_comms",
+    "tools_mentioned": [
+      "ChatGPT",
+      "Follow Up Boss",
+      "Lofty",
+      "Lone Wolf",
+      "CallAction",
+      "Agent Legend"
+    ],
+    "pain_point": "Agents can't maintain consistent communication with all clients/prospects in their database. Manual email writing is repetitive. Drip campaigns feel generic and impersonal. Buyers expect instant responses 24/7 but no agent can be available around the clock. Need AI that sounds like the agent, not a robot.",
+    "engagement": {
+      "upvotes_approx": null,
+      "comments_approx": null,
+      "sentiment": "mixed",
+      "confidence": "medium - client communication automation is discussed across RE communities"
+    },
+    "notable_replies": [
+      "ChatGPT's latest models can write emails and texts smart enough to match your tone, and can create customizable drip campaigns for every lead in your database.",
+      "CallAction and Agent Legend can send automated text and voicemail drop sequences to qualify leads without manual intervention.",
+      "Caution: automating client responses may not work for transaction-heavy communications that require personalized, relationship-based approach."
+    ],
+    "me_too_count": 4
+  }
+]

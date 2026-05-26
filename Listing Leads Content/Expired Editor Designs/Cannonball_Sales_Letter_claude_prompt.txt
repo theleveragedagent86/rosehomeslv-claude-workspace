@@ -1,0 +1,374 @@
+
+**Situation**
+You are creating HTML-formatted sales letters designed for physical printing and mailing on standard US Letter paper (8.5" x 11"). These letters will be printed, folded, inserted into envelopes, and mailed to recipients, so print quality and readability are critical.
+
+**Task**
+When provided with a template prompt, read and fully understand the template prompt request first before applying any system-level formatting standards. Generate print-ready HTML sales letters that meet professional printing standards and collect any required personalization information before generating the output.
+
+**Objective**
+Produce sales letters that print perfectly on US Letter paper with optimal readability, professional appearance, and accurate personalization without requiring manual adjustments, while prioritizing the specific requirements outlined in any template prompt provided.
+
+**Knowledge**
+The assistant should follow this processing order and these production standards:
+
+**Processing Priority:**
+1. **Template Prompt First**: When a template prompt is provided, read it completely and understand all specific requirements, instructions, and constraints it contains.
+2. **Conflict Resolution**: If there is any conflict between the template prompt requirements and the system standards below, always prioritize the template prompt instructions.
+3. **System Standards Application**: Apply the system-level production standards below only after processing the template prompt and in ways that do not conflict with template-specific instructions.
+
+**Production Standards:**
+
+1. **Page Setup**: Set HTML to exactly 8.5" x 11" dimensions with no shadows, borders, or margins extending beyond the page boundaries. The output must be contained within the letter dimensions.
+
+2. **Typography Standards**: Use font sizes of 11pt minimum for all body text. Select medium to bold font weights (400-700) that ensure clear printing. Avoid light or thin font weights (100-300) that may appear faded or illegible when printed.
+
+3. **Personalization Protocol**: Before generating any letter, identify all placeholder fields that require personalization (such as recipient name, company name, address, specific details, dates, or custom information). Ask the user to provide this information explicitly. Do not proceed with generation until all required personalization data is collected.
+
+4. **Accuracy Requirement**: Generate content based strictly on information provided by the user. Do not invent, assume, or fabricate any details, statistics, claims, or personalization data. If information is missing or unclear, ask for clarification rather than filling gaps with assumed content.
+
+5. **Output Format**: Deliver clean HTML code optimized for printing with proper page break handling and print-friendly CSS.
+
+---
+
+# Template Customization Request
+
+Create an HTML artifact with the customized template that I can preview directly in this chat.
+
+## CRITICAL: Output Format
+**You MUST create a previewable HTML artifact** using Claude's artifact feature:
+- The artifact MUST be visible and renderable in the Claude UI
+- I need to see a live preview of the HTML, not just code
+- Use artifact type "text/html" so it renders as a webpage preview
+- Do NOT just paste HTML code in the chat message
+
+## Print Size Requirements
+**This template is designed for: 8.5x11 inches**
+
+You MUST ensure the output:
+- Fits exactly within 8.5x11 inches when printed
+- Does NOT exceed the boundaries of 8.5x11 inches
+- Maintains proper margins for printing (at least 0.25" / 6mm on all sides)
+- All content, images, and text must be contained within the printable area
+- Do NOT add content that would cause the document to overflow onto additional pages
+
+## Instructions
+You are helping customize an HTML marketing template called "Cannonball: Sales Letter" for print size: 8.5x11 inches. Please modify the HTML below by:
+1. Replacing placeholder variables (like {{variable_name}}) with the provided information
+2. Applying the brand accent color to appropriate accent elements (buttons, highlights, borders)
+3. Inserting images at appropriate locations using the provided URLs
+4. Maintaining the exact layout and structure of the template
+5. **IMPORTANT: Ensuring ALL content fits within 8.5x11 inches - do not exceed this size**
+
+## User Profile Information
+
+### Contact Details
+- First Name: Ryan
+- Last Name: Rose
+- Email Address: ryan@rosehomeslv.com
+- Phone Number: 7027475921
+
+### Business Details
+- Company/Brokerage Name: Real Broker, LLC
+- Area We Serve: Las Vegas
+- Job Title: Nevada
+- License Number: S.0185572
+- Short Bio: Hey! I'm Ryan Rose, The Ethical Vegas Realtor. I'm a local agent on a Top Producing Las Vegas Real Estate Team with globally recognized marketing strategies for selling homes faster using Social Media and old school ideas (like actually picking up the phone and calling people!). I am honored to help people in the Las Vegas area buy, sell, and invest. My approach is simple: No pressure. No BS. Only genuine guidance from start to close. I look forward to hearing from you and showing you what I do above and beyond any other agents in the city!
+
+### Branding
+
+### Social & Web Links
+- Website: https://www.rosehomeslv.com
+- YouTube Channel: https://www.youtube.com/@rosehomeslv
+- Instagram: https://www.instagram.com/rosehomeslv
+
+## Image URLs
+Use these image URLs directly in the HTML output. Insert them as `<img src="URL">` tags at the appropriate locations:
+- Professional Headshot: https://ik.imagekit.io/listingleads/_personalization/1773467947159_blob_9noJLCXIy?tr=w-300
+- Company Logo: https://ik.imagekit.io/listingleads/_personalization/1773468120260_Real_Logo_Outline_White_kHJXcZ1A9q.png?tr=w-300
+
+## HTML Template Code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Letter - Relaunch Strategy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: 8.5in 11in;
+      margin: 0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 8.5in;
+      height: 11in;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+    body {
+      font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 11.5pt;
+      line-height: 1.55;
+      color: #2c2c2c;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      position: relative;
+      width: 8.5in;
+      height: 11in;
+      padding: 0.65in 1in 0.9in 1in;
+      background: #fff;
+      margin: 0 auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Logo / Header Bar */
+    .logo-area {
+      height: 72px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #1a1a2e;
+      border-radius: 4px;
+      padding: 0 22px;
+    }
+    .logo-area img.logo {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+    .logo-contact {
+      text-align: right;
+      color: #c8b98a;
+      font-size: 9pt;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+    }
+    .logo-contact strong {
+      color: #ffffff;
+      font-size: 10pt;
+      display: block;
+    }
+
+    .salutation {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 13pt;
+      margin-bottom: 0.7em;
+      color: #1a1a1a;
+    }
+    .body p {
+      margin-bottom: 0.35em;
+      text-align: left;
+    }
+    .opening-hook {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 14pt;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 0.45em;
+    }
+    .emphasis {
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+    .italic-emphasis {
+      font-style: italic;
+      color: #1a1a1a;
+    }
+    .two-paths {
+      margin: 0.65em 0;
+      padding-left: 1.2em;
+      border-left: 2px solid #e0d5c0;
+    }
+    .two-paths p {
+      margin-bottom: 0.3em;
+    }
+    .outcomes-section {
+      margin: 0.75em 0;
+      padding: 16px 20px;
+      background-color: #fafaf7;
+      border-left: 3px solid #b8a88a;
+      border-radius: 0 3px 3px 0;
+    }
+    .outcome-positive {
+      margin-bottom: 0.55em;
+    }
+    .outcome-negative {
+      color: #555555;
+    }
+    .parenthetical {
+      font-style: italic;
+      color: #777777;
+    }
+    .phone-highlight {
+      font-weight: 600;
+      color: #1a1a1a;
+      background-color: #fff3b0;
+      padding: 2px 8px;
+      border-radius: 2px;
+    }
+    .closing {
+      margin-top: 0.7em;
+      margin-bottom: 0.3em;
+    }
+    .signature-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 0;
+    }
+    .headshot-area {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 2px solid #d4cabb;
+    }
+    .headshot-area img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .signature-block {
+      line-height: 1.25;
+    }
+    .signature-block .name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 600;
+      font-size: 12pt;
+      color: #1a1a1a;
+    }
+    .signature-block .title-line {
+      font-size: 10pt;
+      color: #888888;
+      font-style: italic;
+    }
+    .signature-block .details {
+      font-size: 10pt;
+      color: #555555;
+    }
+    .signature-block .details a {
+      color: #555555;
+      text-decoration: none;
+    }
+    .ps-section {
+      margin-top: 0.7em;
+      margin-bottom: 0.9em;
+    }
+    .ps-label {
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+    .disclaimer {
+      font-size: 8pt;
+      font-style: italic;
+      color: #999999;
+      line-height: 1.4;
+      margin-top: 0.7em;
+    }
+    @media print {
+      html, body {
+        width: auto;
+        height: auto;
+        background: white;
+      }
+      .page {
+        width: auto;
+        height: 11in;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header / Logo Bar -->
+    <div class="logo-area">
+      <img class="logo" src="[Company Logo URL]" alt="[Brokerage Name]">
+      <div class="logo-contact">
+        <strong>[Agent Full Name]</strong>
+        [Phone Number] &nbsp;|&nbsp; [Email]<br>
+        [Website] &nbsp;|&nbsp; Lic. [License Number]
+      </div>
+    </div>
+
+    <p class="salutation">Dear [First Name],</p>
+
+    <div class="body">
+
+      <p class="opening-hook">Your house is not the problem, [First Name].</p>
+
+      <p>Last month, <span class="emphasis">[#] homes</span> between <span class="emphasis">[$XXX,XXX &ndash; $XXX,XXX]</span> sold right here in [Area].</p>
+
+      <p>Yours should've been one of them.</p>
+
+      <p>Right now, one of two things is true:</p>
+
+      <div class="two-paths">
+        <p>You're ready to move forward with a new plan&hellip;</p>
+        <p>&hellip;or you're exhausted from the process and frustrated that your phone hasn't stopped ringing since you took your home off the market.</p>
+      </div>
+
+      <p><span class="emphasis">Either way, the next few weeks matter.</span></p>
+
+      <div class="outcomes-section">
+        <p class="outcome-positive">Homes that relaunch with a fresh strategy tend to regain momentum quickly and often sell for more than anticipated. <span class="parenthetical">(I know that's hard to believe right now.)</span></p>
+        <p class="outcome-negative">Homes that wait or don't adjust their approach usually compete against more inventory, get less attention, and absorb additional holding costs along the way.</p>
+      </div>
+
+      <p>[Custom pitch paragraph — agent's unique value proposition]</p>
+
+      <p>I'll reach out in the next few days from <span class="phone-highlight">[Phone Number]</span> to walk through a relaunch plan with you.</p>
+
+      <p>In the meantime, feel free to call or text me directly anytime. I actually pick up.</p>
+
+      <p class="closing">Sincerely,</p>
+
+      <div class="signature-wrapper">
+        <div class="headshot-area">
+          <img src="[Headshot URL]" alt="[Agent Full Name]">
+        </div>
+        <div class="signature-block">
+          <p class="name">[Agent Full Name]</p>
+          <p class="title-line">[Agent Title/Tagline]</p>
+          <p class="details">[Email]</p>
+          <p class="details">[Phone Number]</p>
+          <p class="details">[Brokerage Name] &nbsp;&middot;&nbsp; [Website]</p>
+        </div>
+      </div>
+
+      <div class="ps-section">
+        <p><span class="ps-label">P.S.</span> You might decide to go in a different direction, and that's completely OK. Even if we don't end up working together, I'd be a terrible Realtor if I didn't at least reach out and try to be helpful. That's just how I operate.</p>
+      </div>
+
+    </div>
+
+    <p class="disclaimer">If your property is currently listed with a Real Estate Broker, please disregard this letter. It is not our intention to solicit the offerings or clients of other Real Estate Brokers. [Agent Full Name] &middot; [Brokerage Name] &middot; [State] Lic. [License Number]</p>
+
+  </div>
+</body>
+</html>
+```
+
+## Output Requirements
+- **CREATE A PREVIEWABLE HTML ARTIFACT** - Use the artifact feature with type "text/html"
+- The artifact MUST render as a visual preview in the Claude UI (not just code)
+- The artifact should contain the complete, modified HTML document starting with <!DOCTYPE html>
+- Preserve all existing styles and structure
+- Keep the same responsive layout
+- Replace all {{placeholder}} variables with the appropriate values from above
+- **CRITICAL: Output MUST fit within 8.5x11 inches when printed - do not exceed this print size**
+
+⚠️ IMPORTANT: I need to SEE the rendered HTML preview in the artifact panel, not read code. Make sure the artifact is previewable.

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Ryan Rose</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1a1a1a;
+            --charcoal: #3d3d3d;
+            --stone: #6b6b6b;
+            --warm-gray: #9a9590;
+            --silk: #f7f6f4;
+            --cream: #fdfcfa;
+            --gold: #b8a88a;
+            --gold-muted: #d4cabb;
+            --navy: #2c3e50;
+        }
+
+        @page {
+            size: 8.5in 11in;
+            margin: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: #e8e8e8;
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            height: 11in;
+            background: var(--cream);
+            margin: 0 auto 0.5in auto;
+            position: relative;
+            overflow: hidden;
+            page-break-after: always;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+        }
+
+        .inner-frame {
+            position: absolute;
+            top: 0.4in;
+            left: 0.4in;
+            right: 0.4in;
+            bottom: 0.4in;
+            border: 1px solid var(--gold-muted);
+            pointer-events: none;
+        }
+
+        .content {
+            padding: 0.55in 0.7in 0.5in 0.7in;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding-bottom: 0.16in;
+            border-bottom: 1px solid var(--gold-muted);
+            margin-bottom: 0.16in;
+            display: flex;
+            align-items: center;
+            gap: 0.2in;
+            justify-content: center;
+        }
+
+        .header-photo {
+            width: 0.75in;
+            height: 0.75in;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold-muted);
+            flex-shrink: 0;
+        }
+
+        .header-text {
+            text-align: left;
+        }
+
+        .header-eyebrow {
+            font-size: 7pt;
+            font-weight: 500;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            color: var(--warm-gray);
+            margin-bottom: 0.04in;
+        }
+
+        .header-title {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 24pt;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: var(--ink);
+            line-height: 1.1;
+        }
+
+        .header-title em {
+            font-style: italic;
+        }
+
+        .header-subtitle {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 10pt;
+            font-style: italic;
+            color: var(--stone);
+            margin-top: 0.05in;
+        }
+
+        /* Minimal Header */
+        .header-minimal {
+            text-align: center;
+            padding-bottom: 0.12in;
+            border-bottom: 1px solid var(--gold-muted);
+            margin-bottom: 0.16in;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.15in;
+        }
+
+        .header-minimal .logo-img {
+            height: 0.22in;
+            width: auto;
+            filter: invert(1) sepia(1) saturate(0.5) hue-rotate(0deg) brightness(0.5);
+            opacity: 0.6;
+        }
+
+        .header-minimal .header-eyebrow {
+            margin-bottom: 0;
+            font-size: 7pt;
+            font-weight: 500;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            color: var(--warm-gray);
+        }
+
+        /* Section Title */
+        .section-title-block {
+            text-align: center;
+            margin-bottom: 0.15in;
+        }
+
+        .section-part {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 9pt;
+            color: var(--gold);
+            margin-bottom: 0.03in;
+        }
+
+        .section-title {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 15pt;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            color: var(--charcoal);
+            margin-bottom: 0.03in;
+        }
+
+        .section-subtitle {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 9.5pt;
+            font-style: italic;
+            color: var(--stone);
+        }
+
+        /* Objection Items */
+        .objections {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.15in;
+        }
+
+        .objection {
+            display: flex;
+            gap: 0.15in;
+            align-items: flex-start;
+        }
+
+        .objection-number {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 12pt;
+            font-weight: 500;
+            color: var(--gold);
+            width: 0.25in;
+            flex-shrink: 0;
+            text-align: right;
+            line-height: 1.2;
+        }
+
+        .objection-content {
+            flex: 1;
+        }
+
+        .objection-title {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-size: 9pt;
+            font-weight: 600;
+            color: var(--charcoal);
+            line-height: 1.3;
+            margin-bottom: 0.05in;
+        }
+
+        .quote-block {
+            background: var(--silk);
+            padding: 0.1in 0.13in;
+            border-left: 2px solid var(--gold-muted);
+            margin-bottom: 0.05in;
+        }
+
+        .quote-text {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 9pt;
+            font-style: italic;
+            color: var(--charcoal);
+            line-height: 1.4;
+        }
+
+        .quote-attribution {
+            font-size: 7.5pt;
+            color: var(--warm-gray);
+            margin-top: 0.03in;
+            font-style: normal;
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--gold-muted);
+            padding-top: 0.1in;
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.35in;
+        }
+
+        .footer-item {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 9pt;
+            color: var(--stone);
+        }
+
+        .footer-divider {
+            color: var(--gold-muted);
+        }
+
+        /* Differentiator list */
+        .differentiators {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.12in 0.25in;
+            margin-top: 0.12in;
+            margin-bottom: 0.15in;
+        }
+
+        .diff-item {
+            display: flex;
+            gap: 0.1in;
+            align-items: flex-start;
+        }
+
+        .diff-icon {
+            color: var(--gold);
+            font-size: 10pt;
+            line-height: 1.3;
+        }
+
+        .diff-text {
+            font-size: 9.5pt;
+            color: var(--charcoal);
+            line-height: 1.4;
+        }
+
+        @media print {
+            body { background: white; }
+            .page { margin: 0; box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1: Overview & First 3 Objections -->
+    <div class="page">
+        <div class="inner-frame"></div>
+        <div class="content">
+            <header class="header">
+                <img class="header-photo" src="https://ik.imagekit.io/listingleads/_personalization/1773467947159_blob_9noJLCXIy?tr=w-300" alt="Ryan Rose">
+                <div class="header-text">
+                    <div class="header-eyebrow">Prepared Exclusively for You</div>
+                    <h1 class="header-title">Why <em>Ryan Rose</em></h1>
+                    <p class="header-subtitle">What my clients say, in their own words</p>
+                </div>
+            </header>
+
+            <div class="section-title-block">
+                <div class="section-part">Part One</div>
+                <h2 class="section-title">Addressing Your Concerns</h2>
+                <p class="section-subtitle">Every skeptical seller asks these questions. Here's what my clients experienced.</p>
+            </div>
+
+            <div class="objections">
+                <div class="objection">
+                    <div class="objection-number">1</div>
+                    <div class="objection-content">
+                        <div class="objection-title">"Agents overpromise and underdeliver."</div>
+                        <div class="quote-block">
+                            <div class="quote-text">"Ryan is persistent, punctual, knowledgeable and will get the deal closed. He is very active in the office, attending events, classes and asking questions to learn more each day and deliver amazing results for his clients."</div>
+                            <div class="quote-attribution">— Adrienne Salomon, Title Partner, Las Vegas</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">"I was confident that I didn't need to 'check in' constantly to make sure things were getting done when they needed to be."</div>
+                            <div class="quote-attribution">— Kevin Rich, Google Review, Las Vegas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="objection">
+                    <div class="objection-number">2</div>
+                    <div class="objection-content">
+                        <div class="objection-title">"I won't get top dollar for my home."</div>
+                        <div class="quote-block">
+                            <div class="quote-text">"When the appraisal came in low, Ryan negotiated the price down to match it, which saved me thousands. He also got the sellers to complete every repair before closing."</div>
+                            <div class="quote-attribution">— Elaine Anderson, Zillow Review, Las Vegas</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">"We closed on a place we love and paid less than asking. Ryan negotiated to have repairs completed before closing and kept us informed every step of the way."</div>
+                            <div class="quote-attribution">— Michael Remski, Zillow Review, Henderson</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="objection">
+                    <div class="objection-number">3</div>
+                    <div class="objection-content">
+                        <div class="objection-title">"I'll be handed off to a junior agent."</div>
+                        <div class="quote-block">
+                            <div class="quote-text">"Ryan was critical in negotiating on our behalf and keeping us up-to-date throughout the entire process. He was personally involved from day one through close."</div>
+                            <div class="quote-attribution">— Kevin Rich, Google Review, Las Vegas</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">"From offering advice when I started the process, providing great walkthrough videos for me while out of state, and being on site with me every step of the way, always responsive, helpful, and knowledgeable."</div>
+                            <div class="quote-attribution">— Kevin Mckenna, Google Review, Las Vegas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <span class="footer-item">Ryan Rose · Real Broker, LLC</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item">702-747-5921</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item">rosehomeslv.com</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item">Page 1</span>
+            </footer>
+        </div>
+    </div>
+
+    <!-- PAGE 2: Objections 4-6 + Differentiators -->
+    <div class="page">
+        <div class="inner-frame"></div>
+        <div class="content">
+            <header class="header-minimal">
+                <div class="header-eyebrow">Ryan Rose &nbsp;·&nbsp; Real Broker, LLC &nbsp;·&nbsp; The Ethical Vegas Realtor</div>
+            </header>
+
+            <div class="objections">
+                <div class="objection">
+                    <div class="objection-number">4</div>
+                    <div class="objection-content">
+                        <div class="objection-title">"The process will be stressful and complicated."</div>
+                        <div class="quote-block">
+                            <div class="quote-text">"As a first-time buyer, I had no idea what I was getting into, but Ryan made the whole process so much easier than I expected. He walked me through every step without making me feel rushed or overwhelmed."</div>
+                            <div class="quote-attribution">— Elaine Anderson, Zillow Review, Las Vegas</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">"Quick to respond, honest advice, no pressure. Ryan made the process smooth from start to finish for us as first-time buyers."</div>
+                            <div class="quote-attribution">— Michael Remski, Zillow Review, Henderson</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="objection">
+                    <div class="objection-number">5</div>
+                    <div class="objection-content">
+                        <div class="objection-title">"How do I know they understand my market?"</div>
+                        <div class="quote-block">
+                            <div class="quote-text">"He found me a fully remodeled single-story in the Sunburst area near Sunset Park that checked all my boxes. As a teacher, my time is limited and my budget was tight, so having someone who actually fought for me meant everything."</div>
+                            <div class="quote-attribution">— Elaine Anderson, Google Review, Las Vegas</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">"Ryan helped us land a remodeled home in Henderson, negotiated to have repairs completed before closing, and kept us informed every step of the way."</div>
+                            <div class="quote-attribution">— Michael Remski, Zillow Review, Henderson</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="objection">
+                    <div class="objection-number">6</div>
+                    <div class="objection-content">
+                        <div class="objection-title">"How do I know I can actually trust my agent?"</div>
+                        <div class="quote-block">
+                            <div class="quote-text">"He's not rushing anyone into a decision. He's patient, he's thorough, and he genuinely wants people to make good decisions. That kind of integrity is hard to find."</div>
+                            <div class="quote-attribution">— Natasha S., Google Review, Las Vegas</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">"I've heard him give realistic advice about timing and neighborhoods, even when it meant someone waiting longer to buy. He puts the client first, period."</div>
+                            <div class="quote-attribution">— Natasha S., Google Review, Las Vegas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title-block" style="margin-top: 0.28in;">
+                <div class="section-part">Part Two</div>
+                <h2 class="section-title">What Sets Ryan Apart</h2>
+                <p class="section-subtitle">Patterns from five-star reviews across Google and Zillow</p>
+            </div>
+
+            <div class="differentiators">
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text">Proven negotiator who consistently closes below asking and maximizes repair concessions</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text">Hands-on service from first call to closing keys, no hand-offs to junior agents</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text">Out-of-state buyers supported with detailed walkthrough videos and remote coordination</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text">Deep Las Vegas and Henderson neighborhood expertise across price ranges</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text">No-pressure, no-BS approach rooted in genuine guidance from start to close</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text">Globally recognized social media marketing strategies that sell homes faster</div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <span class="footer-item">Ryan Rose · Real Broker, LLC</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item">702-747-5921</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item">rosehomeslv.com</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item">Page 2</span>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

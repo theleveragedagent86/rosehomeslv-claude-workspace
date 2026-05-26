@@ -1,0 +1,26 @@
+How to Execute
+Step 1
+Copy Subject Line and Message to Email Blast App
+Subject
+Copy
+
+Deal of the week: {{sqft}}+ sq ft under {{price_bracket}} in {{neighborhood}}
+
+Inbox Preview Text
+Copy
+
+{{save_count}} Zillow saves before you saw this.
+
+Body
+Copy
+
+{{save_count}} saves on Zillow - not a coincidence when you look at the price.
+
+{{sqft}}+ square feet in {{neighborhood}}, under {{price_bracket}}, and the comps support why it's drawing attention.
+
+{{bed_count}} beds, {{bath_count}} baths
+{{bonus_feature}} (e.g. bonus room, attached garage, finished basement)
+Under {{price_threshold}} — rare for this size in {{neighborhood}}
+{{sqft}} sq ft with a {{layout_descriptor}} layout
+
+Want the link sent over?

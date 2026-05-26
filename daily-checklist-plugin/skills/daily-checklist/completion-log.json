@@ -1,0 +1,38 @@
+{
+  "description": "Tracks daily task completion. Incomplete items carry forward to the next morning's checklist.",
+  "last_updated": "2026-03-26",
+  "days": {
+    "2026-03-25": {
+      "incomplete": [
+        "daily-expired-cannonball",
+        "daily-tc-actions",
+        "wed-totw-text",
+        "cannonball-day1-258-castellari",
+        "cannonball-day1-call-258-castellari",
+        "cannonball-day1-3950-candleglow",
+        "cannonball-day1-call-3950-candleglow",
+        "cannonball-day1-3141-waterside",
+        "cannonball-day1-call-3141-waterside",
+        "cannonball-day1-11635-gentle-birdsong",
+        "cannonball-day1-call-11635-gentle-birdsong",
+        "tc-open-escrow-2713-s-miller",
+        "tc-earnest-money-reminder-2713-s-miller"
+      ],
+      "completed": [
+        "tc-open-escrow-2713-s-miller"
+      ]
+    },
+    "2026-03-26": {
+      "incomplete": [
+        "daily-expired-cannonball",
+        "daily-tc-actions"
+      ],
+      "completed": [
+        "tc-earnest-money-2713-s-miller",
+        "cal-earnest-money-2713-s-miller",
+        "thu-ig-content",
+        "thu-direct-mail"
+      ]
+    }
+  }
+}

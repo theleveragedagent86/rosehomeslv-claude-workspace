@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/brand-tokens.css" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+      [data-composition-id="04-stat-chip"] {
+        position: relative; width: 1920px; height: 1080px; overflow: hidden;
+        font-family: var(--font-display);
+      }
+
+      /* Time-callout — top-left chip + giant amber number that lands on the punchline.
+         Triggers when Ryan says "in what, two minutes?" — anchors the speed claim. */
+      [data-composition-id="04-stat-chip"] .chip {
+        position: absolute;
+        top: 90px; left: 80px;
+        display: inline-flex; align-items: baseline; gap: 22px;
+        background: var(--bg-alt);
+        border: 3px solid var(--ink);
+        border-left: 12px solid var(--warn);
+        border-radius: 18px;
+        padding: 22px 36px 26px 28px;
+        box-shadow: 0 22px 60px rgba(15,76,92,0.4);
+        opacity: 0;
+        transform: translateX(-40px) scale(0.95);
+        will-change: transform, opacity;
+      }
+      [data-composition-id="04-stat-chip"] .chip .label-stack {
+        display: flex; flex-direction: column; gap: 4px;
+      }
+      [data-composition-id="04-stat-chip"] .chip .kicker {
+        font-family: var(--font-mono);
+        font-weight: 700; font-size: 18px;
+        letter-spacing: 0.32em;
+        color: var(--ink-soft);
+        text-transform: uppercase;
+      }
+      [data-composition-id="04-stat-chip"] .chip .head {
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 44px; line-height: 1;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+      }
+      [data-composition-id="04-stat-chip"] .chip .digit {
+        font-family: var(--font-display);
+        font-weight: 900; font-size: 124px; line-height: 0.85;
+        letter-spacing: -0.04em;
+        color: var(--warn);
+        text-shadow: 0 4px 0 var(--ink), 0 8px 28px rgba(15,76,92,0.35);
+      }
+      [data-composition-id="04-stat-chip"] .chip .unit {
+        font-family: var(--font-mono);
+        font-weight: 700; font-size: 24px;
+        letter-spacing: 0.24em;
+        color: var(--warn);
+        text-transform: uppercase;
+        margin-top: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="sec04"
+      data-composition-id="04-stat-chip"
+      data-duration="6"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="chip clip" data-start="0" data-duration="6" data-track-index="0">
+        <div class="label-stack">
+          <div class="kicker">Per post</div>
+          <div class="head">written from scratch</div>
+        </div>
+        <div>
+          <div class="digit">30&ndash;45</div>
+          <div class="unit">minutes</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const SLOT = 6;
+      const tl = gsap.timeline({ paused: true });
+
+      tl.to('[data-composition-id="04-stat-chip"] .chip',
+        { opacity: 1, x: 0, scale: 1, duration: 0.45, ease: 'back.out(1.6)' }, 0.10);
+      tl.to('[data-composition-id="04-stat-chip"] .chip',
+        { scale: 1.04, duration: 0.6, yoyo: true, repeat: 2, ease: 'sine.inOut' }, 0.80);
+      tl.to('[data-composition-id="04-stat-chip"] .chip',
+        { opacity: 0, x: -40, duration: 0.45, ease: 'power2.in' }, 5.40);
+
+      tl.to({}, { duration: SLOT }, 0);
+      window.__timelines["04-stat-chip"] = tl;
+    </script>
+  </body>
+</html>

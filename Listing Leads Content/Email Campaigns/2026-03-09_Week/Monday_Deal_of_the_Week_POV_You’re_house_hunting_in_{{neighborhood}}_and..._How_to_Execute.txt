@@ -1,0 +1,24 @@
+How to Execute
+Step 1
+Copy Subject Line and Message to Email Blast App
+Subject
+Copy
+
+{{Area}}’s Deal of the Week
+
+Inbox Preview Text
+Copy
+
+Under {{price_threshold}} (details inside)
+
+Body
+Copy
+
+POV: You’re house hunting in {{neighborhood}} and you walk into this:
+
+{{standout_stat}} - the detail that separates it from comparable listings
+{{high_roi_feature}} - reduces near-term costs or adds long-term flexibility
+{{layout_or_size_note}} - functional advantage most homes at this price don't offer
+Under {{price_threshold}}
+
+Should I send over more details?

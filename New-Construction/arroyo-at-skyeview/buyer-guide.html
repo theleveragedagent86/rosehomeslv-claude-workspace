@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arroyo at Skyeview Buyer Guide | Ryan Rose</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ============================
+           PAGE & PRINT
+           ============================ */
+        @page {
+            size: letter;
+            margin: 0.6in 0.75in 0.75in 0.75in;
+        }
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .card, .plan-card, .cost-card, .cost-total, .step-card, .faq-item, table, .incentive-bar { break-inside: avoid; }
+            .section { break-inside: auto; }
+            .page-break { break-after: page; }
+        }
+        .page-break { break-after: page; }
+
+        /* ============================
+           TOKENS
+           ============================ */
+        :root {
+            --white: #ffffff;
+            --light: #f7f8fa;
+            --light-card: #f0f2f5;
+            --border: #e2e5ea;
+            --border-light: #eef0f3;
+            --text-primary: #1a1a1a;
+            --text-body: #3d3d3d;
+            --text-secondary: #6b6b6b;
+            --text-tertiary: #999999;
+            --accent: #4A104A;
+            --accent-light: rgba(74, 16, 74, 0.08);
+            --accent-muted: rgba(74, 16, 74, 0.12);
+            --radius: 8px;
+            --radius-sm: 5px;
+        }
+
+        /* ============================
+           RESET & BASE
+           ============================ */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 15px; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-body);
+            line-height: 1.7;
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ============================
+           LAYOUT
+           ============================ */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* ============================
+           SECTIONS
+           ============================ */
+        .section {
+            padding: 36px 0;
+        }
+        .section--white {
+            background: var(--white);
+        }
+        .section--alt {
+            background: var(--light);
+        }
+
+        /* ============================
+           SECTION LABEL
+           ============================ */
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .section-label::after {
+            content: '';
+            flex: 0 0 50px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        /* ============================
+           TYPOGRAPHY
+           ============================ */
+        .headline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            line-height: 1.15;
+            margin-bottom: 14px;
+        }
+        .headline--sm {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        p + p {
+            margin-top: 10px;
+        }
+        .text-accent {
+            color: var(--accent);
+        }
+
+        /* ============================
+           HERO
+           ============================ */
+        .hero {
+            background: var(--light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 0 0;
+        }
+        .hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero-bottom {
+            background: var(--accent);
+            color: #ffffff;
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-top: auto;
+        }
+        .hero-kicker {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 64px;
+            letter-spacing: 6px;
+            color: var(--text-primary);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .hero-subtitle {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 4px;
+            color: var(--text-tertiary);
+            margin-bottom: 20px;
+        }
+        .hero-tagline {
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 520px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+        .facts-bar {
+            border-top: 1px solid var(--border);
+            padding-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .fact-item {
+            text-align: center;
+        }
+        .fact-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+        }
+        .fact-label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+        }
+
+        /* ============================
+           INCENTIVE BAR
+           ============================ */
+        .incentive-bar {
+            background: var(--accent);
+            color: var(--white);
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+        }
+
+        /* ============================
+           TABLES
+           ============================ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        table th {
+            text-align: left;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            padding: 12px 14px;
+            border-bottom: 2px solid var(--accent);
+        }
+        table td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-body);
+        }
+        table tr:last-child td {
+            border-bottom: none;
+        }
+        table td:first-child {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           BUILDER CARD
+           ============================ */
+        .builder-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-top: 3px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+        .builder-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .builder-card p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .builder-feature {
+            margin-top: 6px;
+        }
+        .builder-feature strong {
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           PLAN TABLE
+           ============================ */
+        .plan-table {
+            margin-top: 20px;
+        }
+
+        /* ============================
+           PLAN CARDS (Floor Plan Images)
+           ============================ */
+        .plan-card {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 2px solid var(--accent);
+        }
+        .plan-card-label {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 36px;
+            letter-spacing: 3px;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .plan-card-images {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .plan-card-image-wrap {
+            flex: 1;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+        .plan-card-image-level {
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            padding: 6px 10px;
+            background: var(--light);
+            border-bottom: 1px solid var(--border);
+        }
+        .plan-card-img {
+            width: 100%;
+            display: block;
+            max-height: 360px;
+            object-fit: contain;
+            background: #f5f2ed;
+        }
+        .plan-card-desc {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 1.6;
+            text-align: center;
+            margin-top: 12px;
+        }
+        .plan-card-source {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            text-align: center;
+            margin-top: 6px;
+        }
+        .plan-card-source a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .plan-card-source a:hover {
+            text-decoration: underline;
+        }
+
+        /* ============================
+           COST GRID
+           ============================ */
+        .cost-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin: 24px 0;
+        }
+        .cost-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 18px 16px;
+            text-align: center;
+        }
+        .cost-card-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 26px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+        }
+        .cost-card-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .cost-total {
+            background: var(--accent-light);
+            border: 1px solid var(--accent-muted);
+            border-radius: var(--radius-sm);
+            padding: 20px 16px;
+            text-align: center;
+            grid-column: 1 / -1;
+        }
+        .cost-total-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 34px;
+            letter-spacing: 1px;
+            color: var(--accent);
+        }
+        .cost-total-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .cost-note {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+        .calc-link {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 12px 28px;
+            background: var(--accent);
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+        /* ============================
+           COMPARE TABLE
+           ============================ */
+        .compare-table {
+            margin-top: 20px;
+        }
+        .compare-table tr.highlight td {
+            background: var(--accent-light);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           ROADMAP (Buying Process)
+           ============================ */
+        .roadmap {
+            position: relative;
+            margin-top: 24px;
+            padding-left: 48px;
+        }
+        .roadmap::before {
+            content: '';
+            position: absolute;
+            left: 18px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent), var(--border) 95%);
+        }
+        .roadmap-step {
+            position: relative;
+            padding-bottom: 16px;
+            break-inside: avoid;
+        }
+        .roadmap-step:last-child {
+            padding-bottom: 0;
+        }
+        .roadmap-node {
+            position: absolute;
+            left: -48px;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 15px;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+        }
+        .roadmap-step:last-child .roadmap-node {
+            background: var(--accent);
+            color: var(--white);
+        }
+        .roadmap-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+        .roadmap-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .roadmap-meta {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-top: 4px;
+        }
+
+        /* ============================
+           FAQ
+           ============================ */
+        .faq-item {
+            border-bottom: 1px solid var(--border-light);
+            padding: 20px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .faq-a {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 1.7;
+        }
+
+        /* ============================
+           INCENTIVE LIST (flexbox bullets)
+           ============================ */
+        .incentive-list {
+            list-style: none;
+            margin: 16px 0;
+            padding: 0;
+        }
+        .incentive-list li {
+            padding: 10px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .incentive-list li::before {
+            content: '';
+            flex: 0 0 6px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            margin-top: 9px;
+        }
+
+        /* ============================
+           AMENITY LIST (flexbox bullets, 2-column)
+           ============================ */
+        .amenity-group {
+            margin-top: 20px;
+        }
+        .amenity-group h4 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .amenity-list {
+            list-style: none;
+            columns: 2;
+            column-gap: 24px;
+            margin: 0;
+            padding: 0;
+        }
+        .amenity-list li {
+            padding: 5px 0;
+            font-size: 14px;
+            color: var(--text-body);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.55;
+            break-inside: avoid;
+        }
+        .amenity-list li::before {
+            content: '';
+            flex: 0 0 5px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--accent);
+            margin-top: 8px;
+        }
+
+        /* ============================
+           CTA SECTION
+           ============================ */
+        .cta-section {
+            text-align: center;
+            padding: 56px 0;
+            background: var(--light);
+        }
+        .cta-headline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            letter-spacing: 2px;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .cta-sub {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        .cta-contact {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 2;
+        }
+        .cta-contact strong {
+            color: var(--text-primary);
+        }
+        .cta-contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* ============================
+           CTA LAST PAGE
+           ============================ */
+        .cta-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--light);
+        }
+        .cta-disclaimer {
+            font-size: 11px;
+            color: var(--text-tertiary);
+            margin-top: 32px;
+            line-height: 1.6;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================
+           PRO TIP
+           ============================ */
+        .pro-tip {
+            background: var(--accent-light);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin-top: 16px;
+            font-size: 14px;
+            color: var(--text-body);
+        }
+        .pro-tip strong {
+            color: var(--accent);
+        }
+
+        /* ============================
+           FOOTER
+           ============================ */
+        .footer {
+            background: var(--text-primary);
+            color: var(--text-tertiary);
+            text-align: center;
+            padding: 24px 16px;
+            font-size: 11px;
+            letter-spacing: 1px;
+            line-height: 1.6;
+        }
+        .footer strong {
+            color: var(--white);
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================
+         HERO
+         ======================== -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-kicker">A Century Communities Community</div>
+                <h1>ARROYO</h1>
+                <div class="hero-subtitle">AT SKYEVIEW &nbsp;&middot;&nbsp; COMPLETE BUYER GUIDE</div>
+                <p class="hero-tagline">New construction townhomes inside Skye Canyon in NW Las Vegas. The most affordable way into the master plan, starting from $372,990.</p>
+                <div class="facts-bar">
+                    <div class="fact-item">
+                        <div class="fact-value">$372K+</div>
+                        <div class="fact-label">Starting</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">1,729</div>
+                        <div class="fact-label">Max Sq Ft</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">3 BED</div>
+                        <div class="fact-label">2.5 Bath</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">3</div>
+                        <div class="fact-label">Plans</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bottom">
+            Current Incentive: 3.875% rate (4.827% APR) plus about $5,000 in closing cost assistance through Century's preferred lender
+        </div>
+    </header>
+    <div class="page-break"></div>
+
+    <!-- ========================
+         QUICK FACTS
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Quick Facts</div>
+            <div class="headline headline--sm">AT A GLANCE</div>
+            <table>
+                <tbody>
+                    <tr><td>Builder</td><td>Century Communities (sole builder)</td></tr>
+                    <tr><td>Master Plan</td><td>Skye Canyon (Olympia Companies, 1,700 acres)</td></tr>
+                    <tr><td>Address</td><td>8912 Vanhoy Creek St, Las Vegas, NV 89166</td></tr>
+                    <tr><td>Product</td><td>Two-story townhomes, 2-car garage</td></tr>
+                    <tr><td>Floor Plans</td><td>3 plans, 1,531 to 1,729 sq ft</td></tr>
+                    <tr><td>Bedrooms</td><td>3 standard (Delray offers a 4th bed option)</td></tr>
+                    <tr><td>Base Pricing</td><td>$372,990 to $392,990</td></tr>
+                    <tr><td>HOA</td><td>About $245/month (sub plus master)</td></tr>
+                    <tr><td>SID</td><td>About $138/year (one of the lowest in Skye Canyon)</td></tr>
+                    <tr><td>Schools</td><td>Roger M. Bryan ES (9/10), Sig Rogich MS, Shadow Ridge HS</td></tr>
+                    <tr><td>Distance to Strip</td><td>About 20 to 25 miles (25 to 30 min)</td></tr>
+                    <tr><td>Quick Move-In</td><td>Homes available July through September 2026</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ========================
+         ABOUT
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white" style="padding-bottom: 16px;">
+        <div class="container">
+            <div class="section-label">About</div>
+            <div class="headline">THE AFFORDABLE WAY INTO SKYE CANYON</div>
+            <p>Arroyo at Skyeview is the townhome neighborhood inside Skye Canyon, a 1,700-acre master plan in NW Las Vegas. Skye Canyon is known for its 8,000 sq ft fitness clubhouse, resort pool, trail system, and top-rated elementary school. Most homes in the master plan start north of $430K. Arroyo is the way in under $400K.</p>
+            <p>Century Communities is the sole builder. You get the same amenities, the same schools, and the same easy drive to Red Rock and US-95 as your single-family neighbors. The trade-off is a townhome footprint with shared walls and a max of 1,729 sq ft.</p>
+            <p>If you are a first-time buyer, an empty nester, or you simply want a low-maintenance new home in a master plan with serious amenities, Arroyo deserves a careful look. This guide walks you through everything you need to know before you visit or sign.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         BUILDER
+         ======================== -->
+    <section class="section section--alt" style="padding-top: 20px;">
+        <div class="container">
+            <div class="section-label">Builder</div>
+            <div class="headline">ABOUT CENTURY COMMUNITIES</div>
+            <div class="builder-card">
+                <h3>CENTURY COMMUNITIES</h3>
+                <p>Century Communities is the sole builder at Arroyo at Skyeview. They are one of the top 10 homebuilders in the country and one of the most active townhome builders in the Las Vegas valley. Century is known for delivering attainable price points without cutting corners on the things that matter.</p>
+                <p class="builder-feature"><strong>Attainable pricing.</strong> Century is one of the few national builders still hitting the sub-$400K mark in new Las Vegas construction.</p>
+                <p class="builder-feature"><strong>Included features.</strong> Stainless appliances, granite or quartz counters, and energy-efficient packages come standard on most plans.</p>
+                <p class="builder-feature"><strong>Inspire Home Loans.</strong> Century's preferred lender often unlocks the strongest rate buydowns and closing cost packages in the community.</p>
+                <p class="builder-feature"><strong>Buy Now online ordering.</strong> Century supports a streamlined online purchase path if you already know which plan and lot you want.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FLOOR PLANS
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Floor Plans</div>
+            <div class="headline">PLANS AND PRICING</div>
+
+            <table class="plan-table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Sq Ft</th>
+                        <th>Beds</th>
+                        <th>Baths</th>
+                        <th>Garage</th>
+                        <th>Base Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beverly</td>
+                        <td>1,531</td>
+                        <td>3</td>
+                        <td>2.5</td>
+                        <td>2-car</td>
+                        <td>From $372,990</td>
+                    </tr>
+                    <tr>
+                        <td>Captiva</td>
+                        <td>1,643</td>
+                        <td>3</td>
+                        <td>2.5</td>
+                        <td>2-car</td>
+                        <td>From $382,990</td>
+                    </tr>
+                    <tr>
+                        <td>Delray</td>
+                        <td>1,729</td>
+                        <td>3 to 4</td>
+                        <td>2.5</td>
+                        <td>2-car</td>
+                        <td>From $392,990</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- BEVERLY -->
+            <div class="plan-card" style="break-before: page;">
+                <div class="plan-card-label">BEVERLY</div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">First Floor</div>
+                        <img class="plan-card-img" src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/arroyo/beverly_1531/beverly-1531-skyeview-floor-1.jpg" alt="Beverly First Floor Plan">
+                    </div>
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">Second Floor</div>
+                        <img class="plan-card-img" src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/arroyo/beverly_1531/beverly-1531-skyeview-floor-2.jpg" alt="Beverly Second Floor Plan">
+                    </div>
+                </div>
+                <p class="plan-card-desc">1,531 sq ft, 3 beds, 2.5 baths, 2-car garage. The entry plan and the lowest price point in all of Skye Canyon. Smart pick for first-time buyers and singles who want new construction without stretching.</p>
+                <p class="plan-card-source">Source: <a href="https://www.centurycommunities.com" target="_blank" rel="noopener">centurycommunities.com</a></p>
+            </div>
+
+            <!-- CAPTIVA -->
+            <div class="plan-card" style="break-before: page;">
+                <div class="plan-card-label">CAPTIVA</div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">First Floor</div>
+                        <img class="plan-card-img" src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/arroyo/captiva_1643/captiva-1643-skyeview-floor-1.jpg" alt="Captiva First Floor Plan">
+                    </div>
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">Second Floor</div>
+                        <img class="plan-card-img" src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/arroyo/captiva_1643/captiva-1643-skyeview-floor-2.jpg" alt="Captiva Second Floor Plan">
+                    </div>
+                </div>
+                <p class="plan-card-desc">1,643 sq ft, 3 beds, 2.5 baths, 2-car garage. The middle plan adds breathing room in the great room and primary suite. Often the best value once you factor in lot premiums.</p>
+                <p class="plan-card-source">Source: <a href="https://www.centurycommunities.com" target="_blank" rel="noopener">centurycommunities.com</a></p>
+            </div>
+
+            <!-- DELRAY -->
+            <div class="plan-card" style="break-before: page;">
+                <div class="plan-card-label">DELRAY</div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">First Floor</div>
+                        <img class="plan-card-img" src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/arroyo/delray_1729/delray-1729-skyeview-floor-1.jpg" alt="Delray First Floor Plan">
+                    </div>
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">Second Floor</div>
+                        <img class="plan-card-img" src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/skyeview/arroyo/delray_1729/delray-1729-skyeview-floor-2.jpg" alt="Delray Second Floor Plan">
+                    </div>
+                </div>
+                <p class="plan-card-desc">1,729 sq ft, 3 to 4 beds, 2.5 baths, 2-car garage. The flagship plan. Adds an optional fourth bedroom that works as an office, nursery, or guest room. The most flexibility in the lineup.</p>
+                <p class="plan-card-source">Source: <a href="https://www.centurycommunities.com" target="_blank" rel="noopener">centurycommunities.com</a></p>
+            </div>
+
+            <p style="margin-top: 24px; font-size: 14px; color: var(--text-secondary);"><strong>Quick move-in homes</strong> are available with delivery between July and September 2026. If you need to move sooner than a typical 6 to 8 month build, a QMI can be ready in weeks instead of months.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         TRUE MONTHLY COST
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Monthly Cost</div>
+            <div class="headline">TRUE MONTHLY COST ESTIMATE</div>
+            <p style="margin-bottom: 8px;">Based on the Captiva at $382,990 with 20% down at 6.5% for 30 years. Use this as a starting point, then run your own numbers with a lender.</p>
+
+            <div class="cost-grid">
+                <div class="cost-card">
+                    <div class="cost-card-value">$1,940</div>
+                    <div class="cost-card-label">Mortgage (P&amp;I)</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$175</div>
+                    <div class="cost-card-label">Property Tax</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$110</div>
+                    <div class="cost-card-label">Insurance</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$245</div>
+                    <div class="cost-card-label">HOA (Sub + Master)</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$12</div>
+                    <div class="cost-card-label">SID (monthly avg)</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">20% Down</div>
+                    <div class="cost-card-label">Loan: $306,392</div>
+                </div>
+                <div class="cost-total">
+                    <div class="cost-total-value">$2,482</div>
+                    <div class="cost-total-label">Estimated Total Monthly Payment</div>
+                </div>
+            </div>
+
+            <p class="cost-note">These are estimates only. Your actual costs depend on your loan terms, credit score, down payment, and assessed tax amount. Century's preferred lender is currently advertising 3.875% (4.827% APR), which would lower the mortgage piece. Always get a full quote in writing.</p>
+            <a href="https://www.rosehomeslv.com/mortgage-calculator" target="_blank" class="calc-link">Run Your Own Numbers &#8599;</a>
+        </div>
+    </section>
+
+    <!-- ========================
+         HOA / SID / LID
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Fees</div>
+            <div class="headline">HOA, SID, AND FEES EXPLAINED</div>
+
+            <p><strong>Arroyo Sub-HOA: about $485/quarter (around $162/month).</strong> This covers your townhome exterior, landscaping in common areas, and the day-to-day upkeep that single-family owners would handle themselves. This is what makes Arroyo a lock-and-leave product.</p>
+
+            <p><strong>Skye Canyon Master HOA: about $250/quarter (around $83/month).</strong> This is the big one. It pays for Skye Fitness, the resort pool, splash pad, dog park, multiple community parks, and the trail system. Every Skye Canyon homeowner pays this, whether they own a $400K townhome or a $900K Toll Brothers home.</p>
+
+            <p><strong>Total HOA: about $245/month.</strong> Higher than a single-family Skye Canyon home, but that extra money is buying you exterior maintenance.</p>
+
+            <p><strong>SID (Special Improvement District): about $137.66/year, billed semi-annually ($68.83 in April and October).</strong> A SID is a tax that pays for public infrastructure like roads, water, and sewer. The remaining balance on Arroyo's SID is about $4,130, ending around 2055. There is a 3% penalty if you pay it off early.</p>
+
+            <div class="pro-tip">
+                <strong>Big advantage:</strong> Single-family homes in Skye Canyon carry SIDs of $2,400 to $4,800 per year. Arroyo townhomes have a tiny lot allocation, so the SID is one of the lowest in the master plan. That is a real, line-item savings of $200 to $400 per month compared to your single-family neighbors.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         SCHOOLS
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Schools</div>
+            <div class="headline">SCHOOLS AND FAMILY LIFE</div>
+            <p style="margin-bottom: 8px;">Arroyo at Skyeview is zoned for Clark County School District (CCSD). Here are the assigned schools:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th>Grades</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Roger M. Bryan Elementary</td>
+                        <td>K-5</td>
+                        <td>9/10</td>
+                    </tr>
+                    <tr>
+                        <td>Sig Rogich Middle</td>
+                        <td>6-8</td>
+                        <td>See greatschools.org</td>
+                    </tr>
+                    <tr>
+                        <td>Shadow Ridge High</td>
+                        <td>9-12</td>
+                        <td>See greatschools.org</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 16px;">Roger M. Bryan Elementary is the standout, with a 9 out of 10 GreatSchools rating. That is one of the highest CCSD elementary ratings in NW Las Vegas. Sig Rogich Middle and Shadow Ridge High are the assigned secondary schools. Many Skye Canyon families also explore the strong charter and magnet options in the area.</p>
+
+            <p>Skye Canyon was designed around family life. The trails, parks, splash pad, and Skye Fitness clubhouse all connect to each other, so daily errands and after-school activities stay inside the master plan. The vibe is suburban, active, and family-first.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         AMENITIES
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Amenities</div>
+            <div class="headline">AMENITIES AND LIFESTYLE</div>
+            <p>Living at Arroyo means you are a full Skye Canyon resident. Every amenity in the master plan is included in your HOA dues. These are some of the most extensive amenities at any new construction community in NW Las Vegas.</p>
+
+            <div class="amenity-group">
+                <h4>SKYE CANYON MASTER AMENITIES</h4>
+                <ul class="amenity-list">
+                    <li>Skye Fitness (8,000 sq ft clubhouse)</li>
+                    <li>Resort-style pool</li>
+                    <li>Splash pad for the kids</li>
+                    <li>Aspire Coffee House</li>
+                    <li>Dog park</li>
+                    <li>Skye Canyon Park (central)</li>
+                    <li>Multiple community parks</li>
+                    <li>Trail and bike lane network</li>
+                    <li>Tot lots</li>
+                    <li>Basketball courts</li>
+                    <li>Sports fields</li>
+                    <li>Recreation center</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>SHOPPING AND DINING (1 TO 2 MI)</h4>
+                <ul class="amenity-list">
+                    <li>Skye Canyon Marketplace</li>
+                    <li>Smith's Marketplace (125K sq ft)</li>
+                    <li>Chase Bank</li>
+                    <li>Domino's, Subway, Burger King</li>
+                    <li>Cafe Rio, El Pollo Loco</li>
+                    <li>Tropical Smoothie, Menchie's</li>
+                    <li>Sally Beauty</li>
+                    <li>Multiple quick-serve options</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>HEALTHCARE AND ESSENTIALS</h4>
+                <ul class="amenity-list">
+                    <li>Centennial Hills Hospital (~15 min)</li>
+                    <li>Urgent care nearby</li>
+                    <li>Pediatric and family practices</li>
+                    <li>Pharmacies in Skye Canyon Marketplace</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>GETTING AROUND</h4>
+                <ul class="amenity-list">
+                    <li>US-95 about 1 mile</li>
+                    <li>215 Beltway about 3 miles</li>
+                    <li>Las Vegas Strip 20 to 25 miles (25 to 30 min)</li>
+                    <li>Red Rock Canyon 15 min</li>
+                    <li>Mt. Charleston 30 min</li>
+                    <li>Harry Reid Airport 30 to 35 min</li>
+                </ul>
+            </div>
+
+            <p style="margin-top: 16px;">You are paying for these amenities once, through your master HOA. Use them.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         INCENTIVES
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Incentives</div>
+            <div class="headline">CURRENT BUYER INCENTIVES</div>
+            <p>Century is currently running strong financing incentives at Arroyo. These can change at any time, so confirm with the sales team before you assume any number is locked in.</p>
+
+            <ul class="incentive-list">
+                <li><strong>3.875% interest rate</strong> (4.827% APR) through Century's preferred lender, well below the open market</li>
+                <li><strong>About $5,000 in closing cost assistance</strong> when you finance through the preferred lender</li>
+                <li><strong>Quick move-in homes available</strong> with delivery July through September 2026</li>
+                <li><strong>"Buy Now" online ordering supported</strong> if you already know which plan and lot you want</li>
+            </ul>
+
+            <p>The 3.875% rate is the biggest piece. On the Captiva at $382,990 with 20% down, dropping from a 6.5% market rate to 3.875% saves about $440 per month on principal and interest. That is real money.</p>
+
+            <div class="pro-tip">
+                <strong>Pro tip:</strong> Get a competing quote from an outside lender even if you plan to use Century's. The competing offer gives you negotiating power and protects you from leaving credits on the table. In most new construction deals the builder's package wins because of the bundled incentives, but you want to know for sure.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         COMPARISON
+         ======================== -->
+    <section class="section section--white" style="padding-top: 24px; padding-bottom: 16px;">
+        <div class="container">
+            <div class="section-label">Comparison</div>
+            <div class="headline" style="font-size: 28px; margin-bottom: 12px;">HOW ARROYO AT SKYEVIEW COMPARES</div>
+            <p>All three communities are inside Skye Canyon. They share the same master amenities, the same schools, and the same drive to US-95. The differences are price, product, and SID.</p>
+
+            <table class="compare-table" style="font-size: 13px;">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Arroyo at Skyeview</th>
+                        <th>Sierra at Skyeview</th>
+                        <th>Terra at Skyeview</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <td>Product</td>
+                        <td>Townhome</td>
+                        <td>Single-family</td>
+                        <td>Single-family</td>
+                    </tr>
+                    <tr>
+                        <td>Base Price</td>
+                        <td>$372,990</td>
+                        <td>$433,990</td>
+                        <td>$489,990</td>
+                    </tr>
+                    <tr>
+                        <td>Sq Ft Range</td>
+                        <td>1,531 to 1,729</td>
+                        <td>1,602 to 1,965</td>
+                        <td>1,792 to 2,119</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Monthly HOA</td>
+                        <td>About $245</td>
+                        <td>About $83</td>
+                        <td>About $83</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Annual SID</td>
+                        <td>About $138</td>
+                        <td>$2,400 to $4,800</td>
+                        <td>$2,400 to $4,800</td>
+                    </tr>
+                    <tr>
+                        <td>Schools</td>
+                        <td>Bryan ES 9/10</td>
+                        <td>Bryan ES 9/10</td>
+                        <td>Bryan ES 9/10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 14px;">The headline is the SID. Single-family Skye Canyon homes carry SIDs of $2,400 to $4,800 per year, which works out to $200 to $400 extra per month on top of the mortgage. Arroyo townhomes were assigned a tiny lot share, so the SID is about $12/month. Even after the higher HOA, Arroyo is the cheapest carrying cost in the master plan.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         BUYING PROCESS
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Process</div>
+            <div class="headline">THE BUYING PROCESS: 9 STEPS</div>
+            <p>New construction does not work like a resale. Here is the path from contract to keys at Arroyo.</p>
+
+            <div class="roadmap">
+                <div class="roadmap-step">
+                    <div class="roadmap-node">01</div>
+                    <div class="roadmap-title">CHOOSE BUILDER AND FLOOR PLAN</div>
+                    <div class="roadmap-desc">Tour the model, walk all three plans (Beverly, Captiva, Delray), and pick the one that fits your life and your budget. Have your agent register you on your first visit.</div>
+                    <div class="roadmap-meta">Week 1</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">02</div>
+                    <div class="roadmap-title">SIGN THE PURCHASE AGREEMENT</div>
+                    <div class="roadmap-desc">Sign Century's purchase contract and put down your earnest money deposit. Your agent should review every page with you before you sign.</div>
+                    <div class="roadmap-meta">Week 1 to 2</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">03</div>
+                    <div class="roadmap-title">SECURE FINANCING</div>
+                    <div class="roadmap-desc">Choose between Century's preferred lender (Inspire Home Loans) and an outside lender. The preferred lender unlocks the rate buydown and closing cost credit. Always compare a second quote.</div>
+                    <div class="roadmap-meta">Week 2 to 3</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">04</div>
+                    <div class="roadmap-title">DESIGN CENTER APPOINTMENT</div>
+                    <div class="roadmap-desc">Visit the Century design studio to pick flooring, cabinets, counters, and fixtures. Bring your budget. Structural options have to be locked in here, so plan ahead.</div>
+                    <div class="roadmap-meta">Week 3 to 6</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">05</div>
+                    <div class="roadmap-title">PRE-DRYWALL INSPECTION</div>
+                    <div class="roadmap-desc">Once framing and rough mechanicals are done, hire a third-party inspector (typically $200 to $400). This is your one chance to see what is behind the walls.</div>
+                    <div class="roadmap-meta">Month 2 to 3</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">06</div>
+                    <div class="roadmap-title">CONSTRUCTION UPDATES</div>
+                    <div class="roadmap-desc">Century provides progress updates and milestone walkthroughs. Save the photos. Expect a total build of about 6 to 8 months from contract.</div>
+                    <div class="roadmap-meta">Month 3 to 6</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">07</div>
+                    <div class="roadmap-title">BLUE TAPE WALKTHROUGH</div>
+                    <div class="roadmap-desc">A few weeks before closing, you walk the finished home with the superintendent and mark every cosmetic or functional issue with blue painter's tape. Bring your agent. Be thorough.</div>
+                    <div class="roadmap-meta">Month 6 to 7</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">08</div>
+                    <div class="roadmap-title">FINAL INSPECTION</div>
+                    <div class="roadmap-desc">Hire a third-party final inspection ($310 to $730). Verify all blue tape items got resolved and check systems one last time. This is your last leverage before signing.</div>
+                    <div class="roadmap-meta">Month 7</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">09</div>
+                    <div class="roadmap-title">CLOSING DAY</div>
+                    <div class="roadmap-desc">Sign the closing documents at the title company, wire your down payment, and pick up the keys. Welcome to Arroyo.</div>
+                    <div class="roadmap-meta">Month 7 to 8</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FAQ
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">FAQ</div>
+            <div class="headline">FREQUENTLY ASKED QUESTIONS</div>
+
+            <div class="faq-item">
+                <div class="faq-q">Can I use my own real estate agent at Arroyo at Skyeview?</div>
+                <div class="faq-a">Yes, absolutely. In fact, it is strongly recommended. Your agent must register with you on your first visit to the model home. Century pays the agent's commission, so it costs you nothing and you get someone in your corner who can read the contract and protect your interests.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">How long does it take to build at Arroyo?</div>
+                <div class="faq-a">Most new townhomes here take about 6 to 8 months from contract to close. Quick move-in homes already under construction can deliver in weeks. Century is currently showing QMIs available July through September 2026.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Why is the HOA higher than other Skye Canyon homes?</div>
+                <div class="faq-a">Because Arroyo is a townhome. Your sub-HOA pays for exterior maintenance, common-area landscaping, and shared building upkeep that single-family owners handle themselves. The trade-off is a lock-and-leave lifestyle and lower maintenance time.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Is the SID really that much lower than single-family homes?</div>
+                <div class="faq-a">Yes. Arroyo's SID runs about $138 per year, compared to $2,400 to $4,800 per year on a single-family Skye Canyon home. That is one of the biggest hidden cost differences in the entire master plan and a real reason to consider Arroyo even if you can afford a larger home.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Can I negotiate the price on a new-construction townhome?</div>
+                <div class="faq-a">Builders rarely cut the base price because it affects comps for the rest of the community. What you can negotiate is incentives: rate buydowns, closing cost credits, or design center dollars. The current Arroyo incentive package is already strong, so the smart move is to make sure you get every dollar of it.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Do I have to use Century's preferred lender?</div>
+                <div class="faq-a">No, you can finance with any lender. But the 3.875% rate and the closing cost credit are tied to using Inspire Home Loans. Compare a second lender quote to confirm the package is real and competitive, then make your decision.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What warranty comes with a Century home?</div>
+                <div class="faq-a">Century typically provides a limited warranty covering workmanship and materials for one to two years, mechanical systems for two years, and major structural components for up to ten years. Ask for the full warranty document in writing before you sign.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Is Arroyo at Skyeview gated?</div>
+                <div class="faq-a">Confirm gating details directly with the Century sales team on your visit. Skye Canyon includes a mix of gated and non-gated neighborhoods, and access details can vary by section.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What if I want a single-family home in Skye Canyon instead?</div>
+                <div class="faq-a">Sierra at Skyeview and Terra at Skyeview are the single-family Century communities right next door. Both share the same schools and amenities, but starting prices are $433,990 and $489,990 and the SIDs run $200 to $400 more per month. Ask me to send the comparison side by side.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">How are the resale values for townhomes in Skye Canyon?</div>
+                <div class="faq-a">Skye Canyon has held value well thanks to the master amenities, the Bryan Elementary rating, and the steady inventory shortage in NW Las Vegas under $400K. Townhome resales tend to move quickly because they hit a price point single-family homes cannot match. Ask for a current comp report before you write your offer.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         CTA (LAST PAGE - CENTERED)
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="cta-page">
+        <div class="container">
+            <div class="cta-headline">READY TO TOUR <span class="text-accent">ARROYO AT SKYEVIEW</span>?</div>
+            <p class="cta-sub">Buying new construction is one of the biggest financial decisions you will make. Having the right agent on your side, before you walk into the model home, makes all the difference. I can help you read the contract, push for every available incentive, line up a third-party inspector, and make sure nothing falls through the cracks. The builder pays my commission, so it costs you nothing.</p>
+            <div class="cta-contact">
+                <strong>Ryan Rose</strong><br>
+                Real Broker, LLC | New Construction Specialist<br>
+                702-747-5921 | ryan@rosehomeslv.com<br>
+                rosehomeslv.com
+            </div>
+            <p class="cta-disclaimer">This guide is for informational purposes only. Pricing, incentives, availability, floor plan details, HOA dues, SID assessments, and community details are subject to change without notice. Always verify all information directly with Century Communities and your real estate professional.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         FOOTER
+         ======================== -->
+    <footer class="footer">
+        <p><strong>ARROYO AT SKYEVIEW BUYER GUIDE</strong></p>
+        <p>Prepared by Ryan Rose | Real Broker, LLC | rosehomeslv.com</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+DAILY INSTAGRAM DM OUTREACH INSTRUCTIONS
+
+OBJECTIVE: Send personalized Instagram DMs to followers of @vegaswolverine on behalf of Ryan Rose (@rosehomeslv), a local Las Vegas Realtor. Send 30 DMs per batch from a tracking queue.
+
+TRACKING FILE: Instagram/dm_tracking.json
+This JSON file contains: total, sent_count, batch_size, and a queue array of follower objects with username, display_name, category, dm_sent, and dm_date. Find the next 30 where dm_sent is false.
+
+STEPS:
+1. Read dm_tracking.json from the Instagram folder
+2. Connect to Chrome browser (tabs_context_mcp, create tab, navigate to Instagram)
+3. For each unsent follower:
+   a. Navigate to https://www.instagram.com/{username}/
+   b. Wait 2-3 seconds for page load
+   c. Click the "Message" button
+   d. Wait 2 seconds for DM window
+   e. Compose message using rules below
+   f. Type and send the message
+   g. Wait 15-30 seconds between DMs
+   h. Update tracking file: dm_sent = true, dm_date = today
+
+IMPORTANT CONSTRAINTS:
+- NEVER mention @vegaswolverine or "Vegas Wolverine" in any DM
+- NEVER use em-dashes (--) in any DM. Use commas, periods, or "and" instead
+- Keep messages warm, casual, and authentic
+- SKIP realtors and real estate agents entirely. If username or display_name contains: realtor, realty, realestate, real estate, broker, sells homes, home guide, listing agent, or similar. Mark as "skipped" in tracking file and move on.
+- CRITICAL SAFETY: NEVER send DMs to underage/minor accounts. Before sending ANY message, check the profile for age indicators including: 12U, 14U, 16U, 18U, 10U, 8U (or u12, u14, etc.), "parent monitored account", "youth", "junior", "jr", "bantam", "midget", "peewee", "squirt", "mite", or any indication the account belongs to a child. If ANY age indicator is found, SKIP immediately and mark as "skipped" in tracking file. When in doubt about age, skip the account.
+
+MESSAGE TEMPLATES:
+
+TEMPLATE A - Hockey-related accounts (category contains VGK, Golden Knights, Hockey, Storm, or username contains hockey, vjgk, vgk, puck, rink, ice):
+Hey [name if known, otherwise just "Hey"]! I'm a local Las Vegas Realtor and a hockey dad. My son is almost 7 and just getting into it, so I love seeing the youth hockey scene grow out here! I'm trying to connect with more people in the valley, so if you're willing, I'd appreciate it if you checked out my profile! If any of your hockey families are relocating to the area or looking to buy, I'd love to be a resource for them.
+
+TEMPLATE B - Local business with clear display name (contains: salon, bar, restaurant, shop, studio, fitness, photography, brewing, beauty, etc.):
+Hi [name/business name]! I'm a local Las Vegas Realtor and came across your page. [One brief genuine compliment about what they do, one sentence]. I love connecting with other local business owners in the valley. If you're willing, I'd appreciate it if you checked out my profile! And if you or anyone you know is thinking about buying or selling in the next year or so, I'd love to be a resource.
+
+TEMPLATE C - Individual with a display name (not clearly a business):
+Hey [first name]! I'm a local Las Vegas Realtor and am reaching out to introduce myself. I love connecting with new people in the area and have found that Instagram is a great place to do that. Trying to grow my Instagram, so if you are willing, then I'd appreciate it if you checked out my profile! And if you are planning on moving in the next year or so, I'd love to be a resource for you.
+
+TEMPLATE D - Generic (no display name, no clear category, use EXACTLY as written):
+Hi! I'm a local Las Vegas Realtor and am reaching out to introduce myself! I love connecting with new people in the area and have found that Instagram is a great place to do that. Trying to grow my Instagram, so if you are willing, then I'd appreciate it if you checked out my profile! And if you are planning on moving in the next year or so, I'd love to be a resource for you.
+
+AFTER THE BATCH:
+- Save the updated tracking file
+- Report summary: DMs sent this batch, total sent, remaining
+
+ERROR HANDLING:
+- Profile doesn't exist or no Message button: skip, mark as "skipped"
+- Instagram rate limit or blocks messaging: STOP immediately, save progress, report issue
+- Chrome not connected: tell user to open Chrome with Claude extension

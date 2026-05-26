@@ -1,0 +1,36 @@
+How to Execute
+Step 1
+Copy Subject Line and Message to Email Blast App
+Subject
+Copy
+
+Deal of the week: {{property_type}} in {{neighborhood}}
+
+Inbox Preview Text
+Copy
+
+This is what real value looks like right now.
+
+Body
+Copy
+
+This {{bedrooms}} bed / {{bathrooms}} bath just hit the market in {{neighborhood}} and is already turning heads.
+
+Only {{days_on_market}} days on the market and already {{zillow_views}} views on Zillow.
+
+{{square_footage}}
+{{key_feature_1}}
+{{key_feature_2}}
+{{key_feature_3}}
+
+
+
+Want me to send over more details?
+
+Step 2
+Transferring Email Content to Your Email Blast App
+Copy Subject: Highlight and copy the subject line from your email draft.
+Paste Subject: Open the email blast app and paste it into the subject line field.
+Copy Email Content: Return to your draft, copy the email content.
+Paste Content: Paste it in the message body of the email blast app.
+Review and Send: Check for accuracy, then schedule or send the email.

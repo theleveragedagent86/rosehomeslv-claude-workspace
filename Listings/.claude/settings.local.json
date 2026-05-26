@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cp /tmp/seller_report_29amber.html \"/Users/ryanrose/Downloads/Claude/Listings/29 Amber Rock St/Weekly Reports/29 Amber Rock St - April 3, 2026.html\")",
+      "Bash(cp /tmp/seller_report_29amber.html \"/Users/ryanrose/Downloads/Claude/Listings/29 Amber Rock St/Weekly Reports/29 Amber Rock St - April 3, 2026.md\")",
+      "mcp__6d26fa00-271c-46cd-8609-101a9f9f3951__create_draft"
+    ]
+  }
+}

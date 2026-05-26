@@ -1,0 +1,11 @@
+{
+  "name": "reddit-vegas-realtor",
+  "version": "1.0.0",
+  "description": "Manages Ryan Rose's Reddit strategy for r/VegasRealtor. Posts daily content, comments on real estate posts across target subreddits, and replies to responses. Uses browser automation to navigate Reddit and post directly.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": ["reddit", "real-estate", "las-vegas", "social-media", "vegasrealtor"],
+  "skills": "./skills/"
+}

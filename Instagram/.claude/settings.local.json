@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 create_template_links.py)",
+      "Bash(python3 -c \":*)",
+      "WebFetch(domain:www.newhomesource.com)",
+      "WebFetch(domain:www.zillow.com)",
+      "WebFetch(domain:www.delamarlasvegas.com)",
+      "WebFetch(domain:www.centurycommunities.com)",
+      "Bash(pip3 list)",
+      "Bash(python3 -c \"import reportlab; print\\(''reportlab OK''\\)\")",
+      "Bash(python3 -c \"import fpdf; print\\(''fpdf OK''\\)\")",
+      "Bash(python3 -c \"import fitz; print\\(''pymupdf OK''\\)\")",
+      "Bash(python3 -c \"from PIL import Image; print\\(''Pillow OK''\\)\")",
+      "Bash(pip3 install reportlab Pillow pymupdf)",
+      "Bash(python3:*)",
+      "Bash(pip3 install staticmap)",
+      "WebFetch(domain:www.livabl.com)",
+      "WebFetch(domain:www.trulia.com)"
+    ]
+  }
+}

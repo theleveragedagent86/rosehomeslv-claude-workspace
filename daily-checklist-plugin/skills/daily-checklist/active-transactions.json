@@ -1,0 +1,32 @@
+{
+  "description": "Index of active transactions. Points to per-address transaction.json files in the Transactions folder. The daily checklist reads this to show TC actions due today.",
+  "transactions_root": "/Users/ryanrose/Downloads/Claude/Transactions",
+  "cadences_root": "/Users/ryanrose/Downloads/Claude/tc-plugin/skills/transaction-coordination/cadences",
+  "templates_root": "/Users/ryanrose/Downloads/Claude/tc-plugin/skills/transaction-coordination/templates",
+  "active": [
+    {
+      "address_slug": "3550-All-Hallows-Ave",
+      "type": "buyer-new-construction",
+      "coe_date": "TBD"
+    },
+    {
+      "address_slug": "8320-Moapa-Water-ST",
+      "type": "buyer-resale",
+      "coe_date": "2026-05-19"
+    },
+    {
+      "address_slug": "29-Amber-Rock-St",
+      "type": "seller",
+      "coe_date": "2026-05-14",
+      "note": "Dual agency - Ryan also represents buyer"
+    }
+  ],
+  "completed": [
+    {
+      "address_slug": "2713-S-Miller-Ln",
+      "type": "buyer-resale",
+      "status": "cancelled",
+      "cancelled_date": "2026-03-31"
+    }
+  ]
+}

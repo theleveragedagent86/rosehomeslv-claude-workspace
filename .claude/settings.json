@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/ryanrose/.claude/projects/**)",
+      "Bash(unzip -l /Users/ryanrose/Downloads/Claude/reddit-plugin.zip)",
+      "Bash(unzip -l /Users/ryanrose/Downloads/Claude/blog-writer-plugin.zip)",
+      "Bash(unzip -l /Users/ryanrose/Downloads/Claude/publish-blogs-plugin.zip)",
+      "Bash(unzip -l /Users/ryanrose/Downloads/Claude/Instagram/ig-engage-plugin.zip)",
+      "Bash(find /Users/ryanrose/Downloads/Claude -maxdepth 3 -name *plugin* -o -name *config*)",
+      "Bash(grep -E \"\\\\.\\(md|json|txt\\)$\")",
+      "Bash(cp /Users/ryanrose/.claude/skills/ig-ads/SKILL.md \"/Users/ryanrose/Downloads/Claude/Instagram/ig-ads-plugin/skills/ig-ads/SKILL.md\")",
+      "Bash(cp /Users/ryanrose/.claude/skills/ig-ads/meta-business-suite-automation.md \"/Users/ryanrose/Downloads/Claude/Instagram/ig-ads-plugin/skills/ig-ads/meta-business-suite-automation.md\")",
+      "Bash(cp /Users/ryanrose/.claude/skills/ig-ads/ad-copy-templates.md \"/Users/ryanrose/Downloads/Claude/Instagram/ig-ads-plugin/skills/ig-ads/ad-copy-templates.md\")",
+      "Bash(cp /Users/ryanrose/.claude/skills/ig-ads/campaign-structures.md \"/Users/ryanrose/Downloads/Claude/Instagram/ig-ads-plugin/skills/ig-ads/campaign-structures.md\")",
+      "Bash(zip -r ig-ads-plugin.zip ig-ads-plugin/ -x \"*.DS_Store\")"
+    ],
+    "additionalDirectories": [
+      "/Users/ryanrose/.claude/skills/Reddit",
+      "/Users/ryanrose/.claude/skills/ig-ads",
+      "/Users/ryanrose/.claude/skills/listing-marketing",
+      "/Users/ryanrose/.claude/skills/ig-carousel",
+      "/Users/ryanrose/Downloads/Claude/Plugins/local-news-plugin/skills/local-news",
+      "/Users/ryanrose/Downloads/Claude/Plugins/digital-cannonball-plugin/skills/digital-cannonball"
+    ]
+  }
+}

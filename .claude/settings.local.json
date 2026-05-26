@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \":*)",
+      "WebFetch(domain:discoverskool.com)",
+      "WebFetch(domain:susannerieker.com)",
+      "WebFetch(domain:isthiscourselegit.com)",
+      "WebFetch(domain:howtocreateskoolcommunity.com)",
+      "Bash(head -1 \"/Users/ryanrose/Downloads/Hotsheet \\(20\\).csv\")",
+      "Bash(wc -l \"/Users/ryanrose/Downloads/Hotsheet \\(20\\).csv\")",
+      "Bash(head -2 \"/Users/ryanrose/Downloads/Hotsheet \\(20\\).csv\")",
+      "Bash(cut -d',' -f6 \"/Users/ryanrose/Downloads/Hotsheet \\(20\\).csv\")",
+      "Bash(cut -d',' -f2 \"/Users/ryanrose/Downloads/Hotsheet \\(20\\).csv\")",
+      "Bash(cut -d',' -f3 \"/Users/ryanrose/Downloads/Hotsheet \\(20\\).csv\")",
+      "Bash(python3:*)",
+      "Bash(node --version)",
+      "Bash(export PATH=\"/usr/local/bin:/opt/homebrew/bin:/Users/ryanrose/.nvm/versions/node/*/bin:$PATH\")",
+      "Read(//Users/ryanrose/**)",
+      "Bash(open -a \"Google Chrome\" \"/Users/ryanrose/pricing-infographic/preview.html\")",
+      "WebFetch(domain:topoflasvegas.com)",
+      "Skill(schedule)",
+      "Skill(schedule:*)"
+    ]
+  }
+}

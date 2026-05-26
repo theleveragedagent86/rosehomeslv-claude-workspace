@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(brew install:*)",
+      "Bash(python3:*)",
+      "WebFetch(domain:www.google.com)",
+      "Bash(open:*)",
+      "WebFetch(domain:www.dropbox.com)",
+      "Bash(lsof:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}

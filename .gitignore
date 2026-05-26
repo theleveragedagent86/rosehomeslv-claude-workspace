@@ -1,0 +1,10 @@
+*.zip
+*.DS_Store
+Transactions/
+temporary screenshots/
+*.pdf
+*.mp4
+*.mov
+*.png
+*.jpg
+*.jpeg

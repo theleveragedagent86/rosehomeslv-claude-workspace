@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "WebFetch(domain:thecrossingshoa.info)",
+      "WebFetch(domain:www.luxurylvgroup.com)",
+      "WebFetch(domain:lasvegasneighborhoods.com)",
+      "Bash(cp \"/Users/ryanrose/.claude/skills/blog-writer/content-rules.md\" \"/Users/ryanrose/Downloads/Claude/A Bunch Of Skills/Skills/expired-content/content-rules.md\")",
+      "Bash(cp \"/Users/ryanrose/.claude/skills/blog-writer/seo-guidelines.md\" \"/Users/ryanrose/Downloads/Claude/A Bunch Of Skills/Skills/expired-content/seo-guidelines.md\")",
+      "Bash(while read:*)",
+      "Bash(do echo:*)",
+      "Read(//Users/ryanrose/Downloads/Claude/Listing Leads Content/Blueprints/2026_Expired_Marketing_Blueprint/Linked_Pages/**)",
+      "WebFetch(domain:bradyluxuryhomes.com)"
+    ],
+    "additionalDirectories": [
+      "/Users/ryanrose/Downloads/Claude/Claude Blogs"
+    ]
+  }
+}

@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- COMMUNITY NAME -->
+    <title>Delamar by Pulte Homes | New Construction in SW Las Vegas</title>
+    <meta name="description" content="New construction homes at Delamar by Pulte Homes in SW Las Vegas. 4-6 bedrooms, 2,990-4,220 sq ft. Starting from $640,990. Southern Highlands amenities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ============================
+           RESET & BASE
+           ============================ */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            line-height: 1.6;
+            background: #fff;
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; display: block; }
+        a { color: inherit; text-decoration: none; }
+
+        /* ============================
+           DESIGN TOKENS
+           ============================ */
+        :root {
+            --white: #ffffff;
+            --off-white: #f8f7f4;
+            --warm-grey: #edeae5;
+            --navy: #2c4a7c;
+            --navy-light: rgba(44,74,124,0.08);
+            --navy-hover: #3a5e9a;
+            --text: #1a1a1a;
+            --text-muted: #888;
+            --text-light: #aaa;
+            --border: rgba(0,0,0,0.07);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow: 0 4px 24px rgba(0,0,0,0.06);
+        }
+
+        /* ============================
+           UTILITY
+           ============================ */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+        .section-tag {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--navy);
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+        .section-tag::after {
+            content: '';
+            width: 48px;
+            height: 1px;
+            background: var(--navy);
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================
+           TOP NAV
+           ============================ */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            padding: 0;
+        }
+        .top-nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+        .nav-brand {
+            font-family: 'DM Serif Display', serif;
+            font-size: 22px;
+            color: var(--text);
+            letter-spacing: 0.5px;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        .nav-links a {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+            transition: color var(--transition);
+        }
+        .nav-links a:hover { color: var(--text); }
+        .nav-cta {
+            background: var(--navy);
+            color: #fff !important;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background var(--transition);
+        }
+        .nav-cta:hover { background: var(--navy-hover); }
+
+        /* ============================
+           HERO
+           ============================ */
+        .hero {
+            padding: 160px 0 100px;
+            background: var(--white);
+            position: relative;
+        }
+        .hero-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero-text {
+            max-width: 520px;
+        }
+        .hero-eyebrow {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(42px, 5vw, 64px);
+            line-height: 1.08;
+            color: var(--text);
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+        .hero h1 .accent {
+            font-style: italic;
+            color: var(--navy);
+        }
+        .hero-sub {
+            font-size: 17px;
+            font-weight: 300;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 36px;
+            max-width: 400px;
+        }
+        /* Inline mini form in hero */
+        .hero-form {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .hero-form input {
+            flex: 1;
+            min-width: 140px;
+            padding: 14px 16px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            background: var(--off-white);
+            color: var(--text);
+            transition: border-color var(--transition);
+        }
+        .hero-form input::placeholder {
+            color: var(--text-light);
+        }
+        .hero-form input:focus {
+            outline: none;
+            border-color: var(--navy);
+        }
+        .hero-form button {
+            padding: 14px 28px;
+            background: var(--navy);
+            color: #fff;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background var(--transition);
+        }
+        .hero-form button:hover { background: var(--navy-hover); }
+
+        /* Hero stats card */
+        .hero-stats {
+            background: var(--off-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+        .hero-stat {
+            text-align: center;
+        }
+        .hero-stat-value {
+            font-family: 'DM Serif Display', serif;
+            font-size: 36px;
+            color: var(--text);
+            line-height: 1.1;
+            margin-bottom: 6px;
+        }
+        .hero-stat-label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        /* ============================
+           INCENTIVE
+           ============================ */
+        .incentive {
+            background: var(--navy-light);
+            padding: 18px 28px;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .incentive p {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text);
+        }
+        .incentive strong { font-weight: 700; color: var(--navy); }
+
+        /* ============================
+           ABOUT
+           ============================ */
+        .about-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .about-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 40px;
+            line-height: 1.15;
+            color: var(--text);
+            font-weight: 400;
+        }
+        .about-title .accent {
+            font-style: italic;
+            color: var(--navy);
+        }
+        .about-text p {
+            font-size: 16px;
+            line-height: 1.85;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        .about-text p:last-child { margin-bottom: 0; }
+
+        /* ============================
+           FLOOR PLANS
+           ============================ */
+        .plans-section {
+            padding: 100px 0;
+            background: var(--off-white);
+        }
+        .plans-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 48px;
+            gap: 40px;
+        }
+        .plans-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 40px;
+            color: var(--text);
+            font-weight: 400;
+            line-height: 1.15;
+        }
+        .plans-subtitle {
+            font-size: 15px;
+            color: var(--text-muted);
+            max-width: 340px;
+            text-align: right;
+        }
+
+        /* Pill tabs */
+        .pill-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+        }
+        .pill-tab {
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition);
+            background: transparent;
+            border: 1.5px solid var(--border);
+            color: var(--text-muted);
+        }
+        .pill-tab:hover {
+            border-color: rgba(0,0,0,0.2);
+            color: var(--text);
+        }
+        .pill-tab.active {
+            background: var(--navy);
+            color: #fff;
+            border-color: var(--navy);
+        }
+        .pill-tab.pinned {
+            border-color: var(--navy);
+            color: var(--navy);
+        }
+        .pill-tab.pinned.active {
+            color: #fff;
+        }
+        .pill-tab .pin-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: 1.5px solid currentColor;
+            margin-left: 6px;
+            vertical-align: middle;
+            transition: all var(--transition);
+        }
+        .pill-tab.pinned .pin-dot {
+            background: currentColor;
+        }
+
+        /* Spec panel */
+        .spec-panels {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+        }
+        .spec-panel {
+            flex: 1;
+            max-width: 520px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(12px);
+            transition: opacity var(--transition), transform var(--transition);
+        }
+        .spec-panel.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .spec-panel-header {
+            padding: 32px 36px 0;
+        }
+        .spec-panel-name {
+            font-family: 'DM Serif Display', serif;
+            font-size: 28px;
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+        .spec-panel-builder {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: 28px;
+        }
+        .spec-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            border-top: 1px solid var(--border);
+        }
+        .spec-cell {
+            text-align: center;
+            padding: 24px 16px;
+            border-bottom: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+        }
+        .spec-cell:nth-child(even) { border-right: none; }
+        .spec-cell-value {
+            font-family: 'DM Serif Display', serif;
+            font-size: 22px;
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+        .spec-cell-value.highlight {
+            color: var(--navy);
+        }
+        .spec-cell-label {
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-light);
+        }
+        .spec-features {
+            list-style: none;
+            padding: 24px 36px 32px;
+        }
+        .spec-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .spec-features li:last-child { border-bottom: none; }
+        .spec-features li::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--navy);
+            flex-shrink: 0;
+        }
+        .spec-hint {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        /* ============================
+           GALLERY
+           ============================ */
+        .gallery-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        .gallery-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 40px;
+            color: var(--text);
+            font-weight: 400;
+            margin-bottom: 48px;
+        }
+        .gallery-pills {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .gallery-pill {
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition);
+            background: transparent;
+            border: 1.5px solid var(--border);
+            color: var(--text-muted);
+        }
+        .gallery-pill:hover {
+            border-color: rgba(0,0,0,0.2);
+            color: var(--text);
+        }
+        .gallery-pill.active {
+            background: var(--navy);
+            color: #fff;
+            border-color: var(--navy);
+        }
+        .gallery-display {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+        }
+        .gallery-card {
+            flex: 1;
+            max-width: 540px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--off-white);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            opacity: 0;
+            transform: scale(0.97);
+            transition: opacity var(--transition), transform var(--transition);
+        }
+        .gallery-card.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .gallery-card-label {
+            padding: 16px 24px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border);
+            background: var(--white);
+        }
+        .gallery-card-image {
+            aspect-ratio: 4 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Gallery CTA */
+        .gallery-cta {
+            text-align: center;
+            margin-top: 48px;
+            padding: 44px 24px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--off-white);
+        }
+        .gallery-cta p {
+            font-family: 'DM Serif Display', serif;
+            font-size: 22px;
+            color: var(--text);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .gallery-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--navy);
+            color: #fff;
+            padding: 14px 32px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border-radius: 50px;
+            transition: background var(--transition), transform var(--transition);
+        }
+        .gallery-cta-btn:hover {
+            background: var(--navy-hover);
+            transform: translateY(-2px);
+        }
+
+        /* ============================
+           AMENITIES
+           ============================ */
+        .amenities-section {
+            padding: 80px 0;
+            background: var(--off-white);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .amenities-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 36px;
+            color: var(--text);
+            font-weight: 400;
+            margin-bottom: 48px;
+        }
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--white);
+            overflow: hidden;
+        }
+        .amenity-cell {
+            padding: 36px 28px;
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            transition: background var(--transition);
+        }
+        .amenity-cell:nth-child(3n) { border-right: none; }
+        .amenity-cell:nth-child(n+4) { border-bottom: none; }
+        .amenity-cell:hover { background: var(--off-white); }
+        .amenity-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+        .amenity-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ============================
+           LEAD FORM
+           ============================ */
+        .form-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        .form-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+        .form-left-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 40px;
+            color: var(--text);
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+        .form-left-title .accent {
+            font-style: italic;
+            color: var(--navy);
+        }
+        .form-left-sub {
+            font-size: 16px;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+        .form-left-contact {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 2;
+        }
+        .form-left-contact strong {
+            color: var(--text);
+        }
+        .form-left-contact a {
+            color: var(--navy);
+            transition: color var(--transition);
+        }
+        .form-left-contact a:hover { color: var(--navy-hover); }
+        .form-card {
+            background: var(--off-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 48px 40px;
+        }
+        .lead-form label {
+            display: block;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+        .lead-form input[type="text"],
+        .lead-form input[type="email"],
+        .lead-form input[type="tel"] {
+            width: 100%;
+            padding: 14px 16px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            background: var(--white);
+            color: var(--text);
+            transition: border-color var(--transition), box-shadow var(--transition);
+        }
+        .lead-form input:focus {
+            outline: none;
+            border-color: var(--navy);
+            box-shadow: 0 0 0 3px rgba(44,74,124,0.1);
+        }
+        .lead-form button {
+            width: 100%;
+            padding: 16px;
+            background: var(--navy);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: background var(--transition), transform var(--transition);
+        }
+        .lead-form button:hover {
+            background: var(--navy-hover);
+            transform: translateY(-1px);
+        }
+        .privacy-note {
+            font-size: 12px;
+            color: var(--text-light);
+            text-align: center;
+            margin-top: 16px;
+            line-height: 1.6;
+        }
+
+        /* ============================
+           FOOTER
+           ============================ */
+        .footer {
+            background: var(--off-white);
+            border-top: 1px solid var(--border);
+            padding: 48px 32px;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .footer-brand {
+            font-family: 'DM Serif Display', serif;
+            font-size: 18px;
+            color: var(--text);
+        }
+        .footer-info {
+            text-align: right;
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+        .footer-info a {
+            color: var(--navy);
+            transition: color var(--transition);
+        }
+        .footer-info a:hover { color: var(--navy-hover); }
+        .footer-disclaimer {
+            width: 100%;
+            margin-top: 20px;
+            font-size: 12px;
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        /* ============================
+           RESPONSIVE
+           ============================ */
+        @media (max-width: 900px) {
+            .hero-layout { grid-template-columns: 1fr; gap: 40px; }
+            .hero-text { max-width: 100%; }
+            .about-grid { grid-template-columns: 1fr; gap: 32px; }
+            .form-layout { grid-template-columns: 1fr; gap: 48px; }
+            .plans-header { flex-direction: column; align-items: flex-start; }
+            .plans-subtitle { text-align: left; }
+            .amenities-grid { grid-template-columns: 1fr 1fr; }
+            .amenity-cell:nth-child(3n) { border-right: 1px solid var(--border); }
+            .amenity-cell:nth-child(even) { border-right: none; }
+            .amenity-cell:nth-child(n+5) { border-bottom: none; }
+            .amenity-cell:nth-child(4) { border-bottom: none; }
+        }
+
+        @media (max-width: 768px) {
+            .top-nav-inner { height: 56px; }
+            .nav-links { gap: 16px; }
+            .nav-links a:not(.nav-cta) { display: none; }
+            .hero { padding: 120px 0 60px; }
+            .hero h1 { font-size: 36px; }
+            .hero-stats { grid-template-columns: 1fr 1fr; gap: 20px; padding: 28px; }
+            .hero-stat-value { font-size: 28px; }
+            .hero-form { flex-direction: column; }
+            .hero-form input { min-width: 0; }
+
+            .spec-panels { flex-direction: column; align-items: center; }
+            .spec-panel { max-width: 100%; }
+
+            .gallery-display { flex-direction: column; align-items: center; }
+            .gallery-card { max-width: 100%; }
+
+            .about-title, .plans-title, .gallery-title, .form-left-title { font-size: 32px; }
+            .amenities-title { font-size: 28px; }
+
+            .form-card { padding: 32px 24px; }
+            .footer-inner { flex-direction: column; text-align: center; }
+            .footer-info { text-align: center; }
+        }
+
+        @media (max-width: 480px) {
+            .pill-tabs, .gallery-pills { gap: 6px; }
+            .pill-tab, .gallery-pill { padding: 8px 16px; font-size: 13px; }
+            .hero-stat-value { font-size: 24px; }
+            .amenities-grid { grid-template-columns: 1fr; }
+            .amenity-cell { border-right: none !important; }
+            .amenity-cell { border-bottom: 1px solid var(--border) !important; }
+            .amenity-cell:last-child { border-bottom: none !important; }
+        }
+    </style>
+
+    <!-- RealEstateAgent Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Ryan Rose",
+        "url": "https://rosehomeslv.com",
+        "telephone": "+1-702-747-5921",
+        "email": "ryan@rosehomeslv.com",
+        "description": "Las Vegas new construction specialist helping buyers find homes at Delamar by Pulte Homes and other SW Las Vegas communities.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Las Vegas",
+            "addressRegion": "NV",
+            "postalCode": "89141",
+            "addressCountry": "US"
+        },
+        "worksFor": {
+            "@type": "RealEstateAgent",
+            "name": "Real Broker LLC"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Las Vegas"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ======== TOP NAV ======== -->
+    <nav class="top-nav">
+        <div class="container top-nav-inner">
+            <!-- COMMUNITY NAME -->
+            <div class="nav-brand">Delamar</div>
+            <div class="nav-links">
+                <a href="#floorplans">Floor Plans</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#contact" class="nav-cta">Get Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-text">
+                    <!-- BUILDER NAME -->
+                    <div class="hero-eyebrow">A Pulte Homes Community</div>
+                    <!-- COMMUNITY NAME -->
+                    <h1>Find your home at <span class="accent">Delamar</span></h1>
+                    <!-- COMMUNITY TAGLINE -->
+                    <p class="hero-sub">New construction in SW Las Vegas. Southern Highlands amenities. Starting from <!-- STARTING PRICE -->$640,990.</p>
+
+                    <!-- Inline lead capture -->
+                    <form class="hero-form" action="#" method="POST">
+                        <!-- LOFTY TAG -->
+                        <input type="hidden" name="tag" value="delemar-by-pulte">
+                        <input type="hidden" name="source" value="new-construction-landing-page">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="tel" name="phone" placeholder="Phone" required>
+                        <button type="submit">Send Me Details</button>
+                    </form>
+                </div>
+
+                <!-- Stats card -->
+                <div class="hero-stats reveal">
+                    <div class="hero-stat">
+                        <!-- STARTING PRICE -->
+                        <div class="hero-stat-value">$640K+</div>
+                        <div class="hero-stat-label">Starting Price</div>
+                    </div>
+                    <div class="hero-stat">
+                        <!-- SQ FT MAX -->
+                        <div class="hero-stat-value">4,220</div>
+                        <div class="hero-stat-label">Max Sq Ft</div>
+                    </div>
+                    <div class="hero-stat">
+                        <!-- BEDROOM RANGE -->
+                        <div class="hero-stat-value">4 &ndash; 6</div>
+                        <div class="hero-stat-label">Bedrooms</div>
+                    </div>
+                    <div class="hero-stat">
+                        <!-- FLOOR PLANS -->
+                        <div class="hero-stat-value">4</div>
+                        <div class="hero-stat-label">Floor Plans</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== INCENTIVE ======== -->
+    <div class="incentive">
+        <!-- INCENTIVE TEXT -->
+        <p><strong>Current Incentive:</strong> Up to $20,000 in closing cost credits + 4.99% fixed rate for 30 years through Pulte Mortgage</p>
+    </div>
+
+    <!-- ======== ABOUT ======== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-tag">Community</div>
+            <div class="about-grid">
+                <div class="reveal">
+                    <!-- COMMUNITY NAME -->
+                    <h2 class="about-title">A new standard in <span class="accent">Southern Highlands</span></h2>
+                </div>
+                <div class="about-text reveal">
+                    <p>Delamar is a new-construction community by Pulte Homes in southwest Las Vegas. Located within the Highlands Ranch area of Southern Highlands, it puts you close to resort-style amenities, top-rated golf, and everyday shopping. The community sits just 6 miles from the Las Vegas Strip with easy access to I-15.</p>
+                    <p>Homes at Delamar range from 2,990 to 4,220 square feet with 4 to 6 bedrooms. There are four floor plans to choose from, including two-story and three-story layouts. Every home is built by Pulte, a national builder known for Life Tested designs that focus on how families actually use their space.</p>
+                    <!-- HOA AMOUNT -->
+                    <p>The HOA is $150 per month and covers common area upkeep and landscaping. Residents enjoy access to Southern Highlands amenities, including a 13,000 square foot clubhouse, multiple pools, a spa, and the Olympia Sports Park. <!-- MODEL HOME ADDRESS -->The model home is open for tours at 10123 Goswell Park Street, Las Vegas, NV 89141.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FLOOR PLANS ======== -->
+    <!-- FLOOR PLAN MODULE — swap plan data in the JS config object at the top of the script block -->
+    <section class="plans-section" id="floorplans">
+        <div class="container">
+            <div class="section-tag">Floor Plans</div>
+            <div class="plans-header">
+                <h2 class="plans-title">Explore the<br>floor plans</h2>
+                <p class="plans-subtitle">Select a plan to explore details. Click the dot to pin up to two plans for comparison.</p>
+            </div>
+
+            <div class="pill-tabs" id="pillTabs">
+                <!-- Rendered by JS -->
+            </div>
+
+            <div class="spec-panels" id="specPanels">
+                <!-- Rendered by JS -->
+            </div>
+
+            <div class="spec-hint" id="specHint">
+                Click the dot on any tab to pin it for comparison
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== GALLERY ======== -->
+    <section class="gallery-section" id="fpGallery">
+        <div class="container">
+            <div class="section-tag">Gallery</div>
+            <h2 class="gallery-title">First floor plans</h2>
+
+            <div class="gallery-pills" id="galleryPills">
+                <!-- Rendered by JS -->
+            </div>
+
+            <div class="gallery-display" id="galleryDisplay">
+                <!-- Rendered by JS -->
+            </div>
+
+            <div class="gallery-cta">
+                <p>Want to see every level of every plan?</p>
+                <a href="#contact" class="gallery-cta-btn">Get the Complete Floor Plans &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== AMENITIES ======== -->
+    <section class="amenities-section" id="amenities">
+        <div class="container">
+            <div class="section-tag">Amenities</div>
+            <h2 class="amenities-title">Southern Highlands living</h2>
+            <div class="amenities-grid">
+                <div class="amenity-cell">
+                    <div class="amenity-name">Southern Highlands Golf Club</div>
+                    <div class="amenity-desc">Championship golf course designed for serious players and casual golfers alike.</div>
+                </div>
+                <div class="amenity-cell">
+                    <div class="amenity-name">13,000 Sq Ft Clubhouse</div>
+                    <div class="amenity-desc">Private clubhouse with a 4,000 sq ft fitness center, spa, and social spaces.</div>
+                </div>
+                <div class="amenity-cell">
+                    <div class="amenity-name">Pools &amp; Spa</div>
+                    <div class="amenity-desc">25-meter lap pool, outdoor pool with cabanas, children's pool, and oversized Jacuzzi.</div>
+                </div>
+                <div class="amenity-cell">
+                    <div class="amenity-name">Olympia Sports Park</div>
+                    <div class="amenity-desc">Lighted fields, basketball courts, water play area, workout stations, and hilltop trail.</div>
+                </div>
+                <div class="amenity-cell">
+                    <div class="amenity-name">Parks &amp; Trails</div>
+                    <div class="amenity-desc">Seven parks with covered play areas, gazebos, water features, and the Paseo hiking trail.</div>
+                </div>
+                <div class="amenity-cell">
+                    <div class="amenity-name">Close to Everything</div>
+                    <div class="amenity-desc">About 6 miles from the Strip. Quick access to I-15, shopping, dining, and medical care.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== LEAD FORM ======== -->
+    <section class="form-section" id="contact">
+        <div class="container">
+            <div class="form-layout">
+                <div>
+                    <div class="section-tag">Get in Touch</div>
+                    <!-- COMMUNITY NAME -->
+                    <h2 class="form-left-title">Get the <span class="accent">Delamar</span> guide</h2>
+                    <p class="form-left-sub">Floor plans, pricing, incentives, and availability sent to your inbox. No obligation.</p>
+                    <div class="form-left-contact">
+                        <!-- AGENT NAME -->
+                        <strong>Ryan Rose</strong><br>
+                        Real Broker LLC<br>
+                        <!-- AGENT PHONE -->
+                        <a href="tel:7027475921">702-747-5921</a><br>
+                        <!-- AGENT EMAIL -->
+                        <a href="mailto:ryan@rosehomeslv.com">ryan@rosehomeslv.com</a>
+                    </div>
+                </div>
+                <div class="form-card">
+                    <form class="lead-form" action="#" method="POST">
+                        <!-- LOFTY TAG -->
+                        <input type="hidden" name="tag" value="delemar-by-pulte">
+                        <input type="hidden" name="source" value="new-construction-landing-page">
+
+                        <label for="name3">Full Name</label>
+                        <input type="text" id="name3" name="name" placeholder="Your full name" required>
+
+                        <label for="email3">Email</label>
+                        <input type="email" id="email3" name="email" placeholder="you@example.com" required>
+
+                        <label for="phone3">Phone</label>
+                        <input type="tel" id="phone3" name="phone" placeholder="(702) 555-1234">
+
+                        <button type="submit">Send Me the Guide</button>
+                        <!-- COMMUNITY NAME -->
+                        <p class="privacy-note">Your information is kept private and never shared. By submitting, you agree to be contacted about Delamar and other new-construction opportunities.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <!-- AGENT NAME -->
+            <div class="footer-brand">Ryan Rose &middot; Real Broker LLC</div>
+            <div class="footer-info">
+                <!-- AGENT PHONE --> <!-- AGENT EMAIL -->
+                <a href="tel:7027475921">702-747-5921</a> &nbsp;|&nbsp;
+                <a href="mailto:ryan@rosehomeslv.com">ryan@rosehomeslv.com</a> &nbsp;|&nbsp;
+                <a href="https://rosehomeslv.com" target="_blank">rosehomeslv.com</a>
+            </div>
+            <div class="footer-disclaimer">Prices, incentives, and availability are subject to change without notice. Contact the builder or your agent for the most current information.</div>
+        </div>
+    </footer>
+
+    <!-- ======== JAVASCRIPT ======== -->
+    <script>
+    (function() {
+        'use strict';
+
+        /* ====================================================
+           FLOOR PLAN CONFIG
+           ==================================================== */
+        const PLANS = [
+            {
+                id: 'calico', name: 'Calico', price: 648990, priceLabel: 'From $648,990',
+                sqft: 2990, sqftLabel: '2,990+ sq ft', beds: '4-5', baths: '3-4', bathsLabel: '3-4',
+                stories: 2, garage: '3-car',
+                features: ['1st-floor bedroom + bath', 'Gathering room + cafe', "Owner's suite with WIC", '2-story / 3-car garage'],
+                image: 'images/calico-1st.jpg'
+            },
+            {
+                id: 'egan', name: 'Egan', price: 640990, priceLabel: 'From $640,990',
+                sqft: 3097, sqftLabel: '3,097+ sq ft', beds: '4-6', baths: '2-4', bathsLabel: '2-4',
+                stories: 2, garage: '2-car',
+                features: ['Gathering room / living room', "Private owner's retreat", 'Flex room + game room', '2-story / 2-car garage'],
+                image: 'images/egan-1st.jpg'
+            },
+            {
+                id: 'delano', name: 'Delano', price: 643990, priceLabel: 'From $643,990',
+                sqft: 3158, sqftLabel: '3,158+ sq ft', beds: '4-5', baths: '2-4', bathsLabel: '2-4',
+                stories: 2, garage: '2-car',
+                features: ['Gathering room + den', "Owner's suite with WIC", 'Loft + 5th bedroom option', '2-story / 2-car garage'],
+                image: 'images/delano-1st.jpg'
+            },
+            {
+                id: 'whitepine', name: 'White Pine', price: 787990, priceLabel: 'From $787,990',
+                sqft: 4220, sqftLabel: '4,220+ sq ft', beds: '4-5', baths: '2-4', bathsLabel: '2-4',
+                stories: 3, garage: '3-car',
+                features: ['Rooftop deck + balcony', "Chef's kitchen + game room", "Owner's suite with dual WIC", '3-story / 3-car garage'],
+                image: 'images/whitepine-1st.jpg'
+            }
+        ];
+
+        /* ====================================================
+           STATE
+           ==================================================== */
+        let selectedId = PLANS[0].id;
+        let pinnedIds = [];
+        function getPlan(id) { return PLANS.find(function(p) { return p.id === id; }); }
+
+        /* ====================================================
+           PILL TABS + SPEC PANELS
+           ==================================================== */
+        var pillTabsEl = document.getElementById('pillTabs');
+        var specPanelsEl = document.getElementById('specPanels');
+        var specHintEl = document.getElementById('specHint');
+
+        function renderPillTabs() {
+            pillTabsEl.innerHTML = '';
+            PLANS.forEach(function(plan) {
+                var pill = document.createElement('div');
+                pill.className = 'pill-tab';
+                if (plan.id === selectedId) pill.classList.add('active');
+                if (pinnedIds.includes(plan.id)) pill.classList.add('pinned');
+                pill.innerHTML = plan.name + ' <span class="pin-dot" title="Pin for comparison"></span>';
+
+                pill.addEventListener('click', function(e) {
+                    if (e.target.classList.contains('pin-dot')) {
+                        e.stopPropagation();
+                        togglePin(plan.id);
+                        return;
+                    }
+                    selectedId = plan.id;
+                    update();
+                });
+                pillTabsEl.appendChild(pill);
+            });
+        }
+
+        function togglePin(id) {
+            var idx = pinnedIds.indexOf(id);
+            if (idx > -1) { pinnedIds.splice(idx, 1); }
+            else { if (pinnedIds.length >= 2) pinnedIds.shift(); pinnedIds.push(id); }
+            update();
+        }
+
+        function buildSpecPanel(plan, compareWith) {
+            var panel = document.createElement('div');
+            panel.className = 'spec-panel';
+            var hp = compareWith && plan.price > compareWith.price;
+            var hs = compareWith && plan.sqft > compareWith.sqft;
+            panel.innerHTML =
+                '<div class="spec-panel-header">' +
+                    '<div class="spec-panel-name">' + plan.name + '</div>' +
+                    '<div class="spec-panel-builder">Pulte Homes</div>' +
+                '</div>' +
+                '<div class="spec-grid">' +
+                    '<div class="spec-cell"><div class="spec-cell-value' + (hp ? ' highlight' : '') + '">' + plan.priceLabel.replace('From ', '') + '</div><div class="spec-cell-label">Starting Price</div></div>' +
+                    '<div class="spec-cell"><div class="spec-cell-value' + (hs ? ' highlight' : '') + '">' + plan.sqftLabel + '</div><div class="spec-cell-label">Square Feet</div></div>' +
+                    '<div class="spec-cell"><div class="spec-cell-value">' + plan.beds + ' bed</div><div class="spec-cell-label">Bedrooms</div></div>' +
+                    '<div class="spec-cell"><div class="spec-cell-value">' + plan.bathsLabel + ' bath</div><div class="spec-cell-label">Bathrooms</div></div>' +
+                '</div>' +
+                '<ul class="spec-features">' + plan.features.map(function(f) { return '<li>' + f + '</li>'; }).join('') + '</ul>';
+            requestAnimationFrame(function() { requestAnimationFrame(function() { panel.classList.add('visible'); }); });
+            return panel;
+        }
+
+        function renderSpecPanels() {
+            specPanelsEl.innerHTML = '';
+            if (pinnedIds.length === 2) {
+                var a = getPlan(pinnedIds[0]), b = getPlan(pinnedIds[1]);
+                specPanelsEl.appendChild(buildSpecPanel(a, b));
+                specPanelsEl.appendChild(buildSpecPanel(b, a));
+                specHintEl.textContent = 'Comparing ' + a.name + ' and ' + b.name + '. Click a pin to remove.';
+            } else {
+                specPanelsEl.appendChild(buildSpecPanel(getPlan(selectedId), null));
+                specHintEl.textContent = 'Click the dot on any tab to pin it for comparison';
+            }
+        }
+
+        /* ====================================================
+           GALLERY
+           ==================================================== */
+        var galleryPillsEl = document.getElementById('galleryPills');
+        var galleryDisplayEl = document.getElementById('galleryDisplay');
+
+        function renderGalleryPills() {
+            galleryPillsEl.innerHTML = '';
+            PLANS.forEach(function(plan) {
+                var pill = document.createElement('div');
+                pill.className = 'gallery-pill';
+                var isActive = pinnedIds.length === 2 ? pinnedIds.includes(plan.id) : plan.id === selectedId;
+                if (isActive) pill.classList.add('active');
+                pill.textContent = plan.name;
+                pill.addEventListener('click', function() { selectedId = plan.id; update(); });
+                galleryPillsEl.appendChild(pill);
+            });
+        }
+
+        function buildGalleryCard(plan) {
+            var card = document.createElement('div');
+            card.className = 'gallery-card';
+            var label = document.createElement('div');
+            label.className = 'gallery-card-label';
+            label.textContent = plan.name + ' Floor Plan \u2014 First Floor';
+            card.appendChild(label);
+            var area = document.createElement('div');
+            area.className = 'gallery-card-image';
+            if (plan.image) {
+                var img = document.createElement('img');
+                img.src = plan.image;
+                img.alt = plan.name + ' floor plan - first floor';
+                area.appendChild(img);
+            }
+            card.appendChild(area);
+            requestAnimationFrame(function() { requestAnimationFrame(function() { card.classList.add('visible'); }); });
+            return card;
+        }
+
+        function renderGallery() {
+            renderGalleryPills();
+            galleryDisplayEl.innerHTML = '';
+            if (pinnedIds.length === 2) {
+                galleryDisplayEl.appendChild(buildGalleryCard(getPlan(pinnedIds[0])));
+                galleryDisplayEl.appendChild(buildGalleryCard(getPlan(pinnedIds[1])));
+            } else {
+                galleryDisplayEl.appendChild(buildGalleryCard(getPlan(selectedId)));
+            }
+        }
+
+        /* ====================================================
+           UPDATE
+           ==================================================== */
+        function update() {
+            renderPillTabs();
+            renderSpecPanels();
+            renderGallery();
+        }
+        update();
+
+        /* ====================================================
+           SCROLL REVEAL
+           ==================================================== */
+        var reveals = document.querySelectorAll('.reveal');
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(function(el) { observer.observe(el); });
+
+    })();
+    </script>
+
+</body>
+</html>

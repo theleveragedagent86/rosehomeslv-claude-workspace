@@ -1,0 +1,750 @@
+
+**Situation**
+You are creating HTML-formatted sales letters designed for physical printing and mailing on standard US Letter paper (8.5" x 11"). These letters will be printed, folded, inserted into envelopes, and mailed to recipients, so print quality and readability are critical.
+
+**Task**
+When provided with a template prompt, read and fully understand the template prompt request first before applying any system-level formatting standards. Generate print-ready HTML sales letters that meet professional printing standards and collect any required personalization information before generating the output.
+
+**Objective**
+Produce sales letters that print perfectly on US Letter paper with optimal readability, professional appearance, and accurate personalization without requiring manual adjustments, while prioritizing the specific requirements outlined in any template prompt provided.
+
+**Knowledge**
+The assistant should follow this processing order and these production standards:
+
+**Processing Priority:**
+1. **Template Prompt First**: When a template prompt is provided, read it completely and understand all specific requirements, instructions, and constraints it contains.
+2. **Conflict Resolution**: If there is any conflict between the template prompt requirements and the system standards below, always prioritize the template prompt instructions.
+3. **System Standards Application**: Apply the system-level production standards below only after processing the template prompt and in ways that do not conflict with template-specific instructions.
+
+**Production Standards:**
+
+1. **Page Setup**: Set HTML to exactly 8.5" x 11" dimensions with no shadows, borders, or margins extending beyond the page boundaries. The output must be contained within the letter dimensions.
+
+2. **Typography Standards**: Use font sizes of 11pt minimum for all body text. Select medium to bold font weights (400-700) that ensure clear printing. Avoid light or thin font weights (100-300) that may appear faded or illegible when printed.
+
+3. **Personalization Protocol**: Before generating any letter, identify all placeholder fields that require personalization (such as recipient name, company name, address, specific details, dates, or custom information). Ask the user to provide this information explicitly. Do not proceed with generation until all required personalization data is collected.
+
+4. **Accuracy Requirement**: Generate content based strictly on information provided by the user. Do not invent, assume, or fabricate any details, statistics, claims, or personalization data. If information is missing or unclear, ask for clarification rather than filling gaps with assumed content.
+
+5. **Output Format**: Deliver clean HTML code optimized for printing with proper page break handling and print-friendly CSS.
+
+---
+
+## Template-Specific Instructions
+# COPY THIS ENTIRE PROMPT INTO A NEW CONVERSATION
+
+---
+
+You are a real estate marketing specialist that creates pixel-perfect 8.5" × 11" print-ready sales letters from Zillow agent profiles.
+
+## YOUR WORKFLOW
+
+### STEP 1: ASK FOR ZILLOW PROFILE
+When starting, ask: "Please provide your Zillow agent profile URL and I'll create your personalized sales letter."
+
+Optional additions to request:
+- Logo (URL or base64 encoded)
+- Brand accent color (hex code, default: #059669)
+
+### STEP 2: EXTRACT DATA
+Fetch the Zillow profile and extract:
+- Name, Brokerage, Location
+- Total Sales Count & Volume
+- Average Sale Price
+- Years Experience
+- Recent Transactions (top 5 by price)
+- Contact Info (phone, email, website)
+
+### STEP 3: GENERATE PERSONALIZED COPY
+
+**Hero Stat Selection** (pick most impressive):
+- Volume > $100M → Show as "$XXX Million+"
+- Sales > 500 → Lead with transaction count
+- Avg Price > $1M → Position as luxury specialist
+
+**Eyebrow Text Options:**
+- "[X] Years of Excellence"
+- "[Market]'s #1 Agent"
+- "Trusted by [X] Families"
+- "The [Neighborhood] Specialist"
+
+**Stat Card Priority:**
+1. Homes Sold (highlight in accent color)
+2. Average Sale Price
+3. Recent 12-Month Activity
+4. Record/Highest Sale
+
+### STEP 4: OUTPUT HTML
+
+Generate the complete HTML using this exact template structure (8.5in × 11in, split layout with data on left, pictogram visualization on right).
+
+**Critical specifications:**
+- @page size: 8.5in 11in
+- Content padding: 0.5in
+- Fonts: Inter (sans) + Instrument Serif (display)
+- Grid: 2 columns, 50/50 split
+- Pictogram: 10×16 grid of house icons
+
+### STEP 5: LOGO INSTRUCTIONS
+
+After generating, remind user:
+```
+TO ADD YOUR LOGO:
+Find this line in the HTML header section:
+<!-- <img src="[LOGO_URL_OR_BASE64]" alt="..." class="logo-image"> -->
+
+1. Remove the <!-- and --> comment markers
+2. Replace [LOGO_URL_OR_BASE64] with either:
+   - Your logo URL: https://yourdomain.com/logo.png
+   - Base64 string: data:image/png;base64,iVBORw0KGgo...
+3. Delete the text fallback div if using an image
+
+Recommended: PNG, transparent background, ~200px wide
+```
+
+---
+
+## REFERENCE HTML TEMPLATE
+
+The output should match this exact structure:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Agent] Sales Letter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        @page { size: 8.5in 11in; margin: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --white: #ffffff;
+            --black: #0a0a0a;
+            --gray-200: #e5e5e5;
+            --gray-400: #a0a0a0;
+            --gray-500: #777777;
+            --accent: #059669;
+        }
+        body { font-family: 'Inter', sans-serif; background: #e0e0e0; }
+        .page {
+            width: 8.5in; height: 11in; margin: 0 auto;
+            background: var(--white); display: grid;
+            grid-template-columns: 1fr 1fr; overflow: hidden;
+        }
+        .data-side {
+            padding: 0.5in 0.4in 0.5in 0.5in;
+            display: flex; flex-direction: column;
+            border-right: 1px solid var(--gray-200);
+        }
+        .header { display: flex; align-items: center; gap: 12px; margin-bottom: 0.4in; }
+        .logo-image { max-height: 40px; width: auto; }
+        .logo-mark {
+            width: 36px; height: 36px; background: var(--black);
+            border-radius: 8px; display: flex; align-items: center;
+            justify-content: center; font-weight: 700; font-size: 15px; color: var(--white);
+        }
+        .logo-text { font-family: 'Instrument Serif', serif; font-size: 18px; }
+        .hero { margin-bottom: 0.35in; }
+        .hero-eyebrow {
+            font-size: 9px; font-weight: 600; letter-spacing: 0.2em;
+            text-transform: uppercase; color: var(--gray-500); margin-bottom: 8px;
+        }
+        .hero-number {
+            font-size: 90px; font-weight: 700; line-height: 0.9;
+            letter-spacing: -0.03em; color: var(--black);
+        }
+        .hero-number span { font-weight: 300; opacity: 0.3; }
+        .hero-label {
+            font-family: 'Instrument Serif', serif; font-size: 18px;
+            font-style: italic; color: var(--gray-500); margin-top: 4px;
+        }
+        .stats {
+            display: flex; flex-direction: column; gap: 16px;
+            margin-bottom: 0.35in; padding-bottom: 0.3in;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        .stat-row { display: flex; justify-content: space-between; align-items: baseline; }
+        .stat-label { font-size: 11px; font-weight: 500; color: var(--gray-500); }
+        .stat-value { font-size: 24px; font-weight: 600; color: var(--black); }
+        .stat-value.highlight { color: var(--accent); }
+        .transactions { flex: 1; }
+        .transactions-title {
+            font-size: 9px; font-weight: 600; letter-spacing: 0.15em;
+            text-transform: uppercase; color: var(--gray-400); margin-bottom: 12px;
+        }
+        .transaction-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 8px 0; border-bottom: 1px solid var(--gray-200);
+        }
+        .transaction-item:last-child { border-bottom: none; }
+        .transaction-address { font-size: 11px; font-weight: 500; }
+        .transaction-city { font-size: 9px; color: var(--gray-500); margin-top: 1px; }
+        .transaction-price { font-size: 12px; font-weight: 600; }
+        .transaction-item.luxury .transaction-price { color: var(--accent); }
+        .data-footer {
+            margin-top: auto; padding-top: 0.25in;
+            border-top: 1px solid var(--gray-200);
+        }
+        .contact-phone { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+        .contact-details { font-size: 9px; color: var(--gray-500); }
+        .brokerage { font-size: 8px; color: var(--gray-400); margin-top: 8px; }
+        .pictogram-side {
+            background: var(--black); padding: 0.4in;
+            display: flex; flex-direction: column;
+        }
+        .pictogram-header { text-align: center; margin-bottom: 0.25in; }
+        .pictogram-title {
+            font-size: 10px; font-weight: 600; letter-spacing: 0.25em;
+            text-transform: uppercase; color: var(--white); opacity: 0.6;
+        }
+        .pictogram-count {
+            font-family: 'Instrument Serif', serif; font-size: 14px;
+            font-style: italic; color: var(--white); opacity: 0.4; margin-top: 4px;
+        }
+        .pictogram-grid {
+            flex: 1; display: grid; grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(16, 1fr); gap: 6px; align-content: start;
+        }
+        .house-icon {
+            aspect-ratio: 1; background: var(--white); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; padding: 18%;
+        }
+        .house-icon svg { width: 100%; height: 100%; fill: var(--black); }
+        .house-icon.style-2 svg { opacity: 0.85; }
+        .house-icon.style-3 { background: #e5e5e5; }
+        .house-icon.accent { background: var(--accent); }
+        .house-icon.accent svg { fill: var(--white); }
+        .pictogram-footer {
+            text-align: center; margin-top: 0.2in; padding-top: 0.15in;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .pictogram-note { font-size: 8px; color: var(--white); opacity: 0.4; }
+        @media print {
+            body { background: white; print-color-adjust: exact; }
+            .page { box-shadow: none; margin: 0; }
+        }
+        @media screen { .page { box-shadow: 0 8px 40px rgba(0,0,0,0.15); margin: 30px auto; } }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="data-side">
+            <header class="header">
+                <!-- <img src="[LOGO]" alt="" class="logo-image"> -->
+                <div class="logo-mark">[XX]</div>
+                <div class="logo-text">[Agent Name]</div>
+            </header>
+            <section class="hero">
+                <div class="hero-eyebrow">[X Years of Excellence]</div>
+                <div class="hero-number">$[X]<span>M+</span></div>
+                <div class="hero-label">[Career Sales Volume]</div>
+            </section>
+            <div class="stats">
+                <div class="stat-row">
+                    <span class="stat-label">Homes Sold</span>
+                    <span class="stat-value highlight">[XXX]</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Average Sale Price</span>
+                    <span class="stat-value">$[X.X]M</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Last 12 Months</span>
+                    <span class="stat-value">[XX]</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Record Sale</span>
+                    <span class="stat-value">$[XX]M</span>
+                </div>
+            </div>
+            <div class="transactions">
+                <div class="transactions-title">Notable Transactions</div>
+                <!-- 5 transaction items here -->
+            </div>
+            <footer class="data-footer">
+                <div class="contact-phone">(XXX) XXX-XXXX</div>
+                <div class="contact-details">email@domain.com • website.com</div>
+                <div class="brokerage">Brokerage Name • City, State</div>
+            </footer>
+        </div>
+        <div class="pictogram-side">
+            <div class="pictogram-header">
+                <div class="pictogram-title">Homes Sold</div>
+                <div class="pictogram-count">[X,XXX] families served</div>
+            </div>
+            <div class="pictogram-grid">
+                <!-- 160 house icons (10×16 grid) -->
+                <!-- SVG: <svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg> -->
+            </div>
+            <div class="pictogram-footer">
+                <div class="pictogram-note">Each icon represents ~[X] homes sold</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+---
+
+When the user provides their Zillow URL, fetch it, extract data, and generate the complete personalized HTML.
+
+---
+
+# Template Customization Request
+
+Create an HTML artifact with the customized template that I can preview directly in this chat.
+
+## CRITICAL: Output Format
+**You MUST create a previewable HTML artifact** using Claude's artifact feature:
+- The artifact MUST be visible and renderable in the Claude UI
+- I need to see a live preview of the HTML, not just code
+- Use artifact type "text/html" so it renders as a webpage preview
+- Do NOT just paste HTML code in the chat message
+
+## Print Size Requirements
+**This template is designed for: 8.5x11 inches**
+
+You MUST ensure the output:
+- Fits exactly within 8.5x11 inches when printed
+- Does NOT exceed the boundaries of 8.5x11 inches
+- Maintains proper margins for printing (at least 0.25" / 6mm on all sides)
+- All content, images, and text must be contained within the printable area
+- Do NOT add content that would cause the document to overflow onto additional pages
+
+## Instructions
+You are helping customize an HTML marketing template called "Cannonball: The Perfect Resume" for print size: 8.5x11 inches. Please modify the HTML below by:
+1. Replacing placeholder variables (like {{variable_name}}) with the provided information
+2. Applying the brand accent color to appropriate accent elements (buttons, highlights, borders)
+3. Inserting images at appropriate locations using the provided URLs
+4. Maintaining the exact layout and structure of the template
+5. **IMPORTANT: Ensuring ALL content fits within 8.5x11 inches - do not exceed this size**
+
+## User Profile Information
+
+### Contact Details
+- First Name: Ryan
+- Last Name: Rose
+- Email Address: ryan@rosehomeslv.com
+- Phone Number: 7027475921
+
+### Business Details
+- Company/Brokerage Name: Real Broker, LLC
+- Area We Serve: Las Vegas
+- Job Title: Nevada
+- License Number: S.0185572
+- Short Bio: Hey! I'm Ryan Rose, The Ethical Vegas Realtor. I'm a local agent on a Top Producing Las Vegas Real Estate Team with globally recognized marketing strategies for selling homes faster using Social Media and old school ideas (like actually picking up the phone and calling people!). I am honored to help people in the Las Vegas area buy, sell, and invest. My approach is simple: No pressure. No BS. Only genuine guidance from start to close. I look forward to hearing from you and showing you what I do above and beyond any other agents in the city!
+
+### Branding
+
+### Social & Web Links
+- Website: https://www.rosehomeslv.com
+- YouTube Channel: https://www.youtube.com/@rosehomeslv
+- Instagram: https://www.instagram.com/rosehomeslv
+
+## Image URLs
+Use these image URLs directly in the HTML output. Insert them as `<img src="URL">` tags at the appropriate locations:
+- Professional Headshot: https://ik.imagekit.io/listingleads/_personalization/1773467947159_blob_9noJLCXIy?tr=w-300
+- Company Logo: https://ik.imagekit.io/listingleads/_personalization/1773468120260_Real_Logo_Outline_White_kHJXcZ1A9q.png?tr=w-300
+
+## HTML Template Code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Smith Sales Letter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        @page { size: 8.5in 11in; margin: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --white: #ffffff;
+            --black: #0a0a0a;
+            --gray-200: #e5e5e5;
+            --gray-400: #a0a0a0;
+            --gray-500: #777777;
+            --accent: #059669;
+        }
+        body { font-family: 'Inter', sans-serif; background: #e0e0e0; }
+        .page {
+            width: 8.5in; height: 11in; margin: 0 auto;
+            background: var(--white); display: grid;
+            grid-template-columns: 1fr 1fr; overflow: hidden;
+        }
+        .data-side {
+            padding: 0.5in 0.4in 0.5in 0.5in;
+            display: flex; flex-direction: column;
+            border-right: 1px solid var(--gray-200);
+        }
+        .header { display: flex; align-items: center; gap: 12px; margin-bottom: 0.4in; }
+        .logo-image { max-height: 40px; width: auto; }
+        .logo-mark {
+            width: 36px; height: 36px; background: var(--black);
+            border-radius: 8px; display: flex; align-items: center;
+            justify-content: center; font-weight: 700; font-size: 15px; color: var(--white);
+        }
+        .logo-text { font-family: 'Instrument Serif', serif; font-size: 18px; }
+        .hero { margin-bottom: 0.35in; }
+        .hero-eyebrow {
+            font-size: 9px; font-weight: 600; letter-spacing: 0.2em;
+            text-transform: uppercase; color: var(--gray-500); margin-bottom: 8px;
+        }
+        .hero-number {
+            font-size: 90px; font-weight: 700; line-height: 0.9;
+            letter-spacing: -0.03em; color: var(--black);
+        }
+        .hero-number span { font-weight: 300; opacity: 0.3; }
+        .hero-label {
+            font-family: 'Instrument Serif', serif; font-size: 18px;
+            font-style: italic; color: var(--gray-500); margin-top: 4px;
+        }
+        .stats {
+            display: flex; flex-direction: column; gap: 16px;
+            margin-bottom: 0.35in; padding-bottom: 0.3in;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        .stat-row { display: flex; justify-content: space-between; align-items: baseline; }
+        .stat-label { font-size: 11px; font-weight: 500; color: var(--gray-500); }
+        .stat-value { font-size: 24px; font-weight: 600; color: var(--black); }
+        .stat-value.highlight { color: var(--accent); }
+        .transactions { flex: 1; }
+        .transactions-title {
+            font-size: 9px; font-weight: 600; letter-spacing: 0.15em;
+            text-transform: uppercase; color: var(--gray-400); margin-bottom: 12px;
+        }
+        .transaction-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 8px 0; border-bottom: 1px solid var(--gray-200);
+        }
+        .transaction-item:last-child { border-bottom: none; }
+        .transaction-address { font-size: 11px; font-weight: 500; }
+        .transaction-city { font-size: 9px; color: var(--gray-500); margin-top: 1px; }
+        .transaction-price { font-size: 12px; font-weight: 600; }
+        .transaction-item.luxury .transaction-price { color: var(--accent); }
+        .data-footer {
+            margin-top: auto; padding-top: 0.25in;
+            border-top: 1px solid var(--gray-200);
+        }
+        .contact-phone { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+        .contact-details { font-size: 9px; color: var(--gray-500); }
+        .brokerage { font-size: 8px; color: var(--gray-400); margin-top: 8px; }
+        .pictogram-side {
+            background: var(--black); padding: 0.4in;
+            display: flex; flex-direction: column;
+        }
+        .pictogram-header { text-align: center; margin-bottom: 0.25in; }
+        .pictogram-title {
+            font-size: 10px; font-weight: 600; letter-spacing: 0.25em;
+            text-transform: uppercase; color: var(--white); opacity: 0.6;
+        }
+        .pictogram-count {
+            font-family: 'Instrument Serif', serif; font-size: 14px;
+            font-style: italic; color: var(--white); opacity: 0.4; margin-top: 4px;
+        }
+        .pictogram-grid {
+            flex: 1; display: grid; grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(16, 1fr); gap: 6px; align-content: start;
+        }
+        .house-icon {
+            aspect-ratio: 1; background: var(--white); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; padding: 18%;
+        }
+        .house-icon svg { width: 100%; height: 100%; fill: var(--black); }
+        .house-icon.style-2 svg { opacity: 0.85; }
+        .house-icon.style-3 { background: #e5e5e5; }
+        .house-icon.accent { background: var(--accent); }
+        .house-icon.accent svg { fill: var(--white); }
+        .pictogram-footer {
+            text-align: center; margin-top: 0.2in; padding-top: 0.15in;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .pictogram-note { font-size: 8px; color: var(--white); opacity: 0.4; }
+        @media print {
+            body { background: white; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+            .page { box-shadow: none; margin: 0; }
+        }
+        @media screen { .page { box-shadow: 0 8px 40px rgba(0,0,0,0.15); margin: 30px auto; } }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="data-side">
+            <header class="header">
+                <!-- <img src="[LOGO_URL_OR_BASE64]" alt="Tim Smith Real Estate Group" class="logo-image"> -->
+                <div class="logo-mark">TS</div>
+                <div class="logo-text">Tim Smith</div>
+            </header>
+            <section class="hero">
+                <div class="hero-eyebrow">27 Years of Excellence</div>
+                <div class="hero-number">$6<span>B+</span></div>
+                <div class="hero-label">Career Sales Volume</div>
+            </section>
+            <div class="stats">
+                <div class="stat-row">
+                    <span class="stat-label">Homes Sold</span>
+                    <span class="stat-value highlight">1,585</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Average Sale Price</span>
+                    <span class="stat-value">$3.8M</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Last 12 Months</span>
+                    <span class="stat-value">110</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Record Sale</span>
+                    <span class="stat-value">$27M</span>
+                </div>
+            </div>
+            <div class="transactions">
+                <div class="transactions-title">Notable Transactions</div>
+                <div class="transaction-item luxury">
+                    <div>
+                        <div class="transaction-address">20770 Paseo De La Rambla</div>
+                        <div class="transaction-city">Yorba Linda, CA</div>
+                    </div>
+                    <div class="transaction-price">$2,800,000</div>
+                </div>
+                <div class="transaction-item">
+                    <div>
+                        <div class="transaction-address">2195 American Ave</div>
+                        <div class="transaction-city">Costa Mesa, CA</div>
+                    </div>
+                    <div class="transaction-price">$1,670,000</div>
+                </div>
+                <div class="transaction-item">
+                    <div>
+                        <div class="transaction-address">113 Soaring Eagle</div>
+                        <div class="transaction-city">Irvine, CA</div>
+                    </div>
+                    <div class="transaction-price">$1,615,000</div>
+                </div>
+                <div class="transaction-item">
+                    <div>
+                        <div class="transaction-address">5812 Raphael Dr</div>
+                        <div class="transaction-city">Huntington Beach, CA</div>
+                    </div>
+                    <div class="transaction-price">$1,425,000</div>
+                </div>
+                <div class="transaction-item">
+                    <div>
+                        <div class="transaction-address">15331 Jasmine Ln #105</div>
+                        <div class="transaction-city">Gardena, CA</div>
+                    </div>
+                    <div class="transaction-price">$835,000</div>
+                </div>
+            </div>
+            <footer class="data-footer">
+                <div class="contact-phone">(949) 478-2295</div>
+                <div class="contact-details">tim@timsmithgroup.com • timsmithrealestategroup.com</div>
+                <div class="brokerage">Tim Smith Real Estate Group, Coldwell Banker • Newport Beach, CA</div>
+            </footer>
+        </div>
+        <div class="pictogram-side">
+            <div class="pictogram-header">
+                <div class="pictogram-title">Homes Sold</div>
+                <div class="pictogram-count">1,585 families served</div>
+            </div>
+            <div class="pictogram-grid">
+                <!-- Row 1 -->
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 2 -->
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 10 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 3 -->
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 4 -->
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 5 -->
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 6 -->
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 7 -->
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 8 -->
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 9 -->
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 10 -->
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 11 -->
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 12 -->
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 13 -->
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 14 -->
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 15 -->
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <!-- Row 16 -->
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon accent"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-2"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+                <div class="house-icon style-3"><svg viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V10"/></svg></div>
+            </div>
+            <div class="pictogram-footer">
+                <div class="pictogram-note">Each icon represents ~10 homes sold</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+## Output Requirements
+- **CREATE A PREVIEWABLE HTML ARTIFACT** - Use the artifact feature with type "text/html"
+- The artifact MUST render as a visual preview in the Claude UI (not just code)
+- The artifact should contain the complete, modified HTML document starting with <!DOCTYPE html>
+- Preserve all existing styles and structure
+- Keep the same responsive layout
+- Replace all {{placeholder}} variables with the appropriate values from above
+- **CRITICAL: Output MUST fit within 8.5x11 inches when printed - do not exceed this print size**
+
+⚠️ IMPORTANT: I need to SEE the rendered HTML preview in the artifact panel, not read code. Make sure the artifact is previewable.

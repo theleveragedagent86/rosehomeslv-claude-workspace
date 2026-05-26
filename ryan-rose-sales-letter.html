@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Letter - Relaunch Strategy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: 8.5in 11in;
+      margin: 0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 8.5in;
+      height: 11in;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+    body {
+      font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 11.5pt;
+      line-height: 1.55;
+      color: #2c2c2c;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      position: relative;
+      width: 8.5in;
+      height: 11in;
+      padding: 0.65in 1in 0.9in 1in;
+      background: #fff;
+      margin: 0 auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Logo / Header Bar */
+    .logo-area {
+      height: 72px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #222222;
+      border-radius: 4px;
+      padding: 0 22px;
+    }
+    .logo-area img.logo {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+    .logo-contact {
+      text-align: right;
+      color: #c8b98a;
+      font-size: 9pt;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+    }
+    .logo-contact strong {
+      color: #ffffff;
+      font-size: 10pt;
+      display: block;
+    }
+
+    .salutation {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 13pt;
+      margin-bottom: 0.7em;
+      color: #1a1a1a;
+    }
+    .body p {
+      margin-bottom: 0.35em;
+      text-align: left;
+    }
+    .opening-hook {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 14pt;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 0.45em;
+    }
+    .emphasis {
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+    .italic-emphasis {
+      font-style: italic;
+      color: #1a1a1a;
+    }
+    .two-paths {
+      margin: 0.65em 0;
+      padding-left: 1.2em;
+      border-left: 2px solid #e0d5c0;
+    }
+    .two-paths p {
+      margin-bottom: 0.3em;
+    }
+    .outcomes-section {
+      margin: 0.75em 0;
+      padding: 16px 20px;
+      background-color: #fafaf7;
+      border-left: 3px solid #b8a88a;
+      border-radius: 0 3px 3px 0;
+    }
+    .outcome-positive {
+      margin-bottom: 0.55em;
+    }
+    .outcome-negative {
+      color: #555555;
+    }
+    .parenthetical {
+      font-style: italic;
+      color: #777777;
+    }
+    .phone-highlight {
+      font-weight: 600;
+      color: #1a1a1a;
+      background-color: #fff3b0;
+      padding: 2px 8px;
+      border-radius: 2px;
+    }
+    .closing {
+      margin-top: 0.7em;
+      margin-bottom: 0.3em;
+    }
+    .signature-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 0;
+    }
+    .headshot-area {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 2px solid #d4cabb;
+    }
+    .headshot-area img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .signature-block {
+      line-height: 1.25;
+    }
+    .signature-block .name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 600;
+      font-size: 12pt;
+      color: #1a1a1a;
+    }
+    .signature-block .title-line {
+      font-size: 10pt;
+      color: #888888;
+      font-style: italic;
+    }
+    .signature-block .details {
+      font-size: 10pt;
+      color: #555555;
+    }
+    .signature-block .details a {
+      color: #555555;
+      text-decoration: none;
+    }
+    .ps-section {
+      margin-top: 0.7em;
+      margin-bottom: 0.9em;
+    }
+    .ps-label {
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+    .disclaimer {
+      font-size: 8pt;
+      font-style: italic;
+      color: #999999;
+      line-height: 1.4;
+      margin-top: 0.7em;
+    }
+    @media print {
+      html, body {
+        width: auto;
+        height: auto;
+        background: white;
+      }
+      .page {
+        width: auto;
+        height: 11in;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header / Logo Bar -->
+    <div class="logo-area">
+      <img class="logo" src="https://ik.imagekit.io/listingleads/_personalization/1773468120260_Real_Logo_Outline_White_kHJXcZ1A9q.png?tr=w-300" alt="Real Broker, LLC">
+      <div class="logo-contact">
+        <strong>Ryan Rose</strong>
+        702-747-5921 &nbsp;|&nbsp; ryan@rosehomeslv.com<br>
+        rosehomeslv.com &nbsp;|&nbsp; Lic. S.0185572
+      </div>
+    </div>
+
+    <p class="salutation">Dear Anita,</p>
+
+    <div class="body">
+
+      <p class="opening-hook">Your house is not the problem, Anita.</p>
+
+      <p>Last month, <span class="emphasis">19 homes</span> between <span class="emphasis">$600,000 &ndash; $700,000</span> sold right here in Spring Valley.</p>
+
+      <p>Yours should've been one of them.</p>
+
+      <p>Right now, one of two things is true:</p>
+
+      <div class="two-paths">
+        <p>You're ready to move forward with a new plan&hellip;</p>
+        <p>&hellip;or you're exhausted from the process and frustrated that your phone hasn't stopped ringing since you took your home off the market.</p>
+      </div>
+
+      <p><span class="emphasis">Either way, the next few weeks matter.</span></p>
+
+      <div class="outcomes-section">
+        <p class="outcome-positive">Homes that relaunch with a fresh strategy tend to regain momentum quickly and often sell for more than anticipated. <span class="parenthetical">(I know that's hard to believe right now.)</span></p>
+        <p class="outcome-negative">Homes that wait or don't adjust their approach usually compete against more inventory, get less attention, and absorb additional holding costs along the way.</p>
+      </div>
+
+      <p>My approach is simple: no pressure, no BS, only genuine guidance. I use globally recognized social media marketing combined with good old-fashioned communication to sell homes faster than the average agent in this city.</p>
+
+      <p>I'll reach out in the next few days from <span class="phone-highlight">702-747-5921</span> to walk through a relaunch plan with you.</p>
+
+      <p>In the meantime, feel free to call or text me directly anytime. I actually pick up.</p>
+
+      <p class="closing">Sincerely,</p>
+
+      <div class="signature-wrapper">
+        <div class="headshot-area">
+          <img src="https://ik.imagekit.io/listingleads/_personalization/1773467947159_blob_9noJLCXIy?tr=w-300" alt="Ryan Rose">
+        </div>
+        <div class="signature-block">
+          <p class="name">Ryan Rose</p>
+          <p class="title-line">The Ethical Vegas Realtor</p>
+          <p class="details">ryan@rosehomeslv.com</p>
+          <p class="details">702-747-5921</p>
+          <p class="details">Real Broker, LLC &nbsp;&middot;&nbsp; rosehomeslv.com</p>
+        </div>
+      </div>
+
+      <div class="ps-section">
+        <p><span class="ps-label">P.S.</span> You might decide to go in a different direction, and that's completely OK. Even if we don't end up working together, I'd be a terrible Realtor if I didn't at least reach out and try to be helpful. That's just how I operate.</p>
+      </div>
+
+    </div>
+
+    <p class="disclaimer">If your property is currently listed with a Real Estate Broker, please disregard this letter. It is not our intention to solicit the offerings or clients of other Real Estate Brokers. Ryan Rose &middot; Real Broker, LLC &middot; Nevada Lic. S.0185572</p>
+
+  </div>
+</body>
+</html>

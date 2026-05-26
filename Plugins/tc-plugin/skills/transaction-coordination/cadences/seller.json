@@ -1,0 +1,5 @@
+{
+  "description": "Placeholder — Seller-side transaction cadence. To be built out from a real listing transaction.",
+  "transaction_type": "seller",
+  "steps": []
+}

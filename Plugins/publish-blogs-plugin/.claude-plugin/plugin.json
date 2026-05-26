@@ -1,0 +1,11 @@
+{
+  "name": "publish-blogs",
+  "version": "2.0.0",
+  "description": "Publishes blog posts to the Lofty CMS for Rose Homes LV using a multi-agent team. A Prep Agent validates all data, a Publisher Agent enters each field with verification, and a QA Agent audits everything before publishing. Ensures every field is correct before clicking Post Now.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": ["lofty", "cms", "blog", "publishing", "real-estate", "qa"],
+  "skills": "./skills/"
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Cover Letter - Ryan Rose</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: 8.5in 11in;
+      margin: 0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 8.5in;
+      height: 11in;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+    body {
+      font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 11.5pt;
+      line-height: 1.55;
+      color: #2c2c2c;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      position: relative;
+      width: 8.5in;
+      height: 11in;
+      padding: 0in 0in 0in 0in;
+      background: #fff;
+      margin: 0 auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Dark header band */
+    .header-band {
+      background-color: #222222;
+      padding: 0.3in 0.75in;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .header-band img.logo {
+      height: 38px;
+      width: auto;
+      display: block;
+    }
+    .header-contact {
+      text-align: right;
+      color: #c8b98a;
+      font-size: 9pt;
+      line-height: 1.5;
+    }
+    .header-contact strong {
+      color: #ffffff;
+      font-size: 10pt;
+      display: block;
+    }
+
+    /* Accent rule */
+    .accent-rule {
+      height: 3px;
+      background: linear-gradient(to right, #b8a88a, #d4cabb, #b8a88a);
+      flex-shrink: 0;
+    }
+
+    /* Body content */
+    .body-content {
+      padding: 0.45in 0.85in 0.4in 0.85in;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Eyebrow */
+    .eyebrow {
+      font-size: 7.5pt;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #b8a88a;
+      margin-bottom: 0.08in;
+    }
+
+    /* Headline */
+    .headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 22pt;
+      font-weight: 400;
+      color: #222222;
+      line-height: 1.2;
+      margin-bottom: 0.06in;
+    }
+    .headline em {
+      font-style: italic;
+    }
+    .subheadline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 11pt;
+      font-style: italic;
+      color: #888;
+      margin-bottom: 0.25in;
+      padding-bottom: 0.2in;
+      border-bottom: 1px solid #e8e0d5;
+    }
+
+    /* What's enclosed box */
+    .enclosed-box {
+      background: #fafaf7;
+      border-left: 3px solid #b8a88a;
+      padding: 0.18in 0.22in;
+      margin-bottom: 0.22in;
+      border-radius: 0 3px 3px 0;
+    }
+    .enclosed-label {
+      font-size: 7.5pt;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #b8a88a;
+      margin-bottom: 0.1in;
+    }
+    .enclosed-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.07in 0.3in;
+    }
+    .enclosed-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.08in;
+      font-size: 10.5pt;
+      color: #3d3d3d;
+      line-height: 1.35;
+    }
+    .enclosed-item .bullet {
+      color: #b8a88a;
+      font-size: 9pt;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    /* Letter body */
+    .salutation {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 13pt;
+      color: #1a1a1a;
+      margin-bottom: 0.3em;
+    }
+    .letter-body p {
+      margin-bottom: 0.32em;
+      font-size: 11.5pt;
+      line-height: 1.55;
+      color: #2c2c2c;
+    }
+    .emphasis {
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    /* Closing / signature */
+    .closing {
+      margin-top: 0.5em;
+      margin-bottom: 0.25em;
+      font-size: 11.5pt;
+    }
+    .signature-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 0;
+    }
+    .headshot-area {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 2px solid #d4cabb;
+    }
+    .headshot-area img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .signature-block {
+      line-height: 1.25;
+    }
+    .signature-block .name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 600;
+      font-size: 12pt;
+      color: #1a1a1a;
+    }
+    .signature-block .title-line {
+      font-size: 10pt;
+      color: #888;
+      font-style: italic;
+    }
+    .signature-block .details {
+      font-size: 10pt;
+      color: #555;
+    }
+
+    /* Footer band */
+    .footer-band {
+      background-color: #222222;
+      padding: 0.12in 0.85in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.35in;
+      flex-shrink: 0;
+    }
+    .footer-band span {
+      font-size: 8.5pt;
+      color: #c8b98a;
+      letter-spacing: 0.3px;
+    }
+    .footer-band .divider {
+      color: #4a4a6a;
+    }
+
+    @media print {
+      html, body { background: white; }
+      .page { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <div class="header-band">
+      <img class="logo" src="https://ik.imagekit.io/listingleads/_personalization/1773468120260_Real_Logo_Outline_White_kHJXcZ1A9q.png?tr=w-300" alt="Real Broker, LLC">
+      <div class="header-contact">
+        <strong>Ryan Rose</strong>
+        702-747-5921 &nbsp;|&nbsp; ryan@rosehomeslv.com<br>
+        rosehomeslv.com &nbsp;|&nbsp; Lic. S.0185572
+      </div>
+    </div>
+    <div class="accent-rule"></div>
+
+    <!-- Body -->
+    <div class="body-content">
+
+      <div class="eyebrow">A Personal Note for You</div>
+      <h1 class="headline">A Fresh Start for Your<br><em>Home Sale</em></h1>
+      <p class="subheadline">Everything enclosed is designed specifically with your situation in mind.</p>
+
+      <!-- What's enclosed -->
+      <div class="enclosed-box">
+        <div class="enclosed-label">What's Enclosed in This Package</div>
+        <div class="enclosed-items">
+          <div class="enclosed-item"><span class="bullet">◆</span><span>A sales letter explaining exactly what I believe happened and what I'd do differently</span></div>
+          <div class="enclosed-item"><span class="bullet">◆</span><span>A relaunch roadmap showing the step-by-step plan for getting your home sold</span></div>
+          <div class="enclosed-item"><span class="bullet">◆</span><span>Real client testimonials addressing the most common seller concerns head-on</span></div>
+          <div class="enclosed-item"><span class="bullet">◆</span><span>My personal track record and what makes my approach different in this market</span></div>
+        </div>
+      </div>
+
+      <!-- Letter -->
+      <p class="salutation">Dear Anita,</p>
+
+      <div class="letter-body">
+        <p>I put this package together for you personally, because I believe your home <span class="emphasis">can sell</span> and it deserves a better shot than it got the first time.</p>
+
+        <p>Most expired listings come down to one of three things: presentation, promotion, or pricing strategy. In almost every case, at least one of those wasn't working hard enough. Inside, I've laid out my honest assessment of what typically goes wrong and what a proper relaunch looks like.</p>
+
+        <p>I'm not here to criticize whoever you worked with before. I'm here because <span class="emphasis">the Las Vegas market is moving</span>, and homes that relaunch with a clear, well-executed plan tend to sell faster and for more than the owners expected.</p>
+
+        <p>You don't have to call me today. But I'd love the chance to walk you through what I'd do for your specific home, at no cost and no pressure. Give me 20 minutes and I'll show you exactly how I'd approach it differently.</p>
+
+        <p class="closing">Sincerely,</p>
+
+        <div class="signature-wrapper">
+          <div class="headshot-area">
+            <img src="https://ik.imagekit.io/listingleads/_personalization/1773467947159_blob_9noJLCXIy?tr=w-300" alt="Ryan Rose">
+          </div>
+          <div class="signature-block">
+            <p class="name">Ryan Rose</p>
+            <p class="title-line">The Ethical Vegas Realtor</p>
+            <p class="details">702-747-5921</p>
+            <p class="details">ryan@rosehomeslv.com</p>
+            <p class="details">Real Broker, LLC</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-band">
+      <span>Ryan Rose &nbsp;&middot;&nbsp; Real Broker, LLC</span>
+      <span class="divider">|</span>
+      <span>702-747-5921 &nbsp;&middot;&nbsp; ryan@rosehomeslv.com</span>
+      <span class="divider">|</span>
+      <span>Lic. S.0185572</span>
+    </div>
+
+  </div>
+</body>
+</html>

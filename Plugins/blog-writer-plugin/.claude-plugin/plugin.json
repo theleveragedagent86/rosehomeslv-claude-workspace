@@ -1,0 +1,11 @@
+{
+  "name": "blog-writer",
+  "version": "1.0.0",
+  "description": "Creates SEO-optimized blog posts about Las Vegas real estate neighborhoods using a multi-agent orchestration system. Researches neighborhoods, organizes topics into batches, and produces blog posts with SEO packages optimized for traditional search (SEO), AI answer engines (AEO), and generative AI platforms (GEO).",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": ["blog", "seo", "real-estate", "las-vegas", "content", "neighborhoods"],
+  "skills": "./skills/"
+}

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "seller-report",
+      "runtimeExecutable": "/usr/bin/ruby",
+      "runtimeArgs": ["/Users/ryanrose/Downloads/Claude/serve.rb"],
+      "port": 8091
+    }
+  ]
+}

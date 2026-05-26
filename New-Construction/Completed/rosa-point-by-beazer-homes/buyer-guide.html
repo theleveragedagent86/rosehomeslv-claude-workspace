@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosa Point by Beazer Homes Buyer Guide | Ryan Rose</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ============================
+           PAGE & PRINT
+           ============================ */
+        @page {
+            size: letter;
+            margin: 0.6in 0.75in 0.75in 0.75in;
+        }
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .card, .plan-card, .cost-card, .cost-total, .step-card, .faq-item, table, .incentive-bar { break-inside: avoid; }
+            .section { break-inside: auto; }
+            .page-break { break-after: page; }
+        }
+        .page-break { break-after: page; }
+
+        /* ============================
+           TOKENS
+           ============================ */
+        :root {
+            --white: #ffffff;
+            --light: #f7f8fa;
+            --light-card: #f0f2f5;
+            --border: #e2e5ea;
+            --border-light: #eef0f3;
+            --text-primary: #1a1a1a;
+            --text-body: #3d3d3d;
+            --text-secondary: #6b6b6b;
+            --text-tertiary: #999999;
+            --accent: #A7122A;
+            --accent-light: rgba(167, 18, 42, 0.08);
+            --accent-muted: rgba(167, 18, 42, 0.12);
+            --radius: 8px;
+            --radius-sm: 5px;
+        }
+
+        /* ============================
+           RESET & BASE
+           ============================ */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 15px; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-body);
+            line-height: 1.7;
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ============================
+           LAYOUT
+           ============================ */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* ============================
+           SECTIONS
+           ============================ */
+        .section {
+            padding: 36px 0;
+        }
+        .section--white {
+            background: var(--white);
+        }
+        .section--alt {
+            background: var(--light);
+        }
+
+        /* ============================
+           SECTION LABEL
+           ============================ */
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .section-label::after {
+            content: '';
+            flex: 0 0 50px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        /* ============================
+           TYPOGRAPHY
+           ============================ */
+        .headline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            line-height: 1.15;
+            margin-bottom: 14px;
+        }
+        .headline--sm {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        p + p {
+            margin-top: 10px;
+        }
+        .text-accent {
+            color: var(--accent);
+        }
+
+        /* ============================
+           HERO
+           ============================ */
+        .hero {
+            background: var(--light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 0 0;
+        }
+        .hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero-bottom {
+            background: var(--accent);
+            color: #ffffff;
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-top: auto;
+        }
+        .hero-kicker {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 64px;
+            letter-spacing: 6px;
+            color: var(--text-primary);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .hero-subtitle {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 4px;
+            color: var(--text-tertiary);
+            margin-bottom: 20px;
+        }
+        .hero-tagline {
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 520px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+        .facts-bar {
+            border-top: 1px solid var(--border);
+            padding-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .fact-item {
+            text-align: center;
+        }
+        .fact-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+        }
+        .fact-label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+        }
+
+        /* ============================
+           INCENTIVE BAR
+           ============================ */
+        .incentive-bar {
+            background: var(--accent);
+            color: var(--white);
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+        }
+
+        /* ============================
+           TABLES
+           ============================ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        table th {
+            text-align: left;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            padding: 12px 14px;
+            border-bottom: 2px solid var(--accent);
+        }
+        table td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-body);
+        }
+        table tr:last-child td {
+            border-bottom: none;
+        }
+        table td:first-child {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           BUILDER CARD
+           ============================ */
+        .builder-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-top: 3px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+        .builder-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .builder-card p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .builder-feature {
+            margin-top: 6px;
+        }
+        .builder-feature strong {
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           PLAN TABLE
+           ============================ */
+        .plan-table {
+            margin-top: 20px;
+        }
+
+        /* ============================
+           PLAN CARDS (Floor Plan Images)
+           ============================ */
+        .plan-card {
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 2px solid var(--accent);
+        }
+        .plan-card-label {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 40px;
+            letter-spacing: 3px;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .plan-card-images {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .plan-card-image-wrap {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+        .plan-card-image-level {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            padding: 6px 12px;
+            background: var(--light);
+            border-bottom: 1px solid var(--border);
+        }
+        .plan-card-img {
+            width: 100%;
+            display: block;
+            max-height: 360px;
+            object-fit: contain;
+            background: #f5f2ed;
+        }
+        .plan-card-desc {
+            font-size: 13px;
+            color: var(--text-body);
+            line-height: 1.5;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .plan-card-source {
+            font-size: 11px;
+            color: var(--text-tertiary);
+            text-align: center;
+            margin-top: 4px;
+        }
+        .plan-card-source a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .plan-card-source a:hover {
+            text-decoration: underline;
+        }
+        .plan-note {
+            background: var(--accent-light);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin-top: 12px;
+            font-size: 13px;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+        .plan-note strong {
+            color: var(--accent);
+        }
+
+        /* ============================
+           COST GRID
+           ============================ */
+        .cost-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin: 24px 0;
+        }
+        .cost-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 18px 16px;
+            text-align: center;
+        }
+        .cost-card-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 26px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+        }
+        .cost-card-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .cost-total {
+            background: var(--accent-light);
+            border: 1px solid var(--accent-muted);
+            border-radius: var(--radius-sm);
+            padding: 20px 16px;
+            text-align: center;
+            grid-column: 1 / -1;
+        }
+        .cost-total-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 30px;
+            letter-spacing: 1px;
+            color: var(--accent);
+        }
+        .cost-total-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .cost-note {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+
+        /* ============================
+           COMPARE TABLE
+           ============================ */
+        .compare-table {
+            margin-top: 20px;
+        }
+        .compare-table tr.highlight td {
+            background: var(--accent-light);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           ROADMAP / TIMELINE
+           ============================ */
+        .roadmap {
+            position: relative;
+            margin-top: 24px;
+            padding-left: 48px;
+        }
+        .roadmap::before {
+            content: '';
+            position: absolute;
+            left: 18px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent), var(--border) 95%);
+        }
+        .roadmap-step {
+            position: relative;
+            padding-bottom: 16px;
+            break-inside: avoid;
+        }
+        .roadmap-step:last-child {
+            padding-bottom: 0;
+        }
+        .roadmap-node {
+            position: absolute;
+            left: -48px;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 15px;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+        }
+        .roadmap-step:last-child .roadmap-node {
+            background: var(--accent);
+            color: var(--white);
+        }
+        .roadmap-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+        .roadmap-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ============================
+           FAQ
+           ============================ */
+        .faq-item {
+            border-bottom: 1px solid var(--border-light);
+            padding: 20px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .faq-a {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 1.7;
+        }
+
+        /* ============================
+           INCENTIVE LIST
+           ============================ */
+        .incentive-list {
+            list-style: none;
+            margin: 16px 0;
+            padding: 0;
+        }
+        .incentive-list li {
+            padding: 10px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .incentive-list li::before {
+            content: '';
+            flex: 0 0 6px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            margin-top: 9px;
+        }
+
+        /* ============================
+           AMENITY LIST
+           ============================ */
+        .amenity-group {
+            margin-top: 20px;
+        }
+        .amenity-group h4 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .amenity-list {
+            list-style: none;
+            columns: 2;
+            column-gap: 24px;
+            margin: 0;
+            padding: 0;
+        }
+        .amenity-list li {
+            padding: 5px 0;
+            font-size: 14px;
+            color: var(--text-body);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.55;
+            break-inside: avoid;
+        }
+        .amenity-list li::before {
+            content: '';
+            flex: 0 0 5px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--accent);
+            margin-top: 8px;
+        }
+
+        /* ============================
+           CTA SECTION
+           ============================ */
+        .cta-headline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            letter-spacing: 2px;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .cta-sub {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        .cta-contact {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 2;
+        }
+        .cta-contact strong {
+            color: var(--text-primary);
+        }
+        .cta-contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* ============================
+           CTA LAST PAGE (FULL PAGE CENTERED)
+           ============================ */
+        .cta-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--light);
+        }
+        .cta-disclaimer {
+            font-size: 11px;
+            color: var(--text-tertiary);
+            margin-top: 32px;
+            line-height: 1.6;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================
+           PRO TIP
+           ============================ */
+        .pro-tip {
+            background: var(--accent-light);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin-top: 16px;
+            font-size: 14px;
+            color: var(--text-body);
+        }
+        .pro-tip strong {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================
+         HERO
+         ======================== -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-kicker">A Beazer Homes Community</div>
+                <h1>ROSA POINT</h1>
+                <div class="hero-subtitle">COMPLETE BUYER GUIDE</div>
+                <p class="hero-tagline">A gated townhome community in northwest Las Vegas 89106. Solar-standard new construction by Beazer Homes starting at $358,990.</p>
+                <div class="facts-bar">
+                    <div class="fact-item">
+                        <div class="fact-value">$358K+</div>
+                        <div class="fact-label">Starting</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">1,851</div>
+                        <div class="fact-label">Max Sq Ft</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">3</div>
+                        <div class="fact-label">Beds</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">2</div>
+                        <div class="fact-label">Plans</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bottom">
+            Current Incentive: Up to $20,000 in YOUR CHOICE Savings on select Rosa Point homes for Military Appreciation Month.
+        </div>
+    </header>
+    <div class="page-break"></div>
+
+    <!-- ========================
+         QUICK FACTS
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Quick Facts</div>
+            <div class="headline headline--sm">AT A GLANCE</div>
+            <table>
+                <tbody>
+                    <tr><td>Builder</td><td>Beazer Homes</td></tr>
+                    <tr><td>Location</td><td>1991 Hydrangea Place, Las Vegas, NV 89106</td></tr>
+                    <tr><td>Floor Plans</td><td>2 plans, 1,485 to 1,851 sqft</td></tr>
+                    <tr><td>Bedrooms</td><td>3</td></tr>
+                    <tr><td>Base Pricing</td><td>$358,990 to $393,990+</td></tr>
+                    <tr><td>HOA</td><td>Estimated $150 to $250/mo (confirm with Ryan)</td></tr>
+                    <tr><td>SID/LID</td><td>None expected in mature 89106 area</td></tr>
+                    <tr><td>Schools</td><td>Mabel Hoggard Elementary (magnet), West Preparatory Academy 6-12</td></tr>
+                    <tr><td>Model Home</td><td>1991 Hydrangea Place (Mon 1-6pm, Tues-Sun 10am-6pm)</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ========================
+         ABOUT
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white" style="padding-bottom: 16px;">
+        <div class="container">
+            <div class="section-label">About</div>
+            <div class="headline">A GATED TOWNHOME COMMUNITY IN 89106</div>
+            <p>Rosa Point is a small gated townhome community by Beazer Homes in northwest Las Vegas. The community sits on Hydrangea Place near North Rancho Drive and West Coran Lane, tucked into the established 89106 zip code with quick access to US-95 and I-15.</p>
+            <p>You get to choose from two two-story floor plans. The Albany at 1,485 square feet and the Cambridge at 1,851 square feet, each with three bedrooms, 2.5 baths, and a rear-entry two-car garage. Pricing starts at $358,990 on the Albany and runs to $393,990+ on the Cambridge.</p>
+            <p>What makes Rosa Point different is the standard solar package. Every home includes Beazer's Energy Series READY system with rooftop solar, ENERGY STAR certification, DOE Zero Energy Ready certification, Indoor airPLUS, and one EV pre-wire. This guide walks you through pricing, the true monthly cost, schools, the $20K incentive, and the buying process so you can decide if Rosa Point is the right fit.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         BUILDER
+         ======================== -->
+    <section class="section section--alt" style="padding-top: 20px;">
+        <div class="container">
+            <div class="section-label">Builder</div>
+            <div class="headline">ABOUT BEAZER HOMES</div>
+            <div class="builder-card">
+                <h3>BEAZER HOMES</h3>
+                <p>Beazer Homes is the only builder at Rosa Point. They are a publicly traded national homebuilder listed on the New York Stock Exchange under BZH and have been building homes in Las Vegas for decades. Their focus is energy-efficient new construction at attainable price points.</p>
+                <p>One thing that sets Beazer apart is the standard solar package. Every Rosa Point home is built to the Beazer Energy Series READY spec, which means rooftop solar, advanced insulation, and tight-envelope construction come baked in. Beazer also runs a Mortgage Choice program that lets multiple lenders compete for your loan instead of locking you into one preferred lender.</p>
+
+                <p class="builder-feature"><strong>Solar standard.</strong> Rooftop solar panels included on every Rosa Point home, no upgrade fee.</p>
+                <p class="builder-feature"><strong>Energy certifications.</strong> ENERGY STAR, DOE Zero Energy Ready, and Indoor airPLUS.</p>
+                <p class="builder-feature"><strong>EV pre-wire.</strong> One electric vehicle charging circuit pre-installed in the garage.</p>
+                <p class="builder-feature"><strong>Mortgage Choice.</strong> Multiple lenders compete for your loan, not just one preferred.</p>
+                <p class="builder-feature"><strong>1-2-10 warranty.</strong> 1 year workmanship, 2 years systems, 10 years structural.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FLOOR PLANS
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Floor Plans</div>
+            <div class="headline">PLANS AND PRICING</div>
+
+            <p>Rosa Point offers two two-story townhome plans. Both have three bedrooms, 2.5 baths, and a rear-entry two-car garage. The Cambridge adds a versatile loft and a covered balcony for extra living space.</p>
+
+            <table class="plan-table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Sq Ft</th>
+                        <th>Beds</th>
+                        <th>Baths</th>
+                        <th>Garage</th>
+                        <th>Base Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Albany</td>
+                        <td>1,485</td>
+                        <td>3</td>
+                        <td>2.5</td>
+                        <td>2-car rear</td>
+                        <td>From $358,990</td>
+                    </tr>
+                    <tr>
+                        <td>Cambridge</td>
+                        <td>1,851</td>
+                        <td>3</td>
+                        <td>2.5</td>
+                        <td>2-car rear</td>
+                        <td>From $393,990</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- ALBANY -->
+            <div class="plan-card" style="break-before: page;">
+                <div class="plan-card-label">ALBANY</div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">First Floor</div>
+                        <img class="plan-card-img" src="https://www.dropbox.com/scl/fi/tviy2o1bhknvap0fp70z4/albany-floor1-cropped.png?rlkey=mvkevojmdtzv9ukanjpftmwuo&raw=1" alt="Albany First Floor Plan">
+                    </div>
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">Second Floor</div>
+                        <img class="plan-card-img" src="https://www.dropbox.com/scl/fi/93tcmn7rwn4mahr3f0sqa/albany-floor2-cropped.png?rlkey=xiiep6v5s7sbw72u1eo4fg8q4&raw=1" alt="Albany Second Floor Plan">
+                    </div>
+                </div>
+                <p class="plan-card-desc">1,485 sqft, 3 beds, 2.5 baths, rear-entry 2-car garage. Solar standard. Beazer estimates ~$67/mo energy cost. The right-sized entry plan at Rosa Point.</p>
+                <p class="plan-card-source">Source: <a href="https://www.beazer.com/las-vegas-NV/las-vegas/rosa-point/albany" target="_blank" rel="noopener">beazer.com</a></p>
+            </div>
+
+            <!-- CAMBRIDGE -->
+            <div class="plan-card" style="break-before: page;">
+                <div class="plan-card-label">CAMBRIDGE</div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">First Floor</div>
+                        <img class="plan-card-img" src="https://www.dropbox.com/scl/fi/mbpxx2l3j838aywlf7z3e/cambridge-floor1-cropped.png?rlkey=9s08jkgly10kezjhc74lz76tx&raw=1" alt="Cambridge First Floor Plan">
+                    </div>
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">Second Floor</div>
+                        <img class="plan-card-img" src="https://www.dropbox.com/scl/fi/4laplx78p3mar7n1kngxw/cambridge-floor2-cropped.png?rlkey=gnr7fdokkwelmgnd2j5pahujp&raw=1" alt="Cambridge Second Floor Plan">
+                    </div>
+                </div>
+                <p class="plan-card-desc">1,851 sqft, 3 beds, 2.5 baths, rear-entry 2-car garage. Versatile loft and covered balcony. Solar standard. Beazer estimates ~$67/mo energy cost. The flagship plan at Rosa Point. Tour the Cambridge virtually via Matterport at my.matterport.com/show/?m=BSBrFRHZm6Y.</p>
+                <p class="plan-card-source">Source: <a href="https://www.beazer.com/las-vegas-NV/las-vegas/rosa-point/cambridge" target="_blank" rel="noopener">beazer.com</a></p>
+            </div>
+
+            <p style="margin-top: 24px; font-size: 14px; color: var(--text-secondary);"><strong>Quick move-in homes</strong> are usually ready in 30 to 60 days, come pre-built with upgrades, and are the most likely to qualify for the up to $20,000 YOUR CHOICE incentive. Ask about current QMI inventory before you tour.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         TRUE MONTHLY COST
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Monthly Cost</div>
+            <div class="headline">TRUE MONTHLY COST ESTIMATE</div>
+            <p style="margin-bottom: 8px;">Based on a $376,000 Rosa Point home with 20% down and a 6% rate over 30 years.</p>
+
+            <div class="cost-grid">
+                <div class="cost-card">
+                    <div class="cost-card-value">$1,803</div>
+                    <div class="cost-card-label">Mortgage (P&amp;I)</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$165</div>
+                    <div class="cost-card-label">Property Tax</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$200</div>
+                    <div class="cost-card-label">HOA (est.)</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$0</div>
+                    <div class="cost-card-label">SID/LID</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$110</div>
+                    <div class="cost-card-label">Insurance (est.)</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$376K</div>
+                    <div class="cost-card-label">Sample Price</div>
+                </div>
+                <div class="cost-total">
+                    <div class="cost-total-value">~$2,278/mo</div>
+                    <div class="cost-total-label">Estimated Total Per Month</div>
+                </div>
+            </div>
+
+            <p class="cost-note">These numbers are estimates only. Your actual payment will depend on your loan terms, credit score, down payment, and the final HOA assessment. Always get a real quote from a lender before you sign. Standard solar can also offset a chunk of your monthly utility bill.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         HOA / SID / LID
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Fees</div>
+            <div class="headline">HOA, SID, AND LID EXPLAINED</div>
+            <p><strong>HOA (Homeowners Association):</strong> Beazer has not published the Rosa Point HOA fee schedule online. Based on similar gated townhome communities in the valley, the monthly HOA likely lands somewhere between $150 and $250 per month and typically covers common-area landscaping, gate maintenance, and exterior building upkeep. Call the sales office at 702-329-6077 or text Ryan to get the exact monthly amount and the CC&Rs in writing before you sign.</p>
+            <p><strong>SID (Special Improvement District):</strong> A SID is a tax assessment that pays for public infrastructure like roads, sewers, and parks. SIDs show up as a separate line item on your property tax bill. The 89106 zip code is a mature, fully developed area, so a Rosa Point SID is not expected. Still, always confirm in writing with the builder before you write an offer.</p>
+            <p><strong>LID (Local Improvement District):</strong> A LID works like a SID but covers a smaller area. Ask the sales team for any disclosure of SID or LID assessments and request the recorded plat map. Ryan can also help you pull this information during your due diligence period so there are no surprises after closing.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         SCHOOLS
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Schools</div>
+            <div class="headline">SCHOOLS AND FAMILY LIFE</div>
+            <p style="margin-bottom: 8px;">Rosa Point is zoned for the Clark County School District (CCSD). Here are the assigned schools:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th>Grades</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mabel Hoggard Math &amp; Science Magnet</td>
+                        <td>PK-5</td>
+                        <td>Top 30% Nevada elementary (magnet)</td>
+                    </tr>
+                    <tr>
+                        <td>West Preparatory Academy</td>
+                        <td>6-12</td>
+                        <td>Combined campus, 2050 Sapphire Stone Ave</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 16px;">Mabel Hoggard is a CCSD magnet program with a math and science focus and ranks in the top 30% of Nevada elementary schools. West Preparatory Academy is a combined 6-12 campus. Many local families also explore charter and additional magnet options through CCSD's open enrollment, including STEAM and arts magnets in the surrounding zip codes.</p>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+    <!-- ========================
+         AMENITIES
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Amenities</div>
+            <div class="headline">AMENITIES AND LIFESTYLE</div>
+            <p>Rosa Point is a small gated townhome community, so the in-community amenity list is short. The trade-off is the location. You are minutes from the redeveloping Hylo Park district, 5 to 6 miles from the Las Vegas Strip, and 3 to 4 miles from Downtown Las Vegas.</p>
+
+            <div class="amenity-group">
+                <h4>STANDARD ON EVERY HOME</h4>
+                <ul class="amenity-list">
+                    <li>Gated entry with controlled access</li>
+                    <li>Beazer Energy Series rooftop solar</li>
+                    <li>ENERGY STAR certified construction</li>
+                    <li>DOE Zero Energy Ready certification</li>
+                    <li>Indoor airPLUS air quality system</li>
+                    <li>One EV pre-wire in the garage</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>HYLO PARK NEXT DOOR</h4>
+                <ul class="amenity-list">
+                    <li>40,000 sf Cardenas grocery (opening 2026)</li>
+                    <li>New restaurants and retail</li>
+                    <li>Hylo Park Arena ice rink</li>
+                    <li>Planned youth sports "Olympic village"</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>STRIP, DOWNTOWN, FREEWAYS</h4>
+                <ul class="amenity-list">
+                    <li>5 to 6 miles to the Las Vegas Strip</li>
+                    <li>3 to 4 miles to Downtown Las Vegas</li>
+                    <li>US-95 about half a mile east</li>
+                    <li>I-15 about 3 miles, CC-215 about 5 to 6 miles</li>
+                    <li>Harry Reid Airport about 12 miles</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>HEALTHCARE NEARBY</h4>
+                <ul class="amenity-list">
+                    <li>Valley Hospital about 3 miles</li>
+                    <li>MountainView Hospital about 6 miles</li>
+                    <li>Multiple urgent care clinics within 2 miles</li>
+                    <li>Pharmacies and labs in walking distance to retail</li>
+                </ul>
+            </div>
+
+            <p style="margin-top: 16px;">Rosa Point pulls off a useful trade-off. You get a quiet, gated residential street, but you are minutes from the Hylo Park redevelopment, downtown nightlife, and Strip employment.</p>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+    <!-- ========================
+         INCENTIVES
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Incentives</div>
+            <div class="headline">CURRENT BUYER INCENTIVES</div>
+            <p>Beazer is offering a strong builder incentive on select Rosa Point homes for Military Appreciation Month. Incentives change often, so always confirm with the sales office before you sign.</p>
+
+            <ul class="incentive-list">
+                <li><strong>Up to $20,000 in YOUR CHOICE Savings</strong> on select Rosa Point homes. Apply it to closing costs, rate buy-down, design upgrades, or a price reduction.</li>
+                <li><strong>Beazer Mortgage Choice program</strong> lets multiple lenders compete for your loan instead of locking you into one preferred lender.</li>
+                <li><strong>Rooftop solar</strong> standard on every home, no upgrade fee.</li>
+                <li><strong>One EV pre-wire</strong> standard in the garage, ready for a level 2 charger.</li>
+                <li><strong>1-2-10 warranty</strong> on workmanship, systems, and structure.</li>
+            </ul>
+
+            <p>YOUR CHOICE is one of the most flexible builder programs in the valley because you decide where the savings go. Buyers paying down rate often see the largest long-term benefit, while buyers stretched on closing cash usually take the credits up front. Verify expiration directly with the sales office.</p>
+
+            <div class="pro-tip">
+                <strong>Pro tip:</strong> The $20K YOUR CHOICE incentive is most flexible on quick move-in homes, where Beazer wants certainty on the closing date. If you can move on a built or near-finished home, you usually get the strongest version of the offer. Ask Ryan to pull the current QMI list before you tour.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         COMPARISON
+         ======================== -->
+    <section class="section section--white" style="padding-top: 24px; padding-bottom: 16px;">
+        <div class="container">
+            <div class="section-label">Comparison</div>
+            <div class="headline" style="font-size: 28px; margin-bottom: 12px;">HOW ROSA POINT COMPARES</div>
+
+            <table class="compare-table" style="font-size: 13px;">
+                <thead>
+                    <tr>
+                        <th>Community</th>
+                        <th>Builder</th>
+                        <th>Type</th>
+                        <th>Starting</th>
+                        <th>HOA</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <td>Rosa Point</td>
+                        <td>Beazer</td>
+                        <td>Gated TH</td>
+                        <td>$358,990</td>
+                        <td>~$150-$250</td>
+                        <td>Solar standard, EV pre-wire</td>
+                    </tr>
+                    <tr>
+                        <td>Rosa by Beazer</td>
+                        <td>Beazer</td>
+                        <td>Single-family</td>
+                        <td>Mid-$400s</td>
+                        <td>N/A</td>
+                        <td>Adjacent SFR option</td>
+                    </tr>
+                    <tr>
+                        <td>Arcadia</td>
+                        <td>Lennar</td>
+                        <td>Gated TH</td>
+                        <td>$307K-$355K</td>
+                        <td>$129-$139</td>
+                        <td>Recently sold out</td>
+                    </tr>
+                    <tr>
+                        <td>Watercolor</td>
+                        <td>Touchstone</td>
+                        <td>Gated mixed</td>
+                        <td>From $303,990</td>
+                        <td>$188</td>
+                        <td>Pool, dog park, cable, internet</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 16px; font-size: 14px;"><strong style="color: var(--text-primary);">Where Rosa Point wins:</strong> standard solar on every home, the strongest current incentive at $20K YOUR CHOICE, gated townhome footprint with low maintenance, and a real foothold in 89106 next to the Hylo Park redevelopment.</p>
+            <p style="font-size: 14px;"><strong style="color: var(--text-primary);">Where it trails:</strong> the HOA is not yet published, no in-community pool or clubhouse, and pricing runs higher than Watercolor and the now-sold-out Arcadia. If a single-family home is the goal, Rosa by Beazer next door is a step up in size and price.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         BUYING PROCESS
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Process</div>
+            <div class="headline">THE BUYING PROCESS: 9 STEPS</div>
+
+            <div class="roadmap">
+                <div class="roadmap-step">
+                    <div class="roadmap-node">01</div>
+                    <div class="roadmap-title">CHOOSE BUILDER AND PLAN</div>
+                    <div class="roadmap-desc">Walk the model home at 1991 Hydrangea Place and pick between the Albany and Cambridge layouts.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">02</div>
+                    <div class="roadmap-title">SIGN PURCHASE AGREEMENT</div>
+                    <div class="roadmap-desc">Lock in your homesite and plan with a signed contract and earnest money deposit. Have your agent review every page first.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">03</div>
+                    <div class="roadmap-title">SECURE FINANCING</div>
+                    <div class="roadmap-desc">Use Beazer's Mortgage Choice program to compare multiple lenders. The $20K YOUR CHOICE incentive can be applied to a rate buy-down, closing costs, or price reduction.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">04</div>
+                    <div class="roadmap-title">DESIGN STUDIO APPOINTMENT</div>
+                    <div class="roadmap-desc">Pick paint, flooring, cabinets, and finishes at the Beazer design studio. Bring your wish list, a budget, and a pair of comfortable shoes. Sessions can run several hours.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">05</div>
+                    <div class="roadmap-title">PRE-DRYWALL INSPECTION</div>
+                    <div class="roadmap-desc">A pre-drywall inspection runs about $200 to $400 and is highly recommended. It catches framing, plumbing, and electrical issues while everything is still visible.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">06</div>
+                    <div class="roadmap-title">CONSTRUCTION UPDATES</div>
+                    <div class="roadmap-desc">Your home is built over several months. Expect updates at framing, drywall, and finish stages. Stay in touch with your construction manager.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">07</div>
+                    <div class="roadmap-title">BLUE TAPE WALKTHROUGH</div>
+                    <div class="roadmap-desc">Walk the home with the builder before closing. Tape any cosmetic issues like paint touch-ups, scratches, or trim gaps so they get fixed.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">08</div>
+                    <div class="roadmap-title">FINAL INSPECTION</div>
+                    <div class="roadmap-desc">A third-party final inspection runs $310 to $730 and is worth every penny. Do not skip this step. It catches issues the builder may miss.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">09</div>
+                    <div class="roadmap-title">CLOSING DAY</div>
+                    <div class="roadmap-desc">Sign your final paperwork, get your keys, and welcome to Rosa Point. Ryan will walk through final settlement so there are no surprises.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FAQ
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">FAQ</div>
+            <div class="headline">FREQUENTLY ASKED QUESTIONS</div>
+
+            <div class="faq-item">
+                <div class="faq-q">Do I need my own real estate agent at Rosa Point?</div>
+                <div class="faq-a">Yes, and it costs you nothing. The builder pays the agent's commission. The on-site sales rep works for Beazer Homes, not for you. Having your own agent gives you someone whose only job is to look out for your interests during contract review, inspections, and negotiations on extras and incentives.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Can I negotiate with Beazer?</div>
+                <div class="faq-a">Builders rarely lower the base price because it affects comps for the rest of the community. You can usually negotiate for closing cost credits, design upgrades, or rate buy-downs. The current $20K YOUR CHOICE incentive is already strong, so always ask what is on the table when you visit and whether it can be combined with quick move-in pricing.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What upgrades are worth it at Rosa Point?</div>
+                <div class="faq-a">Solar, ENERGY STAR construction, and Indoor airPLUS are already standard, so you are not paying extra for those. The upgrades that still make sense are anything structural like extra storage or built-ins, plus items that are hard to add later such as garage cabinets and second EV charging circuits. Cosmetic items like paint and lighting can usually be done after closing for less.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">How long does it take to build a Beazer townhome?</div>
+                <div class="faq-a">Most new construction at Rosa Point takes 6 to 9 months from contract to close. Quick move-in homes already under construction can be ready in 30 to 60 days, which is also where the strongest incentives often sit.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What is YOUR CHOICE Savings?</div>
+                <div class="faq-a">YOUR CHOICE is Beazer's flexible incentive program. Instead of locking the savings into one bucket, you decide how to apply it. The most common options are rate buy-down, closing cost credits, design center upgrades, or a price reduction. Ask Ryan to model each scenario before you sign so you can see which one saves you the most over time.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What does the Beazer 1-2-10 warranty cover?</div>
+                <div class="faq-a">Most new homes in Nevada come with a 1-2-10 warranty: 1 year on workmanship, 2 years on systems like plumbing and electrical, and 10 years on major structural components. Ask Beazer for the exact warranty document so you know what is covered and what is excluded.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Can I use VA or FHA at Rosa Point?</div>
+                <div class="faq-a">Yes. VA and FHA loans are typically accepted on Beazer Homes, and the YOUR CHOICE incentive can usually be paired with both. The exact terms can vary by loan type, so ask the lender how the incentive stacks with VA or FHA before you commit.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What if construction is delayed?</div>
+                <div class="faq-a">Delays happen, especially with weather or supply chain issues. Your purchase agreement will spell out how delays are handled and what your options are. Read this section carefully and ask your agent to explain anything that is unclear before you sign.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Is the HOA at Rosa Point too high?</div>
+                <div class="faq-a">The Rosa Point HOA has not been published, but a $150 to $250 monthly estimate is in line with similar gated townhome communities in the Las Vegas valley. The HOA typically covers gate maintenance, common-area landscaping, and exterior building upkeep, which is meaningful when you live in a townhome. Ask for the exact figure and the CC&Rs in writing before you sign.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What is Hylo Park and why does it matter?</div>
+                <div class="faq-a">Hylo Park is a major mixed-use redevelopment right next to Rosa Point. The first phases include a 40,000 square foot Cardenas grocery store opening in 2026, restaurants, and the Hylo Park Arena ice rink. There is also a planned youth sports facility being marketed as an "Olympic village" that will draw tournaments. As Hylo Park comes online, walkability and property values in 89106 should both move in your favor.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         CTA (LAST PAGE - CENTERED)
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="cta-page">
+        <div class="container">
+            <div class="cta-headline">READY TO <span class="text-accent">EXPLORE ROSA POINT</span>?</div>
+            <p class="cta-sub">Buying new construction is one of the biggest financial decisions you will make. The on-site sales rep works for Beazer. I work for you. Reach out and I will help you tour the model, compare quick move-ins, run the YOUR CHOICE math, and review the contract before you sign. No pressure, just real answers.</p>
+            <div class="cta-contact">
+                <strong>Ryan Rose</strong><br>
+                Real Broker LLC | New Construction Specialist<br>
+                702-747-5921 | ryan@rosehomeslv.com<br>
+                rosehomeslv.com
+            </div>
+            <p class="cta-disclaimer">This guide is for informational purposes only. Pricing, incentives, availability, and community details are subject to change without notice. Always verify all information directly with the builder and your real estate professional. Source: Beazer Homes.</p>
+        </div>
+    </section>
+
+</body>
+</html>

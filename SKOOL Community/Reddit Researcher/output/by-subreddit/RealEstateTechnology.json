@@ -1,0 +1,226 @@
+{
+  "subreddit": "r/RealEstateTechnology",
+  "research_metadata": {
+    "date_searched": "2026-03-08",
+    "subreddit_size": "~19K members",
+    "subreddit_description": "Trends and innovations in technology for real estate: SaaS tools, mobile apps, home devices, proptech. Focused on brokers, agents, investors, and proptech entrepreneurs.",
+    "search_method": "WebSearch across 30+ keyword combinations spanning Tier 1 (AI tool, automate, automation, ChatGPT, best AI, AI listing, AI lead generation, AI CRM), Tier 2 (software for agents, tool for marketing, streamline workflow, virtual assistant, proptech AI), and Tier 3 (anyone use, what do you use, struggling with, wish there was, recommendations). Also attempted site:reddit.com operator, Reddit JSON API, subreddit mirror sites, and GigaBrain aggregator.",
+    "indexing_limitation": "IMPORTANT: r/RealEstateTechnology posts are NOT indexed by major search engines. All site:reddit.com queries returned zero results. Direct subreddit browsing tools (WebFetch, browser MCP, Bash/curl) were permission-denied. The posts below were reconstructed from fragments surfaced across multiple third-party search result summaries (GigaBrain, thehiveindex.com, readtomato.com, reddit.positiveclimb.co.uk, and web search snippet previews). URLs could not be verified and are marked as approximate. For full thread content, direct subreddit browsing is required.",
+    "total_qualifying_posts_found": 7,
+    "total_task_categories_covered": 5,
+    "confidence_level": "LOW - posts identified from indirect references only; URLs are reconstructed estimates"
+  },
+  "qualifying_posts": [
+    {
+      "post_id": "ai-crm-for-agents-email-templates",
+      "subreddit": "r/RealEstateTechnology",
+      "title": "[Estimated] I built a new CRM for real estate agents with AI-generated email templates",
+      "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/i_built_a_new_crm_for_real_estate_agents/",
+      "date_posted": "2024-2025 (estimated)",
+      "source_type": "original_post",
+      "post_body_summary": "A developer shared their new CRM built specifically for real estate agents. The tool aims to be a cost-effective alternative to existing CRMs, featuring AI-generated email templates that make messages sound personable and professional. Includes a client database with client journey tracking, an emails page where agents describe what they want to send and AI generates the template, and a QR code system for open house lead capture.",
+      "specific_task": "AI-powered email generation for client communications, open house lead capture via QR codes, and client journey tracking within a CRM",
+      "task_normalized": "crm_database",
+      "tools_mentioned": [],
+      "pain_point": "Existing CRMs are too expensive and email writing is time-consuming; agents need cost-effective AI-powered communication tools that sound human",
+      "engagement": {
+        "upvotes_approx": null,
+        "comments_approx": null,
+        "sentiment": "curious"
+      },
+      "notable_replies": [
+        "Referenced across multiple third-party aggregator summaries of r/RealEstateTechnology, suggesting meaningful engagement"
+      ],
+      "me_too_count": 0,
+      "data_quality_note": "Post existence confirmed across 3+ independent search result summaries but direct URL and engagement metrics unavailable"
+    },
+    {
+      "post_id": "county-recorder-document-ai-scraping",
+      "subreddit": "r/RealEstateTechnology",
+      "title": "[Estimated] Data company scraping county recorder documents at scale with AI processing",
+      "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/data_company_scraping_county_recorder/",
+      "date_posted": "2024-2025 (estimated)",
+      "source_type": "original_post",
+      "post_body_summary": "A data company introduced their service that scrapes actual document images directly from county recorder websites at scale and processes them with AI. Unlike traditional providers like FirstAmerican and CoreLogic who rely on county indexes, this company captures raw documents and extracts deeper insights including signatures, loan terms, and hidden ownership connections.",
+      "specific_task": "AI-powered document scraping and analysis from county recorder websites to reveal hidden ownerships, loan exposures, and portfolio connections by matching actual signatures on documents",
+      "task_normalized": "market_analysis",
+      "tools_mentioned": ["FirstAmerican (competitor)", "CoreLogic (competitor)"],
+      "pain_point": "Traditional data providers only surface county index data, missing deeper insights like signature matching, hidden entity connections, and full loan terms embedded in raw documents",
+      "engagement": {
+        "upvotes_approx": null,
+        "comments_approx": null,
+        "sentiment": "curious"
+      },
+      "notable_replies": [
+        "Found most useful by private lenders who track investors and builders hiding behind multiple distinct ownership entities"
+      ],
+      "me_too_count": 0,
+      "data_quality_note": "Post existence confirmed across 3+ independent search result summaries including reddit.positiveclimb.co.uk mirror"
+    },
+    {
+      "post_id": "ai-deal-research-contracts-comps",
+      "subreddit": "r/RealEstateTechnology",
+      "title": "[Estimated] AI that automates deal research, contracts, and comp analysis during due diligence",
+      "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/ai_automates_deal_research/",
+      "date_posted": "2024-2025 (estimated)",
+      "source_type": "original_post",
+      "post_body_summary": "A post highlighted an AI solution designed to automate the real estate pipeline for agents and small investment teams. The AI has its own computer interface and can take actions in the real world, handling tasks from creating contracts to conducting comp research on an area during due diligence.",
+      "specific_task": "End-to-end deal pipeline automation: contract creation, comp research, due diligence analysis, follow-ups, and scheduling",
+      "task_normalized": "transaction_mgmt",
+      "tools_mentioned": [],
+      "pain_point": "Agents and small investment teams spend excessive time on repetitive pipeline tasks like contract creation, comp research, and follow-ups that could be automated",
+      "engagement": {
+        "upvotes_approx": null,
+        "comments_approx": null,
+        "sentiment": "curious"
+      },
+      "notable_replies": [
+        "Referenced in GigaBrain aggregation of 69 relevant comments from 10 discussions about real estate AI"
+      ],
+      "me_too_count": 0,
+      "data_quality_note": "Post existence confirmed via GigaBrain aggregator which found it among 69 relevant comments from real estate AI discussions"
+    },
+    {
+      "post_id": "arv-as-is-value-ai-estimation",
+      "subreddit": "r/RealEstateTechnology",
+      "title": "[Estimated] AI tool for estimating property ARV and as-is value (Southern California focused)",
+      "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/ai_arv_estimation/",
+      "date_posted": "2024-2025 (estimated)",
+      "source_type": "original_post",
+      "post_body_summary": "A discussion about AI tools that estimate property After Repair Value (ARV) and as-is value, with particular interest from investors in the Southern California area. The post explores whether AI-driven valuations can replace or supplement traditional appraisal methods.",
+      "specific_task": "AI-powered property valuation estimating ARV (After Repair Value) and as-is value for investment properties",
+      "task_normalized": "market_analysis",
+      "tools_mentioned": ["PropStream", "REIPro", "Zillow Zestimate"],
+      "pain_point": "Getting accurate property valuations (both as-is and ARV) quickly without expensive manual appraisals, especially in high-appreciation markets like Southern California",
+      "engagement": {
+        "upvotes_approx": null,
+        "comments_approx": null,
+        "sentiment": "curious"
+      },
+      "notable_replies": [
+        "Discussion included mentions of PropStream, REIPro, and Zillow's Zestimate as existing AI valuation solutions"
+      ],
+      "me_too_count": 0,
+      "data_quality_note": "Referenced in search result summary from thehiveindex.com aggregation of r/RealEstateTechnology content"
+    },
+    {
+      "post_id": "real-estate-analysis-platform-feedback",
+      "subreddit": "r/RealEstateTechnology",
+      "title": "[Estimated] Real estate analysis platform completed - looking for feedback",
+      "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/real_estate_analysis_platform/",
+      "date_posted": "2024-2025 (estimated)",
+      "source_type": "original_post",
+      "post_body_summary": "A developer posted about completing a real estate analysis platform and was seeking community feedback. The platform included a waitlist for official release and appeared to offer data-driven investment analysis capabilities.",
+      "specific_task": "Real estate investment analysis platform for data-driven property evaluation",
+      "task_normalized": "market_analysis",
+      "tools_mentioned": [],
+      "pain_point": "Need for accessible, comprehensive real estate analysis tools that consolidate property and market data for investment decisions",
+      "engagement": {
+        "upvotes_approx": null,
+        "comments_approx": null,
+        "sentiment": "curious"
+      },
+      "notable_replies": [
+        "Platform had a waitlist for official release, suggesting early-stage product seeking market validation"
+      ],
+      "me_too_count": 0,
+      "data_quality_note": "Referenced in aggregated search result summary of r/RealEstateTechnology posts"
+    },
+    {
+      "post_id": "feasi-site-feasibility-tool",
+      "subreddit": "r/RealEstateTechnology",
+      "title": "[Estimated] Feasi - site feasibility tool for developers, planners, and architects",
+      "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/feasi_site_feasibility_tool/",
+      "date_posted": "2024-2025 (estimated)",
+      "source_type": "original_post",
+      "post_body_summary": "A post about Feasi, a tool designed to help developers, planners, and architects determine site feasibility. The tool pulls in zoning data, environmental constraints, property data, and more into a single platform to quickly assess whether a site is worth pursuing.",
+      "specific_task": "Automated site feasibility analysis combining zoning, environmental constraints, and property data for development assessment",
+      "task_normalized": "market_analysis",
+      "tools_mentioned": ["Feasi"],
+      "pain_point": "Developers, planners, and architects waste time manually gathering and analyzing scattered data (zoning, environmental, property) to determine if a site is viable for development",
+      "engagement": {
+        "upvotes_approx": null,
+        "comments_approx": null,
+        "sentiment": "curious"
+      },
+      "notable_replies": [
+        "Tool consolidates zoning, environmental, and property data in one place to streamline site evaluation"
+      ],
+      "me_too_count": 0,
+      "data_quality_note": "Referenced in aggregated search result summary of r/RealEstateTechnology posts"
+    },
+    {
+      "post_id": "airbnb-data-api-investment-insights",
+      "subreddit": "r/RealEstateTechnology",
+      "title": "[Estimated] Airbnb data API for investment insights by city, zip code, or address",
+      "url": "https://www.reddit.com/r/RealEstateTechnology/comments/UNKNOWN/airbnb_data_api_investment/",
+      "date_posted": "2024-2025 (estimated)",
+      "source_type": "original_post",
+      "post_body_summary": "A discussion about Airbnb data APIs that allow users to pull investment insights by city, zip code, or address. The tool is positioned more for developers, analysts, or teams who want to integrate real estate intelligence into their own dashboards or apps.",
+      "specific_task": "Short-term rental data analysis API for real estate investment decisions, with granular geographic filtering",
+      "task_normalized": "market_analysis",
+      "tools_mentioned": ["Airbnb API (third-party)"],
+      "pain_point": "Investors and analysts need programmatic access to short-term rental performance data (occupancy, revenue, ADR) at granular geographic levels to make informed investment decisions",
+      "engagement": {
+        "upvotes_approx": null,
+        "comments_approx": null,
+        "sentiment": "curious"
+      },
+      "notable_replies": [
+        "Tool described as built more for developers, analysts, or teams who want to integrate real estate intelligence into their own dashboards"
+      ],
+      "me_too_count": 0,
+      "data_quality_note": "Referenced in aggregated search result summary of r/RealEstateTechnology posts"
+    }
+  ],
+  "task_category_summary": {
+    "market_analysis": {
+      "count": 4,
+      "description": "AI-powered property valuation (ARV/as-is), county document analysis, site feasibility assessment, and STR investment data analysis",
+      "posts": ["county-recorder-document-ai-scraping", "arv-as-is-value-ai-estimation", "real-estate-analysis-platform-feedback", "feasi-site-feasibility-tool"]
+    },
+    "crm_database": {
+      "count": 1,
+      "description": "AI-powered CRM with email template generation, client journey tracking, and open house QR code lead capture",
+      "posts": ["ai-crm-for-agents-email-templates"]
+    },
+    "transaction_mgmt": {
+      "count": 1,
+      "description": "End-to-end deal pipeline automation including contract creation, comp research, and due diligence",
+      "posts": ["ai-deal-research-contracts-comps"]
+    },
+    "lead_generation": {
+      "count": 1,
+      "description": "Short-term rental investment data API for identifying investment opportunities",
+      "posts": ["airbnb-data-api-investment-insights"]
+    },
+    "content_creation": {
+      "count": 0,
+      "description": "No standalone content creation posts identified (email generation was bundled within CRM post)"
+    }
+  },
+  "subreddit_characteristics": {
+    "audience": "Primarily real estate investors, brokers, agents, and proptech entrepreneurs. Very tech-savvy audience comfortable with APIs, SaaS tools, and developer-focused solutions.",
+    "content_pattern": "Dominated by builder/developer posts showcasing new proptech tools and seeking feedback. Less organic 'help me find a tool' discussion compared to r/realestate or r/realtors. Many posts are from entrepreneurs building tools rather than agents seeking them.",
+    "ai_discussion_volume": "LOW - While the subreddit exists and is active (~19K members), the volume of AI-specific workflow automation discussions is limited. Most tool discussions center on general proptech (data APIs, feasibility tools, CRMs) with AI as a feature rather than the core topic.",
+    "vendor_vs_organic_ratio": "Heavily skewed toward vendor/builder posts. The subreddit functions partly as a proptech product validation community. Genuine agent-side demand signals (I need X, anyone use Y) are harder to find here compared to practitioner-focused subs.",
+    "search_indexing_issue": "CRITICAL: Reddit posts from r/RealEstateTechnology are essentially invisible to external search engines. Zero posts were returned by site:reddit.com operator across 10+ attempts. This is likely due to the subreddit's smaller size (~19K), potentially lower activity levels, or Reddit's robots.txt/indexing policies for smaller communities."
+  },
+  "research_limitations": [
+    "No direct Reddit post URLs could be verified - all posts reconstructed from third-party references",
+    "Engagement metrics (upvotes, comments, me_too_count) could not be determined for any post",
+    "Post dates are estimated ranges, not exact dates",
+    "WebFetch, browser tools, and Bash/curl were all permission-denied, preventing direct subreddit access",
+    "site:reddit.com operator returned zero results across all queries for this subreddit",
+    "Cannot confirm whether posts are still active or have been deleted",
+    "Comment-level demand signals ('I need this too', '+1', 'following') could not be assessed",
+    "Some identified posts may be vendor/self-promotion rather than organic demand signals"
+  ],
+  "recommendations_for_follow_up": [
+    "Manually browse r/RealEstateTechnology on Reddit to verify these posts and gather engagement metrics",
+    "Use Reddit's internal search function which has access to non-indexed content",
+    "Consider using the Reddit API with proper authentication for comprehensive subreddit scraping",
+    "This subreddit may be better used as a product validation channel than a demand signal source",
+    "For stronger AI-workflow demand signals from RE professionals, r/realtors and r/realestate may yield higher volumes of organic need-based posts"
+  ]
+}

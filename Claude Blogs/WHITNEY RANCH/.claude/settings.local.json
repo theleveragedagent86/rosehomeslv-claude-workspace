@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 publish-blogs-plugin/publish.py \"WHITNEY RANCH\" --yes)",
+      "Bash(python3 publish-blogs-plugin/publish.py \"WHITNEY RANCH\" --posts 2-55 --yes)"
+    ]
+  }
+}

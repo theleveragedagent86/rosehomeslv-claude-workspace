@@ -1,0 +1,8 @@
+=== Copy Block 1 ===
+Video Title
+
+=== Copy Block 2 ===
+Video Description
+
+=== Copy Block 3 ===
+Hashtags

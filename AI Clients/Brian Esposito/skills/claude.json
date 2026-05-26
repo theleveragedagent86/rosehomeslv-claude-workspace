@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "playwright-instagram": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--user-data-dir",
+        "~/.cache/playwright-instagram-profile"
+      ]
+    }
+  },
+  "skills": {
+    "lender-comments": {
+      "name": "lender-comments",
+      "description": "Use when someone asks to engage on competitor lender Instagram posts, run the daily IG engagement routine, comment on Vegas mortgage loan officer posts, or execute the value-provided marketing routine.",
+      "path": "~/.claude/skills/lender-comments/SKILL.md",
+      "model": "sonnet",
+      "disableModelInvocation": true,
+      "supportingFiles": [
+        "~/.claude/skills/lender-comments/CLAUDE.md",
+        "~/.claude/skills/lender-comments/comment-guidelines.md",
+        "~/.claude/skills/lender-comments/target-accounts.md",
+        "~/.claude/skills/lender-comments/daily-schedule-prompt.md",
+        "~/.claude/skills/lender-comments/Playwright_MCP_Setup.md"
+      ]
+    },
+    "lender-research": {
+      "name": "lender-research",
+      "description": "Use when someone asks to research competitor mortgage lenders, find new Las Vegas loan officers to engage with, refresh the target accounts list, or discover Vegas mortgage LOs on Instagram.",
+      "path": "~/.claude/skills/lender-research/SKILL.md",
+      "model": "sonnet",
+      "disableModelInvocation": true,
+      "supportingFiles": [
+        "~/.claude/skills/lender-research/CLAUDE.md"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ig-research",
+  "version": "1.0.0",
+  "description": "Researches and curates a list of active Vegas-specific Instagram accounts for community engagement. Uses web search to find popular local accounts.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": ["instagram", "research", "las-vegas", "social-media", "engagement"],
+  "skills": "./skills/"
+}

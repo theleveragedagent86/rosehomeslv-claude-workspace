@@ -1,0 +1,11 @@
+{
+  "name": "transaction-coordination",
+  "version": "1.0.0",
+  "description": "AI transaction coordinator for buyer and seller deals. Tracks transactions by property address, generates TC emails from templates, manages inspection/escrow/title milestones, and inserts to-do items into the daily checklist. Supports new construction, resale, and listing-side transactions.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": ["real-estate", "transaction", "tc", "new-construction", "resale", "seller", "buyer", "escrow", "inspection", "templates"],
+  "skills": "./skills/"
+}

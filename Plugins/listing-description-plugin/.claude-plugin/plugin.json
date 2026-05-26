@@ -1,0 +1,11 @@
+{
+  "name": "listing-description",
+  "version": "1.0.0",
+  "description": "Generates publication-ready MLS listing descriptions in a consistent voice. Stays under 250 words, leads with the most compelling features, and outputs copy ready to paste directly into MLS.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": ["real-estate", "mls", "listing", "copywriting", "description"],
+  "skills": "./skills/"
+}

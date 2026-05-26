@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #10133B;
+      --blue: #3B82F6;
+      --white: #FFFFFF;
+      --off-white: #FAF9F5;
+      --text: #1a1a1a;
+      --text-light: #666;
+      --text-muted: rgba(255,255,255,0.65);
+      --border: #E0E0E0;
+      --highlight: #DBEAFE;
+      --max-w: 1120px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    /* ===== AGENT HEADER ===== */
+    .agent-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 24px 0;
+    }
+
+    .agent-header .agent-photo {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #E5E3DF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 22px;
+      color: var(--text);
+      overflow: hidden;
+    }
+
+    .agent-header .agent-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .agent-header .agent-name {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.125em;
+    }
+
+    /* ===== STICKY NAV BAR ===== */
+    .sticky-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sticky-bar-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      padding: 0 16px;
+    }
+
+    .sticky-bar .section-label {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.125em;
+      flex: 2;
+    }
+
+    .sticky-bar .address-label {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text);
+      text-align: center;
+      flex: 3;
+    }
+
+    .sticky-bar .agent-label {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.125em;
+      text-align: right;
+      flex: 2;
+    }
+
+    .blue-bar {
+      height: 6px;
+      background: var(--blue);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 60px 0 80px;
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .hero-image {
+      flex: 1;
+      max-width: 500px;
+      aspect-ratio: 4/3;
+      background: #E5E3DF;
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+      font-size: 14px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text .label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text);
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--text);
+    }
+
+    /* ===== SECTION TITLES (white bg) ===== */
+    .section-title-white {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 32px;
+    }
+
+    /* ===== SECTION TITLES (dark bg) ===== */
+    .section-title-dark {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 32px;
+    }
+
+    /* ===== EXECUTIVE SUMMARY ===== */
+    .executive-summary {
+      padding: 80px 0;
+    }
+
+    .executive-summary p {
+      font-size: 22px;
+      line-height: 1.7;
+      color: var(--text-light);
+    }
+
+    .executive-summary .highlight {
+      color: var(--text);
+      background: var(--highlight);
+      padding: 2px 4px;
+      font-weight: 500;
+    }
+
+    /* ===== DARK SECTIONS ===== */
+    .dark-section {
+      background: var(--navy);
+      color: var(--white);
+      padding: 80px 0;
+    }
+
+    .dark-section p {
+      font-size: 22px;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+
+    .dark-section .highlight {
+      color: var(--white);
+      background: rgba(59, 130, 246, 0.3);
+      padding: 2px 6px;
+      font-weight: 500;
+    }
+
+    /* ===== ONLINE PERFORMANCE ===== */
+    .performance-layout {
+      display: flex;
+      gap: 60px;
+      align-items: flex-start;
+    }
+
+    .total-views {
+      flex-shrink: 0;
+    }
+
+    .total-views .number {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--white);
+    }
+
+    .total-views .label {
+      font-size: 14px;
+      color: var(--blue);
+      margin-top: 8px;
+    }
+
+    .platform-grid {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .platform-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+    }
+
+    .platform-item .icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .platform-item .name {
+      flex: 1;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--white);
+    }
+
+    .platform-item .count {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    /* ===== SHOWINGS (white bg) ===== */
+    .showings-section {
+      padding: 80px 0;
+    }
+
+    .showings-text {
+      font-size: 22px;
+      line-height: 1.7;
+      color: var(--text-light);
+    }
+
+    .showings-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+    }
+
+    .showings-table th {
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-light);
+      padding: 12px 16px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .showings-table td {
+      padding: 14px 16px;
+      font-size: 15px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .showings-table .feedback {
+      font-size: 13px;
+      color: var(--text-light);
+      font-style: italic;
+    }
+
+    /* ===== LOCAL MARKET ANALYSIS ===== */
+    .comps-section {
+      background: var(--off-white);
+      padding: 60px 0;
+    }
+
+    .comps-layout {
+      display: flex;
+      gap: 32px;
+    }
+
+    .comps-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 420px;
+    }
+
+    .comp-card {
+      display: flex;
+      gap: 16px;
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .comp-card .thumb {
+      width: 120px;
+      height: 120px;
+      background: #E5E3DF;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: var(--text-light);
+    }
+
+    .comp-card .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .comp-card .details {
+      padding: 12px 12px 12px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .comp-card .price-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 4px;
+    }
+
+    .comp-card .price {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .comp-card .status {
+      font-size: 11px;
+      color: var(--text-light);
+    }
+
+    .comp-card .address {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .comp-card .city {
+      font-size: 12px;
+      color: var(--text-light);
+      margin-bottom: 8px;
+    }
+
+    .comp-card .view-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text);
+      text-decoration: none;
+      background: #F5F5F5;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .map-area {
+      flex: 1;
+      min-height: 500px;
+      background: #E8E8E8;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+      font-size: 14px;
+    }
+
+    /* ===== LISTING ACTIVITIES ===== */
+    .activities-section {
+      padding: 80px 0 60px;
+    }
+
+    .activities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 8px;
+    }
+
+    .activity-card {
+      text-align: center;
+      padding: 32px 24px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .activity-card .activity-number {
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .activity-card .activity-label {
+      font-size: 14px;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    .activity-card .activity-detail {
+      font-size: 12px;
+      color: var(--text-light);
+      margin-top: 4px;
+    }
+
+    .activities-empty {
+      font-size: 16px;
+      color: var(--text-light);
+      padding: 40px 0;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .footer .updated {
+      font-size: 13px;
+      color: var(--text-light);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 480px) {
+      .hero-content { flex-direction: column; gap: 32px; }
+      .hero-text h1 { font-size: 28px; }
+      .performance-layout { flex-direction: column; gap: 32px; }
+      .platform-grid { grid-template-columns: 1fr; }
+      .comps-layout { flex-direction: column; }
+      .activities-grid { grid-template-columns: 1fr; }
+      .sticky-bar .address-label { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== AGENT HEADER ===== -->
+  <div class="container">
+    <div class="inner">
+      <div class="agent-header">
+        <div class="agent-photo"><img src="{{AGENT_PHOTO}}" alt="Ryan Rose"></div>
+        <div class="agent-name">Ryan Rose</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== STICKY NAV BAR ===== -->
+  <div class="sticky-bar">
+    <div class="blue-bar"></div>
+    <div class="container">
+      <div class="sticky-bar-inner">
+        <div class="section-label">Seller Report For</div>
+        <div class="address-label">{{ADDRESS_FULL}}</div>
+        <div class="agent-label">Ryan Rose</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <div class="container">
+    <div class="inner">
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-image">
+            <img src="{{HERO_IMAGE}}" alt="Property Photo">
+          </div>
+          <div class="hero-text">
+            <div class="label">Seller Report For</div>
+            <h1>{{ADDRESS_LINE1}},<br>{{ADDRESS_LINE2}}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== EXECUTIVE SUMMARY ===== -->
+  <div class="container">
+    <div class="inner">
+      <div class="executive-summary">
+        <div class="section-title-white">Executive Summary</div>
+        <p>
+          {{EXECUTIVE_SUMMARY}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ONLINE PERFORMANCE (Dark) ===== -->
+  <div class="dark-section">
+    <div class="container">
+      <div class="inner">
+        <div class="section-title-dark">Online Performance</div>
+        <div class="performance-layout">
+          <div class="total-views">
+            <div class="number">{{TOTAL_VIEWS}}</div>
+            <div class="label">Total Views of Your Listing</div>
+          </div>
+          <div class="platform-grid">
+            <div class="platform-item">
+              <div class="icon" style="background: #1A5CFF; color: white;">Z</div>
+              <div class="name">Zillow</div>
+              <div class="count">{{ZILLOW_VIEWS}}</div>
+            </div>
+            <div class="platform-item">
+              <div class="icon" style="background: #D93025; color: white;">R</div>
+              <div class="name">Redfin</div>
+              <div class="count">{{REDFIN_VIEWS}}</div>
+            </div>
+            <div class="platform-item">
+              <div class="icon" style="background: #F6A623; color: white;">H</div>
+              <div class="name">Homes.com</div>
+              <div class="count">{{HOMES_VIEWS}}</div>
+            </div>
+            <div class="platform-item">
+              <div class="icon" style="background: #D92228; color: white;">r</div>
+              <div class="name">Realtor.com</div>
+              <div class="count">{{REALTOR_VIEWS}}</div>
+            </div>
+            <div class="platform-item">
+              <div class="icon" style="background: #333; color: white;">P</div>
+              <div class="name">Property's Personal Landing Page</div>
+              <div class="count">{{LANDING_PAGE_VIEWS}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SHOWINGS (White) ===== -->
+  <div class="container">
+    <div class="inner">
+      <div class="showings-section">
+        <div class="section-title-white">Showings</div>
+        <p class="showings-text">
+          {{SHOWINGS_SUMMARY}}
+        </p>
+        <!-- SHOWINGS TABLE: Populated when showing data is available -->
+        <!--
+        <table class="showings-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Agent</th>
+              <th>Feedback</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{DATE}}</td>
+              <td>{{AGENT_NAME}}</td>
+              <td class="feedback">{{FEEDBACK}}</td>
+            </tr>
+          </tbody>
+        </table>
+        -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LOCAL MARKET ANALYSIS (White) ===== -->
+  <div class="container">
+    <div class="inner">
+      <div class="executive-summary" style="padding-top: 0;">
+        <div class="section-title-white">Local Market Analysis</div>
+        <p>
+          {{LOCAL_MARKET_ANALYSIS}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== COMPS + MAP ===== -->
+  <div class="comps-section">
+    <div class="container">
+      <div class="inner">
+        <div class="comps-layout">
+          <div class="comps-list">
+            <!-- COMP CARDS: Repeat this block for each comp (3-5 comps) -->
+            {{COMP_CARDS}}
+            <!-- Example comp card structure:
+            <div class="comp-card">
+              <div class="thumb"><img src="PHOTO_URL" alt="Comp"></div>
+              <div class="details">
+                <div class="price-row">
+                  <span class="price">$XXX,XXX</span>
+                  <span class="status">Active / Pending / Sold</span>
+                </div>
+                <div class="address">Street Address</div>
+                <div class="city">City, State ZIP</div>
+                <a href="MLS_OR_ZILLOW_LINK" class="view-link">View Listing</a>
+              </div>
+            </div>
+            -->
+          </div>
+          <div class="map-area">
+            Map — Replace with Zillow or Google Maps iframe
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LISTING ACTIVITIES ===== -->
+  <div class="container">
+    <div class="inner">
+      <div class="activities-section">
+        <div class="section-title-white">Listing Activities</div>
+        <div class="activities-grid">
+          <div class="activity-card">
+            <div class="activity-number">{{MAILER_COUNT}}</div>
+            <div class="activity-label">Neighborhood Mailers Sent</div>
+            <div class="activity-detail">Direct mail to nearby homeowners</div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-number">{{FB_IMPRESSIONS}}</div>
+            <div class="activity-label">Facebook Ad Impressions</div>
+            <div class="activity-detail">Across {{FB_CAMPAIGN_COUNT}} campaigns</div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-number">{{OPEN_HOUSE_COUNT}}</div>
+            <div class="activity-label">Open Houses Held</div>
+            <div class="activity-detail">{{OPEN_HOUSE_DETAIL}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="container">
+    <div class="inner">
+      <div class="footer">
+        <div class="updated">Last Updated: {{REPORT_DATE}}</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

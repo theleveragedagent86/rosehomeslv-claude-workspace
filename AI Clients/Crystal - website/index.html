@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Crystal Schriefer, Las Vegas Realtor | View Vegas Now</title>
+  <meta name="description" content="Crystal Schriefer is a Las Vegas Realtor with Sphere Real Estate. FHA and VA specialist, relocation expert, and 55+ community guide across Summerlin, Henderson, Skye Canyon, and the Las Vegas Valley." />
+  <meta name="theme-color" content="#1A1D24" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink:       '#1A1D24',
+            ink2:      '#262A33',
+            bone:      '#FAF6EF',
+            bone2:     '#F4EEE2',
+            sand:      '#E6D8C0',
+            sand2:     '#D8C7A8',
+            copper:    '#B8794D',
+            copperDeep:'#8E5832',
+            copperSoft:'#D9A57F',
+            sage:      '#5C6B5E',
+            ash:       '#8A8779',
+          },
+          fontFamily: {
+            display: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+            sans:    ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          letterSpacing: {
+            tightest2: '-0.04em',
+            tightest:  '-0.03em',
+          },
+          boxShadow: {
+            soft:     '0 1px 2px rgba(26,29,36,.04), 0 8px 24px -12px rgba(26,29,36,.10)',
+            lifted:   '0 1px 2px rgba(26,29,36,.05), 0 24px 48px -28px rgba(26,29,36,.18), 0 8px 16px -10px rgba(184,121,77,.12)',
+            float:    '0 2px 4px rgba(26,29,36,.06), 0 40px 80px -40px rgba(26,29,36,.30), 0 16px 32px -20px rgba(184,121,77,.18)',
+            ring:     '0 0 0 1px rgba(26,29,36,.06)',
+          },
+          transitionTimingFunction: {
+            spring: 'cubic-bezier(.2,.9,.2,1.2)',
+            ease2:  'cubic-bezier(.22,.61,.36,1)',
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --ink:#1A1D24; --bone:#FAF6EF; --sand:#E6D8C0;
+      --copper:#B8794D; --copper-deep:#8E5832; --sage:#5C6B5E;
+      --maxw: 1240px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bone);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    .display { font-family: 'Fraunces', Georgia, serif; font-variation-settings: "opsz" 144; }
+    .display-tight { letter-spacing: -0.035em; line-height: 0.98; }
+    .body-lede { line-height: 1.7; }
+    .container-x { max-width: var(--maxw); margin-inline: auto; padding-inline: clamp(20px, 4vw, 48px); }
+
+    /* Layered hero gradient + grain */
+    .hero-art {
+      background:
+        radial-gradient(60% 40% at 20% 10%, rgba(184,121,77,.45), transparent 60%),
+        radial-gradient(70% 50% at 90% 20%, rgba(216,199,168,.55), transparent 65%),
+        radial-gradient(80% 60% at 50% 100%, rgba(26,29,36,.85), rgba(26,29,36,.4) 60%, transparent 80%),
+        linear-gradient(180deg, #2a2730 0%, #1A1D24 60%, #131519 100%);
+    }
+    .grain {
+      position: absolute; inset: 0; pointer-events: none; opacity: .12; mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    }
+    .photo-treat {
+      filter: saturate(.92) contrast(1.02);
+    }
+    .photo-overlay::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(26,29,36,.55), rgba(26,29,36,0) 55%);
+      pointer-events: none;
+    }
+    .photo-tint::before {
+      content: ''; position: absolute; inset: 0;
+      background: rgba(184,121,77,.10);
+      mix-blend-mode: multiply;
+      pointer-events: none;
+    }
+
+    /* Buttons with full state set */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: .55rem;
+      padding: .9rem 1.35rem; border-radius: 999px; font-weight: 500; font-size: .95rem;
+      letter-spacing: .005em;
+      transition: transform .35s cubic-bezier(.2,.9,.2,1.2), opacity .25s ease, box-shadow .35s ease;
+      will-change: transform;
+    }
+    .btn:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
+    .btn-primary {
+      background: var(--ink); color: var(--bone);
+      box-shadow: 0 1px 2px rgba(26,29,36,.06), 0 18px 36px -18px rgba(26,29,36,.5);
+    }
+    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 1px 2px rgba(26,29,36,.06), 0 24px 48px -22px rgba(26,29,36,.55), 0 0 0 1px rgba(184,121,77,.25) inset; }
+    .btn-primary:active { transform: translateY(0); opacity: .92; }
+    .btn-ghost {
+      background: transparent; color: var(--ink);
+      box-shadow: 0 0 0 1px rgba(26,29,36,.18) inset;
+    }
+    .btn-ghost:hover { transform: translateY(-1px); box-shadow: 0 0 0 1px rgba(26,29,36,.4) inset; }
+    .btn-ghost:active { transform: translateY(0); opacity: .85; }
+    .btn-copper {
+      background: var(--copper); color: #fff;
+      box-shadow: 0 1px 2px rgba(142,88,50,.2), 0 18px 36px -18px rgba(142,88,50,.55);
+    }
+    .btn-copper:hover { transform: translateY(-1px); box-shadow: 0 1px 2px rgba(142,88,50,.25), 0 28px 56px -22px rgba(142,88,50,.65); }
+    .btn-copper:active { transform: translateY(0); opacity: .94; }
+
+    /* Underline link */
+    .ulink { position: relative; }
+    .ulink::after {
+      content:''; position:absolute; left:0; right:0; bottom:-3px; height:1px;
+      background: currentColor; transform: scaleX(.2); transform-origin: left;
+      transition: transform .4s cubic-bezier(.22,.61,.36,1);
+    }
+    .ulink:hover::after { transform: scaleX(1); }
+
+    /* Card surface system */
+    .surface-base { background: var(--bone); }
+    .surface-elev { background: #fff; box-shadow: 0 1px 2px rgba(26,29,36,.04), 0 12px 32px -16px rgba(26,29,36,.12); border: 1px solid rgba(26,29,36,.06); }
+    .surface-float { background: #fff; box-shadow: 0 2px 4px rgba(26,29,36,.06), 0 40px 80px -40px rgba(26,29,36,.30), 0 16px 32px -20px rgba(184,121,77,.18); border: 1px solid rgba(26,29,36,.05); }
+
+    /* Eyebrow */
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: .55rem;
+      font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .18em;
+      color: var(--copper-deep);
+    }
+    .eyebrow::before {
+      content:''; width: 22px; height: 1px; background: currentColor; opacity: .6;
+    }
+
+    /* Marquee */
+    .marquee {
+      display:flex; gap: 3rem; animation: scroll 45s linear infinite;
+      font-family: 'Fraunces', serif; font-size: clamp(1.4rem, 2.4vw, 2.1rem);
+      color: rgba(26,29,36,.55); white-space: nowrap;
+    }
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* Section divider */
+    .hr-thin { height: 1px; background: linear-gradient(to right, transparent, rgba(26,29,36,.18), transparent); }
+
+    /* Sticky CTA bar (mobile) */
+    .sticky-cta {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
+      background: rgba(26,29,36,.97); color: var(--bone);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 -10px 30px -10px rgba(26,29,36,.35);
+    }
+
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce) {
+      .marquee { animation: none; }
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+
+<body class="bg-bone text-ink">
+
+  <!-- ========== TOP BAR ========== -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-bone/85 border-b border-ink/5">
+    <div class="container-x flex items-center justify-between py-4">
+      <a href="#top" class="flex items-center gap-2.5">
+        <span class="display text-2xl font-medium tracking-tightest leading-none">Crystal Schriefer</span>
+        <span class="hidden sm:block text-xs uppercase tracking-[.22em] text-ash pl-3 ml-1 border-l border-ink/15">Las Vegas Realtor</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm">
+        <a href="#about"        class="ulink hover:text-copperDeep transition-colors">About</a>
+        <a href="#services"     class="ulink hover:text-copperDeep transition-colors">How I Help</a>
+        <a href="#neighborhoods"class="ulink hover:text-copperDeep transition-colors">Neighborhoods</a>
+        <a href="#listings"     class="ulink hover:text-copperDeep transition-colors">Listings</a>
+        <a href="#reviews"      class="ulink hover:text-copperDeep transition-colors">Reviews</a>
+        <a href="#contact"      class="ulink hover:text-copperDeep transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-3">
+        <a href="tel:7023276934" class="text-sm font-medium hover:text-copperDeep transition-colors">702.327.6934</a>
+        <a href="#contact" class="btn btn-primary text-sm py-2.5 px-4">Talk to Crystal</a>
+      </div>
+
+      <a href="#contact" class="md:hidden btn btn-primary text-sm py-2 px-4">Contact</a>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="top" class="relative overflow-hidden">
+    <div class="relative hero-art min-h-[88vh] md:min-h-[92vh] flex items-end">
+      <div class="grain"></div>
+
+      <!-- Skyline image, full bleed, treated -->
+      <div class="absolute inset-0">
+        <img
+          src="https://placehold.co/1920x1200/1A1D24/B8794D?text=Las+Vegas+Skyline+%2F+Strip+at+Dusk"
+          alt="Las Vegas skyline at golden hour"
+          class="w-full h-full object-cover photo-treat opacity-60"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent"></div>
+        <div class="absolute inset-0" style="background: radial-gradient(60% 50% at 80% 30%, rgba(184,121,77,.35), transparent 65%);"></div>
+      </div>
+
+      <div class="relative container-x w-full pb-16 md:pb-28 pt-24 md:pt-40 text-bone">
+        <div class="max-w-3xl">
+          <span class="eyebrow text-copperSoft">Sphere Real Estate, Las Vegas</span>
+          <h1 class="display display-tight mt-5 text-[clamp(3rem,7vw,6.5rem)] font-light text-bone">
+            Find your place in <em class="italic font-normal text-copperSoft">Las Vegas</em>.
+          </h1>
+          <p class="body-lede mt-6 text-lg md:text-xl max-w-2xl text-bone/85">
+            Search homes, neighborhoods, and communities across the Las Vegas Valley with a local expert by your side. Direct, no-nonsense, no fluff. Just clear guidance and real market knowledge.
+          </p>
+
+          <div class="mt-9 flex flex-wrap items-center gap-3">
+            <a href="#listings" class="btn btn-copper">
+              Start your search
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost text-bone" style="box-shadow: 0 0 0 1px rgba(250,246,239,.3) inset;">
+              Schedule a consultation
+            </a>
+          </div>
+
+          <!-- Search dock -->
+          <form class="mt-10 surface-float rounded-2xl p-2.5 flex flex-col sm:flex-row items-stretch gap-2 max-w-2xl text-ink" onsubmit="event.preventDefault();">
+            <div class="flex-1 flex items-center gap-3 px-4 py-3">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="text-ash"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+              <input type="text" placeholder="Search by city, ZIP, or neighborhood (Summerlin, 89135, Henderson...)" class="w-full bg-transparent outline-none text-sm placeholder:text-ash" />
+            </div>
+            <button class="btn btn-primary px-6 py-3 sm:rounded-xl">Search homes</button>
+          </form>
+
+          <!-- Trust strip -->
+          <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-bone/75">
+            <div class="flex items-center gap-2">
+              <span class="text-copperSoft">★★★★★</span><span>Five-star client reviews</span>
+            </div>
+            <div class="hidden sm:block w-px h-4 bg-bone/20"></div>
+            <div>2-hour typical response</div>
+            <div class="hidden sm:block w-px h-4 bg-bone/20"></div>
+            <div>FHA &middot; VA &middot; Relocation &middot; 55+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="overflow-hidden border-y border-ink/10 py-5 bg-bone2">
+      <div class="marquee">
+        <span>Summerlin</span><span class="text-copper">◆</span>
+        <span>Henderson</span><span class="text-copper">◆</span>
+        <span>Skye Canyon</span><span class="text-copper">◆</span>
+        <span>Lake Las Vegas</span><span class="text-copper">◆</span>
+        <span>Southern Highlands</span><span class="text-copper">◆</span>
+        <span>Centennial Hills</span><span class="text-copper">◆</span>
+        <span>Inspirada</span><span class="text-copper">◆</span>
+        <span>Anthem</span><span class="text-copper">◆</span>
+        <span>Sun City</span><span class="text-copper">◆</span>
+        <!-- duplicate for seamless loop -->
+        <span>Summerlin</span><span class="text-copper">◆</span>
+        <span>Henderson</span><span class="text-copper">◆</span>
+        <span>Skye Canyon</span><span class="text-copper">◆</span>
+        <span>Lake Las Vegas</span><span class="text-copper">◆</span>
+        <span>Southern Highlands</span><span class="text-copper">◆</span>
+        <span>Centennial Hills</span><span class="text-copper">◆</span>
+        <span>Inspirada</span><span class="text-copper">◆</span>
+        <span>Anthem</span><span class="text-copper">◆</span>
+        <span>Sun City</span><span class="text-copper">◆</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="py-24 md:py-32">
+    <div class="container-x grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+      <div class="lg:col-span-5 relative">
+        <div class="relative aspect-[4/5] rounded-2xl overflow-hidden surface-float photo-overlay photo-tint">
+          <!-- PLACEHOLDER: replace with Crystal's professional headshot -->
+          <img
+            src="https://placehold.co/900x1125/E6D8C0/1A1D24?text=Crystal+Schriefer%0APortrait"
+            alt="Crystal Schriefer, Las Vegas Realtor"
+            class="absolute inset-0 w-full h-full object-cover photo-treat"
+          />
+        </div>
+        <div class="absolute -bottom-6 -right-4 md:-right-8 surface-float rounded-2xl p-5 max-w-[260px]">
+          <div class="display text-3xl leading-none">5★</div>
+          <div class="text-sm text-ash mt-1 leading-snug">Consistent five-star reviews from buyers, sellers, and investors across the Valley.</div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <span class="eyebrow">Meet Crystal</span>
+        <h2 class="display display-tight mt-4 text-[clamp(2.25rem,5vw,4rem)] font-light">
+          A local guide to Las Vegas, <em class="italic text-copperDeep">without the fluff</em>.
+        </h2>
+        <p class="body-lede mt-6 text-lg text-ink/80 max-w-xl">
+          Crystal Schriefer is a licensed Realtor with Sphere Real Estate. She helps first-time buyers, families relocating to Nevada, sellers, investors, and 55+ homeowners move with confidence across the Las Vegas Valley.
+        </p>
+        <p class="body-lede mt-4 text-lg text-ink/80 max-w-xl">
+          Her approach is simple. Listen first, give honest answers, and protect your time and your money. No pressure. No script. Just a steady hand from offer to keys.
+        </p>
+
+        <dl class="mt-10 grid sm:grid-cols-2 gap-x-10 gap-y-5 max-w-xl">
+          <div class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full bg-copper"></span>
+            <div>
+              <dt class="text-sm font-semibold">FHA &amp; VA Specialist</dt>
+              <dd class="text-sm text-ash mt-0.5">Trained in low and zero-down loan programs.</dd>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full bg-copper"></span>
+            <div>
+              <dt class="text-sm font-semibold">Relocation Expert</dt>
+              <dd class="text-sm text-ash mt-0.5">Out-of-state buyers moving to Nevada.</dd>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full bg-copper"></span>
+            <div>
+              <dt class="text-sm font-semibold">55+ Communities</dt>
+              <dd class="text-sm text-ash mt-0.5">Sun City, Anthem, Solera, Siena.</dd>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="mt-1 w-1.5 h-1.5 rounded-full bg-copper"></span>
+            <div>
+              <dt class="text-sm font-semibold">New Construction</dt>
+              <dd class="text-sm text-ash mt-0.5">Buyer representation with builder negotiation.</dd>
+            </div>
+          </div>
+        </dl>
+
+        <div class="mt-10 flex flex-wrap gap-3">
+          <a href="#contact" class="btn btn-primary">Schedule a 20-minute call</a>
+          <a href="tel:7023276934" class="btn btn-ghost">Call 702.327.6934</a>
+        </div>
+
+        <div class="mt-8 text-xs text-ash">License S.0192609 &middot; Sphere Real Estate &middot; Las Vegas, Nevada</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="py-24 md:py-32 bg-bone2 border-y border-ink/5">
+    <div class="container-x">
+      <div class="flex items-end justify-between flex-wrap gap-6 max-w-4xl">
+        <div>
+          <span class="eyebrow">How I Help</span>
+          <h2 class="display display-tight mt-4 text-[clamp(2.25rem,5vw,4rem)] font-light">
+            Three lanes, <em class="italic text-copperDeep">one steady hand</em>.
+          </h2>
+        </div>
+        <p class="body-lede max-w-md text-ink/75">
+          Whether you are buying your first home, listing the family house, or building a rental portfolio, the work is always tailored to where you are and where you want to land.
+        </p>
+      </div>
+
+      <div class="hr-thin my-12"></div>
+
+      <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Buyers -->
+        <a href="#contact" class="group surface-elev rounded-2xl p-7 transition-transform duration-500 ease2 hover:-translate-y-1 hover:shadow-float relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-40 h-40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" style="background: radial-gradient(circle, rgba(184,121,77,.18), transparent 70%);"></div>
+          <div class="flex items-center justify-between relative">
+            <div class="text-xs font-semibold uppercase tracking-[.18em] text-copperDeep">01</div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="text-ash group-hover:text-ink group-hover:translate-x-1 transition-transform duration-500"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+          <h3 class="display text-3xl mt-8 font-medium tracking-tightest">For Buyers</h3>
+          <p class="text-ink/75 mt-3 text-[15px] leading-relaxed">
+            Find your ideal home with a clear plan, full access to the MLS, and someone in your corner during inspections, appraisals, and negotiations.
+          </p>
+          <ul class="mt-6 space-y-2 text-sm text-ink/75">
+            <li class="flex gap-2"><span class="text-copper">+</span> First-time buyers, FHA and VA</li>
+            <li class="flex gap-2"><span class="text-copper">+</span> Out-of-state relocation</li>
+            <li class="flex gap-2"><span class="text-copper">+</span> New construction representation</li>
+          </ul>
+        </a>
+
+        <!-- Sellers -->
+        <a href="#contact" class="group surface-elev rounded-2xl p-7 transition-transform duration-500 ease2 hover:-translate-y-1 hover:shadow-float relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-40 h-40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" style="background: radial-gradient(circle, rgba(184,121,77,.18), transparent 70%);"></div>
+          <div class="flex items-center justify-between relative">
+            <div class="text-xs font-semibold uppercase tracking-[.18em] text-copperDeep">02</div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="text-ash group-hover:text-ink group-hover:translate-x-1 transition-transform duration-500"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+          <h3 class="display text-3xl mt-8 font-medium tracking-tightest">For Sellers</h3>
+          <p class="text-ink/75 mt-3 text-[15px] leading-relaxed">
+            Price your home with real Vegas comps, market it where buyers actually look, and get a clean transaction from list to close.
+          </p>
+          <ul class="mt-6 space-y-2 text-sm text-ink/75">
+            <li class="flex gap-2"><span class="text-copper">+</span> Local pricing strategy</li>
+            <li class="flex gap-2"><span class="text-copper">+</span> Pro photography and staging guidance</li>
+            <li class="flex gap-2"><span class="text-copper">+</span> Honest answers about timing</li>
+          </ul>
+        </a>
+
+        <!-- Investors -->
+        <a href="#contact" class="group surface-elev rounded-2xl p-7 transition-transform duration-500 ease2 hover:-translate-y-1 hover:shadow-float relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-40 h-40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" style="background: radial-gradient(circle, rgba(184,121,77,.18), transparent 70%);"></div>
+          <div class="flex items-center justify-between relative">
+            <div class="text-xs font-semibold uppercase tracking-[.18em] text-copperDeep">03</div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="text-ash group-hover:text-ink group-hover:translate-x-1 transition-transform duration-500"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+          <h3 class="display text-3xl mt-8 font-medium tracking-tightest">For Investors</h3>
+          <p class="text-ink/75 mt-3 text-[15px] leading-relaxed">
+            Identify long-term rentals, short-term rental zones, and flips that pencil out. Numbers first, hype never.
+          </p>
+          <ul class="mt-6 space-y-2 text-sm text-ink/75">
+            <li class="flex gap-2"><span class="text-copper">+</span> Cash-flow and ROI modeling</li>
+            <li class="flex gap-2"><span class="text-copper">+</span> Short-term rental zoning guidance</li>
+            <li class="flex gap-2"><span class="text-copper">+</span> Off-market and pocket opportunities</li>
+          </ul>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEIGHBORHOODS ========== -->
+  <section id="neighborhoods" class="py-24 md:py-32">
+    <div class="container-x">
+      <div class="grid lg:grid-cols-12 gap-10 items-end">
+        <div class="lg:col-span-7">
+          <span class="eyebrow">Neighborhoods</span>
+          <h2 class="display display-tight mt-4 text-[clamp(2.25rem,5vw,4rem)] font-light">
+            The Valley, <em class="italic text-copperDeep">block by block</em>.
+          </h2>
+        </div>
+        <p class="lg:col-span-5 body-lede text-ink/75">
+          Crystal works across the Las Vegas Valley with deep familiarity in the communities below. Tap any to start a search filtered to that area.
+        </p>
+      </div>
+
+      <div class="mt-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <!-- Tile -->
+        <a href="#listings" class="group relative aspect-[4/5] rounded-2xl overflow-hidden surface-elev">
+          <img src="https://placehold.co/600x750/E6D8C0/8E5832?text=Summerlin" alt="Summerlin homes" class="absolute inset-0 w-full h-full object-cover photo-treat group-hover:scale-105 transition-transform duration-700 ease2" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 p-5 text-bone">
+            <div class="display text-2xl font-medium tracking-tightest">Summerlin</div>
+            <div class="text-xs text-bone/75 mt-1">Master-planned, parks, top schools</div>
+          </div>
+        </a>
+        <a href="#listings" class="group relative aspect-[4/5] rounded-2xl overflow-hidden surface-elev">
+          <img src="https://placehold.co/600x750/D8C7A8/8E5832?text=Henderson" alt="Henderson homes" class="absolute inset-0 w-full h-full object-cover photo-treat group-hover:scale-105 transition-transform duration-700 ease2" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 p-5 text-bone">
+            <div class="display text-2xl font-medium tracking-tightest">Henderson</div>
+            <div class="text-xs text-bone/75 mt-1">Family-friendly, easy commute</div>
+          </div>
+        </a>
+        <a href="#listings" class="group relative aspect-[4/5] rounded-2xl overflow-hidden surface-elev">
+          <img src="https://placehold.co/600x750/E6D8C0/8E5832?text=Skye+Canyon" alt="Skye Canyon homes" class="absolute inset-0 w-full h-full object-cover photo-treat group-hover:scale-105 transition-transform duration-700 ease2" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 p-5 text-bone">
+            <div class="display text-2xl font-medium tracking-tightest">Skye Canyon</div>
+            <div class="text-xs text-bone/75 mt-1">Northwest, mountain views</div>
+          </div>
+        </a>
+        <a href="#listings" class="group relative aspect-[4/5] rounded-2xl overflow-hidden surface-elev">
+          <img src="https://placehold.co/600x750/D8C7A8/8E5832?text=Lake+Las+Vegas" alt="Lake Las Vegas homes" class="absolute inset-0 w-full h-full object-cover photo-treat group-hover:scale-105 transition-transform duration-700 ease2" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 p-5 text-bone">
+            <div class="display text-2xl font-medium tracking-tightest">Lake Las Vegas</div>
+            <div class="text-xs text-bone/75 mt-1">Resort living, waterfront</div>
+          </div>
+        </a>
+        <a href="#listings" class="group relative aspect-[4/5] rounded-2xl overflow-hidden surface-elev">
+          <img src="https://placehold.co/600x750/E6D8C0/8E5832?text=Southern+Highlands" alt="Southern Highlands homes" class="absolute inset-0 w-full h-full object-cover photo-treat group-hover:scale-105 transition-transform duration-700 ease2" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 p-5 text-bone">
+            <div class="display text-2xl font-medium tracking-tightest">Southern Highlands</div>
+            <div class="text-xs text-bone/75 mt-1">Golf, gated, luxury</div>
+          </div>
+        </a>
+        <a href="#listings" class="group relative aspect-[4/5] rounded-2xl overflow-hidden surface-elev">
+          <img src="https://placehold.co/600x750/D8C7A8/8E5832?text=Centennial+Hills" alt="Centennial Hills homes" class="absolute inset-0 w-full h-full object-cover photo-treat group-hover:scale-105 transition-transform duration-700 ease2" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 p-5 text-bone">
+            <div class="display text-2xl font-medium tracking-tightest">Centennial Hills</div>
+            <div class="text-xs text-bone/75 mt-1">Northwest value, new builds</div>
+          </div>
+        </a>
+        <a href="#listings" class="group relative aspect-[4/5] rounded-2xl overflow-hidden surface-elev">
+          <img src="https://placehold.co/600x750/E6D8C0/8E5832?text=Inspirada" alt="Inspirada homes" class="absolute inset-0 w-full h-full object-cover photo-treat group-hover:scale-105 transition-transform duration-700 ease2" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 p-5 text-bone">
+            <div class="display text-2xl font-medium tracking-tightest">Inspirada</div>
+            <div class="text-xs text-bone/75 mt-1">Henderson, parks, trails</div>
+          </div>
+        </a>
+        <a href="#listings" class="group relative aspect-[4/5] rounded-2xl overflow-hidden surface-elev">
+          <img src="https://placehold.co/600x750/D8C7A8/8E5832?text=Sun+City+%26+Anthem" alt="Sun City and Anthem 55+ homes" class="absolute inset-0 w-full h-full object-cover photo-treat group-hover:scale-105 transition-transform duration-700 ease2" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 p-5 text-bone">
+            <div class="display text-2xl font-medium tracking-tightest">Sun City &amp; Anthem</div>
+            <div class="text-xs text-bone/75 mt-1">Active adult, 55+ communities</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="mt-12 flex justify-center">
+        <a href="#listings" class="btn btn-ghost">Browse all neighborhoods</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="py-20 md:py-24 bg-ink text-bone relative overflow-hidden">
+    <div class="absolute inset-0 opacity-30" style="background: radial-gradient(60% 40% at 80% 20%, rgba(184,121,77,.5), transparent 60%), radial-gradient(50% 40% at 10% 90%, rgba(216,199,168,.2), transparent 70%);"></div>
+    <div class="container-x relative grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6">
+      <div>
+        <div class="display text-5xl md:text-6xl font-light tracking-tightest">5★</div>
+        <div class="mt-3 text-sm text-bone/65 max-w-[180px]">Consistent reviews from buyers and sellers.</div>
+      </div>
+      <div>
+        <div class="display text-5xl md:text-6xl font-light tracking-tightest">2<span class="text-copperSoft">hr</span></div>
+        <div class="mt-3 text-sm text-bone/65 max-w-[180px]">Typical response time on calls and texts.</div>
+      </div>
+      <div>
+        <div class="display text-5xl md:text-6xl font-light tracking-tightest">FHA<span class="text-copperSoft">+VA</span></div>
+        <div class="mt-3 text-sm text-bone/65 max-w-[180px]">Specialist in low and zero-down loan programs.</div>
+      </div>
+      <div>
+        <div class="display text-5xl md:text-6xl font-light tracking-tightest">55+</div>
+        <div class="mt-3 text-sm text-bone/65 max-w-[180px]">Active adult and 55+ community expertise.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED LISTINGS ========== -->
+  <section id="listings" class="py-24 md:py-32">
+    <div class="container-x">
+      <div class="flex items-end justify-between flex-wrap gap-6">
+        <div class="max-w-xl">
+          <span class="eyebrow">Featured Listings</span>
+          <h2 class="display display-tight mt-4 text-[clamp(2.25rem,5vw,4rem)] font-light">
+            Live homes in the Valley.
+          </h2>
+          <p class="body-lede mt-5 text-ink/75">
+            A live feed of Crystal's featured homes will display here once IDX Broker is wired in. Until then, here is a placeholder layout showing how listings will appear.
+          </p>
+        </div>
+        <a href="#contact" class="btn btn-ghost">Set up a saved search</a>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Listing card x3 (placeholders) -->
+        <article class="surface-elev rounded-2xl overflow-hidden group">
+          <div class="relative aspect-[4/3] overflow-hidden photo-overlay">
+            <img src="https://placehold.co/900x675/E6D8C0/1A1D24?text=Summerlin+Home" alt="Featured home in Summerlin" class="w-full h-full object-cover photo-treat group-hover:scale-105 transition-transform duration-700 ease2" />
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-bone/95 text-[11px] font-semibold uppercase tracking-wider text-ink">For Sale</div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-baseline justify-between gap-3">
+              <div class="display text-2xl font-medium tracking-tightest">$725,000</div>
+              <div class="text-xs text-ash">MLS pending</div>
+            </div>
+            <div class="mt-2 text-sm text-ink/85">Sample address, Summerlin, NV 89135</div>
+            <div class="mt-4 flex items-center gap-5 text-sm text-ink/75">
+              <span>4 bd</span><span class="w-px h-3 bg-ink/15"></span>
+              <span>3 ba</span><span class="w-px h-3 bg-ink/15"></span>
+              <span>2,640 sf</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="surface-elev rounded-2xl overflow-hidden group">
+          <div class="relative aspect-[4/3] overflow-hidden photo-overlay">
+            <img src="https://placehold.co/900x675/D8C7A8/1A1D24?text=Henderson+Home" alt="Featured home in Henderson" class="w-full h-full object-cover photo-treat group-hover:scale-105 transition-transform duration-700 ease2" />
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-copper text-[11px] font-semibold uppercase tracking-wider text-bone">New</div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-baseline justify-between gap-3">
+              <div class="display text-2xl font-medium tracking-tightest">$489,000</div>
+              <div class="text-xs text-ash">MLS pending</div>
+            </div>
+            <div class="mt-2 text-sm text-ink/85">Sample address, Henderson, NV 89052</div>
+            <div class="mt-4 flex items-center gap-5 text-sm text-ink/75">
+              <span>3 bd</span><span class="w-px h-3 bg-ink/15"></span>
+              <span>2 ba</span><span class="w-px h-3 bg-ink/15"></span>
+              <span>1,890 sf</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="surface-elev rounded-2xl overflow-hidden group">
+          <div class="relative aspect-[4/3] overflow-hidden photo-overlay">
+            <img src="https://placehold.co/900x675/E6D8C0/1A1D24?text=Lake+Las+Vegas" alt="Featured home in Lake Las Vegas" class="w-full h-full object-cover photo-treat group-hover:scale-105 transition-transform duration-700 ease2" />
+            <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-bone/95 text-[11px] font-semibold uppercase tracking-wider text-ink">For Sale</div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-baseline justify-between gap-3">
+              <div class="display text-2xl font-medium tracking-tightest">$1,295,000</div>
+              <div class="text-xs text-ash">MLS pending</div>
+            </div>
+            <div class="mt-2 text-sm text-ink/85">Sample address, Lake Las Vegas, NV 89011</div>
+            <div class="mt-4 flex items-center gap-5 text-sm text-ink/75">
+              <span>5 bd</span><span class="w-px h-3 bg-ink/15"></span>
+              <span>4.5 ba</span><span class="w-px h-3 bg-ink/15"></span>
+              <span>3,820 sf</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section id="reviews" class="py-24 md:py-32 bg-bone2 border-y border-ink/5">
+    <div class="container-x">
+      <div class="max-w-2xl">
+        <span class="eyebrow">What Clients Say</span>
+        <h2 class="display display-tight mt-4 text-[clamp(2.25rem,5vw,4rem)] font-light">
+          Trusted by buyers, sellers, and investors <em class="italic text-copperDeep">across Las Vegas</em>.
+        </h2>
+      </div>
+
+      <!-- PLACEHOLDER REVIEWS: replace with verified client copy from Zillow/Google before launch. -->
+      <div class="mt-14 grid md:grid-cols-3 gap-6 lg:gap-8">
+        <figure class="surface-elev rounded-2xl p-7 flex flex-col">
+          <div class="text-copper text-lg" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="display mt-5 text-2xl leading-snug font-light tracking-tightest">
+            "Crystal made our first home purchase feel calm. She answered every question fast and never pushed."
+          </blockquote>
+          <figcaption class="mt-auto pt-8 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-sand2 flex items-center justify-center text-ink font-semibold text-sm">M</div>
+            <div>
+              <div class="text-sm font-semibold">Michael R.</div>
+              <div class="text-xs text-ash">First-Time Buyer, Henderson</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="surface-elev rounded-2xl p-7 flex flex-col">
+          <div class="text-copper text-lg" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="display mt-5 text-2xl leading-snug font-light tracking-tightest">
+            "We listed and closed in three weeks. Her pricing was right on, and the marketing brought serious buyers."
+          </blockquote>
+          <figcaption class="mt-auto pt-8 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-sand2 flex items-center justify-center text-ink font-semibold text-sm">S</div>
+            <div>
+              <div class="text-sm font-semibold">Sarah M.</div>
+              <div class="text-xs text-ash">Home Seller, Summerlin</div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="surface-elev rounded-2xl p-7 flex flex-col">
+          <div class="text-copper text-lg" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="display mt-5 text-2xl leading-snug font-light tracking-tightest">
+            "Crystal knows the rental side of Vegas. She steered me to a property that actually cash-flows."
+          </blockquote>
+          <figcaption class="mt-auto pt-8 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-sand2 flex items-center justify-center text-ink font-semibold text-sm">D</div>
+            <div>
+              <div class="text-sm font-semibold">Daniel K.</div>
+              <div class="text-xs text-ash">Real Estate Investor</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="mt-10 text-xs text-ash">Reviews shown are sample placeholders. Replace with verified Zillow and Google quotes before launch.</div>
+    </div>
+  </section>
+
+  <!-- ========== CTA / CONTACT ========== -->
+  <section id="contact" class="py-24 md:py-32 relative overflow-hidden">
+    <div class="container-x grid lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-5">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 class="display display-tight mt-4 text-[clamp(2.25rem,5vw,4.5rem)] font-light">
+          Ready to find your place in <em class="italic text-copperDeep">Las Vegas</em>?
+        </h2>
+        <p class="body-lede mt-6 text-ink/75 text-lg max-w-md">
+          Send a quick note. Crystal typically replies within two hours during business hours, often faster.
+        </p>
+
+        <ul class="mt-10 space-y-5 text-[15px]">
+          <li class="flex items-start gap-4">
+            <span class="mt-1 w-9 h-9 rounded-full bg-sand flex items-center justify-center">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="text-copperDeep"><path d="M22 16.92V21a1 1 0 0 1-1.11 1A19.86 19.86 0 0 1 2 4.11 1 1 0 0 1 3 3h4.09a1 1 0 0 1 1 .75l1 4a1 1 0 0 1-.29 1L7.21 10.21a16 16 0 0 0 6.58 6.58l1.46-1.59a1 1 0 0 1 1-.29l4 1a1 1 0 0 1 .75 1z"/></svg>
+            </span>
+            <div>
+              <div class="text-xs uppercase tracking-[.18em] text-ash">Phone</div>
+              <a href="tel:7023276934" class="font-semibold ulink">702.327.6934</a>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="mt-1 w-9 h-9 rounded-full bg-sand flex items-center justify-center">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="text-copperDeep"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </span>
+            <div>
+              <div class="text-xs uppercase tracking-[.18em] text-ash">Email</div>
+              <a href="mailto:crystalvegashomes@gmail.com" class="font-semibold ulink break-all">crystalvegashomes@gmail.com</a>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="mt-1 w-9 h-9 rounded-full bg-sand flex items-center justify-center">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="text-copperDeep"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <div class="text-xs uppercase tracking-[.18em] text-ash">Office</div>
+              <div class="font-semibold leading-snug">Sphere Real Estate<br/>7885 W. Sunset Rd. #130, Las Vegas, NV 89113</div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="mt-10 flex items-center gap-3">
+          <a href="https://www.instagram.com/crystal_schriefer/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full surface-elev flex items-center justify-center hover:-translate-y-0.5 transition-transform duration-300 ease2" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.facebook.com/crystal.schriefer.79/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full surface-elev flex items-center justify-center hover:-translate-y-0.5 transition-transform duration-300 ease2" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12H16l-.5 3h-2.5v7A10 10 0 0 0 22 12z"/></svg>
+          </a>
+          <a href="https://www.zillow.com/profile/Crystal%20Schriefer" target="_blank" rel="noopener" class="px-3.5 h-10 rounded-full surface-elev inline-flex items-center text-xs font-semibold tracking-wide hover:-translate-y-0.5 transition-transform duration-300 ease2">
+            Zillow Reviews
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <form class="surface-float rounded-3xl p-7 md:p-10" onsubmit="event.preventDefault(); alert('Form is a placeholder. Wire to Follow Up Boss before launch.');">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <label class="block">
+              <span class="text-xs uppercase tracking-[.16em] text-ash">First name</span>
+              <input type="text" required class="mt-2 w-full bg-bone border border-ink/10 rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-copper focus:ring-2 focus:ring-copper/20 transition-shadow duration-300" placeholder="Jane" />
+            </label>
+            <label class="block">
+              <span class="text-xs uppercase tracking-[.16em] text-ash">Last name</span>
+              <input type="text" required class="mt-2 w-full bg-bone border border-ink/10 rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-copper focus:ring-2 focus:ring-copper/20 transition-shadow duration-300" placeholder="Doe" />
+            </label>
+            <label class="block">
+              <span class="text-xs uppercase tracking-[.16em] text-ash">Email</span>
+              <input type="email" required class="mt-2 w-full bg-bone border border-ink/10 rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-copper focus:ring-2 focus:ring-copper/20 transition-shadow duration-300" placeholder="jane@email.com" />
+            </label>
+            <label class="block">
+              <span class="text-xs uppercase tracking-[.16em] text-ash">Phone</span>
+              <input type="tel" class="mt-2 w-full bg-bone border border-ink/10 rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-copper focus:ring-2 focus:ring-copper/20 transition-shadow duration-300" placeholder="702.555.0123" />
+            </label>
+          </div>
+
+          <fieldset class="mt-6">
+            <legend class="text-xs uppercase tracking-[.16em] text-ash">I'm interested in</legend>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <label class="cursor-pointer">
+                <input type="radio" name="intent" class="peer sr-only" />
+                <span class="px-4 py-2 rounded-full text-sm border border-ink/15 peer-checked:bg-ink peer-checked:text-bone peer-checked:border-ink hover:border-ink transition-colors">Buying</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="intent" class="peer sr-only" />
+                <span class="px-4 py-2 rounded-full text-sm border border-ink/15 peer-checked:bg-ink peer-checked:text-bone peer-checked:border-ink hover:border-ink transition-colors">Selling</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="intent" class="peer sr-only" />
+                <span class="px-4 py-2 rounded-full text-sm border border-ink/15 peer-checked:bg-ink peer-checked:text-bone peer-checked:border-ink hover:border-ink transition-colors">Investing</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="intent" class="peer sr-only" />
+                <span class="px-4 py-2 rounded-full text-sm border border-ink/15 peer-checked:bg-ink peer-checked:text-bone peer-checked:border-ink hover:border-ink transition-colors">Relocating</span>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="intent" class="peer sr-only" />
+                <span class="px-4 py-2 rounded-full text-sm border border-ink/15 peer-checked:bg-ink peer-checked:text-bone peer-checked:border-ink hover:border-ink transition-colors">55+ Community</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="block mt-6">
+            <span class="text-xs uppercase tracking-[.16em] text-ash">Message</span>
+            <textarea rows="4" class="mt-2 w-full bg-bone border border-ink/10 rounded-xl px-4 py-3 text-[15px] focus:outline-none focus:border-copper focus:ring-2 focus:ring-copper/20 transition-shadow duration-300" placeholder="A few details about what you're looking for, timing, and area of interest."></textarea>
+          </label>
+
+          <div class="mt-7 flex flex-wrap items-center justify-between gap-4">
+            <div class="text-xs text-ash max-w-xs">By submitting you agree to be contacted about your real estate inquiry. No spam, no list-sharing.</div>
+            <button type="submit" class="btn btn-primary">Send to Crystal</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-ink text-bone/80">
+    <div class="container-x py-16 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <div class="display text-2xl text-bone tracking-tightest">Crystal Schriefer</div>
+        <div class="text-xs uppercase tracking-[.22em] text-bone/50 mt-1">Las Vegas Realtor &middot; Sphere Real Estate</div>
+        <p class="mt-6 max-w-md text-sm leading-relaxed">
+          Helping buyers, sellers, and investors move with confidence across the Las Vegas Valley. Direct, honest, and steady from first showing to closing day.
+        </p>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-[.22em] text-bone/50">Explore</div>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="#about" class="hover:text-copperSoft transition-colors">About Crystal</a></li>
+          <li><a href="#services" class="hover:text-copperSoft transition-colors">How I Help</a></li>
+          <li><a href="#neighborhoods" class="hover:text-copperSoft transition-colors">Neighborhoods</a></li>
+          <li><a href="#listings" class="hover:text-copperSoft transition-colors">Featured Listings</a></li>
+          <li><a href="#reviews" class="hover:text-copperSoft transition-colors">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-[.22em] text-bone/50">Contact</div>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="tel:7023276934" class="hover:text-copperSoft transition-colors">702.327.6934</a></li>
+          <li><a href="mailto:crystalvegashomes@gmail.com" class="hover:text-copperSoft transition-colors break-all">crystalvegashomes@gmail.com</a></li>
+          <li class="text-bone/65">7885 W. Sunset Rd. #130<br/>Las Vegas, NV 89113</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-bone/10">
+      <div class="container-x py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-bone/55">
+        <div>© 2026 Crystal Schriefer, Realtor. License S.0192609. Sphere Real Estate. Equal Housing Opportunity.</div>
+        <div>Designed with care in Las Vegas.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== STICKY MOBILE CTA ========== -->
+  <div class="sticky-cta md:hidden">
+    <div class="container-x py-3 flex items-center justify-between gap-3 text-sm">
+      <a href="tel:7023276934" class="flex-1 text-center py-2 rounded-full bg-bone/10 text-bone hover:bg-bone/20 transition-colors">Call</a>
+      <a href="sms:7023276934" class="flex-1 text-center py-2 rounded-full bg-bone/10 text-bone hover:bg-bone/20 transition-colors">Text</a>
+      <a href="#contact" class="flex-1 text-center py-2 rounded-full bg-copper text-bone hover:bg-copperDeep transition-colors">Contact</a>
+    </div>
+  </div>
+
+</body>
+</html>

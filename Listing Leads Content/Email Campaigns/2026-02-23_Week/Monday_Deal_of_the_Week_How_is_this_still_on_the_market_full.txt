@@ -1,0 +1,60 @@
+Back
+Email Campaigns
+Deal of the Week: How is this still on the market?
+🌎
+Created for US & Canada
+Introduction
+
+Want us to automate the Deal of the Week for you every week? Try out Better Email.
+
+The Deal of the Week strategy needs to be added to your weekly marketing SOPs. It's simple, repeatable, and highly effective.
+
+Use the template we provided below to send out your Deal of the Week, use this free tool to write the email and send it yourself, or get Better Email to automate the entire process for you.
+
+Not sure which listing to feature?
+
+Filter for new listings (within the last 7 days)
+Focus on your target price point
+Stay in your ideal neighborhood or farm area
+
+That should give you a pool of 50–70 listings.
+
+From there, zero in on the one with the highest saves or views—that's your deal of the week.
+
+Recommended Audience
+
+For best results with this campaign, target this audience.
+
+Entire Database
+
+How to Execute
+Step 1
+Copy Subject Line and Message to Email Blast App
+Subject
+Copy
+
+Deal of the week: {{neighborhood}} at a number that surprises
+
+Inbox Preview Text
+Copy
+
+How is this still on the market?
+
+Body
+Copy
+
+This one was easy to find (and harder to explain why it's still available).
+
+{{neighborhood}} rarely surfaces at {{price_range}}, which is why this listing stands out as the deal of the week: the numbers hold up against recent closes in ways that are worth paying attention to.
+
+1. {{standout_stat}} - the detail that separates it from comparable listings
+2. {{high_roi_feature}} - reduces near-term costs or adds long-term flexibility
+3. {{layout_or_size_note}} - functional advantage most homes at this price don't offer
+
+
+Want me to send over the details?
+
+
+
+
+Examples

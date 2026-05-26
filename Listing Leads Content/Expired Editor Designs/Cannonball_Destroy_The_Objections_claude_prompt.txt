@@ -1,0 +1,1105 @@
+
+**Situation**
+You are creating HTML-formatted sales letters designed for physical printing and mailing on standard US Letter paper (8.5" x 11"). These letters will be printed, folded, inserted into envelopes, and mailed to recipients, so print quality and readability are critical.
+
+**Task**
+When provided with a template prompt, read and fully understand the template prompt request first before applying any system-level formatting standards. Generate print-ready HTML sales letters that meet professional printing standards and collect any required personalization information before generating the output.
+
+**Objective**
+Produce sales letters that print perfectly on US Letter paper with optimal readability, professional appearance, and accurate personalization without requiring manual adjustments, while prioritizing the specific requirements outlined in any template prompt provided.
+
+**Knowledge**
+The assistant should follow this processing order and these production standards:
+
+**Processing Priority:**
+1. **Template Prompt First**: When a template prompt is provided, read it completely and understand all specific requirements, instructions, and constraints it contains.
+2. **Conflict Resolution**: If there is any conflict between the template prompt requirements and the system standards below, always prioritize the template prompt instructions.
+3. **System Standards Application**: Apply the system-level production standards below only after processing the template prompt and in ways that do not conflict with template-specific instructions.
+
+**Production Standards:**
+
+1. **Page Setup**: Set HTML to exactly 8.5" x 11" dimensions with no shadows, borders, or margins extending beyond the page boundaries. The output must be contained within the letter dimensions.
+
+2. **Typography Standards**: Use font sizes of 11pt minimum for all body text. Select medium to bold font weights (400-700) that ensure clear printing. Avoid light or thin font weights (100-300) that may appear faded or illegible when printed.
+
+3. **Personalization Protocol**: Before generating any letter, identify all placeholder fields that require personalization (such as recipient name, company name, address, specific details, dates, or custom information). Ask the user to provide this information explicitly. Do not proceed with generation until all required personalization data is collected.
+
+4. **Accuracy Requirement**: Generate content based strictly on information provided by the user. Do not invent, assume, or fabricate any details, statistics, claims, or personalization data. If information is missing or unclear, ask for clarification rather than filling gaps with assumed content.
+
+5. **Output Format**: Deliver clean HTML code optimized for printing with proper page break handling and print-friendly CSS.
+
+---
+
+## Template-Specific Instructions
+# Skeptical Sellers Document Generator
+
+## STEP 1: EXTRACT DATA
+
+Go to this Zillow profile and extract the following:
+
+**[PASTE ZILLOW PROFILE URL HERE]**
+
+### Data to Extract:
+
+**AGENT INFO:**
+- Agent/Team name
+- Brokerage name
+- Phone number
+- Email (if available)
+- Location/City
+
+**STATS (for the page 1 header area, if you choose to include):**
+- Career sales volume (e.g., "$6B+")
+- Total homes sold
+- Zillow rating
+- Years of experience
+- Sales last 12 months
+- Average sale price
+- Price range
+- Team size (if applicable)
+
+**REVIEWS - Organize by these 6 objections:**
+
+1. **"Agents overpromise and underdeliver."**
+   → Find 2 quotes about: following through, meeting expectations, delivering results
+
+2. **"I won't get top dollar for my home."**
+   → Find 2 quotes about: sale price, record prices, negotiation, value achieved
+
+3. **"I'll be handed off to a junior agent."**
+   → Find 2 quotes about: personal attention, responsiveness, hands-on service
+
+4. **"The process will be stressful and complicated."**
+   → Find 2 quotes about: smooth process, support, ease, being there every step
+
+5. **"How do I know they understand my market?"**
+   → Find 2 quotes about: local expertise, market knowledge, area familiarity
+
+6. **"I tried selling before and it didn't work."**
+   → Find 2 quotes about: previous failed attempts, long-term relationships, repeat clients
+
+**DIFFERENTIATORS:**
+- Identify 6 standout metrics or patterns from the reviews/stats
+
+---
+
+## STEP 2: GENERATE THE DOCUMENT
+
+Create a 2-page HTML document using this exact template structure and styling. Populate with the extracted data.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why [AGENT NAME]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --ink: #1a1a1a;
+            --charcoal: #3d3d3d;
+            --stone: #6b6b6b;
+            --warm-gray: #9a9590;
+            --silk: #f7f6f4;
+            --cream: #fdfcfa;
+            --gold: #b8a88a;
+            --gold-muted: #d4cabb;
+        }
+        
+        @page {
+            size: 8.5in 11in;
+            margin: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--cream);
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            height: 11in;
+            background: var(--cream);
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            page-break-after: always;
+        }
+        
+        .inner-frame {
+            position: absolute;
+            top: 0.4in;
+            left: 0.4in;
+            right: 0.4in;
+            bottom: 0.4in;
+            border: 1px solid var(--gold-muted);
+            pointer-events: none;
+        }
+        
+        .content {
+            padding: 0.55in 0.7in 0.6in 0.7in;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding-bottom: 0.2in;
+            border-bottom: 1px solid var(--gold-muted);
+            margin-bottom: 0.2in;
+        }
+        
+        .header-eyebrow {
+            font-size: 7pt;
+            font-weight: 500;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            color: var(--warm-gray);
+            margin-bottom: 0.06in;
+        }
+        
+        .header-title {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 28pt;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: var(--ink);
+            line-height: 1.1;
+        }
+        
+        .header-title em {
+            font-style: italic;
+        }
+        
+        .header-subtitle {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 11pt;
+            font-style: italic;
+            color: var(--stone);
+            margin-top: 0.08in;
+        }
+        
+        /* Minimal Header */
+        .header-minimal {
+            text-align: center;
+            padding-bottom: 0.15in;
+            border-bottom: 1px solid var(--gold-muted);
+            margin-bottom: 0.2in;
+        }
+        
+        .header-minimal .header-eyebrow {
+            margin-bottom: 0;
+        }
+        
+        /* Section Title */
+        .section-title-block {
+            text-align: center;
+            margin-bottom: 0.2in;
+        }
+        
+        .section-part {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 9pt;
+            color: var(--gold);
+            margin-bottom: 0.04in;
+        }
+        
+        .section-title {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 16pt;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            color: var(--charcoal);
+            margin-bottom: 0.04in;
+        }
+        
+        .section-subtitle {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 10pt;
+            font-style: italic;
+            color: var(--stone);
+        }
+        
+        /* Objection Items */
+        .objections {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.18in;
+        }
+        
+        .objection {
+            display: flex;
+            gap: 0.15in;
+            align-items: flex-start;
+        }
+        
+        .objection-number {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 12pt;
+            font-weight: 500;
+            color: var(--gold);
+            width: 0.25in;
+            flex-shrink: 0;
+            text-align: right;
+            line-height: 1.2;
+        }
+        
+        .objection-content {
+            flex: 1;
+        }
+        
+        .objection-title {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-size: 9pt;
+            font-weight: 600;
+            color: var(--charcoal);
+            line-height: 1.3;
+            margin-bottom: 0.06in;
+        }
+        
+        .quote-block {
+            background: var(--silk);
+            padding: 0.12in 0.15in;
+            border-left: 2px solid var(--gold-muted);
+            margin-bottom: 0.06in;
+        }
+        
+        .quote-text {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 9.5pt;
+            font-style: italic;
+            color: var(--charcoal);
+            line-height: 1.4;
+        }
+        
+        .quote-attribution {
+            font-size: 7.5pt;
+            color: var(--warm-gray);
+            margin-top: 0.04in;
+            font-style: normal;
+        }
+        
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--gold-muted);
+            padding-top: 0.12in;
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4in;
+        }
+        
+        .footer-item {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 9pt;
+            color: var(--stone);
+        }
+        
+        .footer-divider {
+            color: var(--gold-muted);
+        }
+        
+        /* Differentiator list */
+        .differentiators {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.18in 0.3in;
+            margin-bottom: 0.5in;
+        }
+        
+        .diff-item {
+            display: flex;
+            gap: 0.1in;
+            align-items: flex-start;
+        }
+        
+        .diff-icon {
+            color: var(--gold);
+            font-size: 10pt;
+            line-height: 1.3;
+        }
+        
+        .diff-text {
+            font-size: 9.5pt;
+            color: var(--charcoal);
+            line-height: 1.4;
+        }
+        
+        /* Editable */
+        [contenteditable="true"] {
+            outline: none;
+            border-radius: 2px;
+        }
+        
+        [contenteditable="true"]:hover {
+            background: rgba(184, 168, 138, 0.08);
+        }
+        
+        [contenteditable="true"]:focus {
+            background: rgba(184, 168, 138, 0.12);
+        }
+        
+        @media print {
+            body { background: white; }
+            .page { margin: 0; box-shadow: none; }
+            [contenteditable="true"]:hover,
+            [contenteditable="true"]:focus { background: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <!-- PAGE 1: First 3 Objections -->
+    <div class="page">
+        <div class="inner-frame"></div>
+        <div class="content">
+            <header class="header">
+                <div class="header-eyebrow">Prepared Exclusively for You</div>
+                <h1 class="header-title">Why <em>[AGENT NAME]</em></h1>
+                <p class="header-subtitle">What our clients say—in their own words</p>
+            </header>
+            
+            <div class="section-title-block">
+                <div class="section-part">Part One</div>
+                <h2 class="section-title">Addressing Your Concerns</h2>
+                <p class="section-subtitle">Every skeptical seller asks these questions. Here's what our clients experienced.</p>
+            </div>
+            
+            <div class="objections">
+                <div class="objection">
+                    <div class="objection-number">1</div>
+                    <div class="objection-content">
+                        <div class="objection-title">"Agents overpromise and underdeliver."</div>
+                        <div class="quote-block">
+                            <div class="quote-text">[QUOTE 1]</div>
+                            <div class="quote-attribution">— [NAME], [LOCATION]</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">[QUOTE 2]</div>
+                            <div class="quote-attribution">— [NAME], [LOCATION]</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="objection">
+                    <div class="objection-number">2</div>
+                    <div class="objection-content">
+                        <div class="objection-title">"I won't get top dollar for my home."</div>
+                        <div class="quote-block">
+                            <div class="quote-text">[QUOTE 1]</div>
+                            <div class="quote-attribution">— [NAME], [LOCATION]</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">[QUOTE 2]</div>
+                            <div class="quote-attribution">— [NAME], [LOCATION]</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="objection">
+                    <div class="objection-number">3</div>
+                    <div class="objection-content">
+                        <div class="objection-title">"I'll be handed off to a junior agent."</div>
+                        <div class="quote-block">
+                            <div class="quote-text">[QUOTE 1]</div>
+                            <div class="quote-attribution">— [NAME], [LOCATION]</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">[QUOTE 2]</div>
+                            <div class="quote-attribution">— [NAME], [LOCATION]</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <span class="footer-item">[AGENT/TEAM NAME]</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item">[PHONE]</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item">Page 1</span>
+            </footer>
+        </div>
+    </div>
+
+    <!-- PAGE 2: Objections 4-6 + Differentiators -->
+    <div class="page">
+        <div class="inner-frame"></div>
+        <div class="content">
+            <header class="header-minimal">
+                <div class="header-eyebrow">[AGENT/TEAM NAME]</div>
+            </header>
+            
+            <div class="objections">
+                <div class="objection">
+                    <div class="objection-number">4</div>
+                    <div class="objection-content">
+                        <div class="objection-title">"The process will be stressful and complicated."</div>
+                        <div class="quote-block">
+                            <div class="quote-text">[QUOTE 1]</div>
+                            <div class="quote-attribution">— [NAME], [LOCATION]</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">[QUOTE 2]</div>
+                            <div class="quote-attribution">— [NAME], [LOCATION]</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="objection">
+                    <div class="objection-number">5</div>
+                    <div class="objection-content">
+                        <div class="objection-title">"How do I know they understand my market?"</div>
+                        <div class="quote-block">
+                            <div class="quote-text">[QUOTE 1]</div>
+                            <div class="quote-attribution">— [NAME], [LOCATION]</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">[QUOTE 2]</div>
+                            <div class="quote-attribution">— [NAME], [LOCATION]</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="objection">
+                    <div class="objection-number">6</div>
+                    <div class="objection-content">
+                        <div class="objection-title">"I tried selling before and it didn't work."</div>
+                        <div class="quote-block">
+                            <div class="quote-text">[QUOTE 1]</div>
+                            <div class="quote-attribution">— [NAME], [LOCATION]</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text">[QUOTE 2]</div>
+                            <div class="quote-attribution">— [NAME], [LOCATION]</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-title-block" style="margin-top: 0.35in;">
+                <div class="section-part">Part Two</div>
+                <h2 class="section-title">What Sets Us Apart</h2>
+                <p class="section-subtitle">Patterns from [X] five-star reviews</p>
+            </div>
+            
+            <div class="differentiators" style="gap: 0.18in 0.3in; margin-bottom: 0.5in;">
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text">[DIFFERENTIATOR 1]</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text">[DIFFERENTIATOR 2]</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text">[DIFFERENTIATOR 3]</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text">[DIFFERENTIATOR 4]</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text">[DIFFERENTIATOR 5]</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text">[DIFFERENTIATOR 6]</div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <span class="footer-item">[AGENT/TEAM NAME]</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item">[PHONE]</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item">Page 2</span>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+---
+
+## FORMATTING RULES:
+
+1. **Quotes:** Keep to 1-3 sentences max. Use the strongest excerpt if longer.
+2. **Attributions:** Use "— [Name], [City]" or "— Verified Zillow Review, [City]" if no name
+3. **Differentiators:** Write as punchy statements with specific numbers when possible
+4. **If no quote fits an objection:** Adapt the closest quote or note "No direct quote found"
+
+---
+
+## USAGE:
+
+1. Paste the Zillow profile URL
+2. Claude extracts all data
+3. Claude generates the complete HTML document
+4. Copy HTML and open in browser to print/save as PDF
+
+---
+
+# Template Customization Request
+
+Create an HTML artifact with the customized template that I can preview directly in this chat.
+
+## CRITICAL: Output Format
+**You MUST create a previewable HTML artifact** using Claude's artifact feature:
+- The artifact MUST be visible and renderable in the Claude UI
+- I need to see a live preview of the HTML, not just code
+- Use artifact type "text/html" so it renders as a webpage preview
+- Do NOT just paste HTML code in the chat message
+
+## Print Size Requirements
+**This template is designed for: 8.5x11 inches**
+
+You MUST ensure the output:
+- Fits exactly within 8.5x11 inches when printed
+- Does NOT exceed the boundaries of 8.5x11 inches
+- Maintains proper margins for printing (at least 0.25" / 6mm on all sides)
+- All content, images, and text must be contained within the printable area
+- Do NOT add content that would cause the document to overflow onto additional pages
+
+## Instructions
+You are helping customize an HTML marketing template called "Cannonball: Destroy The Objections" for print size: 8.5x11 inches. Please modify the HTML below by:
+1. Replacing placeholder variables (like {{variable_name}}) with the provided information
+2. Applying the brand accent color to appropriate accent elements (buttons, highlights, borders)
+3. Inserting images at appropriate locations using the provided URLs
+4. Maintaining the exact layout and structure of the template
+5. **IMPORTANT: Ensuring ALL content fits within 8.5x11 inches - do not exceed this size**
+
+## User Profile Information
+
+### Contact Details
+- First Name: Ryan
+- Last Name: Rose
+- Email Address: ryan@rosehomeslv.com
+- Phone Number: 7027475921
+
+### Business Details
+- Company/Brokerage Name: Real Broker, LLC
+- Area We Serve: Las Vegas
+- Job Title: Nevada
+- License Number: S.0185572
+- Short Bio: Hey! I'm Ryan Rose, The Ethical Vegas Realtor. I'm a local agent on a Top Producing Las Vegas Real Estate Team with globally recognized marketing strategies for selling homes faster using Social Media and old school ideas (like actually picking up the phone and calling people!). I am honored to help people in the Las Vegas area buy, sell, and invest. My approach is simple: No pressure. No BS. Only genuine guidance from start to close. I look forward to hearing from you and showing you what I do above and beyond any other agents in the city!
+
+### Branding
+
+### Social & Web Links
+- Website: https://www.rosehomeslv.com
+- YouTube Channel: https://www.youtube.com/@rosehomeslv
+- Instagram: https://www.instagram.com/rosehomeslv
+
+## Image URLs
+Use these image URLs directly in the HTML output. Insert them as `<img src="URL">` tags at the appropriate locations:
+- Professional Headshot: https://ik.imagekit.io/listingleads/_personalization/1773467947159_blob_9noJLCXIy?tr=w-300
+- Company Logo: https://ik.imagekit.io/listingleads/_personalization/1773468120260_Real_Logo_Outline_White_kHJXcZ1A9q.png?tr=w-300
+
+## HTML Template Code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Ryan Rose</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --ink: #1a1a1a;
+            --charcoal: #3d3d3d;
+            --stone: #6b6b6b;
+            --warm-gray: #9a9590;
+            --silk: #f7f6f4;
+            --cream: #fdfcfa;
+            --gold: #b8a88a;
+            --gold-muted: #d4cabb;
+            --navy: #2c3e50;
+        }
+        
+        @page {
+            size: 8.5in 11in;
+            margin: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--cream);
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .page {
+            width: 8.5in;
+            min-height: 11in;
+            height: 11in;
+            background: var(--cream);
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            page-break-after: always;
+        }
+        
+        .inner-frame {
+            position: absolute;
+            top: 0.4in;
+            left: 0.4in;
+            right: 0.4in;
+            bottom: 0.4in;
+            border: 1px solid var(--gold-muted);
+            pointer-events: none;
+        }
+        
+        .content {
+            padding: 0.55in 0.7in 0.6in 0.7in;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding-bottom: 0.2in;
+            border-bottom: 1px solid var(--gold-muted);
+            margin-bottom: 0.2in;
+        }
+        
+        .header-eyebrow {
+            font-size: 7pt;
+            font-weight: 500;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            color: var(--warm-gray);
+            margin-bottom: 0.06in;
+        }
+        
+        .header-title {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 28pt;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: var(--ink);
+            line-height: 1.1;
+        }
+        
+        .header-title em {
+            font-style: italic;
+        }
+        
+        .header-subtitle {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 11pt;
+            font-style: italic;
+            color: var(--stone);
+            margin-top: 0.08in;
+        }
+        
+        /* Minimal Header */
+        .header-minimal {
+            text-align: center;
+            padding-bottom: 0.15in;
+            border-bottom: 1px solid var(--gold-muted);
+            margin-bottom: 0.2in;
+        }
+        
+        .header-minimal .header-eyebrow {
+            margin-bottom: 0;
+        }
+        
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.15in;
+            margin-bottom: 0.25in;
+            padding: 0.2in;
+            background: var(--silk);
+            border-radius: 4px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 18pt;
+            font-weight: 500;
+            color: var(--gold);
+            line-height: 1.1;
+        }
+        
+        .stat-label {
+            font-size: 7pt;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--stone);
+            margin-top: 0.03in;
+        }
+        
+        /* Section Title */
+        .section-title-block {
+            text-align: center;
+            margin-bottom: 0.2in;
+        }
+        
+        .section-part {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 9pt;
+            color: var(--gold);
+            margin-bottom: 0.04in;
+        }
+        
+        .section-title {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 16pt;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            color: var(--charcoal);
+            margin-bottom: 0.04in;
+        }
+        
+        .section-subtitle {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 10pt;
+            font-style: italic;
+            color: var(--stone);
+        }
+        
+        /* Objection Items */
+        .objections {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.18in;
+        }
+        
+        .objection {
+            display: flex;
+            gap: 0.15in;
+            align-items: flex-start;
+        }
+        
+        .objection-number {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 12pt;
+            font-weight: 500;
+            color: var(--gold);
+            width: 0.25in;
+            flex-shrink: 0;
+            text-align: right;
+            line-height: 1.2;
+        }
+        
+        .objection-content {
+            flex: 1;
+        }
+        
+        .objection-title {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-size: 9pt;
+            font-weight: 600;
+            color: var(--charcoal);
+            line-height: 1.3;
+            margin-bottom: 0.06in;
+        }
+        
+        .quote-block {
+            background: var(--silk);
+            padding: 0.12in 0.15in;
+            border-left: 2px solid var(--gold-muted);
+            margin-bottom: 0.06in;
+        }
+        
+        .quote-text {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 9.5pt;
+            font-style: italic;
+            color: var(--charcoal);
+            line-height: 1.4;
+        }
+        
+        .quote-attribution {
+            font-size: 7.5pt;
+            color: var(--warm-gray);
+            margin-top: 0.04in;
+            font-style: normal;
+        }
+        
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--gold-muted);
+            padding-top: 0.12in;
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4in;
+        }
+        
+        .footer-item {font-family: Georgia, 'Times New Roman', serif;
+            font-size: 9pt;
+            color: var(--stone);
+        }
+        
+        .footer-divider {
+            color: var(--gold-muted);
+        }
+        
+        /* Differentiator list */
+        .differentiators {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.12in 0.25in;
+            margin-top: 0.15in;
+        }
+        
+        .diff-item {
+            display: flex;
+            gap: 0.1in;
+            align-items: flex-start;
+        }
+        
+        .diff-icon {
+            color: var(--gold);
+            font-size: 10pt;
+            line-height: 1.3;
+        }
+        
+        .diff-text {
+            font-size: 9.5pt;
+            color: var(--charcoal);
+            line-height: 1.4;
+        }
+        
+        /* Editable */
+        [contenteditable="true"] {
+            outline: none;
+            border-radius: 2px;
+        }
+        
+        [contenteditable="true"]:hover {
+            background: rgba(184, 168, 138, 0.08);
+        }
+        
+        [contenteditable="true"]:focus {
+            background: rgba(184, 168, 138, 0.12);
+        }
+        
+        @media print {
+            body { background: white; }
+            .page { margin: 0; box-shadow: none; }
+            [contenteditable="true"]:hover,
+            [contenteditable="true"]:focus { background: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <!-- PAGE 1: Overview & First 3 Objections -->
+    <div class="page">
+        <div class="inner-frame"></div>
+        <div class="content">
+            <header class="header">
+                <div class="header-eyebrow">Prepared Exclusively for You</div>
+                <h1 class="header-title">Why <em>Ryan Rose</em></h1>
+                <p class="header-subtitle">What our clients say—in their own words</p>
+            </header>
+            
+            <div class="section-title-block">
+                <div class="section-part">Part One</div>
+                <h2 class="section-title">Addressing Your Concerns</h2>
+                <p class="section-subtitle">Every skeptical seller asks these questions. Here's what our clients experienced.</p>
+            </div>
+            
+            <div class="objections">
+                <div class="objection">
+                    <div class="objection-number">1</div>
+                    <div class="objection-content">
+                        <div class="objection-title" contenteditable="true">"Agents overpromise and underdeliver."</div>
+                        <div class="quote-block">
+                            <div class="quote-text" contenteditable="true">"Ryan is persistent, punctual, knowledgeable and will get the deal closed. He is very active in the office, attending events, classes and asking questions to learn more each day & deliver amazing results for his clients."</div>
+                            <div class="quote-attribution">— Adrienne Salomon, Title Partner, Las Vegas</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text" contenteditable="true">"I was confident that I didn't need to 'check in' constantly to make sure things were getting done when they needed to be."</div>
+                            <div class="quote-attribution">— Kevin Rich, Google Review, Las Vegas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="objection">
+                    <div class="objection-number">2</div>
+                    <div class="objection-content">
+                        <div class="objection-title" contenteditable="true">"How do I know my agent is going to fight for me?"</div>
+                        <div class="quote-block">
+                            <div class="quote-text" contenteditable="true">"When the appraisal came in low, Ryan negotiated the price down to match it, which saved me thousands. He also got the sellers to complete every repair before closing."</div>
+                            <div class="quote-attribution">— Elaine Anderson, Zillow Review, Las Vegas</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text" contenteditable="true">"We closed on a place we love and paid less than asking. Ryan negotiated to have repairs completed before closing and kept us informed every step of the way."</div>
+                            <div class="quote-attribution">— Michael Remski, Zillow Review, Henderson</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="objection">
+                    <div class="objection-number">3</div>
+                    <div class="objection-content">
+                        <div class="objection-title" contenteditable="true">"I'll be handed off to a junior agent."</div>
+                        <div class="quote-block">
+                            <div class="quote-text" contenteditable="true">"Ryan made the home-buying process a cinch. Although we got into a bit of a crunch during the due diligence period, Ryan was critical in negotiating on our behalf and keeping us up-to-date."</div>
+                            <div class="quote-attribution">— Kevin Rich, Google Review, Las Vegas</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text" contenteditable="true">"From offering advice when I started the process, providing great walkthrough videos for me while out of state, and being on site with me every step of the way—always responsive, helpful, and knowledgeable."</div>
+                            <div class="quote-attribution">— Kevin Mckenna, Google Review, Las Vegas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <span class="footer-item" contenteditable="true">Ryan Rose · Real Broker, LLC</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item" contenteditable="true">702-747-5921</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item">Page 1</span>
+            </footer>
+        </div>
+    </div>
+
+    <!-- PAGE 2: Objections 4-6 + Differentiators -->
+    <div class="page">
+        <div class="inner-frame"></div>
+        <div class="content">
+            <header class="header-minimal">
+                <div class="header-eyebrow">Ryan Rose · Real Broker, LLC</div>
+            </header>
+
+            <div class="objections">
+                <div class="objection">
+                    <div class="objection-number">4</div>
+                    <div class="objection-content">
+                        <div class="objection-title" contenteditable="true">"The process will be stressful and complicated."</div>
+                        <div class="quote-block">
+                            <div class="quote-text" contenteditable="true">"As a first-time buyer, I had no idea what I was getting into, but Ryan made the whole process so much easier than I expected."</div>
+                            <div class="quote-attribution">— Elaine Anderson, Zillow Review, Las Vegas</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text" contenteditable="true">"First-time buyers and Ryan made the process smooth from start to finish. Quick to respond, honest advice, no pressure."</div>
+                            <div class="quote-attribution">— Michael Remski, Zillow Review, Henderson</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="objection">
+                    <div class="objection-number">5</div>
+                    <div class="objection-content">
+                        <div class="objection-title" contenteditable="true">"How do I know they understand my market?"</div>
+                        <div class="quote-block">
+                            <div class="quote-text" contenteditable="true">"He found me a fully remodeled single-story in the Sunburst area near Sunset Park that checked all my boxes. As a teacher, my time is limited and my budget was tight, so having someone who actually fought for me meant everything."</div>
+                            <div class="quote-attribution">— Elaine Anderson, Google Review, Las Vegas</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text" contenteditable="true">"Ryan helped us land a remodeled home in Henderson, negotiated to have repairs completed before closing, and kept us informed every step of the way."</div>
+                            <div class="quote-attribution">— Michael Remski, Zillow Review, Henderson</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="objection">
+                    <div class="objection-number">6</div>
+                    <div class="objection-content">
+                        <div class="objection-title" contenteditable="true">"How do I know I can trust my agent?"</div>
+                        <div class="quote-block">
+                            <div class="quote-text" contenteditable="true">"He's not rushing anyone into a decision. He's patient, he's thorough, and he genuinely wants people to make good decisions. That kind of integrity is hard to find."</div>
+                            <div class="quote-attribution">— Natasha S., Google Review, Las Vegas</div>
+                        </div>
+                        <div class="quote-block">
+                            <div class="quote-text" contenteditable="true">"I've heard him give realistic advice about timing and neighborhoods, even when it meant someone waiting longer to buy."</div>
+                            <div class="quote-attribution">— Natasha S., Google Review, Las Vegas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title-block" style="margin-top: 0.35in;">
+                <div class="section-part">Part Two</div>
+                <h2 class="section-title">What Sets Ryan Apart</h2>
+                <p class="section-subtitle">Patterns from five-star reviews across Google & Zillow</p>
+            </div>
+
+            <div class="differentiators" style="gap: 0.18in 0.3in; margin-bottom: 0.5in;">
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text" contenteditable="true">8 years of experience across multiple markets</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text" contenteditable="true">ABR, SRES, SRS & CMRS certified specialist</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text" contenteditable="true">Proven negotiator—clients consistently close under asking</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text" contenteditable="true">Hands-on service—no hand-offs to junior agents</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text" contenteditable="true">Out-of-state buyers supported with walkthrough videos</div>
+                </div>
+                <div class="diff-item">
+                    <div class="diff-icon">◆</div>
+                    <div class="diff-text" contenteditable="true">First-time buyers guided from pre-approval to close</div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <span class="footer-item" contenteditable="true">Ryan Rose · Real Broker, LLC</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item" contenteditable="true">702-747-5921</span>
+                <span class="footer-divider">·</span>
+                <span class="footer-item">Page 2</span>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+## Output Requirements
+- **CREATE A PREVIEWABLE HTML ARTIFACT** - Use the artifact feature with type "text/html"
+- The artifact MUST render as a visual preview in the Claude UI (not just code)
+- The artifact should contain the complete, modified HTML document starting with <!DOCTYPE html>
+- Preserve all existing styles and structure
+- Keep the same responsive layout
+- Replace all {{placeholder}} variables with the appropriate values from above
+- **CRITICAL: Output MUST fit within 8.5x11 inches when printed - do not exceed this print size**
+
+⚠️ IMPORTANT: I need to SEE the rendered HTML preview in the artifact panel, not read code. Make sure the artifact is previewable.

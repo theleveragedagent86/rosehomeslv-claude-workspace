@@ -1,0 +1,11 @@
+{
+  "name": "digital-cannonball-plugin",
+  "version": "1.0.0",
+  "description": "Generates a personalized digital cannonball prospecting page for expired listing homeowners. Researches the property on Zillow, extracts listing data and comps, and produces a self-contained HTML page with property analysis, marketing comparison, buyer demand data, market conditions, and a 12-step relaunch plan. Output is a single index.html file ready to text or email.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": ["expired", "cannonball", "prospecting", "listing", "zillow", "html", "marketing", "digital"],
+  "skills": "./skills/"
+}

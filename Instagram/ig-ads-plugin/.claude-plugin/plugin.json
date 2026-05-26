@@ -1,0 +1,11 @@
+{
+  "name": "meta-ads",
+  "version": "1.0.0",
+  "description": "Creates and inputs Meta/Instagram ad campaigns into Meta Business Suite via browser automation. Supports Just Listed, Just Sold, and Listing Lead Form campaigns with Housing Special Ad Category compliance. Includes automated lead sync from Meta Instant Forms to Lofty CRM. Integrates with listing-marketing Phase 3 and Phase 5B.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": ["meta-ads", "instagram-ads", "facebook-ads", "real-estate", "listing-marketing", "browser-automation"],
+  "skills": "./skills/"
+}

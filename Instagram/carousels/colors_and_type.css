@@ -1,0 +1,256 @@
+/* ============================================================
+   Rose Homes LV — Foundational tokens
+   Colors, type, spacing, radii, dividers
+   ============================================================ */
+
+/* Inter: loaded locally (variable font, covers weights 100–900) */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./fonts/Inter-VariableFont_opsz_wght.ttf") format("truetype-variations"),
+       url("./fonts/Inter-VariableFont_opsz_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./fonts/Inter-Italic-VariableFont_opsz_wght.ttf") format("truetype-variations"),
+       url("./fonts/Inter-Italic-VariableFont_opsz_wght.ttf") format("truetype");
+}
+
+/* Playfair Display + Montserrat: still loaded from Google Fonts —
+   not yet provided as files. Drop .ttf/.woff2 into fonts/ and swap
+   these imports for @font-face blocks when available. */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;700&display=swap');
+
+:root {
+  /* ---------- Brand color palette ---------- */
+  --rh-navy:            #1C2333;  /* Deep Navy — primary dark bg / dark text */
+  --rh-navy-90:         #2A314A;  /* slightly raised surface on navy */
+  --rh-navy-70:         #545A72;  /* hairline on navy */
+  --rh-gold:            #C9A86E;  /* Champagne Gold — accents only */
+  --rh-gold-soft:       #E2C896;  /* hover/highlight */
+  --rh-white:           #FFFFFF;
+  --rh-warm:            #F7F5F0;  /* Warm Off-White — secondary light bg */
+  --rh-warm-line:       #E8E3D6;  /* hairline on warm */
+  --rh-slate:           #8A8FA8;  /* muted/secondary text */
+
+  /* ---------- Semantic — Dark template (primary) ---------- */
+  --rh-dk-bg:           var(--rh-navy);
+  --rh-dk-surface:      var(--rh-navy-90);
+  --rh-dk-fg:           var(--rh-white);
+  --rh-dk-fg-muted:     var(--rh-slate);
+  --rh-dk-accent:       var(--rh-gold);
+  --rh-dk-rule:         var(--rh-gold);
+  --rh-dk-hairline:     rgba(201, 168, 110, 0.35);
+
+  /* ---------- Semantic — Light/inverted template ---------- */
+  --rh-lt-bg:           var(--rh-white);
+  --rh-lt-bg-warm:      var(--rh-warm);
+  --rh-lt-fg:           var(--rh-navy);
+  --rh-lt-fg-muted:     var(--rh-slate);
+  --rh-lt-accent:       var(--rh-gold);
+  --rh-lt-rule:         var(--rh-gold);
+  --rh-lt-hairline:     rgba(28, 35, 51, 0.12);
+
+  /* ---------- Type families ---------- */
+  --rh-font-display:    "Playfair Display", "Cormorant Garamond", "Times New Roman", serif;
+  --rh-font-heading:    "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  --rh-font-body:       "Inter", "Helvetica Neue", Arial, sans-serif;
+  --rh-font-label:      "Montserrat", "Helvetica Neue", Arial, sans-serif; /* uppercase + tracked */
+
+  /* ---------- Type scale ---------- */
+  --rh-fs-hero:         clamp(48px, 7vw, 88px);  /* Playfair Display Bold */
+  --rh-fs-display:      56px;
+  --rh-fs-h1:           40px;
+  --rh-fs-h2:           28px;
+  --rh-fs-h3:           20px;
+  --rh-fs-body:         16px;
+  --rh-fs-body-sm:      14px;
+  --rh-fs-label:        12px;
+  --rh-fs-stat:         64px; /* property stats / addresses */
+
+  /* Tracking */
+  --rh-track-label:     0.18em;   /* uppercase labels / tags */
+  --rh-track-display:   -0.01em;  /* Playfair display, tight */
+  --rh-track-heading:   0.02em;   /* Montserrat headings */
+
+  /* Line heights */
+  --rh-lh-display:      1.05;
+  --rh-lh-heading:      1.2;
+  --rh-lh-body:         1.55;
+
+  /* ---------- Spacing scale (4pt base) ---------- */
+  --rh-space-1:         4px;
+  --rh-space-2:         8px;
+  --rh-space-3:         12px;
+  --rh-space-4:         16px;
+  --rh-space-5:         24px;
+  --rh-space-6:         32px;
+  --rh-space-7:         48px;
+  --rh-space-8:         64px;
+  --rh-space-9:         96px;
+  --rh-space-10:        128px; /* editorial breathing room */
+
+  /* ---------- Radii (subtle only) ---------- */
+  --rh-radius-0:        0px;
+  --rh-radius-1:        4px;
+  --rh-radius-2:        6px;
+  --rh-radius-3:        8px;   /* max */
+
+  /* ---------- Borders ---------- */
+  --rh-border-hair:     1px solid var(--rh-lt-hairline);
+  --rh-border-hair-dk:  1px solid var(--rh-dk-hairline);
+  --rh-border-gold:     1px solid var(--rh-gold);
+  --rh-border-navy:     1px solid var(--rh-navy);
+
+  /* ---------- Shadows (used very sparingly) ---------- */
+  --rh-shadow-print:    0 1px 2px rgba(28, 35, 51, 0.06);
+  --rh-shadow-card:     0 8px 24px -12px rgba(28, 35, 51, 0.18);
+  --rh-shadow-photo:    0 30px 60px -30px rgba(28, 35, 51, 0.55);
+
+  /* ---------- Motion ---------- */
+  --rh-ease:            cubic-bezier(0.25, 0.1, 0.25, 1);
+  --rh-dur-fast:        140ms;
+  --rh-dur-base:        240ms;
+  --rh-dur-slow:        420ms;
+}
+
+/* ============================================================
+   Element defaults
+   ============================================================ */
+
+.rh-body {
+  font-family: var(--rh-font-body);
+  font-size: var(--rh-fs-body);
+  line-height: var(--rh-lh-body);
+  color: var(--rh-lt-fg);
+  background: var(--rh-lt-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.rh-body--dark { background: var(--rh-dk-bg); color: var(--rh-dk-fg); }
+.rh-body--warm { background: var(--rh-lt-bg-warm); color: var(--rh-lt-fg); }
+
+/* Display / hero — Playfair Display Bold, tight tracking */
+.rh-hero {
+  font-family: var(--rh-font-display);
+  font-weight: 700;
+  font-size: var(--rh-fs-hero);
+  line-height: var(--rh-lh-display);
+  letter-spacing: var(--rh-track-display);
+  text-wrap: balance;
+}
+.rh-display {
+  font-family: var(--rh-font-display);
+  font-weight: 700;
+  font-size: var(--rh-fs-display);
+  line-height: var(--rh-lh-display);
+  letter-spacing: var(--rh-track-display);
+}
+.rh-h1 {
+  font-family: var(--rh-font-display);
+  font-weight: 700;
+  font-size: var(--rh-fs-h1);
+  line-height: var(--rh-lh-heading);
+  letter-spacing: var(--rh-track-display);
+}
+.rh-h2 {
+  font-family: var(--rh-font-heading);
+  font-weight: 600;
+  font-size: var(--rh-fs-h2);
+  line-height: var(--rh-lh-heading);
+  letter-spacing: var(--rh-track-heading);
+}
+.rh-h3 {
+  font-family: var(--rh-font-heading);
+  font-weight: 600;
+  font-size: var(--rh-fs-h3);
+  line-height: var(--rh-lh-heading);
+  letter-spacing: var(--rh-track-heading);
+}
+
+/* Body */
+.rh-p {
+  font-family: var(--rh-font-body);
+  font-weight: 400;
+  font-size: var(--rh-fs-body);
+  line-height: var(--rh-lh-body);
+  text-wrap: pretty;
+}
+.rh-p--sm { font-size: var(--rh-fs-body-sm); }
+.rh-muted { color: var(--rh-slate); }
+
+/* Labels / tags / eyebrows — uppercase tracked Montserrat */
+.rh-label {
+  font-family: var(--rh-font-label);
+  font-weight: 600;
+  font-size: var(--rh-fs-label);
+  letter-spacing: var(--rh-track-label);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* Big property stat — oversized Playfair */
+.rh-stat {
+  font-family: var(--rh-font-display);
+  font-weight: 700;
+  font-size: var(--rh-fs-stat);
+  line-height: 0.95;
+  letter-spacing: var(--rh-track-display);
+}
+
+/* Pull quote — Playfair italic */
+.rh-quote {
+  font-family: var(--rh-font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+/* ============================================================
+   Dividers + corner brackets — signature accents
+   ============================================================ */
+
+.rh-rule {
+  height: 1px;
+  background: var(--rh-gold);
+  border: 0;
+  width: 64px;
+}
+.rh-rule--full { width: 100%; }
+.rh-rule--navy { background: var(--rh-navy); }
+
+/* L-shaped corner bracket — wrap any element */
+.rh-brackets {
+  position: relative;
+  padding: var(--rh-space-6);
+}
+.rh-brackets::before,
+.rh-brackets::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--rh-gold);
+}
+.rh-brackets::before {
+  top: 0; left: 0;
+  border-right: 0; border-bottom: 0;
+}
+.rh-brackets::after {
+  bottom: 0; right: 0;
+  border-left: 0; border-top: 0;
+}
+
+/* Single thin diagonal accent */
+.rh-diagonal {
+  width: 56px; height: 1px;
+  background: var(--rh-gold);
+  transform: rotate(-45deg);
+  transform-origin: left center;
+}

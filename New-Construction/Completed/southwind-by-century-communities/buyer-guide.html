@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southwind by Century Communities - Complete Buyer Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ============================
+           PAGE & PRINT
+           ============================ */
+        @page {
+            size: letter;
+            margin: 0.6in 0.75in 0.75in 0.75in;
+        }
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .card, .plan-card, .cost-card, .cost-total, .step-card, .faq-item, table, .incentive-bar { break-inside: avoid; }
+            .section { break-inside: auto; }
+            .page-break { break-after: page; }
+        }
+        .page-break { break-after: page; }
+
+        /* ============================
+           TOKENS
+           ============================ */
+        :root {
+            --white: #ffffff;
+            --light: #f7f8fa;
+            --light-card: #f0f2f5;
+            --border: #e2e5ea;
+            --border-light: #eef0f3;
+            --text-primary: #1a1a1a;
+            --text-body: #3d3d3d;
+            --text-secondary: #6b6b6b;
+            --text-tertiary: #999999;
+            --accent: #1a3a5c;
+            --accent-light: rgba(26,58,92,0.08);
+            --accent-muted: rgba(26,58,92,0.12);
+            --radius: 8px;
+            --radius-sm: 5px;
+        }
+
+        /* ============================
+           RESET & BASE
+           ============================ */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 15px; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-body);
+            line-height: 1.7;
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ============================
+           LAYOUT
+           ============================ */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* ============================
+           SECTIONS
+           ============================ */
+        .section {
+            padding: 36px 0;
+        }
+        .section--white {
+            background: var(--white);
+        }
+        .section--alt {
+            background: var(--light);
+        }
+
+        /* ============================
+           SECTION LABEL
+           ============================ */
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .section-label::after {
+            content: '';
+            flex: 0 0 50px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        /* ============================
+           TYPOGRAPHY
+           ============================ */
+        .headline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            line-height: 1.15;
+            margin-bottom: 14px;
+        }
+        .headline--sm {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        p + p {
+            margin-top: 10px;
+        }
+        .text-accent {
+            color: var(--accent);
+        }
+
+        /* ============================
+           HERO
+           ============================ */
+        .hero {
+            background: var(--light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 0 0;
+        }
+        .hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero-bottom {
+            background: var(--accent);
+            color: #ffffff;
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-top: auto;
+        }
+        .hero-kicker {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 64px;
+            letter-spacing: 6px;
+            color: var(--text-primary);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .hero-subtitle {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 4px;
+            color: var(--text-tertiary);
+            margin-bottom: 20px;
+        }
+        .hero-tagline {
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 520px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+        .facts-bar {
+            border-top: 1px solid var(--border);
+            padding-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .fact-item {
+            text-align: center;
+        }
+        .fact-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+        }
+        .fact-label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+        }
+
+        /* ============================
+           INCENTIVE BAR
+           ============================ */
+        .incentive-bar {
+            background: var(--accent);
+            color: var(--white);
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+        }
+
+        /* ============================
+           TABLES
+           ============================ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        table th {
+            text-align: left;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            padding: 12px 14px;
+            border-bottom: 2px solid var(--accent);
+        }
+        table td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-body);
+        }
+        table tr:last-child td {
+            border-bottom: none;
+        }
+        table td:first-child {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           BUILDER CARD
+           ============================ */
+        .builder-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-top: 3px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+        .builder-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .builder-card p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .builder-feature {
+            margin-top: 6px;
+        }
+        .builder-feature strong {
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           PLAN TABLE
+           ============================ */
+        .plan-table {
+            margin-top: 20px;
+        }
+
+        /* ============================
+           PLAN CARDS (Floor Plan Images)
+           ============================ */
+        .plan-card {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 2px solid var(--accent);
+        }
+        .plan-card-label {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 36px;
+            letter-spacing: 3px;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .plan-card-images {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .plan-card-image-wrap {
+            flex: 1;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+        .plan-card-image-level {
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            padding: 6px 10px;
+            background: var(--light);
+            border-bottom: 1px solid var(--border);
+        }
+        .plan-card-img {
+            width: 100%;
+            display: block;
+            max-height: 280px;
+            object-fit: contain;
+            background: #f5f2ed;
+        }
+        .plan-card-desc {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 1.6;
+            text-align: center;
+            margin-top: 12px;
+        }
+        .plan-card-source {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            text-align: center;
+            margin-top: 6px;
+        }
+        .plan-card-source a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .plan-card-source a:hover {
+            text-decoration: underline;
+        }
+
+        /* ============================
+           COST GRID
+           ============================ */
+        .cost-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin: 24px 0;
+        }
+        .cost-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 18px 16px;
+            text-align: center;
+        }
+        .cost-card-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 26px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+        }
+        .cost-card-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .cost-total {
+            background: var(--accent-light);
+            border: 1px solid var(--accent-muted);
+            border-radius: var(--radius-sm);
+            padding: 20px 16px;
+            text-align: center;
+            grid-column: 1 / -1;
+        }
+        .cost-total-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 34px;
+            letter-spacing: 1px;
+            color: var(--accent);
+        }
+        .cost-total-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        .cost-note {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+        .calc-link {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 12px 28px;
+            background: var(--accent);
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+        /* ============================
+           COMPARE TABLE
+           ============================ */
+        .compare-table {
+            margin-top: 20px;
+        }
+        .compare-table tr.highlight td {
+            background: var(--accent-light);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           ROADMAP (Buying Process)
+           ============================ */
+        .roadmap {
+            position: relative;
+            margin-top: 24px;
+            padding-left: 48px;
+        }
+        .roadmap::before {
+            content: '';
+            position: absolute;
+            left: 18px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent), var(--border) 95%);
+        }
+        .roadmap-step {
+            position: relative;
+            padding-bottom: 16px;
+            break-inside: avoid;
+        }
+        .roadmap-step:last-child {
+            padding-bottom: 0;
+        }
+        .roadmap-node {
+            position: absolute;
+            left: -48px;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 15px;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+        }
+        .roadmap-step:last-child .roadmap-node {
+            background: var(--accent);
+            color: var(--white);
+        }
+        .roadmap-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+        .roadmap-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ============================
+           FAQ
+           ============================ */
+        .faq-item {
+            border-bottom: 1px solid var(--border-light);
+            padding: 20px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .faq-a {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 1.7;
+        }
+
+        /* ============================
+           INCENTIVE LIST
+           ============================ */
+        .incentive-list {
+            list-style: none;
+            margin: 16px 0;
+        }
+        .incentive-list li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .incentive-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 17px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        /* ============================
+           AMENITY LIST
+           ============================ */
+        .amenity-group {
+            margin-top: 20px;
+        }
+        .amenity-group h4 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .amenity-list {
+            list-style: none;
+            columns: 2;
+            column-gap: 24px;
+        }
+        .amenity-list li {
+            padding: 5px 0 5px 18px;
+            position: relative;
+            font-size: 14px;
+            color: var(--text-body);
+        }
+        .amenity-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        /* ============================
+           CTA
+           ============================ */
+        .cta-section {
+            text-align: center;
+            padding: 56px 0;
+            background: var(--light);
+        }
+        .cta-headline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            letter-spacing: 2px;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .cta-sub {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        .cta-contact {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 2;
+        }
+        .cta-contact strong {
+            color: var(--text-primary);
+        }
+        .cta-contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* ============================
+           CTA LAST PAGE
+           ============================ */
+        .cta-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--light);
+        }
+        .cta-disclaimer {
+            font-size: 11px;
+            color: var(--text-tertiary);
+            margin-top: 32px;
+            line-height: 1.6;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================
+           PRO TIP
+           ============================ */
+        .pro-tip {
+            background: var(--accent-light);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin-top: 16px;
+            font-size: 14px;
+            color: var(--text-body);
+        }
+        .pro-tip strong {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================
+         HERO
+         ======================== -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-kicker">A Century Communities Community</div>
+                <h1>SOUTHWIND</h1>
+                <div class="hero-subtitle">COMPLETE BUYER GUIDE</div>
+                <p class="hero-tagline">New two-story homes in southwest Las Vegas, just south of Mountain's Edge. Starting from $510,990.</p>
+                <div class="facts-bar">
+                    <div class="fact-item">
+                        <div class="fact-value">$510K+</div>
+                        <div class="fact-label">Starting</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">2,605</div>
+                        <div class="fact-label">Max Sq Ft</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">3-5</div>
+                        <div class="fact-label">Beds</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">3</div>
+                        <div class="fact-label">Plans</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bottom">
+            Current Incentive: 3.875% (4.827% APR) 30-year fixed financing, $3,000 closing cost credit, plus 2-1 buydown options through Inspire Home Loans
+        </div>
+    </header>
+    <div class="page-break"></div>
+
+    <!-- ========================
+         QUICK FACTS
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Quick Facts</div>
+            <div class="headline headline--sm">AT A GLANCE</div>
+            <table>
+                <tbody>
+                    <tr><td>Builder</td><td>Century Communities (NYSE: CCS)</td></tr>
+                    <tr><td>Location</td><td>9809 Lost Horse Avenue, Las Vegas, NV 89178</td></tr>
+                    <tr><td>Floor Plans</td><td>3 plans, 2,054 to 2,605 sq ft</td></tr>
+                    <tr><td>Bedrooms</td><td>3 to 5</td></tr>
+                    <tr><td>Base Pricing</td><td>$510,990 to $543,990</td></tr>
+                    <tr><td>HOA</td><td>$69 per month</td></tr>
+                    <tr><td>SID/LID</td><td>None confirmed. Verify with sales office.</td></tr>
+                    <tr><td>Schools</td><td>Tyrone Thompson Elementary, Gunderson MS, Sierra Vista HS</td></tr>
+                    <tr><td>Distance to Strip</td><td>About 12 miles, 15 to 20 minutes via I-15</td></tr>
+                    <tr><td>Sales Center</td><td>9809 Lost Horse Avenue, Las Vegas, NV 89178</td></tr>
+                    <tr><td>Sales Hours</td><td>Mon-Thu 10-6, Fri 12-6, Sat-Sun 10-6</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ========================
+         ABOUT
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white" style="padding-bottom: 16px;">
+        <div class="container">
+            <div class="section-label">About</div>
+            <div class="headline">A QUIET CORNER OF SOUTHWEST LAS VEGAS</div>
+            <p>Southwind is a brand-new community by Century Communities. It sits at 9809 Lost Horse Avenue in southwest Las Vegas, just south of the Mountain's Edge master plan. The community opened in June 2024 and is now in Phase 3 of its build out.</p>
+            <p>Southwind keeps things simple. There are three two-story floor plans, all with two-car garages, ranging from 2,054 to 2,605 square feet. Base prices start at $510,990 and go up to $543,990. The HOA is just $69 per month, which is one of the lowest in the entire southwest valley.</p>
+            <p>This community is a strong fit for first-time buyers, growing families, and anyone moving up from a townhome or condo. You get a new home, a top-rated elementary school nearby, and easy access to I-15 and the Strip. If you want a no-fuss new build at a fair price, Southwind belongs on your short list.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         BUILDER
+         ======================== -->
+    <section class="section section--alt" style="padding-top: 20px;">
+        <div class="container">
+            <div class="section-label">Builder</div>
+            <div class="headline">ABOUT CENTURY COMMUNITIES</div>
+            <div class="builder-card">
+                <h3>CENTURY COMMUNITIES</h3>
+                <p>Century Communities is a publicly traded national homebuilder (NYSE: CCS) and the sole builder at Southwind. They focus on attainable new construction across more than a dozen states, with a strong presence in Nevada and the Las Vegas valley.</p>
+
+                <p class="builder-feature"><strong>Simple lineup.</strong> Three two-story floor plans with two-car garages. The decision tree is small, which makes the buying process easier.</p>
+                <p class="builder-feature"><strong>Inspire Home Loans.</strong> Century has its own in-house lender, which is what powers the aggressive 3.875% rate offer at Southwind.</p>
+                <p class="builder-feature"><strong>Energy efficiency.</strong> Homes come with energy-saving features that can lower your monthly utility bills.</p>
+                <p class="builder-feature"><strong>Quick Move-In homes.</strong> If you cannot wait 6 to 10 months, Century usually has homes already under construction with shorter timelines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FLOOR PLANS
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Floor Plans</div>
+            <div class="headline">PLANS AND PRICING</div>
+
+            <p>Southwind offers three two-story floor plans. Every home has a two-car garage. The lineup scales from a starter footprint at just over 2,000 square feet to a flexible 2,605 plan that can be configured up to five bedrooms.</p>
+
+            <table class="plan-table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Sq Ft</th>
+                        <th>Beds</th>
+                        <th>Baths</th>
+                        <th>Stories</th>
+                        <th>Base Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Residence 2054</td>
+                        <td>2,054</td>
+                        <td>3</td>
+                        <td>2.5</td>
+                        <td>2</td>
+                        <td>From $510,990</td>
+                    </tr>
+                    <tr>
+                        <td>Residence 2308</td>
+                        <td>2,308</td>
+                        <td>3-5</td>
+                        <td>2.5-3</td>
+                        <td>2</td>
+                        <td>From $525,990</td>
+                    </tr>
+                    <tr>
+                        <td>Residence 2605</td>
+                        <td>2,605</td>
+                        <td>3-5</td>
+                        <td>2.5-3</td>
+                        <td>2</td>
+                        <td>From $543,990</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- RESIDENCE 2054 (own page, full size) -->
+            <div class="plan-card">
+                <div class="plan-card-label">RESIDENCE 2054</div>
+                <div class="plan-card-images">
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">First Floor</div>
+                        <img class="plan-card-img" src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/southwind/2054/plan2054-southwind-floor-1.jpg" alt="Residence 2054 First Floor Plan">
+                    </div>
+                    <div class="plan-card-image-wrap">
+                        <div class="plan-card-image-level">Second Floor</div>
+                        <img class="plan-card-img" src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/southwind/2054/plan2054-southwind-floor-2.jpg" alt="Residence 2054 Second Floor Plan">
+                    </div>
+                </div>
+                <p class="plan-card-desc">The entry plan at 2,054 sq ft with 3 beds and 2.5 baths. A great starter footprint for first-time buyers and small families.</p>
+                <p class="plan-card-source">Source: <a href="https://www.centurycommunities.com/find-your-new-home/nevada/las-vegas-metro/las-vegas/southwind/" target="_blank" rel="noopener">centurycommunities.com</a></p>
+            </div>
+
+            <!-- RESIDENCE 2308 + RESIDENCE 2605 on the same page -->
+            <div style="break-before: page;">
+                <div class="plan-card" style="margin-top: 0; padding-top: 0; margin-bottom: 0;">
+                    <div class="plan-card-label">RESIDENCE 2308</div>
+                    <div class="plan-card-images">
+                        <div class="plan-card-image-wrap">
+                            <div class="plan-card-image-level">First Floor</div>
+                            <img class="plan-card-img" style="max-height: 200px;" src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/southwind/2308/plan2308-southwind-floor-1.jpg" alt="Residence 2308 First Floor Plan">
+                        </div>
+                        <div class="plan-card-image-wrap">
+                            <div class="plan-card-image-level">Second Floor</div>
+                            <img class="plan-card-img" style="max-height: 200px;" src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/southwind/2308/plan2308-southwind-floor-2.jpg" alt="Residence 2308 Second Floor Plan">
+                        </div>
+                    </div>
+                    <p class="plan-card-desc" style="margin: 4px 0 2px;">The middle plan at 2,308 sq ft. Configurable to 5 beds and 3 baths. The most flexible layout in the lineup and the most popular pick for growing families.</p>
+                    <p class="plan-card-source" style="margin: 0;">Source: <a href="https://www.centurycommunities.com/find-your-new-home/nevada/las-vegas-metro/las-vegas/southwind/" target="_blank" rel="noopener">centurycommunities.com</a></p>
+                </div>
+
+                <div class="plan-card" style="margin-top: 40px; padding-top: 0;">
+                    <div class="plan-card-label">RESIDENCE 2605</div>
+                    <div class="plan-card-images">
+                        <div class="plan-card-image-wrap">
+                            <div class="plan-card-image-level">First Floor</div>
+                            <img class="plan-card-img" style="max-height: 200px;" src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/southwind/2605/plan2605-southwind-floor-1.jpg" alt="Residence 2605 First Floor Plan">
+                        </div>
+                        <div class="plan-card-image-wrap">
+                            <div class="plan-card-image-level">Second Floor</div>
+                            <img class="plan-card-img" style="max-height: 200px;" src="https://www.centurycommunities.com/globalassets/century/assets/elevations--amenities/ccs/ccs-nv/southwind/2605/plan2605-southwind-floor-2.jpg" alt="Residence 2605 Second Floor Plan">
+                        </div>
+                    </div>
+                    <p class="plan-card-desc" style="margin: 4px 0 2px;">The largest plan at 2,605 sq ft. Up to 5 beds and 3 baths. Best for buyers who want extra room for guests, a home office, or a teen suite.</p>
+                    <p class="plan-card-source" style="margin: 0;">Source: <a href="https://www.centurycommunities.com/find-your-new-home/nevada/las-vegas-metro/las-vegas/southwind/" target="_blank" rel="noopener">centurycommunities.com</a></p>
+                </div>
+            </div>
+
+            <p style="margin-top: 24px; font-size: 14px; color: var(--text-secondary);"><strong>Quick Move-In homes</strong> are usually available for buyers who cannot wait 6 to 10 months for a new build. A recent QMI Residence 2308 was listed at $587,940 with options included. A Residence 2605 in the community closed for $574,990 in late 2025. Ask the sales office for current QMI inventory.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         TRUE MONTHLY COST
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Monthly Cost</div>
+            <div class="headline">TRUE MONTHLY COST ESTIMATE</div>
+            <p style="margin-bottom: 8px;">Most buyers focus on the mortgage payment. Your real monthly cost includes property tax, HOA, and insurance too. Below is a realistic estimate based on the median Southwind plan, Residence 2308, at the $525,990 base price.</p>
+
+            <div class="cost-grid">
+                <div class="cost-card">
+                    <div class="cost-card-value">$2,520</div>
+                    <div class="cost-card-label">Mortgage (P&amp;I)</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$229</div>
+                    <div class="cost-card-label">Property Tax</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$110</div>
+                    <div class="cost-card-label">Insurance</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$69</div>
+                    <div class="cost-card-label">HOA</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$0</div>
+                    <div class="cost-card-label">SID/LID</div>
+                </div>
+                <div class="cost-card">
+                    <div class="cost-card-value">$0</div>
+                    <div class="cost-card-label">Master HOA</div>
+                </div>
+                <div class="cost-total">
+                    <div class="cost-total-value">$2,928</div>
+                    <div class="cost-total-label">Estimated Total Monthly Payment</div>
+                </div>
+            </div>
+
+            <p class="cost-note">Assumptions: $525,990 base price, 20% down, 30-year fixed at 6%, estimated property tax of $2,750 per year, $69 HOA, no confirmed SID, and home insurance around $1,320 per year. Your real numbers will vary based on your loan, credit, and final price. The builder rate of 3.875% would push the mortgage portion well below this estimate.</p>
+            <a href="https://www.rosehomeslv.com/mortgage-calculator" target="_blank" class="calc-link">Run Your Own Numbers With Our Mortgage Calculator &#8599;</a>
+        </div>
+    </section>
+
+    <!-- ========================
+         HOA / SID / LID
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Fees</div>
+            <div class="headline">HOA, SID, AND LID EXPLAINED</div>
+            <p><strong>HOA (Homeowners Association):</strong> The Southwind HOA is $69 per month. That is unusually low for southwest Las Vegas. Most newer communities in this area charge between $100 and $200 per month. The dues cover basic common area landscaping and community upkeep. There is no on-site pool or clubhouse, which is why the dues stay low.</p>
+            <p><strong>SID (Special Improvement District):</strong> A SID is a tax assessment that pays for public infrastructure like roads, sewers, and parks. SIDs show up as a separate line item on your property tax bill. Based on the most recent closing record we pulled inside Southwind, no SID was itemized. That said, this is not a confirmed builder disclosure. Always ask the sales office for a written SID statement before you sign.</p>
+            <p><strong>LID (Local Improvement District):</strong> A LID works the same way as a SID but covers a smaller area. We have not found a LID at Southwind. Adjacent Mountain's Edge does have a SID that funded the regional parks. Confirm Southwind sits outside that boundary with the sales office or by pulling the parcel record from the Clark County Treasurer.</p>
+            <p>Bottom line: at $69 per month with no confirmed SID, Southwind has one of the lowest carrying costs you will find in a new-construction community in this part of town.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         SCHOOLS
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Schools</div>
+            <div class="headline">SCHOOLS AND FAMILY LIFE</div>
+            <p style="margin-bottom: 8px;">Southwind is zoned for the Clark County School District (CCSD). Here are the assigned schools.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th>Type</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tyrone Thompson Elementary</td>
+                        <td>K-5</td>
+                        <td>Niche A-, top 10% in NV</td>
+                    </tr>
+                    <tr>
+                        <td>Gunderson Middle School</td>
+                        <td>6-8</td>
+                        <td>About 3.1 mi away</td>
+                    </tr>
+                    <tr>
+                        <td>Sierra Vista High School</td>
+                        <td>9-12</td>
+                        <td>Niche B-, GreatSchools 4/10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 16px;">Tyrone Thompson Elementary is the standout. It earned a Niche A minus rating and ranks in the top 10% of all Nevada elementary schools. The school is just 1.5 miles from the community. Some families also explore charter options like Pinecrest Academy and Coral Academy of Science. Always confirm your assigned schools with the CCSD zone lookup tool, since boundaries can shift.</p>
+            <p style="margin-top: 12px;">Family life in this part of town is easy. Exploration Peak Park sits just north of the community with a playground, hiking trails, and Native American cultural elements. Mountain's Edge Regional Park and the Mountain's Edge bike and hike trail network are also a short drive away. The neighborhood streets are quiet and well kept.</p>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+    <!-- ========================
+         AMENITIES
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Amenities</div>
+            <div class="headline">AMENITIES AND LIFESTYLE</div>
+            <p>Southwind itself does not have an on-site pool or clubhouse. That is by design. Keeping the community lean is what allows the HOA to stay at $69 per month. Most of your daily life will play out in the surrounding southwest Las Vegas area, which is loaded with options.</p>
+
+            <div class="amenity-group">
+                <h4>NEARBY PARKS AND TRAILS</h4>
+                <ul class="amenity-list">
+                    <li>Exploration Peak Park</li>
+                    <li>Mountain's Edge Regional Park</li>
+                    <li>Mountain's Edge bike and hike trail network</li>
+                    <li>Red Rock Canyon (short drive west)</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>EVERYDAY ESSENTIALS NEARBY</h4>
+                <ul class="amenity-list">
+                    <li>Mountain's Edge Marketplace</li>
+                    <li>Blue Diamond Crossing</li>
+                    <li>Smith's, Albertsons, Vons grocery stores</li>
+                    <li>Trader Joe's along the Blue Diamond corridor</li>
+                    <li>Southern Hills Hospital (about 10 min)</li>
+                </ul>
+            </div>
+
+            <div class="amenity-group">
+                <h4>GETTING AROUND</h4>
+                <ul class="amenity-list">
+                    <li>I-15 via Blue Diamond Road</li>
+                    <li>I-215 beltway via Durango Drive</li>
+                    <li>The Las Vegas Strip is about 12 miles, 15 to 20 min</li>
+                    <li>Harry Reid International Airport about 20 min</li>
+                </ul>
+            </div>
+
+            <p style="margin-top: 16px;">You get the best of both worlds here. Quiet suburban living with easy access to the Strip, the airport, and the outdoors at Red Rock Canyon.</p>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+    <!-- ========================
+         INCENTIVES
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Incentives</div>
+            <div class="headline">CURRENT BUYER INCENTIVES</div>
+            <p>Century Communities is running an aggressive incentive package at Southwind through their in-house lender, Inspire Home Loans. These offers stack and can save you tens of thousands of dollars over the life of your loan.</p>
+
+            <ul class="incentive-list">
+                <li><strong>3.875% (4.827% APR) 30-year fixed financing</strong> through Inspire Home Loans</li>
+                <li><strong>$3,000 closing cost credit</strong> when you finance through Inspire Home Loans</li>
+                <li><strong>2-1 buydown options</strong> for buyers who want a lower payment in years 1 and 2</li>
+                <li><strong>FHA and VA loans</strong> at 3.875% Year 1, 4.875% Years 2 through 30</li>
+                <li><strong>Flash Sale</strong> with included move-in items on select inventory</li>
+            </ul>
+
+            <p>The 3.875% rate is well below the current market average. On a $525,990 home with 20% down, that rate alone can save several hundred dollars per month versus a market-rate loan.</p>
+
+            <div class="pro-tip">
+                <strong>Pro tip:</strong> Builder incentives change often, sometimes monthly. Even if you plan to shop other lenders, get a written quote from Inspire Home Loans first. You can use it as leverage, and in many cases the bundled credits make their package hard to beat. Confirm the current offer with the sales office at 702-789-6329 before you write an offer.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         COMPARISON
+         ======================== -->
+    <section class="section section--white" style="padding-top: 24px; padding-bottom: 16px;">
+        <div class="container">
+            <div class="section-label">Comparison</div>
+            <div class="headline" style="font-size: 28px; margin-bottom: 12px;">HOW SOUTHWIND COMPARES</div>
+
+            <p style="margin-bottom: 8px;">Here is how Southwind stacks up against three nearby new-construction communities in the same 89178 zip code.</p>
+
+            <table class="compare-table" style="font-size: 13px;">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Southwind</th>
+                        <th>Keystone</th>
+                        <th>Stonehaven</th>
+                        <th>Triad Springs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <td>Builder</td>
+                        <td>Century Communities</td>
+                        <td>Beazer Homes</td>
+                        <td>Richmond American</td>
+                        <td>Lennar</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Base Price</td>
+                        <td>$510,990 to $543,990</td>
+                        <td>$519K to $579K</td>
+                        <td>$580K to $730K</td>
+                        <td>From $580K</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>HOA</td>
+                        <td>$69/mo</td>
+                        <td>Verify</td>
+                        <td>Verify</td>
+                        <td>Verify</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Sq Ft Range</td>
+                        <td>2,054 to 2,605</td>
+                        <td>Two-story</td>
+                        <td>2,310 to 3,270</td>
+                        <td>Up to 2,670</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Standout</td>
+                        <td>Low HOA, low entry price</td>
+                        <td>Owned solar, energy savings</td>
+                        <td>Larger homes, 3-car garages</td>
+                        <td>"Everything's Included"</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 12px;">Southwind wins on price and carrying cost. If you want a bigger home or 3-car garage, Stonehaven and Arborbrook is the move. If solar and energy efficiency matter most, Keystone is worth a look. If you want upgrades baked in without negotiating, Triad Springs is the play.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         BUYING PROCESS
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Process</div>
+            <div class="headline">THE BUYING PROCESS: 9 STEPS</div>
+
+            <div class="roadmap">
+                <div class="roadmap-step">
+                    <div class="roadmap-node">01</div>
+                    <div class="roadmap-title">CHOOSE YOUR FLOOR PLAN</div>
+                    <div class="roadmap-desc">Tour the model homes at 9809 Lost Horse Avenue. Walk all three plans and pick the one that fits your family. Bring your agent on the first visit.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">02</div>
+                    <div class="roadmap-title">SIGN THE PURCHASE AGREEMENT</div>
+                    <div class="roadmap-desc">Submit your offer with an earnest money deposit. Have your agent review every page before you sign. Builder contracts favor the builder, so this step matters.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">03</div>
+                    <div class="roadmap-title">SECURE FINANCING</div>
+                    <div class="roadmap-desc">Compare Inspire Home Loans (the builder lender) against your own lender. The builder rate and credits are strong, but always shop at least one outside quote.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">04</div>
+                    <div class="roadmap-title">VISIT THE DESIGN CENTER</div>
+                    <div class="roadmap-desc">Pick your finishes. Counters, cabinets, flooring, paint, and fixtures. Bring a budget and a wish list so you do not get carried away.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">05</div>
+                    <div class="roadmap-title">PRE-DRYWALL INSPECTION</div>
+                    <div class="roadmap-desc">Hire your own third-party inspector before drywall goes up. This catches framing, plumbing, and electrical issues. Plan to spend $200 to $400.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">06</div>
+                    <div class="roadmap-title">CONSTRUCTION UPDATES</div>
+                    <div class="roadmap-desc">The builder gives regular updates and milestone walkthroughs. Stay engaged, take photos, and ask questions. Most homes take 6 to 10 months to build.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">07</div>
+                    <div class="roadmap-title">BLUE TAPE WALKTHROUGH</div>
+                    <div class="roadmap-desc">A few weeks before closing, walk the home with a builder rep and put blue tape on anything that needs to be fixed. Be picky here.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">08</div>
+                    <div class="roadmap-title">FINAL INSPECTION</div>
+                    <div class="roadmap-desc">Hire your inspector again for a final pre-closing inspection. Plan to spend $310 to $730. Better to find problems now than after closing.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">09</div>
+                    <div class="roadmap-title">CLOSE AND MOVE IN</div>
+                    <div class="roadmap-desc">Sign your final paperwork, get your keys, and move in. Your builder warranty starts the day you close, so save every document.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FAQ
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">FAQ</div>
+            <div class="headline">FREQUENTLY ASKED QUESTIONS</div>
+
+            <div class="faq-item">
+                <div class="faq-q">Do I need my own real estate agent?</div>
+                <div class="faq-a">Yes, you should bring one. The builder pays the agent commission, so it costs you nothing. Your agent reviews the contract, helps you negotiate upgrades, and protects you during inspections. Just make sure your agent is with you on your very first visit to the model home.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Can I negotiate with the builder?</div>
+                <div class="faq-a">Builders rarely cut the base price because it lowers values for the whole community. You can usually negotiate upgrades, design center credits, or extra closing cost help. The current incentive package at Southwind is already strong, so use it as a starting point.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Are all three floor plans two-story?</div>
+                <div class="faq-a">Yes. Every plan at Southwind is a two-story design with a 2-car garage. There are no single-story or three-story options at this community.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What upgrades are worth it?</div>
+                <div class="faq-a">The best upgrades are the ones that are hard or expensive to add later. Think electrical and structural items like extra outlets, ceiling fans, pre-wiring for surround sound, taller cabinets, and rough plumbing for a future sink. Cosmetic upgrades like flooring and paint can often be done after move-in for less.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">How long does it take to build?</div>
+                <div class="faq-a">Most homes at Southwind take 6 to 10 months from contract to close. Quick Move-In homes that are already under construction can close in as little as 30 to 60 days.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Can I use VA or FHA financing?</div>
+                <div class="faq-a">Yes. Century Communities currently offers a 3.875% Year 1 rate on FHA and VA loans, with 4.875% in Years 2 through 30 through Inspire Home Loans. Confirm current terms with the sales office.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What is the warranty?</div>
+                <div class="faq-a">Century Communities provides a limited new home warranty. Workmanship and materials are typically covered for 1 year, mechanical systems for 2 years, and major structural elements for up to 10 years. Always ask for the full warranty in writing.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What if construction is delayed?</div>
+                <div class="faq-a">Delays happen. Weather, supply chain, and labor can all push a closing back. Your contract spells out what the builder must do if there is a delay. Read this section carefully and ask your agent to flag any one-sided language before you sign.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Is there a SID at Southwind?</div>
+                <div class="faq-a">Based on the most recent closing record we pulled, no SID was itemized on the property tax bill. This is not a confirmed builder disclosure. Always request a written SID and LID statement from the sales office before you sign.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">What does the $69 HOA cover?</div>
+                <div class="faq-a">The HOA covers common area landscaping and basic community upkeep. There is no on-site pool or clubhouse. The exact list of covered items will be in the HOA documents you receive at contract. Ask for the CC&amp;Rs and budget early so you know exactly what you are paying for.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         CTA (LAST PAGE)
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="cta-page">
+        <div class="container">
+            <div class="cta-headline">READY TO <span class="text-accent">EXPLORE SOUTHWIND</span>?</div>
+            <p class="cta-sub">Buying new construction is one of the biggest financial decisions you will make. Having the right agent on your side makes a real difference. I can help you tour the models, review the builder contract, negotiate for extras, and make sure nothing falls through the cracks.</p>
+            <div class="cta-contact">
+                <strong>Ryan Rose</strong><br>
+                Real Estate Agent | New Construction Specialist<br>
+                702-747-5921 | ryan@rosehomeslv.com<br>
+                rosehomeslv.com
+            </div>
+            <p class="cta-disclaimer">This guide is for informational purposes only. Pricing, incentives, availability, and community details are subject to change without notice. Always verify all information directly with the builder and your real estate professional.</p>
+        </div>
+    </section>
+
+</body>
+</html>

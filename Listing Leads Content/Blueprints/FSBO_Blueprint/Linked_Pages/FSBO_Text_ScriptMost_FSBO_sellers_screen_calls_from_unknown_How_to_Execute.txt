@@ -1,0 +1,14 @@
+How to Execute
+Step 1
+Copy Scripts & Messages
+Text Message 1
+Copy
+
+Hi Tom,Hey, this is [Your Name] with [Your Brokerage]. I had a few questions about your property on Zillow at [Address]. Can you call me back when you have a moment?
+
+Step 2
+Sending Your Message via Mass SMS or DM Tool
+Log In to Your Mass Messaging Tool: Open your mass SMS or DM platform and log in to your account. (or simply use your phone)
+Select or Upload Recipients: Choose your audience (contacts/followers) or selecting recipients within the tool.
+Compose the Message: Paste the copied message content into the message field.
+Review and Send: Double-check the message for accuracy, then hit "Send" to distribute to all selected recipients.

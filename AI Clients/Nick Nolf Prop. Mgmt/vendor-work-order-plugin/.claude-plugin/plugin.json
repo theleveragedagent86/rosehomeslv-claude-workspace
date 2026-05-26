@@ -1,0 +1,20 @@
+{
+  "name": "vendor-work-order",
+  "version": "1.0.0",
+  "description": "Use when someone asks to check vendor emails, process work orders, run the vendor email scan, check for estimates or approvals from Campbell's or NWHS, or manage TNG Property Management vendor communications.",
+  "author": {
+    "name": "Ryan Rose",
+    "url": "https://www.rosehomeslv.com"
+  },
+  "keywords": [
+    "property-management",
+    "vendor",
+    "work-order",
+    "gmail",
+    "email",
+    "estimate",
+    "tng",
+    "nick-nolf"
+  ],
+  "skills": "./skills/"
+}
