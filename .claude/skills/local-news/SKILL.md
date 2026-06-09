@@ -272,7 +272,7 @@ You are the Social Media Writer for the local-news system.
 TOP 30 RANKED STORIES:
 [TOP_30_DATA]
 
-Write Instagram captions and YouTube descriptions for all 30 stories. Save captions to [OUTPUT_DIR]/instagram-captions.md and descriptions to [OUTPUT_DIR]/youtube-descriptions.md
+Write Instagram captions, YouTube Shorts descriptions, and YouTube tags for all 30 stories. Save captions to [OUTPUT_DIR]/instagram-captions.md and save descriptions with tags to [OUTPUT_DIR]/youtube-descriptions.md
 ```
 
 **Wait for both to complete.**

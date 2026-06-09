@@ -106,7 +106,22 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921
 rosehomeslv.com
+
+**Tags:** [comma-separated tags, max 475 characters total]
 ```
+
+---
+
+## YouTube Tags Rules
+
+- **Max 475 characters total** (count commas and spaces — YouTube's hard limit)
+- Comma-separated, no # symbols, no quotes
+- Order: story-specific terms first, then location terms, then brand terms
+- Include 3-4 story-specific high-intent terms
+- Include 3-4 location terms from: Las Vegas, Henderson, Clark County, Nevada (use what's relevant)
+- End with 2 consistent brand terms: `Ryan Rose, rosehomeslv`
+- No duplicate concepts
+- Count characters before finalizing
 
 ---
 

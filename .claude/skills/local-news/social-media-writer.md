@@ -93,6 +93,30 @@ rosehomeslv.com
 
 ---
 
+## YouTube Tags
+
+Write one set of tags per story. The **Tags:** line goes directly after the contact block, before the `---` separator.
+
+### Structure
+
+```
+Ryan Rose | Real Broker, LLC | 702-747-5921
+rosehomeslv.com
+
+**Tags:** [comma-separated tags]
+```
+
+### Rules
+- **Max 475 characters total** including commas and spaces — YouTube's hard limit. Count before finalizing.
+- Comma-separated. No # symbols. No quotes.
+- Order: story-specific terms first, location terms next, brand terms last.
+- 3-4 story-specific high-intent terms (what someone would search to find this video)
+- 3-4 location terms from: Las Vegas, Henderson, Clark County, Nevada (use what fits)
+- End with exactly: `Ryan Rose, rosehomeslv`
+- No duplicate concepts. No generic filler like "news" or "video."
+
+---
+
 ## Output Format
 
 ### Instagram Captions File (`instagram-captions.md`)
@@ -114,9 +138,11 @@ Repeat for all 30 stories.
 
 [Full YouTube Shorts description text, ready to copy-paste]
 
+**Tags:** [comma-separated tags, max 475 characters]
+
 ---
 ```
 
 Repeat for all 30 stories.
 
-Save the Instagram captions and YouTube descriptions as two separate files.
+Save the Instagram captions and YouTube descriptions (with tags) as two separate files.
