@@ -10,6 +10,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** Mitch Marner hat trick, Stanley Cup Final 2026, VGK double overtime, Golden Knights Game 3, Las Vegas Golden Knights, Las Vegas, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 2: Mitch Marner Leads All Playoff Scorers With 28 Points, Conn Smythe Favorite
@@ -19,6 +21,8 @@ After his hat trick and assist in Game 3 of the Stanley Cup Final, Vegas Golden 
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** Mitch Marner Conn Smythe, VGK playoff scoring leader, Jack Eichel, Stanley Cup Final MVP odds, Las Vegas Golden Knights, Las Vegas, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -30,6 +34,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** Seth Jarvis overtime goal, Hurricanes tie series, Stanley Cup Final Game 2, VGK Carolina series, Las Vegas Golden Knights, Las Vegas, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 4: Golden Knights Win Game 1 of Stanley Cup Final 5-4 on the Road in Raleigh
@@ -39,6 +45,8 @@ The Vegas Golden Knights defeated the Carolina Hurricanes 5-4 in Game 1 of the 2
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** Tomas Hertl go-ahead goal, Golden Knights Game 1 win, VGK road comeback, Stanley Cup Final Raleigh, Las Vegas Golden Knights, Las Vegas, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -50,6 +58,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** CCSD layoffs 2026, Clark County School District reduction in force, Jhone Ebert, CCSD teachers cut, Clark County, Las Vegas, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 6: First-Time Homebuyers Need $111K a Year to Buy in Las Vegas, Median Income Is $78K
@@ -59,6 +69,8 @@ The median age of a first-time homebuyer reached a record 40 years old nationwid
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** Las Vegas first-time homebuyers, Las Vegas home affordability 2026, median home price Las Vegas, housing income gap Clark County, Las Vegas, Henderson, Clark County, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -70,6 +82,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** Jardin Encore closes, Wynn Las Vegas restaurant closure, Las Vegas brunch restaurant closed, Las Vegas Strip dining, Las Vegas, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 8: Vanderpump Hotel Opens on the Las Vegas Strip in Former Cromwell Space
@@ -79,6 +93,8 @@ The Vanderpump Hotel, a 188-room boutique property designed by Lisa Vanderpump a
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** Vanderpump Hotel Las Vegas, Cromwell Las Vegas replacement, Lisa Vanderpump hotel Strip, Soleia rooftop pool, Las Vegas Strip, Las Vegas, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -90,6 +106,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** Nellie's Southern Kitchen closes, Jonas Brothers restaurant MGM Grand, Las Vegas Strip restaurant closure, MGM Grand Las Vegas, Las Vegas, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 10: Maroon by Kwame Onwuachi Is the First Black Chef-Led Restaurant on the Las Vegas Strip
@@ -99,6 +117,8 @@ Maroon, the Afro-Caribbean steakhouse from James Beard Award winner Kwame Onwuac
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** Maroon Kwame Onwuachi, Sahara Las Vegas restaurant, Afro-Caribbean steakhouse Las Vegas, James Beard Award chef Strip, Las Vegas Strip, Las Vegas, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -110,6 +130,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** Golden Knights watch party, VGK Game 5 T-Mobile Arena, Stanley Cup Final tickets Las Vegas, VGK Foundation free parking, Las Vegas, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 12: RTC Maryland Parkway Red Line Bus Rapid Transit Launching in Las Vegas by End of August 2026
@@ -119,6 +141,8 @@ The Regional Transportation Commission confirmed in early June 2026 that its $37
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** Maryland Parkway Red Line BRT, RTC Las Vegas bus rapid transit, Las Vegas transit 2026, Clark County electric buses, Las Vegas, Clark County, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -130,6 +154,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** Serene Pines senior apartments, Clark County affordable housing, Nevada HAND Las Vegas, senior housing Las Vegas valley, Las Vegas, Clark County, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 14: CCSD Efficiency Study Finds Up to $79 Million in Annual Savings the District Is Not Taking
@@ -139,6 +165,8 @@ Gibson Consulting Group presented Clark County School District's first efficienc
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** CCSD efficiency study 2026, Gibson Consulting Clark County schools, CCSD budget savings, Clark County School District spending, Las Vegas, Clark County, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -150,6 +178,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** French Riviera Tropezienne Bakery, downtown Las Vegas bakery, 401 S Sixth Street Las Vegas, Andre's restaurant space Las Vegas, Las Vegas, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 16: Nevada's Worker Advantage Program Offers $20,000 Down Payment Help, But Only 81 of 900 Spots Claimed
@@ -159,6 +189,8 @@ Nevada's Worker Advantage Program provides $20,000 in down payment assistance to
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** Nevada Worker Advantage Program, down payment assistance Las Vegas, essential worker homebuyer Clark County, Nevada homebuyer grant, Las Vegas, Clark County, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -170,6 +202,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** T-Pain free concert Las Vegas, Toshiba Plaza Golden Knights, VGK Game 4 watch party, Stanley Cup Final Las Vegas event, Las Vegas, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 18: A's Las Vegas Ballpark Installs First 200-Ton Steel Roof Truss, On Track for 2028 Opening
@@ -179,6 +213,8 @@ The first steel roof truss, weighing 200 tons, was successfully installed at the
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** A's Las Vegas ballpark construction, Oakland Athletics Las Vegas stadium, Las Vegas baseball stadium 2028, Tropicana site development, Las Vegas, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -190,6 +226,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** Las Vegas home prices April 2026, Las Vegas housing market 2026, Clark County home inventory, Las Vegas median home price, Las Vegas, Henderson, Clark County, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 20: Hylo Park Phase 2 Breaks Ground in North Las Vegas With Sports Village on Former Casino Sites
@@ -199,6 +237,8 @@ Agora Realty's Hylo Park mixed-use redevelopment reached its Phase 2 groundbreak
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** Hylo Park North Las Vegas, Texas Station redevelopment, North Las Vegas sports village, Fiesta Rancho mixed-use, North Las Vegas, Clark County, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -210,6 +250,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** Lilli tasting menu Las Vegas, Tyler Vorce chef Chinatown, Spring Mountain Road restaurant, French Laundry trained chef Las Vegas, Las Vegas, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 22: Prowl Jungle-Themed Cocktail Bar Opens in Las Vegas Arts District
@@ -219,6 +261,8 @@ Prowl, a jungle-themed cocktail bar from the team behind the popular Stray Pirat
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** Prowl cocktail bar Las Vegas, Las Vegas Arts District bar, Stray Pirate team new bar, jungle bar Las Vegas, Las Vegas Arts District, Las Vegas, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -230,6 +274,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** Nevada foreclosure rate 2026, Las Vegas foreclosure metro, Clark County foreclosure timeline, Nevada housing distress, Las Vegas, Henderson, Clark County, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 24: NDOT and RTC Launch $22M SafeTech Project on I-11 and U.S. 95, HOV Lanes Closed Through September
@@ -239,6 +285,8 @@ NDOT and RTC launched construction on the $22 million SafeTech Corridor project 
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** NDOT SafeTech Corridor, I-11 US 95 HOV lanes closed, Las Vegas freeway construction 2026, RTC traffic Las Vegas, Las Vegas, Clark County, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -250,6 +298,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** Clark County students hit by cars, Las Vegas school zone safety, e-bike e-scooter school accidents, CCSD school safety 2026, Las Vegas, Clark County, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 26: Hayworth Restaurant Opens in Henderson From Top Chef Alum Chef Alex Reznik
@@ -259,6 +309,8 @@ Hayworth opened February 26, 2026, in Henderson from chef Alex Reznik, a Top Che
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** Hayworth restaurant Henderson, Alex Reznik Top Chef, Henderson fine dining 2026, wagyu brisket Henderson Nevada, Henderson, Las Vegas, Clark County, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -270,6 +322,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** Centurion Henderson Inspirada, Sprouts Henderson mixed-use, Sansone Companies Henderson, west Henderson development 2026, Henderson, Clark County, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 28: Las Vegas New Home Builders Down 26% Year-to-Date Through April 2026 Despite Monthly Rebound
@@ -279,6 +333,8 @@ Southern Nevada new-home builders recorded 830 net sales in April 2026, up 8.4% 
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** Las Vegas new home sales 2026, Las Vegas homebuilder permits down, Southern Nevada new construction, Las Vegas housing supply 2026, Las Vegas, Henderson, Clark County, Nevada, Ryan Rose, rosehomeslv
 
 ---
 
@@ -290,6 +346,8 @@ Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
 
+**Tags:** CC-215 Summerlin Parkway interchange, Clark County road project 2026, Summerlin construction closures, Northwest Las Vegas freeway, Las Vegas, Clark County, Nevada, Ryan Rose, rosehomeslv
+
 ---
 
 ## Story 30: Earl of Sandwich at Palms Casino Closes Abruptly, Employee Reportedly Showed Up to Find It Already Shut
@@ -299,3 +357,5 @@ The Earl of Sandwich franchise location inside Palms Casino in Las Vegas permane
 Follow for more Las Vegas news you need to know.
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+**Tags:** Earl of Sandwich Palms Casino closes, Las Vegas restaurant closure 2026, Palms Casino Las Vegas, Las Vegas hospitality layoffs, Las Vegas, Nevada, Ryan Rose, rosehomeslv
