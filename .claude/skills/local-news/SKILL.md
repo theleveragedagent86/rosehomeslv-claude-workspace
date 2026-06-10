@@ -362,6 +362,7 @@ If a wave fails, retry the failing agents once before moving to the next wave.
 **Validation gate (after all 5 waves):**
 - 30 HTML files exist in the `blogs/` directory.
 - Each file contains `<article>` content, `<script type="application/ld+json">`, and `<img>` tags.
+- **Image URL check:** Run `grep -rl 'src="#"' [OUTPUT_DIR]/blogs/` to find any blogs with placeholder images. If any files are returned, those agents failed. Retry them with this explicit instruction added to their prompt: "CRITICAL: Your previous submission had `src=\"#\"` placeholder images. You MUST search the web for real image URLs before writing. Use WebSearch to find images from Unsplash, Pexels, or Pixabay. `src=\"#\"` is not acceptable."
 - Flag any missing files but do not block the rest of the workflow.
 
 ---

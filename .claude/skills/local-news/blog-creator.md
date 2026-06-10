@@ -12,7 +12,13 @@ Each blog follows the exact same HTML structure and SEO standards as the publish
 
 2. **2400 words.** Each blog must be approximately 2400 words. This is significantly longer than standard blog posts. Fill the space with genuine context, background, analysis, and actionable information. Do not pad with filler or repetition.
 
-3. **Images use direct web URLs.** Do not use placeholder images. Find relevant images from the news source article, Unsplash (unsplash.com), Pexels (pexels.com), or Pixabay (pixabay.com) and embed the direct image URL. Use the `<img>` tag with a descriptive alt text. Place 4-5 images throughout the post, roughly one every 400-500 words.
+3. **Images use direct web URLs. This is non-negotiable.** `src="#"` is not allowed under any circumstances. Before writing the blog, use WebSearch or WebFetch to find 4-5 real image URLs from:
+   - The original news source article (look for `<img>` tags in the page HTML)
+   - Unsplash: search `https://unsplash.com/s/photos/[keyword]` and copy a direct image URL
+   - Pexels: search `https://www.pexels.com/search/[keyword]/` and copy a direct image URL
+   - Pixabay: search `https://pixabay.com/images/search/[keyword]/` and copy a direct image URL
+   
+   A blog submitted with `src="#"` or any empty/placeholder `src` is considered **incomplete and must be redone**. Find the URLs first, then write the blog.
 
 4. **Source attribution.** Every blog must include a "Sources" section before the related links. List all sources used with publication name and clickable URL.
 
@@ -169,12 +175,14 @@ Each blog is a complete HTML file:
 
 ## Image Guidelines
 
+- **Find image URLs BEFORE writing the blog.** Do a WebSearch or WebFetch for each image first. Do not write the blog and then try to add images — you will skip this step.
 - Place 4-5 images throughout the post. One after the opening, then roughly every 400-500 words.
 - Use direct URLs from Unsplash, Pexels, Pixabay, or the original news source.
 - For Unsplash, use the format: `https://images.unsplash.com/photo-[ID]?w=800&h=450&fit=crop`
 - Alt text must be specific and descriptive. It should describe what the image shows in the context of the story.
 - Do not use the same image twice across different blog posts.
 - Each `<img>` tag: `<img src="[direct URL]" alt="[descriptive alt text]" width="800" height="450" />`
+- **Final check before saving:** Grep your output for `src="#"`. If any match exists, fix it before saving.
 
 ---
 
