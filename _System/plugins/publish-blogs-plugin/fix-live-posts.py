@@ -11,25 +11,30 @@ Modes:
           Leaves everything else in the live post untouched.
   body    Replace the whole post body with the current local file (JSON-LD is
           stripped from the body and entered on the Schema tab instead).
-  schema  Enter the local file's JSON-LD on the Schema tab only.
+  schema  Replace the live schema with the local file's JSON-LD.
+          WARNING: live posts carry FAQPage and an Article image that the local
+          files do not. This mode overwrites them. Run backfill_schema.py after
+          it, or only use it on posts whose local schema is the newer one.
 
 Usage:
   python3 fix-live-posts.py links "SPRING VALLEY" --yes
   python3 fix-live-posts.py body ALIANTE --posts 10 --live-title "Old Title" --yes
   python3 fix-live-posts.py schema "AEO Best Choice" --slugs best-realtor-for-investors-las-vegas --yes
   python3 fix-live-posts.py links "SPRING VALLEY" --dry-run      List posts only
+  python3 fix-live-posts.py schema "AEO Best Choice" --ui --yes  Old editor method
+
+Runs in the background: it calls Lofty's blog API through any open
+cms.lofty.com tab, matches posts by SLUG, and writes only the field the mode
+owns, so nothing else on the live post is disturbed. Keep using your Mac.
+
+--ui restores the old method, which drives the Lofty editor: it opens each
+post by TITLE (search box, then an exact title match on the row), retypes the
+field and clicks Update. Slower, and the Lofty tab must be left alone. If
+Publish does nothing there, Lofty rejected the save (error 601); the known
+cause is a <script> block in the body, which links mode strips.
 
 Requirements: macOS, Chrome with View > Developer > Allow JavaScript from
 Apple Events, logged into Lofty with a tab open on cms.lofty.com.
-
-Runs in the background: it finds the Lofty tab by URL and pins to it, and it
-only uses page JavaScript, so you can use your Mac and other Chrome windows.
-Keep the Lofty tab open and don't click around in it. Best in its own window.
-If Publish does nothing, Lofty's server rejected the save (error 601). The
-cause found so far: a <script> block in the post body. links mode strips it.
-
-Posts are found in the Lofty blog list by TITLE (search box, then an exact
-title match on the row), not by link.
 """
 
 import argparse
@@ -302,6 +307,10 @@ def save_post():
 # the body, and Lofty's server now rejects every save of a body that contains a
 # script (error 601, the Publish button just does nothing). The schema goes on
 # the Schema tab instead.
+# Same two rewrites as LINKS_JS, for the API path.
+LINK_RE = re.compile(r"rosehomeslv\.com/blogs/")
+SCRIPT_RE = re.compile(r"<script[\s\S]*?</script>|<p>\s*</p>", re.I)
+
 LINKS_JS = (r"html = html.replace(/rosehomeslv\.com\/blogs\//g, 'rosehomeslv.com/blog/');"
             r" html = html.replace(/<script[\s\S]*?<\\?\/script>/gi, '').replace(/<p>\s*<\/p>/g, '');")
 
@@ -360,6 +369,62 @@ def fix_one(post, mode, report):
     time.sleep(3)
 
 
+def api_fix(posts, mode, dry=False):
+    """Apply the fix through Lofty's API: no focus, no tab to leave alone.
+
+    Each mode writes exactly one field. body mode deliberately does NOT touch
+    customSchema or featuredImage: the live posts carry FAQ schema and featured
+    images that no local file has, so re-entering local schema would undo them.
+    """
+    L = _load("lofty_api", HERE / "lofty_api.py")
+    ids = L.find_by_slug([p["slug"] for p in posts])
+    missing = [p["slug"] for p in posts if p["slug"] not in ids]
+    posts = [p for p in posts if p["slug"] in ids]
+    for slug in missing:
+        print(f"  [!!] {slug}: NOT FOUND in Lofty")
+    if not posts:
+        print("\nNothing to fix.")
+        return
+
+    patches, by_id = {}, {}
+    if mode == "links":
+        live = L.read([ids[p["slug"]] for p in posts], fields=("content",))
+        for p in posts:
+            pid = ids[p["slug"]]
+            html = (live.get(pid) or {}).get("content") or ""
+            fixed = LINK_RE.sub("rosehomeslv.com/blog/", html)
+            fixed = SCRIPT_RE.sub("", fixed)
+            by_id[pid] = p["slug"]
+            if fixed != html:
+                patches[str(pid)] = {"content": fixed}
+            else:
+                print(f"  CLEAN {p['slug']}")
+    else:
+        field, key = ("customSchema", "schema") if mode == "schema" else ("content", "body")
+        for p in posts:
+            pid = ids[p["slug"]]
+            by_id[pid] = p["slug"]
+            if p.get(key):
+                patches[str(pid)] = {field: p[key]}
+            else:
+                print(f"  [!!] {p['slug']}: no local {key}")
+
+    if not patches:
+        print("\nNothing to change.")
+        return
+    print(f"\n{'Would patch' if dry else 'Patching'} {len(patches)} posts...")
+    rows = L.patch(patches, dry=dry)
+    good = {"OK", "SAME", "WOULD"}
+    print(f"\n{'='*60}")
+    for pid, slug, status in rows:
+        if status.split()[0] not in good:
+            print(f"  [!!] {slug or by_id.get(int(pid), pid)}: {status}")
+    st = [r[2] for r in rows]
+    print(f"changed: {sum(1 for s in st if s.startswith(('OK', 'WOULD')))}"
+          f"   already correct: {sum(1 for s in st if s.startswith('SAME'))}"
+          f"   failed: {sum(1 for s in st if s.split()[0] not in good)}")
+
+
 def main():
     ap = argparse.ArgumentParser(description="Fix already-published posts in Lofty")
     ap.add_argument("mode", choices=["links", "body", "schema"])
@@ -368,7 +433,10 @@ def main():
     ap.add_argument("--slugs", nargs="+", help="Only these slugs")
     ap.add_argument("--live-title", help="Search Lofty by this title instead of the local one "
                     "(use when the live title differs; body mode then updates it)")
-    ap.add_argument("--dry-run", action="store_true", help="List posts only")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="List posts, and show what the API would change, without writing")
+    ap.add_argument("--ui", action="store_true",
+                    help="Old way: drive the Lofty editor in Chrome (must be left alone)")
     ap.add_argument("--yes", action="store_true")
     args = ap.parse_args()
 
@@ -385,7 +453,15 @@ def main():
     print(f"\n{len(posts)} posts to fix ({args.mode}) in {args.folder}:")
     for p in posts:
         print(f"  {p['number']}: {p.get('live_title') or p['title']}")
-    if args.dry_run or not posts:
+    if not posts:
+        return
+    if not args.ui:
+        if not args.dry_run and not args.yes \
+                and input("Proceed? (y/n): ").strip().lower() != "y":
+            return
+        return api_fix(posts, args.mode, dry=args.dry_run)
+
+    if args.dry_run:
         return
     if not args.yes and input("Proceed? (y/n): ").strip().lower() != "y":
         return

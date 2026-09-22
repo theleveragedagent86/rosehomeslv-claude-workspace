@@ -163,6 +163,24 @@ window.__lofty=JSON.stringify(out);""" % want, 300)
     return json.loads(res)
 
 
+def read(ids, fields=("content", "customSchema", "featuredImage", "title", "slug"), chunk=20):
+    """Fetch post details by id. Returns {id: {field: value}}."""
+    ids, out = [int(i) for i in ids], {}
+    for i in range(0, len(ids), chunk):
+        part = ids[i:i + chunk]
+        res = run_async(H + """var IDS=%s, F=%s, out={};
+for(const id of IDS){
+  var d=(await (await fetch('/api-blog/post/'+id+'?t='+Date.now(),{credentials:'include',headers:H})).json()).data;
+  if(!d)continue; var o={}; for(const k of F)o[k]=d[k]; out[id]=o;
+}
+window.__lofty=JSON.stringify(out);""" % (json.dumps(part), json.dumps(list(fields))), 180)
+        if not res.startswith("{"):
+            sys.exit(f"read failed: {res[:200]}")
+        out.update({int(k): v for k, v in json.loads(res).items()})
+        print(f"  read {len(out)}/{len(ids)}", flush=True)
+    return out
+
+
 def create(posts, category):
     """Publish new posts. posts: list of dicts with title, slug, content, seoTitle,
     seoKeyword, seoDescription, customSchema. Returns [[slug, status]].
@@ -194,7 +212,8 @@ if(!(d2.categoryList||[]).some(x=>x.name===CAT))bad.push('category');
 window.__lofty=JSON.stringify([P.slug,bad.length?'FAIL check '+bad.join(','):'OK '+got.id]);""" % (
             json.dumps(p), json.dumps(category), SAVE_Q), 120)
         row = json.loads(res) if res.startswith("[") else [p["slug"], "FAIL " + res[:100]]
-        print(f"  {row[1][:4]:4} {row[0]}  {row[1] if not row[1].startswith('OK') else ''}", flush=True)
+        ok = row[1].startswith("OK")
+        print(f"  {'OK' if ok else '!!':2} {row[0]}  {'' if ok else row[1]}", flush=True)
         out.append(row)
     return out
 
