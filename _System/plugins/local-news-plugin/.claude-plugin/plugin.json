@@ -1,0 +1,9 @@
+{
+  "name": "local-news",
+  "version": "2.0.0",
+  "description": "Automates weekly local news research for Clark County, NV. Researches Government/Development, School Board, Hockey, and Real Estate Market news across 11 sub-agents. Ranks 25 stories by viral potential, produces green-screen video transcripts, blog articles, Reddit posts, Instagram captions, YouTube descriptions, and a story spreadsheet.",
+  "author": { "name": "Ryan Rose", "email": "ryan@rosehomeslv.com" },
+  "license": "UNLICENSED",
+  "keywords": ["local-news", "instagram", "video", "green-screen", "las-vegas", "clark-county", "social-media", "blog", "reddit", "youtube", "real-estate"],
+  "skills": "./skills/"
+}

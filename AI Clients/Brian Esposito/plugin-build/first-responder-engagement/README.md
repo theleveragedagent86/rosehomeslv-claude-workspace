@@ -10,6 +10,15 @@ Brian J. Esposito, Branch Manager, Nations Lending, Las Vegas NV (NMLS #1535781)
 
 Two skills that help Brian build authentic community presence with Vegas-area first responders (military/veterans, police, fire/EMS, healthcare). The goal is community-building, NOT lead generation. Brian's voice in these comments is a 28-year Vegas neighbor and Par for the Cure founder, never a mortgage lender.
 
+## How to run the skills (important)
+
+Plugin skills are namespaced by the plugin name, so the exact commands are:
+
+- `/first-responder-engagement:responder-comments`
+- `/first-responder-engagement:responder-research`
+
+The fastest way: type `/responder` and both will appear in the autocomplete menu. You do not have to type the long name by hand. (If nothing appears, the plugin is not installed/enabled yet, or Cowork needs a reload.)
+
 ### /responder-comments (daily community presence)
 - Visits target Vegas-area first responder Instagram profiles
 - Likes posts and select aligned comments
@@ -43,7 +52,7 @@ This plugin runs on the same @espohomeloans account as the `lender-engagement` p
 1. Install this plugin in Claude Code or Cowork
 2. The Playwright MCP server is configured automatically (or reused if lender-engagement is already installed)
 3. First time only: log into Instagram as @espohomeloans in the Playwright browser
-4. Populate target-accounts.md by running `/responder-research`
+4. Populate target-accounts.md by running `/first-responder-engagement:responder-research` (type `/responder` to find it in autocomplete)
 
 ## Requirements
 

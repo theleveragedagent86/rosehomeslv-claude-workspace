@@ -1,10 +1,54 @@
+# --- distribution artifacts & OS cruft ---
 *.zip
 *.DS_Store
-Transactions/
 temporary screenshots/
+
+# --- reorg compatibility bridges (local symlinks, not canonical structure) ---
+# /Instagram -> Rose Homes LV/Content/Instagram : keeps the old absolute path
+# alive for the Cowork inbound-* and ig-carousel routines whose server-side
+# working directory / prompts still reference the pre-reorg /Instagram path.
+/Instagram
+
+# --- private client data (never commit) ---
+Rose Homes LV/Clients/Transactions/
+
+# --- binary / media (kept out of git; archive to external SSD) ---
 *.pdf
 *.mp4
 *.mov
 *.png
 *.jpg
 *.jpeg
+
+# --- exception: canonical brand assets ARE versioned (they're the source of truth) ---
+!SKOOL Community/Brandkit/*.png
+
+# --- exception: paid AI art + the finished lead magnet ARE versioned ---
+# Nanobanana generations cost credits and cannot be reproduced deterministically,
+# so they are the source of truth. The delivered PDF is versioned too.
+# QA page rasters under qa/ stay ignored: they are disposable build output.
+!Rose Homes LV/Marketing/Lead-Magnets/new-construction-guide/assets/img/*.png
+!Rose Homes LV/Marketing/Lead-Magnets/new-construction-guide/assets/img/*.jpg
+!Rose Homes LV/Marketing/Lead-Magnets/new-construction-guide/*.pdf
+
+# --- heavy rendered-video folders: archive these to the external SSD ---
+SKOOL Community/Final Videos/
+Content Channels/Codename History/episodes/*
+# but keep the text-only publishing state, it is the only record of what is scheduled
+!Content Channels/Codename History/episodes/_schedule/
+!Content Channels/Codename History/episodes/shorts-queue.md
+hyperframes/Final Videos/
+hyperframes/Raw Videos/
+
+# Command Center local secrets (Google Calendar iCal token)
+Rose Homes LV/Dashboard/config.local.json
+
+# Command Center runtime state (local only)
+Rose Homes LV/Dashboard/runs/
+Rose Homes LV/Dashboard/completion-log.json
+Rose Homes LV/Dashboard/config.local.json
+
+# Python caches and script backups
+__pycache__/
+*.pyc
+*.bak-*

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving to Las Vegas Relocation Guide | Ryan Rose</title>
+    <link rel="canonical" href="https://rosehomeslv.com/moving-to-las-vegas-BG">
+    <meta name="description" content="Thinking about moving to Las Vegas? This free relocation guide from Ryan Rose covers neighborhoods, cost of living, schools, your moving timeline, hidden costs, and a first 30 days checklist.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Moving to Las Vegas Relocation Guide">
+    <meta property="og:description" content="Your friendly, no-pressure guide to relocating to Las Vegas. Neighborhoods, cost of living, schools, your moving timeline, and a first 30 days checklist.">
+    <meta property="og:url" content="https://rosehomeslv.com/moving-to-las-vegas-BG">
+    <meta property="og:site_name" content="Rose Homes LV">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Moving to Las Vegas Relocation Guide">
+    <meta name="twitter:description" content="Your friendly, no-pressure guide to relocating to Las Vegas. Neighborhoods, cost of living, schools, your moving timeline, and a first 30 days checklist.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ============================
+           PAGE & PRINT
+           ============================ */
+        @page {
+            size: letter;
+            margin: 0.6in 0.75in 0.75in 0.75in;
+        }
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .card, .hood-card, .cost-card, .cost-total, .step-card, .faq-item, table, .info-bar, .checklist, .pro-tip { break-inside: avoid; }
+            .section { break-inside: auto; }
+            .page-break { break-after: page; }
+        }
+        .page-break { break-after: page; }
+
+        /* ============================
+           TOKENS
+           ============================ */
+        :root {
+            --white: #ffffff;
+            --light: #f7f8fa;
+            --light-card: #f0f2f5;
+            --border: #e2e5ea;
+            --border-light: #eef0f3;
+            --text-primary: #1a1a1a;
+            --text-body: #3d3d3d;
+            --text-secondary: #6b6b6b;
+            --text-tertiary: #999999;
+            --accent: #07A9E0;
+            --accent-light: rgba(7, 169, 224, 0.08);
+            --accent-muted: rgba(7, 169, 224, 0.12);
+            --radius: 8px;
+            --radius-sm: 5px;
+        }
+
+        /* ============================
+           RESET & BASE
+           ============================ */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 15px; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-body);
+            line-height: 1.7;
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ============================
+           LAYOUT
+           ============================ */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* ============================
+           SECTIONS
+           ============================ */
+        .section {
+            padding: 36px 0;
+        }
+        .section--white {
+            background: var(--white);
+        }
+        .section--alt {
+            background: var(--light);
+        }
+
+        /* ============================
+           SECTION LABEL
+           ============================ */
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .section-label::after {
+            content: '';
+            flex: 0 0 50px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        /* ============================
+           TYPOGRAPHY
+           ============================ */
+        .headline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            line-height: 1.15;
+            margin-bottom: 14px;
+        }
+        .headline--sm {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        p + p {
+            margin-top: 10px;
+        }
+        .text-accent {
+            color: var(--accent);
+        }
+        .lead {
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+
+        /* ============================
+           HERO / COVER
+           ============================ */
+        .hero {
+            background: var(--light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 0 0;
+        }
+        .hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero-bottom {
+            background: var(--accent);
+            color: #ffffff;
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-top: auto;
+        }
+        .hero-kicker {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 64px;
+            letter-spacing: 6px;
+            color: var(--text-primary);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .hero-subtitle {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 4px;
+            color: var(--text-tertiary);
+            margin-bottom: 20px;
+        }
+        .hero-tagline {
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 520px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+        .facts-bar {
+            border-top: 1px solid var(--border);
+            padding-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .fact-item {
+            text-align: center;
+        }
+        .fact-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+        }
+        .fact-label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+        }
+
+        /* ============================
+           INFO BAR
+           ============================ */
+        .info-bar {
+            background: var(--accent);
+            color: var(--white);
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+        }
+
+        /* ============================
+           TABLES
+           ============================ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        table th {
+            text-align: left;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            padding: 12px 14px;
+            border-bottom: 2px solid var(--accent);
+        }
+        table td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-body);
+        }
+        table tr:last-child td {
+            border-bottom: none;
+        }
+        table td:first-child {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           NEIGHBORHOOD CARDS
+           ============================ */
+        .hood-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-top: 3px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 18px 22px;
+            margin-top: 14px;
+        }
+        .hood-card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+        .hood-card .hood-vibe {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+        .hood-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+        .hood-card p + p {
+            margin-top: 6px;
+        }
+        .hood-card .hood-fit strong {
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           COST GRID
+           ============================ */
+        .cost-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 24px 0;
+        }
+        .cost-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 18px 18px;
+        }
+        .cost-card h4 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+        .cost-card p {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+        .cost-card .cost-flag {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: var(--accent);
+            background: var(--accent-light);
+            border-radius: 4px;
+            padding: 3px 8px;
+        }
+        .cost-note {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            margin-top: 4px;
+            line-height: 1.6;
+        }
+
+        /* ============================
+           ROADMAP (Moving Timeline)
+           ============================ */
+        .roadmap {
+            position: relative;
+            margin-top: 24px;
+            padding-left: 48px;
+        }
+        .roadmap::before {
+            content: '';
+            position: absolute;
+            left: 18px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent), var(--border) 95%);
+        }
+        .roadmap-step {
+            position: relative;
+            padding-bottom: 16px;
+            break-inside: avoid;
+        }
+        .roadmap-step:last-child {
+            padding-bottom: 0;
+        }
+        .roadmap-node {
+            position: absolute;
+            left: -48px;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 15px;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+        }
+        .roadmap-step:last-child .roadmap-node {
+            background: var(--accent);
+            color: var(--white);
+        }
+        .roadmap-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+        .roadmap-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .roadmap-meta {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-top: 4px;
+        }
+
+        /* ============================
+           CHECKLIST
+           ============================ */
+        .checklist {
+            list-style: none;
+            margin: 16px 0;
+            padding: 0;
+        }
+        .checklist li {
+            padding: 11px 0;
+            font-size: 14px;
+            line-height: 1.6;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            border-bottom: 1px solid var(--border-light);
+            break-inside: avoid;
+        }
+        .checklist li:last-child {
+            border-bottom: none;
+        }
+        .checklist li::before {
+            content: '';
+            flex: 0 0 18px;
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            border: 2px solid var(--accent);
+            background: var(--accent-light);
+            margin-top: 3px;
+        }
+        .checklist li strong {
+            color: var(--text-primary);
+        }
+
+        /* ============================
+           FAQ / Q-A LIST
+           ============================ */
+        .faq-item {
+            border-bottom: 1px solid var(--border-light);
+            padding: 20px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .faq-a {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 1.7;
+        }
+
+        /* ============================
+           PRO TIP
+           ============================ */
+        .pro-tip {
+            background: var(--accent-light);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            margin-top: 16px;
+            font-size: 14px;
+            color: var(--text-body);
+        }
+        .pro-tip strong {
+            color: var(--accent);
+        }
+
+        /* ============================
+           CTA LAST PAGE
+           ============================ */
+        .cta-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--light);
+        }
+        .cta-headline {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 32px;
+            letter-spacing: 2px;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .cta-sub {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            line-height: 1.6;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-contact {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 2;
+        }
+        .cta-contact strong {
+            color: var(--text-primary);
+        }
+        .cta-contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .cta-disclaimer {
+            font-size: 11px;
+            color: var(--text-tertiary);
+            margin-top: 32px;
+            line-height: 1.6;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================
+           FOOTER
+           ============================ */
+        .footer {
+            background: var(--text-primary);
+            color: var(--text-tertiary);
+            text-align: center;
+            padding: 24px 16px;
+            font-size: 11px;
+            letter-spacing: 1px;
+            line-height: 1.6;
+        }
+        .footer strong {
+            color: var(--white);
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================
+         COVER
+         ======================== -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-kicker">Your Relocation Guide</div>
+                <h1>MOVING TO<br>LAS VEGAS</h1>
+                <div class="hero-subtitle">A FRIENDLY GUIDE FOR YOUR MOVE</div>
+                <p class="hero-tagline">Welcome. Whether you're moving in nine days or nine months, this guide walks you through the neighborhoods, the costs, the schools, and the steps, so you can land in Las Vegas feeling at home.</p>
+                <div class="facts-bar">
+                    <div class="fact-item">
+                        <div class="fact-value">NO STATE</div>
+                        <div class="fact-label">Income Tax</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">300+</div>
+                        <div class="fact-label">Sunny Days</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">7 AREAS</div>
+                        <div class="fact-label">To Explore</div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-value">4 HRS</div>
+                        <div class="fact-label">To SoCal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bottom">
+            From Ryan Rose, Real Broker, LLC. A no-pressure guide to help you plan your move with confidence.
+        </div>
+    </header>
+    <div class="page-break"></div>
+
+    <!-- ========================
+         WHY LAS VEGAS
+         ======================== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Why Las Vegas</div>
+            <div class="headline">WHY PEOPLE FALL FOR THIS CITY</div>
+            <p class="lead">People move to Las Vegas for a lot of reasons. Here are the ones that come up the most when I talk with folks making the move.</p>
+
+            <p><strong>No state income tax.</strong> Nevada is one of the few states with no state income tax. That means more of your paycheck stays in your pocket. A lot of people moving from higher-tax states feel the difference right away.</p>
+
+            <p><strong>The lifestyle is easy to love.</strong> Las Vegas is more than the Strip. Most of the people who live here spend their time in quiet suburbs with parks, trails, golf, and great restaurants. You get a big-city feel without a lot of the big-city stress.</p>
+
+            <p><strong>Sunshine almost every day.</strong> The valley sees sun on most days of the year. Winters are mild, so you can hike, bike, and play outside in months that would be freezing in other places. Summers are hot and dry, and locals plan around it. More on that in the cost section.</p>
+
+            <p><strong>Entertainment any night you want it.</strong> World-class shows, concerts, dining, and sports are minutes away. The Raiders, the Golden Knights, and more call Las Vegas home. When friends and family visit, you'll never run out of things to do.</p>
+
+            <p><strong>Close to Southern California.</strong> The beaches and mountains of Southern California are about a four-hour drive. You can keep the coast in your life for weekend trips without paying coastal prices to live there every day.</p>
+
+            <div class="pro-tip">
+                <strong>One thing to know:</strong> Las Vegas grows fast and neighborhoods can feel very different from one another. The right area for you depends on your commute, your stage of life, and the vibe you want. That's exactly what the next section helps with.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         NEIGHBORHOOD GUIDE
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Neighborhoods</div>
+            <div class="headline">WHERE TO LIVE: A QUICK GUIDE</div>
+            <p>Las Vegas is really a group of communities spread across the valley. Each one has its own feel. Here's a friendly overview to help you narrow things down. When you're ready, ask me and I'll match areas to your budget and your must-haves.</p>
+
+            <div class="hood-card">
+                <h3>HENDERSON</h3>
+                <div class="hood-vibe">Safe, suburban, family-friendly</div>
+                <p>Henderson sits on the southeast side of the valley. It's known for being clean, well-run, and quiet, with lots of parks and walking trails. It feels like its own city while still being close to everything.</p>
+                <p class="hood-fit"><strong>Who it suits:</strong> Families, professionals, and anyone who wants a calm suburb with strong day-to-day services.</p>
+            </div>
+
+            <div class="hood-card">
+                <h3>SUMMERLIN</h3>
+                <div class="hood-vibe">Master-planned, active, west side</div>
+                <p>Summerlin is a large master-planned community on the west side, tucked up against Red Rock Canyon. It's built around parks, trails, golf, shopping, and Downtown Summerlin. The hiking out here is some of the best in the valley.</p>
+                <p class="hood-fit"><strong>Who it suits:</strong> Outdoor lovers, families, and buyers who want a planned community with lots to walk to.</p>
+            </div>
+
+            <div class="hood-card">
+                <h3>CENTENNIAL HILLS</h3>
+                <div class="hood-vibe">Newer, spacious, northwest</div>
+                <p>Centennial Hills is in the northwest, where you'll find newer homes and a bit more space. It's a popular pick for people who want a newer build without the price of the most central areas, plus easy access to the 215 Beltway.</p>
+                <p class="hood-fit"><strong>Who it suits:</strong> Buyers who want newer construction, more square footage, and an easy commute north and west.</p>
+            </div>
+
+            <div class="hood-card">
+                <h3>SKYE CANYON</h3>
+                <div class="hood-vibe">Outdoorsy, newer master plan, northwest</div>
+                <p>Skye Canyon is a newer master plan in the far northwest, built for an active, outdoor lifestyle. It has a fitness center, a resort-style pool, parks, and a big trail system. You're close to US-95 and a quick drive to Mount Charleston for cooler air.</p>
+                <p class="hood-fit"><strong>Who it suits:</strong> Active families and first-time buyers who want newer homes and lots of amenities.</p>
+            </div>
+
+            <div class="hood-card">
+                <h3>NORTH LAS VEGAS</h3>
+                <div class="hood-vibe">Growing, good value, north</div>
+                <p>North Las Vegas is its own city on the north end of the valley. It has grown a lot in recent years and is often one of the more affordable places to find a newer home. There's a mix of established neighborhoods and brand-new construction.</p>
+                <p class="hood-fit"><strong>Who it suits:</strong> First-time buyers and value-minded families who want more home for the money.</p>
+            </div>
+
+            <div class="hood-card">
+                <h3>GREEN VALLEY</h3>
+                <div class="hood-vibe">Established, convenient, southeast</div>
+                <p>Green Valley is an established area within Henderson. It's mature and leafy, with shopping, dining, and parks close by. Because it's been around a while, the trees are grown in and a lot of services are right around the corner.</p>
+                <p class="hood-fit"><strong>Who it suits:</strong> Buyers who want an established, convenient neighborhood with everyday needs nearby.</p>
+            </div>
+
+            <div class="hood-card">
+                <h3>INSPIRADA</h3>
+                <div class="hood-vibe">Newer master plan, parks-focused, south Henderson</div>
+                <p>Inspirada is a newer master-planned community in south Henderson, built around a web of parks, sports fields, and trails. It has a younger, family feel and lots of newer homes, with community events that make it easy to meet neighbors.</p>
+                <p class="hood-fit"><strong>Who it suits:</strong> Young families and buyers who want a newer home in a parks-first, community-driven setting.</p>
+            </div>
+
+            <div class="pro-tip">
+                <strong>Not sure which fits?</strong> That's normal. Tell me how you'll commute, what your budget is, and what matters most to you, and I'll send a short list of areas worth a look. No pressure, just helpful.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         COST OF LIVING
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Cost of Living</div>
+            <div class="headline">WHAT IT COSTS TO LIVE HERE</div>
+            <p>Here's an honest, big-picture look at the cost of living. I've left room for current numbers so you get real figures, not guesses. Ask me and I'll fill in the latest for your situation.</p>
+
+            <div class="cost-grid">
+                <div class="cost-card">
+                    <h4>HOUSING</h4>
+                    <p>Housing is usually the biggest piece of your budget. Prices change by area and by month, so it pays to look at fresh numbers before you plan.</p>
+                    <span class="cost-flag">[NOT FOUND - current figure]</span>
+                </div>
+                <div class="cost-card">
+                    <h4>NO STATE INCOME TAX</h4>
+                    <p>Nevada has no state income tax. For many people moving from higher-tax states, this is real money back in the budget every paycheck.</p>
+                </div>
+                <div class="cost-card">
+                    <h4>SUMMER COOLING</h4>
+                    <p>Summers are hot and dry, so cooling is the utility to plan for. Your power bill climbs in the hottest months, then drops again in the mild seasons.</p>
+                    <span class="cost-flag">[NOT FOUND - current figure]</span>
+                </div>
+                <div class="cost-card">
+                    <h4>EVERYDAY UTILITIES</h4>
+                    <p>Water, trash, internet, and gas round out your monthly bills. Desert landscaping can help keep water use lower than in greener climates.</p>
+                    <span class="cost-flag">[NOT FOUND - current figure]</span>
+                </div>
+            </div>
+
+            <p class="cost-note">I left the figures above blank on purpose. I don't want to hand you a stale number that sends your budget the wrong way. Ask me and I'll share current, area-specific costs so you can plan with confidence.</p>
+
+            <div class="pro-tip">
+                <strong>A simple way to think about it:</strong> Add up your likely mortgage or rent, your summer cooling, and your everyday utilities. Then remember to add back what you save with no state income tax. That gives you a clearer picture than any single headline number.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         SCHOOLS
+         ======================== -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Schools</div>
+            <div class="headline">SCHOOLS AND FAMILY LIFE</div>
+            <p>If you have kids, schools are a big part of the decision. Here's a clear, no-spin overview so you know how it works before you pick an area.</p>
+
+            <p><strong>The public district is Clark County School District (CCSD).</strong> It serves the whole Las Vegas valley, so wherever you land, you'll be inside CCSD. The school your child attends usually depends on your home address.</p>
+
+            <p><strong>You have options beyond your zoned school.</strong> The area also has magnet schools, public charter schools, and private schools. Each works a little differently, and spots can be competitive, so it helps to plan ahead.</p>
+
+            <p><strong>Ask me for area-specific guidance.</strong> Schools matter to a lot of families, and the right fit is personal. I'm happy to point you toward the resources to research schools by address, and to share what families in each area tell me. I'll keep it factual and let you make the call.</p>
+
+            <div class="pro-tip">
+                <strong>Good to do early:</strong> If schools drive your move, look at them before you settle on a neighborhood. The home you choose can decide your zoned school, so it's worth lining up first.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         MOVING TIMELINE
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">Timeline</div>
+            <div class="headline">MOVING IN 9 DAYS OR 9 MONTHS</div>
+            <p>Some people plan their move for a year. Others get a job offer on Friday and need keys by next week. Both work. Here's the path from first research to your first week in town. Move through it as fast or as slow as you need.</p>
+
+            <div class="roadmap">
+                <div class="roadmap-step">
+                    <div class="roadmap-node">01</div>
+                    <div class="roadmap-title">START YOUR RESEARCH</div>
+                    <div class="roadmap-desc">Read up on the valley, look at neighborhoods, and get a rough budget in mind. This guide is a great start. Save the areas that catch your eye.</div>
+                    <div class="roadmap-meta">First Step</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">02</div>
+                    <div class="roadmap-title">SET YOUR BUDGET AND TALK TO A LENDER</div>
+                    <div class="roadmap-desc">If you're buying, get pre-approved so you know your real price range. If you're renting first, set a monthly number. This step keeps the search focused.</div>
+                    <div class="roadmap-meta">Early</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">03</div>
+                    <div class="roadmap-title">PICK YOUR SHORT LIST OF AREAS</div>
+                    <div class="roadmap-desc">Narrow it to two or three neighborhoods that fit your commute, your budget, and your lifestyle. Ask me and I'll help you compare them side by side.</div>
+                    <div class="roadmap-meta">Planning</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">04</div>
+                    <div class="roadmap-title">VISIT, OR TOUR ONLINE</div>
+                    <div class="roadmap-desc">Come see the areas in person if you can. If you can't travel yet, I can walk homes and neighborhoods with you on a video call so you still get a real feel.</div>
+                    <div class="roadmap-meta">Explore</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">05</div>
+                    <div class="roadmap-title">FIND YOUR HOME</div>
+                    <div class="roadmap-desc">Tour the homes that fit, and pick the one that feels right. New construction and resale both have pros and cons, and I'll help you weigh them.</div>
+                    <div class="roadmap-meta">Search</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">06</div>
+                    <div class="roadmap-title">MAKE AN OFFER</div>
+                    <div class="roadmap-desc">Once you find the one, we write a clean, competitive offer and negotiate the terms. I'll walk you through every line so you feel sure about it.</div>
+                    <div class="roadmap-meta">Offer</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">07</div>
+                    <div class="roadmap-title">INSPECTIONS AND APPRAISAL</div>
+                    <div class="roadmap-desc">We line up the inspection and the lender orders the appraisal. This is where we confirm the home is solid and priced right before you commit.</div>
+                    <div class="roadmap-meta">Due Diligence</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">08</div>
+                    <div class="roadmap-title">CLOSE ON YOUR HOME</div>
+                    <div class="roadmap-desc">You sign, you fund, and you get the keys. I'll make sure the moving pieces line up so closing day is calm, not chaotic.</div>
+                    <div class="roadmap-meta">Closing</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="roadmap-node">09</div>
+                    <div class="roadmap-title">YOUR FIRST WEEK IN TOWN</div>
+                    <div class="roadmap-desc">Turn on utilities, learn your routes, and find your coffee spot. Use the first 30 days checklist later in this guide so nothing slips through the cracks.</div>
+                    <div class="roadmap-meta">Welcome Home</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         HIDDEN COSTS CHECKLIST
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--white">
+        <div class="container">
+            <div class="section-label">Hidden Costs</div>
+            <div class="headline">COSTS RELOCATORS FORGET</div>
+            <p>Moving has a few costs that sneak up on people, especially when you're crossing state lines. None of these are surprises if you plan for them. Here's the short list so your budget stays on track.</p>
+
+            <ul class="checklist">
+                <li><strong>Earnest money.</strong> A good-faith deposit you put down when your offer is accepted. It goes toward your purchase, but you need it ready up front.</li>
+                <li><strong>Home inspection.</strong> A pro checks the home before you buy. Worth every penny for the peace of mind, and you pay for it during the process.</li>
+                <li><strong>Appraisal.</strong> Your lender orders this to confirm the home's value. It's usually a separate cost you cover along the way.</li>
+                <li><strong>HOA dues.</strong> Many Las Vegas communities have a homeowners association. Dues cover shared amenities and upkeep, and they're an ongoing monthly cost.</li>
+                <li><strong>Moving costs.</strong> Movers, a truck, packing supplies, and maybe storage. Long-distance moves cost more, so get quotes early.</li>
+                <li><strong>Utility deposits.</strong> Some utility providers ask for a deposit when you set up new service, especially if you're new to the area.</li>
+                <li><strong>New-resident DMV and registration.</strong> When you become a Nevada resident, you'll register your vehicle and update your license. Plan for the time and the fees.</li>
+            </ul>
+
+            <div class="pro-tip">
+                <strong>How to stay ahead of it:</strong> Set aside a small cushion for these one-time costs on top of your down payment. When you ask me for a plan, I'll flag which of these apply to your move so there are no surprises.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FIRST 30 DAYS CHECKLIST
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-label">First 30 Days</div>
+            <div class="headline">YOUR FIRST 30 DAYS CHECKLIST</div>
+            <p>You've got the keys. Now let's get you settled. Here's a simple checklist for your first month so the boring stuff gets handled and you can enjoy your new city.</p>
+
+            <ul class="checklist">
+                <li><strong>Turn on your utilities.</strong> Set up power, water, trash, gas, and internet. Do this before move-in day if you can so you arrive to a working home.</li>
+                <li><strong>Update your driver's license.</strong> New Nevada residents update their license. Check what documents you need and book an appointment to save time.</li>
+                <li><strong>Register your vehicle.</strong> Nevada requires you to register your vehicle after you move. There's usually an inspection step, so look up the order of operations first.</li>
+                <li><strong>Register to vote.</strong> Once you're a resident, update your voter registration with your new address so you're ready for the next election.</li>
+                <li><strong>Find your everyday services.</strong> Pick a grocery store, pharmacy, doctor, dentist, vet, and bank branch near home. Getting these set early makes life feel normal fast.</li>
+                <li><strong>Learn your routes.</strong> Drive your commute, your kids' school run, and the way to the nearest hospital. Knowing your roads takes the stress out of week one.</li>
+                <li><strong>Explore your area.</strong> Walk the parks, try a few local restaurants, and find your coffee spot. This is the fun part, and it's how a new place starts to feel like home.</li>
+            </ul>
+
+            <div class="pro-tip">
+                <strong>Settling-in tip:</strong> Tackle the official to-dos like license, registration, and voting in your first couple of weeks, while you have momentum. Then spend the rest of the month exploring. Need a recommendation? I'm a text away.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         NEXT STEPS / CONTACT
+         ======================== -->
+    <div class="page-break"></div>
+    <section class="cta-page">
+        <div class="container">
+            <div class="cta-headline">LET'S MAKE YOUR <span class="text-accent">MOVE EASY</span></div>
+            <p class="cta-sub">Thanks for reading. Moving to a new city is a big deal, and you don't have to figure it out alone. I help people relocate to Las Vegas every day, and I'd be glad to help you too. Tell me where you are in the process and what you're hoping for, and I'll point you in the right direction. No pressure, no hard sell, just real help when you want it. Want me to put together a short list of neighborhoods for your move? Give me a call or send a text anytime.</p>
+            <div class="cta-contact">
+                <strong>Ryan Rose</strong><br>
+                Real Broker, LLC<br>
+                702-747-5921 | ryan@rosehomeslv.com<br>
+                rosehomeslv.com
+            </div>
+            <p class="cta-disclaimer">This guide is for general information only. Costs, taxes, schools, community details, and local requirements can change over time. Always confirm current figures and rules for your situation before making decisions. Mark of any current figure shown as [NOT FOUND - current figure] should be verified before you rely on it.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         FOOTER
+         ======================== -->
+    <footer class="footer">
+        <p><strong>MOVING TO LAS VEGAS RELOCATION GUIDE</strong></p>
+        <p>Prepared by Ryan Rose | Real Broker, LLC | rosehomeslv.com</p>
+    </footer>
+
+</body>
+</html>

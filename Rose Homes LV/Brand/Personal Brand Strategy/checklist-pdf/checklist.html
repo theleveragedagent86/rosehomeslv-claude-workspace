@@ -1,0 +1,337 @@
+<meta charset="utf-8">
+<title>Las Vegas New Construction Buyer's Defense Checklist · Rose Homes LV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&family=Montserrat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1C2333;
+    --navy-soft:#28304a;
+    --gold:#C9A86E;
+    --gold-deep:#b7955a;
+    --white:#ffffff;
+    --cream:#F7F5F0;
+    --slate:#8A8FA8;
+    --ink:#1C2333;
+    --line:#e4e0d6;
+    --body:#33384a;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ background:#5a5f70; }
+  body{
+    font-family:'Inter',Arial,sans-serif;
+    color:var(--ink);
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+  @page{ size:8.5in 11in; margin:0; }
+
+  .sheet{
+    position:relative;
+    width:8.5in;
+    height:11in;
+    background:var(--white);
+    overflow:hidden;
+    page-break-after:always;
+    break-after:page;
+  }
+  .sheet:last-child{ page-break-after:auto; break-after:auto; }
+
+  /* screen preview spacing only */
+  @media screen{
+    .sheet{ margin:24px auto; box-shadow:0 24px 60px rgba(0,0,0,.4); }
+  }
+
+  .pad{ padding:0.66in 0.7in 0.9in; height:100%; }
+  .sheet.vc .pad{ display:flex; flex-direction:column; justify-content:center; padding-bottom:1in; }
+
+  /* denser spacing for the full 3-section page */
+  .sheet.dense .sec{ margin-bottom:14px; }
+  .sheet.dense .sec-head{ margin-bottom:9px; padding-bottom:6px; }
+  .sheet.dense .sec-num{ font-size:22pt; }
+  .sheet.dense .sec-title{ font-size:12.5pt; }
+  .sheet.dense .item{ margin:7px 0; }
+  .sheet.dense .itxt{ font-size:10pt; line-height:1.4; }
+
+  /* ---------- Cover ---------- */
+  .cover{ background:var(--navy); color:var(--white); }
+  .cover .frame{
+    position:absolute; inset:0.34in;
+    border:1px solid rgba(201,168,110,.35);
+    pointer-events:none;
+  }
+  .cover .pad{ display:flex; flex-direction:column; }
+  .brand-lockup{ margin-bottom:0.5in; }
+  .brand-lockup svg{ width:2.0in; height:auto; color:#fff; }
+  .eyebrow{
+    font-family:'Montserrat',sans-serif; font-weight:600;
+    text-transform:uppercase; letter-spacing:.26em;
+    font-size:10.5pt; color:var(--gold);
+  }
+  .cover h1{
+    font-family:'Playfair Display',Georgia,serif; font-weight:700;
+    font-size:41pt; line-height:1.08; letter-spacing:-.5px;
+    color:#fff; margin-top:20px; max-width:6.1in;
+  }
+  .cover h1 em{ font-style:italic; color:var(--gold); }
+  .rule-gold{ width:1.1in; height:2px; background:var(--gold); border:0; margin:26px 0; }
+  .cover .sub{
+    font-size:13.5pt; line-height:1.55; color:#d7dae4; max-width:5.2in; font-weight:400;
+  }
+  .cover .spacer{ flex:1; }
+  .cover .foot{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    border-top:1px solid rgba(255,255,255,.14); padding-top:16px;
+  }
+  .cover .foot .who{ font-family:'Playfair Display',serif; font-size:14pt; color:#fff; }
+  .cover .foot .who span{ display:block; font-family:'Montserrat',sans-serif; font-weight:500;
+    font-size:8.5pt; letter-spacing:.18em; text-transform:uppercase; color:var(--slate); margin-top:5px; }
+  .cover .foot .tag{ font-family:'Montserrat',sans-serif; font-weight:600; font-size:8.5pt;
+    letter-spacing:.2em; text-transform:uppercase; color:var(--gold); text-align:right; }
+
+  /* ---------- Interior ---------- */
+  .corner{ position:absolute; width:26px; height:26px; }
+  .corner.tr{ top:0.34in; right:0.34in; border-top:2px solid var(--gold); border-right:2px solid var(--gold); }
+  .corner.bl{ bottom:0.34in; left:0.34in; border-bottom:1px solid var(--gold); border-left:1px solid var(--gold); }
+
+  .kicker{
+    font-family:'Montserrat',sans-serif; font-weight:600; text-transform:uppercase;
+    letter-spacing:.22em; font-size:9pt; color:var(--gold-deep);
+  }
+  .lead{
+    font-family:'Playfair Display',Georgia,serif; font-style:italic; font-weight:500;
+    font-size:15pt; line-height:1.5; color:var(--navy); margin:10px 0 6px; max-width:6.3in;
+  }
+  .lead b{ font-style:normal; font-weight:700; }
+  .lead-note{ font-size:10pt; color:var(--slate); margin-bottom:20px; }
+
+  .sec{ margin-bottom:22px; }
+  .sec:last-child{ margin-bottom:0; }
+  .sec-head{ display:flex; align-items:baseline; gap:12px; border-bottom:1px solid var(--line); padding-bottom:8px; margin-bottom:12px; }
+  .sec-num{ font-family:'Playfair Display',serif; font-weight:700; font-size:24pt; color:var(--gold); line-height:1; }
+  .sec-title{ font-family:'Montserrat',sans-serif; font-weight:700; font-size:13.5pt; letter-spacing:.02em; color:var(--navy); text-transform:none; }
+  .sec-sub{ font-size:9.5pt; color:var(--slate); font-style:italic; margin-left:auto; align-self:center; }
+
+  .item{ display:flex; gap:11px; margin:9px 0; align-items:flex-start; }
+  .cb{ flex:none; width:15px; height:15px; margin-top:2px; border:1.5px solid var(--gold); border-radius:3px; background:#fff; }
+  .itxt{ font-size:10.5pt; line-height:1.46; color:var(--body); }
+  .itxt strong{ color:var(--navy); font-weight:600; }
+
+  .callout{ background:var(--cream); border-left:3px solid var(--gold); border-radius:0 5px 5px 0; padding:14px 16px 15px; margin:6px 0 4px; }
+  .callout .tag{ display:inline-block; font-family:'Montserrat',sans-serif; font-weight:700; font-size:7.5pt; letter-spacing:.16em; text-transform:uppercase; color:#fff; background:var(--gold-deep); padding:3px 9px; border-radius:3px; margin-bottom:9px; }
+  .sub{ list-style:none; margin:8px 0 0 26px; }
+  .sub li{ position:relative; font-size:9.7pt; line-height:1.4; color:var(--body); padding-left:15px; margin:5px 0; }
+  .sub li:before{ content:""; position:absolute; left:0; top:7px; width:5px; height:5px; background:var(--gold); border-radius:50%; }
+
+  .foot-bar{ position:absolute; left:0.7in; right:0.7in; bottom:0.42in; display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--line); padding-top:9px; }
+  .foot-bar span{ font-family:'Montserrat',sans-serif; font-weight:500; font-size:8pt; letter-spacing:.14em; text-transform:uppercase; color:var(--slate); }
+
+  /* recap check style */
+  .recap{ background:var(--navy); color:#fff; border-radius:6px; padding:18px 20px; margin-top:6px; }
+  .recap h3{ font-family:'Playfair Display',serif; font-weight:700; font-size:14pt; color:#fff; margin-bottom:4px; }
+  .recap p{ font-size:9.5pt; color:#c6cad6; margin-bottom:12px; }
+  .recap .item{ margin:8px 0; }
+  .recap .cb{ border-color:var(--gold); background:transparent; position:relative; }
+  .recap .cb:after{ content:""; position:absolute; left:3px; top:0px; width:6px; height:10px; border:solid var(--gold); border-width:0 2px 2px 0; transform:rotate(45deg); }
+  .recap .itxt{ color:#eef0f5; font-size:10pt; }
+  .recap .itxt strong{ color:#fff; }
+
+  /* ---------- Closing ---------- */
+  .closing{ background:var(--navy); color:#fff; }
+  .closing .frame{ position:absolute; inset:0.34in; border:1px solid rgba(201,168,110,.35); }
+  .closing .pad{ display:flex; flex-direction:column; }
+  .closing .kicker{ color:var(--gold); }
+  .closing h2{ font-family:'Playfair Display',serif; font-weight:700; font-size:33pt; line-height:1.12; margin:16px 0 0; max-width:6in; }
+  .closing h2 em{ font-style:italic; color:var(--gold); }
+  .closing .body{ font-size:12.5pt; line-height:1.62; color:#d7dae4; max-width:5.4in; margin-top:20px; }
+  .closing .spacer{ flex:1; }
+  .contact{ border-top:1px solid rgba(255,255,255,.16); padding-top:22px; }
+  .contact-row{ display:flex; align-items:center; gap:22px; margin-bottom:18px; }
+  .headshot{ flex:none; width:1.5in; height:1.5in; border-radius:50%; object-fit:cover; object-position:center top; border:2px solid var(--gold); }
+  .contact .name{ font-family:'Playfair Display',serif; font-weight:700; font-size:22pt; color:#fff; }
+  .contact .name em{ color:var(--gold); font-style:normal; }
+  .contact .role{ font-family:'Montserrat',sans-serif; font-weight:600; font-size:9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--slate); margin:7px 0 12px; }
+  .contact .lines{ font-size:12pt; color:#e7e9f0; line-height:1.7; }
+  .contact .lines b{ color:var(--gold); font-weight:600; }
+  .disclaimer{ font-size:7.6pt; line-height:1.5; color:#8188a0; margin-top:4px; max-width:6in; }
+</style>
+
+<!-- ============ SHEET 1 — COVER ============ -->
+<section class="sheet cover">
+  <div class="frame"></div>
+  <div class="pad">
+    <div class="brand-lockup">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 240" role="img" aria-label="Rose Homes LV">
+        <path d="M 4 28 L 4 4 L 28 4" fill="none" stroke="#C9A86E" stroke-width="1.5"></path>
+        <path d="M 276 212 L 276 236 L 252 236" fill="none" stroke="#C9A86E" stroke-width="1.5"></path>
+        <text x="140" y="100" font-family="'Playfair Display',serif" font-weight="700" font-size="56" fill="currentColor" text-anchor="middle" letter-spacing="-1">Rose</text>
+        <text x="140" y="148" font-family="'Playfair Display',serif" font-weight="700" font-size="56" fill="currentColor" text-anchor="middle" letter-spacing="-1">Homes</text>
+        <line x1="100" y1="172" x2="130" y2="172" stroke="#C9A86E" stroke-width="1"></line>
+        <text x="140" y="178" font-family="'Playfair Display',serif" font-weight="700" font-size="20" fill="#C9A86E" text-anchor="middle">LV</text>
+        <line x1="150" y1="172" x2="180" y2="172" stroke="#C9A86E" stroke-width="1"></line>
+        <text x="140" y="208" font-family="'Montserrat',sans-serif" font-size="9" fill="currentColor" text-anchor="middle" letter-spacing="1">LAS VEGAS · RYAN ROSE</text>
+      </svg>
+    </div>
+
+    <div class="eyebrow">Las Vegas Buyer's Guide</div>
+    <h1>The New Construction Buyer's <em>Defense</em> Checklist</h1>
+    <hr class="rule-gold">
+    <div class="sub">The questions builders hope you don't ask, and the costs they don't put on the sign.</div>
+
+    <div class="spacer"></div>
+
+    <div class="foot">
+      <div class="who">Ryan Rose<span>Real Broker, LLC</span></div>
+      <div class="tag">Clark County, Nevada · 2026</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHEET 2 — INTRO + SEC 1 + 2 ============ -->
+<section class="sheet">
+  <div class="corner tr"></div>
+  <div class="pad">
+    <div class="kicker">Before you fall in love with a floor plan</div>
+    <p class="lead">A new build feels safe. Clean walls, a warranty, a friendly face at the model home. But <b>that friendly face works for the builder, not for you.</b> This checklist puts you back on even footing. Print it, bring it, and check every box before you sign anything.</p>
+    <p class="lead-note">One thing to know up front: in almost every Las Vegas new build, the builder pays your agent's commission. Bringing your own representation usually costs you nothing.</p>
+
+    <div class="sec">
+      <div class="sec-head"><span class="sec-num">01</span><span class="sec-title">Before you walk into the model home</span></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Bring your own agent on your first visit.</strong> Most builders pay your agent, so it costs you nothing. But many require your agent to be registered on visit one. Walk in alone and you can lose the right to bring one later, with no discount for going without.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Know who the sales rep represents.</strong> They are friendly, and they work for the builder's interests, not yours.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Don't sign the registration card first.</strong> Hold off on any form until you have decided on representation.</div></div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><span class="sec-num">02</span><span class="sec-title">The contract was written to protect the builder</span></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Read every page, or have it reviewed.</strong> Builder contracts are drafted by the builder's lawyers. Have your agent or an attorney read it.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Find the delay clause.</strong> If the home is finished late, what happens? Can you walk, and do you get anything? Many builders owe you nothing for delays.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Find the cancellation terms.</strong> Can the builder cancel on you, and what part of your deposit is at risk?</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Confirm your price is firm.</strong> Ask in writing whether material or tariff cost increases can be passed to you. Tariffs have added roughly $7,500 to $17,500 per home in 2026.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Get every promise in writing.</strong> Incentives, upgrades, and credits mean nothing at closing unless they are in the contract.</div></div>
+    </div>
+  </div>
+  <div class="foot-bar"><span>Rose Homes LV · Las Vegas Real Estate</span><span>02</span></div>
+</section>
+
+<!-- ============ SHEET 3 — SEC 3 (money) + SEC 4 (lender) ============ -->
+<section class="sheet">
+  <div class="corner tr"></div>
+  <div class="pad">
+    <div class="sec">
+      <div class="sec-head"><span class="sec-num">03</span><span class="sec-title">The money behind the price</span><span class="sec-sub">the costs not on the sign</span></div>
+
+      <div class="callout">
+        <span class="tag">The big Las Vegas one</span>
+        <div class="item"><span class="cb"></span><div class="itxt"><strong>SID or LID bonds.</strong> Ask if the community has a Special Improvement District (common in Summerlin and Skye Canyon) or a Local Improvement District (common in Henderson). These are bond assessments billed on top of your property taxes. Get in writing:</div></div>
+        <ul class="sub">
+          <li>The annual amount (commonly $500 to $3,000 or more)</li>
+          <li>How many years remain (often 10 to 20)</li>
+          <li>That it is billed twice a year, transfers to you as owner, and carries about a 3% penalty for early payoff</li>
+          <li>That an unpaid SID or LID can lead to foreclosure</li>
+        </ul>
+      </div>
+
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>HOA.</strong> Get the monthly amount, exactly what it covers, and any history of special assessments. Ask for the financial disclosures that Nevada's transparency rules require.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Property taxes.</strong> Good news for Nevada: homes are assessed at 35% of taxable value, the effective rate is roughly half a percent, your primary residence increase is capped at 3% a year, and there is no surprise supplemental tax bill like California has. Still, confirm the estimate for this specific home.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Lot premium.</strong> If you are paying extra for the lot, ask exactly what for, and whether that premium tends to hold value at resale.</div></div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><span class="sec-num">04</span><span class="sec-title">The lender trap</span><span class="sec-sub">incentives with strings</span></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Know the incentives have strings.</strong> Rate buydowns, closing-cost credits, and design-center dollars are usually tied to using the builder's preferred lender.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Compare the full Loan Estimate.</strong> Get the builder lender's Loan Estimate, then at least one outside quote. Compare the rate and the fees, not just the headline rate.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Understand buydowns.</strong> A 2/1 or 3/2/1 buydown lowers your payment only temporarily. Ask what the payment becomes once it ends, and make sure you can afford the permanent rate.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Make sure the incentive is real money.</strong> If the price quietly rose to fund a "free" credit, it is not free.</div></div>
+    </div>
+  </div>
+  <div class="foot-bar"><span>Rose Homes LV · Las Vegas Real Estate</span><span>03</span></div>
+</section>
+
+<!-- ============ SHEET 4 — SEC 5 + 6 + 7 ============ -->
+<section class="sheet dense">
+  <div class="corner tr"></div>
+  <div class="pad">
+    <div class="sec">
+      <div class="sec-head"><span class="sec-num">05</span><span class="sec-title">Inspections, yes, even on a brand-new home</span></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>New does not mean flawless.</strong> About 9 out of 10 new homes have at least one significant issue at inspection.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Get a pre-drywall inspection</strong> (roughly $200 to $400) before the walls close up. This is your one chance to see the wiring, plumbing, and framing.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Get a final independent inspection</strong> (roughly $310 to $730) before closing, separate from the builder's own walkthrough.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Do a blue-tape walkthrough</strong> and put every item in writing before you sign off.</div></div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><span class="sec-num">06</span><span class="sec-title">The warranty, know what is actually covered</span></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Understand Nevada's 1-2-10 warranty.</strong> Year 1 covers workmanship, Year 2 covers systems (plumbing, electrical, HVAC), and Years 3 through 10 cover the structure.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Know your legal rights.</strong> Nevada law (NRS Chapter 40) gives the builder a 90-day window to respond to a defect claim and requires mediation first. The structural protection runs 10 years.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Get the warranty in writing</strong> and know exactly who to call, the builder directly or a third-party warranty company.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Take it seriously.</strong> The average structural warranty claim tops $40,000. This is real protection, not paperwork.</div></div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><span class="sec-num">07</span><span class="sec-title">Built for the desert?</span><span class="sec-sub">Vegas-specific build items</span></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>No basements here.</strong> The caliche soil layer makes them impractical, so plan storage and square footage accordingly.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Plan for the heat.</strong> Attics can hit 140 to 155F in summer and your AC runs 10 to 11 months a year. Ask about insulation, ductwork, and the AC efficiency rating.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>The water is very hard</strong> (around 17 grains per gallon). Budget for a water softener loop or system.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Grass is banned in new yards</strong> (since April 2022). Plan for desert landscaping. The water authority offers turf rebates.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Check the 2026 rules.</strong> An EV-ready garage circuit is now required, the federal solar tax credit ended January 1, so price any solar carefully, and updated building codes took effect January 11.</div></div>
+    </div>
+  </div>
+  <div class="foot-bar"><span>Rose Homes LV · Las Vegas Real Estate</span><span>04</span></div>
+</section>
+
+<!-- ============ SHEET 5 — SEC 8 + ONE-MINUTE GUT CHECK ============ -->
+<section class="sheet vc">
+  <div class="corner tr"></div>
+  <div class="pad">
+    <div class="sec">
+      <div class="sec-head"><span class="sec-num">08</span><span class="sec-title">Help paying for it</span><span class="sec-sub">programs to ask about</span></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Home Is Possible.</strong> Down payment assistance that is forgiven after three years, with a dedicated version for teachers.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Worker Advantage.</strong> Assistance for essential workers, a newer program. A strong fit if you are a teacher, nurse, or first responder.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>VA loan.</strong> Zero down and no PMI if you are eligible.</div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>Ask what stacks.</strong> Home At Last, Rural Rocks, and the Clark County Welcome Home program may layer on top of builder incentives.</div></div>
+    </div>
+
+    <div class="kicker" style="margin-top:6px;">The one-minute gut check</div>
+    <p class="lead">Before you sign, you should be able to say <b>yes</b> to every one of these.</p>
+
+    <div class="recap">
+      <h3>Before you sign</h3>
+      <p>If any box is still empty, you are not ready to sign yet. That is exactly the moment to call me.</p>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>I had my own representation from visit one.</strong></div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>I read the contract, including the delay and cancellation clauses.</strong></div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>I know my SID/LID and HOA numbers in writing.</strong></div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>I compared the builder's lender against an outside quote.</strong></div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>I got an independent pre-drywall and final inspection.</strong></div></div>
+      <div class="item"><span class="cb"></span><div class="itxt"><strong>I have the warranty and every incentive in writing.</strong></div></div>
+    </div>
+  </div>
+  <div class="foot-bar"><span>Rose Homes LV · Las Vegas Real Estate</span><span>05</span></div>
+</section>
+
+<!-- ============ SHEET 6 — CLOSING / CTA (with photo) ============ -->
+<section class="sheet closing">
+  <div class="frame"></div>
+  <div class="pad">
+    <div class="kicker">Your move</div>
+    <h2>Bring this to your next <em>model home</em>.</h2>
+    <p class="body">I walk new-construction buyers through this exact list at no cost to you, because the builder pays the buyer's agent. If you are even thinking about a new build in Las Vegas, let's check every box together before you sign.</p>
+
+    <div class="spacer"></div>
+
+    <div class="contact">
+      <div class="contact-row">
+        <img class="headshot" src="headshot.jpg" alt="Ryan Rose, Rose Homes LV">
+        <div class="contact-info">
+          <div class="name">Ryan <em>Rose</em></div>
+          <div class="role">Real Broker, LLC · Rose Homes LV</div>
+          <div class="lines">
+            <b>702-747-5921</b><br>
+            ryan@rosehomeslv.com · rosehomeslv.com
+          </div>
+        </div>
+      </div>
+      <p class="disclaimer">General guidance for Clark County, Nevada buyers. This is not legal, tax, or financial advice. The figures above are typical 2026 ranges and vary by community and home. Always verify the exact numbers for your specific home and community before you sign.</p>
+    </div>
+  </div>
+</section>

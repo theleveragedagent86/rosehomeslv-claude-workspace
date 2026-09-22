@@ -1,0 +1,9 @@
+{
+  "name": "inbound-dm-followers",
+  "version": "1.0.0",
+  "description": "DMs new followers of @rosehomeslv a rotated welcome message (eligibility filter, ~15 per run), then checks each off in the shared research log so no one is ever messaged twice.",
+  "author": { "name": "Ryan Rose", "email": "ryan@rosehomeslv.com" },
+  "license": "UNLICENSED",
+  "keywords": ["instagram", "engagement", "inbound", "dm", "followers", "las-vegas"],
+  "skills": "./skills/"
+}

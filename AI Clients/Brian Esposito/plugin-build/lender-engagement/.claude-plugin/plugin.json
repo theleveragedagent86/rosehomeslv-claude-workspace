@@ -16,6 +16,7 @@
     "las-vegas",
     "browser-automation"
   ],
+  "skills": "./skills/",
   "mcpServers": {
     "playwright-instagram": {
       "command": "npx",

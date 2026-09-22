@@ -474,7 +474,7 @@ Run these in Terminal when you're ready:
 python3 /Users/ryanrose/Downloads/Claude/_System/plugins/local-news-plugin/publish-local-news.py [TARGET_DATE] --yes
 ```
 
-**Fix already-published blogs** (opens each post in Lofty, strips category labels, datelines, and bylines from the source HTML, and saves):
+**Fix already-published blogs** (finds each post by slug through Lofty's API, strips category labels, datelines, bylines, script blocks, and /blogs/ links, saves, and re-reads to confirm):
 ```
 python3 /Users/ryanrose/Downloads/Claude/_System/plugins/local-news-plugin/fix-local-news-blogs.py [TARGET_DATE] --yes
 ```
@@ -483,10 +483,10 @@ python3 /Users/ryanrose/Downloads/Claude/_System/plugins/local-news-plugin/fix-l
 ```
 --posts 1-10    # specific range
 --posts 5       # single story
---tab N         # Chrome tab number (default: 4)
+--ui           # old editor-driving method (needs Chrome tab 4 left alone)
 ```
 
-**Requirements:** Chrome open, logged into Lofty, blog dashboard on tab 4.
+**Requirements:** Chrome open and logged into Lofty in any tab (any window, any tab number). Both scripts run in the background through Lofty's blog API, so Ryan can keep using his Mac while they run. Nothing needs focus.
 
 [If any issues:]
 ### Notes

@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "seller-report",
-      "runtimeExecutable": "/usr/bin/ruby",
-      "runtimeArgs": ["/Users/ryanrose/Downloads/Claude/serve.rb"],
-      "port": 8091
+      "name": "reloc-guide",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd 'Relocation Guide' && exec python3 -m http.server 8123"],
+      "port": 8123
     }
   ]
 }

@@ -1,0 +1,32 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 96" role="img" aria-label="Rose Homes LV">
+  <defs>
+    
+  </defs>
+
+  
+  <g transform="translate(8 12)">
+    <rect x="0" y="0" width="72" height="72" fill="none" stroke="#C9A86E" stroke-width="1"></rect>
+    
+    <path d="M 0 12 L 0 0 L 12 0" fill="none" stroke="#C9A86E" stroke-width="2"></path>
+    <path d="M 72 60 L 72 72 L 60 72" fill="none" stroke="#C9A86E" stroke-width="2"></path>
+    
+    <text x="36" y="50" class="rh-serif" font-size="48" fill="currentColor" text-anchor="middle">R</text>
+    
+    <circle cx="52" cy="22" r="2" fill="#C9A86E"></circle>
+  </g>
+
+  
+  <g transform="translate(100 0)">
+    <text x="0" y="50" class="rh-serif" font-size="40" fill="currentColor" letter-spacing="-0.5">Rose Homes</text>
+    
+    <line x1="0" y1="62" x2="300" y2="62" stroke="#C9A86E" stroke-width="1"></line>
+    <text x="0" y="80" class="rh-sans" font-size="11" fill="currentColor">LAS VEGAS REAL ESTATE · RYAN ROSE</text>
+  </g>
+
+  
+  <g transform="translate(440 22)">
+    <rect x="0" y="0" width="56" height="56" fill="none" stroke="#C9A86E" stroke-width="1"></rect>
+    <text x="28" y="36" class="rh-serif" font-size="26" fill="#C9A86E" text-anchor="middle">LV</text>
+  </g>
+</svg>

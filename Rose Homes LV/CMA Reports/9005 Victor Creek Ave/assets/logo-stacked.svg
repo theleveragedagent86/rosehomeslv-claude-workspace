@@ -1,0 +1,23 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 240" role="img" aria-label="Rose Homes LV">
+  <defs>
+    
+  </defs>
+
+  
+  <path d="M 4 28 L 4 4 L 28 4" fill="none" stroke="#C9A86E" stroke-width="1.5"></path>
+  <path d="M 276 212 L 276 236 L 252 236" fill="none" stroke="#C9A86E" stroke-width="1.5"></path>
+
+  
+  <text x="140" y="100" class="rh-serif" font-size="56" fill="currentColor" text-anchor="middle" letter-spacing="-1">Rose</text>
+  
+  <text x="140" y="148" class="rh-serif" font-size="56" fill="currentColor" text-anchor="middle" letter-spacing="-1">Homes</text>
+
+  
+  <line x1="100" y1="172" x2="130" y2="172" stroke="#C9A86E" stroke-width="1"></line>
+  <text x="140" y="178" class="rh-serif" font-size="20" fill="#C9A86E" text-anchor="middle">LV</text>
+  <line x1="150" y1="172" x2="180" y2="172" stroke="#C9A86E" stroke-width="1"></line>
+
+  
+  <text x="140" y="208" class="rh-sans" font-size="9" fill="currentColor" text-anchor="middle">LAS VEGAS · RYAN ROSE</text>
+</svg>

@@ -1,8 +1,8 @@
 ---
 name: responder-research
 description: Use when someone asks to research Las Vegas first responders, find new military/police/fire/healthcare accounts on Instagram, refresh the responder target list, or discover Vegas first responder Instagram accounts.
+argument-hint: "optional: a category (military/police/fire/healthcare) or a target count"
 model: sonnet
-disable-model-invocation: true
 ---
 
 ## What This Skill Does

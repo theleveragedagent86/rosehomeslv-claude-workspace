@@ -1,0 +1,9 @@
+{
+  "name": "inbound-comments",
+  "version": "1.0.0",
+  "description": "Replies to comments on Ryan Rose's own @rosehomeslv reels (5 per reel, ig-engage guardrails, verifies any teamwork claim, sends leads to DMs), then checks them off in the shared research log.",
+  "author": { "name": "Ryan Rose", "email": "ryan@rosehomeslv.com" },
+  "license": "UNLICENSED",
+  "keywords": ["instagram", "engagement", "inbound", "comments", "real-estate", "las-vegas"],
+  "skills": "./skills/"
+}

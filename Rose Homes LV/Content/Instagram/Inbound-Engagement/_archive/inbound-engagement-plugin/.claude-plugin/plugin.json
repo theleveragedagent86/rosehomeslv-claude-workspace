@@ -1,0 +1,31 @@
+{
+  "name": "inbound-engagement",
+  "version": "1.0.0",
+  "description": "Inbound Instagram engagement automation for @rosehomeslv: reply to comments on Ryan's reels and DM new followers and reel-likers via browser automation",
+  "author": {
+    "name": "Ryan Rose",
+    "email": "ryan@rosehomeslv.com"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "instagram",
+    "engagement",
+    "inbound",
+    "dm",
+    "comments",
+    "real-estate",
+    "las-vegas",
+    "browser-automation"
+  ],
+  "skills": "./skills/",
+  "mcpServers": {
+    "playwright-instagram": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--user-data-dir",
+        "~/.cache/playwright-instagram-profile"
+      ]
+    }
+  }
+}

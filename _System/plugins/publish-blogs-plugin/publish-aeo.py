@@ -1,0 +1,196 @@
+#!/usr/bin/env python3
+"""
+Lofty CMS Publisher for slug-named blog folders (the AEO batches)
+==================================================================
+Reads posts the same way publish.py does (markdown body in a .html file, SEO
+from seo-package-batch*.md matched by slug), then publishes with the Chrome
+automation from the local news publisher, which is the maintained one: it has
+the working Post Now click, the Schema tab, QA, and the duplicate-slug check.
+
+JSON-LD is pulled OUT of the body and entered on Lofty's Schema tab. Lofty's
+TinyMCE editor corrupts it when it sits in the body.
+
+Usage:
+    python3 publish-aeo.py "AEO Best Choice" --yes
+    python3 publish-aeo.py "AEO Local Service" --posts 1-10 --yes
+    python3 publish-aeo.py "AEO Best Choice" --no-publish      Preview only
+
+Requirements: macOS, Chrome with View > Developer > Allow JavaScript from
+Apple Events, logged into Lofty, blog dashboard on tab 4 (or pass --tab).
+"""
+
+import argparse
+import importlib.util
+import json
+import re
+import sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+LOCAL_NEWS = HERE.parent / "local-news-plugin" / "publish-local-news.py"
+
+
+def _load(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+pb = _load("publish_blogs", HERE / "publish.py")      # data prep
+ln = _load("publish_local_news", LOCAL_NEWS)          # Chrome automation
+
+JSONLD_RE = re.compile(
+    r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>.*?</script>',
+    re.IGNORECASE | re.DOTALL)
+PERSON_ID = "https://www.rosehomeslv.com/#ryanrose"
+ORG_ID = "https://www.rosehomeslv.com/#org"
+
+
+def build_graph(article):
+    """Wrap the post's Article JSON-LD in the same @graph shape local news uses.
+
+    Person and RealEstateAgent carry fixed @id values on every post so search
+    engines and LLMs merge them into one entity for Ryan.
+    """
+    article = dict(article)
+    article.pop("@context", None)
+    url = (article.get("mainEntityOfPage") or {}).get("@id", "")
+    if url:
+        article["@id"] = f"{url}#article"
+    article["author"] = {"@id": PERSON_ID}
+    article["publisher"] = {"@id": ORG_ID}
+    return json.dumps({
+        "@context": "https://schema.org",
+        "@graph": [
+            article,
+            {
+                "@type": "Person",
+                "@id": PERSON_ID,
+                "name": "Ryan Rose",
+                "jobTitle": "Las Vegas Real Estate Expert",
+                "url": "https://www.rosehomeslv.com",
+                "worksFor": {"@id": ORG_ID},
+            },
+            {
+                "@type": "RealEstateAgent",
+                "@id": ORG_ID,
+                "name": "Rose Homes LV",
+                "url": "https://www.rosehomeslv.com",
+                "telephone": "+1-702-747-5921",
+                "areaServed": {"@type": "AdministrativeArea",
+                               "name": "Clark County, Nevada"},
+            },
+        ],
+    }, indent=2, ensure_ascii=False)
+
+
+def lists_to_ul(html):
+    """publish.py's markdown converter has no list support, so '- item' lines end
+    up inside one <p>. Turn any <p> made only of '- ' lines into a real <ul>."""
+    def fix(m):
+        lines = [l.strip() for l in m.group(1).strip().split("\n") if l.strip()]
+        if not lines or not all(l.startswith("- ") for l in lines):
+            return m.group(0)
+        items = "".join(f"<li>{l[2:].strip()}</li>" for l in lines)
+        return f"<ul>{items}</ul>"
+    return re.sub(r"<p>(.*?)</p>", fix, html, flags=re.DOTALL)
+
+
+def prepare(folder, category, post_filter):
+    posts = pb.prepare_posts(folder, category, post_filter)
+    errors = []
+    for p in posts:
+        raw = (folder / p["file"]).read_text(encoding="utf-8")
+        schema_json, err = ln.extract_schema(raw)
+        if err or not schema_json:
+            errors.append(f"{p['file']}: {err or 'no JSON-LD block'}")
+            continue
+        p["schema"] = build_graph(json.loads(schema_json))
+        # Never ship schema in the body
+        p["body"] = lists_to_ul(JSONLD_RE.sub("", p["body"]).strip())
+        p["label"] = f"Post {p['number']}"
+    if errors:
+        print("\nDATA ERRORS:\n")
+        for e in errors:
+            print(f"  - {e}")
+        sys.exit(1)
+    return posts
+
+
+def parse_filter(spec):
+    if not spec:
+        return None
+    nums = set()
+    for part in spec.split(","):
+        part = part.strip()
+        if "-" in part:
+            s, e = part.split("-")
+            nums.update(range(int(s), int(e) + 1))
+        else:
+            nums.add(int(part))
+    return nums
+
+
+def main():
+    ap = argparse.ArgumentParser(description="Publish a slug-named blog folder to Lofty")
+    ap.add_argument("folder", help="Folder name under Claude Blogs, e.g. 'AEO Best Choice'")
+    ap.add_argument("--posts", help="Post numbers from the preview list: '1-10' or '1,5,8'")
+    ap.add_argument("--category", default="Las Vegas Real Estate")
+    ap.add_argument("--tab", type=int, default=4, help="Chrome tab number (default: 4)")
+    ap.add_argument("--no-publish", action="store_true", help="Prepare and list only")
+    ap.add_argument("--yes", action="store_true", help="Skip the confirmation prompt")
+    ap.add_argument("--force-duplicates", action="store_true",
+                    help="Try slugs that already exist in Lofty anyway")
+    args = ap.parse_args()
+
+    folder = pb.BLOGS_BASE / args.folder
+    if not folder.is_dir():
+        print(f"ERROR: Folder not found: {folder}")
+        sys.exit(1)
+    ln.TAB = f"tab {args.tab}"
+
+    posts = prepare(folder, args.category, parse_filter(args.posts))
+    print(f"\nFound {len(posts)} posts in {args.folder} (category: {args.category}):")
+    for p in posts:
+        print(f"  {p['label']}: {p['title'][:60]}")
+        print(f"    Slug: {p['slug']}")
+
+    if args.no_publish:
+        print("\n--no-publish set. Done.")
+        return
+    if not ln.check_accessibility_permission():
+        sys.exit(1)
+    print(f"\nUsing Chrome {ln.TAB}. Be logged into Lofty on the blog dashboard.")
+    if not args.yes and input("Proceed? (y/n): ").strip().lower() != "y":
+        print("Cancelled.")
+        return
+
+    ln.chrome_activate()
+
+    print("\nChecking for slugs that already exist in Lofty...")
+    existing = ln.find_existing_slugs([p["slug"] for p in posts])
+    if existing:
+        print(f"  Already published: {', '.join(existing)}")
+        if not args.force_duplicates:
+            posts = [p for p in posts if p["slug"] not in set(existing)]
+            print(f"  Skipping those. {len(posts)} left.")
+        if not posts:
+            print("\nNothing left to publish. Done.")
+            return
+    elif existing is not None:
+        print("  None. All slugs are new.")
+
+    report = []
+    for post in posts:
+        ln.publish_post(post, report)
+
+    ok = sum(1 for r in report if "OK" in r["status"])
+    print(f"\n{'='*60}\nPublished: {ok}/{len(posts)}\n{'='*60}")
+    for r in report:
+        icon = "OK" if "OK" in r["status"] else "!!"
+        print(f"  [{icon}] {r['post']} — /blog/{r['slug']}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.rosehomeslv.inbound-engage</string>
+
+  <!-- Runs the routine LIVE (posts replies and sends DMs). Change the second arg to
+       "preview" to draft only. -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/ryanrose/Downloads/Claude/inbound-engagement-plugin/scripts/run-inbound-engage.sh</string>
+    <string>live</string>
+  </array>
+
+  <!-- Daily at 20:00 (8:00 PM). Keep this different from when ig-engage runs. -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>20</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <!-- Do not fire on load; only at the scheduled time. -->
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/ryanrose/Downloads/Claude/inbound-engagement-plugin/output/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/ryanrose/Downloads/Claude/inbound-engagement-plugin/output/launchd.err.log</string>
+</dict>
+</plist>

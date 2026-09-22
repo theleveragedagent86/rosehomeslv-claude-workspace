@@ -27,8 +27,8 @@ Go to: https://studio.youtube.com → **Customization** (left sidebar)
 (You'll create these playlists in Part 2.)
 
 ### Tab: Branding
-- **Picture:** upload headshot, 800x800 PNG. Source file: `/Users/ryanrose/Downloads/Claude/Expireds/Landing Page Code/erasebg-transformed (1).png` — tight crop to head + shoulders, export as 800x800. The existing dark gradient behind you works; no extra background needed.
-- **Banner image:** 2560x1440, safe area 1546x423. Use your existing full-body shot (`/Users/ryanrose/Downloads/Claude/Expireds/Landing Page Code/erasebg-transformed (1).png`) composited on the right side; text on left: "AI Workflows for Real Estate Agents" with sub-line "Save 10–15 hours a week. No coding. No new CRM." Small Vegas skyline silhouette behind the text. Bottom-right chip: "New videos weekly"
+- **Picture:** upload headshot, 800x800 PNG. Source file: `/Users/ryanrose/Downloads/Claude/Rose Homes LV/Prospecting/Expireds/Landing Page Code/erasebg-transformed (1).png` — tight crop to head + shoulders, export as 800x800. The existing dark gradient behind you works; no extra background needed.
+- **Banner image:** 2560x1440, safe area 1546x423. Use your existing full-body shot (`/Users/ryanrose/Downloads/Claude/Rose Homes LV/Prospecting/Expireds/Landing Page Code/erasebg-transformed (1).png`) composited on the right side; text on left: "AI Workflows for Real Estate Agents" with sub-line "Save 10–15 hours a week. No coding. No new CRM." Small Vegas skyline silhouette behind the text. Bottom-right chip: "New videos weekly"
 - **Video watermark:** upload a small logo/monogram — shows a subscribe button on every video
 
 ### Tab: Basic info
@@ -314,5 +314,5 @@ CTR target >6%. Avg view duration target >50%. If CTR is <4% after 72 hours, swa
 
 ## Assets Ready
 - IG: @theleveragedagent
-- Headshot: `/Users/ryanrose/Downloads/Claude/Expireds/Landing Page Code/erasebg-transformed (1).png` — needs a tight 800x800 crop for PFP
+- Headshot: `/Users/ryanrose/Downloads/Claude/Rose Homes LV/Prospecting/Expireds/Landing Page Code/erasebg-transformed (1).png` — needs a tight 800x800 crop for PFP
 - Chapter timestamps: skip for now, add after final edit

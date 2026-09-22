@@ -1,0 +1,47 @@
+## Weekly News Summary — 2026-07-12
+
+### Government and Development (7 stories)
+
+- **Clark County Commissioners Signal Possible Freeze on New Data Centers** (#2, Red) — Commissioners Segerblom and McCurdy signaled openness to freezing new data center approvals as a Sierra Club rally pushed for limits over water and power. *Viral potential: Data centers gulping water and power is already a heated valley fight, so a possible freeze pulls passionate comments from both the growth camp and the conservation camp, and it ties straight to residents' own bills.*
+- **Waymo Announces Fully Driverless Rides Coming to Las Vegas** (#3, Orange) — Waymo announced it is bringing fully driverless rides to Las Vegas, starting with rider-only trips for its own employees before opening to the public in the coming months. *Viral potential: A car with nobody behind the wheel coming to Vegas streets is surprising and slightly unnerving, the exact kind of thing people film and fire off to the group chat, plus it opens an easy who-is-liable debate.*
+- **Clark County Urgently Seeks Foster Families as Child Haven Reaches Capacity** (#4, Orange) — The county issued an urgent call for foster families after Child Haven hit capacity. *Viral potential: A plea for foster homes as a children's shelter fills up tugs hard at the heart and gets shared by people who want to help or tag someone who can.*
+- **80-Unit Affordable Housing Community Opens in Northwest Las Vegas** (#17, Orange) — Beals-Henderson Pointe, an 80-unit affordable community, opens in northwest Las Vegas with a July 16 grand opening. *Viral potential: A new affordable community speaks straight to families priced out of the market, and it is hopeful, shareable news in an otherwise brutal housing climate.*
+- **Las Vegas Advances Plan to Redevelop 1,350 Acres in Redevelopment Area 3** (#18, Orange) — The Planning Commission voted 6-0 to advance a 1,350-acre redevelopment plan, with a July 15 council hearing. *Viral potential: Reshaping 1,350 acres is a big deal for anyone who lives or drives nearby, and a pending council vote gives people a concrete reason to speak up.*
+- **Push for East Las Vegas National Monument Gains Momentum** (#19, Orange) — A push to create an East Las Vegas National Monument would protect more than 30,000 acres of BLM land near Frenchman Mountain. *Viral potential: Protecting 30,000-plus acres stirs both outdoor lovers and development watchers, and the protect-it-versus-build-on-it trade-off is easy to feel strongly about.*
+- **Developer Lands $40M to Build 300 Apartments Behind Tivoli Village** (#20, Orange) — A developer landed $40 million to build 300 apartments (Ainsley at Tivoli) near Rampart Boulevard. *Viral potential: New apartments behind a well-known shopping village get neighbors talking fast about traffic, growth, and rents.*
+
+### School Board and Education (3 stories)
+
+- **Regional Task Force Releases School Traffic Safety Report With 75 Recommendations and Immediate School-Zone Changes** (#1, Red) — A regional task force issued 75 recommendations after 427 children were struck, calling for immediate school-zone changes with fines doubled July 1. *Viral potential: Kids getting hit near schools is the single most emotional local story a parent can see, and the doubled fines plus 75 recommendations give both sides plenty to argue about.*
+- **CCSD Opens 2026-27 Registration; New Districtwide Start Times Begin Aug. 10** (#12, Orange) — CCSD opened 2026-27 registration, with new districtwide start times starting Aug. 10. *Viral potential: New start times reshape the morning routine for every CCSD family, so parents will share it and vent about the schedule change.*
+- **State Officials Warn Nevada Schools Will Keep Struggling Without New Funding** (#13, Orange) — State officials warned schools will keep struggling without new funding, citing a $16,043 per-pupil target. *Viral potential: School funding is a lightning-rod issue, and a per-pupil target held up against reality gets parents and teachers arguing fast.*
+
+### Hockey (4 stories)
+
+- **Golden Knights Trade Keegan Kolesar to Detroit Red Wings** (#6, Orange) — The Golden Knights traded fan-favorite grinder Keegan Kolesar to Detroit for two draft picks, clearing cap space. *Viral potential: Trading a longtime fan-favorite stings fans right away and sparks the classic good-move-or-bad-move debate.*
+- **Golden Knights to Host Battle-Worn Authentics Equipment Sale at City National Arena** (#14, Orange) — The Golden Knights host their annual Battle-Worn Authentics game-used gear sale at City National Arena on July 22. *Viral potential: The chance to grab game-used Golden Knights gear is a fun, must-attend event fans tag each other in and plan around.*
+- **Henderson Silver Knights Announce 2026-27 Regular Season Schedule** (#15, Orange) — The Silver Knights announced a 72-game schedule opening Oct. 3 at Lee's Family Forum. *Viral potential: A full schedule drop lets fans circle opening night and plan the season, and it gives families a reason to talk tickets.*
+- **Vegas Summer Showdown Youth Tournament Comes to City National Arena and America First Center** (#16, Orange) — The Vegas Summer Showdown youth tournament runs July 16-20 across two valley rinks. *Viral potential: Youth tournaments pull in hockey parents and families who share game photos and cheer on local kids.*
+
+### Real Estate Market (11 stories)
+
+- **Las Vegas Median Home Price Holds at Record $490,000 in June as Single-Family Sales Jump 18% From a Year Ago** (#5, Orange) — The June median single-family price held at a record $490,000 as single-family sales jumped about 18% from a year earlier. *Viral potential: A record price paired with an 18% jump in sales gives buyers and sellers something real to react to, and it is the local number everyone quotes.*
+- **MMA Legend Randy Couture Lists Custom Las Vegas Home for $1.1M** (#7, Orange) — MMA legend Randy Couture listed his custom Las Vegas home for $1.1 million with photos. *Viral potential: A celebrity fighter's custom home with photos is pure scroll-stopping, tag-a-friend content that mixes real estate with star power.*
+- **California Drives Nearly a Third of Out-of-Market Demand for Vegas Homes, Led by LA** (#8, Orange) — A Realtor.com report found California is the biggest source of out-of-market demand for Las Vegas homes, led by the Los Angeles metro at about 23.7%. *Viral potential: Californians buying up Vegas homes is a guaranteed comment-war topic that locals love to weigh in on.*
+- **Las Vegas Condo and Townhome Prices Slip to $292,000 as Attached Market Diverges** (#9, Orange) — Condo and townhome prices slipped to about $292,000 in June, down 4.3% year over year, diverging from single-family. *Viral potential: A falling condo market while houses hit records is a sharp contrast that catches first-time buyers and investors off guard.*
+- **Realtor.com Report Says Foreclosed Homes Sell at 27% Discount as Listings Hit 6-Year High** (#10, Orange) — A Realtor.com report says foreclosed homes sell at about a 27% discount as listings hit a six-year high. *Viral potential: The idea of scoring a home at a 27% discount is a dream-deal hook that bargain hunters share instantly.*
+- **US Existing-Home Sales Dip 2.4% in June as National Median Hits Record $440,600** (#11, Orange) — NAR reported US existing-home sales dipped 2.4% in June while the national median hit a record $440,600. *Viral potential: A national record price alongside slowing sales gives locals a benchmark to compare against the Vegas $490K number.*
+- **Where Vegas Prices Vary: North Las Vegas Leads Appreciation, Summerlin Tops on Price** (#21, Yellow) — Redfin data shows North Las Vegas leading valley appreciation while Summerlin tops on price at about $697,000. *Viral potential: Neighborhood-by-neighborhood price talk is catnip for locals who want to know how their own area stacks up.*
+- **Las Vegas Ranks as 5th Most-Searched Housing Market in the Country** (#22, Yellow) — A Redfin report ranks Las Vegas the 5th most-searched housing market in the country. *Viral potential: A top-five national ranking is an easy bragging-rights share that locals repost with pride.*
+- **Las Vegas Market Normalizes: 3.5 Months of Supply, Cash Buyers at 23%, Distressed Sales Near Lows** (#23, Yellow) — June data showed about 3.5 months of supply, cash buyers at 23%, and distressed sales near lows, pointing to a balanced market. *Viral potential: Buyers and sellers both want to know if the market is cooling or heating, and these supply and cash-buyer numbers give them the read.*
+- **Mortgage Rates Tick Up to 6.49% in Newest Weekly Survey** (#24, Yellow) — Freddie Mac's weekly survey showed mortgage rates ticked up to 6.49%, staying in the mid-six-percent range. *Viral potential: Every rate move changes what a Vegas buyer can afford at the $490K median, so payment-focused readers watch closely.*
+- **NAHB Study: Government Regulations Add $131,734 to the Price of a New Home** (#25, Yellow) — An NAHB study found regulations add $131,734 to a new home's price, up 40% over five years. *Viral potential: A six-figure regulatory add-on is an eye-popping number that fuels debate about why new homes cost so much.*
+
+### Content Stats
+- Total stories: 25
+- Video scripts: 2 x 90s, 18 x 60s, 5 x 30s
+- Estimated total recording time: about 23.5 minutes
+- Blog posts: 25 (~2400 words each)
+- Reddit posts: 25
+- Instagram captions: 25
+- YouTube descriptions: 25

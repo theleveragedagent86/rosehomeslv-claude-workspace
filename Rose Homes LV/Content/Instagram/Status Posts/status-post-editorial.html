@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rose Homes LV — Status Post (Editorial)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  /* ============================================================
+     ROSE HOMES LV — STATUS POST  ·  DIRECTION B: LIGHT EDITORIAL
+     1080 x 1920 (9:16 vertical, Instagram reel size)
+     Photo on top, details below on warm off-white.
+     Swap the photo + the text fields marked  << SWAP >>  below.
+     For UNDER CONTRACT / PENDING / IN ESCROW posts: change the
+     badge text and add class "is-pending" to .post (hides price).
+     ============================================================ */
+
+  :root {
+    --navy:  #1C2333;
+    --navy2: #2A314A;
+    --gold:  #C9A86E;
+    --white: #FFFFFF;
+    --warm:  #F7F5F0;
+    --slate: #8A8FA8;
+    --warmline: #E8E3D6;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #2b2b30;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+  }
+
+  .rh-serif { font-family: "Playfair Display", serif; }
+  .rh-sans  { font-family: "Montserrat", sans-serif; }
+
+  /* ---- The post canvas: exactly 1080 x 1920 ---- */
+  .post {
+    position: relative;
+    width: 1080px;
+    height: 1920px;
+    flex-shrink: 0;
+    background: var(--warm);
+    overflow: hidden;
+    color: var(--navy);
+  }
+
+  /* ---- Photo region (top) ---- */
+  .photo-wrap {
+    position: absolute;
+    top: 0; left: 0;
+    width: 1080px;
+    height: 1120px;
+    overflow: hidden;
+  }
+  /* ---- << SWAP >> property photo ---- */
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  /* gentle floor shadow under the photo */
+  .photo-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(28,35,51,0) 78%, rgba(28,35,51,0.18) 100%);
+  }
+
+  /* ---- Signature gold corner brackets (whole frame) ---- */
+  .bracket {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: 1.5px solid var(--gold);
+    z-index: 6;
+  }
+  .bracket.tl { top: 44px;    left: 44px;    border-right: 0; border-bottom: 0; }
+  .bracket.tr { top: 44px;    right: 44px;   border-left: 0;  border-bottom: 0; }
+  .bracket.bl { bottom: 44px; left: 44px;    border-right: 0; border-top: 0; }
+  .bracket.br { bottom: 44px; right: 44px;   border-left: 0;  border-top: 0; }
+
+  /* ---- Content panel (bottom) ---- */
+  .content {
+    position: absolute;
+    left: 0; right: 0;
+    top: 1120px;
+    bottom: 0;
+    padding: 86px 88px 0;
+    z-index: 5;
+  }
+
+  /* Badge straddles the photo / panel seam, top-left */
+  .badge {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: var(--navy);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 28px 46px 25px;
+    line-height: 1;
+    box-shadow: 0 20px 44px -18px rgba(28,35,51,0.55);
+  }
+
+  .eyebrow {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 8px;
+  }
+
+  .address {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 1.03;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+    margin-top: 16px;
+  }
+
+  .rule {
+    width: 96px;
+    height: 1px;
+    background: var(--gold);
+    border: 0;
+    margin: 34px 0;
+  }
+
+  .stats {
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+  }
+  .stat .n {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: var(--navy);
+  }
+  .stat .l {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin-top: 10px;
+  }
+  .price {
+    margin-left: auto;
+    text-align: right;
+  }
+  .price .l {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .price .v {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: var(--navy);
+    margin-top: 8px;
+  }
+  .post.is-pending .price { display: none; }
+
+  /* ---- Footer lockup ---- */
+  .footer {
+    position: absolute;
+    left: 88px;
+    right: 88px;
+    bottom: 300px;
+  }
+  .footer .hr {
+    width: 100%;
+    height: 1px;
+    background: var(--warmline);
+    margin-bottom: 26px;
+  }
+  .footer .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brandmark {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .brandmark .rose { width: 34px; height: 34px; color: var(--gold); }
+  .brandmark .rose svg { width: 100%; height: 100%; display: block; }
+  .brandmark .wm {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.01em;
+    color: var(--navy);
+  }
+  .brandmark .wm .lv { color: var(--gold); }
+  .agent {
+    text-align: right;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--slate);
+    line-height: 1.5;
+  }
+  .agent b { color: var(--navy); font-weight: 600; }
+</style>
+</head>
+<body>
+  <!-- Add class "is-pending" to .post for Under Contract / Pending / In Escrow -->
+  <div class="post">
+    <!-- ============ PHOTO ============ -->
+    <div class="photo-wrap">
+      <!-- << SWAP >> property photo -->
+      <img class="photo" src="https://placehold.co/1080x1120/2A314A/8A8FA8?text=PROPERTY+PHOTO" alt="Property" />
+    </div>
+
+    <!-- Corner brackets -->
+    <span class="bracket tl"></span>
+    <span class="bracket tr"></span>
+    <span class="bracket bl"></span>
+    <span class="bracket br"></span>
+
+    <!-- ============ CONTENT ============ -->
+    <div class="content">
+      <!-- << SWAP >> status: JUST SOLD / CLOSED / UNDER CONTRACT / IN ESCROW / PENDING -->
+      <span class="badge">Just Sold</span>
+
+      <!-- << SWAP >> neighborhood · zip -->
+      <div class="eyebrow">Summerlin &middot; 89134</div>
+
+      <!-- << SWAP >> address -->
+      <div class="address rh-serif">2412 Quail Ridge Court</div>
+
+      <hr class="rule" />
+
+      <div class="stats">
+        <!-- << SWAP >> beds / baths / sqft -->
+        <div class="stat"><div class="n rh-serif">4</div><div class="l">Beds</div></div>
+        <div class="stat"><div class="n rh-serif">3.5</div><div class="l">Baths</div></div>
+        <div class="stat"><div class="n rh-serif">3,840</div><div class="l">Sq Ft</div></div>
+        <!-- << SWAP >> final sale price (add .is-pending for in-progress) -->
+        <div class="price"><div class="l">Sold For</div><div class="v rh-serif">$1,495,000</div></div>
+      </div>
+    </div>
+
+    <!-- ============ FOOTER LOCKUP ============ -->
+    <div class="footer">
+      <div class="hr"></div>
+      <div class="row">
+        <div class="brandmark">
+          <span class="rose">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-label="Rose mark">
+              <g fill="none" stroke="#C9A86E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="16" cy="16" r="11"></circle>
+                <path d="M16 6 a6 6 0 0 1 6 6"></path>
+                <path d="M22 12 a6 6 0 0 1 0 8"></path>
+                <path d="M22 20 a6 6 0 0 1 -6 5"></path>
+                <path d="M16 25 a6 6 0 0 1 -6 -5"></path>
+                <path d="M10 20 a6 6 0 0 1 0 -8"></path>
+                <path d="M10 12 a6 6 0 0 1 6 -6"></path>
+                <circle cx="16" cy="16" r="2.5"></circle>
+                <path d="M16 16 a3 3 0 0 1 3 -3"></path>
+              </g>
+            </svg>
+          </span>
+          <span class="wm rh-serif">Rose Homes <span class="lv">LV</span></span>
+        </div>
+        <div class="agent"><b>Ryan Rose</b><br />Real Broker, LLC</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

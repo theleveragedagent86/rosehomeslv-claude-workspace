@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "playwright-instagram": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--user-data-dir",
+        "/Users/ryanrose/.cache/playwright-instagram-profile",
+        "--output-dir",
+        "/Users/ryanrose/Downloads/Claude/inbound-engagement-plugin/output/.playwright-mcp"
+      ]
+    }
+  }
+}

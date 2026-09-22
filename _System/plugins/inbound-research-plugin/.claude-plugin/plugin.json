@@ -1,0 +1,9 @@
+{
+  "name": "inbound-research",
+  "version": "1.0.0",
+  "description": "Researcher for @rosehomeslv inbound engagement. Harvests new comments, new followers, and reel-likers into the shared research log for the comment and DM plugins to work from.",
+  "author": { "name": "Ryan Rose", "email": "ryan@rosehomeslv.com" },
+  "license": "UNLICENSED",
+  "keywords": ["instagram", "engagement", "inbound", "research", "real-estate", "las-vegas"],
+  "skills": "./skills/"
+}

@@ -19,8 +19,8 @@ Run the daily lender comments engagement routine.
 STEP 1 -- OPEN INSTAGRAM
 Open Chrome and navigate to https://www.instagram.com. Verify you are logged in as @espohomeloans. If not logged in, stop and let me know.
 
-STEP 2 -- READ TARGET ACCOUNTS
-Read the target account list from the lender-engagement plugin. Pick 3-5 accounts for today. Rotate so you don't hit the same accounts every day.
+STEP 2 -- READ TARGET ACCOUNTS AND PICK BY ROTATION
+Read the target account list from the lender-engagement plugin. Then read the rotation log at output/lender-comments/rotation-state.md (if it does not exist, treat every account as never visited). Pick the 3-5 accounts with the oldest last-visited date, putting never-visited accounts first. Do not just pick the top of the list. This is what makes you rotate through the whole list instead of repeating the same accounts every day.
 
 STEP 3 -- READ COMMENT GUIDELINES
 Read the comment guidelines from the lender-engagement plugin for writing guidance, tone examples, and value themes.
@@ -33,7 +33,8 @@ For each target account, open their profile and scroll through recent posts. For
 - If Instagram shows "Try Again Later" or any rate limit warning, stop the session immediately and save the log.
 - Target 10-25 posts total across all accounts.
 
-STEP 5 -- SAVE LOG AND REPORT
-Save a session log to output/lender-comments/YYYY-MM-DD.md with: accounts visited, posts engaged, posts skipped with reasons, every comment posted, every reply posted.
+STEP 5 -- UPDATE ROTATION LOG, SAVE LOG, AND REPORT
+First, update output/lender-comments/rotation-state.md: set the Last Visited date to today for every account you visited this session, leave the rest unchanged, and create the file if it does not exist.
+Then save a session log to output/lender-comments/YYYY-MM-DD.md with: accounts visited, posts engaged, posts skipped with reasons, every comment posted, every reply posted.
 Also print a summary: accounts visited, posts engaged, posts skipped, comments posted, replies posted, likes given.
 ```

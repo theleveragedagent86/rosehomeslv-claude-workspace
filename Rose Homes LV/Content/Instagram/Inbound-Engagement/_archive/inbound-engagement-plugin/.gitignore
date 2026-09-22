@@ -1,0 +1,16 @@
+# Runtime state, never commit (machine-specific, contains who was contacted)
+state/replied-comments.json
+state/dmed-users.json
+state/daily-budget.json
+state/last-run.json
+state/PAUSE
+
+# Daily logs and preview drafts
+output/*
+!output/.gitkeep
+
+# Playwright MCP trace/debug output (redirected under output/, but ignore anywhere)
+.playwright-mcp/
+
+# macOS cruft
+.DS_Store

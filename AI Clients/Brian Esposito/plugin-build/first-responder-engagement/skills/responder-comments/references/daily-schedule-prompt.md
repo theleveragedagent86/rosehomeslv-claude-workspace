@@ -21,8 +21,8 @@ Run the daily first responder community presence routine.
 STEP 1 -- OPEN INSTAGRAM
 Open Chrome and navigate to https://www.instagram.com. Verify you are logged in as @espohomeloans. If not logged in, stop and let me know.
 
-STEP 2 -- READ TARGET ACCOUNTS
-Read the target account list from the first-responder-engagement plugin. Pick 3-5 accounts for today, mixing at least 2 different responder categories (military, police, fire/EMS, healthcare). Rotate so you don't hit the same accounts every day.
+STEP 2 -- READ TARGET ACCOUNTS AND PICK BY ROTATION
+Read the target account list from the first-responder-engagement plugin. Then read the rotation log at output/responder-comments/rotation-state.md (if it does not exist, treat every account as never visited). Pick the 3-5 accounts with the oldest last-visited date (never-visited first), but make sure the picks mix at least 2 different responder categories (military, police, fire/EMS, healthcare). Do not just pick the top of the list. This is what makes you rotate through the whole list instead of repeating the same accounts every day.
 
 STEP 3 -- READ COMMENT GUIDELINES
 Read the comment guidelines from the first-responder-engagement plugin. Pay close attention to the rule: NEVER mention mortgages, lending, Nations Lending, VA loans, hero programs, or any business. This is community presence, not lead generation.
@@ -36,7 +36,8 @@ For each target account, open their profile and scroll through recent posts. For
 - If Instagram shows "Try Again Later" or any rate limit warning, stop the session immediately and save the log.
 - Target 10-25 posts. If lender-comments already ran today, target 5-10 instead.
 
-STEP 5 -- SAVE LOG AND REPORT
-Save a session log to output/responder-comments/YYYY-MM-DD.md with: accounts visited, posts engaged, posts skipped with reasons, every comment posted, every reply posted.
+STEP 5 -- UPDATE ROTATION LOG, SAVE LOG, AND REPORT
+First, update output/responder-comments/rotation-state.md: set the Last Visited date to today for every account you visited this session, leave the rest unchanged, and create the file if it does not exist.
+Then save a session log to output/responder-comments/YYYY-MM-DD.md with: accounts visited, posts engaged, posts skipped with reasons, every comment posted, every reply posted.
 Print a summary: accounts visited, posts engaged, posts skipped, comments posted, replies posted, likes given.
 ```

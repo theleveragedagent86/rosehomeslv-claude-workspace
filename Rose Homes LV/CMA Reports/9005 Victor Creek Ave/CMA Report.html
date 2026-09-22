@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rose Homes LV — Comparative Market Analysis</title>
+<link rel="stylesheet" href="assets/colors_and_type.css">
+<link rel="stylesheet" href="assets/cma.css">
+</head>
+<body class="t-mixed">
+
+  <div id="toolbar">
+    <div class="tb-brand">Rose Homes<b>LV</b> · CMA</div>
+    <span class="tb-hint">Treatment</span>
+    <div class="seg" role="group" aria-label="Treatment">
+      <button data-t="mixed" class="on" onclick="cmaApplyTreatment('mixed')">Mixed</button>
+      <button data-t="light" onclick="cmaApplyTreatment('light')">Light</button>
+      <button data-t="dark" onclick="cmaApplyTreatment('dark')">Dark</button>
+    </div>
+    <button class="tb-print" onclick="window.print()">Save as PDF</button>
+    <span class="tb-hint">Letter · print-ready</span>
+  </div>
+
+  <div id="doc"></div>
+
+  <script src="assets/image-slot.js"></script>
+  <script src="assets/cma-data.js"></script>
+  <script src="assets/cma-render.js"></script>
+</body>
+</html>

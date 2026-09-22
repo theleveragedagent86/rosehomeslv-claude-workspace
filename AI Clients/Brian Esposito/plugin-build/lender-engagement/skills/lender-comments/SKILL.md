@@ -2,7 +2,6 @@
 name: lender-comments
 description: Use when someone asks to engage on competitor lender Instagram posts, run the daily IG engagement routine, comment on Vegas mortgage loan officer posts, or execute the value-provided marketing routine.
 model: sonnet
-disable-model-invocation: true
 ---
 
 ## What This Skill Does
@@ -66,11 +65,12 @@ Pick whichever theme fits the post naturally. Do not force a theme that does not
 
 1. Read `./skills/lender-comments/target-accounts.md` for the current account list
 2. Read `./skills/lender-comments/references/comment-guidelines.md` for writing guidance
-3. Detect browser tools availability:
+3. Read the rotation log at `output/lender-comments/rotation-state.md` to see when each account was last visited. This drives account selection in Step 2. If the file does not exist yet, treat every account as never visited.
+4. Detect browser tools availability:
    - Check for: `browser_navigate`, `browser_click`, `browser_type`, `browser_snapshot`, or similar Playwright MCP tools
    - If browser tools found: proceed with automation below
    - If no browser tools found: **STOP.** Tell the user: "Playwright MCP is not connected. Check the plugin's MCP configuration or see the setup guide in references/playwright-setup.md."
-4. Proceed with automation
+5. Proceed with automation
 
 ---
 
@@ -82,12 +82,17 @@ Pick whichever theme fits the post naturally. Do not force a theme that does not
 2. Verify you are logged in (look for profile icon, home feed, or username in the navigation)
 3. If not logged in, **pause** and tell the user: "Please log into Instagram. Let me know when you're ready."
 
-### Step 2: Pick Target Accounts
+### Step 2: Pick Target Accounts (least-recently-visited rotation)
 
-1. Read target-accounts.md
-2. Select 3-5 accounts for this session
-3. Rotate accounts across sessions so you do not visit the same ones every day
-4. If `$ARGUMENTS` specifies an account or number, use that instead
+Account selection is driven by the rotation log so you never repeat the same accounts day after day. **Do NOT just pick the accounts at the top of the list** -- that is the bug this fixes.
+
+1. Take the full list of active handles from target-accounts.md.
+2. Look up each handle's last-visited date in `output/lender-comments/rotation-state.md` (read in the Session Start Checklist). Any handle not in the log has never been visited.
+3. Sort the handles by last-visited date, oldest first. Never-visited accounts sort to the very top.
+4. Select the first 3-5 handles from that sorted list. These are the only accounts you visit this session.
+5. If `$ARGUMENTS` specifies a particular account or count, honor that instead of the rotation pick.
+
+This guarantees the skill works all the way through the list before returning to anyone, so over a week or two Brian gets coverage across every account instead of the same few.
 
 ### Step 3: Engage on Recent Posts
 
@@ -134,9 +139,28 @@ Topic: [brief description]
 Comment: "[what you wrote]"
 ```
 
-### Step 4: Save Session Log
+### Step 4: Update Rotation Log and Save Session Log
 
-Save a markdown log to `output/lender-comments/YYYY-MM-DD.md` with this format:
+First, update the rotation log at `output/lender-comments/rotation-state.md` so the next session rotates correctly:
+- For every account you actually visited this session, set its Last Visited date to today (YYYY-MM-DD).
+- Leave every other account's date unchanged.
+- If a visited account is not yet in the log, add a row for it.
+- If the file does not exist, create it now with one row per account you visited (dated today), plus a row for every other active account from target-accounts.md left as `(never)`.
+
+Use this format:
+
+```markdown
+# Lender Comments -- Rotation Log
+
+Tracks the last date each account was engaged so /lender-comments rotates through the whole list instead of repeating the same accounts. The skill reads this at session start (picks the oldest / never-visited accounts) and rewrites it at session end. To force an account to the front of the line, clear its date to `(never)`. To push it to the back, set its date to today.
+
+| Handle | Last Visited |
+|--------|--------------|
+| @cobysherlock | 2026-06-01 |
+| @loansbytabithagodines | (never) |
+```
+
+Then save a markdown session log to `output/lender-comments/YYYY-MM-DD.md` with this format:
 
 ```markdown
 # Lender Comments Session -- [date]

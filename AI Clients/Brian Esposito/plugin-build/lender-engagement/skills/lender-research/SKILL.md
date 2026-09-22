@@ -2,7 +2,6 @@
 name: lender-research
 description: Use when someone asks to research competitor mortgage lenders, find new Las Vegas loan officers to engage with, refresh the target accounts list, or discover Vegas mortgage LOs on Instagram.
 model: sonnet
-disable-model-invocation: true
 ---
 
 ## What This Skill Does

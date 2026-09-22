@@ -1,0 +1,9 @@
+{
+  "name": "inbound-dm-likes",
+  "version": "1.0.0",
+  "description": "DMs people who liked @rosehomeslv's recent reels a rotated thank-you message (eligibility filter, ~15 per run), then checks each off in the shared research log so no one is ever messaged twice.",
+  "author": { "name": "Ryan Rose", "email": "ryan@rosehomeslv.com" },
+  "license": "UNLICENSED",
+  "keywords": ["instagram", "engagement", "inbound", "dm", "likes", "las-vegas"],
+  "skills": "./skills/"
+}
