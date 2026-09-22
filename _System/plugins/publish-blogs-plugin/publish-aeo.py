@@ -14,9 +14,15 @@ Usage:
     python3 publish-aeo.py "AEO Best Choice" --yes
     python3 publish-aeo.py "AEO Local Service" --posts 1-10 --yes
     python3 publish-aeo.py "AEO Best Choice" --no-publish      Preview only
+    python3 publish-aeo.py "AEO Questions" --ui --yes          Old editor method
+
+Runs in the background: it calls Lofty's blog API through any open
+cms.lofty.com tab (any window, any tab number) and never needs focus, so keep
+using your Mac while it runs. --ui restores the old editor-driving method,
+which types into Chrome and must be left alone (tab 4, or pass --tab).
 
 Requirements: macOS, Chrome with View > Developer > Allow JavaScript from
-Apple Events, logged into Lofty, blog dashboard on tab 4 (or pass --tab).
+Apple Events, logged into Lofty CMS in some tab.
 """
 
 import argparse
@@ -132,12 +138,47 @@ def parse_filter(spec):
     return nums
 
 
+def api_publish(posts, args):
+    """Publish through Lofty's API from any open cms.lofty.com tab: no focus,
+    no tab number, nothing to leave alone."""
+    L = _load("lofty_api", HERE / "lofty_api.py")
+    print("\nRuns in the background through any open Lofty tab. You can keep using your Mac.")
+    if not args.yes and input("Proceed? (y/n): ").strip().lower() != "y":
+        print("Cancelled.")
+        return
+    print("\nChecking for slugs that already exist in Lofty...")
+    existing = L.find_by_slug([p["slug"] for p in posts])
+    if existing:
+        print(f"  Already published: {', '.join(sorted(existing))}")
+        if not args.force_duplicates:
+            posts = [p for p in posts if p["slug"] not in existing]
+            print(f"  Skipping those. {len(posts)} left.")
+        if not posts:
+            print("\nNothing left to publish. Done.")
+            return
+    else:
+        print("  None. All slugs are new.")
+    print(f"\nPublishing {len(posts)} posts...")
+    rows = L.create([{
+        "title": p["title"], "slug": p["slug"], "content": p["body"],
+        "seoTitle": p["meta_title"], "seoKeyword": p["meta_keywords"],
+        "seoDescription": p["meta_description"], "customSchema": p["schema"],
+    } for p in posts], args.category)
+    ok = [r for r in rows if r[1].startswith("OK")]
+    print(f"\n{'='*60}\nPublished: {len(ok)}/{len(posts)}\n{'='*60}")
+    for r in rows:
+        if not r[1].startswith("OK"):
+            print(f"  [!!] /blog/{r[0]}  {r[1]}")
+
+
 def main():
     ap = argparse.ArgumentParser(description="Publish a slug-named blog folder to Lofty")
     ap.add_argument("folder", help="Folder name under Claude Blogs, e.g. 'AEO Best Choice'")
     ap.add_argument("--posts", help="Post numbers from the preview list: '1-10' or '1,5,8'")
     ap.add_argument("--category", default="Las Vegas Real Estate")
-    ap.add_argument("--tab", type=int, default=4, help="Chrome tab number (default: 4)")
+    ap.add_argument("--ui", action="store_true",
+                    help="Old way: drive the editor on a focused Chrome tab (needs --tab)")
+    ap.add_argument("--tab", type=int, default=4, help="Chrome tab number for --ui (default: 4)")
     ap.add_argument("--no-publish", action="store_true", help="Prepare and list only")
     ap.add_argument("--yes", action="store_true", help="Skip the confirmation prompt")
     ap.add_argument("--force-duplicates", action="store_true",
@@ -159,6 +200,10 @@ def main():
     if args.no_publish:
         print("\n--no-publish set. Done.")
         return
+
+    if not args.ui:
+        return api_publish(posts, args)
+
     if not ln.check_accessibility_permission():
         sys.exit(1)
     print(f"\nUsing Chrome {ln.TAB}. Be logged into Lofty on the blog dashboard.")

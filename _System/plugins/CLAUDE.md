@@ -24,8 +24,9 @@ plugins/
   `find_by_slug` / `create` used by the local-news scripts. Skips frozen tabs.
 - `publish-blogs-plugin/build_live_schema.py` = builds full JSON-LD @graph (Article/NewsArticle +
   Person + RealEstateAgent + Place + FAQPage) for live posts missing schema, from a dump.
-- `local-news-plugin/publish-local-news.py` + `fix-local-news-blogs.py` now run through
-  lofty_api by default (background). `--ui` = old tab-4 editor method. The `_dist` zip bundles
-  a copy of lofty_api.py; in the workspace they load it from `../publish-blogs-plugin/`.
+- `local-news-plugin/publish-local-news.py` + `fix-local-news-blogs.py` and
+  `publish-blogs-plugin/publish-aeo.py` now run through lofty_api by default (background).
+  `--ui` = old tab-4 editor method. The local-news `_dist` zip bundles a copy of
+  lofty_api.py; in the workspace those two load it from `../publish-blogs-plugin/`.
 
 **Maintenance rule:** When you add/remove a plugin, update this map. When you edit a plugin, re-zip to `../_dist/` and sync the running copy in `~/.claude/` if the change should go live. Never leave the map stale.
