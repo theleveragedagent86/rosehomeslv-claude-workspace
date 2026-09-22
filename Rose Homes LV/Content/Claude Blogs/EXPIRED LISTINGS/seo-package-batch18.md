@@ -7,7 +7,7 @@
 - **Primary Keyword:** Cadence home isn't selling
 - **Secondary Keywords:** Cadence Henderson expired listing, why home didn't sell Cadence, sell resale home Cadence, Cadence Henderson real estate
 - **Blog Category:** Home Didn't Sell
-- **URL:** https://www.rosehomeslv.com/blogs/why-cadence-home-isnt-selling
+- **URL:** https://www.rosehomeslv.com/blog/why-cadence-home-isnt-selling
 
 ---
 
@@ -18,7 +18,7 @@
 - **Primary Keyword:** home didn't sell Cadence
 - **Secondary Keywords:** Cadence expired listing what to do, relist home Cadence Henderson, Cadence home selling tips, expired listing Henderson NV
 - **Blog Category:** Home Didn't Sell
-- **URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-cadence-what-next
+- **URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-cadence-what-next
 
 ---
 
@@ -29,7 +29,7 @@
 - **Primary Keyword:** sell Cadence home after sitting on market
 - **Secondary Keywords:** Cadence stale listing, relist home Cadence, Cadence Henderson home not selling, how to sell home that sat on market
 - **Blog Category:** Home Didn't Sell
-- **URL:** https://www.rosehomeslv.com/blogs/sell-cadence-home-after-sat-on-market
+- **URL:** https://www.rosehomeslv.com/blog/sell-cadence-home-after-sat-on-market
 
 ---
 
@@ -40,7 +40,7 @@
 - **Primary Keyword:** no offers Cadence home
 - **Secondary Keywords:** Cadence home zero offers, why no offers on my home Henderson, Cadence listing no interest, expired listing Cadence Henderson
 - **Blog Category:** Home Didn't Sell
-- **URL:** https://www.rosehomeslv.com/blogs/no-offers-cadence-home-heres-why
+- **URL:** https://www.rosehomeslv.com/blog/no-offers-cadence-home-heres-why
 
 ---
 
@@ -51,7 +51,7 @@
 - **Primary Keyword:** choose new agent Cadence
 - **Secondary Keywords:** Cadence real estate agent, best agent Cadence Henderson, hire new agent expired listing, Cadence Henderson Realtor
 - **Blog Category:** Home Didn't Sell
-- **URL:** https://www.rosehomeslv.com/blogs/choose-new-agent-cadence
+- **URL:** https://www.rosehomeslv.com/blog/choose-new-agent-cadence
 
 ---
 

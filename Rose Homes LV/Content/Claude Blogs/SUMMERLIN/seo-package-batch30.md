@@ -17,14 +17,14 @@
 **Meta Description:** Taylor Morrison is building Esplanade at Red Rock in Summerlin with 400 planned homes starting from $800K. Explore their design flexibility, energy efficiency, and what buyers should know.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-new-homes-2026
-- /blogs/toll-brothers-homes-summerlin-guide
-- /blogs/solar-panels-guide-summerlin-homes
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-hoa-fees-2026
-- /blogs/sid-lid-fees-explained-summerlin
-- /blogs/summerlin-real-estate-investment
+- /blog/summerlin-living-guide
+- /blog/summerlin-new-homes-2026
+- /blog/toll-brothers-homes-summerlin-guide
+- /blog/solar-panels-guide-summerlin-homes
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-hoa-fees-2026
+- /blog/sid-lid-fees-explained-summerlin
+- /blog/summerlin-real-estate-investment
 
 ---
 
@@ -40,13 +40,13 @@
 **Meta Description:** SID and LID fees in Summerlin fund infrastructure in newer communities and typically range from $500 to $3,000 per year. Learn how these assessments work and which areas have them.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-hoa-fees-2026
-- /blogs/summerlin-new-homes-2026
-- /blogs/cost-of-living-summerlin
-- /blogs/property-tax-guide-summerlin-clark
-- /blogs/home-insurance-guide-summerlin
-- /blogs/summerlin-real-estate-investment
+- /blog/summerlin-living-guide
+- /blog/summerlin-hoa-fees-2026
+- /blog/summerlin-new-homes-2026
+- /blog/cost-of-living-summerlin
+- /blog/property-tax-guide-summerlin-clark
+- /blog/home-insurance-guide-summerlin
+- /blog/summerlin-real-estate-investment
 
 ---
 
@@ -62,13 +62,13 @@
 **Meta Description:** Summerlin property taxes in Clark County average around 0.48% of assessed value with a 3% annual cap for primary residences. Learn how Nevada's tax structure benefits homeowners.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-real-estate-investment
-- /blogs/sid-lid-fees-explained-summerlin
-- /blogs/summerlin-hoa-fees-2026
-- /blogs/home-insurance-guide-summerlin
-- /blogs/cost-of-living-summerlin
+- /blog/summerlin-living-guide
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-real-estate-investment
+- /blog/sid-lid-fees-explained-summerlin
+- /blog/summerlin-hoa-fees-2026
+- /blog/home-insurance-guide-summerlin
+- /blog/cost-of-living-summerlin
 
 ---
 
@@ -84,10 +84,10 @@
 **Meta Description:** Short-term rentals under 30 days are effectively prohibited in most of Summerlin due to HOA CC&R restrictions. Learn the rules before buying with STR plans.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/hoa-rules-new-residents-summerlin
-- /blogs/summerlin-real-estate-investment
-- /blogs/property-tax-guide-summerlin-clark
+- /blog/summerlin-living-guide
+- /blog/hoa-rules-new-residents-summerlin
+- /blog/summerlin-real-estate-investment
+- /blog/property-tax-guide-summerlin-clark
 
 ---
 
@@ -103,11 +103,11 @@
 **Meta Description:** Summerlin gets 294 sunny days per year, making it ideal for solar. Learn about system costs, net metering changes, and what Summerlin homeowners need to know in 2026.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/setting-up-utilities-summerlin
-- /blogs/hoa-rules-new-residents-summerlin
-- /blogs/summerlin-new-homes-2026
-- /blogs/cost-of-living-summerlin
+- /blog/summerlin-living-guide
+- /blog/setting-up-utilities-summerlin
+- /blog/hoa-rules-new-residents-summerlin
+- /blog/summerlin-new-homes-2026
+- /blog/cost-of-living-summerlin
 
 ---
 

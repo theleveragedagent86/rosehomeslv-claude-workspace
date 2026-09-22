@@ -17,13 +17,13 @@
 **Meta Description:** The Hills is one of the original Summerlin North villages with 13 sub-communities, mature landscaping, and established homes in the 89134 zip code near Rampart and Lake Mead.
 
 **Internal Links Used:**
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/89134-real-estate-guide-summerlin
-- /blogs/sun-city-summerlin-55-plus-guide
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/the-trails-summerlin-village-guide
-- /blogs/the-arbors-summerlin-village-guide
+- /blog/summerlin-north-south-west-comparison
+- /blog/89134-real-estate-guide-summerlin
+- /blog/sun-city-summerlin-55-plus-guide
+- /blog/best-schools-summerlin
+- /blog/summerlin-living-guide
+- /blog/the-trails-summerlin-village-guide
+- /blog/the-arbors-summerlin-village-guide
 
 ---
 
@@ -39,13 +39,13 @@
 **Meta Description:** The Hills South in Summerlin North features two guard-gated communities, Eagle Hills and Tournament Hills, plus six additional sub-communities in the premium 89134 zip code.
 
 **Internal Links Used:**
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/89134-real-estate-guide-summerlin
-- /blogs/eagle-hills-summerlin-community-guide
-- /blogs/tournament-hills-summerlin-guide
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/the-arbors-summerlin-village-guide
+- /blog/summerlin-north-south-west-comparison
+- /blog/89134-real-estate-guide-summerlin
+- /blog/eagle-hills-summerlin-community-guide
+- /blog/tournament-hills-summerlin-guide
+- /blog/best-schools-summerlin
+- /blog/summerlin-living-guide
+- /blog/the-arbors-summerlin-village-guide
 
 ---
 
@@ -61,11 +61,11 @@
 **Meta Description:** The Pueblo was the first village ever built in Summerlin, established in 1990. With 17 sub-communities in the 89128 zip code, it remains one of the most affordable Summerlin options.
 
 **Internal Links Used:**
-- /blogs/89128-real-estate-guide-summerlin
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/the-trails-summerlin-village-guide
+- /blog/89128-real-estate-guide-summerlin
+- /blog/summerlin-north-south-west-comparison
+- /blog/best-schools-summerlin
+- /blog/summerlin-living-guide
+- /blog/the-trails-summerlin-village-guide
 
 ---
 
@@ -81,12 +81,12 @@
 **Meta Description:** The Crossing is a family-oriented village in Summerlin North within the 89144 zip code. Explore 13 sub-communities including Aspen Glen, Pacific Crest, and Highland Hills.
 
 **Internal Links Used:**
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/89144-real-estate-guide-summerlin
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/the-trails-summerlin-village-guide
-- /blogs/the-arbors-summerlin-village-guide
+- /blog/summerlin-north-south-west-comparison
+- /blog/89144-real-estate-guide-summerlin
+- /blog/best-schools-summerlin
+- /blog/summerlin-living-guide
+- /blog/the-trails-summerlin-village-guide
+- /blog/the-arbors-summerlin-village-guide
 
 ---
 
@@ -102,8 +102,8 @@
 **Meta Description:** The Cliffs is a Summerlin South village spanning the 89135 and 89148 zip codes. Home to Regency at Summerlin (55+ by Toll Brothers) and newer communities like Nova Ridge and Oluna.
 
 **Internal Links Used:**
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/89135-real-estate-guide-summerlin
-- /blogs/sun-city-summerlin-55-plus-guide
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-living-guide
+- /blog/summerlin-north-south-west-comparison
+- /blog/89135-real-estate-guide-summerlin
+- /blog/sun-city-summerlin-55-plus-guide
+- /blog/best-schools-summerlin
+- /blog/summerlin-living-guide

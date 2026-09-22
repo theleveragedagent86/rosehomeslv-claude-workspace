@@ -17,10 +17,10 @@
 **Meta Description:** Nittaya's Secret Kitchen near Summerlin serves authentic Thai dishes including nem khao crispy rice salad, Siamese corn fritters, and stuffed chicken wings. Full review inside.
 
 **Internal Links Used:**
-- /blogs/best-asian-thai-restaurants-summerlin
-- /blogs/best-restaurants-near-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/the-willows-summerlin-village-guide
+- /blog/best-asian-thai-restaurants-summerlin
+- /blog/best-restaurants-near-summerlin
+- /blog/summerlin-living-guide
+- /blog/the-willows-summerlin-village-guide
 
 ---
 
@@ -36,10 +36,10 @@
 **Meta Description:** El Dorado Cantina at Tivoli Village serves organic, non-GMO Mexican cuisine with dishes from regions across Mexico. Review of menu, pricing, and atmosphere.
 
 **Internal Links Used:**
-- /blogs/best-mexican-restaurants-summerlin
-- /blogs/best-restaurants-near-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-home-prices-2026
+- /blog/best-mexican-restaurants-summerlin
+- /blog/best-restaurants-near-summerlin
+- /blog/summerlin-living-guide
+- /blog/summerlin-home-prices-2026
 
 ---
 
@@ -55,10 +55,10 @@
 **Meta Description:** Meraki Greek Grill near Summerlin holds a 4.7-star rating across 940+ reviews. Explore the gyros, souvlaki, and Greek classics at this popular west side spot.
 
 **Internal Links Used:**
-- /blogs/best-restaurants-near-summerlin
-- /blogs/89135-real-estate-guide-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/the-arbors-summerlin-village-guide
+- /blog/best-restaurants-near-summerlin
+- /blog/89135-real-estate-guide-summerlin
+- /blog/summerlin-living-guide
+- /blog/the-arbors-summerlin-village-guide
 
 ---
 
@@ -74,11 +74,11 @@
 **Meta Description:** The Willows in Summerlin South features 21 sub-communities, a resort-style beach entry pool, and mature landscaping. Guide to homes, amenities, and location.
 
 **Internal Links Used:**
-- /blogs/89135-real-estate-guide-summerlin
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-community-parks-overview
-- /blogs/the-gardens-summerlin-village-guide
+- /blog/89135-real-estate-guide-summerlin
+- /blog/summerlin-north-south-west-comparison
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-community-parks-overview
+- /blog/the-gardens-summerlin-village-guide
 
 ---
 
@@ -94,8 +94,8 @@
 **Meta Description:** The Gardens is a quiet, established village in Summerlin South with 8 sub-communities including Chelsea Gardens, Rosemont, and Wisteria Hills. Full neighborhood guide.
 
 **Internal Links Used:**
-- /blogs/89135-real-estate-guide-summerlin
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/the-willows-summerlin-village-guide
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-community-parks-overview
+- /blog/89135-real-estate-guide-summerlin
+- /blog/summerlin-north-south-west-comparison
+- /blog/the-willows-summerlin-village-guide
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-community-parks-overview

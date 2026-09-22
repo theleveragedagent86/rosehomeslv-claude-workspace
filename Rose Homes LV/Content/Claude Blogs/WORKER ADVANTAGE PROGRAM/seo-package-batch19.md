@@ -8,10 +8,10 @@
 **Primary Keyword:** electricians buying homes Las Vegas
 **Secondary Keywords:** electrician Worker Advantage Program, $20000 electrician home grant Nevada, Las Vegas electrician homeownership, electrician down payment assistance
 **Internal Links:**
-- /blogs/nevada-worker-advantage-program-explained
-- /blogs/electricians-plumbers-worker-advantage-grant
-- /blogs/construction-workers-las-vegas-prices-2026
-- /blogs/complete-guide-worker-advantage-las-vegas
+- /blog/nevada-worker-advantage-program-explained
+- /blog/electricians-plumbers-worker-advantage-grant
+- /blog/construction-workers-las-vegas-prices-2026
+- /blog/complete-guide-worker-advantage-las-vegas
 
 ---
 
@@ -23,10 +23,10 @@
 **Primary Keyword:** plumbers buying homes Henderson
 **Secondary Keywords:** plumber Worker Advantage Henderson, $20000 plumber home grant, Henderson homes plumbers 2026, pipefitter homes Henderson
 **Internal Links:**
-- /blogs/nevada-worker-advantage-program-explained
-- /blogs/electricians-plumbers-worker-advantage-grant
-- /blogs/affordable-henderson-homes-essential-2026
-- /blogs/general-laborers-homes-nevada-20000
+- /blog/nevada-worker-advantage-program-explained
+- /blog/electricians-plumbers-worker-advantage-grant
+- /blog/affordable-henderson-homes-essential-2026
+- /blog/general-laborers-homes-nevada-20000
 
 ---
 
@@ -38,10 +38,10 @@
 **Primary Keyword:** construction workers North Las Vegas homes
 **Secondary Keywords:** North Las Vegas homes construction workers, Worker Advantage North Las Vegas, $20000 grant North Las Vegas, NLV homes construction workers 2026
 **Internal Links:**
-- /blogs/nevada-worker-advantage-program-explained
-- /blogs/affordable-north-las-vegas-essential-workers
-- /blogs/construction-workers-las-vegas-prices-2026
-- /blogs/essential-workers-north-las-vegas-homes
+- /blog/nevada-worker-advantage-program-explained
+- /blog/affordable-north-las-vegas-essential-workers
+- /blog/construction-workers-las-vegas-prices-2026
+- /blog/essential-workers-north-las-vegas-homes
 
 ---
 
@@ -53,10 +53,10 @@
 **Primary Keyword:** construction workers Aliante homes
 **Secondary Keywords:** Aliante homes construction workers, Worker Advantage Aliante NLV, $20000 grant Aliante homes, Aliante North Las Vegas construction workers
 **Internal Links:**
-- /blogs/nevada-worker-advantage-program-explained
-- /blogs/essential-workers-homes-aliante-20000
-- /blogs/construction-workers-homes-north-las-vegas
-- /blogs/carpenters-equipment-operators-worker-advantage
+- /blog/nevada-worker-advantage-program-explained
+- /blog/essential-workers-homes-aliante-20000
+- /blog/construction-workers-homes-north-las-vegas
+- /blog/carpenters-equipment-operators-worker-advantage
 
 ---
 
@@ -68,11 +68,11 @@
 **Primary Keyword:** construction home buying guide Las Vegas 2026
 **Secondary Keywords:** construction worker homebuying Las Vegas, Worker Advantage Program guide 2026, construction trades home buying Nevada, Las Vegas construction worker housing guide
 **Internal Links:**
-- /blogs/nevada-worker-advantage-program-explained
-- /blogs/electricians-plumbers-worker-advantage-grant
-- /blogs/roofers-painters-worker-advantage-nevada
-- /blogs/affordable-las-vegas-homes-400k-essential
-- /blogs/complete-guide-worker-advantage-las-vegas
+- /blog/nevada-worker-advantage-program-explained
+- /blog/electricians-plumbers-worker-advantage-grant
+- /blog/roofers-painters-worker-advantage-nevada
+- /blog/affordable-las-vegas-homes-400k-essential
+- /blog/complete-guide-worker-advantage-las-vegas
 
 ---
 

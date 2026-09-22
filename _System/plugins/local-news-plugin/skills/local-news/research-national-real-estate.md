@@ -21,7 +21,7 @@ Example of the framing you are producing (numbers illustrative, verify the real 
 
 Run these searches using WebSearch. Read the top 3-5 results for each. Follow links to the original data release when a story references a report.
 
-**Tier 1 — National triggers (required, go deep):**
+**Tier 1 - National triggers (required, go deep):**
 1. `national home prices [month] [year]`
 2. `mortgage rates today [month] [year]`
 3. `US housing market [month] [year]`
@@ -30,7 +30,7 @@ Run these searches using WebSearch. Read the top 3-5 results for each. Follow li
 6. `housing affordability [year]`
 7. `US housing inventory [month] [year]`
 
-**Tier 2 — National data releases (required):**
+**Tier 2 - National data releases (required):**
 8. `NAR existing home sales [month] [year]`
 9. `Case-Shiller home price index [month] [year]`
 10. `Freddie Mac mortgage rate survey [month] [year]`
@@ -38,7 +38,7 @@ Run these searches using WebSearch. Read the top 3-5 results for each. Follow li
 12. `Realtor.com housing report [month] [year]`
 13. `Redfin housing market update [month] [year]`
 
-**Tier 3 — Local counterpart (required for every national story you keep):**
+**Tier 3 - Local counterpart (required for every national story you keep):**
 For each national story, run a paired local search to find the Las Vegas / Clark County version of the same metric:
 - `Las Vegas [metric] [month] [year]` (e.g., `Las Vegas foreclosure rate [month] [year]`, `Las Vegas median home price [month] [year]`, `Las Vegas mortgage rates [month] [year]`)
 - `GLVAR [metric] [month] [year]`
@@ -47,23 +47,27 @@ For each national story, run a paired local search to find the Las Vegas / Clark
 ## Source Priority
 
 **National sources (the trigger):**
-1. Homes.com News and Research — homes.com/news
-2. Realtor.com Research and News — realtor.com/news, realtor.com/research
-3. Zillow Research — zillow.com/research
-4. Mortgage News Daily — mortgagenewsdaily.com
-5. Redfin News and Data Center — redfin.com/news
-6. National Association of Realtors — nar.realtor/newsroom
-7. Freddie Mac Primary Mortgage Market Survey — freddiemac.com/pmms
-8. Fannie Mae Housing Insights — fanniemae.com
-9. Bankrate Mortgages — bankrate.com/mortgages
-10. ATTOM Data (foreclosure, equity) — attomdata.com
-11. CoreLogic Housing Reports — corelogic.com
+1. Homes.com News and Research - homes.com/news
+2. Realtor.com Research and News - realtor.com/news, realtor.com/research
+3. Zillow Research - zillow.com/research
+4. Mortgage News Daily - mortgagenewsdaily.com
+5. Redfin News and Data Center - redfin.com/news
+6. National Association of Realtors - nar.realtor/newsroom
+7. Freddie Mac Primary Mortgage Market Survey - freddiemac.com/pmms
+8. Fannie Mae Housing Insights - fanniemae.com
+9. Bankrate Mortgages - bankrate.com/mortgages
+10. ATTOM Data (foreclosure, equity) - attomdata.com
+11. CoreLogic Housing Reports - corelogic.com
 
 **Local counterpart sources (the tie-in number):**
-1. GLVAR (Greater Las Vegas Association of Realtors) — glvar.org
-2. Las Vegas Review-Journal Real Estate — reviewjournal.com/real-estate
-3. Zillow / Redfin Las Vegas metro pages — zillow.com/las-vegas-nv, redfin.com/city/9591/NV/Las-Vegas
-4. Nevada Housing Division — housing.nv.gov
+1. GLVAR (Greater Las Vegas Association of Realtors) - glvar.org
+2. Las Vegas Review-Journal Real Estate - reviewjournal.com/real-estate
+3. Zillow / Redfin Las Vegas metro pages - zillow.com/las-vegas-nv, redfin.com/city/9591/NV/Las-Vegas
+4. Nevada Housing Division - housing.nv.gov
+
+## Source Attribution
+
+The Article Title is required on every story. It is the exact headline of the source article, transcribed word for word. Do not paraphrase it, shorten it, re-capitalize it, or fix its punctuation. It gets published in the Instagram caption as `Source: [Publication] - "[Article Title]"` so followers can go find the article themselves. A story with no article title cannot be published, so capture it at the same time you capture the URL. Never credit an Instagram or TikTok account as a source. Social accounts are leads only, so trace the story back to the primary or news source and capture that headline instead.
 
 ## What to Find
 
@@ -108,8 +112,10 @@ Return your findings as a numbered list. Each story uses this format:
 - **Local Vegas Figure:** [the matching Clark County stat, with date]
 - **The Local Angle:** [1-2 sentences stating the contrast plainly]
 - **Summary:** [2-3 sentence factual summary containing BOTH numbers]
-- **National Source:** [Publication Name] — [full URL]
-- **Local Source:** [Publication Name] — [full URL]
+- **National Source:** [Publication Name] - [full URL]
+- **National Article Title:** [exact headline of the national source article, transcribed word for word]
+- **Local Source:** [Publication Name] - [full URL]
+- **Local Article Title:** [exact headline of the local source article, transcribed word for word]
 - **Date:** [publication date of the national data]
 - **Why It Matters:** [1 sentence on local impact and why national != local]
 ```

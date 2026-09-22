@@ -5,6 +5,9 @@ Personal knowledge bases. Not a business, not client-facing. No brand rules appl
 - **My Wiki/** — an Obsidian vault (`.obsidian/` config inside). Open it in Obsidian, not as loose files.
 - **LLM-Wiki/** — personal notes/reference on LLMs and AI.
 
+> The 8U Rebels hockey team briefly lived here as `Personal/Hockey/`. It now has its own
+> top-level folder: [_Rebel Hockey/](../_Rebel%20Hockey/).
+
 ---
 
 ## Folder Map — keep this current

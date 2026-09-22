@@ -17,12 +17,12 @@
 **Meta Description:** Find out which Summerlin neighborhoods are zoned for Vassiliadis Elementary, the #1 ranked elementary school in Clark County. Learn about The Paseos, Summerlin West, home prices, and the feeder pattern into Rogich Middle School.
 
 **Internal Links Used:**
-- /blogs/best-schools-summerlin
-- /blogs/the-paseos-summerlin-village-guide
-- /blogs/vassiliadis-elementary-summerlin-review
-- /blogs/rogich-middle-school-zone-summerlin
-- /blogs/palo-verde-high-zone-summerlin
-- /blogs/school-zones-home-values-summerlin
+- /blog/best-schools-summerlin
+- /blog/the-paseos-summerlin-village-guide
+- /blog/vassiliadis-elementary-summerlin-review
+- /blog/rogich-middle-school-zone-summerlin
+- /blog/palo-verde-high-zone-summerlin
+- /blog/school-zones-home-values-summerlin
 
 ---
 
@@ -38,13 +38,13 @@
 **Meta Description:** Discover which Summerlin neighborhoods are zoned for Sig Rogich Middle School, the #1 middle school in Clark County. Learn about feeder elementaries, the villages that qualify, and how this zone connects to Palo Verde High School.
 
 **Internal Links Used:**
-- /blogs/best-schools-summerlin
-- /blogs/vassiliadis-elementary-zone-summerlin
-- /blogs/the-paseos-summerlin-village-guide
-- /blogs/the-arbors-summerlin-village-guide
-- /blogs/palo-verde-high-zone-summerlin
-- /blogs/school-zones-home-values-summerlin
-- /blogs/sig-rogich-middle-school-review
+- /blog/best-schools-summerlin
+- /blog/vassiliadis-elementary-zone-summerlin
+- /blog/the-paseos-summerlin-village-guide
+- /blog/the-arbors-summerlin-village-guide
+- /blog/palo-verde-high-zone-summerlin
+- /blog/school-zones-home-values-summerlin
+- /blog/sig-rogich-middle-school-review
 
 ---
 
@@ -60,12 +60,12 @@
 **Meta Description:** Learn which Summerlin villages and neighborhoods are zoned for Palo Verde High School, ranked #19 in Nevada. Explore the feeder middle schools, village breakdown, and what families should know before buying.
 
 **Internal Links Used:**
-- /blogs/best-schools-summerlin
-- /blogs/rogich-middle-school-zone-summerlin
-- /blogs/the-paseos-summerlin-village-guide
-- /blogs/the-arbors-summerlin-village-guide
-- /blogs/palo-verde-high-school-summerlin-review
-- /blogs/summerlin-home-prices-2026
+- /blog/best-schools-summerlin
+- /blog/rogich-middle-school-zone-summerlin
+- /blog/the-paseos-summerlin-village-guide
+- /blog/the-arbors-summerlin-village-guide
+- /blog/palo-verde-high-school-summerlin-review
+- /blog/summerlin-home-prices-2026
 
 ---
 
@@ -81,11 +81,11 @@
 **Meta Description:** Learn which Summerlin neighborhoods overlap with the Arbor View High School zone. Understand the boundary between Summerlin North and Centennial Hills, and how zoning affects home buying decisions for families.
 
 **Internal Links Used:**
-- /blogs/best-schools-summerlin
-- /blogs/palo-verde-high-zone-summerlin
-- /blogs/the-paseos-summerlin-village-guide
-- /blogs/the-arbors-summerlin-village-guide
-- /blogs/school-zones-home-values-summerlin
+- /blog/best-schools-summerlin
+- /blog/palo-verde-high-zone-summerlin
+- /blog/the-paseos-summerlin-village-guide
+- /blog/the-arbors-summerlin-village-guide
+- /blog/school-zones-home-values-summerlin
 
 ---
 
@@ -101,14 +101,14 @@
 **Meta Description:** Compare the best school zones in Summerlin for families. From the premium Vassiliadis-Rogich-Palo Verde pipeline to other strong feeder patterns, learn which neighborhoods deliver the best public school experience.
 
 **Internal Links Used:**
-- /blogs/summerlin-families-guide
-- /blogs/vassiliadis-elementary-zone-summerlin
-- /blogs/rogich-middle-school-zone-summerlin
-- /blogs/palo-verde-high-zone-summerlin
-- /blogs/the-paseos-summerlin-village-guide
-- /blogs/the-arbors-summerlin-village-guide
-- /blogs/arbor-view-high-zone-summerlin
-- /blogs/summerlin-home-prices-2026
+- /blog/summerlin-families-guide
+- /blog/vassiliadis-elementary-zone-summerlin
+- /blog/rogich-middle-school-zone-summerlin
+- /blog/palo-verde-high-zone-summerlin
+- /blog/the-paseos-summerlin-village-guide
+- /blog/the-arbors-summerlin-village-guide
+- /blog/arbor-view-high-zone-summerlin
+- /blog/summerlin-home-prices-2026
 
 ---
 

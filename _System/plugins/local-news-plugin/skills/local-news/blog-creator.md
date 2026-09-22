@@ -58,38 +58,38 @@ Each blog follows the exact same HTML structure and SEO standards as the publish
 - 1-2 more sentences expanding on the opening with context.
 - First image placed after the opening paragraph.
 
-### Section 1 — What Happened (400-500 words)
+### Section 1: What Happened (400-500 words)
 - H2 heading
 - Full details of the story: who, what, when, where.
 - Include specific names, dates, dollar amounts, vote counts.
 - 3-4 paragraphs.
 - Second image placed within or after this section.
 
-### Section 2 — Why It Matters to Las Vegas Residents (400-500 words)
+### Section 2: Why It Matters to Las Vegas Residents (400-500 words)
 - H2 heading
 - How does this affect homeowners, renters, families, commuters?
 - Connect the story to daily life in Clark County.
 - 3-4 paragraphs.
 
-### Section 3 — Background and History (300-400 words)
+### Section 3: Background and History (300-400 words)
 - H2 heading
 - Deeper context. What led to this? Previous decisions, trends, or events.
 - 3-4 paragraphs.
 - Third image placed within or after this section.
 
-### Section 4 — What Happens Next (300-400 words)
+### Section 4: What Happens Next (300-400 words)
 - H2 heading
 - Timeline, next steps, upcoming decisions, what to watch for.
 - 2-3 paragraphs.
 
-### Section 5 — Ryan's Take (200-300 words)
+### Section 5: Ryan's Take (200-300 words)
 - H2 heading
 - Ryan Rose's perspective as a local real estate expert.
 - What does this mean for the housing market? For neighborhoods?
 - 1-2 paragraphs. Keep it genuine and specific.
 - Fourth image placed within or after this section.
 
-### Section 6 — What You Can Do (200-300 words)
+### Section 6: What You Can Do (200-300 words)
 - H2 heading
 - Actionable information for residents. How to get involved, where to go, what to watch.
 - 2-3 paragraphs.
@@ -136,48 +136,67 @@ Each blog is a complete HTML file:
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "NewsArticle",
-        "headline": "[Blog Title]",
-        "description": "[Meta Description]",
-        "author": {
-            "@type": "Person",
-            "name": "Ryan Rose",
-            "jobTitle": "Las Vegas Real Estate Expert",
-            "url": "https://www.rosehomeslv.com"
-        },
-        "publisher": {
-            "@type": "RealEstateAgent",
-            "name": "Rose Homes LV",
-            "url": "https://www.rosehomeslv.com"
-        },
-        "datePublished": "[YYYY-MM-DD]",
-        "dateModified": "[YYYY-MM-DD]",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://www.rosehomeslv.com/blog/[slug]"
-        },
-        "about": {
-            "@type": "Place",
-            "name": "[Area within Clark County]",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "[City]",
-                "addressRegion": "NV",
-                "addressCountry": "US"
+        "@graph": [
+            {
+                "@type": "NewsArticle",
+                "@id": "https://www.rosehomeslv.com/blog/[slug]#article",
+                "headline": "[Blog Title]",
+                "description": "[Meta Description]",
+                "author": { "@id": "https://www.rosehomeslv.com/#ryanrose" },
+                "publisher": { "@id": "https://www.rosehomeslv.com/#org" },
+                "datePublished": "[YYYY-MM-DD]",
+                "dateModified": "[YYYY-MM-DD]",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://www.rosehomeslv.com/blog/[slug]"
+                },
+                "about": {
+                    "@type": "Place",
+                    "name": "[Area within Clark County]",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "[City]",
+                        "addressRegion": "NV",
+                        "addressCountry": "US"
+                    }
+                },
+                "keywords": "[Full keyword string]"
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.rosehomeslv.com/#ryanrose",
+                "name": "Ryan Rose",
+                "jobTitle": "Las Vegas Real Estate Expert",
+                "url": "https://www.rosehomeslv.com",
+                "worksFor": { "@id": "https://www.rosehomeslv.com/#org" }
+            },
+            {
+                "@type": "RealEstateAgent",
+                "@id": "https://www.rosehomeslv.com/#org",
+                "name": "Rose Homes LV",
+                "url": "https://www.rosehomeslv.com",
+                "telephone": "+1-702-747-5921",
+                "areaServed": {
+                    "@type": "AdministrativeArea",
+                    "name": "Clark County, Nevada"
+                }
             }
-        },
-        "keywords": "[Full keyword string]"
+        ]
     }
     </script>
 </body>
 </html>
 ```
 
+**About the schema block:** it stays in the file exactly as shown, which keeps the source portable if we ever leave Lofty. But it does **not** get pasted into Lofty's body editor. The publisher extracts it and enters it in Lofty's **Schema** tab, because TinyMCE intermittently wraps pasted JSON in `<p>` tags inside the `<script>` element and silently invalidates it.
+
+Two hard requirements: the JSON must actually parse, and `headline` / `description` / `mainEntityOfPage` must match the post's real Title, Meta Description, and slug. Validate before you save the file.
+
 ---
 
 ## Image Guidelines
 
-- **Find image URLs BEFORE writing the blog.** Do a WebSearch or WebFetch for each image first. Do not write the blog and then try to add images — you will skip this step.
+- **Find image URLs BEFORE writing the blog.** Do a WebSearch or WebFetch for each image first. Do not write the blog and then try to add images, because you will skip this step.
 - Place 4-5 images throughout the post. One after the opening, then roughly every 400-500 words.
 - Use direct URLs from Unsplash, Pexels, Pixabay, or the original news source.
 - For Unsplash, use the format: `https://images.unsplash.com/photo-[ID]?w=800&h=450&fit=crop`

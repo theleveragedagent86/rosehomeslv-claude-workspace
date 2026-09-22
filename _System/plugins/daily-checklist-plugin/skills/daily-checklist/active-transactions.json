@@ -5,20 +5,16 @@
   "templates_root": "/Users/ryanrose/Downloads/Claude/_System/plugins/tc-plugin/skills/transaction-coordination/templates",
   "active": [
     {
-      "address_slug": "3550-All-Hallows-Ave",
+      "address_slug": "659-Semitone-Ln",
       "type": "buyer-new-construction",
-      "coe_date": "TBD"
+      "coe_date": "2026-09-23",
+      "note": "Taylor Morrison, Opus at Cadence 25s, Lot 170. Buyers Eiven Ramph and Nadia Alvarado Andrade. $529,990. PA Q-213978 executed 2026-08-17. EMD $5,000 collected. Conditionally approved 2026-08-20 (Taylor Morrison Home Funding, Mike Marroquin). Escrow Inspired Title LV-NV-26803469FS, Christine Strouse. Inspection Inspect LV 2026-09-11 10AM. COE 9/23."
     },
     {
-      "address_slug": "8320-Moapa-Water-ST",
-      "type": "buyer-resale",
-      "coe_date": "2026-05-19"
-    },
-    {
-      "address_slug": "29-Amber-Rock-St",
-      "type": "seller",
-      "coe_date": "2026-05-14",
-      "note": "Dual agency - Ryan also represents buyer"
+      "address_slug": "653-Semitone-Ln",
+      "type": "buyer-new-construction",
+      "coe_date": "TBD",
+      "note": "Taylor Morrison, Opus at Cadence 25s, Lot 167. Buyers Dillyn Jakob Jordan-McDill (dillynjakobjordan@gmail.com) and Jay-Ar Aguilar Tolentino (tolen.j96@gmail.com). Price $445,000. EMD $5,000 collected 2026-08-13. PA signed 2026-08-17. Escrow Inspired Title, Patrice Carmo, file #LV-NV-26803470FS. Affiliated lender Taylor Morrison Home Funding, loan officer TBD. COE not fixed yet (construction-driven, per contract)."
     }
   ],
   "completed": [
@@ -27,6 +23,36 @@
       "type": "buyer-resale",
       "status": "cancelled",
       "cancelled_date": "2026-03-31"
+    },
+    {
+      "address_slug": "8320-Moapa-Water-ST",
+      "type": "buyer-resale",
+      "coe_date": "2026-05-19",
+      "status": "closed",
+      "closed_date": "2026-05-19"
+    },
+    {
+      "address_slug": "29-Amber-Rock-St",
+      "type": "seller",
+      "coe_date": "2026-05-14",
+      "note": "Dual agency - Ryan also represents buyer",
+      "status": "closed",
+      "closed_date": "2026-05-14"
+    },
+    {
+      "address_slug": "3550-All-Hallows-Ave",
+      "type": "buyer-new-construction",
+      "coe_date": "2026-05",
+      "status": "closed",
+      "closed_date": "2026-05 (exact date not recorded)"
+    },
+    {
+      "address_slug": "94-Tardando-Ave",
+      "type": "buyer-new-construction",
+      "coe_date": "2026-09-04",
+      "note": "Taylor Morrison, Opus at Cadence Lot 191. PA fully executed 2026-08-06. Target COE 2026-09-11 (incentive deadline). Independent inspection 2026-08-24 10:00 AM.",
+      "status": "closed",
+      "closed_date": "2026-09-04"
     }
   ]
 }

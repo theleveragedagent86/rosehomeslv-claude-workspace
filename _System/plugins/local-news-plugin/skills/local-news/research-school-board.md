@@ -25,14 +25,14 @@ These education stories tend to go viral:
 
 Run these searches using WebSearch. Read the top 3-5 results for each.
 
-**Tier 1 — Core Searches (required, go deep):**
+**Tier 1 - Core Searches (required, go deep):**
 1. `CCSD news [month] [year]`
 2. `Clark County School District [month] [year]`
 3. `CCSD school board meeting [month] [year]`
 4. `Las Vegas education news [month] [year]`
 5. `CCSD board of trustees [month] [year]`
 
-**Tier 2 — Topic Searches (required):**
+**Tier 2 - Topic Searches (required):**
 6. `CCSD budget [year]`
 7. `CCSD school boundaries [year]`
 8. `CCSD teacher [month] [year]`
@@ -43,7 +43,7 @@ Run these searches using WebSearch. Read the top 3-5 results for each.
 **Instagram Source Check (required):**
 - Search `site:instagram.com vegaslocals` or check @vegaslocals recent posts (last 8-10 days) for any school board, CCSD, or education-related story leads. Use any leads found as starting points, then verify against traditional news sources before including.
 
-**Tier 3 — Depth Searches (if earlier tiers are thin):**
+**Tier 3 - Depth Searches (if earlier tiers are thin):**
 12. `Henderson school news [month] [year]`
 13. `CCSD construction [year]`
 14. `Nevada education policy [month] [year]`
@@ -60,6 +60,10 @@ Run these searches using WebSearch. Read the top 3-5 results for each.
 7. Nevada Current Education (nevadacurrent.com/education)
 8. The Nevada Independent Education (thenevadaindependent.com)
 9. NV Department of Education (doe.nv.gov)
+
+## Source Attribution
+
+The Article Title is required on every story. It is the exact headline of the source article, transcribed word for word. Do not paraphrase it, shorten it, re-capitalize it, or fix its punctuation. It gets published in the Instagram caption as `Source: [Publication] - "[Article Title]"` so followers can go find the article themselves. A story with no article title cannot be published, so capture it at the same time you capture the URL. Never credit an Instagram or TikTok account as a source. Social accounts are leads only, so trace the story back to the primary or news source and capture that headline instead.
 
 ## What to Find
 
@@ -97,6 +101,7 @@ Run these searches using WebSearch. Read the top 3-5 results for each.
 - **County/Area:** [specific location or "Clark County"]
 - **Summary:** [2-3 sentence factual summary]
 - **Source:** [Publication Name]
+- **Article Title:** [exact headline of the source article, transcribed word for word]
 - **URL:** [full URL]
 - **Date:** [publication date]
 - **Why It Matters:** [1 sentence]

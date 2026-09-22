@@ -33,7 +33,7 @@ Read every blog file and SEO package file provided.
 
 ## Step 2: Extract Post Data
 
-For each blog post, extract these 7 fields:
+For each blog post, extract these 8 fields:
 
 ### A. Title
 - Look for `<title>` tag, `<h1>` tag, or first heading in the file
@@ -43,7 +43,7 @@ For each blog post, extract these 7 fields:
 ### B. HTML Body
 - Take the full content of the blog file
 - **Remove** any `<h1>` tag and its contents (Lofty adds the title separately)
-- **Remove** any `<script type="application/ld+json">` block and its contents
+- **Extract** any `<script type="application/ld+json">` block into the Schema JSON field (Field H below) and remove it from the body. **Do not discard it** — it now gets entered into Lofty's Schema tab.
 - **Remove** any `<html>`, `<head>`, `<body>`, `<!DOCTYPE>` wrapper tags
 - **Keep** everything else: `<h2>`, `<h3>`, `<p>`, `<a>`, `<hr>`, `<br>`, `<strong>`, `<em>` tags and content
 - If content is Markdown, convert to HTML:
@@ -77,11 +77,49 @@ For each blog post, extract these 7 fields:
 - Must be 150 characters or fewer
 - If over 150 chars, truncate to 147 chars and add "..."
 
+### H. Schema JSON
+
+This is the JSON-LD that goes into Lofty's **Schema** tab. It does NOT go in the HTML body.
+
+**Why:** Lofty's body editor is TinyMCE. When JSON-LD is pasted into the body, TinyMCE sometimes wraps the JSON in `<p>` tags *inside* the `<script>` element, which makes it invalid JSON and Google silently discards the whole block. The Schema tab is a dedicated JSON editor with live validation and no HTML processing, so it cannot corrupt the markup.
+
+**Source:** the `<script type="application/ld+json">` block extracted from the blog HTML file in Field B.
+
+**Processing:**
+1. Take the raw text inside the `<script>` tags
+2. Strip any HTML tags that leaked in (`<p>`, `</p>`, `<br>`), and decode entities (`&quot;` → `"`, `&amp;` → `&`, `&nbsp;` → space)
+3. Parse it as JSON to confirm it is valid. **If it does not parse, this is a FAIL** — report the parse error and the offending snippet.
+4. Normalize it into a single `@graph` object (see below)
+5. Re-serialize with 2-space indentation
+
+**Required shape.** Lofty auto-generates its own `BlogPosting` and `BreadcrumbList` on every post. We do not rely on that — we publish our own complete graph so the schema survives if Lofty ever changes or we move off the platform. Google accepts both blocks side by side; this is already the case on the live site and causes no conflict.
+
+Wrap everything in a single `@graph` so it is one valid JSON object:
+
+```json
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Article", "@id": "https://www.rosehomeslv.com/blog/[slug]#article", "...": "..." },
+    { "@type": "Person", "@id": "https://www.rosehomeslv.com/#ryanrose", "...": "..." },
+    { "@type": "RealEstateAgent", "@id": "https://www.rosehomeslv.com/#org", "...": "..." }
+  ]
+}
+```
+
+- Keep the `Article` (or `NewsArticle`) node the source file already defines — headline, description, datePublished, dateModified, mainEntityOfPage, keywords, about
+- Promote `author` to a top-level `Person` node with `@id` `https://www.rosehomeslv.com/#ryanrose`, and reference it from the article as `{"@id": "https://www.rosehomeslv.com/#ryanrose"}`
+- Promote `publisher` to a top-level `RealEstateAgent` node with `@id` `https://www.rosehomeslv.com/#org`, and reference it the same way
+- `mainEntityOfPage` must be `https://www.rosehomeslv.com/blog/[slug]` using the post's actual slug
+- `headline` must match the Title field exactly, and `description` must match the Meta Description exactly. Mismatches between our block and Lofty's auto block are the one thing that actually causes problems.
+
+**If the source file has no JSON-LD block:** build the graph from the post data you already have (title, meta description, slug, keywords, today's date) rather than reporting a failure. Every post must ship with schema.
+
 ---
 
 ## Step 3: Validate Every Field
 
-For each post, verify ALL 7 fields are present and valid:
+For each post, verify ALL 8 fields are present and valid:
 
 | Field | Required | Validation |
 |---|---|---|
@@ -92,6 +130,7 @@ For each post, verify ALL 7 fields are present and valid:
 | Meta Title | YES | Non-empty, 60 chars or fewer |
 | Meta Keywords | YES | Non-empty, 500 chars or fewer |
 | Meta Description | YES | Non-empty, 150 chars or fewer |
+| Schema JSON | YES | Parses as valid JSON, has `@context` and `@graph`, headline matches Title, mainEntityOfPage matches slug |
 
 **If ANY field is missing or invalid:** Flag it clearly in your output with the reason.
 
@@ -117,10 +156,15 @@ Return your output in this exact structure:
 **Meta Keywords:** [exact keywords] ([X] chars)
 **Meta Description:** [exact meta description] ([X] chars)
 **HTML Body:** [X] chars, [X] tags found
+**Schema JSON:** valid, [N] nodes ([list @type values])
 
 <HTML_BODY>
 [full prepared HTML body here]
 </HTML_BODY>
+
+<SCHEMA_JSON>
+[full normalized JSON-LD here, 2-space indented]
+</SCHEMA_JSON>
 
 ---
 
@@ -146,5 +190,6 @@ Return your output in this exact structure:
 - **Never guess or fabricate data.** If a field is missing from the source files, report it as MISSING.
 - **Never modify the slug.** Use exactly what the SEO package specifies.
 - **Never modify the meta title, keywords, or description content.** Only truncate if over character limits.
-- **Always strip the H1 and JSON-LD from the HTML body.** These are the two most common issues.
+- **Always strip the H1 from the HTML body**, and always **move** the JSON-LD out of the body into the Schema JSON field. Never leave JSON-LD in the body — TinyMCE corrupts it. Never drop it entirely — the post ships without schema.
+- **Always confirm the Schema JSON actually parses** before returning it. A block that looks fine but does not parse is worthless to Google, and that failure is invisible once published.
 - **Double-check the SEO batch mapping.** Confirm the post numbers in the SEO file match the blog files you're processing. If they don't match, flag it.

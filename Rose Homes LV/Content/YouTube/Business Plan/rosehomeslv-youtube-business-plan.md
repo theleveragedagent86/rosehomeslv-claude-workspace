@@ -78,7 +78,7 @@ Levi's ranking formula maps almost one-to-one onto skills that already live in t
 | --- | --- | --- |
 | **Relocation hero** | "Moving to Las Vegas in 2026", "Pros and cons of living in Las Vegas", "Don't move to Las Vegas until you watch this" | `yt-long` |
 | **Neighborhood / suburb tours** | Henderson, Summerlin, Skye Canyon, Centennial Hills, North Las Vegas, Green Valley, Inspirada | `yt-long` |
-| **Cost of living / comparisons** | "Cost of living in Las Vegas", "Henderson vs Summerlin", "Las Vegas vs Phoenix", "renting vs buying in Las Vegas" | `yt-long` |
+| **Cost of living / comparisons** | "Cost of living in Las Vegas", "Henderson vs Summerlin", "Las Vegas vs Phoenix" | `yt-long` |
 | **Local news and development** (spreads fastest) | Clark County government and development, school board, Golden Knights, local market moves | `local-news` |
 | **Market authority** | Monthly Las Vegas market updates from MLS hotsheet data | `youtube-manager` |
 | **Shorts repurposing** | Cut hooks, stats, and single answers from long-form into vertical Shorts | `repurpose` |
@@ -106,7 +106,7 @@ Titles must be search-intent titles, never vague. "House Tour" or "Las Vegas Vlo
 
 - **Relocation hero:** "Moving to [place] in [year]", "Pros and Cons of Living in [place]", "Don't Move to [place] Until You Watch This".
 - **Neighborhood tour:** "Living in [neighborhood] | Everything You Need to Know", "[Neighborhood] Las Vegas: The Honest Tour".
-- **Cost / comparison:** "Cost of Living in [place]", "[Place A] vs [Place B]: Which Should You Choose?", "Renting vs Buying in Las Vegas".
+- **Cost / comparison:** "Cost of Living in [place]", "[Place A] vs [Place B]: Which Should You Choose?".
 - **Local news / development:** "[Project or place] Is Changing Las Vegas", "What's Being Built in [area] Right Now".
 - **Market authority:** "Las Vegas Housing Market Update [Month Year]".
 

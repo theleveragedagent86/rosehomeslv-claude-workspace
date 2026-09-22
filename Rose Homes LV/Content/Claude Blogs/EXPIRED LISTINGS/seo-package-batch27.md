@@ -8,7 +8,7 @@
 ## Post 125: Why Your Providence Home Isn't Selling
 **File:** post125-why-providence-home-isnt-selling.html
 **Slug:** why-providence-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-providence-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-providence-home-isnt-selling
 
 **Meta Title:** Why Your Providence Home Isn't Selling | Rose Homes LV
 **Meta Description:** Your Providence home didn't sell. Learn how pricing pressure from Skye Canyon and Centennial Hills, outdated presentation, and weak marketing are keeping buyers away.
@@ -27,7 +27,7 @@
 ## Post 126: Home Didn't Sell in Providence. What to Do Next
 **File:** post126-home-didnt-sell-providence-next.html
 **Slug:** home-didnt-sell-providence-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-providence-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-providence-next
 
 **Meta Title:** Home Didn't Sell in Providence? What to Do Next | Rose Homes LV
 **Meta Description:** Your Providence listing expired. Follow these three steps to relist with better pricing, upgraded presentation, and marketing that reaches family buyers in northwest Las Vegas.
@@ -46,7 +46,7 @@
 ## Post 127: Why Your Silverstone Ranch Home Isn't Selling
 **File:** post127-why-silverstone-ranch-home-isnt-selling.html
 **Slug:** why-silverstone-ranch-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-silverstone-ranch-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-silverstone-ranch-home-isnt-selling
 
 **Meta Title:** Why Your Silverstone Ranch Home Isn't Selling | Rose Homes LV
 **Meta Description:** Your Silverstone Ranch home didn't sell. Find out how competition from newer communities, pricing missteps, and generic marketing are keeping buyers away.
@@ -65,7 +65,7 @@
 ## Post 128: Home Didn't Sell in Silverstone Ranch. What to Do Next
 **File:** post128-home-didnt-sell-silverstone-ranch-next.html
 **Slug:** home-didnt-sell-silverstone-ranch-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-silverstone-ranch-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-silverstone-ranch-next
 
 **Meta Title:** Home Didn't Sell in Silverstone Ranch? What to Do Next | Rose Homes LV
 **Meta Description:** Your Silverstone Ranch listing expired. Here are three steps to relist with accurate pricing, better presentation, and marketing that highlights the golf course lifestyle.
@@ -84,7 +84,7 @@
 ## Post 129: Why Your Lone Mountain Home Isn't Selling
 **File:** post129-why-lone-mountain-home-isnt-selling.html
 **Slug:** why-lone-mountain-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-lone-mountain-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-lone-mountain-home-isnt-selling
 
 **Meta Title:** Why Your Lone Mountain Home Isn't Selling | Rose Homes LV
 **Meta Description:** Your Lone Mountain home didn't sell. Learn how pricing complexity, competition from master planned communities, and inadequate marketing may be the cause.
@@ -103,7 +103,7 @@
 ## Post 130: Home Didn't Sell in Lone Mountain. What to Do Next
 **File:** post130-home-didnt-sell-lone-mountain-next.html
 **Slug:** home-didnt-sell-lone-mountain-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-lone-mountain-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-lone-mountain-next
 
 **Meta Title:** Home Didn't Sell in Lone Mountain? What to Do Next | Rose Homes LV
 **Meta Description:** Your Lone Mountain listing expired. Follow these steps to relist with precise pricing, elevated presentation, and targeted marketing for lifestyle buyers in northwest Las Vegas.

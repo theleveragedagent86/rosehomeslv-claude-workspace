@@ -1,4 +1,4 @@
-# Transcript and Output Templates — Local News
+# Transcript and Output Templates: Local News
 
 Templates for video transcripts, Instagram captions, YouTube descriptions, blog structure, and Reddit posts. All agents reference these for consistent formatting.
 
@@ -7,6 +7,8 @@ Templates for video transcripts, Instagram captions, YouTube descriptions, blog 
 ## Video Transcript Templates
 
 Lengths are 15, 30, 45, 60, and 75 seconds. There is no 90-second script. 75 seconds is reserved for stories flagged `Extremely Important` and used sparingly.
+
+The `HK-WEEK` hockey roundup sits outside this table. It is always the 15 to 25 second tier, 38 to 62 words, one CTA, covering 3 to 5 beats of the week at one line each. Never 30 seconds or more. See the length section of content-producer.md.
 
 ### 15-Second Script (38-45 words)
 
@@ -39,7 +41,7 @@ CTA: End with the comment question only. At 30 seconds there is not enough time 
 [LOCAL IMPACT + COMMENT QUESTION: Name a specific Las Vegas neighborhood, then an opinion-driving question, 2 sentences]
 ```
 
-CTA: Two CTAs — one mid-video follow, then the comment question. No share prompt at 45 seconds.
+CTA: Two CTAs, one mid-video follow, then the comment question. No share prompt at 45 seconds.
 
 ### 60-Second Script (150-180 words)
 
@@ -52,9 +54,9 @@ CTA: Two CTAs — one mid-video follow, then the comment question. No share prom
 [SHARE CTA + COMMENT QUESTION: Area-specific share prompt + opinion-driving question, 2 sentences]
 ```
 
-CTA: Three CTAs — mid-video follow, share, comment question.
+CTA: Three CTAs, mid-video follow, share, comment question.
 
-### 75-Second Script (190-225 words) — Extremely Important stories only
+### 75-Second Script (190-225 words), Extremely Important stories only
 
 ```
 [HOOK: Provocative opening statement that reframes the story in a way nobody expects, 1 sentence]
@@ -68,7 +70,7 @@ CTA: Three CTAs — mid-video follow, share, comment question.
 [COMMENT QUESTION: Provocative, slightly divisive opinion question that drives debate in the comments, 1 sentence]
 ```
 
-CTA: Three CTAs — mid-video follow, share, comment question.
+CTA: Three CTAs, mid-video follow, share, comment question.
 
 ### National-to-Local Real Estate Template (overlay on any length)
 
@@ -81,6 +83,21 @@ For `Story Type: National-to-Local` stories, structure the body around the contr
 [LOCAL IMPACT + COMMENT QUESTION: What it means for a Vegas homeowner, then the question]
 ```
 
+## Local News and Events Video Template (overlay on any length)
+
+For local news and events stories, structure the body around the quick-hit beat:
+
+```
+[HOOK: The thing itself, stated plainly and with energy. "There is a free hot air balloon festival in North Las Vegas this weekend."]
+[THE DETAILS: What, where, when, how much. Say the date, time, neighborhood, and cost. Say plainly if it is free.]
+[THE LOCAL ANGLE: Why a local cares, or what changes for the neighborhood]
+[COMMENT QUESTION: Specific and easy to answer. "Are you going?" works here where it would not work on a policy story.]
+```
+
+Time-sensitive events must state the date early in the script. A post about an event that already happened is worthless, so the viewer needs to know within the first few seconds whether they can still go.
+
+On this beat the tone is conversational and a little bit "did you hear about this," not the measured expert tone used for market data.
+
 ### Hook Examples (make it a STATEMENT, not a generic question)
 - "Um, excuse me. That ebike is a motorcycle."
 - "The headlines say the housing market is crashing. Not in Las Vegas."
@@ -89,6 +106,11 @@ For `Story Type: National-to-Local` stories, structure the body around the contr
 - "That new development everyone is celebrating? It is going to destroy your commute."
 - "Your HOA just got the power to do something you are not going to believe."
 - "National foreclosures are spiking. Vegas is telling a completely different story."
+- "After 40 years, that diner on Eastern is closing at the end of the month."
+- "There is a free hot air balloon festival in North Las Vegas this weekend and almost nobody knows about it."
+- "If you take the 215 through Summerlin, your Saturday is about to get a lot longer."
+- "It is going to hit 117 this week and that is not even the worst part."
+- "A guy filmed a flash flood ripping down Flamingo and the whole country is watching it."
 
 ### Follow CTA Examples (pick one, vary across stories)
 - "Follow for more local news like this."
@@ -108,37 +130,45 @@ For `Story Type: National-to-Local` stories, structure the body around the contr
 - "Should taxpayers be paying for this when teachers are underpaid? Comment what you think."
 - "Are you still worried about a Vegas housing crash after seeing these numbers? Tell me in the comments."
 - "Is the city making the right call or are they selling out the neighborhood? Let me know."
+- "Are you going to this one? Let me know in the comments."
+- "What is the one Vegas spot you would be crushed to see close? Drop it below."
+- "What is your backup route when they shut this stretch down? Tell me in the comments."
+- "Do you actually change your plans when it gets this hot, or do you just power through? Let me know."
 
 ---
 
 ## Instagram Caption Template
 
 ```
-[HEADLINE — Title case, 8-12 words, attention-grabbing framing]
+[HEADLINE: Title case, 8-12 words, attention-grabbing framing]
 
-[OPENING HOOK — 1-2 sentences setting the scene with a surprising fact or statement]
+[OPENING HOOK: 1-2 sentences setting the scene with a surprising fact or statement]
 
-[FACTS — 3-5 short paragraphs, 1-2 sentences each, specific numbers/names/dates/locations]
+[FACTS: 3-5 short paragraphs, 1-2 sentences each, specific numbers/names/dates/locations]
 
-[PIVOT — 1-2 short sentences reframing the story's bigger meaning]
+[PIVOT: 1-2 short sentences reframing the story's bigger meaning]
 
-[CONTEXT — 3-5 short paragraphs on why this matters, broader implications, opinion woven in]
+[CONTEXT: 3-5 short paragraphs on why this matters, broader implications, opinion woven in]
 
-[CLOSING QUESTION — 1 thought-provoking question driving comments]
+[CLOSING QUESTION: 1 thought-provoking question driving comments]
 
 For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
 
 Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+
+Source: [Publication Name] - "[Exact Article Title]"
 ```
 
 Rules: Zero hashtags. Zero emojis. 250-400 words body. Very short paragraphs (1-2 sentences). Opinion-driven. For national-to-local stories, lead the hook with the national number and pivot to the Vegas number.
+
+Source line rules: The source line is required on every caption and is always the very last line. Transcribe the article title word for word from the source article. Use a regular hyphen between the publication name and the title, and straight double quotes around the title. Credit only one source per caption. Never credit an Instagram or TikTok account as a source. Example: `Source: Redfin - "How to Buy a House"`
 
 ---
 
 ## YouTube Shorts Description Template
 
 ```
-[TITLE LINE — matches or closely mirrors the video hook]
+[TITLE LINE: matches or closely mirrors the video hook]
 
 [2-3 sentence summary of the story and why it matters to Las Vegas residents.]
 
@@ -147,6 +177,8 @@ Follow for more Las Vegas news you need to know.
 Ryan Rose | Real Broker, LLC | 702-747-5921
 rosehomeslv.com
 
+Source: [Publication Name] - "[Exact Article Title]"
+
 **Tags:** [comma-separated tags, max 475 characters total]
 ```
 
@@ -154,7 +186,7 @@ rosehomeslv.com
 
 ## YouTube Tags Rules
 
-- **Max 475 characters total** (count commas and spaces — YouTube's hard limit)
+- **Max 475 characters total** (count commas and spaces, YouTube's hard limit)
 - Comma-separated, no # symbols, no quotes
 - Order: story-specific terms first, then location terms, then brand terms
 - Include 3-4 story-specific high-intent terms
@@ -256,7 +288,7 @@ rosehomeslv.com
 
 ## Reddit Post Template (real estate stories only)
 
-Reddit posts are created ONLY for Real Estate Market stories (local Las Vegas and national-to-local). Do not write Reddit posts for Government/Development, School Board, or Hockey stories.
+Reddit posts are created ONLY for Real Estate Market stories (local Las Vegas and national-to-local). Do not write Reddit posts for Government/Development, School Board, or Local News and Events stories, and never for the weekly hockey roundup.
 
 ```
 Title: [Local News] [Conversational headline]

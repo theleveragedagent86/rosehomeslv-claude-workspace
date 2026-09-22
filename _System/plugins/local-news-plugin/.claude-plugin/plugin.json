@@ -1,9 +1,24 @@
 {
   "name": "local-news",
-  "version": "2.0.0",
-  "description": "Automates weekly local news research for Clark County, NV. Researches Government/Development, School Board, Hockey, and Real Estate Market news across 11 sub-agents. Ranks 25 stories by viral potential, produces green-screen video transcripts, blog articles, Reddit posts, Instagram captions, YouTube descriptions, and a story spreadsheet.",
-  "author": { "name": "Ryan Rose", "email": "ryan@rosehomeslv.com" },
+  "version": "3.3.0",
+  "description": "Weekly Clark County, NV local news across four beats: Government/Development, School Board, Real Estate Market, and Local News and Events, plus national real estate headlines reframed against Las Vegas numbers. Hockey ships as one weekly roundup. Sub-agents rank 27+ stories by viral potential and produce green-screen transcripts, blogs, bonus SEO blogs, Reddit posts, captions, YouTube descriptions, a posting schedule, and a spreadsheet.",
+  "author": {
+    "name": "Ryan Rose",
+    "email": "ryan@rosehomeslv.com"
+  },
   "license": "UNLICENSED",
-  "keywords": ["local-news", "instagram", "video", "green-screen", "las-vegas", "clark-county", "social-media", "blog", "reddit", "youtube", "real-estate"],
+  "keywords": [
+    "local-news",
+    "instagram",
+    "video",
+    "green-screen",
+    "las-vegas",
+    "clark-county",
+    "social-media",
+    "blog",
+    "reddit",
+    "youtube",
+    "real-estate"
+  ],
   "skills": "./skills/"
 }

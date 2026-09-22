@@ -15,10 +15,10 @@
 **Primary Keyword:** Tivoli Village restaurants
 **Secondary Keywords:** Tivoli Village dining Summerlin, Echo and Rig Summerlin, Al Solito Posto Tivoli Village, El Dorado Cantina Summerlin, restaurants near Summerlin Las Vegas
 **Internal Links:**
-- /blogs/best-restaurants-near-summerlin
-- /blogs/best-italian-restaurants-summerlin
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/best-brunch-spots-summerlin
+- /blog/best-restaurants-near-summerlin
+- /blog/best-italian-restaurants-summerlin
+- /blog/downtown-summerlin-shopping-dining
+- /blog/best-brunch-spots-summerlin
 
 ---
 
@@ -31,10 +31,10 @@
 **Primary Keyword:** Red Rock Casino restaurants
 **Secondary Keywords:** Red Rock Resort dining Summerlin, T-Bones Chophouse Red Rock, Osteria Fiorella Red Rock, Lotus of Siam Red Rock, best restaurants Red Rock Casino
 **Internal Links:**
-- /blogs/best-restaurants-near-summerlin
-- /blogs/best-steakhouses-summerlin
-- /blogs/best-brunch-spots-summerlin
-- /blogs/summerlin-living-guide
+- /blog/best-restaurants-near-summerlin
+- /blog/best-steakhouses-summerlin
+- /blog/best-brunch-spots-summerlin
+- /blog/summerlin-living-guide
 
 ---
 
@@ -47,10 +47,10 @@
 **Primary Keyword:** best French restaurants Summerlin
 **Secondary Keywords:** French bistro Summerlin Las Vegas, Ohlala French Bistro Las Vegas, Cafe Breizh Summerlin, French food near Summerlin, Rouge Room Red Rock Casino
 **Internal Links:**
-- /blogs/best-restaurants-near-summerlin
-- /blogs/best-italian-restaurants-summerlin
-- /blogs/red-rock-casino-restaurants-summerlin
-- /blogs/best-coffee-shops-summerlin
+- /blog/best-restaurants-near-summerlin
+- /blog/best-italian-restaurants-summerlin
+- /blog/red-rock-casino-restaurants-summerlin
+- /blog/best-coffee-shops-summerlin
 
 ---
 
@@ -63,10 +63,10 @@
 **Primary Keyword:** Tivoli Village shopping Summerlin
 **Secondary Keywords:** Tivoli Village stores, Tivoli Village dining guide, Tivoli Village Las Vegas, Restoration Hardware Tivoli Village, Summerlin shopping guide, shopping near Summerlin
 **Internal Links:**
-- /blogs/tivoli-village-restaurants-summerlin
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/grocery-stores-shopping-summerlin
-- /blogs/boca-park-fashion-village-summerlin
+- /blog/tivoli-village-restaurants-summerlin
+- /blog/downtown-summerlin-shopping-dining
+- /blog/grocery-stores-shopping-summerlin
+- /blog/boca-park-fashion-village-summerlin
 
 ---
 
@@ -79,10 +79,10 @@
 **Primary Keyword:** Boca Park Fashion Village
 **Secondary Keywords:** Boca Park shopping Summerlin, Boca Park restaurants, shopping near Summerlin Las Vegas, Boca Park stores, Grimaldi's Boca Park, Cheesecake Factory Summerlin
 **Internal Links:**
-- /blogs/tivoli-village-shopping-guide-summerlin
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/grocery-stores-shopping-summerlin
-- /blogs/summerlin-living-guide
+- /blog/tivoli-village-shopping-guide-summerlin
+- /blog/downtown-summerlin-shopping-dining
+- /blog/grocery-stores-shopping-summerlin
+- /blog/summerlin-living-guide
 
 ---
 

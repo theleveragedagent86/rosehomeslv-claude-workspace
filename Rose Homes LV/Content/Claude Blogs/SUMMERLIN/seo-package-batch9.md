@@ -17,9 +17,9 @@
 **Meta Description:** Downtown Summerlin features 125+ stores, restaurants, and entertainment venues in an open-air setting. Your complete guide to shopping, dining, and events.
 
 **Internal Links Used:**
-- /blogs/best-restaurants-near-summerlin
-- /blogs/is-summerlin-good-place-to-live
-- /blogs/las-vegas-ballpark-downtown-summerlin
+- /blog/best-restaurants-near-summerlin
+- /blog/is-summerlin-good-place-to-live
+- /blog/las-vegas-ballpark-downtown-summerlin
 
 ---
 
@@ -35,9 +35,9 @@
 **Meta Description:** Discover the best restaurants in Summerlin for 2026. Dining at Downtown Summerlin, Red Rock Casino, Charleston Blvd, and more. Casual to upscale options.
 
 **Internal Links Used:**
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/red-rock-casino-resort-summerlin
-- /blogs/summerlin-living-guide
+- /blog/downtown-summerlin-shopping-dining
+- /blog/red-rock-casino-resort-summerlin
+- /blog/summerlin-living-guide
 
 ---
 
@@ -53,9 +53,9 @@
 **Meta Description:** Las Vegas Ballpark (Aviators Triple-A baseball) and City National Arena (Golden Knights practice) bring pro sports to Downtown Summerlin. Events, tickets, and info.
 
 **Internal Links Used:**
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/red-rock-casino-resort-summerlin
-- /blogs/is-summerlin-good-place-to-live
+- /blog/downtown-summerlin-shopping-dining
+- /blog/red-rock-casino-resort-summerlin
+- /blog/is-summerlin-good-place-to-live
 
 ---
 
@@ -71,9 +71,9 @@
 **Meta Description:** Red Rock Casino Resort and Spa sits adjacent to Downtown Summerlin with dining, gaming, spa, bowling, and movies. The top locals resort in Las Vegas.
 
 **Internal Links Used:**
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/best-restaurants-near-summerlin
-- /blogs/summerlin-distance-las-vegas-strip
+- /blog/downtown-summerlin-shopping-dining
+- /blog/best-restaurants-near-summerlin
+- /blog/summerlin-distance-las-vegas-strip
 
 ---
 
@@ -89,9 +89,9 @@
 **Meta Description:** Guide to grocery stores in Summerlin: Smith's, Albertsons, Whole Foods, Trader Joe's, and more. Most residents are within 5 minutes of multiple options.
 
 **Internal Links Used:**
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/cost-of-living-summerlin
-- /blogs/moving-to-summerlin-relocation
+- /blog/downtown-summerlin-shopping-dining
+- /blog/cost-of-living-summerlin
+- /blog/moving-to-summerlin-relocation
 
 ---
 

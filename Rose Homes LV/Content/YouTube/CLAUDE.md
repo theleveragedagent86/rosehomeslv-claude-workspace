@@ -9,6 +9,10 @@ Two skills write into this folder:
 1. **`/yt-long <topic>`** (the `yt-long` skill at `~/.claude/skills/yt-long/`) produces 5 to 15 minute long-form videos on any topic. Each run creates a topic folder with research, a teleprompter script, a QA fact-check report, a YouTube description and SEO package, and a HyperFrames graphics shot list. This is the primary producer of content here.
 2. **`/youtube-manager`** produces weekly MLS market-update packages in dated folders (e.g. `[YYYY-MM-DD] Weekly Package/`). That is a separate, real-estate-specific weekly flow. Do not confuse the two.
 
+One skill publishes from here:
+
+3. **`/yt-shorts-publish [path]`** (`~/.claude/skills/yt-shorts-publish/`) takes a folder or file of Shorts titles/descriptions/tags, normalizes them, writes a `schedule.md` next to the source from the publish times Ryan gives, then fills and schedules each already-uploaded draft in YouTube Studio through claude-in-chrome. Ryan uploads the MP4s himself; filename is the join key.
+
 ## Output layout (`/yt-long`)
 
 Single video:

@@ -17,10 +17,10 @@
 **Meta Description:** Osteria Fiorella at Red Rock Casino brings James Beard Award winner Chef Marc Vetri's handmade pastas and Italian cuisine to Summerlin. Full restaurant review.
 
 **Internal Links Used:**
-- /blogs/red-rock-casino-restaurants-summerlin
-- /blogs/best-italian-restaurants-summerlin
-- /blogs/la-strega-restaurant-summerlin-review
-- /blogs/best-restaurants-near-summerlin
+- /blog/red-rock-casino-restaurants-summerlin
+- /blog/best-italian-restaurants-summerlin
+- /blog/la-strega-restaurant-summerlin-review
+- /blog/best-restaurants-near-summerlin
 
 ---
 
@@ -36,9 +36,9 @@
 **Meta Description:** Dom DeMarco's Pizzeria brings Brooklyn's legendary Di Fara Pizza recipes to Summerlin. NY-style, Neapolitan, and Sicilian pies with 1,537 Yelp reviews and a 4.6 OpenTable rating.
 
 **Internal Links Used:**
-- /blogs/best-pizza-summerlin
-- /blogs/best-italian-restaurants-summerlin
-- /blogs/best-restaurants-near-summerlin
+- /blog/best-pizza-summerlin
+- /blog/best-italian-restaurants-summerlin
+- /blog/best-restaurants-near-summerlin
 
 ---
 
@@ -54,9 +54,9 @@
 **Meta Description:** Mothership Coffee Roasters is Las Vegas' longest-running independent coffee shop, serving single-origin espresso and pour-overs at Downtown Summerlin since 2013.
 
 **Internal Links Used:**
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/best-coffee-shops-summerlin
-- /blogs/best-restaurants-near-summerlin
+- /blog/downtown-summerlin-shopping-dining
+- /blog/best-coffee-shops-summerlin
+- /blog/best-restaurants-near-summerlin
 
 ---
 
@@ -72,9 +72,9 @@
 **Meta Description:** Trattoria Reggiano in Downtown Summerlin offers housemade pastas, brick-oven pizzas, and live music Wed through Sat. A family-owned Italian restaurant at 2020 Park Centre Dr.
 
 **Internal Links Used:**
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/la-strega-restaurant-summerlin-review
-- /blogs/best-italian-restaurants-summerlin
+- /blog/downtown-summerlin-shopping-dining
+- /blog/la-strega-restaurant-summerlin-review
+- /blog/best-italian-restaurants-summerlin
 
 ---
 
@@ -90,10 +90,10 @@
 **Meta Description:** Harlo Steakhouse in Downtown Summerlin is led by Chef Gina Marinelli of La Strega. Meticulously sourced beef, craft cocktails, and a 4.6 OpenTable rating.
 
 **Internal Links Used:**
-- /blogs/la-strega-restaurant-summerlin-review
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/echo-and-rig-summerlin-review
-- /blogs/best-steakhouses-summerlin
+- /blog/la-strega-restaurant-summerlin-review
+- /blog/downtown-summerlin-shopping-dining
+- /blog/echo-and-rig-summerlin-review
+- /blog/best-steakhouses-summerlin
 
 ---
 

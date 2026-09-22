@@ -17,10 +17,10 @@
 **Meta Description:** Summerlin pool season runs May 22 to Sep 7. Guide to The Trails, Vistas, and Willows community pools plus Cowabunga Canyon Waterpark. Passes start at $40.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-families-guide
-- /blogs/summerlin-weather-climate
-- /blogs/summerlin-community-parks-overview
+- /blog/summerlin-living-guide
+- /blog/summerlin-families-guide
+- /blog/summerlin-weather-climate
+- /blog/summerlin-community-parks-overview
 
 ---
 
@@ -36,10 +36,10 @@
 **Meta Description:** Complete guide to Summerlin holiday events including Vegas Halloween Town, Parade of Mischief, Holiday Parade, Santa's Chalet, ice skating, and Hanukkah celebration.
 
 **Internal Links Used:**
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-families-guide
-- /blogs/summerlin-community-parks-overview
+- /blog/downtown-summerlin-shopping-dining
+- /blog/summerlin-living-guide
+- /blog/summerlin-families-guide
+- /blog/summerlin-community-parks-overview
 
 ---
 
@@ -55,10 +55,10 @@
 **Meta Description:** Guide to youth sports in Summerlin including Little League baseball, AYSO soccer, Las Vegas Indoor Soccer, NYS Nevada, and i9 Sports for ages 3 to 17.
 
 **Internal Links Used:**
-- /blogs/summerlin-families-guide
-- /blogs/fox-hill-park-summerlin-guide
-- /blogs/summerlin-community-parks-overview
-- /blogs/best-schools-summerlin
+- /blog/summerlin-families-guide
+- /blog/fox-hill-park-summerlin-guide
+- /blog/summerlin-community-parks-overview
+- /blog/best-schools-summerlin
 
 ---
 
@@ -74,10 +74,10 @@
 **Meta Description:** Guide to the best vets in Summerlin including AAHA-accredited Town Center and South Shores, cat-only Trailwood Cat Hospital, and locally owned practices.
 
 **Internal Links Used:**
-- /blogs/dog-parks-summerlin-pet-friendly
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-families-guide
-- /blogs/summerlin-community-parks-overview
+- /blog/dog-parks-summerlin-pet-friendly
+- /blog/summerlin-living-guide
+- /blog/summerlin-families-guide
+- /blog/summerlin-community-parks-overview
 
 ---
 
@@ -93,7 +93,7 @@
 **Meta Description:** Guide to the best daycare and preschool options in Summerlin including NAEYC-accredited Merryhill, Creative Kids, La Petite Academy, and KinderCare.
 
 **Internal Links Used:**
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-families-guide
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-community-parks-overview
+- /blog/best-schools-summerlin
+- /blog/summerlin-families-guide
+- /blog/summerlin-living-guide
+- /blog/summerlin-community-parks-overview

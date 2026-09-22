@@ -8,7 +8,7 @@
 ## Post 131: Why Your Tuscany Village Home Isn't Selling
 **File:** post131-why-tuscany-village-home-isnt-selling.html
 **Slug:** why-tuscany-village-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-tuscany-village-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-tuscany-village-home-isnt-selling
 
 **Meta Title:** Why Your Tuscany Village Home Isn't Selling | Rose Homes LV
 **Meta Description:** Your Tuscany Village home didn't sell. Learn how competition from newer Henderson communities, pricing missteps, and outdated presentation are keeping buyers away.
@@ -27,7 +27,7 @@
 ## Post 132: Home Didn't Sell in Tuscany Village. What to Do Next
 **File:** post132-home-didnt-sell-tuscany-village-next.html
 **Slug:** home-didnt-sell-tuscany-village-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-tuscany-village-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-tuscany-village-next
 
 **Meta Title:** Home Didn't Sell in Tuscany Village? What to Do Next | Rose Homes LV
 **Meta Description:** Your Tuscany Village listing expired. Follow these three steps to relist with recalibrated pricing, modernized presentation, and marketing that reaches Henderson family buyers.
@@ -46,7 +46,7 @@
 ## Post 133: Why Your Tule Springs Home Isn't Selling
 **File:** post133-why-tule-springs-home-isnt-selling.html
 **Slug:** why-tule-springs-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-tule-springs-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-tule-springs-home-isnt-selling
 
 **Meta Title:** Why Your Tule Springs Home Isn't Selling | Rose Homes LV
 **Meta Description:** Your Tule Springs home didn't sell. Find out how builder competition, generic marketing, and the North Las Vegas perception gap are keeping buyers from making an offer.
@@ -65,7 +65,7 @@
 ## Post 134: Home Didn't Sell in Tule Springs. What to Do Next
 **File:** post134-home-didnt-sell-tule-springs-next.html
 **Slug:** home-didnt-sell-tule-springs-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-tule-springs-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-tule-springs-next
 
 **Meta Title:** Home Didn't Sell in Tule Springs? What to Do Next | Rose Homes LV
 **Meta Description:** Your Tule Springs listing expired. Follow these steps to relist with builder-competitive pricing, upgraded presentation, and targeted marketing for North Las Vegas family buyers.

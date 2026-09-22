@@ -17,10 +17,10 @@
 **Meta Description:** Compare home appreciation rates across every Summerlin zip code including 89128, 89134, 89135, 89138, and 89144. See which areas are gaining value fastest and where buyers still find opportunity.
 
 **Internal Links Used:**
-- /blogs/summerlin-home-prices-2026
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/best-neighborhoods-rental-summerlin
-- /blogs/summerlin-real-estate-investment
+- /blog/summerlin-home-prices-2026
+- /blog/downtown-summerlin-shopping-dining
+- /blog/best-neighborhoods-rental-summerlin
+- /blog/summerlin-real-estate-investment
 
 ---
 
@@ -36,9 +36,9 @@
 **Meta Description:** See average rental income by bedroom count in Summerlin, from 1-bedroom units at $1,394/mo to 4-bedroom homes at $3,500+. Learn which property sizes generate the best returns for investors.
 
 **Internal Links Used:**
-- /blogs/rental-market-overview-summerlin-2026
-- /blogs/best-neighborhoods-rental-summerlin
-- /blogs/summerlin-rent-vs-buy
+- /blog/rental-market-overview-summerlin-2026
+- /blog/best-neighborhoods-rental-summerlin
+- /blog/summerlin-rent-vs-buy
 
 ---
 
@@ -54,10 +54,10 @@
 **Meta Description:** Learn how cash-on-cash returns work in Summerlin real estate. See a real example showing 8.4% returns and discover which zip codes offer the best investment performance for rental properties.
 
 **Internal Links Used:**
-- /blogs/summerlin-real-estate-investment
-- /blogs/appreciation-rates-zip-code-summerlin
-- /blogs/best-neighborhoods-rental-summerlin
-- /blogs/rental-market-overview-summerlin-2026
+- /blog/summerlin-real-estate-investment
+- /blog/appreciation-rates-zip-code-summerlin
+- /blog/best-neighborhoods-rental-summerlin
+- /blog/rental-market-overview-summerlin-2026
 
 ---
 
@@ -73,10 +73,10 @@
 **Meta Description:** Plan your Las Vegas Aviators game day at the Las Vegas Ballpark in Downtown Summerlin. Get tips on parking, food, fireworks nights, seating, and making the most of 75 home games per season.
 
 **Internal Links Used:**
-- /blogs/las-vegas-ballpark-downtown-summerlin
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/best-restaurants-near-summerlin
-- /blogs/downtown-summerlin-concerts-events
+- /blog/las-vegas-ballpark-downtown-summerlin
+- /blog/downtown-summerlin-shopping-dining
+- /blog/best-restaurants-near-summerlin
+- /blog/downtown-summerlin-concerts-events
 
 ---
 
@@ -92,6 +92,6 @@
 **Meta Description:** Visit the Vegas Golden Knights practice facility at City National Arena in Downtown Summerlin. Learn about free public practices, the team store, fan experience, and nearby dining options.
 
 **Internal Links Used:**
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/best-restaurants-near-summerlin
-- /blogs/downtown-summerlin-concerts-events
+- /blog/downtown-summerlin-shopping-dining
+- /blog/best-restaurants-near-summerlin
+- /blog/downtown-summerlin-concerts-events

@@ -17,11 +17,11 @@
 **Meta Description:** Multi-generational homes in Summerlin offer separate living spaces for extended families. Explore Lennar Next Gen, Toll Brothers flexible floorplans, and 55+ community options.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/lennar-homes-summerlin-guide
-- /blogs/summerlin-home-prices-2026
-- /blogs/retiring-in-summerlin-guide
-- /blogs/summerlin-luxury-guard-gated-homes
+- /blog/summerlin-living-guide
+- /blog/lennar-homes-summerlin-guide
+- /blog/summerlin-home-prices-2026
+- /blog/retiring-in-summerlin-guide
+- /blog/summerlin-luxury-guard-gated-homes
 
 ---
 
@@ -37,9 +37,9 @@
 **Meta Description:** Canyon Fairways is a guard-gated community in The Canyons village of Summerlin North. Custom and semi-custom homes on spacious lots adjacent to the golf course.
 
 **Internal Links Used:**
-- /blogs/the-canyons-summerlin-village-guide
-- /blogs/89144-real-estate-guide-summerlin
-- /blogs/summerlin-luxury-guard-gated-homes
+- /blog/the-canyons-summerlin-village-guide
+- /blog/89144-real-estate-guide-summerlin
+- /blog/summerlin-luxury-guard-gated-homes
 
 ---
 
@@ -55,10 +55,10 @@
 **Meta Description:** Mira Villa is a guard-gated luxury community in The Canyons village of Summerlin North. Exclusive single-family homes with mature landscaping in the 89144 zip code.
 
 **Internal Links Used:**
-- /blogs/the-canyons-summerlin-village-guide
-- /blogs/89144-real-estate-guide-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-luxury-guard-gated-homes
+- /blog/the-canyons-summerlin-village-guide
+- /blog/89144-real-estate-guide-summerlin
+- /blog/summerlin-living-guide
+- /blog/summerlin-luxury-guard-gated-homes
 
 ---
 
@@ -74,10 +74,10 @@
 **Meta Description:** The Palisades is one of the most exclusive guard-gated communities in Summerlin North. Premium homes with mountain views on elevated sites within The Canyons village.
 
 **Internal Links Used:**
-- /blogs/the-canyons-summerlin-village-guide
-- /blogs/89144-real-estate-guide-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-luxury-guard-gated-homes
+- /blog/the-canyons-summerlin-village-guide
+- /blog/89144-real-estate-guide-summerlin
+- /blog/summerlin-living-guide
+- /blog/summerlin-luxury-guard-gated-homes
 
 ---
 
@@ -93,9 +93,9 @@
 **Meta Description:** Tournament Hills is a guard-gated community near TPC Summerlin in The Hills South village. Custom and semi-custom homes on spacious lots with prestigious North Summerlin addresses.
 
 **Internal Links Used:**
-- /blogs/the-hills-south-summerlin-village-guide
-- /blogs/89134-real-estate-guide-summerlin
-- /blogs/summerlin-luxury-guard-gated-homes
+- /blog/the-hills-south-summerlin-village-guide
+- /blog/89134-real-estate-guide-summerlin
+- /blog/summerlin-luxury-guard-gated-homes
 
 ---
 

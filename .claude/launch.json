@@ -2,10 +2,31 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "local-seo-pages",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd '/Users/ryanrose/Downloads/Claude/output/local-seo/pages' && exec python3 -m http.server 8124"],
+      "port": 8124
+    },
+    {
+      "name": "rebel-hockey",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd '/Users/ryanrose/Downloads/Claude/_Rebel Hockey' && exec python3 -m http.server 8135"],
+      "port": 8135
+    },
+    {
       "name": "reloc-guide",
       "runtimeExecutable": "bash",
       "runtimeArgs": ["-c", "cd 'Relocation Guide' && exec python3 -m http.server 8123"],
       "port": 8123
+    },
+    {
+      "name": "sting-preview",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "cd '/Users/ryanrose/Downloads/Claude/SKOOL Community/hyperframes-student-kit/video-projects/leveraged-agent-sting' && exec npx hyperframes preview"
+      ],
+      "port": 3002
     }
   ]
 }

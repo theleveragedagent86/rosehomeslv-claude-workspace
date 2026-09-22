@@ -17,10 +17,10 @@
 **Meta Description:** Full comparison of Summerlin and Southern Highlands covering location, architecture, pricing, lifestyle, and schools. Find out which Las Vegas community fits your priorities.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-home-prices-2026
-- /blogs/the-ridges-summerlin-luxury-guide
-- /blogs/summerlin-luxury-guard-gated-homes
+- /blog/summerlin-living-guide
+- /blog/summerlin-home-prices-2026
+- /blog/the-ridges-summerlin-luxury-guide
+- /blog/summerlin-luxury-guard-gated-homes
 
 ---
 
@@ -36,10 +36,10 @@
 **Meta Description:** Side-by-side comparison of Summerlin and Skye Canyon covering home prices, construction age, commute times, amenities, and outdoor recreation. Median prices and drive times included.
 
 **Internal Links Used:**
-- /blogs/summerlin-home-prices-2026
-- /blogs/is-summerlin-good-place-to-live
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/best-schools-summerlin
+- /blog/summerlin-home-prices-2026
+- /blog/is-summerlin-good-place-to-live
+- /blog/summerlin-north-south-west-comparison
+- /blog/best-schools-summerlin
 
 ---
 
@@ -55,10 +55,10 @@
 **Meta Description:** Complete comparison of Summerlin and Green Valley Henderson covering governance, commute times, home prices, SID/LID fees, neighborhood character, and amenities.
 
 **Internal Links Used:**
-- /blogs/summerlin-vs-henderson-comparison
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-home-prices-2026
-- /blogs/is-summerlin-good-place-to-live
+- /blog/summerlin-vs-henderson-comparison
+- /blog/summerlin-living-guide
+- /blog/summerlin-home-prices-2026
+- /blog/is-summerlin-good-place-to-live
 
 ---
 
@@ -74,10 +74,10 @@
 **Meta Description:** Detailed comparison of Summerlin and Anthem Henderson covering location, home prices, guard-gated communities, schools, lifestyle, and airport access for Las Vegas buyers.
 
 **Internal Links Used:**
-- /blogs/summerlin-vs-henderson-comparison
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-luxury-guard-gated-homes
-- /blogs/summerlin-living-guide
+- /blog/summerlin-vs-henderson-comparison
+- /blog/best-schools-summerlin
+- /blog/summerlin-luxury-guard-gated-homes
+- /blog/summerlin-living-guide
 
 ---
 
@@ -93,7 +93,7 @@
 **Meta Description:** Luxury comparison of Summerlin and MacDonald Highlands covering custom estates, DragonRidge Country Club, The Ridges, panoramic views, and lifestyle differences.
 
 **Internal Links Used:**
-- /blogs/the-ridges-summerlin-luxury-guide
-- /blogs/summerlin-luxury-guard-gated-homes
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-living-guide
+- /blog/the-ridges-summerlin-luxury-guide
+- /blog/summerlin-luxury-guard-gated-homes
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-living-guide

@@ -1,6 +1,25 @@
-# Source Registry — Clark County Local News
+# Source Registry - Clark County Local News
 
 All research sources organized by category. Research agents should check these sources in priority order and supplement with additional searches as needed.
+
+---
+
+## BLOCKED SOURCES (READ FIRST)
+
+Ryan Rose is a working Las Vegas real estate agent. A competing brokerage named in his video, blog, or caption is free advertising for a competitor. Never cite these, and never link to them.
+
+| Blocked Source | Domain |
+|----------------|--------|
+| Nevada Real Estate Group | nevadarealestategroup.com |
+| Realty ONE Group / Builder Model Homes | homesforsale.vegas |
+| RE/MAX 1% Listing Fee | las-vegas-real-estate-authority.com |
+| VIP Homes Vegas | viphomes.vegas |
+| Zahler Properties | zahlerproperties.com |
+| See Vegas Homes | seevegashomes.com |
+
+This also covers any competing Las Vegas brokerage, real estate team, or individual agent blog, listed or not. If the outlet sells homes in Clark County and is not Rose Homes LV, it is blocked. Find the underlying primary source instead, or drop the story. See content-rules.md for the full rule.
+
+Builder sites (KB Home, Toll Brothers, Lennar, Century Communities) are fine. Data outlets (Redfin, Zillow, Realtor.com, ATTOM, NAR, Freddie Mac), Las Vegas REALTORS / GLVAR, government agencies, and news outlets are fine.
 
 ---
 
@@ -78,13 +97,166 @@ Used by the National-to-Local Real Estate agent. Find the national trigger story
 | ATTOM Data | attomdata.com | Foreclosure, equity, and distressed-property reports |
 | CoreLogic | corelogic.com | Home price index, foreclosure and delinquency data |
 
-## Instagram Research Sources
+---
+
+## Local News and Events Sources
+
+Used by the Local News and Events agent. This is the quick-hit beat: things happening around the valley that locals actually talk about. Residents first, tourists never.
+
+### The four anchors (check every single run)
 
 | Source Name | URL | What to Check |
 |-------------|-----|---------------|
-| @vegaslocals | instagram.com/vegaslocals | Recent posts from the last 8-10 days. Covers development news, community events, and general Las Vegas local stories. Cross-category source. |
+| LVMPD Press Releases | lvmpd.com/about/news-events/press-releases | Highest-cadence hard news source in the valley. Multiple same-day posts. Public safety items of broad community interest |
+| Seeing Orange NV (RTC) | seeingorangenv.com/traffic-alerts | BEST traffic source. Refreshes every Thursday, aggregates city, county and NDOT closures in plain text |
+| Las Vegas Weekly Things To Do | lasvegasweekly.com/ae | Recurring Wednesday "What to do this week" roundup. Pre-curated events feed |
+| RJ Neon Dining Out | neon.reviewjournal.com/dining-out | Restaurant and bar openings, closings, chef news. Highest-engagement quick-hit format after public safety |
 
-**How to use:** During the research phase, search for `site:instagram.com vegaslocals` or check the account directly for story leads. Any stories found here still need verification against traditional news sources before inclusion. Use @vegaslocals posts as leads, not as primary sources.
+### Events, festivals, things to do
+
+| Source Name | URL | What to Check |
+|-------------|-----|---------------|
+| RJ Neon Calendar | neon.reviewjournal.com/calendar | The RJ's dedicated things-to-do calendar |
+| City of Las Vegas Events | lasvegasnevada.gov/Residents/Events | City concerts, plays, festivals |
+| Clark County Calendar | clarkcountynv.gov/calendar?calendar=65 | Parks and rec filter, countywide |
+| Library District Events | events.thelibrarydistrict.org | 25 branches, filterable by branch and audience. Goldmine for free family events |
+| Springs Preserve | springspreserve.org/events/index.cfml | Seasonal festivals, Cool Nights, holiday events |
+| Eventbrite Las Vegas | eventbrite.com/d/nv--las-vegas/events | Grassroots and pop-up events |
+| Visit Las Vegas | visitlasvegas.com/events | Broad events calendar. Blocks scrapers, read in a browser |
+
+### Openings, closings, local business
+
+| Source Name | URL | What to Check |
+|-------------|-----|---------------|
+| Vital Vegas | casino.org/vitalvegas | Scott Roeben scoops on casino and off-Strip closures |
+| Eater Vegas | vegas.eater.com | Opening and closing tracker. Bot-walled, read in a browser |
+| VEGAS INC Business | vegasinc.lasvegassun.com/news/business | Business openings, expansions, permits |
+| RJ Vegas Business | reviewjournal.com/business/vegas-business | Development, retail, commercial |
+
+### Traffic and road closures
+
+| Source Name | URL | What to Check |
+|-------------|-----|---------------|
+| Nevada 511 | nvroads.com/list/events/traffic | Live incidents, closures, cameras |
+| NDOT News Releases | dot.nv.gov/doing-business/news/news-releases | I-15, I-11, 215 project closures |
+| RTC Newsroom | rtcsnv.com/news | Transit changes, detours, service alerts |
+| RJ Traffic | reviewjournal.com/local/traffic | Crash and closure stories with narrative |
+
+### Weather, heat, monsoon, utilities
+
+| Source Name | URL | What to Check |
+|-------------|-----|---------------|
+| NWS Las Vegas | weather.gov/vef | Forecasts, records, heat and monsoon |
+| NWS Vegas RSS | weather.gov/rss_page.php?site_name=vef | Machine-readable alert feed |
+| Active Warnings | forecast.weather.gov/wwamap/wwatxtget.php?cwa=VEF | Excessive heat, flash flood, dust |
+| NV Energy Outage Map | nvenergy.com/outages-and-safety/outage-map | Storm outages |
+| Southern Nevada Health District | southernnevadahealthdistrict.org/news-info/news-room | Heat illness data, air quality, restaurant closures |
+
+### Public safety
+
+| Source Name | URL | What to Check |
+|-------------|-----|---------------|
+| LVMPD Press Releases | lvmpd.com/about/news-events/press-releases | Numbered traffic fatalities, incidents, community alerts |
+| Henderson Police | cityofhenderson.com/our-city/news | Henderson incidents |
+| 8 News Now Local | 8newsnow.com/news/local-news | Investigative crime and safety reporting |
+
+### Concerts, residencies, sports beyond hockey
+
+| Source Name | URL | What to Check |
+|-------------|-----|---------------|
+| Allegiant Stadium | allegiantstadium.com/events | Raiders, UNLV football, stadium concerts |
+| T-Mobile Arena | tmobilearena.com/events | Arena concerts, fights |
+| MGM Grand Garden Arena | thegardenarena.com | Concerts and boxing |
+| The Smith Center | smithcenter.com | Broadway tours, symphony |
+| LV Motor Speedway | lvms.com/events | South Point 400, NHRA, Glittering Lights |
+| F1 Las Vegas GP | f1lasvegasgp.com/2026 | Race weekend, road closures. Use the year path, the root serves stale content |
+| Las Vegas Aces | aces.wnba.com/schedule | WNBA |
+| Raiders | raiders.com | NFL |
+| Las Vegas Aviators | milb.com/las-vegas/schedule | Triple-A baseball, locals-attended promo nights |
+| Las Vegas Lights FC | lasvegaslightsfc.com | USL soccer at Cashman |
+
+### Neighborhood level (rotate one per week so every area gets covered monthly)
+
+| Area | URL | What to Check |
+|------|-----|---------------|
+| Summerlin | summerlin.com/experience/events, summerlin.com/about/news | Community events, new villages, retail openings |
+| Summerlin news desk | reviewjournal.com/local/summerlin | Neighborhood reporting |
+| Henderson | cityofhenderson.com/our-city/news, cityofhenderson.com/our-city/event-meeting-calendar | City news, council, parks programming |
+| Henderson news desk | reviewjournal.com/local/henderson | Best non-city Henderson feed |
+| Green Valley | shopthedistrictgvr.com/events | Farmers market, Movies on The Green, Fiesta Fridays |
+| North Las Vegas | cityofnorthlasvegas.com/our-city/newsroom, cityofnorthlasvegas.com/things-to-do/events-calendar | City press releases, groundbreakings |
+| Craig Ranch / The AMP | cityofnorthlasvegas.com/things-to-do/parks-and-recreation/craig-ranch-regional-park/the-amp-park-events | Strongest single neighborhood events page. Festivals, Bike Fest, Balloon Glow |
+| North LV news desk | reviewjournal.com/local/north-las-vegas | Neighborhood reporting |
+| Skye Canyon | skyecanyon.com/skye-events, skyecanyon.com/blog | Only neighborhood calendar with a clean iCal feed |
+| Centennial Hills | lasvegasnevada.gov/Residents/Parks-Facilities/Centennial-Hills-Center | Rec center programming |
+| Boulder City | bouldercityreview.com/news | Strongest hyper-local original reporting in the region. Council, Lake Mead, Hoover Dam, small business |
+| Southwest / East Valley | reviewjournal.com/local/southwest, reviewjournal.com/local/east-valley | Zoned neighborhood coverage |
+
+### Community, human interest, civic
+
+| Source Name | URL | What to Check |
+|-------------|-----|---------------|
+| City of LV News Releases | lasvegasnevada.gov/News/News-Releases | Programs, ribbon cuttings, service changes |
+| Clark County News Releases | clarkcountynv.gov/government/departments/public_communications/alerts/news-releases | County announcements |
+| CCSD Newsroom | newsroom.ccsd.net | Cross-check only. School board business belongs to the School Board agent |
+
+### Core daily news desks (all beats)
+
+| Source Name | URL | What to Check |
+|-------------|-----|---------------|
+| Las Vegas Review-Journal Local | reviewjournal.com/local | Highest-volume local desk in the valley |
+| News 3 Las Vegas (KSNV) | news3lv.com/news/local | Freshest TV feed, hour-stamped |
+| FOX5 Vegas (KVVU) | fox5vegas.com/news | Fast breaking, strong viral and quirky local |
+| KTNV 13 | ktnv.com/news | Consumer and "Contact 13" angle |
+| 8 News Now (KLAS) | 8newsnow.com/news/local-news | Crime and investigations |
+| Las Vegas Sun | lasvegassun.com/news | Slower cadence, good depth |
+| The Nevada Independent | thenevadaindependent.com | Statewide policy that lands locally |
+| Nevada Current | nevadacurrent.com | Policy, housing, labor, utilities |
+
+### Known-bad URLs, do not use
+
+These appear in older configs and are dead or redirected. Use the replacements listed above.
+
+- `lasvegaslocally.com` is a dead placeholder. Follow the Instagram account instead
+- `vitalvegas.com` redirects to casino.org/vitalvegas
+- `reviewjournal.com/entertainment/food` redirects to neon.reviewjournal.com/dining-out
+- `ndot.nv.gov` is wrong. The domain is `dot.nv.gov`
+- `thespringspreserve.org` is dead. It is `springspreserve.org`, no "the"
+- `downtownsummerlin.com` redirects into `summerlin.com`
+- `lasvegasmotorspeedway.com` redirects to `lvms.com`
+- `lasvegasraiders.com` is wrong. It is `raiders.com`
+- `snhd.info` redirects to southernnevadahealthdistrict.org
+- `lasvegasballpark.com` is bot-blocked. Use milb.com/las-vegas
+- `bcnv.org` is bot-blocked. Use bouldercityreview.com
+
+### Sources that block automated fetching
+
+Read these in a browser or substitute a working alternate. Do not let a failed fetch drop a real story: vegas.eater.com, visitlasvegas.com, eventbrite, meetup, smithcenter.com, tmobilearena.com, thegardenarena.com, lasvegasballpark.com, bcnv.org, clarkcountynv.gov root, nvenergy.com.
+
+---
+
+## Instagram Research Sources
+
+Use these accounts as **LEADS ONLY.** Every story found here must be verified against a primary or traditional news source before it goes in the package. Never cite an Instagram account as the source of a story.
+
+| Source Name | URL | What to Check |
+|-------------|-----|---------------|
+| @realvegaslocals | instagram.com/realvegaslocals | ~158K. The model for this beat. Local news, development, public safety, transportation, housing, schools, utility costs, business openings and closures, community events. Residents first, never tourist-facing. Also at faq.realvegaslocals.com and links.realvegaslocals.com |
+| @lasvegaslocally | instagram.com/lasvegaslocally | ~302K. Interesting, strange and useful stuff from the valley |
+| @vegasissues | instagram.com/vegasissues | ~425K. News, memes, local things |
+| @vegasstarfish | instagram.com/vegasstarfish | ~1M. Everything Las Vegas. Also large on TikTok |
+| @raisedinvegas | instagram.com/raisedinvegas | ~262K. Born-and-raised angle |
+| @vitalvegas | instagram.com/vitalvegas | Small following, outsized scoop rate |
+| @vegaslocals | instagram.com/vegaslocals | Development news, community events, general local stories |
+| News outlets | @reviewjournal, @lasvegasweekly, @news3lv, @ktnv, @8newsnow, @fox5vegas, @lasvegassun, @thenevadaindependent | What the local desks are pushing hardest |
+| Food | @eatervegas, @thelasvegasfoodie, @lasvegasfoodcorner, @vegasdining | Openings, closings, what people are lining up for |
+| Institutional | @lvmpd, @clarkcountynv, @cityofhenderson, @clarkcountysch, @clarkcountyfd, @downtownsummerlin | Primary-source speed on incidents and announcements |
+
+**Do not use:** @eater_vegas (wrong handle, does not exist), @vegasfoodandfun (no evidence it exists), @secretlasvegas (a small tour operator, not a media brand).
+
+**How @realvegaslocals actually operates,** per their own published FAQ: they pull from city and county press releases, public meetings, government records, official statements, public safety agencies, court filings, development applications, local businesses, community organizations, and resident tips. They monitor neighborhood groups and social media to spot stories, then verify against official records. The formula is a government press release or public safety item plus a legacy outlet's story, restated as a short punchy hook with a question prompt at the end. Very little original reporting. Copy the sourcing discipline and the beat selection, not the aggregation.
+
+**How to use:** During research, check the accounts directly or search `site:instagram.com [handle]` for story leads. Then trace every lead back to its primary source and cite that.
 
 ---
 
@@ -92,7 +264,8 @@ Used by the National-to-Local Real Estate agent. Find the national trigger story
 
 When searching, always include time-relevant terms to get recent results:
 
-- Include `[month] [year]` in queries (e.g., "May 2026")
+- Include `[month] [year]` in queries (e.g., "August 2026")
 - Include `[current week]` or `this week` for very recent stories
 - Try both the specific location and "Las Vegas" as search terms
 - Follow up on stories that reference earlier coverage
+- For events, search forward: "things to do Las Vegas this weekend [month] [year]"

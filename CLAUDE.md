@@ -10,9 +10,10 @@ This tree holds **four separate businesses plus shared tooling**, one per top-le
 |---|---|---|
 | **[Rose Homes LV/](Rose%20Homes%20LV/)** | The real estate business — all realtor content, clients, listings, transactions, marketing. | Rose Homes LV / Real Broker |
 | **[AI Clients/](AI%20Clients/)** | AI consulting & automation client work (Brian Esposito, Crystal, Nick Nolf, Zbuyer). | AI automation agency |
-| **[SKOOL Community/](SKOOL%20Community/)** | "The Leveraged Agent" Skool community — course modules, VSL, student content. | Skool / coaching |
+| **[SKOOL Community/](SKOOL%20Community/)** | "The Leveraged Agent" Skool community — course modules, VSL, student content, plus the Jack Roberts course archive used for the onboarding rebuild. | Skool / coaching |
 | **[Content Channels/](Content%20Channels/)** | Faceless / personal content channels (Codename History) and research (Karpathy Autoresearch). | Media / personal |
 | **[Personal/](Personal/)** | Personal knowledge bases (My Wiki Obsidian vault, LLM-Wiki). | Personal |
+| **[_Rebel Hockey/](_Rebel%20Hockey/)** | Ryan's son's 8U Rebels ice hockey team, where Ryan coaches. Team branding and schedule graphics. | Personal |
 | **[_System/](_System/)** | Shared tooling: all plugin dev-copies, skill sources, dev tools, and `.zip` snapshots. | Infrastructure |
 
 Loose at the root: `CLAUDE.md` (this file), `serve.rb` (preview server), `hyperframes/` (self-contained video-generation tool/repo).
@@ -38,12 +39,26 @@ Many of those running skills reference workspace content by **hardcoded absolute
 
 ## Local preview server
 
-[serve.rb](serve.rb) is a WEBrick server on port 8091 that serves the current working directory. Use it to preview standalone HTML (landing pages, buyer guides, CMAs, infographics) before publishing.
+[serve.rb](serve.rb) is a WEBrick server on **127.0.0.1:8091** that does two jobs: it serves the
+workspace as static files for previewing standalone HTML (landing pages, buyer guides, CMAs,
+infographics), and it backs the Command Center with a small localhost API that runs allow-listed
+skills through headless `claude -p`.
 
 ```bash
 ruby serve.rb
 # then open http://localhost:8091/<path-to-html>
 ```
+
+**Executor rules, do not weaken these.** Every runnable command is a constant in the `COMMANDS`
+hash in `serve.rb`; the page posts an **id**, never a command string, so a compromised page cannot
+invent a command. Commands spawn as an argv array, never through a shell. Cross-origin POSTs and
+non-JSON content types are refused, because any website you visit can otherwise POST to localhost.
+Permission mode defaults to `acceptEdits`; `bypassPermissions` is never used. To add a skill button,
+add an entry to `COMMANDS` and a matching `data-id` button in the dashboard, nothing else.
+
+Headless runs draw Ryan's **Claude Max subscription**, not an API key, so they consume the same
+5-hour and weekly windows as interactive sessions. That is why read-only panels are baked by the
+6am build and only make-something skills spend a live run.
 
 ## Permissions
 
@@ -70,12 +85,35 @@ Apply everywhere unless a folder's own `CLAUDE.md` overrides them. (These are st
 Claude/
 ├── CLAUDE.md                 # this file (root guide)
 ├── serve.rb                  # localhost:8091 preview server
+├── output/                   # generated skill artifacts
+│   ├── fourplex/             # Aug 2026 LV fourplex investment screen: 110 active MLS
+│   │                         #   listings re-underwritten (fourplex-screen.html +
+│   │                         #   fourplex_ranked.csv). Source PDFs in ~/Downloads.
+│   └── local-seo/            # rosehomeslv.com SEO work: audits, keyword research,
+│       │                     #   the Cowork prompt, and paste-ready page files
+│       └── pages/
+│           ├── paste/                # New Construction hub (the OLD live hub, being replaced by /las-vegas-new-construction)
+│           ├── paste-relocation/     # Relocation hub (ready to paste, /moving-to-las-vegas)
+│           ├── img/                  # source images + REGEN-PROMPTS.md
+│           └── covers/               # SNS / social cover images
 ├── hyperframes/              # self-contained video-generation tool (own git repo)
 ├── Rose Homes LV/            # real estate business  → Rose Homes LV/CLAUDE.md
+│                             #   incl. Dashboard/ = localhost Command Center on port 8091
+│                             #   incl. Diverse Dispute/ (vendor refund file, deadline 2026-12-19)
 ├── AI Clients/               # AI consulting clients  → AI Clients/CLAUDE.md
 ├── SKOOL Community/          # The Leveraged Agent Skool  → SKOOL Community/CLAUDE.md
+│                             #   incl. Claude Code Course for Realtors/ = Ryan's FLAGSHIP course
+│                             #   build. One Skool tile, Level 0-10 + 3 bonus drops, carried
+│                             #   artifact = the Business Brain folder. Written, not recorded.
+│                             #   Index: SKOOL Community/Claude Code Course for Realtors/COURSE-MAP.md
+│                             #   incl. Jack Roberts AI Course/ = complete local archive of Jack
+│                             #   Roberts' "Claude Code Course" from skool.com/aiautomationsbyjack
+│                             #   (25 lessons, transcripts, attachments, images). Competitor
+│                             #   reference for the Leveraged Agent onboarding rebuild.
+│                             #   Index: SKOOL Community/Jack Roberts AI Course/COURSE-MAP.md
 ├── Content Channels/         # Codename History, Karpathy  → Content Channels/CLAUDE.md
 ├── Personal/                 # wikis  → Personal/CLAUDE.md
+├── _Rebel Hockey/            # 8U Rebels team branding + schedules  → _Rebel Hockey/CLAUDE.md
 └── _System/                  # plugins, skills, tools, zips  → _System/CLAUDE.md
 ```
 

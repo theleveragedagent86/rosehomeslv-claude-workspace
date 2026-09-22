@@ -19,7 +19,12 @@
       "Bash(open -a \"Google Chrome\" \"/Users/ryanrose/pricing-infographic/preview.html\")",
       "WebFetch(domain:topoflasvegas.com)",
       "Skill(schedule)",
-      "Skill(schedule:*)"
+      "Skill(schedule:*)",
+      "Bash(ffprobe -v error -show_entries format=duration,size -show_entries stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate -of default=noprint_wrappers=1 \"Britain Stole 3 Ships and Denied It.mp4\")",
+      "Bash(ffprobe -v error -show_entries format=duration,size -show_entries stream=index,codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels -of default=noprint_wrappers=0 \"How a Fake Army Won D-Day.mp4\")",
+      "mcp__claude-in-chrome__javascript_tool",
+      "mcp__claude-in-chrome__computer",
+      "mcp__claude-in-chrome__browser_batch"
     ]
   }
 }

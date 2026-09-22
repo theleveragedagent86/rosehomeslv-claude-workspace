@@ -17,10 +17,10 @@
 **Meta Description:** California residents moving to Summerlin can save $12,000+ per year in state income taxes alone. Complete guide to income tax, property tax, and residency tips.
 
 **Internal Links Used:**
-- /blogs/relocating-summerlin-from-california
-- /blogs/cost-of-living-summerlin
-- /blogs/moving-to-summerlin-relocation
-- /blogs/summerlin-home-prices-2026
+- /blog/relocating-summerlin-from-california
+- /blog/cost-of-living-summerlin
+- /blog/moving-to-summerlin-relocation
+- /blog/summerlin-home-prices-2026
 
 ---
 
@@ -36,10 +36,10 @@
 **Meta Description:** Side-by-side comparison of Nevada and California taxes. No income tax, lower property taxes, and no estate tax make Summerlin a top destination for CA buyers.
 
 **Internal Links Used:**
-- /blogs/california-to-summerlin-tax-savings
-- /blogs/cost-of-living-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-home-prices-2026
+- /blog/california-to-summerlin-tax-savings
+- /blog/cost-of-living-summerlin
+- /blog/summerlin-living-guide
+- /blog/summerlin-home-prices-2026
 
 ---
 
@@ -55,10 +55,10 @@
 **Meta Description:** Texas families moving to Summerlin save big on property taxes (0.5-0.7% vs 1.6-1.8%). Compare cost of living, schools, and lifestyle between TX and Summerlin.
 
 **Internal Links Used:**
-- /blogs/moving-to-summerlin-relocation
-- /blogs/cost-of-living-summerlin
-- /blogs/best-schools-summerlin
-- /blogs/is-summerlin-safe-crime-rates
+- /blog/moving-to-summerlin-relocation
+- /blog/cost-of-living-summerlin
+- /blog/best-schools-summerlin
+- /blog/is-summerlin-safe-crime-rates
 
 ---
 
@@ -74,10 +74,10 @@
 **Meta Description:** PCS guide for military families moving to Summerlin near Nellis and Creech AFB. Covers commute times, BAH, schools, on-base housing, and neighborhood options.
 
 **Internal Links Used:**
-- /blogs/moving-to-summerlin-relocation
-- /blogs/best-schools-summerlin
-- /blogs/is-summerlin-safe-crime-rates
-- /blogs/setting-up-utilities-summerlin
+- /blog/moving-to-summerlin-relocation
+- /blog/best-schools-summerlin
+- /blog/is-summerlin-safe-crime-rates
+- /blog/setting-up-utilities-summerlin
 
 ---
 
@@ -93,10 +93,10 @@
 **Meta Description:** Summerlin offers remote workers no state income tax, gigabit internet, dedicated coworking spaces, and 10-30% lower expenses vs coastal metros. Complete guide.
 
 **Internal Links Used:**
-- /blogs/coworking-spaces-summerlin
-- /blogs/cost-of-living-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/moving-to-summerlin-relocation
+- /blog/coworking-spaces-summerlin
+- /blog/cost-of-living-summerlin
+- /blog/summerlin-living-guide
+- /blog/moving-to-summerlin-relocation
 
 ---
 

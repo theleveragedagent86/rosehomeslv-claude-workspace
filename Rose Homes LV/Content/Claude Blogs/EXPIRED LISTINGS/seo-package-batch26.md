@@ -7,7 +7,7 @@
 
 ## Post 121: Why Your MacDonald Ranch Home Isn't Selling
 **Slug:** why-macdonald-ranch-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-macdonald-ranch-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-macdonald-ranch-home-isnt-selling
 
 **SEO Title:** Why Your MacDonald Ranch Home Isn't Selling | Rose Homes LV
 **Meta Description:** MacDonald Ranch home not selling? Learn why Henderson luxury listings expire and what pricing, staging, and marketing changes can get your home sold fast.
@@ -20,7 +20,7 @@
 
 ## Post 122: Home Didn't Sell in MacDonald Ranch. What to Do Next
 **Slug:** home-didnt-sell-macdonald-ranch-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-macdonald-ranch-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-macdonald-ranch-next
 
 **SEO Title:** Home Didn't Sell in MacDonald Ranch? What to Do Next | Rose Homes LV
 **Meta Description:** MacDonald Ranch listing expired? Get a step by step plan to relist your Henderson home with better pricing, marketing, and staging that attracts serious buyers.
@@ -33,7 +33,7 @@
 
 ## Post 123: Why Your Home in The Lakes Isn't Selling
 **Slug:** why-the-lakes-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-the-lakes-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-the-lakes-home-isnt-selling
 
 **SEO Title:** Why Your Home in The Lakes Isn't Selling | Rose Homes LV
 **Meta Description:** Home in The Lakes Las Vegas not selling? Discover why waterfront community listings expire and what updates, pricing, and marketing changes make the difference.
@@ -46,7 +46,7 @@
 
 ## Post 124: Home Didn't Sell in The Lakes. What to Do Next
 **Slug:** home-didnt-sell-the-lakes-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-the-lakes-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-the-lakes-next
 
 **SEO Title:** Home Didn't Sell in The Lakes? What to Do Next | Rose Homes LV
 **Meta Description:** The Lakes listing expired? Learn how to relist your Las Vegas waterfront community home with the right updates, pricing strategy, and lifestyle driven marketing.

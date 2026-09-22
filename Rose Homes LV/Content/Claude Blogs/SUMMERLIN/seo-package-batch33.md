@@ -17,10 +17,10 @@
 **Meta Description:** Find the best pediatricians in Summerlin, Las Vegas. Board-certified children's doctors, telehealth options, and what parents should know about pediatric care in the community.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-families-guide
-- /blogs/daycare-preschools-summerlin
-- /blogs/moving-to-summerlin-relocation
+- /blog/summerlin-living-guide
+- /blog/summerlin-families-guide
+- /blog/daycare-preschools-summerlin
+- /blog/moving-to-summerlin-relocation
 
 ---
 
@@ -36,8 +36,8 @@
 **Meta Description:** Discover the best hair salons and barbershops in Summerlin, Las Vegas. From upscale experiences at Tivoli Village to neighborhood favorites along Charleston and Rampart.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-families-guide
+- /blog/summerlin-living-guide
+- /blog/summerlin-families-guide
 
 ---
 
@@ -53,9 +53,9 @@
 **Meta Description:** Find trusted auto repair shops and mechanics in Summerlin, Las Vegas. Learn about desert-specific car maintenance, common vehicle issues in the heat, and how to choose a reliable shop.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-weather-climate
-- /blogs/moving-to-summerlin-relocation
+- /blog/summerlin-living-guide
+- /blog/summerlin-weather-climate
+- /blog/moving-to-summerlin-relocation
 
 ---
 
@@ -71,10 +71,10 @@
 **Meta Description:** Find the best landscaping companies in Summerlin, Las Vegas. Learn about xeriscaping, artificial turf, HOA landscaping requirements, SNWA water restrictions, and desert yard maintenance.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/hoa-rules-new-residents-summerlin
-- /blogs/summerlin-weather-climate
-- /blogs/cost-of-living-summerlin
+- /blog/summerlin-living-guide
+- /blog/hoa-rules-new-residents-summerlin
+- /blog/summerlin-weather-climate
+- /blog/cost-of-living-summerlin
 
 ---
 
@@ -90,7 +90,7 @@
 **Meta Description:** Find the best pest control services in Summerlin, Las Vegas. Learn about common desert pests like scorpions and black widows, treatment plans, and what homeowners near Red Rock should know.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/best-veterinarians-summerlin
-- /blogs/setting-up-utilities-summerlin
-- /blogs/hoa-rules-new-residents-summerlin
+- /blog/summerlin-living-guide
+- /blog/best-veterinarians-summerlin
+- /blog/setting-up-utilities-summerlin
+- /blog/hoa-rules-new-residents-summerlin

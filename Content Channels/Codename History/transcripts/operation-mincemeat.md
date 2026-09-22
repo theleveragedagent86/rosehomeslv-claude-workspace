@@ -3,7 +3,7 @@
 **Target runtime:** 15-45 minutes (Deep-dive Operation tier; ~2,700 narration words at ~150 wpm, roughly 18 minutes)
 **Style:** OverSimplified format. Comedic animated history. Flat colors, simple characters, exaggerated reactions, fake country dialogue. Comedy on the absurdity; human cost played completely straight.
 **Story type:** Single genuinely codenamed operation (real, documented): the 1943 British deception Operation Mincemeat.
-**Title (deep-dive, codenamed op):** `Codename: Mincemeat - The Dead Man Who Fooled Hitler | Codename History`
+**Title (LOCKED, hook-first per package-lock.md):** `The Dead Man Who Fooled the Nazis | Codename History`
 
 > ACCURACY NOTE FOR PRODUCTION: This is semi-famous thanks to Ben Macintyre's 2010 book and the 2021 film. The fresh angle is the straight-played human story of Glyndwr Michael, a real, forgotten, homeless man whose body carried the whole deception, sitting underneath the clever caper. Do NOT repeat the old myth that the body was a willing volunteer or a conveniently unnamed pauper. The record identifies Glyndwr Michael, though some details (whether the poisoning was suicide or accidental, and a later theory that a different body was used) remain debated. Note the identification and its debate honestly. Keep the jokes on the absurdity; keep the facts straight.
 >
@@ -11,9 +11,13 @@
 
 ---
 
-## COLD OPEN (0:00 - 0:45)
+## COLD OPEN (0:00 - 1:10)
 
-**[VISUAL: A cold London mortuary, early 1943. A sheet-covered body on a slab. Two nervous British officers in suits stand over it, one checking a clipboard.]**
+**[VISUAL: COLD. No logo, no intro, no title. Pre-dawn. Dark water off the coast of Spain. A dead man in a British officer's uniform drifts face down, a black briefcase chained to his coat and dragging just below the surface. A thin grey shoreline in the distance. Hold three seconds. Then hard cut back in time.]**
+
+**NARRATOR:** This is a dead man, floating toward the coast of Spain with a briefcase chained to him. Everything inside it is a lie.
+
+**[VISUAL: Hard cut. A cold London mortuary, three months earlier, early 1943. A sheet-covered body on a slab. Two nervous British officers in suits stand over it, one checking a clipboard.]**
 
 **NARRATOR:** In 1943, two British intelligence officers stood over a dead body and made it a plan. Not part of a plan. The plan.
 
@@ -21,15 +25,19 @@
 
 **NARRATOR:** They gave the dead man a fake name. A fake rank. A fake fiancee. Fake love letters. A fake overdraft, because nothing says believable British officer like being slightly in debt. An entire fake life, stitched onto a stranger who could not object.
 
+**[VISUAL: A wall of familiar D-Day landing-craft imagery, flat animated. It slides away to reveal one small coat pocket.]**
+
+**NARRATOR:** Everyone knows D-Day. Almost nobody knows that a year before it, the Allies got their first foothold in Europe using the coat pocket of a man nobody claimed.
+
 **[VISUAL: A submarine slides the body into the dark sea off a coastline. Cut to a map of Europe with a giant red question mark over the Mediterranean.]**
 
-**NARRATOR:** Then they dropped him in the ocean and let the Nazis find him. And it worked so well that it may have saved thousands of lives. This is the story of a corpse that went to war. And of the forgotten man who never knew he was in it.
+**NARRATOR:** Then they dropped him in the ocean and let the Nazis find him. And it worked so well that it may have saved thousands of lives. This is the story of a corpse that went to war. And of the forgotten man who never knew he was in it. And I promise you, every part of this is real.
 
 **[TITLE CARD: "CODENAME: MINCEMEAT"]**
 
 ---
 
-## ACT 1: THE MOST OBVIOUS INVASION IN HISTORY (0:45 - 3:15)
+## ACT 1: THE MOST OBVIOUS INVASION IN HISTORY (1:10 - 3:45)
 
 **[VISUAL: A map of the Mediterranean, early 1943. North Africa glows Allied green. A giant Allied army stands on the coast, cracking its knuckles, looking north.]**
 
@@ -71,11 +79,11 @@
 
 **[VISUAL: The two officers from the cold open read the memo, look at each other, and slowly grin.]**
 
-**NARRATOR:** For four years, that suggestion sat in the drawer, too grim and too weird for anyone to touch. In 1943, two men finally were desperate enough. Hold that thought.
+**NARRATOR:** For four years, that suggestion sat in the drawer, too grim and too weird for anyone to touch. In 1943, two men finally were desperate enough. And the smallest object in this entire story, something you could lose in a blink, is what would eventually tell them whether it had worked. Hold that thought.
 
 ---
 
-## ACT 2: TWO MEN AND A VERY BAD IDEA (3:15 - 6:00)
+## ACT 2: TWO MEN AND A VERY BAD IDEA (3:45 - 6:40)
 
 **[VISUAL: Two British officers stand side by side. One in a naval uniform, one in RAF blue.]**
 
@@ -109,11 +117,11 @@
 
 **[VISUAL: The two officers gently lift the sheet. Neutral, respectful, not comedic.]**
 
-**NARRATOR:** So a homeless man who died alone and forgotten was about to become the most important officer in the British military. He just wouldn't know it. Nobody would, for over fifty years.
+**NARRATOR:** So a homeless man who died alone and forgotten was about to become the most important officer in the British military. He just wouldn't know it. Nobody would, for over fifty years. First, though, they had to build him a life. Every piece of it, down to the woman who loved him.
 
 ---
 
-## ACT 3: BUILDING A MAN WHO NEVER EXISTED (6:00 - 9:00)
+## ACT 3: BUILDING A MAN WHO NEVER EXISTED (6:40 - 9:55)
 
 **[VISUAL: The tone lifts back to comedic. A recruitment-style poster reading "MAJOR WILLIAM MARTIN, ROYAL MARINES," with the corpse's silhouette saluting.]**
 
@@ -161,15 +169,15 @@
 
 **[VISUAL: An officer carefully placing a single eyelash inside a folded letter, then resealing it.]**
 
-**NARRATOR:** And the detail I cannot get over. They slipped a single eyelash inside one folded letter before sealing it. So that later, if the eyelash was gone, they'd know the Germans had opened it. An eyelash. As a tripwire. Not a wax seal, not a code. A single eyelash, deployed as counterintelligence. These people thought of everything, and then thought of a few things nobody asked for.
+**NARRATOR:** And here is that smallest object I told you to hold on to. The detail I cannot get over. They slipped a single eyelash inside one folded letter before sealing it. So that later, if the eyelash was gone, they'd know the Germans had opened it. An eyelash. As a tripwire. Not a wax seal, not a code. A single eyelash, deployed as counterintelligence. These people thought of everything, and then thought of a few things nobody asked for.
 
 **[VISUAL: The briefcase is chained to the corpse's coat. Cut to a steel canister packed with dry ice, lid closing.]**
 
-**NARRATOR:** The documents were secured to the body. Major William Martin was sealed into a canister packed with dry ice to keep him from decaying. And Major Martin, who was really Glyndwr Michael, who never signed up for any of this, was ready to ship out.
+**NARRATOR:** The documents were secured to the body. Major William Martin was sealed into a canister packed with dry ice to keep him from decaying. And Major Martin, who was really Glyndwr Michael, who never signed up for any of this, was ready to ship out. From here on, the British controlled nothing. It came down to one submarine, one Spanish beach, and a country that was neutral on paper only.
 
 ---
 
-## ACT 4: A SUBMARINE, A CORPSE, AND A PSALM (9:00 - 11:30)
+## ACT 4: A SUBMARINE, A CORPSE, AND A PSALM (9:55 - 12:25)
 
 **[VISUAL: The submarine HMS Seraph at a Scottish dock, the canister being carefully loaded aboard.]**
 
@@ -209,11 +217,11 @@
 
 ---
 
-## ACT 5: THE NAZIS SWALLOW IT WHOLE (11:30 - 14:30)
+## ACT 5: THE NAZIS SWALLOW IT WHOLE (12:25 - 15:25)
 
 **[VISUAL: The briefcase, now open. A close-up on a folded letter. The eyelash is gone.]**
 
-**NARRATOR:** The documents came back to the British through official channels. Returned politely, as if untouched, with a straight face and everything. But the British checked their tripwire. The eyelash was gone. The letters had been opened, read, and resealed. Somebody had looked. The insane eyelash plan had worked, which had to be a strange thing to feel proud of.
+**NARRATOR:** The documents came back to the British through official channels. Returned politely, as if untouched, with a straight face and everything. But the British checked their tripwire. The eyelash was gone. The letters had been opened, read, and resealed. Somebody had looked. They had caught German intelligence with an eyelash. Which had to be a strange thing to feel proud of.
 
 **[VISUAL: A Nazi intelligence office. German officers passing the letters around, nodding gravely, circling "GREECE" on a map.]**
 
@@ -251,7 +259,7 @@
 
 ---
 
-## ACT 6: THE MAN WHO NEVER WAS (14:30 - 17:00)
+## ACT 6: THE MAN WHO NEVER WAS (15:25 - 17:55)
 
 **[VISUAL: A quiet cemetery in Huelva, Spain. A simple headstone reading "WILLIAM MARTIN." TONE: STRAIGHT begins.]**
 
@@ -287,15 +295,15 @@
 
 ---
 
-## OUTRO (17:00 - 17:30)
+## OUTRO (17:55 - 18:25)
 
 **[VISUAL: Pull back from the Huelva grave to the whole Mediterranean map, Sicily marked with a small Allied flag.]**
 
 **NARRATOR:** So that's Operation Mincemeat. A dead body, a fake fiancee, a sardine joke, an eyelash, and a lie so good the enemy worked overtime defending the wrong coastline. Built on a forgotten man who deserved to be remembered, and finally was.
 
-**[VISUAL: End card. Subscribe button. Two thumbnails for the next episodes.]**
+**[VISUAL: End card. Subscribe button. Two thumbnails for the next episodes, one of them the Ghost Army episode.]**
 
-**NARRATOR:** For more true stories from the strangest corners of the war, the tricks, the disasters, and the people history almost lost, subscribe. Next time: the secret unit that fought the war with inflatable tanks and sound effects.
+**NARRATOR:** For more true stories from the strangest corners of the war, the tricks, the disasters, and the people history almost lost, subscribe. Next time: the Ghost Army. The American unit that fought the war with inflatable tanks and sound effects. There are two videos on the screen right now. Take either one.
 
 **[END]**
 
@@ -317,10 +325,22 @@
 - German troop movements described as reinforcements diverted toward Greece and Sardinia rather than a precise division ledger, because source counts vary.
 - The suicide-vs-accident question and the alternative-body (HMS Dasher) theory are both flagged honestly in Act 6.
 
-**Title options:**
-1. `Codename: Mincemeat - The Dead Man Who Fooled Hitler | Codename History` (recommended; the corpse-fooled-Hitler hook is the strongest curiosity gap and is accurate)
-2. `Codename: Mincemeat - The Corpse That Invaded Europe | Codename History`
-3. `Codename: Mincemeat - The Forgotten Man Who Won a Battle Dead | Codename History`
+**Title options (locked in `scripts-work/operation-mincemeat/package-lock.md`):**
+1. `The Dead Man Who Fooled the Nazis | Codename History` (RECOMMENDED. Hook-first, not codename-first, because "Mincemeat" pre-resolves the mystery for the Macintyre-book and 2021-film audience and means nothing to everyone else, so the codename earns its keep in the title card, description, and tags instead. "Nazis" not "Hitler" because the script only claims German intelligence and German commanders were deceived.)
+2. `The Corpse That Invaded Europe | Codename History`
+3. `Codename: Mincemeat - The Dead Man Who Fooled the Nazis` (search-capture variant, keeps the deep-dive series label from the project brief)
+4. `They Sent a Dead Man to War | Codename History`
+
+**Thumbnail briefs (3 concepts, 16:9, house flat-animated style, under 10 MB each):**
+- **thumb-A, "The Slab" (LOCKED PICK).** One dead man on a steel mortuary slab, low three-quarter angle, face filling the left two thirds. Eyes closed, skin drained pale grey-blue, Royal Marines peaked cap and tunic shoulder. His near hand hangs off the slab with a black leather briefcase chained to the wrist, hanging into the bottom of frame, chain catching a hard highlight. Pure black background, one harsh overhead cone of white light, a blood-red glow bleeding in from the right edge carrying a barely readable Mediterranean coastline. No blood, no gore, no comedy. On-image text: `IT WORKED` in heavy condensed white uppercase, bottom right, red drop shadow, clear of the face and briefcase.
+- **thumb-B, "The Eyelash."** Extreme macro. Tweezers holding a single eyelash above an open folded letter stamped SECRET in red, half-melted wax seal beside it. Black background, one warm desk-lamp pool of light. On-image text: `ONE EYELASH`.
+- **thumb-C, "Two Names."** A single headstone, centered, harsh side light, deep black sky. Chiselled: WILLIAM MARTIN. Beneath it a second line being cut into the stone by a chisel mid-stroke, glowing white: GLYNDWR MICHAEL. On-image text: `NOT HIS NAME`. Somber, no comedy.
+
+**Cold-open hook image (locked):** the video opens cold on the corpse in the water off Spain, briefcase chained to his coat, thin grey shoreline behind him. Three seconds, then a hard cut back in time to the London mortuary. No logo, no intro, no map pan.
+
+**Retention layer applied (see `scripts-work/operation-mincemeat/virality-audit.md`):** cold-open hook image plus "every part of this is real" credibility beat, a D-Day relatable bridge in the first twenty seconds, the Act 1 "Hold that thought" repointed at the eyelash so it is a real ten-minute loop instead of resolving four seconds later, cliffhanger endings restored to Acts 2 and 3, the eyelash payoff made quotable in Act 5, and an outro that names the next episode and points at the end screen.
+
+**Shorts (see `scripts-work/operation-mincemeat/shorts-candidates.md`):** six ranked 25 to 40 second vertical Shorts, all built from frames already described in this script so they cost nothing extra to generate. Ranked: 1) the eyelash tripwire, 2) the grave with two names, 3) the fake life they built for a dead man, 4) the sardine pun that moved an army, 5) a real officer's face went to war without him, 6) the Psalm 39 burial at four in the morning. Shorts 2 and 6 are TONE: STRAIGHT end to end.
 
 **Channel placement:** Core single-operation deep dive, exactly the channel's lane. Genuinely codenamed op, so the `Codename:` title format applies. Pairs well with other WW2 deception episodes (e.g. the inflatable-tank Ghost Army teased in the outro).
 
@@ -330,19 +350,21 @@
 
 ## YOUTUBE DESCRIPTION (for the package)
 
-In 1943 British intelligence dressed up a dead body, gave it a fake name and a fake fiancee, and floated it toward the enemy. It fooled the Nazis about where the Allies would invade Europe.
+**FINAL TITLE:** `The Dead Man Who Fooled the Nazis | Codename History`
 
-This is Operation Mincemeat, the real story behind the clever WW2 deception and the forgotten man underneath it. We cover why Sicily was too obvious to invade, how two officers turned a corpse into "Major William Martin," how HMS Seraph delivered him off Huelva, why the Germans believed it, and the true identity of the body: Glyndwr Michael, a homeless Welshman from Aberbargoed who never knew he'd been drafted into the war. We separate the legend from the record, including the myths that he "volunteered" or was a "nameless pauper."
+In 1943 the British floated a dead man toward the coast of Spain with a briefcase chained to him, and every document inside it was a lie. It worked so well the German army moved whole divisions to defend the wrong coastline.
+
+This is Operation Mincemeat, the real story behind the clever WW2 deception and the forgotten man underneath it. We cover why Sicily was too obvious to invade, how two officers turned a corpse into "Major William Martin," the single eyelash they sealed inside a letter as a tripwire, how HMS Seraph delivered him off Huelva, why the Germans believed it, and the true identity of the body: Glyndwr Michael, a homeless Welshman from Aberbargoed who never knew he'd been drafted into the war. We separate the legend from the record, including the myths that he "volunteered" or was a "nameless pauper."
 
 Chapters:
 0:00 A corpse goes to war
-0:45 The most obvious invasion in history
-3:15 Two men and a very bad idea
-6:00 Building a man who never existed
-9:00 A submarine, a corpse, and a psalm
-11:30 The Nazis swallow it whole
-14:30 The man who never was
-17:00 What it cost, and who he was
+1:10 The most obvious invasion in history
+3:45 Two men and a very bad idea
+6:40 Building a man who never existed
+9:55 A submarine, a corpse, and a psalm
+12:25 The Nazis swallow it whole
+15:25 The man who never was
+17:55 Why he mattered
 
 Obscure but real WW2 military history, told straight where it counts. Subscribe: https://www.youtube.com/@codename.history
 
@@ -355,6 +377,10 @@ SOURCES:
 - Ben Macintyre, Operation Mincemeat (Bloomsbury, 2010)
 
 #history #ww2 #operationmincemeat #militaryhistory #wwii
+
+TAGS (maxed, 500/500 characters):
+
+ww2, operation mincemeat, mincemeat, glyndwr michael, major william martin, the man who never was, ww2 history, wwii, world war 2, animated history, oversimplified, funny history, history documentary, codename history, military history, true history, history explained, war stories, ww2 deception, allied deception, invasion of sicily, operation husky, hms seraph, huelva spain, ewen montagu, charles cholmondeley, twenty committee, double cross, trout memo, nazi germany, forgotten ww2 stories, 1943
 
 ---
 

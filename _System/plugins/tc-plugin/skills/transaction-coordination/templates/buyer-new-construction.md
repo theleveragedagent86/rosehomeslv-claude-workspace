@@ -41,22 +41,53 @@ Thank you again for your business, and I look forward to a successful closing!
 
 Hello [BUYER NAME],
 
-Below are three home inspection companies I recommend. Each one does excellent work and I have had great experiences with all of them.
+Once again, congratulations on your offer being accepted. In the meantime, it is time for the next step in the process, ordering inspections. After many years in the business, I have found that all inspectors are not alike. You are free to choose any inspector you'd like. Below are inspectors that my clients have used in the past and have found to be among the best. Please take a moment and review the information below and let me know who you would like to use. I will schedule the inspection with the builder.
 
-   1. Inspect LV — (702) 210-5333 — InspectLV.com
-      - Engineering-style detailed reports delivered by 8AM the day after inspection
-      - Aerial drone roof review, infrared thermal imaging, and mold survey all included
-      - One free re-inspection to review any seller repairs
-   2. Green Tech Home Inspections — Dustin Under — greentechhomeinspections.com
-      - Comprehensive visual inspection of all major components including roof, electrical, plumbing, HVAC, and more
-      - InterNACHI member on the team following their Standards of Practice
-      - Pool and spa inspections available
-   3. Super Team Services — (817) 697-8737 — superteamservices.com
-      - Multiple experienced, licensed and insured inspectors with 40+ years of experience
-      - Free infrared thermal scans and aerial drone roof images on every report
-      - Reports delivered via email within 24 hours and one free re-inspection
 
-Please let me know which inspector you would like to go with, and I will handle getting it scheduled with the builder.
+**Inspect LV, (702) 210-5333, InspectLV.com**
+
+1. "The Most Detailed Inspection Available" is more than a slogan
+2. Advanced Scope Inspections(tm) provide greater depth and detail
+3. Our one focus is to afford the highest level of protection available to our clients.
+4. Recognized as Top 20 Home Inspection Firms Las Vegas 2016 & 2017 by Expertise.com
+5. Engineering-style detailed reports delivered NLT 8AM day after inspection.
+6. Aerial drone roof review, included. Infrared thermal imaging, included.
+7. Mold Survey, included. De-winterizing, included.
+8. Low E window orientation verification, included.
+9. Defective KITEC plumbing and Chinese drywall review, included.
+10. 10% discount to US military active duty and veterans.
+11. One NO COST re-inspection to review any Seller repairs accomplished. ($150 value).
+
+
+**Dustin Under / Green Tech Home Inspections, greentechhomeinspections.com**
+
+A GreenTech General Home Inspection consists of a visual inspection of major components of the home that are visual and accessible at the time of the inspection. With an InterNACHI member on the team, we follow their Standards of Practice which covers inspection services including the following:
+
+- Roof
+- Heating and Cooling
+- Electrical System
+- Plumbing
+- Exterior
+- Doors, Windows, and Interior
+- Fireplace
+- Attic, Insulation, and Ventilation
+- Pools & Spas
+
+
+**Super Team Services (formerly Desert Home Inspections, Inc.), (817) 697-8737, yoursuperinspectorlasvegas.com**
+
+- Inspectors Providing Quality Inspections Since 2004
+- Multiple Experienced, Licensed & Insured Inspectors
+- 40+ years Home & Commercial Building Experience
+- Emphasis on Home Safety and Structure
+- The Desert Home Edge....Professionalism
+- Identifying and Classifying Problems/Concerns
+- InfraRed Thermal Scans FREE on Every Home
+- Reports Delivered via Email Within 24 Hours
+- Pool & Spa Inspections
+- Angie's List Highest Rated Inspection Company
+- Free aerial drone roof images on every report
+- One free reinspection
 
 IMPORTANT: Our due diligence / inspection deadline is [INSPECTION DEADLINE], so we want to get this scheduled as soon as possible.
 

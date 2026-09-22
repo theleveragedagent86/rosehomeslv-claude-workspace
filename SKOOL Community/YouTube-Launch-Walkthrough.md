@@ -2,7 +2,8 @@
 
 Click-by-click guide to get the channel + intro video live. Work top to bottom. Nothing to install.
 
-Skool link (use everywhere): **https://www.skool.com/the-leveraged-agent-7674**
+Skool link (use everywhere): **https://www.skool.com/the-leveraged-agent**
+YouTube channel (use everywhere): **https://www.youtube.com/channel/UCJ_t1LMeHXO2iTx1YLMs1OA**
 
 ---
 
@@ -33,7 +34,8 @@ Go to: https://studio.youtube.com → **Customization** (left sidebar)
 
 ### Tab: Basic info
 - **Name:** The Leveraged Agent
-- **Handle:** keep existing
+- **Handle:** keep existing (no vanity @handle set as of 2026-08-21)
+- **Channel URL:** https://www.youtube.com/channel/UCJ_t1LMeHXO2iTx1YLMs1OA
 - **Description** (paste this exactly):
 ```
 I'm Ryan Rose — a licensed real estate agent in Las Vegas and the founder of The Leveraged Agent.
@@ -46,7 +48,7 @@ On this channel you'll find:
 • Weekly tutorials on ChatGPT, Claude, and automation for agents
 • Behind-the-scenes of how I run my Las Vegas business
 
-👉 Join The Leveraged Agent community: https://www.skool.com/the-leveraged-agent-7674
+👉 Join The Leveraged Agent community: https://www.skool.com/the-leveraged-agent
 📧 Business inquiries: ryan@rosehomeslv.com
 📍 Based in Las Vegas, NV
 
@@ -54,9 +56,9 @@ New video every week.
 ```
 - **Translations:** skip
 - **Links** (Add link, 4 total):
-  - The Leveraged Agent → https://www.skool.com/the-leveraged-agent-7674
+  - The Leveraged Agent → https://www.skool.com/the-leveraged-agent
   - Rose Homes LV → https://rosehomeslv.com
-  - Instagram → https://instagram.com/theleveragedagent
+  - Instagram → https://instagram.com/the.leveraged.agent
   - Email → ryan@rosehomeslv.com
 - **Contact info → Business email:** ryan@rosehomeslv.com
 - **Click PUBLISH (top right)** after every change
@@ -85,7 +87,7 @@ real estate AI, AI for realtors, real estate automation, ChatGPT for real estate
 - **Title:** leave blank
 - **Description:** paste your standard footer:
 ```
-👉 Join The Leveraged Agent: https://www.skool.com/the-leveraged-agent-7674
+👉 Join The Leveraged Agent: https://www.skool.com/the-leveraged-agent
 🏠 Website: https://rosehomeslv.com
 📧 Email: ryan@rosehomeslv.com
 ```
@@ -142,7 +144,7 @@ I'm Ryan Rose, a licensed real estate agent in Las Vegas, and I've been building
 
 Everything I teach inside The Leveraged Agent is something I use in my own business every single week.
 
-👉 Join The Leveraged Agent: https://www.skool.com/the-leveraged-agent-7674
+👉 Join The Leveraged Agent: https://www.skool.com/the-leveraged-agent
 
 ━━━━━━━━━━━━━━━━━━━━━
 WHAT YOU GET INSIDE
@@ -179,7 +181,7 @@ CONNECT
 ━━━━━━━━━━━━━━━━━━━━━
 🏠 Website: https://rosehomeslv.com
 📧 Email: ryan@rosehomeslv.com
-📸 Instagram: @theleveragedagent
+📸 Instagram: @the.leveraged.agent
 
 #RealEstateAI #RealtorTools #AIForRealtors #RealEstateAgent #RealEstateMarketing
 ```
@@ -214,7 +216,7 @@ real estate AI, AI for realtors, AI for real estate agents, real estate automati
   - Set duration to last 20 seconds
   - Element 1: **Subscribe** button (bottom-left)
   - Element 2: **Video → Best for viewer** (YouTube picks)
-  - Element 3: **Link → The Leveraged Agent** → https://www.skool.com/the-leveraged-agent-7674 (requires associated website from Part 2, already set)
+  - Element 3: **Link → The Leveraged Agent** → https://www.skool.com/the-leveraged-agent (requires associated website from Part 2, already set)
   - Save
 - **Add cards** (click Add card 3 times):
   - Card 1 at 1:45 → Link → Skool URL → Teaser text: "Join The Leveraged Agent"
@@ -248,7 +250,7 @@ real estate AI, AI for realtors, AI for real estate agents, real estate automati
 ### D. Pin a comment
 After flipping to Public (next step), post this as a comment on the video and click the 3-dot menu → Pin:
 ```
-👉 Join The Leveraged Agent here: https://www.skool.com/the-leveraged-agent-7674
+👉 Join The Leveraged Agent here: https://www.skool.com/the-leveraged-agent
 
 Your first workflow will be running in less than 10 minutes — and if you don't save at least 5 hours in your first 30 days, I'll refund every penny.
 
@@ -313,6 +315,6 @@ CTR target >6%. Avg view duration target >50%. If CTR is <4% after 72 hours, swa
 - [ ] Cross-posted to IG, Skool, email list
 
 ## Assets Ready
-- IG: @theleveragedagent
+- IG: @the.leveraged.agent
 - Headshot: `/Users/ryanrose/Downloads/Claude/Rose Homes LV/Prospecting/Expireds/Landing Page Code/erasebg-transformed (1).png` — needs a tight 800x800 crop for PFP
 - Chapter timestamps: skip for now, add after final edit

@@ -8,7 +8,7 @@
 ## Post 96: Why Your Green Valley Home Isn't Selling
 **File:** post96-why-green-valley-home-isnt-selling.html
 **Slug:** why-green-valley-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-green-valley-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-green-valley-home-isnt-selling
 
 **Meta Title:** Why Your Green Valley Home Isn't Selling | Rose Homes LV
 **Meta Description:** Your Green Valley home didn't sell. Learn how pricing mistakes, outdated presentation, and weak marketing are keeping Henderson buyers away, and how to fix it.
@@ -27,7 +27,7 @@
 ## Post 97: Home Didn't Sell in Green Valley. What to Do Next
 **File:** post97-home-didnt-sell-green-valley-next.html
 **Slug:** home-didnt-sell-green-valley-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-green-valley-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-green-valley-next
 
 **Meta Title:** Home Didn't Sell in Green Valley? What to Do Next | Rose Homes LV
 **Meta Description:** Your Green Valley listing expired. Follow these three steps smart sellers take before relisting to make sure your Henderson home sells the second time.
@@ -46,7 +46,7 @@
 ## Post 98: How to Sell Your Green Valley Home After It Sat on the Market
 **File:** post98-sell-green-valley-home-sat-on-market.html
 **Slug:** sell-green-valley-home-sat-on-market
-**URL:** https://www.rosehomeslv.com/blogs/sell-green-valley-home-sat-on-market
+**URL:** https://www.rosehomeslv.com/blog/sell-green-valley-home-sat-on-market
 
 **Meta Title:** How to Sell Your Green Valley Home After It Sat on the Market | Rose Homes LV
 **Meta Description:** Your Green Valley home sat on the market without selling. Learn how to rethink pricing, upgrade marketing, and relaunch with an agent who gets results.
@@ -65,7 +65,7 @@
 ## Post 99: No Offers on Your Green Valley Home? Here's Why
 **File:** post99-no-offers-green-valley-home-why.html
 **Slug:** no-offers-green-valley-home-why
-**URL:** https://www.rosehomeslv.com/blogs/no-offers-green-valley-home-why
+**URL:** https://www.rosehomeslv.com/blog/no-offers-green-valley-home-why
 
 **Meta Title:** No Offers on Your Green Valley Home? Here's Why | Rose Homes LV
 **Meta Description:** Zero offers on your Green Valley home? Learn why Henderson buyers are walking away and what changes will finally attract serious interest and real offers.
@@ -84,7 +84,7 @@
 ## Post 100: How to Choose a New Real Estate Agent in Green Valley
 **File:** post100-choose-new-agent-green-valley.html
 **Slug:** choose-new-agent-green-valley
-**URL:** https://www.rosehomeslv.com/blogs/choose-new-agent-green-valley
+**URL:** https://www.rosehomeslv.com/blog/choose-new-agent-green-valley
 
 **Meta Title:** How to Choose a New Real Estate Agent in Green Valley | Rose Homes LV
 **Meta Description:** Your Green Valley listing expired. Learn how to evaluate and choose the right real estate agent for your second attempt so your home actually sells.

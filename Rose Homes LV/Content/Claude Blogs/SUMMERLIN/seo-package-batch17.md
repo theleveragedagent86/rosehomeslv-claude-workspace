@@ -17,10 +17,10 @@
 **Meta Description:** Step-by-step guide to setting up electricity, water, gas, trash, and sewer in Summerlin. Includes provider phone numbers, deposits, and monthly cost estimates ($275-$425/mo).
 
 **Internal Links Used:**
-- /blogs/moving-to-summerlin-relocation
-- /blogs/cost-of-living-summerlin
-- /blogs/grocery-stores-shopping-summerlin
-- /blogs/summerlin-living-guide
+- /blog/moving-to-summerlin-relocation
+- /blog/cost-of-living-summerlin
+- /blog/grocery-stores-shopping-summerlin
+- /blog/summerlin-living-guide
 
 ---
 
@@ -36,10 +36,10 @@
 **Meta Description:** New to Nevada? You have 30 days to get your license ($41.25) and register your vehicle. Complete guide to documents, smog checks, fees, and DMV tips for Summerlin residents.
 
 **Internal Links Used:**
-- /blogs/setting-up-utilities-summerlin
-- /blogs/moving-to-summerlin-relocation
-- /blogs/california-to-summerlin-tax-savings
-- /blogs/cost-of-living-summerlin
+- /blog/setting-up-utilities-summerlin
+- /blog/moving-to-summerlin-relocation
+- /blog/california-to-summerlin-tax-savings
+- /blog/cost-of-living-summerlin
 
 ---
 
@@ -55,10 +55,10 @@
 **Meta Description:** Top-rated moving companies for Summerlin relocations: Summerlin Moving Company, Champion Movers, Move 4 Less, and All My Sons. Pricing, reviews, and booking tips.
 
 **Internal Links Used:**
-- /blogs/moving-to-summerlin-relocation
-- /blogs/setting-up-utilities-summerlin
-- /blogs/cost-of-living-summerlin
-- /blogs/summerlin-living-guide
+- /blog/moving-to-summerlin-relocation
+- /blog/setting-up-utilities-summerlin
+- /blog/cost-of-living-summerlin
+- /blog/summerlin-living-guide
 
 ---
 
@@ -74,10 +74,10 @@
 **Meta Description:** Two top coworking spaces in Summerlin: WeWork Two Summerlin (corporate, 2-floor) and The Coop Cowork (community-driven, fiber internet). Full comparison and amenities.
 
 **Internal Links Used:**
-- /blogs/remote-workers-guide-summerlin
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/cost-of-living-summerlin
-- /blogs/moving-to-summerlin-relocation
+- /blog/remote-workers-guide-summerlin
+- /blog/downtown-summerlin-shopping-dining
+- /blog/cost-of-living-summerlin
+- /blog/moving-to-summerlin-relocation
 
 ---
 
@@ -93,10 +93,10 @@
 **Meta Description:** The Las Vegas Farmers Market at Downtown Summerlin runs Saturdays 9 AM, May through November. 90% organic produce, cooking demos, live music, and pet-friendly. Full guide.
 
 **Internal Links Used:**
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/grocery-stores-shopping-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/moving-to-summerlin-relocation
+- /blog/downtown-summerlin-shopping-dining
+- /blog/grocery-stores-shopping-summerlin
+- /blog/summerlin-living-guide
+- /blog/moving-to-summerlin-relocation
 
 ---
 

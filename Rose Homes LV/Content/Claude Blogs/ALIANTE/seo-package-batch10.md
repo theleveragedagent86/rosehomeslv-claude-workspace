@@ -23,7 +23,7 @@ Aliante Investment Properties: Rental Income & ROI
 Explore Aliante investment property data including median prices, rental demand from Nellis AFB, and ROI potential in North Las Vegas.
 
 **Keywords** (max 500 chars):
-Aliante investment properties, Aliante rental income, Aliante ROI, North Las Vegas investment, Aliante real estate investment, Las Vegas rental properties, Nellis AFB rental demand, Aliante home prices, Aliante cap rate, master-planned community investment, North Las Vegas rentals, Aliante property values, Las Vegas real estate investing 2026, Aliante cash flow, Villagio Aliante condos investment
+Aliante investment properties, Aliante rental income, Aliante ROI, North Las Vegas investment, Aliante real estate investment, Las Vegas rental properties, Nellis AFB rental demand, Aliante home prices, Aliante cap rate, master-planned community investment, North Las Vegas rentals, Aliante property values, Las Vegas real estate investing 2026, Aliante cash flow, Aliante condos investment
 
 **Slug**:
 aliante-investment-properties-roi
@@ -39,7 +39,7 @@ First-Time Homebuyers in Aliante: 2026 Guide
 A first-time homebuyer guide to Aliante in North Las Vegas covering prices, HOA fees, schools, safety, and amenities.
 
 **Keywords** (max 500 chars):
-first-time homebuyers Aliante, Aliante starter homes, Aliante North Las Vegas homes, affordable homes Aliante, Aliante HOA fees, Aliante schools, Aliante safety, first-time buyer Las Vegas, Aliante home prices, Villagio Aliante condos, master-planned community first home, North Las Vegas first-time buyers, Aliante amenities, Aliante family neighborhood, buying a home in Aliante 2026
+first-time homebuyers Aliante, Aliante starter homes, Aliante North Las Vegas homes, affordable homes Aliante, Aliante HOA fees, Aliante schools, Aliante safety, first-time buyer Las Vegas, Aliante home prices, master-planned community first home, North Las Vegas first-time buyers, Aliante amenities, Aliante family neighborhood, buying a home in Aliante 2026
 
 **Slug**:
 first-time-homebuyers-aliante

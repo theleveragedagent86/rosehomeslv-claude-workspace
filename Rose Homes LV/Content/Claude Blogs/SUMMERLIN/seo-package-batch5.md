@@ -17,9 +17,9 @@
 **Meta Description:** Explore Sun City Summerlin, the largest 55+ community in Las Vegas. 8,000 homes, 3 golf courses, 4 rec centers. Prices, amenities, and lifestyle details.
 
 **Internal Links Used:**
-- /blogs/siena-summerlin-55-plus-guide
-- /blogs/retiring-in-summerlin-guide
-- /blogs/best-55-plus-communities-summerlin
+- /blog/siena-summerlin-55-plus-guide
+- /blog/retiring-in-summerlin-guide
+- /blog/best-55-plus-communities-summerlin
 
 ---
 
@@ -35,9 +35,9 @@
 **Meta Description:** Siena is Summerlin's only guard-gated 55+ community. 2,001 homes, 18-hole golf course, Italian architecture. Floor plans, amenities, and pricing.
 
 **Internal Links Used:**
-- /blogs/sun-city-summerlin-55-plus-guide
-- /blogs/summerlin-luxury-guard-gated-homes
-- /blogs/best-55-plus-communities-summerlin
+- /blog/sun-city-summerlin-55-plus-guide
+- /blog/summerlin-luxury-guard-gated-homes
+- /blog/best-55-plus-communities-summerlin
 
 ---
 
@@ -53,9 +53,9 @@
 **Meta Description:** Why retirees choose Summerlin, NV. No income tax, 294 sunny days, top healthcare, 55+ communities. Complete retirement planning guide for 2026.
 
 **Internal Links Used:**
-- /blogs/sun-city-summerlin-55-plus-guide
-- /blogs/cost-of-living-summerlin
-- /blogs/is-summerlin-good-place-to-live
+- /blog/sun-city-summerlin-55-plus-guide
+- /blog/cost-of-living-summerlin
+- /blog/is-summerlin-good-place-to-live
 
 ---
 
@@ -71,9 +71,9 @@
 **Meta Description:** Regency at Summerlin by Toll Brothers features 434 luxury 55+ homes from 1,665 to 2,659 sq ft. Floor plans, amenities, and community comparison.
 
 **Internal Links Used:**
-- /blogs/sun-city-summerlin-55-plus-guide
-- /blogs/siena-summerlin-55-plus-guide
-- /blogs/best-55-plus-communities-summerlin
+- /blog/sun-city-summerlin-55-plus-guide
+- /blog/siena-summerlin-55-plus-guide
+- /blog/best-55-plus-communities-summerlin
 
 ---
 
@@ -89,9 +89,9 @@
 **Meta Description:** Compare Summerlin's top 55+ communities: Sun City Summerlin, Siena, and Regency by Toll Brothers. Pricing, amenities, golf, and lifestyle side by side.
 
 **Internal Links Used:**
-- /blogs/sun-city-summerlin-55-plus-guide
-- /blogs/siena-summerlin-55-plus-guide
-- /blogs/regency-summerlin-toll-brothers
+- /blog/sun-city-summerlin-55-plus-guide
+- /blog/siena-summerlin-55-plus-guide
+- /blog/regency-summerlin-toll-brothers
 
 ---
 

@@ -17,6 +17,7 @@ The Manager passes you:
   - **Meta Title** — what should be in the Meta Title field (SEO tab)
   - **Meta Keywords** — what should be in the Meta Keywords field (SEO tab)
   - **Meta Description** — what should be in the Meta Description field (SEO tab)
+  - **Schema JSON** — what should be in the JSON editor (Schema tab)
 
 **You work in a specific browser tab.** Multiple QA Agents may run in parallel, each verifying a different post in a different tab. Switch to your assigned tab before starting verification — do not interact with other tabs.
 
@@ -44,8 +45,9 @@ Walk through every tab in the Lofty editor and verify each field. Do this in ord
 2. Verify that formatted content is visible (headings, paragraphs, links)
 3. Verify there is NO raw HTML visible (if you see `<p>` or `<h2>` tags as text, the source code editor didn't save properly)
 4. Verify the content is not empty
-5. **Pass** if formatted content is visible and looks correct
-6. **Fail** if the body is empty, shows raw HTML tags, or looks corrupted
+5. Verify there is **no JSON-LD in the body** — no `{` `"@context"` `"@type"` blocks, and no visible curly-brace JSON. Schema belongs in the Schema tab only. If you see JSON in the body, **Fail** with `JSON-LD found in body`.
+6. **Pass** if formatted content is visible and looks correct
+7. **Fail** if the body is empty, shows raw HTML tags, contains JSON-LD, or looks corrupted
 
 ---
 
@@ -104,6 +106,40 @@ Walk through every tab in the Lofty editor and verify each field. Do this in ord
 
 ---
 
+### Check 8: Schema JSON (Schema Tab)
+
+This is the check that matters most, because a broken schema block is completely invisible on the published page. Nobody notices for months.
+
+1. Click the **"Schema"** tab
+2. Read the JSON editor's contents:
+
+```js
+document.querySelector('.json-schema-editor .CodeMirror').CodeMirror.getValue()
+```
+
+3. Read the validity indicator text directly below the editor
+4. Verify all of the following:
+   - The editor is **not empty**
+   - The indicator reads **"Valid JSON"**
+   - The content **parses** as JSON (parse it yourself — don't just trust the indicator)
+   - It contains `"@context": "https://schema.org"` and an `@graph` array
+   - The `headline` matches the expected Title **exactly**
+   - The `description` matches the expected Meta Description **exactly**
+   - `mainEntityOfPage` ends with the expected slug
+   - There is a `Person` node for Ryan Rose and a `RealEstateAgent` node for Rose Homes LV
+5. **Pass** only if every item above holds
+6. **Fail** with the specific item that failed
+
+**Common failures:**
+- Editor is empty — the Publisher's `setValue()` didn't fire, or the wrong tab was open
+- Indicator reads anything other than "Valid JSON" — usually a trailing comma or a doubled brace from someone typing instead of pasting
+- `headline` doesn't match the Title — the schema was built from a different draft of the post
+- `mainEntityOfPage` points at the wrong slug — copied from a previous post in the batch
+
+**Do not treat Lofty's own auto-generated `BlogPosting`/`BreadcrumbList` as a problem.** It appears on the published page, not in this editor, and it coexists with our graph by design.
+
+---
+
 ## Output Format
 
 Return your output in this exact format:
@@ -123,8 +159,9 @@ Return your output in this exact format:
 | 5 | Meta Title | PASS | [first 50 chars] | [first 50 chars] |
 | 6 | Meta Keywords | PASS | [first 50 chars] | [first 50 chars] |
 | 7 | Meta Description | PASS | [first 50 chars] | [first 50 chars] |
+| 8 | Schema JSON | PASS | [node types + headline] | [validator text] |
 
-## Verdict: PASS — All 7 fields verified. Ready to publish.
+## Verdict: PASS — All 8 fields verified. Ready to publish.
 ```
 
 Or if there are failures:
@@ -152,6 +189,11 @@ When a field fails, include a likely cause to help the Manager decide what to do
 | Category is blank/wrong | Dropdown wasn't clicked properly | Re-select category |
 | Body shows raw HTML tags as text | Source code modal wasn't used, or Save wasn't clicked | Re-enter body via source code editor |
 | Body is empty | Source code modal Save wasn't clicked | Re-enter body via source code editor |
+| Body contains JSON / `"@context"` text | Schema was pasted into the body instead of the Schema tab | Remove from body, re-enter on Schema tab |
+| Schema editor is empty | `setValue()` didn't fire or wrong tab was open | Re-enter schema on Schema tab |
+| Indicator is not "Valid JSON" | Trailing comma, or doubled braces from typing instead of pasting | Re-enter with `setValue()`, never by typing |
+| Schema `headline` ≠ Title | Schema built from a different draft | Rebuild schema from the final post data |
+| Schema `mainEntityOfPage` has wrong slug | Copied from the previous post in the batch | Correct the URL and re-enter |
 
 ---
 
@@ -161,4 +203,5 @@ When a field fails, include a likely cause to help the Manager decide what to do
 - **Check EVERY field.** Do not skip any check, even if the Publisher Agent reported all OK. Trust but verify.
 - **Be exact.** A single extra character, a default variable fragment, or a missing comma means FAIL.
 - **Include what you actually found.** The Manager and Publisher need to see the actual content to diagnose the issue.
-- **Settings and SEO are tabs** on the same editor page. They do not navigate to a different URL.
+- **Settings, SEO, and Schema are tabs** on the same editor page. They do not navigate to a different URL.
+- **Always parse the schema yourself.** The "Valid JSON" indicator confirms syntax, not correctness. A block can be perfectly valid JSON and still describe the wrong post.

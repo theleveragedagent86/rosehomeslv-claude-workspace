@@ -27,5 +27,6 @@ Skip the person (leave them unchecked, do not retry blindly) if: the profile han
 
 ## Pacing and stop protocol
 
-- 60 to 120 seconds between DMs, randomized.
+- **Pacing is set by the Cowork scheduled task, not by this file.** Use whatever interval the scheduled task prompt specifies (currently 20 to 40 seconds between DMs, randomized). If the scheduled task does not specify an interval, default to 20 to 40 seconds.
 - Stop the whole run immediately on "Action Blocked", "Try Again Later", a verify/identity challenge, a logout, or a DM failing twice. Write a `PAUSE` file in the shared folder with the reason and tell Ryan.
+- A Chrome extension disconnect is NOT an Instagram block. Stop the run, but do not write a `PAUSE` file for it.

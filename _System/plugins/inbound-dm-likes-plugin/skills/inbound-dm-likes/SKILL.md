@@ -30,7 +30,7 @@ For each waiting liker until you hit 15:
 2. **Pick a variant.** Rotate through the thank-you variants, never the same one twice in a row. Personalize with the first name, or use a no-name variant. Never send a literal "[Name]".
 3. **Send the DM** in Chrome: open `https://www.instagram.com/<handle>/`, confirm the handle matches, click Message, type, send, and **confirm it appears**. If unsure you are on the right person or that it sent, skip and leave it unchecked.
 4. **Check it off** immediately: change the line from `- [ ]` to `- [x]` and append ` — DMed <today> (variant <k>)`. Append a row to `/Users/ryanrose/Downloads/Claude/Rose Homes LV/Content/Instagram/Inbound-Engagement/dm-history.md`: `| <timestamp> | @handle | liker | <variant> |`.
-5. **Pace:** 60 to 120 seconds (randomized) between DMs.
+5. **Pace:** use the interval set by the Cowork scheduled task (currently 20 to 40 seconds, randomized). Default to 20 to 40 seconds if the task does not say.
 
 If a liker already replied to a past DM, do not re-DM; flag it in `leads.md`.
 

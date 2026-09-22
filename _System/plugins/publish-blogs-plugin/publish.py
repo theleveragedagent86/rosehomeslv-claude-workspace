@@ -55,6 +55,16 @@ def find_blog_files(community_dir, post_filter=None):
             if post_filter is None or num in post_filter:
                 files.append((num, f))
             continue
+    # Slug-named files (e.g. AEO folders: buyers-agent-henderson-nv.html) have no
+    # post number. Number them 1..N in alphabetical order so --posts still works;
+    # prepare_posts matches their SEO data by slug instead of by number.
+    if not files:
+        n = 0
+        for f in sorted(community_dir.iterdir()):
+            if f.suffix == ".html":
+                n += 1
+                if post_filter is None or n in post_filter:
+                    files.append((n, f))
     files.sort(key=lambda x: x[0])
     return files
 
@@ -339,11 +349,13 @@ def prepare_posts(community_dir, community_name, post_filter=None):
         sys.exit(1)
 
     all_seo = {}
+    seo_by_slug = {}
     for batch_num, seo_file in seo_files.items():
         parsed = parse_seo_package(seo_file)
         for post_in_batch, fields in parsed.items():
             if not fields.get("slug"):
                 continue
+            seo_by_slug[fields["slug"]] = fields
             if post_in_batch > 5:
                 absolute_num = post_in_batch
             else:
@@ -354,7 +366,8 @@ def prepare_posts(community_dir, community_name, post_filter=None):
     errors = []
     for post_num, html_file in blog_files:
         title, body, schema = extract_blog_data(html_file)
-        seo = all_seo.get(post_num, {})
+        # Slug-named files match their SEO entry by slug; numbered files by number
+        seo = seo_by_slug.get(html_file.stem) or all_seo.get(post_num, {})
         # Schema fields as fallback for missing SEO package data
         slug = seo.get("slug") or schema.get("slug")
         meta_title = seo.get("meta_title") or schema.get("title")

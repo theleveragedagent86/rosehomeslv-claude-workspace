@@ -8,7 +8,7 @@
 ## Post 26: Fox Hill Park Summerlin: Las Vegas' Best Playground
 **File:** post26-fox-hill-park-summerlin-guide.html
 **Slug:** fox-hill-park-summerlin-guide
-**URL:** https://rosehomeslv.com/blogs/fox-hill-park-summerlin-guide
+**URL:** https://rosehomeslv.com/blog/fox-hill-park-summerlin-guide
 
 **Primary Keyword:** Fox Hill Park Summerlin
 **Secondary Keywords:** Summerlin playground, best parks in Summerlin, Las Vegas family parks, Fox Hill Park Las Vegas, Summerlin parks for kids
@@ -21,7 +21,7 @@
 ## Post 27: Summerlin Trail System: 200+ Miles of Paths
 **File:** post27-summerlin-trail-system-200-miles.html
 **Slug:** summerlin-trail-system-200-miles
-**URL:** https://rosehomeslv.com/blogs/summerlin-trail-system-200-miles
+**URL:** https://rosehomeslv.com/blog/summerlin-trail-system-200-miles
 
 **Primary Keyword:** Summerlin trail system
 **Secondary Keywords:** Summerlin walking paths, Summerlin bike trails, Las Vegas hiking trails, Summerlin outdoor recreation, 215 Beltway trail
@@ -34,7 +34,7 @@
 ## Post 28: Red Rock Canyon from Summerlin: Access & Trail Guide
 **File:** post28-red-rock-canyon-from-summerlin.html
 **Slug:** red-rock-canyon-from-summerlin
-**URL:** https://rosehomeslv.com/blogs/red-rock-canyon-from-summerlin
+**URL:** https://rosehomeslv.com/blog/red-rock-canyon-from-summerlin
 
 **Primary Keyword:** Red Rock Canyon from Summerlin
 **Secondary Keywords:** Red Rock Canyon access, Summerlin hiking, Calico Tanks trail, Red Rock Canyon timed entry, Red Rock Canyon Las Vegas
@@ -47,7 +47,7 @@
 ## Post 29: Dog Parks in Summerlin: Pet-Friendly Guide
 **File:** post29-dog-parks-summerlin-pet-friendly.html
 **Slug:** dog-parks-summerlin-pet-friendly
-**URL:** https://rosehomeslv.com/blogs/dog-parks-summerlin-pet-friendly
+**URL:** https://rosehomeslv.com/blog/dog-parks-summerlin-pet-friendly
 
 **Primary Keyword:** Summerlin dog parks
 **Secondary Keywords:** pet friendly Summerlin, dog parks Las Vegas, Summerlin pets, off leash dog parks Summerlin, dog friendly Las Vegas
@@ -60,7 +60,7 @@
 ## Post 30: Summerlin Community Parks: 300+ Parks Overview
 **File:** post30-summerlin-community-parks-overview.html
 **Slug:** summerlin-community-parks-overview
-**URL:** https://rosehomeslv.com/blogs/summerlin-community-parks-overview
+**URL:** https://rosehomeslv.com/blog/summerlin-community-parks-overview
 
 **Primary Keyword:** Summerlin community parks
 **Secondary Keywords:** Summerlin parks overview, parks in Summerlin Las Vegas, Summerlin recreation, Summerlin amenities, Summerlin sports facilities

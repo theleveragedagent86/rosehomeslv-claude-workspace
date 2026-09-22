@@ -8,7 +8,7 @@
 ## Post 117: Why Your Spanish Trail Home Isn't Selling
 **File:** post117-why-spanish-trail-home-isnt-selling.html
 **Slug:** why-spanish-trail-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-spanish-trail-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-spanish-trail-home-isnt-selling
 
 **Meta Title:** Why Your Spanish Trail Home Isn't Selling | Rose Homes LV
 **Meta Description:** Your Spanish Trail home didn't sell. Learn how aging luxury finishes, aggressive pricing, and competition from newer communities are keeping buyers away, and how to fix it.
@@ -27,7 +27,7 @@
 ## Post 118: Home Didn't Sell in Spanish Trail. What to Do Next
 **File:** post118-home-didnt-sell-spanish-trail-next.html
 **Slug:** home-didnt-sell-spanish-trail-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-spanish-trail-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-spanish-trail-next
 
 **Meta Title:** Home Didn't Sell in Spanish Trail? What to Do Next | Rose Homes LV
 **Meta Description:** Your Spanish Trail listing expired. Follow these steps smart luxury sellers take before relisting to make sure your guard gated home sells the second time around.
@@ -46,7 +46,7 @@
 ## Post 119: Why Your Seven Hills Home Isn't Selling
 **File:** post119-why-seven-hills-home-isnt-selling.html
 **Slug:** why-seven-hills-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-seven-hills-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-seven-hills-home-isnt-selling
 
 **Meta Title:** Why Your Seven Hills Home Isn't Selling | Rose Homes LV
 **Meta Description:** Your Seven Hills home in Henderson didn't sell. Learn how an elevated price point, sub community competition, and weak marketing are keeping buyers away.
@@ -65,7 +65,7 @@
 ## Post 120: Home Didn't Sell in Seven Hills. What to Do Next
 **File:** post120-home-didnt-sell-seven-hills-next.html
 **Slug:** home-didnt-sell-seven-hills-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-seven-hills-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-seven-hills-next
 
 **Meta Title:** Home Didn't Sell in Seven Hills? What to Do Next | Rose Homes LV
 **Meta Description:** Your Seven Hills listing in Henderson expired. Follow these steps smart sellers take before relisting to make sure your home sells the second time around.

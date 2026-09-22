@@ -17,13 +17,13 @@
 **Meta Description:** Kestrel is one of Summerlin West's newest villages in zip 89138 with active new construction from Richmond American and KB Home. Explore sub-communities, pricing, and lifestyle.
 
 **Internal Links Used:**
-- /blogs/summerlin-west-villages-guide
-- /blogs/89138-real-estate-guide-summerlin
-- /blogs/summerlin-new-homes-2026
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-trail-system-200-miles
-- /blogs/summerlin-community-parks-overview
-- /blogs/summerlin-living-guide
+- /blog/summerlin-west-villages-guide
+- /blog/89138-real-estate-guide-summerlin
+- /blog/summerlin-new-homes-2026
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-trail-system-200-miles
+- /blog/summerlin-community-parks-overview
+- /blog/summerlin-living-guide
 
 ---
 
@@ -39,14 +39,14 @@
 **Meta Description:** The Paseos is one of Summerlin West's largest villages with 29+ sub-communities in zip 89138. Explore neighborhoods like Montecito, Granada, and Santaluz in this guide.
 
 **Internal Links Used:**
-- /blogs/summerlin-west-villages-guide
-- /blogs/89138-real-estate-guide-summerlin
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-community-parks-overview
-- /blogs/summerlin-trail-system-200-miles
-- /blogs/the-arbors-summerlin-village-guide
-- /blogs/the-canyons-summerlin-village-guide
-- /blogs/summerlin-living-guide
+- /blog/summerlin-west-villages-guide
+- /blog/89138-real-estate-guide-summerlin
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-community-parks-overview
+- /blog/summerlin-trail-system-200-miles
+- /blog/the-arbors-summerlin-village-guide
+- /blog/the-canyons-summerlin-village-guide
+- /blog/summerlin-living-guide
 
 ---
 
@@ -62,12 +62,12 @@
 **Meta Description:** The Vistas is a large Summerlin West village in 89138 with 26+ sub-communities, a pool with water slide, and community center. Explore homes, pricing, and lifestyle.
 
 **Internal Links Used:**
-- /blogs/summerlin-west-villages-guide
-- /blogs/89138-real-estate-guide-summerlin
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-trail-system-200-miles
-- /blogs/summerlin-community-parks-overview
-- /blogs/summerlin-living-guide
+- /blog/summerlin-west-villages-guide
+- /blog/89138-real-estate-guide-summerlin
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-trail-system-200-miles
+- /blog/summerlin-community-parks-overview
+- /blog/summerlin-living-guide
 
 ---
 
@@ -83,12 +83,12 @@
 **Meta Description:** Reverence is a 300-acre guard-gated community in Summerlin West developed by Pulte Homes. Explore this exclusive 89138 neighborhood with 24-hour security and luxury homes.
 
 **Internal Links Used:**
-- /blogs/summerlin-west-villages-guide
-- /blogs/89138-real-estate-guide-summerlin
-- /blogs/summerlin-luxury-guard-gated-homes
-- /blogs/summerlin-trail-system-200-miles
-- /blogs/summerlin-community-parks-overview
-- /blogs/summerlin-living-guide
+- /blog/summerlin-west-villages-guide
+- /blog/89138-real-estate-guide-summerlin
+- /blog/summerlin-luxury-guard-gated-homes
+- /blog/summerlin-trail-system-200-miles
+- /blog/summerlin-community-parks-overview
+- /blog/summerlin-living-guide
 
 ---
 
@@ -104,8 +104,8 @@
 **Meta Description:** Desert Shores is a lakefront community adjacent to Summerlin with 4 man-made lakes, waterfront parks, and more affordable pricing in zip 89128. Complete guide to lakeside living.
 
 **Internal Links Used:**
-- /blogs/89128-real-estate-guide-summerlin
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-trail-system-200-miles
-- /blogs/summerlin-community-parks-overview
-- /blogs/summerlin-living-guide
+- /blog/89128-real-estate-guide-summerlin
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-trail-system-200-miles
+- /blog/summerlin-community-parks-overview
+- /blog/summerlin-living-guide

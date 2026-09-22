@@ -239,7 +239,7 @@
 - Neighborhoods with existing coverage: Inspirada, Green Valley, Seven Hills, Madeira Canyon, Macdonald Highlands, Mountains Edge, Canyon Fairways, Reverence, The Arbors, Skye Canyon, Aliante, Centennial Hills, Rhodes Ranch, Providence, Cadence
 
 ### Live Website Checked
-- https://www.rosehomeslv.com/blogs/ returned 404 (blog listing page not accessible via direct fetch)
+- https://www.rosehomeslv.com/blog/ returned 404 (blog listing page not accessible via direct fetch)
 - https://www.rosehomeslv.com/blog returned a JSON config shell without individual blog slugs rendered
 - No pueblo-related slugs found on the live site
 

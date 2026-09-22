@@ -17,10 +17,10 @@
 **Meta Description:** Eagle Hills is a guard-gated community in Summerlin North with roughly 160 custom homes on spacious lots. Explore this luxury neighborhood in the 89134 zip code.
 
 **Internal Links Used:**
-- /blogs/the-hills-south-summerlin-village-guide
-- /blogs/summerlin-luxury-guard-gated-homes
-- /blogs/tournament-hills-summerlin-guide
-- /blogs/summerlin-living-guide
+- /blog/the-hills-south-summerlin-village-guide
+- /blog/summerlin-luxury-guard-gated-homes
+- /blog/tournament-hills-summerlin-guide
+- /blog/summerlin-living-guide
 
 ---
 
@@ -36,10 +36,10 @@
 **Meta Description:** Relocating from New York City or the East Coast to Summerlin? Compare cost of living, taxes, weather, and lifestyle differences in this complete relocation guide.
 
 **Internal Links Used:**
-- /blogs/california-to-summerlin-tax-savings
-- /blogs/cost-of-living-summerlin
-- /blogs/summerlin-weather-climate
-- /blogs/moving-to-summerlin-relocation
+- /blog/california-to-summerlin-tax-savings
+- /blog/cost-of-living-summerlin
+- /blog/summerlin-weather-climate
+- /blog/moving-to-summerlin-relocation
 
 ---
 
@@ -55,10 +55,10 @@
 **Meta Description:** Relocating from Seattle or Portland to Summerlin? Compare cost of living, taxes, weather, and outdoor lifestyle in this Pacific Northwest to Las Vegas relocation guide.
 
 **Internal Links Used:**
-- /blogs/nevada-vs-california-taxes-summerlin
-- /blogs/summerlin-weather-climate
-- /blogs/cost-of-living-summerlin
-- /blogs/moving-to-summerlin-relocation
+- /blog/nevada-vs-california-taxes-summerlin
+- /blog/summerlin-weather-climate
+- /blog/cost-of-living-summerlin
+- /blog/moving-to-summerlin-relocation
 
 ---
 
@@ -74,11 +74,11 @@
 **Meta Description:** Considering Summerlin as a snowbird destination? This guide covers seasonal living, tax residency rules, buying vs renting, and the best communities for part-time residents.
 
 **Internal Links Used:**
-- /blogs/retiring-in-summerlin-guide
-- /blogs/california-to-summerlin-tax-savings
-- /blogs/summerlin-luxury-guard-gated-homes
-- /blogs/summerlin-weather-climate
-- /blogs/summerlin-living-guide
+- /blog/retiring-in-summerlin-guide
+- /blog/california-to-summerlin-tax-savings
+- /blog/summerlin-luxury-guard-gated-homes
+- /blog/summerlin-weather-climate
+- /blog/summerlin-living-guide
 
 ---
 
@@ -94,7 +94,7 @@
 **Meta Description:** Considering a move from Phoenix or Arizona to Summerlin? Compare taxes, housing costs, lifestyle, and what makes Summerlin worth the 4.5 hour drive west.
 
 **Internal Links Used:**
-- /blogs/california-to-summerlin-tax-savings
-- /blogs/cost-of-living-summerlin
-- /blogs/summerlin-living-guide
-- /blogs/moving-to-summerlin-relocation
+- /blog/california-to-summerlin-tax-savings
+- /blog/cost-of-living-summerlin
+- /blog/summerlin-living-guide
+- /blog/moving-to-summerlin-relocation

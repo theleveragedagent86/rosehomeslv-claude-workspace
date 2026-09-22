@@ -11,7 +11,7 @@
 ## Post 91: Why Your Anthem Home Isn't Selling
 - **File:** post91-why-anthem-home-isnt-selling.html
 - **Slug:** why-anthem-home-isnt-selling
-- **URL:** https://www.rosehomeslv.com/blogs/why-anthem-home-isnt-selling
+- **URL:** https://www.rosehomeslv.com/blog/why-anthem-home-isnt-selling
 - **Meta Title:** Why Your Anthem Home Isn't Selling | Rose Homes LV
 - **Meta Description:** Your Anthem home should have sold by now. Learn the real reasons it's sitting on the market and what to change before you relist.
 - **Primary Keyword:** why Anthem home isn't selling
@@ -22,7 +22,7 @@
 ## Post 92: Home Didn't Sell in Anthem. What to Do Next
 - **File:** post92-home-didnt-sell-anthem-what-to-do.html
 - **Slug:** home-didnt-sell-anthem-what-to-do
-- **URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-anthem-what-to-do
+- **URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-anthem-what-to-do
 - **Meta Title:** Home Didn't Sell in Anthem? What to Do Next | Rose Homes LV
 - **Meta Description:** Your Anthem home didn't sell. Here are the steps to take before relisting so you get a different result this time.
 - **Primary Keyword:** home didn't sell Anthem
@@ -33,7 +33,7 @@
 ## Post 93: How to Sell Your Anthem Home After It Sat on the Market
 - **File:** post93-sell-anthem-home-after-sat-on-market.html
 - **Slug:** sell-anthem-home-after-sat-on-market
-- **URL:** https://www.rosehomeslv.com/blogs/sell-anthem-home-after-sat-on-market
+- **URL:** https://www.rosehomeslv.com/blog/sell-anthem-home-after-sat-on-market
 - **Meta Title:** How to Sell Your Anthem Home After It Sat on the Market | Rose Homes LV
 - **Meta Description:** Your Anthem home sat on the market without selling. Learn how to recalibrate your pricing, marketing, and strategy to get it sold.
 - **Primary Keyword:** sell Anthem home after sat on market
@@ -44,7 +44,7 @@
 ## Post 94: No Offers on Your Anthem Home? Here's Why
 - **File:** post94-no-offers-anthem-home-heres-why.html
 - **Slug:** no-offers-anthem-home-heres-why
-- **URL:** https://www.rosehomeslv.com/blogs/no-offers-anthem-home-heres-why
+- **URL:** https://www.rosehomeslv.com/blog/no-offers-anthem-home-heres-why
 - **Meta Title:** No Offers on Your Anthem Home? Here's Why | Rose Homes LV
 - **Meta Description:** Zero offers on your Anthem home? Learn the three most common reasons Henderson luxury homes don't get offers and how to fix them.
 - **Primary Keyword:** no offers Anthem home
@@ -55,7 +55,7 @@
 ## Post 95: How to Choose a New Real Estate Agent in Anthem
 - **File:** post95-choose-new-agent-anthem.html
 - **Slug:** choose-new-agent-anthem
-- **URL:** https://www.rosehomeslv.com/blogs/choose-new-agent-anthem
+- **URL:** https://www.rosehomeslv.com/blog/choose-new-agent-anthem
 - **Meta Title:** How to Choose a New Real Estate Agent in Anthem | Rose Homes LV
 - **Meta Description:** Your Anthem home didn't sell. Learn how to choose the right agent who understands Anthem's luxury market and can deliver a different result.
 - **Primary Keyword:** choose new agent Anthem

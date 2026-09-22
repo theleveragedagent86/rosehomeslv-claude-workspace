@@ -108,8 +108,9 @@ Category: [community name]
 Meta Title: [exact meta title]
 Meta Keywords: [exact keywords]
 Meta Description: [exact meta description]
+Schema JSON: [full normalized JSON-LD from the Prep Agent's SCHEMA_JSON block]
 
-Open a new browser tab, navigate to Lofty, create a new post, and enter all fields. Verify each field after entering it. Do NOT click Post Now — the QA Agent will verify first.
+Open a new browser tab, navigate to Lofty, create a new post, and enter all 8 fields. Verify each field after entering it. Schema goes in the Schema tab via setValue() — never in the HTML body. Do NOT click Post Now — the QA Agent will verify first.
 ```
 
 Wait for ALL Publisher Agents in the wave to complete.
@@ -137,8 +138,9 @@ Category: [community name]
 Meta Title: [exact meta title]
 Meta Keywords: [exact keywords]
 Meta Description: [exact meta description]
+Schema JSON: [full normalized JSON-LD from the Prep Agent's SCHEMA_JSON block]
 
-The Publisher Agent has entered all fields in this tab. Verify every field matches the expected data exactly. Report pass or fail for each field.
+The Publisher Agent has entered all fields in this tab. Verify every field matches the expected data exactly. Report pass or fail for each field. Parse the Schema tab's JSON yourself — do not rely on the validity indicator alone.
 ```
 
 Wait for ALL QA Agents to complete.
@@ -243,14 +245,25 @@ PUBLISH: [Post Title]
     Meta Description — paste:
     [meta description]
 
-[ ] 7. REVIEW all fields before publishing:
-    - Click Content tab: verify title and body
+[ ] 7. Click the SCHEMA tab, then:
+
+    Click into the JSON editor, press Ctrl+A, and PASTE (do not type):
+    [full JSON-LD block]
+
+    Confirm the indicator below the editor reads "Valid JSON" before moving on.
+
+    NOTE: Paste it in one action. Typing JSON into this editor makes CodeMirror
+    auto-insert extra closing brackets and quotes, which corrupts it.
+
+[ ] 8. REVIEW all fields before publishing:
+    - Click Content tab: verify title and body, and that NO JSON appears in the body
     - Click Settings tab: verify slug and category
     - Click SEO tab: verify meta title, keywords, description
+    - Click Schema tab: verify the JSON is there and reads "Valid JSON"
 
-[ ] 8. Click POST NOW to publish
+[ ] 9. Click POST NOW to publish
 
-[ ] 9. If a confirmation dialog appears, click OK
+[ ] 10. If a confirmation dialog appears, click OK
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
@@ -282,7 +295,8 @@ If publishing a batch:
 
 - **Ctrl+A before typing/pasting** into any field that has default content. Lofty pre-fills SEO fields with template variables that must be fully replaced.
 - **The source code editor is a modal.** You must click Save inside the modal before it closes. Do not try to interact with Settings or SEO tabs while the modal is open.
-- **Settings and SEO are tabs** on the same page as the post editor. They do not navigate away.
+- **Settings, SEO, and Schema are tabs** on the same page as the post editor. They do not navigate away.
+- **The Schema tab is a CodeMirror JSON editor.** Set it with `document.querySelector('.json-schema-editor .CodeMirror').CodeMirror.setValue(json)`. Never type into it — auto-bracket-closing will corrupt the JSON. Verify via `.getValue()` plus the "Valid JSON" indicator.
 - **After publishing**, the page returns to the blog list.
 
 ---
@@ -304,7 +318,9 @@ The Prep Agent handles both formats automatically.
 ## Notes
 
 - The HTML body must NOT contain the `<h1>` title tag — Lofty adds this from the Title field
-- The HTML body must NOT contain `<script type="application/ld+json">` blocks
+- The HTML body must NOT contain `<script type="application/ld+json">` blocks — the JSON-LD is **moved** to the Schema tab, not deleted
+- **Schema goes in the Schema tab, always.** Lofty's body editor is TinyMCE, and it intermittently wraps pasted JSON-LD in `<p>` tags inside the `<script>` element, which makes it invalid JSON that Google silently discards. An audit of live posts in Aug 2026 found this had happened on published posts with no visible symptom. The Schema tab is a dedicated CodeMirror JSON editor with live validation and cannot corrupt the markup.
+- **Lofty auto-generates its own `BlogPosting` and `BreadcrumbList`** on every post. We still publish our own complete graph so the schema is ours and survives any Lofty change or platform migration. Both blocks coexist on the page without conflict — this is already true across the live site.
 - Category = the neighborhood/community name (e.g., "Summerlin", "Henderson", "Green Valley")
 - Blog files are stored in `/Users/ryanrose/Downloads/Claude/Rose Homes LV/Content/Claude Blogs/[Community Name]/`
 - SEO packages are stored alongside blog files

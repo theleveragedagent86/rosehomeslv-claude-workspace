@@ -17,10 +17,10 @@
 **Meta Description:** Learn how Summerlin homeowners can convert grass to desert landscaping and claim up to $7 per square foot through the SNWA Water Smart rebate program. Full cost breakdown and requirements.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/best-landscaping-companies-summerlin
-- /blogs/artificial-turf-snwa-rebates-summerlin
-- /blogs/setting-up-utilities-summerlin
+- /blog/summerlin-living-guide
+- /blog/best-landscaping-companies-summerlin
+- /blog/artificial-turf-snwa-rebates-summerlin
+- /blog/setting-up-utilities-summerlin
 
 ---
 
@@ -36,9 +36,9 @@
 **Meta Description:** Explore the best smart home upgrades for Summerlin homes, from smart thermostats and locks to irrigation controllers and whole-home automation. Costs, benefits, and what works in the desert.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/nv-energy-rebates-efficiency-summerlin
-- /blogs/desert-landscaping-snwa-summerlin
+- /blog/summerlin-living-guide
+- /blog/nv-energy-rebates-efficiency-summerlin
+- /blog/desert-landscaping-snwa-summerlin
 
 ---
 
@@ -54,10 +54,10 @@
 **Meta Description:** Discover NV Energy rebates available to Summerlin homeowners, including up to $3,200 for heat pump HVAC, $1,500 for AC upgrades, and free home energy audits. Save on summer cooling costs.
 
 **Internal Links Used:**
-- /blogs/89128-real-estate-guide-summerlin
-- /blogs/smart-home-upgrades-summerlin
-- /blogs/setting-up-utilities-summerlin
-- /blogs/solar-panels-guide-summerlin-homes
+- /blog/89128-real-estate-guide-summerlin
+- /blog/smart-home-upgrades-summerlin
+- /blog/setting-up-utilities-summerlin
+- /blog/solar-panels-guide-summerlin-homes
 
 ---
 
@@ -73,11 +73,11 @@
 **Meta Description:** Get a complete overview of the Summerlin rental market in 2026, including average rents by zip code and bedroom count, vacancy rates, cash-on-cash returns, and HOA rental rules.
 
 **Internal Links Used:**
-- /blogs/summerlin-real-estate-investment
-- /blogs/89128-real-estate-guide-summerlin
-- /blogs/89135-real-estate-guide-summerlin
-- /blogs/cost-of-living-summerlin
-- /blogs/best-neighborhoods-rental-summerlin
+- /blog/summerlin-real-estate-investment
+- /blog/89128-real-estate-guide-summerlin
+- /blog/89135-real-estate-guide-summerlin
+- /blog/cost-of-living-summerlin
+- /blog/best-neighborhoods-rental-summerlin
 
 ---
 
@@ -93,8 +93,8 @@
 **Meta Description:** Discover the best Summerlin neighborhoods for rental investment in 2026, including 89128 Pueblos for yield, 89144 Arbors for appreciation, and Summerlin Centre for walkable condo rentals.
 
 **Internal Links Used:**
-- /blogs/89128-real-estate-guide-summerlin
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-rent-vs-buy
-- /blogs/89135-real-estate-guide-summerlin
-- /blogs/rental-market-overview-summerlin-2026
+- /blog/89128-real-estate-guide-summerlin
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-rent-vs-buy
+- /blog/89135-real-estate-guide-summerlin
+- /blog/rental-market-overview-summerlin-2026

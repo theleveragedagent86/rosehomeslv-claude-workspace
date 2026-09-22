@@ -8,7 +8,7 @@
 ## Post 113: Why Your Sun City Las Vegas Home Isn't Selling
 **File:** post113-why-sun-city-las-vegas-home-isnt-selling.html
 **Slug:** why-sun-city-las-vegas-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-sun-city-las-vegas-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-sun-city-las-vegas-home-isnt-selling
 
 **Meta Title:** Why Your Sun City Las Vegas Home Isn't Selling | Rose Homes LV
 **Meta Description:** Your Sun City Las Vegas home didn't sell. Learn how pricing, dated finishes, and competition from newer 55+ communities are keeping buyers away, and how to fix it.
@@ -27,7 +27,7 @@
 ## Post 114: Home Didn't Sell in Sun City Las Vegas. What to Do Next
 **File:** post114-home-didnt-sell-sun-city-las-vegas-next.html
 **Slug:** home-didnt-sell-sun-city-las-vegas-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-sun-city-las-vegas-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-sun-city-las-vegas-next
 
 **Meta Title:** Home Didn't Sell in Sun City Las Vegas? What to Do Next | Rose Homes LV
 **Meta Description:** Your Sun City Las Vegas listing expired. Follow these three steps smart 55+ sellers take before relisting to make sure your home sells the second time around.
@@ -46,7 +46,7 @@
 ## Post 115: Why Your Sun City Anthem Home Isn't Selling
 **File:** post115-why-sun-city-anthem-home-isnt-selling.html
 **Slug:** why-sun-city-anthem-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-sun-city-anthem-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-sun-city-anthem-home-isnt-selling
 
 **Meta Title:** Why Your Sun City Anthem Home Isn't Selling | Rose Homes LV
 **Meta Description:** Your Sun City Anthem home didn't sell. Learn how premium pricing, aging finishes, and weak marketing are keeping Henderson 55+ buyers away, and how to fix it.
@@ -65,7 +65,7 @@
 ## Post 116: Home Didn't Sell in Sun City Anthem. What to Do Next
 **File:** post116-home-didnt-sell-sun-city-anthem-next.html
 **Slug:** home-didnt-sell-sun-city-anthem-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-sun-city-anthem-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-sun-city-anthem-next
 
 **Meta Title:** Home Didn't Sell in Sun City Anthem? What to Do Next | Rose Homes LV
 **Meta Description:** Your Sun City Anthem listing expired. Follow these three steps smart Henderson sellers take before relisting to make sure your 55+ home sells the second time.

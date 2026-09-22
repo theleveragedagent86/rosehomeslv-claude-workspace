@@ -17,11 +17,11 @@
 **Meta Description:** Ridgebrook is a compact village in Summerlin South within the 89135 zip code. Explore its four sub-communities including Echo Ridge, Granite Peaks, Southstar, and Sunset Ridge.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/89135-real-estate-guide-summerlin
-- /blogs/kestrel-summerlin-village-guide
-- /blogs/the-paseos-summerlin-village-guide
-- /blogs/summerlin-north-south-west-comparison
+- /blog/summerlin-living-guide
+- /blog/89135-real-estate-guide-summerlin
+- /blog/kestrel-summerlin-village-guide
+- /blog/the-paseos-summerlin-village-guide
+- /blog/summerlin-north-south-west-comparison
 
 ---
 
@@ -37,12 +37,12 @@
 **Meta Description:** Summerlin Centre is a 1,004-acre mixed-use village in Summerlin South with 19 sub-communities, condos, townhomes, and walkable retail near Downtown Summerlin.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-condos-townhomes-guide
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/summerlin-west-villages-guide
-- /blogs/summerlin-luxury-guard-gated-homes
-- /blogs/summerlin-north-south-west-comparison
+- /blog/summerlin-living-guide
+- /blog/summerlin-condos-townhomes-guide
+- /blog/downtown-summerlin-shopping-dining
+- /blog/summerlin-west-villages-guide
+- /blog/summerlin-luxury-guard-gated-homes
+- /blog/summerlin-north-south-west-comparison
 
 ---
 
@@ -58,10 +58,10 @@
 **Meta Description:** Grand Park is Summerlin's newest village with active development in Summerlin West. Explore new construction from Richmond American including Primrose Park and Iris Glen.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-west-villages-guide
-- /blogs/summerlin-new-homes-2026
-- /blogs/summerlin-north-south-west-comparison
+- /blog/summerlin-living-guide
+- /blog/summerlin-west-villages-guide
+- /blog/summerlin-new-homes-2026
+- /blog/summerlin-north-south-west-comparison
 
 ---
 
@@ -77,10 +77,10 @@
 **Meta Description:** La Madre Peaks is a 171-acre ultra-luxury village in Summerlin West with 167 custom home sites and elevated lots offering mountain views. Explore Astra and other enclaves.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-west-villages-guide
-- /blogs/summerlin-luxury-guard-gated-homes
-- /blogs/summerlin-north-south-west-comparison
+- /blog/summerlin-living-guide
+- /blog/summerlin-west-villages-guide
+- /blog/summerlin-luxury-guard-gated-homes
+- /blog/summerlin-north-south-west-comparison
 
 ---
 
@@ -96,8 +96,8 @@
 **Meta Description:** Redpoint is a growing village in Summerlin West with newer construction and proximity to Redpoint Square. Explore this actively developing neighborhood in western Summerlin.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-west-villages-guide
-- /blogs/summerlin-new-homes-2026
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/summerlin-north-south-west-comparison
+- /blog/summerlin-living-guide
+- /blog/summerlin-west-villages-guide
+- /blog/summerlin-new-homes-2026
+- /blog/downtown-summerlin-shopping-dining
+- /blog/summerlin-north-south-west-comparison

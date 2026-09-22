@@ -11,11 +11,11 @@
 **Secondary Keywords:** Henderson vs Summerlin homes, Las Vegas community comparison, best Las Vegas neighborhoods, Summerlin or Henderson
 **Meta Title:** Summerlin vs Henderson: Which Las Vegas Community Is Better? (2026)
 **Meta Description:** Compare Summerlin and Henderson across home prices, schools, amenities, and commute times. Find out which Las Vegas community fits your lifestyle and budget.
-**URL:** https://rosehomeslv.com/blogs/summerlin-vs-henderson-comparison
+**URL:** https://rosehomeslv.com/blog/summerlin-vs-henderson-comparison
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-home-prices-2026
-- /blogs/pros-cons-living-summerlin
+- /blog/summerlin-living-guide
+- /blog/summerlin-home-prices-2026
+- /blog/pros-cons-living-summerlin
 
 ---
 
@@ -27,11 +27,11 @@
 **Secondary Keywords:** Centennial Hills comparison, northwest Las Vegas homes, Summerlin or Centennial Hills, Las Vegas community comparison
 **Meta Title:** Summerlin vs Centennial Hills: Full Comparison for Buyers (2026)
 **Meta Description:** Summerlin vs Centennial Hills compared on price, amenities, schools, and commute. Learn which northwest Las Vegas community offers the best value.
-**URL:** https://rosehomeslv.com/blogs/summerlin-vs-centennial-hills
+**URL:** https://rosehomeslv.com/blog/summerlin-vs-centennial-hills
 **Internal Links Used:**
-- /blogs/is-summerlin-good-place-to-live
-- /blogs/summerlin-home-prices-2026
-- /blogs/cost-of-living-summerlin
+- /blog/is-summerlin-good-place-to-live
+- /blog/summerlin-home-prices-2026
+- /blog/cost-of-living-summerlin
 
 ---
 
@@ -43,11 +43,11 @@
 **Secondary Keywords:** Inspirada comparison, Las Vegas master planned communities, Summerlin or Inspirada, Henderson vs Summerlin
 **Meta Title:** Summerlin vs Inspirada: Community Comparison for Las Vegas Buyers
 **Meta Description:** Compare Summerlin and Inspirada on home prices, amenities, location, and family life. Find the right Las Vegas master planned community for your needs.
-**URL:** https://rosehomeslv.com/blogs/summerlin-vs-inspirada-comparison
+**URL:** https://rosehomeslv.com/blog/summerlin-vs-inspirada-comparison
 **Internal Links Used:**
-- /blogs/summerlin-new-homes-2026
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-families-guide
+- /blog/summerlin-new-homes-2026
+- /blog/summerlin-living-guide
+- /blog/summerlin-families-guide
 
 ---
 
@@ -59,11 +59,11 @@
 **Secondary Keywords:** Howard Hughes Summerlin, Summerlin Nevada history, Howard Hughes Corporation, Summerlin master planned community origin
 **Meta Title:** History of Summerlin: From Howard Hughes Ranch to Master Plan
 **Meta Description:** Discover how Howard Hughes' 1952 land purchase became Summerlin, one of America's top master planned communities with 130,000+ residents.
-**URL:** https://rosehomeslv.com/blogs/history-of-summerlin-howard-hughes
+**URL:** https://rosehomeslv.com/blog/history-of-summerlin-howard-hughes
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/is-summerlin-good-place-to-live
-- /blogs/summerlin-real-estate-investment
+- /blog/summerlin-living-guide
+- /blog/is-summerlin-good-place-to-live
+- /blog/summerlin-real-estate-investment
 
 ---
 
@@ -75,8 +75,8 @@
 **Secondary Keywords:** Summerlin market timing, when to buy Summerlin home, Summerlin real estate 2026, Las Vegas home buying season
 **Meta Title:** Best Time to Buy a Home in Summerlin: 2026 Market Timing Guide
 **Meta Description:** Learn the best time to buy a home in Summerlin based on seasonal trends, current inventory, and 2026 pricing data from a local Las Vegas Realtor.
-**URL:** https://rosehomeslv.com/blogs/best-time-buy-home-summerlin
+**URL:** https://rosehomeslv.com/blog/best-time-buy-home-summerlin
 **Internal Links Used:**
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-new-homes-2026
-- /blogs/moving-to-summerlin-relocation
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-new-homes-2026
+- /blog/moving-to-summerlin-relocation

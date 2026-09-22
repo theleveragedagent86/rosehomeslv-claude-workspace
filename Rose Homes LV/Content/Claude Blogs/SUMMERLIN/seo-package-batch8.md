@@ -17,9 +17,9 @@
 **Meta Description:** Summerlin features 10 golf courses from private PGA TOUR venues to public Nicklaus and Palmer designs. Complete ranking of every course for 2026.
 
 **Internal Links Used:**
-- /blogs/tpc-summerlin-pga-tour-guide
-- /blogs/bears-best-golf-summerlin
-- /blogs/angel-park-golf-club-summerlin
+- /blog/tpc-summerlin-pga-tour-guide
+- /blog/bears-best-golf-summerlin
+- /blog/angel-park-golf-club-summerlin
 
 ---
 
@@ -35,9 +35,9 @@
 **Meta Description:** TPC Summerlin is the only PGA TOUR venue in Las Vegas, hosting the Shriners Children's Open. Bobby Weed design, private membership, and nearby homes.
 
 **Internal Links Used:**
-- /blogs/golf-courses-summerlin-ranked
-- /blogs/the-ridges-summerlin-luxury-guide
-- /blogs/red-rock-country-club-summerlin-guide
+- /blog/golf-courses-summerlin-ranked
+- /blog/the-ridges-summerlin-luxury-guide
+- /blog/red-rock-country-club-summerlin-guide
 
 ---
 
@@ -53,9 +53,9 @@
 **Meta Description:** Bear's Best Las Vegas is a Jack Nicklaus designed public course in Summerlin recreating 18 of his most famous holes. Tee times, rates, and nearby homes.
 
 **Internal Links Used:**
-- /blogs/golf-courses-summerlin-ranked
-- /blogs/the-ridges-summerlin-luxury-guide
-- /blogs/angel-park-golf-club-summerlin
+- /blog/golf-courses-summerlin-ranked
+- /blog/the-ridges-summerlin-luxury-guide
+- /blog/angel-park-golf-club-summerlin
 
 ---
 
@@ -71,9 +71,9 @@
 **Meta Description:** Angel Park Golf Club features two Arnold Palmer designed public courses in Summerlin with Red Rock Canyon views. Green fees, courses, and nearby homes.
 
 **Internal Links Used:**
-- /blogs/golf-courses-summerlin-ranked
-- /blogs/bears-best-golf-summerlin
-- /blogs/summerlin-community-parks-overview
+- /blog/golf-courses-summerlin-ranked
+- /blog/bears-best-golf-summerlin
+- /blog/summerlin-community-parks-overview
 
 ---
 
@@ -89,9 +89,9 @@
 **Meta Description:** Summerlin offers 18 pickleball courts and 20 tennis courts across four community centers. Locations, amenities, and nearby homes for active buyers.
 
 **Internal Links Used:**
-- /blogs/summerlin-community-parks-overview
-- /blogs/summerlin-trail-system-200-miles
-- /blogs/golf-courses-summerlin-ranked
+- /blog/summerlin-community-parks-overview
+- /blog/summerlin-trail-system-200-miles
+- /blog/golf-courses-summerlin-ranked
 
 ---
 

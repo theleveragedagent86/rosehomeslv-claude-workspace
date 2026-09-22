@@ -11,14 +11,14 @@
 **Secondary Keywords:** Summerlin brunch spots, brunch Las Vegas Summerlin, weekend brunch Summerlin, Summerlin restaurants brunch
 **Meta Title:** Best Brunch Spots in Summerlin: Where Locals Actually Go (2026)
 **Meta Description:** Discover the best brunch spots in Summerlin, Las Vegas, including Honey Salt, Echo & Rig, Fine Company, and more local favorites worth trying this weekend.
-**URL:** https://rosehomeslv.com/blogs/best-brunch-spots-summerlin
+**URL:** https://rosehomeslv.com/blog/best-brunch-spots-summerlin
 **Internal Links Used:**
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/tivoli-village-restaurants-summerlin
-- /blogs/red-rock-casino-restaurants-summerlin
-- /blogs/best-italian-restaurants-summerlin
-- /blogs/best-steakhouses-summerlin
-- /blogs/best-restaurants-near-summerlin
+- /blog/downtown-summerlin-shopping-dining
+- /blog/tivoli-village-restaurants-summerlin
+- /blog/red-rock-casino-restaurants-summerlin
+- /blog/best-italian-restaurants-summerlin
+- /blog/best-steakhouses-summerlin
+- /blog/best-restaurants-near-summerlin
 
 ---
 
@@ -30,11 +30,11 @@
 **Secondary Keywords:** Summerlin coffee roasters, coffee near Summerlin Las Vegas, Mothership Coffee Summerlin, local coffee Las Vegas
 **Meta Title:** Best Coffee Shops in Summerlin: Local Roasters and Cafe Favorites (2026)
 **Meta Description:** Find the best coffee shops in Summerlin, Las Vegas, from indie roasters like Mothership and Vesta to Latin-inspired Makers & Finders and more.
-**URL:** https://rosehomeslv.com/blogs/best-coffee-shops-summerlin
+**URL:** https://rosehomeslv.com/blog/best-coffee-shops-summerlin
 **Internal Links Used:**
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/summerlin-living-guide
-- /blogs/best-restaurants-near-summerlin
+- /blog/downtown-summerlin-shopping-dining
+- /blog/summerlin-living-guide
+- /blog/best-restaurants-near-summerlin
 
 ---
 
@@ -46,12 +46,12 @@
 **Secondary Keywords:** Thai food Summerlin, Lotus of Siam Summerlin, best Thai restaurants Las Vegas, Summerlin dining Asian cuisine
 **Meta Title:** Best Asian and Thai Restaurants in Summerlin: Award Winners and Hidden Gems
 **Meta Description:** Explore the best Asian and Thai restaurants in Summerlin, Las Vegas, including Lotus of Siam, Nittaya's Secret Kitchen, Buldogis, and more top picks.
-**URL:** https://rosehomeslv.com/blogs/best-asian-thai-restaurants-summerlin
+**URL:** https://rosehomeslv.com/blog/best-asian-thai-restaurants-summerlin
 **Internal Links Used:**
-- /blogs/red-rock-casino-restaurants-summerlin
-- /blogs/best-sushi-japanese-restaurants-summerlin
-- /blogs/best-restaurants-near-summerlin
-- /blogs/tivoli-village-restaurants-summerlin
+- /blog/red-rock-casino-restaurants-summerlin
+- /blog/best-sushi-japanese-restaurants-summerlin
+- /blog/best-restaurants-near-summerlin
+- /blog/tivoli-village-restaurants-summerlin
 
 ---
 
@@ -63,13 +63,13 @@
 **Secondary Keywords:** happy hour Summerlin Las Vegas, Summerlin nightlife, best cocktail bars Summerlin, Summerlin drink specials
 **Meta Title:** Best Bars and Happy Hour in Summerlin: Top Spots for Drinks and Deals (2026)
 **Meta Description:** Find the best bars and happy hour deals in Summerlin, Las Vegas, from Hawthorn Grill to speakeasy Wax Rabbit and 7-day happy hours at JING.
-**URL:** https://rosehomeslv.com/blogs/best-bars-happy-hour-summerlin
+**URL:** https://rosehomeslv.com/blog/best-bars-happy-hour-summerlin
 **Internal Links Used:**
-- /blogs/red-rock-casino-restaurants-summerlin
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/best-date-night-restaurants-summerlin
-- /blogs/best-restaurants-near-summerlin
-- /blogs/summerlin-living-guide
+- /blog/red-rock-casino-restaurants-summerlin
+- /blog/downtown-summerlin-shopping-dining
+- /blog/best-date-night-restaurants-summerlin
+- /blog/best-restaurants-near-summerlin
+- /blog/summerlin-living-guide
 
 ---
 
@@ -81,12 +81,12 @@
 **Secondary Keywords:** romantic restaurants Summerlin, Summerlin fine dining, date night Las Vegas Summerlin, couples dining Summerlin
 **Meta Title:** Best Date Night Restaurants in Summerlin: Where to Impress Without the Strip
 **Meta Description:** Discover the best date night restaurants in Summerlin, Las Vegas, including La Strega, Echo & Rig, Harlo Steakhouse, JING, and more top picks for couples.
-**URL:** https://rosehomeslv.com/blogs/best-date-night-restaurants-summerlin
+**URL:** https://rosehomeslv.com/blog/best-date-night-restaurants-summerlin
 **Internal Links Used:**
-- /blogs/best-italian-restaurants-summerlin
-- /blogs/tivoli-village-restaurants-summerlin
-- /blogs/best-steakhouses-summerlin
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/best-bars-happy-hour-summerlin
-- /blogs/best-restaurants-near-summerlin
-- /blogs/summerlin-living-guide
+- /blog/best-italian-restaurants-summerlin
+- /blog/tivoli-village-restaurants-summerlin
+- /blog/best-steakhouses-summerlin
+- /blog/downtown-summerlin-shopping-dining
+- /blog/best-bars-happy-hour-summerlin
+- /blog/best-restaurants-near-summerlin
+- /blog/summerlin-living-guide

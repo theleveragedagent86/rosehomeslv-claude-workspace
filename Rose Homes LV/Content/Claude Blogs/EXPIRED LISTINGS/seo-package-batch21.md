@@ -8,7 +8,7 @@
 ## Post 101: Why Your Lake Las Vegas Home Isn't Selling
 **File:** post101-why-lake-las-vegas-home-isnt-selling.html
 **Slug:** why-lake-las-vegas-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-lake-las-vegas-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-lake-las-vegas-home-isnt-selling
 
 **Meta Title:** Why Your Lake Las Vegas Home Isn't Selling | Rose Homes LV
 **Meta Description:** Your Lake Las Vegas home didn't sell. Learn how pricing mistakes, weak luxury marketing, and generic strategy are keeping Henderson buyers away, and how to fix it.
@@ -27,7 +27,7 @@
 ## Post 102: Home Didn't Sell in Lake Las Vegas. What to Do Next
 **File:** post102-home-didnt-sell-lake-las-vegas-next.html
 **Slug:** home-didnt-sell-lake-las-vegas-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-lake-las-vegas-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-lake-las-vegas-next
 
 **Meta Title:** Home Didn't Sell in Lake Las Vegas? What to Do Next | Rose Homes LV
 **Meta Description:** Your Lake Las Vegas listing expired. Follow these three steps smart sellers take before relisting to make sure your Henderson luxury home sells the second time.
@@ -46,7 +46,7 @@
 ## Post 103: How to Sell Your Lake Las Vegas Home After It Sat on the Market
 **File:** post103-sell-lake-las-vegas-home-sat-market.html
 **Slug:** sell-lake-las-vegas-home-sat-market
-**URL:** https://www.rosehomeslv.com/blogs/sell-lake-las-vegas-home-sat-market
+**URL:** https://www.rosehomeslv.com/blog/sell-lake-las-vegas-home-sat-market
 
 **Meta Title:** How to Sell Your Lake Las Vegas Home After It Sat on the Market | Rose Homes LV
 **Meta Description:** Your Lake Las Vegas home sat on the market without selling. Learn how to rethink pricing, upgrade luxury marketing, and relaunch with an agent who gets results.
@@ -65,7 +65,7 @@
 ## Post 104: No Offers on Your Lake Las Vegas Home? Here's Why
 **File:** post104-no-offers-lake-las-vegas-home-why.html
 **Slug:** no-offers-lake-las-vegas-home-why
-**URL:** https://www.rosehomeslv.com/blogs/no-offers-lake-las-vegas-home-why
+**URL:** https://www.rosehomeslv.com/blog/no-offers-lake-las-vegas-home-why
 
 **Meta Title:** No Offers on Your Lake Las Vegas Home? Here's Why | Rose Homes LV
 **Meta Description:** Zero offers on your Lake Las Vegas home? Learn why Henderson luxury buyers are walking away and what changes will finally attract serious interest and real offers.
@@ -84,7 +84,7 @@
 ## Post 105: How to Choose a New Real Estate Agent in Lake Las Vegas
 **File:** post105-choose-new-agent-lake-las-vegas.html
 **Slug:** choose-new-agent-lake-las-vegas
-**URL:** https://www.rosehomeslv.com/blogs/choose-new-agent-lake-las-vegas
+**URL:** https://www.rosehomeslv.com/blog/choose-new-agent-lake-las-vegas
 
 **Meta Title:** How to Choose a New Real Estate Agent in Lake Las Vegas | Rose Homes LV
 **Meta Description:** Your Lake Las Vegas listing expired. Learn how to evaluate and choose the right real estate agent for your second attempt so your luxury home actually sells.

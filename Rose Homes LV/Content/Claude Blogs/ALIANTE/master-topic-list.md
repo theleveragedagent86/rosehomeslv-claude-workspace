@@ -19,7 +19,7 @@
 | 7 | Sun City Aliante 55+ Homes for Sale | sun-city-aliante-55-plus-homes | Real Estate |
 | 8 | Aliante New Construction Homes | aliante-new-construction-homes | Real Estate |
 | 9 | Aliante Luxury Homes and Floor Plans | aliante-luxury-homes-floor-plans | Real Estate |
-| 10 | Aliante Townhomes and Condos: Villagio and Beyond | aliante-townhomes-condos-villagio | Real Estate |
+| 10 | Aliante Townhomes and Condos, Plus Villagio Nearby | aliante-townhomes-condos-villagio | Real Estate |
 
 ### Batch 3: Parks & Recreation (Priority: High)
 | Post # | Topic | Slug | Category |
@@ -108,7 +108,7 @@
 | 7 | Sun City Aliante 55+ Homes for Sale | sun-city-aliante-55-plus-homes | Real Estate | CLEAR |
 | 8 | Aliante New Construction Homes | aliante-new-construction-homes | Real Estate | CLEAR |
 | 9 | Aliante Luxury Homes and Floor Plans | aliante-luxury-homes-floor-plans | Real Estate | CLEAR |
-| 10 | Aliante Townhomes and Condos: Villagio and Beyond | aliante-townhomes-condos-villagio | Real Estate | CLEAR |
+| 10 | Aliante Townhomes and Condos, Plus Villagio Nearby | aliante-townhomes-condos-villagio | Real Estate | CLEAR |
 | 11 | Aliante Nature Discovery Park (Dino Park) | aliante-nature-discovery-park | Parks & Recreation | CLEAR |
 | 12 | Deer Springs Park Aliante | deer-springs-park-aliante | Parks & Recreation | CLEAR |
 | 13 | Aviary Park Aliante | aviary-park-aliante | Parks & Recreation | CLEAR |

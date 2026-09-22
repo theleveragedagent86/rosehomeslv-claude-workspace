@@ -15,9 +15,9 @@
 **Secondary Keywords:** DOM reset MLS, cumulative days on market, relisting home Las Vegas, CDOM real estate, days on market stigma
 
 **Internal Links Used:**
-- /blogs/what-is-days-on-market-why-care
-- /blogs/how-long-wait-before-relisting-home
-- /blogs/how-buyers-perceive-relisted-home
+- /blog/what-is-days-on-market-why-care
+- /blog/how-long-wait-before-relisting-home
+- /blog/how-buyers-perceive-relisted-home
 
 **External Source:** https://support.homecoin.com/hc/en-us/articles/360038369114
 
@@ -38,9 +38,9 @@
 **Secondary Keywords:** closing cost credits seller, rate buydown seller paid, seller concessions Las Vegas, home not selling incentives, mortgage rate buydown
 
 **Internal Links Used:**
-- /blogs/how-much-drop-price-home-not-selling
-- /blogs/what-is-cma-why-you-need-one
-- /blogs/home-didnt-sell-what-to-do-next
+- /blog/how-much-drop-price-home-not-selling
+- /blog/what-is-cma-why-you-need-one
+- /blog/home-didnt-sell-what-to-do-next
 
 **External Source:** https://support.homecoin.com/hc/en-us/articles/360038369114
 
@@ -61,9 +61,9 @@
 **Secondary Keywords:** 3D tour home sale, Matterport home listing, virtual tour sell faster, home listing marketing, virtual tour vs photos
 
 **Internal Links Used:**
-- /blogs/professional-photos-help-home-sell-more
-- /blogs/should-you-stage-home-before-selling
-- /blogs/how-to-sell-home-that-didnt-sell-first-time
+- /blog/professional-photos-help-home-sell-more
+- /blog/should-you-stage-home-before-selling
+- /blog/how-to-sell-home-that-didnt-sell-first-time
 
 **External Source:** https://matterport.com/blog/3d-tours-properties-sell-31-faster-and-higher-price
 
@@ -84,9 +84,9 @@
 **Secondary Keywords:** relisted home stigma, lowball offers relisted home, relisting home Las Vegas, listing history Zillow Redfin, overcome relisting stigma
 
 **Internal Links Used:**
-- /blogs/reset-days-on-market-when-relisting
-- /blogs/choose-new-agent-when-home-didnt-sell
-- /blogs/how-overpricing-kills-your-home-sale
+- /blog/reset-days-on-market-when-relisting
+- /blog/choose-new-agent-when-home-didnt-sell
+- /blog/how-overpricing-kills-your-home-sale
 
 **External Source:** https://american-apartment-owners-association.org/property-management/latest-news/sellers-hate-stigma-that-comes-with-re-listing/
 
@@ -107,9 +107,9 @@
 **Secondary Keywords:** CMA real estate, what is a CMA, CMA vs appraisal, home pricing strategy, Las Vegas home valuation
 
 **Internal Links Used:**
-- /blogs/how-overpricing-kills-your-home-sale
-- /blogs/how-much-drop-price-home-not-selling
-- /blogs/home-didnt-sell-what-to-do-next
+- /blog/how-overpricing-kills-your-home-sale
+- /blog/how-much-drop-price-home-not-selling
+- /blog/home-didnt-sell-what-to-do-next
 
 **External Source:** https://www.rocketmortgage.com/learn/comparative-market-analysis
 

@@ -17,13 +17,13 @@
 **Meta Description:** The Arbors is one of Summerlin's most established villages with 29+ sub-communities in zip 89144. Explore home prices, neighborhoods, schools, and lifestyle in this complete guide.
 
 **Internal Links Used:**
-- /blogs/89144-real-estate-guide-summerlin
-- /blogs/summerlin-community-parks-overview
-- /blogs/summerlin-trail-system-200-miles
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-home-prices-2026
+- /blog/89144-real-estate-guide-summerlin
+- /blog/summerlin-community-parks-overview
+- /blog/summerlin-trail-system-200-miles
+- /blog/best-schools-summerlin
+- /blog/summerlin-north-south-west-comparison
+- /blog/summerlin-living-guide
+- /blog/summerlin-home-prices-2026
 
 ---
 
@@ -39,13 +39,13 @@
 **Meta Description:** The Trails village in Summerlin North (89134) features sub-communities like Cantabria, Mountain Trails, and Sierra Ridge. Complete guide to homes, prices, and lifestyle.
 
 **Internal Links Used:**
-- /blogs/89134-real-estate-guide-summerlin
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-community-parks-overview
-- /blogs/summerlin-trail-system-200-miles
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/summerlin-living-guide
+- /blog/89134-real-estate-guide-summerlin
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-community-parks-overview
+- /blog/summerlin-trail-system-200-miles
+- /blog/best-schools-summerlin
+- /blog/summerlin-north-south-west-comparison
+- /blog/summerlin-living-guide
 
 ---
 
@@ -61,13 +61,13 @@
 **Meta Description:** The Canyons village in Summerlin North features 3 guard-gated communities including Canyon Fairways and Mira Villa. Explore this exclusive enclave in zip 89144.
 
 **Internal Links Used:**
-- /blogs/89144-real-estate-guide-summerlin
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-community-parks-overview
-- /blogs/summerlin-trail-system-200-miles
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/summerlin-living-guide
+- /blog/89144-real-estate-guide-summerlin
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-community-parks-overview
+- /blog/summerlin-trail-system-200-miles
+- /blog/best-schools-summerlin
+- /blog/summerlin-north-south-west-comparison
+- /blog/summerlin-living-guide
 
 ---
 
@@ -83,12 +83,12 @@
 **Meta Description:** The Mesa is a premium Summerlin South village in zip 89135 with a $790K median home price. Explore sub-communities like Mesa Ridge, Cielo, and Vista Dulce.
 
 **Internal Links Used:**
-- /blogs/89135-real-estate-guide-summerlin
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-trail-system-200-miles
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/summerlin-living-guide
+- /blog/89135-real-estate-guide-summerlin
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-trail-system-200-miles
+- /blog/best-schools-summerlin
+- /blog/summerlin-north-south-west-comparison
+- /blog/summerlin-living-guide
 
 ---
 
@@ -104,10 +104,10 @@
 **Meta Description:** Stonebridge is a 502-acre Summerlin West village (est. 2017) in zip 89138 with new construction homes. Explore sub-communities, prices, and lifestyle in this guide.
 
 **Internal Links Used:**
-- /blogs/89138-real-estate-guide-summerlin
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-trail-system-200-miles
-- /blogs/summerlin-community-parks-overview
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-north-south-west-comparison
-- /blogs/summerlin-living-guide
+- /blog/89138-real-estate-guide-summerlin
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-trail-system-200-miles
+- /blog/summerlin-community-parks-overview
+- /blog/best-schools-summerlin
+- /blog/summerlin-north-south-west-comparison
+- /blog/summerlin-living-guide

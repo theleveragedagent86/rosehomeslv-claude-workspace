@@ -17,10 +17,10 @@
 **Meta Description:** Learn how school zones impact home values in Summerlin, Las Vegas. See price differences between top-rated zones like Vassiliadis and Rogich and what buyers should know before choosing a neighborhood.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/vassiliadis-elementary-zone-summerlin
-- /blogs/best-school-zones-summerlin-families
-- /blogs/summerlin-home-prices-2026
+- /blog/summerlin-living-guide
+- /blog/vassiliadis-elementary-zone-summerlin
+- /blog/best-school-zones-summerlin-families
+- /blog/summerlin-home-prices-2026
 
 ---
 
@@ -36,10 +36,10 @@
 **Meta Description:** Learn what pool maintenance costs in Summerlin, Las Vegas. Covers weekly cleaning, chemical costs, annual repairs, resurfacing, and how to budget for pool ownership in the desert.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/pool-season-guide-summerlin
-- /blogs/summerlin-weather-climate
-- /blogs/setting-up-utilities-summerlin
+- /blog/summerlin-living-guide
+- /blog/pool-season-guide-summerlin
+- /blog/summerlin-weather-climate
+- /blog/setting-up-utilities-summerlin
 
 ---
 
@@ -55,9 +55,9 @@
 **Meta Description:** Learn about artificial turf installation costs and SNWA water rebates in Summerlin, Las Vegas. Covers pricing, rebate amounts up to $7 per sqft, requirements, and what homeowners need to know.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/best-landscaping-companies-summerlin
-- /blogs/cost-of-living-summerlin
+- /blog/summerlin-living-guide
+- /blog/best-landscaping-companies-summerlin
+- /blog/cost-of-living-summerlin
 
 ---
 
@@ -73,9 +73,9 @@
 **Meta Description:** Learn about stucco repair and exterior painting costs for Summerlin homes. Covers common damage from desert conditions, repair pricing, paint costs, and maintenance schedules for Las Vegas homeowners.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-weather-climate
-- /blogs/home-insurance-guide-summerlin
+- /blog/summerlin-living-guide
+- /blog/summerlin-weather-climate
+- /blog/home-insurance-guide-summerlin
 
 ---
 
@@ -91,5 +91,5 @@
 **Meta Description:** Learn what kitchen and bathroom remodels cost in Summerlin, Las Vegas. Covers budgets from basic updates to full renovations, popular upgrades, and how remodeling affects resale value.
 
 **Internal Links Used:**
-- /blogs/summerlin-living-guide
-- /blogs/summerlin-home-prices-2026
+- /blog/summerlin-living-guide
+- /blog/summerlin-home-prices-2026

@@ -8,7 +8,7 @@
 ## Post 106: Why Your Rhodes Ranch Home Isn't Selling
 **File:** post106-why-rhodes-ranch-home-isnt-selling.html
 **Slug:** why-rhodes-ranch-home-isnt-selling
-**URL:** https://www.rosehomeslv.com/blogs/why-rhodes-ranch-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-rhodes-ranch-home-isnt-selling
 
 **Meta Title:** Why Your Rhodes Ranch Home Isn't Selling | Rose Homes LV
 **Meta Description:** Your Rhodes Ranch home didn't sell. Learn how pricing, outdated presentation, and weak marketing are keeping southwest Las Vegas buyers away, and how to fix it.
@@ -27,7 +27,7 @@
 ## Post 107: Home Didn't Sell in Rhodes Ranch. What to Do Next
 **File:** post107-home-didnt-sell-rhodes-ranch-next.html
 **Slug:** home-didnt-sell-rhodes-ranch-next
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-rhodes-ranch-next
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-rhodes-ranch-next
 
 **Meta Title:** Home Didn't Sell in Rhodes Ranch? What to Do Next | Rose Homes LV
 **Meta Description:** Your Rhodes Ranch listing expired. Follow these three steps smart sellers take before relisting to make sure your home sells the second time around.
@@ -46,7 +46,7 @@
 ## Post 108: How to Sell Your Rhodes Ranch Home After It Sat on the Market
 **File:** post108-sell-rhodes-ranch-home-sat-market.html
 **Slug:** sell-rhodes-ranch-home-sat-market
-**URL:** https://www.rosehomeslv.com/blogs/sell-rhodes-ranch-home-sat-market
+**URL:** https://www.rosehomeslv.com/blog/sell-rhodes-ranch-home-sat-market
 
 **Meta Title:** How to Sell Your Rhodes Ranch Home After It Sat on the Market | Rose Homes LV
 **Meta Description:** Your Rhodes Ranch home sat on the market without selling. Learn how to rethink pricing, upgrade marketing, and relaunch with an agent who gets results.
@@ -65,7 +65,7 @@
 ## Post 109: No Offers on Your Rhodes Ranch Home? Here's Why
 **File:** post109-no-offers-rhodes-ranch-home-why.html
 **Slug:** no-offers-rhodes-ranch-home-why
-**URL:** https://www.rosehomeslv.com/blogs/no-offers-rhodes-ranch-home-why
+**URL:** https://www.rosehomeslv.com/blog/no-offers-rhodes-ranch-home-why
 
 **Meta Title:** No Offers on Your Rhodes Ranch Home? Here's Why | Rose Homes LV
 **Meta Description:** Zero offers on your Rhodes Ranch home? Learn why southwest Las Vegas buyers are walking away and what changes will finally attract serious interest.
@@ -84,7 +84,7 @@
 ## Post 110: How to Choose a New Real Estate Agent in Rhodes Ranch
 **File:** post110-choose-new-agent-rhodes-ranch.html
 **Slug:** choose-new-agent-rhodes-ranch
-**URL:** https://www.rosehomeslv.com/blogs/choose-new-agent-rhodes-ranch
+**URL:** https://www.rosehomeslv.com/blog/choose-new-agent-rhodes-ranch
 
 **Meta Title:** How to Choose a New Real Estate Agent in Rhodes Ranch | Rose Homes LV
 **Meta Description:** Your Rhodes Ranch listing expired. Learn how to evaluate and choose the right real estate agent for your second attempt so your home actually sells.

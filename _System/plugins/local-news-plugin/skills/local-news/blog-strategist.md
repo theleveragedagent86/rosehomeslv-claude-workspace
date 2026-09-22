@@ -6,7 +6,7 @@ This follows the exact same SEO package format used by the blog-writer-plugin.
 
 ---
 
-## SEO Package — Per Story
+## SEO Package, Per Story
 
 For each selected story, produce:
 
@@ -57,7 +57,7 @@ For each selected story, produce:
 ## Output Format
 
 ```
-## SEO Package — [Date]
+## SEO Package, [Date]
 
 ### Story [N]: [Original Headline]
 
@@ -66,9 +66,9 @@ For each selected story, produce:
 **Meta Description:** [max 150 chars]
 **Keywords:** [max 500 chars, comma-separated]
 **Related Links:**
-1. [Title] — /blog/[slug]
-2. [Title] — /blog/[slug]
-3. [Title] — /blog/[slug]
+1. [Title] - /blog/[slug]
+2. [Title] - /blog/[slug]
+3. [Title] - /blog/[slug]
 ```
 
 Repeat for every selected story.

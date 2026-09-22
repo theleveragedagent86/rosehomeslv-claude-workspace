@@ -17,10 +17,10 @@
 **Meta Description:** Find top-rated dentists and dental offices in Summerlin, Las Vegas. From general dentistry to specialty care, explore the dental corridor along Charleston and Rampart.
 
 **Internal Links Used:**
-- /blogs/89134-real-estate-guide-summerlin
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-families-guide
-- /blogs/summerlin-living-guide
+- /blog/89134-real-estate-guide-summerlin
+- /blog/best-schools-summerlin
+- /blog/summerlin-families-guide
+- /blog/summerlin-living-guide
 
 ---
 
@@ -36,11 +36,11 @@
 **Meta Description:** Homeowners insurance in Summerlin typically runs $1,200 to $1,800 per year. Learn about coverage types, top providers, HOA master policies, and how to save on premiums.
 
 **Internal Links Used:**
-- /blogs/cost-of-living-summerlin
-- /blogs/summerlin-condos-townhomes-guide
-- /blogs/hoa-rules-new-residents-summerlin
-- /blogs/summerlin-hoa-fees-2026
-- /blogs/summerlin-home-prices-2026
+- /blog/cost-of-living-summerlin
+- /blog/summerlin-condos-townhomes-guide
+- /blog/hoa-rules-new-residents-summerlin
+- /blog/summerlin-hoa-fees-2026
+- /blog/summerlin-home-prices-2026
 
 ---
 
@@ -56,11 +56,11 @@
 **Meta Description:** First-time buyers can enter Summerlin starting in the low $300Ks for condos and low $400Ks for townhomes. Explore the most affordable neighborhoods and financing tips.
 
 **Internal Links Used:**
-- /blogs/89128-real-estate-guide-summerlin
-- /blogs/summerlin-condos-townhomes-guide
-- /blogs/89134-real-estate-guide-summerlin
-- /blogs/summerlin-hoa-fees-2026
-- /blogs/cost-of-living-summerlin
+- /blog/89128-real-estate-guide-summerlin
+- /blog/summerlin-condos-townhomes-guide
+- /blog/89134-real-estate-guide-summerlin
+- /blog/summerlin-hoa-fees-2026
+- /blog/cost-of-living-summerlin
 
 ---
 
@@ -76,9 +76,9 @@
 **Meta Description:** Summerlin uses a two-tier HOA system with master and sub-association rules. Learn about architectural review, rental restrictions, landscaping standards, and common violations.
 
 **Internal Links Used:**
-- /blogs/summerlin-hoa-fees-2026
-- /blogs/summerlin-living-guide
-- /blogs/moving-to-summerlin-relocation
+- /blog/summerlin-hoa-fees-2026
+- /blog/summerlin-living-guide
+- /blog/moving-to-summerlin-relocation
 
 ---
 
@@ -94,7 +94,7 @@
 **Meta Description:** The Summerlin Library is part of the Las Vegas-Clark County Library District, offering free programs, meeting rooms, computer labs, and Wi-Fi for residents of all ages.
 
 **Internal Links Used:**
-- /blogs/best-schools-summerlin
-- /blogs/summerlin-families-guide
-- /blogs/summerlin-living-guide
-- /blogs/moving-to-summerlin-relocation
+- /blog/best-schools-summerlin
+- /blog/summerlin-families-guide
+- /blog/summerlin-living-guide
+- /blog/moving-to-summerlin-relocation

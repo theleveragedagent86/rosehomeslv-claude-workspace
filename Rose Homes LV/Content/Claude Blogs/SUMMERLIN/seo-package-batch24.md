@@ -17,9 +17,9 @@
 **Meta Description:** La Strega is a coastal Italian restaurant in Summerlin led by Chef Gina Marinelli. Known for Maine Lobster Spaghetti, Cacio e Pepe, and over 2,100 OpenTable reviews.
 
 **Internal Links Used:**
-- /blogs/best-date-night-restaurants-summerlin
-- /blogs/best-italian-restaurants-summerlin
-- /blogs/best-restaurants-near-summerlin
+- /blog/best-date-night-restaurants-summerlin
+- /blog/best-italian-restaurants-summerlin
+- /blog/best-restaurants-near-summerlin
 
 ---
 
@@ -35,9 +35,9 @@
 **Meta Description:** Echo & Rig at Tivoli Village is a hybrid steakhouse and butcher shop by Chef Sam Marvin. Over 90 menu items, wood-fired steaks, and nearly 5,000 Yelp reviews.
 
 **Internal Links Used:**
-- /blogs/tivoli-village-restaurants-summerlin
-- /blogs/best-steakhouses-summerlin
-- /blogs/best-date-night-restaurants-summerlin
+- /blog/tivoli-village-restaurants-summerlin
+- /blog/best-steakhouses-summerlin
+- /blog/best-date-night-restaurants-summerlin
 
 ---
 
@@ -53,10 +53,10 @@
 **Meta Description:** Lotus of Siam at Red Rock Resort brings James Beard Award-winning Northern Thai cuisine to Summerlin. Chef Saipin Chutima's garlic prawns and khao soi are legendary.
 
 **Internal Links Used:**
-- /blogs/red-rock-casino-restaurants-summerlin
-- /blogs/best-asian-thai-restaurants-summerlin
-- /blogs/best-restaurants-near-summerlin
-- /blogs/best-date-night-restaurants-summerlin
+- /blog/red-rock-casino-restaurants-summerlin
+- /blog/best-asian-thai-restaurants-summerlin
+- /blog/best-restaurants-near-summerlin
+- /blog/best-date-night-restaurants-summerlin
 
 ---
 
@@ -72,9 +72,9 @@
 **Meta Description:** Honey Salt is a farm-to-table restaurant in Summerlin by Elizabeth Blau and Chef Kim Canteenwalla. Known for seasonal menus, weekend brunch, and over 3,200 Yelp reviews.
 
 **Internal Links Used:**
-- /blogs/best-brunch-spots-summerlin
-- /blogs/best-restaurants-near-summerlin
-- /blogs/best-date-night-restaurants-summerlin
+- /blog/best-brunch-spots-summerlin
+- /blog/best-restaurants-near-summerlin
+- /blog/best-date-night-restaurants-summerlin
 
 ---
 
@@ -90,5 +90,5 @@
 **Meta Description:** Fine Company at Downtown Summerlin is a contemporary American eatery by Chef Roy Ellamar. Named Eater LV Best New Off-Strip 2023. Famous banana bread and whipped feta.
 
 **Internal Links Used:**
-- /blogs/downtown-summerlin-shopping-dining
-- /blogs/best-restaurants-near-summerlin
+- /blog/downtown-summerlin-shopping-dining
+- /blog/best-restaurants-near-summerlin

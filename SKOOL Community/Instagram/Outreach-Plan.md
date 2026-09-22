@@ -1,7 +1,7 @@
-# Instagram Outreach Plan — @theleveragedagent
+# Instagram Outreach Plan — @the.leveraged.agent
 
 ## Objective
-Build a following of real estate agents on @theleveragedagent by executing a targeted Instagram outreach strategy. The goal is to attract realtors who want to leverage AI, automation, and systems to scale their business — and funnel them into The Leveraged Agent Skool community.
+Build a following of real estate agents on @the.leveraged.agent by executing a targeted Instagram outreach strategy. The goal is to attract realtors who want to leverage AI, automation, and systems to scale their business — and funnel them into The Leveraged Agent Skool community.
 
 ---
 
@@ -119,7 +119,7 @@ Post 4–5x per week across these pillars:
 ### Cross-Promotion
 - Share IG content in Skool community
 - Embed IG Reels in Skool lessons
-- Mention @theleveragedagent in YouTube content and Reddit posts
+- Mention @the.leveraged.agent in YouTube content and Reddit posts
 
 ### Referral Loop
 - Ask engaged followers to tag agent friends
@@ -164,7 +164,7 @@ Post 4–5x per week across these pillars:
 ---
 
 ## Next Steps
-1. Audit and optimize @theleveragedagent profile
+1. Audit and optimize @the.leveraged.agent profile
 2. Create content backlog (first 2 weeks of posts)
 3. Build target account list (100 agents to engage with)
 4. Start daily outreach routine

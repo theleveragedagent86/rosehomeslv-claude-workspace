@@ -14,7 +14,7 @@
 **Primary Keyword:** Aliante home isn't selling
 **Secondary Keywords:** Aliante expired listing, home didn't sell Aliante, why home not selling North Las Vegas, new construction competition Aliante, Aliante real estate
 
-**URL:** https://www.rosehomeslv.com/blogs/why-aliante-home-isnt-selling
+**URL:** https://www.rosehomeslv.com/blog/why-aliante-home-isnt-selling
 
 **Open Graph Title:** Why Your Aliante Home Isn't Selling
 **Open Graph Description:** Your Aliante home didn't sell. Here's why and what to do about it.
@@ -33,7 +33,7 @@
 **Primary Keyword:** home didn't sell Aliante
 **Secondary Keywords:** Aliante listing expired, what to do home didn't sell, relist home Aliante, expired listing North Las Vegas, Aliante real estate agent
 
-**URL:** https://www.rosehomeslv.com/blogs/home-didnt-sell-aliante-what-to-do
+**URL:** https://www.rosehomeslv.com/blog/home-didnt-sell-aliante-what-to-do
 
 **Open Graph Title:** Home Didn't Sell in Aliante. What to Do Next
 **Open Graph Description:** Your listing expired in Aliante. Here's your action plan to relist and sell.
@@ -52,7 +52,7 @@
 **Primary Keyword:** sell Aliante home after sat on market
 **Secondary Keywords:** Aliante home not selling, relist home North Las Vegas, stale listing Aliante, home sat on market Las Vegas, listing fatigue Aliante
 
-**URL:** https://www.rosehomeslv.com/blogs/sell-aliante-home-after-sat-on-market
+**URL:** https://www.rosehomeslv.com/blog/sell-aliante-home-after-sat-on-market
 
 **Open Graph Title:** How to Sell Your Aliante Home After It Sat on the Market
 **Open Graph Description:** Your Aliante home sat on the market. Here's how to reset and get it sold.
@@ -71,7 +71,7 @@
 **Primary Keyword:** no offers Aliante home
 **Secondary Keywords:** Aliante no showings, why no offers on home Las Vegas, Aliante pricing strategy, new construction vs resale Aliante, Las Vegas buyer's market
 
-**URL:** https://www.rosehomeslv.com/blogs/no-offers-aliante-home-heres-why
+**URL:** https://www.rosehomeslv.com/blog/no-offers-aliante-home-heres-why
 
 **Open Graph Title:** No Offers on Your Aliante Home? Here's Why
 **Open Graph Description:** Zero offers on your Aliante home? Here's what went wrong and how to fix it.
@@ -90,7 +90,7 @@
 **Primary Keyword:** choose new agent Aliante
 **Secondary Keywords:** Aliante real estate agent, best agent for expired listing, hire new agent home didn't sell, relist agent North Las Vegas, Aliante listing agent
 
-**URL:** https://www.rosehomeslv.com/blogs/choose-new-agent-aliante
+**URL:** https://www.rosehomeslv.com/blog/choose-new-agent-aliante
 
 **Open Graph Title:** How to Choose a New Real Estate Agent in Aliante
 **Open Graph Description:** Your home didn't sell. Here's how to choose the right agent for your Aliante relist.

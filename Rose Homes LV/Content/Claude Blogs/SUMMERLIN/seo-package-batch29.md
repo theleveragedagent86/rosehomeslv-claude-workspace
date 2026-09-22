@@ -17,11 +17,11 @@
 **Meta Description:** Toll Brothers has 6 active communities in Summerlin with homes from the $500s to over $1.58M. Explore Cordillera, Raven Crest, Regency, Ascension, and more.
 
 **Internal Links Used:**
-- /blogs/summerlin-new-homes-2026
-- /blogs/kestrel-summerlin-village-guide
-- /blogs/summerlin-luxury-guard-gated-homes
-- /blogs/summerlin-home-prices-2026
-- /blogs/reverence-summerlin-village-guide
+- /blog/summerlin-new-homes-2026
+- /blog/kestrel-summerlin-village-guide
+- /blog/summerlin-luxury-guard-gated-homes
+- /blog/summerlin-home-prices-2026
+- /blog/reverence-summerlin-village-guide
 
 ---
 
@@ -37,10 +37,10 @@
 **Meta Description:** KB Home has 4 active communities in Summerlin with ENERGY STAR certified homes starting in the low $400s. Explore Caldwell Park, Quail Cove, and more.
 
 **Internal Links Used:**
-- /blogs/summerlin-new-homes-2026
-- /blogs/summerlin-condos-townhomes-guide
-- /blogs/kestrel-summerlin-village-guide
-- /blogs/summerlin-home-prices-2026
+- /blog/summerlin-new-homes-2026
+- /blog/summerlin-condos-townhomes-guide
+- /blog/kestrel-summerlin-village-guide
+- /blog/summerlin-home-prices-2026
 
 ---
 
@@ -56,9 +56,9 @@
 **Meta Description:** Richmond American has 3 active communities in Summerlin including Primrose Park, Osprey Ridge, and Iris Glen. Known for personalization through their Home Gallery design centers.
 
 **Internal Links Used:**
-- /blogs/summerlin-new-homes-2026
-- /blogs/summerlin-west-villages-guide
-- /blogs/summerlin-home-prices-2026
+- /blog/summerlin-new-homes-2026
+- /blog/summerlin-west-villages-guide
+- /blog/summerlin-home-prices-2026
 
 ---
 
@@ -74,10 +74,10 @@
 **Meta Description:** Pulte Homes has 5 active communities in Summerlin including Monument at Reverence. Known for Life Tested designs and smart home features with prices from the $500s.
 
 **Internal Links Used:**
-- /blogs/summerlin-new-homes-2026
-- /blogs/reverence-summerlin-village-guide
-- /blogs/summerlin-home-prices-2026
-- /blogs/summerlin-luxury-guard-gated-homes
+- /blog/summerlin-new-homes-2026
+- /blog/reverence-summerlin-village-guide
+- /blog/summerlin-home-prices-2026
+- /blog/summerlin-luxury-guard-gated-homes
 
 ---
 
@@ -93,8 +93,8 @@
 **Meta Description:** Lennar has 4 active communities in Summerlin featuring Everything's Included packages and Next Gen homes within a home for multi-generational families.
 
 **Internal Links Used:**
-- /blogs/summerlin-new-homes-2026
-- /blogs/summerlin-home-prices-2026
-- /blogs/multi-generational-homes-summerlin
-- /blogs/toll-brothers-homes-summerlin-guide
-- /blogs/kb-home-communities-summerlin-guide
+- /blog/summerlin-new-homes-2026
+- /blog/summerlin-home-prices-2026
+- /blog/multi-generational-homes-summerlin
+- /blog/toll-brothers-homes-summerlin-guide
+- /blog/kb-home-communities-summerlin-guide
