@@ -56,6 +56,11 @@ def nodes_of(data):
         return list(data["@graph"])
     if isinstance(data, list):
         return list(data)
+    if isinstance(data, dict) and not data.get("@type") \
+            and all(k.isdigit() for k in data if k != "@context"):
+        # A node array that was serialized as an object: {"0":{...},"1":{...}}.
+        # Valid JSON, but nothing reads it as schema. Unwrap it.
+        return [data[k] for k in sorted((k for k in data if k.isdigit()), key=int)]
     return [data]
 
 
