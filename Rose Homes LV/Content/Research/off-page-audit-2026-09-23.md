@@ -38,20 +38,32 @@ is exactly why the engines keep naming them.
 This is the single highest value item on the list. It is free and it is the
 front door AI is walking through.
 
-### 2. Google Business Profile is thin
+### 2. Google Business Profile was off-niche, now fixed
 
-It has the basics and nothing else:
+**Correction to an earlier draft of this audit.** It said GBP had no business
+description, no services and no service areas. All three were wrong. The public
+Maps page simply does not expose them to a text scrape. The GBP Manager shows a
+description, a full service list, two categories and 24 service areas already in
+place. What was actually wrong was the positioning, not the emptiness.
 
-- One category only, "Real estate agency"
-- No visible business description
-- No services listed
-- No service areas set
+What the profile really had:
+
+- Primary category "Real estate agency", plus "Real estate agent"
+- A description leading with "Top Producing Las Vegas Real Estate Team", no
+  named areas
+- 12 services, all bare names with no descriptions
+- 24 service areas, no southwest or Summerlin emphasis
 - 5 reviews
 
-Fill in the description, add services (buyer's agent, listing agent, new
-construction, relocation, luxury), add secondary categories, and set the service
-areas to the southwest and Summerlin. Then work reviews. Five is thin for a
-profile this otherwise clean, and review count is what the directories rank on.
+**Done 2026-09-23:** the description was rewritten to lead with the southwest
+valley and Summerlin (719 of 750 characters), and descriptions were written for
+the six on-niche services: buying agent, first-time home buyer, luxury property,
+new construction, seller's agent, relocation. Google says they publish shortly.
+
+**Still open on GBP:** three off-niche services are still listed (Real estate
+investing, Foreclosed property sales, Real estate development). Deleting them is
+Ryan's call, not mine. Reviews are the other lever. Five is thin, and review
+count is what the directories rank on.
 
 ### 3. Zillow points away from the niche
 
@@ -101,12 +113,24 @@ standardizing on the real number.
 
 ## Suggested order
 
-1. Create the HomeLight profile.
-2. Fill out Google Business Profile properly and start asking for reviews.
+1. **DONE 2026-09-23.** Google Business Profile description and six service
+   descriptions rewritten to the southwest and Summerlin positioning.
+2. Create the HomeLight profile. **Blocked:** creating an account is something I
+   cannot do. Ryan signs up, then the drafted bio, specialties and areas in
+   `profile-copy-2026-09-23.md` get pasted in.
 3. Fix Zillow service areas and specialties, drop Senior Communities, push
    Summerlin and the southwest to the top.
 4. Fix the Homes.com bio and specialties.
 5. Check Realtor.com.
 6. Claim or correct Agent Pronto.
+7. Start asking for reviews. Five is the real ceiling on all of this.
 
-Items 1 through 6 all need Ryan's logins. None of them can be done from here.
+Items 2 through 6 all need Ryan's logins, and item 2 needs Ryan to sign up.
+
+## The thing profile edits cannot fix
+
+Homes.com builds "Areas Ryan is Experienced In" from actual closings, not from
+the bio: Henderson 3, Paradise 2, Aliante 1, Valley View 1, Tule Springs 1, and
+zero in Summerlin or the southwest. The directories that derive areas from MLS
+data will keep showing the old footprint until the closings move. Editing
+profiles sets the target. Closings are what make the directories agree.
