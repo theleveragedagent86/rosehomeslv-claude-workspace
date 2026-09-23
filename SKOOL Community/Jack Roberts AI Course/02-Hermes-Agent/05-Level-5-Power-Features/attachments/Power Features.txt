@@ -1,0 +1,724 @@
+ You know, beautiful AI automated and welcome to chapter five of the Hermes
+ masterclass.
+ This one is amazing.
+ You are going to love it.
+ So I hope you caffeinated.
+ I hope you got that beautiful coffee.
+ I hope the phone is on do not disturb because we're going to lock in and take
+ Hermes to
+ a completely level with how we're doing everything here.
+ So let's recap.
+ We built it.
+ We powered it.
+ We've given it a memory.
+ I've got something very fascinating to show you as a little side power up on
+ that as well
+ that only just became possible.
+ Now, never leave this.
+ Now, what we need to do is show you exactly how we can take it to a completely
+ new level.
+ And what we're going to start off with here is what we call the command deck.
+ And this is best explained by a few different commands.
+ So these are powerful features.
+ These are things that you probably didn't really know that you could actually
+ do inside
+ Hermes.
+ And then talks about them except for me right now, explaining to you.
+ So here is three that are really good to know, generally speaking, the steer,
+ the cue and
+ the control seat.
+ And then we've got some additional ones.
+ So let me pull the Hermes up and I can show you what these look like in
+ practice.
+ All right.
+ We have our Hermes aging up.
+ The first one I'm going to show you here is steer.
+ So let's say, for example, we give Hermes a prompt, okay, and then we come over
+ and
+ we send a message.
+ So I might say something like, hey, there, I want you to go out and find for me
+ the best
+ practices when going ahead and including B roll in videos.
+ All right.
+ So you're going to send off a message.
+ Now, if I send this another message and I say, hey, like so, it interrupts the
+ task and
+ stops it dead in its tracks.
+ So that's not really great.
+ That's not what we want to do.
+ What we want to do instead of doing that is if you send it an actual message,
+ and what
+ I'm going to do here as well is just to prevent and speed this up and come down
+ here and
+ just click on stop.
+ So stop basically kills any background processes that exist.
+ It's very, very handy to use that if you physically need to.
+ So now it's going back and it's going ahead and doing the task, right?
+ What we can do instead is I can do forward slash and I can do steer and I can
+ say, hey,
+ make this specifically about YouTube.
+ All right.
+ So you do is forward slash there, give it a little additional direction.
+ This is like something that you forgot to add in to the initial prompt, okay,
+ which is
+ really helpful.
+ So I need to go ahead and fix the model because the model isn't working the one
+ that I put
+ currently bolted up.
+ So what we're going to do right now is come ahead and do forward slash stop to
+ kill the
+ processes.
+ No active tasks.
+ That's correct.
+ We're going to do forward slash come down to model very quickly.
+ I know we can just change the model to anything we want to for the purposes of
+ the demo.
+ So I changed the model back over to Grok, Grok has got like a million contacts,
+ which
+ is fantastic.
+ And it's come back very, very quickly with a lot of thing.
+ I might say which are the top, which are the three most important from that
+ list to something
+ dead simple.
+ And again, you'll see how fast Grok is.
+ It's lightning fast and it's responses, which is cool.
+ The big three motivated, not decorative change on the give you two to five
+ seconds and show
+ before you explain.
+ So that one is a really interesting one.
+ Now another one could be, hey, go and find me the best practices of how to grow
+ to 100,000
+ Instagram followers.
+ Now if I want to give it a message that isn't really connected to that message,
+ but I don't
+ want to stop the initial one, I can do forward slash Q. And again, you can come
+ down like
+ this and say, hey, go and find out for me the best way to get to 100,000
+ followers on
+ LinkedIn.
+ All right, boom.
+ And so I can just literally just drop all these sequential messages.
+ And then when her mates is finished, it will come back and look at them all in
+ turn, which
+ is going to save us a lot of time.
+ Now other really interesting ones that you might want to use, which I'll
+ include on
+ clip is full pack as well for you in the classroom that you can grab them.
+ We can undo, we can roll back to restore and auto snapshot before a risky edit.
+ The other thing that we can do is if we've made a change to Hermes that we don
+'t like,
+ because we set it up properly with the GitHub versioning early on at the
+ beginning of this
+ master class, we can just roll it straight back to something else.
+ We can compress, although typically speaking, it tends to do this by itself,
+ which is really
+ handy.
+ We can hand off.
+ We can do a, as we call ministry of agents.
+ Of course, we can also do that inside of Hermes, a genetic operating system
+ down here.
+ If you scroll down, you've got ministry of experts, click on this, and then we
+ can literally
+ grab all this thing, which is fantastic.
+ And also, if you prefer as well, we can literally come down here, grab this,
+ and just as one,
+ click on ministry, then you can begin the whole thing and get rocking and
+ rolling with
+ it, which is super handy.
+ We've got journey.
+ We have learn.
+ So learn is a really powerful skill.
+ So let's want to touch on what they are.
+ So let's go ahead with this ministry of experts.
+ We covered that in a previous master class.
+ Effectively, what it is, is a sim, one question, but it asks to three different
+ models.
+ So let's go ahead and decide which models we would actually like.
+ So let's say in the driving seat, we would like to go with, you know, we've got
+ opus 4.8.
+ We've got fable.
+ Let's get rid of fable real quick.
+ Let's grab fable five and drop that in there.
+ And then what I might do is I will just leave these here for argument second.
+ This is all saved, which is called saved to the computer.
+ Fantastic.
+ Now, let's go over to our Hermes agent and drop it a question.
+ So I have here at the top.
+ I've got a grok 4.5 enabled, but let's say I want to come down and I want to go
+ ahead
+ and use ministry.
+ I might ask you a question that sounds something like, hey there, which is the
+ best platform
+ online to grow if you wanted to reach a million followers as quickly as
+ possible.
+ And then tell me which should be the basically the most monetization per
+ subscriber of all
+ social media.
+ So what this will do here, and I'm going to ask the same thing in telegram as
+ well, is
+ effectively it will ask that question to all three individual things.
+ You can see we've got the streaming down here.
+ It's showing live activity, which is fantastic.
+ I can also pull up telegram and in telegram, all you're going to do is come and
+ do forward
+ slash.
+ I'm going to type in MOA.
+ Okay.
+ And then just literally same question, pop it in there and it will basically
+ get those
+ three models that we've actually saved on our computer and ask them those
+ questions
+ so we can go ahead and get basically the same.
+ What it will do is you have the orchestrator model and it feeds the question to
+ all three
+ models.
+ Now they don't look at each other's homework and what it enables it to do and
+ the reason
+ why this exists is it enables it to find the blind spots of other models that
+ it may just
+ may not know.
+ So you're going to get fully balanced answers that are better.
+ Then I've come over to our agenda operating system.
+ You can see it's actually awesome.
+ It didn't need to show us information.
+ You can toggle this off, but I've included it so it'll actually show me what
+ did open
+ eye care activities say.
+ That's reference one shows you all the details.
+ What did the second one say shows you all the details and what did the third
+ one say
+ shows you all the details, then gives us a tail of our fastest growth.
+ It's TikTok.
+ Most money per follower is only fans.
+ This is not endorsed by the community.
+ I must admit they're not spotted in this video and then all YouTube ad based,
+ highest RPM
+ management platform.
+ I would agree with that.
+ And then you've got speed to million followers.
+ It is TikTok is the easiest platform to do that monetizing per subscriber.
+ So, highest cash per sub, which is interesting, best mainstream social media
+ platform.
+ So now we get a kind of nice, beautiful overview that core fable five has done.
+ So this is a good example of one very powerful prompt.
+ Another really cool one here is the learn skill.
+ So one of the cool things that people don't realize that you can do with Hermes
+ agent.
+ And this is one of its most powerful features is the idea that it learns.
+ So let's say that we work together to do something.
+ Okay, for example, let's go back over to Hermes agent right now.
+ And inside Hermes agent, it's given us, if I pull him up here very quickly, a
+ overview
+ and it's done some research, right?
+ So what I can do here is I can afford slash and I can say learn.
+ So this creates a reusable skill.
+ So if I do something, say, for example, I was trying to connect Zap here, I was
+ trying
+ to connect my meeting, no, take care.
+ I was trying to build and a skill that edited videos and I was going back and
+ forth with
+ Hermes and then finally got him.
+ What you can do is forward slash learn and say, hey, that I want you to turn
+ this into
+ a skill.
+ Okay.
+ And what Hermes will do is take everything that you just covered and turn it
+ into a
+ skill.
+ The other thing that we can do with this learn command is just throw a repo at
+ it.
+ So for example, let's go over to GitHub and in GitHub, we will see on my
+ homepage somebody
+ that has forked my repository, which is power design, cool.
+ This is deep research I did on what makes websites gorgeous, what makes
+ presentations
+ gorgeous, all I'm going to do is come down, I'm going to copy this link, which
+ essentially
+ is the repo link, come up to Hermes and I'm just going to say learn this.
+ And I might just say, use these principles whenever building anything design
+ related
+ that I ask you.
+ Okay.
+ And then just send that off.
+ Now look what it does.
+ It's going to go ahead and learn a skill from what I've described.
+ And essentially what this will do is go ahead to the repo and follow everything
+ it needs
+ to follow.
+ It's coffee is good.
+ Ice coffee is pretty tasty right now, must admit.
+ Cool.
+ Let's go down there and it will just go through the process and do this.
+ So the two things to bear in mind with learn scum.
+ Number one is I can do it retroactively.
+ We've accomplished something of note.
+ We've accomplished something of value and I'm like, dude, don't forget that.
+ Please go and remember that Hermes does it.
+ Save bank.
+ If you're somebody who finds, and I don't personally find it, but if you're
+ somebody
+ who finds that sometimes Hermes just forget stuff or it doesn't remember stuff,
+ it's because
+ you're not asking it to commit it to its long-term memory.
+ Everything is a skill what's a way to do that.
+ So we can do it retroactively.
+ The second way is proactively go and learn this.
+ Kind of the matrix.
+ Think of it like Neo.
+ You're in the chair and you've got that thing at the back of your head and then
+ you're just
+ downloading Kung Fu, you're downloading the skills and I've just downloaded
+ this.
+ So now it has this skill, so I ask it to build something.
+ It can go ahead and use that skill to accomplish it, which is super, super
+ powerful and helpful.
+ Then it comes back with the answers.
+ So here's a name.
+ Power design, categories, creative, what it captured, your power design system,
+ brand
+ DNA, 20 slide rules, 20 web rules, brand native HTML decks, sites, checklists,
+ brand
+ tape play and exact recipe.
+ Reference saved under this skill here, so it's got it all saved, which is
+ fantastic
+ and we can even open that up if we really wanted to, but it's got all the data,
+ which
+ is massively helpful.
+ So we've got the loan one.
+ Then we have full-class journey, which is a playable timeline of its memories
+ and its
+ skills.
+ Now, the second thing that's really powerful about Hermes, and we've talked
+ about goals
+ before, this idea that you give Hermes a task, you give it a goal, you say, go
+ and accomplish
+ this thing, and it has a 20-turn loop to do it.
+ So the value here is it doesn't stop until it's accomplished the goal.
+ So it needs to be a goal that Hermes can do autonomously by itself.
+ So think of it, in this case, like a building inspector.
+ The building doesn't decide the house is finished.
+ The inspector does.
+ The inspector walks in.
+ He runs the checks.
+ He checks the signs.
+ He pushes on the walls.
+ He pulls things out.
+ He makes sure that it's safe to do so.
+ That's how it works.
+ All of these, completion contracts, and there are three things that we can add
+ in here.
+ We can add in a verify.
+ We can add in a constraint, and we can add in a boundary.
+ So we can essentially say, here's your goal, and then here's how I want you to
+ verify.
+ These are the constraints of the task, and these are the boundaries of that
+ task.
+ So what you can do, for example, is screenshot this, all right, and you can
+ even use this
+ in chatting with Hermes itself.
+ So I said this to my clipboard, for example, and I can explain exactly what
+ verification
+ constraints and boundaries mean.
+ So verify is how it proves it.
+ So the check, the judge must see pass.
+ Test screen files, you know, test screen files, move page live.
+ If you can't write the check, tighten the goal.
+ Then we have the constraints, which is what it must not do.
+ So don't do these things.
+ Remember, telling it the negative is just as important.
+ The explicit don'ts.
+ Don't touch production.
+ Do not install packages.
+ Do not email anybody.
+ Spoken, not assume.
+ Don't assume that it knows what not to do.
+ It's, you know, assume it's facetious.
+ Boundaries, where it may act, the blast radius, this folder, this repo, this
+ account, everything
+ outside of it is bound.
+ So whenever you think of the goals, you think of the verification, constraints,
+ and boundaries,
+ which is really cool.
+ So what you can even do, if I come down here and screenshot this, which is
+ command shift
+ 5, for those of you that have never used this before, and apparently this is a
+ new cool
+ thing.
+ So I'm going to do this, and I'm going to shoot over to Hermes, and in a new
+ chat window,
+ I'm going to drop this in, and say, "Hey there, I would like to create and test
+ a completion
+ contract with you.
+ Could you give me three different examples of things that I could ask you to do
+ that
+ will leverage this proof of done, this completion contract, and give me those
+ three sample prompts?"
+ Okay.
+ So now what we can do, and then even then, so look, then I want you to save
+ this as a
+ skill, this completion contract skill, such that when I ask you for goals in
+ the future,
+ that you'll come back and verify with me the constraints, the verification, and
+ the boundaries.
+ All right.
+ And then we're going to send that one off.
+ And essentially just use Hermes to help you.
+ We call this meta-prompting, using it to actually create a better prompt and
+ better question.
+ And it's given us three different ideas.
+ So let's go ahead with number three, which is the research brief, which is
+ research the
+ best LinkedIn post formats for AI tool creators in 2026, and give me a one-page
+ brief.
+ Contract is verify the brief has five source claims and links, ends with a
+ seven-day posting
+ test plan, and the constraints, no posting, no DMs, no account changes,
+ boundaries, read-only
+ WebEx, write down a local path name here.
+ Okay, cool.
+ I'm going to come down and literally let's come down, and then I'm going to do
+ /goal,
+ and then just paste that in, and then we are ready to rock and roll.
+ And then look, goal set, 20-10 budget, research the best LinkedIn post, and
+ then at any point
+ in this, we can do the /goal status, pause, resume, or clear if you want to go
+ ahead and
+ stop it.
+ We've locked in the contract.
+ I just love the idea, guys.
+ We're making contracts with our agents, completion contracts, it just sounds so
+ freaking
+ cool that that is a thing, so no homies agent will run off in the background
+ and complete
+ that for us.
+ And whilst our homies agent is doing that in the background, I want to through
+ what's
+ really going on here.
+ And I've had an example one here, you can look at like goal, slot every file,
+ my download
+ folders into subfile type.
+ By the way, I did that last time, as you can see in my download files, look how
+ clean
+ they are.
+ It's really impressive.
+ Verify, constraints, boundary, so really, really cool system.
+ So there's a judge in my loop.
+ So a judge rules done or continued.
+ So the idea here is you have the worker, you have the judge who's always
+ checking the
+ contract.
+ So he keeps working.
+ And if the judge says, hey, we're not done because we haven't really sorted
+ this out,
+ then it just continues in a loop, add in finitium until it's completed.
+ So, and I think this is a really interesting concept if you think of a judge,
+ like some
+ being tasked with a goal and someone else being tasked to say, is it complete
+ or not?
+ Because models can often say, hey, I think we're done, when we're not done, we
+'re done,
+ when I say we're done, says the judge.
+ So after every turn, a judge model reads the contract and rules, keep going on
+ them.
+ The default budget is 20 turns, then it also pauses.
+ Okay?
+ So they, because it made tiny criteria, it should be completed within 20 goals.
+ That's the idea.
+ The pro move is to point the judge at a cheap model, the worker thinks
+ expensive, the referee
+ costs pennies.
+ So that's like a little hack of how you can save a bit of money.
+ So goals are not set and forget, a documented community run went for four hours
+ because
+ the goal ignored its constraints and hit bot protection rules.
+ The fix is the pattern a verify clause judge can actually check, plus a
+ periodic goal status
+ or timing with a leash, the idea being that you can easily create a system that
+ just means
+ it runs and runs and runs and runs.
+ And if you've got like a fable five model on that, it can just get out of
+ control.
+ So just make sure that you had a very good verify clause, which is why it's
+ good for
+ him as agent to come ahead and actually help you support in actually writing
+ that, which
+ I think is really super duper important.
+ Beautiful.
+ So now our him is agent is finished.
+ It's previous to ask, let's pull up and take a quick look at this.
+ As you can see, it's not it's completed.
+ It's got the proof, the contract on a roll, the constraints, no person DMS and
+ the punchline
+ from the roof.
+ So we should be able to open this up.
+ I think we could just literally pop over them into a new browser, open this one
+ up and
+ then we are ready to rock and roll.
+ Yes, we're allowed for that.
+ That's fine.
+ And then we've got the whole carousel.
+ I didn't tell it to make it into HTML.
+ I probably would have done that, but you get the idea.
+ It can effectively complete those contracts for us, which takes us nicely onto
+ the next
+ level, which is going to be the curator, which effectively is the idea of
+ overnight
+ self improvement.
+ This idea that it built in for seven day cycle, the grades, merges, and
+ parental agents,
+ own skills, zero tokens, fully deterministic and it looks absolutely gorgeous.
+ The images that we get these days with AI, I freaking love them.
+ So how does it work?
+ This idea that every skill is basically graded on our use of the week.
+ We can consolidate.
+ So we look at overlapping skills, merge the ones that are somewhat similar.
+ And then finally, we can cut the dead weight and remove the ones on.
+ So what's interesting with this is we can actually do this inside the agenda,
+ operating
+ system that I'm going to show you actually in the next chapter, which takes it
+ to a
+ completely new level, looking very critically at this dream functionality here,
+ which is
+ really, really insane.
+ Now, the other really important powerful that you need to master in Hermes is
+ its proactivity.
+ And the cool thing about Hermes agent is the fact that it can be proactive,
+ that it's
+ not always waiting for you to say something.
+ But the most fun I find that I have with this agent and the most viable sort of
+ things
+ I get out of it really are when it messages me and says, Jack, check this out.
+ What do you think about this?
+ It's really cool.
+ So proactivity itself is not a magic toggle.
+ It's three wires.
+ It's a home channel, a schedule and goals.
+ You can connect them and the agent starts conversation.
+ So have a think about this.
+ The more it is to begin it on luck.
+ Without home channel, every proctor messaging cron runs silent and goes nowhere
+.
+ So we need to decide where are the messaging goes.
+ For me personally, I tend to use telegram for that.
+ We've got forward slash blueprint.
+ I can schedule tasks as a form, not crons and tags, which is easy blueprint is
+ just a more
+ user friendly way of describing cron and the cron is just basically a task to
+ do.
+ And then you've got suggestions.
+ So the killer moment, it proposes its own automations for what it's seen you do
+.
+ You can just accept it or dismiss.
+ So what we could do there actually is sweet over stroke to Hermes agent.
+ And what we can do here, if I come over, you can do forward slash suggestions.
+ So review automations, accept a dismiss.
+ Yeah, let's go ahead and only can do is come down, send this one off and have
+ it to review
+ any of the automations.
+ You know, suggested automations right now, try suggestions catalog to CD create
+, start
+ a set on install.
+ So you may not get them there, which is fine.
+ But I actually find the best way to do this is, hey, based on our entire
+ conversation history,
+ could you recommend a couple of things that would be automated?
+ Is there anything that I tend to ask you anything based on all of our
+ conversations?
+ And from the data you can see, that would be valuable for me to automate that
+ you could
+ take off my shoulders, off my plate, or you just looking around corners and
+ making my
+ life easier.
+ Let me know.
+ All right, cool.
+ And then send that one off.
+ And if you want it to run a million miles an hour, again, you could just use
+ that goal
+ feature and it can have a good look at it.
+ And basically I'd encourage you to ask that kind of prompts so you can go ahead
+ and learn
+ more as it kind of goes through, which is very, very cool.
+ So that's a really cool one.
+ Again, think of it like a butler who actually knocks.
+ And the cool one that I mentioned in the last module, which was this morning
+ brief that
+ improves, right?
+ It's I did that the morning brief can check your emails, check your calendar,
+ but also
+ think about everything that you're talking to about.
+ And I always embed this and don't just give me the information.
+ I want you to think about it.
+ One of the things that you can ask a homeys agent to do overnight, actually,
+ even on cheap
+ model, if you want to, is to just try and solve one problem with a clear
+ deliverable
+ that would be beneficial for me, based on everything you know about me, like a
+ homeys
+ agent can do this within the background.
+ We are at the point where we can have these agents working for us 24/7 in the
+ background
+ if we wish.
+ So there's no be proactive mode.
+ We have to talk to it, ask it to do things, and try and think about what
+ something it could
+ do on a cadence.
+ They would actually be valuable for us.
+ Now, that leads us into the next power feature, which is that they have one
+ brain and a team
+ of hands.
+ What do I mean by that?
+ We're talking about sub agents here.
+ So quick parallel jobs go to delegate tasks, real orchestration, name workers,
+ gated handoffs,
+ work that survives a crash.
+ Now, best way to think about this is we call this the fan out that we don't
+ need to do
+ things in sequence sequentially, like A, then B, then C, then D, we can split
+ that up.
+ We can have four or five of them do things at the same time.
+ We call this parallelized agents, parallel agents, all working on the same
+ things.
+ Now, we can do this with a Kanban board.
+ We can delegate tasks if you want to.
+ Typically speaking, you want a concurrency of three that tends to be where it
+ performs
+ the most, which means that I can say, "Hey, go and solve this task," and then
+ spin up
+ sub agents that will in turn do something themselves.
+ For example, I can come over to a homeys agent.
+ I can say, "Hey there, I want to go ahead and find for me."
+ That is the ultimate revenue stream for a content creator.
+ I want you to go ahead and spin up three sub agents in parallel to attack this
+ question
+ from a different angle and come back with a very concise, clean and crisp
+ answer.
+ Okay, so we're going to send that one off, and then actually this actually took
+ my first
+ sentence right there, and we can again, we can rock and roll and do everything
+ we need
+ to in there.
+ Now, this is going to use parallel agents, which means that all three of them
+ can be doing
+ the same thing.
+ They could be doing different tasks.
+ They could all be doing the same task.
+ You can stack and build on these principles as you go through, which I think is
+ really
+ cool, and they compound over time, which is fantastic.
+ Now, whilst we're in the background, we're going to look at now the next level,
+ which
+ is going to be chapter 5.6.
+ So, the idea with the speed drops here, and this was a big update that we had
+ in homeys
+ agent that you're going to see right now, and this was the idea that when you
+ asked it
+ to do tool calls, like you said, "Hey, go and check my Gmail for this.
+ Go and check my calendar for that.
+ Go and research this and research that."
+ It would do them all sequentially tool calls, but one of the biggest updates
+ that just landed
+ in homeys agent was the fact that it will do tool calls in parallel now.
+ So, think of it as runners on a racetrack, we can do four at the same time
+ instead of
+ one.
+ Previously, for example, tool calls would be one after another, web research.
+ This one was a crazy one.
+ So, did you know, homeys agent used to take, oh my gosh, it would have been
+ like two minutes
+ to script a web page.
+ It would grab everything, and then it would pay another model to summarize it,
+ and then
+ it would use that information.
+ Now, it does it in seconds.
+ As you can see, it goes from three minutes for research questions to 15 seconds
+ for the
+ same answer.
+ The other thing that it would do is basically now it can do all of these
+ searches by itself.
+ It can find information 60 times cheaper, so, excuse me, 60 times faster and 49
+ times
+ cheaper.
+ So, for example, if you look at the speed dividend, for instance, how many
+ research tasks
+ do you ask a day?
+ If I ask to do a 20, it's saving me a lot of time, which is fantastic, and
+ again, we
+ can then empower this with fire crawl as a connection, which I recommend, that
+ just
+ enables us to, because fire crawl basically strips out their HTML tags, all
+ that stuff
+ and just gives you the pure actual information and enables us to go ahead and
+ grab things
+ and kind of get the exact information.
+ Now, if you come back over to homeys agent, for example, you can see it's done
+ that, and
+ look at this.
+ It's come back with an answer, 0 to 10K is affiliates, 10 to 100K sponsors, and
+ then
+ cohort, and then there's other aspects there.
+ Honestly, the only interesting answer to this is sponsorship.
+ I saw there was a stream of XQC said he makes $800,000 a month on sponsorships,
+ which is
+ very, very interesting that it goes ahead and does that, but that's just kind
+ of your
+ information.
+ You'll see exactly what I'm talking about.
+ So, we can use these tools, it can span out some agents, all that kind of thing
+.
+ Now, the other thing that we need to touch on here is the relationship with
+ Cloud Code.
+ So, because you've got access to our genetic operating system that I'm building
+ on all
+ the time, so again, I'm building this constantly, improving it, finding ways to
+ make it happen.
+ We have a connective, basically, knowledge system now between Hermes and Cloud,
+ which
+ means that we access and share that.
+ But the question is, when do I use Cloud, when do I not?
+ Think of it as the operator and the contractor.
+ The operator runs your world all day, when a job needs a specialist, it hires
+ one that
+ keeps the receipts.
+ So, Hermes is always on.
+ Life session content, I can message this from anywhere, on the go, super duper
+ easy, and
+ it can go.
+ You can steer in projects like breaking it.
+ You can't really do that in Cloud so much.
+ You can ban, you can spawn Cloud Code as a sub agent if you want to, and then
+ we look
+ Cloud Code that we use.
+ Now, the simplest way to think about it is Cloud Code, use on your desktop, if
+ you want
+ to build something, and Hermes, I just use it on the go.
+ Just think of it as a personal assistant, that's what Hermes function is, and
+ Cloud is
+ where we build things.
+ Now, can you effectively build things in Hermes agent?
+ Yeah, of course you can.
+ It's like, you can do everything in Cloud Code, right?
+ But eventually, it's important you just start building Hermes agents.
+ So, there's so much overlap, which is why people ask the question, but if you
+ just
+ think of it as form, this is a personal assistant that can do anything.
+ And this is, it's like, for example, asking, should I search the web on my
+ desktop, or
+ should I search the web on my phone?
+ You can do both, right?
+ But there's like, prefer to use cases for the phone, and prefer to use cases
+ for the
+ desktop.
+ And when you understand that, you will be able to take this hold to a whole new
+ level.
+ And again, I'll put some information down here on the packet to look at nine
+ ways that
+ people really trip up, but it will give you a really good understanding of
+ exactly where
+ you are and where you want to get to in the next level.
+ And so now you understand some of these incredible power features.
+ The next thing we're going to learn is the operating system.
+ This is where we give it the power, the infrastructure, and just unlocks things
+ that are unbelievably
+ powerful.
+ I'm going to show you exactly what I mean.
+ So grab that beautiful coffee and get ready to lock in for the next training.

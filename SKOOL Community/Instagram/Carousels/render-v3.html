@@ -1,0 +1,387 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Leveraged Agent Carousel 01, Transaction Coordination (v3)</title>
+<link rel="stylesheet" href="../../Brandkit/Design-System/fonts/fonts.css">
+<style>
+/* ══════════════════════════════════════════════════════════════════════
+   Carousel 01 · Transaction Coordination · v3
+   Palette v2.0 "Vector", tokens mirrored from Brandkit/Design-System/tokens.css.
+   One accent, one value. Black is a surface, never a text color.
+   No warm colors, no gradients, no shadows, no radii above 4px.
+   ══════════════════════════════════════════════════════════════════════ */
+:root{
+  --bg:#FFFFFF; --bg2:#F7F8FA; --inv:#000000; --line:#E4E7EF; --struct:#0B3FA8;
+  --ink:#050E3D; --ink2:#55627F; --inkInv:#FFFFFF; --ink2Inv:#9AA3BC;
+  --acc:#1768E5; --accInv:#5B9BFF;
+  --head:'Barlow','Helvetica Neue',Arial,sans-serif;
+  --sub:'Raleway','Helvetica Neue',Arial,sans-serif;
+  --body:'Inter','Helvetica Neue',Arial,sans-serif;
+  /* one gutter, one rhythm. Layout steps jump, they do not creep. */
+  --pad:96px; --top:120px; --foot:190px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{background:#D8DBE3;font-family:var(--body);padding:48px 0;
+  display:flex;flex-direction:column;align-items:center;gap:48px}
+
+/* ───────── the frame every slide shares ─────────
+   .slide stays a plain positioned block so the footer furniture anchors to the
+   full 1080 box. The inner .stack does the column layout. Do not merge them:
+   an abspos child of a FLEX container resolves against its CONTENT box, which
+   insets every corner-pinned element by the gutter. */
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;
+  background:var(--bg);color:var(--ink)}
+.slide.dark{background:var(--inv);color:var(--inkInv)}
+.stack{position:absolute;inset:0;z-index:1;
+  padding:var(--top) var(--pad) var(--foot);
+  display:flex;flex-direction:column}
+
+/* ghost numeral. The depth system: base → ghost → content, built from
+   value alone because Vector has no gradient and no shadow to spend. */
+.ghost{position:absolute;right:-44px;bottom:150px;z-index:0;
+  font-family:var(--head);font-weight:800;font-size:420px;line-height:.74;
+  letter-spacing:-.05em;color:var(--bg2);user-select:none}
+.dark .ghost{color:rgba(255,255,255,.045)}
+
+
+/* eyebrow row: index · hairline · kicker. The editorial layer. */
+.eyebrow{display:flex;align-items:center;gap:20px;margin-bottom:44px}
+.eyebrow .idx{font-family:var(--sub);font-weight:600;font-size:24px;
+  letter-spacing:.15em;color:var(--acc)}
+.dark .eyebrow .idx{color:var(--accInv)}
+.eyebrow .bar{width:56px;height:2px;background:var(--acc)}
+.dark .eyebrow .bar{background:var(--accInv)}
+.eyebrow .kick{font-family:var(--sub);font-weight:600;font-size:24px;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--ink2)}
+.dark .eyebrow .kick{color:var(--ink2Inv)}
+
+h2{font-family:var(--head);font-weight:800;font-size:92px;line-height:1.02;
+  letter-spacing:-.028em;max-width:13.5ch;text-wrap:balance}
+h2.sm{font-size:78px;max-width:14ch}
+p.body{font-family:var(--body);font-weight:400;font-size:36px;line-height:1.58;
+  color:var(--ink2);max-width:24ch;margin-top:36px;text-wrap:pretty}
+.dark p.body{color:var(--ink2Inv)}
+.spacer{flex:1;min-height:40px}
+.art{align-self:stretch;width:100%}
+.art>svg{width:100%;height:auto}
+svg{display:block;overflow:visible}
+
+/* ───────── footer furniture ───────── */
+.mark{position:absolute;left:var(--pad);bottom:104px;font-family:var(--sub);
+  font-weight:600;font-size:22px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--ink2)}
+.dark .mark{color:var(--ink2Inv)}
+.mark s{text-decoration:none;color:var(--acc)}
+.dark .mark s{color:var(--accInv)}
+.count{position:absolute;right:var(--pad);bottom:104px;font-family:var(--sub);
+  font-weight:600;font-size:22px;letter-spacing:.15em;color:var(--ink2)}
+.dark .count{color:var(--ink2Inv)}
+
+/* full-bleed progress bar. The one decorative-looking element that is not
+   decorative: its width is the reader's position in the deck. */
+.rail{position:absolute;left:0;right:0;bottom:0;height:12px;background:var(--line)}
+.dark .rail{background:rgba(255,255,255,.14)}
+.rail i{display:block;height:100%;background:var(--acc)}
+.dark .rail i{background:var(--accInv)}
+
+/* ───────── cover ───────── */
+.cover .stack{justify-content:center}
+.cover .kicker{font-family:var(--sub);font-weight:600;font-size:25px;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--ink2Inv);
+  margin-bottom:40px}
+.cover h1{font-family:var(--head);font-weight:800;font-size:116px;line-height:.98;
+  letter-spacing:-.032em}
+.cover h1 em{font-style:normal;color:var(--accInv)}
+.swipe{position:absolute;right:var(--pad);bottom:102px;display:flex;
+  align-items:center;gap:14px;font-family:var(--sub);font-weight:600;
+  font-size:24px;letter-spacing:.15em;text-transform:uppercase;color:var(--accInv)}
+
+/* ───────── CTA ───────── */
+.cta .stack{justify-content:center;align-items:center;text-align:center}
+.cta .hero{font-family:var(--head);font-weight:800;font-size:400px;line-height:.82;
+  letter-spacing:-.05em;color:var(--accInv)}
+.cta h2{font-size:76px;max-width:15ch;text-align:center;margin-top:48px}
+.cta p{font-family:var(--body);font-weight:400;font-size:34px;line-height:1.6;
+  color:var(--ink2Inv);max-width:24ch;margin-top:28px}
+</style></head><body>
+
+<!-- ════════════ 1 · COVER ════════════ -->
+<section class="slide dark cover">
+  <div class="ghost"></div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+  <div class="swipe">Swipe <svg width="34" height="16" viewBox="0 0 34 16"><path d="M1 8h30M24 1l8 7-8 7" stroke="#5B9BFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="rail"><i style="width:11.1%"></i></div>
+  <div class="stack">
+    <div class="kicker">AI Transaction Coordinator</div>
+    <h1>I have <em>3 deals</em><br>on my board.<br>Claude Code<br>writes <em>every</em><br>email.</h1>
+    <div class="art" style="margin-top:88px">
+      <svg width="820" height="250" viewBox="0 0 820 250">
+        <path d="M8 232 H812" stroke="#2E2E2E" stroke-width="4" stroke-linecap="round"/>
+        <g stroke="#9AA3BC" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" fill="none">
+          <path d="M28 232 V132 h56 l16 22 h94 v78 z"/><path d="M48 176 h104 M48 202 h70"/>
+          <path d="M264 232 V132 h56 l16 22 h94 v78 z"/><path d="M284 176 h104 M284 202 h70"/>
+        </g>
+        <g stroke="#5B9BFF" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M528 222 V78 h62 l18 24 h104 v120 z" fill="#0A1A33"/>
+          <path d="M552 130 h120 M552 162 h94 M552 194 h62"/>
+        </g>
+        <path d="M660 46 V14 M700 58 l24 -24 M620 58 l-24 -24" stroke="#5B9BFF" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ 2 · 17 DEADLINES ════════════ -->
+<section class="slide">
+  <div class="ghost">01</div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+  <div class="count">02 / 09</div>
+  <div class="rail"><i style="width:22.2%"></i></div>
+  <div class="stack">
+  <div class="eyebrow"><span class="idx">01</span><span class="bar"></span><span class="kick">The problem</span></div>
+  <h2 class="sm">A transaction is not one job, it is 17 deadlines</h2>
+  <p class="body">Inspection, appraisal, loan docs, HOA, walkthrough, signing. Miss one date and you are the reason it fell apart.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="880" height="300" viewBox="0 0 880 300">
+      <path d="M8 246 H872" stroke="#050E3D" stroke-width="7" stroke-linecap="round"/>
+      <g stroke="#C9CFDE" stroke-width="6" stroke-linecap="round">
+        <path d="M34 246 V178"/><path d="M84 246 V132"/><path d="M134 246 V194"/><path d="M184 246 V150"/>
+        <path d="M284 246 V118"/><path d="M334 246 V188"/><path d="M384 246 V156"/><path d="M434 246 V206"/>
+        <path d="M484 246 V136"/><path d="M534 246 V180"/><path d="M584 246 V114"/><path d="M634 246 V196"/>
+        <path d="M684 246 V148"/><path d="M734 246 V188"/><path d="M784 246 V126"/><path d="M834 246 V172"/>
+      </g>
+      <g fill="#FFFFFF" stroke="#C9CFDE" stroke-width="6">
+        <circle cx="34" cy="174" r="11"/><circle cx="84" cy="128" r="11"/><circle cx="134" cy="190" r="11"/><circle cx="184" cy="146" r="11"/>
+        <circle cx="284" cy="114" r="11"/><circle cx="334" cy="184" r="11"/><circle cx="384" cy="152" r="11"/><circle cx="434" cy="202" r="11"/>
+        <circle cx="484" cy="132" r="11"/><circle cx="534" cy="176" r="11"/><circle cx="584" cy="110" r="11"/><circle cx="634" cy="192" r="11"/>
+        <circle cx="684" cy="144" r="11"/><circle cx="734" cy="184" r="11"/><circle cx="784" cy="122" r="11"/><circle cx="834" cy="168" r="11"/>
+      </g>
+      <!-- the seventeenth: snapped at the base, lying on the line -->
+      <path d="M234 246 V224" stroke="#1768E5" stroke-width="9" stroke-linecap="round"/>
+      <path d="M246 240 L344 216" stroke="#1768E5" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="358" cy="213" r="15" fill="#1768E5"/>
+      <path d="M226 198 l-16 -18 M238 190 l2 -24 M254 198 l18 -18" stroke="#1768E5" stroke-width="6" stroke-linecap="round"/>
+      <text x="182" y="294" font-family="Raleway" font-weight="600" font-size="25" letter-spacing="3.5" fill="#1768E5">ONE MISSED</text>
+    </svg>
+  </div>
+  </div>
+</section>
+
+<!-- ════════════ 3 · THE FOLDER ════════════ -->
+<section class="slide">
+  <div class="ghost">02</div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+  <div class="count">03 / 09</div>
+  <div class="rail"><i style="width:33.3%"></i></div>
+  <div class="stack">
+  <div class="eyebrow"><span class="idx">02</span><span class="bar"></span><span class="kick">The input</span></div>
+  <h2>The folder is the system</h2>
+  <p class="body">One folder per deal. Contract, addenda, dates, contacts. Claude reads that folder before it writes anything.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="880" height="330" viewBox="0 0 880 330">
+      <g stroke="#1768E5" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" fill="none">
+        <path d="M24 296 V72 h106 l22 30 h174 v194 z"/>
+      </g>
+      <g stroke="#1768E5" stroke-width="6" stroke-linecap="round">
+        <path d="M368 128 H436"/><path d="M368 184 H436"/><path d="M368 240 H436"/><path d="M368 296 H436"/>
+      </g>
+      <g stroke="#C9CFDE" stroke-width="6" stroke-linecap="round">
+        <path d="M436 128 H584"/><path d="M436 184 H584"/><path d="M436 240 H584"/><path d="M436 296 H584"/>
+      </g>
+      <g font-family="Raleway" font-weight="600" font-size="27" letter-spacing="3" fill="#050E3D">
+        <text x="612" y="138">CONTRACT</text><text x="612" y="194">ADDENDA</text>
+        <text x="612" y="250">DATES</text><text x="612" y="306">CONTACTS</text>
+      </g>
+    </svg>
+  </div>
+  </div>
+</section>
+
+<!-- ════════════ 4 · DATES FROM THE CONTRACT ════════════ -->
+<section class="slide dark">
+  <div class="ghost">03</div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+  <div class="count">04 / 09</div>
+  <div class="rail"><i style="width:44.4%"></i></div>
+  <div class="stack">
+  <div class="eyebrow"><span class="idx">03</span><span class="bar"></span><span class="kick">The extraction</span></div>
+  <h2 class="sm">Dates come from the contract, not your memory</h2>
+  <p class="body">Drop the executed contract in. The skill pulls every deadline and builds the calendar in one pass.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="880" height="320" viewBox="0 0 880 320">
+      <!-- the executed contract -->
+      <g stroke="#9AA3BC" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" fill="none">
+        <path d="M20 300 V24 h176 l52 52 v224 z"/><path d="M196 24 v52 h52"/>
+        <path d="M58 118 h150 M58 156 h150 M58 194 h108"/>
+      </g>
+      <path d="M58 244 h96" stroke="#5B9BFF" stroke-width="7" stroke-linecap="round"/>
+      <!-- the pass -->
+      <path d="M298 162 H432" stroke="#5B9BFF" stroke-width="8" stroke-linecap="round"/>
+      <path d="M408 140 l26 22 l-26 22" stroke="#5B9BFF" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- the calendar it builds -->
+      <g stroke="rgba(255,255,255,.26)" stroke-width="4">
+        <rect x="486" y="34" width="372" height="256" fill="none"/>
+        <path d="M486 92 H858"/>
+      </g>
+      <g fill="rgba(255,255,255,.22)">
+        <rect x="516" y="118" width="48" height="36"/><rect x="580" y="118" width="48" height="36"/>
+        <rect x="708" y="118" width="48" height="36"/><rect x="772" y="118" width="48" height="36"/>
+        <rect x="516" y="170" width="48" height="36"/><rect x="644" y="170" width="48" height="36"/>
+        <rect x="772" y="170" width="48" height="36"/><rect x="580" y="222" width="48" height="36"/>
+        <rect x="708" y="222" width="48" height="36"/><rect x="772" y="222" width="48" height="36"/>
+      </g>
+      <g fill="#5B9BFF">
+        <rect x="644" y="118" width="48" height="36"/><rect x="708" y="170" width="48" height="36"/>
+        <rect x="516" y="222" width="48" height="36"/>
+      </g>
+      <text x="516" y="76" font-family="Raleway" font-weight="600" font-size="26" letter-spacing="3.5" fill="#9AA3BC">EVERY DEADLINE</text>
+    </svg>
+  </div>
+  </div>
+</section>
+
+<!-- ════════════ 5 · TEMPLATES ════════════ -->
+<section class="slide">
+  <div class="ghost">04</div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+  <div class="count">05 / 09</div>
+  <div class="rail"><i style="width:55.5%"></i></div>
+  <div class="stack">
+  <div class="eyebrow"><span class="idx">04</span><span class="bar"></span><span class="kick">The output</span></div>
+  <h2 class="sm">Every email you send twice is a template</h2>
+  <p class="body">Escrow opening, inspection notice, appraisal update, clear to close. Written once, reused on all three of my deals.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="880" height="320" viewBox="0 0 880 320">
+      <!-- written once -->
+      <g stroke="#1768E5" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" fill="none">
+        <rect x="24" y="36" width="316" height="208"/><path d="M24 36 l158 118 l158 -118"/>
+      </g>
+      <text x="24" y="300" font-family="Raleway" font-weight="600" font-size="26" letter-spacing="3.5" fill="#1768E5">WRITTEN ONCE</text>
+      <!-- reused, four times -->
+      <g font-family="Raleway" font-weight="600" font-size="28" letter-spacing="3" fill="#050E3D">
+        <text x="440" y="52">ESCROW OPENING</text><text x="440" y="132">INSPECTION NOTICE</text>
+        <text x="440" y="212">APPRAISAL UPDATE</text><text x="440" y="292">CLEAR TO CLOSE</text>
+      </g>
+      <g stroke="#C9CFDE" stroke-width="5" stroke-linecap="round">
+        <path d="M440 76 H872"/><path d="M440 156 H872"/><path d="M440 236 H872"/><path d="M440 316 H872"/>
+      </g>
+    </svg>
+  </div>
+  </div>
+</section>
+
+<!-- ════════════ 6 · THE CC LIST ════════════ -->
+<section class="slide">
+  <div class="ghost">05</div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+  <div class="count">06 / 09</div>
+  <div class="rail"><i style="width:66.6%"></i></div>
+  <div class="stack">
+  <div class="eyebrow"><span class="idx">05</span><span class="bar"></span><span class="kick">The detail</span></div>
+  <h2>The CC list is part of the template</h2>
+  <p class="body">Listing agent and their TC on every transaction email. Build it into the file so you never forget.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="880" height="300" viewBox="0 0 880 300">
+      <rect x="4" y="4" width="872" height="268" fill="none" stroke="#E4E7EF" stroke-width="4"/>
+      <g font-family="Raleway" font-weight="600" font-size="27" letter-spacing="3" fill="#55627F">
+        <text x="44" y="70">TO</text><text x="44" y="158">CC</text><text x="44" y="246">SUBJECT</text>
+      </g>
+      <g stroke="#E4E7EF" stroke-width="4"><path d="M4 100 H876"/><path d="M4 196 H876"/></g>
+      <g font-family="Inter" font-weight="400" font-size="30" fill="#55627F">
+        <text x="216" y="70">Escrow officer</text><text x="216" y="246">1420 Copper Ridge Ct, inspection notice</text>
+      </g>
+      <!-- the row that gets forgotten -->
+      <rect x="4" y="100" width="872" height="96" fill="#1768E5"/>
+      <text x="44" y="158" font-family="Raleway" font-weight="600" font-size="27" letter-spacing="3" fill="#FFFFFF">CC</text>
+      <text x="216" y="158" font-family="Inter" font-weight="500" font-size="30" fill="#FFFFFF">Listing agent + their TC</text>
+    </svg>
+  </div>
+  </div>
+</section>
+
+<!-- ════════════ 7 · THE SWITCH ════════════ -->
+<section class="slide dark">
+  <div class="ghost">06</div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+  <div class="count">07 / 09</div>
+  <div class="rail"><i style="width:77.7%"></i></div>
+  <div class="stack">
+  <div class="eyebrow"><span class="idx">06</span><span class="bar"></span><span class="kick">The switch</span></div>
+  <h2>Do this instead of a spreadsheet</h2>
+  <p class="body">A spreadsheet stores dates. A skill reads the contract, writes the email, and tells you what is late.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="880" height="300" viewBox="0 0 880 300">
+      <!-- stores -->
+      <g stroke="rgba(255,255,255,.22)" stroke-width="5">
+        <rect x="8" y="48" width="352" height="212" fill="none"/>
+        <path d="M8 110 H360 M8 172 H360 M8 234 H360 M126 48 V260 M244 48 V260"/>
+      </g>
+      <text x="8" y="26" font-family="Raleway" font-weight="600" font-size="26" letter-spacing="3.5" fill="#9AA3BC">STORES</text>
+      <!-- divider -->
+      <path d="M440 20 V284" stroke="#5B9BFF" stroke-width="4"/>
+      <!-- does -->
+      <text x="520" y="26" font-family="Raleway" font-weight="600" font-size="26" letter-spacing="3.5" fill="#5B9BFF">DOES</text>
+      <g stroke="#5B9BFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <rect x="520" y="48" width="352" height="212"/>
+        <path d="M560 106 l24 24 l44 -48"/><path d="M560 168 l24 24 l44 -48"/><path d="M560 230 l24 24 l44 -48"/>
+      </g>
+      <g font-family="Inter" font-weight="400" font-size="28" fill="#FFFFFF">
+        <text x="660" y="120">Reads</text><text x="660" y="182">Writes</text><text x="660" y="244">Warns</text>
+      </g>
+    </svg>
+  </div>
+  </div>
+</section>
+
+<!-- ════════════ 8 · START UGLY ════════════ -->
+<section class="slide">
+  <div class="ghost">07</div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+  <div class="count">08 / 09</div>
+  <div class="rail"><i style="width:88.8%"></i></div>
+  <div class="stack">
+  <div class="eyebrow"><span class="idx">07</span><span class="bar"></span><span class="kick">The first move</span></div>
+  <h2>Start with your ugliest deal</h2>
+  <p class="body">Pick the file you are most behind on. Build the folder today. The next deal inherits the whole thing.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="880" height="320" viewBox="0 0 880 320">
+      <!-- the deals that inherit it, set back -->
+      <g stroke="#E4E7EF" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" fill="none">
+        <path d="M232 262 V96 h92 l20 26 h150 v140 z"/>
+        <path d="M132 282 V116 h92 l20 26 h150 v140 z"/>
+      </g>
+      <!-- the ugliest one, built first -->
+      <g stroke="#1768E5" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" fill="#FFFFFF">
+        <path d="M24 302 V136 h92 l20 26 h150 v140 z"/>
+      </g>
+      <g stroke="#1768E5" stroke-width="6" stroke-linecap="round"><path d="M62 216 h132 M62 254 h88"/></g>
+      <rect x="248" y="100" width="72" height="72" fill="#1768E5"/>
+      <text x="284" y="152" text-anchor="middle" font-family="Barlow" font-weight="800" font-size="50" fill="#FFFFFF">1</text>
+      <g stroke="#1768E5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <path d="M556 210 H700"/><path d="M674 184 l28 26 l-28 26"/>
+      </g>
+      <text x="556" y="278" font-family="Raleway" font-weight="600" font-size="26" letter-spacing="3.5" fill="#55627F">DEAL TWO IS FREE</text>
+    </svg>
+  </div>
+  </div>
+</section>
+
+<!-- ════════════ 9 · CTA ════════════ -->
+<section class="slide dark cta">
+  <div class="ghost"></div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+  <div class="count">09 / 09</div>
+  <div class="rail"><i style="width:100%"></i></div>
+  <div class="stack">
+  <div class="hero">TC</div>
+  <h2>DM me TC and I will send you the folder structure I use.</h2>
+  <p>Full build on YouTube, The Leveraged Agent. Link in the first comment.</p>
+  </div>
+</section>
+
+</body></html>

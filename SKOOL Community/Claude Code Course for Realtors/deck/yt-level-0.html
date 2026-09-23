@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YouTube Level 0: The Context Block, Claude Code Course for Realtors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Raleway:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="deck.css">
+</head>
+
+<!--
+  YOUTUBE Level 0. This is NOT level-0.html.
+
+  level-0.html is the Skool lesson: the course map, the L1 to L10 ladder,
+  "what you signed up for." None of that means anything to a stranger, so
+  this deck throws all of it away and keeps Level 0's actual job, which is
+  the diagnosis: AI writes generically because you never told it who you
+  are. The win is a paste block, not a folder. BROKER is deliberately not
+  in here, it belongs to the Level 1 video.
+
+  Script: ../YouTube/YT-Level-0-Context-Block.md. Slide numbers below match
+  the DECK cues in that file exactly. If you renumber here, renumber there.
+
+  TWO THINGS TO KNOW BEFORE RECORDING:
+
+  1. THE TWO LISTING DESCRIPTIONS ON SLIDE 1 AND SLIDE 9 ARE PLACEHOLDER
+     COPY. The property is invented. Replace both with output from one of
+     Ryan's own real listings before shooting: generate the bad one from a
+     cold chat, generate the good one after pasting the block, and paste
+     the real results in here. The bad one only has to keep the six
+     underlined cliche words for the callback to land.
+
+  2. NO .hint ON SLIDE 1. Every other deck puts a "scroll or press space"
+     nudge on its title slide. This deck opens cold on screen at 0:00 of
+     the video, so an on-screen instruction to Ryan is a leak, same rule
+     as the director cues. Slide 1 has no chrome on it at all.
+-->
+
+<body>
+
+<div class="progress"><i></i></div>
+<div class="hud">
+  <span class="lvl">YouTube &middot; Level 0</span>
+  <span class="num"><b class="cur">01</b><span> / </span><b class="tot">13</b></span>
+</div>
+
+<!-- 1 . the cold open, on screen at 0:00 before Ryan says a word -->
+<section class="slide">
+  <p class="kicker">Same AI. Thirty seconds apart.</p>
+  <h2>Both of these were written<br>by the <em>same AI</em>.</h2>
+  <div class="vs">
+    <div class="spec bad">
+      <p class="tag">Asked cold</p>
+      <p class="copy">Welcome to this <u>stunning</u> home <u>nestled</u> in the heart of a vibrant and highly sought-after community!</p>
+      <p class="copy">This <u>must-see</u> property <u>boasts</u> an open concept floor plan perfect for entertaining, a gourmet kitchen with ample counter space, and a spacious primary suite that feels like your own private <u>oasis</u>.</p>
+      <p class="copy">Conveniently located near shopping, dining and top-rated schools. Don't miss your chance to make this <u>dream home</u> yours!</p>
+    </div>
+    <div class="spec good">
+      <p class="tag">Asked after one paste</p>
+      <p class="copy">Single story in Skye Canyon. Three bedrooms, and a fourth room off the entry that the last owners called a den and I would call an office.</p>
+      <p class="copy">Here's what I actually like about it. The kitchen opens right into the living room, so you're not stuck in there by yourself while everybody else is having the fun. And the patio faces the wrong way for sunrise and exactly the right way for evening, which in a Vegas July is the difference between a backyard you use and a backyard you look at.</p>
+      <p class="copy">Yard's already done. Low water, nothing for you to fix. Skye Canyon Park is close enough to walk to with a dog and a coffee. If you want to see it in person, schedule a tour.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2 . what you'll have -->
+<section class="slide">
+  <p class="kicker">What you'll have when this is over</p>
+  <h2>One block of text<br>about <em>your business</em>.</h2>
+  <p class="lede">You paste it at the top of any AI chat. Everything that comes out the other side sounds like you instead of sounding like a brochure.</p>
+  <div class="meta" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:36px">
+    <span style="font-family:var(--f-sub);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);border:1px solid var(--line);border-radius:99px;padding:8px 18px;background:var(--bg-2)">Nothing to install</span>
+    <span style="font-family:var(--f-sub);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);border:1px solid var(--line);border-radius:99px;padding:8px 18px;background:var(--bg-2)">No new account</span>
+    <span style="font-family:var(--f-sub);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);border:1px solid var(--line);border-radius:99px;padding:8px 18px;background:var(--bg-2)">Works in whatever you already use</span>
+  </div>
+</section>
+
+<!-- 3 . the diagnosis. the line the whole video rests on -->
+<section class="slide">
+  <p class="kicker">The diagnosis</p>
+  <h2>That's not a you problem.<br>It's a <em>setup problem</em>.</h2>
+  <p class="lede">Almost every agent has opened an AI, asked for a listing description, gotten back something with the word <strong>"nestled"</strong> in it, and quietly decided this stuff doesn't really work for real estate.</p>
+  <p class="lede" style="margin-top:20px">It isn't writing badly. It's writing <strong>generically</strong>, because generic is all you gave it.</p>
+</section>
+
+<!-- 4 . why -->
+<section class="slide">
+  <p class="kicker">What actually happened</p>
+  <h2>You asked for the average.<br>You <em>got</em> the average.</h2>
+  <div class="grid c2">
+    <div class="card">
+      <p class="h">What you did</p>
+      <p class="big">Asked a machine that read the whole internet to write a listing description</p>
+      <p>And gave it nothing else. No farm, no price band, no voice, no brokerage.</p>
+    </div>
+    <div class="card">
+      <p class="h">What it did</p>
+      <p class="big">The only thing it could</p>
+      <p>Returned the average of every listing description ever posted. Which is why it sounds like a brochure from 2011.</p>
+    </div>
+  </div>
+  <p class="lede" style="margin-top:28px">If you feel behind on this, you're not behind. You're where almost everybody is, which is <strong>the beginning</strong>.</p>
+</section>
+
+<!-- 5 . the analogy -->
+<section class="slide">
+  <p class="kicker">Think about it this way</p>
+  <h2>A brilliant assistant<br>with <em>no memory</em>.</h2>
+  <p class="lede">Day one, a new assistant is useless. Not because they aren't smart. Because they don't know your farm areas, your price points, your brokerage, or that you hate the word "stunning."</p>
+  <p class="lede" style="margin-top:20px">You don't fix that with better instructions. You fix it by telling them about your business <strong>once</strong>, and then never again, because they remember.</p>
+  <p class="lede" style="margin-top:20px">AI is that assistant, except every single time you open it, <strong>it's day one again</strong>.</p>
+</section>
+
+<!-- 6 . the four parts -->
+<section class="slide">
+  <p class="kicker">The Context Block</p>
+  <h2>Four parts</h2>
+  <div class="grid c2">
+    <div class="card">
+      <p class="h">01</p>
+      <p class="big">Who I am</p>
+      <p>Name, agent, brokerage, how long, solo or team, the state you're licensed in.</p>
+    </div>
+    <div class="card">
+      <p class="h">02</p>
+      <p class="big">What I sell</p>
+      <p>Real neighborhoods, real price band, property types, who you actually work with. This is the one everybody skips.</p>
+    </div>
+    <div class="card">
+      <p class="h">03</p>
+      <p class="big">How I write</p>
+      <p>Sentence length, reading level, and the words you never use.</p>
+    </div>
+    <div class="card">
+      <p class="h">04</p>
+      <p class="big">Never do this</p>
+      <p>The guardrails. The one I would not skip.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 . the block, first half -->
+<section class="slide">
+  <p class="kicker">Parts 1 and 2</p>
+  <h2>Not "Las Vegas."<br><em>Name the streets.</em></h2>
+  <div class="code">Before you answer anything, here is my business.
+
+WHO I AM
+[Name], real estate agent, [brokerage], [years] years in,
+[solo or team], licensed in [state].
+
+WHAT I SELL
+Areas: [3 to 5 actual neighborhoods, not the metro name]
+Price range: [low] to [high]
+Property types: [single family, condo, new construction]
+Who I usually work with: [first time buyers, move up, relocation]</div>
+  <p class="lede" style="margin-top:24px">Vague here means vague output. All of the quality comes out of this section.</p>
+</section>
+
+<!-- 8 . the block, second half -->
+<section class="slide">
+  <p class="kicker">Parts 3 and 4</p>
+  <h2>Your voice,<br>and your <em>guardrails</em>.</h2>
+  <div class="code">HOW I WRITE
+Short sentences. [Grade] reading level. No jargon.
+Words I never use: nestled, boasts, stunning, oasis,
+must see, dream home.
+I never say "reach out." I say [what you actually say].
+Soft calls to action. I invite, I don't push.
+
+NEVER DO THIS
+Never invent a price, square footage, school rating,
+HOA amount or commission number.
+Never describe what kind of person should live somewhere.
+If you don't know something, write NOT FOUND instead of guessing.
+
+Confirm you've got it, then wait for my request.</div>
+</section>
+
+<!-- 9 . the payoff. same copy as slide 1's right panel, now earned -->
+<section class="slide">
+  <p class="kicker">Same AI. Same request. Four minutes later.</p>
+  <h2>Nothing changed except<br><em>it read that first</em>.</h2>
+  <div class="vs solo">
+    <div class="spec good">
+      <p class="tag">After the paste</p>
+      <p class="copy">Single story in Skye Canyon. Three bedrooms, and a fourth room off the entry that the last owners called a den and I would call an office.</p>
+      <p class="copy">Here's what I actually like about it. The kitchen opens right into the living room, so you're not stuck in there by yourself while everybody else is having the fun. And the patio faces the wrong way for sunrise and exactly the right way for evening, which in a Vegas July is the difference between a backyard you use and a backyard you look at.</p>
+      <p class="copy">Yard's already done. Low water, nothing for you to fix. Skye Canyon Park is close enough to walk to with a dog and a coffee. If you want to see it in person, schedule a tour.</p>
+    </div>
+  </div>
+  <ul class="points" style="margin-top:26px">
+    <li><span class="n">01</span><span class="t">Named the <b>actual neighborhood</b>, because you told it your farm</span></li>
+    <li><span class="n">02</span><span class="t">Invented <b>nothing</b>. No price, no square footage, no school rating</span></li>
+    <li><span class="n">03</span><span class="t">Sounds like <b>a person who has stood in the house</b></span></li>
+  </ul>
+</section>
+
+<!-- 10 . the honest limitation -->
+<section class="slide">
+  <p class="kicker">Now the problem with what we just did</p>
+  <h2>You have to paste it.<br><em>Every time.</em></h2>
+  <ul class="points">
+    <li><span class="n">01</span><span class="t">New chat, <b>paste it again</b>. Close the tab, paste it again</span></li>
+    <li><span class="n">02</span><span class="t">It can't open your <b>last twelve sent emails</b> to learn how you actually write</span></li>
+    <li><span class="n">03</span><span class="t">It can't read your <b>listing folder</b></span></li>
+    <li><span class="n">04</span><span class="t">It can't look at your <b>transaction file</b> and tell you what's late</span></li>
+  </ul>
+  <p class="lede" style="margin-top:30px">It only knows what you paste.</p>
+</section>
+
+<!-- 11 . where it goes -->
+<section class="slide">
+  <p class="kicker">The fix</p>
+  <h2>The block stops being<br>something you paste.</h2>
+  <p class="lede">It becomes a file on your computer that the AI reads <strong>by itself</strong>, every time, without being asked. That folder is the next video, and it's free too.</p>
+  <p class="lede" style="margin-top:20px">Two more sections get added once it's a file. They do nothing while you're pasting, which is why they're not in the block I just gave you.</p>
+</section>
+
+<!-- 12 . the retention beat -->
+<section class="slide">
+  <p class="kicker">One last thing, the most useful thing here</p>
+  <h2>Something is going to<br><em>not work</em>.</h2>
+  <p class="lede">It happens to me weekly.</p>
+  <div class="code">Screenshot it.
+Paste the screenshot back in.
+Tell it what you were trying to do.
+Ask for step by step.</div>
+  <p class="lede" style="margin-top:26px">That fixes it about <strong>eight times out of ten</strong>, and it's the single habit that separates the people who stick with this from the ones who quit in week one.</p>
+</section>
+
+<!-- 13 . close. If Ryan cuts back to the deck under the 20s ending overlay
+     instead of staying on camera, this slide is what the overlay lands on.
+     .endsafe pushes the content into the right half, clear of the wordmark
+     panel (x 96 to 880) and the chips (x 96 to 693). -->
+<section class="slide endsafe">
+  <p class="kicker">Go build yours</p>
+  <h2>You didn't need<br>a <em>better prompt</em>.</h2>
+  <p class="lede">You needed to tell it who you are. Be specific in the "what I sell" part. That's where all the quality comes from.</p>
+  <div class="meta" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:36px">
+    <span style="font-family:var(--f-sub);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-txt);border:1px solid var(--accent);border-radius:99px;padding:8px 18px;background:var(--bg-2)">Next: build the folder that does this by itself</span>
+  </div>
+</section>
+
+<script src="deck.js"></script>
+</body>
+</html>

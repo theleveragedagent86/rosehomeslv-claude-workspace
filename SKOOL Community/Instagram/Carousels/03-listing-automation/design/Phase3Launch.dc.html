@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Inter:wght@400;500&family=Raleway:wght@600&display=swap">
+  <style>
+    *,*::before,*::after { box-sizing: border-box; }
+    body { margin: 0; width: 1080px; height: 1350px; overflow: hidden; }
+    a { color: #1768E5; text-decoration: none; }
+    a:hover { color: #0B3FA8; }
+    .slide { position: relative; width: 1080px; height: 1350px;
+             padding: 152px 64px 166px;
+             display: flex; flex-direction: column; }
+    .rail { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; }
+    .label { font-family: 'Raleway',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 600; font-size: 22px;
+             letter-spacing: 0.15em; text-transform: uppercase; }
+    .idx { font-family: 'Raleway',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 600; font-size: 20px;
+           letter-spacing: 0.15em; }
+    .mono { width: 64px; height: 64px; flex: 0 0 auto; }
+    .footzone { display: flex; align-items: flex-end; justify-content: space-between;
+                gap: 48px; }
+
+    .slide { background: #FFFFFF; }
+    .label { color: #55627F; }
+    .idx { color: #9AA3BC; }
+    .items { flex: 1; display: flex; flex-direction: column; justify-content: center;
+             gap: 44px; padding-right: 56px; }
+    .item { display: flex; gap: 30px; align-items: flex-start; }
+    .num { font-family: 'Barlow','Helvetica Neue',Arial,sans-serif; font-weight: 800; font-size: 96px; line-height: 0.92;
+           letter-spacing: -0.03em; color: #0B3FA8; min-width: 108px; }
+    .txt { font-family: 'Inter',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 500; font-size: 56px; line-height: 1.2;
+           letter-spacing: -0.012em; color: #050E3D; padding-top: 10px;
+           text-wrap: pretty; }
+    .hair { height: 1px; background: #E4E7EF; margin-bottom: 28px; }
+    .foot { font-family: 'Inter',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 400; font-size: 30px; line-height: 1.5;
+            color: #55627F; max-width: 760px; }
+    .panel { background: #F7F8FA; border-radius: 20px; padding: 36px 40px; max-width: 800px; }
+    .panel .foot { max-width: none; }
+
+  </style>
+</helmet>
+<div class="slide">
+  <div class="rail">
+    <div class="label">Launch day</div>
+    <div class="idx">04 / 07</div>
+  </div>
+  <div class="items">
+    <div class="item"><div class="num">6</div><div class="txt">Coming-soon and<br>just-listed sphere emails</div></div>
+    <div class="item"><div class="num">7</div><div class="txt">Neighbor letters for the<br>surrounding blocks</div></div>
+    <div class="item"><div class="num">8</div><div class="txt">The Meta listing ad<br>and lead form</div></div>
+  </div>
+  <div>
+    <div class="footzone">
+      <div class="panel"><div class="foot">Housing ads run Special Ad Category. No age, gender, or ZIP targeting.</div></div>
+      <img class="mono" src="monogram.png" alt="">
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

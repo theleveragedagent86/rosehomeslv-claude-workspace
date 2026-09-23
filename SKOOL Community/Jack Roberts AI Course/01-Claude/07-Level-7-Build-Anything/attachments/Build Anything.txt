@@ -1,0 +1,712 @@
+ - Hey there, beautiful AI automator.
+ And welcome to chapter seven.
+ Well, we're gonna be talking about building anything.
+ I'm gonna cover probably one of the most important lessons
+ that you're going to learn in this entire community.
+ And that is going to be our first principles system design.
+ If you can leverage what we call first principles thinking,
+ you'll have the same blueprint and mechanics
+ that Elon Musk essentially uses when he builds
+ any of his billion plus companies.
+ And I found it so fundamental to sign for clients,
+ building your own stuff,
+ gonna really want to nail this one down 'cause it's exceptional.
+ I'm gonna cover some lead scraping aspects.
+ So how do we get customers?
+ And how can we use this first principle system design thinking
+ to go ahead and build these two things?
+ And there's gonna be a little bit of homework.
+ There's gonna be one of the highest,
+ basically it's gonna be the highest ROI,
+ probably 10 to 15 minutes reading that you might do all year.
+ Sounds pretty cool.
+ Let me jump in with the whole first principles
+ in system design and turn the building everything.
+ So core concept, I want you to learn.
+ Now, you'll know, for example,
+ even from my YouTube channel, right?
+ What is the main thing I always talk about?
+ I have one, if you like, phrase.
+ And that phrase is a blog.
+ And yes, we've got a home lander
+ and a lot of the boys stuff going on here
+ is imagine anything and build it with AI.
+ So I want your default perspective to be,
+ whether you're looking at your own business
+ or you're selling for clients,
+ that if we can imagine it,
+ we can make it happen.
+ Okay, now the idea of first principle thinking
+ is that the only limits that we have
+ when building anything with core code of your systems,
+ is it realistically, we're limited only by physics,
+ not by convention.
+ Quick story, my last tech startup on that I sold.
+ We basically wanted to work with hundreds
+ and hundreds and hundreds of businesses.
+ We wanted to connect to them via an API,
+ so we could directly update their system
+ when somebody moved home.
+ But the reality is that not every business wanted to do it.
+ And something didn't have the technological capacity
+ for some it was in a priority,
+ even though it was super important for the consumer.
+ So my philosophy was pretty much,
+ we will automate with you or through you.
+ Not in a threatening way, but you get the idea,
+ is it like, if they don't want to participate,
+ how can we actually physically solve this problem, right?
+ Because all we need to do is get them the information.
+ And so you start to think about different ways around it.
+ So this is the core thing here, okay?
+ Every problem with solving is a stack of assumptions
+ on top of atoms.
+ That's effectively it.
+ We strip the assumptions, count the atoms, rebuild.
+ That's how everything gets done.
+ It's a classic idea.
+ First principle reasoning isn't something
+ that came from Elon Musk.
+ It's actually a 2000 years old.
+ It's an unbroken thread.
+ Take nothing on authority.
+ Terminate every argument in something you can verify yourself.
+ So this is really, if you like meta cognition,
+ this is about how to think about anything
+ that we do in life,
+ or even specifically how it applies to Claude.
+ So if you go back to Aristotle, for example, 350 BC,
+ knowledge must terminate in premises that are true,
+ primary, immediate, and explanatory,
+ known directly, not derived.
+ Basing things on derivatives, derivative information,
+ if you look at content, for example,
+ if you are a derivative content creator,
+ you are somebody who just takes copies
+ of what other people do.
+ You don't want to do that, for example.
+ You never want to be derivative of anything we're doing.
+ You want to doubt everything that can be doubted,
+ build back up from only what cannot.
+ There goes some.
+ Discraties, 1637, didn't have great coffee back then,
+ but their knowledge was great.
+ Then obviously, Elon Musk has espoused this quite significantly
+ in all the business he's built,
+ bullet down to fundamental truths and reason up.
+ It's a great decision-making frame with anything.
+ Most people reason biology,
+ copying what others do with slight variations,
+ and hence why they don't have these breakthroughs.
+ So what is the only real constraint?
+ Everything that feels fixed, price,
+ timeline, headcount, the wait-stone,
+ is usually a recommendation in disguise.
+ Physics is actually what is load-bearing.
+ So when you're working with clients,
+ when you're building systems yourself, just bear in mind,
+ what is the real constraint we're dealing with here?
+ You should take the approach
+ that the constraints of physics are the only constraints.
+ Everything else is a recommendation,
+ and this will be used when they make these breakthroughs
+ with AI, cool.
+ So what people treat is fixed.
+ This is how the industry does it.
+ Pricing is set by the market.
+ You can't ship that in a week.
+ It needs three engineers minimum.
+ Customers expect it this way.
+ When it's actually speed of light,
+ conservation, energy, material atom costs,
+ thermodynamics, and time itself.
+ What's an example of this?
+ Well, let's look at what Elon did, for example.
+ In 2012, a kilowatt-hour battery cost $600,
+ and that's a hard floor.
+ Can't go below that.
+ Mostly composed of battery into its raw constituents,
+ priced them on the London Metal Exchange,
+ and got a different number.
+ If you break down what a battery is,
+ it's $80 per kilowatt-hand set.
+ So you see how first principles can drive it something different.
+ It's really, really important.
+ So here's a nice little five-step engineering protocol
+ canonized by Wolf to Isaacson in 2023,
+ but must have been running this for a decade.
+ The order matters if you skip a step
+ and you optimize something that you should not.
+ They basically should not exist.
+ And that is the biggest issue I see in automations,
+ is that we automate something
+ that clearly should never have existed.
+ And you might be thinking, Jack, this isn't practical.
+ I would argue this is probably the most important lesson
+ to take away from this course in terms of how
+ to think about what we're building,
+ because I'm going to blow the roof off right now.
+ I'm going to expand your mind in terms of what you can actually
+ focus on what you can accomplish.
+ So step one is we question every requirement.
+ Each one must carry a person's name,
+ never a legal team will expect.
+ Number two, we delete the part or process.
+ If you don't add at least 10% back later,
+ you didn't delete enough.
+ This is something I spoke to some moments
+ about when I went to Skool games not a couple of times
+ again, that he will remove features from Skool silently
+ and never mention anything about it
+ and only add them back in if there's a significant uproar.
+ But there you need to be deleting part of the process.
+ Step three is to simplify and optimize,
+ only after deletion.
+ The classic mistake optimizing something should not exist.
+ So only after you've questioned every requirement,
+ you deleted and shrunk down the process
+ do we start to simplify and optimize.
+ Because if you don't delete then optimize,
+ you're going to optimize stuff that you shouldn't.
+ Once we've got a lean system, we accelerate the cycle time.
+ So every loop can be sped up, but only once the first three
+ are done, you must remember.
+ Question and requirement, delete the parts that we don't need.
+ Then we simplify and optimize it.
+ Then how do we do this whole thing quicker?
+ Then five, how do we automate it so we have such a game?
+ This is essentially a core five set process
+ to running anything,
+ whether it's going to your business or working for clients.
+ It's really, really important.
+ So we break everything into parts.
+ What are you giving, what is the name, what is constraints?
+ Reduce until the essential question is naked,
+ state the problem until it's boring, then code.
+ And one thing I would really love you to do is go ahead
+ and read this article on a high agency.
+ The question I'd ask you is this,
+ and this is a question the article posits as well,
+ is if you imagine for a second that you are trapped
+ in a third world country, and you're in a jail
+ in a third world country, and you have only one phone call,
+ and let's assume that whoever you call is going to answer
+ the phone.
+ Are you only going to get one phone call
+ and you're in the worst conditions imaginable?
+ Who would you call?
+ It could be anybody that you know.
+ Who would you give a call to?
+ And this person is going to help you.
+ Well, whoever you think about that for a second,
+ whoever the answer to that question is,
+ is the person you believe has the highest agency?
+ Now, that's worth thinking about for a second.
+ And I really want you to go down
+ and just read this entire article.
+ It will change the way you think about
+ how you approach everything you do in business.
+ And it was probably one of the best articles
+ that I've read in recent memory.
+ I highly, highly recommend it.
+ So I encourage you even to pause this video right now,
+ grab that beautiful coffee, and read through this article,
+ and it will change the way that you think about certain things.
+ So now we've covered, and welcome back, by the way,
+ after reading that beautiful article.
+ Let's apply it to getting leads and getting customers.
+ Okay, so effectively, we go back
+ and we think about all the systems that we've got, right?
+ When we think about how are we going to use
+ all of our skills that we've developed in our entire classroom,
+ either to accelerate and get more of the clients
+ that we already have, or we always starting from scratch,
+ what does that physically look like?
+ Well, we need, essentially, you get paid
+ based on the value that you add.
+ So there is what we call value creation,
+ and then of that value, great,
+ how much of that value do you actually physically copy?
+ Jeff Bezos is a billionaire,
+ because he's added a bit of value
+ to billions and billions of people.
+ So there is, if we look at the principles here
+ of getting customers, and I won't get too far
+ into the business side of it in this module
+ about how we find out those things on,
+ what would be a really easy way for us to go ahead
+ and grab something?
+ Well, all we really need to know is,
+ who are we looking for?
+ Okay, so I'm going to assume to the purpose of this module
+ that you know who you're looking for, right?
+ You know who your ICP, your ideal client profile is.
+ The only question now is,
+ how do we actually go ahead and grab those leads?
+ Well, there's lots of different ways we can do it.
+ There are completely free ways.
+ There are ways that cost more than others.
+ Remember, your time has a cost there.
+ That's a really important thing to bear in mind.
+ Now, the best one I've found, there are two.
+ There is Apify, and there is Apollo.
+ Apollo is slightly more expensive.
+ This is a real stack and sales platform
+ as you're scaling your business
+ that has all the bells and whistles.
+ It is more expensive for every reason.
+ Apify is the Willy Wonka's Emporium of Scrapers.
+ Effectively, if you tell me what you want,
+ it will give you enough data to get you
+ to a point where you can test your ideas and speak to them.
+ And oftentimes, your email is one way to get in touch,
+ but also we can do LinkedIn, we can do many different things.
+ So what I want you to is head over to Apify.
+ Go ahead and log in and we'll create an account.
+ So I'm just gonna log in very quickly.
+ Beautiful, and I'm here.
+ Now, how do you, on the bottom left hand side
+ just below and behind my face, if you click on Settings,
+ you're gonna see API keys, okay?
+ Come down to API and integrations.
+ When you're in API integrations,
+ you're going to see a API key.
+ I want you to go ahead and I want you to copy that API key.
+ Now, if I come down to the Apify store,
+ if you can, what do you say, imagine it, you can build it.
+ So I've got Google Maps Scrapers, TikTok,
+ and Scrap Scrapers.
+ I could say, let's say I want to go ahead and scrape X.
+ Well, look, what do you know, X is that?
+ I can do anything wrong.
+ By the way, a little hack, in Hermes now,
+ you can connect your X account to it.
+ So you can actually talk to Hermes when you activate that
+ and search X is very, very cool.
+ But the point is I want to scrape X.
+ I want to scrape Google Maps.
+ Great, I want to go and scrape YouTube.
+ Can I throw YouTube?
+ I know the answer, it's obviously yes.
+ Cool, you literally name it.
+ You can find it.
+ All these different categories.
+ MCP servers, news, open source, you name it.
+ What is the really cool thing is,
+ all I need is the API key.
+ When I get the API key,
+ I can get Cloud to do all this stuff for me.
+ That's how freaking cool this is.
+ So for example, if I come up to Cloud,
+ and by the way, check out this cool website,
+ I can have notes in the module down below after this one.
+ If I come down, correct new session,
+ I'm going to come up here.
+ And what we're going to do is add in Appify.
+ So what we can do, let's go check to see
+ if they have a Connective.
+ If I look on Add, I can look on Connectives.
+ Do I see Appify?
+ Let's have a quick look and click on Add Connectives down here.
+ And we can search down for Appify.
+ If it's not there, that'd be quite crazy.
+ It is cool.
+ So come down here, we click on the plus.
+ We click on Install.
+ And what this will do is open up a new window for us.
+ So give this a hot second.
+ Has that completed?
+ All right, looks like it has.
+ Well, I think we just go back now,
+ and I think we can be able to basically validate
+ that we've got that connected.
+ So let's click on it one more time.
+ Give it a plus.
+ I think we've got the,
+ we can copy of that.
+ Okay, wonderful.
+ And as you can see, mine exists as a custom one,
+ but if you come down here to Customize and Connectors,
+ you can come down here and actually see Appify's down here,
+ which is great.
+ Complete the field below your API that's required.
+ Then you can basically enter in all the tools,
+ completely your call.
+ What I did guys is I just added in the custom MCP
+ by adding this in,
+ and then you can just add in the information down there below it.
+ But the easiest way here, guys,
+ is just to come down and enter in your Appify token.
+ Very, very, very straightforward.
+ If you want to hire out to get to that screen,
+ if you come down here to your name on the bottom left,
+ and you click on Settings, like so,
+ and I believe it's just under Connectors here,
+ then click on Customize,
+ and then you'll be there ready to rock and rock.
+ So what I can do, for example,
+ is just give it a prop like this.
+ Hey there, let's just get this up
+ and get the right button all rocking and rolling.
+ Hey there, I would like to target roofers
+ that live in London.
+ I'd like to use Appify,
+ find the best example that you can,
+ and I would love you to go ahead and get for me their name,
+ email address, any social meetings that you've got,
+ and then just one interesting fact about all of them,
+ and go and get me 10 of those, please.
+ So I can go have a conversation with them, please.
+ All right, cool, very, very simple.
+ And actually guys, one thing I might do
+ is I might even just say,
+ just put this into a beautiful HTML for me to take a look at.
+ Now in reality, what kind of numbers do you want with leads?
+ Well, you need hundreds, this is a volume game.
+ It just is a complete game about numbers.
+ But what's really cool here is like,
+ it's not gonna go ahead and use Appify,
+ because actually I can even be specific about it.
+ I can say, "Hey, use Appify."
+ And also, if you want to,
+ you can also just search Google,
+ but Appify is best, look at this.
+ Let me find the best Appify actor.
+ So now I need to do it.
+ Like, one of the things that I built inside the community,
+ which is really, really worth bearing in mind here, okay,
+ is I put this in the annual section.
+ Okay, I've opened up here.
+ This is the IG Outlier Lab.
+ Okay, this was built by Appify,
+ in the exact way that I described.
+ Do you know what prompt I gave it?
+ I basically said, "Hey, I want a dashboard that does X.
+ "My stated outcome that I want to be true is this."
+ I basically said, "I want to understand
+ "what are the outliers, what is the content
+ "that is going viral right now,
+ "and then from that information,
+ "I want to know how many views it's got,
+ "how many likes, comments, engagements,
+ "how long it is, and when it is posted.
+ "And I want to be able to organize it by outline.
+ "And these are the creators I want to go and follow."
+ And even said, "Actually, I'll suggest to you."
+ And I said, "Cool."
+ And then it just gave me this dashboard.
+ Then I went back and forth on it,
+ and I said, "I want this like this,
+ "I want this like this."
+ All this, guys, is Appify.
+ That's all this is, is Appify.
+ And it's hosted on Viscel,
+ just like I showed you earlier,
+ and it lives on GitHub, just like I showed you earlier.
+ And it basically fires off every seven days.
+ And now I have an editor who basically uses this
+ in just some amendments I've given a editorial access
+ to GitHub now, and basically he will,
+ off the back of what the signal is,
+ what people want to hear about,
+ start to quote for me ideas for short from content.
+ So I'm not guessing what the market wants.
+ Then there's obviously ways
+ that we're going to sprinkle in unique content.
+ So we'll look at adjacent markets.
+ Like, you know, I really love design.
+ I really love looking at trending GitHub repos.
+ So I might look at that and be the first to break that information.
+ But this is an example of using Appify.
+ I set it up once, put it to one side,
+ and don't touch it again.
+ And all this is doing, honestly,
+ is using an Instagram, Appify, scraper.
+ That's it.
+ And I didn't even have to, honestly, like a year ago,
+ like I'm not joking, you would have had to have like,
+ grab this and grab this and do these cool commands.
+ Now it is so unbelievably easy.
+ There is no excuse.
+ Like you literally tell Call to do it,
+ and it will go ahead and do that for you.
+ So this is an example.
+ And like, you know, my philosophy is like,
+ yeah, I like to bless all our members.
+ I wanted to give a blessing to our annual and lifetime members,
+ but I did put this behind,
+ 'cause it's already ridiculous offer.
+ You got like 40, 50% off, it's insane.
+ So I was like, cool, I'm using it.
+ I'm going to use just my Instagram,
+ I'm trying to scale up.
+ We'll just share that as well.
+ So like, I'm very like, it comes and it goes,
+ but this is how you actually physically go and do it, guys.
+ It's super duper, duper straightforward.
+ And we're using Appify to do that.
+ Now, if I come back over to Claude,
+ you can see what it's physically doing here.
+ It's using crawl Google places.
+ Now, what also is really cool here
+ is that we can also scrape LinkedIn.
+ Cool, well, maybe we want to do a multi-channel outreach.
+ I want to have a message on LinkedIn,
+ I want to send an email.
+ You know, when I hired REA,
+ I posted an Upwork,
+ I had probably 20 applications in a day.
+ The person, only one of them,
+ DM'd me on Instagram and was like,
+ "Hey, I saw the ad.
+ I freaking love your content.
+ If I actually watch your content,
+ I would love to work with you."
+ I honestly didn't even track the other night, Tim.
+ My point with this story isn't the DM everyone Instagram.
+ My point with this story is that people are so lazy,
+ like in general, not even lazy,
+ but like very few people actually take the extra effort.
+ So multi-channel stuff,
+ like getting information on LinkedIn and Instagram and TikTok,
+ it makes a difference in terms of understanding
+ different things for our outreach strategy.
+ And this is exactly how we build this stuff, right?
+ We're using Appify as a Willy Wonka's important.
+ And then we just decide the things we want to do.
+ Now, I've got 20 litre.
+ I could do 200,000 litre.
+ Now, once we've got the leads,
+ call it X amount of leads, whatever the thing is,
+ the next thing that we're going to want to do
+ is to basically validate and improve the quality
+ of those leads.
+ So effectively, there's a couple of different services
+ we can use for this.
+ Now, you can just literally Google validate business,
+ email addresses.
+ Likewise, if you're using Apollo,
+ it does all of this, so you don't need to worry about this.
+ I'd actually recommend Apollo if you are more time constrained
+ and have more capital, to be honest with you,
+ because it cuts a lot of this out.
+ You can just use Apollo, right?
+ The thing is though, if you're doing it
+ with a little bit more of a restrain budget,
+ you can use a server like any mail finder.
+ Again, there's a bizzling of these.
+ You can come over here, this is what the website looks like.
+ And essentially, what you can do with any mail finder
+ is you can do bulk search.
+ And what we can do is upload a list, okay?
+ And it will basically go ahead and validate an email
+ or find the email if it doesn't exist.
+ Then the bottom left hand corner,
+ you'll actually also be able to grab an API
+ or something on API, okay?
+ Here's my API key right here.
+ I would copy this, I'd come back over.
+ Once I've got those, I would then say,
+ hey, I would like you to go ahead and use
+ the any mail finder API key.
+ And I want you to validate all of the emails for me.
+ Now, I don't even need to upload anymore.
+ Cloud code is just gonna go ahead and do that for me.
+ I throw in the API key and now I have a validated list.
+ And then I can get it to build
+ that different email sequences.
+ Little hack for you on the email sequences, by the way,
+ is check your email inbox regularly.
+ And when you find copy that you're like,
+ damn, that's a really good copy, save it.
+ It's how it works with anything.
+ Just save it in a great copy thing.
+ Any sequences that you've interested in buying,
+ go ahead and do it.
+ And if you don't know what to do,
+ go and find the top mark as you can.
+ Like, Hormosy, maybe Grant Cardone,
+ maybe, or any, like, creators that you follow
+ that you trust and value.
+ And so go and find those email sequences
+ if you're not sure 'cause like what they look like.
+ It's just like anything.
+ Like, there's certain content ideas on YouTube
+ that are popular one day.
+ And then a week later, it's less choppy than YouTube.
+ But you can find content that absolutely crushes
+ and just basically use that
+ to bother your email sequences for you or your clients.
+ And then just like that, we've got everything for us.
+ So I click on London and roof is average that HTML.
+ I want you to believe, guys, we have this.
+ And what I'm gonna do is just get this open in a local host.
+ Hey there, bro, just open this up for me in a local host.
+ All right, sweet.
+ And I'll stop on that one and send this bad boy off.
+ And it's great.
+ I mean, I'm doing this just because I quite like
+ to view it in a browser rather than inside Claude.
+ If that's okay with Claude, maybe it's fine here.
+ I know, maybe that's absolutely fine.
+ But you can see basically the TLDR here is like,
+ it just shows us here.
+ Tandon London roof is, here we go, beautiful.
+ Script the appifier in Google Maps.
+ Oh, look at this.
+ It's a social medias.
+ So you fiberglass case study, again, fiberglass case studies
+ on YouTube, all these different roofers.
+ I've even got images.
+ I mean, it is insane.
+ I've got fun.
+ I mean, I could just just sit here with my phone up right now
+ and start calling them and thinking,
+ "Hey, what's up?"
+ Blah, blah, blah, all the way through.
+ All these guys love, love, love websites.
+ But you get the idea of what's possible.
+ I'm just showing you an example
+ of how you describe any leads you want to.
+ So easily what's there.
+ It's insane.
+ You've got to look at like, you know,
+ what is the price of lead acquisition?
+ Like, how much am I paying for a lead?
+ And how many leads am I converting off the back of that?
+ You can make some incredible decisions.
+ And then that takes us on to the second,
+ well, basically the third section,
+ which is going to be the marketing agency stack.
+ So what do we need to make all of this a reality?
+ So when you do composer workflow,
+ you can run it again again for next client.
+ The first five moves I did is manually
+ into production line at scales, that hiring.
+ So if you were to start at the beginning,
+ you know, there are so many things you need to learn,
+ like foundational building blocks,
+ but not that many when you really think about it, right?
+ We need a customer who has a problem.
+ And that problem is ideally a big problem.
+ And I do the customer is somebody with lots of money.
+ Like if you could have the dream scenario,
+ you'd have a guy or basically business
+ with lots of money who has a very big problem,
+ who they have more money than time
+ and they want to pay to get rid of it,
+ and you can solve the problem.
+ That is the best.
+ You get to pick what business you want to be in, right?
+ So once we know who that individual is,
+ our lives become a bazillion times easier.
+ So let's see what we've got in terms of this, right?
+ Basically, this is an example, but realistically,
+ you'll find like with agency,
+ the tools that you can be using
+ are actually really freaking low,
+ but you don't need that many gazillion things.
+ You need Clorco, which is some kind of AI model.
+ Great.
+ The order in which I would buy AI
+ is chat GPT $20 a month,
+ Clored $20 a month,
+ Clored 100, Clored 200, then chat GPT 100.
+ I would do it in that order,
+ 'cause honestly, that's probably gonna be
+ the biggest baggage for Buck-Hitch.
+ Then you're gonna need an IDE,
+ somewhere to build it,
+ that could be in Clored code,
+ that could be anti-gravity,
+ could be cursed, they're straightforward.
+ Appify is probably the most used tool I have.
+ Genuinely it's a scraping data
+ and setting up automations is like most of the things.
+ N8M, you can build everything in Clored.
+ You just can, of course you can.
+ But N8M in a way is good for those workflows
+ where you want a very granular level of detail.
+ And oftentimes you'll still find the clients
+ that want some N8M processes.
+ We're in a low-cleaner computer, completely fine.
+ Again, you can do all in Clored,
+ but we have all the details and training
+ inside this classroom for N8M.
+ Best way to think about it
+ is that Clored code is like the Tesla autopilot,
+ and N8M is like grabbing the wheel again.
+ Okay, it's great to know how to actually drive the car
+ when you're doing things.
+ And then because they put such a big emphasis on design,
+ Figma here is represents design.
+ So this is things like creating images,
+ creating like assets, image generation,
+ loads of beautiful other things.
+ In reality, you don't need many more tools than that.
+ You need, actually,
+ there's one other tool I would add into this.
+ That's gonna be similar to store the data.
+ So again, that could most likely be a database.
+ If you think about it from this point of view,
+ like Superbase, fantastic.
+ We have Superbase, so I had to store the data,
+ something to scrape it.
+ You eventually have everything you need
+ if you really think about it, right?
+ Because what you essentially have here,
+ if I come back over and grab the actual page,
+ is we've got an AI that does the thinking,
+ we've got a place to store the data,
+ we have the means by which you create gorgeous
+ and beautiful visuals,
+ and then we have something connect them all together
+ with automations,
+ which gives you a very powerful stack to you.
+ And so now we've covered everything you need to do
+ in terms of this dream agency stack,
+ and honestly, how to actually build anything.
+ And the core thing I would just add on
+ is two little final hacks
+ before I tell you what's gonna be coming up next.
+ But come over to Claude here.
+ Effectively, if you ever don't know the answer,
+ the prompt I want you to give to Claude as a following.
+ This is what I am trying to achieve.
+ Ask me questions to clarify my intentions,
+ and this is my desired outcome.
+ How do I best think about the problem?
+ And then we're gonna think about the solution together.
+ I would send it honestly, a prompt just like that.
+ And if you're struggling with something,
+ you can say, "Hey, this is my bottom."
+ Like I find that 80% of the time, honestly,
+ it is just understanding what the bottleneck actually is.
+ Now in the next module,
+ we're gonna go to some design systems,
+ which is gonna be super exciting.
+ How you can get websites that look like this.
+ And this was one shot, by the way.
+ Okay, there's an example of a design system
+ and how you actually use design systems
+ to create something pretty spectacular.
+ Then come back over, we're gonna cover
+ what is this core code design, HTML presentations,
+ animated graphics, stuff with 3D,
+ 11-lapse, takes full of nano-banor images,
+ and brand assets.
+ Have a beautiful drink of that coffee.
+ This one's been a really interesting one.
+ And if the gears are turning,
+ you think, "Jack, I've got like a million ideas,"
+ go on a beautiful walk
+ and think about all the stuff we've covered.
+ The most important stuff,
+ obviously it's all very important,
+ but there's a lot of core stuff to cover here,
+ specifically on how we think about processes.
+ So you have one, two takeaways.
+ One is this, this is the how we do things.
+ (laughs)
+ And the other one is gonna be the high agent soon.
+ I'll catch you inside the next beautiful module.

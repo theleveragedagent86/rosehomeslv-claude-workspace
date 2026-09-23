@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Reel cover</title>
+<link rel="stylesheet" href="../../../Brandkit/Design-System/fonts/fonts.css">
+<style>
+/* Leveraged Agent v2.0 Vector. 1080x1920 Reel cover. ?set=wsu|oh&n=N (titles in SETS below). Everything that matters sits inside
+   the centre 1080x1350 band (y 285-1635) so it survives the 4:5 / 3:4 profile-grid crop. */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{font-family:Barlow,"Helvetica Neue",Arial,sans-serif;position:relative}
+.light{--bg:#FFFFFF;--ink:#050E3D;--ink2:#55627F;--acc:#1768E5;--line:#E4E7EF;--ghost:rgba(5,14,61,.05)}
+.dark{--bg:#000000;--ink:#FFFFFF;--ink2:#9AA3BC;--acc:#5B9BFF;--line:rgba(255,255,255,.14);--ghost:rgba(91,155,255,.08)}
+body{background:var(--bg)}
+.dark .wash{position:absolute;inset:0;background:radial-gradient(900px 1100px at 90% 12%,rgba(23,104,229,.16),transparent 70%),radial-gradient(800px 900px at 5% 95%,rgba(23,104,229,.09),transparent 70%)}
+.light .wash{position:absolute;inset:0;background:radial-gradient(900px 1000px at 92% 10%,rgba(23,104,229,.07),transparent 70%)}
+.rail{position:absolute;left:0;right:0;top:0;height:14px;background:var(--line)}
+.rail i{display:block;height:100%;background:var(--acc)}
+.ghost{position:absolute;right:-70px;top:430px;font-weight:800;font-size:760px;line-height:.8;letter-spacing:-.05em;color:var(--ghost)}
+.band{position:absolute;left:84px;right:84px;top:340px;bottom:340px;display:flex;flex-direction:column}
+.eyebrow{display:flex;align-items:center;gap:22px;font-weight:700;font-size:30px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink2)}
+.eyebrow .dot{width:14px;height:14px;border-radius:50%;background:var(--acc)}
+.eyebrow b{color:var(--acc);font-weight:700}
+h1{margin-top:auto;font-weight:800;font-size:var(--fs,150px);line-height:.93;letter-spacing:-.028em;color:var(--ink)}
+h1 em{font-style:normal;color:var(--acc)}
+.sub{margin-top:44px;font-family:Inter,"Helvetica Neue",sans-serif;font-weight:500;font-size:38px;line-height:1.35;color:var(--ink2);max-width:860px;text-wrap:balance}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;border-top:3px solid var(--line);padding-top:30px}
+.mark{font-weight:800;font-size:40px;letter-spacing:-.02em;color:var(--ink)}
+.tag{font-weight:600;font-size:26px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink2)}
+</style></head>
+<body>
+<div class="wash"></div><div class="rail"><i id="rail"></i></div>
+<div class="ghost" id="ghost"></div>
+<div class="band">
+  <div class="eyebrow"><span class="dot"></span><span>Weekly Seller Update</span><b id="part"></b></div>
+  <h1 id="h"></h1>
+  <p class="sub" id="s"></p>
+  <div class="foot"><span class="mark">The Leveraged Agent</span><span class="tag">AI systems for real estate</span></div>
+</div>
+<script>
+const SETS={
+ wsu:{label:"Weekly Seller Update",color:"dark",items:[
+  ["My sellers get this <em>every Friday</em>","The weekly report I send every seller, built by AI."],
+  ["Pick the tone <em>before</em> AI writes it","Same numbers, a completely different message."],
+  ["One command. One paste. <em>Publish.</em>","My whole weekly seller update, start to finish."],
+  ["You're using AI <em>backwards</em>","Stop asking it questions. Make it ask you."],
+  ["The listing appointment <em>promise</em>","How I keep it every week, even when I'm slammed."],
+  ["Where every <em>view</em> comes from","Zillow, Redfin, Homes.com and Realtor.com in one place."],
+  ["Showing feedback, the <em>right</em> way","Honest with your seller, without the told-you-so."],
+  ["Show your seller the <em>work</em>","Mailers, ads and prospecting, every single week."],
+  ["Talk. Don't <em>type.</em>","Voice input gets you a better prompt."],
+  ["Read the plan <em>first</em>","Build it right once and it's done."],
+  ["Make it your <em>brand</em>","Your colors, your look, on every report."],
+  ["I let Claude run <em>without asking</em>","Why I skip the permission prompts, and the limits I set."],
+ ]},
+ oh:{label:"Open House Follow-Up",color:"light",items:[
+  ["Your sign-in sheets are <em>dying</em> on your desk","One photo turns them into CRM leads."],
+  ["Stop <em>typing</em> your prompts","Talk it out so Claude gets the whole picture."],
+  ["Why we <em>really</em> do open houses","Let's be honest about the 1 to 3 percent."],
+  ["The one line I <em>forgot</em>","Say this at the end of every plan."],
+  ["Buyer first. <em>Then</em> seller.","How I follow up with open house leads."],
+  ["One detail from the <em>sign-in sheet</em>","Why personal beats \"just checking in.\""],
+  ["The Day 0 <em>text</em>","What I send before they forget me."],
+  ["Follow up until you <em>die</em>","Texts, a voicemail and a handwritten note."],
+  ["One video for <em>every</em> visitor","Personal is best. A group video still works."],
+  ["A photo and <em>one command</em>","Straight into your CRM. No typing."],
+  ["Claude Code isn't <em>scary</em>","It even reads messy handwriting."],
+  ["What should I <em>automate</em> next?","Tell me what eats up your day."],
+ ]},
+};
+const q=new URLSearchParams(location.search), set=SETS[q.get("set")||"wsu"], n=+(q.get("n")||1), N=set.items.length, c=set.items[n-1]||["",""];
+// colour follows the POSTING order, not the reel number: the two sets alternate day by day,
+// so a whole set is one colour and the profile grid still alternates. "alt" = odd dark, even light.
+document.body.className = set.color==="alt" || !set.color ? (n%2 ? "dark" : "light") : set.color;
+const h=document.getElementById("h"); h.innerHTML=c[0];
+document.getElementById("s").textContent=c[1];
+document.querySelector(".eyebrow span:nth-child(2)").textContent=set.label;
+document.getElementById("part").textContent="Part "+n+" of "+N;
+document.getElementById("ghost").textContent=n;
+document.getElementById("rail").style.width=(n/N*100)+"%";
+// fit: largest size (max 166px) where no word overflows and the title stays under 600px tall
+window.fit=()=>{let fs=166;for(;fs>96;fs-=2){h.style.setProperty("--fs",fs+"px");if(h.scrollWidth<=h.clientWidth+1&&h.offsetHeight<=600)break}return fs};
+</script>
+</body></html>

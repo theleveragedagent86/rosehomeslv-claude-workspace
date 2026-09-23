@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rebels 8U — August 2026 Schedule</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:        #08090C;
+    --ink-2:      #10141A;
+    --surface:    #161B23;
+    --surface-2:  #1D2430;
+    --line:       #2A323F;
+
+    --red:        #E01B33;
+    --red-hot:    #FF3049;
+    --red-deep:   #7E0C1B;
+    --red-ember:  #B01426;
+
+    --ice:        #EEF4FA;
+    --steel:      #7C8794;
+    --steel-2:    #A9B4C0;
+    --chrome:     #D3DDE8;
+
+    --pad:        56px;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  html,body{ background:var(--ink); }
+
+  body{
+    width:1080px;
+    font-family:'Inter', -apple-system, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    color:var(--ice);
+  }
+
+  .poster{
+    position:relative;
+    width:1080px;
+    min-height:1920px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    background:
+      radial-gradient(120% 55% at 50% -8%,  rgba(224,27,51,.42) 0%, rgba(224,27,51,0) 62%),
+      radial-gradient(85% 40% at 108% 26%,  rgba(255,48,73,.18) 0%, rgba(255,48,73,0) 70%),
+      radial-gradient(90% 45% at -12% 74%,  rgba(126,12,27,.34) 0%, rgba(126,12,27,0) 72%),
+      radial-gradient(130% 60% at 50% 112%, rgba(224,27,51,.24) 0%, rgba(224,27,51,0) 66%),
+      linear-gradient(178deg, #0D1016 0%, #08090C 46%, #0A0C11 100%);
+  }
+
+  /* film grain */
+  .poster::before{
+    content:'';
+    position:absolute; inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+    opacity:.055;
+    mix-blend-mode:overlay;
+    pointer-events:none;
+    z-index:6;
+  }
+
+  /* ice-slash motif */
+  .slashes{
+    position:absolute; inset:0; z-index:0; pointer-events:none;
+    background-image:repeating-linear-gradient(
+      104deg,
+      rgba(238,244,250,.030) 0px,
+      rgba(238,244,250,.030) 2px,
+      transparent 2px,
+      transparent 74px
+    );
+    -webkit-mask-image:radial-gradient(70% 60% at 50% 40%, #000 0%, transparent 78%);
+            mask-image:radial-gradient(70% 60% at 50% 40%, #000 0%, transparent 78%);
+  }
+
+  /* ─────────── HEADER ─────────── */
+  header{
+    position:relative; z-index:2;
+    padding:32px var(--pad) 0;
+    text-align:center;
+  }
+
+  /* primary crest = the roundel patch. Its outer ring is black, so it needs a
+     light keyline + red glow or it vanishes into the dark background. */
+  .crest{
+    width:200px; height:200px;
+    margin:0 auto 4px;
+    display:block;
+    filter:
+      drop-shadow( 3px 0 0 rgba(238,244,250,.9)) drop-shadow(-3px 0 0 rgba(238,244,250,.9))
+      drop-shadow(0  3px 0 rgba(238,244,250,.9)) drop-shadow(0 -3px 0 rgba(238,244,250,.9))
+      drop-shadow(0 0 34px rgba(224,27,51,.55))
+      drop-shadow(0 26px 46px rgba(0,0,0,.72));
+  }
+
+  .season{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:25px; font-weight:600;
+    letter-spacing:.46em;
+    text-indent:.46em;
+    color:var(--steel-2);
+    margin-bottom:10px;
+  }
+
+  .month{
+    font-family:'Anton', sans-serif;
+    font-size:116px;
+    line-height:.82;
+    letter-spacing:-.035em;
+    text-transform:uppercase;
+    background:linear-gradient(180deg, #FFFFFF 4%, #E3EBF4 36%, #96A3B2 100%);
+    -webkit-background-clip:text;
+            background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 6px 0 rgba(0,0,0,.42));
+  }
+
+  .year-rule{
+    display:flex; align-items:center; justify-content:center;
+    gap:22px;
+    margin-top:16px;
+  }
+  .year-rule .bar{
+    height:2px; flex:1; max-width:238px;
+    background:linear-gradient(90deg, transparent, var(--red) 78%);
+  }
+  .year-rule .bar.r{ background:linear-gradient(270deg, transparent, var(--red) 78%); }
+  .year-rule .yr{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:34px; font-weight:700;
+    letter-spacing:.30em; text-indent:.30em;
+    color:var(--red-hot);
+  }
+
+  /* stat strip */
+  .stats{
+    display:flex; justify-content:center; align-items:stretch;
+    gap:0;
+    margin:22px auto 0;
+    width:max-content;
+    border:1px solid var(--line);
+    border-radius:4px;
+    background:linear-gradient(180deg, rgba(29,36,48,.86), rgba(16,20,26,.86));
+    box-shadow:
+      inset 0 1px 0 rgba(238,244,250,.06),
+      0 14px 30px rgba(0,0,0,.5);
+  }
+  .stat{ padding:11px 42px; text-align:center; }
+  .stat + .stat{ border-left:1px solid var(--line); }
+  .stat b{
+    display:block;
+    font-family:'Anton', sans-serif;
+    font-size:44px; line-height:1;
+    color:var(--ice);
+  }
+  .stat.hot b{ color:var(--red-hot); }
+  .stat span{
+    display:block; margin-top:7px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:16px; font-weight:600;
+    letter-spacing:.24em; text-indent:.24em;
+    color:var(--steel);
+    text-transform:uppercase;
+  }
+
+  /* ─────────── SCHEDULE ─────────── */
+  main{
+    position:relative; z-index:2;
+    padding:26px var(--pad) 0;
+    display:flex; flex-direction:column; gap:12px;
+    flex:1;
+  }
+
+  .row{
+    position:relative;
+    display:grid;
+    grid-template-columns:126px 1fr auto;
+    align-items:center;
+    gap:30px;
+    padding:19px 26px 19px 30px;
+    border-radius:5px;
+    border:1px solid var(--line);
+    background:linear-gradient(180deg, rgba(29,36,48,.72) 0%, rgba(16,20,26,.82) 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(238,244,250,.055),
+      0 10px 22px rgba(0,0,0,.42);
+    overflow:hidden;
+  }
+  .row::before{
+    content:'';
+    position:absolute; left:0; top:0; bottom:0;
+    width:6px;
+    background:var(--steel);
+    opacity:.5;
+  }
+
+  .row.game{
+    border-color:rgba(224,27,51,.46);
+    background:
+      linear-gradient(90deg, rgba(224,27,51,.20) 0%, rgba(224,27,51,.05) 34%, rgba(224,27,51,0) 62%),
+      linear-gradient(180deg, rgba(45,24,30,.94) 0%, rgba(20,12,15,.94) 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.07),
+      0 12px 30px rgba(126,12,27,.36),
+      0 4px 12px rgba(0,0,0,.5);
+  }
+  .row.game::before{
+    background:linear-gradient(180deg, var(--red-hot), var(--red-ember));
+    opacity:1;
+    box-shadow:0 0 18px rgba(255,48,73,.7);
+  }
+
+  /* date block */
+  .date{ text-align:center; }
+  .date .dow{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:19px; font-weight:700;
+    letter-spacing:.20em; text-indent:.20em;
+    color:var(--steel);
+    text-transform:uppercase;
+  }
+  .row.game .date .dow{ color:var(--red-hot); }
+  .date .num{
+    font-family:'Anton', sans-serif;
+    font-size:66px; line-height:.9;
+    letter-spacing:-.02em;
+    color:var(--ice);
+    margin-top:2px;
+  }
+
+  .divider{
+    position:absolute;
+    left:156px; top:20px; bottom:20px;
+    width:1px;
+    background:linear-gradient(180deg, transparent, #3B4656 22%, #3B4656 78%, transparent);
+  }
+
+  /* middle */
+  .meta{ padding-left:4px; min-width:0; }
+  .time{
+    font-family:'Anton', sans-serif;
+    font-size:40px; line-height:1;
+    letter-spacing:-.015em;
+    color:var(--ice);
+  }
+  .time .to{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:26px; font-weight:600;
+    color:var(--steel-2);
+    letter-spacing:.02em;
+  }
+  .rink{
+    margin-top:9px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:21px; font-weight:600;
+    letter-spacing:.13em;
+    color:var(--steel);
+    text-transform:uppercase;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  }
+  .rink .dot{ color:var(--red); margin:0 9px; }
+
+  .vs{
+    margin-top:7px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:19px; font-weight:700;
+    letter-spacing:.125em;
+    color:var(--red-hot);
+    text-transform:uppercase;
+    white-space:nowrap;
+  }
+  .vs .lbl{ color:var(--steel); font-weight:600; margin-right:8px; }
+  .vs .dot{ color:rgba(255,48,73,.55); margin:0 8px; }
+
+  /* badge */
+  .badge{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:20px; font-weight:700;
+    letter-spacing:.20em; text-indent:.20em;
+    text-transform:uppercase;
+    padding:11px 20px;
+    border-radius:3px;
+    white-space:nowrap;
+  }
+  .badge.practice{
+    color:var(--steel-2);
+    border:1px solid var(--line);
+    background:rgba(238,244,250,.045);
+  }
+  .badge.gm{
+    color:#fff;
+    background:linear-gradient(180deg, var(--red-hot), var(--red-ember));
+    border:1px solid rgba(255,255,255,.20);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.32),
+      0 6px 16px rgba(224,27,51,.5);
+  }
+
+  /* ─────────── FOOTER ─────────── */
+  footer{
+    position:relative; z-index:2;
+    margin-top:22px;
+    padding:26px var(--pad) 30px;
+    border-top:1px solid var(--line);
+    background:linear-gradient(180deg, rgba(8,9,12,0), rgba(8,9,12,.85));
+  }
+  /* footer: secondary mark on the left, details on the right */
+  .foot-main{
+    display:flex; align-items:center; justify-content:center;
+    gap:34px;
+  }
+  .mascot{
+    height:230px; width:auto; flex:none;
+    /* white keyline so he reads against the dark plate */
+    filter:
+      drop-shadow( 5px 0 0 #fff) drop-shadow(-5px 0 0 #fff)
+      drop-shadow(0  5px 0 #fff) drop-shadow(0 -5px 0 #fff)
+      drop-shadow( 4px  4px 0 #fff) drop-shadow(-4px -4px 0 #fff)
+      drop-shadow(0 14px 22px rgba(0,0,0,.6));
+  }
+  .foot-info{ flex:none; }
+
+  .venue{
+    display:flex; align-items:baseline; justify-content:center;
+    gap:14px;
+    font-family:'Barlow Condensed', sans-serif;
+    text-transform:uppercase;
+  }
+  .venue .k{
+    font-size:17px; font-weight:600;
+    letter-spacing:.26em; text-indent:.26em;
+    color:var(--steel);
+  }
+  .venue .v{
+    font-size:30px; font-weight:700;
+    letter-spacing:.05em;
+    color:var(--ice);
+  }
+  .coaches{
+    margin-top:20px;
+    display:flex; align-items:center; justify-content:center;
+    gap:18px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:21px; font-weight:600;
+    letter-spacing:.18em;
+    color:var(--steel-2);
+    text-transform:uppercase;
+  }
+  .coaches .sep{ color:var(--red); }
+  .note{
+    margin-top:14px;
+    text-align:center;
+    font-size:13px;
+    letter-spacing:.045em;
+    line-height:1.7;
+    color:#5C6672;
+  }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="slashes"></div>
+
+  <header>
+    <img class="crest" src="../Logos/FINAL/patch-crest-roundel.svg" alt="Rebels">
+    <div class="season">8U Mite League</div>
+    <div class="month">August</div>
+    <div class="year-rule">
+      <span class="bar"></span>
+      <span class="yr">2026</span>
+      <span class="bar r"></span>
+    </div>
+
+    <div class="stats">
+      <div class="stat hot"><b>3</b><span>Games</span></div>
+      <div class="stat"><b>4</b><span>Practices</span></div>
+      <div class="stat"><b>7</b><span>Ice Times</span></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="row practice">
+      <div class="divider"></div>
+      <div class="date"><div class="dow">Sun</div><div class="num">09</div></div>
+      <div class="meta">
+        <div class="time">10:00 AM <span class="to">– 10:50 AM</span></div>
+        <div class="rink">Ghost Energy <span class="dot">•</span> Rink B</div>
+      </div>
+      <div class="badge practice">Practice</div>
+    </div>
+
+    <div class="row practice">
+      <div class="divider"></div>
+      <div class="date"><div class="dow">Tue</div><div class="num">11</div></div>
+      <div class="meta">
+        <div class="time">5:30 PM <span class="to">– 6:20 PM</span></div>
+        <div class="rink">Ghost Energy <span class="dot">•</span> Rink B</div>
+      </div>
+      <div class="badge practice">Practice</div>
+    </div>
+
+    <div class="row game">
+      <div class="divider"></div>
+      <div class="date"><div class="dow">Sun</div><div class="num">16</div></div>
+      <div class="meta">
+        <div class="time">9:40 AM <span class="to">– 10:30 AM</span></div>
+        <div class="rink">Ghost Energy <span class="dot">•</span> Rink B</div>
+        <div class="vs"><span class="lbl">vs</span>Oil Kings <span class="dot">•</span> IceDogs <span class="dot">•</span> Hitmen</div>
+      </div>
+      <div class="badge gm">Game</div>
+    </div>
+
+    <div class="row practice">
+      <div class="divider"></div>
+      <div class="date"><div class="dow">Tue</div><div class="num">18</div></div>
+      <div class="meta">
+        <div class="time">5:10 PM <span class="to">– 6:00 PM</span></div>
+        <div class="rink">Ghost Energy <span class="dot">•</span> Rink B</div>
+      </div>
+      <div class="badge practice">Practice</div>
+    </div>
+
+    <div class="row game">
+      <div class="divider"></div>
+      <div class="date"><div class="dow">Sun</div><div class="num">23</div></div>
+      <div class="meta">
+        <div class="time">2:20 PM <span class="to">– 3:10 PM</span></div>
+        <div class="rink">Ghost Energy <span class="dot">•</span> Rink B</div>
+        <div class="vs"><span class="lbl">vs</span>Oil Kings <span class="dot">•</span> IceDogs <span class="dot">•</span> Hitmen</div>
+      </div>
+      <div class="badge gm">Game</div>
+    </div>
+
+    <div class="row practice">
+      <div class="divider"></div>
+      <div class="date"><div class="dow">Tue</div><div class="num">25</div></div>
+      <div class="meta">
+        <div class="time">5:10 PM <span class="to">– 6:00 PM</span></div>
+        <div class="rink">Ghost Energy <span class="dot">•</span> Rink B</div>
+      </div>
+      <div class="badge practice">Practice</div>
+    </div>
+
+    <div class="row game">
+      <div class="divider"></div>
+      <div class="date"><div class="dow">Sun</div><div class="num">30</div></div>
+      <div class="meta">
+        <div class="time">4:20 PM <span class="to">– 5:10 PM</span></div>
+        <div class="rink">Summerlin Hosp. <span class="dot">•</span> Rink A</div>
+        <div class="vs"><span class="lbl">vs</span>Oil Kings <span class="dot">•</span> IceDogs <span class="dot">•</span> Hitmen</div>
+      </div>
+      <div class="badge gm">Game</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="foot-main">
+      <img class="mascot" src="../Logos/FINAL/shirt-mascot-skating-1200.png" alt="">
+      <div class="foot-info">
+        <div class="venue">
+          <span class="k">Rink</span>
+          <span class="v">City National Arena</span>
+        </div>
+        <div class="coaches">
+          <span>Coach Ryan Rose</span>
+          <span class="sep">•</span>
+          <span>Coach Kane Osmars</span>
+        </div>
+      </div>
+    </div>
+    <div class="note">
+      Game days: Rebels play the other teams sharing the ice. All times per the 8U Mite League August schedule and subject to change.
+    </div>
+  </footer>
+</div>
+</body>
+</html>

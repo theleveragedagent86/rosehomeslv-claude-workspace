@@ -1,0 +1,87 @@
+{
+  "palette": "v4-signal",
+  "label": "Signal",
+  "mood": "Warm, energetic, direct. Reads urgent without shouting.",
+  "status": "proposed, not adopted",
+  "proposed": "2026-08-19",
+  "supersedes": null,
+  "note": "Tom Ferry runs orange #F26F21 as his second accent. Raw, it is 2.97:1 on white and cannot be text or carry white text. #BB4C0A is that same hue pushed until it clears AA in both directions, so one value does the button and the link.",
+  "evidence": "accent from Tom Ferry's orange #F26F21, corrected. Warm near-black ink follows finding 3.",
+  "colors": {
+    "bg": {
+      "hex": "#FFFFFF",
+      "role": "primary surface, pure white. Do not tint it"
+    },
+    "bg-2": {
+      "hex": "#FBF7F4",
+      "role": "sunken fill, table rows, inset panels. Faintly warm"
+    },
+    "bg-inv": {
+      "hex": "#1A1310",
+      "role": "inverted surface, warm near-black"
+    },
+    "line": {
+      "hex": "#EEE7E1",
+      "role": "hairline and divider on bg, non-text"
+    },
+    "structure": {
+      "hex": "#7E3405",
+      "role": "deep burnt orange. Chart bars, structural fills, large headings"
+    },
+    "ink": {
+      "hex": "#1A1310",
+      "role": "primary text on bg"
+    },
+    "ink-2": {
+      "hex": "#665C55",
+      "role": "secondary text on bg and bg-2"
+    },
+    "ink-inv": {
+      "hex": "#FFFFFF",
+      "role": "primary text on bg-inv"
+    },
+    "ink-2-inv": {
+      "hex": "#A0928A",
+      "role": "secondary text on bg-inv"
+    },
+    "accent": {
+      "hex": "#BB4C0A",
+      "role": "THE accent. Fills, buttons, links"
+    },
+    "accent-on": {
+      "hex": "#FFFFFF",
+      "role": "text placed ON accent"
+    },
+    "accent-txt": {
+      "hex": "#BB4C0A",
+      "role": "accent used AS text on bg or bg-2. Same value, it clears both"
+    },
+    "accent-inv": {
+      "hex": "#F2874A",
+      "role": "accent used AS text on bg-inv"
+    }
+  },
+  "contrast": {
+    "ink_on_bg": 18.35,
+    "ink_on_bg-2": 17.22,
+    "ink-2_on_bg": 6.51,
+    "ink-2_on_bg-2": 6.11,
+    "structure_on_bg": 8.82,
+    "structure_on_bg-2": 8.28,
+    "ink-inv_on_bg-inv": 18.35,
+    "ink-2-inv_on_bg-inv": 6.09,
+    "accent-on_on_accent": 5.06,
+    "accent-txt_on_bg": 5.06,
+    "accent-txt_on_bg-2": 4.75,
+    "accent-inv_on_bg-inv": 7.29,
+    "line_on_bg": 1.22
+  },
+  "type": {
+    "font-head": "\"Poppins\", \"Futura\", \"Avenir Next\", sans-serif",
+    "font-body": "\"Inter\", -apple-system, \"Helvetica Neue\", sans-serif",
+    "weight-head": "800",
+    "track-head": "-0.03em",
+    "track-label": "0.14em",
+    "lh-body": "1.55"
+  }
+}

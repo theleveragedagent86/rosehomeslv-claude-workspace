@@ -1,0 +1,87 @@
+{
+  "palette": "v4-meridian",
+  "label": "Meridian",
+  "mood": "Serhant's exact system. White and true black as co-equal surfaces, navy as the only color.",
+  "status": "proposed, not adopted",
+  "proposed": "2026-08-19",
+  "supersedes": null,
+  "note": "This is the only palette in the set where pure #000000 is correct, because it is a surface and not text. The pop here is structural, not chromatic: full-bleed black sections against white, with navy #001A72 as the single accent. Serhant, Compass and Eklund Gomes all build this way. Every value except the two greys is measured, nothing is invented.",
+  "evidence": "bg-inv #000000, bg-2 #F7F7F7, ink #212121 and accent #001A72 are all Serhant's measured values. ink-2-inv #B9B9B9 is Eklund Gomes' measured grey.",
+  "colors": {
+    "bg": {
+      "hex": "#FFFFFF",
+      "role": "primary surface, pure white"
+    },
+    "bg-2": {
+      "hex": "#F7F7F7",
+      "role": "sunken fill, table rows. Serhant's measured grey"
+    },
+    "bg-inv": {
+      "hex": "#000000",
+      "role": "inverted surface, true black. A surface, never text"
+    },
+    "line": {
+      "hex": "#E3E3E3",
+      "role": "hairline and divider on bg, non-text"
+    },
+    "structure": {
+      "hex": "#001A72",
+      "role": "navy. Chart bars, structural fills, large headings"
+    },
+    "ink": {
+      "hex": "#212121",
+      "role": "primary text on bg. Serhant's measured ink"
+    },
+    "ink-2": {
+      "hex": "#5C5C5C",
+      "role": "secondary text on bg and bg-2"
+    },
+    "ink-inv": {
+      "hex": "#FFFFFF",
+      "role": "primary text on bg-inv"
+    },
+    "ink-2-inv": {
+      "hex": "#B9B9B9",
+      "role": "secondary text on bg-inv. Eklund Gomes' measured grey"
+    },
+    "accent": {
+      "hex": "#001A72",
+      "role": "THE accent. Fills, buttons, links. Serhant's exact navy"
+    },
+    "accent-on": {
+      "hex": "#FFFFFF",
+      "role": "text placed ON accent"
+    },
+    "accent-txt": {
+      "hex": "#001A72",
+      "role": "accent used AS text on bg or bg-2. Same value, huge margin both ways"
+    },
+    "accent-inv": {
+      "hex": "#7290FF",
+      "role": "accent used AS text on bg-inv. Raw navy is 1.39 on black"
+    }
+  },
+  "contrast": {
+    "ink_on_bg": 16.1,
+    "ink_on_bg-2": 15.03,
+    "ink-2_on_bg": 6.69,
+    "ink-2_on_bg-2": 6.24,
+    "structure_on_bg": 15.1,
+    "structure_on_bg-2": 14.09,
+    "ink-inv_on_bg-inv": 21.0,
+    "ink-2-inv_on_bg-inv": 10.7,
+    "accent-on_on_accent": 15.1,
+    "accent-txt_on_bg": 15.1,
+    "accent-txt_on_bg-2": 14.09,
+    "accent-inv_on_bg-inv": 7.15,
+    "line_on_bg": 1.28
+  },
+  "type": {
+    "font-head": "\"Poppins\", \"Futura\", \"Avenir Next\", sans-serif",
+    "font-body": "\"Inter\", -apple-system, \"Helvetica Neue\", sans-serif",
+    "weight-head": "800",
+    "track-head": "-0.03em",
+    "track-label": "0.14em",
+    "lh-body": "1.55"
+  }
+}

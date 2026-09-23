@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Inter:wght@400;500&family=Raleway:wght@600&display=swap">
+  <style>
+    *,*::before,*::after { box-sizing: border-box; }
+    body { margin: 0; width: 1080px; height: 1350px; overflow: hidden; }
+    a { color: #1768E5; text-decoration: none; }
+    a:hover { color: #0B3FA8; }
+    .slide { position: relative; width: 1080px; height: 1350px;
+             padding: 152px 64px 166px;
+             display: flex; flex-direction: column; }
+    .rail { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; }
+    .label { font-family: 'Raleway',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 600; font-size: 22px;
+             letter-spacing: 0.15em; text-transform: uppercase; }
+    .idx { font-family: 'Raleway',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 600; font-size: 20px;
+           letter-spacing: 0.15em; }
+    .mono { width: 64px; height: 64px; flex: 0 0 auto; }
+    .footzone { display: flex; align-items: flex-end; justify-content: space-between;
+                gap: 48px; }
+
+    .slide { background: #000000; }
+    .eyebrow { font-family: 'Raleway',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 600; font-size: 22px;
+               letter-spacing: 0.15em; text-transform: uppercase; color: #9AA3BC; }
+    .core { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+    .numeral { font-family: 'Barlow','Helvetica Neue',Arial,sans-serif; font-weight: 800; font-size: 400px;
+               line-height: 0.78; letter-spacing: -0.04em; color: #5B9BFF;
+               margin-left: -28px; }
+    .head { font-family: 'Barlow','Helvetica Neue',Arial,sans-serif; font-weight: 800; font-size: 82px;
+            line-height: 0.98; letter-spacing: -0.028em; color: #FFFFFF;
+            max-width: 780px; margin-top: 24px; text-wrap: balance; }
+    .sub { font-family: 'Inter',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 400; font-size: 30px;
+           line-height: 1.5; color: #9AA3BC; max-width: 680px; margin-top: 32px; }
+    .mark { font-family: 'Barlow','Helvetica Neue',Arial,sans-serif; font-weight: 800; font-size: 34px;
+            letter-spacing: -0.028em; color: #FFFFFF; }
+    .rule { width: 72px; height: 5px; background: #1768E5; margin-bottom: 14px; }
+
+  </style>
+</helmet>
+<div class="slide">
+  <div class="rail"><div class="eyebrow">The Leveraged Agent</div></div>
+  <div class="core">
+    <div class="numeral">12</div>
+    <div class="head">Things to automate before your next listing</div>
+    <div class="sub">Photos land Tuesday. Everything else is already written.</div>
+  </div>
+  <div>
+    <div class="rule"></div>
+    <div class="mark">The Leveraged Agent</div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

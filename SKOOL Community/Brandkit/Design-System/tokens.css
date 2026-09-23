@@ -1,0 +1,190 @@
+@import "fonts/fonts.css";
+
+/* The Leveraged Agent, palette v2.0 "Vector". Thirteen tokens, nothing else is
+   a brand color. One accent, one value. Black is a surface, never text. */
+:root{
+  /* base surfaces */
+  --la-bg:#FFFFFF;
+  --la-bg-2:#F7F8FA;
+  --la-bg-inv:#000000;
+  --la-line:#E4E7EF;
+  --la-structure:#0B3FA8;
+
+  /* base ink */
+  --la-ink:#050E3D;
+  --la-ink-2:#55627F;
+  --la-ink-inv:#FFFFFF;
+  --la-ink-2-inv:#9AA3BC;
+
+  /* base accent */
+  --la-accent:#1768E5;
+  --la-accent-on:#FFFFFF;
+  --la-accent-txt:#1768E5;
+  --la-accent-inv:#5B9BFF;
+
+  /* semantic aliases, light context */
+  --surface-page:var(--la-bg);
+  --surface-sunken:var(--la-bg-2);
+  --surface-card:var(--la-bg);
+  --surface-band:var(--la-bg-inv);
+  --surface-fill-structure:var(--la-structure);
+  --surface-fill-accent:var(--la-accent);
+
+  --text-body:var(--la-ink);
+  --text-heading:var(--la-ink);
+  --text-muted:var(--la-ink-2);
+  --text-link:var(--la-accent-txt);
+  --text-on-accent:var(--la-accent-on);
+
+  --border-hairline:var(--la-line);
+  --border-strong:var(--la-ink);
+  --border-focus:var(--la-accent);
+
+  /* semantic aliases, on the black band */
+  --text-body-inv:var(--la-ink-inv);
+  --text-muted-inv:var(--la-ink-2-inv);
+  --text-link-inv:var(--la-accent-inv);
+  --border-hairline-inv:rgba(255,255,255,.16);
+
+  /* states. Hover darkens the accent by opacity over the surface, never by a
+     second hex. There is no second accent value in this brand. */
+  --state-hover-accent:color-mix(in srgb, var(--la-accent) 88%, #000);
+  --state-active-accent:color-mix(in srgb, var(--la-accent) 78%, #000);
+  --state-hover-wash:var(--la-bg-2);
+  --state-disabled-opacity:.4; /* @kind other */
+}
+
+:root{
+  /* families */
+  --font-display:"Barlow","Helvetica Neue",Arial,sans-serif;
+  --font-subtext:"Raleway","Helvetica Neue",Arial,sans-serif;
+  --font-body:"Inter","Helvetica Neue",Arial,sans-serif;
+
+  /* weights. The 800-to-400 gap carries the entire hierarchy. */
+  --weight-display:800;
+  --weight-subtext:600;
+  --weight-body:400;
+  --weight-body-strong:500;
+
+  /* tracking, per role. Barlow tracking is per weight: 600 -0.020em,
+     700 -0.024em, 800 -0.028em, 900 -0.032em. */
+  --track-display:-0.028em;
+  --track-subtext:0.01em;
+  --track-body:0; /* @kind other */
+  --track-micro:0.15em;
+
+  /* display scale */
+  --size-display-1:76px;
+  --size-display-2:56px;
+  --size-display-3:41px;
+  --size-display-4:30px;
+  --size-display-5:22px;
+
+  /* subtext + body scale */
+  --size-subhead:19px;
+  --size-eyebrow:15px;
+  --size-body-lg:17px;
+  --size-body:15px;
+  --size-body-sm:13px;
+  --size-micro:11px;
+
+  --leading-display:1.02;
+  --leading-display-tight:1.06;
+  --leading-subtext:1.35;
+  --leading-body:1.6;
+
+  /* composed roles */
+  --type-display:var(--weight-display) var(--size-display-2)/var(--leading-display) var(--font-display);
+  --type-heading:var(--weight-display) var(--size-display-4)/var(--leading-display-tight) var(--font-display);
+  --type-subhead:var(--weight-subtext) var(--size-subhead)/var(--leading-subtext) var(--font-subtext);
+  --type-eyebrow:var(--weight-subtext) var(--size-eyebrow)/var(--leading-subtext) var(--font-subtext);
+  --type-body:var(--weight-body) var(--size-body)/var(--leading-body) var(--font-body);
+  --type-body-strong:var(--weight-body-strong) var(--size-body)/var(--leading-body) var(--font-body);
+  --type-micro:var(--weight-subtext) var(--size-micro)/1.2 var(--font-subtext);
+}
+
+:root{
+  /* 4px base. Layout steps jump, they do not creep. */
+  --space-0:0px;
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:20px;
+  --space-6:24px;
+  --space-8:32px;
+  --space-10:40px;
+  --space-12:48px;
+  --space-16:64px;
+  --space-20:80px;
+  --space-24:96px;
+  --space-32:128px;
+
+  /* layout */
+  --container-max:1200px;
+  --container-narrow:720px;
+  --gutter:24px;
+  --gutter-lg:48px;
+  --section-y:96px;
+  --section-y-tight:64px;
+
+  /* control geometry */
+  --control-h-sm:32px;
+  --control-h:44px;
+  --control-h-lg:54px;
+  --control-pad-x:20px;
+  --hit-min:44px;
+}
+
+:root{
+  /* Structural, never decorative. Radii stay small; nothing is a pill except
+     a status dot or a switch knob. */
+  --radius-0:0px;
+  --radius-1:2px;
+  --radius-2:4px;
+  --radius-3:6px;
+  --radius-full:999px;
+  --radius-card:var(--radius-2);
+  --radius-control:var(--radius-2);
+  --radius-band:var(--radius-0);
+
+  /* borders */
+  --border-w:1px;
+  --border-w-strong:2px;
+  --rule-w:1px;
+  --rule-w-heavy:4px;
+
+  /* shadow. One elevation, and it is for overlays only. Cards use a hairline,
+     not a shadow. */
+  --shadow-none:none;
+  --shadow-overlay:0 18px 48px rgba(5,14,61,.16);
+  --shadow-focus:0 0 0 3px rgba(23,104,229,.28);
+}
+
+:root{
+  /* Short, flat, no bounce. Motion confirms an action, it never performs. */
+  --dur-instant:80ms; /* @kind other */
+  --dur-fast:140ms; /* @kind other */
+  --dur-base:200ms; /* @kind other */
+  --dur-slow:320ms; /* @kind other */
+  --ease-standard:cubic-bezier(.2,0,.2,1); /* @kind other */
+  --ease-out:cubic-bezier(0,0,.2,1); /* @kind other */
+  --ease-in:cubic-bezier(.4,0,1,1); /* @kind other */
+  --transition-control:background-color var(--dur-fast) var(--ease-out),color var(--dur-fast) var(--ease-out),border-color var(--dur-fast) var(--ease-out);
+}
+
+/* Minimal element defaults. Components carry their own styling; this only sets
+   the page ground so a bare card or kit page starts on-brand. */
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--surface-page);color:var(--text-body);font:var(--type-body);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,h5{margin:0;font-family:var(--font-display);font-weight:var(--weight-display);letter-spacing:var(--track-display);line-height:var(--leading-display-tight);color:var(--text-heading)}
+h1{font-size:var(--size-display-2)}h2{font-size:var(--size-display-3)}h3{font-size:var(--size-display-4)}h4{font-size:var(--size-display-5)}h5{font-size:var(--size-body-lg)}
+p{margin:0 0 var(--space-4);max-width:66ch;text-wrap:pretty}
+a{color:var(--text-link);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--la-accent) 35%,transparent);transition:var(--transition-control)}
+a:hover{color:var(--state-hover-accent);border-bottom-color:var(--la-accent)}
+hr{height:var(--rule-w);border:0;background:var(--border-hairline);margin:var(--space-8) 0}
+::selection{background:var(--la-accent);color:var(--la-accent-on)}
+:focus-visible{outline:none;box-shadow:var(--shadow-focus);border-radius:var(--radius-1)}
+.la-band{background:var(--surface-band);color:var(--text-body-inv)}
+.la-band a{color:var(--text-link-inv);border-bottom-color:color-mix(in srgb,var(--la-accent-inv) 40%,transparent)}
+.la-band a:hover{color:var(--la-accent-inv);border-bottom-color:var(--la-accent-inv)}

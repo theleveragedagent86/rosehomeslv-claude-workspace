@@ -1,0 +1,87 @@
+{
+  "palette": "v4-ivory",
+  "label": "Ivory",
+  "mood": "Warm paper, no accent hue at all. Maximum pedigree, minimum pop.",
+  "status": "proposed, not adopted",
+  "proposed": "2026-08-19",
+  "supersedes": null,
+  "note": "The 'lighter color' reading of the brief rather than the pure-white one. Corcoran runs a warm cream #FEF1E1 as its secondary surface. Here there is no accent hue: buttons and links are the ink itself. Compass and Eklund Gomes ship with no accent at all and look expensive doing it. Included as the control, so you can see what zero color costs you in energy.",
+  "evidence": "bg-2 is Corcoran's cream #FEF1E1 family. The no-accent construction is Compass and Eklund Gomes.",
+  "colors": {
+    "bg": {
+      "hex": "#FDF9F2",
+      "role": "primary surface, warm paper. This palette is the one that is NOT pure white"
+    },
+    "bg-2": {
+      "hex": "#F6EEDF",
+      "role": "sunken fill, deeper cream. The palette's signature"
+    },
+    "bg-inv": {
+      "hex": "#17130E",
+      "role": "inverted surface, warm near-black"
+    },
+    "line": {
+      "hex": "#EDE3D4",
+      "role": "hairline and divider on bg, non-text"
+    },
+    "structure": {
+      "hex": "#443B31",
+      "role": "warm dark brown. Chart bars, structural fills"
+    },
+    "ink": {
+      "hex": "#17130E",
+      "role": "primary text on bg"
+    },
+    "ink-2": {
+      "hex": "#675E54",
+      "role": "secondary text on bg and bg-2"
+    },
+    "ink-inv": {
+      "hex": "#FFFFFF",
+      "role": "primary text on bg-inv"
+    },
+    "ink-2-inv": {
+      "hex": "#A79C8E",
+      "role": "secondary text on bg-inv"
+    },
+    "accent": {
+      "hex": "#17130E",
+      "role": "THE accent, and it is the ink. Fills, buttons, links"
+    },
+    "accent-on": {
+      "hex": "#FFFFFF",
+      "role": "text placed ON accent"
+    },
+    "accent-txt": {
+      "hex": "#17130E",
+      "role": "accent used AS text on bg or bg-2"
+    },
+    "accent-inv": {
+      "hex": "#FFFFFF",
+      "role": "accent used AS text on bg-inv"
+    }
+  },
+  "contrast": {
+    "ink_on_bg": 17.61,
+    "ink_on_bg-2": 16.03,
+    "ink-2_on_bg": 6.05,
+    "ink-2_on_bg-2": 5.51,
+    "structure_on_bg": 10.44,
+    "structure_on_bg-2": 9.51,
+    "ink-inv_on_bg-inv": 18.49,
+    "ink-2-inv_on_bg-inv": 6.86,
+    "accent-on_on_accent": 18.49,
+    "accent-txt_on_bg": 17.61,
+    "accent-txt_on_bg-2": 16.03,
+    "accent-inv_on_bg-inv": 18.49,
+    "line_on_bg": 1.21
+  },
+  "type": {
+    "font-head": "\"Poppins\", \"Futura\", \"Avenir Next\", sans-serif",
+    "font-body": "\"Inter\", -apple-system, \"Helvetica Neue\", sans-serif",
+    "weight-head": "800",
+    "track-head": "-0.03em",
+    "track-label": "0.14em",
+    "lh-body": "1.55"
+  }
+}

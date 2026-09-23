@@ -1,0 +1,712 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+.rhlv-rl{
+  --rh-navy:#1C2333;
+  --rh-gold:#C9A86E;
+  --rh-white:#FFFFFF;
+  --rh-warm:#F7F5F0;
+  --rh-slate:#8A8FA8;
+  --rh-hair-navy:rgba(28,35,51,.18);
+  --rh-hair-gold:rgba(201,168,110,.35);
+  --rh-shadow-print:0 1px 2px rgba(28,35,51,.06);
+  --rh-shadow-screen:0 8px 24px -12px rgba(28,35,51,.18);
+  --rh-ease:cubic-bezier(0.25,0.1,0.25,1);
+  --rh-display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --rh-label:"Montserrat","Arimo",system-ui,sans-serif;
+  --rh-body:"Inter","Arimo",system-ui,sans-serif;
+  font-family:var(--rh-body);
+  color:var(--rh-navy);
+  background:var(--rh-white);
+  font-size:17px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+.rhlv-rl *,.rhlv-rl *::before,.rhlv-rl *::after{box-sizing:border-box}
+.rhlv-rl img{max-width:100%;height:auto;display:block}
+.rhlv-rl h1,.rhlv-rl h2,.rhlv-rl h3{
+  font-family:var(--rh-display);font-weight:700;color:var(--rh-navy);
+  letter-spacing:-.03em;line-height:1.12;margin:0;
+}
+.rhlv-rl p{margin:0}
+.rhlv-rl ul{margin:0;padding:0;list-style:none}
+
+.rhlv-rl__wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.rhlv-rl__narrow{max-width:840px}
+.rhlv-rl__sec{padding:96px 0}
+.rhlv-rl__warm{background:var(--rh-warm)}
+.rhlv-rl__dark{background:var(--rh-navy);color:rgba(255,255,255,.82)}
+.rhlv-rl__dark h2,.rhlv-rl__dark h3{color:var(--rh-white)}
+.rhlv-rl__dark strong{color:var(--rh-white)}
+
+.rhlv-rl__rule{width:64px;height:1px;background:var(--rh-gold);margin:0 0 24px}
+.rhlv-rl__eyebrow{
+  font-family:var(--rh-label);font-weight:600;font-size:12px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--rh-gold);
+  margin:0 0 16px;line-height:1.4;
+}
+.rhlv-rl__h2{font-size:clamp(32px,4.6vw,52px)}
+.rhlv-rl__lede{font-size:clamp(17px,1.7vw,19px);margin-top:24px;max-width:60em}
+.rhlv-rl__stack p+p{margin-top:22px}
+
+/* buttons */
+.rhlv-rl__btn{
+  display:inline-flex;align-items:center;justify-content:center;text-align:center;
+  font-family:var(--rh-label);font-weight:600;font-size:13px;letter-spacing:.14em;
+  text-transform:uppercase;text-decoration:none;padding:16px 30px;border-radius:4px;
+  border:1px solid var(--rh-navy);background:transparent;color:var(--rh-navy);cursor:pointer;
+  transition:opacity 240ms var(--rh-ease);
+}
+.rhlv-rl__btn--solid{background:var(--rh-navy);color:var(--rh-white)}
+.rhlv-rl__btn:hover{opacity:.8}
+.rhlv-rl__btn:active{opacity:.66}
+.rhlv-rl__btn--onDark{border-color:var(--rh-gold);color:var(--rh-white)}
+.rhlv-rl__btn--onDarkSolid{background:var(--rh-gold);border-color:var(--rh-gold);color:var(--rh-navy)}
+.rhlv-rl__btn:focus-visible,.rhlv-rl__card--link:focus-visible,.rhlv-rl__faq summary:focus-visible,.rhlv-rl__contact a:focus-visible,.rhlv-rl__links a:focus-visible{
+  outline:2px solid var(--rh-gold);outline-offset:4px;
+}
+.rhlv-rl__btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+
+/* hero, text only by design */
+.rhlv-rl__hero{
+  background:var(--rh-navy);color:rgba(255,255,255,.82);
+  border-top:1px solid var(--rh-gold);padding:112px 0 0;
+}
+.rhlv-rl__hero h1{color:var(--rh-white);font-size:clamp(42px,7vw,84px);margin-bottom:28px;max-width:13em}
+.rhlv-rl__hero p{font-size:clamp(17px,1.8vw,21px);max-width:36em}
+.rhlv-rl__hero .rhlv-rl__btns{margin-bottom:56px}
+.rhlv-rl__trust{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:14px;
+  color:var(--rh-slate);border-top:1px solid var(--rh-hair-gold);padding:20px 0 72px;
+}
+.rhlv-rl__stars{color:var(--rh-gold);letter-spacing:.14em}
+
+/* numbered points */
+.rhlv-rl__points{display:grid;grid-template-columns:1fr;gap:0;margin-top:56px;counter-reset:rlpt;
+  border-top:1px solid var(--rh-hair-navy)}
+.rhlv-rl__point{
+  padding:32px 0;border-bottom:1px solid var(--rh-hair-navy);
+  display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start;
+}
+.rhlv-rl__point::before{
+  counter-increment:rlpt;content:counter(rlpt,decimal-leading-zero);
+  font-family:var(--rh-display);font-size:34px;line-height:1.1;color:var(--rh-gold);letter-spacing:-.02em;
+}
+.rhlv-rl__point h3{font-size:22px;margin-bottom:10px}
+.rhlv-rl__point p{font-size:16px;max-width:52em}
+
+/* dark band */
+.rhlv-rl__band{padding:104px 0}
+.rhlv-rl__band h2{font-size:clamp(32px,4.8vw,54px)}
+.rhlv-rl__band p{font-size:clamp(17px,1.8vw,20px);margin-top:24px;max-width:44em}
+.rhlv-rl__band p+p{margin-top:22px}
+.rhlv-rl__band a{color:var(--rh-gold)}
+
+/* compare */
+.rhlv-rl__compare{display:grid;grid-template-columns:1fr;gap:0;margin-top:56px;border-top:1px solid var(--rh-gold)}
+.rhlv-rl__col{padding:36px 0}
+.rhlv-rl__col h3{
+  font-family:var(--rh-label);font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--rh-navy);padding-bottom:20px;border-bottom:1px solid var(--rh-hair-navy);margin-bottom:8px;
+}
+.rhlv-rl__col li{
+  font-size:16px;padding:16px 0 16px 26px;position:relative;border-bottom:1px solid var(--rh-hair-navy);
+}
+.rhlv-rl__col li:last-child{border-bottom:0}
+.rhlv-rl__col li::before{
+  content:"";position:absolute;left:0;top:27px;width:10px;height:1px;background:var(--rh-gold);
+}
+.rhlv-rl__col li.rhlv-rl__con{color:var(--rh-slate)}
+.rhlv-rl__col li.rhlv-rl__con::before{background:var(--rh-slate);opacity:.6}
+.rhlv-rl__col li.rhlv-rl__conFirst{margin-top:20px;border-top:1px solid var(--rh-hair-navy)}
+.rhlv-rl__col li.rhlv-rl__conFirst::after{
+  content:"The downside";position:absolute;left:20px;top:-11px;background:var(--rh-white);
+  padding:0 8px;font-family:var(--rh-label);font-size:10px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--rh-slate);
+}
+.rhlv-rl__close{
+  margin-top:44px;font-family:var(--rh-display);font-size:clamp(19px,2.1vw,24px);line-height:1.5;
+  letter-spacing:-.02em;color:var(--rh-navy);max-width:44em;
+  border-left:1px solid var(--rh-gold);padding-left:24px;
+}
+
+/* communities */
+.rhlv-rl__grid{display:grid;grid-template-columns:1fr;gap:28px;margin-top:56px}
+.rhlv-rl__card{
+  position:relative;display:block;text-decoration:none;color:inherit;background:var(--rh-white);
+  border:1px solid var(--rh-hair-navy);border-radius:8px;overflow:hidden;
+  box-shadow:var(--rh-shadow-print);
+}
+.rhlv-rl__cardImg{overflow:hidden;background:var(--rh-warm)}
+.rhlv-rl__cardImg img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform 240ms var(--rh-ease)}
+.rhlv-rl__card--link{box-shadow:var(--rh-shadow-screen)}
+.rhlv-rl__card--link:hover .rhlv-rl__cardImg img{transform:scale(1.02)}
+.rhlv-rl__card--link:active{opacity:.94}
+.rhlv-rl__card--soon{background:var(--rh-warm);box-shadow:none}
+.rhlv-rl__card--soon .rhlv-rl__cardImg img{opacity:.5}
+.rhlv-rl__cardBody{padding:28px 26px 30px}
+.rhlv-rl__card h3{font-size:24px;margin-bottom:8px}
+.rhlv-rl__card p{font-size:15px;color:var(--rh-slate)}
+.rhlv-rl__tag{
+  display:inline-block;margin-top:20px;font-family:var(--rh-label);font-size:11px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;
+}
+.rhlv-rl__tag--go{color:var(--rh-gold)}
+.rhlv-rl__tag--soon{color:var(--rh-slate)}
+.rhlv-rl__card--link::before,.rhlv-rl__card--link::after{
+  content:"";position:absolute;width:18px;height:18px;pointer-events:none;z-index:1;
+}
+.rhlv-rl__card--link::before{top:10px;left:10px;border-top:1px solid var(--rh-gold);border-left:1px solid var(--rh-gold)}
+.rhlv-rl__card--link::after{bottom:10px;right:10px;border-bottom:1px solid var(--rh-gold);border-right:1px solid var(--rh-gold)}
+
+/* review */
+.rhlv-rl__quote{max-width:920px;margin:0 auto;text-align:center;padding:0 8px}
+.rhlv-rl__quote blockquote{
+  margin:0;font-family:var(--rh-display);font-style:italic;font-weight:400;
+  font-size:clamp(21px,2.8vw,32px);line-height:1.45;letter-spacing:-.02em;color:var(--rh-navy);
+}
+.rhlv-rl__quote cite{
+  display:block;margin-top:28px;font-style:normal;font-family:var(--rh-label);font-size:11px;
+  font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--rh-slate);
+}
+.rhlv-rl__quoteRule{width:64px;height:1px;background:var(--rh-gold);margin:0 auto 32px}
+
+/* reading list */
+.rhlv-rl__lists{display:grid;grid-template-columns:1fr;gap:44px;margin-top:56px}
+.rhlv-rl__links h3{
+  font-family:var(--rh-label);font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--rh-navy);padding-bottom:18px;border-bottom:1px solid var(--rh-gold);margin-bottom:4px;
+}
+.rhlv-rl__links a{
+  display:block;font-size:16px;padding:15px 0;color:var(--rh-navy);text-decoration:none;
+  border-bottom:1px solid var(--rh-hair-navy);transition:opacity 240ms var(--rh-ease);
+}
+.rhlv-rl__links a:hover{opacity:.62}
+.rhlv-rl__links a:active{opacity:.5}
+
+/* faq */
+.rhlv-rl__faq{margin-top:48px;max-width:920px;border-top:1px solid var(--rh-hair-navy)}
+.rhlv-rl__faq details{border-bottom:1px solid var(--rh-hair-navy)}
+.rhlv-rl__faq summary{
+  list-style:none;cursor:pointer;padding:26px 56px 26px 0;position:relative;
+  font-family:var(--rh-display);font-size:20px;font-weight:700;letter-spacing:-.02em;
+  line-height:1.4;color:var(--rh-navy);transition:opacity 240ms var(--rh-ease);
+}
+.rhlv-rl__faq summary::-webkit-details-marker{display:none}
+.rhlv-rl__faq summary:hover{opacity:.72}
+.rhlv-rl__faq summary::after{
+  content:"";position:absolute;right:14px;top:34px;width:12px;height:1px;background:var(--rh-gold);
+}
+.rhlv-rl__faq summary::before{
+  content:"";position:absolute;right:19px;top:29px;width:1px;height:11px;background:var(--rh-gold);
+  transition:opacity 240ms var(--rh-ease);
+}
+.rhlv-rl__faq details[open] summary::before{opacity:0}
+.rhlv-rl__faq .rhlv-rl__answer{padding:0 56px 30px 0;font-size:16px;max-width:56em}
+.rhlv-rl__faq .rhlv-rl__answer a{color:var(--rh-navy);text-decoration:underline;text-underline-offset:3px}
+
+/* closing */
+.rhlv-rl__end{padding:104px 0}
+.rhlv-rl__end h2{font-size:clamp(32px,4.8vw,54px)}
+.rhlv-rl__end p{font-size:clamp(17px,1.7vw,19px);margin-top:24px;max-width:44em}
+.rhlv-rl__contact{
+  margin-top:64px;padding-top:28px;border-top:1px solid var(--rh-hair-gold);
+  font-size:15px;color:var(--rh-slate);line-height:1.9;
+}
+.rhlv-rl__contact a{display:inline-block;padding:11px 0;color:var(--rh-gold);text-decoration:none;border-bottom:1px solid transparent;transition:opacity 240ms var(--rh-ease)}
+.rhlv-rl__contact a:hover{border-bottom-color:var(--rh-gold)}
+
+@media (min-width:720px){
+  .rhlv-rl__points{grid-template-columns:1fr 1fr;column-gap:56px}
+  .rhlv-rl__compare{grid-template-columns:1fr 1fr;column-gap:56px}
+  .rhlv-rl__grid{grid-template-columns:1fr 1fr}
+  .rhlv-rl__lists{grid-template-columns:1fr 1fr;column-gap:56px}
+}
+@media (min-width:1000px){
+  .rhlv-rl__grid{grid-template-columns:repeat(3,1fr)}
+  .rhlv-rl__sec{padding:128px 0}
+  .rhlv-rl__lists{grid-template-columns:repeat(3,1fr);column-gap:48px}
+  .rhlv-rl__compare{position:relative}
+  .rhlv-rl__compare::after{
+    content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:var(--rh-hair-navy);
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .rhlv-rl *{transition:none !important;animation:none !important}
+  .rhlv-rl__card--link:hover .rhlv-rl__cardImg img{transform:none}
+}
+</style>
+
+<div class="rhlv-rl">
+
+  <section class="rhlv-rl__hero">
+    <div class="rhlv-rl__wrap">
+      <p class="rhlv-rl__eyebrow">Relocation</p>
+      <h1>Moving to Las Vegas</h1>
+      <p>Most people move here for one of three reasons: the taxes, the cost of a house, or a job. Then they get here and find out the part nobody told them about was picking the right side of town. That part is where I help.</p>
+      <div class="rhlv-rl__btns">
+        <a class="rhlv-rl__btn rhlv-rl__btn--onDarkSolid" href="tel:+17027475921">Call or Text 702-747-5921</a>
+        <a class="rhlv-rl__btn rhlv-rl__btn--onDark" href="#rhlv-rl-areas">See the Areas</a>
+      </div>
+      <p class="rhlv-rl__trust">
+        <span class="rhlv-rl__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span>5.0 from 5 Google reviews &middot; Ryan Rose, Realtor with Real Broker, LLC</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="rhlv-rl__sec">
+    <div class="rhlv-rl__wrap">
+      <div class="rhlv-rl__narrow">
+        <div class="rhlv-rl__rule"></div>
+        <p class="rhlv-rl__eyebrow">Why people come</p>
+        <h2 class="rhlv-rl__h2">What actually pulls people to Las Vegas</h2>
+        <p class="rhlv-rl__lede">I hear the same handful of reasons over and over. None of them are the casinos. Here is what people tell me when I ask why they are looking at Nevada.</p>
+      </div>
+      <div class="rhlv-rl__points">
+        <div class="rhlv-rl__point">
+          <div>
+            <h3>Nevada has no state income tax</h3>
+            <p>There is no state income tax here, and no state estate or inheritance tax either. For people coming from California, Oregon, or New York, that alone changes the math on what they can afford every month.</p>
+          </div>
+        </div>
+        <div class="rhlv-rl__point">
+          <div>
+            <h3>Your housing dollar goes further</h3>
+            <p>Buyers coming from the coasts are usually surprised by what the same budget buys here. I will not quote you a number on a web page, because it depends entirely on the area and the house. Tell me your budget and I will show you what it really gets.</p>
+          </div>
+        </div>
+        <div class="rhlv-rl__point">
+          <div>
+            <h3>It is a genuinely easy place to fly out of</h3>
+            <p>Harry Reid International sits right in the middle of the valley. If you travel for work or have family in another state, that convenience turns out to matter more than people expect.</p>
+          </div>
+        </div>
+        <div class="rhlv-rl__point">
+          <div>
+            <h3>You are outside faster than you think</h3>
+            <p>Red Rock Canyon, Lake Mead, and Mount Charleston are all short drives. Plenty of people move here picturing the Strip and end up spending their weekends on a trail.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rhlv-rl__dark rhlv-rl__band">
+    <div class="rhlv-rl__wrap">
+      <div class="rhlv-rl__narrow">
+        <div class="rhlv-rl__rule"></div>
+        <p class="rhlv-rl__eyebrow">Start here</p>
+        <h2>Pick the commute first, then the house</h2>
+        <p>This is the mistake I see most from out of state buyers. They fall in love with a house online, buy it, and then find out they are driving 45 minutes across the valley twice a day. Las Vegas looks small on a map and does not always drive small.</p>
+        <p>So we start the other way around. Tell me where you or your spouse will be working, whether you need to be near the airport, and what your weekends look like. That narrows the whole valley down to two or three areas before we ever open a listing.</p>
+        <p>If you cannot fly out to look, that is normal. A lot of my relocation clients see everything by video first. I walk the homes, record them honestly including the parts you would not put in a listing, and we go from there.</p>
+        <div class="rhlv-rl__btns">
+          <a class="rhlv-rl__btn rhlv-rl__btn--onDarkSolid" href="tel:+17027475921">Tell Me Where You'll Be Working</a>
+          <a class="rhlv-rl__btn rhlv-rl__btn--onDark" href="/relocation-guide">Get the Free Relocation Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rhlv-rl__sec">
+    <div class="rhlv-rl__wrap">
+      <div class="rhlv-rl__narrow">
+        <div class="rhlv-rl__rule"></div>
+        <p class="rhlv-rl__eyebrow">The trade-off</p>
+        <h2 class="rhlv-rl__h2">Rent first, or buy right away?</h2>
+        <p class="rhlv-rl__lede">There is no single right answer, and anyone who tells you there is has not asked you enough questions. Here is the honest version of both.</p>
+      </div>
+      <div class="rhlv-rl__compare">
+        <div class="rhlv-rl__col">
+          <h3>Rent for 6 to 12 months</h3>
+          <ul>
+            <li>You learn the valley before you commit to a zip code</li>
+            <li>You can test the real commute in real traffic</li>
+            <li>You are not buying and selling twice if the job changes</li>
+            <li>Easier if you have not sold your current home yet</li>
+            <li class="rhlv-rl__con rhlv-rl__conFirst">You pay rent and you build no equity while you wait</li>
+            <li class="rhlv-rl__con">You may move twice, which is expensive and exhausting</li>
+            <li class="rhlv-rl__con">Rentals in good school zones go fast and are not always nice</li>
+          </ul>
+        </div>
+        <div class="rhlv-rl__col">
+          <h3>Buy right away</h3>
+          <ul>
+            <li>You move once, unpack once, and you are done</li>
+            <li>Your payment is fixed instead of renewing every year</li>
+            <li>Kids start the school year in the school they will stay in</li>
+            <li>You start building equity from month one</li>
+            <li class="rhlv-rl__con rhlv-rl__conFirst">You are choosing an area you have not lived in yet</li>
+            <li class="rhlv-rl__con">It is harder to pull off if your old home has not sold</li>
+            <li class="rhlv-rl__con">Buying under time pressure rarely gets you the best house</li>
+          </ul>
+        </div>
+      </div>
+      <p class="rhlv-rl__close">Roughly half my relocation clients rent first and half buy right away, and both groups end up happy. What matters is that you chose on purpose instead of by default.</p>
+    </div>
+  </section>
+
+  <section class="rhlv-rl__sec rhlv-rl__warm" id="rhlv-rl-areas">
+    <div class="rhlv-rl__wrap">
+      <div class="rhlv-rl__narrow">
+        <div class="rhlv-rl__rule"></div>
+        <p class="rhlv-rl__eyebrow">Areas</p>
+        <h2 class="rhlv-rl__h2">Where people actually land</h2>
+        <p class="rhlv-rl__lede">The valley is really a set of very different areas that share one name. These are the ones relocating buyers ask me about most, and roughly how each one feels.</p>
+      </div>
+
+      <!--
+        HOW TO TURN AN AREA CARD INTO A LINK LATER:
+        A non-clickable card looks like this:
+            <div class="rhlv-rl__card rhlv-rl__card--soon"> ... <span class="rhlv-rl__tag rhlv-rl__tag--soon">Page coming soon</span> ... </div>
+        To make it clickable, change three things:
+            1. <div ...>  becomes  <a href="/your-page-url" ...>  and the closing </div> becomes </a>
+            2. class "rhlv-rl__card--soon"  becomes  "rhlv-rl__card--link"   (this also adds the gold corner brackets)
+            3. the tag span class "rhlv-rl__tag--soon" becomes "rhlv-rl__tag--go" and its text becomes  View area
+        Compare with the Summerlin card below, which is already in link form.
+      -->
+
+      <div class="rhlv-rl__grid">
+        <a class="rhlv-rl__card rhlv-rl__card--link" href="/summerlin">
+          <div class="rhlv-rl__cardImg"><img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-summerlin.jpg" alt="Summerlin neighborhood on the west side of the Las Vegas valley" width="900" height="672" loading="lazy"></div>
+          <div class="rhlv-rl__cardBody">
+            <h3>Summerlin</h3>
+            <p>West valley. Master planned, heavy on trails and parks, Red Rock right there.</p>
+            <span class="rhlv-rl__tag rhlv-rl__tag--go">View area</span>
+          </div>
+        </a>
+
+        <a class="rhlv-rl__card rhlv-rl__card--link" href="/henderson">
+          <div class="rhlv-rl__cardImg"><img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-henderson.jpg" alt="Henderson Nevada neighborhood in the southeast Las Vegas valley" width="900" height="672" loading="lazy"></div>
+          <div class="rhlv-rl__cardBody">
+            <h3>Henderson</h3>
+            <p>Southeast. Its own city, quieter feel, and the easiest reach to the airport.</p>
+            <span class="rhlv-rl__tag rhlv-rl__tag--go">View area</span>
+          </div>
+        </a>
+
+        <a class="rhlv-rl__card rhlv-rl__card--link" href="/mountains-edge">
+          <div class="rhlv-rl__cardImg"><img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-mountains-edge.jpg" alt="Mountain's Edge neighborhood in southwest Las Vegas" width="900" height="672" loading="lazy"></div>
+          <div class="rhlv-rl__cardBody">
+            <h3>Mountain's Edge</h3>
+            <p>Southwest. Mountain views, lots of young families, popular with first time buyers.</p>
+            <span class="rhlv-rl__tag rhlv-rl__tag--go">View area</span>
+          </div>
+        </a>
+
+        <div class="rhlv-rl__card rhlv-rl__card--soon">
+          <div class="rhlv-rl__cardImg"><img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-skye-canyon.jpg" alt="Skye Canyon neighborhood in northwest Las Vegas" width="900" height="672" loading="lazy"></div>
+          <div class="rhlv-rl__cardBody">
+            <h3>Skye Canyon</h3>
+            <p>Northwest. One of the newest master plans, higher elevation, very outdoor focused.</p>
+            <span class="rhlv-rl__tag rhlv-rl__tag--soon">Page coming soon</span>
+          </div>
+        </div>
+
+        <div class="rhlv-rl__card rhlv-rl__card--soon">
+          <div class="rhlv-rl__cardImg"><img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-centennial-hills.jpg" alt="Centennial Hills neighborhood in northwest Las Vegas" width="900" height="672" loading="lazy"></div>
+          <div class="rhlv-rl__cardBody">
+            <h3>Centennial Hills</h3>
+            <p>Northwest. More established than Skye Canyon, with newer pockets mixed in.</p>
+            <span class="rhlv-rl__tag rhlv-rl__tag--soon">Page coming soon</span>
+          </div>
+        </div>
+
+        <div class="rhlv-rl__card rhlv-rl__card--soon">
+          <div class="rhlv-rl__cardImg"><img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-north-las-vegas.jpg" alt="North Las Vegas residential neighborhood" width="900" height="672" loading="lazy"></div>
+          <div class="rhlv-rl__cardBody">
+            <h3>North Las Vegas</h3>
+            <p>North. Usually where the most attainable pricing in the valley is right now.</p>
+            <span class="rhlv-rl__tag rhlv-rl__tag--soon">Page coming soon</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="rhlv-rl__close">If you are also open to a brand new home, the builders are active in most of these areas. I put everything you need to know about that on the <a href="/las-vegas-new-construction" style="color:inherit">new construction page</a>, including the one mistake that can cost you representation.</p>
+    </div>
+  </section>
+
+  <section class="rhlv-rl__sec">
+    <div class="rhlv-rl__wrap">
+      <div class="rhlv-rl__narrow">
+        <div class="rhlv-rl__rule"></div>
+        <p class="rhlv-rl__eyebrow">The fine print</p>
+        <h2 class="rhlv-rl__h2">What changes when you become a Nevadan</h2>
+        <p class="rhlv-rl__lede">These are the things that catch people off guard in the first year. None of them are dealbreakers. They are just easier when somebody tells you ahead of time.</p>
+      </div>
+      <div class="rhlv-rl__points">
+        <div class="rhlv-rl__point">
+          <div>
+            <h3>There is a property tax card most new owners miss</h3>
+            <p>Nevada limits how much your property tax bill can go up each year, and the limit is lower for a home you actually live in than for a rental or a second home. You have to tell the Clark County Assessor which one yours is. New owners forget, get billed at the higher cap, and do not notice for a year. Ask me and I will point you to the form.</p>
+          </div>
+        </div>
+        <div class="rhlv-rl__point">
+          <div>
+            <h3>Your license and plates are on a clock</h3>
+            <p>Nevada gives new residents a short window to switch their driver's license over and register their vehicles. Check the current deadline on the Nevada DMV site before you move, and get an appointment on the calendar early, because they book out.</p>
+          </div>
+        </div>
+        <div class="rhlv-rl__point">
+          <div>
+            <h3>Almost everything is one school district</h3>
+            <p>Clark County School District covers the whole county, including Henderson, Summerlin, and North Las Vegas. Your school is assigned by your home address, so the house you pick decides the school. Zoning changes, so confirm the current assignment for a specific address with the district before you write an offer.</p>
+          </div>
+        </div>
+        <div class="rhlv-rl__point">
+          <div>
+            <h3>Most newer neighborhoods have an HOA</h3>
+            <p>And in the master planned communities you can have two, one for the master plan and one for your own sub-neighborhood. Get the dues and the rules in front of you early, not the week before closing.</p>
+          </div>
+        </div>
+        <div class="rhlv-rl__point">
+          <div>
+            <h3>Summer is the part to plan for</h3>
+            <p>July and August are the test, and the power bill goes with it. When we look at homes I pay attention to which way the house faces, how old the AC units are, and whether there is real shade in the back yard. It shows up on your bill every summer you own it.</p>
+          </div>
+        </div>
+        <div class="rhlv-rl__point">
+          <div>
+            <h3>You will want to see it in person once</h3>
+            <p>Even if we do everything by video, try to get out here for a weekend before you close. Drive the commute at the actual hour you would drive it. That one trip has changed a few of my clients' minds about an area, and always for the better.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rhlv-rl__sec rhlv-rl__warm">
+    <div class="rhlv-rl__wrap">
+      <div class="rhlv-rl__quote">
+        <div class="rhlv-rl__quoteRule"></div>
+        <!-- To swap in a different Google review, replace the text inside <blockquote> and the name in <cite>. Keep the quote word for word. -->
+        <blockquote>"Ryan was critical in negotiating on our behalf and keeping us up to date, and I was confident that I didn't need to check in constantly to make sure things were getting done when they needed to be."</blockquote>
+        <cite>Kevin Rich, Google review</cite>
+      </div>
+    </div>
+  </section>
+
+  <section class="rhlv-rl__sec">
+    <div class="rhlv-rl__wrap">
+      <div class="rhlv-rl__narrow">
+        <div class="rhlv-rl__rule"></div>
+        <p class="rhlv-rl__eyebrow">Keep reading</p>
+        <h2 class="rhlv-rl__h2">Moving from somewhere specific?</h2>
+        <p class="rhlv-rl__lede">I have written these up in more detail. Start with whichever one sounds like you.</p>
+      </div>
+      <div class="rhlv-rl__lists">
+        <div class="rhlv-rl__links">
+          <h3>Coming from another state</h3>
+          <a href="/blog/relocating-summerlin-from-california">Moving from California</a>
+          <a href="/blog/moving-from-texas-to-summerlin">Moving from Texas</a>
+          <a href="/blog/moving-from-arizona-to-summerlin">Moving from Arizona</a>
+          <a href="/blog/moving-from-pacific-northwest-summerlin">Moving from the Pacific Northwest</a>
+          <a href="/blog/moving-from-nyc-east-coast-summerlin">Moving from NYC and the East Coast</a>
+          <a href="/blog/military-relocation-summerlin-nellis">Military relocation and Nellis AFB</a>
+        </div>
+        <div class="rhlv-rl__links">
+          <h3>Money and taxes</h3>
+          <a href="/blog/nevada-vs-california-taxes-summerlin">Nevada vs California taxes</a>
+          <a href="/blog/california-to-summerlin-tax-savings">What the tax savings actually look like</a>
+          <a href="/las-vegas-closing-costs">Closing costs in Las Vegas</a>
+          <a href="/rent-vs-buy-las-vegas-2025-guide">Rent vs buy, run the numbers</a>
+          <a href="/mortgage-pre-approval">Getting pre-approved first</a>
+          <a href="/las-vegas-first-time-homebuyer-guide">First time buyer guide</a>
+        </div>
+        <div class="rhlv-rl__links">
+          <h3>Before you go house hunting</h3>
+          <a href="/blog/what-to-know-before-moving-summerlin">What to know before you move</a>
+          <a href="/blog/moving-to-whitney-ranch-henderson">Whitney Ranch, Henderson</a>
+          <a href="/blog/moving-to-skye-canyon-buyer-guide">Skye Canyon buyer guide</a>
+          <a href="/blog/moving-to-inspirada-from-out-of-state">Inspirada, from out of state</a>
+          <a href="/las-vegas-new-construction">Buying new construction here</a>
+          <a href="/relocation-guide">Get the free relocation guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rhlv-rl__sec rhlv-rl__warm">
+    <div class="rhlv-rl__wrap">
+      <div class="rhlv-rl__narrow">
+        <div class="rhlv-rl__rule"></div>
+        <p class="rhlv-rl__eyebrow">FAQ</p>
+        <h2 class="rhlv-rl__h2">Relocation questions, answered</h2>
+      </div>
+      <div class="rhlv-rl__faq">
+        <details open>
+          <summary>Does Nevada have a state income tax?</summary>
+          <p class="rhlv-rl__answer">No. Nevada has no state income tax, and no state estate or inheritance tax either. That is the single biggest financial reason people give me for looking at Nevada. Nevada does make up revenue in other ways, including sales tax, so ask your own CPA how the whole picture changes for your situation before you count on a specific number.</p>
+        </details>
+        <details>
+          <summary>How much does it cost to live in Las Vegas?</summary>
+          <p class="rhlv-rl__answer">It depends heavily on the area and the house, so I am not going to put a number on a web page that will be wrong by the time you read it. The costs that surprise people the most are the summer power bill, HOA dues, and car insurance. Tell me your budget and the area you are considering and I will build you a real monthly number for an actual house, not an average.</p>
+        </details>
+        <details>
+          <summary>Which part of Las Vegas should I live in?</summary>
+          <p class="rhlv-rl__answer">Start with the commute. Summerlin is the west valley and is master planned and trail heavy. Henderson is its own city in the southeast, quieter, closest to the airport. Mountain's Edge is southwest with mountain views and a lot of young families. Skye Canyon and Centennial Hills are northwest and newer. North Las Vegas usually has the most attainable pricing. Tell me where you will be working and I can narrow it to two or three.</p>
+        </details>
+        <details>
+          <summary>Should I rent first or buy right away when I move to Las Vegas?</summary>
+          <p class="rhlv-rl__answer">Both work. Renting for six to twelve months lets you learn the valley and test the real commute before you commit to a zip code, but you pay rent, build no equity, and may end up moving twice. Buying right away means one move, a fixed payment, and kids starting in the school they will stay in, but you are choosing an area you have not lived in yet. If your current home has not sold, that usually decides it for you.</p>
+        </details>
+        <details>
+          <summary>How do schools work in Las Vegas?</summary>
+          <p class="rhlv-rl__answer">Clark County School District covers the entire county, including Henderson, Summerlin, and North Las Vegas. Schools are assigned by your home address, so the house you choose determines the school. Zoning can change from year to year, so always confirm the current assignment for the specific address with the district before you write an offer rather than trusting a listing or a third party website.</p>
+        </details>
+        <details>
+          <summary>Do I need a Nevada driver's license and plates when I move here?</summary>
+          <p class="rhlv-rl__answer">Yes. Nevada gives new residents a limited window after you establish residency to transfer your driver's license and register your vehicles. Check the current deadline and document list on the Nevada DMV website before your move, and book an appointment early, because they fill up well in advance.</p>
+        </details>
+        <details>
+          <summary>How hot does it actually get in the summer in Las Vegas?</summary>
+          <p class="rhlv-rl__answer">Hot enough that July and August are the real test, and the power bill goes up with it. It is a dry heat, which genuinely does feel different from humid heat, but it is still heat. Late summer brings monsoon storms that can drop a lot of water fast. When we tour homes I look at which way the house faces, the age of the AC units, and whether the back yard has any real shade, because those three things show up on your bill every summer you own the place.</p>
+        </details>
+        <details>
+          <summary>Can you help me buy in Las Vegas if I cannot fly out to look at homes?</summary>
+          <p class="rhlv-rl__answer">Yes, and it is a normal part of what I do. I walk homes on video and record them honestly, including the things a listing would never show you, like the neighbor's yard or the noise from the road. We shortlist from there. I do still recommend one trip out before you close so you can drive the commute at the hour you would actually be driving it.</p>
+        </details>
+        <details>
+          <summary>What is the property tax situation in Clark County?</summary>
+          <p class="rhlv-rl__answer">Nevada caps how much your property tax bill can increase each year, and the cap is lower for a home you live in as your primary residence than it is for a rental or a second home. You have to declare which one your home is with the Clark County Assessor. New owners regularly miss this and get billed at the higher cap for a year without realizing it. Ask me and I will point you to the right form.</p>
+        </details>
+        <details>
+          <summary>How far ahead should I start planning my move to Las Vegas?</summary>
+          <p class="rhlv-rl__answer">Earlier than you think, and the conversation costs nothing. The two things that set your real timeline are whether your current home needs to sell first and how long your lender takes to get you fully underwritten. Both take longer than people expect. Getting those started early is what keeps you from having to take whatever house is available the week you need to move.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="rhlv-rl__dark rhlv-rl__end">
+    <div class="rhlv-rl__wrap">
+      <div class="rhlv-rl__narrow">
+        <div class="rhlv-rl__rule"></div>
+        <p class="rhlv-rl__eyebrow">Next step</p>
+        <h2>Thinking about the move?</h2>
+        <p>Tell me where you are coming from, where you will be working, and roughly when you need to be here. I will send back the two or three areas that actually fit, what the real monthly cost looks like, and what to do first. No pressure, and no cost to talk it through.</p>
+        <div class="rhlv-rl__btns">
+          <a class="rhlv-rl__btn rhlv-rl__btn--onDarkSolid" href="tel:+17027475921">Call or Text 702-747-5921</a>
+          <a class="rhlv-rl__btn rhlv-rl__btn--onDark" href="mailto:ryan@rosehomeslv.com">Email Ryan</a>
+        </div>
+        <div class="rhlv-rl__contact">
+          <div>Ryan Rose, Realtor | Real Broker, LLC</div>
+          <div>9580 W Sahara Ave Ste 200, Las Vegas, NV 89117</div>
+          <div><a href="tel:+17027475921">702-747-5921</a> | <a href="mailto:ryan@rosehomeslv.com">ryan@rosehomeslv.com</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Las Vegas Relocation Buyer Representation",
+  "serviceType": "Relocation real estate buyer representation",
+  "url": "https://www.rosehomeslv.com/moving-to-las-vegas",
+  "description": "Help for people relocating to Las Vegas and Henderson, including choosing an area by commute, remote video home tours, rent versus buy guidance, and what changes when you become a Nevada resident.",
+  "provider": {
+    "@type": "RealEstateAgent",
+    "name": "Ryan Rose",
+    "alternateName": "Rose Homes LV",
+    "url": "https://www.rosehomeslv.com/",
+    "telephone": "+1-702-747-5921",
+    "email": "ryan@rosehomeslv.com",
+    "worksFor": { "@type": "RealEstateOrganization", "name": "Real Broker, LLC" },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9580 W Sahara Ave Ste 200",
+      "addressLocality": "Las Vegas",
+      "addressRegion": "NV",
+      "postalCode": "89117",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Las Vegas" },
+    { "@type": "City", "name": "Henderson" },
+    { "@type": "City", "name": "North Las Vegas" },
+    { "@type": "Place", "name": "Summerlin" },
+    { "@type": "Place", "name": "Skye Canyon" },
+    { "@type": "Place", "name": "Centennial Hills" },
+    { "@type": "Place", "name": "Mountain's Edge" },
+    { "@type": "Place", "name": "Spring Valley" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rosehomeslv.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Moving to Las Vegas", "item": "https://www.rosehomeslv.com/moving-to-las-vegas" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Nevada have a state income tax?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Nevada has no state income tax, and no state estate or inheritance tax either. That is the single biggest financial reason people give me for looking at Nevada. Nevada does make up revenue in other ways, including sales tax, so ask your own CPA how the whole picture changes for your situation before you count on a specific number." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to live in Las Vegas?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends heavily on the area and the house, so I am not going to put a number on a web page that will be wrong by the time you read it. The costs that surprise people the most are the summer power bill, HOA dues, and car insurance. Tell me your budget and the area you are considering and I will build you a real monthly number for an actual house, not an average." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which part of Las Vegas should I live in?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Start with the commute. Summerlin is the west valley and is master planned and trail heavy. Henderson is its own city in the southeast, quieter, closest to the airport. Mountain's Edge is southwest with mountain views and a lot of young families. Skye Canyon and Centennial Hills are northwest and newer. North Las Vegas usually has the most attainable pricing. Tell me where you will be working and I can narrow it to two or three." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I rent first or buy right away when I move to Las Vegas?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Both work. Renting for six to twelve months lets you learn the valley and test the real commute before you commit to a zip code, but you pay rent, build no equity, and may end up moving twice. Buying right away means one move, a fixed payment, and kids starting in the school they will stay in, but you are choosing an area you have not lived in yet. If your current home has not sold, that usually decides it for you." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do schools work in Las Vegas?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Clark County School District covers the entire county, including Henderson, Summerlin, and North Las Vegas. Schools are assigned by your home address, so the house you choose determines the school. Zoning can change from year to year, so always confirm the current assignment for the specific address with the district before you write an offer rather than trusting a listing or a third party website." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a Nevada driver's license and plates when I move here?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Nevada gives new residents a limited window after you establish residency to transfer your driver's license and register your vehicles. Check the current deadline and document list on the Nevada DMV website before your move, and book an appointment early, because they fill up well in advance." }
+    },
+    {
+      "@type": "Question",
+      "name": "How hot does it actually get in the summer in Las Vegas?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Hot enough that July and August are the real test, and the power bill goes up with it. It is a dry heat, which genuinely does feel different from humid heat, but it is still heat. Late summer brings monsoon storms that can drop a lot of water fast. When we tour homes I look at which way the house faces, the age of the AC units, and whether the back yard has any real shade, because those three things show up on your bill every summer you own the place." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help me buy in Las Vegas if I cannot fly out to look at homes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it is a normal part of what I do. I walk homes on video and record them honestly, including the things a listing would never show you, like the neighbor's yard or the noise from the road. We shortlist from there. I do still recommend one trip out before you close so you can drive the commute at the hour you would actually be driving it." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the property tax situation in Clark County?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nevada caps how much your property tax bill can increase each year, and the cap is lower for a home you live in as your primary residence than it is for a rental or a second home. You have to declare which one your home is with the Clark County Assessor. New owners regularly miss this and get billed at the higher cap for a year without realizing it. Ask me and I will point you to the right form." }
+    },
+    {
+      "@type": "Question",
+      "name": "How far ahead should I start planning my move to Las Vegas?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Earlier than you think, and the conversation costs nothing. The two things that set your real timeline are whether your current home needs to sell first and how long your lender takes to get you fully underwritten. Both take longer than people expect. Getting those started early is what keeps you from having to take whatever house is available the week you need to move." }
+    }
+  ]
+}
+</script>

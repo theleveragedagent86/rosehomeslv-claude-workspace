@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 377" width="100%"
+     role="img" aria-labelledby="sv09t sv09d" font-family="Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif">
+<title id="sv09t">The four inspection checkpoints</title>
+<desc id="sv09d">Four schematic houses at four build stages. First, pre-drywall, drawn with studs visible, where framing, straps and hangers, plumbing and electrical runs, duct routing, flashing and waterproofing are visible, and after which everything behind the drywall is sealed. Second, the blue tape walkthrough, for surfaces, fit and finish and whether the options ordered are what was installed. Third, the final walkthrough and the written punch list. Fourth, the eleven month warranty walkthrough, drawn with a clock. A footer notes that Nevada measures the statutory one year warranty from completion of the written punch list, not from closing.</desc>
+<style>.sv-h{font:700 13px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;letter-spacing:.002em}
+.sv-k{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52;letter-spacing:.09em;text-transform:uppercase}
+.sv-l{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-b{font:400 9.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-s{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52}
+.sv-n{font:700 11px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;font-variant-numeric:tabular-nums}
+.sv-r{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-rs{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-nf{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#B8360F;letter-spacing:.06em}
+.sv-c{text-anchor:middle}
+.sv-e{text-anchor:end}</style>
+<defs>
+<marker id="sv-tri" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#2C3F6B"/></marker>
+<marker id="sv-tric" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#B8360F"/></marker>
+<marker id="sv-trim" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#5F5A52"/></marker>
+<pattern id="sv-hatch" width="6" height="6" patternTransform="rotate(45)"
+         patternUnits="userSpaceOnUse">
+  <rect width="6" height="6" fill="#EDE9E0"/>
+  <line x1="0" y1="0" x2="0" y2="6" stroke="#847B6D" stroke-width="1.6"/>
+</pattern>
+</defs>
+<rect width="700" height="377" fill="#F7F5F0"/>
+<text x="0" y="14" class="sv-k">Page 26</text><text x="0" y="31" class="sv-h">The four checkpoints, and what gets sealed after each</text>
+<text x="0.0" y="58" class="sv-k">CHECKPOINT 1</text>
+<text x="0.0" y="74" class="sv-l">Pre-drywall</text>
+<path d="M6.0 116 L52.0 86 L98.0 116" fill="none" stroke="#2C3F6B" stroke-width="1.8" stroke-linejoin="round"/>
+<rect x="14.0" y="116" width="76" height="52" fill="#F7F5F0" stroke="#2C3F6B" stroke-width="1.6"/>
+<line x1="26.6" y1="116" x2="26.6" y2="168" stroke="#2C3F6B" stroke-width="1"/>
+<line x1="39.2" y1="116" x2="39.2" y2="168" stroke="#2C3F6B" stroke-width="1"/>
+<line x1="51.8" y1="116" x2="51.8" y2="168" stroke="#2C3F6B" stroke-width="1"/>
+<line x1="64.4" y1="116" x2="64.4" y2="168" stroke="#2C3F6B" stroke-width="1"/>
+<line x1="77.0" y1="116" x2="77.0" y2="168" stroke="#2C3F6B" stroke-width="1"/>
+<line x1="14.0" y1="142" x2="90.0" y2="142" stroke="#2C3F6B" stroke-width="1"/>
+<text x="0.0" y="194" class="sv-k">WHAT YOU CAN SEE</text>
+<text x="0.0" y="208" class="sv-b"><tspan x="0.0" dy="0">Framing, straps and hangers,</tspan><tspan x="0.0" dy="11">plumbing and electrical runs,</tspan><tspan x="0.0" dy="11">duct routing, flashing and</tspan><tspan x="0.0" dy="11">waterproofing.</tspan></text>
+<text x="0.0" y="264" class="sv-k">SEALED AFTER THIS</text>
+<text x="0.0" y="278" class="sv-s"><tspan x="0.0" dy="0">Everything behind the drywall. This</tspan><tspan x="0.0" dy="11">is the only time anyone sees the</tspan><tspan x="0.0" dy="11">bones.</tspan></text>
+<text x="175.0" y="58" class="sv-k">CHECKPOINT 2</text>
+<text x="175.0" y="74" class="sv-l">Blue tape walkthrough</text>
+<path d="M181.0 116 L227.0 86 L273.0 116" fill="none" stroke="#2C3F6B" stroke-width="1.8" stroke-linejoin="round"/>
+<rect x="189.0" y="116" width="76" height="52" fill="#EDE9E0" stroke="#2C3F6B" stroke-width="1.6"/>
+<rect x="205.0" y="130" width="16" height="10" fill="#304880"/>
+<rect x="235.0" y="130" width="16" height="10" fill="#304880"/>
+<text x="175.0" y="194" class="sv-k">WHAT YOU CAN SEE</text>
+<text x="175.0" y="208" class="sv-b"><tspan x="175.0" dy="0">Surfaces, fit and finish, and</tspan><tspan x="175.0" dy="11">whether the options you ordered</tspan><tspan x="175.0" dy="11">are what was installed.</tspan></text>
+<text x="175.0" y="264" class="sv-k">SEALED AFTER THIS</text>
+<text x="175.0" y="278" class="sv-s"><tspan x="175.0" dy="0">Cosmetic items get harder to argue</tspan><tspan x="175.0" dy="11">once you have signed for the home.</tspan></text>
+<text x="350.0" y="58" class="sv-k">CHECKPOINT 3</text>
+<text x="350.0" y="74" class="sv-l">Final walkthrough</text>
+<path d="M356.0 116 L402.0 86 L448.0 116" fill="none" stroke="#2C3F6B" stroke-width="1.8" stroke-linejoin="round"/>
+<rect x="364.0" y="116" width="76" height="52" fill="#E4E9F2" stroke="#2C3F6B" stroke-width="1.6"/>
+<rect x="380.0" y="128" width="14" height="14" fill="#FFFFFF" stroke="#2C3F6B" stroke-width="1"/>
+<rect x="408.0" y="132" width="16" height="36" fill="#2C3F6B"/>
+<text x="350.0" y="194" class="sv-k">WHAT YOU CAN SEE</text>
+<text x="350.0" y="208" class="sv-b"><tspan x="350.0" dy="0">The condition you are accepting</tspan><tspan x="350.0" dy="11">the house in, and the written</tspan><tspan x="350.0" dy="11">punch list.</tspan></text>
+<text x="350.0" y="264" class="sv-k">SEALED AFTER THIS</text>
+<text x="350.0" y="278" class="sv-s"><tspan x="350.0" dy="0">Your one year clock starts when that</tspan><tspan x="350.0" dy="11">punch list is completed, not at</tspan><tspan x="350.0" dy="11">closing.</tspan></text>
+<text x="525.0" y="58" class="sv-k">CHECKPOINT 4</text>
+<text x="525.0" y="74" class="sv-l">Eleven month walkthrough</text>
+<path d="M531.0 116 L577.0 86 L623.0 116" fill="none" stroke="#2C3F6B" stroke-width="1.8" stroke-linejoin="round"/>
+<rect x="539.0" y="116" width="76" height="52" fill="#E4E9F2" stroke="#2C3F6B" stroke-width="1.6"/>
+<rect x="555.0" y="128" width="14" height="14" fill="#FFFFFF" stroke="#2C3F6B" stroke-width="1"/>
+<rect x="583.0" y="132" width="16" height="36" fill="#2C3F6B"/>
+<circle cx="609.0" cy="102" r="12" fill="#F7F5F0" stroke="#141A27" stroke-width="1.6"/>
+<line x1="609.0" y1="102" x2="609.0" y2="94" stroke="#141A27" stroke-width="1.6"/>
+<line x1="609.0" y1="102" x2="615.0" y2="104" stroke="#141A27" stroke-width="1.6"/>
+<text x="525.0" y="194" class="sv-k">WHAT YOU CAN SEE</text>
+<text x="525.0" y="208" class="sv-b"><tspan x="525.0" dy="0">Everything the first year of</tspan><tspan x="525.0" dy="11">heat, settling and monsoon has</tspan><tspan x="525.0" dy="11">surfaced.</tspan></text>
+<text x="525.0" y="264" class="sv-k">SEALED AFTER THIS</text>
+<text x="525.0" y="278" class="sv-s"><tspan x="525.0" dy="0">Do it at eleven months, not twelve.</tspan><tspan x="525.0" dy="11">Three deadlines converge at the end</tspan><tspan x="525.0" dy="11">of year one.</tspan></text>
+<rect x="0" y="325" width="700" height="44" rx="6" fill="#FBEFD3" stroke="#847B6D" stroke-width="1"/><text x="12" y="344" class="sv-b"><tspan x="12" dy="0">Nevada measures the statutory one year warranty from the completion of a written punch list, not from your closing date. Insist the</tspan><tspan x="12" dy="11">punch list is written, then find that date and put it in your file.</tspan></text>
+</svg>

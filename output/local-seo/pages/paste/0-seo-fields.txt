@@ -1,0 +1,55 @@
+LOFTY PAGE SETTINGS - NEW CONSTRUCTION HUB   [LIVE]
+===================================================
+
+Live at: https://www.rosehomeslv.com/las-vegas-new-construction
+
+URL slug:
+las-vegas-new-construction
+
+Meta Title (44 chars, limit 60):
+New Construction Homes Las Vegas | Ryan Rose
+
+Meta Description (148 chars, limit 160):
+Buying a new build in Las Vegas? Ryan Rose represents you, not the builder. Communities, incentives, and what to know before you visit a model home.
+
+Meta Keywords (99 chars, limit 100):
+new construction las vegas, new build homes las vegas, henderson new construction, builder rep
+
+Canonical URL:
+https://www.rosehomeslv.com/las-vegas-new-construction
+
+
+WHAT WAS PASTED
+===============
+
+ALL-IN-ONE-hub.html
+  Everything in one file: the style block, the page body, and all three
+  JSON-LD blocks (Service, BreadcrumbList, FAQPage). Pasted into a single
+  HTML / custom code module on the page.
+
+  The older 1-page-body.html + 2-schema.html split is obsolete. Schema
+  cannot go in Lofty's Page Script field anyway, that field caps at 5,000
+  characters and the schema block is 6,584.
+
+Do NOT paste Google Analytics or Meta Pixel tags. Lofty injects
+G-50N1D59DW6 and pixel 621835647008401 automatically at publish.
+
+
+STATUS
+======
+[x] Page live as a CMS site page (in the page tree, so it is in the sitemap)
+[x] Title + description re-entered manually after the landing-page conversion
+    (Lofty does NOT carry SEO fields across the conversion, it reverts them
+    to generic defaults, check them any time you convert a page)
+[x] FAQPage validates in the Rich Results Test
+[x] Added to the main nav and the footer
+[x] Old /new-construction-las-vegas page deleted, footer link fixed
+
+STILL OPEN
+==========
+- /new-construction-las-vegas is now a soft 404 (Lofty returns HTTP 218 for
+  everything, there is no real 404 on this site). Redirect it to
+  /las-vegas-new-construction if Lofty has a redirect feature. If not, use
+  Google Search Console > Removals > Temporary Removal.
+- Request indexing for /las-vegas-new-construction in Search Console.
+- og:image / twitter:image using the SNS cover in covers/ (not done).

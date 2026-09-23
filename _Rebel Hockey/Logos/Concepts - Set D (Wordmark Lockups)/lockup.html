@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rebels Lockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{background:transparent;}
+  body{width:2400px;height:1400px;overflow:hidden;}
+
+  .stage{ position:relative; width:2400px; height:1400px; }
+
+  /* block wordmark, BEHIND the mascot */
+  .wordmark{
+    position:absolute; left:0; top:50%;
+    transform:translateY(-50%);
+    width:2400px; z-index:1;
+  }
+  .wordmark svg{ display:block; width:100%; height:auto; overflow:visible; }
+  .wordmark text{
+    font-family:'Anton', sans-serif;
+    font-size:640px;
+    text-anchor:middle;
+  }
+
+  /* mascot, IN FRONT */
+  .mascot{
+    position:absolute;
+    left:50%; top:50%;
+    transform:translate(-50%,-50%);
+    z-index:2;
+    height:1150px; width:auto;
+    /* white keyline + thin black keyline, so he pops off the wordmark */
+    filter:
+      drop-shadow( 14px 0 0 #fff) drop-shadow(-14px 0 0 #fff)
+      drop-shadow(0  14px 0 #fff) drop-shadow(0 -14px 0 #fff)
+      drop-shadow( 10px  10px 0 #fff) drop-shadow(-10px -10px 0 #fff)
+      drop-shadow( 10px -10px 0 #fff) drop-shadow(-10px  10px 0 #fff)
+      drop-shadow( 6px 0 0 #111) drop-shadow(-6px 0 0 #111)
+      drop-shadow(0  6px 0 #111)  drop-shadow(0 -6px 0 #111)
+      drop-shadow(0 22px 26px rgba(0,0,0,.42));
+  }
+
+  .defs{ position:absolute; width:0; height:0; }
+</style>
+</head>
+<body>
+<svg class="defs" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="keyline" x="-15%" y="-15%" width="130%" height="130%">
+      <!-- outer black ring -->
+      <feMorphology in="SourceAlpha" operator="dilate" radius="22" result="dOut"/>
+      <feFlood flood-color="#111111"/>
+      <feComposite in2="dOut" operator="in" result="ringOut"/>
+      <!-- inner white ring -->
+      <feMorphology in="SourceAlpha" operator="dilate" radius="16" result="dIn"/>
+      <feFlood flood-color="#FFFFFF"/>
+      <feComposite in2="dIn" operator="in" result="ringIn"/>
+      <feMerge>
+        <feMergeNode in="ringOut"/>
+        <feMergeNode in="ringIn"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
+
+<div class="stage">
+
+  <div class="wordmark">
+    <svg viewBox="0 0 2400 900" xmlns="http://www.w3.org/2000/svg">
+      <g id="wm">
+        <!-- outer black keyline -->
+        <text x="1200" y="640" textLength="2210" lengthAdjust="spacingAndGlyphs"
+              fill="none" stroke="#111111" stroke-width="104"
+              stroke-linejoin="round" paint-order="stroke">REBELS</text>
+        <!-- white halo -->
+        <text x="1200" y="640" textLength="2210" lengthAdjust="spacingAndGlyphs"
+              fill="none" stroke="#FFFFFF" stroke-width="62"
+              stroke-linejoin="round" paint-order="stroke">REBELS</text>
+        <!-- deep red drop layer -->
+        <text x="1200" y="662" textLength="2210" lengthAdjust="spacingAndGlyphs"
+              fill="#8E0B1E">REBELS</text>
+        <!-- scarlet face -->
+        <text x="1200" y="640" textLength="2210" lengthAdjust="spacingAndGlyphs"
+              fill="#CE0E2D">REBELS</text>
+      </g>
+    </svg>
+  </div>
+
+  <img class="mascot" src="" alt="">
+</div>
+
+<script>
+  const p = new URLSearchParams(location.search);
+  const img = document.querySelector('.mascot');
+  img.src = p.get('m') || 'm41-stride-t.png';
+  if (p.get('h'))  img.style.height = p.get('h') + 'px';
+  if (p.get('dx')) img.style.transform = `translate(calc(-50% + ${p.get('dx')}px), -50%)`;
+  if (p.get('dy')) img.style.transform =
+    `translate(calc(-50% + ${p.get('dx')||0}px), calc(-50% + ${p.get('dy')}px))`;
+</script>
+</body>
+</html>

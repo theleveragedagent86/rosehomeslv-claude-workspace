@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 384" width="100%"
+     role="img" aria-labelledby="sv12t sv12d" font-family="Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif">
+<title id="sv12t">What a new home actually costs every month</title>
+<desc id="sv12d">A vertical stack of the monthly cost layers inside an escrow box: principal and interest, property tax, homeowners insurance, master HOA and sub-association HOA. The special assessment is drawn outside the box because it is usually not in your mortgage payment. HOA dollar amounts are marked NOT FOUND. A footer notes that a builder's advertised monthly payment is principal and interest only.</desc>
+<style>.sv-h{font:700 13px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;letter-spacing:.002em}
+.sv-k{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52;letter-spacing:.09em;text-transform:uppercase}
+.sv-l{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-b{font:400 9.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-s{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52}
+.sv-n{font:700 11px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;font-variant-numeric:tabular-nums}
+.sv-r{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-rs{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-nf{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#B8360F;letter-spacing:.06em}
+.sv-c{text-anchor:middle}
+.sv-e{text-anchor:end}</style>
+<defs>
+<marker id="sv-tri" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#2C3F6B"/></marker>
+<marker id="sv-tric" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#B8360F"/></marker>
+<marker id="sv-trim" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#5F5A52"/></marker>
+<pattern id="sv-hatch" width="6" height="6" patternTransform="rotate(45)"
+         patternUnits="userSpaceOnUse">
+  <rect width="6" height="6" fill="#EDE9E0"/>
+  <line x1="0" y1="0" x2="0" y2="6" stroke="#847B6D" stroke-width="1.6"/>
+</pattern>
+</defs>
+<rect width="700" height="384" fill="#F7F5F0"/>
+<text x="0" y="14" class="sv-k">Page 17</text><text x="0" y="31" class="sv-h">What it actually costs every month</text>
+<rect x="0" y="52" width="400" height="214" rx="8" fill="#FFFFFF" stroke="#2C3F6B" stroke-width="1.6"/>
+<text x="14" y="72" class="sv-k">INSIDE YOUR MORTGAGE PAYMENT</text>
+<text x="386" y="72" class="sv-s sv-e">escrowed</text>
+<rect x="14" y="84" width="372" height="32" rx="4" fill="#242F4A"/>
+<text x="26" y="99" style="font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">Principal and interest</text>
+<text x="26" y="111" style="font:500 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0;opacity:.82">The only part a builder advertises</text>
+<rect x="14" y="120" width="372" height="32" rx="4" fill="#2C3F6B"/>
+<text x="26" y="135" style="font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">Property tax</text>
+<text x="26" y="147" style="font:500 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0;opacity:.82">35 percent of taxable value, no cap in year one</text>
+<rect x="14" y="156" width="372" height="32" rx="4" fill="#E4E9F2"/>
+<text x="26" y="171" style="font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436">Homeowners insurance</text>
+<text x="26" y="183" style="font:500 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;opacity:.82">Priced on rebuild cost, not what you paid</text>
+<rect x="14" y="192" width="372" height="32" rx="4" fill="#E9714A"/>
+<text x="26" y="207" style="font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436">Master HOA</text>
+<text x="26" y="219" style="font:500 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;opacity:.82">Almost never published as a dollar amount</text>
+<rect x="14" y="228" width="372" height="32" rx="4" fill="#FBEFD3" stroke="#847B6D" stroke-width="1"/>
+<text x="26" y="243" style="font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436">Sub-association HOA</text>
+<text x="26" y="255" style="font:500 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;opacity:.82">Two associations is normal here, not a mistake</text>
+<rect x="432" y="100" width="268" height="96" rx="8" fill="#EFA00B" stroke="#242F4A" stroke-width="1.6"/>
+<text x="446" y="122" class="sv-k" style="fill:#1C2436">OUTSIDE IT</text>
+<text x="446" y="142" class="sv-l">The special assessment</text>
+<text x="446" y="156" class="sv-b"><tspan x="446" dy="0">SID, or LID in Henderson. Billed semi-annually</tspan><tspan x="446" dy="11">about 60 days ahead, on its own bill, and a lien</tspan><tspan x="446" dy="11">until it is paid.</tspan></text>
+<line x1="408" y1="148" x2="424" y2="148" stroke="#2C3F6B" stroke-width="1.6" marker-end="url(#sv-tri)"/>
+<text x="416.0" y="140" class="sv-s sv-c">not in</text>
+<text x="416.0" y="168" class="sv-s sv-c">escrow</text>
+<text x="0" y="292" class="sv-k">HOW LONG YOU PAY IT</text>
+<rect x="0" y="300" width="700" height="18" rx="4" fill="#EDE9E0" stroke="#847B6D" stroke-width="1"/>
+<rect x="0" y="300" width="434.0" height="18" rx="4" fill="#2C3F6B"/>
+<text x="10" y="313" class="sv-rs">10 to 30 years, financed at low interest</text>
+<text x="690" y="313" class="sv-s sv-e">then it ends</text>
+<rect x="446" y="206" width="64" height="14" rx="3" fill="#FBE5DA"/><text x="478.0" y="216.2" class="sv-nf sv-c">NOT FOUND</text>
+<text x="518" y="216" class="sv-s"><tspan x="518" dy="0">Master and sub HOA monthly amounts</tspan><tspan x="518" dy="11">are not published for most of these</tspan><tspan x="518" dy="11">communities.</tspan></text>
+<rect x="0" y="332" width="700" height="44" rx="6" fill="#FBEFD3" stroke="#847B6D" stroke-width="1"/><text x="12" y="351" class="sv-b"><tspan x="12" dy="0">One builder's own footnote states its advertised monthly payments are principal and interest only, and that taxes, insurance and HOA are</tspan><tspan x="12" dy="11">not included. The homesite premium sits on top of the base price before any of this starts.</tspan></text>
+</svg>

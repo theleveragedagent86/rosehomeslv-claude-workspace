@@ -1,0 +1,386 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Leveraged Agent Carousel 01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&family=Raleway:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* v2.0 "Vector" — tokens mirrored from Brandkit/Brand-Guide/tokens.css */
+:root{
+  --bg:#FFFFFF; --bg2:#F7F8FA; --inv:#000000; --line:#E4E7EF; --struct:#0B3FA8;
+  --ink:#050E3D; --ink2:#55627F; --inkInv:#FFFFFF; --ink2Inv:#9AA3BC;
+  --acc:#1768E5; --accInv:#5B9BFF;
+  --head:'Barlow','Helvetica Neue',Arial,sans-serif;
+  --sub:'Raleway','Helvetica Neue',Arial,sans-serif;
+  --body:'Inter',-apple-system,'Helvetica Neue',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#3a3a3a;font-family:var(--body)}
+.slide{width:1080px;height:1350px;background:var(--bg);position:relative;overflow:hidden;
+  margin:0 0 40px 0;display:flex;flex-direction:column;padding:92px 88px 150px 88px;color:var(--ink)}
+.slide.dark{background:var(--inv);color:var(--inkInv)}
+
+.num{font-family:var(--sub);font-weight:600;font-size:25px;color:var(--acc);
+  letter-spacing:.15em;text-transform:uppercase;margin-bottom:34px}
+h2{font-family:var(--head);font-weight:800;font-size:90px;line-height:1.02;
+  letter-spacing:-.028em;max-width:12ch}
+h2.sm{font-size:76px;max-width:14ch}
+p.body{font-family:var(--body);font-weight:400;font-size:40px;line-height:1.6;
+  color:var(--ink2);max-width:21ch;margin-top:34px}
+.dark p.body{color:var(--ink2Inv)}
+.spacer{flex:1;min-height:48px}
+.art{align-self:flex-start}
+
+/* typographic wordmark, v1 logo art is off-palette under Vector */
+.mark{position:absolute;left:88px;bottom:72px;font-family:var(--sub);font-weight:600;
+  font-size:23px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink2)}
+.dark .mark{color:var(--ink2Inv)}
+.mark s{text-decoration:none;color:var(--acc)}
+.dark .mark s{color:var(--accInv)}
+
+/* full-bleed accent rule, the structural pop */
+.slide::after{content:'';position:absolute;left:0;right:0;bottom:0;height:14px;background:var(--acc)}
+.slide.dark::after{background:var(--accInv)}
+
+/* cover */
+.cover{justify-content:center;padding:96px 88px 150px 88px}
+.cover h1{font-family:var(--head);font-weight:800;font-size:112px;line-height:1.0;
+  letter-spacing:-.03em}
+.cover h1 em{font-style:normal;color:var(--accInv)}
+.cover .eyebrow{font-family:var(--sub);font-weight:600;font-size:25px;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink2Inv);margin-bottom:40px}
+.swipe{position:absolute;right:88px;bottom:70px;font-family:var(--sub);font-weight:600;
+  font-size:26px;color:var(--accInv);letter-spacing:.14em;text-transform:uppercase}
+
+/* CTA */
+.cta{justify-content:center;align-items:center;text-align:center}
+.cta h2{font-size:84px;max-width:15ch;text-align:center}
+.cta p{font-family:var(--body);font-weight:400;font-size:38px;line-height:1.6;
+  color:var(--ink2Inv);max-width:22ch;margin-top:32px}
+svg{display:block;overflow:visible}
+</style></head><body>
+
+<!-- ═══ 1 · COVER ═══ -->
+<section class="slide dark cover">
+  <div class="eyebrow">AI Transaction Coordinator</div>
+  <h1>I have <em>3 deals</em><br>on my board.<br>Claude writes<br><em>every</em> email.</h1>
+  <div style="margin-top:76px">
+    <svg width="860" height="300" viewBox="0 0 860 300" fill="none">
+      <!-- three deal files on a rail, one active -->
+      <path d="M20 268 H840" stroke="#2A2A2A" stroke-width="4" stroke-linecap="round"/>
+      <g stroke="#9AA3BC" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M40 268 V150 h58 l16 22 h96 v96 z"/>
+        <path d="M60 196 h108 M60 222 h74"/>
+      </g>
+      <g stroke="#9AA3BC" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M300 268 V150 h58 l16 22 h96 v96 z"/>
+        <path d="M320 196 h108 M320 222 h74"/>
+      </g>
+      <!-- active file, taller, accent, lifted -->
+      <g stroke="#5B9BFF" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M560 256 V92 h64 l18 24 h106 v140 z" fill="#0A1A33"/>
+        <path d="M584 146 h122 M584 178 h96 M584 210 h64"/>
+      </g>
+      <path d="M660 60 l0 -34 M700 74 l26 -26 M620 74 l-26 -26" stroke="#5B9BFF" stroke-width="7" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div class="swipe">Swipe</div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+</section>
+
+<!-- ═══ 2 · 17 DEADLINES ═══ -->
+<section class="slide">
+  <div class="num">01</div>
+  <h2 class="sm">A transaction is not one job, it is 17 deadlines</h2>
+  <p class="body">Inspection, appraisal, loan docs, HOA, walkthrough, signing. Miss one date and you are the reason it fell apart.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="880" height="330" viewBox="0 0 880 330" fill="none">
+      <!-- timeline baseline -->
+      <path d="M12 268 H868" stroke="#050E3D" stroke-width="7" stroke-linecap="round"/>
+      <!-- 17 upright deadline markers, varying heights -->
+      <g stroke="#C9CFDE" stroke-width="6" stroke-linecap="round">
+        <path d="M40 268 V196"/><path d="M92 268 V148"/><path d="M144 268 V212"/>
+        <path d="M196 268 V166"/><path d="M300 268 V132"/><path d="M352 268 V206"/>
+        <path d="M404 268 V172"/><path d="M456 268 V226"/><path d="M508 268 V152"/>
+        <path d="M560 268 V198"/><path d="M612 268 V128"/><path d="M664 268 V214"/>
+        <path d="M716 268 V164"/><path d="M768 268 V206"/><path d="M820 268 V142"/>
+        <path d="M868 268 V190"/>
+      </g>
+      <g fill="#FFFFFF" stroke="#C9CFDE" stroke-width="6">
+        <circle cx="40" cy="192" r="12"/><circle cx="92" cy="144" r="12"/><circle cx="144" cy="208" r="12"/>
+        <circle cx="196" cy="162" r="12"/><circle cx="300" cy="128" r="12"/><circle cx="352" cy="202" r="12"/>
+        <circle cx="404" cy="168" r="12"/><circle cx="456" cy="222" r="12"/><circle cx="508" cy="148" r="12"/>
+        <circle cx="560" cy="194" r="12"/><circle cx="612" cy="124" r="12"/><circle cx="664" cy="210" r="12"/>
+        <circle cx="716" cy="160" r="12"/><circle cx="768" cy="202" r="12"/><circle cx="820" cy="138" r="12"/>
+        <circle cx="868" cy="186" r="12"/>
+      </g>
+      <!-- the one that snapped: a short stub still standing, the rest lying on the line -->
+      <path d="M248 268 V244" stroke="#1768E5" stroke-width="9" stroke-linecap="round"/>
+      <path d="M262 262 L364 238" stroke="#1768E5" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="378" cy="235" r="16" fill="#1768E5"/>
+      <path d="M240 216 l-16 -18 M252 208 l2 -24 M268 216 l18 -18"
+        stroke="#1768E5" stroke-width="6" stroke-linecap="round"/>
+      <text x="196" y="322" font-family="Raleway" font-weight="600" font-size="26"
+        letter-spacing="3" fill="#1768E5">ONE MISSED</text>
+    </svg>
+  </div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+</section>
+
+<!-- ═══ 3 · THE FOLDER ═══ -->
+<section class="slide">
+  <div class="num">02</div>
+  <h2>The folder is the system</h2>
+  <p class="body">One folder per deal. Contract, addenda, dates, contacts. Claude reads that folder before it writes anything.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="800" height="360" viewBox="0 0 800 360" fill="none">
+      <!-- sheets fanned out of the folder mouth -->
+      <g fill="#FFFFFF" stroke="#C9CFDE" stroke-width="5" stroke-linejoin="round">
+        <rect x="244" y="10" width="152" height="200" rx="6" transform="rotate(-11 320 110)"/>
+        <rect x="384" y="0"   width="152" height="200" rx="6" transform="rotate(3 460 100)"/>
+        <rect x="514" y="14"  width="152" height="200" rx="6" transform="rotate(9 590 114)"/>
+      </g>
+      <g stroke="#C9CFDE" stroke-width="4" stroke-linecap="round">
+        <path d="M268 52 h96 M268 84 h104 M268 116 h68" transform="rotate(-11 320 110)"/>
+        <path d="M408 42 h96 M408 74 h104 M408 106 h68" transform="rotate(3 460 100)"/>
+        <path d="M538 56 h96 M538 88 h104 M538 120 h68" transform="rotate(9 590 114)"/>
+      </g>
+      <!-- folder front, accent, cut so sheets stick out -->
+      <path d="M60 108 h190 l34 40 h416 v192 a14 14 0 0 1 -14 14 H74 a14 14 0 0 1 -14 -14 z"
+        fill="#FFFFFF" stroke="#1768E5" stroke-width="9" stroke-linejoin="round"/>
+      <!-- label chips on the folder face -->
+      <g font-family="Inter" font-weight="500" font-size="27" fill="#050E3D">
+        <rect x="100" y="182" width="182" height="56" rx="28" fill="#F7F8FA" stroke="#E4E7EF" stroke-width="3"/>
+        <text x="128" y="218">Contract</text>
+        <rect x="298" y="182" width="178" height="56" rx="28" fill="#F7F8FA" stroke="#E4E7EF" stroke-width="3"/>
+        <text x="326" y="218">Addenda</text>
+        <rect x="100" y="254" width="140" height="56" rx="28" fill="#F7F8FA" stroke="#E4E7EF" stroke-width="3"/>
+        <text x="128" y="290">Dates</text>
+        <rect x="256" y="254" width="180" height="56" rx="28" fill="#F7F8FA" stroke="#E4E7EF" stroke-width="3"/>
+        <text x="284" y="290">Contacts</text>
+      </g>
+      <!-- Claude reading the folder -->
+      <circle cx="600" cy="244" r="42" fill="#FFFFFF" stroke="#1768E5" stroke-width="8"/>
+      <path d="M630 274 l34 34" stroke="#1768E5" stroke-width="10" stroke-linecap="round"/>
+      <path d="M580 236 h40 M580 256 h26" stroke="#1768E5" stroke-width="6" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+</section>
+
+<!-- ═══ 4 · CONTRACT → CALENDAR ═══ -->
+<section class="slide">
+  <div class="num">03</div>
+  <h2 class="sm">Dates come from the contract, not your memory</h2>
+  <p class="body">Drop the executed contract in. The skill pulls every deadline and builds the calendar in one pass.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="880" height="340" viewBox="0 0 880 340" fill="none">
+      <!-- contract with a signature -->
+      <g stroke="#050E3D" stroke-width="7" stroke-linejoin="round">
+        <path d="M20 24 h206 l44 44 v250 h-250 z" fill="#FFFFFF"/>
+        <path d="M226 24 v44 h44"/>
+      </g>
+      <g stroke="#C9CFDE" stroke-width="5" stroke-linecap="round">
+        <path d="M52 100 h150 M52 130 h182 M52 160 h122 M52 190 h166"/>
+      </g>
+      <!-- handwritten signature -->
+      <path d="M56 268 c22 -34 34 12 52 -14 c14 -20 22 26 42 4 c16 -18 30 20 50 -6"
+        stroke="#1768E5" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <path d="M52 292 h178" stroke="#C9CFDE" stroke-width="4" stroke-linecap="round"/>
+      <!-- curved extraction arrow with 3 date sparks -->
+      <path d="M304 170 C 372 108, 404 232, 470 170" stroke="#1768E5" stroke-width="8"
+        stroke-linecap="round" fill="none"/>
+      <path d="M470 170 l-26 -16 M470 170 l-26 16" stroke="#1768E5" stroke-width="8"
+        stroke-linecap="round"/>
+      <g fill="#1768E5"><circle cx="340" cy="128" r="7"/><circle cx="386" cy="196" r="7"/><circle cx="432" cy="138" r="7"/></g>
+      <!-- calendar -->
+      <g>
+        <rect x="512" y="24" width="348" height="294" rx="16" fill="#FFFFFF" stroke="#050E3D" stroke-width="7"/>
+        <path d="M512 92 h348" stroke="#050E3D" stroke-width="7"/>
+        <path d="M580 24 v-16 M792 24 v-16" stroke="#050E3D" stroke-width="8" stroke-linecap="round"/>
+        <g fill="#050E3D" font-family="Raleway" font-weight="700" font-size="30" letter-spacing="3">
+          <text x="540" y="70">DEADLINES</text>
+        </g>
+      </g>
+      <g stroke="#E4E7EF" stroke-width="4">
+        <path d="M512 148 h348 M512 204 h348 M512 260 h348"/>
+        <path d="M582 92 v226 M652 92 v226 M722 92 v226 M792 92 v226"/>
+      </g>
+      <g fill="#1768E5">
+        <circle cx="617" cy="120" r="21"/><circle cx="757" cy="176" r="21"/><circle cx="547" cy="288" r="21"/>
+      </g>
+      <g stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M608 120 l6 7 l12 -14"/><path d="M748 176 l6 7 l12 -14"/><path d="M538 288 l6 7 l12 -14"/>
+      </g>
+    </svg>
+  </div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+</section>
+
+<!-- ═══ 5 · TEMPLATES ═══ -->
+<section class="slide">
+  <div class="num">04</div>
+  <h2 class="sm">Every email you send twice is a template</h2>
+  <p class="body">Escrow opening, inspection notice, appraisal update, clear to close. Written once, reused on all three deals.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="860" height="330" viewBox="0 0 860 330" fill="none">
+      <!-- stack of envelopes in perspective -->
+      <g stroke="#C9CFDE" stroke-width="6" stroke-linejoin="round" fill="#FFFFFF">
+        <path d="M112 258 h420 v72 h-420 z"/>
+        <path d="M92 216 h420 v72 h-420 z"/>
+        <path d="M72 174 h420 v72 h-420 z"/>
+      </g>
+      <!-- the master template, lifted and accent -->
+      <g transform="rotate(-7 262 96)">
+        <rect x="52" y="34" width="420" height="126" rx="10" fill="#FFFFFF" stroke="#1768E5" stroke-width="9"/>
+        <path d="M52 42 l210 84 l210 -84" fill="none" stroke="#1768E5" stroke-width="9" stroke-linejoin="round"/>
+      </g>
+      <!-- motion lines showing reuse -->
+      <g stroke="#1768E5" stroke-width="6" stroke-linecap="round">
+        <path d="M520 90 h58 M520 130 h94 M520 170 h58"/>
+      </g>
+      <!-- all three deals receiving the same template -->
+      <g stroke="#050E3D" stroke-width="6" stroke-linejoin="round" fill="#FFFFFF">
+        <path d="M660 8 h62 l14 18 h116 v78 h-192 z"/>
+        <path d="M660 122 h62 l14 18 h116 v78 h-192 z"/>
+        <path d="M660 236 h62 l14 18 h116 v78 h-192 z"/>
+      </g>
+      <g font-family="Raleway" font-weight="700" font-size="31" letter-spacing="2" fill="#1768E5">
+        <text x="684" y="80">DEAL 1</text>
+        <text x="684" y="194">DEAL 2</text>
+        <text x="684" y="308">DEAL 3</text>
+      </g>
+    </svg>
+  </div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+</section>
+
+<!-- ═══ 6 · THE CC LIST ═══ -->
+<section class="slide">
+  <div class="num">05</div>
+  <h2 class="sm">The CC list is part of the template</h2>
+  <p class="body">Listing agent and their TC on every transaction email. Build it into the file so you never forget.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="840" height="352" viewBox="0 0 840 352" fill="none">
+      <rect x="8" y="8" width="824" height="336" rx="18" fill="#FFFFFF" stroke="#050E3D" stroke-width="7"/>
+      <path d="M8 76 h824" stroke="#050E3D" stroke-width="7"/>
+      <g fill="#C9CFDE"><circle cx="46" cy="42" r="10"/><circle cx="78" cy="42" r="10"/><circle cx="110" cy="42" r="10"/></g>
+      <text x="150" y="53" font-family="Raleway" font-weight="600" font-size="26"
+        letter-spacing="3" fill="#55627F">NEW MESSAGE</text>
+      <!-- TO row -->
+      <text x="44" y="134" font-family="Raleway" font-weight="600" font-size="24"
+        letter-spacing="3" fill="#9AA3BC">TO</text>
+      <text x="150" y="136" font-family="Inter" font-weight="400" font-size="32" fill="#050E3D">Escrow officer</text>
+      <path d="M44 158 h752" stroke="#E4E7EF" stroke-width="4"/>
+      <!-- CC row, the whole point -->
+      <rect x="24" y="170" width="792" height="76" rx="12" fill="#1768E5"/>
+      <text x="44" y="216" font-family="Raleway" font-weight="700" font-size="24"
+        letter-spacing="3" fill="#FFFFFF">CC</text>
+      <text x="150" y="218" font-family="Inter" font-weight="500" font-size="32" fill="#FFFFFF">Listing agent + their TC</text>
+      <g fill="none" stroke="#FFFFFF" stroke-width="5">
+        <circle cx="700" cy="208" r="17"/><circle cx="744" cy="208" r="17"/>
+      </g>
+      <!-- SUBJECT row -->
+      <text x="44" y="292" font-family="Raleway" font-weight="600" font-size="24"
+        letter-spacing="3" fill="#9AA3BC">SUBJ</text>
+      <text x="150" y="294" font-family="Inter" font-weight="400" font-size="32" fill="#050E3D">Inspection scheduled</text>
+    </svg>
+  </div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+</section>
+
+<!-- ═══ 7 · SPREADSHEET VS SKILL (dark) ═══ -->
+<section class="slide dark">
+  <div class="num" style="color:#5B9BFF">06</div>
+  <h2 class="sm">Do this instead of a spreadsheet</h2>
+  <p class="body">A spreadsheet stores dates. A skill reads the contract, writes the email, and tells you what is late.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="880" height="330" viewBox="0 0 880 330" fill="none">
+      <!-- LEFT: spreadsheet with a tangled scribble over it -->
+      <text x="0" y="24" font-family="Raleway" font-weight="600" font-size="24"
+        letter-spacing="3" fill="#6B7488">SPREADSHEET</text>
+      <g stroke="#3A3F4D" stroke-width="4">
+        <rect x="0" y="52" width="366" height="252" fill="none"/>
+        <path d="M0 115 h366 M0 178 h366 M0 241 h366"/>
+        <path d="M91 52 v252 M183 52 v252 M275 52 v252"/>
+      </g>
+      <path d="M28 92 c86 62 -14 88 74 116 c72 22 -30 62 62 74 c68 8 96 -44 154 -34"
+        stroke="#6B7488" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <path d="M320 240 c34 12 22 44 -6 52" stroke="#6B7488" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <!-- divider -->
+      <path d="M440 30 V310" stroke="#2A2E38" stroke-width="4"/>
+      <!-- RIGHT: the skill, a terminal that acts -->
+      <text x="514" y="24" font-family="Raleway" font-weight="600" font-size="24"
+        letter-spacing="3" fill="#5B9BFF">SKILL</text>
+      <rect x="514" y="52" width="366" height="252" rx="14" fill="#0A1220" stroke="#5B9BFF" stroke-width="7"/>
+      <path d="M546 96 l26 22 l-26 22" stroke="#5B9BFF" stroke-width="7"
+        stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M592 140 h112" stroke="#5B9BFF" stroke-width="7" stroke-linecap="round"/>
+      <g stroke="#9AA3BC" stroke-width="6" stroke-linecap="round">
+        <path d="M582 190 h218 M582 226 h172 M582 262 h136"/>
+      </g>
+      <g stroke="#5B9BFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <path d="M546 184 l10 12 l18 -22"/><path d="M546 220 l10 12 l18 -22"/><path d="M546 256 l10 12 l18 -22"/>
+      </g>
+    </svg>
+  </div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+</section>
+
+<!-- ═══ 8 · START WITH THE UGLIEST ═══ -->
+<section class="slide">
+  <div class="num">07</div>
+  <h2>Start with your ugliest deal</h2>
+  <p class="body">Pick the file you are most behind on. Build the folder today. The next deal inherits the whole thing.</p>
+  <div class="spacer"></div>
+  <div class="art">
+    <svg width="880" height="330" viewBox="0 0 880 330" fill="none">
+      <!-- messy pile -->
+      <g stroke="#C9CFDE" stroke-width="6" stroke-linejoin="round" fill="#FFFFFF">
+        <path d="M30 250 h190 v80 h-190 z" transform="rotate(-11 125 290)"/>
+        <path d="M56 196 h190 v80 h-190 z" transform="rotate(8 151 236)"/>
+        <path d="M40 140 h190 v80 h-190 z" transform="rotate(-5 135 180)"/>
+        <path d="M74 88 h190 v80 h-190 z" transform="rotate(13 169 128)"/>
+      </g>
+      <g stroke="#C9CFDE" stroke-width="4" stroke-linecap="round">
+        <path d="M56 280 h120 M56 304 h78" transform="rotate(-11 125 290)"/>
+        <path d="M82 226 h120 M82 250 h78" transform="rotate(8 151 236)"/>
+      </g>
+      <!-- arrow -->
+      <path d="M356 200 h128" stroke="#1768E5" stroke-width="9" stroke-linecap="round"/>
+      <path d="M484 200 l-28 -18 M484 200 l-28 18" stroke="#1768E5" stroke-width="9" stroke-linecap="round"/>
+      <text x="348" y="158" font-family="Raleway" font-weight="600" font-size="24"
+        letter-spacing="3" fill="#1768E5">TODAY</text>
+      <!-- one clean folder, numbered 1 -->
+      <path d="M544 96 h146 l28 34 h152 v168 a14 14 0 0 1 -14 14 H558 a14 14 0 0 1 -14 -14 z"
+        fill="#FFFFFF" stroke="#1768E5" stroke-width="9" stroke-linejoin="round"/>
+      <text x="578" y="252" font-family="Barlow" font-weight="800" font-size="132"
+        letter-spacing="-6" fill="#1768E5">1</text>
+      <g stroke="#C9CFDE" stroke-width="6" stroke-linecap="round">
+        <path d="M684 178 h146 M684 214 h146 M684 250 h100"/>
+      </g>
+    </svg>
+  </div>
+  <div class="mark">The Leveraged <s>Agent</s></div>
+</section>
+
+<!-- ═══ 9 · CTA (dark) ═══ -->
+<section class="slide dark cta">
+  <svg width="560" height="330" viewBox="0 0 560 330" fill="none" style="margin-bottom:56px">
+    <path d="M30 24 h500 a26 26 0 0 1 26 26 v186 a26 26 0 0 1 -26 26 H196 l-96 76 v-76 H30
+      a26 26 0 0 1 -26 -26 V50 a26 26 0 0 1 26 -26 z"
+      fill="none" stroke="#5B9BFF" stroke-width="10" stroke-linejoin="round"/>
+    <text x="150" y="192" font-family="Barlow" font-weight="800" font-size="150"
+      letter-spacing="-8" fill="#FFFFFF">TC</text>
+    <rect x="392" y="72" width="12" height="120" fill="#5B9BFF"/>
+  </svg>
+  <h2>DM me “TC”</h2>
+  <p>I will send you the exact folder structure I run all three deals out of.</p>
+  <div class="mark" style="left:50%;transform:translateX(-50%)">The Leveraged <s>Agent</s></div>
+</section>
+
+</body></html>

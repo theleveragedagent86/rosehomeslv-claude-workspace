@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* The Leveraged Agent, v2.0 "Vector", inverted side.
+         Canonical values from Brandkit/Brand-Guide/tokens.css.
+         Typographic wordmark on purpose: every logo PNG is still v1 artwork
+         and is off-palette, so no logo file is used here. */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: #000000;
+      }
+      body { font-family: "Barlow", "Helvetica Neue", Arial, sans-serif; }
+
+      #root { position: relative; width: 1920px; height: 1080px; background: #000000; }
+
+      /* ambient wash so true black does not read as a dead frame */
+      .wash {
+        position: absolute; inset: 0;
+        background:
+          radial-gradient(1500px 950px at 74% 2%, rgba(23,104,229,0.13), transparent 72%),
+          radial-gradient(1200px 780px at 16% 100%, rgba(23,104,229,0.08), transparent 70%);
+      }
+
+      .stage {
+        position: absolute; inset: 0;
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center;
+      }
+
+      /* the vector: one accent rule that draws, holds, then retracts */
+      .rule {
+        /* accent-inv, not the #1768E5 fill. A 3px hairline on true black needs
+           the lightened value or it reads as a dark grey line. */
+        width: 1180px; height: 3px;
+        background: #5B9BFF;
+        transform: scaleX(0);
+        transform-origin: 0% 50%;
+        margin-bottom: 40px;
+      }
+
+
+      /* Fixed-seed SVG grain. Gradients on true black band into visible ovals
+         once H.264 quantises them; a little noise dithers that away. The seed
+         is fixed so every re-render is identical. */
+      .grain {
+        position: absolute; inset: 0; opacity: 0.05; pointer-events: none;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' seed='7'/></filter><rect width='300' height='300' filter='url(%23n)' opacity='0.55'/></svg>");
+      }
+
+      .markwrap { overflow: hidden; padding: 0 6px; }
+      .mark {
+        font-weight: 800;
+        font-size: 116px;
+        letter-spacing: -0.028em;
+        line-height: 1;
+        color: #FFFFFF;
+        white-space: nowrap;
+      }
+
+      .sub {
+        margin-top: 26px;
+        font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #9AA3BC;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="bumper"
+      data-start="0"
+      data-duration="3"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="wash" id="wash"></div>
+      <div class="grain"></div>
+      <div class="stage" id="stage">
+        <div class="rule" id="rule"></div>
+        <div class="markwrap"><div class="mark" id="mark">THE LEVERAGED AGENT</div></div>
+        <div class="sub" id="sub">AI Systems For Real Estate</div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      /* in */
+      tl.fromTo("#wash", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, 0);
+      tl.to("#rule", { scaleX: 1, duration: 0.5, ease: "power3.out" }, 0.1);
+      tl.fromTo(
+        "#mark",
+        { yPercent: 110 },
+        { yPercent: 0, duration: 0.6, ease: "power3.out" },
+        0.34
+      );
+      tl.fromTo("#sub", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.6);
+
+      /* hold, with a slow drift so the frame is never frozen */
+      tl.to("#stage", { y: -10, duration: 1.2, ease: "none" }, 0.9);
+
+      /* out, fast, landing on black so it hard cuts into the video */
+      tl.to("#rule", { scaleX: 0, transformOrigin: "100% 50%", duration: 0.34, ease: "power3.in" }, 2.28);
+      tl.to("#mark", { yPercent: -110, duration: 0.4, ease: "power3.in" }, 2.32);
+      tl.to("#sub", { opacity: 0, y: -12, duration: 0.3, ease: "power2.in" }, 2.3);
+      tl.to("#wash", { opacity: 0, duration: 0.4, ease: "power2.in" }, 2.4);
+
+      window.__timelines["bumper"] = tl;
+    </script>
+  </body>
+</html>

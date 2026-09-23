@@ -1,0 +1,121 @@
+# Transcript: 🎙️ Voice OS
+
+_Section: 🦸 Claude · Source file: `🎙️ Voice OS.txt`_
+
+---
+
+Hey there beautiful AI automator and welcome to the voice intelligence upgrade.
+ This is what it is how it works and why it is so epic
+ So what we're gonna do is on click on the Hermes on the left hand side for
+ Hermes agent
+ I want you to do that. It will magically appear onto this page
+ Go over and click on intelligence and by the way, I'm gonna break this whole
+ thing down for you guys
+ I've got the full breakdown on what is going on and how this is so freaking
+ cool now
+ All you're gonna do literally is I'm gonna chat to mine here. I'm quite like
+ the look of
+ Plasma my conversations, but check this out
+ Let's have a conversation with him. Hey there. How's it going?
+ Hey Jack great to chat. I'm doing well. Thanks for asking. Awesome. Don't mean
+ to cut you off
+ But could you just tell me what was the latest file I saved on my desktop?
+ Sure thing let me find out the latest file on your desktop
+ Just a moment is checking that for you right now. Of course. So she's doing she
+'s giving us updates
+ Now what's happening here is we've got this cool
+ conversational layer that's connected to our Hermes agent and she's actually
+ chatting with our Hermes agent in the background to get all this
+ information for us the latest file you saved on your desktop is called where to
+ live debate workflow.js
+ Cool. Thank you so much. I appreciate that. By the way, what day is it to do?
+ No problem at all today is the 19th of June 12 beautiful
+ So I'm gonna talk about the architecture how we set this all up so you can get
+ this flying and working together
+ So let me show you here exactly what's going on with this and then we can set
+ it up together
+ So effectively we've given Hermes a voice
+ So if you don't want to type or use glider we can basically just yap to it
+ perfectly now
+ What is going on here? The idea is that we are talking and we're having a
+ conversation like this. There is us
+ We're talking to open AI. Okay as a conversational model, but then that is
+ sitting on top of Hermes
+ So this is the reason why it just sounds like a conversation
+ Just like when you pick up the open AI app and I did that because latency
+ I think is really important and there's two ways you can set this up which I'll
+ cover but effectively we ask you questions
+ And then it just checks with Hermes and once the entire conversation is done
+ all of it gets added into the Hermes memory
+ So you're talking there's a speech engine that is listening to everything you
+'re saying and this sits as a bridge between us and
+ Hermes and Hermes actually gives us the answer back so it enables to have a
+ conversation just like that so
+ Two ways we can power this you can do this completely
+ For free locally using whisper alarm it runs on your Mac. It's very frickin
+ cool
+ You can set it up that way or you can do paid opening I key if you want to this
+ is about five to ten cents a minute and
+ Personally, I prefer that I think that's a way better way of doing it
+ I just like to have that instant responses in the app itself as well. You can
+ pick different voices
+ But if you want to get for free you completely do you can do this and for me
+ This is great because I can just actually for the first time have a
+ conversation with my Hermes agent
+ Which is so freakin corn on the local option runs a local new device
+ You can get faster whisper pipe and no bills no key limits. It's about 20
+ It's not quite 20 minutes, but it's like basically cool guide you through the
+ whole process on paid
+ It's one click you just grab your open a API key which you can get from
+ platform. Open a calm
+ It's create an API key just drop it in and then you are literally ready to rock
+ and roll with that
+ And which is really freakin calm. So if you're not sure you can start with open
+ AI and then get ready
+ And you can put limits on it so it never exceeds a certain amount
+ So super duper easy to get set up. I've explained in the latest update in the
+ operating system
+ Exactly how to connect everything together and what that physically looks like
+ But I recommend that you start with open AI and then go local
+ If you want to but you can do that based on your budget and also your
+ preference now core thing just to understand here
+ We've got all the different designs if you want to play around have a different
+ design
+ You can do and play around with that, you know completely your preference
+ because design is important, right?
+ But then over here for example, you've got this thing here
+ This let's just have different voices so if I want to see what I always sounds
+ like and we use an opening
+ I want we can do that. Hey Jack. This is how I sound. Wow
+ That's crazy, we won't be using that voice, but you get the idea
+ We can also if we want to bring in any custom voices from eleven labs
+ That is super duper easy to build and obviously got those from capabilities and
+ you can play around with this
+ Basically if you want to or you can just chat to him his agent directly
+ And so let's configure this and come down here to intelligence and the reason I
+'m not included over local models in it
+ It's because I'm just mindful of keeping the size of this OS very lean for you
+ So you can basically follow the instructions and crochet, but come down to
+ intelligence again
+ We've got all our classics come down over here to the buttons
+ And I've got configure voice which I just added in as I was recording this to
+ make it easy as you can see
+ I can click on this then I've got my opening I key
+ I just let you drop it in click on connect and if not, you can see down here
+ We've got local and open-source so run an AI open AI compatible voice server
+ locally
+ And basically you can just copy this and what I would literally do
+ Is grow go straight back over the clock and say hey
+ I want you to connect for me a local open-source model in line with the system
+ Just walk with your steps on exactly how to do that and clone will guide you
+ through I've added the instructions to the OS
+ So it knows exactly how to do this then this will be running for you one
+ hundred percent locally
+ If that's direction that you prefer to go
+ I hope you love it bear mind this operating system is only available inside
+ this community to you
+ I spend so much time building it
+ It is my pleasure to help you crush it with your systems and I just think it's
+ so freaking cool
+ So I hope you enjoy it. Let me know what you think about it in the community
+ and I catch you inside the next video

@@ -1,0 +1,95 @@
+{
+  "generated": "2026-08-24",
+  "source": "Derived from Clients/Transactions/*/transaction.json — read-only; never modified by this build",
+  "estimate_note": "All computed amounts are marked estimated. Derived from recorded rates times recorded prices — not read from a closing statement or commission disbursement. Actual take-home depends on broker splits, Real Broker fees, and timing.",
+  "year": 2026,
+  "ytd_closed_floor": 25250,
+  "ytd_closed_floor_is_estimated": true,
+  "ytd_closed_floor_note": "Floor only — Moapa Water ST $15,750 (est) + Amber Rock buyer side $9,500 (est). Amber Rock listing side NOT FOUND; All Hallows commission NOT FOUND; both excluded from total.",
+  "ytd_closed_full_note": "Cannot compute — All Hallows Ave commission rate missing; Amber Rock listing side commission rate missing.",
+  "pipeline_projected_floor": 15479.70,
+  "pipeline_projected_floor_is_estimated": true,
+  "pipeline_projected_floor_note": "Only 94 Tardando Ave has a recorded commission rate. 659 Semitone Ln and 653 Semitone Ln excluded — rates NOT FOUND.",
+  "by_transaction": [
+    {
+      "address": "94 Tardando Ave, Henderson, NV 89015",
+      "status": "active",
+      "closed_date": null,
+      "target_coe": "2026-09-11",
+      "target_coe_is_estimated": true,
+      "commission_pct": 3.00,
+      "commission_base": 515990,
+      "commission_gross_estimated": 15479.70,
+      "is_estimated": true,
+      "source": "3% of base price $515,990 per Broker Referral Agreement 2026-08-04",
+      "notes": "Pending close. Target COE 2026-09-11 (Seller Incentive deadline — estimated as de facto target, not a fixed contract date)."
+    },
+    {
+      "address": "659 Semitone Ln, Henderson, NV",
+      "status": "active",
+      "closed_date": null,
+      "target_coe": "2026-09-23",
+      "target_coe_is_estimated": true,
+      "commission_pct": null,
+      "commission_gross_estimated": null,
+      "is_estimated": false,
+      "source": "NOT FOUND — commission percentage not in transaction.json",
+      "notes": "Purchase price $529,990 (estimated — provided by Ryan). COE target 2026-09-23 (estimated). Do not estimate commission."
+    },
+    {
+      "address": "653 Semitone Ln, Henderson, NV",
+      "status": "active",
+      "closed_date": null,
+      "target_coe": null,
+      "commission_pct": null,
+      "commission_gross_estimated": null,
+      "is_estimated": false,
+      "source": "NOT FOUND — commission rate and purchase price both missing",
+      "notes": "Price and COE both NOT FOUND. Do not estimate until both are confirmed."
+    },
+    {
+      "address": "29 Amber Rock St, Henderson, NV 89012",
+      "status": "closed",
+      "closed_date": "2026-06-01",
+      "dual_agency": true,
+      "buyer_side_pct": 2.0,
+      "buyer_side_gross_estimated": 9500,
+      "buyer_side_is_estimated": true,
+      "buyer_side_source": "2% of $475,000 per transaction.json buyer_broker_comp_pct",
+      "listing_side_pct": null,
+      "listing_side_gross_estimated": null,
+      "listing_side_source": "NOT FOUND — listing commission percentage not in transaction.json",
+      "notes": "Dual agency — Ryan represented both Vasquez Trust (seller) and George Tasci (buyer). Total commission includes both sides; only buyer side is computable from recorded data."
+    },
+    {
+      "address": "8320 Moapa Water ST, Las Vegas, NV 89131",
+      "status": "closed",
+      "closed_date": "2026-05-18",
+      "commission_pct": 2.5,
+      "commission_gross_estimated": 15750,
+      "is_estimated": true,
+      "source": "2.5% of $630,000 per counter_offer_notes in transaction.json",
+      "notes": "Buyer side — Ryan represented Anne Ayre and Jerred Mares."
+    },
+    {
+      "address": "3550 All Hallows Ave, Las Vegas, NV 89141",
+      "status": "closed",
+      "closed_date": "2026-05-21",
+      "commission_pct": null,
+      "commission_gross_estimated": null,
+      "is_estimated": false,
+      "source": "NOT FOUND — commission percentage not in transaction.json",
+      "notes": "Pulte Homes, $660,000 purchase price. Commission not recorded in transaction.json."
+    },
+    {
+      "address": "2713 S Miller Ln, Las Vegas, NV 89117",
+      "status": "cancelled",
+      "closed_date": null,
+      "cancelled_date": "2026-03-31",
+      "commission_earned": 0,
+      "is_estimated": false,
+      "source": "Cancelled 7 days after contract",
+      "notes": "No commission earned."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Leveraged Agent, YouTube channel banner</title>
+<link rel="stylesheet" href="../Design-System/tokens.css">
+<script src="../Design-System/logo.js" defer></script>
+<style>
+  /* 2560x1440 is the full upload. YouTube crops it hard: only the centred
+     1546x423 "TV safe" box survives on every device, so nothing that must be
+     read may sit outside it. The band edges below are decoration that gets
+     cropped away on phones, which is the point. */
+  body{margin:0;background:transparent}
+  .banner{position:relative;width:2560px;height:1440px;background:var(--la-bg-inv);
+          overflow:hidden;display:flex;align-items:center;justify-content:center}
+
+  /* One structural element, off-brand-nothing: a deep-blue slab bled off the
+     left edge. It reads as texture at full size and vanishes in the phone crop. */
+  .banner__slab{position:absolute;left:0;top:0;width:280px;height:100%;
+                background:var(--la-structure)}
+  .banner__slab--thin{left:280px;width:56px;background:var(--la-accent)}
+
+  .safe{position:relative;width:1546px;height:423px;
+        display:flex;flex-direction:column;justify-content:center;align-items:center;
+        text-align:center}
+  .safe la-logo{width:880px}
+  .safe__rule{width:120px;height:6px;background:var(--la-accent);border:0;margin:36px 0 28px}
+  .safe__tag{font-family:var(--font-subtext);font-weight:600;font-size:34px;
+             line-height:1.35;letter-spacing:0.01em;color:var(--la-ink-2-inv);margin:0}
+  .safe__meta{font-family:var(--font-subtext);font-weight:600;font-size:20px;
+              letter-spacing:0.15em;text-transform:uppercase;
+              color:var(--la-accent-inv);margin:0 0 34px}
+</style>
+</head>
+<body>
+<div class="banner" data-export="leveraged-agent-youtube-banner">
+  <div class="banner__slab"></div>
+  <div class="banner__slab banner__slab--thin"></div>
+  <div class="safe">
+    <p class="safe__meta">Claude Code for real estate agents</p>
+    <la-logo variant="wordmark" inverse no-tagline></la-logo>
+    <hr class="safe__rule">
+    <p class="safe__tag">TAGLINE_GOES_HERE</p>
+  </div>
+</div>
+</body>
+</html>

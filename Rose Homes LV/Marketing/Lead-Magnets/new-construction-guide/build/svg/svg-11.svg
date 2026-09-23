@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 396" width="100%"
+     role="img" aria-labelledby="sv11t sv11d" font-family="Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif">
+<title id="sv11t">The three builder business models</title>
+<desc id="sv11d">A left-to-right spectrum from less choice and more certainty to more choice and more decisions. Model one is a fixed package: no design center and no upgrades, where you gain a price that does not move and give up every choice past the floor plan. Model two is included features, where you gain real equipment in the base price and give up control because features vary by community and homesite. Model three is a full design center, where you gain the house you chose and give up budget certainty and time. Two hard limits are listed, and a NOT FOUND note records that no volume builder publishes a design center spend requirement, a credit amount, or whether upgrades can be financed.</desc>
+<style>.sv-h{font:700 13px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;letter-spacing:.002em}
+.sv-k{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52;letter-spacing:.09em;text-transform:uppercase}
+.sv-l{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-b{font:400 9.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-s{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52}
+.sv-n{font:700 11px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;font-variant-numeric:tabular-nums}
+.sv-r{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-rs{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-nf{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#B8360F;letter-spacing:.06em}
+.sv-c{text-anchor:middle}
+.sv-e{text-anchor:end}</style>
+<defs>
+<marker id="sv-tri" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#2C3F6B"/></marker>
+<marker id="sv-tric" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#B8360F"/></marker>
+<marker id="sv-trim" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#5F5A52"/></marker>
+<pattern id="sv-hatch" width="6" height="6" patternTransform="rotate(45)"
+         patternUnits="userSpaceOnUse">
+  <rect width="6" height="6" fill="#EDE9E0"/>
+  <line x1="0" y1="0" x2="0" y2="6" stroke="#847B6D" stroke-width="1.6"/>
+</pattern>
+</defs>
+<rect width="700" height="396" fill="#F7F5F0"/>
+<text x="0" y="14" class="sv-k">Page 15</text><text x="0" y="31" class="sv-h">"Included" means three completely different things</text>
+<rect x="0" y="56" width="700" height="8" rx="4" fill="#EDE9E0"/>
+<line x1="0" y1="60" x2="696" y2="60" stroke="#2C3F6B" stroke-width="2" marker-end="url(#sv-tri)"/>
+<text x="0" y="82" class="sv-k">LESS CHOICE, MORE CERTAINTY</text>
+<text x="700" y="82" class="sv-k sv-e">MORE CHOICE, MORE DECISIONS</text>
+<rect x="0" y="96" width="226" height="28" rx="6" fill="#242F4A"/>
+<text x="12" y="115" class="sv-r">Model 1 · Fixed package</text>
+<text x="12" y="142" class="sv-b"><tspan x="12" dy="0">One builder has no design center and no</tspan><tspan x="12" dy="12">upgrades at all. You buy a set inclusion</tspan><tspan x="12" dy="12">package.</tspan></text>
+<path d="M14.8 212.5 l2.5600000000000005 2.8800000000000003 l4.800000000000001 -6.08" fill="none" stroke="#2C3F6B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="30" y="216" class="sv-s"><tspan x="30" dy="0">You gain: a price that does not move, and</tspan><tspan x="30" dy="11">a shorter path to the keys.</tspan></text>
+<path d="M14.8 241.3 l6.4 6.4 M21.2 241.3 l-6.4 6.4" fill="none" stroke="#5F5A52" stroke-width="1.9" stroke-linecap="round"/>
+<text x="30" y="248" class="sv-s"><tspan x="30" dy="0">You give up: every choice past the floor</tspan><tspan x="30" dy="11">plan.</tspan></text>
+<rect x="237" y="96" width="226" height="28" rx="6" fill="#2C3F6B"/>
+<text x="249" y="115" class="sv-r">Model 2 · Included features</text>
+<text x="249" y="142" class="sv-b"><tspan x="249" dy="0">An included-features model instead of a</tspan><tspan x="249" dy="12">buyer-facing design center. Some compete</tspan><tspan x="249" dy="12">on standards: owned solar, an EV outlet,</tspan><tspan x="249" dy="12">a smart home package, a tankless water</tspan><tspan x="249" dy="12">heater.</tspan></text>
+<path d="M251.8 212.5 l2.5600000000000005 2.8800000000000003 l4.800000000000001 -6.08" fill="none" stroke="#2C3F6B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="267" y="216" class="sv-s"><tspan x="267" dy="0">You gain: real equipment in the base</tspan><tspan x="267" dy="11">price.</tspan></text>
+<path d="M251.8 241.3 l6.4 6.4 M258.2 241.3 l-6.4 6.4" fill="none" stroke="#5F5A52" stroke-width="1.9" stroke-linecap="round"/>
+<text x="267" y="248" class="sv-s"><tspan x="267" dy="0">You give up: control. Features vary by</tspan><tspan x="267" dy="11">community and by homesite.</tspan></text>
+<rect x="474" y="96" width="226" height="28" rx="6" fill="#304880"/>
+<text x="486" y="115" class="sv-r">Model 3 · Full design center</text>
+<text x="486" y="142" class="sv-b"><tspan x="486" dy="0">Studios you visit and select in, item by</tspan><tspan x="486" dy="12">item, or from curated collections.</tspan></text>
+<path d="M488.8 212.5 l2.5600000000000005 2.8800000000000003 l4.800000000000001 -6.08" fill="none" stroke="#2C3F6B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="504" y="216" class="sv-s"><tspan x="504" dy="0">You gain: the house you actually chose.</tspan></text>
+<path d="M488.8 241.3 l6.4 6.4 M495.2 241.3 l-6.4 6.4" fill="none" stroke="#5F5A52" stroke-width="1.9" stroke-linecap="round"/>
+<text x="504" y="248" class="sv-s"><tspan x="504" dy="0">You give up: budget certainty, and a</tspan><tspan x="504" dy="11">great deal of your time.</tspan></text>
+<text x="0" y="292" class="sv-k">TWO HARD LIMITS NOBODY PUTS ON A FLYER</text>
+<rect x="0" y="302" width="8" height="8" fill="#141A27"/>
+<text x="16" y="309" class="sv-b"><tspan x="16" dy="0">Your design selections must be final before the build starts, at the one builder that publishes the rule.</tspan></text>
+<rect x="0" y="328" width="8" height="8" fill="#141A27"/>
+<text x="16" y="335" class="sv-b"><tspan x="16" dy="0">One builder states on every community page that buyers may be limited in the structural changes, options and upgrades they can make.</tspan></text>
+<rect x="0" y="362" width="64" height="14" rx="3" fill="#FBE5DA"/><text x="32.0" y="372.2" class="sv-nf sv-c">NOT FOUND</text>
+<text x="72" y="372" class="sv-s"><tspan x="72" dy="0">Not one of the twelve volume builders publishes a design center spend requirement, a design credit amount, or whether upgrades can be</tspan><tspan x="72" dy="11">financed. Ask both in writing.</tspan></text>
+</svg>

@@ -1,0 +1,827 @@
+ Hey there, beautiful AI automated welcome to the level four or we're going to
+ talk about memory. Okay, so in this module
+ We're going to cover the following plus something else as well. So firstly
+ I'm going to show you the three levels of memory the contacts project the long
+ term
+ We just call the short medium and long term and if you crack and just follow
+ and lock in put your phone on
+ Do not disturb and listen to I'm gonna time this memory module. You're going to
+ solve
+ Memory because a good memory system is one that we use and one that we do ever
+ have to keep coming back to now memory is so good
+ Because what memory does and as I'm going to show you in this whole story here
+ is memory solves the context problem
+ So the idea of why this is important in the first place is the following and
+ idea is that if our AI
+ Claude or whatever model we're using right now had infinite context about us it
+ knew our business what we're doing
+ relevant conversations we had it could give us better advice
+ It could build you better software and it could get you way further ahead
+ We have to have the right memory systems
+ And I'm going to share stuff in here in a way in order that I've never shared
+ anywhere else before as with all the other exclusive content inside our
+ beautiful community
+ so
+ We're going to cover the three levels of memory
+ I'm going to show you how you use a network alarm at Google's number one and
+ the world's best research and intelligence platform
+ And how that integrates into the whole system. I'm going to show you pine come
+ and
+ Obsidian for our long-term and mid-term memory and what that system looks like
+ I'm going to show you how you can grab things like granola
+ I granola's one option of course is many different things, but I would get
+ meeting intelligence
+ And then of course we're going to double click into some obsidian stuff as well
+, which is going to be fantastic
+ So let's begin with the three levels of memory. Okay
+ So think about it like this you have a short-term a mid-term and a long-term
+ and
+ One of the ways in which these change it's basically to do with like you know
+ if you consider this for example
+ Memories an interesting one because not all memories are actually relevant some
+ change some are never going to change
+ So context is right now. This is stuff about you. It's about what am I doing?
+ Who am I what does that look like?
+ Practically speaking if I put Claude code as for instance, let me show you where
+ that would be if you come down to your settings
+ There's like two little aspects to this and I'll show you where it works
+ You come down here you come to settings and at the top here
+ You'll see in general you have this instructions for clothes
+ This is like the bare bones hard-wiring stuff about it
+ Then if you're using anti-gravity like this
+ This is where it lives I come over here to these dots I click on customization
+ and I click on I believe it's workflows
+ Global, okay, in fact, it's rules and it's global rules this here
+ You see is a Gemini MD these are the global rules about you and how you behave
+ and it's very similar also in any other cursor
+ And it's the same with codecs if you're using that so that's one aspect of it
+ The other aspect of this is essentially the stuff that Claude remembers about
+ you
+ So when you say for example, I'm looking at planning a trip to X or my
+ financial goal is why Claude has an internal
+ Short-term memory state that remembers that that is stuff that just runs off
+ So the first action is to outline basically in these settings sections here or
+ in any of these places who you are what you do
+ Just broad top line core information about you. That is that and then whenever
+ you're having a conversation
+ Basically, this is going to be retained short-term memory
+ but here's the thing that most people get wrong is that
+ This memory system is going to work in such a way that it should never require
+ you to be in a chat to work
+ The memory system needs to be so good such that if I started a brand new chat,
+ which you need to to avoid any
+ Context right and performance decline. It should still perform at exactly the
+ same level
+ That's why the midterm memory is so important
+ So we're going to set the midterm memory together right now and once we've done
+ that we're going to look at some wonderful long-term memory
+ So when I said mid-term memory, what do I mean? Well if I come back over to
+ Claude
+ This is what every single person using Claude or chat GPT or Gemini anyone
+ needs to do you need to give it a prompt like this
+ Based on everything you know about me and everything I work on I want you to
+ organize my life into six to eight
+ Buckets if it's five buckets, that's fine, but basically any project I'd be
+ working on put it in those buckets
+ Now, why is this important?
+ Whatever the answer of this is and obviously you can define your own ones if
+ you want to do these are your buckets
+ These are essentially other things that we're going to be using as our core
+ memory system. So for me for example, I
+ Would have one bucket for community and that might be things like projects. I
+'ve got coming up
+ Wonderful feedback that you give me about how we can be better
+ strategies
+ Conversion rates everything to do. It's all related in one cluster
+ So I'd have one project for community and what I would literally do is come
+ over to my desktop and even beyond that
+ I can literally say once I get these answers. I can say something like awesome
+ now
+ Create for me six folders on my desktop with you know titled each of those
+ things
+ So then I would have one that says, you know community
+ I might have one that says glider which is the speech-to-tech software that are
+ we created?
+ So I'd have one for that I might have one for clients or a specific
+ Client or my my general clients strategy and then within that I might have a
+ folder for each of the clients that I work on that
+ Effectively becomes your midterm world. So give it that prompt
+ I'll put it in the Skool community for you right now, and I want you to create
+ those six or so projects ready to rock and roll
+ And then once you've gotten those five buckets and by the way
+ I've also added them here for you terms you shot to memory
+ These are the questions that are important to bear in mind. I like to say no fl
+uff
+ I like to say looks around corners to anticipate exactly what I'm looking for
+ then I'm gonna look at mid-term memory
+ Now what I've done for you here as well is I've leveraged what we call the car
+ path you principles
+ He is the founder of open AI he led Tesla's AI division, you know really
+ successful good thinker in the space
+ And he said that they have four limitations so what it'll be to do as well as I
+'ve got you for this here
+ Which is project operating manual and essentially what you're gonna do for each
+ of those six folders that you've got
+ So I've won for glider one for the community one for clients
+ I want you to grab this template and basically add this as the project
+ operating manual for that and effectively what this is going to
+ Do is essentially copy and paste call that MD you can drop in any roots of any
+ project folder
+ It's gonna tell code code open core anything what the folder is what's in it
+ where to look and it's all ready to get only one per folder
+ It's gonna explain the following what the folder is what the goal is so for
+ example if I had my community one
+ I'd say the goal of this is to maximize the amount of value that every person's
+ community has maybe increase the members and do ABC
+ This is why this exists
+ So then what Claude can do with his mid-term goal in mind is hold up any builds
+ against this north star that we have the stack
+ The decision so if I say for example, hey, we're not having any AI generated
+ posts awesome
+ That's a decision it can reference that when it goes through has a memory map
+ has a references
+ And what's really cool is when you go ahead and you can build them you know,
+ you're called operating system like this
+ Which is completely exclusive to this community?
+ It's not it's not available anywhere else you can see you can visually see your
+ entire
+ Memory system. How frickin call is this? It's so frickin decent rate can see
+ all the different things I've gotten here
+ It's beautiful. I've got a specific module just on that
+ But you can get the idea of how it all connects together
+ So we're gonna have the memory map and then we've got references
+ So effectively I want to come ahead and copy this entire template and then just
+ basically create it for each six
+ So what you would then do is copy all of this you'd come back over to Claude
+ and you would say wonderful
+ What I would now like you to do is add this Claude empty file in each of those
+ six folders
+ And then I want you to ask me questions about each six
+ So I can give you the full project brief for everything that we're using all
+ right
+ Give it that prompt and then literally go through and then you'll have that
+ beautifully configured called dot-and-D file for all of your mid-term memory
+ Which is basically going to cover a lot of the key stuff now why that's so
+ important is the fact that what this effectively does is?
+ The goals and the objectives are subject to change in your local mid-term
+ memory and by using this we get a really cool
+ Beautiful break. But what we can do now with this is connect this to something
+ called
+ Carpathy Obsidian and by using Carpathy Obsidian
+ You probably seeing that you heard it described as obsidian rag
+ We can build mini databases and they can show you how you can then go ahead and
+ supercharge that or long-term stuff with pinecone
+ So let's talk about a little bit about Carpathy Obsidian
+ So the idea here fundamentally now we've got our shot-to-memory lockdown who we
+ are what we're doing and the context and conversation
+ We've got a per project thing
+ So effectively how this works is anytime you're doing any work you go to these
+ projects
+ If you're doing code if you include code for example
+ All I would do is come down here to fold them out select it
+ And if you expand this recent recent section you can actually go ahead and do
+ that too equally if you're using co-work
+ which is available here by clicking it and I don't recommend you do use code
+ work because if you can use co-work you can use code
+ And you should use code because code exploit explodes your capabilities and can
+ be very limited in the co-work environment
+ But effectively projects you'd have your six different projects, right?
+ And you can literally I've got a business question. I'm in the business folder
+ One I always recommend you have as a personal and the personal will have every
+ all the information about you
+ So for example, it could be your address your documents, maybe your voter
+ registration
+ And you'd be surprised how like when I do business in the States, it's a great
+ Jack. Where's your W8 form?
+ I'm like, what the hell is I have no idea where that is so I can go to my
+ business folder
+ Go ahead and grab that my personal business
+ I call my general business a lot of stuff on my laptop. This is my desktop
+ But it's really wonderful and beautiful to have so it just helps you organize
+ what's in your brain and she goes through them now
+ the idea here that we can use
+ with
+ Obsidian I'm gonna open up a city obsidian for you right now as you can see is
+ a visual intelligence layer
+ But let me explain a bit more detail what this physically looks like so the
+ idea of it here is
+ I'm gonna come up and open up for you can take a good look as we call car path
+ the obsidian
+ So let's go through and explain exactly what this is why this blew up and why
+ it's important
+ So here's the thing the core idea is that most people's experience with LLM's
+ and documents looks like right
+ Just true you load a collection of files the LLM retrieves relevant chunks at
+ query time and generates an answer
+ This works, but the LLM is rediscovering knowledge from scratch on every
+ question
+ There's no accumulation you can ask a sort of question that requires synthes
+izing five documents and the LLM has to find and piece it together
+ So the idea here is different instead of just retrieving from raw documents at
+ query time
+ This LLM incrementally builds and maintains a persistent
+ Wicke it's structured. It's interlinked. It's a collection markdown files
+ It sits between you and the raw sources when you add a new source the LLM doesn
+'t just index it later for retrieval
+ It reads it it extracts the key information and it aggregates it into the
+ existing wiki now. This is not better
+ Than pinecone or shall I say any long-term rag, but we can use both of these
+ together in one harmonious system
+ You can if you prefer just use pinecone
+ Absolutely, you could if you prefer just use this system if you want to see
+ that's fine
+ The best memory system is the one that you use but I want to show you the
+ benefits and strengths of both of them
+ So you can integrate them into your systems as you can
+ So why is this so called so the difference is this the wiki is a persistent
+ compounding artifact the cross references are already there
+ The contradictions have been flagged so for example and you'll see best
+ explained by doing it
+ But when we have say for example 50 different documents
+ When you add a new document in with obsidian
+ Effectively what's happening with this system is it reads through the whole
+ thing and it finds all the connected points with every other document that you
+ have and then it
+ Can flag any contradictions and sort them out and index it so it's doing more
+ indexing work like that
+ And I'll show you its limitations and how we overcome that later, but it's very
+ very interesting
+ But to come down for TLDR basically it can apply to a lot of different contacts
+ personal research reading the book business team
+ Competitive analysis, and it's really super easy to run and run through so what
+ we're going to do here very simply is
+ We're going to come over here
+ We're going to come down and we're going to grab the link in fact
+ What we're going to do is just cut control see all of it then we're going to
+ head over to our model of choice
+ I'm going to be using anti-gravity just so we can visually see the folders a
+ little bit easier
+ Of course you can do that in Claude, but this is a great one
+ So just come down open the folder and why don't we call this one together
+ something like YouTube
+ Come here YouTube strategy, okay beautiful
+ And once we've done that the other thing that we're going to go ahead and do is
+ literally
+ We're going to actually pretty much just pass the prompt on really simply so we
+'ve got this one open fantastic
+ Yes, I trust the authors great, and then you can give a prompt like this in
+ fact
+ I might just open up the Claude terminal here comes Claude in fact
+ Let's go and do the terminal. I think I'm better new terminal, and then we'll
+ just come up
+ I will do a Claude Dangery Skip permissions beautiful
+ I give it this prompt just because I don't need to keep on approving it if you
+'re new or you're not sure what you're doing then
+ Feel free just use the general Claude instruction all right
+ So what I'm gonna give it is prompt is the font which is hey
+ I want to go over to this github page
+ I want you to read and understand this and then I want you to basically install
+ and just quit all the files relevant to this
+ Such that I can start to build out these different memory systems
+ Okay
+ And then you're gonna give it the actual link like so and then you're gonna be
+ ready to rock and you're ready to roll
+ And just like that it's going ahead and created it and on actually it's
+ probably better than calling it YouTube strategy
+ What we want to go ahead and call this is something like this, which is Jack LL
+M Obsidian
+ Okay, so we're gonna call this you can call it anything you want to you could
+ even call it something like
+ Jack's wiki or obsidian wiki just so you know what it is if I say obsidian wiki
+ Okay, I'm gonna say change the fault their fault name to this the fault and
+ name
+ Okay, so the idea with this wiki is that whatever topic we're doing whether it
+'s YouTube or any of the mids and products
+ projects everything has a large connected wiki, so the whole point of this is
+ the fact that
+ It's all interconnected everything we do is interconnected that can't mean that
+ it grows quite big
+ But again, it's a self updating system, which is great
+ And I'm gonna show you how you then 10x that with pinecone after the fact,
+ which is fantastic
+ So it's now adding it together, which is awesome
+ And we're gonna rename the whole project and once we've done that then we get
+ to check and basically
+ Level this entire system up
+ So it's just changing the name and then we can jump in and make some magic
+ happen now
+ The way this is gonna work within obsidian brag is effectively what we're going
+ to do is get it to create a
+ Subfolder that matches exactly all the folders that we created on our desktop
+ initially
+ Now the way we're gonna do that is we're gonna say hey
+ I'm going to go ahead and create for me folders than this wiki and then just
+ literally detail all of the folders that you already have so those
+ 5 6 7 8 different categories
+ I want to have those it's different subheadings basically and we're gonna get
+ clothes go ahead and create that for us
+ And then based on what you've said you may for example get slightly different
+ outputs come back
+ So I'm gonna come down and say I'm gonna say chat about this. Hey dude
+ I don't need sub folders in business. This is just to give you some context
+ about it
+ So don't have those as sub folders. Just keep it the way that you've got it
+ All right, I'm giving that prompt now guys at once we've done this you
+ basically want to come back and ask it one for the thing
+ Which is this which is in fact, I think you can probably just grab it here
+ It's like right click on this for example
+ I actually after this we even better to be fair wait till the wiki's done and
+ when the wiki's done
+ We'll be able to go ahead and grab that. Okay, so your articles assets notes
+ transcript
+ Which is cool so give that hot second and then we're gonna be ready to rock and
+ roll for the next step
+ All right, so you can see now we've got under the wiki here concepts entities
+ reports, which is called back click on topics
+ I've got all my different topics
+ So the idea now is that anything that we store in this wiki will be one of
+ those topics now check this out
+ I'm gonna say awesome. What is the folder location of this entire wiki all
+ right and get that actual location lockdown from anti-gravity
+ Okay, cool, so you'll get this one back and what we need to know is copy this
+ then you'll notice guys when you come back over to this
+ Section here under your project operating manual you have a section for memory
+ So it says when I explicitly ask you to save store wrap up or remember the
+ conversations save this I want you to put it here
+ Okay, so this is where you keep it all right
+ So now it's all going to be there specifically as a memory save
+ And we're gonna add that into the claw.md and you can even be more specific and
+ say there will be a relevant
+ Folder that is related make sure you choose the correct subfolder and add that
+ information into it
+ Cool and that's ready to rock and roll again
+ You have this memory save functionality or rock and rolling that then when I
+ come back over here effectively all you're gonna
+ Do now is this is gonna be a universal thing that you do
+ But there's one final thing that I want you to do and it's gonna be the
+ following
+ I would like you for you to write for me a wrap-up skill in which if I'm having
+ any conversation with any model on my
+ Computer it can take the essence of that conversation and store it in the
+ relevant wiki within my obsidian wiki
+ Go ahead and write for me that skill, please. I'm gonna send that one off. So
+ now. It's done
+ I'm just gonna change the name to obsidian. Hey, could you change the name to
+ obsidian wrap-up, please?
+ The reason I've done that is because there's a secondary wrap-up that we're
+ also gonna go through for pine count
+ I'm gonna show you why we do that in a second now
+ All this is great
+ But what you need to go ahead and do it if you haven't already is come over and
+ we need to go ahead and download
+ Obsidian, okay, now what is obsidian? Obsidian, okay is just a visual way for
+ us to seal the files
+ That's basically if you ever want to visualize the thing that you're talking
+ about go ahead and download obsidian
+ And once you do that you will see that it exists like this so you can see this
+ is what obsidian looks like
+ And you can see all into connectivity. These are just some examples of things
+ that I've downloaded
+ So if I ever just want to go down and have a look at this
+ I'm able to do that within obsidian myself, which is really freaking cool. So
+ that's all done
+ It's now done an obsidian wrap-up skill great. So now if I do a forward slash
+ and I do obsidian
+ I can see obsidian wrap-ups and this would actually add its own
+ Conversation to one of my wikis how freaking cool is that there's all ready to
+ rock and roll and be complete
+ And then what we can do then is basically open up the subsidian wiki
+ Within obsidian itself basically and to go ahead and do that you're gonna click
+ on file at the top
+ I'm gonna click on open vault and then you're gonna click on open folder as
+ vault
+ And then what we're gonna look for is our obsidian wiki, which I'm just gonna
+ find real quick
+ Okay, here we go. I've got it right there my obsidian wiki on my desktop
+ I click on open and now you have the visual overview of your wiki basically
+ You can see all our concepts entities down there and all about topics are live
+ to rock and roll
+ But guys we have nothing in the topics also if you want to change the view you
+ can review the top left
+ You can check out settings on obsidian lots different stuff to make sure that
+ it looks good
+ We do want the dark mode which if I remember correctly is available here, but
+ you can play around with our under appearance
+ And then we want to go ahead and do themes. So so the themes you can get down
+ here adapt to system now
+ We want to be dark cool
+ And then we're dark mode fantastic and now we have everything that cool. So why
+ don't we go ahead now?
+ And actually start filling this thing up. So let's give it an example prompt
+ I might say hey there dude, so I would quite like to make my YouTube better
+ I would like to go on to YouTube and find Ed Lawrence and
+ Callaway and I what actually specifically let's just do Ed Lawrence and have a
+ look at the live videos
+ He's done and maybe the last 10 videos. He's done. Maybe 20 videos is done in
+ YouTube and just add them to our
+ Carpathy obsidian wiki, please
+ Oh, and to grab the transcripts and we to vectorize them all that sort of stuff
+ break them down and just add them to the wiki
+ I shouldn't say vectorized. I'm thinking more kind of pine cone here
+ For example, then worry about the vectorization just grab the transcripts and
+ then add them to the wiki in line with the instructions in this folder
+ If you want to show you an example of what that physically looks like and once
+ that's done
+ I'm gonna send that one off and then let Claude Claude basically work its magic
+ for us in the background
+ Then effectively I gave this quite a gargantuan job
+ I pretty much asked it to go and grab all those transcripts not only from Ed
+ Lawrence
+ But loads of other individuals too. So now in this graph. You for example, I
+ click on transcripts
+ Look there is one from patty Galloway. There is one from Mr. Beast all these
+ different beautiful series of advice
+ How freaking calls that and then at any point you want to you can see the graph
+ view by clicking on this
+ And this is the graph view of how they're all connected now these themselves
+ are not fully
+ Indexed yet because what's effective being first of all is grabbing all of the
+ sources
+ Which is and now you can see it's writing source pages. It's updating the
+ concepts and then it will all
+ Basically come down here into I think it's under if I come back to raw here
+ beyond the the wiki
+ We've got articles here assets notes transcripts videos and then videos here
+ beautiful
+ So you can see we've got everything we need to hear in the actual folder itself
+ if I come back out
+ You can see we've got wiki we've got these topics and if you click on topics,
+ you'll see everything here
+ So this is all going to be added into YouTube
+ But the next thing we need to do that is once this is all finished is like well
+ How do we actually query the wiki?
+ Well one of the things that you can do is just open up the folder the obsidian
+ wiki and be like hey
+ I have a question about blah blah blah if you want to
+ But an even cooler thing than this is you head over now to Claude you can
+ basically give it a prompt like this
+ It sounds like this hey there
+ I have in my desktop an obsidian wiki folder
+ This is my capacity obsidian system and it has notes and information from
+ everything that I'm working on at all times
+ I would like you to create a skill and we'll call it obsidian ask and
+ essentially whenever I ask you a question
+ That is to do with anything that I'm doing I want you to actually if relevant
+ I ask you to query this database for a specific answer and follow all the
+ instructions within it
+ Okay, I'm gonna end that one there send that off now whatever platform we're in
+ even if
+ We're not in the right folder
+ We can actually summon and draw down the ability to ask basically this new
+ beautiful
+ Caparthi obsidian and as you can see this will go ahead and create that sculpt
+ for us
+ But then if you can remember the brave browser, okay
+ And if I cover here and I click on the chrome web store, which we are going to
+ come over to if I do obsidian
+ Clipper you'll find this one super interesting so obsidian web clipper
+ basically what this will let us do if you add this to brave
+ We have particular browser
+ Which is very cool
+ When this is added in you'll see a little obsidian thing there at the top and
+ say for example
+ I'm on a random page here
+ Which is like mark Manson the most important article the most important
+ question of your life
+ Well, if I'm browsing tonight and I want to add this in what what I do
+ Well, what I can do is click on the obsidian little rock there
+ Which is cool, and I can just add this to anything. There's a clippings folder
+ But if you come into settings where you can actually do down here under the
+ settings is decide the vaults that you want to add into by
+ Entering in the vault information there that I can just add it directly to my
+ own specific thing if I want to
+ Alternatively, I can just add it to clippings and then when it's added to clipp
+ings
+ I can just untake it from clippings whenever I want to but it basically means
+ that when I'm surfing the web and having a great time
+ I can do whatever I want to now this does leave it on to very nice
+ Secondary component now. We've really cracked down the obsidian system as you
+ can see it's here. It's beautiful
+ It's doing lots of nice little things here
+ And that's effectively to bring in the other long-term component, which is pine
+ cone now pine cone in action and bear in mind
+ It's important to bear in mind these work very differently
+ So if you go to AI with jack.com which is available to you in this community
+ You'll see when I go and I ask questions on the YouTube chat something like
+ Claude code tips
+ And I've sent this off what this is doing behind the scenes is calling pine
+ cone a vector database now this vector database has every single video that I
+'ve ever
+ Like recorded and it basically grabs those things on a daily basis like for
+ example even this hits pull my latest video
+ It knows these interesting stats which are very recent. This is all in a pine
+ cone database
+ So the general rule is if it's something you ever want to see we're gonna use
+ Obsidian, but if it's something we want to store along to memory
+ It's like a different memory recall because the way that pine cone works is
+ vector now the best way to understand
+ vectorization is imagine you and I in office, okay and
+ Effectively what we have is a wonderful secretary and essentially what we're
+ doing is and so we have in front of us
+ 20 bucks the harry 20 different books Harry Potter Lord brings now when we
+ speak to an AI and effectively
+ It would have all those things in its context window and it had to remember
+ everything it would make mistakes
+ It would hallucinate AI is actually hallucinate between 1 and 10% of the time.
+ They are what is known as confidently incorrect
+ The idea of rag here is that what we do with those 20 bucks is we chop them up
+ into let's say
+ Hundreds and hundreds and hundreds of different cards like this and what we do
+ is we put all those cards on a bookshelf
+ And then if we ask it a question like I don't know
+ Hey, who had the first ring or Lord of the Rings what it will do instead of
+ grabbing all the information
+ It would go to that specific
+ book
+ Case that specific draw and and bring it out so you only get that thing
+ But the key difference here is it can do semantic search. So I for example
+ could say find the
+ I'd know invisible cloak and it would look for things like cloak and garb and
+ garment and
+ You can't see so things that aren't semantically identical. It could actually
+ retrieve those things
+ Whereas with the copper copper these sort of obsidian. It's very specific the
+ AI is looking down
+ It's reasoning which structure to go down which is why it's great to have this
+ as well
+ So the way that I would bring in your pinecone here effectively the first thing
+ that you need to do is come up to pinecone
+ Okay, I'm gonna go ahead and I'm gonna grab you an API key which is signed in
+ So let me go ahead and sign it and as you can see here, right?
+ I've got all my different indexes here, which is fantastic. What you're gonna
+ do on the bottom left is pronounce API keys
+ And then you're gonna create a brand new API key and give it a specific name
+ And then you're gonna go ahead and copy that API key
+ Then what you're gonna do is come back over to Claude or anti gravity wherever
+ you're doing your conversations
+ And you're basically gonna go ahead and give it the following steps. I would
+ like you to build me a skill
+ With pinecone I'm gonna give you a pinecone API key what I would like you to do
+ with this pinecone API key
+ It's vectorized everything that exists within my kapathy obsidian folder and
+ store it in pinecone
+ Create a vault if it doesn't exist and then what I'd also like to do is build a
+ wrap-up skill
+ basically when I hit that wrap-up skill you're gonna take the entire essence of
+ the conversation and
+ Install that in a specific folder inside pinecone in addition to that
+ I also had a second skill which is to ask pinecone and in this skill is
+ basically when I ask you to do that
+ You're gonna go to this database and query it and bring back information for me
+ So what effects we're doing now is asking it to vectorize everything and then
+ the ability to ask him to retrieve that information
+ And for example, you'll then end up two wrap-up skills and two asking skills
+ So I hear for example
+ I can come down now to this chat and let's come down and have a look if I just
+ say for such a wrap-up
+ You can see I have a wrap-up skill here. One of them is for specifically
+ sending it over to
+ Pinecone, which is fantastic then I've got my obsidian wrap-up here, which will
+ do the same thing for obsidian
+ Now we can combine them together. So for example, I could say I could doubly
+ wrap up
+ So I store both locally and externally. That's a really good one to do and it
+ will just give you a different
+ Lens on it and also like other information like lots of information. It's
+ really dense
+ That you don't need to visualize you can throw into the pinecone system now as
+ you can see you could if you wanted to
+ Just do pinecone you could if you wanted to just do obsidian
+ I think if you use both it brings a different level of analysis and lens to the
+ exact same information
+ And that's how we can use pinecone to really take it to a new level and even I
+'ll come back to anti-gravity
+ Now you can see that he's still updating everything look hackers
+ Well, by the way, you can do forward slash
+ BTW and I can say hey, how are you getting on and I can ask you this question
+ without actually interfering with the
+ Process you're asking the model without stopping it doing anything that it's
+ physically doing at the moment
+ I'll come back and I'll just tell you exactly what it's working on and this
+ takes us then on to the most powerful part
+ Which is going to be the research and intelligence agent in no buck alarm if
+ you're not familiar with my column
+ It is nothing sure of frickin incredible like you can create anything you want
+ into the book alarm
+ It can search for things you can add hundreds of resources
+ Websites and just chat to it like I've got all these things to it
+ I'll say hey give me three tips for growing a YouTube channel
+ I put it in here and it's got all of this great wonderful data
+ So this is the best thing on the market right now
+ And it's completely free to research information you can even chat with this in
+ Gemini
+ You can create slide decks video overviews mind maps audio reviews. You
+ literally name it you can do it
+ And this can get hundreds of resources
+ But what's really frickin cool is the fact that we can actually take all the
+ capabilities of not buck alarm
+ And we can bring them over into called code
+ So for example if you come down here and you click on this notebook LM skill
+ I want to go ahead and download that for me
+ Okay, then come over to
+ Claude in your environment choice
+ I want to go down and upload that skill here by clicking a plus add files or
+ photos and you come down to your downloads
+ You'll be able to find it. You can upload it. Then essentially we're gonna say
+ is a blow
+ I'd like to add this notebook LM skill to my Claude code
+ That's it all the instructions exist within that skill then when you've done
+ that it will and then actually open up a browser
+ You'll sign into network LM and then that will be fully
+ Intricated then you can ask it questions like hey do me favor
+ Just what was the last notebook LM that that the last notebook in notebook LM
+ that I created?
+ Let me know that and I'll answer the question for you
+ I come over here and hit enter now
+ How does this work in our system well effectively all these systems are memory
+ systems memory and knowledge?
+ So if we want to get better as certain area
+ We may want to take all of the knowledge that we get from that book LM right
+ and we may want to add it into one of our systems
+ Look now. I need to go ahead and run this together. So I'm gonna say awesome.
+ Could you run that one for me?
+ Please
+ Because sometimes it can just run it in the chap
+ So we'll ask that to run that book at a lamp for his right here
+ It's running it for his right now, which is great and you can see in live time
+ how the whole
+ Process actually works. So it's installing any requirements or dependencies
+ that it has
+ That'll actually only have to sign into the book a lamb and then we can
+ actually see the full connection in progress
+ And so it looks like this one does want the terminal
+ So what we're gonna do is come down to views and this should be terminal
+ Just like that and then we'll just enter in
+ That command like so and it's opening up Google and then we'll just sign into
+ Google and we should be able to connect the book a lamb
+ Yeah, that's fine. That is us. Thank you very much
+ And we're going to enter in our passwords. Give me one second. All right,
+ beautiful. So now I've signed in and it's available
+ I'm gonna come back and say
+ right here
+ All done
+ They don't just validate the token and when that's validated will then be able
+ to go ahead and actually leverage network a lamb
+ But you can see just how easy it is. We just opened it up went to the command
+ Okay, so you need to double check that the authorization is cool
+ And give us a hot second
+ All right, beautiful. Let's go back and do this one more time
+ I think now we should be able to run this one and it'd be good. Oh, hit enter
+ when logged in of course
+ Let's give this one a track
+ There you go. You see now in the background. It's just validating it. We didn't
+ add an add in enter
+ That's cool. And then we'll say done and then it should be rocking and rolling
+ if not we'll just run this one more time
+ It's verifying the authorization listed notebooks and do we see it?
+ Or is refresh let me pass to find the most recent one and literally now it can
+ do all that stuff for us
+ So if I come back over here for example to my notebook, you can see I've got
+ YouTube strategy brown
+ What you would effectively do is you can come back over and you can give it
+ something like the follow so you may say for example
+ Hey, I really want to grow on instagram. I'd like you to go ahead for me and
+ find the most relevant high profile
+ Instagram strategists maybe two or three max callaway being one of them
+ And I want you to find and distill for me the best strategies in 2026 for
+ growing on instagram
+ Use authors like callaway bringing different resources and quote for me a
+ notebook that accomplishes that fact. Thank you
+ We can send that one off them
+ What this will then do is go ahead and correct that notebook for us
+ Philip full of resources and then what we can do is actually download
+ All of those resources onto our computer how freaking calls that and then when
+ it's on a computer
+ We can say hey, I now want you to add these to my obsidian system. We need to
+ add these to my pinecone systems
+ Look now it's actually doing over here a full deep research, which is freaking
+ fantastic and will absolutely crush
+ And I came over here to refresher
+ You can see instagram growth strategies is now there and then it'll start to
+ add in the resources
+ Which is freaking cool then I can literally say hey go ahead and download for
+ me all of the files from
+ Literally insert the blank and then you can be like cool all those files now
+ I want you to add to my obsidian and pinecone system
+ Then you are literally ready to rock and roll now the other thing
+ I want you to do to make your life easier here this planning
+ Feel free to leave awesome if you come over to youtube for example, let's say
+ that you have I send on bands channels if for instance
+ There's a really cool plugin this plugin here is called the notebook elm
+ extension
+ So you can open this bad boy up check this one out
+ I can add this to brave which is freaking cool. You see this one here
+ Look at this if I'm on any page. Let's say I'm on this video for example, okay
+ I'm gonna plug it real quick now look at this. I can click this notebook elm
+ button
+ Create new notebook or choose a notebook and I can pick anyone I want to that
+ is instantaneously added to my notebook
+ Another little hack is that say you want to grab everything from a specific
+ youtube channel
+ This is like the nuclear option if you hit this button
+ Basically, it'll take every video and turn it into a notebook for you so you
+ can chat to it to your complete
+ Hearts contents basically and so to recap how this beautiful memory system
+ works that we have the short term
+ We have the midterm and we have the long term and this is how pinecone is
+ working you ingest things like emails and notes
+ We're gonna embed those in terms of vectors and they're gonna store it in pine
+cone
+ So they sit in this multidimensional thing and then we can query it based on
+ how similar words are for example
+ If you imagine like a 200 dimensions and you had two words boy and girl
+ Their ratio to each other would be similar as something like a brother and
+ sister or king and queen
+ They'd be kind of differently similar if that kind of makes sense to you and
+ remember
+ This is why vectors are really important to bear in mind
+ And if you don't use a bag system in my opinion
+ I think you're leaving a lot of value on the table because remember I competed
+ in the world's first
+ Agentic competition I've left in New York to do that and I went deep on right.
+ Honestly, I was saying like rag in my sleep
+ It was crazy think about like this. Okay, you also get a ton of free credits
+ and pine cones
+ There's no cost to them. You can warrant into core code you get two indexes and
+ it's really really cheap
+ So bear in mind, it's not either or it's both you want to read and edit them
+ every by hand
+ You can create strategy notes decisions frameworks
+ Zero and from and in pinecone, you can ask and say what did I say by x by
+ meaning?
+ Not by file name. That's how cool it is now the final part of the system really
+ is all your I guess like classic intelligence
+ So if I come back over to example for Claude
+ And let me open up a new chat window now as we know we have these wonderful
+ connectors down here
+ If I click on plus I clung connectors. I've got things like a gmail, right?
+ So I can grab things but what's really relevant is meetings. So for example,
+ one of the apps that I use is something called granola
+ Uh, so I can pull these guys up. They're really really freaking cool
+ I'm gonna go ahead and just like set this one up
+ You can actually see that I've got all of this information here by my notes and
+ I can ask questions like
+ Hey, tell me the participants of the last meeting I was in give me two of them
+ All right, send that one off and see what it says
+ Now the cool event granola is on like a meeting note taker
+ This isn't a sponsored thing by the way, but unlike unlike a meeting note taker
+ Effectively, what happens here is this sits on your computer
+ So basically they don't join the call like there's nine notetakers
+ But the coolest thing is I have a granola mcp
+ So you can literally connect this by coming over and I can ask Claude
+ Hey dude, my last meeting could you just confirm who the two of the
+ participants were
+ With granola, please. Okay, send that one off and you can see now
+ I can do this. I can actually grab transcripts. I can grab anything I want to
+ and you can see how cool and valuable that is, right?
+ Because it's using the tool search
+ It's checking out various different things. It's going to go ahead and find for
+ me exactly information that I require
+ That's decent. Give that a second and just like that. It's given the
+ information. So for example, I could say hey dude
+ I wanted to grab the transcript from my last
+ Any meetings I had today and then I want you to vectorize that and put it into
+ pinecone
+ So I can give it this information, but what's cooler here is I can actually
+ zoom out a second
+ We can combine this with the skill that we learned earlier. Do you remember if
+ I come over to routines
+ I can create a new return. I can call this one. We'll make this one remote
+ doesn't need to be local. I can call this one
+ daily
+ Daily meeting sync. Okay. What I'm going to do at the bottom here
+ I'm going to come down and grab all this information here and click off a
+ little bit. I'm going to remove everything
+ except for granola and pipe trim where I have my
+ Pinecone, right and I can just say here daily sync
+ And underneath I could be like every day. I want you to go ahead
+ Check for any recent meetings if I have any new meetings that haven't been
+ stored in pinecone
+ Go ahead and store them in pinecone. Please bam just like that and pipe dream
+ is
+ basically creates an mcp for
+ Pinecone and by the way, you can even do this locally with the stuff if you did
+ this yourself
+ You go into pipe dream you connect pinecone and you're ready to go
+ Then if I clicked create on this and it says when no one that's run runs every
+ day
+ Now all my meetings are getting vectorized into pinecone or if I left this for
+ example
+ I could come and do the same thing but I could do it locally. I could store
+ them in my obsidian folder
+ And so I have this beautiful interconnected web of all the different files and
+ systems that I need
+ And I just think it's absolutely fantastic. It works that way. It absolutely cr
+ushes
+ And now we've covered all the beautiful stuff for memory. Have fun setting this
+ up
+ You are going to be ahead of honestly the fact that you've made it
+ This foreign to be training. I can tell you you are so far ahead
+ Everybody's a dot two behind you. You are you know more about memory systems
+ than an inconceivable amount of people on a planet
+ Like even AI experts don't know this much stuff about memory like you do
+ So congratulations for that. You've crossed it. Now in the next module
+ We're going to be looking at something very interesting when looking at the
+ rise of the personal AI assistant
+ You're not going to want to miss that one grab that beautiful coffee
+ Well done for today and I'll catch you inside the next one

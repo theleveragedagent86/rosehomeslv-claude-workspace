@@ -1,0 +1,781 @@
+ Hey there beautiful AI automates I hope you got that coffee ready because we're
+ going to lock in
+ I'm going to cover something super cool in level three and what might that be
+ Jack well I'm going
+ to show you exactly what we're covering today we're covering power features so
+ in this lesson
+ we're going to cover how you build a skill from scratch the skill marketplace
+ and some interesting
+ things on security so you don't get bit in the back side we're going to
+ building our own skills
+ I'm going to show you things about token management context route we're going
+ to go through routines
+ the 24/7 agent I'm going to show you hooks mcp's api cli what on earth does it
+ all mean and how
+ does it get you ahead we're going to build a custom mcp we're going to look at
+ sub-agents
+ we're going to look at autonomous critic loops and then what this batch is and
+ a few interesting
+ things on plugins so let's begin with the very first thing that I want to cover
+ today which
+ effectively is going to be this which is the power features okay so when we're
+ thinking
+ generally speaking about Claude's skills you have to bear in mind that skills
+ are the difference
+ between a joe and a pro the minor leagues and the major leagues because skills
+ are realistically
+ taking a wonderful AI agents and all this fantastic technology and turning it
+ into an actual
+ output now like with all things if we play basketball for five minutes we're
+ probably not
+ going to be done kind of Michael Jordan but if we dedicate our lives to it and
+ we get better over
+ time there is a relationship between how good the skill is and how good the
+ output is so I said
+ this skills are really a science and I'm going to teach you that science in
+ this master class and
+ you're going to make way better skills it is a huge power feature and the
+ multiple power features
+ to make your Claude agent your Claude systems a thousand times better so here's
+ the idea with
+ Claude skills is that we want to teach it properly once and then it can use
+ those skills add in
+ finitium right it basically forever we give it a very clear instruction it
+ gives us a great output
+ and then off the back of that then it just continues to work now if you think
+ about what a skill
+ actually is well what is it well a skill as you can see is a mark on file with
+ a name a description
+ and a body Claude reads a description and it basically decides if it applies
+ and if it does
+ then it will run the body so for example you will add multiple skills in your
+ ecosystem whether
+ that's in anti-gravity vs code the Claude app or codex and when you're
+ naturally having those
+ conversations Claude will basically say hey I think I should probably call the
+ such and such skill and
+ it will invoke that skill and then run off the script for example this very
+ html presentation
+ is a skill so I say hey building presentation it says oh Jack probably wants
+ that thing so that's
+ technically how the skill actually works so wonderful skill for you to know is
+ the fact that there are
+ actually skill marketplace so in our community for example we actually
+ ourselves have lots of
+ wonderful skills that we've vetted that are fantastic so for example if you
+ come to the classroom
+ you come down here to Claude skills you can see a good collection of them here
+ so check to see
+ if there's any that you need well you can also do if you want to is actually
+ come over to AI with
+ jack.com and you can speak with Jack but hey there I'm looking for a Claude
+ skill that does x okay or
+ whatever the thing is and it can recommend even better community search ask
+ your questions here
+ so for example I might say something like uh LinkedIn automations right now
+ this will take me
+ through to anything LinkedIn automation related and I can toggle off various
+ different things if I
+ need to these will be posts this will be stuff in the classroom and you can get
+ those resources
+ in addition to that what you can also do if I show you here is I've got four of
+ the most popular
+ skill resources for Claude skills ever right so you can literally come down
+ here and look at all
+ the different skills that you've got right this has a load of skills this is
+ the I think this one is
+ the anthropic um official one actually 130 000 stars awesome you have vault
+ agent loads of great
+ skills you can see if there's any specific ones these are just official skills
+ pulled from all
+ these different resources that already exist we have Obra superpowers this one
+'s fantastic this
+ one's got loads and loads and loads of skills lots of design stuff and then you
+ have this one here
+ also so you can basically check to see is there a skill that already accompl
+ishes the thing that
+ I'm trying to do and if so look at her test it and then improve it and get it
+ to the point where
+ you're super happy with those so we have those things available at our disposal
+ whenever we need
+ to and there's also this website here which is skills directory that will help
+ you find skills
+ so I could come here and type in SEO for example if I want to find an SEO skill
+ we'll take a good
+ look to see what pops up after we do a little bit of a search and then as you
+ can see we can see
+ all of the SEO optimization skills that exist now key thing for bear mind is
+ that github stars
+ and safety are not necessarily the same thing because you can hack quote un
+quote github stars so
+ the bigger a repo is the more stars it's got generally speaking means that it's
+ more reputable
+ but it's not a guarantee so just bear that amount so what I want to do now I'll
+ show you how you
+ actually grab and implement a skill that you would like so let's say for
+ instance that I want to
+ take a look at these vault skills like some how would I go ahead and do that so
+ I've got these
+ awesome agent skills well what I can do is we click on the code and we come
+ down and click on
+ copy then we head over to basically Claude code which is going to be available
+ over here in the
+ Claude app once we open that bubble up I know what we can say is hey do me favor
+ go and clone this
+ repository and just give me a list of the available skills in it please okay
+ and then I'm going to
+ send this one off do a control V and then let this work it's magic I want you
+'ve done that it now
+ has access to all of those skills now they won't be added to your skills you
+ can always check your
+ skills here by doing a forward slash and then you can type in the name of the
+ skill and then
+ that skill appears and then you can go ahead and use it so let's say for
+ example I want to try
+ out one of these skills why don't we do the brand guidelines skills I might say
+ hey tell me
+ about the brand guidelines skill I'd like to know about it and then I would
+ like to go ahead and
+ use that please okay I'm going to send that one off and then basically just
+ have a conversation
+ with it and figure out if it works now I never take a skill off the shelf and
+ do nothing with it
+ I like to test it I like to see what it's about and then I kind of amend it to
+ my own personal
+ circumstances um you'll find if it's a good skill it would have been tested
+ many times that the
+ skills that I release are battle tested because I've actually used them I haven
+'t just said hey
+ generate me a skill for this this isn't this I use it that's how like skills
+ that haven't been
+ tested or paper thin basically you want ones that have been battle tested which
+ is why a lot of
+ times you either build them yourself or get it from a trusted place or check it
+ out if you like to
+ so then now this is basically tested at our clothes assessor and since it's not
+ a great one and then
+ we can use this skill instead so now we've got that lockdown let's actually go
+ ahead and try
+ one of our skills so how would we create well check this one out I'm going to
+ say hey that I
+ would like to create a skill with you what I'd like to create is a bit loose sc
+um so I would like
+ a process in which I give you a URL and then you're going to convert that URL
+ into a bitly link I know
+ a bitly skill already exists but for the purposes of this demonstration just do
+ me favor delete that
+ and let me know when you're ready for my bitly API key okay and I'm going to
+ send that one off
+ now to build a skill we have to think about what are the connections that are
+ required okay so
+ it's going to delete an existing skill so I can show what that looks like well
+ we need to do that
+ for this one and in fact this is a really cool skill because basically whenever
+ I put your URL
+ when I share links you don't want like a thousand characters you want it to be
+ short and crisp
+ and when you're in Claude code or any of the different systems we can use these
+ skills so
+ for this one we would need an API connection to bitly for some skills like
+ research maybe you
+ wouldn't need it maybe you would but interesting thing here is that you can
+ affect you to go ahead
+ and just grab anything that you want to so in this one here I'd come to bitly.
+com forward slash
+ that thing forward slash API I enter my password then I generate a token then I
+ come back over to
+ Claude and say hey with this API key go ahead and create for me this skill okay
+ so no maths complete
+ hard when it works well if we do forward slash and we do bitly now here's the
+ thing you don't
+ have to necessarily do this you can just say shortens URL so I'll say hey
+ shorten the URL
+ glido.com okay and I'm going to send that one off and if this bitly skill works
+ we should now
+ get a short version of glado.com and we'll see this will work because I know
+ what I'm doing here
+ and then we click on this and then this should take us down to glado.com it
+ does
+ it's worked perfectly and you don't necessarily have to do the slash command
+ but it's obviously
+ 99 times it will know but one out of 100 it won't so typically speaking it
+ shouldn't
+ them but that's how effectively you build a skill and any skills that you have
+ basically you can
+ forward slash now here's a cool thing if you're going to a different model you
+ can give it a
+ prompt like this hey I want to save all of my skills on my desktop at Claude
+ skills with instructions
+ and all the details about their skills so that I can take it to a different
+ environment now if
+ you were using say for example codecs or anti-gravity or whatever it is and you
+ wanted to use those
+ skills anywhere we can just get a copy of them and bring them over if for some
+ reason you don't
+ want to do in this workspace just so the next model is exactly what those
+ skills are so in the
+ next power feature really comes down to the right model for the right job and
+ sometimes guys what
+ you'll find is that you're using opus 4.6 or 4.5 or whatever for a job that
+ could be done with a
+ lower quality model and it is costing you so much more money for example deep-
+seek is over 100 times
+ cheaper than opus 4.6 I mean I use deep-seek no but it's just to explain that
+ you can get 95
+ 98 percent of the performance for a fraction of the cost for example we don't
+ need Albert Einstein
+ to mop our floors he's probably better in a classroom right with some chalk and
+ some white
+ boots so we don't need him to do that so let's not use a bazooka to open a door
+ that's how you
+ really start to leverage and get your tokenomics the token economics way
+ further by doing stuff
+ like that right really really important it can save you a ton of money
+ especially when you build
+ systems for clients now what I often do when I'm building anything for clients
+ or any my own
+ systems is I use open router the beautiful thing about open routing is when you
+ connect open to
+ your projects what you can effectively do is build logic in about which model
+ it's using when so I
+ might say something like look for all conversations and in fact there's just
+ even the case with AI
+ with jack here the chat functionality it uses the latest sonnet model not opus
+ because
+ there is no additional real performance between sonnet and opus in its context
+ I found
+ but then you know if I'm doing certain things like vectorizing models you don't
+ need opus 4.6
+ to do that you can use a much simpler model that you're not running all the
+ stuff through so
+ that's going to save you a lot and it'll help you scale and especially in
+ thousands of thousands
+ of messages it's a really important process to bear in mind the next power
+ feature really to
+ understand here is what we call context rot now the key thing to bear in mind
+ here is that
+ every conversation has a cliff just like if you and I was sat in the kitchen
+ talking you know
+ having a great time having a conversation there's a certain point right certain
+ number of hours
+ where you know we'd probably stop making sense because we've been talking for
+ 29 hours right so
+ it's like what we would want to do is like end that conversation have like a
+ beautiful sleeve
+ get some beautiful coffee and chat again AI is kind of a difference but
+ obviously it's kind of
+ done on a massively sped up scale so what you have to remind is it like roughly
+ speaking
+ the longer the conversation the worse of performance now interestingly here's
+ something that most
+ people will not tell you and most people don't really know this actually but if
+ I create a new
+ session and show you this in any conversation and in fact if I even come back
+ you can in any window
+ do forward slash context okay so context will tell you basically all the
+ context that is using
+ the context window so see this 113,000 tokens what does that mean and it gives
+ you breakdown
+ here which is really important to understand what it means is every single
+ thing if I say
+ hey Claude what's the weather Claude sends 113,000 tokens which is around about
+ 90,000 words okay
+ worth of all the history of us talking about MCPs and Bitly and glider and
+ different skills
+ then it says oh yeah by the way what's the what's the kind of weather it's it's
+ got nothing to
+ do with what we're talking about so if it's not context that builds on the
+ existing point
+ clear the window or create a new thing so you can see here messages is 67,000
+ tokens
+ are MCP tools with 22,000 and even MCP tools quietly eroding our context window
+ it's crazy
+ it really is crazy so what would we do well what we could do is a couple of
+ things the first thing
+ we could do is compact this is saying look the context one is getting big but I
+ do need you to
+ retain the core information so I might say compact like so all right and what
+ this will do is take
+ all of the existing conversations and kind of scrunch it down it kind of says
+ like well okay
+ there's 100,000 tokens I could probably succinctly cut the fat out of that and
+ get it down to 5,000
+ tokens or 3,000 tokens keeping only the important things that we need so that's
+ if you need the
+ pre-existing context if you don't what you can do and you don't and for some
+ reason you don't
+ want to go to a different window you can come down you can afford slash clear
+ and this will delete
+ everything there's a kind of like clear the window brand new fresh slate and we
+ can continue
+ the conversation if you want to what's the difference between doing clear and
+ opening a new tab nothing
+ it's basically the same thing it makes no difference so you can see where all
+ your context is going
+ now for example even if I show you this right if I come over to google for
+ example right
+ and you can see this in practice if I say relationship between performance and
+ tokens and
+ you're going to see this live right but come over here and I show you images
+ there's going to be
+ a thousand graphs that show you this you see this we don't like this kind of
+ direction right this
+ direction everything will show you the actual like direction of how performance
+ gets worse it's
+ called context rot that's basically what's happening here and why it's getting
+ so bad as you go
+ through the whole system because it just gets worse and so the takeaway here is
+ a short focused
+ session on one task one window when that's done you get relevant the other cool
+ thing that you're
+ not going to really hear anywhere else which is like one of the biggest hacks
+ ever is that
+ you wanted to get it correct on the first shot in other words you should never
+ when you're
+ talking to any AI model be in a position where you're saying well you're giving
+ it further
+ context you shouldn't be actually what I mean what I meant to say was blah blah
+ blah or actually
+ that's not quite right blah blah blah you want to one shot it like the closer
+ to your objective
+ your first prompt gets you the better so in other words you want your first
+ prompt to be like
+ the most it's the most important prompt by far out of anything else like get
+ that in fact if it
+ takes you four or five prompts to get to the point I would literally say great
+ give me this prompt
+ back such that if I were to enter this into a new window it would understand
+ and then take
+ it and then do a new session that's how important your first prompt is it's by
+ far the most important
+ prompt because what happens is and this is also the case with design it goes
+ down the road and
+ it just you can't bring it back it gets frameworks in its mind it gets systems
+ in its mind it starts
+ to solidify and when you're saying actually I want it to be this I want to
+ completely what we call
+ refactor the whole situation you're basically going to burn a crazy amount of
+ tokens just to try and
+ get a worse version then had you reset the conversation in the first place so
+ the key is
+ use these commands and don't basically pray to contact her on so let's talk
+ about routines what
+ are routines and how did it work well a routine in this case was another power
+ feature it's basically
+ if we're doing something okay and we're like actually I quite like this I'd
+ like this to happen regularly
+ we can click on a routine which is really freaking cool now if I want to create
+ a new routine all I
+ do is I come here to new routine and I have two options I have a local and I
+ have remote what does
+ that mean Jack remote is think of this in a slight way kind of like na10 and
+ back.com but it's just
+ the agent so if I say I want a remote routine okay I could come down and call
+ anything I could call
+ it again code review and I might say hey go through all the publishers I've
+ made this day and just
+ check to make sure they're all cool awesome and they can come down I can pick
+ my connectors I could
+ if I want to do this one which is this I would like to check all of my emails
+ my inbox and anything
+ that does not have a response or a draft to it that's unopened draft me a reply
+ to it please okay
+ and I'll call this one auto reply all right in fact why don't we call this one
+ something like gmail
+ right gmail reply right cure in fact gmail draft reply sweet cool and then of
+ course guys want
+ savages so of course we're going to use a little bit of an emoji to make a life
+ a little bit easier
+ which is cool and then we can do schedule so when we want this to happen we can
+ save runs daily at
+ nine GST which is cool I could say daily whatever you want to do that then we
+'ve got connectors so
+ anything that Claude is connected to is there now personally speaking one
+ principle you always
+ want to bear in mind is the principle of minimal access which means that people
+ and AI and systems
+ only have access to the exact things that they need to why well because if I
+ give the keys to
+ kingdom to every AI it probably won't fail but at some point it might it might
+ go hey why I do
+ something you shouldn't do so what we do the only thing this needs access to is
+ gmail nothing
+ else that's it so I'm going to revert its access to everything else it doesn't
+ need anything else
+ in this case get rid of all of it obviously zap is really cool come down click
+ on create
+ what does this mean means every day at nine it will go ahead and run that for
+ us really freaking
+ cool I love that I can even run it now if I want to which is great and let me
+ just minimize the
+ screen so you can see and get just like that we can run now so that effectively
+ is a routine
+ that's going to happen whatever now here's another call what I can do a new
+ routine I can do local
+ or what does local mean well local just gives it the ability to do stuff on
+ your computer so I
+ could say organize my desktop every day so it's clean or I could say go over
+ here and do this
+ and do that it's using this the stuff that's local on your computer and
+ obviously your computer
+ needs to be open and working so if you look like a kind of a Mac book or
+ something that's fantastic
+ but it's the exact same process now if you're using co-work of course it's
+ called something
+ different in co-work in fact it's scheduled so you schedule tasks just like
+ this autodraft emails
+ blah blah you can see I've disconnected this it doesn't work but you get the
+ idea that's how
+ that all connects together so the bottom line is that we can schedule the agent
+ and it will work
+ for us in the background which is wonderful so let's just basically summarize
+ what we've done what
+ happens before we have a trigger event this could be something external that
+ actually calls it within
+ core which is cool so for example if I come back over and I come over to
+ routines and I click on a
+ new routine you can see if I do a let's just do a remote one when I actually
+ create this I can have
+ an API trigger it which is cool which basically means when something fires
+ against that this thing
+ will trigger for us so for example I might have a form or a website where
+ somebody fills out some
+ information right and I might call this one something like new client enquiring
+ okay then I
+ might say something like hey you're going to get information from a client who
+'s enquired for my
+ services on my website once you get that I want you to take their email and
+ draft them an email
+ form it all right then why don't you go ahead and book some time in at a
+ convenient time for me
+ between nine and five in my time zone and we're going to send that off now I
+ just give it an
+ access to a couple of things I'm going to give access to my email actually I
+ might also give it
+ access to fire crawl actually so I can do some cool research and then let's go
+ ahead and remove
+ everything else we don't need so effectively what we'll do now we got this call
+ with the API you
+ complete this process you get the API key and then you share that and embed
+ that in that system
+ and then that's going to fire off and effectively once I create this you'll see
+ right now when we
+ get this whole thing done I can copy this all right which is decent and it's
+ post then when I create
+ a system all I'm going to do is give it that key and say great I want to send
+ the information
+ here and when I run this for example then it will literally basically the way
+ to think about this
+ is it's not to a communication this is one way only which means that you send
+ information and
+ then I cannot ask questions back so one thing I like to do at my instructions
+ is you are unable
+ to reply to the API call you must only action it okay and just make sure you
+ save it that way
+ then this will be able to create a count appointment an email and you'll be
+ ready to rock and roll
+ that's how freaking cool these things are they're they're literally they can
+ take inbound and in
+ some respects they do replace make.com and an attempt for those kinds of things
+ so that's what's
+ going on here so we have a trigger event that could be your timing could be an
+ external call
+ could be anything we've got our guard rails in there it's then basically going
+ to look at
+ record running everything for us and then it'll it'll complete. Now the next
+ power score really
+ is understanding the difference between three key things a CLI command line a
+ API call and an
+ mcp oh my gosh Jack what the hell is this about well think of an mcp as model
+ context protocol
+ it is if you like to think of it like this a universal remote control that lets
+ Claude talk
+ to other things that's it and let's just go to these one by one and we're going
+ to build one of
+ these together so think about like this it's one protocol for every tool plugs
+ into that's an mcp
+ gmail postgres likes drive notion you name it and all Claude does is just call
+ it like a function
+ and gets all the information back now the command line is fantastic so a
+ command line is something
+ that you can connect to directly from Claude so for example if you count
+ everything should go
+ straight to the command line it's token efficient I could say connect to the
+ github command line
+ interface and what that basically means is I don't have to worry about API keys
+ I just connect directly
+ to get up and they can do anything in github you can have a versatile CLI you
+ can have a github
+ CLI which means that you can post and host directly without worrying about
+ anything and all you do
+ is just authenticate with the token that's it it is absolutely the best thing
+ the program runs
+ locally it's direct it's manual no automation absolutely awesome and the gold
+ standard then we
+ have API endpoints so your code basically calls another service over the
+ network it's program to
+ program our call basically if you had a youtube API I might send something to
+ the youtube API and
+ it would turn a lot of interesting stuff and then we have mcp's which a model
+ context protocol so
+ the model calls the API through a standard protocol so think about it like this
+ why would I have an mcp
+ instead of an API well let's say that we wanted to call the youtube API because
+ I wanted to know
+ as if for instance on a video that I did I've become on bands channel here for
+ example I wanted to
+ find out say I wanted to get the views on this video right if I call the API
+ the API has a very
+ set response and it's going to and let's just say for example there could be 20
+ different
+ different configurations like views do you want you know comments from all the
+ comments five
+ comments 10 comments do you want to know this information that information it's
+ very very on
+ it's on index and out of control what an all the mcp is is like a wrapper so if
+ you think of the
+ API key like the cards the mcp is the thing around it that just organizes it
+ and only gives us the
+ things that we need and we basically tell it how to behave it's it's a behavior
+ thing it's very very
+ very cool so let's go in and explore a little more detail an API is what humans
+ wrote so that
+ machines can talk to other machines and mcp is what anthropic wrote so models
+ can talk to these
+ apis without you why writing the glue behind it all right so think about it
+ like this you have
+ all these things and mcp hosts in the middle right so anthropic open source mcp
+ at the end of 2024
+ and by 2026 every serious tool has an mcp server it just helps them communicate
+ better
+ you don't write integrations anymore you just simply list them all right so
+ what we can do
+ with that is give clutter window into your business so why don't we go ahead
+ and use youtube as an
+ example mcp and then we can go through and i can just show you exactly what
+ that looks like all
+ right so if i come back over to Claude i might say something like this i can do
+ chat i'm gonna say
+ hey there i would like to create a youtube mcp you on the system have a youtube
+ API key
+ just give me a list of the different functionalities that you have and then i'd
+ like to go ahead and
+ create for me a local mcp with that please one that would be the most viable
+ for me based on
+ everything you know about me now the best way to think about this is where an
+ api lives an mcp
+ also lives so think of an api as the that direct connection an mcp you're going
+ to be instructions
+ rules that sit around that if you want to get one of these by the way all you'd
+ ever have to do
+ is come over to console.google.com and you can literally grab all of your
+ different youtube
+ api keys it's a slightly different website i grab so if this is the website
+ head console.Claude.google.com
+ and you can search for youtube data api v3 which is really cool and all the
+ different google things
+ it's outside the tutorial but basically this is where you would get it and all
+ you would do is
+ come down to credentials on the left hand side if you want to get your youtube
+ api key
+ just come over here to i think it's just create credentials create api key api
+ key v4
+ come down click on create and then you'll get the key and you can just give
+ that over to Claude if
+ you want to and as you can see now now we have an existing mcp which is
+ freaking awesome
+ so we're going to do a local mcp which gives us channel stats all this sort of
+ stuff i'm
+ going to say sounds great go ahead and build it for me please now why this is
+ really cool
+ is what we can do is have this local which means it's just on your computer
+ but if we for example had a team and they wanted to go ahead and grab that
+ stuff what we could do is
+ is host this mcp online we could host it on railway we could host it on various
+ different
+ places like pipe dream mcp is really cool example of that right so basically
+ now everybody can access
+ our api key without actually having the api key because they just go through
+ the mcp
+ and the cool thing about the mcp and i'm getting very like technical about this
+ but it's kind of a
+ cool or mini power feature here is that it's going to save you so much on
+ tokens because you're not
+ having to go through and read everything it just just knows the actual function
+ it's a super duper
+ clear for the actual model and whilst this is working in the background i want
+ to come over and
+ really touch on the next power feature because it's going to link in quite
+ nicely with this
+ so let me come down and share what this is and of course there's actually the
+ ability to use
+ you know i've guessed it sub agents so when we talk about sub agents okay and
+ you can see here i've
+ got a critically i'm going to go into that in a second okay is that we can have
+ a cool parallelization
+ say that five times i dare you but think of it like this rather than having one
+ agent do a task
+ wouldn't it be quicker if we use a wonderful world called delegation which is
+ we bring in a
+ second third fourth agent each with its own complete context window they can go
+ and do different
+ tasks for it so for example if i'm building a new project i might say i want
+ you to do task a
+ but actually go ahead and quote for me three sub agents one is going to think
+ about x the
+ second is going to think about y and the third is going to think about z by
+ using this parallel
+ agent pattern we can accomplish work way faster because we're all working on
+ different things
+ together now we can use this strategy for a couple of different ideas for
+ example one thing
+ i could do is say hey there i want you to do some research on the best place in
+ the world to live
+ and i want to create three sub agents sub agent number one is going to look at
+ it from a financial
+ taxation point of view for a guy in his early 30s the second agent is going to
+ look at it from a
+ longevity perspective so which is going to be best for my long term health and
+ um your social
+ community health and the third one is going to look at it from a holistic or
+ angles point of
+ view considered all from my point of view and your job is to look at all of
+ them and give me a
+ condensed view and also have as many iterations as possible so send that off
+ for example
+ this is an example of what we would call internal critics uh basically where
+ all these sub agents
+ are fighting each other uh looking at different agents so not so much fighting
+ each of them
+ but they can all look at it through different lenses so i'm looking at it from
+ a health lens
+ i'm looking at it from xyz lens so we cover more that way and the time is the
+ same so rather than
+ doing a step after step after step that's four times as long this all happens
+ at the same time
+ and honestly the best results i ever get from ai leverage these sub agents here
+ another example
+ might be hey you know i would like you to focus on redesigning let's say for
+ example that you and
+ i are working on ai with jack.com right and let's just say we have up here for
+ a moment i might have
+ one agent that's working on the chat and i might have a sub agent that's also
+ working on researching
+ how we can prove xyz or an agent does abc now typically speaking your sub
+ agents should be
+ focused on the same topic but just doing that same topic faster if it was
+ something different
+ like someone was working in community search and one was working in youtube
+ chat that would be
+ two separate conversations only when the context is relevant do i have sub
+ agents so that's a really
+ important thing to understand the context of ai news versus youtube chat is not
+ really relevant
+ right so we're going to kind of look at various different things based on that
+ so that's just a
+ really important thing to bear in mind and i'm actually really interested in
+ knowing what
+ the answer to this question is so basically we'll have these agents battle out
+ and that's how we
+ can use these sub agents to basically accelerate anything that we're doing and
+ now you can see that
+ this custom mcp is complete fantastic and then you can literally say awesome
+ how do i call this
+ custom mcp in conversations and can just bullet for me in emojis why this mcp
+ is better than calling
+ the youtube api directly and it will literally tell us and give us that
+ information because
+ if you ever don't understand anything you can ask lord you can ask our
+ community you can ask ai
+ with jack and actually it's just a really fantastic way of breaking down and
+ explaining to you
+ exactly how to use this and as you can see now we just ask and it does it so
+ why this beats an
+ api call no endpoint memory task ask in plain english i don't have to redrive
+ all the details
+ every time one hop pass results persistent across sessions transcriptions
+ bundled in key
+ states local so we're not sending anywhere faster than using pipe drinks it's
+ direct
+ compresses with other tools which is fantastic and we can leverage it and stack
+ it and then we
+ also own it which is really freaking awesome so with that mind that really
+ takes us on to i guess
+ the build on this which is the autonomous critic loop this idea of claud grades
+ clords work because
+ if you tell claud create something that's one thing but then if you say claud
+ review it
+ it's something completely different so i like to bring this critique agent in
+ and i want to take
+ it one step further by actually using gemini so what i want you to do now and
+ is create a new
+ session and say hey there dude do you have the gemini cli activated or the chat
+ gpt cli activated
+ if you don't go ahead and get that set up for me now what's really cool here
+ is we can do this critique loop with different models because then we're
+ bringing in different
+ things now codex review is a really wonderful one so we've got codex setup for
+ example i know this
+ because if i do four slash codex it should appear that codex setup is that cod
+ex rescue codex
+ everything right so what you can do here is i can say something like hey i want
+ you to come with an
+ idea of you know for example a the best cheesecake recipe you can think of and
+ then i'd like you to
+ have codex to review that recipe and then give me the output based on that no
+ in reality we're
+ not going to be looking at cheesecake recipes or maybe we love cheesecake but
+ when i built for
+ example this dashboard recently i was called operating system i had codex
+ reviewing everything
+ all the time i'd say create critique agent review it yourself and when that's
+ done i want you to
+ bring in tag and codex with a fresh perspective to come and check it myself so
+ it's leveraging
+ everything together they can also get gemini to do the exact same thing the
+ more fresh pairs of
+ eyes on a topic the better and in fact i never ship code without it without
+ without it being
+ externally reviewed that's an absolute standard for me it never ever ever
+ happened so you can see
+ now codex reviewing in the background our beautiful recipe maybe it's got a
+ better cheesecake recipe
+ maybe that's a video maybe we create these togethers and see what we think but
+ you get the idea that
+ we tag in different models for anything we're building to get way better
+ results and then the
+ final power feature is something we called plugins okay so plugins basically if
+ you think about it like
+ this are a series of skills and instructions come together now my honest view
+ on plugins is i don't
+ use them a lot because i tend to snipe my skills but if you had a large team
+ and you wanted to kind
+ of have a standard way of doing things if for example you can see to click on
+ the plus here i can
+ click on plugins and i have various different plugins that exist right you can
+ see these i can
+ even click on manage plugins connect apps create new skills do loads of
+ different things this is
+ for example i might have a youtube plugin and that youtube plugin might have
+ ideation and scripting
+ and intros and hooks and it brings all of these different things together so if
+ you've got the
+ time in mind to use those plugins you can do and it connects them all together
+ but just knowing
+ that it exists and sharing this because basically plugins are portable you can
+ actually share plugins
+ with your team so if i had to announce my team who needs to do all the same
+ stuff i can actually go
+ ahead and share that with them but these are honestly the biggest series of
+ power features
+ that you're going to need to absolutely completely crush it with Claude code and
+ then we've covered
+ that the next thing we're going to do in the video that we're releasing
+ tomorrow is go into
+ our memory systems we're going to look at the three levels of memory notebook a
+ lamp pine can
+ granola csv we're going to be looking awesome at obsidian so get ready for that
+ one get your
+ coffee ready and a limited home finance video inside the community and i'll
+ catch you inside the
+ next one

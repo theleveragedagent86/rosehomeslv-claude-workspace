@@ -1,0 +1,87 @@
+{
+  "palette": "v2-ember",
+  "label": "Ember",
+  "mood": "light-first, warm, maximum hue tension against teal",
+  "status": "proposed, not adopted",
+  "proposed": "2026-08-19",
+  "supersedes": null,
+  "note": "v1 tokens.css remains the shipping palette until Ryan adopts one of these.",
+  "colors": {
+    "bg": {
+      "hex": "#FBF7F0",
+      "role": "primary surface, paper"
+    },
+    "bg-2": {
+      "hex": "#F1EDE7",
+      "role": "sunken fill, table rows, inset panels"
+    },
+    "bg-inv": {
+      "hex": "#0A2028",
+      "role": "inverted surface, near-black teal"
+    },
+    "line": {
+      "hex": "#E6E1D8",
+      "role": "hairline and divider on bg, non-text"
+    },
+    "structure": {
+      "hex": "#0B3D4A",
+      "role": "heritage teal. Headings, chart bars, structural fills"
+    },
+    "ink": {
+      "hex": "#0A2028",
+      "role": "primary text on bg"
+    },
+    "ink-2": {
+      "hex": "#3B6472",
+      "role": "secondary text on bg"
+    },
+    "ink-inv": {
+      "hex": "#FBF7F0",
+      "role": "primary text on bg-inv"
+    },
+    "accent": {
+      "hex": "#FF5F2E",
+      "role": "primary accent, ember. Fills and buttons only, NEVER text on bg"
+    },
+    "accent-on": {
+      "hex": "#0A2028",
+      "role": "text placed ON accent. Not white, white is 3.03:1 and fails"
+    },
+    "accent-txt": {
+      "hex": "#C43708",
+      "role": "accent used AS text on bg or bg-2"
+    },
+    "accent-2": {
+      "hex": "#F0A500",
+      "role": "secondary accent, amber. Numerals and highlights on bg-inv"
+    },
+    "accent-2-on": {
+      "hex": "#0A2028",
+      "role": "text placed ON accent-2"
+    },
+    "accent-2-txt": {
+      "hex": "#8F6103",
+      "role": "accent-2 used AS text on bg or bg-2"
+    }
+  },
+  "contrast": {
+    "ink_on_bg": 15.73,
+    "ink-2_on_bg": 6.05,
+    "ink-2_on_bg-2": 5.54,
+    "ink-inv_on_bg-inv": 15.73,
+    "accent-on_on_accent": 5.54,
+    "accent-txt_on_bg": 5.05,
+    "accent-txt_on_bg-2": 4.62,
+    "accent-2_on_bg-inv": 8.07,
+    "accent-2-on_on_accent-2": 8.07,
+    "accent-2-txt_on_bg": 5.07,
+    "accent-2-txt_on_bg-2": 4.64,
+    "structure_on_bg": 11.04
+  },
+  "type": {
+    "font-head": "\"Poppins\", \"Futura\", \"Avenir Next\", sans-serif",
+    "font-body": "\"Inter\", -apple-system, \"Helvetica Neue\", sans-serif",
+    "track-head": "-0.03em",
+    "lh-body": "1.55"
+  }
+}

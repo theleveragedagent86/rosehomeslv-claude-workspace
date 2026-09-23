@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How to Use the Open House Lead Reconnection Prompt</title>
+<style>
+  :root{
+    --cream:#F5F2EB;
+    --teal:#04404C;
+    --teal-soft:#0B5563;
+    --gold:#C48424;
+    --gold-light:#E8A030;
+    --ink:#173038;
+    --sage:#C0CCCC;
+    --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  body{
+    font-family:-apple-system,"Helvetica Neue","Segoe UI",Arial,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.5;
+    font-size:14px;
+  }
+  .page{
+    width:8.5in;
+    min-height:11in;
+    margin:0 auto;
+    padding:0.7in 0.75in 0.55in;
+    background:var(--cream);
+    position:relative;
+  }
+  .page + .page{page-break-before:always;}
+
+  /* Header */
+  header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:3px solid var(--teal);
+    padding-bottom:16px;
+    margin-bottom:22px;
+  }
+  header img{height:52px;width:auto;}
+  .kicker{
+    text-align:right;
+    font-size:10.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:700;
+  }
+  .kicker span{display:block;color:var(--teal-soft);font-weight:600;letter-spacing:0.08em;margin-top:2px;}
+
+  h1{
+    font-size:30px;
+    line-height:1.12;
+    letter-spacing:-0.02em;
+    color:var(--teal);
+    font-weight:800;
+    margin-bottom:8px;
+  }
+  h1 .accent{color:var(--gold);}
+  .lede{
+    font-size:14.5px;
+    color:var(--teal-soft);
+    max-width:6.3in;
+    margin-bottom:26px;
+  }
+
+  h2{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    color:var(--gold);
+    font-weight:800;
+    margin:24px 0 12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  h2::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,var(--sage),transparent);}
+
+  /* Need row */
+  .need{
+    display:flex;
+    gap:14px;
+    margin-bottom:6px;
+  }
+  .need .chip{
+    flex:1;
+    background:var(--card);
+    border:1px solid #E4DFD2;
+    border-left:4px solid var(--gold);
+    border-radius:8px;
+    padding:12px 14px;
+  }
+  .need .chip b{color:var(--teal);display:block;font-size:13.5px;margin-bottom:2px;}
+  .need .chip span{font-size:12.5px;color:#4a5b60;}
+
+  /* Steps */
+  ol.steps{list-style:none;counter-reset:step;margin-top:4px;}
+  ol.steps > li{
+    counter-increment:step;
+    position:relative;
+    padding:12px 0 12px 52px;
+    border-bottom:1px solid #E7E2D5;
+  }
+  ol.steps > li:last-child{border-bottom:none;}
+  ol.steps > li::before{
+    content:counter(step);
+    position:absolute;
+    left:0;top:11px;
+    width:34px;height:34px;
+    background:var(--teal);
+    color:#fff;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:15px;
+  }
+  ol.steps > li b{color:var(--teal);font-size:14.5px;}
+  ol.steps > li p{font-size:13px;color:#43555a;margin-top:2px;}
+
+  /* Output card */
+  .outputs{
+    background:var(--teal);
+    color:#EAF1F0;
+    border-radius:12px;
+    padding:20px 24px;
+    margin-top:6px;
+    break-inside:avoid;
+    page-break-inside:avoid;
+  }
+  h2{break-after:avoid;page-break-after:avoid;}
+  .tip,.why,.need .chip{break-inside:avoid;page-break-inside:avoid;}
+  .tips{break-inside:avoid;page-break-inside:avoid;}
+  .outputs h3{
+    font-size:12px;text-transform:uppercase;letter-spacing:0.14em;
+    color:var(--gold-light);margin-bottom:14px;font-weight:800;
+  }
+  .outputs .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 26px;}
+  .outputs .item{display:flex;gap:10px;align-items:flex-start;}
+  .outputs .letter{
+    color:var(--teal);background:var(--gold-light);
+    min-width:22px;height:22px;border-radius:5px;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:12px;margin-top:1px;
+  }
+  .outputs .item b{color:#fff;font-size:13px;}
+  .outputs .item span{display:block;color:#B9CBCB;font-size:11.5px;line-height:1.35;}
+
+  /* Tips */
+  .tips{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:4px;}
+  .tip{
+    background:var(--card);
+    border:1px solid #E4DFD2;
+    border-top:4px solid var(--gold);
+    border-radius:8px;
+    padding:13px 15px;
+  }
+  .tip b{color:var(--teal);font-size:13px;display:block;margin-bottom:4px;}
+  .tip span{font-size:12px;color:#4a5b60;}
+
+  .why{
+    background:#EDE7D8;
+    border-radius:10px;
+    padding:16px 20px;
+    margin-top:6px;
+    font-size:12.5px;
+    color:#3c4c50;
+  }
+  .why b{color:var(--teal);}
+  .why .names{color:var(--gold);font-weight:700;}
+
+  footer{
+    margin-top:26px;
+    padding-top:14px;
+    border-top:2px solid var(--sage);
+    display:flex;align-items:center;justify-content:space-between;
+    font-size:11px;color:var(--teal-soft);
+  }
+  footer .brand{font-weight:800;color:var(--teal);letter-spacing:0.02em;}
+  footer .tag{color:var(--gold);font-weight:600;}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <img src="logo.png" alt="The Leveraged Agent">
+    <div class="kicker">Open Houses Module<span>Quick-Start Guide</span></div>
+  </header>
+
+  <h1>How to Use the <span class="accent">Open House Lead</span> Reconnection Prompt</h1>
+  <p class="lede">One prompt turns a forgotten open house sign-in sheet into a full, ready-to-send follow-up plan. It interviews you first so every message sounds like you, in your market, then writes the whole buyer-first sequence for you to copy and paste.</p>
+
+  <h2>What you'll need</h2>
+  <div class="need">
+    <div class="chip"><b>Claude or ChatGPT</b><span>Either one works. The prompt is written to run on both.</span></div>
+    <div class="chip"><b>A photo of your sign-in sheet</b><span>Snap the open house feedback form on your phone. Handwriting is fine.</span></div>
+    <div class="chip"><b>Two minutes to answer</b><span>It asks a few quick questions about you and the lead, then builds the plan.</span></div>
+  </div>
+
+  <h2>The five steps</h2>
+  <ol class="steps">
+    <li><b>Copy the prompt.</b><p>Open the "Open House Lead Reconnection Prompt" file and copy everything inside the box.</p></li>
+    <li><b>Paste it into Claude or ChatGPT.</b><p>Start a new chat, paste the prompt, and send it. Don't add anything else yet.</p></li>
+    <li><b>Upload your open house form when it asks.</b><p>Attach the photo of your sign-in sheet. It reads the name, number, ratings, and even your handwritten notes in the margins.</p></li>
+    <li><b>Answer the quick interview.</b><p>It asks a few things in small batches: your name and brokerage, your market, your CRM, your texting voice, and what contact info you have for the lead. Skip anything you want and it fills in a smart default.</p></li>
+    <li><b>Get your plan and put it to work.</b><p>You get a ready-to-send outreach sequence plus a CRM follow-up process. Send the first message, then load the sequence into your CRM.</p></li>
+  </ol>
+
+  <h2>What the prompt gives you back</h2>
+  <div class="outputs">
+    <h3>Five deliverables, fully personalized</h3>
+    <div class="grid">
+      <div class="item"><span class="letter">A</span><div><b>Lead Profile</b><span>Who they are, what they want, and the single best angle to reconnect.</span></div></div>
+      <div class="item"><span class="letter">B</span><div><b>Channel Matrix</b><span>Exactly which channels to use based on whether you have their phone, email, both, or neither.</span></div></div>
+      <div class="item"><span class="letter">C</span><div><b>The Reconnection Cadence</b><span>About six touches over 30 days: texts, voicemail, note, and video, all written in your voice.</span></div></div>
+      <div class="item"><span class="letter">D</span><div><b>CRM Follow-Up Process</b><span>Loads into your CRM, with branches for reply, no reply, and opt-out.</span></div></div>
+      <div class="item"><span class="letter">E</span><div><b>Buyer-to-Seller Transition</b><span>The exact lines to open the selling conversation later, once rapport is back.</span></div></div>
+    </div>
+  </div>
+
+  <h2>Three tips to get the best output</h2>
+  <div class="tips">
+    <div class="tip"><b>Talk, don't type</b><span>If you're on Claude Code, use the mic. Saying it out loud gets more detail out than typing does.</span></div>
+    <div class="tip"><b>Be honest about prior contact</b><span>Tell it if you already texted them and they replied. It changes the tone of the first message.</span></div>
+    <div class="tip"><b>Trust buyer-first</b><span>You met at an open house, so it leads with buying. The selling ask comes later, on purpose.</span></div>
+  </div>
+
+  <div class="why">
+    <b>Why it works:</b> the prompt is trained on four proven playbooks so you don't have to be. It borrows from <span class="names">Alex Hormozi</span> (give value first), <span class="names">Jimmy Mackin</span> (short pattern-interrupt texts), <span class="names">Jason Pantana</span> (personal, consistent touches), and <span class="names">Tom Ferry</span> (value-first, permission-based asks). Every message it writes is built on one of these, so it reads like a real person, not a mass blast.
+  </div>
+
+  <footer>
+    <div><span class="brand">The Leveraged Agent</span> &nbsp;&middot;&nbsp; <span class="tag">AI workflows for working agents</span></div>
+    <div>Open Houses Module &middot; Quick-Start Guide</div>
+  </footer>
+</div>
+</body>
+</html>

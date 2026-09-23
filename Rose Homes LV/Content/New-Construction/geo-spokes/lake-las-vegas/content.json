@@ -1,0 +1,296 @@
+{
+  "area": "Lake Las Vegas",
+  "slug": "lake-las-vegas-new-construction",
+  "place_name": "Lake Las Vegas, Henderson, Nevada",
+  "locality": "Henderson",
+  "updated_iso": "2026-09-16",
+  "updated_text": "September 16, 2026",
+  "reviewed_text": "September 2026",
+  "read_minutes": 13,
+
+  "seo": {
+    "title": "Lake Las Vegas New Construction Homes, Builders",
+    "description": "13 new home neighborhoods at Lake Las Vegas, from $434,990 at Del Webb to $1,756,000 waterfront homes on The Island. Builders, HOA, LID, and schools.",
+    "keywords": "lake las vegas new construction, new homes lake las vegas, henderson 89011 new homes, blue heron",
+    "og_title": "New Construction Homes at Lake Las Vegas",
+    "og_description": "Every new home neighborhood at Lake Las Vegas right now, with builders, starting prices, HOA and LID questions, and the schools builders list."
+  },
+
+  "hero": {
+    "kicker": "Rose Homes LV &middot; Lake Las Vegas, Henderson",
+    "h1": "New Construction Homes at Lake Las Vegas",
+    "sub": "Eight builders are selling new homes around the lake right now, from 55 and better single-story homes in the $400,000s to waterfront homes with dock options above $1.7 million. Here is every neighborhood, and what to check before you visit a model.",
+    "stats": [
+      ["13", "New home neighborhoods"],
+      ["8", "Active builders"],
+      ["320", "Acre lake"],
+      ["$434,990", "Lowest start, 55+"]
+    ],
+    "image": {
+      "src": "https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/hero-new-construction.jpg",
+      "alt": "A finished two-story new construction home in a Las Vegas valley community with homes being framed behind it",
+      "width": 1600,
+      "height": 1194
+    },
+    "secondary_cta": "Browse neighborhoods",
+    "mobile_label": "Neighborhoods"
+  },
+
+  "answer": "Lake Las Vegas is a master-planned community of about 3,600 acres around a 320 acre man-made lake in east Henderson, ZIP 89011. Thirteen new home neighborhoods are selling or taking reservations: the 12 on the Lake Las Vegas new homes page, updated August 21, 2026, plus Blue Heron's new Liora. Eight builders are active: Beazer, Blue Heron, Del Webb, Lennar, Richmond American, Taylor Morrison, Toll Brothers, and Tri Pointe. Starting prices run from $434,990 at Del Webb, a 55 and better community, and $490,990 at Taylor Morrison's Verona for all ages, up to $1,756,000 at Blue Heron's Arvada on The Island. The one tip: get every HOA fee in writing, because the master, neighborhood, and SouthShore sub-master associations stack up.",
+
+  "takeaways": [
+    "Thirteen neighborhoods and eight builders are active, with starting prices from $434,990 for 55 and better and $490,990 for all ages.",
+    "Most of the lower priced all-ages homes are on the North Shore side, at Verona, Lago Del Sol, and Piazza Paradiso. Most of the million dollar homes sit on The Island, in SouthShore, and on the new Liora peninsulas.",
+    "You can pay more than one HOA. Homes belong to the Lake Las Vegas Master Association, SouthShore adds a sub-master, and some neighborhoods may add their own. Get every amount from the builder.",
+    "Henderson calls its assessment districts LIDs. Whether a lot carries one depends on the parcel, so look it up before you sign.",
+    "A private dock is an option, not a given, at Velaris, Arvada, and The Island. Ask what it costs and what is included.",
+    "Register your own agent on your first visit to a Lake Las Vegas model. The sales team works for the builder."
+  ],
+
+  "part1_sections": [
+    {
+      "id": "neighborhoods",
+      "toc": "Neighborhoods selling now",
+      "h2": "Which new neighborhoods are selling at Lake Las Vegas right now?",
+      "blocks": [
+        {"lede": "These are the neighborhoods listed on the Lake Las Vegas new homes page and on builder websites in August and September 2026, sorted from the lowest starting price to the highest. Where Lennar sells two collections in one neighborhood, each gets its own row."},
+        {"table": {
+          "head": ["Neighborhood", "Builder", "Area", "Home type", "Size (sq ft)", "Starts from"],
+          "rows": [
+            ["Del Webb at Lake Las Vegas", "Del Webb", "Lake Las Vegas", "55 and better, single-story", "1,285 to 2,736", "$434,990"],
+            ["Verona", "Taylor Morrison", "North Shore", "Two-story single family", "2,222 to 2,723", "$490,990"],
+            ["Verona by Beazer", "Beazer Homes", "North Shore", "Two-story single family, solar included", "2,252 to 2,942", "$499,990"],
+            ["Ridges at Lago Del Sol", "Lennar", "Lago Del Sol", "Single-story", "2,126 to 2,535", "$556,785"],
+            ["Portofino", "Taylor Morrison", "Reflection Bay area", "Single-story", "1,990 to 3,432", "$579,990 (January 2026 price)"],
+            ["Vita at Piazza Paradiso", "Lennar", "Piazza Paradiso", "Two-story with Next Gen suite", "3,080 to 3,475", "$635,705"],
+            ["Falls at Lago Del Sol", "Lennar", "Lago Del Sol", "Single-story, RV or tandem garage options", "2,310 to 2,585", "$640,990"],
+            ["Serena at Piazza Paradiso", "Lennar", "Piazza Paradiso", "Two-story with Next Gen suite", "3,990 to 5,170", "$723,857"],
+            ["Lakeview Ridge", "Tri Pointe Homes", "Hillside, off Highland Shores Dr", "One and two-story", "2,579 to 3,991", "$899,500"],
+            ["Incanta Lago", "Toll Brothers", "Gated neighborhood", "One and two-story", "2,488 to 3,293", "$939,995"],
+            ["Shoreline", "Blue Heron", "Near The Village", "Two-story, optional third story and sky deck", "2,623 to 3,659", "$1,031,000"],
+            ["Salerno Summit at SouthShore", "Richmond American", "SouthShore, guard gated", "One and two-story", "2,830 to 4,320", "$1,195,950"],
+            ["Velaris at the Island", "Blue Heron", "The Island, guard gated", "One and two-story, dock option", "2,870 to 4,688", "$1,438,000"],
+            ["Liora", "Blue Heron", "North shore peninsulas", "Lakefront one and two-story", "3,944 to 6,738", "$1,677,000"],
+            ["Arvada at the Island", "Blue Heron", "The Island, double gated", "Waterfront one and two-story, dock option", "3,832 to 7,749", "$1,756,000"]
+          ],
+          "note": "Prices are published starting prices, and they change with every release. Lennar, Tri Pointe, Toll Brothers, Del Webb, and Liora prices are from the builder websites, checked September 16, 2026. Lennar prices are the low end of its published range. Verona, Verona by Beazer, Shoreline, Salerno Summit, Velaris, and Arvada are from the <a href=\"https://lakelasvegas.com/new-homes/\" rel=\"nofollow\">Lake Las Vegas new homes page</a>, updated August 19 to 21, 2026. Portofino is from a Lake Las Vegas page last updated January 27, 2026, so confirm it with Taylor Morrison. Lennar also sells a third Lago Del Sol collection, Hills, with single-story 3 to 4 bedroom homes, but no clean starting price was published. The Island also sells half-acre lakeside custom lots from $900,000. Marbella by Taylor Morrison and Riviera Vista by Lennar are sold out."
+        }},
+        {"p": "If you are 55 or older and weighing Del Webb here against other Henderson options, I compare them in <a href=\"/blog/55-plus-new-construction-henderson-2026\">55 and better new construction in Henderson</a>."}
+      ]
+    },
+    {
+      "id": "builders",
+      "toc": "Lake Las Vegas builders",
+      "h2": "Which builders are building at Lake Las Vegas?",
+      "blocks": [
+        {"lede": "Eight builders have neighborhoods selling at Lake Las Vegas. Lennar and Blue Heron have the most choices, and every Blue Heron neighborhood starts above $1 million."},
+        {"builders": {
+          "cards": [
+            {"key": "blue-heron", "note": "Four neighborhoods, all at the top of the market. Shoreline near The Village from $1,031,000, Velaris at the Island from $1,438,000, Liora on the north shore peninsulas from $1,677,000, and Arvada at the Island from $1,756,000. Velaris and Arvada offer private dock options."},
+            {"key": "lennar", "note": "Two neighborhoods and four collections on the price list. Single-story Ridges and Falls at Lago Del Sol from $556,785, and two-story Next Gen homes at Vita and Serena at Piazza Paradiso from $635,705."},
+            {"key": "taylor-morrison", "note": "Two neighborhoods. Verona on the North Shore, two-story homes from $490,990, and single-story Portofino near Reflection Bay, listed from $579,990 on a January 2026 Lake Las Vegas page."},
+            {"key": "pulte-del-webb", "note": "Del Webb at Lake Las Vegas, a 55 and better community of single-story homes from 1,285 to 2,736 square feet, starting at $434,990."},
+            {"key": "beazer", "note": "Verona by Beazer, 56 two-story homes off Strada Veneto with solar included, from $499,990."},
+            {"key": "tri-pointe", "note": "Lakeview Ridge, 53 elevated homesites off Highland Shores Dr and Lakestone Pl, with one and two-story homes from $899,500."},
+            {"key": "toll-brothers", "note": "Incanta Lago, a gated neighborhood of one and two-story homes from 2,488 to 3,293 square feet, starting at $939,995."},
+            {"key": "richmond-american", "note": "Salerno Summit in guard gated SouthShore, one and two-story homes from 2,830 to 4,320 square feet, starting at $1,195,950."}
+          ],
+          "note": "The Island also sells custom homesites, and no single builder is named for them. I could not verify any current Lake Las Vegas neighborhood from Century Communities, Woodside, Christopher Homes, KB Home, or Shea, even though some websites still list them here. For how Lake Las Vegas fits with the rest of the city, read my <a href=\"/blog/henderson-new-construction-2026-guide\">Henderson new construction guide</a>."
+        }}
+      ]
+    }
+  ],
+
+  "listings": {
+    "h2": "New construction homes for sale at Lake Las Vegas right now",
+    "lede": "These are active MLS listings of newly built homes at Lake Las Vegas. Many new homes here are sold straight from the builder's sales office and may not reach the MLS, so the table above is the fuller picture.",
+    "lofty_filter": "Location: Lake Las Vegas (use Lofty's Lake Las Vegas area or subdivision if offered, otherwise City: Henderson plus ZIP 89011, which is the ZIP on every active Lake Las Vegas builder address found. A ZIP filter can pull in homes outside the master plan, so check the results). Year Built: 2025 or newer. Property type: single family, townhouse, condo. Status: active. Sort: newest."
+  },
+
+  "part2_sections": [
+    {
+      "id": "where",
+      "toc": "Where they are building",
+      "h2": "Where at Lake Las Vegas are new homes going up?",
+      "blocks": [
+        {"lede": "Building is spread around the lake. Most of the lower priced neighborhoods sit on the North Shore side, the view homes are on the hillsides, and most luxury homes are on The Island, in SouthShore, and on the Liora peninsulas."},
+        {"h3": "North Shore, Lago Del Sol, and Piazza Paradiso"},
+        {"facts": [
+          ["Neighborhoods", "Verona by Taylor Morrison, Verona by Beazer, Lago Del Sol and Piazza Paradiso by Lennar"],
+          ["Starting prices", "$490,990 at Verona to $723,857 at Serena"],
+          ["Gates", "the North Shore is not guard gated"],
+          ["Worth knowing", "the lowest all-ages prices at the lake, with single-story homes at Lago Del Sol and Next Gen homes at Piazza Paradiso"]
+        ]},
+        {"h3": "Other neighborhoods around the lake"},
+        {"facts": [
+          ["Portofino", "single-story homes by Taylor Morrison in the Reflection Bay area, listed from $579,990 in January 2026, so confirm the current price"],
+          ["Lakeview Ridge", "53 elevated homesites by Tri Pointe, from $899,500"],
+          ["Incanta Lago", "gated, by Toll Brothers, from $939,995"],
+          ["Del Webb", "55 and better single-story homes, from $434,990"]
+        ]},
+        {"h3": "SouthShore"},
+        {"facts": [
+          ["Neighborhood", "Salerno Summit by Richmond American, from $1,195,950"],
+          ["Gates", "guard gated, with its own sub-master HOA"],
+          ["Worth knowing", "home of SouthShore Country Club"]
+        ]},
+        {"h3": "The Island and the lakefront"},
+        {"facts": [
+          ["The Island", "guard gated lakefront with Velaris from $1,438,000, Arvada from $1,756,000, and half-acre custom lots from $900,000"],
+          ["Velaris", "41 homesites, 23 of them waterfront, with a private dock option"],
+          ["Shoreline", "Blue Heron homes near The Village with lake access, from $1,031,000"],
+          ["Liora", "60 lakefront lots on two north shore peninsulas of about 15.6 and 11 acres"]
+        ]},
+        {"p": "Liora is the newest. Blue Heron bought the land in March 2026 for about $33.3 million, planned to break ground in spring 2026, and calls it the last remaining lakefront parcels at the lake. When I checked the site, it was in a pre-grand opening release ahead of an official August release, and final pricing was still pending."}
+      ]
+    },
+    {
+      "id": "prices",
+      "toc": "What it costs",
+      "h2": "What do new homes cost at Lake Las Vegas?",
+      "blocks": [
+        {"lede": "Published starting prices run from $434,990 at Del Webb to $1,756,000 at Arvada. The highest single plan start is $2,098,500 at Arvada, and Blue Heron listed one Arvada homesite at $2,595,000."},
+        {"table": {
+          "head": ["What you want", "Where to look", "Starts from"],
+          "rows": [
+            ["A 55 and better single-story home", "Del Webb at Lake Las Vegas", "$434,990"],
+            ["A two-story home for any age", "Verona, Verona by Beazer", "$490,990"],
+            ["A single-story home for any age", "Ridges and Falls at Lago Del Sol, Portofino", "$556,785"],
+            ["Room for extended family", "Vita and Serena at Piazza Paradiso, Next Gen suites", "$635,705"],
+            ["A view or gated home near $900,000", "Lakeview Ridge, Incanta Lago", "$899,500"],
+            ["A guard gated home", "Salerno Summit, Velaris, Arvada", "$1,195,950"],
+            ["A lakefront home with a dock option", "Velaris, Arvada", "$1,438,000"]
+          ],
+          "note": "From builder websites checked September 16, 2026, and the Lake Las Vegas new homes page updated August 21, 2026. The Portofino price is from a January 2026 page, so confirm it."
+        }},
+        {"p": "Four things move the price the most. First is the type of home, since a 55 and better single-story home and a three-story home with a sky deck are different products. Second is where the lot sits, because waterfront lots on The Island, guard gated SouthShore, and elevated view lots cost more. Third is the private dock option. Fourth is lot size, with The Island's half-acre lots at the top."},
+        {"p": "Prices also differ by source. Lakeview Ridge shows $944,000 on the Lake Las Vegas page and $899,500 on Tri Pointe's site. Shoreline shows the high $900,000s in one place and $1,031,000 in another. Always work from a dated price sheet from the builder."}
+      ]
+    },
+    {
+      "id": "monthly-costs",
+      "toc": "HOA, LID, and taxes",
+      "h2": "What will you pay each month on top of the mortgage?",
+      "blocks": [
+        {"lede": "At Lake Las Vegas you are looking at more than one HOA, property tax, and on some parcels a City of Henderson LID payment. Here is how each one works."},
+        {"table": {
+          "head": ["Cost", "What it is", "Amount"],
+          "rows": [
+            ["Master HOA", "Lake Las Vegas Master Association", "Confirm with the builder"],
+            ["SouthShore sub-master", "An extra association layer for guard gated SouthShore", "Confirm with the builder"],
+            ["Neighborhood HOA", "Your own neighborhood's association, if it has one", "Ask the builder"],
+            ["LID payment", "A City of Henderson local improvement district assessment", "Depends on the parcel, check the lot"],
+            ["Property tax", "Clark County, with a 3% yearly cap on increases for a primary home", "Based on assessed value"]
+          ],
+          "note": "Builder websites show HOA figures for a few neighborhoods, $262 at Taylor Morrison's Verona, $351 at Tri Pointe's Lakeview Ridge, and $259 and $267 at Lennar's Lago Del Sol, checked September 16, 2026. None of them says what period that covers or whether it includes every association, so ask for the full total in writing."
+        }},
+        {"p": "The layers are what catch people. Ask the builder for the master, sub-master, and neighborhood amounts together, and read the association documents before you close. I cover how to compare these in <a href=\"/blog/hoa-fees-las-vegas-new-construction\">HOA fees on Las Vegas new construction</a>."},
+        {"p": "The City of Henderson calls its assessment districts LIDs, and the bills are handled by Assessment Management Group. Whether a Lake Las Vegas lot carries one depends on the parcel, so look it up by parcel number and ask the builder before you sign. I explain how these work in <a href=\"/blog/sid-lid-taxes-explained-las-vegas-new-construction\">SID, LID, and taxes explained</a>."}
+      ]
+    },
+    {
+      "id": "schools",
+      "toc": "Schools builders list",
+      "h2": "Which schools serve the new Lake Las Vegas neighborhoods?",
+      "blocks": [
+        {"lede": "Builders list the same three public schools for their Lake Las Vegas neighborhoods: Josh Stevens Elementary, B. Mahlon Brown Academy of International Studies, and Basic Academy of International Studies."},
+        {"table": {
+          "head": ["Where the home is", "Elementary", "Middle", "High"],
+          "rows": [
+            ["Lakeview Ridge (Tri Pointe)", "Josh Stevens", "B. Mahlon Brown Academy", "Basic Academy"],
+            ["Lago Del Sol and Piazza Paradiso (Lennar)", "Josh Stevens", "B. Mahlon Brown Academy", "Basic Academy"],
+            ["Verona (Taylor Morrison)", "Josh Stevens", "B. Mahlon Brown Academy", "Basic Academy"]
+          ],
+          "note": "From builder websites for Lakeview Ridge, Lennar's Lake Las Vegas neighborhoods, and Verona, and the Lake Las Vegas schools page updated May 28, 2026. SouthShore and The Island were not checked against CCSD zoning. Zones can change, so confirm your exact address with the <a href=\"https://ccsd.net/schools/zoning/\" rel=\"nofollow\">CCSD zoning search</a>."
+        }},
+        {"p": "Josh Stevens Elementary is at 550 Dave Wood Circle in 89011. Lake Las Vegas describes it as about 2 miles away and the first new campus in the Clark County School District since 2010. The middle and high schools are both in Henderson's 89015 ZIP, and B. Mahlon Brown offers the IB Middle Years Programme."}
+      ]
+    },
+    {
+      "id": "location",
+      "toc": "Location and nearby",
+      "h2": "Where is Lake Las Vegas, and what is close by?",
+      "blocks": [
+        {"lede": "Lake Las Vegas is on the east edge of the valley in the City of Henderson. To get there, take the 215 east toward Henderson until the freeway ends, keep going east on Lake Mead Parkway, and turn left on Lake Las Vegas Parkway."},
+        {"ul": [
+          "<strong>Getting around:</strong> an older developer page puts the Strip about 25 minutes away. Your real drive depends on the 215 and Lake Mead Parkway at your time of day.",
+          "<strong>The lake:</strong> 320 acres, with electric Duffy boat rentals, paddleboards, kayaks, pedal boats, and a wakeboard cable.",
+          "<strong>The Village at MonteLago:</strong> waterfront dining, Seasons Grocery, and seasonal concerts and events.",
+          "<strong>Golf and the Sports Club:</strong> Reflection Bay Golf Club and SouthShore Country Club, plus the private Lake Las Vegas Sports Club for residents, with pools, tennis, pickleball, a fitness center, and a spa.",
+          "<strong>Trails:</strong> the paved 34 mile River Mountains Loop Trail, and the Historic Railroad Trail, with 5 tunnels toward Hoover Dam. Lake Mead access is close by.",
+          "<strong>Hospitals:</strong> St. Rose Dominican Rose de Lima on Lake Mead Parkway, Henderson Hospital, and St. Rose Siena."
+        ]},
+        {"p": "Lake Las Vegas was first planned in the 1960s, went through bankruptcy and legal delays, and took off again in the mid-2010s with new investors. Today it has roughly 4,500 homes, and construction is still going. I compare it with another Henderson favorite in <a href=\"/blog/lake-las-vegas-vs-seven-hills-henderson-comparison\">Lake Las Vegas vs Seven Hills</a>."}
+      ]
+    },
+    {
+      "id": "watch-outs",
+      "toc": "Before you buy",
+      "h2": "What should you know before buying new at Lake Las Vegas?",
+      "blocks": [
+        {"lede": "Lake Las Vegas has a lot going for it, but a few things catch new buyers off guard."},
+        {"ul": [
+          "<strong>Ask for a dated price sheet.</strong> The Lake Las Vegas site and builder sites show different prices for the same neighborhood.",
+          "<strong>Get every HOA number.</strong> Master, sub-master in SouthShore, and neighborhood fees can all apply. Builder sites show a single number without saying what it covers.",
+          "<strong>Check the LID on the exact lot.</strong> Henderson assessments depend on the parcel.",
+          "<strong>Price the dock separately.</strong> At Velaris, Arvada, and The Island, a private dock is an option, not standard.",
+          "<strong>Know the Del Webb lawsuit.</strong> In December 2025 the Del Webb at Lake Las Vegas Community Association sued Pulte Homes of Nevada, alleging nearly 90 homes are sinking and that retaining and rockery walls have problems. Pulte disputes how serious it is. It says repairs are done or underway with 43 homeowners, under 5% of homes. That is from the Las Vegas Review-Journal, May 4, 2026. If you look at Del Webb, ask about it and read the disclosures.",
+          "<strong>Check age rules in writing.</strong> Del Webb at Lake Las Vegas is age restricted, 55 and better.",
+          "<strong>Liora pricing is early.</strong> Blue Heron took reservations at founders pricing before the official release, so get final pricing in writing.",
+          "<strong>Know what is next door.</strong> Aries by Pulte is a separate community, not part of Lake Las Vegas. It covers more than 1,100 acres on the south side of Lake Mead Parkway, at the former Three Kids Mine. It has a grand opening in September 2026 and 5 subdivisions from $300,000 to $500,000 (Review-Journal, September 11, 2026). Expect building activity across the parkway for a while.",
+          "<strong>Look past the MLS.</strong> Many new homes here are sold directly by the builder and may not show up on listing sites."
+        ]}
+      ]
+    },
+    {
+      "id": "your-agent",
+      "toc": "Your own agent",
+      "h2": "Why bring your own agent to a Lake Las Vegas model home?",
+      "blocks": [
+        {"lede": "The friendly person at the sales desk works for the builder. Their job is to sell that builder's homes at that builder's price."},
+        {"p": "At Lake Las Vegas you might be comparing a Lennar single-story at Lago Del Sol, a Tri Pointe view home at Lakeview Ridge, and a Blue Heron home on The Island, each with its own price, HOA costs, and options like a private dock. Having someone on your side who lines those up for you costs you nothing, because the builder pays the buyer agent commission either way. The one rule: most builders require your agent to be registered on your very first visit. <a href=\"/las-vegas-new-construction#why-ryan\">Here is what having your own agent actually changes</a>."}
+      ]
+    }
+  ],
+
+  "faq": [
+    ["Who is building new homes at Lake Las Vegas in 2026?", "Beazer, Blue Heron, Del Webb, Lennar, Richmond American, Taylor Morrison, Toll Brothers, and Tri Pointe all have active neighborhoods. The Island also sells custom lots."],
+    ["What is the cheapest new home at Lake Las Vegas?", "Del Webb at Lake Las Vegas, a 55 and better community, starts at $434,990. For all ages, Taylor Morrison's Verona starts at $490,990 and Beazer's Verona at $499,990."],
+    ["Are there waterfront new homes at Lake Las Vegas?", "Yes. Blue Heron's Velaris and Arvada on The Island offer waterfront homesites with dock options, from $1,438,000 and $1,756,000. Blue Heron's Liora has 60 lakefront lots from $1,677,000."],
+    ["Is Lake Las Vegas in Henderson or Las Vegas?", "It is in the City of Henderson, ZIP 89011, on the east edge of the valley."],
+    ["What schools serve new homes at Lake Las Vegas?", "Builders list Josh Stevens Elementary, B. Mahlon Brown Academy of International Studies, and Basic Academy of International Studies. Always confirm your exact address with CCSD zoning."],
+    ["How much are HOA fees at Lake Las Vegas?", "Homes pay the Lake Las Vegas Master Association, SouthShore adds a sub-master association, and some neighborhoods may add their own. Builder sites do not show a clear total, so confirm the master and sub-association amounts with the builder in writing."],
+    ["Do Lake Las Vegas homes have LID assessments?", "Some may. Henderson uses local improvement districts, billed through Assessment Management Group, and whether a lot carries one depends on the parcel. Look it up by parcel number before you sign."],
+    ["Is there a 55 and better community at Lake Las Vegas?", "Yes. Del Webb at Lake Las Vegas has single-story homes from 1,285 to 2,736 square feet, starting at $434,990."]
+  ],
+
+  "cta": {
+    "h2": "Touring Lake Las Vegas models soon?",
+    "p": "Let me line up the neighborhoods that fit your budget, with current prices, HOA layers, and LID checks, before your first visit. There is no cost to you, and I will be registered with the builder from day one."
+  },
+
+  "sources": [
+    ["Lake Las Vegas new homes, updated August 21, 2026", "https://lakelasvegas.com/new-homes/"],
+    ["Lake Las Vegas location and directions", "https://lakelasvegas.com/lake-las-vegas-location/"],
+    ["Lake Las Vegas schools, updated May 28, 2026", "https://lakelasvegas.com/lake-las-vegas-location/schools/"],
+    ["Lake Las Vegas, The Village", "https://lakelasvegas.com/lifestyle/the-village/"],
+    ["Lake Las Vegas Sports Club", "https://lakelasvegas.com/lifestyle/sports-club/"],
+    ["Lake Las Vegas trails", "https://lakelasvegas.com/lifestyle/trails/"],
+    ["Lake Las Vegas hospitals", "https://lakelasvegas.com/hospitals/"],
+    ["Del Webb at Lake Las Vegas", "https://www.delwebb.com/homes/nevada/las-vegas/henderson/del-webb-at-lake-las-vegas-210340"],
+    ["Lennar, Lake Las Vegas", "https://www.lennar.com/new-homes/nevada/las-vegas/henderson/lake-las-vegas"],
+    ["Taylor Morrison, Verona at Lake Las Vegas", "https://www.taylormorrison.com/nv/las-vegas/henderson/verona-at-lake-las-vegas"],
+    ["Taylor Morrison, Marbella at Lake Las Vegas", "https://www.taylormorrison.com/nv/las-vegas/henderson/marbella-at-lake-las-vegas"],
+    ["Tri Pointe Homes, Lakeview Ridge", "https://www.tripointehomes.com/nv/las-vegas/lakeview-ridge/"],
+    ["Toll Brothers, Incanta Lago", "https://www.tollbrothers.com/luxury-homes-for-sale/Nevada/Incanta-Lago"],
+    ["Richmond American, Salerno Summit at SouthShore", "https://www.richmondamerican.com/nevada/las-vegas-new-homes/henderson/salerno-summit-at-southshore-lake-las-vegas/"],
+    ["Blue Heron at Lake Las Vegas", "https://blueheron.com/community/blue-heron-at-lake-las-vegas/"],
+    ["Blue Heron, Liora", "https://blueheron.com/community/liora/"],
+    ["Blue Heron unveils Liora, April 16, 2026", "https://www.globenewswire.com/news-release/2026/04/16/3275398/0/en/Luxury-Design-Build-Firm-Blue-Heron-Unveils-Liora-a-Private-Waterfront-Enclave-Designed-for-Wellness-at-Lake-Las-Vegas-Breaking-Ground-Spring-2026.html"],
+    ["Review-Journal, luxury builder buys land at Lake Las Vegas, May 12, 2026", "https://www.reviewjournal.com/business/luxury-builder-buys-land-for-33m-at-lake-las-vegas-unveils-new-waterfront-project-3822957/"],
+    ["Review-Journal, Lake Las Vegas homes lawsuit, May 4, 2026", "https://www.reviewjournal.com/business/housing/dozens-of-homes-at-lake-las-vegas-are-sinking-and-causing-damage-lawsuit-alleges-3796684/"],
+    ["Review-Journal, Aries opens at former mining site, September 11, 2026", "https://www.reviewjournal.com/business/housing/builder-opens-big-new-community-at-former-mining-site-in-henderson-3885180/"],
+    ["City of Henderson, LID special assessments", "https://www.cityofhenderson.com/government/departments/finance/lid-special-assessment-property-tax/lid-special-assessments"],
+    ["CCSD zoning search", "https://ccsd.net/schools/zoning/"]
+  ]
+}

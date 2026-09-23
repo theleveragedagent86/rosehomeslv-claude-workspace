@@ -1,0 +1,40 @@
+/* The Leveraged Agent - palette v4 "Ultramarine". White base, navy ink, electric blue accent.
+   Proposed 2026-08-19. v1 (Brand-Guide/tokens.css) is still the shipping palette.
+
+   No teal. No gold. Both v1 brand colors are gone from this palette.
+
+   Every color is lifted from a measured high-pedigree brokerage, see PEDIGREE-BRAND-RESEARCH.md:
+     ink #050E3D  = Real Broker's measured ink
+     accent #1768E5 = Tom Ferry's measured CTA blue
+     structure #0B3FA8 is the one derived value, a deep sibling of the accent for fills.
+   Serhant runs navy #001A72 as his only accent on pure black and white. This is that idea
+   with a working CTA blue instead of a near-black navy.
+
+   The reason this palette is easy to live with: #1768E5 clears AA both ways.
+   White on it is 5.06 and it on white is 5.06, so ONE value does the button and the link.
+   That was never true of the gold, which needed two different values and got mixed up constantly.
+
+   One accent only. There is deliberately no --la-accent-2.
+   Spec and migration: Brand-Guide/V4-PALETTES.md */
+:root {
+  --la-bg:            #FFFFFF;  /* primary surface, pure white. Do not tint it */
+  --la-bg-2:          #F7F8FA;  /* sunken fill, table rows, inset panels */
+  --la-bg-inv:        #050E3D;  /* inverted surface, navy near-black. Plays black's role */
+  --la-line:          #E4E7EF;  /* hairline and divider on bg, non-text */
+  --la-structure:     #0B3FA8;  /* deep blue. Chart bars, structural fills, large headings */
+  --la-ink:           #050E3D;  /* primary text on bg, 18.48:1 */
+  --la-ink-2:         #55627F;  /* secondary text on bg and bg-2, 6.11:1 */
+  --la-ink-inv:       #FFFFFF;  /* primary text on bg-inv */
+  --la-ink-2-inv:     #6A7CAF;  /* secondary text on bg-inv, 4.5:1 */
+  --la-accent:        #1768E5;  /* THE accent. Fills, buttons, links */
+  --la-accent-on:     #FFFFFF;  /* text placed ON accent, 5.06:1 */
+  --la-accent-txt:    #1768E5;  /* accent used AS text on bg or bg-2. Same value, it clears both */
+  --la-accent-inv:    #5B9BFF;  /* accent used AS text on bg-inv, 6.67:1. Raw accent is 3.65 there */
+
+  --la-font-head:     "Poppins", "Futura", "Avenir Next", sans-serif;
+  --la-font-body:     "Inter", -apple-system, "Helvetica Neue", sans-serif;
+  --la-weight-head:   800;
+  --la-track-head:    -0.03em;
+  --la-track-label:   0.14em;
+  --la-lh-body:       1.55;
+}

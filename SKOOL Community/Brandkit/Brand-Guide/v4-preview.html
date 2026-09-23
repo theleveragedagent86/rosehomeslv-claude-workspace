@@ -1,0 +1,299 @@
+<meta charset="utf-8"><title>Leveraged Agent palette v4 candidates</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Type tokens are identical across all six candidates, so they live once on :root.
+   The three colour blocks below are verbatim copies of tokens-v4-*.css minus the type
+   half, scoped to a class so all three can render on one page. Those files are the
+   authority, this is a preview. */
+:root{--la-font-head:"Poppins","Futura","Avenir Next",sans-serif;
+      --la-font-body:"Inter",-apple-system,"Helvetica Neue",sans-serif;
+      --la-weight-head:800;--la-track-head:-0.03em;--la-track-label:0.14em;--la-lh-body:1.55}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#151515;font-family:Inter,system-ui,sans-serif;padding-bottom:60px}
+.hdr{padding:30px 40px 8px;color:#f0f0f0;font-family:Poppins;font-size:24px;font-weight:700;letter-spacing:-.02em}
+.hdrsub{padding:0 40px 26px;color:#8d8d8d;font-size:13px;line-height:1.6;max-width:860px}
+.hdrsub b{color:#d6d6d6;font-weight:600}
+
+
+.pal{background:var(--la-bg);color:var(--la-ink);font-family:var(--la-font-body);
+     padding:34px 40px 42px;margin:0 40px 34px;border-radius:16px}
+.name{font-family:var(--la-font-head);font-size:12px;font-weight:600;letter-spacing:.16em;
+      text-transform:uppercase;color:var(--la-ink-2);margin-bottom:20px}
+.name b{color:var(--la-ink);font-size:16px;font-weight:var(--la-weight-head);letter-spacing:-.01em;
+        text-transform:none;margin-right:9px}
+.note{font-size:11px;line-height:1.55;color:var(--la-ink-2);margin:-12px 0 20px;max-width:70ch}
+.tag{display:inline-block;font-family:var(--la-font-head);font-size:10px;font-weight:600;
+     letter-spacing:.18em;text-transform:uppercase;color:var(--la-accent-on);background:var(--la-accent);
+     padding:5px 12px;border-radius:999px;margin-bottom:16px}
+h2{font-family:var(--la-font-head);font-size:40px;font-weight:var(--la-weight-head);
+   letter-spacing:var(--la-track-head);line-height:1.06;margin-bottom:12px;max-width:15ch}
+h2 em{font-style:normal;color:var(--la-accent-txt)}
+.lede{font-size:15px;line-height:var(--la-lh-body);color:var(--la-ink-2);max-width:56ch;margin-bottom:22px}
+.btns{display:flex;gap:12px;align-items:center;margin-bottom:30px;flex-wrap:wrap}
+.b1{font-family:var(--la-font-head);font-weight:600;font-size:14px;padding:13px 24px;border-radius:999px;
+    border:none;cursor:pointer;background:var(--la-accent);color:var(--la-accent-on)}
+.b2{font-family:var(--la-font-head);font-weight:600;font-size:14px;padding:12px 23px;border-radius:999px;
+    cursor:pointer;background:transparent;color:var(--la-ink);border:1.5px solid var(--la-line)}
+.b3{font-family:var(--la-font-head);font-weight:600;font-size:14px;background:none;border:none;cursor:pointer;
+    color:var(--la-accent-txt);text-decoration:underline;text-underline-offset:4px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
+.c{background:var(--la-bg-2);border:1px solid var(--la-line);border-radius:14px;padding:22px}
+.eb{font-family:var(--la-font-body);font-size:10px;font-weight:700;letter-spacing:var(--la-track-label);
+    text-transform:uppercase;color:var(--la-accent-txt);margin-bottom:10px}
+.ch{font-family:var(--la-font-head);font-size:17px;font-weight:600;letter-spacing:-.02em;margin-bottom:8px}
+.cb{font-size:13px;line-height:1.6;color:var(--la-ink-2)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
+.st{background:var(--la-bg-inv);color:var(--la-ink-inv);border-radius:14px;padding:22px}
+.stn{font-family:var(--la-font-head);font-size:44px;font-weight:var(--la-weight-head);letter-spacing:-.04em;
+     line-height:1;color:var(--la-accent-inv)}
+.stl{font-size:12px;line-height:1.5;margin-top:8px;color:var(--la-ink-2-inv)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:26px}
+th{font-family:var(--la-font-body);font-size:10px;font-weight:700;letter-spacing:var(--la-track-label);
+   text-transform:uppercase;text-align:left;color:var(--la-ink-2);padding:9px 12px;border-bottom:1.5px solid var(--la-line)}
+td{padding:11px 12px;border-bottom:1px solid var(--la-line)}
+tr:nth-child(even) td{background:var(--la-bg-2)}
+.pill{font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--la-accent);color:var(--la-accent-on)}
+.pill.q{background:transparent;color:var(--la-ink-2);border:1px solid var(--la-line)}
+.bars{display:flex;align-items:flex-end;gap:9px;height:88px;margin-bottom:8px}
+.bar{flex:1;border-radius:5px 5px 0 0;background:var(--la-structure);opacity:.28}
+.bar.hi{background:var(--la-accent);opacity:1}
+.cap{font-size:11px;color:var(--la-ink-2)}
+.sw{display:flex;gap:0;border-radius:10px;overflow:hidden;margin-top:26px;border:1px solid var(--la-line)}
+.sw div{flex:1;height:58px;display:flex;align-items:flex-end;padding:6px 8px;font-size:9px;font-weight:600;letter-spacing:.02em}
+
+/* rules strip */
+.rules{margin:0 40px 34px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:28px 34px}
+.rules h3{font-family:Poppins;font-size:15px;font-weight:700;color:#f0f0f0;letter-spacing:-.01em;margin-bottom:14px}
+.rrow{display:flex;gap:14px;align-items:center;padding:11px 0;border-top:1px solid #2e2e2e;font-size:13px;color:#c4c4c4;line-height:1.5}
+.chip{flex:0 0 190px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+      font-size:14px;font-weight:600;font-family:Poppins}
+.verdict{flex:0 0 62px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.ok{color:#54C08A}.no{color:#F4756B}
+.ultramarine{--la-bg:#FFFFFF;--la-bg-2:#F7F8FA;--la-bg-inv:#050E3D;--la-line:#E4E7EF;--la-structure:#0B3FA8;--la-ink:#050E3D;--la-ink-2:#55627F;--la-ink-inv:#FFFFFF;--la-ink-2-inv:#6A7CAF;--la-accent:#1768E5;--la-accent-on:#FFFFFF;--la-accent-txt:#1768E5;--la-accent-inv:#5B9BFF}
+.crimson{--la-bg:#FFFFFF;--la-bg-2:#F7F6F6;--la-bg-inv:#131011;--la-line:#EAE6E6;--la-structure:#A3121A;--la-ink:#171314;--la-ink-2:#6B6265;--la-ink-inv:#FFFFFF;--la-ink-2-inv:#9A8F91;--la-accent:#DE0F16;--la-accent-on:#FFFFFF;--la-accent-txt:#DE0F16;--la-accent-inv:#FF6B6B}
+.signal{--la-bg:#FFFFFF;--la-bg-2:#FBF7F4;--la-bg-inv:#1A1310;--la-line:#EEE7E1;--la-structure:#7E3405;--la-ink:#1A1310;--la-ink-2:#665C55;--la-ink-inv:#FFFFFF;--la-ink-2-inv:#A0928A;--la-accent:#BB4C0A;--la-accent-on:#FFFFFF;--la-accent-txt:#BB4C0A;--la-accent-inv:#F2874A}
+.sovereign{--la-bg:#FFFFFF;--la-bg-2:#F8F6FB;--la-bg-inv:#150E33;--la-line:#E8E4F0;--la-structure:#4E1F9E;--la-ink:#150E33;--la-ink-2:#605771;--la-ink-inv:#FFFFFF;--la-ink-2-inv:#948AAE;--la-accent:#834CE2;--la-accent-on:#FFFFFF;--la-accent-txt:#834CE2;--la-accent-inv:#B08CF5}
+.meridian{--la-bg:#FFFFFF;--la-bg-2:#F7F7F7;--la-bg-inv:#000000;--la-line:#E3E3E3;--la-structure:#001A72;--la-ink:#212121;--la-ink-2:#5C5C5C;--la-ink-inv:#FFFFFF;--la-ink-2-inv:#B9B9B9;--la-accent:#001A72;--la-accent-on:#FFFFFF;--la-accent-txt:#001A72;--la-accent-inv:#7290FF}
+.ivory{--la-bg:#FDF9F2;--la-bg-2:#F6EEDF;--la-bg-inv:#17130E;--la-line:#EDE3D4;--la-structure:#443B31;--la-ink:#17130E;--la-ink-2:#675E54;--la-ink-inv:#FFFFFF;--la-ink-2-inv:#A79C8E;--la-accent:#17130E;--la-accent-on:#FFFFFF;--la-accent-txt:#17130E;--la-accent-inv:#FFFFFF}
+.legacy{margin:0 40px 30px;padding:20px 26px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px}
+.legacy h3{font-family:Poppins;font-size:13px;font-weight:700;color:#f0f0f0;margin-bottom:12px;letter-spacing:-.01em}
+.legacy .sw{border-color:#2e2e2e;margin-top:0}
+.legacy p{font-size:12px;color:#8d8d8d;line-height:1.6;margin-top:12px;max-width:80ch}
+</style>
+</head>
+<body>
+<div class="hdr">Palette v4 candidates: no teal, no gold</div>
+<div class="hdrsub"><b>None of these are adopted. v1 is still the shipping brand.</b> Six replacement palettes. Five are built from colors measured off a high-pedigree brokerage in PEDIGREE-BRAND-RESEARCH.md, and Sovereign is the honest exception, called out in its own note. All six keep a white page, cast the ink near-black instead of pure black, and run exactly one accent, which is what nine of the ten researched brands do. Identical markup in every section, only the token values change. Type is held constant here: Poppins 800 display, Inter body. Font alternatives are on <b>v4-type.html</b>. Spec: V4-PALETTES.md.</div>
+
+<div class="legacy">
+  <h3>What you are leaving behind (v1, currently shipping)</h3>
+  <div class="sw" style="border:1px solid #2e2e2e">
+    <div style="background:#F5F2EB;color:#0F4C5C">bg #F5F2EB</div><div style="background:#EAE6DA;color:#0F4C5C">bg-2 #EAE6DA</div>
+    <div style="background:#0F4C5C;color:#F5F2EB">ink #0F4C5C</div><div style="background:#3E6B75;color:#F5F2EB">ink-2 #3E6B75</div>
+    <div style="background:#E8A33D;color:#08343E">accent #E8A33D</div><div style="background:#B5CAC4;color:#0F4C5C">sage #B5CAC4</div>
+    <div style="background:#08343E;color:#F5F2EB">deep #08343E</div></div>
+  <p>Tinted cream page, teal ink, gold plus sage. The research found no high-pedigree US brokerage using a tinted cream as its primary surface, and none running two decorative colors. Both go here.</p>
+</div>
+
+
+<section class="pal ultramarine">
+  <div class="name"><b>Ultramarine</b> Real Broker ink &middot; Tom Ferry blue &middot; one value does both jobs</div>
+  <div class="note">Electric, modern, high-trust. The easiest of the six to build with, because #1768E5 clears AA as a fill and as text, so there is only one blue to remember.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="sw"><div style="background:#FFFFFF;color:#050E3D;box-shadow:inset 0 0 0 1px #E4E7EF">bg #FFFFFF</div><div style="background:#F7F8FA;color:#050E3D;">bg-2 #F7F8FA</div><div style="background:#0B3FA8;color:#FFFFFF;">structure #0B3FA8</div><div style="background:#55627F;color:#FFFFFF;">ink-2 #55627F</div><div style="background:#1768E5;color:#FFFFFF;">accent #1768E5</div><div style="background:#1768E5;color:#FFFFFF;">accent-txt #1768E5</div><div style="background:#050E3D;color:#FFFFFF;">bg-inv / ink #050E3D</div></div>
+</section>
+
+<section class="pal crimson">
+  <div class="name"><b>Crimson</b> The Agency's formula &middot; warm near-black ink &middot; red at small area</div>
+  <div class="note">Bold and editorial. Highest pop here. Red carries urgency, which helps a CTA and hurts a long read, so it has to stay at small area or the page starts shouting.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="sw"><div style="background:#FFFFFF;color:#171314;box-shadow:inset 0 0 0 1px #EAE6E6">bg #FFFFFF</div><div style="background:#F7F6F6;color:#171314;">bg-2 #F7F6F6</div><div style="background:#A3121A;color:#FFFFFF;">structure #A3121A</div><div style="background:#6B6265;color:#FFFFFF;">ink-2 #6B6265</div><div style="background:#DE0F16;color:#FFFFFF;">accent #DE0F16</div><div style="background:#DE0F16;color:#FFFFFF;">accent-txt #DE0F16</div><div style="background:#131011;color:#FFFFFF;">bg-inv / ink #131011</div></div>
+</section>
+
+<section class="pal signal">
+  <div class="name"><b>Signal</b> Tom Ferry orange, corrected &middot; warm near-black ink &middot; most energy</div>
+  <div class="note">Warm and urgent without the alarm-bell quality of red. Almost nobody in this space uses orange. Tom Ferry's raw #F26F21 is 2.97:1 on white, so it was darkened to #BB4C0A, which then does both jobs with one value.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="sw"><div style="background:#FFFFFF;color:#1A1310;box-shadow:inset 0 0 0 1px #EEE7E1">bg #FFFFFF</div><div style="background:#FBF7F4;color:#1A1310;">bg-2 #FBF7F4</div><div style="background:#7E3405;color:#FFFFFF;">structure #7E3405</div><div style="background:#665C55;color:#FFFFFF;">ink-2 #665C55</div><div style="background:#BB4C0A;color:#FFFFFF;">accent #BB4C0A</div><div style="background:#BB4C0A;color:#FFFFFF;">accent-txt #BB4C0A</div><div style="background:#1A1310;color:#FFFFFF;">bg-inv / ink #1A1310</div></div>
+</section>
+
+<section class="pal sovereign">
+  <div class="name"><b>Sovereign</b> the outlier &middot; violet accent &middot; no direct precedent in the research</div>
+  <div class="note">Reads premium, and nobody in agent coaching looks like this. Straight about the tradeoff: no brokerage in the research set uses violet. The closest real precedent is Berkshire Hathaway HomeServices' cabernet #552448. That is the argument for it and against it at the same time.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="sw"><div style="background:#FFFFFF;color:#150E33;box-shadow:inset 0 0 0 1px #E8E4F0">bg #FFFFFF</div><div style="background:#F8F6FB;color:#150E33;">bg-2 #F8F6FB</div><div style="background:#4E1F9E;color:#FFFFFF;">structure #4E1F9E</div><div style="background:#605771;color:#FFFFFF;">ink-2 #605771</div><div style="background:#834CE2;color:#FFFFFF;">accent #834CE2</div><div style="background:#834CE2;color:#FFFFFF;">accent-txt #834CE2</div><div style="background:#150E33;color:#FFFFFF;">bg-inv / ink #150E33</div></div>
+</section>
+
+<section class="pal meridian">
+  <div class="name"><b>Meridian</b> Serhant's exact system &middot; white and true black &middot; navy as the only color</div>
+  <div class="note">The pop is structural, not chromatic. Big black blocks against white, navy at tiny area. Every value except the two greys is measured off a live site. Most pedigreed of the six and the least loud.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="sw"><div style="background:#FFFFFF;color:#212121;box-shadow:inset 0 0 0 1px #E3E3E3">bg #FFFFFF</div><div style="background:#F7F7F7;color:#212121;">bg-2 #F7F7F7</div><div style="background:#001A72;color:#FFFFFF;">structure #001A72</div><div style="background:#5C5C5C;color:#FFFFFF;">ink-2 #5C5C5C</div><div style="background:#001A72;color:#FFFFFF;">accent #001A72</div><div style="background:#001A72;color:#FFFFFF;">accent-txt #001A72</div><div style="background:#000000;color:#FFFFFF;">bg-inv / ink #000000</div></div>
+</section>
+
+<section class="pal ivory">
+  <div class="name"><b>Ivory</b> warm cream &middot; no accent hue at all &middot; the control</div>
+  <div class="note">The 'lighter color' reading of your brief rather than the pure-white one. Corcoran's cream as the secondary surface, ink as the button. Compass and Eklund Gomes ship with zero accent and still look expensive. Included so you can see what no color costs you in energy.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="sw"><div style="background:#FDF9F2;color:#17130E;box-shadow:inset 0 0 0 1px #EDE3D4">bg #FDF9F2</div><div style="background:#F6EEDF;color:#17130E;">bg-2 #F6EEDF</div><div style="background:#443B31;color:#FFFFFF;">structure #443B31</div><div style="background:#675E54;color:#FFFFFF;">ink-2 #675E54</div><div style="background:#17130E;color:#FFFFFF;">accent #17130E</div><div style="background:#17130E;color:#FFFFFF;">accent-txt #17130E</div><div style="background:#17130E;color:#FFFFFF;">bg-inv / ink #17130E</div></div>
+</section>
+
+<div class="rules">
+  <h3>The test every one of these passes, and the two that did not</h3>
+  <div class="rrow">
+    <div class="chip" style="background:#FFFFFF;color:#1768E5;box-shadow:inset 0 0 0 1px #E4E7EF">Download the template</div>
+    <div class="verdict ok">5.06:1</div>
+    <div><b>Ultramarine.</b> Same value as the button fill. One token, both jobs.</div>
+  </div>
+  <div class="rrow">
+    <div class="chip" style="background:#FFFFFF;color:#DE0F16;box-shadow:inset 0 0 0 1px #EAE6E6">Download the template</div>
+    <div class="verdict ok">5.02:1</div>
+    <div><b>Crimson.</b> Same value as the button fill. One token, both jobs.</div>
+  </div>
+  <div class="rrow">
+    <div class="chip" style="background:#FFFFFF;color:#BB4C0A;box-shadow:inset 0 0 0 1px #EEE7E1">Download the template</div>
+    <div class="verdict ok">5.06:1</div>
+    <div><b>Signal.</b> Same value as the button fill. One token, both jobs.</div>
+  </div>
+  <div class="rrow">
+    <div class="chip" style="background:#FFFFFF;color:#834CE2;box-shadow:inset 0 0 0 1px #E8E4F0">Download the template</div>
+    <div class="verdict ok">5.13:1</div>
+    <div><b>Sovereign.</b> Same value as the button fill. One token, both jobs.</div>
+  </div>
+  <div class="rrow">
+    <div class="chip" style="background:#FFFFFF;color:#001A72;box-shadow:inset 0 0 0 1px #E3E3E3">Download the template</div>
+    <div class="verdict ok">15.1:1</div>
+    <div><b>Meridian.</b> Same value as the button fill. One token, both jobs.</div>
+  </div>
+  <div class="rrow">
+    <div class="chip" style="background:#FDF9F2;color:#17130E;box-shadow:inset 0 0 0 1px #EDE3D4">Download the template</div>
+    <div class="verdict ok">18.49:1</div>
+    <div><b>Ivory.</b> Same value as the button fill. One token, both jobs.</div>
+  </div>
+  <div class="rrow">
+    <div class="chip" style="background:#FFFFFF;color:#F96B88;box-shadow:inset 0 0 0 1px #EAE5EA">Download the template</div>
+    <div class="verdict no">2.81:1</div>
+    <div><b>Rosewood, retired 2026-08-19.</b> The coral could never be text on white. It needed a second darker value, #CB3350, exactly like the gold did.</div>
+  </div>
+  <div class="rrow">
+    <div class="chip" style="background:#FFFFFF;color:#E8A33D;box-shadow:inset 0 0 0 1px #EAE6DA">Download the template</div>
+    <div class="verdict no">2.16:1</div>
+    <div><b>The v1 gold, currently shipping.</b> 2.16:1 as text, 1.86:1 with white on it. Fails both directions and shipped anyway. This is the failure mode every palette above was built to avoid.</div>
+  </div>
+</div>
+</body>
+</html>

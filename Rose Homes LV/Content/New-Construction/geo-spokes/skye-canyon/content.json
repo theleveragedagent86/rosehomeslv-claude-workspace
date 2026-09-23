@@ -1,0 +1,285 @@
+{
+  "area": "Skye Canyon",
+  "slug": "skye-canyon-new-construction",
+  "place_name": "Skye Canyon, Las Vegas, Nevada",
+  "locality": "Las Vegas",
+  "updated_iso": "2026-09-16",
+  "updated_text": "September 16, 2026",
+  "reviewed_text": "September 2026",
+  "read_minutes": 12,
+
+  "seo": {
+    "title": "Skye Canyon New Construction Homes and Builders",
+    "description": "Three builders are selling new homes in Skye Canyon, from a $376,990 base plan townhome to $800,000 at Paloma. Builders, SID, and schools, checked Sept 2026.",
+    "keywords": "skye canyon new construction, new homes skye canyon, skyeview century communities, 89166 new homes",
+    "og_title": "New Construction Homes in Skye Canyon",
+    "og_description": "Every new home neighborhood selling in Skye Canyon right now, with builders, starting prices, the SID, and the schools builders list."
+  },
+
+  "hero": {
+    "kicker": "Rose Homes LV &middot; Skye Canyon, 89166",
+    "h1": "New Construction Homes in Skye Canyon",
+    "sub": "Three builders are selling new homes in Skye Canyon right now, from townhomes under $400,000 to gated homes at $800,000. Here is every neighborhood, and what to check before you visit a model.",
+    "stats": [
+      ["1,700", "Acre master plan"],
+      ["3", "Active builders"],
+      ["6", "Neighborhoods selling"],
+      ["18", "Miles to the Strip"]
+    ],
+    "image": {
+      "src": "https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-skye-canyon.jpg",
+      "alt": "Modern farmhouse style new homes in northwest Las Vegas with grey and brown mountains in the distance",
+      "width": 900,
+      "height": 672
+    },
+    "secondary_cta": "Browse neighborhoods",
+    "mobile_label": "Neighborhoods"
+  },
+
+  "answer": "Skye Canyon is a 1,700 acre master plan by Olympia Companies in northwest Las Vegas, off US-95 at Skye Canyon Park Drive. As of September 16, 2026, the developer lists three builders: Century Communities, LGI Homes, and Toll Brothers. Century sells four neighborhoods at Skyeview, which is inside Skye Canyon: Arroyo, Sierra, Terra, and Mesa. LGI sells Topaz townhomes, and Toll Brothers' gated Paloma is in its final phase. Prices run from a $376,990 base plan at Arroyo at Skyeview to $800,000 at Paloma. The one tip: part of Skye Canyon sits in a City of Las Vegas special improvement district, SID 610, so check the exact parcel before you sign.",
+
+  "takeaways": [
+    "Only three builders are active, per the developer: Century Communities, LGI Homes, and Toll Brothers. Many websites still list Lennar, Pulte, and Beazer as building here.",
+    "Skyeview is part of Skye Canyon. Century's Mesa, Terra, Sierra, and Arroyo at Skyeview are four of the six neighborhoods selling.",
+    "Century shows two different starting prices for some collections. The Century prices on this page are the base plan price for the smallest plan.",
+    "Mesa at Skyeview is the single-story choice, with base plans from $488,990.",
+    "Toll Brothers' Paloma is in its final phase, with only a limited number of move-in ready homes left.",
+    "Part of Skye Canyon is in a City of Las Vegas SID. Ask whether your exact lot is in one, and what it costs each year."
+  ],
+
+  "part1_sections": [
+    {
+      "id": "neighborhoods",
+      "toc": "Neighborhoods selling now",
+      "h2": "Which new neighborhoods are selling in Skye Canyon right now?",
+      "blocks": [
+        {"lede": "These are the neighborhoods selling new homes inside the Skye Canyon master plan, checked on the builder websites on September 16, 2026, sorted from the lowest starting price to the highest."},
+        {"table": {
+          "head": ["Neighborhood", "Builder", "Master plan", "Home type", "Size (sq ft)", "Starts from"],
+          "rows": [
+            ["Arroyo at Skyeview", "Century Communities", "Skye Canyon (Skyeview)", "Two-story townhome", "1,531 to 1,729", "Base plan from $376,990"],
+            ["Topaz at Skye Canyon", "LGI Homes", "Skye Canyon", "Two-story townhome", "1,256 to 1,665", "$399,900"],
+            ["Sierra at Skyeview", "Century Communities", "Skye Canyon (Skyeview)", "Two-story single family, cul-de-sac lots", "1,602 to 1,965", "Base plan from $436,990"],
+            ["Mesa at Skyeview", "Century Communities", "Skye Canyon (Skyeview)", "Single-story single family", "1,635 to 1,816", "Base plan from $488,990"],
+            ["Terra at Skyeview", "Century Communities", "Skye Canyon (Skyeview)", "Two-story single family", "1,792 to 2,119", "Base plan from $489,990"],
+            ["Paloma Collection", "Toll Brothers", "Skye Canyon, gated", "Two-story single family, final phase", "2,263 to 2,900", "$800,000"]
+          ],
+          "note": "Prices from the Century Communities, LGI Homes, and Toll Brothers websites, checked September 16, 2026. Century prices are the base price of the smallest plan, before lot premiums and options. They change with every release. Toll Brothers' Vista Rossa Collection shows as sold out on home search sites."
+        }},
+        {"p": "Thinking about a townhome? I have a closer look at <a href=\"/blog/skye-canyon-lgi-topaz-townhomes\">LGI's Topaz townhomes in Skye Canyon</a>."}
+      ]
+    },
+    {
+      "id": "builders",
+      "toc": "Skye Canyon builders",
+      "h2": "Which builders are building in Skye Canyon?",
+      "blocks": [
+        {"lede": "The Skye Canyon developer lists three builders today. Century Communities has the most neighborhoods, LGI Homes sells townhomes, and Toll Brothers is closing out its last gated collection."},
+        {"builders": {
+          "cards": [
+            {"key": "century-communities", "note": "Four neighborhoods at Skyeview on Vanhoy Creek Street, the most in Skye Canyon. Arroyo townhomes with a base plan from $376,990, Sierra from $436,990, single-story Mesa from $488,990, and Terra from $489,990."},
+            {"key": "lgi", "note": "Topaz at Skye Canyon on Tibbetts Avenue. Two-story townhomes with 3 to 4 bedrooms, 1,256 to 1,665 square feet, from $399,900."},
+            {"key": "toll-brothers", "note": "Paloma Collection, a gated neighborhood of two-story homes from 2,263 to 2,900 square feet, priced from $800,000. Paloma is in its final phase, and Toll shows one quick move-in home."}
+          ],
+          "note": "The developer does not list Lennar, Pulte, Beazer, or Pardee as active in Skye Canyon. Lennar's Avery Pointe and Pulte's Skye Hills are nearby, but they are outside the Skye Canyon master plan. See <a href=\"#where\">where they are building</a> for those."
+        }}
+      ]
+    }
+  ],
+
+  "listings": {
+    "h2": "New construction homes for sale in Skye Canyon right now",
+    "lede": "These are active MLS listings of newly built homes in Skye Canyon. Many new homes here are sold straight from the builder's sales office and may not reach the MLS, so the table above is the fuller picture.",
+    "lofty_filter": "Location: Skye Canyon (use Lofty's Skye Canyon area or subdivision if offered, otherwise ZIP 89166, which covers every active builder address in Skye Canyon. Note that 89166 also includes neighborhoods outside the master plan, such as Lennar's Avery Pointe). Year Built: 2025 or newer. Property type: single family, townhouse. Status: active. Sort: newest."
+  },
+
+  "part2_sections": [
+    {
+      "id": "where",
+      "toc": "Where they are building",
+      "h2": "Where in Skye Canyon are new homes going up?",
+      "blocks": [
+        {"lede": "Most of the building is at Skyeview, where Century Communities has four collections. LGI's Topaz townhomes and Toll Brothers' Paloma are the other two neighborhoods still selling."},
+        {"h3": "Skyeview, by Century Communities"},
+        {"facts": [
+          ["Neighborhoods selling", "4: Arroyo, Sierra, Terra, and Mesa"],
+          ["Where", "Vanhoy Creek Street, inside Skye Canyon"],
+          ["Base plan prices", "$376,990 at Arroyo to $520,990 for the largest Mesa plan"],
+          ["Worth knowing", "Century lists move-in ready homes and homes under construction with September to December completions"]
+        ]},
+        {"h3": "Topaz at Skye Canyon, by LGI Homes"},
+        {"facts": [
+          ["Home type", "two-story townhomes, 3 to 4 bedrooms"],
+          ["Where", "10693 Tibbetts Avenue"],
+          ["Price", "from $399,900"],
+          ["Worth knowing", "LGI lists gated access among the amenities"]
+        ]},
+        {"h3": "Paloma, by Toll Brothers"},
+        {"facts": [
+          ["Home type", "gated, two-story homes, 3 to 5 bedrooms"],
+          ["Price", "priced from $800,000 on Toll's site"],
+          ["Worth knowing", "the developer says Paloma has reached its final phase and a limited number of move-in ready homes remain. Toll's other collection, Vista Rossa, shows as sold out."]
+        ]},
+        {"h3": "Nearby, outside Skye Canyon"},
+        {"p": "These neighborhoods are close by, and some websites group them with Skye Canyon, but they are not part of the master plan."},
+        {"facts": [
+          ["Avery Pointe, Lennar", "gated, 6250 Amelia Pointe Street, 89166. Homes from 2,448 to 2,668 square feet, some with Next Gen and RV garage plans, from $676,752, with plans from $724,990 (Lennar site, September 16, 2026)"],
+          ["Skye Hills, Pulte", "Valridge at Skye Hills is a gated neighborhood of two-story homes. Talvona, its single-story neighborhood, shows as sold out on home search sites (September 16, 2026)"],
+          ["Skye Summit, KB Home, coming 2027", "a separate Olympia plan of 505 acres approved for about 3,500 homes. KB Home bought 38.6 acres for Vertice at Skye Summit, 299 homesites north of Tropical Parkway, with homes expected on the market in early 2027 (reported January 2026)"]
+        ]},
+        {"p": "Want the story on the next plan over? Read <a href=\"/blog/skye-summit-las-vegas-newest-community\">Skye Summit, the newest community in Las Vegas</a>. For every new neighborhood in the wider northwest, see <a href=\"/centennial-hills-new-construction\">new construction in Centennial Hills</a>."}
+      ]
+    },
+    {
+      "id": "prices",
+      "toc": "What it costs",
+      "h2": "What do new homes cost in Skye Canyon?",
+      "blocks": [
+        {"lede": "Published starting prices run from a $376,990 base plan at Arroyo at Skyeview to $800,000 at Paloma. The developer's site still says \"from $400s\", which is out of date now that two neighborhoods start below $400,000."},
+        {"table": {
+          "head": ["What you want", "Where to look", "Starts from"],
+          "rows": [
+            ["A townhome", "Arroyo at Skyeview, Topaz", "$376,990"],
+            ["A two-story single family home under $500,000", "Sierra at Skyeview, Terra at Skyeview", "$436,990"],
+            ["A single-story home", "Mesa at Skyeview", "$488,990"],
+            ["A larger gated home", "Paloma by Toll Brothers", "$800,000"]
+          ],
+          "note": "From the Century Communities, LGI Homes, and Toll Brothers websites, checked September 16, 2026. Century prices are base plan prices."
+        }},
+        {"h3": "Century plan prices at Skyeview"},
+        {"table": {
+          "head": ["Collection", "Plan and base price"],
+          "rows": [
+            ["Arroyo", "Beverly $376,990, Captiva $386,990, Delray $396,990"],
+            ["Sierra", "Residence 1602 $436,990, Residence 1708 $451,990, Residence 1965 $471,990"],
+            ["Terra", "Residence 1792 $489,990, Residence 1943 $504,990, Residence 2119 $519,990"],
+            ["Mesa", "Residence 1635 $488,990, Residence 1742 $503,990, Residence 1816 $520,990"]
+          ],
+          "note": "Base plan prices from Century Communities' Skyeview pages, checked September 16, 2026. Century's header price for a collection can differ from these. On that date it showed $384,000 for Arroyo, $439,000 for Sierra, and $539,000 for Mesa."
+        }},
+        {"p": "A few things move the price. First is the type of home, since a townhome and a detached home are different products. Second is size, from 1,256 square feet at Topaz to 2,900 at Paloma. Third is the builder. Century and LGI sell entry and move-up homes, and Toll Brothers sells larger homes. Single-story costs more per foot, too. Mesa's smallest plan is about the same price as Terra's smallest, with 157 fewer square feet. Builder pages do not publish lot premiums, so ask for them."},
+        {"p": "Prices also move between releases. Arroyo's Beverly plan was $372,990 and Sierra's 1602 plan was $433,990 in earlier price checks, and both went up. Sierra's 1965 plan went down, from $478,990 to $471,990. Paloma shows two numbers as well: $800,000 on Toll's site and \"from the $600s\" on the developer's site. Always work from a dated price sheet."}
+      ]
+    },
+    {
+      "id": "monthly-costs",
+      "toc": "HOA, SID, and taxes",
+      "h2": "What will you pay each month on top of the mortgage?",
+      "blocks": [
+        {"lede": "Plan for an HOA, property tax, and on some lots a special improvement district payment. The builders do not publish HOA dues, so get the exact numbers in writing."},
+        {"table": {
+          "head": ["Cost", "What it is", "Amount"],
+          "rows": [
+            ["Master HOA", "Skye Canyon's community association", "Not published by the developer or builders, ask for the exact figure"],
+            ["Neighborhood HOA", "Your own neighborhood's association, if it has one", "Not published, ask the builder"],
+            ["SID payment", "Repays bonds that built roads, sewer, drainage, and water lines", "Varies by parcel, check the lot"],
+            ["Property tax", "Clark County, with a 3% yearly cap on increases for a primary home", "Based on assessed value"]
+          ],
+          "note": "Skye Canyon HOA phone number, from the developer's site: (702) 786-0207. HOA figures quoted on other websites could not be traced to a primary source, so they are not used here."
+        }},
+        {"p": "The SID is the one people miss. The City of Las Vegas set up Special Improvement District No. 610 for Skye Canyon Phase 3. It sold $12.5 million in bonds for streets, storm and sanitary sewer, drainage, and water lines on a 267 acre site planned for 1,282 homes. Which Skyeview, Topaz, or Paloma lots sit inside SID 610 is not published, and neither is the yearly amount. Before you sign, check the parcel with the Clark County Treasurer or ask the title company for the preliminary report."},
+        {"p": "You may read online that Skye Canyon has no SID. The federal highway agency's profile of SID 610 shows otherwise for Phase 3, so check your lot."}
+      ]
+    },
+    {
+      "id": "schools",
+      "toc": "Schools builders list",
+      "h2": "Which schools serve the new Skye Canyon neighborhoods?",
+      "blocks": [
+        {"lede": "The Skyeview builder pages list Arbor View High School. The elementary and middle school depend on the collection."},
+        {"table": {
+          "head": ["Where the home is", "Elementary", "Middle", "High"],
+          "rows": [
+            ["Mesa, Terra, and Arroyo at Skyeview", "Divich", "Escobedo", "Arbor View"],
+            ["Sierra at Skyeview", "Scherkenbach, Bilbray, or Divich", "Cadwallader or Escobedo", "Arbor View"],
+            ["Avery Pointe (nearby, outside Skye Canyon)", "Darnell", "Escobedo", "Centennial"]
+          ],
+          "note": "Schools as listed by Century Communities and Lennar on September 16, 2026. These are builder lists, not a CCSD zoning check. Boundaries change, so confirm your exact address with the <a href=\"https://ccsd.net/schools/zoning/\" rel=\"nofollow\">CCSD zoning search</a>."
+        }},
+        {"p": "Century also lists Somerset Academy of Las Vegas, Skye Canyon Campus, a charter school, for Sierra. The developer says an elementary school is half a mile away. LGI's Topaz page does not name its schools, so check that address with CCSD. For more, read <a href=\"/blog/schools-near-skye-canyon\">schools near Skye Canyon</a>."}
+      ]
+    },
+    {
+      "id": "location",
+      "toc": "Location and nearby",
+      "h2": "Where is Skye Canyon, and what is close by?",
+      "blocks": [
+        {"lede": "Skye Canyon is in far northwest Las Vegas, off US-95 at Skye Canyon Park Drive. It is inside the City of Las Vegas, and the active builder addresses are all in ZIP 89166."},
+        {"ul": [
+          "<strong>Getting around:</strong> US-95 at Skye Canyon Park Drive. The developer lists the Strip at 18 miles and downtown Las Vegas at 16 miles.",
+          "<strong>Mountains:</strong> Mt. Charleston Resort is 17 miles away.",
+          "<strong>Shopping:</strong> Skye Canyon Marketplace, anchored by Smith's Marketplace, is half a mile away.",
+          "<strong>Community centers:</strong> Skye Center is about 8,000 square feet, and Skye Fitness is about 10,000 square feet with a pool and sports facilities.",
+          "<strong>Parks:</strong> Skye Canyon Park and several parks with splash pads and sports courts. Officer Alyn Beck Memorial Park is 1.2 miles away, and Floyd Lamb Park at Tule Springs is 2 miles away.",
+          "<strong>Medical:</strong> the developer lists a hospital and medical center 3 miles away."
+        ]},
+        {"p": "Curious what the drive looks like day to day? Read <a href=\"/blog/skye-canyon-commute-to-strip\">the Skye Canyon commute to the Strip</a>."}
+      ]
+    },
+    {
+      "id": "watch-outs",
+      "toc": "Before you buy",
+      "h2": "What should you know before buying new in Skye Canyon?",
+      "blocks": [
+        {"lede": "Skye Canyon has good choices under $500,000, but a few things catch new buyers off guard."},
+        {"ul": [
+          "<strong>Check who is really building.</strong> Many websites still list Lennar, Pulte, and Beazer in Skye Canyon. The developer lists only Century Communities, LGI Homes, and Toll Brothers.",
+          "<strong>Ask which price you are looking at.</strong> Century shows a header price and a lower base plan price for Arroyo, Sierra, and Mesa.",
+          "<strong>Get the HOA numbers in writing.</strong> Builders do not publish master or neighborhood dues. Ask for the HOA documents with the exact amounts.",
+          "<strong>Check the SID on the exact lot.</strong> SID 610 covers Skye Canyon Phase 3, and the yearly amount depends on the parcel.",
+          "<strong>Move fast on Paloma, or plan on resale.</strong> Toll Brothers is in its final phase with limited move-in ready homes.",
+          "<strong>Know the lot and home type.</strong> Sierra homes sit on cul-de-sac lots, and Arroyo and Topaz are townhomes.",
+          "<strong>Expect construction nearby.</strong> Skye Summit is planned for about 3,500 homes, with KB Home's first homes expected in early 2027."
+        ]}
+      ]
+    },
+    {
+      "id": "your-agent",
+      "toc": "Your own agent",
+      "h2": "Why bring your own agent to a Skye Canyon model home?",
+      "blocks": [
+        {"lede": "The friendly person at the sales desk works for the builder. Their job is to sell that builder's homes at that builder's price."},
+        {"p": "In Skye Canyon you might be comparing a Century townhome at Arroyo, an LGI townhome at Topaz, and a single-story home at Mesa, each with its own HOA and possibly a SID. Having someone on your side who lines those up for you costs you nothing, because the builder pays the buyer agent commission either way. The one rule: most builders require your agent to be registered on your very first visit. <a href=\"/las-vegas-new-construction#why-ryan\">Here is what having your own agent actually changes</a>."}
+      ]
+    }
+  ],
+
+  "faq": [
+    ["Who is building new homes in Skye Canyon in 2026?", "The developer lists three builders: Century Communities, LGI Homes, and Toll Brothers. Toll Brothers' Paloma is in its final phase, so most choices are with Century and LGI."],
+    ["What is the cheapest new home in Skye Canyon?", "Arroyo at Skyeview by Century Communities, with townhomes on a base plan from $376,990 as of September 16, 2026. LGI's Topaz townhomes start at $399,900."],
+    ["Are there single-story new homes in Skye Canyon?", "Yes. Mesa at Skyeview by Century Communities is single-story, with plans from 1,635 to 1,816 square feet and base plans from $488,990."],
+    ["Is Skyeview part of Skye Canyon?", "Yes. The Skye Canyon developer lists Mesa, Terra, Sierra, and Arroyo at Skyeview as Century Communities neighborhoods in Skye Canyon."],
+    ["Does Skye Canyon have a SID?", "Part of it does. City of Las Vegas SID No. 610 sold $12.5 million in bonds for infrastructure on the 267 acre Skye Canyon Phase 3. Check your exact parcel with the Clark County Treasurer or your title company."],
+    ["Which schools serve the Skyeview homes?", "Century lists Divich Elementary, Escobedo Middle, and Arbor View High for Mesa, Terra, and Arroyo. Confirm with CCSD zoning, since boundaries change."],
+    ["How far is Skye Canyon from the Strip?", "The developer lists the Strip at 18 miles and downtown Las Vegas at 16 miles. Mt. Charleston Resort is 17 miles away."],
+    ["Is more new construction coming near Skye Canyon?", "Yes. Skye Summit, a separate 505 acre Olympia plan approved for about 3,500 homes, sold its first land to KB Home. Homes there are expected on the market in early 2027."]
+  ],
+
+  "cta": {
+    "h2": "Touring Skye Canyon models soon?",
+    "p": "Let me line up the neighborhoods that fit your budget, with current prices and the questions to ask about HOA and SID costs, before your first visit. There is no cost to you, and I will be registered with the builder from day one."
+  },
+
+  "sources": [
+    ["Skye Canyon, developer home page, accessed September 16, 2026", "https://skyecanyon.com/"],
+    ["Skye Canyon, homes and builders, accessed September 16, 2026", "https://skyecanyon.com/homes/"],
+    ["Skye Canyon, Century Communities, accessed September 16, 2026", "https://skyecanyon.com/homes/century-communities/"],
+    ["Skye Canyon, Toll Brothers, accessed September 16, 2026", "https://skyecanyon.com/homes/toll-brothers/"],
+    ["Skye Canyon, setting and distances, accessed September 16, 2026", "https://skyecanyon.com/skye-life/setting/"],
+    ["Toll Brothers at Skye Canyon, accessed September 16, 2026", "https://www.tollbrothers.com/luxury-homes-for-sale/Nevada/Skye-Canyon"],
+    ["Century Communities, Mesa at Skyeview, accessed September 16, 2026", "https://www.centurycommunities.com/find-your-new-home/nevada/las-vegas-metro/las-vegas/skye-canyon/skyeview---mesa/"],
+    ["Century Communities, Terra at Skyeview, accessed September 16, 2026", "https://www.centurycommunities.com/find-your-new-home/nevada/las-vegas-metro/las-vegas/skye-canyon/skyeview---terra/"],
+    ["Century Communities, Sierra at Skyeview, accessed September 16, 2026", "https://www.centurycommunities.com/find-your-new-home/nevada/las-vegas-metro/las-vegas/skye-canyon/skyeview---sierra/"],
+    ["Century Communities, Arroyo at Skyeview, accessed September 16, 2026", "https://www.centurycommunities.com/find-your-new-home/nevada/las-vegas-metro/las-vegas/skye-canyon/skyeview---arroyo/"],
+    ["LGI Homes, Topaz at Skye Canyon, accessed September 16, 2026", "https://www.lgihomes.com/nevada/las-vegas/topaz-at-skye-canyon"],
+    ["Federal Highway Administration, City of Las Vegas SID 610 project profile", "https://www.fhwa.dot.gov/ipd/project_profiles/nv_las_vegas_sid.aspx"],
+    ["Clark County special improvement districts", "https://www.clarkcountynv.gov/government/departments/public_works_department/special-improvement-districts-sid"],
+    ["Las Vegas Review-Journal, Olympia Cos. kickoff for 1,700 acre master plan", "https://www.reviewjournal.com/business/housing/olympia-cos-goes-all-out-for-kickoff-on-1700-acre-master-plan/"],
+    ["Redfin, Toll Brothers Vista Rossa Collection, accessed September 16, 2026", "https://www.redfin.com/NV/Las-Vegas/Toll-Brothers-at-Skye-Canyon-Vista-Rossa-Collection/community/29222"],
+    ["Lennar, Avery Pointe, accessed September 16, 2026", "https://www.lennar.com/new-homes/nevada/las-vegas/las-vegas/avery-pointe"],
+    ["Pulte, Valridge at Skye Hills, accessed September 16, 2026", "https://www.pulte.com/homes/nevada/las-vegas/las-vegas/valridge-at-skye-hills-210818"],
+    ["Livabl, Talvona at Skye Hills, accessed September 16, 2026", "https://www.livabl.com/las-vegas-nv/talvona-at-skye-hills"],
+    ["Las Vegas Review-Journal, Skye Summit first land sale to KB Home, January 2026", "https://www.reviewjournal.com/business/housing/new-community-in-las-vegas-planned-for-3500-homes-bags-first-land-sale-to-builder-3605778/"],
+    ["CCSD zoning search", "https://ccsd.net/schools/zoning/"]
+  ]
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1280px; height:720px; overflow:hidden; background:#ffffff; }
+  .thumb { position:relative; width:1280px; height:720px; background:#ffffff; }
+  .text {
+    position:absolute;
+    left:44px;
+    top:190px;
+    width:630px;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-weight:900;
+    font-size:94px;
+    line-height:1.15;
+    letter-spacing:-0.02em;
+    color:#0a0a0a;
+    z-index:2;
+    text-transform:lowercase;
+  }
+  .photo-frame {
+    position:absolute;
+    top:0;
+    right:0;
+    width:780px;
+    height:720px;
+    overflow:hidden;
+  }
+  .photo {
+    position:absolute;
+    top:-110px;
+    left:50%;
+    transform:translateX(-50%);
+    height:2000px;
+    width:auto;
+    display:block;
+  }
+  .photo-frame::after{content:"";position:absolute;top:0;left:0;width:260px;height:100%;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,0.85) 35%,rgba(255,255,255,0) 100%);}
+</style>
+</head>
+<body>
+  <div class="thumb">
+    <div class="text">ai writes my seller updates</div>
+    <div class="photo-frame"><img class="photo" src="headshot.png"></div>
+  </div>
+</body>
+</html>

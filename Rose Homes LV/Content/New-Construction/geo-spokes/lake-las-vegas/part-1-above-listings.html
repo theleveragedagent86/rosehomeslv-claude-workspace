@@ -1,0 +1,1186 @@
+<!-- ================================================================
+     ROSE HOMES LV, LAKE LAS VEGAS NEW CONSTRUCTION, PART 1 of 2 (ABOVE the featured listings)
+     Page: https://www.rosehomeslv.com/lake-las-vegas-new-construction
+     Paste into the Lofty HTML / custom code module ABOVE
+     the Featured Listings block you build in Lofty's editor.
+
+     GENERATED FILE. Do not hand-edit. Edit geo-spokes/lake-las-vegas/content.json
+     and run: python3 geo-spokes/_build/build.py lake-las-vegas
+     CSS and script come from new-construction-hub/part-1-above-listings.html.
+
+     Design tokens: SKOOL Brandkit "Vector" v2.0.
+     ================================================================ -->
+
+<script>
+/* ============================================================
+   LOFTY CMS FULL-BLEED ESCAPE, required, paste stays at top of body.
+   Walks up the DOM and strips Lofty's width/padding constraints.
+   Source: ~/.claude/skills/new-construction/landing-page-template.md
+   ============================================================ */
+(function () {
+    function stripConstraints() {
+        var el = document.body.parentElement;
+        while (el && el !== document.documentElement) {
+            el.style.setProperty('max-width', 'none', 'important');
+            el.style.setProperty('width', '100%', 'important');
+            el.style.setProperty('padding', '0', 'important');
+            el.style.setProperty('margin', '0', 'important');
+            el.style.setProperty('overflow', 'visible', 'important');
+            el.style.setProperty('background', '#FFFFFF', 'important');
+            el = el.parentElement;
+        }
+        var bodyKids = document.body.children;
+        for (var i = 0; i < bodyKids.length; i++) {
+            var p = bodyKids[i].parentElement;
+            while (p && p !== document.body) {
+                p.style.setProperty('max-width', 'none', 'important');
+                p.style.setProperty('width', '100%', 'important');
+                p.style.setProperty('padding', '0', 'important');
+                p.style.setProperty('margin', '0', 'important');
+                p.style.setProperty('overflow', 'visible', 'important');
+                p = p.parentElement;
+            }
+        }
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', stripConstraints);
+    } else { stripConstraints(); }
+    setTimeout(stripConstraints, 100);
+    setTimeout(stripConstraints, 500);
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   ROSE HOMES LV, NEW CONSTRUCTION HUB
+   Design system: Marketing/nrg-research/09-hub-design-system.md
+   Content spec:  Marketing/nrg-research/10-hub-content-blueprint.md
+   ============================================================ */
+:root{
+  /* ============================================================
+     THE LEVERAGED AGENT DESIGN SYSTEM v2.0 "VECTOR"
+     Source of truth: SKOOL Community/Brandkit/Brand-Guide/tokens.css
+                      SKOOL Community/Brandkit/Brand-Guide/BRAND-GUIDE.md
+     Adopted 2026-08-19. Every pairing below is WCAG 2.1 computed.
+
+     THE THREE RULES OF THIS SYSTEM, do not break them:
+       1. ONE accent, ONE value. #1768E5 works as a fill AND as text on
+          white, so it needs no second darker variant. Never add one.
+       2. Black is a SURFACE, never a text color. The pop is structural,
+          a full-bleed black band butted against white, not chromatic.
+       3. NO warm colors. No cream, no gold, no sage, no orange.
+     ============================================================ */
+
+  /* SURFACES */
+  --dark:#ffffff;          /* la-bg       primary surface, pure white */
+  --dark-surface:#f7f8fa;  /* la-bg-2     sunken fill, cards, table rows */
+  --dark-card:#ffffff;
+  --white:#ffffff;
+  --inv:#000000;           /* la-bg-inv   TRUE black. A SURFACE, never text. */
+  --line:#e4e7ef;          /* la-line     hairline, 1.24. NOT a text color. */
+  --structure:#0b3fa8;     /* la-structure  rules, bars, fills, 9.17.
+                                            NOT a text color. */
+
+  /* INK */
+  --text-dark:#050e3d;     /* la-ink        18.48 on white */
+  --text-body:#050e3d;     /* same ink, hierarchy comes from weight and size */
+  --text-meta:#55627f;     /* la-ink-2      6.11 on bg, 5.75 on bg-2 */
+  --ink-inv:#ffffff;       /* la-ink-inv    21.00 on black */
+  --ink-2-inv:#9aa3bc;     /* la-ink-2-inv  8.34 on black */
+
+  /* ACCENT, one accent, one value */
+  --accent:#1768e5;        /* la-accent      fills, buttons, links */
+  --accent-on:#ffffff;     /* la-accent-on   text placed ON accent, 5.06 */
+  --accent-ink:#1768e5;    /* la-accent-txt  the SAME blue as text on white, 5.06.
+                                             Not a second value, the same one. */
+  --accent-inv:#5b9bff;    /* la-accent-inv  accent as text on black, 7.58 */
+  --accent-hover:#0b3fa8;  /* reuses la-structure as the pressed state.
+                              Not a new accent, an existing token. */
+  --accent-muted:rgba(23,104,229,.10);
+  --accent-tint:rgba(23,104,229,.05);
+  --accent-line:rgba(23,104,229,.32);
+
+  /* ALPHA-INK SCALE, hairlines and tints, derived from la-ink */
+  --w60:rgba(5,14,61,.70); --w40:rgba(5,14,61,.55);
+  --w20:rgba(5,14,61,.32); --w08:rgba(5,14,61,.12); --w04:rgba(5,14,61,.05);
+
+  /* GEOMETRY */
+  --radius:8px; --radius-sm:4px; --radius-pill:999px;
+  --container:1180px; --measure:68ch; --rail:260px; --rail-gap:48px;
+  --nav-h:60px;
+  --anchor-off:88px;   /* scroll-padding, clears Lofty's fixed site nav on anchor jumps */
+  --rail-top:24px;     /* how high the sticky rail rides. Deliberately NOT --anchor-off:
+                          the rail sits near the top of the viewport, while anchor jumps
+                          still need clearance for Lofty's nav. */
+
+  /* SHADOWS, ink-tinted, used sparingly */
+  --shadow-sm:0 1px 2px rgba(5,14,61,.05);
+  --shadow-card:0 1px 2px rgba(5,14,61,.05),0 6px 18px -10px rgba(5,14,61,.14);
+  --shadow-lift:0 2px 4px rgba(5,14,61,.06),0 14px 32px -14px rgba(5,14,61,.22);
+  --shadow-rail:0 1px 2px rgba(5,14,61,.04),0 10px 30px -18px rgba(5,14,61,.20);
+  --shadow-band:0 24px 60px -32px rgba(5,14,61,.50);
+
+  /* MOTION */
+  --t:220ms cubic-bezier(.2,.6,.2,1);
+  --t-slow:420ms cubic-bezier(.2,.6,.2,1);
+
+  /* TYPE, settled 2026-08-19.
+     Barlow 800 headlines. Raleway 600 SUBTEXT ONLY (eyebrow, subhead, small
+     label), never a running paragraph. Inter 400/500 body at line-height 1.6.
+     The 800-to-400 gap carries the whole hierarchy: there is no serif here. */
+  --font-display:'Barlow','Helvetica Neue',Arial,sans-serif;
+  --font-head:'Barlow','Helvetica Neue',Arial,sans-serif;
+  --font-label:'Raleway','Helvetica Neue',Arial,sans-serif;
+  --font-body:'Inter',-apple-system,'Helvetica Neue',Arial,sans-serif;
+  --weight-head:800;
+  --weight-sub:600;
+  --track-head:-.028em;
+  --track-sub:.01em;
+  --track-label:.15em;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+/* CRITICAL: overflow-x must be `clip`, NOT `hidden`.
+   `hidden` computes overflow-y to auto, which silently kills position:sticky. */
+html{
+  font-size:16px; scroll-behavior:smooth; scroll-padding-top:var(--anchor-off);
+  width:100%; max-width:100%; overflow-x:clip; background:var(--dark);
+}
+@media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
+
+body{
+  margin:0 !important; padding:0 !important;
+  width:100%; max-width:100%; overflow-x:clip;
+  background:var(--dark); color:var(--text-body);
+  font-family:var(--font-body); font-size:18px; line-height:1.75; font-weight:400;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+}
+
+h1,h2,h3,h4{ color:var(--text-dark); margin:0; text-wrap:balance; }
+img{ max-width:100%; display:block; }
+
+.rh-container{ max-width:var(--container); margin:0 auto; padding:0 28px; width:100%; }
+.rh-section{ padding:80px 0; }
+.rh-section--base{ background:var(--dark); }
+.rh-section--alt{ background:var(--dark-surface); }
+.rh-section--inv{ background:var(--inv); color:var(--ink-inv); }
+
+/* ---------- eyebrow ---------- */
+.rh-eyebrow{
+  font-family:var(--font-label);
+  display:flex; align-items:center; gap:14px;
+  font-size:11px; font-weight:var(--weight-sub); letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--accent-ink); margin:0 0 18px;
+}
+.rh-eyebrow::after{ content:''; flex:1; height:1px; background:var(--accent-line); }
+.rh-section--inv .rh-eyebrow{ color:var(--accent-inv); }
+.rh-section--inv .rh-eyebrow::after{ background:rgba(91,155,255,.45); }
+
+/* ---------- breadcrumb ---------- */
+.rh-crumb{ background:var(--dark); padding:14px 0 0; font-size:13px; color:var(--text-meta); }
+.rh-crumb a{ color:var(--text-dark); text-decoration:none; }
+.rh-crumb a:hover{ color:var(--accent-ink); text-decoration:underline; }
+
+/* ---------- hero ---------- */
+/* WHITE HERO WITH A DISSOLVING PHOTO.
+   The photograph sits on the right and fades out into the page instead of
+   meeting the copy at a hard vertical edge. Two washes do it: a white-to-clear
+   one across its left side, and a shorter one along its bottom. There is no
+   seam anywhere and no box around the image.
+   Ryan rejected both the black panel and the hard cut, in that order. Do not
+   reintroduce either. */
+.rh-hero{
+  position:relative; background:var(--white); color:var(--text-dark);
+  overflow:hidden;
+}
+.rh-hero__media{
+  position:absolute; top:0; right:0; bottom:0; left:auto;
+  width:64%; margin:0; z-index:0; pointer-events:none;
+}
+.rh-hero__media img{
+  display:block; width:100%; height:100%;
+  object-fit:cover; object-position:50% 58%;
+}
+/* The dissolve. Stays fully opaque past where the copy ends, so the headline
+   never sits on a half-transparent photo, then falls away to nothing. */
+.rh-hero__media::after{
+  content:''; position:absolute; inset:0;
+  background:
+    linear-gradient(to right,
+      #fff 0%, #fff 28%,
+      rgba(255,255,255,.55) 46%,
+      rgba(255,255,255,.12) 62%,
+      rgba(255,255,255,0) 76%),
+    linear-gradient(to top,
+      #fff 0%, rgba(255,255,255,.45) 12%, rgba(255,255,255,0) 30%),
+    linear-gradient(to bottom,
+      #fff 0%, rgba(255,255,255,.40) 9%, rgba(255,255,255,0) 22%);
+}
+.rh-hero__inner{
+  position:relative; z-index:1;
+  display:flex; align-items:center;
+  min-height:clamp(520px,58vh,640px);
+  padding-top:76px; padding-bottom:76px;
+}
+.rh-hero__panelInner{ width:100%; max-width:540px; }
+.rh-hero__kicker{
+  font-family:var(--font-label);
+  font-size:11px; font-weight:var(--weight-sub); letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--accent-ink); margin:0 0 18px;
+}
+.rh-hero h1{
+  font-family:var(--font-display); font-size:clamp(36px,3.9vw,58px);
+  line-height:1.04; font-weight:var(--weight-head); letter-spacing:var(--track-head);
+  color:var(--text-dark); margin:0 0 18px; max-width:15ch; text-wrap:balance;
+}
+.rh-hero__sub{
+  font-size:clamp(16px,1.25vw,18px); line-height:1.6; color:var(--text-body);
+  max-width:46ch; margin:0 0 28px;
+}
+.rh-hero__stats{
+  /* 2x2, not a 4-wide flex row. The column is narrow, so four across wraps
+     3+1 and looks accidental. */
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px 28px; margin:0 0 30px; max-width:400px;
+  padding:24px 0 0; border-top:1px solid var(--line);
+}
+.rh-stat__num{
+  font-family:var(--font-display); font-size:clamp(26px,2.5vw,38px);
+  line-height:.95; font-weight:var(--weight-head); letter-spacing:var(--track-head);
+  color:var(--accent-ink); display:block;   /* 5.06 on white */
+}
+.rh-stat__label{
+  font-family:var(--font-label); font-weight:var(--weight-sub);
+  font-size:11px; letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--text-meta); margin-top:6px; display:block;
+}
+.rh-hero__cta{ display:flex; flex-wrap:wrap; gap:12px; }
+
+/* Mid desktop: pull the photo in and narrow the column, so the opaque part of
+   the dissolve still clears the end of the copy. */
+@media (min-width:960px) and (max-width:1279px){
+  .rh-hero__media{ width:58%; }
+  .rh-hero__panelInner{ max-width:460px; }
+}
+
+/* ---- MOBILE: photo band on top, dissolving downward into the copy ---- */
+@media (max-width:959px){
+  .rh-hero{ display:flex; flex-direction:column; }
+  .rh-hero__media{
+    position:relative; top:auto; right:auto; bottom:auto;
+    width:100%; height:clamp(230px,52vw,340px); order:1;
+  }
+  .rh-hero__media::after{
+    /* stacked: dissolve down into the copy, and soften the top edge so the
+       photo does not butt hard against the breadcrumb */
+    background:
+      linear-gradient(to top,
+        #fff 0%, rgba(255,255,255,.72) 16%, rgba(255,255,255,.18) 34%, rgba(255,255,255,0) 56%),
+      linear-gradient(to bottom,
+        #fff 0%, rgba(255,255,255,.35) 7%, rgba(255,255,255,0) 18%);
+  }
+  .rh-hero__inner{ order:2; min-height:0; padding-top:22px; padding-bottom:52px; }
+  .rh-hero__panelInner{ max-width:none; }
+  .rh-hero h1{ font-size:clamp(32px,7.4vw,44px); max-width:18ch; }
+  .rh-hero__sub{ max-width:62ch; }
+  .rh-hero__stats{ max-width:none; gap:20px 24px; }
+}
+@media (max-width:479px){
+  .rh-hero__media{ height:clamp(200px,48vw,260px); }
+  .rh-hero__cta{ gap:10px; }
+  .rh-hero__cta .rh-btn{ flex:1 1 auto; }
+  .rh-hero__cta .rh-btn--primary{ flex:1 1 100%; }
+}
+
+/* ---------- buttons ---------- */
+.rh-btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  padding:14px 26px; border-radius:var(--radius-pill);
+  font-family:var(--font-body); font-size:14px; font-weight:600; letter-spacing:.02em;
+  text-decoration:none; cursor:pointer; border:1.5px solid transparent;
+  transition:transform var(--t), background-color var(--t), color var(--t), border-color var(--t), box-shadow var(--t);
+}
+/* Vector primary: the accent fill with white on it. 5.06:1, passes AA.
+   This is the one place the accent is used as a fill. */
+.rh-btn--primary{ background:var(--accent); color:var(--accent-on); border-color:var(--accent); }
+.rh-btn--primary:hover{ background:var(--accent-hover); border-color:var(--accent-hover); transform:translateY(-2px); box-shadow:var(--shadow-lift); }
+.rh-btn--primary:active{ transform:translateY(0); }
+
+.rh-btn--ghost{ background:transparent; color:var(--accent-ink); border-color:var(--accent); }
+.rh-btn--ghost:hover{ background:var(--accent-muted); transform:translateY(-2px); }
+.rh-btn--ghost:active{ transform:translateY(0); }
+
+/* on true-black surfaces the ghost flips to the inverse accent, 7.58:1 */
+/* Only on true-black surfaces does the ghost flip to the inverse accent,
+   7.58:1. The hero is white now, so it is deliberately not in this list. */
+.rh-section--inv .rh-btn--ghost{ color:var(--accent-inv); border-color:rgba(91,155,255,.55); }
+.rh-section--inv .rh-btn--ghost:hover{ background:rgba(91,155,255,.14); }
+
+
+.rh-btn--sm{ padding:11px 18px; font-size:13px; }
+.rh-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+/* ---------- direct answer + takeaways ---------- */
+.rh-answer{
+  margin:0 0 34px; padding:28px 32px;
+  background:var(--dark-card); border:1px solid var(--w08);
+  border-left:4px solid var(--accent); border-radius:var(--radius);
+  box-shadow:var(--shadow-card);
+}
+.rh-answer p{ margin:0; font-size:19px; line-height:1.7; color:var(--text-dark); max-width:none; }
+
+.rh-takeaways{
+  margin:0 0 40px; padding:30px 34px;
+  background:var(--accent-tint); border:1px solid var(--accent-line);
+  border-radius:var(--radius);
+}
+.rh-takeaways h3{
+  font-size:11px; font-weight:var(--weight-sub); letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--accent-ink); margin:0 0 18px;
+}
+.rh-takeaways ol{ margin:0; padding-left:22px; }
+.rh-takeaways li{ margin-bottom:14px; line-height:1.65; }
+.rh-takeaways li:last-child{ margin-bottom:0; }
+.rh-takeaways li::marker{ color:var(--accent-ink); font-weight:600; }
+
+/* ---------- byline ---------- */
+.rh-byline{
+  font-size:14px; color:var(--text-meta); margin:0 0 42px;
+  padding-bottom:22px; border-bottom:1px solid var(--w08);
+}
+.rh-byline strong{ color:var(--text-dark); font-weight:600; }
+
+/* ---------- area pills ---------- */
+.rh-pills{ display:flex; flex-wrap:wrap; gap:10px; margin:22px 0 0; }
+.rh-pill{
+  display:inline-flex; align-items:center; padding:10px 20px;
+  background:var(--dark-card); border:1px solid var(--w08);
+  border-radius:var(--radius-pill); text-decoration:none;
+  font-size:14px; font-weight:500; color:var(--text-dark);
+  box-shadow:var(--shadow-sm);
+  transition:transform var(--t), border-color var(--t), box-shadow var(--t), color var(--t);
+}
+.rh-pill:hover{ transform:translateY(-2px); border-color:var(--accent); color:var(--accent-ink); box-shadow:var(--shadow-card); }
+.rh-pill:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+/* ---------- article shell + sticky rail ---------- */
+.rh-article-shell{ display:block; }
+@media (min-width:1024px){
+  .rh-article-shell{
+    display:grid; grid-template-columns:minmax(0,1fr) var(--rail);
+    gap:var(--rail-gap); align-items:start;
+  }
+}
+.rh-prose{ min-width:0; }
+.rh-prose > *{ max-width:var(--measure); }
+.rh-prose > .rh-wide{ max-width:none; }
+
+.rh-prose h2{
+  font-family:var(--font-head); font-size:clamp(26px,3vw,38px);
+  line-height:1.14; font-weight:var(--weight-head); letter-spacing:var(--track-head);
+  margin:76px 0 20px; scroll-margin-top:var(--anchor-off);
+}
+.rh-prose > h2:first-child{ margin-top:0; }
+.rh-prose h3{
+  font-family:var(--font-head); font-size:clamp(18px,1.4vw,21px);
+  line-height:1.34; font-weight:700; letter-spacing:-.018em;
+  margin:40px 0 12px; scroll-margin-top:var(--anchor-off);
+}
+.rh-prose p{ margin:0 0 22px; }
+.rh-lede{ font-size:20px; line-height:1.68; letter-spacing:-.003em; color:var(--text-dark); margin:0 0 26px; }
+.rh-prose ul,.rh-prose ol{ margin:0 0 22px; padding-left:22px; }
+.rh-prose li{ margin-bottom:10px; padding-left:4px; }
+.rh-prose li::marker{ color:var(--accent-ink); }
+.rh-prose strong{ font-weight:600; color:var(--text-dark); }
+.rh-prose a{
+  color:var(--text-dark); text-decoration:underline; text-decoration-color:var(--accent);
+  text-decoration-thickness:1.5px; text-underline-offset:3px;
+  transition:color var(--t), text-decoration-color var(--t);
+}
+.rh-prose a:hover{ color:var(--accent-ink); text-decoration-color:var(--accent-ink); }
+
+.rh-rail{ margin:0 0 44px; }
+.rh-toc{
+  background:var(--dark-surface); border:1px solid var(--w08);
+  border-left:3px solid var(--accent); border-radius:var(--radius);
+  padding:22px 26px; box-shadow:var(--shadow-sm);
+}
+.rh-toc__title{
+  font-family:var(--font-label);
+  margin:0 0 14px; font-size:11px; font-weight:600;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--accent-ink);
+}
+.rh-toc__progress{ display:none; }
+.rh-toc__scroll{ min-width:0; }
+.rh-toc__list{ columns:2; column-gap:30px; margin:0; padding-left:20px; list-style:decimal; }
+.rh-toc__list li{ break-inside:avoid; margin-bottom:8px; }
+.rh-toc__list li::marker{ color:var(--w20); font-size:12px; }
+.rh-toc__list a{
+  color:var(--text-body); text-decoration:none; font-size:14px;
+  display:block; transition:color var(--t), transform var(--t);
+}
+.rh-toc__list a:hover{ color:var(--accent-ink); transform:translateX(2px); }
+.rh-toc__list a:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+.rh-toc__cta{ display:none; }
+@media (max-width:700px){ .rh-toc__list{ columns:1; } }
+
+@media (min-width:1024px){
+  /* The rail is a sticky FRAME. It rides high in the viewport (--rail-top)
+     and never scrolls itself. */
+  .rh-rail{
+    position:-webkit-sticky; position:sticky; top:var(--rail-top); margin:0;
+    max-height:calc(100vh - var(--rail-top) - 24px);
+    display:flex; z-index:5;
+  }
+
+  /* CRITICAL: the scroll lives on .rh-toc__scroll, NOT on .rh-toc or .rh-rail.
+     If the bordered box is itself the scroll container, its bottom border
+     scrolls out of view and the panel looks open-ended at the bottom.
+     Here the border stays on a clipped flex frame and only the list moves. */
+  .rh-toc{
+    display:flex; flex-direction:column;
+    min-height:0; max-height:100%;
+    padding:18px 0 0;      /* side padding moves to the children, so the
+                              scrollbar sits inside the border */
+    overflow:hidden;       /* clips the list to the rounded corners */
+    box-shadow:var(--shadow-rail);
+  }
+  .rh-toc__title{ flex:0 0 auto; padding:0 18px; margin:0 0 12px; }
+  .rh-toc__progress{
+    flex:0 0 auto; display:block; position:relative; height:2px;
+    background:var(--w08); border-radius:999px; margin:0 18px 14px; overflow:hidden;
+  }
+  .rh-toc__progress-fill{
+    position:absolute; inset:0; background:var(--accent);
+    transform-origin:left center; transform:scaleX(0);
+    transition:transform var(--t-slow);
+  }
+  .rh-toc__scroll{
+    flex:1 1 auto; min-height:0;
+    overflow-y:auto; overscroll-behavior:contain;
+    padding:0 10px 2px;
+    scrollbar-width:thin; scrollbar-color:var(--w20) transparent;
+  }
+  .rh-toc__scroll::-webkit-scrollbar{ width:6px; }
+  .rh-toc__scroll::-webkit-scrollbar-thumb{ background:var(--w20); border-radius:999px; }
+  .rh-toc__scroll::-webkit-scrollbar-track{ background:transparent; }
+  /* Sticky fade so a cut-off list reads as scrollable, not as a hard edge. */
+  .rh-toc__scroll::after{
+    content:''; display:block; position:sticky; bottom:0;
+    height:22px; margin-top:-22px; pointer-events:none;
+    background:linear-gradient(to top, var(--dark-surface), rgba(247,248,250,0));
+  }
+  .rh-toc__list{ columns:1; padding-left:0; list-style:none; counter-reset:toc; }
+  .rh-toc__list li{ counter-increment:toc; margin-bottom:1px; }
+  .rh-toc__list a{ position:relative; padding:6px 8px 6px 30px; font-size:13px; line-height:1.45; color:var(--text-meta); }
+  .rh-toc__list a::before{
+    content:counter(toc,decimal-leading-zero); position:absolute; left:8px; top:7px;
+    font-size:10px; font-weight:600; letter-spacing:.04em; color:var(--w20);
+    font-variant-numeric:tabular-nums; transition:color var(--t);
+  }
+  .rh-toc__list a::after{
+    content:''; position:absolute; left:0; top:4px; bottom:4px; width:2px;
+    border-radius:999px; background:var(--accent);
+    transform:scaleY(0); transform-origin:center; transition:transform var(--t);
+  }
+  .rh-toc__list a:hover{ color:var(--text-dark); transform:none; }
+  .rh-toc__list a:hover::before{ color:var(--accent-ink); }
+  .rh-toc__list a[aria-current="true"]{ color:var(--text-dark); font-weight:600; background:var(--accent-muted); border-radius:var(--radius-sm); }
+  .rh-toc__list a[aria-current="true"]::before{ color:var(--accent-ink); }
+  .rh-toc__list a[aria-current="true"]::after{ transform:scaleY(1); }
+  /* CTA is pinned to the bottom of the frame, above the border, never scrolls. */
+  .rh-toc__cta{
+    flex:0 0 auto; display:inline-flex; width:auto; justify-content:center;
+    margin:10px 14px 14px; border-radius:var(--radius-sm);
+  }
+}
+@supports not (position:sticky){
+  @media (min-width:1024px){ .rh-rail{ position:static; max-height:none; overflow:visible; } }
+}
+
+/* ---------- builder grid ---------- */
+.rh-filters{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 32px; }
+.rh-chip{
+  padding:9px 18px; border-radius:var(--radius-pill);
+  border:1px solid var(--w08); background:var(--dark-card);
+  font-size:13px; font-weight:500; color:var(--text-meta); cursor:pointer;
+  font-family:var(--font-body);
+  transition:transform var(--t), border-color var(--t), color var(--t), background-color var(--t);
+}
+.rh-chip:hover{ transform:translateY(-1px); border-color:var(--accent); color:var(--accent-ink); }
+/* a black fill is a SURFACE, which the system allows. Text on it is white. */
+.rh-chip[aria-pressed="true"]{ background:var(--inv); color:var(--ink-inv); border-color:var(--inv); }
+.rh-chip:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+.rh-builders{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(238px,1fr));
+  gap:18px; margin:0; padding:0; list-style:none;
+}
+.rh-builder{
+  position:relative; background:var(--dark-card); border:1px solid var(--w08);
+  border-radius:var(--radius); padding:24px 22px 22px; overflow:hidden;
+  box-shadow:var(--shadow-card);
+  transition:transform var(--t), box-shadow var(--t), border-color var(--t);
+}
+/* builder brand color is DECORATIVE ONLY. It never carries text. */
+.rh-builder::before{
+  content:''; position:absolute; top:0; left:0; right:0; height:4px;
+  background:var(--b,var(--inv));
+}
+.rh-builder:hover{ transform:translateY(-3px); box-shadow:var(--shadow-lift); border-color:var(--w20); }
+.rh-builder h3{ font-size:17px; font-weight:700; letter-spacing:-.005em; margin:0 0 6px; color:var(--text-dark); }
+.rh-builder__tier{
+  display:inline-block; font-size:10px; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--accent-ink); margin:0 0 12px;
+}
+.rh-builder__note{ font-size:14px; line-height:1.55; color:var(--text-body); margin:0 0 16px; }
+.rh-builder__link{
+  font-size:13px; font-weight:600; color:var(--text-dark); text-decoration:none;
+  display:inline-flex; align-items:center; gap:6px;
+  transition:gap var(--t), color var(--t);
+}
+.rh-builder__link:hover{ gap:11px; color:var(--accent-ink); }
+.rh-builder__link:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+/* ---------- tables ---------- */
+.rh-tablewrap{
+  margin:0 0 30px; overflow-x:auto; border:1px solid var(--w08);
+  border-radius:var(--radius); background:var(--dark-card); box-shadow:var(--shadow-sm);
+  -webkit-overflow-scrolling:touch;
+}
+.rh-table{ width:100%; border-collapse:collapse; min-width:620px; }
+.rh-table th{
+  background:var(--inv); color:var(--ink-inv);
+  font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+  text-align:left; padding:14px 16px; white-space:nowrap;
+}
+.rh-table td{ font-size:15px; padding:14px 16px; border-top:1px solid var(--w08); vertical-align:top; }
+.rh-table tbody tr:nth-child(even){ background:var(--accent-tint); }
+.rh-table th:first-child,.rh-table td:first-child{ position:sticky; left:0; }
+.rh-table th:first-child{ background:var(--inv); z-index:2; }
+.rh-table td:first-child{ background:var(--dark-card); font-weight:600; color:var(--text-dark); }
+.rh-table tbody tr:nth-child(even) td:first-child{ background:var(--dark-surface); }
+.rh-tablenote{ font-size:12.5px; font-style:italic; color:var(--text-meta); margin:-18px 0 30px; }
+
+/* NOT FOUND marker, deliberately visible so it cannot ship unnoticed */
+.nf{
+  display:inline-block; padding:1px 7px; border-radius:4px;
+  background:rgba(183,60,43,.10); border:1px dashed rgba(183,60,43,.5);
+  color:#8d3223; font-size:12px; font-weight:600; letter-spacing:.04em;
+  font-family:var(--font-body); white-space:nowrap;
+}
+
+/* ---------- listings slot ---------- */
+.rh-idx{
+  border:2px dashed var(--accent-line); border-radius:var(--radius);
+  background:var(--accent-tint); padding:44px 30px; text-align:center; margin:0 0 26px;
+}
+.rh-idx__title{ font-family:var(--font-head); font-size:20px; font-weight:800; letter-spacing:-.02em; color:var(--text-dark); margin:0 0 10px; }
+.rh-idx__body{ font-size:15px; color:var(--text-body); max-width:56ch; margin:0 auto 22px; }
+
+/* ---------- FAQ (always open, not an accordion) ---------- */
+.rh-faq{ margin:0; }
+.rh-faq__item{ padding:26px 0; border-bottom:1px solid var(--w08); }
+.rh-faq__item:first-child{ border-top:1px solid var(--w08); }
+.rh-faq h3{ margin:0 0 10px; }
+.rh-faq p{ margin:0; }
+
+/* ---------- CTA band ---------- */
+.rh-band{
+  background:var(--inv); color:var(--ink-inv);
+  border-radius:var(--radius); padding:52px 44px; margin:0;
+  box-shadow:var(--shadow-band); position:relative; overflow:hidden;
+}
+/* Hard-edged accent rule, not a gradient wash. Same structural device as the
+   hero seam, so the black CTA band reads as part of the same system. */
+.rh-band::before{
+  content:''; position:absolute; left:0; top:0; bottom:0; width:6px;
+  background:var(--accent);
+}
+.rh-band > *{ position:relative; z-index:2; }
+.rh-band h2{
+  font-family:var(--font-display); font-size:clamp(30px,4vw,50px);
+  line-height:1.06; font-weight:var(--weight-head); letter-spacing:var(--track-head);
+  color:var(--ink-inv); margin:0 0 16px;
+}
+.rh-band p{ color:var(--ink-inv); max-width:56ch; margin:0 0 28px; }
+.rh-band__contact{
+  margin-top:30px; padding-top:24px; border-top:1px solid rgba(255,255,255,.18);
+  font-size:14px; color:var(--ink-2-inv); line-height:1.9;
+}
+.rh-band__contact a{ color:var(--accent); text-decoration:none; }
+.rh-band__contact a:hover{ text-decoration:underline; }
+
+/* ---------- sources ---------- */
+/* Area fact block: the concrete who/where/how-much under each area H2 */
+.rh-areafacts{
+  background:var(--dark-surface); border:1px solid var(--w08);
+  border-left:3px solid var(--accent); border-radius:var(--radius);
+  padding:18px 22px; margin:0 0 26px; font-size:16px; line-height:1.7;
+}
+.rh-areafacts strong{ color:var(--text-dark); font-weight:600; }
+.rh-source{ font-size:.85em; font-style:italic; color:var(--text-meta); margin:0 0 10px; }
+.rh-source a{ color:var(--accent-ink); }
+
+/* ---------- mobile sticky CTA bar ---------- */
+.rh-mobilebar{
+  position:fixed; left:0; right:0; bottom:0; z-index:900;
+  display:flex; gap:8px; padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(0,0,0,.96); backdrop-filter:blur(14px);
+  border-top:1px solid var(--accent);
+}
+.rh-mobilebar .rh-btn{ flex:1; padding:12px 10px; font-size:13px; }
+@media (min-width:1024px){ .rh-mobilebar{ display:none; } }
+body{ padding-bottom:0; }
+@media (max-width:1023px){ body{ padding-bottom:74px !important; } }
+
+/* ---------- reveal ---------- */
+.rh-reveal{ opacity:0; transform:translateY(14px); transition:opacity var(--t-slow), transform var(--t-slow); }
+.rh-reveal.is-in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion:reduce){
+  .rh-reveal{ opacity:1; transform:none; transition:none; }
+  *{ animation-duration:.01ms !important; transition-duration:.01ms !important; }
+}
+
+@media (max-width:640px){
+  .rh-section{ padding:56px 0; }
+  .rh-container{ padding:0 20px; }
+  .rh-band{ padding:38px 24px; }
+  .rh-answer{ padding:22px 22px; }
+  .rh-takeaways{ padding:24px 22px; }
+}
+</style>
+
+<div class="nc-hub">
+
+  <!-- ============ BREADCRUMB ============ -->
+  <div class="rh-crumb">
+    <div class="rh-container">
+      <a href="https://www.rosehomeslv.com/">Home</a> &rsaquo; <a href="/las-vegas-new-construction">New Construction</a> &rsaquo; Lake Las Vegas
+    </div>
+  </div>
+
+  <!-- ============ HERO (white, photo dissolves in from the right, see hub CLAUDE.md) ============ -->
+  <header class="rh-hero">
+
+    <figure class="rh-hero__media">
+      <img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/hero-new-construction.jpg"
+           alt="A finished two-story new construction home in a Las Vegas valley community with homes being framed behind it"
+           width="1600" height="1194" loading="eager" fetchpriority="high" decoding="async">
+    </figure>
+
+    <div class="rh-container rh-hero__inner">
+      <div class="rh-hero__panelInner">
+        <p class="rh-hero__kicker">Rose Homes LV &middot; Lake Las Vegas, Henderson</p>
+        <h1>New Construction Homes at Lake Las Vegas</h1>
+        <p class="rh-hero__sub">
+          Eight builders are selling new homes around the lake right now, from 55 and better single-story homes in the $400,000s to waterfront homes with dock options above $1.7 million. Here is every neighborhood, and what to check before you visit a model.
+        </p>
+
+        <div class="rh-hero__stats">
+          <div>
+            <span class="rh-stat__num">13</span>
+            <span class="rh-stat__label">New home neighborhoods</span>
+          </div>
+          <div>
+            <span class="rh-stat__num">8</span>
+            <span class="rh-stat__label">Active builders</span>
+          </div>
+          <div>
+            <span class="rh-stat__num">320</span>
+            <span class="rh-stat__label">Acre lake</span>
+          </div>
+          <div>
+            <span class="rh-stat__num">$434,990</span>
+            <span class="rh-stat__label">Lowest start, 55+</span>
+          </div>
+        </div>
+
+        <div class="rh-hero__cta">
+          <a class="rh-btn rh-btn--primary" href="#listings">See homes for sale</a>
+          <a class="rh-btn rh-btn--ghost" href="#neighborhoods">Browse neighborhoods</a>
+          <a class="rh-btn rh-btn--ghost" href="#contact">Talk to Ryan</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ ARTICLE ZONE, PART 1 ============ -->
+  <section class="rh-section rh-section--base" id="guide">
+    <div class="rh-container">
+      <div class="rh-article-shell">
+
+        <!-- ---------- PROSE COLUMN ---------- -->
+        <div class="rh-prose">
+
+      <blockquote class="rh-answer" id="answer" aria-label="Direct answer summary">
+        <p>
+          Lake Las Vegas is a master-planned community of about 3,600 acres around a 320 acre man-made lake in east Henderson, ZIP 89011. Thirteen new home neighborhoods are selling or taking reservations: the 12 on the Lake Las Vegas new homes page, updated August 21, 2026, plus Blue Heron's new Liora. Eight builders are active: Beazer, Blue Heron, Del Webb, Lennar, Richmond American, Taylor Morrison, Toll Brothers, and Tri Pointe. Starting prices run from $434,990 at Del Webb, a 55 and better community, and $490,990 at Taylor Morrison's Verona for all ages, up to $1,756,000 at Blue Heron's Arvada on The Island. The one tip: get every HOA fee in writing, because the master, neighborhood, and SouthShore sub-master associations stack up.
+        </p>
+      </blockquote>
+
+      <div class="rh-takeaways">
+        <h3>What to know first</h3>
+        <ol>
+          <li>Thirteen neighborhoods and eight builders are active, with starting prices from $434,990 for 55 and better and $490,990 for all ages.</li>
+          <li>Most of the lower priced all-ages homes are on the North Shore side, at Verona, Lago Del Sol, and Piazza Paradiso. Most of the million dollar homes sit on The Island, in SouthShore, and on the new Liora peninsulas.</li>
+          <li>You can pay more than one HOA. Homes belong to the Lake Las Vegas Master Association, SouthShore adds a sub-master, and some neighborhoods may add their own. Get every amount from the builder.</li>
+          <li>Henderson calls its assessment districts LIDs. Whether a lot carries one depends on the parcel, so look it up before you sign.</li>
+          <li>A private dock is an option, not a given, at Velaris, Arvada, and The Island. Ask what it costs and what is included.</li>
+          <li>Register your own agent on your first visit to a Lake Las Vegas model. The sales team works for the builder.</li>
+        </ol>
+      </div>
+
+      <p class="rh-byline">
+        By <strong>Ryan Rose</strong>, Real Broker, LLC, Nevada license S.018852
+        &middot; Updated <time datetime="2026-09-16">September 16, 2026</time>
+        &middot; About a 13 minute read
+      </p>
+
+          <h2 id="neighborhoods">Which new neighborhoods are selling at Lake Las Vegas right now?</h2>
+          <p class="rh-lede">These are the neighborhoods listed on the Lake Las Vegas new homes page and on builder websites in August and September 2026, sorted from the lowest starting price to the highest. Where Lennar sells two collections in one neighborhood, each gets its own row.</p>
+          <div class="rh-wide">
+            <div class="rh-tablewrap">
+              <table class="rh-table">
+                <thead><tr><th>Neighborhood</th><th>Builder</th><th>Area</th><th>Home type</th><th>Size (sq ft)</th><th>Starts from</th></tr></thead>
+                <tbody>
+                    <tr><td>Del Webb at Lake Las Vegas</td><td>Del Webb</td><td>Lake Las Vegas</td><td>55 and better, single-story</td><td>1,285 to 2,736</td><td>$434,990</td></tr>
+                    <tr><td>Verona</td><td>Taylor Morrison</td><td>North Shore</td><td>Two-story single family</td><td>2,222 to 2,723</td><td>$490,990</td></tr>
+                    <tr><td>Verona by Beazer</td><td>Beazer Homes</td><td>North Shore</td><td>Two-story single family, solar included</td><td>2,252 to 2,942</td><td>$499,990</td></tr>
+                    <tr><td>Ridges at Lago Del Sol</td><td>Lennar</td><td>Lago Del Sol</td><td>Single-story</td><td>2,126 to 2,535</td><td>$556,785</td></tr>
+                    <tr><td>Portofino</td><td>Taylor Morrison</td><td>Reflection Bay area</td><td>Single-story</td><td>1,990 to 3,432</td><td>$579,990 (January 2026 price)</td></tr>
+                    <tr><td>Vita at Piazza Paradiso</td><td>Lennar</td><td>Piazza Paradiso</td><td>Two-story with Next Gen suite</td><td>3,080 to 3,475</td><td>$635,705</td></tr>
+                    <tr><td>Falls at Lago Del Sol</td><td>Lennar</td><td>Lago Del Sol</td><td>Single-story, RV or tandem garage options</td><td>2,310 to 2,585</td><td>$640,990</td></tr>
+                    <tr><td>Serena at Piazza Paradiso</td><td>Lennar</td><td>Piazza Paradiso</td><td>Two-story with Next Gen suite</td><td>3,990 to 5,170</td><td>$723,857</td></tr>
+                    <tr><td>Lakeview Ridge</td><td>Tri Pointe Homes</td><td>Hillside, off Highland Shores Dr</td><td>One and two-story</td><td>2,579 to 3,991</td><td>$899,500</td></tr>
+                    <tr><td>Incanta Lago</td><td>Toll Brothers</td><td>Gated neighborhood</td><td>One and two-story</td><td>2,488 to 3,293</td><td>$939,995</td></tr>
+                    <tr><td>Shoreline</td><td>Blue Heron</td><td>Near The Village</td><td>Two-story, optional third story and sky deck</td><td>2,623 to 3,659</td><td>$1,031,000</td></tr>
+                    <tr><td>Salerno Summit at SouthShore</td><td>Richmond American</td><td>SouthShore, guard gated</td><td>One and two-story</td><td>2,830 to 4,320</td><td>$1,195,950</td></tr>
+                    <tr><td>Velaris at the Island</td><td>Blue Heron</td><td>The Island, guard gated</td><td>One and two-story, dock option</td><td>2,870 to 4,688</td><td>$1,438,000</td></tr>
+                    <tr><td>Liora</td><td>Blue Heron</td><td>North shore peninsulas</td><td>Lakefront one and two-story</td><td>3,944 to 6,738</td><td>$1,677,000</td></tr>
+                    <tr><td>Arvada at the Island</td><td>Blue Heron</td><td>The Island, double gated</td><td>Waterfront one and two-story, dock option</td><td>3,832 to 7,749</td><td>$1,756,000</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="rh-tablenote">Prices are published starting prices, and they change with every release. Lennar, Tri Pointe, Toll Brothers, Del Webb, and Liora prices are from the builder websites, checked September 16, 2026. Lennar prices are the low end of its published range. Verona, Verona by Beazer, Shoreline, Salerno Summit, Velaris, and Arvada are from the <a href="https://lakelasvegas.com/new-homes/" rel="nofollow">Lake Las Vegas new homes page</a>, updated August 19 to 21, 2026. Portofino is from a Lake Las Vegas page last updated January 27, 2026, so confirm it with Taylor Morrison. Lennar also sells a third Lago Del Sol collection, Hills, with single-story 3 to 4 bedroom homes, but no clean starting price was published. The Island also sells half-acre lakeside custom lots from $900,000. Marbella by Taylor Morrison and Riviera Vista by Lennar are sold out.</p>
+          </div>
+          <p>If you are 55 or older and weighing Del Webb here against other Henderson options, I compare them in <a href="/blog/55-plus-new-construction-henderson-2026">55 and better new construction in Henderson</a>.</p>
+
+          <h2 id="builders">Which builders are building at Lake Las Vegas?</h2>
+          <p class="rh-lede">Eight builders have neighborhoods selling at Lake Las Vegas. Lennar and Blue Heron have the most choices, and every Blue Heron neighborhood starts above $1 million.</p>
+          <div class="rh-wide">
+            <ul class="rh-builders">
+              <li class="rh-builder" data-tier="custom" style="--b:#0E0E0E">
+                <h3>Blue Heron</h3><span class="rh-builder__tier">Custom</span>
+                <p class="rh-builder__note">Four neighborhoods, all at the top of the market. Shoreline near The Village from $1,031,000, Velaris at the Island from $1,438,000, Liora on the north shore peninsulas from $1,677,000, and Arvada at the Island from $1,756,000. Velaris and Arvada offer private dock options.</p>
+                <a class="rh-builder__link" href="/blue-heron-las-vegas">View builder page &rarr;</a>
+              </li>
+              <li class="rh-builder" data-tier="mid" style="--b:#005DAA">
+                <h3>Lennar</h3><span class="rh-builder__tier">Mid</span>
+                <p class="rh-builder__note">Two neighborhoods and four collections on the price list. Single-story Ridges and Falls at Lago Del Sol from $556,785, and two-story Next Gen homes at Vita and Serena at Piazza Paradiso from $635,705.</p>
+                <a class="rh-builder__link" href="/lennar-las-vegas">View builder page &rarr;</a>
+              </li>
+              <li class="rh-builder" data-tier="mid" style="--b:#0060AE">
+                <h3>Taylor Morrison</h3><span class="rh-builder__tier">Mid</span>
+                <p class="rh-builder__note">Two neighborhoods. Verona on the North Shore, two-story homes from $490,990, and single-story Portofino near Reflection Bay, listed from $579,990 on a January 2026 Lake Las Vegas page.</p>
+                <a class="rh-builder__link" href="/taylor-morrison-las-vegas">View builder page &rarr;</a>
+              </li>
+              <li class="rh-builder" data-tier="mid" style="--b:#033764">
+                <h3>Pulte and Del Webb</h3><span class="rh-builder__tier">Mid</span>
+                <p class="rh-builder__note">Del Webb at Lake Las Vegas, a 55 and better community of single-story homes from 1,285 to 2,736 square feet, starting at $434,990.</p>
+                <a class="rh-builder__link" href="/pulte-del-webb-las-vegas">View builder page &rarr;</a>
+              </li>
+              <li class="rh-builder" data-tier="entry" style="--b:#A7122A">
+                <h3>Beazer Homes</h3><span class="rh-builder__tier">Entry</span>
+                <p class="rh-builder__note">Verona by Beazer, 56 two-story homes off Strada Veneto with solar included, from $499,990.</p>
+                <a class="rh-builder__link" href="/beazer-las-vegas">View builder page &rarr;</a>
+              </li>
+              <li class="rh-builder" data-tier="mid" style="--b:#1F2D3D">
+                <h3>Tri Pointe Homes</h3><span class="rh-builder__tier">Mid</span>
+                <p class="rh-builder__note">Lakeview Ridge, 53 elevated homesites off Highland Shores Dr and Lakestone Pl, with one and two-story homes from $899,500.</p>
+                <a class="rh-builder__link" href="/tri-pointe-las-vegas">View builder page &rarr;</a>
+              </li>
+              <li class="rh-builder" data-tier="luxury" style="--b:#3E7C84">
+                <h3>Toll Brothers</h3><span class="rh-builder__tier">Luxury</span>
+                <p class="rh-builder__note">Incanta Lago, a gated neighborhood of one and two-story homes from 2,488 to 3,293 square feet, starting at $939,995.</p>
+                <a class="rh-builder__link" href="/toll-brothers-las-vegas">View builder page &rarr;</a>
+              </li>
+              <li class="rh-builder" data-tier="mid" style="--b:#B91D2C">
+                <h3>Richmond American</h3><span class="rh-builder__tier">Mid</span>
+                <p class="rh-builder__note">Salerno Summit in guard gated SouthShore, one and two-story homes from 2,830 to 4,320 square feet, starting at $1,195,950.</p>
+                <a class="rh-builder__link" href="/richmond-american-las-vegas">View builder page &rarr;</a>
+              </li>
+            </ul>
+            <p class="rh-tablenote" style="margin-top:16px;">The Island also sells custom homesites, and no single builder is named for them. I could not verify any current Lake Las Vegas neighborhood from Century Communities, Woodside, Christopher Homes, KB Home, or Shea, even though some websites still list them here. For how Lake Las Vegas fits with the rest of the city, read my <a href="/blog/henderson-new-construction-2026-guide">Henderson new construction guide</a>.</p>
+          </div>
+
+        </div><!-- /.rh-prose -->
+
+        <!-- ---------- STICKY TOC RAIL ---------- -->
+        <aside class="rh-rail">
+          <nav class="rh-toc" aria-labelledby="rh-toc-title">
+            <p class="rh-toc__title" id="rh-toc-title">On This Page</p>
+            <div class="rh-toc__progress" aria-hidden="true"><span class="rh-toc__progress-fill"></span></div>
+            <div class="rh-toc__scroll">
+            <ol class="rh-toc__list">
+              <li><a href="#neighborhoods">Neighborhoods selling now</a></li>
+              <li><a href="#builders">Lake Las Vegas builders</a></li>
+              <li><a href="#listings">Homes for sale now</a></li>
+              <li><a href="#where">Where they are building</a></li>
+              <li><a href="#prices">What it costs</a></li>
+              <li><a href="#monthly-costs">HOA, LID, and taxes</a></li>
+              <li><a href="#schools">Schools builders list</a></li>
+              <li><a href="#location">Location and nearby</a></li>
+              <li><a href="#watch-outs">Before you buy</a></li>
+              <li><a href="#your-agent">Your own agent</a></li>
+              <li><a href="#faq">Questions and answers</a></li>
+              <li><a href="#other-areas">Other areas</a></li>
+              <li><a href="#sources">Sources</a></li>
+            </ol>
+            </div><!-- /.rh-toc__scroll -->
+            <a class="rh-btn rh-btn--primary rh-btn--sm rh-toc__cta" href="#contact">Talk to Ryan</a>
+          </nav>
+        </aside>
+      </div><!-- /.rh-article-shell -->
+    </div>
+  </section>
+
+  <!-- ============ LIVE LISTINGS SLOT ============ -->
+  <section class="rh-section rh-section--alt" id="listings">
+    <div class="rh-container">
+      <p class="rh-eyebrow">Homes for sale</p>
+      <h2 style="font-family:var(--font-head);font-size:clamp(26px,3vw,38px);line-height:1.14;font-weight:800;letter-spacing:-.028em;margin:0 0 18px;">
+        New construction homes for sale at Lake Las Vegas right now
+      </h2>
+      <p class="rh-lede" style="max-width:68ch;">
+        These are active MLS listings of newly built homes at Lake Las Vegas. Many new homes here are sold straight from the builder's sales office and may not reach the MLS, so the table above is the fuller picture.
+      </p>
+
+      <!-- =================================================================
+           END OF EMBED 1.
+
+           Lofty's native Featured Listings block goes immediately BELOW this
+           embed, then PART 2 goes below that.
+
+           Filter for THIS page:
+           Location: Lake Las Vegas (use Lofty's Lake Las Vegas area or subdivision if offered, otherwise City: Henderson plus ZIP 89011, which is the ZIP on every active Lake Las Vegas builder address found. A ZIP filter can pull in homes outside the master plan, so check the results). Year Built: 2025 or newer. Property type: single family, townhouse, condo. Status: active. Sort: newest.
+           ================================================================= -->
+    </div>
+  </section>
+
+</div><!-- /.nc-hub -->
+
+<script>
+/* ============================================================
+   ROSE HOMES LV, NEW CONSTRUCTION HUB
+   This script is shipped in BOTH Lofty embeds (above and below the
+   featured-listings block). Two copies will be present in the DOM.
+   The __rhHubInit guard makes the second one a no-op, and init is
+   deferred to DOMContentLoaded so whichever copy runs first still
+   sees BOTH embeds and wires up both TOC rails.
+   ============================================================ */
+(function () {
+  if (window.__rhHubInit) { return; }
+  window.__rhHubInit = true;
+
+  function init() {
+  /* ---------- builder tier filter ---------- */
+  var chips = document.querySelectorAll('.rh-chip');
+  var cards = document.querySelectorAll('.rh-builder');
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var f = chip.getAttribute('data-filter');
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c === chip)); });
+      cards.forEach(function (card) {
+        card.style.display = (f === 'all' || card.getAttribute('data-tier') === f) ? '' : 'none';
+      });
+    });
+  });
+
+  /* ---------- TOC scroll-spy + reading progress ---------- */
+  /* There are two rails, one per embed, with identical link lists.
+     Collect every link, but build the target list from UNIQUE ids in
+     document order so the spy math is not thrown off by duplicates. */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.rh-toc__list a'));
+  var fills = Array.prototype.slice.call(document.querySelectorAll('.rh-toc__progress-fill'));
+
+  var seen = {};
+  var targets = [];
+  links.forEach(function (a) {
+    var id = a.getAttribute('href').slice(1);
+    if (seen[id]) { return; }
+    var el = document.getElementById(id);
+    if (!el) { return; }
+    seen[id] = true;
+    targets.push(el);
+  });
+  /* document order, in case the two rails disagree or a section moved */
+  targets.sort(function (x, y) {
+    return x.getBoundingClientRect().top - y.getBoundingClientRect().top;
+  });
+
+  var current = null;
+  function setActive(id) {
+    if (id === current) { return; }
+    current = id;
+    links.forEach(function (a) {
+      var on = a.getAttribute('href') === '#' + id;
+      if (on) { a.setAttribute('aria-current', 'true'); }
+      else { a.removeAttribute('aria-current'); }
+      /* keep the highlighted entry visible inside its own scroller */
+      if (on) {
+        var box = a.closest ? a.closest('.rh-toc__scroll') : null;
+        if (box && box.scrollHeight > box.clientHeight) {
+          var t = a.offsetTop - box.offsetTop;
+          var want = t - (box.clientHeight / 2) + (a.offsetHeight / 2);
+          var max = box.scrollHeight - box.clientHeight;
+          box.scrollTop = Math.max(0, Math.min(max, want));
+        }
+      }
+    });
+  }
+
+  /* Scroll-position based, not IntersectionObserver.
+     IO only fires on state CHANGES, so an anchor jump or a page load
+     part-way down can leave nothing highlighted. Computing the active
+     heading from scroll position is deterministic and always correct. */
+  var OFFSET = 100;
+  function updateSpy() {
+    if (!targets.length) { return; }
+    var y = window.scrollY + OFFSET;
+    var active = targets[0];
+    for (var i = 0; i < targets.length; i++) {
+      if (targets[i].getBoundingClientRect().top + window.scrollY <= y) { active = targets[i]; }
+      else { break; }
+    }
+    /* at the very bottom, force the last entry so the end of the page reads correctly */
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+      active = targets[targets.length - 1];
+    }
+    setActive(active.id);
+  }
+
+  /* progress writes scaleX only, never width */
+  function updateProgress() {
+    if (!fills.length) { return; }
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    var p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+    fills.forEach(function (f) { f.style.transform = 'scaleX(' + p + ')'; });
+  }
+
+  /* Coalesce with cancel/re-request rather than a boolean latch.
+     A latch that is only cleared inside the rAF callback stays stuck
+     forever if a frame never fires (background tab, hidden or zero-height
+     viewport), which silently kills the spy for the rest of the session. */
+  var rafId = null;
+  function onScroll() {
+    if (rafId !== null) { window.cancelAnimationFrame(rafId); }
+    rafId = window.requestAnimationFrame(function () {
+      rafId = null;
+      updateProgress();
+      updateSpy();
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  window.addEventListener('hashchange', function () { setTimeout(onScroll, 50); });
+  /* Lofty renders its own featured-listings block between the two embeds.
+     Its images change the page height after load, which moves every
+     heading below it, so re-measure once everything has settled. */
+  window.addEventListener('load', function () { setTimeout(onScroll, 120); });
+  updateProgress();
+  updateSpy();
+
+  /* ---------- #contact scrolls to the Lofty form below the embed ---------- */
+  function scrollToContact(e) {
+    e.preventDefault();
+    var band = document.getElementById('contact');
+    if (band) { band.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    setTimeout(function () {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }, 600);
+  }
+  document.querySelectorAll('a[href="#contact"]').forEach(function (a) {
+    a.addEventListener('click', scrollToContact);
+  });
+
+  /* ---------- reveal ---------- */
+  if ('IntersectionObserver' in window) {
+    var ro = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); ro.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.rh-reveal').forEach(function (el) { ro.observe(el); });
+  }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.rosehomeslv.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "New Construction",
+          "item": "https://www.rosehomeslv.com/las-vegas-new-construction"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Lake Las Vegas",
+          "item": "https://www.rosehomeslv.com/lake-las-vegas-new-construction"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "New Construction Homes at Lake Las Vegas",
+      "description": "13 new home neighborhoods at Lake Las Vegas, from $434,990 at Del Webb to $1,756,000 waterfront homes on The Island. Builders, HOA, LID, and schools.",
+      "author": {
+        "@type": "Person",
+        "name": "Ryan Rose",
+        "jobTitle": "Real Estate Agent",
+        "worksFor": {
+          "@type": "RealEstateAgent",
+          "name": "Real Broker, LLC"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Rose Homes LV",
+        "url": "https://www.rosehomeslv.com"
+      },
+      "dateModified": "2026-09-16",
+      "mainEntityOfPage": "https://www.rosehomeslv.com/lake-las-vegas-new-construction",
+      "image": "https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/hero-new-construction.jpg",
+      "about": {
+        "@type": "Place",
+        "name": "Lake Las Vegas, Henderson, Nevada",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Henderson",
+          "addressRegion": "NV",
+          "addressCountry": "US"
+        }
+      },
+      "isPartOf": {
+        "@type": "WebPage",
+        "url": "https://www.rosehomeslv.com/las-vegas-new-construction"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "#answer"
+        ]
+      }
+    },
+    {
+      "@type": "RealEstateAgent",
+      "name": "Ryan Rose",
+      "telephone": "+1-702-747-5921",
+      "email": "ryan@rosehomeslv.com",
+      "url": "https://www.rosehomeslv.com",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Lake Las Vegas, Henderson, Nevada"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Real Broker, LLC"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is building new homes at Lake Las Vegas in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Beazer, Blue Heron, Del Webb, Lennar, Richmond American, Taylor Morrison, Toll Brothers, and Tri Pointe all have active neighborhoods. The Island also sells custom lots."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cheapest new home at Lake Las Vegas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Del Webb at Lake Las Vegas, a 55 and better community, starts at $434,990. For all ages, Taylor Morrison's Verona starts at $490,990 and Beazer's Verona at $499,990."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there waterfront new homes at Lake Las Vegas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Blue Heron's Velaris and Arvada on The Island offer waterfront homesites with dock options, from $1,438,000 and $1,756,000. Blue Heron's Liora has 60 lakefront lots from $1,677,000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Lake Las Vegas in Henderson or Las Vegas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is in the City of Henderson, ZIP 89011, on the east edge of the valley."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What schools serve new homes at Lake Las Vegas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Builders list Josh Stevens Elementary, B. Mahlon Brown Academy of International Studies, and Basic Academy of International Studies. Always confirm your exact address with CCSD zoning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much are HOA fees at Lake Las Vegas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Homes pay the Lake Las Vegas Master Association, SouthShore adds a sub-master association, and some neighborhoods may add their own. Builder sites do not show a clear total, so confirm the master and sub-association amounts with the builder in writing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Lake Las Vegas homes have LID assessments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some may. Henderson uses local improvement districts, billed through Assessment Management Group, and whether a lot carries one depends on the parcel. Look it up by parcel number before you sign."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a 55 and better community at Lake Las Vegas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Del Webb at Lake Las Vegas has single-story homes from 1,285 to 2,736 square feet, starting at $434,990."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>

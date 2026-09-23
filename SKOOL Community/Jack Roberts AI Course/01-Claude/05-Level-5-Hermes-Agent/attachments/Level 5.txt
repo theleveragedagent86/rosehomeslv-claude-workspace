@@ -1,0 +1,833 @@
+ Hey there, beautiful AI Automator and welcome to level five.
+ Well, we're going to be talking about the world, the wonderful, beautiful
+ era of AI personal assistant.
+ Now, this is something, and we've all seen those movies, right?
+ We've seen her where the AI takes over the home.
+ We've seen all these incredible things.
+ I'm telling you that the AI personal assistant is an idea that's existed
+ for some time.
+ It actually started with, if I pull out of here, Siri.
+ And Siri was supposed to be this incredible agent that we could ask it
+ to do things and check things, but never really quite hit the mark.
+ I say this to say expect this to blow up over the next five years.
+ We will live in a future where we have personal AI assistants that effectively
+ know everything that we do, that we can command.
+ And effectively, you can delegate a lot of the stuff that you do.
+ Now, where are we with that currently?
+ A lot further ahead than you might think.
+ There are the early adopters and betrayal blazers.
+ Systems like Hermes and Open Claw and Claw Claw and Gravity Claw are the
+ very first early signs of this direction.
+ And when innovation happens, you will be the first person to receive it.
+ And I'm telling you right now, most people that have a clue this exists.
+ And if you follow what I'm going to show you in this module, you're going to be
+ so far ahead of people, they're going to be like a dot looking back.
+ You want one of these following you around.
+ And I'm going to break it down in great detail.
+ And the beauty thing is it's a simple concept, but a wonderfully impactful
+ system to have.
+ And you'll find yourself using it quite a lot as you go through them.
+ So let's jump in and take a quick look at this Hermes HMO.
+ I want to talk about why I'm discussing Hermes in particular.
+ You'll know in the classroom, we've done lots of things.
+ I have covered Open Claw before.
+ I've covered Gravity Claw, which is your personal build your own.
+ At the moment, Hermes agent is the fastest way to get from zero to one.
+ And it's unbelievably easy to install.
+ I'm also going to show you some tips and tricks that I've never shared online
+ yet.
+ So you're getting literal firsthand stuff here.
+ So Hermes agent itself has blown up on GitHub and if I show you Hermes website
+ itself,
+ you can have a quick look and see exactly what I'm talking about.
+ So they've got a very beautiful, distinctive design style.
+ It's very fresh and guys, it has gone in parabolic on GitHub.
+ And for good reason, one of the key things that Hermes stands out with, you
+ know,
+ I'm ever going to show this for the absolute cruises at 154,000 stars already.
+ OK, this has a team of people working in at around the clock.
+ And this is one of the differences versus custom because they may improve the
+ memory
+ system, they may improve anything else, and it's just updated.
+ It's like update Hermes and you've got the fully up-to-date version.
+ And I've been really impressed with this so far.
+ I'm going to be super honest with you.
+ I really like the way that it works and out the box.
+ It's fantastic.
+ So let's go down and have a look at this in more detail so you can see exactly
+ what I am talking about.
+ So I want you to think of Hermes agent as your AI chief of staff.
+ All right, it's always on.
+ Lives across your whole life. It's reachable on your phone.
+ I use my own telegram.
+ I can audio message it.
+ I talked about my strategy and plan for the day.
+ It's fantastic.
+ OK, and just basically we can connect it to anything on your computer or we can
+ isolate it on a computer, which I'm going to show you how to do on this video.
+ So think about it from this point of view.
+ OK, personal AI is exploding.
+ It's not a forecast.
+ The numbers landed in the last five months.
+ This is the moment to own the layer that sits across your whole life.
+ Now, look at these numbers here.
+ 900 million weekly users on chat, GBT and Tropic $30 billion run rate.
+ Hermes agent around $160,000 in GitHub by come down here.
+ You can see now MCP adoption is exploding.
+ Inference costs is going up open source agents.
+ This is a fast growing industry to be involved in.
+ Now, the way to think about AI is it across two categories.
+ All right, you've got over here at cloud code, which is everything we do on
+ cloud
+ code, anti gravity, codecs, if you use that, the terminal.
+ This is you sat at your computer with your beautiful coffee and you're working.
+ This is what I would call desktop work.
+ You are working in cloud code, all right.
+ Basically, it lives in your IDE.
+ It's reposecope, it's pulled, driven identical for everybody.
+ OK, then we have Hermes.
+ Hermes is mobile.
+ Hermes is just because I'm not sat here in this beautiful chair.
+ Doesn't mean that I should be disconnected from my world.
+ It doesn't mean that Hermes goes with you, your personal assistant.
+ It follows you on your phone and we connect these two together.
+ So that's where work happens and the way that I would love you to think about
+ this.
+ OK, now the idea of Hermes here is it should live across your whole life.
+ Coding AI is scoped to repo.
+ Hermes is scoped to you.
+ Now, the cool thing about Hermes is the fact that the more that you use it, the
+ better it gets.
+ And one of the cool things about this course being modular is that if things
+ ever change, I'm going to come back and update and give the best modules for
+ that.
+ Right now, this is the best one that exists.
+ If you're listening to this, you know that's exactly why.
+ So it's reachable from your phone.
+ This works on Telegram, WhatsApp, SMS, wherever you go.
+ It's literally with you everywhere.
+ It remembers things across sessions, OK, 100%.
+ It connects every tool you already have.
+ So we can connect it to GitHub, fire crawl, Slack, Gmail, a stripe.
+ We can do anything, anything you can get it close to.
+ We can tag in Hermes.
+ It's just so freaking cool and it runs without you asking.
+ So we can say to things like, hey, seven o'clock in the morning, I want a daily
+ digest of the last five things that happened in my world.
+ And what's really cool is if it's connected to your desktop,
+ it can do the same things.
+ It's like, it's honestly so, so powerful.
+ Now it acts not just answers so it can draft emails, it can book calls, it can
+ save the note in the right notebook, it can ship the crime job all from the
+ same
+ chap. So from the second you download it, it can start to take all these
+ wonderful
+ actions together.
+ Now we've got three steps in one container.
+ What we're going to do in this video, guys, actually, now I've got Hermes on my
+ computer and I'm going to pull up here and you're going to see I've got him
+ right
+ here. He's having a great time and I can ask it various different questions,
+ right?
+ So I can ask it anything that I want to and it'll go ahead and do it.
+ And I've connected many different things to him.
+ Now, some of you wonder, actually, Jack, should I install this on my computer?
+ Should I install this on a VPS?
+ The safest way to install Hermes is on your computer.
+ The fastest way to install it is on your computer and that has a zero dollar
+ cost. Now, if you're somebody who's very like, Jack, I just don't want to
+ write for them in my folders. We can actually deploy Hermes in something called
+ a
+ container, which basically means that it's running on your desktop, but it's in
+ an
+ isolated container, something called Docker, which is this thing right here.
+ Okay. Now, Docker, we can basically install Docker and it's an app that sits on
+ our
+ computer and which is what I'm going to show you straight away and you're going
+ to
+ see exactly how this works.
+ You click on Docker here and you're going to see it now Docker basically is
+ think of
+ it as a container. So let's say that your computer is this room.
+ What Docker is, is a box in that room and it is completely, it's even outside
+ the
+ room. It's completely, it's another room in your house, same house, different
+ room.
+ It's completely isolated.
+ It means it's running on your PC, but has no visibility, no access to anything.
+ So what people do sometimes is run these agents in containers, self contained
+ containers that do the wrong thing.
+ Personally, mine is not running in a Docker because actually it's helpful for
+ me to
+ have it on there, because I can say, Hey, dude, what was that thing on my
+ desktop?
+ I like to ask the questions.
+ So I find that a lot better to do that.
+ So we're going to build this one in Docker together so you can see how this
+ will work
+ and you get the idea of it.
+ But again, if not, you can run this easily on your computer by running one very
+ simple command.
+ So I'm going to show you how you run it on your computer very quickly.
+ All you do is copy this, that's right forward.
+ And then you do command space bar and then we bring up the terminal.
+ Terminal appears and we're going to do is control B like so and you're going to
+ see
+ lots of things that are going to be happening just like this.
+ And this will install Hermes onto your computer.
+ Wambam, thank you, ma'am, everything's installed.
+ And then now basically this is going to be running on your computer.
+ You can chat with Hermes and get everything set up, which is freaking awesome.
+ Now, if you want to run it in a Docker, all you're going to do is come up to
+ this
+ website here, you're going to click on get started.
+ All right.
+ And then essentially you're just going to download Docker for your computer.
+ OK, there'll be a download button on the homepage.
+ I've already installed it, so I'm not sure what it's up showing for me.
+ But basically you can come down and install it for Mac.
+ In fact, I'll just pull that up.
+ OK, literally I go old, install Docker on desktop map and you'll see there.
+ I'm going to copy this one for you as well and put this into your file
+ references.
+ Now, once that's installed, you're going to see you can go through this whole
+ process.
+ Now, what I'm going to do is basically in coming to here, I'm going to open up
+ Docker. Now that's done.
+ You'll just need to drag the file over and it'll be installed.
+ Now, welcome to Docker.
+ And now, if you're thinking, Jack, this is new, amazing.
+ This is something so simple, but it's going to open up your world of
+ possibilities
+ and you'll be surprised when you may want to use this.
+ So effectively, Docker, think of this as a self-contained bedroom in our house.
+ All right, we don't go in.
+ Boy, no boys allowed, no girls allowed.
+ It's like this is Docker, but it's running on our computer and it just isolates
+ it
+ from everything.
+ So effectively, when we spin up a container, so to speak,
+ an isolated environment, it just lives in Docker.
+ But you know what, I don't want to be running code in the terminal and run my
+ flashcards, but you know what I do?
+ I just literally head over to Claude.
+ So I've opened up Claude here and I'm going to say, hey, there, I've installed
+ Docker, what I would like to do for me is install Hermes on that Docker so that
+ I
+ can run Hermes on a container that is completely self-isolated.
+ All right, all you're going to do is give it a prompt, send it off, and it will
+ do
+ it for you because it has all of the commands.
+ And effectively, the only difference is it's basically Docker, blah, blah, blah
+.
+ And then the command that you want to.
+ So basically, it's like specifying the environment.
+ OK, so I need to just clarify.
+ It is Hermes with a Hermes like this, Hermes AI agents.
+ OK, I'm going to make sure we give that information.
+ And I just want to let you know how to do this, just so if you do want to do
+ this,
+ we had this question in the community.
+ This is something you want to do.
+ You can do.
+ I personally do not, but if you really want to, if you're concerned about
+ people
+ getting access to your photos with the springy spaniels of the coffees, it's
+ there and it's available for you to go ahead and do for you.
+ Now, ask some questions.
+ This is the one that we would like, which is awesome.
+ And you can even come down if you want to just actually come back to this here,
+ which is on my website and you can if you want to just simply copy this one.
+ Come sit back over and even throw in this here and literally,
+ so it's got the right thing there and be ready to rock and roll.
+ And once you've done that, you're going to see something and you need to
+ understand this difference between an image and a container.
+ So we have no containers running right now.
+ And then we have images, images are the thing that we just downloaded, right?
+ So the question is, we've got these things downloaded images, but to turn it
+ into a container and I had actually clogged up with the rest with a kind of
+ analogy for this.
+ So the image, the thing we downloaded is like a recipe, frozen prepared
+ ingredients.
+ It's a static thing on your hard drive and a container is the pizza that we
+ actually create from the recipe.
+ So to run Hermes, all we're going to do is literally come down and grab this
+ command here instead.
+ And you can see it's basically the same thing, but it's just got hurt me.
+ It's basically got docket included into it.
+ So we do command spacebar terminal again.
+ And this is if you want to do a new, if you want to run this on docket,
+ okay, I hit enter in here and you'll see this is now running.
+ Look, and now I can go down and do full setup, quick setup, blah, blah, blah.
+ I can come down here and do the full setup.
+ And now I'm going through the entire system.
+ And as you can see, if I get containers now, it's running there.
+ Awesome.
+ So basically, I just run that when I want to all the commands with that docket
+ prefix.
+ And then I'm running it now.
+ This has no access to any of my folders on my computer whatsoever.
+ And if I want to stop it for any reason, I can just hit stop like that.
+ And the container is completely vanquished.
+ That's how you run it in an isolated environment on your computer.
+ And basically, you can even give it command and accesses.
+ You can come over to Claude and you can say something like, hey,
+ that I want you to give my docket container access to these files and just
+ specify the files and you'll be absolutely fine and crushing it.
+ Now with that, let's actually go ahead and show you what the onboarding setup
+ looks like.
+ I'm going to do this in anti gravity just because I actually prefer the way
+ the terminal looks and you can't look hack by the way.
+ If you do command spacebar, you type in terminal, you see we've got this thing
+ here at the top.
+ If you click on terminal and you click on settings and then you come over,
+ you got profiles here, right?
+ You can actually choose all of the different ones that you like, which is
+ pretty cool.
+ If I like pro, all you're going to do when you find when you like is click on
+ default,
+ like so that will then change the default and you can kind of pick anyone
+ that you want to and then literally to activate that.
+ All you do is delete this.
+ And if I do spacebar again, terminal, then you get it in a new style,
+ just like this, right?
+ But if for some reason, I just think that it looks a little bit better.
+ So we're going to enter in this command, which is fantastic.
+ We got from the website.
+ It is checking everything for us, which is freaking awesome.
+ Come down here.
+ Now the cool thing I like about this, it is what we call set and forget.
+ Once it's down there, it's fantastic and we can update them.
+ Now let's talk about the model that you want to include.
+ The one that you want to use here is open AI code X.
+ Why is that for your $20 a month chat GPT subscription, which you can use.
+ Chat GPT, open AI, let you code with it.
+ And the topic, the cloud do not let you do that.
+ So I would say if there was a hierarchy of submissions of basically
+ subscriptions,
+ you have the first one is your chat GPT, $20 a month.
+ Then it's your cloud, $20 a month.
+ Then it's your $100 a month cloud subscription after that.
+ OK. Now the one I want you to use to get set up,
+ there's two big ones when you use one is open AI code X.
+ OK. And the second one is open router.
+ Now to select it, all you do is spacebar like so and then you can pick.
+ So I'm going to come down here and re-authenticate and to do that,
+ I'm just come down, I'm going to press to so we can get this process together.
+ So I'm going to hit on to and look at this.
+ It says open this up and enter this code.
+ So I'm going to do command and click and we're going to open this bad boy up.
+ Beautiful and ask for a code.
+ So I'm going to go ahead and sign in here.
+ Just give me one second.
+ And of course, guys, we've got to verify our identity because who knows who we
+ could
+ be and to this one time code in, let's get into chat GPT and we should be
+ rocking
+ and rolling. Yes, we're absolutely fine.
+ Enable device code authorization for code X.
+ That's absolutely fine.
+ Come down and click on continue.
+ So just come back and do these settings one more time.
+ The once you've done that, it'll be fully authorized and connected.
+ Mine's already connected.
+ So it's not letting me re-authenticate or recalibrate it.
+ But effectively that means that you can use chat GPT for these guys.
+ Honestly, Texas speech provider.
+ Don't worry about that right now.
+ I still don't click that for now.
+ Select terminal model again.
+ You see how Docker isolated container.
+ That's exactly what it talks about.
+ But we're going to use current and local on this one by hitting enter.
+ And then we're happy with this.
+ Literally once we're all done and dusted, we can come down, hit enter.
+ And then we are ready to rock and roll.
+ We have this session reset mode and activity and daily reset is absolutely fine
+.
+ So we can come down and we can keep our current settings or just enter on that.
+ That is cool.
+ And then it's fine.
+ Then we've got messaging platforms.
+ So what we want to do is come down and configure telegram.
+ The way that this will work once you select telegram is it will ask you for a
+ token.
+ So what you need to do is download the telegram desktop app.
+ It will look something like this.
+ Then you want to come to the search bar and find an account called the bot
+ father.
+ And then we have this bot father account.
+ All we're going to do is come down forward slash and type in new bot like so.
+ And ask you for a name.
+ We'll call this one example one, two, three.
+ That sounds great.
+ And it basically needs to end in bots.
+ Example one, two, three loads of random numbers come down here.
+ And I can just add bots at the end like so.
+ This will go ahead and create it for us.
+ And then once you've got that, you see this access token here.
+ OK, you click that to copy it and you come back over to your setup now here and
+ you literally
+ enter this in and it will confirm it.
+ Then once you've done that, the next thing it's going to ask you for, OK, is do
+ you want
+ to whitelist an account?
+ Now, effectively what that means is that you have a bot that's been created now
+, OK?
+ Then you have your own telegram.
+ And what I want to do is make it such that the only person in the world that
+ could possibly
+ message your account is you and your telegram account.
+ That's what I want to make sure it happens.
+ So to do that, you're going to come over to this account over here, user info
+ get ID.
+ And if you do forward slash start, he will give you a user ID and then all you
+'re going
+ to do is come back over here, basically provide it once it's prompted and then
+ you will be
+ fully connected.
+ And what an effective means then is that your account will be the only one to
+ do it and
+ it is completely secure.
+ We haven't had to faff around VPS or anything like that.
+ So we're good to rock and rock.
+ So once you've done that, you can look on our next reconfigure telegram.
+ We're going to stay in there because we're already set up and no need to
+ restart the
+ getaway yet because we are good to freaking go.
+ And then here you can do different CLIs, but don't worry about all this stuff.
+ For now, at any point you want to, you can come back here and essentially use
+ it.
+ And now that means that Hermes is ready to rock and rock.
+ So if I bring it up, I can ask a question like, Hey, what is the date today to
+ show you exactly
+ what it looks like?
+ We'll give this a hop second and then we'll be able to have a great time and
+ get this one
+ up and running.
+ Now, if you haven't already, grab the Claude code, agentic operating system.
+ This is something that I recommend that you do because effectively what this
+ will do is
+ allow us to take all of the information from Claude code that we use on a daily
+ basis,
+ whether that's anti gravity, Claude code, the terminal, and everything we're
+ talking
+ to Hermes into one connected knowledge system.
+ So you can see this is basically how it works.
+ And you can change the profile photo by the way, by coming back over to the bot
+father and
+ essentially reconfiguring it and edit bot, you forward slash edit bot and it'll
+ do that
+ for you.
+ I literally come down, I go to, if I type in bot, like so, you can see it gives
+ you loads
+ of different things.
+ You come on my bots and then you can go through and edit it.
+ And now we've got it essentially rocking and rolling.
+ Now to grab your Claude code operating system, okay, I'm going to come up to
+ the classroom
+ and I'm going to come down here to every AI automation and what we're going to
+ look
+ for on the left hand side of it here, if we come into the latest one that we
+ did, which
+ is Hermes just got 10X better, come down and grab this Hermes agentic operating
+ system.
+ Now just for your context, I spent seven hours on the onboarding alone to build
+ this
+ for you.
+ So I've put a days and days into this to make it as epic as possible.
+ You effectively come down, you're going to download this, like so.
+ You are then going to grab the zip, come over to a new chart and say, "Hey, I'd
+ like
+ you to run everything in this file for me on my computer and I want you on hand
+ to help
+ you configure it if required."
+ And all you're going to do is literally select that zip that you just installed
+ and then
+ that will open up your operating system.
+ Then you'll see a beautiful dashboard that looks like this.
+ If this is the very first time you're seeing it, I'm going to put a link down
+ below on
+ the video I'd like you to do as helmet to this that explains all the details,
+ but effectively
+ this is a dashboard that shows me an overview of everything that I'm doing.
+ And the idea here guys is that, and this is a community exclusive thing, this
+ is available
+ nowhere else, and I spent a lot of time building this out for you and it's cool
+ because what
+ it does is just brings in my spending across all of my models where I can see
+ my spending.
+ I can see how much of these skills are saving me.
+ If I can figure that, it will literally think overnight and based on all the
+ conversations
+ come with recommendations about how you can actually optimize what you're
+ spending for,
+ you can basically, like for example, Cloudmax 20 is sitting at 10% weekly
+ utilization.
+ Max5x life of coverage you have for that price.
+ So to say dude, you're not using your full Cloudmax allowance.
+ How incredible is that?
+ I can go back to another one, day two, memory, MD, blah, blah, blah, this hasn
+'t been touched.
+ Again, Higgsfield, Bondelstool, zero uses, free brain hasn't fired in nine days
+, interesting
+ you see, and it will build these beautiful images too, has all of our skills,
+ connects
+ to all of our memory.
+ So you remember the obsidian memory system, well, what if I told you, it's all
+ here?
+ And actually, you don't need to do anything.
+ You can reconfigure everything because if you come down here, when you open
+ this up for
+ the first time, you will see the setup was it.
+ Now the setup was it for our Cloud OS, it looks like this, you come through to
+ the setup,
+ you had a profile photo, because we need to do that, right?
+ Found these on your machine, it will auto detect everything that's on your
+ computer.
+ How cool is that?
+ You can see, Hermes agent found it and threw up it, blah, blah, blah, how
+ freaking sick
+ is this guys?
+ It's all there for us to rock and roll, I click on next, it will auto detect
+ your obsidian
+ and you can add pinecone if you've got that memory system there, so that
+ connects it beautifully.
+ Click on next, then you can add all your keys.
+ Now if you had open router key, any things, effectively if you're using open
+ router on
+ Hermes, it will then track that usage for you as you go down, come down and
+ click the next.
+ Again, you can specify the value of your time, so it can do things like this,
+ that has your
+ dreaming intelligence, you pick how often you want it to run, can do web search
+, yes,
+ can do this, yes, blah, blah, blah, all the way through and then you're
+ affected already
+ to rock and roll as you go through this process.
+ So you get the idea of how I pick this up.
+ Now here's a cool thing, if I come up to Hermes agents, you can see over here,
+ but on this,
+ you will actually be able to chat with Hermes in a window if you want to, as
+ well as your
+ previous conversations, it will show you a total number of sessions, how many
+ messages
+ that you've sent at the models that you're using and when you're less active.
+ Now what's really cool here is I call this the Pantheon.
+ Now effectively within Hermes, we can create unique personas and skills based
+ on our purposes.
+ So for example, I have here the philosopher and you can add these as much as
+ you want
+ to by clicking on add persona, pick the character you want to, the alchemist
+ might be an interesting
+ one, you specify the job, its description, system prompt, and then the model
+ you want
+ to use to run that.
+ Now why have I done this?
+ Because technically speaking, you could just tell Hermes, hey I want you to
+ have XYZ.
+ Personally guys, visualization is a huge thing.
+ I like to visually see what I'm doing and if I'm looking at my different models
+, I can
+ come in, I can see what model I'm using, I can adjust the system prompt very
+ easily.
+ If it's listen, Hermes backhand, not doing anything, it's like well okay, but
+ you know,
+ you're having to refine it.
+ This gives you a beautiful visual interface to do everything here.
+ And then I can just say, hey I want you to use orthics to go and do this or use
+ labyrinths
+ to go do that, et cetera, et cetera.
+ Now once you've done that, the first thing you're going to do is literally copy
+ this.
+ You're going to head over to Hermes that you've got set up and then you're
+ going to enter
+ this prompt in okay.
+ This basically tells Hermes, hey I've created a folder called the pantheon with
+ individual
+ skill agents inside it.
+ Go ahead and be aware of that.
+ Then when you've completely finished all that sort of stuff, because what this
+ does as well
+ guys is creates a get up.
+ Now what this first prompt does is it creates a backup for you.
+ So we spoke about GitHub being effectively, when you hear GitHub, I want you to
+ think
+ of this.
+ Place we store files.
+ That's it.
+ That's all it literally is.
+ It's a place we store files.
+ So your entire Hermes agent lives in a private GitHub.
+ You ever want to check whether it's private or not, you can click on anything
+ like this,
+ for example, check this out, I come over to settings, I come down and I can see
+, by the
+ way, the visibility is private.
+ So no one's ever going to access this.
+ This is just your account.
+ Now what it means is that on a day to day basis, every day, it just syncs its
+ file so
+ you have a online version and we call this git hub version control, which means
+ if we
+ do something catastrophic tomorrow, maybe there's maybe we spill our beautiful
+ coffees
+ on our Macbooks or something and it breaks.
+ It's like damn it broken, no freaking problem dude, lives in GitHub so we can
+ just go back
+ and grab it and reinstall it.
+ You get a new computer and think it's now running perfectly.
+ So we call this basically version control on GitHub.
+ So make sure you give this.
+ Once you do this, it will come back and say to you, hey, awesome, great, do me
+ to build
+ it, do me to do this, do me to do that and it will ask you to connect to GitHub
+.
+ Now you can connect to GitHub via the CLI, which is a command line interface.
+ And all it'll do is open up a new window, ask for a code, then you're fully
+ connected.
+ It's so freaking cool.
+ Then once you've done that and you've built your own individual systems here,
+ you can
+ see this prompt here will dynamically update.
+ Okay.
+ So the next thing we want to do is connect your personas by clicking on this,
+ coming back
+ over to my guest at Hermes, drop this in like so and this effectively will just
+ make sure
+ that it's aware of where your individual files are and that will all be ready
+ to rock
+ and roll.
+ Then you'll see these things here, which are very cool.
+ So you've got your user profile, which is, look at this, user has a casual
+ style with
+ dude slash bro and often likes responses that are friendly, practical and demo
+ ready.
+ Very, very freaking cool.
+ Then you got agent memory and then you've got your soul idea.
+ Now let's talk about the soul ID for a second.
+ Okay.
+ Because the soul that MD, I built for you a specific prompt for that.
+ And if you come over here to your sections and I click on soul ID, what you
+ will see is
+ a great document.
+ Now the soul that MD is very cool.
+ Effectively, what I want you to do is grab a copy of this and effect just throw
+ it into
+ Hermes and I want you to run through and just basically go through and say, you
+ can see
+ this explains what everything is, how you want to talk to you, it's rhythm, how
+ you want
+ to explain everything.
+ And this soul that MD will say, what is character, what is personality?
+ What's the key information about Jack that I want to know that I need to know?
+ And he was just basically save that information and then we can reference it
+ whenever we want
+ to and it understands you.
+ It's like gives it this sort of beautiful understanding of who you are and how
+ that
+ all sort of looks like.
+ So make sure you update it and give it a great soul and it's got stuff on its
+ agent memory.
+ Then we can connect it to obsidian.
+ When you connect it to obsidian, which I'll disconnect for a second, you can
+ see you
+ can grab where your obsidian bolt is.
+ If you are using obsidian, if you don't know, just come over anti-gravity and
+ exit this
+ and let's just open up a new terminal and just come here and grab a bit of a
+ prompt to chat
+ with Claude.
+ So let's come over and do a fresh one here.
+ I can come down and just do Claude, Claudius Maximus Meridius and I can just
+ say, that's
+ cool.
+ Hey there dude.
+ Get me the actual file location for my obsidian vault.
+ Okay, if you don't know, you can just ask it, grab it, come back over and copy
+ it in or
+ you can even ask it home as you want to.
+ All you're going to do is you enter in there.
+ You say, I've got the vault, then literally you're just going to copy this and
+ it's even
+ brought that in for you.
+ Dead freaking straight forward.
+ Once you've done that and given that to Hermes, basically you'll have your obs
+idian
+ vault connected.
+ What that affects means is it can now answer questions.
+ So for example, you remember earlier on this course material, I connected a lot
+ of YouTube
+ stuff, right?
+ So if I come over to Hermes, I'll say, hey dude, I just want to double click
+ and confirm
+ that you have access to my obsidian vault.
+ If so, could you tell me an interesting, one interesting strategic insight
+ about intros
+ that probably drives the biggest degree of value using that vault please?
+ Okay.
+ Now that's done, let's enter that one in and you can see him working now in the
+ background.
+ And the obsidian vault is fantastic and once again guys, we can connect this to
+ pinecone
+ if we want to.
+ There is no issue with that.
+ It's very, very cool.
+ So skilled you using obsidian because we're really connected.
+ I freaking love this.
+ I think this is so freaking cool that we can do this sort of stuff.
+ It just blows my mind how epic this is.
+ So now I was checking it out and let me just give a hot second while it works
+ in the background.
+ And then just like that, it's come down and specified some specifics.
+ It's found that, you know, it's basically found all the information you need to
+ from
+ the obsidian vault and we can ask it any questions that we want to mean.
+ We are cool to rock and roll.
+ So that's fantastic.
+ One of the other things that we can actually do with this as well, which is
+ completely overpowered.
+ Okay.
+ Is we can connect, not book a lamp to Hermes.
+ So what I want you to do next is really think about all the integrations and
+ softwares
+ that you want to connect to Hermes, the things that you're going to be using on
+ a regular
+ basis.
+ As you know, if you've seen the video that I've shared before on connecting
+ Claude code
+ to Hermes, you, excuse me, Claude code to notebook alarm is pretty freaking
+ powerful
+ because notebook alarm is Google's number one research and intelligence
+ platform.
+ Okay.
+ It is absolutely overpowered.
+ And what we can actually do is connect the book alarm to Hermes, meaning we
+ have access
+ to an infinite source of incredible research and intelligence at our fingertips
+.
+ So what you're going to do is come to the page and I'm going to download the
+ Hermes notebook
+ alarm skill.
+ Okay.
+ Just like here, download it.
+ Once you've done that, you're going to head over to Claude.
+ And once you're within Claude, you're going to let you come ahead and grab the
+ thing that
+ you just downloaded right here on your downloads file, grab it, drop it over
+ and say, hey there,
+ I want you to run this so that I can use notebook alarm.
+ Once that's happened, okay, it's going to basically open up notebook alarm in a
+ chrome
+ browser and you're going to sign it.
+ This is an unofficial Google plugin.
+ And the way that it connects to notebook alarm is via a cookie that we're using
+ in the
+ browser.
+ What that affects me is for us because it's always running on our computer is
+ wherever
+ we are, we can now access notebook alarm.
+ So for example, given the fact there's no connected notebook alarm, I can say,
+ hey there, dude,
+ what is the name of the last notebook that I created?
+ Whatever the thing is, right?
+ Turn that one off and actually go ahead and connect to notebook alarm and grab
+ that for
+ us.
+ Now we can do this in Claude.
+ We can easily do this within Hermes.
+ Look at this check in notebook alarm skill, really freaking cool.
+ Now the good news for you is that your boy has gone and created for you a
+ fantastic skill
+ to go ahead and use that.
+ So look, I opened this bad boy up.
+ Here we are.
+ And all you're going to do now, guys, really, really simply is going to head
+ and create this
+ on our pantheon for a brand new skill.
+ And I've done this one already here.
+ You just follow the process.
+ Look on add new one, you pick the persona, mine here is described, which is
+ activating
+ notebook alarm skill.
+ I've got for you all of the information here in the skill.
+ So you can let you come down and have a look at that, copy that over, and you
+'re ready
+ to rock and roll.
+ And once you've added that additional skill by basically copying for
+ description, you come
+ over here, you type this in description.
+ Sweet.
+ You get the idea, right?
+ You can pretty much just do this, then save, then we have the scribe skill.
+ Then when that's done, we can literally head back over to our beautiful agents.
+ We can say to him, hey, the dude, you've got the notebook alarm skill as the sc
+ribe in
+ the pantheon.
+ Just make sure that you're fully up to date with that.
+ What I'd love you to do is go to my notebook alarm and find for me the last
+ infographic
+ that I generated.
+ And why don't you go ahead and quote for me a new notebook on, let's think
+ about like
+ this, the best place in the world to live as a guy or girl in their early 30s,
+ which
+ would be that be.
+ I'd like a new notebook on that, please.
+ Thank you very much.
+ Get two very crisp asks, send that one off, and now this, now think about this
+ guys, we're
+ out with our kids, our families, our dogs, our girlfriends, our boyfriends,
+ whatever it
+ is.
+ We're going to send them out.
+ Hey, do me a favor.
+ Go find this research there.
+ Here's why this is so fricking important, okay?
+ No book alarm.
+ I have never seen any research better than I found on that book alarm.
+ It just is able to do it, and the cool thing, it costs you $0, like literally
+ fricking $0.
+ It goes ahead and does all of this stuff, okay?
+ It's actually fricking insane, and it'll do all that research for us
+ automatically.
+ And look, I come back down here.
+ This is your most recent notebook is effective voice loss for Jack.
+ P.S., by the way, I'm not, it's not that I know how.
+ I just did that as an example, although to be fair, maybe the cookies have been
+ flying
+ around a little bit.
+ The cut is well underway.
+ I promise you.
+ And then just like that, we've got it.
+ It's actually going to have and create for us a brand new, basically,
+ infographic, which
+ is awesome.
+ And she's not an infographic.
+ It's going to have and found the latest thing we did, and it's even pulled down
+ the last
+ infographic we've done.
+ So now we've turned Hermes Agent into an insanely powerful intelligence
+ research system that
+ can grab anything we want to.
+ We can check out what we've done.
+ I mean, this is a literal cheat code, and it's insane.
+ And it's just the beginning of what we can actually accomplish when we're using
+ Hermes
+ Agent.
+ Now, on the next classroom lesson, I'm going to show you how you can take these
+ foundations
+ from what we did earlier in the course.
+ Remember when we built out the website, it's fantastic.
+ Well, we're going to take this for completely new level on the next one with
+ the apps.
+ We're going to look at architecture.
+ We're going to look at how you can build in sign inflows, how the hell do we
+ get there
+ in the email?
+ How does that connect to a backend?
+ How do we connect?
+ Beautiful payments.
+ And what does that look like?
+ So grab the coffee, buckle in, and I will catch you inside the next beautiful
+ module.

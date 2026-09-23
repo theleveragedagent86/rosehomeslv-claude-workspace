@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450" width="100%"
+     role="img" aria-labelledby="sv10t sv10d" font-family="Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif">
+<title id="sv10t">Where the six areas are</title>
+<desc id="sv10d">An abstract orientation schematic of the Las Vegas valley, not a street map. The basin is bounded by the Spring Mountains and Red Rock escarpment to the west and the Sheep Range to the north, with the 215 beltway drawn as a dashed loop, I-15 as a diagonal, and the Strip as a short heavy segment. Six numbered markers locate the areas this guide covers: Summerlin to the west, Skye Canyon and the northwest, North Las Vegas to the north, the southwest and Mountain's Edge, Henderson with Cadence and Inspirada to the southeast, and Union Village. Pahrump, Mesquite and Boulder City are outside the guide and are not drawn.</desc>
+<style>.sv-h{font:700 13px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;letter-spacing:.002em}
+.sv-k{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52;letter-spacing:.09em;text-transform:uppercase}
+.sv-l{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-b{font:400 9.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-s{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52}
+.sv-n{font:700 11px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;font-variant-numeric:tabular-nums}
+.sv-r{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-rs{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-nf{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#B8360F;letter-spacing:.06em}
+.sv-c{text-anchor:middle}
+.sv-e{text-anchor:end}</style>
+<defs>
+<marker id="sv-tri" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#2C3F6B"/></marker>
+<marker id="sv-tric" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#B8360F"/></marker>
+<marker id="sv-trim" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#5F5A52"/></marker>
+<pattern id="sv-hatch" width="6" height="6" patternTransform="rotate(45)"
+         patternUnits="userSpaceOnUse">
+  <rect width="6" height="6" fill="#EDE9E0"/>
+  <line x1="0" y1="0" x2="0" y2="6" stroke="#847B6D" stroke-width="1.6"/>
+</pattern>
+</defs>
+<rect width="700" height="450" fill="#F7F5F0"/>
+<text x="0" y="14" class="sv-k">Page 28</text><text x="0" y="31" class="sv-h">Where the six areas are</text>
+<text x="376" y="56" class="sv-s sv-c">Sheep Range</text>
+<path d="M300 92 L324 62 L350 90 L376 60 L402 90 L428 64 L454 92" fill="none" stroke="#28375A" stroke-width="1.8" stroke-linejoin="round"/>
+<path d="M150 120 Q360 96 580 124 Q662 200 610 302 Q400 348 200 316 Q118 218 150 120 z" fill="#FBF8F2" stroke="#847B6D" stroke-width="1"/>
+<path d="M98 306 L130 288 L98 270 L130 252 L98 234 L130 216 L98 198 L130 180 L98 162" fill="none" stroke="#28375A" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="0" y="336" class="sv-s">Spring Mountains and the Red Rock escarpment</text>
+<path d="M492 132 Q424 214 352 318" fill="none" stroke="#847B6D" stroke-width="6" stroke-linecap="round" opacity=".5"/>
+<text x="506" y="138" class="sv-s">I-15</text>
+<path d="M252 202 Q372 158 500 210 Q552 270 470 306 Q352 336 270 292 Q218 248 252 202 z" fill="none" stroke="#847B6D" stroke-width="3" stroke-dasharray="9 7" opacity=".7"/>
+<text x="376" y="152" class="sv-s sv-c">the 215 beltway</text>
+<line x1="416" y1="216" x2="384" y2="276" stroke="#141A27" stroke-width="5" stroke-linecap="round"/>
+<text x="428" y="252" class="sv-s">the Strip</text>
+<circle cx="202" cy="222" r="12" fill="#F7F5F0"/>
+<circle cx="202" cy="222" r="9" fill="#2C3F6B"/>
+<text x="202" y="225.6" class="sv-c" style="font:700 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">1</text>
+<circle cx="302" cy="158" r="12" fill="#F7F5F0"/>
+<circle cx="302" cy="158" r="9" fill="#2C3F6B"/>
+<text x="302" y="161.6" class="sv-c" style="font:700 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">2</text>
+<circle cx="516" cy="176" r="12" fill="#F7F5F0"/>
+<circle cx="516" cy="176" r="9" fill="#2C3F6B"/>
+<text x="516" y="179.6" class="sv-c" style="font:700 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">3</text>
+<circle cx="262" cy="306" r="12" fill="#F7F5F0"/>
+<circle cx="262" cy="306" r="9" fill="#2C3F6B"/>
+<text x="262" y="309.6" class="sv-c" style="font:700 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">4</text>
+<circle cx="494" cy="294" r="12" fill="#F7F5F0"/>
+<circle cx="494" cy="294" r="9" fill="#2C3F6B"/>
+<text x="494" y="297.6" class="sv-c" style="font:700 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">5</text>
+<circle cx="540" cy="248" r="12" fill="#F7F5F0"/>
+<circle cx="540" cy="248" r="9" fill="#2C3F6B"/>
+<text x="540" y="251.6" class="sv-c" style="font:700 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">6</text>
+<text x="0" y="362" class="sv-k">THE SIX AREAS IN THIS GUIDE</text>
+<circle cx="7.0" cy="378.5" r="7" fill="#2C3F6B"/>
+<text x="7.0" y="381.6" class="sv-c" style="font:700 9px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">1</text>
+<text x="20.0" y="382" class="sv-b">Summerlin</text>
+<circle cx="240.33333333333334" cy="378.5" r="7" fill="#2C3F6B"/>
+<text x="240.33333333333334" y="381.6" class="sv-c" style="font:700 9px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">2</text>
+<text x="253.33333333333334" y="382" class="sv-b">Skye Canyon and the northwest</text>
+<circle cx="473.6666666666667" cy="378.5" r="7" fill="#2C3F6B"/>
+<text x="473.6666666666667" y="381.6" class="sv-c" style="font:700 9px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">3</text>
+<text x="486.6666666666667" y="382" class="sv-b">North Las Vegas</text>
+<circle cx="7.0" cy="397.5" r="7" fill="#2C3F6B"/>
+<text x="7.0" y="400.6" class="sv-c" style="font:700 9px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">4</text>
+<text x="20.0" y="401" class="sv-b">Southwest and Mountain's Edge</text>
+<circle cx="240.33333333333334" cy="397.5" r="7" fill="#2C3F6B"/>
+<text x="240.33333333333334" y="400.6" class="sv-c" style="font:700 9px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">5</text>
+<text x="253.33333333333334" y="401" class="sv-b">Henderson: Cadence and Inspirada</text>
+<circle cx="473.6666666666667" cy="397.5" r="7" fill="#2C3F6B"/>
+<text x="473.6666666666667" y="400.6" class="sv-c" style="font:700 9px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">6</text>
+<text x="486.6666666666667" y="401" class="sv-b">Union Village</text>
+<text x="0" y="426" class="sv-s"><tspan x="0" dy="0">Schematic, not a street map, and not to scale. Distances and boundaries are approximate. Pahrump, Mesquite and Boulder City are outside this guide and are</tspan><tspan x="0" dy="11">not drawn.</tspan></text>
+</svg>

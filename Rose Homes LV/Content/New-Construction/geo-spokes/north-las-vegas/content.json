@@ -1,0 +1,291 @@
+{
+  "area": "North Las Vegas",
+  "slug": "north-las-vegas-new-construction",
+  "place_name": "North Las Vegas, Nevada",
+  "locality": "North Las Vegas",
+  "updated_iso": "2026-09-16",
+  "updated_text": "September 16, 2026",
+  "reviewed_text": "September 2026",
+  "read_minutes": 12,
+
+  "seo": {
+    "title": "North Las Vegas New Construction Homes",
+    "description": "18 new home collections are selling in North Las Vegas, with Lennar townhomes from $313,490. Builders, prices, schools, and fees, checked September 2026.",
+    "keywords": "north las vegas new construction, new homes north las vegas, tule springs new homes, heartland",
+    "og_title": "New Construction Homes in North Las Vegas",
+    "og_description": "Every new home collection confirmed on D.R. Horton, KB Home, and Lennar sites in North Las Vegas, with starting prices, nearby schools, and what to check."
+  },
+
+  "hero": {
+    "kicker": "Rose Homes LV &middot; North Las Vegas",
+    "h1": "New Construction Homes in North Las Vegas",
+    "sub": "Eighteen new home collections are selling in North Las Vegas right now, from gated townhomes in the low $300,000s to six bedroom homes in the $700,000s. Here is every one I confirmed on a builder's own site, and what to check before you visit a model.",
+    "stats": [
+      ["18", "Collections selling"],
+      ["3", "Builders confirmed"],
+      ["$313,490", "Lowest starting price"],
+      ["1,500+", "Homes planned at Sandstone"]
+    ],
+    "image": {
+      "src": "https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-north-las-vegas.jpg",
+      "alt": "Newer two-story homes on a flat subdivision street in North Las Vegas, with more homes still being framed in the background",
+      "width": 900,
+      "height": 672
+    },
+    "secondary_cta": "Browse neighborhoods",
+    "mobile_label": "Neighborhoods"
+  },
+
+  "answer": "North Las Vegas is its own city on the north side of the Las Vegas Valley, and most of its new building sits along and north of the 215 Beltway. As of September 16, 2026, builder websites show 18 new home collections selling from three builders: D.R. Horton, KB Home, and Lennar. Most of the detached homes are near Tule Springs, in D.R. Horton's gated Heartland at Tule Springs and KB Home's brand new Sandstone at Tule Springs. Starting prices run from $313,490 for a Lennar townhome at Heritage Square to the $721s for a six bedroom home at Heartland Summit. The one tip: builder pages do not clearly publish HOA or SID amounts, so get both in writing before you sign.",
+
+  "takeaways": [
+    "The lowest prices are townhomes. Lennar's gated Heritage Square starts at $313,490, and most new homes under $400,000 here are two-story townhomes.",
+    "Most detached building is near Tule Springs. D.R. Horton has nine phases selling in Heartland at Tule Springs, and KB Home opened Sandstone at Tule Springs on September 4, 2026.",
+    "Single-story costs more. Heartland Grove single-story homes start in the $520s, while a similar size two-story at Heartland Cottages tops out in the $461s.",
+    "Clear HOA and SID amounts are not on the builder pages I checked. Ask for the HOA budget in writing and look up the parcel with the Clark County Treasurer.",
+    "Phases sell and disappear fast. Two Heartland phase pages have already dropped off D.R. Horton's site, and another is marked Final Opportunities.",
+    "The schools a builder lists as nearby are not your zoned schools. Check the exact address with CCSD."
+  ],
+
+  "part1_sections": [
+    {
+      "id": "neighborhoods",
+      "toc": "Neighborhoods selling now",
+      "h2": "Which new neighborhoods are selling in North Las Vegas right now?",
+      "blocks": [
+        {"lede": "These are the collections I confirmed as selling on D.R. Horton, KB Home, and Lennar's own websites on September 16, 2026, sorted from the lowest starting price to the highest. Prices are written the way each builder publishes them."},
+        {"table": {
+          "head": ["Neighborhood", "Builder", "Master plan", "Home type", "Size (sq ft)", "Starts from"],
+          "rows": [
+            ["Heritage Square", "Lennar", "None (89031)", "Gated townhome, two-story", "1,014 to 1,499", "$313,490"],
+            ["Solara", "Lennar", "None (89031)", "Gated townhome, two-story", "1,430 to 1,481", "$328,990"],
+            ["Grandview", "Lennar", "None (89081)", "Gated townhome, two-story", "1,180 to 1,505", "$330,990"],
+            ["Heartland Trails", "D.R. Horton", "Heartland at Tule Springs", "Gated townhome, two-story", "1,309 to 1,410", "$333s"],
+            ["Landings", "KB Home", "Sandstone at Tule Springs", "Single family", "1,572 to 2,469", "High $300s"],
+            ["Courts", "Lennar", "The West End", "Townhome, two-story", "1,823 to 1,927", "$403,990"],
+            ["Gardens", "Lennar", "The West End", "Townhome, two-story, one Next Gen plan", "1,770 to 1,869", "$409,990"],
+            ["Heartland Cottages", "D.R. Horton", "Heartland at Tule Springs", "Single family, two-story", "1,550 to 1,865", "$425s"],
+            ["Heartland Bay Phase III", "D.R. Horton", "Heartland at Tule Springs", "Single family, two-story", "From 1,715", "$438s"],
+            ["Reserves", "KB Home", "Sandstone at Tule Springs", "Single family, two-story", "1,644 to 3,066", "Mid $400s"],
+            ["Briscoe", "KB Home", "None (89081)", "Single family, one and two-story", "1,453 to 2,784", "$449,750"],
+            ["Groves", "Lennar", "The West End", "Single family, two-story", "2,055 to 2,405", "$489,990"],
+            ["Heartland Falls Phase III", "D.R. Horton", "Heartland at Tule Springs", "Single family, two-story", "From 2,436", "$500s"],
+            ["Heartland Grove", "D.R. Horton", "Heartland at Tule Springs", "Single family, single-story", "1,839 to 2,048", "$520s"],
+            ["Heartland Falls 3 Car", "D.R. Horton", "Heartland at Tule Springs", "Single family, two-story, 3-car garage", "From 2,436", "$547s"],
+            ["Heartland Manor Phase IV", "D.R. Horton", "Heartland at Tule Springs", "Single family, single-story, 3-car garage", "2,300 to 2,754", "$601s"],
+            ["Heartland Manor Phase IV 4-Car", "D.R. Horton", "Heartland at Tule Springs", "Single family, single-story, 4-car garage", "From 2,300", "$634s"],
+            ["Heartland Summit Phase V", "D.R. Horton", "Heartland at Tule Springs", "Single family, two-story, 6 bedrooms", "3,774 to 4,418", "$721s"]
+          ],
+          "note": "Starting prices as published on each builder's community page, accessed September 16, 2026. D.R. Horton publishes prices as \"Starting in the $XXXs.\" KB Home notes that a homesite premium may apply. Lennar sizes are from the plans shown on each community page and may not include every plan. Prices change with every release. Coming soon, with no confirmed plans yet: Gardens at Sandstone (KB Home lists the mid $300s) and Meadows at Sandstone townhomes (low $300s), both fall 2026, Serenity by D.R. Horton, and Meridian by Lennar at Centennial and Losee. Briscoe is marked Last Chance and Heartland Falls 3 Car is marked Final Opportunities."
+        }},
+        {"p": "If a townhome is on your list, my guide to <a href=\"/blog/townhome-condo-new-construction-las-vegas-2026\">townhome and condo new construction in Las Vegas</a> covers what to compare before you choose one."}
+      ]
+    },
+    {
+      "id": "builders",
+      "toc": "North Las Vegas builders",
+      "h2": "Which builders are building in North Las Vegas?",
+      "blocks": [
+        {"lede": "Three builders have North Las Vegas communities confirmed on their own websites right now. D.R. Horton has the most phases, Lennar has the lowest prices, and KB Home has the newest master plan."},
+        {"builders": {
+          "cards": [
+            {"key": "dr-horton", "note": "Nine phases selling in Heartland at Tule Springs, its gated master plan in 89084. Heartland Trails townhomes from the $333s, two-story homes at Cottages, Bay, and Falls, single-story Grove and Manor from the $520s, and six bedroom Heartland Summit from the $721s. Serenity is coming soon."},
+            {"key": "lennar", "note": "Six communities selling. Gated townhomes at Heritage Square from $313,490, Solara, and Grandview, plus Courts, Gardens, and Groves at The West End in 89032. Meridian, near Centennial and Losee, is coming soon."},
+            {"key": "kb-home", "note": "Sandstone at Tule Springs opened September 4, 2026 at North 5th Street and the 215, with more than 1,500 homes planned. Landings from the high $300s and Reserves from the mid $400s. Briscoe in 89081 is closing out from $449,750."}
+          ],
+          "note": "Other builders may also sell in North Las Vegas, but I could not confirm their current communities on their own websites when I checked on September 16, 2026, so they are not listed here. Ask me for the current list before you tour."
+        }}
+      ]
+    }
+  ],
+
+  "listings": {
+    "h2": "New construction homes for sale in North Las Vegas right now",
+    "lede": "These are active MLS listings of newly built homes in North Las Vegas. The table above comes straight from builder websites, so use both together to see what is really available.",
+    "lofty_filter": "City: North Las Vegas (if Lofty has no city filter, use ZIPs 89031, 89032, 89081, and 89084, which cover every builder community on this page). Year Built: 2025 or newer. Property type: single family, townhouse, condo. Status: active. Sort: newest."
+  },
+
+  "part2_sections": [
+    {
+      "id": "where",
+      "toc": "Where they are building",
+      "h2": "Where in North Las Vegas are new homes going up?",
+      "blocks": [
+        {"lede": "Most new building sits along and north of the 215 Beltway. The two biggest pockets are near Tule Springs in ZIP 89084. Lennar also has smaller townhome communities in ZIPs 89031 and 89081."},
+        {"h3": "Heartland at Tule Springs"},
+        {"facts": [
+          ["Builder", "D.R. Horton, gated master plan"],
+          ["Phases selling", "9, with Serenity coming soon"],
+          ["Price range", "the $333s at Heartland Trails to the $721s at Heartland Summit Phase V"],
+          ["Worth knowing", "community parks, dog parks, and walking trails, with views of Tule Springs Fossil Beds National Monument. D.R. Horton says Aliante Golf Club is 1 mile from Heartland Trails."]
+        ]},
+        {"h3": "Sandstone at Tule Springs"},
+        {"facts": [
+          ["Builder", "KB Home, opened September 4, 2026"],
+          ["Where", "North 5th Street and the 215 Beltway"],
+          ["Size", "more than 1,500 homes across 4 neighborhoods"],
+          ["Selling now", "Landings and Reserves. Meadows and Gardens are coming fall 2026."],
+          ["Worth knowing", "more than 12 acres of planned parks, a trail system, and a new trailhead to the Fossil Beds monument, plus pickleball and basketball courts and a dog park"]
+        ]},
+        {"h3": "The West End"},
+        {"facts": [
+          ["Builder", "Lennar"],
+          ["Where", "ZIP 89032"],
+          ["Collections", "Courts and Gardens townhomes, Groves single family homes"],
+          ["Price range", "$403,990 to $489,990"]
+        ]},
+        {"h3": "Lennar townhome communities and Briscoe"},
+        {"facts": [
+          ["Heritage Square", "gated townhomes in 89031 from $313,490, close to the 215"],
+          ["Solara", "gated townhomes in 89031 from $328,990, close to I-15"],
+          ["Grandview", "gated townhomes in 89081 from $330,990, near Tropical Breeze Park and its splash pad"],
+          ["Meridian", "coming soon at Centennial and Losee, near Nellis Air Force Base"],
+          ["Briscoe", "KB Home in 89081, last homes from $449,750"]
+        ]},
+        {"p": "You may see Valley Vista named online as a North Las Vegas new home area. I could not confirm a neighborhood selling there on any builder's site in September 2026, so it is not in the table."}
+      ]
+    },
+    {
+      "id": "prices",
+      "toc": "What it costs",
+      "h2": "What do new homes cost in North Las Vegas?",
+      "blocks": [
+        {"lede": "Published starting prices run from $313,490 at Heritage Square to the $721s at Heartland Summit Phase V. The type of home you want sets most of that spread."},
+        {"table": {
+          "head": ["What you want", "Where to look", "Starts from"],
+          "rows": [
+            ["A gated townhome", "Heritage Square, Solara, Grandview, Heartland Trails", "$313,490"],
+            ["A townhome with a little more space", "Courts and Gardens at The West End", "$403,990"],
+            ["A two-story single family home", "Landings, Heartland Cottages, Heartland Bay, Reserves, Groves", "High $300s"],
+            ["A single-story home", "Heartland Grove, Heartland Manor Phase IV", "$520s"],
+            ["A 3 or 4-car garage", "Heartland Falls 3 Car, Heartland Manor Phase IV", "$547s"],
+            ["Six bedrooms", "Heartland Summit Phase V", "$721s"]
+          ],
+          "note": "From builder community pages, accessed September 16, 2026. Starting prices are for the base plan. Briscoe also offers one-story plans, from $449,750 for its lowest priced plan, and is closing out."
+        }},
+        {"p": "Three things move the price the most. First is one story versus two. At Heartland, a 1,839 square foot single-story at Grove starts in the $520s, while the largest two-story plan at Cottages, 1,865 square feet, is in the $461s. Second is the garage. Heartland Manor Phase IV starts in the $601s with a 3-car garage and the $634s with a 4-car garage, on the same 2,300 square foot base plan. Third is the lot. KB Home notes that a homesite premium may apply. I explain how those work in <a href=\"/blog/lot-premiums-explained-las-vegas-new-construction\">lot premiums in Las Vegas new construction</a>."},
+        {"p": "Prices also change fast here because phases sell out. Always work from a dated price sheet for the exact phase you want."}
+      ]
+    },
+    {
+      "id": "monthly-costs",
+      "toc": "HOA, SID, and taxes",
+      "h2": "What will you pay each month on top of the mortgage?",
+      "blocks": [
+        {"lede": "Plan for an HOA, property tax, and possibly a special improvement district payment. The catch in North Las Vegas is that the builder pages I checked do not clearly publish the amounts, so you have to ask."},
+        {"table": {
+          "head": ["Cost", "What it is", "What to ask for"],
+          "rows": [
+            ["HOA", "Heartland lists an HOA as a feature, and many of the townhome communities are gated.", "The HOA budget and monthly amount, in writing"],
+            ["Master and sub-master HOA", "Some Tule Springs area homes pay into more than one association. Villages at Tule Springs has a Village 1 Sub-Master Association.", "Every association the home belongs to"],
+            ["SID payment", "A special assessment that shows up on your property tax bill.", "The parcel lookup on the Clark County Treasurer site"],
+            ["Property tax", "Clark County, with a 3% yearly cap on increases for a primary home", "The estimated tax on the exact lot"]
+          ],
+          "note": "Clear HOA and SID amounts were not published on the D.R. Horton, KB Home, or Lennar pages accessed September 16, 2026. Lennar's page data does not flag a special assessment for its North Las Vegas communities, but that is not a legal disclosure. Read the public offering statement."
+        }},
+        {"p": "The SID is the one people miss, because it is not part of your HOA dues. The Clark County Treasurer explains that a SID appears on the property tax bill and can be checked by parcel. Before you sign, get the parcel number and look it up. I break down how these charges work in <a href=\"/blog/sid-lid-taxes-explained-las-vegas-new-construction\">SID and LID taxes explained</a> and why some homes pay more than one HOA in <a href=\"/blog/hoa-fees-las-vegas-new-construction\">HOA fees in Las Vegas new construction</a>."}
+      ]
+    },
+    {
+      "id": "schools",
+      "toc": "Nearby schools",
+      "h2": "Which schools are near the new North Las Vegas neighborhoods?",
+      "blocks": [
+        {"lede": "These are the schools each builder lists as nearby. They are not confirmed zoned schools, so treat this as a starting point and check the exact address with CCSD."},
+        {"table": {
+          "head": ["Where the home is", "Elementary", "Middle", "High"],
+          "rows": [
+            ["Heartland at Tule Springs", "Vincent L. Triggs", "Anthony Saville", "Legacy"],
+            ["Landings at Sandstone", "Don E. Hayden or Ruby Duncan", "Brian and Teri Cram", "Legacy"],
+            ["Reserves at Sandstone", "Vincent L. Triggs", "Anthony Saville", "Legacy"],
+            ["Briscoe", "D.L. \"Dusty\" Dickens", "Clifford O. Findlay", "Mojave"]
+          ],
+          "note": "Schools listed as nearby on D.R. Horton and KB Home community pages, accessed September 16, 2026. A nearby school is not always the zoned school, and zones change. Confirm your exact address with the <a href=\"https://ccsd.net/schools/zoning/\" rel=\"nofollow\">CCSD zoning search</a>."
+        }},
+        {"p": "Distance matters here too. D.R. Horton lists Legacy High less than 2 miles from Heartland, but Saville Middle about 4 to 5 miles away. KB Home also lists Carroll M. Johnston STEM Academy of Environmental Studies and Northeast Career and Technical Academy near Briscoe."}
+      ]
+    },
+    {
+      "id": "location",
+      "toc": "Location and nearby",
+      "h2": "Where is North Las Vegas, and what is close by?",
+      "blocks": [
+        {"lede": "North Las Vegas covers the north side of the valley. The newest building runs along and north of the 215 Beltway, from the Tule Springs area east toward I-15."},
+        {"ul": [
+          "<strong>Getting around:</strong> the 215 Beltway, I-15, and I-11 all serve the city. Sandstone sits right at North 5th Street and the 215. Lennar places Heritage Square close to the 215 and Solara close to I-15.",
+          "<strong>Commute:</strong> drive your route at the hour you would actually drive it before you commit, especially if you work on the south end of the valley.",
+          "<strong>Nellis Air Force Base:</strong> Lennar markets Meridian, on the east side, for its closeness to the base.",
+          "<strong>Tule Springs Fossil Beds National Monument:</strong> Heartland markets trail access and views of the monument, and Sandstone plans a new trailhead to it.",
+          "<strong>Parks:</strong> Sandstone plans more than 12 acres of parks, Heartland has community parks and dog parks, and Tropical Breeze Park near Grandview has a splash pad and walking trails.",
+          "<strong>Golf:</strong> Aliante Golf Club, which D.R. Horton places 1 mile from Heartland Trails."
+        ]},
+        {"p": "Every community on this page lists its city as North Las Vegas. That is its own city, separate from the City of Las Vegas, so check the city on any address you find online before you assume it belongs here."}
+      ]
+    },
+    {
+      "id": "watch-outs",
+      "toc": "Before you buy",
+      "h2": "What should you know before buying new in North Las Vegas?",
+      "blocks": [
+        {"lede": "The starting prices here are easy to like. A few things are worth checking before you fall for a model."},
+        {"ul": [
+          "<strong>Know what the low price buys.</strong> Most new homes under $400,000 here are gated two-story townhomes. Single-story detached homes at Heartland start in the $520s.",
+          "<strong>Get the HOA and SID in writing.</strong> The builder pages do not clearly publish either one. Ask for the HOA budget and look up the parcel with the Clark County Treasurer.",
+          "<strong>Ask about every association.</strong> Some Tule Springs area homes pay a master and a sub-master HOA.",
+          "<strong>Move fast, but not blind.</strong> Two Heartland phases have already dropped off D.R. Horton's site, and Heartland Falls 3 Car is marked Final Opportunities.",
+          "<strong>Expect construction for years.</strong> Sandstone opened in September 2026 with more than 1,500 homes still to come, and two of its neighborhoods are not open yet.",
+          "<strong>Visit near Nellis at different times.</strong> If you are looking at the east side, like Meridian, drive by in the morning and evening to hear the area for yourself.",
+          "<strong>Nearby is not zoned.</strong> The schools on a builder's page are nearby, not always the ones your address is zoned for."
+        ]}
+      ]
+    },
+    {
+      "id": "your-agent",
+      "toc": "Your own agent",
+      "h2": "Why bring your own agent to a North Las Vegas model home?",
+      "blocks": [
+        {"lede": "The friendly person at the sales desk works for the builder. Their job is to sell that builder's homes at that builder's price."},
+        {"p": "In North Las Vegas you might be comparing a Lennar townhome, a D.R. Horton phase that is almost sold out, and a KB Home in a master plan that just opened, each with different lot premiums, HOAs, and possible SIDs. Having someone on your side who lines those up costs you nothing, because the builder pays the buyer agent commission either way. The one rule: most builders require your agent to be registered on your very first visit. <a href=\"/las-vegas-new-construction#why-ryan\">Here is what having your own agent actually changes</a>."}
+      ]
+    }
+  ],
+
+  "faq": [
+    ["What is the cheapest new construction in North Las Vegas right now?", "Heritage Square by Lennar, with gated townhomes from $313,490 as of September 16, 2026. KB Home lists its upcoming Meadows townhomes at Sandstone in the low $300s, coming fall 2026."],
+    ["Are there new single-story homes in North Las Vegas?", "Yes. D.R. Horton's Heartland Grove has single-story homes from 1,839 square feet starting in the $520s, and Heartland Manor Phase IV has single-story homes from 2,300 to 2,754 square feet starting in the $601s. KB Home's Briscoe also has one-story plans, but it is closing out."],
+    ["What is Sandstone at Tule Springs?", "It is KB Home's new North Las Vegas master plan at North 5th Street and the 215 Beltway. It opened September 4, 2026, with more than 1,500 homes planned across four neighborhoods. Landings starts in the high $300s and Reserves in the mid $400s."],
+    ["Which builders are building in North Las Vegas?", "D.R. Horton, KB Home, and Lennar all have North Las Vegas communities confirmed on their own websites as of September 16, 2026. Other builders may also sell here, so ask me for the current list before you tour."],
+    ["Do new homes in North Las Vegas have SID fees?", "Some may. A SID payment shows up on your property tax bill, not in your HOA, and the builder pages I checked did not publish one. Look up the parcel on the Clark County Treasurer site and read the public offering statement before you sign."],
+    ["How much are HOA fees for new homes in North Las Vegas?", "It depends on the community, and D.R. Horton, KB Home, and Lennar did not clearly publish HOA amounts on the pages I checked. Some Tule Springs area homes also pay a sub-master association, so ask for every HOA amount in writing."],
+    ["What schools serve Heartland at Tule Springs?", "D.R. Horton lists Vincent L. Triggs Elementary, Anthony Saville Middle, and Legacy High as nearby schools. Nearby does not always mean zoned, so confirm your exact address on the CCSD zoning search."],
+    ["Is there new 55 and better construction in North Las Vegas?", "None of the communities confirmed on builder sites for this page are age restricted. If a 55 and better community is what you want, reach out and I will check what is selling across the valley."]
+  ],
+
+  "cta": {
+    "h2": "Touring North Las Vegas models soon?",
+    "p": "Let me line up the neighborhoods that fit your budget, with current prices and the HOA and SID questions already asked, before your first visit. There is no cost to you, and I will be registered with the builder from day one."
+  },
+
+  "sources": [
+    ["KB Home opens Sandstone in North Las Vegas, September 4, 2026", "https://www.prnewswire.com/news-releases/kb-home-opens-sandstone-a-new-master-planned-community-of-over-1-500-homes-in-a-prime-north-las-vegas-location-302870298.html"],
+    ["KB Home, Landings at Sandstone at Tule Springs, accessed September 16, 2026", "https://www.kbhome.com/new-homes-las-vegas/landings-at-sandstone-at-tule-springs"],
+    ["KB Home, Reserves at Sandstone at Tule Springs, accessed September 16, 2026", "https://www.kbhome.com/new-homes-las-vegas/reserves-at-sandstone-at-tule-springs"],
+    ["KB Home, Las Vegas communities, accessed September 16, 2026", "https://www.kbhome.com/new-homes-las-vegas"],
+    ["KB Home, Briscoe, accessed September 16, 2026", "https://www.kbhome.com/new-homes-las-vegas/briscoe"],
+    ["D.R. Horton, Heartland Trails at Tule Springs, accessed September 16, 2026", "https://www.drhorton.com/nevada/las-vegas/north-las-vegas/heartland-trails-at-tule-springs"],
+    ["D.R. Horton, Heartland Cottages at Tule Springs, accessed September 16, 2026", "https://www.drhorton.com/nevada/las-vegas/north-las-vegas/heartland-cottages-at-tule-springs"],
+    ["D.R. Horton, Heartland Grove at Tule Springs, accessed September 16, 2026", "https://www.drhorton.com/nevada/las-vegas/north-las-vegas/heartland-grove-at-tule-springs"],
+    ["D.R. Horton, Heartland Manor Phase IV, accessed September 16, 2026", "https://www.drhorton.com/nevada/las-vegas/north-las-vegas/heartland-manor-phase-iv-at-tule-springs"],
+    ["D.R. Horton, Heartland Summit Phase V, accessed September 16, 2026", "https://www.drhorton.com/nevada/las-vegas/north-las-vegas/heartland-summit-phase-v-at-tule-springs"],
+    ["Lennar, Courts at The West End, accessed September 16, 2026", "https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/the-west-end/courts"],
+    ["Lennar, Gardens at The West End, accessed September 16, 2026", "https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/the-west-end/gardens"],
+    ["Lennar, Groves at The West End, accessed September 16, 2026", "https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/the-west-end/groves"],
+    ["Lennar, Heritage Square, accessed September 16, 2026", "https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/heritage-square"],
+    ["Lennar, Solara, accessed September 16, 2026", "https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/solara"],
+    ["Lennar, Grandview, accessed September 16, 2026", "https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/grandview"],
+    ["Lennar, Meridian, accessed September 16, 2026", "https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/meridian"],
+    ["Villages at Tule Springs Village 1 Sub-Master Association", "https://www.mytulesprings.com/"],
+    ["Clark County Treasurer, understanding SIDs", "https://www.clarkcountynv.gov/government/elected_officials/county_treasurer/understanding-sids"],
+    ["CCSD zoning search", "https://ccsd.net/schools/zoning/"]
+  ]
+}

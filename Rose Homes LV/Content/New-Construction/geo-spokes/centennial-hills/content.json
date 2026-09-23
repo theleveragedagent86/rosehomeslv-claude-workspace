@@ -1,0 +1,264 @@
+{
+  "area": "Centennial Hills",
+  "slug": "centennial-hills-new-construction",
+  "place_name": "Centennial Hills, Las Vegas, Nevada",
+  "locality": "Las Vegas",
+  "updated_iso": "2026-09-16",
+  "updated_text": "September 16, 2026",
+  "reviewed_text": "September 2026",
+  "read_minutes": 12,
+
+  "seo": {
+    "title": "Centennial Hills New Construction Homes Guide",
+    "description": "9 new home neighborhoods confirmed selling in Centennial Hills, from $383,990 at Sunstone to $1,094,990 single-story estates. Builders, HOA, schools. Sept 2026.",
+    "keywords": "centennial hills new construction, sunstone las vegas, trilogy sunstone, skye summit, 89131 homes",
+    "og_title": "New Construction Homes in Centennial Hills",
+    "og_description": "Every new home neighborhood we could confirm selling in Centennial Hills, with builders, starting prices, schools builders list, and what is coming to Skye Summit."
+  },
+
+  "hero": {
+    "kicker": "Rose Homes LV &middot; northwest Las Vegas",
+    "h1": "New Construction Homes in Centennial Hills",
+    "sub": "We confirmed nine neighborhoods selling new homes in Centennial Hills right now, from attached homes under $400,000 in Sunstone to single-story estate homes past $1 million. Here is each one, and what to check before you visit a model.",
+    "stats": [
+      ["9", "Neighborhoods selling"],
+      ["4", "Builders confirmed"],
+      ["$383,990", "Lowest starting price"],
+      ["2027", "Skye Summit sales expected"]
+    ],
+    "image": {
+      "src": "https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-centennial-hills.jpg",
+      "alt": "Two-story stucco homes and palm trees on an established northwest Las Vegas street with low foothills behind",
+      "width": 900,
+      "height": 672
+    },
+    "secondary_cta": "Browse neighborhoods",
+    "mobile_label": "Neighborhoods"
+  },
+
+  "answer": "Centennial Hills is an established area in northwest Las Vegas, centered on the US-95 and 215 Beltway interchange. It has no single master plan or master HOA. As of September 16, 2026, the builders' own sites show 9 neighborhoods selling new homes here. Most are in Sunstone, a separate master plan next to Skye Canyon, where Lennar, Shea's Trilogy, and Woodside are building. The rest are stand-alone neighborhoods on bigger lots by Toll Brothers and Lennar in 89131 and 89149. Starting prices run from $383,990 for Lennar's Axel at Sunstone to $1,094,990 at Lennar's The Estates. The tip: every neighborhood has its own HOA, and builders do not publish the amounts, so ask for them before you fall in love with a model.",
+
+  "takeaways": [
+    "Sunstone is where most of the building is. Seven of the 9 selling neighborhoods are there, at US-95 and Skye Canyon Park Drive.",
+    "Sunstone is not Skye Canyon. They sit side by side off US-95, but they are different master plans with different HOAs, so confirm which one a lot is in.",
+    "There is no master HOA for Centennial Hills. Each neighborhood sets its own fee, and none of the builder pages we checked publish it.",
+    "Trilogy Sunstone by Shea is a gated 55+ community, with homes from $399,990 and a 15,000 square foot club.",
+    "Want RV parking or a big single-story lot? Look at Toll Brothers' Elkhorn Grove in 89131 and Lennar's The Estates in 89149.",
+    "Skye Summit is coming, not selling. KB Home plans to open Vertice at Skye Summit for sale in early 2027."
+  ],
+
+  "part1_sections": [
+    {
+      "id": "neighborhoods",
+      "toc": "Neighborhoods selling now",
+      "h2": "Which new neighborhoods are selling in Centennial Hills right now?",
+      "blocks": [
+        {"lede": "These are the neighborhoods shown as selling on the builders' own websites on September 16, 2026, sorted from the lowest starting price to the highest. Where a neighborhood sells two collections, each gets its own row."},
+        {"table": {
+          "head": ["Neighborhood", "Builder", "Master plan", "Home type", "Size (sq ft)", "Starts from"],
+          "rows": [
+            ["Axel", "Lennar", "Sunstone", "Attached Next Gen home", "1,807 to 1,927", "$383,990"],
+            ["Trilogy Sunstone", "Shea Homes", "Sunstone", "55+, gated. Single family, condos, and duplexes", "1,312 to 2,758", "$399,990"],
+            ["Asher", "Lennar", "Sunstone", "Two-story single family", "1,248 to 1,724", "$440,990"],
+            ["Capella at Sunstone", "Woodside Homes", "Sunstone", "Single-story single family", "1,970 to 2,295", "$614,950"],
+            ["Elkhorn Grove, Sentinel Collection", "Toll Brothers", "None, gated, 89131", "Two-story single family, RV options", "2,733 to 3,971+", "$644,995"],
+            ["Alia Village", "Lennar", "Sunstone", "Single family", "2,012 to 2,655", "$664,990"],
+            ["Alia Pointe", "Lennar", "Sunstone", "Single family with Next Gen suite", "2,469 to 3,358", "$688,990"],
+            ["Elkhorn Grove, Regalia Collection", "Toll Brothers", "None, gated, 89131", "Single-story, 3-car garage, RV options", "2,691 to 3,100+", "$719,995"],
+            ["Alia Estates", "Lennar", "Sunstone", "Single family with Next Gen suite", "3,776 to 4,240", "$859,990"],
+            ["The Estates", "Lennar", "None, 89149", "Single-story, Next Gen, RV garages", "3,783 to 4,240", "$1,094,990"]
+          ],
+          "note": "Starting prices are the lowest published price on each builder's own website, checked September 16, 2026. They change with every release. Capella at Sunstone is marked Final Opportunity by Woodside, so few homesites are left. Lennar's Erhardt Estates at Elkhorn Road and Sisk Road is sold out."
+        }},
+        {"p": "Trying to decide between this side of US-95 and the master plan next door? Read my <a href=\"/blog/centennial-hills-vs-skye-canyon\">Centennial Hills vs Skye Canyon</a> comparison, or see the <a href=\"/skye-canyon-new-construction\">new homes selling in Skye Canyon</a>."}
+      ]
+    },
+    {
+      "id": "builders",
+      "toc": "Centennial Hills builders",
+      "h2": "Which builders are building in Centennial Hills?",
+      "blocks": [
+        {"lede": "Four builders have neighborhoods we could confirm on their own websites. Lennar has the most by far, with six of the 9 neighborhoods."},
+        {"builders": {
+          "cards": [
+            {"key": "lennar", "note": "Six neighborhoods. Five collections in Sunstone, from Axel attached homes at $383,990 to Alia Estates at $859,990, plus The Estates in 89149, single-story homes with RV garages from $1,094,990."},
+            {"key": "toll-brothers", "note": "Elkhorn Grove, a gated neighborhood in 89131 with a private pool and walking trail. Two-story Sentinel homes from $644,995 and single-story Regalia homes from $719,995, both with RV options."},
+            {"key": "shea", "note": "Trilogy Sunstone, a gated 55+ community with single family homes, condos, and duplexes from $399,990, built around the 15,000 square foot Cabochon Club."},
+            {"key": "woodside", "note": "Capella at Sunstone, single-story homes from $614,950. Woodside marks it Final Opportunity, so lot choice is limited."}
+          ],
+          "note": "Richmond American is also listed as a Sunstone builder, with a neighborhood called Solstice at Sunstone. We could not confirm its prices or plans on Richmond American's site, so it is not in the table. KB Home has bought land in Skye Summit, but nothing is selling there yet."
+        }}
+      ]
+    }
+  ],
+
+  "listings": {
+    "h2": "New construction homes for sale in Centennial Hills right now",
+    "lede": "These are active MLS listings of newly built homes in Centennial Hills. Many new homes are sold straight from the builder's sales office and may not reach the MLS, so the table above is the fuller picture.",
+    "lofty_filter": "Location: Centennial Hills (use Lofty's Centennial Hills area, the same one behind /las-vegas-NV/centennial-hills). If the area is not offered, use ZIPs 89131, 89149, and 89143, which cover every neighborhood in the table. Do not add 89166, because it pulls in Skye Canyon. Year Built: 2025 or newer. Property type: single family, townhouse, condo. Status: active. Sort: newest."
+  },
+
+  "part2_sections": [
+    {
+      "id": "where",
+      "toc": "Where they are building",
+      "h2": "Where in Centennial Hills are new homes going up?",
+      "blocks": [
+        {"lede": "Most of it is in Sunstone, off US-95 at Skye Canyon Park Drive. The rest is a few stand-alone neighborhoods on bigger lots in 89131 and 89149. Skye Summit, to the west of Providence, is the next big one, but it is not selling yet."},
+        {"h3": "Sunstone"},
+        {"facts": [
+          ["Neighborhoods selling", "7, the most in Centennial Hills"],
+          ["Where", "US-95 at Skye Canyon Park Drive. Builder addresses use ZIP 89143."],
+          ["Starting prices", "$383,990 at Axel to $859,990 at Alia Estates"],
+          ["Worth knowing", "a separate master plan from Skye Canyon, with its own HOA. Lennar lists Sun Mountain Park, a Nature Paseo with a dino dig site and fitness stations, and outdoor WiFi."]
+        ]},
+        {"h3": "Stand-alone neighborhoods in 89131 and 89149"},
+        {"facts": [
+          ["Elkhorn Grove", "Toll Brothers, gated, 5819 Kings Bluff Avenue in 89131. From $644,995."],
+          ["The Estates", "Lennar, 9556 W Hammer Lane in 89149. Single-story homes with RV garages, from $1,094,990 with plans up to $1,427,990."],
+          ["Worth knowing", "no master plan here. These are the places to look for a larger lot, RV parking, or a single-story home."]
+        ]},
+        {"h3": "Skye Summit, coming soon"},
+        {"facts": [
+          ["Status", "not selling yet"],
+          ["Developer", "Olympia Companies, approved for about 3,500 homes on about 505 acres"],
+          ["Where", "north side of Tropical Parkway, west of the 215 Beltway"],
+          ["First builder", "KB Home bought the first tract in January 2026, about 38.6 acres for $46.4 million, for Vertice at Skye Summit with 299 homesites. Land work was set to start in summer 2026, with sales opening in early 2027."],
+          ["Worth knowing", "plans include the 20 acre La Madre Foothills Park"]
+        ]}
+      ]
+    },
+    {
+      "id": "prices",
+      "toc": "What it costs",
+      "h2": "What do new homes cost in Centennial Hills?",
+      "blocks": [
+        {"lede": "Published starting prices run from $383,990 to $1,094,990. Across its five Sunstone collections, Lennar's prices run from $383,990 to $954,690, and The Estates goes up to $1,427,990."},
+        {"table": {
+          "head": ["What you want", "Where to look", "Starts from"],
+          "rows": [
+            ["The lowest price", "Axel at Sunstone, attached Next Gen homes", "$383,990"],
+            ["A 55+ community", "Trilogy Sunstone", "$399,990"],
+            ["A detached home under $500,000", "Asher at Sunstone", "$440,990"],
+            ["A single-story home", "Capella at Sunstone, Elkhorn Grove Regalia, The Estates", "$614,950"],
+            ["A gated neighborhood", "Trilogy Sunstone, Elkhorn Grove", "$399,990"],
+            ["RV parking", "Elkhorn Grove, The Estates", "$644,995"],
+            ["A Next Gen suite", "Axel, Alia Pointe, Alia Estates, The Estates", "$383,990"]
+          ],
+          "note": "From each builder's website, checked September 16, 2026. Starting prices are the lowest published price and change with every release."
+        }},
+        {"p": "Two things move the price the most. First is the type of home, since an attached home in Sunstone and a 4,000 square foot single-story on a big lot are different products. Second is the extras that are built in, like an RV garage, a Next Gen suite, a gate, or a 55+ clubhouse."},
+        {"p": "Builders do not publish lot premiums here, so ask for them on the exact homesite, along with a dated price sheet."}
+      ]
+    },
+    {
+      "id": "monthly-costs",
+      "toc": "HOA, SID, and taxes",
+      "h2": "What will you pay each month on top of the mortgage?",
+      "blocks": [
+        {"lede": "Centennial Hills has no master HOA. Each neighborhood or master plan has its own, so the fee can change from one block to the next."},
+        {"table": {
+          "head": ["Cost", "What it is", "Amount"],
+          "rows": [
+            ["Master HOA", "Centennial Hills as a whole", "None"],
+            ["Neighborhood HOA", "Sunstone, Trilogy Sunstone, Elkhorn Grove, and The Estates each have their own", "Not published by the builders, ask before you sign"],
+            ["SID or LID payment", "Repays bonds that built roads and utilities", "Check the exact parcel"],
+            ["Property tax", "Clark County, with a 3% yearly cap on increases for a primary home", "Based on assessed value"]
+          ],
+          "note": "Builder pages for Sunstone, Trilogy Sunstone, Elkhorn Grove, and The Estates, checked September 16, 2026, do not list HOA amounts or a special improvement district."
+        }},
+        {"p": "Because the builders do not post HOA numbers, ask for the HOA disclosures, including any master plan fee in Sunstone, before you write a contract. Also ask for a SID lookup on the exact parcel through the Clark County Treasurer. I break down how HOAs work here in <a href=\"/blog/centennial-hills-hoa-fees\">Centennial Hills HOA fees</a>."}
+      ]
+    },
+    {
+      "id": "schools",
+      "toc": "Schools builders list",
+      "h2": "Which schools serve the new Centennial Hills neighborhoods?",
+      "blocks": [
+        {"lede": "Lennar lists Arbor View High School for its Sunstone homes, and Centennial High School for The Estates in 89149."},
+        {"table": {
+          "head": ["Where the home is", "Elementary", "Middle", "High"],
+          "rows": [
+            ["Sunstone (Lennar neighborhoods)", "Bilbray or Scherkenbach", "Cadwallader", "Arbor View"],
+            ["The Estates, W Hammer Lane, 89149", "Dean Lamar Allen", "Leavitt", "Centennial"]
+          ],
+          "note": "Schools as listed on Lennar's Sunstone and The Estates pages, checked September 16, 2026. Lennar lists two elementary schools for Sunstone, so check which one serves your address. Toll Brothers does not list zoned schools for Elkhorn Grove. Zones can change, so confirm your exact address with the <a href=\"https://ccsd.net/schools/zoning/\" rel=\"nofollow\">CCSD zoning search</a>."
+        }},
+        {"p": "Want more on the high schools? Read my guides to <a href=\"/blog/arbor-view-high-school-centennial-hills\">Arbor View High School</a> and <a href=\"/blog/centennial-high-school-las-vegas\">Centennial High School</a>."}
+      ]
+    },
+    {
+      "id": "location",
+      "toc": "Location and nearby",
+      "h2": "Where is Centennial Hills, and what is close by?",
+      "blocks": [
+        {"lede": "Centennial Hills is in the northwest corner of Las Vegas, built around the interchange of US-95 and the 215 Beltway. Its ZIP codes are 89131, 89149, 89143, and 89166."},
+        {"ul": [
+          "<strong>Getting around:</strong> US-95, also signed I-11, and the 215 Beltway meet in the middle of the area. Sunstone sits right off US-95 at Skye Canyon Park Drive.",
+          "<strong>Town center:</strong> a 110 acre town center with Centennial Centre shopping, Centennial Hills Hospital, the Centennial Hills Library, the YMCA, and a park.",
+          "<strong>Parks and open space:</strong> Centennial Hills Park, Floyd Lamb Park at Tule Springs, and Tule Springs Fossil Beds National Monument.",
+          "<strong>Groceries:</strong> Woodside notes a Smith's Marketplace near Sunstone.",
+          "<strong>For 55+ buyers:</strong> Trilogy Sunstone's Cabochon Club has a pool, fitness, a culinary studio, a restaurant and bar, pickleball, and bocce."
+        ]},
+        {"p": "Most of Centennial Hills is inside the City of Las Vegas, with some pockets of unincorporated Clark County. It is worth checking which one covers the exact lot."}
+      ]
+    },
+    {
+      "id": "watch-outs",
+      "toc": "Before you buy",
+      "h2": "What should you know before buying new in Centennial Hills?",
+      "blocks": [
+        {"lede": "Centennial Hills is a patchwork of neighborhoods, not one master plan, and that creates a few surprises for new buyers."},
+        {"ul": [
+          "<strong>Sunstone or Skye Canyon?</strong> They sit side by side off US-95 but are different master plans with different HOAs. Confirm which one the lot is in.",
+          "<strong>Watch the ZIP code.</strong> Sunstone builder addresses read 89143, but some sites list Sunstone as 89166.",
+          "<strong>Get the HOA numbers in writing.</strong> None of the builders we checked publish them, and there is no master HOA to fall back on.",
+          "<strong>Read the 55+ rules.</strong> Trilogy Sunstone is age qualified and gated. Get the governing documents before you commit.",
+          "<strong>Closing out means fewer choices.</strong> Capella at Sunstone is marked Final Opportunity, so expect limited lots and plans.",
+          "<strong>Skye Summit is not open yet.</strong> The first sales are planned for early 2027, and a master plan of about 3,500 homes means years of grading and construction traffic near Tropical Parkway and the 215. Residents raised water concerns when it was approved.",
+          "<strong>Look past the MLS.</strong> Many new homes here are sold directly by the builder and may not show up on listing sites."
+        ]}
+      ]
+    },
+    {
+      "id": "your-agent",
+      "toc": "Your own agent",
+      "h2": "Why bring your own agent to a Centennial Hills model home?",
+      "blocks": [
+        {"lede": "The friendly person at the sales desk works for the builder. Their job is to sell that builder's homes at that builder's price."},
+        {"p": "In Centennial Hills you might be comparing a Lennar Next Gen home in Sunstone, a gated Toll Brothers home in Elkhorn Grove, and a Shea 55+ home in Trilogy, each with its own HOA and none with a published fee. Having someone on your side who gets those numbers and lines them up costs you nothing, because the builder pays the buyer agent commission either way. The one rule: most builders require your agent to be registered on your very first visit. <a href=\"/las-vegas-new-construction#why-ryan\">Here is what having your own agent actually changes</a>."}
+      ]
+    }
+  ],
+
+  "faq": [
+    ["What is the cheapest new construction in Centennial Hills right now?", "Lennar's Axel at Sunstone, with attached Next Gen homes from $383,990 as of September 16, 2026. The lowest detached home is Lennar's Asher at Sunstone, from $440,990."],
+    ["Who is building new homes in Centennial Hills?", "Lennar, Shea Homes, Toll Brothers, and Woodside Homes have neighborhoods selling on their own websites as of September 16, 2026. Lennar has six of the 9 neighborhoods, most of them in Sunstone."],
+    ["Is Sunstone part of Skye Canyon?", "No. Sunstone is its own master plan at US-95 and Skye Canyon Park Drive, with its own HOA. If you are looking at Skye Canyon too, see <a href=\"/skye-canyon-new-construction\">new homes in Skye Canyon</a>."],
+    ["Is there a 55+ new home community in Centennial Hills?", "Yes. Trilogy Sunstone by Shea Homes is a gated 55+ community with homes from $399,990 and the 15,000 square foot Cabochon Club."],
+    ["What is Skye Summit, and when can I buy there?", "Skye Summit is an Olympia Companies master plan approved for about 3,500 homes on about 505 acres near Tropical Parkway and the 215. It is not selling yet. KB Home plans to open Vertice at Skye Summit for sale in early 2027."],
+    ["Are there new homes with RV parking in Centennial Hills?", "Yes. Toll Brothers' Elkhorn Grove in 89131 offers RV options from $644,995, and Lennar's The Estates in 89149 has single-story homes with RV garages from $1,094,990."],
+    ["Does Centennial Hills have one master HOA?", "No. Each neighborhood or master plan has its own HOA, so fees differ from one to the next. The builders do not publish the amounts, so ask for the HOA disclosures before you sign."],
+    ["What schools serve new homes in Sunstone?", "Lennar lists Bilbray or Scherkenbach Elementary, Cadwallader Middle, and Arbor View High for Sunstone. Always confirm your exact address with CCSD zoning."]
+  ],
+
+  "cta": {
+    "h2": "Touring Centennial Hills models soon?",
+    "p": "Let me line up the neighborhoods that fit your budget, with current prices and the HOA numbers the builders do not post, before your first visit. There is no cost to you, and I will be registered with the builder from day one."
+  },
+
+  "sources": [
+    ["Lennar, Sunstone, accessed September 16, 2026", "https://www.lennar.com/new-homes/nevada/las-vegas/las-vegas/sunstone"],
+    ["Lennar, The Estates, accessed September 16, 2026", "https://www.lennar.com/new-homes/nevada/las-vegas/las-vegas/the-estates"],
+    ["Shea Homes, Trilogy Sunstone, accessed September 16, 2026", "https://www.sheahomes.com/new-homes/nevada/las-vegas-area/las-vegas/trilogy-sunstone"],
+    ["Woodside Homes, Capella at Sunstone, accessed September 16, 2026", "https://www.woodsidehomes.com/findmyhome/nevada/las-vegas/capella-at-sunstone"],
+    ["Toll Brothers, Elkhorn Grove, accessed September 16, 2026", "https://www.tollbrothers.com/luxury-homes-for-sale/Nevada/Elkhorn-Grove"],
+    ["Lennar, Erhardt Estates", "https://c21tsp.lennar.com/new-homes/nevada/las-vegas/las-vegas/erhardt-estates"],
+    ["Sunstone Las Vegas", "https://www.sunstonelv.com/"],
+    ["Richmond American, Solstice at Sunstone", "https://www.richmondamerican.com/nevada/las-vegas-new-homes/las-vegas/solstice-at-sunstone/"],
+    ["Hoodline, KB Home stakes first claim in Skye Summit, January 9, 2026", "https://hoodline.com/2026/01/kb-home-stakes-first-claim-in-skye-summit-as-vegas-sprawl-heads-for-the-hills/"],
+    ["KTNV, Skye Summit master planned community approved", "https://www.ktnv.com/news/skye-summit-new-master-planned-community-approved-near-centennial-hills"],
+    ["CCSD zoning search", "https://ccsd.net/schools/zoning/"],
+    ["Centennial Hills, Las Vegas", "https://en.wikipedia.org/wiki/Centennial_Hills,_Las_Vegas"]
+  ]
+}

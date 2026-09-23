@@ -1,0 +1,225 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Leveraged Agent Carousel 01</title>
+<style>
+@font-face{font-family:'InterLocal';src:local('Inter'),local('Inter Regular');}
+:root{
+  --cream:#F5F2EB; --teal:#04404C; --gold:#C48424; --sage:#C0CCCC;
+  --head:'Poppins','Futura','Avenir Next','Inter',system-ui,sans-serif;
+  --body:'Inter','Helvetica Neue',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#2a2a2a;font-family:var(--body)}
+.slide{
+  width:1080px;height:1350px;background:var(--cream);position:relative;
+  overflow:hidden;margin:0 0 40px 0;display:flex;flex-direction:column;
+  padding:96px 88px 196px 88px;
+}
+/* sage circuit texture */
+.slide::before{
+  content:'';position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:
+    linear-gradient(var(--sage) 1.5px,transparent 1.5px),
+    linear-gradient(90deg,var(--sage) 1.5px,transparent 1.5px);
+  background-size:120px 120px;
+  -webkit-mask-image:radial-gradient(circle at 88% 12%,#000 0%,transparent 46%);
+          mask-image:radial-gradient(circle at 88% 12%,#000 0%,transparent 46%);
+}
+.slide>*{position:relative;z-index:2}
+.num{font-family:var(--head);font-weight:700;font-size:26px;color:var(--gold);
+     letter-spacing:.16em;margin-bottom:44px}
+h2{font-family:var(--head);font-weight:700;font-size:88px;line-height:1.06;
+   letter-spacing:-.02em;color:var(--teal);max-width:11ch}
+h2.sm{font-size:74px;max-width:13ch}
+p.body{font-family:var(--body);font-weight:400;font-size:42px;line-height:1.48;
+   color:var(--teal);opacity:.88;max-width:20ch;margin-top:40px}
+.spacer{flex:1}
+.viz{margin-top:104px;margin-bottom:auto}
+.viz{position:relative;z-index:2}
+.logo{position:absolute;left:88px;bottom:76px;height:72px;z-index:3;
+  mix-blend-mode:multiply;border-radius:10px}
+.mono{height:120px;z-index:3;mix-blend-mode:multiply}
+
+/* cover */
+.cover{justify-content:center;align-items:flex-start;padding:110px 88px 96px 88px}
+.cover h1{font-family:var(--head);font-weight:700;font-size:118px;line-height:1.04;
+  letter-spacing:-.035em;color:var(--teal)}
+.cover h1 em{font-style:normal;color:var(--gold)}
+.cover .mono{position:absolute;top:96px;left:88px;height:104px}
+.swipe{position:absolute;right:88px;bottom:88px;font-family:var(--head);font-weight:600;
+  font-size:30px;color:var(--gold);letter-spacing:.06em;z-index:3}
+
+/* slide 2 deadline list */
+.dlist{display:flex;flex-direction:column;gap:22px;margin-top:10px}
+.dlist span{font-family:var(--head);font-weight:600;font-size:34px;letter-spacing:.1em;
+  color:#7C9498;text-transform:uppercase}
+.dlist span.hit{color:var(--gold);text-decoration:line-through;text-decoration-thickness:4px}
+
+/* folder */
+.folder{width:520px;height:330px;border:5px solid var(--gold);border-radius:16px;position:relative}
+.folder::before{content:'';position:absolute;top:-38px;left:-5px;width:210px;height:38px;
+  border:5px solid var(--gold);border-bottom:none;border-radius:14px 14px 0 0;background:var(--cream)}
+.folder .tabs{display:flex;flex-wrap:wrap;gap:16px;padding:38px 32px}
+.folder .tabs b{font-family:var(--body);font-weight:500;font-size:30px;color:var(--teal);
+  border:3px solid #A8BABC;border-radius:999px;padding:10px 26px}
+
+/* slide 4 contract -> calendar */
+.flow{display:flex;align-items:center;gap:44px}
+.doc{width:220px;height:290px;border:5px solid var(--teal);border-radius:12px;padding:30px 24px;
+  display:flex;flex-direction:column;gap:18px}
+.doc i{display:block;height:9px;background:var(--sage);border-radius:6px}
+.doc i:nth-child(4){width:60%}
+.arrow{font-size:64px;color:var(--gold);font-weight:700;font-family:var(--head)}
+.cal{display:grid;grid-template-columns:repeat(5,64px);grid-auto-rows:64px;gap:12px}
+.cal u{border:3px solid var(--sage);border-radius:10px;text-decoration:none}
+.cal u.on{background:var(--gold);border-color:var(--gold)}
+
+/* envelopes */
+.env{display:flex;flex-direction:column;gap:18px}
+.env b{font-family:var(--body);font-weight:500;font-size:32px;color:var(--teal);
+  border:4px solid #A8BABC;border-radius:12px;padding:20px 30px;width:660px;position:relative}
+.env b:first-child{border-color:var(--gold);color:var(--teal)}
+.env b::after{content:'';position:absolute;right:26px;top:26px;width:34px;height:24px;
+  border:3px solid var(--sage);border-radius:4px}
+.env b:first-child::after{border-color:var(--gold)}
+
+/* email header */
+.mail{width:720px;border:5px solid var(--sage);border-radius:16px;overflow:hidden}
+.mail div{display:flex;gap:24px;padding:24px 30px;font-family:var(--body);font-size:32px;
+  color:var(--teal);border-bottom:3px solid var(--sage)}
+.mail div:last-child{border-bottom:none}
+.mail div s{text-decoration:none;color:var(--sage);font-weight:600;width:172px;
+  font-family:var(--head);letter-spacing:.06em;font-size:24px;padding-top:8px}
+.mail div.hl{background:var(--gold);}
+.mail div.hl,.mail div.hl s{color:var(--cream)}
+
+/* split */
+.split{display:flex;align-items:stretch;gap:0;width:100%}
+.split>div{flex:1;padding:44px 34px;min-height:300px}
+.split .l{opacity:.42}
+.split .r{border:5px solid var(--gold);border-radius:16px}
+.split label{font-family:var(--head);font-weight:700;font-size:28px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--teal);display:block;margin-bottom:26px}
+.split .r label{color:var(--gold)}
+.grid9{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.grid9 i{height:38px;background:var(--sage);border-radius:4px}
+.rline{height:14px;background:var(--gold);border-radius:8px;margin-bottom:16px}
+.rline.s{width:62%} .rline.t{width:40%}
+
+/* stacked folders */
+.stack{position:relative;height:330px;width:560px}
+.stack div{position:absolute;width:430px;height:250px;border-radius:16px;border:5px solid var(--sage)}
+.stack div:nth-child(1){left:96px;top:0;opacity:.35}
+.stack div:nth-child(2){left:48px;top:34px;opacity:.6}
+.stack div:nth-child(3){left:0;top:68px;border-color:var(--gold);border-width:6px;opacity:1}
+.stack b{position:absolute;left:34px;top:34px;font-family:var(--head);font-weight:700;
+  font-size:96px;color:var(--gold);z-index:4}
+
+/* CTA */
+.cta{justify-content:center;align-items:center;text-align:center;padding-bottom:96px}
+.cta .tc{font-family:var(--head);font-weight:700;font-size:300px;color:var(--gold);
+  letter-spacing:-.05em;line-height:1}
+.cta p{font-family:var(--head);font-weight:600;font-size:56px;line-height:1.3;color:var(--teal);
+  max-width:19ch;margin-top:24px}
+.cta .mono{margin-top:56px;height:156px}
+</style></head><body>
+
+<!-- 1 COVER -->
+<section class="slide cover">
+  <img class="mono" src="../../Brandkit/leveraged-agent-logo-small.png">
+  <h1>I have <em>3 deals</em> on my board right now.<br>Claude Code writes <em>every</em> email.</h1>
+  <div class="swipe">SWIPE →</div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+  <div class="num">01</div>
+  <h2 class="sm">A transaction is not one job, it is 17 deadlines</h2>
+  <p class="body">Inspection, appraisal, loan docs, HOA, walkthrough, signing. Miss one date and you are the reason it fell apart.</p>
+  <div class="spacer"></div>
+  <div class="viz dlist">
+    <span>Inspection</span><span>Appraisal</span><span class="hit">Loan docs</span>
+    <span>HOA</span><span>Walkthrough</span><span>Signing</span>
+  </div>
+  <img class="logo" src="../../Brandkit/leveraged-agent-logo.png">
+</section>
+
+<!-- 3 -->
+<section class="slide">
+  <div class="num">02</div>
+  <h2>The folder is the system</h2>
+  <p class="body">One folder per deal. Contract, addenda, dates, contacts. Claude reads that folder before it writes anything.</p>
+  <div class="spacer"></div>
+  <div class="viz folder"><div class="tabs"><b>Contract</b><b>Addenda</b><b>Dates</b><b>Contacts</b></div></div>
+  <img class="logo" src="../../Brandkit/leveraged-agent-logo.png">
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <div class="num">03</div>
+  <h2 class="sm">Dates come from the contract, not your memory</h2>
+  <p class="body">Drop the executed contract in. The skill pulls every deadline and builds the calendar in one pass.</p>
+  <div class="spacer"></div>
+  <div class="viz flow">
+    <div class="doc"><i></i><i></i><i></i><i></i></div>
+    <div class="arrow">→</div>
+    <div class="cal"><u></u><u class="on"></u><u></u><u></u><u></u><u></u><u></u><u class="on"></u><u></u><u></u><u></u><u></u><u></u><u></u><u class="on"></u></div>
+  </div>
+  <img class="logo" src="../../Brandkit/leveraged-agent-logo.png">
+</section>
+
+<!-- 5 -->
+<section class="slide">
+  <div class="num">04</div>
+  <h2 class="sm">Every email you send twice is a template</h2>
+  <p class="body">Escrow opening, inspection notice, appraisal update, clear to close. Written once, reused on all three of my deals.</p>
+  <div class="spacer"></div>
+  <div class="viz env"><b>Escrow opening</b><b>Inspection notice</b><b>Appraisal update</b><b>Clear to close</b></div>
+  <img class="logo" src="../../Brandkit/leveraged-agent-logo.png">
+</section>
+
+<!-- 6 -->
+<section class="slide">
+  <div class="num">05</div>
+  <h2 class="sm">The CC list is part of the template</h2>
+  <p class="body">Listing agent and their TC on every transaction email. Build it into the file so you never forget.</p>
+  <div class="spacer"></div>
+  <div class="viz mail">
+    <div><s>TO</s>Escrow officer</div>
+    <div class="hl"><s>CC</s>Listing agent + their TC</div>
+    <div><s>SUBJECT</s>Inspection scheduled</div>
+  </div>
+  <img class="logo" src="../../Brandkit/leveraged-agent-logo.png">
+</section>
+
+<!-- 7 -->
+<section class="slide">
+  <div class="num">06</div>
+  <h2 class="sm">Do this instead of a spreadsheet</h2>
+  <p class="body">A spreadsheet stores dates. A skill reads the contract, writes the email, and tells you what is late.</p>
+  <div class="spacer"></div>
+  <div class="viz split">
+    <div class="l"><label>Spreadsheet</label>
+      <div class="grid9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    <div class="r"><label>Skill</label>
+      <div class="rline"></div><div class="rline s"></div><div class="rline t"></div><div class="rline s"></div></div>
+  </div>
+  <img class="logo" src="../../Brandkit/leveraged-agent-logo.png">
+</section>
+
+<!-- 8 -->
+<section class="slide">
+  <div class="num">07</div>
+  <h2>Start with your ugliest deal</h2>
+  <p class="body">Pick the file you are most behind on. Build the folder today. The next deal inherits the whole thing.</p>
+  <div class="spacer"></div>
+  <div class="viz stack"><div></div><div></div><div></div><b>1</b></div>
+  <img class="logo" src="../../Brandkit/leveraged-agent-logo.png">
+</section>
+
+<!-- 9 CTA -->
+<section class="slide cta">
+  <div class="tc">TC</div>
+  <p>DM me “TC” and I will send you the folder structure I use.</p>
+  <img class="mono" src="../../Brandkit/leveraged-agent-logo-small.png">
+</section>
+
+</body></html>

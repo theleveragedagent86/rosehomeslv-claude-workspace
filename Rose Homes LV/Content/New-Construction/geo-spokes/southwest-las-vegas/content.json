@@ -1,0 +1,357 @@
+{
+  "area": "Southwest Las Vegas",
+  "slug": "southwest-las-vegas-new-construction",
+  "place_name": "Southwest Las Vegas, Nevada",
+  "locality": "Las Vegas",
+  "updated_iso": "2026-09-16",
+  "updated_text": "September 16, 2026",
+  "reviewed_text": "September 2026",
+  "read_minutes": 17,
+
+  "seo": {
+    "title": "Southwest Las Vegas New Construction Homes",
+    "description": "42 new home neighborhoods are selling in southwest Las Vegas, from $324,990 at KB Home's Chelsea Commons. Builders, SIDs, and schools, checked Sept 2026.",
+    "keywords": "southwest las vegas new construction, new homes 89141, new homes 89139, mountains edge new homes",
+    "og_title": "New Construction Homes in Southwest Las Vegas",
+    "og_description": "Every new home neighborhood we verified in southwest Las Vegas, with builders, starting prices, HOA and SID facts, and builder-listed schools."
+  },
+
+  "hero": {
+    "kicker": "Rose Homes LV &middot; Southwest Las Vegas",
+    "h1": "New Construction Homes in Southwest Las Vegas",
+    "sub": "Forty two neighborhoods are selling new homes in the southwest valley right now, from three-story townhome-style homes in the $320,000s to single-story ranch homes near $1.5 million. Here is every one we verified, and what to check before you visit a model.",
+    "stats": [
+      ["42", "Neighborhoods in our table"],
+      ["12", "Builders selling"],
+      ["$324,990", "Lowest published start"],
+      ["46", "New homes listed in 89141"]
+    ],
+    "image": {
+      "src": "https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-mountains-edge.jpg",
+      "alt": "New homes on a southwest Las Vegas street with desert mountains in the background",
+      "width": 900,
+      "height": 672
+    },
+    "secondary_cta": "Browse neighborhoods",
+    "mobile_label": "Neighborhoods"
+  },
+
+  "answer": "Southwest Las Vegas covers Enterprise and western Spring Valley, including Mountain's Edge, Rhodes Ranch, and Southern Highlands. Most of it is unincorporated Clark County, not the City of Las Vegas, even with a Las Vegas address. As of September 16, 2026, we verified 42 neighborhoods selling new homes here from 12 builders, led by Lennar, Pulte, KB Home, and Richmond American. The busiest pocket is ZIPs 89139 and 89141, near Cactus Avenue and Rainbow Boulevard. Published starting prices run from $324,990 at KB Home's Chelsea Commons to $1,499,950 at Richmond American's Galway Grove. One tip: SID payments depend on the parcel, so check the exact lot before you sign.",
+
+  "takeaways": [
+    "Enterprise south, mostly ZIPs 89139 and 89141, is where most of the building is. Twenty two of the 42 neighborhoods in our table are there.",
+    "A Las Vegas mailing address does not mean the City of Las Vegas. Enterprise and Spring Valley are unincorporated towns in Clark County, so the county handles services.",
+    "Richmond American says \"No SID fee\" for most of its southwest neighborhoods. We found no SID statement for the rest, so check the exact parcel before you sign.",
+    "Seven neighborhoods here from Pulte, AmericanWest Homes, and KB Home have three-story plans. If stairs are a problem, ask for the single-story plans first.",
+    "Seven more neighborhoods are coming soon, including Lennar in Southern Highlands and a gated Lennar neighborhood called Aurora Estates.",
+    "Register your own agent on your first visit to any model. The sales team works for the builder."
+  ],
+
+  "part1_sections": [
+    {
+      "id": "neighborhoods",
+      "toc": "Neighborhoods selling now",
+      "h2": "Which new neighborhoods are selling in southwest Las Vegas right now?",
+      "blocks": [
+        {"lede": "These are the southwest neighborhoods with homes for sale on the builders' own websites, grouped by area and sorted by starting price inside each group. Neighborhoods coming soon are in a second table below."},
+        {"table": {
+          "head": ["Neighborhood", "Builder", "Area (ZIP)", "Home type", "Size (sq ft)", "Starts from"],
+          "rows": [
+            ["Granite Point", "Beazer Homes", "Enterprise south (89141)", "Townhome, solar", "1,330 to 2,314", "$410,990"],
+            ["The Richardson", "Lennar", "Enterprise south (89139)", "Single family", "1,430 to 1,475", "$419,990"],
+            ["Novi", "KB Home", "Enterprise south (89139)", "Single family", "Up to 2,469", "$423,990"],
+            ["Landings at Aven", "KB Home", "Enterprise south (89139)", "Single family", "Not published", "$443,990"],
+            ["Wellston Ridge", "Storybook Homes", "Enterprise south (89139)", "Single family, quick move-in", "From 1,916", "$475,000"],
+            ["Cambria Bay", "D.R. Horton", "Enterprise south (89141)", "Two-story single family", "From 1,715", "From the $477s"],
+            ["Southridge Pointe", "Tri Pointe Homes", "Enterprise south (89141)", "Single family", "1,642 to 1,899", "From the $500s"],
+            ["Addison Place", "Richmond American", "Enterprise south (89139)", "Two-story, plus a ranch plan", "1,770 to 4,340", "$503,950"],
+            ["Reserves at Aven", "KB Home", "Enterprise south (89139)", "Single family", "Not published", "$516,990"],
+            ["Lynora", "KB Home", "Enterprise south (89141)", "Single family, move-in ready", "Not published", "$517,750"],
+            ["Hinson Hills", "Lennar", "Enterprise south (89139)", "Single family", "2,055 to 2,405", "$529,990"],
+            ["Wesley Park", "AmericanWest Homes", "Enterprise south (89141)", "Single family", "Not published", "$532,990"],
+            ["Paldona", "Pulte Homes", "Enterprise south (89139)", "Two and three-story single family", "Ask the builder", "$562,990"],
+            ["Cordora", "Pulte Homes", "Enterprise south (89139)", "Two and three-story single family", "Ask the builder", "$585,990"],
+            ["Quinn Canyon", "AmericanWest Homes", "Enterprise south (89141)", "Two and three-story single family", "Not published", "$585,990"],
+            ["Wisteria", "Beazer Homes", "Enterprise south (Richmar and Valley View)", "Single-story, solar", "1,551 to 2,721", "$599,990"],
+            ["Rainbow Crossing Luxury", "Pulte Homes", "Enterprise south (89139)", "One, two, and three-story single family", "Ask the builder", "$637,990"],
+            ["Delamar", "Pulte Homes", "Enterprise south (89141)", "Two and three-story single family", "Ask the builder", "$642,990"],
+            ["Hayford Collection", "Pulte Homes", "Enterprise south (89141)", "Gated, one, two, and three-story", "Ask the builder", "$795,990"],
+            ["Decano", "Lennar", "Enterprise south (89141)", "Single family, Next Gen", "3,764 to 4,375", "$807,182"],
+            ["Eldorado Valley", "Richmond American", "Enterprise south (89139)", "Ranch, half-acre homesites", "3,470 to 4,010", "$1,099,950"],
+            ["Camden", "Richmond American", "Enterprise south (89139)", "Ranch", "3,470 to 4,010", "$1,144,950"],
+            ["Aster Point", "Beazer Homes", "Durango and Warm Springs (89118)", "Townhome, solar", "1,330 to 2,314", "$395,990"],
+            ["Tobiano", "KB Home", "Durango and Warm Springs (89113)", "Two-story single family", "Up to 2,469", "$444,990"],
+            ["Tenaya Springs", "Pulte Homes", "Durango and Warm Springs (89113)", "Two-story single family", "Not published", "$499,990"],
+            ["Ironwood", "Century Communities", "Durango and Warm Springs (89113)", "Single family", "Not published", "$541,390"],
+            ["Pebble Grove", "Lennar", "Durango and Warm Springs (89113)", "Single family", "2,255 to 2,590", "$579,990"],
+            ["Windriver", "Lennar", "Durango and Warm Springs (89113)", "Single family", "2,670 to 2,770", "$589,313"],
+            ["The Henry", "Lennar", "Durango and Warm Springs (89113)", "One and two-story, Next Gen", "3,358 to 4,270", "$736,990"],
+            ["Daylight", "Pulte Homes", "Durango and Warm Springs (89118)", "Single-story plans shown", "Ask the builder", "$965,990"],
+            ["Cimarron Estates", "Lennar", "Durango and Warm Springs (89113)", "Single family", "3,565 to 4,240", "$1,209,990"],
+            ["Galway Grove", "Richmond American", "Durango and Warm Springs (89113)", "Ranch", "4,010", "$1,499,950"],
+            ["Chelsea Commons", "KB Home", "Spring Valley west (89148)", "Three-story, townhome style", "Not published", "$324,990"],
+            ["Lexington Chase", "Richmond American", "Spring Valley west (89148)", "Two-story single family", "2,320 to 2,780", "$546,950"],
+            ["Aspen Grove", "Lennar", "Spring Valley west (89147)", "Single family", "2,255 to 2,405", "$574,990"],
+            ["Sienna Ridge", "Lennar", "Spring Valley west (89147)", "Single family", "1,966 to 2,640", "$588,990"],
+            ["Ivyleaf Square", "Storybook Homes", "Mountain's Edge area (89178)", "Single family", "From 2,429", "$525,000"],
+            ["Southwind", "Century Communities", "Mountain's Edge area (89178)", "Single family", "Up to 2,605", "$529,000"],
+            ["Triad Springs", "Lennar", "Blue Diamond corridor (89178)", "Single family, 3 collections", "1,690 to 2,770", "$531,164"],
+            ["Archer Park at Mountain's Edge", "Richmond American", "Mountain's Edge (89178)", "Ranch (single-story)", "2,390 to 2,830", "$732,950"],
+            ["Royal Ridge Estates", "Signature Homes", "Blue Diamond and Rainbow (89178)", "Single-story, solar, models open", "3,675 to 4,300 plus", "Ask for current pricing"],
+            ["The Bluffs at Southern Highlands", "Blue Heron", "Southern Highlands", "Double-gated hillside homes", "Not published", "Ask for current pricing"]
+          ],
+          "note": "Starting prices are the lowest published price on each builder's own website, checked September 16, 2026, and they change with every release. \"Ask the builder\" on a Pulte size means we could only find sizes in an older local compile we could not re-check. \"Ask for current pricing\" means the builder did not publish a price we could confirm. Ivyleaf Square and Southwind are in ZIP 89178, but we could not confirm they are inside the Mountain's Edge master plan. Signature Homes' Bluemont Trails (89178) shows a $478,990 price in its site data, but its sales status is unclear, so it is not in the table. Blue Heron also builds Olympia Ridge Estates, custom homes in Southern Highlands. Blue Heron's Stonewater in Southern Highlands shows up only in an undated newspaper advertising feature, and we could not confirm it on Blue Heron's site, so it is not in the table. D.R. Horton's Canyon Trails (89178) is sold out."
+        }},
+        {"h3": "Coming soon"},
+        {"table": {
+          "head": ["Neighborhood", "Builder", "Area (ZIP)", "Home type", "Size (sq ft)", "Published price"],
+          "rows": [
+            ["Montclair", "Lennar", "Enterprise (89113)", "One and two-story", "2,061 to 4,240", "From $500K"],
+            ["Southern Highlands (Westridge Enclave and Westridge Square)", "Lennar", "Southern Highlands (89141)", "Single family", "2,126 to 3,438", "From $700K"],
+            ["Aurora Estates", "Lennar", "Enterprise (89139)", "Gated, single-story Next Gen", "3,565 to 3,776", "From $1M"],
+            ["Cashmere Meadows", "Richmond American", "Enterprise (89139)", "Single family", "3,470 (Rocco plan)", "Not yet published"],
+            ["Silver Bow", "Richmond American", "Enterprise (89113)", "Single family", "3,680 to 4,320", "Not yet published"],
+            ["Caliterra", "Richmond American", "Spring Valley (89148)", "Duo (paired) homes", "1,370 to 1,660", "Not yet published"],
+            ["Marigold", "Beazer Homes", "Southwest Las Vegas", "Single-story, coming fall 2026", "Not yet published", "Not yet published"]
+          ],
+          "note": "From builder websites, checked September 16, 2026. Coming soon prices are rounded \"From\" figures, so ask for a real price sheet when sales open. Communities east of I-15 in ZIPs 89183 and 89123, like Richmond American's Vandalia, Beazer's Raven Point, and Taylor Morrison's Solstice, are left out of this page."
+        }},
+        {"p": "Want the story behind a pocket before you tour? I have guides to <a href=\"/blog/mountains-edge-new-construction-family-friendly\">new construction in Mountain's Edge</a>, <a href=\"/blog/southern-highlands-new-construction-luxury\">Southern Highlands</a>, and <a href=\"/blog/new-construction-spring-valley-las-vegas\">Spring Valley</a>."}
+      ]
+    },
+    {
+      "id": "builders",
+      "toc": "Southwest builders",
+      "h2": "Which builders are building in southwest Las Vegas?",
+      "blocks": [
+        {"lede": "Twelve builders have neighborhoods selling in the southwest. Lennar, Pulte, KB Home, and Richmond American have the most, and between them they cover everything from townhome-style homes to half-acre homesites."},
+        {"builders": {
+          "cards": [
+            {"key": "lennar", "note": "Ten neighborhoods selling and three coming soon, the most in the southwest. The Richardson from $419,990, Hinson Hills, Triad Springs, Aspen Grove, Pebble Grove, Sienna Ridge, and Windriver, plus Next Gen homes at The Henry and Decano, and Cimarron Estates from $1,209,990."},
+            {"key": "pulte-del-webb", "note": "Seven Pulte neighborhoods. Tenaya Springs from $499,990, Paldona, Cordora, and Rainbow Crossing Luxury in the Rainbow Crossing area, Delamar, gated Hayford Collection from $795,990, and Daylight from $965,990. No Del Webb neighborhood is selling in the southwest."},
+            {"key": "kb-home", "note": "Six neighborhoods and the lowest start. Chelsea Commons in Spring Valley from $324,990, Novi, Landings and Reserves at Aven, Tobiano, and move-in ready homes at Lynora. KB says a homesite premium may apply."},
+            {"key": "richmond-american", "note": "Six neighborhoods and three coming soon. Addison Place from $503,950, Lexington Chase, Archer Park at Mountain's Edge, and ranch homes at Eldorado Valley, Camden, and Galway Grove from $1,099,950. Its pages for Addison Place, Lexington Chase, Eldorado Valley, Camden, and Galway Grove say \"No SID fee.\""},
+            {"key": "beazer", "note": "Aster Point and Granite Point townhomes from $395,990, Wisteria single-story homes from $599,990, and Marigold coming fall 2026. Beazer includes solar in all its homes."},
+            {"key": "century-communities", "note": "Ironwood in 89113 from $541,390, and Southwind in 89178 from $529,000."},
+            {"key": "storybook", "note": "Wellston Ridge in 89139 from $475,000, and Ivyleaf Square in 89178 from $525,000."},
+            {"key": "blue-heron", "note": "The Bluffs at Southern Highlands, a double-gated hillside neighborhood, plus Olympia Ridge Estates custom homes. Prices are not published on its site, so ask."},
+            {"key": "dr-horton", "note": "Cambria Bay in 89141, two-story homes from the $477s. Canyon Trails in 89178 is sold out."},
+            {"key": "tri-pointe", "note": "Southridge Pointe in 89141, homes from 1,642 to 1,899 square feet, from the $500s."},
+            {"key": "signature", "note": "Royal Ridge Estates near Blue Diamond and Rainbow, single-story homes with solar and models open. Ask for current pricing."}
+          ],
+          "note": "The twelfth builder is AmericanWest Homes, a Pulte brand, with Quinn Canyon from $585,990 and Wesley Park from $532,990 in 89141. Taylor Morrison's Solstice is east of I-15, so it is not on this page. We found no southwest neighborhood selling from Toll Brothers, Woodside, or Meritage. Comparing lot costs between builders? Read <a href=\"/blog/lot-premiums-explained-las-vegas-new-construction\">lot premiums explained</a>."
+        }}
+      ]
+    }
+  ],
+
+  "listings": {
+    "h2": "New construction homes for sale in southwest Las Vegas right now",
+    "lede": "These are active MLS listings of newly built homes in the southwest valley. Some new homes are sold straight from the builder's sales office and may not reach the MLS, so the table above is the fuller picture.",
+    "lofty_filter": "City: Las Vegas. ZIP codes: 89113, 89118, 89139, 89141, 89147, 89148, 89178, 89179 (leave out 89123 and 89183, which are east of I-15). Year Built: 2025 or newer. Property type: single family, townhouse, condo. Status: active. Sort: newest."
+  },
+
+  "part2_sections": [
+    {
+      "id": "where",
+      "toc": "Where they are building",
+      "h2": "Where in southwest Las Vegas are new homes going up?",
+      "blocks": [
+        {"lede": "Most new building is in Enterprise south, in ZIPs 89139 and 89141. Smaller pockets sit along Durango and Warm Springs, in western Spring Valley, around Mountain's Edge, and on the west side of Southern Highlands."},
+        {"h3": "City or county? It matters"},
+        {"p": "New homes here often have a Las Vegas mailing address, but that does not mean they are in the City of Las Vegas. Enterprise, which includes Mountain's Edge and Southern Highlands, and Spring Valley, which includes Rhodes Ranch, are unincorporated towns in Clark County. That means Clark County, not the city, provides local services. We found no City of Las Vegas area in these new home pockets, but you can confirm any parcel on the Clark County Assessor site."},
+        {"h3": "Enterprise south (89139 and 89141)"},
+        {"facts": [
+          ["Neighborhoods selling", "22, the most of any pocket"],
+          ["Where", "around Cactus Avenue, Pyle, Starr, Decatur, Valley View, Rainbow, and Jones"],
+          ["Price range", "$410,990 at Granite Point to $1,144,950 at Camden"],
+          ["Worth knowing", "home to Pulte's Rainbow Crossing area and Richmond American's half-acre homesites at Eldorado Valley"]
+        ]},
+        {"h3": "Durango and Warm Springs (89113 and 89118)"},
+        {"facts": [
+          ["Neighborhoods selling", "10"],
+          ["Price range", "$395,990 at Aster Point to $1,499,950 at Galway Grove"],
+          ["Worth knowing", "some of the highest starts in the southwest, with Daylight, Cimarron Estates, and Galway Grove all near or above $1 million"]
+        ]},
+        {"h3": "Spring Valley west (89147 and 89148)"},
+        {"facts": [
+          ["Neighborhoods selling", "4"],
+          ["Price range", "$324,990 at Chelsea Commons to $588,990 at Sienna Ridge"],
+          ["Coming soon", "Caliterra Duo homes by Richmond American"]
+        ]},
+        {"h3": "Mountain's Edge, Blue Diamond, and Southern Highlands"},
+        {"facts": [
+          ["Mountain's Edge", "a master plan run by the Mountain's Edge Master Association. Archer Park by Richmond American starts at $732,950."],
+          ["Blue Diamond corridor (89178)", "Triad Springs by Lennar, Southwind by Century, Ivyleaf Square by Storybook, and Royal Ridge Estates by Signature"],
+          ["Southern Highlands", "an Olympia Companies master plan. Blue Heron builds The Bluffs and Olympia Ridge Estates, and Lennar is coming soon."]
+        ]},
+        {"p": "More land is on the way. A federal land auction on April 28, 2026 offered 22 parcels, including 4 in the southwest near Blue Diamond Road and I-15. We have not found the results yet."}
+      ]
+    },
+    {
+      "id": "prices",
+      "toc": "What it costs",
+      "h2": "What do new homes cost in southwest Las Vegas?",
+      "blocks": [
+        {"lede": "Published starting prices run from $324,990 to $1,499,950. Most detached neighborhoods start between $419,990 and $642,990. The single-story ranch neighborhoods at the top, Daylight, Eldorado Valley, Camden, and Galway Grove, start from $965,990 to $1,499,950."},
+        {"table": {
+          "head": ["What you want", "Where to look", "Starts from"],
+          "rows": [
+            ["A townhome or townhome-style home", "Chelsea Commons, Aster Point, Granite Point", "$324,990"],
+            ["A detached home under $450,000", "The Richardson, Novi, Landings at Aven, Tobiano", "$419,990"],
+            ["A single-story home", "Wisteria, Archer Park, Daylight, Eldorado Valley, Camden, Galway Grove", "$599,990"],
+            ["A Next Gen home with a suite", "The Henry, Decano", "$736,990"],
+            ["A gated neighborhood", "Hayford Collection, The Bluffs at Southern Highlands", "$795,990"],
+            ["A half-acre homesite", "Eldorado Valley", "$1,099,950"]
+          ],
+          "note": "From builder websites checked September 16, 2026. Starting prices are the lowest published price."
+        }},
+        {"p": "Builder pages point to three things that move the price. First is the type of home, since a three-story townhome-style home and a 4,000 square foot ranch are different products. Second is the lot. KB Home says a homesite premium may apply, and Richmond American sells half-acre homesites at Eldorado Valley. Third is the plan, because single-story ranch plans and Next Gen suites sit at the top of the range."},
+        {"table": {
+          "head": ["ZIP", "New homes for sale", "Median listing price"],
+          "rows": [
+            ["89141", "46", "$579K"],
+            ["89139", "36", "$531K"],
+            ["89178", "34", "$499K"],
+            ["89179", "3", "$494K"]
+          ],
+          "note": "Redfin new home listings by ZIP, checked September 16, 2026. These are listing prices for homes on the market, not builder base prices."
+        }}
+      ]
+    },
+    {
+      "id": "monthly-costs",
+      "toc": "HOA, SID, and taxes",
+      "h2": "What will you pay each month on top of the mortgage?",
+      "blocks": [
+        {"lede": "Plan for property tax, one or more HOA fees, and in some places a special improvement district payment. We could not find official HOA dollar amounts for these neighborhoods, so this is a list of what to ask."},
+        {"table": {
+          "head": ["Cost", "What it is", "Amount"],
+          "rows": [
+            ["Master HOA", "Mountain's Edge Master Association, or the Southern Highlands master association", "Not published on the official sites, ask the builder"],
+            ["Neighborhood HOA", "Your own neighborhood's association. Southern Highlands has a master plus a sub-association.", "Set by each neighborhood, ask the builder"],
+            ["SID payment", "A special assessment billed apart from your HOA", "Richmond American says \"No SID fee\" for most of its southwest neighborhoods. Check the parcel for Archer Park and everywhere else."],
+            ["Property tax", "Clark County, with a 3% yearly cap on increases for a primary home", "Based on assessed value"]
+          ],
+          "note": "HOA details are from the <a href=\"https://www.mymountainsedge.com/\" rel=\"nofollow\">Mountain's Edge Master Association</a> and the <a href=\"https://www.southernhighlandshoa.com/faq\" rel=\"nofollow\">Southern Highlands HOA FAQ</a>, checked September 16, 2026. SID notes are from Richmond American community pages and Clark County Public Works."
+        }},
+        {"p": "The SID is the one people miss. Clark County Public Works lists its active special improvement districts, and we did not match any of them to these new neighborhoods. That does not rule one out on your lot. Richmond American states \"No SID fee\" for Addison Place, Eldorado Valley, Camden, Galway Grove, Lexington Chase, and its coming soon neighborhoods. For every other neighborhood, ask the builder in writing, and look up the parcel through the Clark County Treasurer, which points to <a href=\"https://www.amgnv.com\" rel=\"nofollow\">Assessment Management Group</a>. I explain how these work in <a href=\"/blog/sid-lid-taxes-explained-las-vegas-new-construction\">SID, LID, and taxes explained</a>."}
+      ]
+    },
+    {
+      "id": "schools",
+      "toc": "Schools",
+      "h2": "Which schools serve the new southwest neighborhoods?",
+      "blocks": [
+        {"lede": "Builders list these CCSD schools for their neighborhoods. We have not checked them against CCSD's zoning search, so treat them as a starting point."},
+        {"table": {
+          "head": ["Where the home is", "Elementary", "Middle", "High"],
+          "rows": [
+            ["Chelsea Commons (89148)", "Abston", "Fertitta", "Durango"],
+            ["Sienna Ridge (89147)", "Bryan", "Canarelli", "Spring Valley"],
+            ["Novi (89139), Decano (89141)", "Ortwein", "Tarkanian", "Desert Oasis"],
+            ["The Richardson (89139)", "Fine", "Canarelli", "Sierra Vista"],
+            ["Cordora, Rainbow Crossing Luxury, Delamar (Pulte)", "Fine", "Canarelli", "Desert Oasis"],
+            ["Tobiano, The Henry, Cimarron Estates (89113), Paldona (Pulte)", "Steele", "Canarelli", "Sierra Vista"],
+            ["Windriver, Montclair (89113)", "Snyder", "Canarelli", "Sierra Vista"],
+            ["Daylight (89118)", "Mathis or Alamo", "Canarelli", "Durango"],
+            ["Triad Springs (89178)", "Thompson", "Not listed by builder", "Sierra Vista"]
+          ],
+          "note": "Schools the builder lists for this neighborhood, checked September 16, 2026. Builder lists are not CCSD verified, so confirm with CCSD zoning, boundaries change. Use the <a href=\"https://ccsd.net/schools/zoning/\" rel=\"nofollow\">CCSD zoning search</a> for your exact address."
+        }},
+        {"p": "The new CCSD schools we found announced for 2026 and 2027, Wengert, Helen M. Smith, Skye Canyon, and Matt Kelly elementary schools, are not in the southwest."}
+      ]
+    },
+    {
+      "id": "location",
+      "toc": "Location and nearby",
+      "h2": "Where is southwest Las Vegas, and what is close by?",
+      "blocks": [
+        {"lede": "The southwest runs from Spring Valley south through Enterprise toward Sloan, west of I-15. Most pockets reach the south end of the Strip by way of the 215 Beltway and I-15."},
+        {"ul": [
+          "<strong>Getting around:</strong> I-15, the 215 Beltway, Blue Diamond Road (SR 160), and St. Rose Parkway (SR 146). Main streets include Durango, Rainbow, Buffalo, Fort Apache, Cactus, Warm Springs, and Blue Diamond.",
+          "<strong>Mountain's Edge trails:</strong> Richmond American's Archer Park page points to trails nearby.",
+          "<strong>Southern Highlands:</strong> 24/7 roving patrol by Securitas, and private gated enclaves by Blue Heron.",
+          "<strong>Hospital:</strong> St. Rose Dominican San Martín Campus, 147 beds, at 8280 W Warm Springs Road in 89113.",
+          "<strong>Builder extras:</strong> Beazer includes solar in all its homes, Signature's Royal Ridge Estates has solar, and Archer Park offers Richmond American's UltraGarage."
+        ]},
+        {"p": "Drive times change a lot by time of day. If a commute matters, test it at rush hour before you pick a lot."}
+      ]
+    },
+    {
+      "id": "watch-outs",
+      "toc": "Before you buy",
+      "h2": "What should you know before buying new in southwest Las Vegas?",
+      "blocks": [
+        {"lede": "The southwest has a lot of choices at many price points, but a few things catch new buyers off guard."},
+        {"ul": [
+          "<strong>Check who governs the address.</strong> A Las Vegas address here is almost always unincorporated Clark County. Confirm the parcel on the Clark County Assessor site.",
+          "<strong>Check the SID on the exact lot.</strong> It depends on the parcel. Richmond American says \"No SID fee\" for most of its neighborhoods here, but we found no SID statement from the other builders.",
+          "<strong>Get every HOA number.</strong> Southern Highlands has a master HOA plus a sub-association, and official dollar amounts are not published.",
+          "<strong>Budget for the lot.</strong> KB Home says a homesite premium may apply.",
+          "<strong>Ask about stairs.</strong> Paldona, Cordora, Delamar, Hayford Collection, Rainbow Crossing Luxury, Quinn Canyon, and Chelsea Commons all have three-story plans.",
+          "<strong>Know what \"home\" means.</strong> Caliterra sells Duo (paired) homes, and Beazer's Aster Point and Granite Point are townhomes.",
+          "<strong>Do not assume a gate.</strong> Hayford Collection, The Bluffs at Southern Highlands, and Aurora Estates (coming soon) are gated. Most other neighborhoods here are not.",
+          "<strong>Watch the brand name.</strong> Pulte now sells Quinn Canyon and Wesley Park under its AmericanWest Homes brand.",
+          "<strong>Coming soon means no real price yet.</strong> Montclair, Aurora Estates, and Lennar's Southern Highlands show rounded \"From\" prices only.",
+          "<strong>Look past the MLS.</strong> Some new homes are sold directly by the builder and may not show up on listing sites."
+        ]}
+      ]
+    },
+    {
+      "id": "your-agent",
+      "toc": "Your own agent",
+      "h2": "Why bring your own agent to a southwest Las Vegas model home?",
+      "blocks": [
+        {"lede": "The friendly person at the sales desk works for the builder. Their job is to sell that builder's homes at that builder's price."},
+        {"p": "In the southwest you might be comparing a Lennar home in 89139, a Pulte three-story near Rainbow Crossing, and a Richmond American ranch in Mountain's Edge, each with different lot premiums, HOAs, and SID answers. Having someone on your side who lines those up costs you nothing, because the builder pays the buyer agent commission either way. The one rule: most builders require your agent to be registered on your very first visit. <a href=\"/las-vegas-new-construction#why-ryan\">Here is what having your own agent actually changes</a>."}
+      ]
+    }
+  ],
+
+  "faq": [
+    ["Is southwest Las Vegas in the City of Las Vegas?", "Mostly no. Enterprise and Spring Valley are unincorporated towns in Clark County, even with a Las Vegas mailing address. Mountain's Edge and Southern Highlands are in Enterprise, and Rhodes Ranch is in Spring Valley."],
+    ["What is the cheapest new construction in southwest Las Vegas right now?", "Chelsea Commons by KB Home in 89148, with three-story townhome-style homes from $324,990 as of September 16, 2026. The lowest detached home we found is The Richardson by Lennar in 89139, from $419,990."],
+    ["Which builders are building in Mountain's Edge?", "Richmond American sells Archer Park at Mountain's Edge, ranch plans from 2,390 to 2,830 square feet from $732,950. Lennar's Triad Springs, Century's Southwind, and Storybook's Ivyleaf Square are also in ZIP 89178, but we could not confirm they are inside the Mountain's Edge master plan."],
+    ["Do new homes in southwest Las Vegas have SID fees?", "It depends on the parcel. Richmond American states \"No SID fee\" for most of its southwest neighborhoods, but we found no SID statement from other builders. Check the exact parcel with the Clark County Treasurer before you sign."],
+    ["What do new homes cost in 89141 and 89139?", "Redfin showed 46 new homes for sale in 89141 at a $579K median listing price, and 36 in 89139 at a $531K median, on September 16, 2026. Builder starting prices in those ZIPs run from $410,990 to $1,144,950."],
+    ["Are there single-story new homes in southwest Las Vegas?", "Yes. Beazer's Wisteria starts at $599,990, Pulte's Daylight at $965,990, and Richmond American sells ranch plans at Archer Park, Eldorado Valley, Camden, and Galway Grove."],
+    ["What schools serve new homes near Cactus and Rainbow?", "Pulte lists Fine Elementary, Canarelli Middle, and Desert Oasis High for Cordora, Rainbow Crossing Luxury, and Delamar. Always confirm the exact address with the <a href=\"https://ccsd.net/schools/zoning/\" rel=\"nofollow\">CCSD zoning search</a>."],
+    ["Are there new homes coming to Southern Highlands?", "Yes. Lennar lists Westridge Enclave and Westridge Square as coming soon, from $700K. Blue Heron is building The Bluffs there now, so ask for current pricing."]
+  ],
+
+  "cta": {
+    "h2": "Touring southwest Las Vegas models soon?",
+    "p": "Let me line up the neighborhoods that fit your budget, with current prices, HOA, and SID answers, before your first visit. There is no cost to you, and I will be registered with the builder from day one."
+  },
+
+  "sources": [
+    ["Lennar, Las Vegas new homes, checked September 16, 2026", "https://www.lennar.com/new-homes/nevada/las-vegas/las-vegas"],
+    ["Pulte, Las Vegas new homes, checked September 16, 2026", "https://www.pulte.com/homes/nevada/las-vegas/las-vegas"],
+    ["KB Home, Las Vegas area new homes, checked September 16, 2026", "https://www.kbhome.com/new-homes-las-vegas"],
+    ["Richmond American, Las Vegas new homes, checked September 16, 2026", "https://www.richmondamerican.com/nevada/las-vegas-new-homes/"],
+    ["Beazer Homes, Las Vegas, checked September 16, 2026", "https://www.beazer.com/las-vegas-nv"],
+    ["Century Communities, Las Vegas metro, checked September 16, 2026", "https://www.centurycommunities.com/find-your-new-home/nevada/las-vegas-metro/"],
+    ["D.R. Horton, Las Vegas, checked September 16, 2026", "https://www.drhorton.com/nevada/las-vegas"],
+    ["Tri Pointe Homes, checked September 16, 2026", "https://www.tripointehomes.com"],
+    ["Storybook Homes, checked September 16, 2026", "https://www.storybooknewhomes.com/search"],
+    ["Signature Homes, checked September 16, 2026", "https://www.signaturehomes.com"],
+    ["Blue Heron, checked September 16, 2026", "https://www.blueheron.com"],
+    ["AmericanWest Homes, checked September 16, 2026", "https://www.americanwesthomes.com"],
+    ["Redfin, new homes in 89141, checked September 16, 2026", "https://www.redfin.com/zipcode/89141/new-homes"],
+    ["Redfin, new homes in 89139, checked September 16, 2026", "https://www.redfin.com/zipcode/89139/new-homes"],
+    ["Redfin, new homes in 89178, checked September 16, 2026", "https://www.redfin.com/zipcode/89178/new-homes"],
+    ["Redfin, new homes in 89179, checked September 16, 2026", "https://www.redfin.com/zipcode/89179/new-homes"],
+    ["Mountain's Edge Master Association", "https://www.mymountainsedge.com/"],
+    ["Southern Highlands community association", "https://www.southernhighlands.com/"],
+    ["Southern Highlands HOA FAQ", "https://www.southernhighlandshoa.com/faq"],
+    ["Clark County Public Works, special improvement districts", "https://www.clarkcountynv.gov"],
+    ["Assessment Management Group, special assessments", "https://www.amgnv.com"],
+    ["CCSD zoning search", "https://ccsd.net/schools/zoning/"],
+    ["Dignity Health, St. Rose Dominican San Martín Campus", "https://www.dignityhealth.org"],
+    ["8 News Now, federal land auction of 223 acres, 2026", "https://www.8newsnow.com"],
+    ["Enterprise, Nevada", "https://en.wikipedia.org/wiki/Enterprise,_Nevada"],
+    ["Spring Valley, Nevada", "https://en.wikipedia.org/wiki/Spring_Valley,_Nevada"],
+    ["Mountain's Edge, Nevada", "https://en.wikipedia.org/wiki/Mountain%27s_Edge,_Nevada"]
+  ]
+}

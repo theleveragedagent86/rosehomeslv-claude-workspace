@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 330" width="100%"
+     role="img" aria-labelledby="sv03t sv03d" font-family="Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif">
+<title id="sv03t">The sequence, first contact to eleven months after closing</title>
+<desc id="sv03d">A horizontal timeline in five stages: before you visit anything, choosing the community and lot, the contract, the build, and closing plus your first year. Below it, three items marked as legal deadlines rather than practical steps: the five calendar day cancellation window in a common interest community, the forty-five day builder repair clock inside year one, and the July 1 assessor postcard that must be returned to keep the 3 percent tax cap.</desc>
+<style>.sv-h{font:700 13px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;letter-spacing:.002em}
+.sv-k{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52;letter-spacing:.09em;text-transform:uppercase}
+.sv-l{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-b{font:400 9.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-s{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52}
+.sv-n{font:700 11px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;font-variant-numeric:tabular-nums}
+.sv-r{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-rs{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-nf{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#B8360F;letter-spacing:.06em}
+.sv-c{text-anchor:middle}
+.sv-e{text-anchor:end}</style>
+<defs>
+<marker id="sv-tri" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#2C3F6B"/></marker>
+<marker id="sv-tric" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#B8360F"/></marker>
+<marker id="sv-trim" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#5F5A52"/></marker>
+<pattern id="sv-hatch" width="6" height="6" patternTransform="rotate(45)"
+         patternUnits="userSpaceOnUse">
+  <rect width="6" height="6" fill="#EDE9E0"/>
+  <line x1="0" y1="0" x2="0" y2="6" stroke="#847B6D" stroke-width="1.6"/>
+</pattern>
+</defs>
+<rect width="700" height="330" fill="#F7F5F0"/>
+<text x="0" y="14" class="sv-k">Page 18</text><text x="0" y="31" class="sv-h">The sequence, first contact to eleven months after closing</text>
+<line x1="6" y1="118" x2="694" y2="118" stroke="#847B6D" stroke-width="1.4"/>
+<circle cx="70.0" cy="118" r="5.5" fill="#F7F5F0" stroke="#2C3F6B" stroke-width="2"/>
+<text x="70.0" y="68" class="sv-l sv-c">Before you</text>
+<text x="70.0" y="81" class="sv-l sv-c">visit anything</text>
+<text x="70.0" y="96" class="sv-k sv-c">STAGE 1</text>
+<text x="70.0" y="142" class="sv-s sv-c"><tspan x="70.0" dy="0">Register your agent</tspan><tspan x="70.0" dy="11">at first contact</tspan></text>
+<text x="70.0" y="172" class="sv-s sv-c"><tspan x="70.0" dy="0">Get a Loan Estimate,</tspan><tspan x="70.0" dy="11">not a worksheet</tspan></text>
+<circle cx="210.0" cy="118" r="5.5" fill="#F7F5F0" stroke="#2C3F6B" stroke-width="2"/>
+<text x="210.0" y="68" class="sv-l sv-c">Community</text>
+<text x="210.0" y="81" class="sv-l sv-c">and lot</text>
+<text x="210.0" y="96" class="sv-k sv-c">STAGE 2</text>
+<text x="210.0" y="142" class="sv-s sv-c"><tspan x="210.0" dy="0">Walk the lot at 4</tspan><tspan x="210.0" dy="11">p.m.</tspan></text>
+<text x="210.0" y="172" class="sv-s sv-c"><tspan x="210.0" dy="0">Ask for the phase</tspan><tspan x="210.0" dy="11">release calendar</tspan></text>
+<circle cx="350.0" cy="118" r="5.5" fill="#F7F5F0" stroke="#2C3F6B" stroke-width="2"/>
+<text x="350.0" y="68" class="sv-l sv-c">The</text>
+<text x="350.0" y="81" class="sv-l sv-c">contract</text>
+<text x="350.0" y="96" class="sv-k sv-c">STAGE 3</text>
+<text x="350.0" y="142" class="sv-s sv-c"><tspan x="350.0" dy="0">Find your outside</tspan><tspan x="350.0" dy="11">completion date</tspan></text>
+<text x="350.0" y="172" class="sv-s sv-c"><tspan x="350.0" dy="0">Design selections</tspan><tspan x="350.0" dy="11">final before build</tspan></text>
+<circle cx="490.0" cy="118" r="5.5" fill="#F7F5F0" stroke="#2C3F6B" stroke-width="2"/>
+<text x="490.0" y="68" class="sv-l sv-c">The</text>
+<text x="490.0" y="81" class="sv-l sv-c">build</text>
+<text x="490.0" y="96" class="sv-k sv-c">STAGE 4</text>
+<text x="490.0" y="142" class="sv-s sv-c"><tspan x="490.0" dy="0">Pre-drywall</tspan><tspan x="490.0" dy="11">inspection</tspan></text>
+<text x="490.0" y="172" class="sv-s sv-c"><tspan x="490.0" dy="0">Blue tape walkthrough</tspan></text>
+<circle cx="630.0" cy="118" r="5.5" fill="#F7F5F0" stroke="#2C3F6B" stroke-width="2"/>
+<text x="630.0" y="68" class="sv-l sv-c">Closing and</text>
+<text x="630.0" y="81" class="sv-l sv-c">your first year</text>
+<text x="630.0" y="96" class="sv-k sv-c">STAGE 5</text>
+<text x="630.0" y="142" class="sv-s sv-c"><tspan x="630.0" dy="0">Final walkthrough,</tspan><tspan x="630.0" dy="11">then close</tspan></text>
+<text x="630.0" y="172" class="sv-s sv-c"><tspan x="630.0" dy="0">Written punch list</tspan><tspan x="630.0" dy="11">completed</tspan></text>
+<line x1="0" y1="208" x2="700" y2="208" stroke="#847B6D" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="0" y="228" class="sv-k">THESE THREE ARE LEGAL DEADLINES, NOT SUGGESTIONS</text>
+<rect x="0.0" y="240" width="9" height="9" fill="#141A27"/>
+<text x="16.0" y="248" class="sv-l">Five calendar days</text>
+<text x="0.0" y="266" class="sv-s"><tspan x="0.0" dy="0">To cancel in writing after signing,</tspan><tspan x="0.0" dy="11">in a common interest community, but</tspan><tspan x="0.0" dy="11">only if you have not personally</tspan><tspan x="0.0" dy="11">inspected the home.</tspan></text>
+<rect x="233.33333333333334" y="240" width="9" height="9" fill="#141A27"/>
+<text x="249.33333333333334" y="248" class="sv-l">Forty-five days</text>
+<text x="233.33333333333334" y="266" class="sv-s"><tspan x="233.33333333333334" dy="0">A builder's repair clock, started by</tspan><tspan x="233.33333333333334" dy="11">your written notice of a defect</tspan><tspan x="233.33333333333334" dy="11">inside the first year.</tspan></text>
+<rect x="466.6666666666667" y="240" width="9" height="9" fill="#141A27"/>
+<text x="482.6666666666667" y="248" class="sv-l">July 1</text>
+<text x="466.6666666666667" y="266" class="sv-s"><tspan x="466.6666666666667" dy="0">The Assessor mails a postcard after</tspan><tspan x="466.6666666666667" dy="11">July 1 to property whose ownership</tspan><tspan x="466.6666666666667" dy="11">changed. Sign it and send it back or</tspan><tspan x="466.6666666666667" dy="11">you lose the 3 percent cap.</tspan></text>
+<text x="0" y="322" class="sv-s">A solid square marks a deadline set by law. A hollow circle marks a practical step you control.</text>
+</svg>

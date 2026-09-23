@@ -52,3 +52,19 @@ Rose Homes LV/Dashboard/config.local.json
 __pycache__/
 *.pyc
 *.bak-*
+
+# Generated media: 21GB of renders, stills and voiceover. The scripts,
+# prompts and packages that produce them are tracked; the output is not.
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.m4a
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.woff2
+*.zip
+.DS_Store

@@ -1,0 +1,563 @@
+ Hey there, beautiful AI automates,
+ and welcome to chapter nine on compliance and maintenance.
+ Everybody's favorite chapter.
+ Now, this one is so, so, so important
+ because it has to do with your risk appetite.
+ Now, when things are going fantastically well,
+ no one's worried about compliance,
+ nobody's worried about maintenance,
+ but second, you release something into the wild,
+ or it needs to work for an organization or customers.
+ If you don't set this up correctly,
+ it can fall apart like a $2 suitcase,
+ but if you follow everything I'm gonna show you in this,
+ as well as my personal experience,
+ what I've learned, what I paid for,
+ you're gonna be so far ahead.
+ Most people don't know any of this stuff,
+ so you're gonna find it very, very helpful.
+ So lock in, as I always say, grab that beautiful coffee,
+ and let's jump into compliance and maintenance.
+ Man, the coffee's great today.
+ So, there's a couple of rules that I want you to follow.
+ These are best practices that are gonna save you a lot of hurt,
+ a lot of pain, and it's gonna make a lot of sense.
+ So, we have what we call the stack.
+ Don't worry about that, a lot of things happening now,
+ but a couple of things I wanna call out initially.
+ First thing is this.
+ Now, if you look at your system, most generally,
+ where are the biggest leaks coming from?
+ Think about that.
+ Most of the time, it's this guy, it's the database.
+ It's always the database.
+ So, summing it on the database,
+ either you don't have the right levels of encryption
+ and people can hack it, or somewhere you drop an API key,
+ which means they can either call your service for free,
+ grab all your things.
+ If they get the wrong API keys, guys,
+ they can effectively get the keys to the kingdom.
+ I've seen this happen.
+ So, one is an API key for your main stuff.
+ The second big leak that you might find,
+ it's just your general API keys for all your stuff,
+ just being exposed on the internet.
+ That's one to think about,
+ but the other one is just realistically making sure
+ that when it comes to your data,
+ it's locked down and it's secured.
+ And in addition to that,
+ this is the thing to think about realistically,
+ and I'm gonna go to some specifics as we go through this,
+ but really just actually looking and building in safeguards
+ and systems and looking around corners.
+ For example, when I built AI with Jack.com,
+ I used an example 'cause it's an exclusive
+ for the community.
+ One of the things that I did to avoid kind of like,
+ what I would call abuse of the system is,
+ I built in behavioral checkpoints, okay?
+ I need behavioral checkpoints identify
+ when someone's using it, who's not a real life human,
+ and it basically responds accordingly.
+ So if you send an insane amount of messages to it,
+ such as the point where it's like,
+ this is obviously not a human being,
+ it will actually drop down from a premier model
+ to a more basic model.
+ So it has a grace period of, look, you've used it so much,
+ we're thinking about human but we're not 100% sure,
+ you'll then get a secondary model,
+ but after that, it has hard limits at the back of it.
+ So that's a good example of how do you make sure
+ that everyone who's using it legitimately
+ gets the best quality,
+ that's how you can build in these ratchet systems.
+ So let's go through some 12 rules,
+ the confessions, just know them,
+ be aware of them and use them,
+ not sexy, but super freaking important.
+ Number one, pasting production keys into the chat.
+ Now, this is especially important for things like Hermes
+ or Open Core, because those things are saved,
+ like in the actual, the API key is stored forever.
+ Now, in reality, when you're using something like called code,
+ and you're having a conversation,
+ it is sometimes a lot easier just to throw in API keys.
+ Now, technically speaking, the reason they say
+ you shouldn't do that is 'cause it's in a chat log with Claude.
+ The technical best way to do it is like this,
+ hey, what I'd like you to do for me is go ahead for me
+ and create a terminal command
+ so I can update my API key for Appify.
+ I'm doing a bit of competitive testing,
+ that's why I'm using whisper slow right now.
+ And basically what it'll do is give you a command,
+ then use command space bar, enter in terminal,
+ and then from terminal, you can literally enter in that thing.
+ And effectively what this means
+ is that Claude never physically sees it.
+ Now, this is technically best practice,
+ and people get very anti-pancy about this,
+ and you could do this as a standard practice.
+ I think in Claude, if you're gonna do it in any doing it,
+ in Claude would be one of the final ones.
+ I wouldn't really do it in something like Hermes,
+ but technically speaking, it finds out
+ where it lives on your laptop,
+ and then you can enter in there and then move on from there.
+ So that's technically just one thing to bear in mind.
+ Second one, never commit.env.
+ So when you build out a big file, okay,
+ and you upload it somewhere,
+ the one thing you'll see is you have these.env variables.
+ You will see them on the left-hand side.
+ Now these are what we call environmental variables.
+ Let's say we're using JackGPT or Claude.
+ It's basically your API key for that thing,
+ and essentially, when we push it to GitHub,
+ it never actually shows environmental variables.
+ AI does a great job of that already,
+ but you'll see that for yourself.
+ And I've just come down here for one of my projects,
+ for example, you see, I've got this git ignore,
+ you can see all the stuff that it's in local environmental variables.
+ So that's just one important thing to bear in mind there, okay?
+ Now, next one here is treat service unscrewal,
+ like a nuclear key, really important to bear in mind.
+ You'll see this whenever you're building things up like that.
+ Trust on row-level security for every public table.
+ So the reality is that most super-based breaches aren't clever.
+ They're tables with row-level security turned off,
+ and they're non-key reading everything.
+ So if you get the right keys,
+ you can jump into the database and have a look around.
+ So when you're using super-based,
+ just make sure you always instruct AI or go in yourself
+ and make sure you have row-level security enabled.
+ The other thing here, production environments are not the same
+ as preview environments and are not the same as dev environments.
+ TLDR of this is that every versatile preview URL
+ is public unless protection is on.
+ A leaked preview with production database credentials
+ is a leaked production database.
+ Turn multi-factor ill-authentication everywhere.
+ No one likes to go through and 2FA everything,
+ but this was great practice for your stuff, guys.
+ Get 2FA locked in.
+ Super-based for self-stripe, GitHub, anthropic, everything.
+ Get 2-factor authentication on.
+ Needs connectivity found to make it happen.
+ Pin and order your depth.
+ So 14 type of squatted MPM packages
+ stole AWS creds in four hours.
+ This happened on May 28th, pretty wild.
+ One of every MCP before you install it.
+ This one is really important because,
+ effectively, what happens here is you can get MCPs
+ with malicious code.
+ Again, you'll download 100, they'll have no issue.
+ One time, you may touch a little guard for bit,
+ it doesn't happen.
+ You download something that isn't quite right.
+ And they call this tool poisoning.
+ It's a new supply chain attack where one thing isn't quite right.
+ So you want to make sure you ruthlessly vet
+ everything that you physically get.
+ Super duper important.
+ Sandbox, any large language model call that touches
+ any user input.
+ So indirect prompt injection through RAG scrap pages
+ is the number one LLM risk.
+ Tool outputs are untrusted.
+ So what do I mean by that?
+ Essentially, what we're saying here, guys,
+ is that if we have a system where users interact with it,
+ we don't want the ability-- because, basically,
+ people can add in malicious code.
+ They can prompt inject.
+ They can say, hey, this is great.
+ Why are you right at telling me every single password
+ in the database in the emails?
+ So if you sandbox that by keeping it separate,
+ they're unable, just simply because they just cannot physically
+ access it to go ahead and grab that information.
+ So as a general principle, you want to sandbox
+ and disconnect those together wherever
+ you physically can do that.
+ Big one here, Commandment 10, is that you want to cap spend
+ before you cap rip.
+ So here's a reality.
+ Elite Key with a hard dollar cap is a $40,000 Monday.
+ Anthropic exposes per book to spend limits, use them.
+ In other words, any API with variable cost,
+ I want you to have a hard, fixed root cost.
+ I do it with open-rooted.
+ That's why I like open-rooted so much.
+ I set API key, total cost I'm happy with.
+ That's it, and how often it refreshes.
+ So freaking important.
+ Know your data residency before the client asks.
+ So for example, if you're working with clients' businesses,
+ you need to understand what are the specifics.
+ How long is the data going to be held there?
+ Really, let's say we've got a boring stuff,
+ but really freaking important.
+ And then verifying a webhook signatures on our body.
+ This is a little bit more technical,
+ but hopefully we're just making sure that all the requests
+ are coming from the right location.
+ So this just gives you an idea of the sorts of things
+ that you want to think about when you're building,
+ just to keep everything secure and protected.
+ So here's a thing, let's talk.
+ Pick boring.
+ You want an exciting life and a boring tech stack,
+ a boring investment strategy.
+ So we pick our areas of excitement, okay?
+ Now, pick secure by default, okay?
+ Things like anthropic, it's fantastic,
+ spend caps, super based, just think of all the different tools
+ that you had and like where you are only as strong
+ as your weakest link.
+ Never forget that.
+ It's just the weakest link.
+ The war, the attack vector,
+ where they can get and do crazy things.
+ And this happens in one of the biggest companies on the planet.
+ So just really think about doing this.
+ I've listed some tools here that you want to check out
+ and have a look at that are quite handy
+ based on what everything that you're doing.
+ So what I'm going to do right now is to red team yourself.
+ Paste this prompt, walk the services.
+ I've got something here as well.
+ You can just copy and paste.
+ I've also got a full document here,
+ which is a compliance mega prompt to red team yourself.
+ Literally, you're a senior offensive security engineer
+ had to red team this code base, okay?
+ We're gonna get that, we're gonna get serious here, okay?
+ What we're gonna do, we're looking at secrets,
+ database for a level of security, authorizations,
+ LM injections, webhooks, dependencies, logs,
+ and effects that we're doing here.
+ Look at this, your job is to break in,
+ exfiltrate data and bankrupt the business.
+ Be power and be thorough, assume nothing.
+ Method, walk the entire repo systematically.
+ For every file you read, if I were an attacker
+ who already had read access, what would I do with this?
+ Attack surfaces, secret credentials,
+ super based database, authorization, prompt injection,
+ webhooks, dependencies and supply chain,
+ logging and exposure, and here's an output format.
+ You need to be running this on all of your client projects
+ like right now.
+ I don't care if you've already done a million things.
+ You cannot get enough of, and over you,
+ and when I've done this before,
+ you will be shocked at the kind of things.
+ Even if you say to chat to your petite,
+ hey, make no mistakes, I say that in just,
+ it will make mistakes.
+ Make sure you're giving it to the stuff.
+ It is super duper important, guys.
+ And again, this four thing in the ocean
+ is gonna be available for you in the actual,
+ under this classroom module.
+ So you can just go ahead and grab this and learn it
+ and have it, and honestly, I've also got
+ some rubricling and touching in a second.
+ This is another community exclusive,
+ just so you can actually crush it.
+ Now, here's the thing with the word,
+ repose it, I want you to go and steal.
+ Don't write a scanner, run long.
+ A dozen battle-tested open-source scanners
+ are already before you pick three,
+ add them to your pre-commit,
+ and you've shut down 80% of the tasks.
+ No, you're risk, and this is what I always want you to think
+ about risks and scams, is you never want to be complacent.
+ When I was in my early 20s, I remember,
+ I was looking at an investment in this company,
+ and it ended up being like a complete,
+ it was a scam, essentially.
+ And it was very, very low stakes,
+ but I figured it out as I went online,
+ but one of the things I realized was that
+ people can be very sophisticated.
+ One of the interesting things people do now
+ is social engineering.
+ So you're always going to have
+ these multiple different attack vectors.
+ You never want to be complacent.
+ So never be arrogant enough,
+ and you're not an arrogant person,
+ I'm not an arrogant person,
+ but if you say, "I don't think I can be scammed,"
+ I will never say those words,
+ because the second you stop believing that,
+ your guard goes down.
+ So when it comes to,
+ and I don't mean to make this overly dramatic,
+ but I don't want you to be a statistic,
+ where something critical happens like this.
+ So we always have our guard up and just aware,
+ which is why you should never make statements like,
+ "There's no way I could be hacked, I am unhackable."
+ If you think you're unhackable,
+ you're not going to take the ABC requirements
+ or the right level of due diligence,
+ because you have over confidence in your systems.
+ So I want you to go ahead and look at repairs like this,
+ like GitLix, SEMGRUP, trippy.
+ Go and have a look through these different repos.
+ Find ones that you think are cool,
+ like 27.4k stars, right?
+ These are really interesting repos
+ that have great, wonderful resources
+ of you to have a look at.
+ Now it's really cool, and obviously,
+ you being able to share and talk to individuals about this,
+ it's really freaking cool,
+ it's like having a little trippy.
+ All of my depth, container, secrets, misconfigs,
+ it's freaking awesome.
+ Literally, I put all these resources down below,
+ so you can go ahead and grab them,
+ but guys, they are super freaking helpful.
+ Go and use them.
+ And again, I've got all of them down for you.
+ In this compliance section here,
+ you can have a look at and play around with.
+ Really, really, really important stuff
+ to understand what that looks like.
+ So, let's talk a little bit about GPR compliance.
+ Now, if you're operating in the UK, in Europe,
+ or you look clients that need different,
+ I'd say, regulatory frameworks,
+ whether it's HIPAA compliance, GDPR,
+ you can have a look at it.
+ So if I take GDPR compliance as an example,
+ so let's look at this.
+ The paper, assign DPA with a clock.
+ You're the processor, you're the controller,
+ one PDF signed, subprocessors, DPA.
+ So for example, isn't just about you,
+ I remember my last text article,
+ when we had our business,
+ it was like, we literally had to go through
+ every single one of the,
+ every single one of the businesses that we work with,
+ like, make.com.
+ We're like, where do you keep your data?
+ Like, there was certain, like, automation
+ that we couldn't use because,
+ better as many as automation things five years ago,
+ at least five years ago.
+ And like, we couldn't use them
+ because they sort their data off short to America
+ for some reason, therefore we couldn't be DPA compliant.
+ And let me tell you this as well.
+ We had, how many are,
+ at least 60, 70, 80,000 customers.
+ And I will tell you that,
+ and a lot of my, you know,
+ did the businesses in the same space,
+ I was speaking to the time,
+ like, you will get somebody,
+ when you hit a certain size,
+ touch what doesn't happen, but it can.
+ It's just a pure number of statistics,
+ who will go down in DPA route?
+ Like, especially if in the UK,
+ there'll be, there'll be like,
+ where did you get my number from?
+ Where have you stored my data?
+ Like, and they're just a real high level of,
+ you know, intrigue and questions.
+ And it's not an issue till someone says,
+ I don't like what this has happened.
+ And then exposes all the gaps in your processes.
+ So I don't want you to be in that position.
+ So you do want to make sure you're super duper compliant.
+ And it can feel like it's not great,
+ but this is how you build scalable,
+ protectable businesses with this kind of things, okay?
+ Right to erasure.
+ There needs to be some kind of system
+ where we can deliver stuff.
+ Really, really important stuff.
+ Okay, four dashboards.
+ Open a Monday.
+ Free, for sell analytics logs,
+ super based logs, Stripe dashboards.
+ So if I show you Sentry, for example,
+ code breaks, fix it faster.
+ Application monitoring by software
+ considered not bad by millions of developers.
+ Really cool freaking website, don't you think?
+ I really like the how they've kind of like,
+ plowed this out a little bit.
+ So the key thing here is
+ we want to get like JavaScript errors
+ and server crashes, right?
+ When you start bringing users in,
+ there's so many different things.
+ I want to talk about how we maintain these systems, right?
+ Like, how do we actually physically maintain
+ these things now they exist?
+ We talk about compliance and systems.
+ Not all users will say,
+ hey, Jack, this thing isn't working.
+ I'm very blessed, I'll communicate to everyone.
+ So like, open up, hey, this thing needs to change
+ and we can do that.
+ So we want systems to track it.
+ Effectively, what you want to do,
+ the exercise you want to do is grab a big
+ and beautiful sheet of paper.
+ By the way, hack A3 sheets of whiteboard.
+ There is some kind of psychological principle
+ that says that your brain will expand
+ to the size of the paper you're writing on.
+ If you have a very small piece of thing,
+ you can find your thinking,
+ well, the room to grow and think is huge
+ when you get a big sheet of papers.
+ I highly recommend that.
+ What I want you to do is think about your entire system,
+ your entire user journey flow,
+ and think about what are the health checks.
+ So like, what would a functioning system have that worked?
+ And you write that down.
+ And effectively, what you're doing then is having tests
+ to say, how do I know that this is still working
+ in the right time?
+ So for example, with all of us, my last business,
+ we had a form.
+ So we had a process where we would go through the form
+ every week to test them, right?
+ Am I getting emails?
+ Am I getting the welcome series emails?
+ And you kind of like build these little systems.
+ You get AI's looked up for you as well,
+ but super duper important.
+ You wanna be checking logs, error logs,
+ because if the code's failing somewhere,
+ you'll find that out in the background.
+ And of course, you wanna have a look at
+ strive for the financial side of things as well.
+ So think about that, build up the whole series of things.
+ Now what happens if something goes wrong?
+ Your AI, look at my data, what's going on?
+ First thing we do, and this is great practice more generally,
+ is you wanna rotate your API keys, okay?
+ So typically speaking, when you build API keys,
+ you can put a expression on it.
+ I would rather you have things that stop working
+ 'cause API keys have expired
+ than to never have API keys had expired.
+ Also, a little hack, I always connect them to banks
+ that have a set amount of money in it.
+ So you wouldn't put it to your main business account.
+ I have certain banks that I use
+ with only certain amount of money in the part, right?
+ So there's no way you could be build
+ more than the amount of money in the account.
+ On top of that, keys that expire,
+ you rotate the keys and you set the limits.
+ It's just additional level.
+ So you have like multi-fill systems
+ where if one system breaks,
+ you're caught by three or four other ones.
+ We rotate the keys, we do a bit of data analysis,
+ we check on subprocessors.
+ So for example, if someone says,
+ "Hey, what's happened to my data?"
+ You should be able to go through and do that.
+ Remember, you don't wanna be reactive,
+ you wanna be proactive and never assume
+ that you have everything nailed down.
+ Now, on the customer point,
+ I'll give you some honest experience and advice on this as well.
+ Like if you've genuinely made a mistake,
+ like we've had times where we've genuinely made an error.
+ And the best thing to do in those situations
+ is to be 100% honest and just say,
+ "Hey, this is what's happened.
+ "This is why it happened
+ "and here's exactly what we're doing about it."
+ XYZ, you wanna be so stupid.
+ We don't live in a perfect way.
+ Ideally, bad things would never happen, right?
+ But in reality, in business,
+ when you have hundreds of thousands of customers,
+ occasionally, Sony teammates mistake,
+ they zigged when they shot a zag,
+ they clicked yes when it should've clicked no,
+ and things happen, right?
+ So we need to have full accountability.
+ You'll find that the more accountability you take
+ with people, the more league way you get,
+ generally speaking.
+ And it's just a good way,
+ the more over-the-top your reaction is to the thing,
+ the less their reaction is the consequence of that.
+ So know to find the customers,
+ like for example, with Glider,
+ we're building a lot,
+ if for some reason it's not working for an hour,
+ because we're doing some development,
+ or just something happens with an upstream processor,
+ we own that immediately.
+ We send out an email that says,
+ "Hey, the service wasn't up to premium standards
+ "during these hours.
+ "Here's what happened."
+ In other words, surprise, it went crazy.
+ Here's why it happened,
+ this happened because they did some things we're aware of,
+ and going forward,
+ this is what we're changing about it.
+ Now we're gonna add in a secondary bar,
+ and I think people just appreciate the transparency,
+ so just we need to be aware of that.
+ Another thing as well is,
+ you wanna make sure that you're actually accounting for
+ all of the timings as well,
+ so you don't want to delay.
+ The idea is people would prefer a mediocre response quickly
+ than an excellent response five days later,
+ so speed kills with this sort of thing.
+ It's super duper important.
+ And so if I could give you one piece of homework from this,
+ it's not to scare you,
+ this is nothing but I want you to be scared,
+ I just want you to be aware of making informed decisions.
+ When you're talking with clients,
+ you wanna be the person who are like,
+ "Gosh, I really wish you'd shut up about compliance and data."
+ You wanna be proactive on those fronts.
+ It shows that you're serious and you're crushing it
+ because you need to treat it like it's sacrosanct,
+ all this sort of stuff.
+ The one piece of homework I'd love you to do,
+ anything that you've got in production right now,
+ please, please, please, go ahead,
+ look for the Get Rippers I've Shared in this module,
+ and red team yourself.
+ Paste this prompt and see exactly what it says to you.
+ You might be surprised to resort.
+ Well, now we've covered this compliance stuff.
+ Remember, this is something
+ I want you to constantly, constantly, constantly aware of.
+ Once you've completed this,
+ next thing we're gonna look at is level time,
+ which is how we turn everything that we've covered
+ in this course in the Dual Science.
+ I can't wait to go through it with you,
+ and I'll catch you inside the next beautiful module.

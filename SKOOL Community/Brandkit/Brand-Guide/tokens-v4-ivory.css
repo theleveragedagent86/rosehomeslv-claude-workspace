@@ -1,0 +1,34 @@
+/* The Leveraged Agent - palette v4 "Ivory". Warm paper, no accent hue at all. Maximum pedigree, minimum pop.
+   Proposed 2026-08-19. v1 (Brand-Guide/tokens.css) is still the shipping palette.
+
+   No teal. No gold. Both v1 brand colors are gone from this palette.
+
+   The 'lighter color' reading of the brief rather than the pure-white one. Corcoran runs a warm cream #FEF1E1 as its secondary surface. Here there is no accent hue: buttons and links are the ink itself. Compass and Eklund Gomes ship with no accent at all and look expensive doing it. Included as the control, so you can see what zero color costs you in energy.
+
+   Evidence: bg-2 is Corcoran's cream #FEF1E1 family. The no-accent construction is Compass and Eklund Gomes.
+   See PEDIGREE-BRAND-RESEARCH.md for the measured source table.
+
+   One accent only. There is deliberately no --la-accent-2.
+   Every pairing below is WCAG 2.1 computed. Spec and migration: Brand-Guide/V4-PALETTES.md */
+:root {
+  --la-bg:             #FDF9F2;  /* primary surface, warm paper. This palette is the one that is NOT pure white */
+  --la-bg-2:           #F6EEDF;  /* sunken fill, deeper cream. The palette's signature */
+  --la-bg-inv:         #17130E;  /* inverted surface, warm near-black */
+  --la-line:           #EDE3D4;  /* hairline and divider on bg, non-text */
+  --la-structure:      #443B31;  /* warm dark brown. Chart bars, structural fills */
+  --la-ink:            #17130E;  /* primary text on bg */
+  --la-ink-2:          #675E54;  /* secondary text on bg and bg-2 */
+  --la-ink-inv:        #FFFFFF;  /* primary text on bg-inv */
+  --la-ink-2-inv:      #A79C8E;  /* secondary text on bg-inv */
+  --la-accent:         #17130E;  /* THE accent, and it is the ink. Fills, buttons, links */
+  --la-accent-on:      #FFFFFF;  /* text placed ON accent */
+  --la-accent-txt:     #17130E;  /* accent used AS text on bg or bg-2 */
+  --la-accent-inv:     #FFFFFF;  /* accent used AS text on bg-inv */
+
+  --la-font-head:      "Poppins", "Futura", "Avenir Next", sans-serif;
+  --la-font-body:      "Inter", -apple-system, "Helvetica Neue", sans-serif;
+  --la-weight-head:    800;
+  --la-track-head:     -0.03em;
+  --la-track-label:    0.14em;
+  --la-lh-body:        1.55;
+}

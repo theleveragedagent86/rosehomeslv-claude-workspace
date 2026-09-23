@@ -1,0 +1,757 @@
+ Howdy, beautiful AI automator, and welcome to chapter six.
+ I hope you've got your beautiful water,
+ and most importantly, that coffee lockdown.
+ Now, today we're talking about the agentic operating system.
+ Now, I've spent so many hours building this agentic operating system.
+ I actually spent over seven hours alone on the onboarding
+ to make it as easy as possible for you.
+ But I have to start with why this is so important in the first place.
+ Now, the best way to think about this is that you need
+ an agentic OS.
+ You need a location that is model agnostic,
+ that can bring your entire world, your entire AI world,
+ your entire systems, for all the different apps using into one location.
+ You're not dependent on Hermes, you're not dependent on open claw,
+ or claw or anti-gravity.
+ It enables to reach into everything that's happening in your life,
+ and give you one clear, crisp dashboard that you can build
+ and add your own insights and features and developments to it as you want to.
+ So if I want to add in, which is on the road map, a design operating system,
+ it's probably the next thing that I'm going to be building onto this for you,
+ you can do that.
+ And so everything you need is in one location, and it connects to Hermes agent,
+ and it connects the claw.
+ It's so important that we have this, and it just unlocks capabilities
+ that we cannot really get anywhere else,
+ because it connects everything together.
+ So the first thing I'm going to do is come over to the classroom,
+ head over to chapter two, and I want you to come down here to the Cloud section
+,
+ and then you're going to have the Cloud Code and Hermes operating system.
+ So this is always going to have the latest, greatest OSAT.
+ You just click on this, and then you're going to head and download it.
+ Then once you've downloaded it, you're going to head over to Cloud Code.
+ You're going to upload that and just say, hey, I want you to open this up for
+ me
+ in a local host.
+ And effectively, this will pop up like this, and then we can begin the onboard
+ing.
+ Now, I always do changes to this.
+ So when I make a change to it, again, all you're going to do is come down,
+ download it, add that new files to Cloud, and just say, hey,
+ could you check for any new updates, explain what those updates are,
+ and then you can just basically say, hey, add that code to my environment,
+ so I can go ahead and use it.
+ Now, the first thing you want to do on the bottom left,
+ you're going to see operator, and you're going to see settings.
+ You're going to click on settings, and then you've got some overall settings
+ here
+ that you can play around with, which is really cool.
+ And you're going to come on, basically, run this setup wizard,
+ okay, and then click on this button.
+ And this is how we're going to set up our Cloud Operating System.
+ First thing we do is start the setup, you give it a name.
+ I'm just going to say, hey, my name is Jack Roberts,
+ and then we're going to upload a photo right here.
+ So I've got my photo, looks good, should be saying, looks great,
+ actually, we need to change that so it's more accurate.
+ Which is that we'll click on next.
+ Now, what this will do is automatically identify any of the systems
+ that we've got on our system, so it'll look for different CLIs that exist.
+ It's picked up on open A codecs, home is agent, anthropic API, anti-gravity.
+ So yet, we're going to enable that one as well, which is cool.
+ I just picked up everything that I've got on the computer, which is awesome.
+ And it means it can automatically root everything.
+ Then we click on next, which is awesome.
+ And here, if we want to, we can bring in pine cones.
+ If you've got a pine cone system, for example, with lots of different
+ information
+ knowledge, we can bring that in and connect that to your operating system.
+ Obsidian, it's already picked up on all these different obsidian files,
+ I've been saving, which is fantastic.
+ And I have something that's going to blow your mind on that as well.
+ And then we've got notion, so if we want to connect notion, we can connect that
+ as well.
+ Now, this operating system is one way of doing it.
+ But the cool thing is that you can actually code and build this with anything
+ you want to.
+ So, for example, you speak to Claude, and actually, I want to grab a line from
+ this.
+ You can add it in.
+ You're not limited to what's here.
+ You can build it, and it becomes this Lego block, almost applause,
+ and it's Lego block enterprise of cool things that you want to add.
+ So, think of this as like a Lego block set, and then you're going to wire it
+ yourself.
+ You're going to add things, maybe you want to change things,
+ I don't know why you want to change this beautiful design,
+ but you could if you really wanted to, and you can add all of that in.
+ Next thing we do, then, is we can track our usage live.
+ So, if I want to say, I want to know how much I'm paying on, open up to add an
+ API key.
+ Add your API keys in.
+ Essentially here, and it can track those things locally for you, which is
+ awesome.
+ Obviously, that's completely optional, but I personally like to see what I'm
+ doing there.
+ This one's really cool is you basically decide what is your time actually worth
+.
+ So, if $1,500 an hour, we can calculate things.
+ This is especially helpful, even if you're selling it, or you're installing it,
+ or you just want to know how much time is a skill saving me.
+ So, if I had like a YouTube transcript, if you look at my YouTube channel,
+ for example, right, we have descriptions and timestamps.
+ So, no one needs to do that.
+ That's actually now being automated.
+ So, if that used to be like an hour a week, I'm saving $x a week.
+ It's doing the same.
+ So, it's really cool that we can actually calculate the sign of dollar figures
+ for anything that we're doing.
+ Then we have where should, when should we dream?
+ So, effectively, what it looks like is all the things with conversational
+ analysis,
+ everything that you've talked about, it is cost intelligence.
+ It does skill performance, memory health, session hygiene,
+ external opportunities, workflow patterns, and business outcomes.
+ I personally like to get mine done in the morning.
+ You can do evening, or am if you want to, allow websites during dream.
+ I highly recommend that, and generate fresh cosmos image.
+ Yes, we do, and obviously, you can just add your API in that, if you want to.
+ I do that because imagery, I think, is beautiful and important.
+ Then we click on next, which is cool, and at which engine runs your dream.
+ So, you can do codecs, you can do Hermes.
+ This is just really, who's running it.
+ So, it doesn't really make a difference, but I think it's very helpful for it
+ to be there.
+ So, let's go ahead and do Hermes, which is fantastic.
+ Click on next, and then we activate, and then it opens up the dashboard,
+ and you're fully ready to rock and roll, which is really cool.
+ Now, on the homepage, we've got our monthly AI spend.
+ We've got how much money we've saved with our skills.
+ And last month, our activity.
+ You can come down and see plans and women's limits.
+ Windows, based on all the models we're using, this is the dream functionality
+ that we get.
+ They're kind of like, we'll give us those things, and we can skip,
+ apply, mark, and done, and cycle through them.
+ We've got all the sources, so where it's grabbing all the information from.
+ This mission control here, let's just set goals, like a midterm goal.
+ So, for example, if I said to Hermes, hey, I really want to get 1,000
+ subscribers on YouTube,
+ it's just cool.
+ Well, there's some stuff that I do, and there's some stuff that you do,
+ and it'll quote five or six, seven, eight different tasks.
+ One will be Hermes, create an outline, then it says, "Jack, you're going to
+ record,
+ "and when you record your five videos, let me know."
+ And it kind of goes through like that, which is cool.
+ We can see our skills, we can see an overview of our memory.
+ We have a project knowledge graph, which is fantastic.
+ And then we've got all the different schools that are connected into this.
+ And at the bottom, you have this AI leaderboard, which is awesome
+ about where are the models at, how are they performing, I can click and have a
+ look at this.
+ I've also got the Playbooks, which is like, if I want a cheap map with a
+ frontier reduction,
+ so cheap parallel models, processing portions, blah, blah, I can look at this,
+ copy to JSON, and rock 'em wrong.
+ Now, if I come over to critical gun stand, knowledge graphs, okay?
+ What's going on here?
+ There's a tool called Graphify, and Graphify effectively is a tool
+ that saves you a lot of money.
+ So the idea is, if you think of a system, like this is him as agent,
+ and it's so big, it's even tough to load this on my big computer,
+ because there's that many nodes on it, you can see this actually,
+ you're looking right here, it's him as agent.
+ That's actually what you're physically looking at.
+ How crazy is that?
+ This is essentially what it is, you can see.
+ This is everything that makes up him as agent,
+ and how it's all clustered together.
+ It's fascinating, actually, when you really look at him.
+ I'm gonna pause it there for a second, but you can get the idea of this.
+ Effectively, what this lets us do is ask questions about it.
+ It's like that movie Up, you know, with all the balloons and stuff,
+ it's really fascinating.
+ But Graphify essentially maps the relationships between the code base.
+ So this, for example, is power design.
+ Do you know the designer I've talked about before?
+ He talks about what are the different dimensions of design,
+ and you can see how they're all connected together.
+ So you have these little clusters, and you can see how they're all connected
+ together.
+ Now what you can do here, really cool, if you want to have a chat with us,
+ you can add a project, make a project, and all you do is drop in a GitHub repo.
+ For example, if I go to GitHub, for example,
+ and let's go ahead at a really simple month, like, okay, gorgeous websites,
+ just a final right there, let's go down and have a look at power design,
+ if you wanted to.
+ You'd come down, copy this code, copy this, come over to the OS, which is here.
+ You drop that in, graphic, done, and what's really cool here,
+ it will tell you on the right hand side how much money you're saving by using
+ this,
+ because, again, it creates a relationship between all of the,
+ if you think about it, the sort of information, the code base.
+ So Cloud doesn't, or Hermes doesn't have to go through everything individually,
+ it can just ask questions.
+ So then what you can do in your dashboard with Hermes is just say,
+ what does this project do, BAM, and it will automatically be populated,
+ and you click on Sand.
+ And now Hermes is thinking, and it'll give us an answer on that.
+ So in your dashboard, you can just chat to code bases if you want to.
+ It's really frickin sick.
+ All you do, you should grab the name of it, throw it there,
+ and then you can have these conversations with it,
+ and you can do the exact same thing in your Hermes agent,
+ and it'll come back and give us a beautiful answer, which is fantastic.
+ And the graphify is gonna save you a ton of tokens doing that.
+ But what Hermes is doing here, instead of reading through the entire project,
+ is looking and leveraging the graphify skill.
+ That is kind of pre-fixed to the question that we've asked it here,
+ which makes it super duper easy.
+ Then Hermes has come back, and so, hey, power design is a code skill,
+ but generates a brand native HTML slide there.
+ It's blah, blah, which is awesome.
+ So let's go down and check out Hermes agent now on the left hand side,
+ and see what we've got here.
+ So we've got here all the connections that we have in Hermes.
+ This is everything I've got connected to Hermes.
+ This is everything I have connected globally.
+ We have the agent version here, which is really handy.
+ And then we've got the active model.
+ So as you change the model, that will literally update,
+ really helpful, your memory, and how many times you'd use this model all the
+ time.
+ Now, this is really cool.
+ So I've got Grog 4.5.
+ I can actually come down and see the context window.
+ If you've got 1 million context windows,
+ I can again ask any questions I want to with this, right?
+ So I can come down and say something like,
+ hey there, which model is this?
+ All right, come down, and I'm now talking to Grog on my computer,
+ which is really freaking cool.
+ And it'll come back and I'll tell us, hey, Jack, this is Grog,
+ and I'm having a great time.
+ Cool. So you can do loads of cool things.
+ You can add photo images, whatever you want to do as you go through,
+ which is cool. You've got some stats.
+ Again, this is the same goal feature as in Claude.
+ You can use both of them.
+ Now, in the pantheon here itself, we can add different things.
+ So these are skills.
+ So the idea with this, for example, is if I wanted a deep research,
+ all I do is I come down to add a persona, all right?
+ And I can say, let's bring an Athena here, OK?
+ I give it a title, so I can say it'll read my PRs, a description,
+ so if you lines by what the persona does, and then the system prompts.
+ And then you pick the model that you want to use,
+ and then you're ready to rock and roll, which is really handy, OK?
+ Now, you can do these all these.
+ I've got the Oracle or for your scribe.
+ I just like having a visual overview of my agents
+ and what they're doing inside the pantheon.
+ We have the Ministry of Experts, which is what I showed you
+ in the previous master class, where, as you can see,
+ I can see the performance of these, so I go through.
+ And I can basically decide what my ministry looks like.
+ And so do I want Opus 4.8 on my leadership role?
+ No, maybe I want to bring in Kimmy K3.
+ Maybe I want to bring in the champion.
+ Maybe I want to bring in Cloud Fable 5.
+ Whatever it is, I can drop in, and I'm ready to rock and roll.
+ And then I can just save this to my computer.
+ And then I'm good to go.
+ You can also do max tokens per call.
+ You might be saying, once, make it 16,000.
+ Two reasons.
+ One, it's cost.
+ But second is that you don't always need it.
+ Like, oftentimes, if you're just like asking for a simple question,
+ just to kind of throw it.
+ It's like me saying, you know, ask a politician a question.
+ It's like the answer in paragraphs.
+ It's just like, yes or no, is this the right answer?
+ Do you know what I mean?
+ You don't necessarily need to do it.
+ So it's fine to have that defaulting down a little bit.
+ Then we scroll down.
+ We have a couple of things, which is really cool.
+ So here we look at how to connect to GitHub.
+ This affects when you copy and paste in Hermes.
+ Creates a private GitHub repo and creates that identical copy every day.
+ Then on the right hand side, we've got pushing personas to GitHub.
+ So this, once you've created all the personas here
+ that you like and you're happy with, you're going to copy this
+ and just paste that into Hermes and you're ready to rock and roll.
+ Here we can play around. I use a profile.
+ As you can see, star cache will elect to a bro, which is cool,
+ which is fantastic.
+ And even your solar, solar India, you can mess around with them.
+ We can connect this to Obsidian, like I showed you in the previous one.
+ And then Crucially, we've got the Claude OS bridge.
+ Now, effectively what this means is that we can actually, as you can see,
+ let's hear in Hermes, read this dashboard on request.
+ What did my dream say?
+ What's my Claude of quote?
+ So make sure you copy this, go ahead to your Claude model
+ and drop that in there so it knows
+ that it can access everything.
+ And then it's got all the different details
+ about where it all lives.
+ It is really, really, really helpful, which is fantastic.
+ Then, at the bottom, we have what Hermes can do.
+ So these are just some interesting ideas, basically skills, which are fantastic
+.
+ And then you have your documents down here, which is really handy.
+ So this is something we built the day,
+ which is comparing Kimmy K through with Fable and 5-0 per se.
+ So when my Hermes agent goes ahead and builds things for me,
+ I get the artifact saved here, which is really cool.
+ And I can go back and look at them and they're not kind of lost to time, if you
+ like.
+ So that's essentially the whole Agentic OS, which kicks up.
+ Now, I want to show you something really interesting.
+ If I come up to memory, now you remember we had the obsidian section.
+ I'm going to show you something really freaking cool.
+ If I go full mode here, look at this.
+ All my days.
+ Now, let's say, for example, many of you know
+ that I've run my own speech to text startup, right?
+ Which is collider.com.
+ Awesome. And the idea here is I can type by holding a button
+ and some stuff comes up, right?
+ Well, what I can do now, which is amazing,
+ is we're building our Agentic tools, and it's completely free to download.
+ But one of the features we've done is I've connected it to Hermes.
+ So my philosophy is how could we take Hermes to the next level?
+ Well, we can bring Hermes onto our computer with us, right?
+ So let's say that I am on YouTube.com, all right?
+ And let's say that I found this video here, right?
+ And I'm like, I want to learn about that.
+ Well, look at this.
+ I click on this, and I had the Agentic mode summarize this into three bullets.
+ All right, check this out.
+ And I'm going to say that is absolutely fine.
+ I don't want to access to a computer, it's getting me transcript.
+ Green button, and bam.
+ Just like that, I've now got the full summary, which is fantastic.
+ And it did that for me instantaneously.
+ It also works with, as you can imagine, articles.
+ So I can come down, and if I just had something like a high agency,
+ right, come down.
+ And you're going to show you how this connects your memory in a second.
+ Check this out. Really, I come down.
+ I'm like, what?
+ Explain this in one sentence, OK?
+ Searching site, having a good time,
+ figuring out what it is, high agency website offering a concise
+ 30-minute guide to George Mac on applying high agency principles.
+ Now, where does this connect?
+ Now, check this out, right?
+ If let's say that I'm on YouTube as a, for instance,
+ I've clicked on this interview over on Mosey, which is it's not you
+ while making money feels impossible in 2026.
+ So check this out.
+ If I come down and say, give me five facts from this video, please.
+ All right, and let's just see what we can get back as a fact.
+ OK, the video title, and we can do it, blah, blah, blah.
+ Alex Mosey emphasizes the courage.
+ He describes a proven method for making 100K a month and three months,
+ partnered with little businesses, seller, service of commission,
+ and reinvest the earnings call.
+ Now, check this out.
+ I might say, literally, you can do this with anything.
+ I'm going to say, add this to my obsidian memory.
+ All right, now I've created a skill.
+ Look at this.
+ I've now sent this over to Hermes.
+ Now, what's really interesting here is this.
+ So if I come back a bit, I'd say, give me five facts about this video.
+ All right, let's check this out.
+ I'm going to get a bit of information, and I can actually go ahead now
+ and ask my Hermes agent this.
+ So, for example, I'm going to go ahead and copy this,
+ and I'm going to sheet over to my Hermes agent and bring it up.
+ And in Hermes agent, I can say, hey, Alex Mosey did an interview with Jeff,
+ with someone called Jack Neil.
+ Just go ahead and check my obsidian memory and give me five interesting facts
+ from that entire conversation.
+ All right, or it would do this instantaneously by itself.
+ So, I am now going to show you that this has actually fully gone
+ into our obsidian memory system, and now I can chat to Hermes about this, right
+?
+ Searching the obsidian vault for Hermosey and Jack,
+ and it's going to bring us on up for us directly.
+ And as you can see, guys, it's found that there was a question that I asked,
+ and within a minute, it's fully ingested in my obsidian memory, which is really
+ cool.
+ So, the reason to bring this up is because I think this is so sick now
+ that we can use tools like this and add your brand together.
+ So, let me show you quickly exactly how you would do this.
+ So, first thing you would do if you want to use this, I've got a code.
+ I think it's like three months for free.
+ I'll put it down below this link so you can go ahead and grab it.
+ But effectively, what we're going to do is come down and download this.
+ It works on Windows and Mac.
+ Once you've done that, you can head over to Glado itself.
+ So, we're going to have this one here.
+ And then what we're going to do is come over to,
+ I think it's settings or it is at the bottom, which is on the tool.
+ So, settings, and then we want to have a look at account, no general.
+ So, enable beta features.
+ So, enable this one, and when you do that, you're going to find tools here,
+ okay?
+ Now, I've got a couple here.
+ What I'm going to do is show you this.
+ So, I just, I want to let me send things to Hermes.
+ It's in beta mode.
+ So, it's like not fully built up.
+ And again, this is like an optional thing, but I think this is really powerful,
+ which is why I'm showing it to you.
+ I've been geeking out about this since we long.
+ I'm so excited I had to show you.
+ All you're going to do, literally, okay, is click on, read the docs.
+ You're going to come over and grab that URL.
+ You come over to Hermes, and you're going to say, "Hey, go ahead and learn this
+."
+ And then I want you to create for me a skill.
+ In fact, come back and suggest for me three skills that might be helpful for me
+ when using this on my computer and link to Hermes, all right?
+ And then we're going to come down, drop in, and I can just come down.
+ Again, I can do 4/learn at the top, which means it would now be able to build
+ up all
+ these skills for us, all right?
+ And again, it will learn how to do that.
+ It will download everything and get that full knowledge.
+ But what this effect does now is I can now send information to my
+ Agentic operating system with one command.
+ That's why this is so powerful.
+ But if I see something that's interesting, I can actually explicitly
+ instruct that.
+ So, this is in beta mode right now in the building of it, and I've been talking
+ about this constant background, because I think it's so freaking exciting.
+ That I see this as enabling increasing the surface area of Hermes agent to
+ everything else, which is why it's so freaking powerful.
+ But look, it's going through, it's learning the rules, and it'll do that stuff,
+ which
+ is why you can ask it things like, "Hey, what is the weather in Budapest right
+ now?"
+ Okay?
+ And it comes back and it'll say, "Hey, the weather is getting the weather.
+ Agentic mode is 22 degrees.
+ I can tell you about this."
+ Excellent.
+ And we just escaped that, so you can see exactly what I'm talking about.
+ So, it's coming down.
+ It's now turning it into an official skill that I can call back
+ whenever I would like.
+ So, I really like this one here, which is a glider tool from voice specs.
+ What I might do is this one here.
+ So, I would like it to create for me a skill in my glider skills folder, and
+ effectively,
+ what I want it to be is I want to be able to send basically you a command, the
+ glider,
+ and then essentially you to add that cron job.
+ So, I want the ability to speak to you to create recurring tasks.
+ So, either add that into one we've already got that's existing or create a new
+ skill,
+ let me know which, and then go ahead and save that.
+ Now, the cool thing here as well is that this is all connected, which is great,
+ so it works
+ for me.
+ But effectively, I can send instructions and messages to Hermes agent now
+ wherever I am.
+ Now, I could open it up, but at the end of the day, this is about saving time
+ and making
+ it as easy as possible, which is cool.
+ It's going down there.
+ It is doing it.
+ We can do internet search.
+ We can do anything.
+ So, I'm basically bringing with me at one button clink Hermes.
+ So, Hermes is now one button click away anywhere I am, which is insane, and
+ again, it all
+ connects and fills into the operating system, and it's going to go ahead and
+ build out this
+ new MCP for us.
+ And then, literally all we do inside Glider, guys, is when you're here, you're
+ going to
+ click on import, okay, and then you're going to have a folder, which is Glider
+ Skills,
+ and using the information that learned from the actual folder, you're going to
+ click on
+ this, open it up, and it adds it in, like that's how freaking good this is.
+ It's got web search.
+ It's got everything.
+ It can go ahead and do that, it can connect to different things.
+ It's still in beta, but you get there, there's a lot of your feedback, but you
+ can see exactly
+ where this is going.
+ It's now creating a dedicated server, and it'll then add it to that folder for
+ us.
+ And then, just like that, it's going to add and create a brand new skill for us
+, so let's
+ go ahead to Glider now and import this.
+ So, come to Glider, click on import, and let's have a look.
+ We've got Hermes Chron, so go ahead and open it up, and then we should see it
+ appear, let
+ you go at Hermes Chron, create list, port, resume, or remove recurring Hermes
+ Chron jobs
+ from voice.
+ So, let's go ahead and test it out, so let's go ahead and give it a task.
+ Let's say that I'm looking at my emails, or I'm looking at a thing here, and I
+ might
+ be something like, I could maybe highlight something and be like, let's go
+ ahead and
+ highlight these instructions.
+ I could say, hey Glider, actually, hey, in fact, how about we say something
+ like this,
+ right?
+ I can highlight this and be like, hey, just tell Hermes to create a task in 30
+ minutes
+ to remind me of this information, please.
+ All right, come down, come do this, approve a required, I'm going to say let's
+ always
+ allow that, which is fine.
+ It's going to create a reminder for us, send us off to Hermes, it's now
+ checking everything
+ in the background.
+ And then it's come back and say, hey, task shuttle for 30 minutes from now, it
+ will remind
+ you of your operating system, update instructions.
+ Has that worked?
+ Well, we don't need to wait to find that out.
+ I can literally escape this and say, hey, I just set a reminder, could you
+ confirm what
+ reminder I set with you?
+ Okay?
+ What did I ask you to do in 30 minutes?
+ All right.
+ And the cool thing here is I can highlight text, I can do videos, if I'm
+ thinking, I
+ don't have to come back, I just think it adds a lot of value to this.
+ So now this is going to go ahead and check what I've asked it to do.
+ Guys, look at this, so here was my question and look, created this, it's all
+ that, download
+ the file, attach the code, then I want to go to that message and telegram, so
+ you can
+ see how freaking crazy and epic this thing actually is, it just takes it to a
+ completely
+ new level.
+ So with that in mind, you understand some of the basics now of this, we know
+ how to
+ supercharge our memory, to make it as epic as possible.
+ I hope you have as much fun with this as I did by the way, and at the bottom of
+ this
+ memory thing, by the way, guys, we have, we can click into these levels and see
+ how they
+ all connect with one of each other, and I've got some really fascinating
+ updates coming.
+ But taking a step back, what do we need to know about the OS and what if your
+ OS is on
+ a VPS?
+ How does it all work and how does it all connect together?
+ Well, let's take a look and dive into a little bit more detail.
+ So the idea is always on, we have the engine, we have the window, the operating
+ system, as
+ I said, is essentially, think of it as your command center, your control panel
+ for everything.
+ It's the engine room, it's a cockpit, it's really, really important.
+ Now there are five ways that we can enter in and actually access Hermes, we can
+ do it
+ terminal, which you bring it up, you do terminal like so, you enter in forward
+ slash Hermes,
+ you end that.
+ You can do it in the dashboard, which is this thing here in our dashboard chat.
+ You can do a desktop app chat.
+ So if I come down, I type in Hermes, I can open up Hermes itself and have that.
+ This effectively, guys, is just like a more, I need to retry this one here and
+ repair the
+ install.
+ But effectively, it's just like a more user-friendly version of the terminal.
+ It's nothing really crazy.
+ That's why I built this because it just had so much more aspects.
+ There's a kanban we can use, and then we've got the OS console, which is really
+ helpful.
+ And there's also a dashboard that opens up and does some things, but Hermes is
+ consolidating
+ around the app, which is really important.
+ Now the idea here is that we have one folder that manages everything for whom
+ is agent,
+ that has your memory machine skills, your quantum session, and it just makes it
+ very
+ easy to take any way you want to, which is why building a GitHub is so, so
+ important.
+ And the idea with this is that we can move the brand if we ever wanted to do
+ this from
+ a VPS to our own metal, or from our own metal to another location, and we can
+ bring and
+ say that everything together.
+ So it's portable.
+ It's not linked and lost when we move and do various different things, which is
+ really,
+ really important.
+ Now, some very interesting things that we can physically do if we wanted to, is
+ we can
+ actually access different files and different computers and VPSs using
+ something called
+ tail-scale.
+ So to do that, you can shoot over to the one-fold tail-scale, which is crazy.
+ Their free planet is out of this world.
+ It's a secure, connectivity platform for the AI area, you can go through and
+ understand
+ how it works.
+ It's super, duper easy.
+ What we're going to do is click on "get started" and create a free account, and
+ when you do
+ that, you're going to see a screen that looks something like this and you sign
+ up.
+ So you're going to install tail-scale and sign in on that account.
+ So the first thing we do is download tail-scale on that one particular computer
+.
+ I've got Mac OS, so I'm going to download it, and I'm actually going to do this
+ with you
+ live on my laptop at the same time, so I've got my laptop here on my left-hand
+ side, so
+ we can do this.
+ Now, you can run this as a command on your terminal if you want to, but we're
+ going to
+ go ahead and install this.
+ And then you get all the series of questions here, which is going to continue.
+ That's fine.
+ Go ahead and get that installed and then draw a password.
+ Now, once you've downloaded the app, you can see there's a system extension
+ that basically
+ enables it to extend the network and features of your Mac.
+ You can see that's fine.
+ Go ahead and open the settings to give it the ability to do that.
+ Then you're going to find tail-scale and say, "Hey, that's cool.
+ That's decent."
+ And then we're going to head into the password.
+ Then you want to go ahead and allow the VPN configuration.
+ Then it just basically lets you join the network, which is cool.
+ Next, connect this to your network by selling it to tail-scale and authorizing
+ it.
+ So when we come down here to reconnect, so we've acquired the login, which is
+ cool.
+ And then we go ahead and log in with our account.
+ This pops up.
+ So that's fine.
+ Go ahead and connect.
+ And now what I've been going to about, we now have the tail-scale app.
+ Let's go ahead and make it a permanent feature on our desktop.
+ And this is really handy if like me, you've got a kind of like a system on your
+ home computer
+ and also a laptop, which is really cool.
+ So you can show you around.
+ So you can go ahead and show me around which is cool.
+ You browse your tail net, which is I guess is everything that's connected
+ together.
+ We can then see talk to other devices, which is fantastic.
+ And then on top of that, got a mini player, lots of different things, and
+ always in the
+ menu bar.
+ I think like done.
+ So in this page here, you can see we've got all the devices there.
+ So if I download this on my other computer now, I'd then be able to access the
+ files
+ on both locations.
+ And so for example, I just said, "Hey, Dabrowski, I just told tail-scale.
+ I want to go over to my other MacBook Pro, and I want to find out what was the
+ last thing
+ that I saved to my desktop?"
+ Now, the answer to this question is B-roll retention handover, all right?
+ So if I can show you this, and you can see it on the camera or not, but I know
+ you guys
+ believe me because you can see B-roll, say the handover thing.
+ What the hell?
+ I don't know what the hell it's called.
+ B-roll retention handover.
+ So now it's access and tail-scale.
+ It's got both things here on the left and the side.
+ And I can actually grab and access files and do various different things
+ between them,
+ which is cool.
+ So go ahead and do this now.
+ Let's just go ahead and enable this.
+ So I'll enable remote login now.
+ So you can do a few different things.
+ You can enable it to do remote logins, or you can basically give it a one-line
+ terminal
+ command.
+ And so I selected the option that allowed me to dial in remotely.
+ And what it'll do is give you one sort of terminal command to run on your other
+ computer.
+ You run that, and then also you've succeeded.
+ As you can see, it checked it now, and it gave me the exact answer, which is
+ incredible.
+ Now I can have access between both of them, which is awesome.
+ Then if I come back over here, one of the things I've added to you as well is
+ if you're
+ running this on a VPS, all you're going to do is install this code, and then I
+'ve got
+ your prompt here, which will enable you to have, this is a scenario to be
+ helpful.
+ You've got your Hermes running on a VPS somewhere, but all of your data is on
+ your
+ MacBook, your desktop.
+ Now I recommend you always run it on your own hardware, but if you like, it can
+'t be
+ open 24/7 of those issues, this enables you to bridge the gap and lets you kind
+ of access
+ that data if you want to.
+ So here is a prompt that you might find helpful to run and kick some butt with
+ that as well,
+ which will make things pretty easy and save you a lot of headache.
+ So again, I have all the instructions on the setup here, it's dead straight
+ forward following
+ those best processes.
+ So effectively, we have your private mesh, if you like.
+ So there's the right way which we've done here, which is we've installed a
+ server laptop
+ phone, we've logged into them, every device gets a stable private 100X address
+ and a
+ name that survives sleep rooms networks and lets you work from the beach,
+ basically.
+ So let's talk about what this is and how it works.
+ So WireGuard is minus the paint, so you can use a mesh VPN, every device
+ connects directly
+ to every other.
+ It's encrypted end to end.
+ The coordination server only introduces them, your traffic never touches them,
+ which is
+ really handy.
+ And as you can see, this is so handy, guys, it even shut off my camera, that's
+ how powerful
+ these systems are.
+ It basically overheated my camera because the deals are too hot.
+ So this explains how it works, why there's no open ports, it punches through
+ the N80 outbound,
+ so the firewall stays short to the public and so that these are basically just
+ the systems
+ of why this is like safer and how it works, so you can go into more detail if
+ you want
+ to, which is really helpful, so it's sealed end to end, it's invisible on the
+ outside,
+ devices, all that kind of thing.
+ And it's locked by default, so an always on agent is always on attack surface.
+ Four things you never do, six boxes you must always tick, so no two ways think
+ of Hermes
+ between machines.
+ And again, there's just a little bit more detail about how you connect together
+ if you
+ are going to be using Teleskull, just so you know exactly where to stand and
+ how it's
+ kicked butt, which is freaking amazing, but the upshot of this now is that you
+ can access
+ between both, we'll just make sure that they are super secure.
+ Now we've covered the critical information around the Hermes operating system
+ and the
+ next module, I'm going to run you through security and compliance, the stuff
+ that people
+ don't like to talk about, but it is so, so, so important and you have to master
+ this
+ if you can be building the machines at scale, grab that coffee and I'll catch
+ you inside
+ the next training.

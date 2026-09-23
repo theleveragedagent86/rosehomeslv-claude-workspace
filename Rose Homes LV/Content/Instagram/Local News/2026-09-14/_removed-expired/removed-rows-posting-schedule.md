@@ -1,0 +1,11 @@
+| P01 | LE-07 | This Week's Valley Road Restrictions: Buffalo and Charleston, Lake Mead Boulevard, Charleston Storm Drain | Local News and Events | Yellow | 30 sec | Tuesday | 2026-09-15 | 9:45 AM | Morning | No | Hard expiration. These restrictions are only good for the week of September 14, and the Charleston storm drain wraps September 19. Worthless after that. |
+| P02 | HK-01 | Golden Knights Rookies Come Home From San Jose With Two Injured Forwards | Hockey | Orange | 45 sec | Tuesday | 2026-09-15 | 2:30 PM | Midday | No | Training camp opens this week. Connelly's and Hemmerling's status stops being a question the moment camp roster news lands. |
+| P04 | HK-03 | Golden Knights Recall First-Round Pick Juho Piiparinen From Finland for Training Camp | Hockey | Orange | 30 sec | Wednesday | 2026-09-16 | 9:45 AM | Morning | No | He reports to camp later this week. Post it before he is just another name on the camp roster. |
+| P07 | HK-05 | Five Questions the Golden Knights Carry Into a Shortened Training Camp | Hockey | Yellow | 45 sec | Thursday | 2026-09-17 | 9:45 AM | Morning | No | A camp preview is dead the day camp opens. It has to run before the first practice. |
+| P19 | HK-02 | Carter Hart Is the Starter and Adin Hill Is the Backup Going Into Season X | Hockey | Orange | 45 sec | Monday | 2026-09-21 | 9:45 AM | Morning | No | Tied to the opening night depth chart. The argument is live now and settles once preseason games start. |
+| 9:45 AM | Morning | P01 | LE-07 | This Week's Valley Road Restrictions | Local News and Events |
+| 2:30 PM | Midday | P02 | HK-01 | Golden Knights Rookies Come Home With Two Injured Forwards | Hockey |
+| 9:45 AM | Morning | P04 | HK-03 | Golden Knights Recall Juho Piiparinen From Finland | Hockey |
+| 9:45 AM | Morning | P07 | HK-05 | Five Questions Into a Shortened Training Camp | Hockey |
+| 9:45 AM | Morning | P19 | HK-02 | Carter Hart Starts, Adin Hill Backs Up | Hockey |
+| P30 | HK-04 | Golden Knights Gather at TPC Summerlin for the VGK Golf Classic | Hockey | Orange | Weekend Morning | Yes | The event already happened on September 8, so it is pure evergreen community color with no household or civic stake. The lowest-cost slot in the set to spend on a non-follower test. |

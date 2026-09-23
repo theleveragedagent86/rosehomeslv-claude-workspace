@@ -1,0 +1,34 @@
+/* The Leveraged Agent - palette v4 "Signal". Warm, energetic, direct. Reads urgent without shouting.
+   Proposed 2026-08-19. v1 (Brand-Guide/tokens.css) is still the shipping palette.
+
+   No teal. No gold. Both v1 brand colors are gone from this palette.
+
+   Tom Ferry runs orange #F26F21 as his second accent. Raw, it is 2.97:1 on white and cannot be text or carry white text. #BB4C0A is that same hue pushed until it clears AA in both directions, so one value does the button and the link.
+
+   Evidence: accent from Tom Ferry's orange #F26F21, corrected. Warm near-black ink follows finding 3.
+   See PEDIGREE-BRAND-RESEARCH.md for the measured source table.
+
+   One accent only. There is deliberately no --la-accent-2.
+   Every pairing below is WCAG 2.1 computed. Spec and migration: Brand-Guide/V4-PALETTES.md */
+:root {
+  --la-bg:             #FFFFFF;  /* primary surface, pure white. Do not tint it */
+  --la-bg-2:           #FBF7F4;  /* sunken fill, table rows, inset panels. Faintly warm */
+  --la-bg-inv:         #1A1310;  /* inverted surface, warm near-black */
+  --la-line:           #EEE7E1;  /* hairline and divider on bg, non-text */
+  --la-structure:      #7E3405;  /* deep burnt orange. Chart bars, structural fills, large headings */
+  --la-ink:            #1A1310;  /* primary text on bg */
+  --la-ink-2:          #665C55;  /* secondary text on bg and bg-2 */
+  --la-ink-inv:        #FFFFFF;  /* primary text on bg-inv */
+  --la-ink-2-inv:      #A0928A;  /* secondary text on bg-inv */
+  --la-accent:         #BB4C0A;  /* THE accent. Fills, buttons, links */
+  --la-accent-on:      #FFFFFF;  /* text placed ON accent */
+  --la-accent-txt:     #BB4C0A;  /* accent used AS text on bg or bg-2. Same value, it clears both */
+  --la-accent-inv:     #F2874A;  /* accent used AS text on bg-inv */
+
+  --la-font-head:      "Poppins", "Futura", "Avenir Next", sans-serif;
+  --la-font-body:      "Inter", -apple-system, "Helvetica Neue", sans-serif;
+  --la-weight-head:    800;
+  --la-track-head:     -0.03em;
+  --la-track-label:    0.14em;
+  --la-lh-body:        1.55;
+}

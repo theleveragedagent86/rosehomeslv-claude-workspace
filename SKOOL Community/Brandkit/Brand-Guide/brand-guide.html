@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Leveraged Agent Brand Guide v1.0</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--la-cream);
+    color: var(--la-teal);
+    font-family: var(--la-font-body);
+    line-height: var(--la-lh-body);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 72px 40px 120px; }
+
+  h1, h2, h3 { font-family: var(--la-font-head); letter-spacing: var(--la-track-head); line-height: 1.15; }
+  h1 { font-weight: 700; font-size: 52px; }
+  h2 { font-weight: 600; font-size: 30px; margin-bottom: 6px; }
+  h3 { font-weight: 600; font-size: 19px; margin-bottom: 14px; }
+  .sub { color: var(--la-teal-muted); font-size: 15px; }
+
+  section { margin-top: 72px; padding-top: 40px; border-top: 1px solid var(--la-cream-sunk); }
+  section > .sub { margin-bottom: 30px; max-width: 68ch; }
+  .blk { margin-top: 36px; }
+  p { max-width: 68ch; margin-bottom: 12px; }
+  code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.88em; background: var(--la-cream-sunk); padding: 1px 5px; border-radius: 3px; }
+
+  /* swatches */
+  .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .sw { border-radius: 8px; overflow: hidden; background: #fff; border: 1px solid var(--la-cream-sunk); }
+  .sw .chip { height: 104px; display: flex; align-items: flex-end; padding: 10px 12px; }
+  .sw .chip span { font-family: var(--la-font-head); font-weight: 600; font-size: 13px; letter-spacing: 0.02em; }
+  .sw .meta { padding: 11px 12px 13px; }
+  .sw .hex { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 13px; font-weight: 500; }
+  .sw .role { font-size: 12.5px; color: var(--la-teal-muted); margin-top: 2px; line-height: 1.4; }
+
+  /* tables */
+  table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--la-cream-sunk); vertical-align: top; }
+  th { font-family: var(--la-font-head); font-weight: 600; font-size: 12.5px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--la-teal-muted); }
+  td.n { font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+  .pass { color: #1E6B3A; font-weight: 600; }
+  .fail { color: #9B2C1E; font-weight: 600; }
+
+  /* contrast demo cells */
+  .demo { display: inline-block; padding: 3px 10px; border-radius: 4px; font-weight: 500; font-size: 14px; }
+
+  /* logo boards */
+  .boards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .board { border-radius: 10px; overflow: hidden; border: 1px solid var(--la-cream-sunk); }
+  .board .stage { padding: 34px; display: flex; align-items: center; justify-content: center; min-height: 190px; }
+  .board .stage.light { background: var(--la-cream); }
+  .board .stage.dark  { background: var(--la-deep); }
+  .board .stage img { max-width: 100%; height: auto; display: block; }
+  .board .cap { padding: 10px 14px; font-size: 12.5px; color: var(--la-teal-muted); background: #fff; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+  .board .stage.mono img { width: 150px; }
+
+  /* clear space diagram */
+  .cs { position: relative; display: inline-block; padding: 8%; background:
+        repeating-linear-gradient(45deg, var(--la-cream-sunk) 0 5px, transparent 5px 10px); border-radius: 6px; }
+  .cs img { display: block; width: 420px; height: auto; outline: 1px dashed var(--la-teal-muted); }
+  .cs-note { font-size: 13px; color: var(--la-teal-muted); margin-top: 10px; }
+
+  /* min size */
+  .sizes { display: flex; align-items: flex-end; gap: 40px; flex-wrap: wrap; }
+  .size { text-align: center; }
+  .size img { display: block; }
+  .size .lab { font-size: 12px; color: var(--la-teal-muted); margin-top: 8px; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+
+  /* do / dont */
+  .dd { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .dd ul { list-style: none; }
+  .dd li { padding: 7px 0 7px 26px; position: relative; font-size: 14.5px; border-bottom: 1px solid var(--la-cream-sunk); }
+  .dd li::before { position: absolute; left: 0; top: 7px; font-weight: 700; }
+  .do li::before   { content: "✓"; color: #1E6B3A; }
+  .dont li::before { content: "✕"; color: #9B2C1E; }
+
+  /* type specimen */
+  .spec { border: 1px solid var(--la-cream-sunk); border-radius: 10px; padding: 28px 30px; background: #fff; }
+  .spec .h { font-family: var(--la-font-head); font-weight: 700; font-size: 40px; letter-spacing: -0.02em; }
+  .spec .h2s { font-family: var(--la-font-head); font-weight: 600; font-size: 24px; letter-spacing: -0.02em; margin-top: 14px; }
+  .spec .b { font-size: 16px; line-height: 1.5; margin-top: 14px; max-width: 62ch; }
+  .spec .s { font-size: 14px; line-height: 1.5; color: var(--la-teal-muted); margin-top: 10px; }
+  .spec .tag { font-size: 12px; font-family: ui-monospace, "SF Mono", Menlo, monospace; color: var(--la-teal-muted); margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--la-cream-sunk); }
+
+  .note { background: var(--la-cream-sunk); border-left: 3px solid var(--la-gold); padding: 14px 18px; border-radius: 0 6px 6px 0; font-size: 14.5px; max-width: 78ch; }
+  .note b { font-family: var(--la-font-head); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div style="display:flex; align-items:center; gap:22px; margin-bottom:26px;">
+      <img src="../leveraged-agent-logo-small.png" alt="" style="width:74px; height:74px;">
+      <div>
+        <h1>Brand Guide</h1>
+        <div class="sub" style="font-size:17px; margin-top:4px;">The Leveraged Agent &nbsp;·&nbsp; v1.0 &nbsp;·&nbsp; set 2026-08-19</div>
+      </div>
+    </div>
+    <p class="sub">The palette was recovered by sampling every pixel of the three existing brand assets and reconciling them, so the colors are grounded in the artwork. The clear-space rules, min-size rules, and the two derived tokens are decisions made on 2026-08-19, grounded in measurements and contrast math but overrulable.</p>
+    <p class="sub" style="margin-top:10px;">Machine-readable: <code>tokens.css</code>, <code>tokens.json</code>. Written spec: <code>BRAND-GUIDE.md</code>.</p>
+  </header>
+
+  <section>
+    <h2>01 &nbsp; Palette</h2>
+    <p class="sub">Eight tokens. Nothing outside this list is a brand color.</p>
+
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#F5F2EB; border-bottom:1px solid #EAE6DA;"><span style="color:#0F4C5C">cream</span></div><div class="meta"><div class="hex">#F5F2EB</div><div class="role">Primary surface</div></div></div>
+      <div class="sw"><div class="chip" style="background:#EAE6DA;"><span style="color:#0F4C5C">cream-sunk</span></div><div class="meta"><div class="hex">#EAE6DA</div><div class="role">Sunken fills, dividers</div></div></div>
+      <div class="sw"><div class="chip" style="background:#B5CAC4;"><span style="color:#0F4C5C">sage</span></div><div class="meta"><div class="hex">#B5CAC4</div><div class="role">Circuit traces, decorative only</div></div></div>
+      <div class="sw"><div class="chip" style="background:#3E6B75;"><span style="color:#F5F2EB">teal-muted</span></div><div class="meta"><div class="hex">#3E6B75</div><div class="role">Secondary text, captions</div></div></div>
+      <div class="sw"><div class="chip" style="background:#0F4C5C;"><span style="color:#F5F2EB">teal</span></div><div class="meta"><div class="hex">#0F4C5C</div><div class="role">Primary ink, headlines, body</div></div></div>
+      <div class="sw"><div class="chip" style="background:#08343E;"><span style="color:#F5F2EB">deep</span></div><div class="meta"><div class="hex">#08343E</div><div class="role">Dark surface</div></div></div>
+      <div class="sw"><div class="chip" style="background:#E8A33D;"><span style="color:#08343E">gold</span></div><div class="meta"><div class="hex">#E8A33D</div><div class="role">Accent, never text on cream</div></div></div>
+      <div class="sw"><div class="chip" style="background:#925E11;"><span style="color:#F5F2EB">gold-ink</span></div><div class="meta"><div class="hex">#925E11</div><div class="role">Readable gold text on cream</div></div></div>
+    </div>
+
+    <div class="blk">
+      <h3>How the three assets were reconciled</h3>
+      <p class="sub">The two logos genuinely disagreed. Per-family pixel dominance settled it: a flat vector fill shows up as a huge share of its own color family, AI raster noise does not.</p>
+      <table>
+        <tr><th></th><th>Wordmark</th><th>Monogram</th><th>Banner</th><th>Canonical</th><th>Why</th></tr>
+        <tr>
+          <td><b>Teal</b></td>
+          <td class="n">#064451 <span class="sub">3.2%</span></td>
+          <td class="n">#104A56 <span class="sub">23.6%</span></td>
+          <td class="n">#0F4C5C <span class="sub">26.9%</span></td>
+          <td class="n"><b>#0F4C5C</b></td>
+          <td>Banner and monogram agree and are both clean fills. The wordmark's teal is noisy raster with no dominant value</td>
+        </tr>
+        <tr>
+          <td><b>Gold</b></td>
+          <td class="n">#C88424 <span class="sub">0.3%</span></td>
+          <td class="n">#E8A232 <span class="sub">8.2%</span></td>
+          <td class="n">#E8A33D <span class="sub">91.9%</span></td>
+          <td class="n"><b>#E8A33D</b></td>
+          <td>The banner's gold is a true flat fill at 91.9% of its family, so it was deliberate. The wordmark's darker ochre is the outlier</td>
+        </tr>
+        <tr>
+          <td><b>Cream</b></td>
+          <td class="n">#F5F2EB <span class="sub">22.0%</span></td>
+          <td class="n">#F5F1E6</td>
+          <td class="n">#FAF6ED</td>
+          <td class="n"><b>#F5F2EB</b></td>
+          <td>The single most common color in the wordmark, and already what the IG carousel system uses</td>
+        </tr>
+        <tr>
+          <td><b>Sage</b></td>
+          <td class="n">#B5CAC4</td>
+          <td class="n">#9FAFA5</td>
+          <td class="n">#98A79E</td>
+          <td class="n"><b>#B5CAC4</b></td>
+          <td>From the wordmark, the primary lockup, where the circuit motif actually reads</td>
+        </tr>
+      </table>
+      <div class="note" style="margin-top:18px;"><b>Correction to the old doc.</b> It listed sage as <code>#C0CCCC</code> for both assets. Sampling does not support that. The real value is <code>#B5CAC4</code>.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>02 &nbsp; Contrast</h2>
+    <p class="sub">WCAG 2.1 ratios, measured. AA needs 4.5:1 for body text and 3:1 for large text and UI. The color rules are not taste, they fall straight out of these numbers.</p>
+
+    <div class="blk">
+      <h3>On cream <code>#F5F2EB</code></h3>
+      <table>
+        <tr><th>Color</th><th>Ratio</th><th>Sample</th><th>Verdict</th></tr>
+        <tr><td class="n">deep #08343E</td><td class="n">11.96</td><td><span class="demo" style="background:#F5F2EB; color:#08343E">The Leveraged Agent</span></td><td class="pass">AAA, anything</td></tr>
+        <tr><td class="n">teal #0F4C5C</td><td class="n">8.50</td><td><span class="demo" style="background:#F5F2EB; color:#0F4C5C">The Leveraged Agent</span></td><td class="pass">AAA. This is the default ink</td></tr>
+        <tr><td class="n">teal-muted #3E6B75</td><td class="n">5.27</td><td><span class="demo" style="background:#F5F2EB; color:#3E6B75">The Leveraged Agent</span></td><td class="pass">AA, captions and secondary copy</td></tr>
+        <tr><td class="n">gold-ink #925E11</td><td class="n">4.90</td><td><span class="demo" style="background:#F5F2EB; color:#925E11">The Leveraged Agent</span></td><td class="pass">AA, use when gold must be readable</td></tr>
+        <tr><td class="n">gold #E8A33D</td><td class="n">1.93</td><td><span class="demo" style="background:#F5F2EB; color:#E8A33D">The Leveraged Agent</span></td><td class="fail">Never text. Numerals, rules, fills, icons only</td></tr>
+        <tr><td class="n">sage #B5CAC4</td><td class="n">1.54</td><td><span class="demo" style="background:#F5F2EB; color:#B5CAC4">The Leveraged Agent</span></td><td class="fail">Never text. Decorative traces only</td></tr>
+      </table>
+    </div>
+
+    <div class="blk">
+      <h3>On deep <code>#08343E</code></h3>
+      <table>
+        <tr><th>Color</th><th>Ratio</th><th>Sample</th><th>Verdict</th></tr>
+        <tr><td class="n">cream #F5F2EB</td><td class="n">11.96</td><td><span class="demo" style="background:#08343E; color:#F5F2EB">The Leveraged Agent</span></td><td class="pass">AAA, the default ink on dark</td></tr>
+        <tr><td class="n">sage #B5CAC4</td><td class="n">7.77</td><td><span class="demo" style="background:#08343E; color:#B5CAC4">The Leveraged Agent</span></td><td class="pass">AAA. Sage becomes readable on dark</td></tr>
+        <tr><td class="n">gold #E8A33D</td><td class="n">6.20</td><td><span class="demo" style="background:#08343E; color:#E8A33D">The Leveraged Agent</span></td><td class="pass">AA body, AAA large</td></tr>
+        <tr><td class="n">teal #0F4C5C</td><td class="n">1.41</td><td><span class="demo" style="background:#08343E; color:#0F4C5C">The Leveraged Agent</span></td><td class="fail">Do not put teal on deep</td></tr>
+      </table>
+    </div>
+
+    <div class="note" style="margin-top:26px;"><b>The one rule to remember.</b> Gold is an accent on cream and a text color on dark. Never the reverse.</div>
+  </section>
+
+  <section>
+    <h2>03 &nbsp; Logos</h2>
+    <p class="sub">Five files, all at <code>Brandkit/</code> root. The two dark variants are new as of 2026-08-19 and are color-corrected to the canonical palette, which the light originals still are not.</p>
+
+    <div class="boards blk">
+      <div class="board">
+        <div class="stage light"><img src="../leveraged-agent-logo.png" alt="wordmark on cream"></div>
+        <div class="cap">leveraged-agent-logo.png &nbsp;·&nbsp; 1424 × 752</div>
+      </div>
+      <div class="board">
+        <div class="stage dark"><img src="../leveraged-agent-logo-dark.png" alt="wordmark on deep"></div>
+        <div class="cap">leveraged-agent-logo-dark.png &nbsp;·&nbsp; new</div>
+      </div>
+      <div class="board">
+        <div class="stage light mono"><img src="../leveraged-agent-logo-small.png" alt="monogram on cream"></div>
+        <div class="cap">leveraged-agent-logo-small.png &nbsp;·&nbsp; 1024 × 1024 square monogram, NOT a small logo</div>
+      </div>
+      <div class="board">
+        <div class="stage dark mono"><img src="../leveraged-agent-logo-small-dark.png" alt="monogram on deep"></div>
+        <div class="cap">leveraged-agent-logo-small-dark.png &nbsp;·&nbsp; new</div>
+      </div>
+    </div>
+
+    <div class="note blk"><b>Naming warning.</b> <code>leveraged-agent-logo-small.png</code> is not a small logo, it is the square monogram at full 1024 × 1024. The name is kept on purpose because roughly 44 copies are bundled under <code>hyperframes-student-kit/video-projects/*/assets/</code> and composition HTML calls them by these exact filenames. The dark files follow the same naming so they drop in the same way.</div>
+
+    <div class="blk">
+      <h3>Clear space</h3>
+      <p>Minimum clear space is <b>8% of the placed logo height, on all four sides.</b> Nothing may enter that band, including page edges. At a 400px placement that is 17px per side.</p>
+      <div class="cs"><img src="../leveraged-agent-logo.png" alt="clear space diagram"></div>
+      <div class="cs-note">Hatched band = the 8% exclusion zone. Dashed outline = the file's own edge. The file already carries about one cap height of internal padding, so total breathing room lands near 1.5 cap heights.</div>
+    </div>
+
+    <div class="blk">
+      <h3>Minimum size</h3>
+      <div class="sizes">
+        <div class="size"><img src="../leveraged-agent-logo.png" style="width:240px;" alt=""><div class="lab">wordmark floor &nbsp;·&nbsp; 240px wide</div></div>
+        <div class="size"><img src="../leveraged-agent-logo-small.png" style="width:32px;" alt=""><div class="lab">monogram floor &nbsp;·&nbsp; 32px</div></div>
+        <div class="size"><img src="../leveraged-agent-logo-small.png" style="width:16px;" alt=""><div class="lab">favicon exception &nbsp;·&nbsp; 16px</div></div>
+      </div>
+      <p style="margin-top:20px;">The wordmark floor is set by its tagline, not its name. "AI workflows for working agents" has a 53px cap height at native size, 3.7% of the file width, so it drops below a 9px legibility floor under 240px. <b>Below 240px, use the monogram instead.</b> The monogram floor is set by the "LA" itself, which occupies 35% of the canvas, so at 32px placed the letters land near 11px. Print floors: 1.25in / 32mm for the wordmark, 0.35in / 9mm for the monogram.</p>
+    </div>
+
+    <div class="blk dd">
+      <div class="do">
+        <h3>Do</h3>
+        <ul>
+          <li>Use the light file on light, the dark file on dark</li>
+          <li>Place the wordmark on a flat cream or deep field</li>
+          <li>Use the monogram for square and small slots only</li>
+          <li>Keep 8% clear space on all four sides</li>
+          <li>Copy assets into a project's own <code>assets/</code>, never symlink</li>
+        </ul>
+      </div>
+      <div class="dont">
+        <h3>Do not</h3>
+        <ul>
+          <li>Recolor either mark</li>
+          <li>Put the light file on a dark surface</li>
+          <li>Stretch, rotate, drop-shadow, or outline the mark</li>
+          <li>Put the wordmark on a photo</li>
+          <li>Use the monogram where the wordmark fits</li>
+          <li>Mix Rose Homes LV realtor branding into this, or the reverse</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>04 &nbsp; Typography</h2>
+    <p class="sub">Set by Ryan 2026-08-18. Poppins for headlines at 600 and 700 with -0.02em tracking, Inter for body at 400 and 500 with 1.5 line-height.</p>
+    <div class="spec blk">
+      <div class="h">Stop doing the busywork</div>
+      <div class="h2s">Poppins 600 subhead, tracking -0.02em</div>
+      <div class="b">Inter 400 body at 1.5 line-height. Most agents lose the first hour of every day to follow-up that a workflow could have handled before they woke up. The point of this community is not more tools, it is fewer decisions.</div>
+      <div class="s">Inter 400 at teal-muted, for captions and secondary copy.</div>
+      <div class="tag">headline Poppins 600 / 700 · tracking -0.02em &nbsp;&nbsp; body Inter 400 / 500 · line-height 1.5</div>
+    </div>
+    <div class="note blk"><b>Poppins is not installed on this Mac.</b> Anything rendered locally right now falls back to Futura. Install it before rendering brand work: <code>brew install --cask font-poppins</code>. This page loads Poppins from Google Fonts, so it renders correctly in a browser regardless. This typography does <b>not</b> apply to the YouTube thumbnail template, which Ryan locked to its own stack on 2026-07-16.</div>
+  </section>
+
+  <section>
+    <h2>05 &nbsp; Known drift and open gaps</h2>
+    <div class="blk">
+      <h3>Templates that predate this palette</h3>
+      <table>
+        <tr><th>Template</th><th>Uses</th><th>Canonical</th><th>Gap</th></tr>
+        <tr><td>Classroom-Covers/icons/</td><td class="n">#D9A441, #0B2E33, #F5F2EA</td><td class="n">#E8A33D, #08343E, #F5F2EB</td><td>Small. Navy and cream are close. The gold is duller than canonical</td></tr>
+        <tr><td>YouTube-Thumbnails/template.html</td><td class="n">#ffffff, #0a0a0a</td><td>not brand colors</td><td>Deliberate. Ryan approved this high-contrast look for CTR. Leave it</td></tr>
+      </table>
+      <p style="margin-top:14px;">Neither was changed. When the next classroom cover is built, move its icon gold to <code>#E8A33D</code> and navy to <code>#08343E</code>, then re-render <code>open-houses.png</code> to match. Not urgent.</p>
+    </div>
+    <div class="blk">
+      <h3>Still open</h3>
+      <ul style="list-style:none;">
+        <li style="padding:7px 0; border-bottom:1px solid var(--la-cream-sunk);"><b>No tagline-free wordmark lockup.</b> That is the standard asset for placements under 240px where the monogram is too abstract. Worth generating.</li>
+        <li style="padding:7px 0; border-bottom:1px solid var(--la-cream-sunk);"><b>The light originals are not color-corrected.</b> Only the dark variants are. Remapping the light files risks visible banding on the wordmark's noisy teal, so they were left alone deliberately.</li>
+        <li style="padding:7px 0; border-bottom:1px solid var(--la-cream-sunk);"><b>No vector source.</b> Every asset is a raster PNG, so none of it scales cleanly past native size or prints crisply at large format.</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

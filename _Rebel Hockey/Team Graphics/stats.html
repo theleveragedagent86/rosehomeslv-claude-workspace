@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rebels 8U — 2026 Season Stats</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --page:       #FFFFFF;
+    --ink-2:      #FBFCFD;
+    --surface:    #FFFFFF;
+    --surface-2:  #F2F5F9;
+    --line:       #E2E8F0;
+
+    --red:        #C4102A;
+    --red-hot:    #D91130;
+    --red-deep:   #7E0C1B;
+    --red-ember:  #B01426;
+
+    --ice:        #0A0D12;   /* primary text (near-black) */
+    --steel:      #6B7685;   /* muted labels */
+    --steel-2:    #47515F;   /* secondary text */
+    --chrome:     #1F2733;   /* table numbers */
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  html{ background:var(--page); -webkit-text-size-adjust:100%; }
+
+  body{
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    color:var(--ice);
+    min-height:100vh;
+    background:var(--page);
+  }
+
+  .wrap{
+    width:100%;
+    max-width:760px;
+    margin:0 auto;
+    padding:28px 16px 72px;
+    position:relative;
+    z-index:1;
+    background:var(--page);
+  }
+
+  /* black-to-grey fade used on all display headings */
+  .fade{
+    background:linear-gradient(180deg, #05070A 0%, #1E2631 54%, #6B7685 100%);
+    -webkit-background-clip:text;
+            background-clip:text;
+    color:transparent;
+  }
+
+  /* ─────────── HEADER ─────────── */
+  header{ text-align:center; margin-bottom:30px; }
+
+  /* roundel crest sits on white, so it only needs a soft lift shadow */
+  .crest{
+    width:104px; height:104px;
+    margin:0 auto 14px;
+    display:block;
+    filter:
+      drop-shadow(0 6px 14px rgba(10,13,18,.20))
+      drop-shadow(0 1px 3px rgba(10,13,18,.14));
+  }
+
+  h1{
+    font-family:'Anton', Impact, sans-serif;
+    font-size:clamp(38px, 10vw, 58px);
+    line-height:.92;
+    letter-spacing:-.02em;
+    text-transform:uppercase;
+    background:linear-gradient(180deg, #05070A 0%, #1E2631 54%, #6B7685 100%);
+    -webkit-background-clip:text;
+            background-clip:text;
+    color:transparent;
+  }
+
+  .sub{
+    margin-top:9px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:600;
+    font-size:clamp(13px, 3.4vw, 16px);
+    letter-spacing:.26em;
+    text-transform:uppercase;
+    color:var(--red-hot);
+  }
+
+  .sub .dot{ color:var(--steel); margin:0 8px; }
+  .sub .muted{ color:var(--steel-2); }
+
+  /* ─────────── SECTION HEADS ─────────── */
+  .sec-head{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:34px 0 12px;
+  }
+  .sec-head:first-of-type{ margin-top:0; }
+
+  .sec-head h2{
+    font-family:'Anton', Impact, sans-serif;
+    font-size:clamp(20px, 5vw, 26px);
+    letter-spacing:.01em;
+    text-transform:uppercase;
+    background:linear-gradient(180deg, #05070A 0%, #1E2631 54%, #6B7685 100%);
+    -webkit-background-clip:text;
+            background-clip:text;
+    color:transparent;
+    white-space:nowrap;
+  }
+
+  .sec-head .rule{
+    flex:1;
+    height:2px;
+    background:linear-gradient(90deg, var(--red) 0%, rgba(224,27,51,0) 100%);
+  }
+
+  /* ─────────── TEAM RECORD STRIP ─────────── */
+  .record{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:2px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:8px;
+  }
+
+  .record div{
+    background:var(--surface);
+    padding:14px 6px;
+    text-align:center;
+  }
+
+  .record .v{
+    font-family:'Anton', Impact, sans-serif;
+    font-size:clamp(24px, 6.5vw, 32px);
+    line-height:1;
+    background:linear-gradient(180deg, #05070A 0%, #1E2631 54%, #6B7685 100%);
+    -webkit-background-clip:text;
+            background-clip:text;
+    color:transparent;
+  }
+  .record .v.hot{
+    background:linear-gradient(180deg, var(--red-hot) 0%, var(--red-deep) 100%);
+    -webkit-background-clip:text;
+            background-clip:text;
+    color:transparent;
+  }
+
+  .record .k{
+    margin-top:5px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:600;
+    font-size:11px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--steel);
+    min-height:2.2em;
+  }
+
+  /* ─────────── TABLES ─────────── */
+  .card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:14px;
+  }
+
+  .card-lbl{
+    padding:11px 14px;
+    background:var(--surface-2);
+    border-bottom:1px solid var(--line);
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--steel-2);
+  }
+
+  .t-scroll{ overflow-x:auto; -webkit-overflow-scrolling:touch; }
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    font-variant-numeric:tabular-nums;
+  }
+
+  thead th{
+    padding:9px 8px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--steel);
+    text-align:center;
+    border-bottom:1px solid var(--line);
+    white-space:nowrap;
+  }
+
+  thead th.player{ text-align:left; padding-left:14px; }
+
+  tbody td{
+    padding:11px 8px;
+    font-size:14px;
+    text-align:center;
+    color:var(--chrome);
+    border-bottom:1px solid rgba(226,232,240,.9);
+    white-space:nowrap;
+  }
+
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody tr:nth-child(even) td{ background:#FAFBFD; }
+
+  td.player{
+    text-align:left;
+    padding-left:14px;
+    color:var(--ice);
+    font-weight:600;
+    width:99%;
+  }
+
+  .num{
+    display:inline-block;
+    min-width:26px;
+    margin-right:9px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:700;
+    font-size:13px;
+    color:var(--red-hot);
+  }
+
+  .pos{
+    margin-left:7px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:600;
+    font-size:11px;
+    letter-spacing:.1em;
+    color:var(--steel);
+  }
+
+  td.pts{ color:#05070A; font-weight:700; }
+  td.zero{ color:#9AA4B1; }
+
+  tfoot td{
+    padding:11px 8px;
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:700;
+    font-size:13px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    text-align:center;
+    color:var(--steel-2);
+    background:var(--surface-2);
+    border-top:1px solid var(--line);
+    white-space:nowrap;
+  }
+  tfoot td.player{ text-align:left; padding-left:14px; color:var(--steel-2); font-weight:700; }
+
+  /* ─────────── DATE DROPDOWN ─────────── */
+  details.day{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:12px;
+    overflow:hidden;
+  }
+
+  details.day + details.day{ margin-top:12px; }
+
+  details.day > summary{
+    list-style:none;
+    cursor:pointer;
+    padding:16px 16px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:var(--surface-2);
+    transition:background .18s ease;
+    -webkit-tap-highlight-color:transparent;
+  }
+  details.day > summary::-webkit-details-marker{ display:none; }
+  details.day > summary:hover{ background:#E8EDF4; }
+  details.day > summary:focus-visible{ outline:2px solid var(--red-hot); outline-offset:-2px; }
+  details.day > summary:active{ background:#DFE6EF; }
+
+  .chev{
+    width:11px; height:11px;
+    border-right:2px solid var(--red-hot);
+    border-bottom:2px solid var(--red-hot);
+    transform:rotate(45deg);
+    transition:transform .22s cubic-bezier(.34,1.56,.64,1);
+    flex:none;
+    margin-top:-4px;
+  }
+  details.day[open] > summary .chev{ transform:rotate(-135deg); margin-top:2px; }
+
+  .day-date{
+    font-family:'Anton', Impact, sans-serif;
+    font-size:clamp(16px, 4.4vw, 20px);
+    text-transform:uppercase;
+    letter-spacing:.01em;
+    background:linear-gradient(180deg, #05070A 0%, #1E2631 54%, #6B7685 100%);
+    -webkit-background-clip:text;
+            background-clip:text;
+    color:transparent;
+  }
+
+  .day-meta{
+    margin-left:auto;
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:600;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--steel);
+    text-align:right;
+  }
+
+  .day-body{ padding:14px; display:flex; flex-direction:column; gap:16px; }
+
+  /* ─────────── GAME BLOCK ─────────── */
+  .game{
+    border:1px solid var(--line);
+    border-radius:10px;
+    overflow:hidden;
+    background:var(--ink-2);
+  }
+
+  .game-head{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 14px;
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(90deg, rgba(196,16,42,.10) 0%, rgba(196,16,42,0) 70%);
+  }
+
+  .g-no{
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:700;
+    font-size:11px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--steel);
+  }
+
+  .g-opp{
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:700;
+    font-size:clamp(14px, 3.8vw, 16px);
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    color:var(--ice);
+  }
+
+  .g-score{
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    gap:9px;
+  }
+
+  .g-score .s{
+    font-family:'Anton', Impact, sans-serif;
+    font-size:clamp(17px, 4.6vw, 21px);
+    color:var(--ice);
+    font-variant-numeric:tabular-nums;
+  }
+
+  .badge{
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:700;
+    font-size:11px;
+    letter-spacing:.1em;
+    padding:3px 8px;
+    border-radius:4px;
+  }
+  .badge.w{ background:var(--red); color:#fff; }
+  .badge.t{ background:#DFE6EF; color:var(--steel-2); }
+  .badge.l{ background:#E9EDF3; color:var(--steel); }
+
+  .game .card-lbl{ background:#F6F8FB; }
+
+  .note{
+    padding:11px 14px;
+    font-size:12.5px;
+    line-height:1.55;
+    color:var(--steel-2);
+    background:rgba(196,16,42,.05);
+    border-top:1px solid var(--line);
+  }
+  .note b{ color:var(--red); font-weight:600; }
+
+  /* not-yet-played placeholder */
+  .tbd{
+    padding:26px 14px;
+    text-align:center;
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:600;
+    font-size:14px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--steel);
+  }
+
+  .legend{
+    margin-top:22px;
+    padding:14px 16px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:#F7F9FC;
+    font-size:12.5px;
+    line-height:1.75;
+    color:var(--steel-2);
+  }
+  .legend b{ color:#05070A; font-weight:600; }
+
+  footer{
+    margin-top:26px;
+    text-align:center;
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:600;
+    font-size:11.5px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:var(--steel);
+  }
+
+  @media (max-width:420px){
+    tbody td, thead th{ padding-left:5px; padding-right:5px; }
+    td.player, thead th.player, tfoot td.player{ padding-left:11px; }
+    .num{ min-width:22px; margin-right:6px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img class="crest" src="https://raw.githubusercontent.com/theleveragedagent86/rebels-8u-assets/main/crest.png" alt="Rebels crest">
+    <h1>Rebels 8U</h1>
+    <p class="sub">2026 Season Stats <span class="dot">•</span> <span class="muted">Mite League</span></p>
+  </header>
+
+  <!-- ══════════ SEASON TOTALS ══════════ -->
+  <div class="sec-head"><h2>Season Totals</h2><div class="rule"></div></div>
+
+  <div class="record">
+    <div><div class="v hot">13-0-2</div><div class="k">W-L-T</div></div>
+    <div><div class="v">89</div><div class="k">Goals For</div></div>
+    <div><div class="v">19</div><div class="k">Goals Against</div></div>
+    <div><div class="v">15</div><div class="k">Games</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-lbl">Skaters</div>
+    <div class="t-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th class="player">Player</th>
+            <th>GP</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="player"><span class="num">98</span>Kellan</td><td>15</td><td>43</td><td>9</td><td class="pts">52</td><td>108:00</td></tr>
+          <tr><td class="player"><span class="num">16</span>Kaeson</td><td>15</td><td>13</td><td>10</td><td class="pts">23</td><td>108:00</td></tr>
+          <tr><td class="player"><span class="num">86</span>Nicklas</td><td>15</td><td>14</td><td>8</td><td class="pts">22</td><td>108:00</td></tr>
+          <tr><td class="player"><span class="num">10</span>Gabriel</td><td>15</td><td>5</td><td>11</td><td class="pts">16</td><td>108:00</td></tr>
+          <tr><td class="player"><span class="num">13</span>Zuriana</td><td>12</td><td>6</td><td>7</td><td class="pts">13</td><td>84:00</td></tr>
+          <tr><td class="player"><span class="num">9</span>Beau</td><td>15</td><td>4</td><td>8</td><td class="pts">12</td><td>108:00</td></tr>
+          <tr><td class="player"><span class="num">99</span>Matteo</td><td>15</td><td>3</td><td>5</td><td class="pts">8</td><td>108:00</td></tr>
+          <tr><td class="player"><span class="num">30</span>Blake</td><td>15</td><td>1</td><td>6</td><td class="pts">7</td><td>108:00</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td class="player">Team</td><td>15</td><td>89</td><td>64</td><td>153</td><td>&mdash;</td></tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-lbl">Goaltending</div>
+    <div class="t-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th class="player">Player</th>
+            <th>GP</th><th>GA</th><th>GAA</th><th>GF</th><th>GFA</th><th>TOI</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td>12</td><td>16</td><td class="pts">1.33</td><td>74</td><td class="pts">6.17</td><td>168:00</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══════════ GAME BY GAME ══════════ -->
+  <div class="sec-head"><h2>Game by Game</h2><div class="rule"></div></div>
+
+  <details class="day">
+    <summary>
+      <span class="chev"></span>
+      <span class="day-date">Sun, Aug 16, 2026</span>
+      <span class="day-meta">3 Games <br>1-0-2</span>
+    </summary>
+
+    <div class="day-body">
+
+      <!-- ── GAME 1 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 1</span>
+          <span class="g-opp">vs Black</span>
+          <span class="g-score"><span class="s">9&ndash;0</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td>1</td><td>1</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td class="zero">0</td><td>2</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">13</span>Zuriana</td><td>1</td><td>1</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>5</td><td>1</td><td class="pts">6</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>9</td><td>6</td><td>15</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="card-lbl">Goaltending</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>GA</th><th>GF</th><th>TOI</th></tr></thead>
+            <tbody><tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td class="zero">0</td><td>9</td><td>14:00</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── GAME 2 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 2</span>
+          <span class="g-opp">vs White</span>
+          <span class="g-score"><span class="s">4&ndash;4</span><span class="badge t">T</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">13</span>Zuriana</td><td>1</td><td>1</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>2</td><td>1</td><td class="pts">3</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>4</td><td>5</td><td>9</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="card-lbl">Goaltending</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>GA</th><th>GF</th><th>TOI</th></tr></thead>
+            <tbody><tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td>4</td><td>4</td><td>14:00</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── GAME 3 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 3</span>
+          <span class="g-opp">vs Yellow</span>
+          <span class="g-score"><span class="s">7&ndash;7</span><span class="badge t">T</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">13</span>Zuriana</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>4</td><td>1</td><td class="pts">5</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>7</td><td>1</td><td>8</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="card-lbl">Goaltending</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>GA</th><th>GF</th><th>TOI</th></tr></thead>
+            <tbody><tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td>7</td><td>7</td><td>14:00</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </details>
+
+  <details class="day">
+    <summary>
+      <span class="chev"></span>
+      <span class="day-date">Sun, Aug 23, 2026</span>
+      <span class="day-meta">3 Games <br>3-0-0</span>
+    </summary>
+
+    <div class="day-body">
+
+      <!-- ── GAME 1 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 1</span>
+          <span class="g-opp">vs White</span>
+          <span class="g-score"><span class="s">5&ndash;0</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">13</span>Zuriana</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>2</td><td class="zero">0</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td>1</td><td>1</td><td class="pts">2</td><td>7:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>5</td><td>2</td><td>7</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── GAME 2 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 2</span>
+          <span class="g-opp">vs Black</span>
+          <span class="g-score"><span class="s">6&ndash;1</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td>2</td><td class="zero">0</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">13</span>Zuriana</td><td class="zero">0</td><td>2</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td class="zero">0</td><td>2</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td>2</td><td class="zero">0</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>2</td><td>1</td><td class="pts">3</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>6</td><td>7</td><td>13</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── GAME 3 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 3</span>
+          <span class="g-opp">vs Yellow</span>
+          <span class="g-score"><span class="s">4&ndash;2</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">13</span>Zuriana</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td>1</td><td>1</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>2</td><td class="zero">0</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>4</td><td>2</td><td>6</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </details>
+
+  <details class="day">
+    <summary>
+      <span class="chev"></span>
+      <span class="day-date">Sun, Aug 30, 2026</span>
+      <span class="day-meta">3 Games <br>3-0-0</span>
+    </summary>
+
+    <div class="day-body">
+
+      <!-- ── GAME 1 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 1</span>
+          <span class="g-opp">vs White</span>
+          <span class="g-score"><span class="s">6&ndash;0</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">13</span>Zuriana</td><td>1</td><td>1</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td>1</td><td>1</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>3</td><td class="zero">0</td><td class="pts">3</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>6</td><td>5</td><td>11</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="card-lbl">Goaltending</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>GA</th><th>GF</th><th>TOI</th></tr></thead>
+            <tbody><tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td class="zero">0</td><td>6</td><td>14:00</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── GAME 2 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 2</span>
+          <span class="g-opp">vs Yellow</span>
+          <span class="g-score"><span class="s">4&ndash;0</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">13</span>Zuriana</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td>1</td><td>1</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td>1</td><td>1</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>1</td><td>2</td><td class="pts">3</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>4</td><td>4</td><td>8</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="card-lbl">Goaltending</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>GA</th><th>GF</th><th>TOI</th></tr></thead>
+            <tbody><tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td class="zero">0</td><td>4</td><td>14:00</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── GAME 3 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 3</span>
+          <span class="g-opp">vs Black</span>
+          <span class="g-score"><span class="s">3&ndash;1</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">13</span>Zuriana</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td>1</td><td>1</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>2</td><td>1</td><td class="pts">3</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>3</td><td>3</td><td>6</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="card-lbl">Goaltending</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>GA</th><th>GF</th><th>TOI</th></tr></thead>
+            <tbody><tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td>1</td><td>3</td><td>14:00</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </details>
+
+  <details class="day">
+    <summary>
+      <span class="chev"></span>
+      <span class="day-date">Sun, Sep 13, 2026</span>
+      <span class="day-meta">3 Games <br>3-0-0</span>
+    </summary>
+
+    <div class="day-body">
+
+      <!-- ── GAME 1 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 1</span>
+          <span class="g-opp">vs White</span>
+          <span class="g-score"><span class="s">6&ndash;0</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td class="zero">0</td><td>2</td><td class="pts">2</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td>2</td><td class="zero">0</td><td class="pts">2</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>4</td><td class="zero">0</td><td class="pts">4</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>8:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>6</td><td>3</td><td>9</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="card-lbl">Goaltending</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>GA</th><th>GF</th><th>TOI</th></tr></thead>
+            <tbody><tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td class="zero">0</td><td>6</td><td>14:00</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── GAME 2 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 2</span>
+          <span class="g-opp">vs Black</span>
+          <span class="g-score"><span class="s">5&ndash;1</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td>1</td><td>1</td><td class="pts">2</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>3</td><td class="zero">0</td><td class="pts">3</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td class="zero">0</td><td>2</td><td class="pts">2</td><td>8:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>5</td><td>4</td><td>9</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="card-lbl">Goaltending</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>GA</th><th>GF</th><th>TOI</th></tr></thead>
+            <tbody><tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td>1</td><td>5</td><td>14:00</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── GAME 3 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 3</span>
+          <span class="g-opp">vs Yellow</span>
+          <span class="g-score"><span class="s">8&ndash;1</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td>2</td><td class="pts">2</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td>1</td><td>1</td><td class="pts">2</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td>2</td><td>1</td><td class="pts">3</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>5</td><td>1</td><td class="pts">6</td><td>8:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>8:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>8</td><td>6</td><td>14</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="card-lbl">Goaltending</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>GA</th><th>GF</th><th>TOI</th></tr></thead>
+            <tbody><tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td>1</td><td>8</td><td>14:00</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </details>
+
+  <details class="day">
+    <summary>
+      <span class="chev"></span>
+      <span class="day-date">Sun, Sep 20, 2026</span>
+      <span class="day-meta">3 Games <br>3-0-0</span>
+    </summary>
+
+    <div class="day-body">
+
+      <!-- ── GAME 1 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 1</span>
+          <span class="g-opp">vs White</span>
+          <span class="g-score"><span class="s">9&ndash;1</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td class="zero">0</td><td>2</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">13</span>Zuriana</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td>2</td><td class="zero">0</td><td class="pts">2</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td>2</td><td>2</td><td class="pts">4</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>4</td><td>1</td><td class="pts">5</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>9</td><td>5</td><td>14</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="card-lbl">Goaltending</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>GA</th><th>GF</th><th>TOI</th></tr></thead>
+            <tbody><tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td>1</td><td>9</td><td>14:00</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── GAME 2 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 2</span>
+          <span class="g-opp">vs Yellow</span>
+          <span class="g-score"><span class="s">7&ndash;0</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td>3</td><td>1</td><td class="pts">4</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td>1</td><td>3</td><td class="pts">4</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">13</span>Zuriana</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td>2</td><td>2</td><td class="pts">4</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>7</td><td>8</td><td>15</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="card-lbl">Goaltending</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>GA</th><th>GF</th><th>TOI</th></tr></thead>
+            <tbody><tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td class="zero">0</td><td>7</td><td>14:00</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── GAME 3 ── -->
+      <div class="game">
+        <div class="game-head">
+          <span class="g-no">Game 3</span>
+          <span class="g-opp">vs Black</span>
+          <span class="g-score"><span class="s">6&ndash;1</span><span class="badge w">W</span></span>
+        </div>
+        <div class="card-lbl">Skaters</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>G</th><th>A</th><th>PTS</th><th>TOI</th></tr></thead>
+            <tbody>
+              <tr><td class="player"><span class="num">9</span>Beau</td><td class="zero">0</td><td class="zero">0</td><td class="pts">0</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">10</span>Gabriel</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">13</span>Zuriana</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">16</span>Kaeson</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">30</span>Blake</td><td class="zero">0</td><td>1</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">86</span>Nicklas</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">98</span>Kellan</td><td>3</td><td class="zero">0</td><td class="pts">3</td><td>7:00</td></tr>
+              <tr><td class="player"><span class="num">99</span>Matteo</td><td>1</td><td class="zero">0</td><td class="pts">1</td><td>7:00</td></tr>
+            </tbody>
+            <tfoot><tr><td class="player">Team</td><td>6</td><td>3</td><td>9</td><td>&mdash;</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="card-lbl">Goaltending</div>
+        <div class="t-scroll">
+          <table>
+            <thead><tr><th class="player">Player</th><th>GA</th><th>GF</th><th>TOI</th></tr></thead>
+            <tbody><tr><td class="player"><span class="num">5</span>Ari<span class="pos">G</span></td><td>1</td><td>6</td><td>14:00</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </details>
+
+  <details class="day">
+    <summary>
+      <span class="chev"></span>
+      <span class="day-date">Sun, Sep 27, 2026</span>
+      <span class="day-meta">5:00 PM <br>Ghost Energy Rink B</span>
+    </summary>
+    <div class="tbd">Not yet played</div>
+  </details>
+
+  <details class="day">
+    <summary>
+      <span class="chev"></span>
+      <span class="day-date">Sun, Oct 4, 2026</span>
+      <span class="day-meta">3:40 PM <br>Ghost Energy Rink B</span>
+    </summary>
+    <div class="tbd">Not yet played</div>
+  </details>
+
+  <details class="day">
+    <summary>
+      <span class="chev"></span>
+      <span class="day-date">Fri, Oct 16, 2026</span>
+      <span class="day-meta">7:00 PM <br>America First Center Rink 2</span>
+    </summary>
+    <div class="tbd">Not yet played</div>
+  </details>
+
+  <details class="day">
+    <summary>
+      <span class="chev"></span>
+      <span class="day-date">Sun, Oct 25, 2026</span>
+      <span class="day-meta">6:00 PM <br>Ghost Energy Rink B</span>
+    </summary>
+    <div class="tbd">Not yet played</div>
+  </details>
+
+  <details class="day">
+    <summary>
+      <span class="chev"></span>
+      <span class="day-date">Fri, Nov 20, 2026</span>
+      <span class="day-meta">5:40 PM <br>Summerlin Hosp. Rink A</span>
+    </summary>
+    <div class="tbd">Not yet played</div>
+  </details>
+
+  <details class="day">
+    <summary>
+      <span class="chev"></span>
+      <span class="day-date">Sun, Dec 20, 2026</span>
+      <span class="day-meta">4:10 PM <br>Ghost Energy Rink B</span>
+    </summary>
+    <div class="tbd">Not yet played</div>
+  </details>
+
+  <div class="legend">
+    <b>GP</b> games played &nbsp;&middot;&nbsp; <b>G</b> goals &nbsp;&middot;&nbsp; <b>A</b> assists &nbsp;&middot;&nbsp; <b>PTS</b> points (G + A) &nbsp;&middot;&nbsp; <b>TOI</b> time on ice<br>
+    <b>GA</b> goals against &nbsp;&middot;&nbsp; <b>GAA</b> goals against average &nbsp;&middot;&nbsp; <b>GF</b> goals for &nbsp;&middot;&nbsp; <b>GFA</b> goals for average<br>
+    Time on ice is split evenly among the skaters who dress that day. Eight skaters is 7:00 per game, seven skaters is 8:00. The goalie plays the full 14:00 of every game he dresses for.<br>
+    Upcoming game times come from the league&rsquo;s First Half Season Schedule and are subject to change. The Oct 16 game is at <b>America First Center in Henderson</b>, not City National Arena.
+  </div>
+
+  <footer>Rebels 8U &nbsp;&middot;&nbsp; City National Arena</footer>
+
+</div>
+</body>
+</html>

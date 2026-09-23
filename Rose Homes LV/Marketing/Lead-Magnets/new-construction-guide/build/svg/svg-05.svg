@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 342" width="100%"
+     role="img" aria-labelledby="sv05t sv05d" font-family="Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif">
+<title id="sv05t">The year one property tax reset</title>
+<desc id="sv05d">A stepped bar chart across four fiscal years. Year one is a tall bar labeled no cap at all, taxed on the full assessed value of the completed home. Years two through four step up under a 3 percent annual ceiling for a primary residence. A dashed line above marks the up to 8 percent ceiling that applies to anything that is not your primary residence. A note explains that the cap only applies to property that had a separate assessed value the year before.</desc>
+<style>.sv-h{font:700 13px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;letter-spacing:.002em}
+.sv-k{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52;letter-spacing:.09em;text-transform:uppercase}
+.sv-l{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-b{font:400 9.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-s{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52}
+.sv-n{font:700 11px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;font-variant-numeric:tabular-nums}
+.sv-r{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-rs{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-nf{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#B8360F;letter-spacing:.06em}
+.sv-c{text-anchor:middle}
+.sv-e{text-anchor:end}</style>
+<defs>
+<marker id="sv-tri" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#2C3F6B"/></marker>
+<marker id="sv-tric" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#B8360F"/></marker>
+<marker id="sv-trim" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#5F5A52"/></marker>
+<pattern id="sv-hatch" width="6" height="6" patternTransform="rotate(45)"
+         patternUnits="userSpaceOnUse">
+  <rect width="6" height="6" fill="#EDE9E0"/>
+  <line x1="0" y1="0" x2="0" y2="6" stroke="#847B6D" stroke-width="1.6"/>
+</pattern>
+</defs>
+<rect width="700" height="342" fill="#F7F5F0"/>
+<text x="0" y="14" class="sv-k">Page 21</text><text x="0" y="31" class="sv-h">The year one reset, and the cap you get afterward</text>
+<line x1="12" y1="232" x2="694" y2="232" stroke="#847B6D" stroke-width="1.2"/>
+<rect x="28" y="175.68" width="104" height="56.32" rx="4" fill="#EDE9E0" stroke="#847B6D" stroke-width="1"/>
+<rect x="28" y="175.68" width="104" height="56.32" rx="4" fill="url(#sv-hatch)" opacity=".5"/>
+<text x="80.0" y="248" class="sv-l sv-c">Your old home</text>
+<text x="80.0" y="261" class="sv-s sv-c">under a 3% cap for years</text>
+<rect x="170" y="104.0" width="104" height="128.0" rx="4" fill="#242F4A"/>
+<text x="222.0" y="248" class="sv-l sv-c">Fiscal year 1</text>
+<text x="222.0" y="261" class="sv-s sv-c">no cap at all</text>
+<text x="222.0" y="95.0" class="sv-s sv-c">full assessed value of the completed home</text>
+<rect x="312" y="100.16" width="104" height="131.84" rx="4" fill="#2C3F6B"/>
+<text x="364.0" y="248" class="sv-l sv-c">Year 2</text>
+<text x="364.0" y="261" class="sv-s sv-c">+3% ceiling</text>
+<rect x="454" y="96.32" width="104" height="135.68" rx="4" fill="#2C3F6B"/>
+<text x="506.0" y="248" class="sv-l sv-c">Year 3</text>
+<text x="506.0" y="261" class="sv-s sv-c">+3% ceiling</text>
+<rect x="596" y="92.47999999999999" width="104" height="139.52" rx="4" fill="#2C3F6B"/>
+<text x="648.0" y="248" class="sv-l sv-c">Year 4</text>
+<text x="648.0" y="261" class="sv-s sv-c">+3% ceiling</text>
+<path d="M138 175.68 L164 106.56" fill="none" stroke="#B8360F" stroke-width="1.6" marker-end="url(#sv-tric)"/>
+<text x="151.0" y="195.68" class="sv-s sv-c">the reset</text>
+<line x1="12" y1="78.4" x2="694" y2="78.4" stroke="#141A27" stroke-width="1.4" stroke-dasharray="6 4"/>
+<text x="694" y="72.4" class="sv-s sv-e">up to 8% a year, anything that is not your primary residence</text>
+<rect x="0" y="276" width="700" height="58" rx="6" fill="#E4E9F2"/><text x="12" y="295" class="sv-b"><tspan x="12" dy="0">The cap only applies to property that had a separate assessed value the year before, and it excludes value added by new improvements. A</tspan><tspan x="12" dy="12">house that did not exist last year has nothing to cap against. Only one property per person statewide can carry the 3 percent cap, and</tspan><tspan x="12" dy="12">recording any ownership document knocks it off until you claim it back.</tspan></text>
+</svg>

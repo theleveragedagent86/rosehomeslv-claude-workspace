@@ -1,0 +1,623 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+.rhlv-nc{
+  --rh-navy:#1C2333;
+  --rh-gold:#C9A86E;
+  --rh-white:#FFFFFF;
+  --rh-warm:#F7F5F0;
+  --rh-slate:#8A8FA8;
+  --rh-hair-navy:rgba(28,35,51,.18);
+  --rh-hair-gold:rgba(201,168,110,.35);
+  --rh-shadow-print:0 1px 2px rgba(28,35,51,.06);
+  --rh-shadow-screen:0 8px 24px -12px rgba(28,35,51,.18);
+  --rh-shadow-plate:0 30px 60px -30px rgba(28,35,51,.55);
+  --rh-ease:cubic-bezier(0.25,0.1,0.25,1);
+  --rh-display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --rh-label:"Montserrat","Arimo",system-ui,sans-serif;
+  --rh-body:"Inter","Arimo",system-ui,sans-serif;
+  font-family:var(--rh-body);
+  color:var(--rh-navy);
+  background:var(--rh-white);
+  font-size:17px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+.rhlv-nc *,.rhlv-nc *::before,.rhlv-nc *::after{box-sizing:border-box}
+.rhlv-nc img{max-width:100%;height:auto;display:block}
+.rhlv-nc h1,.rhlv-nc h2,.rhlv-nc h3{
+  font-family:var(--rh-display);font-weight:700;color:var(--rh-navy);
+  letter-spacing:-.03em;line-height:1.12;margin:0;
+}
+.rhlv-nc p{margin:0}
+.rhlv-nc ul{margin:0;padding:0;list-style:none}
+
+.rhlv-nc__wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.rhlv-nc__narrow{max-width:840px}
+.rhlv-nc__sec{padding:96px 0}
+.rhlv-nc__warm{background:var(--rh-warm)}
+.rhlv-nc__dark{background:var(--rh-navy);color:rgba(255,255,255,.82)}
+.rhlv-nc__dark h2,.rhlv-nc__dark h3{color:var(--rh-white)}
+.rhlv-nc__dark strong{color:var(--rh-white)}
+
+.rhlv-nc__rule{width:64px;height:1px;background:var(--rh-gold);margin:0 0 24px}
+.rhlv-nc__eyebrow{
+  font-family:var(--rh-label);font-weight:600;font-size:12px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--rh-gold);
+  margin:0 0 16px;line-height:1.4;
+}
+.rhlv-nc__h2{font-size:clamp(32px,4.6vw,52px)}
+.rhlv-nc__lede{font-size:clamp(17px,1.7vw,19px);margin-top:24px;max-width:60em}
+.rhlv-nc__stack p+p{margin-top:22px}
+
+/* buttons */
+.rhlv-nc__btn{
+  display:inline-flex;align-items:center;justify-content:center;text-align:center;
+  font-family:var(--rh-label);font-weight:600;font-size:13px;letter-spacing:.14em;
+  text-transform:uppercase;text-decoration:none;padding:16px 30px;border-radius:4px;
+  border:1px solid var(--rh-navy);background:transparent;color:var(--rh-navy);cursor:pointer;
+  transition:opacity 240ms var(--rh-ease);
+}
+.rhlv-nc__btn--solid{background:var(--rh-navy);color:var(--rh-white)}
+.rhlv-nc__btn:hover{opacity:.8}
+.rhlv-nc__btn:active{opacity:.66}
+.rhlv-nc__btn--onDark{border-color:var(--rh-gold);color:var(--rh-white)}
+.rhlv-nc__btn--onDarkSolid{background:var(--rh-gold);border-color:var(--rh-gold);color:var(--rh-navy)}
+.rhlv-nc__btn:focus-visible,.rhlv-nc__card--link:focus-visible,.rhlv-nc__faq summary:focus-visible,.rhlv-nc__contact a:focus-visible{
+  outline:2px solid var(--rh-gold);outline-offset:4px;
+}
+.rhlv-nc__btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+
+/* hero */
+.rhlv-nc__hero{background:var(--rh-navy);color:rgba(255,255,255,.82);border-top:1px solid var(--rh-gold);padding:88px 0 0}
+.rhlv-nc__heroGrid{display:grid;grid-template-columns:1fr;gap:48px;align-items:end}
+.rhlv-nc__hero h1{color:var(--rh-white);font-size:clamp(40px,6.4vw,76px);margin-bottom:28px}
+.rhlv-nc__hero p{font-size:clamp(17px,1.8vw,20px);max-width:34em}
+.rhlv-nc__hero .rhlv-nc__btns{margin-bottom:52px}
+.rhlv-nc__trust{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:14px;
+  color:var(--rh-slate);border-top:1px solid var(--rh-hair-gold);padding:20px 0 64px;
+}
+.rhlv-nc__stars{color:var(--rh-gold);letter-spacing:.14em}
+.rhlv-nc__heroArt{box-shadow:var(--rh-shadow-plate);align-self:end}
+.rhlv-nc__heroArt img{width:100%}
+
+/* numbered points */
+.rhlv-nc__points{display:grid;grid-template-columns:1fr;gap:0;margin-top:56px;counter-reset:ncpt;
+  border-top:1px solid var(--rh-hair-navy)}
+.rhlv-nc__point{
+  padding:32px 0;border-bottom:1px solid var(--rh-hair-navy);
+  display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start;
+}
+.rhlv-nc__point::before{
+  counter-increment:ncpt;content:counter(ncpt,decimal-leading-zero);
+  font-family:var(--rh-display);font-size:34px;line-height:1.1;color:var(--rh-gold);letter-spacing:-.02em;
+}
+.rhlv-nc__point h3{font-size:22px;margin-bottom:10px}
+.rhlv-nc__point p{font-size:16px;max-width:52em}
+
+/* dark band */
+.rhlv-nc__band{padding:104px 0}
+.rhlv-nc__band h2{font-size:clamp(32px,4.8vw,54px)}
+.rhlv-nc__band p{font-size:clamp(17px,1.8vw,20px);margin-top:24px;max-width:44em}
+.rhlv-nc__band p+p{margin-top:22px}
+
+/* compare */
+.rhlv-nc__compare{display:grid;grid-template-columns:1fr;gap:0;margin-top:56px;border-top:1px solid var(--rh-gold)}
+.rhlv-nc__col{padding:36px 0}
+.rhlv-nc__col h3{
+  font-family:var(--rh-label);font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--rh-navy);padding-bottom:20px;border-bottom:1px solid var(--rh-hair-navy);margin-bottom:8px;
+}
+.rhlv-nc__col li{
+  font-size:16px;padding:16px 0 16px 26px;position:relative;border-bottom:1px solid var(--rh-hair-navy);
+}
+.rhlv-nc__col li:last-child{border-bottom:0}
+.rhlv-nc__col li::before{
+  content:"";position:absolute;left:0;top:27px;width:10px;height:1px;background:var(--rh-gold);
+}
+.rhlv-nc__close{
+  margin-top:44px;font-family:var(--rh-display);font-size:clamp(19px,2.1vw,24px);line-height:1.5;
+  letter-spacing:-.02em;color:var(--rh-navy);max-width:44em;
+}
+.rhlv-nc__close--onWarm{border-left:1px solid var(--rh-gold);padding-left:24px}
+
+/* communities */
+.rhlv-nc__grid{display:grid;grid-template-columns:1fr;gap:28px;margin-top:56px}
+.rhlv-nc__card{
+  position:relative;display:block;text-decoration:none;color:inherit;background:var(--rh-white);
+  border:1px solid var(--rh-hair-navy);border-radius:8px;overflow:hidden;
+  box-shadow:var(--rh-shadow-print);
+}
+.rhlv-nc__cardImg{overflow:hidden;background:var(--rh-warm)}
+.rhlv-nc__cardImg img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform 240ms var(--rh-ease)}
+.rhlv-nc__card--link{box-shadow:var(--rh-shadow-screen)}
+.rhlv-nc__card--link:hover .rhlv-nc__cardImg img{transform:scale(1.02)}
+.rhlv-nc__card--link:active{opacity:.94}
+.rhlv-nc__card--soon{background:var(--rh-warm);box-shadow:none}
+.rhlv-nc__card--soon .rhlv-nc__cardImg img{opacity:.5}
+.rhlv-nc__cardBody{padding:28px 26px 30px}
+.rhlv-nc__card h3{font-size:24px;margin-bottom:8px}
+.rhlv-nc__card p{font-size:15px;color:var(--rh-slate)}
+.rhlv-nc__tag{
+  display:inline-block;margin-top:20px;font-family:var(--rh-label);font-size:11px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;
+}
+.rhlv-nc__tag--go{color:var(--rh-gold)}
+.rhlv-nc__tag--soon{color:var(--rh-slate)}
+/* gold corner brackets, live pages only */
+.rhlv-nc__card--link::before,.rhlv-nc__card--link::after{
+  content:"";position:absolute;width:18px;height:18px;pointer-events:none;z-index:1;
+}
+.rhlv-nc__card--link::before{top:10px;left:10px;border-top:1px solid var(--rh-gold);border-left:1px solid var(--rh-gold)}
+.rhlv-nc__card--link::after{bottom:10px;right:10px;border-bottom:1px solid var(--rh-gold);border-right:1px solid var(--rh-gold)}
+
+/* split */
+.rhlv-nc__split{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+.rhlv-nc__splitArt{box-shadow:var(--rh-shadow-plate)}
+
+/* review */
+.rhlv-nc__quote{max-width:920px;margin:0 auto;text-align:center;padding:0 8px}
+.rhlv-nc__quote blockquote{
+  margin:0;font-family:var(--rh-display);font-style:italic;font-weight:400;
+  font-size:clamp(21px,2.8vw,32px);line-height:1.45;letter-spacing:-.02em;color:var(--rh-navy);
+}
+.rhlv-nc__quote cite{
+  display:block;margin-top:28px;font-style:normal;font-family:var(--rh-label);font-size:11px;
+  font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--rh-slate);
+}
+.rhlv-nc__quoteRule{width:64px;height:1px;background:var(--rh-gold);margin:0 auto 32px}
+
+/* faq */
+.rhlv-nc__faq{margin-top:48px;max-width:920px;border-top:1px solid var(--rh-hair-navy)}
+.rhlv-nc__faq details{border-bottom:1px solid var(--rh-hair-navy)}
+.rhlv-nc__faq summary{
+  list-style:none;cursor:pointer;padding:26px 56px 26px 0;position:relative;
+  font-family:var(--rh-display);font-size:20px;font-weight:700;letter-spacing:-.02em;
+  line-height:1.4;color:var(--rh-navy);transition:opacity 240ms var(--rh-ease);
+}
+.rhlv-nc__faq summary::-webkit-details-marker{display:none}
+.rhlv-nc__faq summary:hover{opacity:.72}
+.rhlv-nc__faq summary::after{
+  content:"";position:absolute;right:14px;top:34px;width:12px;height:1px;background:var(--rh-gold);
+}
+.rhlv-nc__faq summary::before{
+  content:"";position:absolute;right:19px;top:29px;width:1px;height:11px;background:var(--rh-gold);
+  transition:opacity 240ms var(--rh-ease);
+}
+.rhlv-nc__faq details[open] summary::before{opacity:0}
+.rhlv-nc__faq .rhlv-nc__answer{padding:0 56px 30px 0;font-size:16px;max-width:56em}
+
+/* closing */
+.rhlv-nc__end{padding:104px 0}
+.rhlv-nc__end h2{font-size:clamp(32px,4.8vw,54px)}
+.rhlv-nc__end p{font-size:clamp(17px,1.7vw,19px);margin-top:24px;max-width:44em}
+.rhlv-nc__contact{
+  margin-top:64px;padding-top:28px;border-top:1px solid var(--rh-hair-gold);
+  font-size:15px;color:var(--rh-slate);line-height:1.9;
+}
+.rhlv-nc__contact a{display:inline-block;padding:11px 0;color:var(--rh-gold);text-decoration:none;border-bottom:1px solid transparent;transition:opacity 240ms var(--rh-ease)}
+.rhlv-nc__contact a:hover{border-bottom-color:var(--rh-gold)}
+
+@media (min-width:720px){
+  .rhlv-nc__points{grid-template-columns:1fr 1fr;column-gap:56px}
+  .rhlv-nc__compare{grid-template-columns:1fr 1fr;column-gap:56px}
+  .rhlv-nc__grid{grid-template-columns:1fr 1fr}
+  .rhlv-nc__col+.rhlv-nc__col{border-left:0}
+}
+@media (min-width:1000px){
+  .rhlv-nc__heroGrid{grid-template-columns:1.05fr .95fr;gap:64px}
+  .rhlv-nc__grid{grid-template-columns:repeat(3,1fr)}
+  .rhlv-nc__split{grid-template-columns:1.05fr .95fr;gap:72px}
+  .rhlv-nc__sec{padding:128px 0}
+  .rhlv-nc__compare{position:relative}
+  .rhlv-nc__compare::after{
+    content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:var(--rh-hair-navy);
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .rhlv-nc *{transition:none !important;animation:none !important}
+  .rhlv-nc__card--link:hover .rhlv-nc__cardImg img{transform:none}
+}
+</style>
+
+<div class="rhlv-nc">
+
+  <section class="rhlv-nc__hero">
+    <div class="rhlv-nc__wrap">
+      <div class="rhlv-nc__heroGrid">
+        <div>
+          <p class="rhlv-nc__eyebrow">New Construction</p>
+          <h1>New Construction Homes in Las Vegas</h1>
+          <p>The agent in the model home works for the builder. I work for you. If you are thinking about a new build anywhere in the Las Vegas valley, let's talk before you tour your first community, because that first visit decides whether you get to have representation at all.</p>
+          <div class="rhlv-nc__btns">
+            <a class="rhlv-nc__btn rhlv-nc__btn--onDarkSolid" href="tel:+17027475921">Call or Text 702-747-5921</a>
+            <a class="rhlv-nc__btn rhlv-nc__btn--onDark" href="#rhlv-nc-communities">See Where They're Building</a>
+          </div>
+          <p class="rhlv-nc__trust">
+            <span class="rhlv-nc__stars">★★★★★</span>
+            <span>5.0 from 5 Google reviews · Ryan Rose, Realtor with Real Broker, LLC</span>
+          </p>
+        </div>
+        <div class="rhlv-nc__heroArt">
+          <img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/hero-new-construction.jpg" alt="New construction home under way in a Las Vegas community" width="1600" height="1194" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rhlv-nc__sec">
+    <div class="rhlv-nc__wrap">
+      <div class="rhlv-nc__narrow">
+        <div class="rhlv-nc__rule"></div>
+        <p class="rhlv-nc__eyebrow">Representation</p>
+        <h2 class="rhlv-nc__h2">Why you want your own agent on a new build</h2>
+        <p class="rhlv-nc__lede">This is the part most buyers get wrong. The friendly person at the sales desk is paid by the builder and represents the builder in your contract. That is not a criticism of them, it is their job. It just means nobody in that room is looking out for you unless you bring them.</p>
+      </div>
+      <div class="rhlv-nc__points">
+        <div class="rhlv-nc__point">
+          <div>
+            <h3>The contract is the builder's</h3>
+            <p>Builder purchase agreements are written by the builder's attorneys and are very different from a standard resale contract. I read them with you and flag what actually matters.</p>
+          </div>
+        </div>
+        <div class="rhlv-nc__point">
+          <div>
+            <h3>Upgrades are where budgets die</h3>
+            <p>The design center is designed to be exciting. Some upgrades hold value at resale and some do not. I will tell you which is which before you sign, not after.</p>
+          </div>
+        </div>
+        <div class="rhlv-nc__point">
+          <div>
+            <h3>Incentives move, base prices don't</h3>
+            <p>Builders protect the base price because it sets the comps for the whole community. The real negotiation happens in incentives, and knowing that changes how you ask.</p>
+          </div>
+        </div>
+        <div class="rhlv-nc__point">
+          <div>
+            <h3>Someone has to watch the build</h3>
+            <p>Walkthroughs, punch lists, delays, and the final inspection all need a second set of eyes. I stay on it so you are not chasing the superintendent yourself.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rhlv-nc__dark rhlv-nc__band">
+    <div class="rhlv-nc__wrap">
+      <div class="rhlv-nc__narrow">
+        <div class="rhlv-nc__rule"></div>
+        <p class="rhlv-nc__eyebrow">Before you tour</p>
+        <h2>Read this before you visit a model home</h2>
+        <p>Most Las Vegas builders require your agent to register you or walk in with you on your <strong>first</strong> visit to that community. If you tour alone and sign the visitor sheet, many builders will not let you add an agent to that community afterward. It is the single most common and most avoidable mistake in new construction.</p>
+        <p>Two minutes of planning protects you. Send me the communities you want to see and I will register you correctly, confirm each builder's rules, and either meet you there or make sure you are covered before you walk in. Already toured somewhere? Tell me which ones and I will check where you still stand.</p>
+        <div class="rhlv-nc__btns">
+          <a class="rhlv-nc__btn rhlv-nc__btn--onDarkSolid" href="tel:+17027475921">Get Registered Before You Tour</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rhlv-nc__sec">
+    <div class="rhlv-nc__wrap">
+      <div class="rhlv-nc__narrow">
+        <div class="rhlv-nc__rule"></div>
+        <p class="rhlv-nc__eyebrow">The trade-off</p>
+        <h2 class="rhlv-nc__h2">New build or resale?</h2>
+        <p class="rhlv-nc__lede">There is no universally right answer. It comes down to your timeline, your budget, and how much you want the home to be exactly yours. Here is the honest trade-off.</p>
+      </div>
+      <div class="rhlv-nc__compare">
+        <div class="rhlv-nc__col">
+          <h3>New construction</h3>
+          <ul>
+            <li>Nobody has lived in it, and everything is under builder warranty</li>
+            <li>You choose the floor plan, lot, finishes, and layout</li>
+            <li>Built to current energy and building standards</li>
+            <li>Builder incentives can offset rate and closing costs</li>
+            <li>You may wait months, and quick move-in homes are limited</li>
+            <li>Landscaping, window coverings, and upgrades are usually extra</li>
+            <li>The neighborhood is still filling in around you</li>
+          </ul>
+        </div>
+        <div class="rhlv-nc__col">
+          <h3>Resale</h3>
+          <ul>
+            <li>Move in on a normal escrow timeline instead of a build schedule</li>
+            <li>Yard, window coverings, and upgrades are often already done</li>
+            <li>You can see the actual neighborhood, traffic, and neighbors</li>
+            <li>More room to negotiate on price and on repairs</li>
+            <li>Older systems and roof, with no builder warranty</li>
+            <li>You inherit someone else's finish choices</li>
+            <li>You compete with other buyers on the good ones</li>
+          </ul>
+        </div>
+      </div>
+      <p class="rhlv-nc__close rhlv-nc__close--onWarm">Plenty of my buyers start out certain about one and end up choosing the other once they see both in person. I am happy to show you a couple of each so you are deciding from real information instead of a guess.</p>
+    </div>
+  </section>
+
+  <section class="rhlv-nc__sec rhlv-nc__warm" id="rhlv-nc-communities">
+    <div class="rhlv-nc__wrap">
+      <div class="rhlv-nc__narrow">
+        <div class="rhlv-nc__rule"></div>
+        <p class="rhlv-nc__eyebrow">Communities</p>
+        <h2 class="rhlv-nc__h2">Where they're building in the valley</h2>
+        <p class="rhlv-nc__lede">New home construction is spread across the valley, and each area has a different feel, commute, and price range. These are the areas with active new home building right now.</p>
+      </div>
+
+      <!--
+        HOW TO TURN A COMMUNITY CARD INTO A LINK LATER:
+        A non-clickable card looks like this:
+            <div class="rhlv-nc__card rhlv-nc__card--soon"> ... <span class="rhlv-nc__tag rhlv-nc__tag--soon">Page coming soon</span> ... </div>
+        To make it clickable, change three things:
+            1. <div ...>  becomes  <a href="/your-page-url" ...>  and the closing </div> becomes </a>
+            2. class "rhlv-nc__card--soon"  becomes  "rhlv-nc__card--link"   (this also adds the gold corner brackets)
+            3. the tag span class "rhlv-nc__tag--soon" becomes "rhlv-nc__tag--go" and its text becomes  View community
+        Compare with the Summerlin card below, which is already in link form.
+      -->
+
+      <div class="rhlv-nc__grid">
+        <a class="rhlv-nc__card rhlv-nc__card--link" href="/summerlin">
+          <div class="rhlv-nc__cardImg"><img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-summerlin.jpg" alt="Summerlin new home community in the west Las Vegas valley" width="900" height="672" loading="lazy"></div>
+          <div class="rhlv-nc__cardBody">
+            <h3>Summerlin</h3>
+            <p>Master planned, west valley, Red Rock views</p>
+            <span class="rhlv-nc__tag rhlv-nc__tag--go">View community</span>
+          </div>
+        </a>
+
+        <a class="rhlv-nc__card rhlv-nc__card--link" href="/henderson">
+          <div class="rhlv-nc__cardImg"><img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-henderson.jpg" alt="Henderson new home construction in the southeast valley" width="900" height="672" loading="lazy"></div>
+          <div class="rhlv-nc__cardBody">
+            <h3>Henderson</h3>
+            <p>Cadence, Inspirada, and the southeast valley</p>
+            <span class="rhlv-nc__tag rhlv-nc__tag--go">View community</span>
+          </div>
+        </a>
+
+        <div class="rhlv-nc__card rhlv-nc__card--soon">
+          <div class="rhlv-nc__cardImg"><img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-skye-canyon.jpg" alt="Skye Canyon new home community in northwest Las Vegas" width="900" height="672" loading="lazy"></div>
+          <div class="rhlv-nc__cardBody">
+            <h3>Skye Canyon</h3>
+            <p>Northwest, newer, trail and park focused</p>
+            <span class="rhlv-nc__tag rhlv-nc__tag--soon">Page coming soon</span>
+          </div>
+        </div>
+
+        <div class="rhlv-nc__card rhlv-nc__card--soon">
+          <div class="rhlv-nc__cardImg"><img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-centennial-hills.jpg" alt="Centennial Hills new home construction in northwest Las Vegas" width="900" height="672" loading="lazy"></div>
+          <div class="rhlv-nc__cardBody">
+            <h3>Centennial Hills</h3>
+            <p>Northwest, established with new pockets</p>
+            <span class="rhlv-nc__tag rhlv-nc__tag--soon">Page coming soon</span>
+          </div>
+        </div>
+
+        <div class="rhlv-nc__card rhlv-nc__card--soon">
+          <div class="rhlv-nc__cardImg"><img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-mountains-edge.jpg" alt="Mountain's Edge new home community in southwest Las Vegas" width="900" height="672" loading="lazy"></div>
+          <div class="rhlv-nc__cardBody">
+            <h3>Mountain's Edge</h3>
+            <p>Southwest, mountain views, family heavy</p>
+            <span class="rhlv-nc__tag rhlv-nc__tag--soon">Page coming soon</span>
+          </div>
+        </div>
+
+        <div class="rhlv-nc__card rhlv-nc__card--soon">
+          <div class="rhlv-nc__cardImg"><img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-north-las-vegas.jpg" alt="North Las Vegas new home construction" width="900" height="672" loading="lazy"></div>
+          <div class="rhlv-nc__cardBody">
+            <h3>North Las Vegas</h3>
+            <p>Some of the most attainable new pricing</p>
+            <span class="rhlv-nc__tag rhlv-nc__tag--soon">Page coming soon</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="rhlv-nc__close rhlv-nc__close--onWarm">Not sure which area fits your commute and budget? Tell me where you work and what you want to spend, and I will narrow it to two or three communities worth your Saturday.</p>
+    </div>
+  </section>
+
+  <section class="rhlv-nc__sec">
+    <div class="rhlv-nc__wrap">
+      <div class="rhlv-nc__split">
+        <div class="rhlv-nc__stack">
+          <div class="rhlv-nc__rule"></div>
+          <p class="rhlv-nc__eyebrow">Incentives</p>
+          <h2 class="rhlv-nc__h2">About builder incentives</h2>
+          <p class="rhlv-nc__lede">Incentives are how builders compete without cutting the base price. In Las Vegas they usually show up as an interest rate buydown through the builder's own lender, a closing cost credit, or design center dollars toward upgrades.</p>
+          <p>The important thing to understand is that they change constantly. What a community offers this month may be gone next month, and a builder carrying finished inventory will be far more generous than one selling from a waitlist. Anything you read online about current incentives is probably already out of date.</p>
+          <p>I track what is actually being offered right now, community by community. Ask me before you assume a deal is or is not available.</p>
+          <div class="rhlv-nc__btns">
+            <a class="rhlv-nc__btn rhlv-nc__btn--solid" href="tel:+17027475921">Ask About Current Incentives</a>
+          </div>
+        </div>
+        <div class="rhlv-nc__splitArt">
+          <img src="https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/builder-incentives-design-center.jpg" alt="Design center selections and finish samples for a new build" width="1200" height="1607" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rhlv-nc__sec rhlv-nc__warm">
+    <div class="rhlv-nc__wrap">
+      <div class="rhlv-nc__quote">
+        <div class="rhlv-nc__quoteRule"></div>
+        <blockquote>"Ryan was critical in negotiating on our behalf and keeping us up to date, and I was confident that I didn't need to check in constantly to make sure things were getting done when they needed to be."</blockquote>
+        <cite>Kevin Rich, Google review</cite>
+      </div>
+    </div>
+  </section>
+
+  <section class="rhlv-nc__sec">
+    <div class="rhlv-nc__wrap">
+      <div class="rhlv-nc__narrow">
+        <div class="rhlv-nc__rule"></div>
+        <p class="rhlv-nc__eyebrow">FAQ</p>
+        <h2 class="rhlv-nc__h2">New construction questions, answered</h2>
+      </div>
+      <div class="rhlv-nc__faq">
+        <details open>
+          <summary>Do I need my own agent to buy new construction in Las Vegas?</summary>
+          <p class="rhlv-nc__answer">You are not required to have one, but the agent sitting in the model home works for the builder. They are paid by the builder and represent the builder's interests in the contract. A buyer's agent represents you. Most new home communities in Las Vegas have budgeted for a buyer's agent, and I will confirm the exact terms with you in writing before you register.</p>
+        </details>
+        <details>
+          <summary>When do I need to bring my agent to a new home community?</summary>
+          <p class="rhlv-nc__answer">On your very first visit. Most Las Vegas builders require your agent to accompany you or register you at the time of your first tour. If you walk in alone and sign in, many builders will not allow you to add representation later on that community. If you have already visited a community, tell me which ones so I can check the registration rules before you go further.</p>
+        </details>
+        <details>
+          <summary>Is it better to buy new construction or a resale home in Las Vegas?</summary>
+          <p class="rhlv-nc__answer">It depends on your timeline, your budget, and how much you want to customize. New construction gives you a home nobody has lived in, a builder warranty, and current building standards, but you may wait months and pay for upgrades and landscaping. Resale gets you in faster, often with mature landscaping and window coverings already done, in an established neighborhood. I can walk you through the trade-offs for your specific situation.</p>
+        </details>
+        <details>
+          <summary>Which Las Vegas areas have the most new construction?</summary>
+          <p class="rhlv-nc__answer">Skye Canyon and Centennial Hills in the northwest, Summerlin in the west, Mountain's Edge and Southern Highlands in the southwest, Cadence and Inspirada in Henderson, and several communities across North Las Vegas all have active new home construction.</p>
+        </details>
+        <details>
+          <summary>What are builder incentives?</summary>
+          <p class="rhlv-nc__answer">Incentives are promotions builders use to move inventory. Common ones in Las Vegas include interest rate buydowns through the builder's own lender, closing cost credits, and design center allowances. They change often, sometimes month to month, and they vary by community and by how much standing inventory a builder is carrying. I track current incentives and can tell you what is being offered right now.</p>
+        </details>
+        <details>
+          <summary>Are new construction prices negotiable?</summary>
+          <p class="rhlv-nc__answer">Builders rarely cut the base price, because a recorded lower sale price affects the appraisals and values of every other home in the community. They are usually more flexible on incentives instead, such as upgrades, closing costs, or a rate buydown. Knowing where a builder will and will not move is a large part of what a buyer's agent does on a new build.</p>
+        </details>
+        <details>
+          <summary>Do I still need a home inspection on a brand new home?</summary>
+          <p class="rhlv-nc__answer">Yes. New homes are built by people, and inspectors regularly find items worth correcting while the builder warranty is fresh and the fixes are still the builder's responsibility. I recommend an independent inspection before your final walkthrough, separate from any municipal inspection.</p>
+        </details>
+        <details>
+          <summary>Do I have to use the builder's lender?</summary>
+          <p class="rhlv-nc__answer">In most cases you can use any lender you choose. Builders often attach their best incentives to their in house or preferred lender, so the real question is whether the incentive is worth more than what an outside lender can offer on rate and fees. I can help you compare both side by side before you commit.</p>
+        </details>
+        <details>
+          <summary>How long does it take to build a new home in Las Vegas?</summary>
+          <p class="rhlv-nc__answer">It depends entirely on the builder, the community, and whether you are buying a home to be built or a quick move-in home that is already under way. Quick move-in homes can close in weeks. A home started from dirt takes considerably longer. I will get the current build timeline from the specific community you are considering rather than give you a general estimate.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="rhlv-nc__dark rhlv-nc__end">
+    <div class="rhlv-nc__wrap">
+      <div class="rhlv-nc__narrow">
+        <div class="rhlv-nc__rule"></div>
+        <p class="rhlv-nc__eyebrow">Next step</p>
+        <h2>Thinking about a new build?</h2>
+        <p>Send me the communities on your list. I will check each builder's registration rules, tell you what they are offering right now, and make sure you are represented before you ever sit down at a sales desk. No pressure, and no cost to talk it through.</p>
+        <div class="rhlv-nc__btns">
+          <a class="rhlv-nc__btn rhlv-nc__btn--onDarkSolid" href="tel:+17027475921">Call or Text 702-747-5921</a>
+          <a class="rhlv-nc__btn rhlv-nc__btn--onDark" href="mailto:ryan@rosehomeslv.com">Email Ryan</a>
+        </div>
+        <div class="rhlv-nc__contact">
+          <div>Ryan Rose, Realtor | Real Broker, LLC</div>
+          <div>9580 W Sahara Ave Ste 200, Las Vegas, NV 89117</div>
+          <div><a href="tel:+17027475921">702-747-5921</a> | <a href="mailto:ryan@rosehomeslv.com">ryan@rosehomeslv.com</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "New Construction Home Buyer Representation",
+  "serviceType": "New construction real estate buyer representation",
+  "url": "https://www.rosehomeslv.com/las-vegas-new-construction",
+  "description": "Buyer representation for new construction and builder communities across the Las Vegas valley, including builder registration, contract review, walkthroughs, and negotiation.",
+  "provider": {
+    "@type": "RealEstateAgent",
+    "name": "Ryan Rose",
+    "alternateName": "Rose Homes LV",
+    "url": "https://www.rosehomeslv.com/",
+    "telephone": "+1-702-747-5921",
+    "email": "ryan@rosehomeslv.com",
+    "worksFor": { "@type": "RealEstateOrganization", "name": "Real Broker, LLC" },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9580 W Sahara Ave Ste 200",
+      "addressLocality": "Las Vegas",
+      "addressRegion": "NV",
+      "postalCode": "89117",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Las Vegas" },
+    { "@type": "City", "name": "Henderson" },
+    { "@type": "City", "name": "North Las Vegas" },
+    { "@type": "Place", "name": "Summerlin" },
+    { "@type": "Place", "name": "Skye Canyon" },
+    { "@type": "Place", "name": "Cadence" },
+    { "@type": "Place", "name": "Inspirada" },
+    { "@type": "Place", "name": "Mountain's Edge" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rosehomeslv.com/" },
+    { "@type": "ListItem", "position": 2, "name": "New Construction", "item": "https://www.rosehomeslv.com/las-vegas-new-construction" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need my own agent to buy new construction in Las Vegas?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You are not required to have one, but the agent sitting in the model home works for the builder. They are paid by the builder and represent the builder's interests in the contract. A buyer's agent represents you. Most new home communities in Las Vegas have budgeted for a buyer's agent, and I will confirm the exact terms with you in writing before you register." }
+    },
+    {
+      "@type": "Question",
+      "name": "When do I need to bring my agent to a new home community?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On your very first visit. Most Las Vegas builders require your agent to accompany you or register you at the time of your first tour. If you walk in alone and sign in, many builders will not allow you to add representation later on that community. If you have already visited a community, tell me which ones so I can check the registration rules before you go further." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it better to buy new construction or a resale home in Las Vegas?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends on your timeline, your budget, and how much you want to customize. New construction gives you a home nobody has lived in, a builder warranty, and current building standards, but you may wait months and pay for upgrades and landscaping. Resale gets you in faster, often with mature landscaping and window coverings already done, in an established neighborhood. I can walk you through the trade-offs for your specific situation." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Las Vegas areas have the most new construction?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Skye Canyon and Centennial Hills in the northwest, Summerlin in the west, Mountain's Edge and Southern Highlands in the southwest, Cadence and Inspirada in Henderson, and several communities across North Las Vegas all have active new home construction." }
+    },
+    {
+      "@type": "Question",
+      "name": "What are builder incentives?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Incentives are promotions builders use to move inventory. Common ones in Las Vegas include interest rate buydowns through the builder's own lender, closing cost credits, and design center allowances. They change often, sometimes month to month, and they vary by community and by how much standing inventory a builder is carrying. I track current incentives and can tell you what is being offered right now." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are new construction prices negotiable?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Builders rarely cut the base price, because a recorded lower sale price affects the appraisals and values of every other home in the community. They are usually more flexible on incentives instead, such as upgrades, closing costs, or a rate buydown. Knowing where a builder will and will not move is a large part of what a buyer's agent does on a new build." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I still need a home inspection on a brand new home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. New homes are built by people, and inspectors regularly find items worth correcting while the builder warranty is fresh and the fixes are still the builder's responsibility. I recommend an independent inspection before your final walkthrough, separate from any municipal inspection." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to use the builder's lender?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In most cases you can use any lender you choose. Builders often attach their best incentives to their in house or preferred lender, so the real question is whether the incentive is worth more than what an outside lender can offer on rate and fees. I can help you compare both side by side before you commit." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to build a new home in Las Vegas?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends entirely on the builder, the community, and whether you are buying a home to be built or a quick move-in home that is already under way. Quick move-in homes can close in weeks. A home started from dirt takes considerably longer. I will get the current build timeline from the specific community you are considering rather than give you a general estimate." }
+    }
+  ]
+}
+</script>

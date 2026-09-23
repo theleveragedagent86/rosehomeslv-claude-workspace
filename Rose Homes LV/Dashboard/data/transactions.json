@@ -1,0 +1,236 @@
+{
+  "generated": "2026-08-24",
+  "source": "Clients/Transactions/*/transaction.json — read-only; never modified by this build",
+  "estimate_note": "Dates or amounts marked estimated were computed or inferred; not read directly from a signed document. Write NOT FOUND for missing data rather than inferring.",
+  "active": [
+    {
+      "address": "94 Tardando Ave, Henderson, NV 89015",
+      "slug": "94-Tardando-Ave",
+      "type": "buyer-new-construction",
+      "status": "active",
+      "clients": "Justin Nicholas Frye and Barbara Raquel Guitian-Frye",
+      "client_email": "justinfrye2@gmail.com",
+      "client_email2": "barbararguitian@gmail.com",
+      "client_phone": "(919) 608-7444",
+      "client_phone2": "(347) 671-4510",
+      "builder": "Taylor Morrison of Nevada, LLC — Opus at Cadence (30s), Lot 191, Plan 2 Spruce",
+      "builder_rep": "Toni Giddley",
+      "builder_rep_email": "tgiddley@taylormorrison.com",
+      "closings_mgr": "Mischelle Eggers",
+      "closings_mgr_email": "MEggers@taylormorrison.com",
+      "contract_date": "2026-08-04",
+      "fully_executed_date": "2026-08-06",
+      "purchase_price": 565000,
+      "emd": 5000,
+      "emd_status": "received 2026-08-04, ref #981626043",
+      "target_coe": "2026-09-11",
+      "target_coe_is_estimated": true,
+      "target_coe_note": "Seller Incentive deadline — not a fixed contract Closing Date; estimated as de facto target. Actual Closing Notice arrives no later than 3 days prior.",
+      "commission_pct": 3.00,
+      "commission_base": 515990,
+      "commission_projected": 15479.70,
+      "commission_is_estimated": true,
+      "commission_note": "Estimated: 3% of base price $515,990 per Broker Referral Agreement 2026-08-04; pending close",
+      "incentive": "Up to $12,000 Seller Incentive if close on or before 2026-09-11; requires Taylor Morrison Home Funding AND Inspired Title",
+      "lender": {
+        "company": "Taylor Morrison Home Funding, Inc.",
+        "officer_name": "NOT FOUND",
+        "officer_email": "NOT FOUND",
+        "note": "Affiliated lender required for incentive and Conditional Loan Approval Contingency. Loan officer contact not yet received."
+      },
+      "escrow": {
+        "company": "Inspired Title Services, LLC",
+        "officer": "Janine Vidinha",
+        "email": "JVidinha@inspiredtitle.com",
+        "phone": "(702) 777-7070",
+        "number": "LV-NV-26803460FS"
+      },
+      "derived_deadlines": {
+        "_note": "Confirmed — computed from executed PA date 2026-08-04",
+        "loan_application_due": "2026-08-09",
+        "vesting_instructions_due": "2026-08-14",
+        "conditional_loan_approval": "2026-08-25",
+        "inspection_must_occur_by": "2026-08-27",
+        "nhd_earliest": "2026-08-29",
+        "seller_incentive_deadline": "2026-09-11",
+        "broker_registration_expires": "2026-10-03"
+      },
+      "inspection_scheduled": "2026-08-24 10:00 AM",
+      "alerts": [
+        "URGENT: Conditional loan approval deadline 2026-08-25 (tomorrow)",
+        "Inspection TODAY 2026-08-24 10:00 AM — confirm outcome and inspector report",
+        "TMHF loan officer name and email NOT FOUND — get from Toni Giddley or buyers immediately",
+        "Intro-to-all-parties email blocked on lender contact",
+        "New Home Demonstration cannot occur before 2026-08-29",
+        "CIC 5-day cancellation right: medium open issue — note and track"
+      ],
+      "completed_steps": [
+        "emd-deposited",
+        "brokerage-paperwork-executed",
+        "vesting-instructions-to-title-sent",
+        "independent-inspection-scheduled",
+        "inspector-docs-delivered-to-seller"
+      ],
+      "next_step": "Conditional loan approval deadline 2026-08-25; then New Home Demonstration no earlier than 2026-08-29",
+      "next_step_date": "2026-08-25"
+    },
+    {
+      "address": "659 Semitone Ln, Henderson, NV",
+      "slug": "659-Semitone-Ln",
+      "type": "buyer-new-construction",
+      "status": "active",
+      "clients": "Eiven Pierce Ramph and Nadia Alvarado Andrade",
+      "client_email": "eivenbasco@gmail.com",
+      "client_email2": "nadia372378@gmail.com",
+      "client_phone": "NOT FOUND",
+      "builder": "Taylor Morrison — Opus at Cadence 25s, Lot 170 (Q-213978)",
+      "builder_rep": "Toni Giddley",
+      "builder_rep_email": "tgiddley@taylormorrison.com",
+      "contract_date": "2026-08-12",
+      "contract_date_note": "Date all parties completed SOT/RFF DocuSign; PA signing date not yet confirmed against PA document",
+      "purchase_price": 529990,
+      "purchase_price_is_estimated": true,
+      "purchase_price_note": "Provided by Ryan 2026-08-12; confirm against Q-213978 Summary of Terms",
+      "emd": 5000,
+      "emd_status": "collected 2026-08-12",
+      "coe_date": "2026-09-23",
+      "coe_date_is_estimated": true,
+      "coe_date_note": "Provided by Ryan 2026-08-12 — confirm against Q-213978 Summary of Terms",
+      "commission_pct": null,
+      "commission_projected": null,
+      "commission_note": "NOT FOUND — commission percentage not in transaction.json; do not estimate",
+      "incentives": {
+        "interest_rate": "3.99%",
+        "closing_cost_credit": 12000,
+        "included": ["Refrigerator", "Washer", "Dryer", "Blinds"],
+        "note": "Provided by Ryan 2026-08-12; conditions likely require TMHF and Inspired Title — confirm against SOT"
+      },
+      "lender": {
+        "name": "NOT FOUND",
+        "note": "DHI Mortgage preapproval was for a D.R. Horton home, not this contract. Taylor Morrison affiliated lender is Taylor Morrison Home Funding. Confirm with buyers and Toni Giddley."
+      },
+      "escrow": {
+        "company": "Inspired Title",
+        "officer": "Christine Strouse",
+        "email": "CStrouse@inspiredtitle.com",
+        "phone": "(702) 777-7070",
+        "number": "NOT FOUND",
+        "note": "Request escrow number from Christine Strouse"
+      },
+      "alerts": [
+        "Lender not confirmed — DHI preapproval does not apply to this Taylor Morrison contract",
+        "Escrow number NOT FOUND — request from Christine Strouse at CStrouse@inspiredtitle.com",
+        "Intro-to-all-parties email and W9 blocked until lender identified",
+        "Inspection booking on hold per Ryan (8/12) — 2-4 week lead time; COE target 9/23 is ~4 weeks out — URGENT to book now"
+      ],
+      "completed_steps": [
+        "day0-accepted-offer-email",
+        "day0-home-inspection-options",
+        "day0-request-escrow-lender"
+      ],
+      "next_step": "Confirm lender; send intro-to-all-parties email + W9; request escrow number from Christine Strouse; book home inspection",
+      "next_step_date": "2026-08-17"
+    },
+    {
+      "address": "653 Semitone Ln, Henderson, NV",
+      "slug": "653-Semitone-Ln",
+      "type": "buyer-new-construction",
+      "status": "active",
+      "clients": "NOT CONFIRMED — surnames inferred as Jordan and McDill from DocuSign subject lines; full legal names not seen in any message body",
+      "client_email": "dillynjakobjordan@gmail.com",
+      "client_email2": "tolen.j96@gmail.com",
+      "client_phone": "NOT FOUND",
+      "builder": "Taylor Morrison — Opus at Cadence 25s, Lot 167 (Q-216064)",
+      "builder_rep": "Toni Giddley",
+      "builder_rep_email": "tgiddley@taylormorrison.com",
+      "contract_date": null,
+      "contract_date_note": "NOT FOUND — PA completed via DocuSign 2026-08-17 but date is inside PDF; pull from portal or saved PDF",
+      "purchase_price": null,
+      "purchase_price_note": "NOT FOUND — on Summary of Terms / Purchase Agreement PDF; do not estimate",
+      "emd": 5000,
+      "emd_status": "in process — ACH had correction/reissue cycle 2026-08-13; collection NOT confirmed",
+      "coe_date": null,
+      "coe_date_note": "NOT FOUND — on Summary of Terms PDF; pull from portal or saved PDF",
+      "commission_pct": null,
+      "commission_projected": null,
+      "commission_note": "NOT FOUND — price unknown; do not estimate",
+      "escrow": {
+        "company": "Inspired Title",
+        "officer": "Patrice Carmo",
+        "email": "pcarmo@inspiredtitle.com",
+        "phone": "702-777-7070",
+        "number": "LV-NV-26803470FS"
+      },
+      "alerts": [
+        "Purchase price, COE date, and PA contract date all NOT FOUND — behind PDF attachments; Ryan must pull from portal",
+        "Buyer legal names NOT CONFIRMED — inferred from DocuSign subjects only; do not use on documents",
+        "EMD $5,000 ACH collection NOT confirmed — ACH reissue cycle occurred 2026-08-13; confirm with Patrice Carmo or Toni Giddley"
+      ],
+      "completed_steps": [],
+      "next_step": "Confirm with Ryan: purchase price, COE date, buyer legal names, and EMD collection status; then send Day 0 emails",
+      "next_step_date": "2026-08-17"
+    }
+  ],
+  "closed": [
+    {
+      "address": "29 Amber Rock St, Henderson, NV 89012",
+      "slug": "29-Amber-Rock-St",
+      "type": "seller + dual agency",
+      "status": "closed",
+      "clients": "Seller: Jessie (Maria Vasquez) — The Vasquez Family Trust; Buyer: George Tasci",
+      "contract_date": "2026-04-14",
+      "closed_date": "2026-06-01",
+      "purchase_price": 475000,
+      "list_price": 485000,
+      "mls_id": "2759238",
+      "dual_agency": true,
+      "buyer_broker_comp_pct": 2.0,
+      "buyer_broker_comp_estimated": 9500,
+      "buyer_broker_comp_is_estimated": true,
+      "buyer_broker_comp_note": "Estimated: 2% of $475,000 per transaction.json buyer_broker_comp_pct; actual disbursement not confirmed",
+      "listing_side_commission_note": "NOT FOUND — listing side commission percentage not in transaction.json"
+    },
+    {
+      "address": "8320 Moapa Water ST, Las Vegas, NV 89131",
+      "slug": "8320-Moapa-Water-ST",
+      "type": "buyer-resale",
+      "status": "closed",
+      "clients": "Anne Ayre and Jerred Mares",
+      "contract_date": "2026-04-09",
+      "closed_date": "2026-05-18",
+      "purchase_price": 630000,
+      "commission_pct": 2.5,
+      "commission_estimated": 15750,
+      "commission_is_estimated": true,
+      "commission_note": "Estimated: 2.5% of $630,000 per counter_offer_notes in transaction.json; actual disbursement not confirmed"
+    },
+    {
+      "address": "3550 All Hallows Ave, Las Vegas, NV 89141",
+      "slug": "3550-All-Hallows-Ave",
+      "type": "buyer-new-construction",
+      "status": "closed",
+      "clients": "Nick and Kayla Middleton",
+      "builder": "Pulte Homes — Delamar community, Lot 04404",
+      "contract_date": "2026-03-21",
+      "closed_date": "2026-05-21",
+      "purchase_price": 660000,
+      "commission_pct": null,
+      "commission_estimated": null,
+      "commission_note": "NOT FOUND — commission percentage not in transaction.json"
+    }
+  ],
+  "cancelled": [
+    {
+      "address": "2713 S Miller Ln, Las Vegas, NV 89117",
+      "slug": "2713-S-Miller-Ln",
+      "type": "buyer-resale",
+      "status": "cancelled",
+      "clients": "Marquina L. Munoz-Freedman",
+      "contract_date": "2026-03-24",
+      "cancelled_date": "2026-03-31",
+      "purchase_price": 975000,
+      "commission_earned": 0,
+      "commission_note": "No commission — cancelled 7 days after contract"
+    }
+  ]
+}

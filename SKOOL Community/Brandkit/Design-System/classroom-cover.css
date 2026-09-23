@@ -1,0 +1,14 @@
+/* Classroom cover, option A. Type only: no icon, no illustration.
+   Canvas is a fixed 1600x847 black band. */
+.cov{position:relative;width:1600px;height:847px;flex:none;background:var(--la-bg-inv);display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding:0 120px;transform-origin:center center}
+.cov__meta{font-family:var(--font-subtext);font-weight:600;font-size:32px;letter-spacing:0.15em;text-transform:uppercase;color:var(--la-accent-inv);margin:0 0 32px}
+/* text-wrap:balance is what keeps a two-line title from leaving one orphan
+   word on the second line. Size steps down by title length; the sizes are set
+   so nothing ever reaches a third line. */
+.cov__title{font-family:var(--font-display);font-weight:800;font-size:176px;line-height:.98;letter-spacing:-0.028em;text-transform:uppercase;color:var(--la-ink-inv);margin:0;text-wrap:balance;max-width:15ch}
+.cov__title--md{font-size:132px;max-width:20ch}
+.cov__title--sm{font-size:104px;max-width:24ch}
+.cov__rule{width:100%;height:6px;background:var(--la-accent);border:0;margin:48px 0 40px}
+.cov__sub{font-family:var(--font-subtext);font-weight:600;font-size:38px;line-height:1.35;letter-spacing:0.01em;color:var(--la-ink-2-inv);margin:0;max-width:34ch}
+.cov__mark{position:absolute;right:120px;bottom:56px}
+.cov__mark la-logo{display:block;width:210px}

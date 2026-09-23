@@ -1,0 +1,158 @@
+<meta charset="utf-8"><title>Leveraged Agent palette v3 "Broker" preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens-v3-broker.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#151515;font-family:Inter,system-ui,sans-serif;padding-bottom:60px}
+.hdr{padding:30px 40px 8px;color:#f0f0f0;font-family:Poppins;font-size:24px;font-weight:700;letter-spacing:-.02em}
+.hdrsub{padding:0 40px 26px;color:#8d8d8d;font-size:13px;line-height:1.6;max-width:860px}
+.hdrsub b{color:#d6d6d6;font-weight:600}
+
+/* v1 comparison block re-maps the OLD hexes onto the SAME role names, so both
+   sections below run byte-identical markup and only the values differ. */
+.v1{--la-bg:#F5F2EB;--la-bg-2:#EAE6DA;--la-bg-inv:#08343E;--la-line:#DCD6C7;--la-structure:#0F4C5C;
+    --la-ink:#0F4C5C;--la-ink-2:#3E6B75;--la-ink-inv:#F5F2EB;--la-ink-2-inv:#B5CAC4;
+    --la-accent:#E8A33D;--la-accent-on:#08343E;--la-accent-txt:#925E11;--la-accent-inv:#E8A33D;
+    --la-weight-head:700;--la-track-head:-0.02em;--la-track-label:0.02em;--la-lh-body:1.5}
+
+.pal{background:var(--la-bg);color:var(--la-ink);font-family:var(--la-font-body);
+     padding:34px 40px 42px;margin:0 40px 34px;border-radius:16px}
+.name{font-family:var(--la-font-head);font-size:12px;font-weight:600;letter-spacing:.16em;
+      text-transform:uppercase;color:var(--la-ink-2);margin-bottom:20px}
+.name b{color:var(--la-ink);font-size:16px;font-weight:var(--la-weight-head);letter-spacing:-.01em;
+        text-transform:none;margin-right:9px}
+.note{font-size:11px;line-height:1.55;color:var(--la-ink-2);margin:-12px 0 20px;max-width:70ch}
+.tag{display:inline-block;font-family:var(--la-font-head);font-size:10px;font-weight:600;
+     letter-spacing:.18em;text-transform:uppercase;color:var(--la-accent-on);background:var(--la-accent);
+     padding:5px 12px;border-radius:999px;margin-bottom:16px}
+h2{font-family:var(--la-font-head);font-size:40px;font-weight:var(--la-weight-head);
+   letter-spacing:var(--la-track-head);line-height:1.06;margin-bottom:12px;max-width:15ch}
+h2 em{font-style:normal;color:var(--la-accent-txt)}
+.lede{font-size:15px;line-height:var(--la-lh-body);color:var(--la-ink-2);max-width:56ch;margin-bottom:22px}
+.btns{display:flex;gap:12px;align-items:center;margin-bottom:30px;flex-wrap:wrap}
+.b1{font-family:var(--la-font-head);font-weight:600;font-size:14px;padding:13px 24px;border-radius:999px;
+    border:none;cursor:pointer;background:var(--la-accent);color:var(--la-accent-on)}
+.b2{font-family:var(--la-font-head);font-weight:600;font-size:14px;padding:12px 23px;border-radius:999px;
+    cursor:pointer;background:transparent;color:var(--la-ink);border:1.5px solid var(--la-line)}
+.b3{font-family:var(--la-font-head);font-weight:600;font-size:14px;background:none;border:none;cursor:pointer;
+    color:var(--la-accent-txt);text-decoration:underline;text-underline-offset:4px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
+.c{background:var(--la-bg-2);border:1px solid var(--la-line);border-radius:14px;padding:22px}
+.eb{font-family:var(--la-font-body);font-size:10px;font-weight:700;letter-spacing:var(--la-track-label);
+    text-transform:uppercase;color:var(--la-accent-txt);margin-bottom:10px}
+.ch{font-family:var(--la-font-head);font-size:17px;font-weight:600;letter-spacing:-.02em;margin-bottom:8px}
+.cb{font-size:13px;line-height:1.6;color:var(--la-ink-2)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
+.st{background:var(--la-bg-inv);color:var(--la-ink-inv);border-radius:14px;padding:22px}
+.stn{font-family:var(--la-font-head);font-size:44px;font-weight:var(--la-weight-head);letter-spacing:-.04em;
+     line-height:1;color:var(--la-accent-inv)}
+.stl{font-size:12px;line-height:1.5;margin-top:8px;color:var(--la-ink-2-inv)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:26px}
+th{font-family:var(--la-font-body);font-size:10px;font-weight:700;letter-spacing:var(--la-track-label);
+   text-transform:uppercase;text-align:left;color:var(--la-ink-2);padding:9px 12px;border-bottom:1.5px solid var(--la-line)}
+td{padding:11px 12px;border-bottom:1px solid var(--la-line)}
+tr:nth-child(even) td{background:var(--la-bg-2)}
+.pill{font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--la-accent);color:var(--la-accent-on)}
+.pill.q{background:transparent;color:var(--la-ink-2);border:1px solid var(--la-line)}
+.bars{display:flex;align-items:flex-end;gap:9px;height:88px;margin-bottom:8px}
+.bar{flex:1;border-radius:5px 5px 0 0;background:var(--la-structure);opacity:.28}
+.bar.hi{background:var(--la-accent);opacity:1}
+.cap{font-size:11px;color:var(--la-ink-2)}
+.sw{display:flex;gap:0;border-radius:10px;overflow:hidden;margin-top:26px;border:1px solid var(--la-line)}
+.sw div{flex:1;height:58px;display:flex;align-items:flex-end;padding:6px 8px;font-size:9px;font-weight:600;letter-spacing:.02em}
+
+/* rules strip */
+.rules{margin:0 40px 34px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:28px 34px}
+.rules h3{font-family:Poppins;font-size:15px;font-weight:700;color:#f0f0f0;letter-spacing:-.01em;margin-bottom:14px}
+.rrow{display:flex;gap:14px;align-items:center;padding:11px 0;border-top:1px solid #2e2e2e;font-size:13px;color:#c4c4c4;line-height:1.5}
+.chip{flex:0 0 190px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+      font-size:14px;font-weight:600;font-family:Poppins}
+.verdict{flex:0 0 62px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.ok{color:#54C08A}.no{color:#F4756B}
+</style>
+
+<div class="hdr">Palette v3 "Broker" preview</div>
+<div class="hdrsub"><b>Not adopted. v1 is still the shipping brand.</b> Identical markup rendered twice: once with the v1 hexes mapped onto the v3 role names, once with v3 itself. Both brand colors are unchanged between them. What changes is the base surface (cream becomes pure white), sage is deleted, ink moves to the deep teal, Poppins goes 700 to 800, and labels go wide-tracked uppercase. Spec: V3-BROKER.md. Evidence: PEDIGREE-BRAND-RESEARCH.md.</div>
+
+<section class="pal v1">
+  <div class="name"><b>v1, shipping</b> cream base · Poppins 700</div>
+  <div class="note">Same markup, same layout, only the token values differ. Labels are uppercase in both blocks so the comparison stays clean, v1 does not itself mandate that. Tracking is not held constant: v1 runs +0.02em, v3 runs +0.14em, which is the pedigree convention.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="sw">
+    <div style="background:#F5F2EB;color:#0F4C5C">bg #F5F2EB</div><div style="background:#EAE6DA;color:#0F4C5C">bg-2 #EAE6DA</div>
+    <div style="background:#0F4C5C;color:#F5F2EB">ink #0F4C5C</div><div style="background:#3E6B75;color:#F5F2EB">ink-2 #3E6B75</div>
+    <div style="background:#E8A33D;color:#08343E">accent #E8A33D</div><div style="background:#B5CAC4;color:#0F4C5C">sage #B5CAC4</div>
+    <div style="background:#08343E;color:#F5F2EB">deep #08343E</div></div>
+</section>
+
+<section class="pal">
+  <div class="name"><b>v3 Broker, proposed</b> white base · Poppins 800 · one accent</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="sw">
+    <div style="background:#FFFFFF;color:#08343E;box-shadow:inset 0 0 0 1px #E3E7E8">bg #FFFFFF</div><div style="background:#F7F7F7;color:#08343E">bg-2 #F7F7F7</div>
+    <div style="background:#0F4C5C;color:#FFFFFF">structure #0F4C5C</div><div style="background:#3C646F;color:#FFFFFF">ink-2 #3C646F</div>
+    <div style="background:#E8A33D;color:#08343E">accent #E8A33D</div><div style="background:#9D6513;color:#FFFFFF">accent-txt #9D6513</div>
+    <div style="background:#08343E;color:#FFFFFF">bg-inv / ink #08343E</div></div>
+</section>
+
+<div class="rules">
+  <h3>Gold has two jobs and two values. Getting them backwards is the failure mode.</h3>
+  <div class="rrow">
+    <div class="chip" style="background:#E8A33D;color:#08343E">Start module</div>
+    <div class="verdict ok">6.2:1</div>
+    <div>Buttons take <code>--la-accent-on</code> (<code>#08343E</code>) on gold. This is the only correct button.</div>
+  </div>
+  <div class="rrow">
+    <div class="chip" style="background:#E8A33D;color:#FFFFFF">Start module</div>
+    <div class="verdict no">1.86:1</div>
+    <div>White on gold. Fails badly, and it is the most common mistake in the existing assets.</div>
+  </div>
+  <div class="rrow">
+    <div class="chip" style="background:#FFFFFF;color:#9D6513;box-shadow:inset 0 0 0 1px #E3E7E8">Download the template</div>
+    <div class="verdict ok">4.88:1</div>
+    <div>Gold used AS text on white must be <code>--la-accent-txt</code> (<code>#9D6513</code>).</div>
+  </div>
+  <div class="rrow">
+    <div class="chip" style="background:#FFFFFF;color:#E8A33D;box-shadow:inset 0 0 0 1px #E3E7E8">Download the template</div>
+    <div class="verdict no">2.16:1</div>
+    <div>Raw gold as text on white. Never do this. On the deep teal it is fine at 6.2:1.</div>
+  </div>
+</div>

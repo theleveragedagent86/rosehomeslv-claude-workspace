@@ -1,0 +1,61 @@
+# Story Spreadsheet: Week Ending Sunday, August 23, 2026
+Clark County, Nevada | @rosehomeslv | 23 stories
+
+| # | Category | Story Type | County/Area | Headline | Story Summary | Source | URL | Date | Viral Potential | Extremely Important | Blog Slug | Video Length |
+|---|----------|-----------|-------------|----------|---------------|--------|-----|------|-----------------|---------------------|-----------|-------------|
+| 1 | Gov-Dev | Local | Clark County (valley wide) | Feds Cut Nevada's Colorado River Water by 17 Percent | Interior signed the Record of Decision cutting Nevada's Colorado River allocation about 17 percent, roughly 50,000 acre-feet, effective January 1, 2027. | Las Vegas Sun | https://lasvegassun.com/news/2026/aug/22/feds-finalize-10-year-colorado-river-management-fr/ | 08/22 | Red | Yes | nevada-colorado-river-water-cut-2027 | 75s |
+| 2 | Gov-Dev | Local | Clark County (valley wide, incl. Harry Reid Intl) | Nevada Approves Up to 7,000 Robotaxis in Clark County | The Nevada Transportation Authority voted unanimously to let Tesla, Waymo, and Uber's Aviari operate up to 7,000 driverless vehicles across Clark County. | Las Vegas Sun | https://lasvegassun.com/news/2026/aug/21/nevada-open-roads-for-tesla-waymo-and-ubers-aviari/ | 08/21 | Red | No | clark-county-robotaxi-approval-2026 | 60s |
+| 3 | Real Estate | Local | Winchester, N. Las Vegas, Spring Valley, Henderson | One-Bedroom Rents Fell in Every Valley Submarket | A Zumper report shows one-bedroom rents fell year over year in July in every Las Vegas Valley submarket tracked, led by Winchester at 18.8 percent. | LVRJ | https://www.reviewjournal.com/business/vegas-business/building-las-vegas/rents-dropping-across-las-vegas-valley-report-says-3865535/ | 08/18 | Red | No | las-vegas-one-bedroom-rents-falling-2026 | 60s |
+| 4 | Real Estate | National-to-Local | Las Vegas-Henderson-North Las Vegas metro | Renting Beats Buying in All 50 Metros, but Vegas Is Flipping | Realtor.com found renting beat buying in all 50 largest metros in July, and named Las Vegas one of only seven where the math is moving toward buyers. | Realtor.com (PR Newswire) | https://www.prnewswire.com/news-releases/realtorcom-july-rent-report-renting-a-starter-home-costs-less-than-buying-in-all-50-largest-us-metros-but-the-gap-is-narrowing-302852082.html | 08/19 | Red | No | las-vegas-rent-vs-buy-gap-2026 | 60s |
+| 5 | Real Estate | National-to-Local | Las Vegas / Clark County | Nearly 500,000 More Sellers Than Buyers Nationally | Redfin counted a record-low 966,752 U.S. buyers against 1,462,921 sellers, while Clark County supply held near a balanced four months. | Redfin (PR Newswire) | https://www.prnewswire.com/news-releases/the-number-of-us-homebuyers-just-dropped-to-a-record-low-shifting-the-market-further-in-buyers-favor-302850656.html | 08/13 | Red | No | clark-county-housing-supply-vs-national-2026 | 60s |
+| 6 | Hockey | Local | Summerlin (The Summit Club) | Fleury Sells His Summit Club Mansion for $25 Million | Former Golden Knights goaltender Marc-Andre Fleury sold his 9,857-square-foot Summerlin mansion off market to Fontainebleau developer Jeffrey Soffer. | LVRJ | https://www.reviewjournal.com/business/housing/original-misfit-sells-summerlin-mansion-to-fontainebleau-developer-for-25m-3867502/ | 08/21 | Red | No | fleury-summerlin-summit-club-mansion-sale | 60s |
+| 7 | School Board | Local | Henderson | Henderson Approves One Charter School, Denies Another | The Henderson City Council conditionally approved Nexus Charter School and denied Signature Preparatory's second K-8 campus after a weak city review. | LVRJ | https://www.reviewjournal.com/local/education/henderson-conditionally-approves-one-charter-school-application-denies-another-3867281/ | 08/21 | Red | No | henderson-charter-school-decisions-2026 | 60s |
+| 8 | Gov-Dev | Local | Unincorporated Clark County | County Votes 5-0 to Hold Airbnb and Vrbo Responsible | The Clark County Commission approved an ordinance making booking platforms verify licenses, with penalties starting at $500 and rules effective September 2. | Las Vegas Sun | https://lasvegassun.com/news/2026/aug/18/clark-county-commission-targets-booking-sites-in-5/ | 08/18 | Orange | No | clark-county-short-term-rental-ordinance-2026 | 45s |
+| 9 | Real Estate | Local | Las Vegas Valley (southwest, Spring Valley, N. LV) | Las Vegas Leads the Country in Rental Concessions | Zillow found 51.7 percent of Las Vegas apartment listings offered concessions in June, the highest share among the 50 largest U.S. metros. | LVRJ | https://www.reviewjournal.com/business/housing/renters-are-in-the-drivers-seat-las-vegas-leads-the-country-in-rental-concessions-3865187/ | 08/17 | Orange | No | las-vegas-rental-concessions-highest-us-2026 | 45s |
+| 10 | Gov-Dev | Local | Las Vegas Strip / Unincorporated Clark County | County Approves Parking, Retail, Theater at A's Ballpark | Commissioners approved a 953-space garage, retail plaza, and 2,500-seat theater on the 26 acres around the A's ballpark, while Bally's towers await FAA clearance. | FOX5 Vegas | https://www.fox5vegas.com/2026/08/19/clark-county-approves-parking-access-ballys-stadium-site-not-done-deal-yet/ | 08/19 | Orange | No | as-ballpark-district-parking-theater-approved | 45s |
+| 11 | School Board | Local | Clark County | Four Nevada Educators Lose Their Teaching Licenses | Four Nevada educators had licenses revoked last month, including a teacher convicted of distributing child sexual abuse material. | LVRJ | https://www.reviewjournal.com/local/education/4-teachers-in-nevada-have-educator-licenses-revoked-3866571/ | 08/20 | Orange | No | nevada-teachers-licenses-revoked-2026 | 45s |
+| 12 | Real Estate | National-to-Local | Las Vegas-Henderson-North Las Vegas metro | Mortgage Rates Fell a Second Straight Week | Freddie Mac put the 30-year fixed at 6.65 percent, while the monthly cost to buy a Las Vegas starter home sat at $2,131, down 4.4 percent year over year. | Freddie Mac (GlobeNewswire) | https://www.globenewswire.com/news-release/2026/08/20/3348688/0/en/mortgage-rates-decline-for-second-consecutive-week.html | 08/20 | Orange | No | mortgage-rates-las-vegas-buying-cost-august-2026 | 45s |
+| 13 | Real Estate | Local | Las Vegas / Clark County | Las Vegas Home Sale Prices Have More Than Doubled Since 2016 | Las Vegas REALTORS data shows existing home prices more than doubled since 2016, with the $290,000 median condo price topping 2016 single-family prices. | LVRJ | https://www.reviewjournal.com/business/vegas-business/price-points/how-home-sale-prices-have-risen-in-las-vegas-3866084/ | 08/19 | Orange | No | las-vegas-home-prices-doubled-since-2016 | 45s |
+| 14 | Real Estate | Local | Las Vegas Valley / Clark County | Valley Single-Family Inventory Sits at 5,711 Homes | Weekly MLS tracking counted 5,711 active detached single-family listings on August 20, up 927 homes or 19.38 percent since January 1. | Very Vintage Vegas | https://veryvintagevegas.com/2026/08/20/very-vintage-vegas-market-watch-8-20-2026/ | 08/20 | Orange | No | las-vegas-inventory-5711-homes-august-2026 | 45s |
+| 15 | Hockey | Local | Clark County / T-Mobile Arena | Golden Knights Are Getting a Brand New Jersey for Season X | Vegas adds at least one new sweater for 2026-27 through the NHL and Fanatics Hometown Remix line, moving the gray jersey to throwback status. | LVRJ | https://www.reviewjournal.com/sports/goldenknights/golden-knights-to-get-new-jersey-for-2026-27-season-3866157/ | 08/19 | Orange | No | golden-knights-new-jersey-2026-27 | 45s |
+| 16 | Hockey | Local | Clark County | McPhee Explains the Golden Knights' Second Chances | George McPhee said on the Cam and Strick Podcast that Vegas will keep giving young players with off-ice history a second chance. | SinBin.vegas | https://sinbin.vegas/mcphee-explains-why-vgk-are-willing-to-give-second-chances-and-why-they-wont-stop/ | 08/22 | Orange | No | mcphee-golden-knights-second-chances | 45s |
+| 17 | School Board | Local | Clark County | Nevada State High School CEO Fined $2,500 for Ethics | The Nevada Commission on Ethics admonished and fined CEO Melissa McCormick after finding she executed her own $179,000 contract. | LVRJ | https://www.reviewjournal.com/local/education/nevada-state-high-school-ceo-admonished-fined-2-5k-for-ethics-violations-3866466/ | 08/19 | Orange | No | nevada-state-high-school-ceo-ethics-fine | 45s |
+| 18 | School Board | Local | Clark County | CCSD Approves $127.1 Million in Capital Contracts | Trustees approved a consent agenda 6-1 that included $127,107,379.08 in capital improvement contract awards. | Opportunity 180 | https://www.opportunity180.org/nevada-ed-watch-ccsd-8-13-2026/ | 08/14 | Orange | No | ccsd-127-million-capital-contracts-2026 | 45s |
+| 19 | Hockey | Local | Henderson (Lee's Family Forum) | Silver Knights Release 14 Theme Nights, 24 Giveaways | The Henderson Silver Knights announced 14 themed games and 24 giveaway dates at Lee's Family Forum for the 2026-27 season. | Henderson Silver Knights | https://www.hendersonsilverknights.com/henderson-silver-knights-announce-2026-27-theme-and-promotional-knights/ | 08/18 | Orange | No | henderson-silver-knights-theme-nights-2026-27 | 45s |
+| 20 | Hockey | Local | Henderson | Silver Knights Play Two Preseason Games in Tucson | Henderson will play two preseason exhibitions at the first Southwest Showdown in Tucson from September 25 to 27. | Henderson Silver Knights | https://www.hendersonsilverknights.com/silver-knights-announce-participation-in-southwest-showdown/ | 08/20 | Orange | No | silver-knights-southwest-showdown-tucson | 45s |
+| 21 | Gov-Dev | Local | Downtown Las Vegas | Downtown Grand Receiver Asks Judge to Approve Sale | A receiver asked a Clark County judge to approve the sale of the Downtown Grand's assets to Massachusetts-based Vegas Ventures LLC after an $82.5 million default. | LVRJ | https://www.reviewjournal.com/business/casinos-gaming/buyer-lined-up-for-downtown-las-vegas-casino-court-approval-needed-3866190/ | 08/17 to 08/21 | Yellow | No | downtown-grand-sale-court-approval-2026 | 30s |
+| 22 | Real Estate | Local | Las Vegas / Clark County | Canadian Interest in Las Vegas Homes Drops 25 Percent | Redfin search data shows Canadian searches for Las Vegas homes fell 25.2 percent year over year, far past the 15.3 percent national decline. | LVRJ | https://www.reviewjournal.com/business/housing/canadian-interest-in-las-vegas-homes-falls-25-outpacing-national-decline-3865196/ | 08/17 | Yellow | No | canadian-interest-las-vegas-homes-drops-2026 | 30s |
+| 23 | Gov-Dev | Local | Las Vegas Strip / Unincorporated Clark County | Hard Rock's Guitar-Shaped Tower Is Nearly Enclosed | Photos show the 42-story Hard Rock Guitar Hotel largely wrapped in blue-tinted glass as the roughly $4 billion resort heads toward a late-2027 opening. | LVRJ | https://www.reviewjournal.com/business/casinos-gaming/guitar-tower-exterior-nearing-completion-hard-rock-pacing-toward-27-opening-3867603/ | 08/22 | Yellow | No | hard-rock-guitar-tower-nearly-enclosed-2026 | 30s |
+
+**Total rows: 23**
+
+---
+
+```
+PRIORITY GUIDE:
+- Red rows: Highest priority. Film these first.
+- Orange rows: High priority. Film after Reds.
+- Yellow rows: Medium priority. Good filler content.
+- Green rows: Lower priority. Film if time permits.
+- Extremely Important = Yes: the only stories that get a 75-second video. Film first, no matter what.
+```
+
+---
+
+## Score Distribution
+- Red: 7 (rows 1 through 7), Extremely Important: 1 (row 1)
+- Orange: 13 (rows 8 through 20)
+- Yellow: 3 (rows 21 through 23)
+- Green: 0
+
+## Category Breakdown
+- Gov-Dev: 6 (rows 1, 2, 8, 10, 21, 23)
+- School Board: 4 (rows 7, 11, 17, 18)
+- Hockey: 5 (rows 6, 15, 16, 19, 20)
+- Real Estate: 8 (rows 3, 4, 5, 9, 12, 13, 14, 22), 5 local and 3 national-to-local
+
+## Production Flags
+- Row 8 (short-term rental ordinance): sources conflict on whether platforms must remove unlicensed listings. Confirm final ordinance language before stating penalties or the effective date on camera.
+- Row 14 (inventory): source post has typos in its percentage formatting. Use the raw counts.
+- Row 18 (CCSD contracts): meeting was August 13, at the edge of the window.
+- Rows 21 and 23: publication dates not fully verified.

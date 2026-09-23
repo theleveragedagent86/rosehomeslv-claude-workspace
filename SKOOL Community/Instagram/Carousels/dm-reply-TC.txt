@@ -1,0 +1,119 @@
+=== INSTAGRAM SAVED REPLIES | keyword: TC ===
+Settings > Business tools > Saved replies.
+Updated 2026-08-21 to route to YouTube + Skool instead of ending in the DM.
+
+Instagram caps a DM at 1000 characters, so the deliverable ships as two messages.
+
+Load these as FOUR separate saved replies with four shortcuts:
+  tc1   -> Message 1, the opener
+  tc2a  -> Message 2A, the deliverable, part 1
+  tc2b  -> Message 2B, the deliverable, part 2
+  tc3   -> Message 3, the routing (only after they reply)
+
+Sequence: send tc1, tc2a, tc2b back to back the moment they say TC. Do NOT send tc3 yet.
+Wait for them to answer the question at the end of tc2b, then send tc3. Instagram
+throttles accounts that fire links at people who have not replied, and a link that
+lands before any back-and-forth reads as a bot.
+
+
+--- MESSAGE 1 | shortcut: tc1 | the opener ---
+
+Hey, appreciate you reaching out.
+
+Short version: my transaction coordinator is a folder.
+
+One folder per deal.
+One file that holds the facts.
+Every email reads from that file.
+
+Full structure coming in the next message.
+
+
+--- MESSAGE 1, ALT A | plainer, no hook line ---
+
+Hey, thanks for reaching out.
+
+Sending you the exact folder structure I use to run a transaction. Nothing fancy:
+
+One folder per deal.
+One file that holds the facts.
+Everything else reads from that file.
+
+The full thing is in the next message.
+
+
+--- MESSAGE 1, ALT B | shortest, use if the DM feels too formal ---
+
+Hey, thanks for reaching out.
+
+Here it is. One folder per deal, one file that holds the facts, every email reads from that file.
+
+Full structure below.
+
+
+--- MESSAGE 2A | shortcut: tc2a | the deliverable, part 1 ---
+
+THE SETUP
+
+One folder per property, named by address. Inside it, one file called transaction.json. That file is the single source of truth. Nothing in the deal gets typed twice.
+
+WHAT GOES IN THE FILE
+
+Deal basics: address, type, status, contract date, COE date, purchase price, earnest money, contract number.
+
+People, each with name, email and phone: buyer, seller, listing agent and their TC, buyer agent, escrow officer, lender, inspector, builder rep if it is new construction.
+
+Dates, pulled straight off the executed contract: earnest money deadline, inspection contingency, due diligence, appraisal contingency, loan contingency, HOA review. My last new build had 17 dated items in this section.
+
+Progress: completed steps, triggered events, next step, next step date.
+
+
+--- MESSAGE 2B | shortcut: tc2b | the deliverable, part 2 ---
+
+HOW IT RUNS
+
+Drop the executed contract in the folder. The dates section gets filled from the contract, not from memory. Every email after that reads the file, so the escrow opening, the inspection notice, the appraisal update and the clear to close all go out with the right dates and the right people already copied.
+
+WHERE TO START
+
+Do not build this for a future deal. Build it for the file you are most behind on right now. The next deal inherits the whole thing for free.
+
+That is yours, no strings. Quick question so I point you at the right thing: how many files do you have open right now, and are you coordinating them yourself or do you have a TC?
+
+
+--- MESSAGE 3 | shortcut: tc3 | send AFTER they reply ---
+
+Makes sense. Two places I go deeper on this, both free to look at.
+
+I built the whole thing on camera, start to finish on a real file, on my YouTube channel. It is called The Leveraged Agent. https://www.youtube.com/channel/UCJ_t1LMeHXO2iTx1YLMs1OA
+
+And the community is where the actual templates live, the folder structure, the email set and a weekly call where we build these on member deals. https://www.skool.com/the-leveraged-agent
+
+Start with the video. If it clicks, come say hi in the community.
+
+
+--- VARIANT 3B | if they said they already have a TC ---
+
+Then do not replace them, arm them. The same folder does the busywork so your TC spends their time on the things that actually need a person.
+
+I walk through that version on YouTube, The Leveraged Agent. https://www.youtube.com/channel/UCJ_t1LMeHXO2iTx1YLMs1OA
+The templates and the weekly call are in the community. https://www.skool.com/the-leveraged-agent
+
+
+--- VARIANT 3C | if they said they are brand new or have zero deals open ---
+
+Build it now while it is quiet. Setting this up with no deal on the line is a lot easier than doing it at 9pm on an inspection deadline.
+
+Full build is on my YouTube, The Leveraged Agent. https://www.youtube.com/channel/UCJ_t1LMeHXO2iTx1YLMs1OA
+Community with the templates is here. https://www.skool.com/the-leveraged-agent
+
+
+--- NOTES ---
+https://www.youtube.com/channel/UCJ_t1LMeHXO2iTx1YLMs1OA is a real gap. The YouTube @handle is NOT FOUND in the workspace,
+YouTube-Launch-Walkthrough.md only says "Handle: keep existing". Paste the real URL into
+all three variants before loading these into Instagram.
+
+Every message here is under the 1000-character cap. Re-check the count if you edit any
+of them; Instagram silently truncates rather than warning you.
+No income claims, no guarantees, no pricing, no legal or lending advice. Compliant as written.
+No Rose Homes LV branding. Leveraged Agent only.

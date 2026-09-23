@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rebels 8U — Logo Concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#08090C; --line:#2A323F; --red:#E01B33; --red-hot:#FF3049;
+    --ice:#EEF4FA; --steel:#7C8794; --steel-2:#A9B4C0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{background:var(--ink);}
+  body{width:1600px;color:var(--ice);font-family:'Barlow Condensed',sans-serif;}
+  .sheet{
+    width:1600px;min-height:1500px;padding:64px 64px 56px;
+    background:
+      radial-gradient(110% 45% at 50% -6%, rgba(224,27,51,.34) 0%, rgba(224,27,51,0) 62%),
+      radial-gradient(90% 45% at 50% 108%, rgba(126,12,27,.26) 0%, rgba(126,12,27,0) 68%),
+      linear-gradient(178deg,#0D1016,#08090C 52%,#0A0C11);
+    position:relative;
+  }
+  .sheet::before{
+    content:'';position:absolute;inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+    opacity:.05;mix-blend-mode:overlay;pointer-events:none;z-index:5;
+  }
+  .head{text-align:center;position:relative;z-index:2;margin-bottom:52px;}
+  .kicker{font-size:20px;font-weight:600;letter-spacing:.44em;text-indent:.44em;color:var(--steel-2);}
+  h1{
+    font-family:'Anton',sans-serif;font-size:104px;line-height:.9;letter-spacing:-.03em;
+    text-transform:uppercase;margin-top:14px;
+    background:linear-gradient(180deg,#fff 6%,#E3EBF4 38%,#96A3B2 100%);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  .sub{margin-top:16px;font-size:22px;font-weight:600;letter-spacing:.22em;color:var(--red-hot);text-transform:uppercase;}
+
+  .grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .card{
+    border:1px solid var(--line);border-radius:6px;overflow:hidden;
+    background:linear-gradient(180deg,rgba(29,36,48,.7),rgba(16,20,26,.86));
+    box-shadow:inset 0 1px 0 rgba(238,244,250,.06),0 14px 32px rgba(0,0,0,.5);
+    display:flex;flex-direction:column;
+  }
+  .art{
+    height:400px;display:flex;align-items:center;justify-content:center;padding:26px;
+    background:
+      radial-gradient(75% 75% at 50% 42%, rgba(224,27,51,.16) 0%, rgba(224,27,51,0) 72%),
+      linear-gradient(180deg,#12161D,#0A0C11);
+    border-bottom:1px solid var(--line);
+  }
+  .art img{max-width:100%;max-height:100%;object-fit:contain;
+    filter:drop-shadow(0 14px 26px rgba(0,0,0,.6));}
+  .cap{padding:20px 24px 22px;display:flex;align-items:baseline;gap:14px;}
+  .no{
+    font-family:'Anton',sans-serif;font-size:36px;line-height:1;color:var(--red-hot);
+    min-width:44px;
+  }
+  .nm{font-size:28px;font-weight:700;letter-spacing:.10em;text-transform:uppercase;color:var(--ice);}
+  .fmt{margin-left:auto;font-size:15px;font-weight:600;letter-spacing:.16em;color:var(--steel);
+    border:1px solid var(--line);border-radius:3px;padding:5px 10px;text-transform:uppercase;}
+  .foot{position:relative;z-index:2;margin-top:44px;text-align:center;
+    font-size:19px;font-weight:600;letter-spacing:.20em;color:var(--steel);text-transform:uppercase;}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="head">
+    <div class="kicker">8U Mite League</div>
+    <h1>Rebels Logo Concepts</h1>
+    <div class="sub">Red &nbsp;•&nbsp; Black &nbsp;•&nbsp; White</div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="art"><img src="01-bandit-t.svg" alt=""></div>
+      <div class="cap"><span class="no">01</span><span class="nm">Bandit</span><span class="fmt">Vector</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="02-shield-t.svg" alt=""></div>
+      <div class="cap"><span class="no">02</span><span class="nm">Shield</span><span class="fmt">Vector</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="05-roundel-t.svg" alt=""></div>
+      <div class="cap"><span class="no">03</span><span class="nm">Roundel</span><span class="fmt">Vector</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="04-skull-transparent.png" alt=""></div>
+      <div class="cap"><span class="no">04</span><span class="nm">Skull</span><span class="fmt">4K PNG</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="06-wolf-transparent.png" alt=""></div>
+      <div class="cap"><span class="no">05</span><span class="nm">Wolf</span><span class="fmt">4K PNG</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="03-wordmark-transparent.png" alt=""></div>
+      <div class="cap"><span class="no">06</span><span class="nm">Wordmark</span><span class="fmt">4K PNG</span></div>
+    </div>
+  </div>
+
+  <div class="foot">Pick one and I'll build the full kit &nbsp;•&nbsp; jersey crest, helmet decal, sticker, social avatar</div>
+</div>
+</body>
+</html>

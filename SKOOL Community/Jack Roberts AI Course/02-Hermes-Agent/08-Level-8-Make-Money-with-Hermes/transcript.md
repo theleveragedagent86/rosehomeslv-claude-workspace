@@ -1,0 +1,482 @@
+# Transcript: Level 8: Make Money with Hermes
+
+_Section: 🥇 Hermes Agent · Source file: `Make Money with Hermes.txt`_
+
+---
+
+[00:00:00] Hey there beautiful AI automator and
+[00:00:02] welcome to chapter 8 of the Hermes
+[00:00:05] masterass. Now in this chapter we're
+[00:00:07] going to go through something very cool.
+[00:00:08] We are going to go through how to make
+[00:00:09] money with Hermes and it is going to be
+[00:00:12] a wonderful conversation. We've covered
+[00:00:14] so much. So let's talk about
+[00:00:15] monetization and exactly what that looks
+[00:00:18] like. Every chapter has been building up
+[00:00:20] to this stage. Now let me get a sip of
+[00:00:21] my water. I hope you've got that
+[00:00:23] beautiful coffee lockdown and we're
+[00:00:25] going to have a great time and you're
+[00:00:26] going to find strategies and techniques
+[00:00:28] and practical tips here that are going
+[00:00:30] to help you be more profitable in what
+[00:00:31] you're doing. So, let's kick off with
+[00:00:33] the beginning.
+[00:00:36] Now, the important thing to bear in mind
+[00:00:38] with this is that businesses there there
+[00:00:41] are two ways that Hermes agent can help
+[00:00:44] you essentially increase income. Option
+[00:00:47] number one is how it makes you more
+[00:00:49] efficient. And option number two is how
+[00:00:51] you could actually use Hermes agent in
+[00:00:54] other businesses and the techniques. And
+[00:00:56] the importance of an actual personal
+[00:00:58] operating system, a a personal Javarist
+[00:01:00] is only ever going to become more and
+[00:01:02] more valuable. So, first thing we can do
+[00:01:04] quickly if you want to is to set it up
+[00:01:07] for somebody else. I've had people reach
+[00:01:09] out to me asking to set it up for their
+[00:01:11] entire team. Um, essentially you're
+[00:01:13] going to install it uh for these
+[00:01:14] individuals. Think of it like a
+[00:01:16] locksmith. You didn't invent the lock.
+[00:01:17] You learned how to fit it. Every door in
+[00:01:19] town still needs one. Nobody on the
+[00:01:21] streets knows how. So, as these personal
+[00:01:23] assistants become more and more
+[00:01:26] basically relevant and powerful, the
+[00:01:28] need and the difference between those
+[00:01:30] who understand all the intricacies and
+[00:01:32] those that don't, essentially that gap
+[00:01:33] is going to grow. So, you being able to
+[00:01:36] actually install him as agent and
+[00:01:38] running for other individuals. We have
+[00:01:40] in fact lots of people inside the
+[00:01:42] community uh that I I spoke to one the
+[00:01:44] other day who just does this for
+[00:01:45] businesses and was asking me questions
+[00:01:47] about where to host it up. So it's very
+[00:01:49] good to get one of the one of these
+[00:01:51] things set up. You could for example
+[00:01:52] position yourself as a Hermes expert and
+[00:01:54] essentially go through this. I'll put a
+[00:01:56] link down below for the full guide so
+[00:01:58] you can have a look at that uh in terms
+[00:01:59] of your building and your positioning.
+[00:02:01] And so technically we can charge
+[00:02:02] businesses a setup fee for Hermes agent.
+[00:02:06] And then once we've done that, we can go
+[00:02:07] to what we call the AI back office. So
+[00:02:09] essentially, we've installed it, but
+[00:02:11] actually just like a watermill, if you
+[00:02:12] think of like this, the wheel turns
+[00:02:13] whether anyone watches or not. You don't
+[00:02:15] charge for turning it. You charge for
+[00:02:17] the stream. It never stops going. So the
+[00:02:19] idea here is that you set this Hermes
+[00:02:21] agent up for a business. And then
+[00:02:22] effectively what they're going to charge
+[00:02:24] you for, as you can see in this
+[00:02:25] beautiful image, is the ability to keep
+[00:02:28] that going continuously. So we're going
+[00:02:30] to make sure that you always got the
+[00:02:32] latest models. It has the relevant
+[00:02:34] connections. We manage all of the
+[00:02:35] updates. We manage all of the security.
+[00:02:38] So you literally get a complete
+[00:02:39] hands-off experience. That essentially
+[00:02:42] is the sort of value prop of the
+[00:02:43] retainer engine. And rather than me just
+[00:02:46] give you numbers that I've seen, I've
+[00:02:47] included also here some benchmarks for
+[00:02:49] the general AI automation retainer. It
+[00:02:51] sits around $3,200 a month on average.
+[00:02:54] Solar operators somewhere between 2
+[00:02:56] to8k. Really depending on the business.
+[00:02:58] Trust me, I just paid a retainer about
+[00:03:00] $3,000 a month because there's a really
+[00:03:02] clear ROI associated with it. So, I
+[00:03:04] understand exactly what it is that I'm
+[00:03:06] literally getting off the back of that.
+[00:03:07] Then, crucially, what's good to bear in
+[00:03:09] mind is that the average retainer lasts
+[00:03:10] for about 11 months or should I say it
+[00:03:12] lasts until the individual thinks
+[00:03:14] they're no longer getting an ROI or they
+[00:03:16] can more easily get the ROI elsewhere
+[00:03:18] and there isn't sufficient friction to
+[00:03:19] keep them there. So where possible, the
+[00:03:21] general rule that you want to know is
+[00:03:24] that the less frequent the billing
+[00:03:25] cycle, the stickier the individual is.
+[00:03:28] So you want to be doing annual deals.
+[00:03:30] You want to be doing I wouldn't say
+[00:03:32] lifetime deals in citizens, but
+[00:03:33] typically annual deals at the very
+[00:03:35] least. Um, so you can do that. So if you
+[00:03:38] are fully integrated in their operations
+[00:03:40] and you're looking after everything,
+[00:03:41] it's more difficult essentially to
+[00:03:43] remove you from the business. Now, how
+[00:03:44] do you actually go ahead and price this?
+[00:03:46] Um, one of important things to bear in
+[00:03:47] mind here is that you are charging for
+[00:03:50] the outcome, not how much time it takes
+[00:03:52] you. So, if you can set up a personal
+[00:03:54] assistance that enables the owner to
+[00:03:57] save an hour a day on his emails, that
+[00:03:59] enables the owner to communicate with
+[00:04:00] his team and manage his triage's inbox
+[00:04:03] and build things, you may be adding like
+[00:04:05] tens of thousands of dollars of value to
+[00:04:07] that business. So we charge as a result
+[00:04:09] of that getting all the team set up and
+[00:04:11] the infrastructure not necessarily um
+[00:04:14] how much time it takes you. The classic
+[00:04:16] example I love this one is that the old
+[00:04:18] engineers parable. So you hire someone
+[00:04:20] to fix a boiler or plumbing in a toilet.
+[00:04:23] They come in, they whack it with a
+[00:04:25] hammer, it takes about 2 minutes and the
+[00:04:27] invoice reads tapping $1, knowing where
+[00:04:31] $9,999.
+[00:04:33] You're selling the knowhow, not the
+[00:04:35] actual tapping. So, think of that like
+[00:04:37] your if you're like an income ladder, so
+[00:04:38] to speak, that you spent the time in
+[00:04:40] this course. How many hours have you
+[00:04:42] spent um outside of this? You know,
+[00:04:44] you're in the community. You you're here
+[00:04:46] um hopefully you're like an annual
+[00:04:47] member here because of all the beautiful
+[00:04:50] benefits and stuff you get. You've
+[00:04:51] invested and you know, it's completely
+[00:04:53] fine and reasonable for you to charge
+[00:04:55] someone um quite a bit. It doesn't
+[00:04:57] matter how long it took you to gain
+[00:04:58] knowledge. You have that knowledge. You
+[00:05:00] spent your time doing it. You've
+[00:05:02] invested. So don't have imposter
+[00:05:03] syndrome about charging um for these
+[00:05:06] services. That's a really really
+[00:05:07] important uh to bear in mind here. One
+[00:05:09] interesting thing you can bear in mind
+[00:05:10] here if on charging is you can charge a
+[00:05:12] fee that's roughly onetenth of the first
+[00:05:13] year value you create deliver a 10% of
+[00:05:16] return and price conversion the price
+[00:05:18] conversation disappear. So I'm going to
+[00:05:20] make you a million pounds and for that
+[00:05:22] you're going to pay me 100k. Oh my gosh
+[00:05:24] what a total no-brainer that would
+[00:05:26] actually be. And again we don't ever
+[00:05:28] want to be now if you're starting out
+[00:05:29] hourly is okay. I'll do X hours for y
+[00:05:33] dollars. Completely fine. But the
+[00:05:35] problem is that, you know, the agent
+[00:05:37] setup can take 20 minutes and then you
+[00:05:39] get paid very much. Income's capped by
+[00:05:40] your calendar forever. And if you want
+[00:05:42] true escape velocity, in other words,
+[00:05:44] you want to get out of time for money
+[00:05:46] relationship, you have to stop getting
+[00:05:49] paid for your time. You have to break
+[00:05:51] that. You need to get to the point where
+[00:05:54] whether you turn up at nine o'clock or
+[00:05:55] not, you still get paid. That's like the
+[00:05:57] movement that you want to get to. And if
+[00:05:59] you're stuck in hourly, you won't get
+[00:06:01] there. But here's the thing. Hourly is
+[00:06:03] the very first step. In fact, the first
+[00:06:05] step is free. And I've I've been on many
+[00:06:07] free steps. And even now, there are
+[00:06:10] times where I would do something for
+[00:06:11] free because I understand reciprocity. I
+[00:06:15] understand the value investment. I I
+[00:06:16] mean, I met a very successful uh couple
+[00:06:19] of individuals, decking millionaires,
+[00:06:22] and they wanted to hire me for
+[00:06:24] consulting, and I said, "You can't. I'm
+[00:06:27] not available by now." but I will I will
+[00:06:30] consult for you. I I will give you like
+[00:06:32] an hour of my time. And I did and I blew
+[00:06:36] them away with value and they wanted to
+[00:06:38] pay me for it. And I said, "You can't
+[00:06:39] actually pay me for this. I'm not
+[00:06:41] available." Now, why did I do that? I
+[00:06:43] could have gotten like x,000 out of it.
+[00:06:46] But the thing is the relationship is
+[00:06:48] worth a lot more than the dollars. Like
+[00:06:50] you get way more than that elsewhere. So
+[00:06:52] free in a sense is sometimes more
+[00:06:55] valuable than the currency. And I've
+[00:06:57] noticed that the guys and girls that
+[00:06:58] crush it and the ones that don't, they
+[00:07:00] understand value. They understand that
+[00:07:02] giving leads to greater giving
+[00:07:05] afterwards. And we don't do we don't
+[00:07:06] give to be given to, but it's just
+[00:07:08] understanding the value exchange. And we
+[00:07:11] need to move to more of an outcome based
+[00:07:13] pricing more than hourly. I mean, I I
+[00:07:15] just hired someone um $10,000 uh for an
+[00:07:17] Instagram automation system and then
+[00:07:19] it's going to be like 3k a month.
+[00:07:21] They're charging me for hours. It would
+[00:07:22] have been like, "Oh, I'll charge you
+[00:07:23] $200 a month." Of course not. They're
+[00:07:26] charging for an outcome and the outcome
+[00:07:27] is conversions. So when we go for
+[00:07:29] outcome, we get paid for the result.
+[00:07:31] Agent speed becomes your margin, not
+[00:07:33] something discounted. So just because
+[00:07:34] it's easy to set up doesn't mean it
+[00:07:35] should be cheap. You're going to charge
+[00:07:37] for the operating burden you remove, not
+[00:07:39] the minutes that you log. And then the
+[00:07:41] renewals will compound themselves, which
+[00:07:43] is really really important. And here you
+[00:07:44] can see, for example, um how you can
+[00:07:46] kind of price and what that would
+[00:07:48] physically look like as you go down
+[00:07:49] there. Okay? So I don't want you quoting
+[00:07:51] hours initially if you're getting
+[00:07:53] started and you don't have the
+[00:07:54] experience. the experience is worth more
+[00:07:56] than the hours. So do the do that to get
+[00:07:58] essentially get started but then
+[00:08:00] eventually you want to analyze your
+[00:08:01] value. You want to move to more of an
+[00:08:03] outcome based uh pricing structure. Now
+[00:08:06] here's the thing niche you want to earn
+[00:08:08] one street. You want to be known for
+[00:08:10] something that is really important. You
+[00:08:12] know you know who doesn't get
+[00:08:13] remembered? The generalists. The guy
+[00:08:15] that came second place. If people can't
+[00:08:18] describe what you do to somebody else
+[00:08:20] they're not going to be able to
+[00:08:21] recommend you. And that's key. Like even
+[00:08:22] people say, "Hey, I do Instagram growth
+[00:08:24] strategies. We do Instagram DM sales."
+[00:08:26] Cool. I know that's the thing that they
+[00:08:28] do. It's very very poignant and very
+[00:08:30] important. So you want to be a big fish
+[00:08:32] in a pond. You don't necessarily want to
+[00:08:35] be someone who does everything and they
+[00:08:36] do SEO and we do marketing. I just do
+[00:08:38] this. I crush it. Think about your
+[00:08:39] positioning. It's really, really
+[00:08:40] important. You get more pricing power.
+[00:08:42] Your closing rate goes up because you
+[00:08:43] get more qualified prospects and your
+[00:08:45] retention is better. And it's really
+[00:08:47] important. And again, the other thing to
+[00:08:48] bear in mind here is when your call
+[00:08:50] rates go up, you can see I've got this
+[00:08:51] graph you can play around with a little
+[00:08:52] bit um to kind of see what that looks
+[00:08:54] like. You just make more money because
+[00:08:56] your prospects are better, your closing
+[00:08:57] rates better, your offer is more clear
+[00:08:59] to understand and they'll go and bite
+[00:09:01] it. You know, why would they go to the
+[00:09:02] guy that sort of does seven things you,
+[00:09:05] you know, let's say I want to grow on
+[00:09:06] YouTube. I've got a you this guy says,
+[00:09:08] "I help you on YouTube and Instagram and
+[00:09:10] Tik Tok and email." And then I've got
+[00:09:11] one guy that says, "I just do YouTube."
+[00:09:13] Where am I gonna go? I'm gonna go to the
+[00:09:15] YouTube guy because I want the expert.
+[00:09:16] So don't be afraid of niching down. It's
+[00:09:19] really, really important. You want to
+[00:09:20] pick on one vertical. Now, practically
+[00:09:23] speaking, if you think about like this,
+[00:09:25] and again, I've got some practical tips
+[00:09:27] really built into here to help you in
+[00:09:29] terms of like how to actually think
+[00:09:30] about what that would physically look
+[00:09:31] like and picking a vertical um what that
+[00:09:34] might be just to give you a bit of
+[00:09:36] detail. But I really want to double
+[00:09:37] click here on this idea of building it
+[00:09:38] and selling it again. Now, the idea with
+[00:09:40] this is that you can actually create one
+[00:09:43] system once you've got product market
+[00:09:45] fit and then you can literally take that
+[00:09:47] exact same system and replicate it out.
+[00:09:50] So, the very first stage that a business
+[00:09:51] goes through is finding product market
+[00:09:53] fit with their audience. So, for
+[00:09:54] example, you perfect the dish once in
+[00:09:56] one kitchen and then a cookbook cooks a
+[00:09:58] thousand times in kitchens you'll never
+[00:10:00] visit. Each copy cost you nothing. The
+[00:10:02] idea being that we figure out a package,
+[00:10:03] we figure out a system, an onboarding
+[00:10:05] system, a setup system, an offering
+[00:10:07] system, and we refine that with clients.
+[00:10:08] So once we've got that, we can actually
+[00:10:11] scale it up and offer it to lots of
+[00:10:13] different individuals. And you can see
+[00:10:14] here um you know agency man already
+[00:10:16] proved this. So go high levels white
+[00:10:18] level tier cost agencies $4974 $500 a
+[00:10:21] month and their resellers charge their
+[00:10:23] clients from a hundred to $500 a month
+[00:10:25] breaking even at roughly two clients.
+[00:10:28] Thousands of agencies run exactly this
+[00:10:30] arithmetic. Hermes hands you the same
+[00:10:31] model with far more capable engine. So
+[00:10:33] it kind of actually becomes more
+[00:10:34] economically advantageous as you scale
+[00:10:37] if it's a trend that you believe is
+[00:10:38] going to increase. And we can see Hermes
+[00:10:40] is showing no sign of stopping right
+[00:10:42] now. Then eventually you can productize
+[00:10:44] it. That means giving it a name, giving
+[00:10:46] it a price and having it running on your
+[00:10:48] website, which is really cool. So the
+[00:10:50] other thing here is you can scale what
+[00:10:51] you already basically run. And this is
+[00:10:54] essentially taking what you currently do
+[00:10:56] in your own business and making it
+[00:10:57] better. Now the one exercise I really
+[00:10:59] want you to play around here is this
+[00:11:01] idea of the bottleneck. the principle of
+[00:11:04] limitations of the kind of like you know
+[00:11:06] essentially finding the biggest
+[00:11:08] bottleneck in your business the theory
+[00:11:09] of constraints and solving that think of
+[00:11:12] it like compound interest so hours are
+[00:11:13] the principle the agent pays them back
+[00:11:15] weekly and reinvested hours earn their
+[00:11:17] own hours in return spent hours are just
+[00:11:19] gone so I put this copy here for you to
+[00:11:21] play around with my next goal so ask
+[00:11:24] yourself this question what is the
+[00:11:26] single biggest limiting factor between
+[00:11:28] me and the next goal next client the
+[00:11:30] next level of income not 10 small ones
+[00:11:33] and we are just going to solve that one
+[00:11:36] thing. Is it confidence? How do I get
+[00:11:38] confidence through repetition through
+[00:11:39] proof results? Cool. Is it getting
+[00:11:42] eyeballs? Okay, I am just going to learn
+[00:11:44] how to get eyeballs and you just
+[00:11:45] honestly intense focus on your number
+[00:11:48] one constraint will get you so much
+[00:11:50] further than kind of trying to do 10
+[00:11:52] things that you think are problems.
+[00:11:54] There's a classic exercise
+[00:11:56] that I think very very famous people
+[00:11:58] have done this and it's very
+[00:11:59] interesting. Essentially, you get a
+[00:12:01] sheet of paper and you write down all of
+[00:12:02] your priorities. Okay? Once you've done
+[00:12:05] that, you essentially, and honestly,
+[00:12:07] grab a coffee and do this. You write it
+[00:12:08] down. Then, once you've done that, I
+[00:12:10] want you to number them from most
+[00:12:11] important to least important in terms of
+[00:12:14] if I only did this thing,
+[00:12:17] what would the impact be in three
+[00:12:18] months? Okay? And then what you do is
+[00:12:20] you essentially cross off everything
+[00:12:22] from two to the bumble list and you just
+[00:12:24] do number one. And if you solve number
+[00:12:26] one in a month and a half, cool. Then
+[00:12:29] you go and do number two. The mistake
+[00:12:30] people make is they try to do like seven
+[00:12:32] at the same time and it doesn't work. So
+[00:12:34] there's a prompt here. It's going to be
+[00:12:35] awesome. You're gonna get your time back
+[00:12:37] by learning all the places you can
+[00:12:38] actually leverage her agent to become
+[00:12:40] better and more efficient. And the more
+[00:12:42] time you've got back, the more time you
+[00:12:43] have to be capable and actually sell
+[00:12:45] this and do various different things.
+[00:12:47] One strategy you can do as well is
+[00:12:48] building in public. So if you are
+[00:12:50] somebody who wants to sell and install
+[00:12:53] Hermes agents into businesses, you can
+[00:12:55] share like strategies that you've done,
+[00:12:57] case studies, um ways that you've saved
+[00:12:59] time, find viral trending content on
+[00:13:01] Hermes and find different ideas for
+[00:13:03] that, help them set up and you know you
+[00:13:05] can actually go ahead and basically
+[00:13:07] build and public with everything with
+[00:13:08] Hermes Hermes agent and again I've shown
+[00:13:10] some more stats here that you might find
+[00:13:11] helpful as you go through that. Then we
+[00:13:13] come on to the eighth section which is
+[00:13:15] the fleet. And so if you think of the
+[00:13:17] fleet as all of your clients, right? And
+[00:13:19] then they all pay you a set fee per
+[00:13:21] month to host and run Hermes. And
+[00:13:24] essentially they're running they're
+[00:13:25] doing their own things and you yourself
+[00:13:26] are getting an income from every single
+[00:13:28] one of these businesses and they run
+[00:13:30] remotely on your VPS and your hosting
+[00:13:32] and basically um so long as they keep
+[00:13:35] using and paying the bill, you keep
+[00:13:36] getting paid. It's a great way to
+[00:13:38] essentially manage it, drive income and
+[00:13:41] you know once you get one client you can
+[00:13:43] say awesome and there are some ways you
+[00:13:45] can get these clients. You can say great
+[00:13:47] do you know anybody else who would
+[00:13:48] really benefit from having Hermes agent.
+[00:13:51] So the setup would look something like
+[00:13:52] this is that that you basically have a
+[00:13:54] personal agent that you install for the
+[00:13:57] CEO or the management team. You set that
+[00:13:59] up for a setup fee and you connect it to
+[00:14:02] all of their stuff. Once that's
+[00:14:03] happened, you then run a monthly
+[00:14:05] maintenance fee. And you know, you don't
+[00:14:07] just have to sell exclusively Hermes,
+[00:14:09] but actually, it's a really good product
+[00:14:11] that you can add into your product
+[00:14:12] stack. It's like, look, you want a
+[00:14:13] personal intelligence system that just
+[00:14:15] gets smarter the more that you use it.
+[00:14:17] It's going to make you more efficient,
+[00:14:18] and it's great, and you'll be surprised
+[00:14:20] at the number of people that really want
+[00:14:22] to go ahead and leverage the system. But
+[00:14:24] now we've covered this. If you want to
+[00:14:25] get more detail into the specific
+[00:14:27] strategies, how to open the relationship
+[00:14:29] with businesses, what products to sell,
+[00:14:31] go ahead over to chapter four in the
+[00:14:33] classroom and work your way down that
+[00:14:35] road map. And then the next thing to do
+[00:14:37] if you have not already is to complete
+[00:14:39] the Claude code masterass. That is
+[00:14:42] fantastic. And if you want help getting
+[00:14:44] customers, can I recommend to you very
+[00:14:46] strongly that you go ahead if you
+[00:14:48] haven't already on the homepage and you
+[00:14:50] will see an upgrade button here if you
+[00:14:52] haven't already and join annual. Not
+[00:14:54] only you going to save over 50% on your
+[00:14:57] membership, I've got resources in there,
+[00:14:59] playbooks. I mean, I created a new
+[00:15:01] stream of customers and income stream on
+[00:15:03] Instagram and I share my exact system
+[00:15:05] and AIS that I'm using there. It is and
+[00:15:07] there's a million things in there that
+[00:15:08] are going to bless you and really help
+[00:15:09] you. It will really accelerate your
+[00:15:11] journey. Plus, you get load of cool
+[00:15:12] things like cool avatar. It's very, very
+[00:15:14] freaking cool. I'd highly recommend to
+[00:15:15] do that next. And any questions, let me
+[00:15:17] know inside the community.

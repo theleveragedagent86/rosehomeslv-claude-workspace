@@ -1,0 +1,244 @@
+<meta charset="utf-8"><title>Leveraged Agent type experiments v4</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&family=Archivo:wght@600;700;800&family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&family=Space+Grotesk:wght@600;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+<style>
+/* Colour tokens are held constant (Ultramarine) so the display face is the only variable. */
+:root{--la-bg:#FFFFFF;--la-bg-2:#F7F8FA;--la-bg-inv:#050E3D;--la-line:#E4E7EF;--la-structure:#0B3FA8;--la-ink:#050E3D;--la-ink-2:#55627F;--la-ink-inv:#FFFFFF;--la-ink-2-inv:#6A7CAF;--la-accent:#1768E5;--la-accent-on:#FFFFFF;--la-accent-txt:#1768E5;--la-accent-inv:#5B9BFF;
+  --la-font-body:"Inter",-apple-system,"Helvetica Neue",sans-serif;
+  --la-track-label:0.14em;--la-lh-body:1.55}
+.t1{--la-font-head:"Poppins","Futura","Avenir Next",sans-serif;--la-weight-head:800;--la-track-head:-0.03em}
+.t2{--la-font-head:"Archivo","Helvetica Neue",Arial,sans-serif;--la-weight-head:800;--la-track-head:-0.03em}
+.t3{--la-font-head:"Bodoni Moda","Didot","Playfair Display",serif;--la-weight-head:700;--la-track-head:-0.01em}
+.t4{--la-font-head:"Space Grotesk","Poppins",sans-serif;--la-weight-head:700;--la-track-head:-0.03em}
+.t5{--la-font-head:"Fraunces","Georgia",serif;--la-weight-head:800;--la-track-head:-0.02em}
+.t6{--la-font-head:"Inter Tight","Inter",sans-serif;--la-weight-head:800;--la-track-head:-0.03em}
+.hdr{padding:30px 40px 8px;color:#f0f0f0;font-family:Poppins;font-size:24px;font-weight:700;letter-spacing:-.02em}
+.hdrsub{padding:0 40px 26px;color:#8d8d8d;font-size:13px;line-height:1.6;max-width:860px}
+.hdrsub b{color:#d6d6d6;font-weight:600}
+
+
+.pal{background:var(--la-bg);color:var(--la-ink);font-family:var(--la-font-body);
+     padding:34px 40px 42px;margin:0 40px 34px;border-radius:16px}
+.name{font-family:var(--la-font-head);font-size:12px;font-weight:600;letter-spacing:.16em;
+      text-transform:uppercase;color:var(--la-ink-2);margin-bottom:20px}
+.name b{color:var(--la-ink);font-size:16px;font-weight:var(--la-weight-head);letter-spacing:-.01em;
+        text-transform:none;margin-right:9px}
+.note{font-size:11px;line-height:1.55;color:var(--la-ink-2);margin:-12px 0 20px;max-width:70ch}
+.tag{display:inline-block;font-family:var(--la-font-head);font-size:10px;font-weight:600;
+     letter-spacing:.18em;text-transform:uppercase;color:var(--la-accent-on);background:var(--la-accent);
+     padding:5px 12px;border-radius:999px;margin-bottom:16px}
+h2{font-family:var(--la-font-head);font-size:40px;font-weight:var(--la-weight-head);
+   letter-spacing:var(--la-track-head);line-height:1.06;margin-bottom:12px;max-width:15ch}
+h2 em{font-style:normal;color:var(--la-accent-txt)}
+.lede{font-size:15px;line-height:var(--la-lh-body);color:var(--la-ink-2);max-width:56ch;margin-bottom:22px}
+.btns{display:flex;gap:12px;align-items:center;margin-bottom:30px;flex-wrap:wrap}
+.b1{font-family:var(--la-font-head);font-weight:600;font-size:14px;padding:13px 24px;border-radius:999px;
+    border:none;cursor:pointer;background:var(--la-accent);color:var(--la-accent-on)}
+.b2{font-family:var(--la-font-head);font-weight:600;font-size:14px;padding:12px 23px;border-radius:999px;
+    cursor:pointer;background:transparent;color:var(--la-ink);border:1.5px solid var(--la-line)}
+.b3{font-family:var(--la-font-head);font-weight:600;font-size:14px;background:none;border:none;cursor:pointer;
+    color:var(--la-accent-txt);text-decoration:underline;text-underline-offset:4px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
+.c{background:var(--la-bg-2);border:1px solid var(--la-line);border-radius:14px;padding:22px}
+.eb{font-family:var(--la-font-body);font-size:10px;font-weight:700;letter-spacing:var(--la-track-label);
+    text-transform:uppercase;color:var(--la-accent-txt);margin-bottom:10px}
+.ch{font-family:var(--la-font-head);font-size:17px;font-weight:600;letter-spacing:-.02em;margin-bottom:8px}
+.cb{font-size:13px;line-height:1.6;color:var(--la-ink-2)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
+.st{background:var(--la-bg-inv);color:var(--la-ink-inv);border-radius:14px;padding:22px}
+.stn{font-family:var(--la-font-head);font-size:44px;font-weight:var(--la-weight-head);letter-spacing:-.04em;
+     line-height:1;color:var(--la-accent-inv)}
+.stl{font-size:12px;line-height:1.5;margin-top:8px;color:var(--la-ink-2-inv)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:26px}
+th{font-family:var(--la-font-body);font-size:10px;font-weight:700;letter-spacing:var(--la-track-label);
+   text-transform:uppercase;text-align:left;color:var(--la-ink-2);padding:9px 12px;border-bottom:1.5px solid var(--la-line)}
+td{padding:11px 12px;border-bottom:1px solid var(--la-line)}
+tr:nth-child(even) td{background:var(--la-bg-2)}
+.pill{font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--la-accent);color:var(--la-accent-on)}
+.pill.q{background:transparent;color:var(--la-ink-2);border:1px solid var(--la-line)}
+.bars{display:flex;align-items:flex-end;gap:9px;height:88px;margin-bottom:8px}
+.bar{flex:1;border-radius:5px 5px 0 0;background:var(--la-structure);opacity:.28}
+.bar.hi{background:var(--la-accent);opacity:1}
+.cap{font-size:11px;color:var(--la-ink-2)}
+.sw{display:flex;gap:0;border-radius:10px;overflow:hidden;margin-top:26px;border:1px solid var(--la-line)}
+.sw div{flex:1;height:58px;display:flex;align-items:flex-end;padding:6px 8px;font-size:9px;font-weight:600;letter-spacing:.02em}
+
+/* rules strip */
+.rules{margin:0 40px 34px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:28px 34px}
+.rules h3{font-family:Poppins;font-size:15px;font-weight:700;color:#f0f0f0;letter-spacing:-.01em;margin-bottom:14px}
+.rrow{display:flex;gap:14px;align-items:center;padding:11px 0;border-top:1px solid #2e2e2e;font-size:13px;color:#c4c4c4;line-height:1.5}
+.chip{flex:0 0 190px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+      font-size:14px;font-weight:600;font-family:Poppins}
+.verdict{flex:0 0 62px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.ok{color:#54C08A}.no{color:#F4756B}
+.alpha{font-family:var(--la-font-head);font-weight:var(--la-weight-head);font-size:30px;
+  letter-spacing:var(--la-track-head);color:var(--la-ink);margin-top:26px;line-height:1.2;word-spacing:.04em}
+.alpha.lo{font-size:44px;margin-top:6px;color:var(--la-accent-txt)}
+</style>
+</head>
+<body>
+<div class="hdr">Type experiments: same palette, six display faces</div>
+<div class="hdrsub"><b>Nothing here is adopted.</b> Every section below is byte-identical markup on the <b>Ultramarine</b> palette. The only variable is the display face and its tracking. Body copy stays Inter in all six, because finding 4 of the research is that these brands run exactly two fonts and the body font is never the interesting one. Judge the headline, the stat numbers, the card titles and the wordmark line at the bottom of each section. Palette options are on <b>v4-preview.html</b>. Spec: V4-PALETTES.md.</div>
+
+<section class="pal t1">
+  <div class="name"><b>Poppins 800</b> geometric sans &middot; the current system</div>
+  <div class="note">What you already run, and what the carousels are built in. Geometric, friendly, round. Reads modern and approachable. The risk is that it is everywhere in coaching and course design, so it does not signal pedigree on its own.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="alpha">ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</div>
+  <div class="alpha lo">The Leveraged Agent</div>
+</section>
+
+<section class="pal t2">
+  <div class="name"><b>Archivo 800</b> neo-grotesque &middot; closest to the pedigree set</div>
+  <div class="note">Closest to what Serhant and Compass actually run. Tighter, squarer, more editorial than Poppins. Same weight of voice, more authority, less warmth. If you want to look like the researched brands without going serif, this is the one.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="alpha">ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</div>
+  <div class="alpha lo">The Leveraged Agent</div>
+</section>
+
+<section class="pal t3">
+  <div class="name"><b>Bodoni Moda 700</b> high-contrast serif &middot; the luxury convention</div>
+  <div class="note">Camp A from the research: the Sotheby's and Elliman convention. Very high thick and thin contrast. Expensive at large size, fragile at small size. Tracking is dialed back to -0.01em because a didone breaks if you tighten it the way you tighten Poppins.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="alpha">ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</div>
+  <div class="alpha lo">The Leveraged Agent</div>
+</section>
+
+<section class="pal t4">
+  <div class="name"><b>Space Grotesk 700</b> tech-forward sans</div>
+  <div class="note">Reads software, not real estate. Given that the product is AI and automation for agents, that may be the honest signal. Distinctive letterforms mean it stays recognizable at thumbnail size, which matters for YouTube.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="alpha">ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</div>
+  <div class="alpha lo">The Leveraged Agent</div>
+</section>
+
+<section class="pal t5">
+  <div class="name"><b>Fraunces 800</b> warm soft serif &middot; the most personal</div>
+  <div class="note">Serif with personality instead of formality. Warmer than Bodoni, far less stiff. This is the option that reads like one person built the brand rather than a brokerage committee, which is closer to what the Skool community actually is.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="alpha">ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</div>
+  <div class="alpha lo">The Leveraged Agent</div>
+</section>
+
+<section class="pal t6">
+  <div class="name"><b>Inter Tight 800</b> single-family system</div>
+  <div class="note">One family for everything, display and body, separated only by weight and size. Compass builds this way. Cheapest to maintain, fastest to load, and the least distinctive. Nothing will ever clash, and nothing will ever stand out.</div>
+  <div class="tag">Module 03</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Set up the workflow that answers leads while you are showing houses, then stop touching it. Six steps, about forty minutes.</div>
+  <div class="btns"><button class="b1">Start module</button><button class="b2">Watch the walkthrough</button><button class="b3">Download the template</button></div>
+  <div class="grid">
+    <div class="c"><div class="eb">Step one</div><div class="ch">Map the handoffs</div><div class="cb">Write down every point where a lead waits on you personally.</div></div>
+    <div class="c"><div class="eb">Step two</div><div class="ch">Draft the replies</div><div class="cb">One message per trigger. Your voice, not a script from the internet.</div></div>
+    <div class="c"><div class="eb">Step three</div><div class="ch">Wire the trigger</div><div class="cb">Connect the form to the sequence and send yourself a test lead.</div></div>
+  </div>
+  <div class="stats">
+    <div class="st"><div class="stn">12 hrs</div><div class="stl">back per week, average across the first cohort</div></div>
+    <div class="st"><div class="stn">4 min</div><div class="stl">median first-response time after the build</div></div>
+    <div class="st"><div class="stn">38</div><div class="stl">agents who finished the module last month</div></div>
+  </div>
+  <table><tr><th>Workflow</th><th>Trigger</th><th>Status</th></tr>
+    <tr><td>New lead intake</td><td>Form submit</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Showing follow-up</td><td>2 hrs after</td><td><span class="pill">Live</span></td></tr>
+    <tr><td>Past client check-in</td><td>Quarterly</td><td><span class="pill q">Draft</span></td></tr></table>
+  <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:44%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:63%"></div><div class="bar hi" style="height:100%"></div></div>
+  <div class="cap">Leads handled without you touching them, by week</div>
+  <div class="alpha">ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</div>
+  <div class="alpha lo">The Leveraged Agent</div>
+</section>
+</body>
+</html>

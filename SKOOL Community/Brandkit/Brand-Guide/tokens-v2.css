@@ -1,0 +1,47 @@
+/* The Leveraged Agent - palette v2, both candidates in one file.
+   Set data-la-palette="voltage" or "ember" on <html> to A/B them on the same page.
+   Neither is adopted. v1 = Brand-Guide/tokens.css. Spec = Brand-Guide/V2-PALETTES.md */
+
+[data-la-palette="voltage"] {  /* Voltage: dark-first, high-chroma, tech-forward */
+  --la-bg:                #04171C;
+  --la-bg-2:              #0A2A33;
+  --la-bg-inv:            #F2EFE6;
+  --la-line:              #1B3239;
+  --la-structure:         #14586A;
+  --la-ink:               #F2EFE6;
+  --la-ink-2:             #7D98A1;
+  --la-ink-inv:           #04171C;
+  --la-accent:            #2DE2C5;
+  --la-accent-on:         #04171C;
+  --la-accent-txt-inv:    #0F7B65;
+  --la-accent-2:          #FFB627;
+  --la-accent-2-on:       #04171C;
+  --la-accent-2-txt-inv:  #916308;
+
+  --la-font-head:         "Poppins", "Futura", "Avenir Next", sans-serif;
+  --la-font-body:         "Inter", -apple-system, "Helvetica Neue", sans-serif;
+  --la-track-head:        -0.03em;
+  --la-lh-body:           1.55;
+}
+
+[data-la-palette="ember"] {  /* Ember: light-first, warm, maximum hue tension against teal */
+  --la-bg:            #FBF7F0;
+  --la-bg-2:          #F1EDE7;
+  --la-bg-inv:        #0A2028;
+  --la-line:          #E6E1D8;
+  --la-structure:     #0B3D4A;
+  --la-ink:           #0A2028;
+  --la-ink-2:         #3B6472;
+  --la-ink-inv:       #FBF7F0;
+  --la-accent:        #FF5F2E;
+  --la-accent-on:     #0A2028;
+  --la-accent-txt:    #C43708;
+  --la-accent-2:      #F0A500;
+  --la-accent-2-on:   #0A2028;
+  --la-accent-2-txt:  #8F6103;
+
+  --la-font-head:     "Poppins", "Futura", "Avenir Next", sans-serif;
+  --la-font-body:     "Inter", -apple-system, "Helvetica Neue", sans-serif;
+  --la-track-head:    -0.03em;
+  --la-lh-body:       1.55;
+}

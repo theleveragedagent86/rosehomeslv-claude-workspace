@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Direction 1: Field Manual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* ============================================================
+   DIRECTION 1: FIELD MANUAL
+   A tool you carry into the model home, not a brochure.
+   Two ink colors. Asymmetric 60/40 grid. The narrow column
+   is a live note rail: ruled lines, checkboxes, blank fields.
+   ============================================================ */
+
+:root{
+  /* ---- ink ---- */
+  --ink:            #101418;   /* max ink: bars, display, rules */
+  --text:           #2A3138;   /* body text */
+  --muted:          #5A646D;   /* source log, captions, field labels */
+  /* ---- signal ---- */
+  --signal:         #8F2D08;   /* signal text, citation numerals, emphasis rule */
+  --signal-bright:  #E8641A;   /* button fill, cover band, tab fill */
+  --signal-tint:    #F7E9DF;   /* aside + NOT FOUND panel field */
+  /* ---- stock ---- */
+  --paper:          #FFFFFF;   /* page stock */
+  --rail:           #EFEEE9;   /* note rail field tint */
+  --zebra:          #F5F4F0;   /* table alternate row */
+  --rule:           #C6C4BC;   /* ruled writing lines, table hairlines */
+  --night:          #14181D;   /* landing hero ground, cover ground */
+  --night-muted:    #C9D0D7;   /* hero secondary text */
+
+  /* ---- spacing scale, 4pt base ---- */
+  --s1: 4px;  --s2: 8px;  --s3: 12px; --s4: 16px;
+  --s5: 22px; --s6: 30px; --s7: 40px; --s8: 56px;
+
+  /* ---- rule weights ---- */
+  --hair: 0.5pt;  --thin: 1px;  --med: 2px;  --heavy: 3px;  --bar: 5px;
+
+  /* ---- page geometry, Letter ---- */
+  --m-outer: 0.36in;  --m-inner: 0.5in;
+  --m-top:   0.34in;  --m-bottom: 0.3in;
+  --col-rail: 2.47in;  --col-gap: 0.22in;  --col-main: 4.95in;  /* 64 / 36 across 7.64in live */
+  --log-h: 1.52in;
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  background:#6b6b6b;             /* scaffolding gray, not part of the palette */
+  font-family:'IBM Plex Sans',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ---------- preview scaffolding, never part of the artwork ---------- */
+.rig{ padding:44px 24px 90px; }
+.rig-head{
+  max-width:8.5in; margin:0 auto 34px; color:#EDEDEA;
+  font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; line-height:1.7; border-top:2px solid #EDEDEA;
+  border-bottom:1px solid #9a9a97; padding:10px 0;
+}
+.rig-head b{ color:#F5A46A; font-weight:600; }
+.cap{
+  color:#EFEFEC; max-width:1400px; line-height:1.9; font-family:'IBM Plex Mono',monospace; font-size:10.5px;
+  letter-spacing:.2em; text-transform:uppercase; margin:0 auto 12px;
+  display:block; max-width:1400px; padding-left:2px;
+}
+.stage{ margin:0 auto 58px; max-width:max-content; }
+.stage-full{ margin:0 auto 58px; max-width:1400px; }
+.spread{ display:flex; gap:14px; }
+
+/* ---------- page box ---------- */
+.page{
+  width:8.5in; height:11in; flex:0 0 auto; background:var(--paper); position:relative;
+  overflow:hidden; color:var(--text);
+  box-shadow:0 0 0 1px rgba(0,0,0,.45), 0 20px 44px rgba(0,0,0,.42);
+}
+
+/* ============================================================
+   PANEL A: COVER
+   ============================================================ */
+.cover{ background:var(--night); color:var(--paper); display:flex; flex-direction:column; }
+.cover::before{  /* technical registration grid, cover texture */
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background-image:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.055) 0 1px,transparent 1px 0.25in),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.055) 0 1px,transparent 1px 0.25in);
+}
+.cover > *{ position:relative; }
+
+.cv-mast{
+  border-bottom:var(--bar) solid var(--signal-bright);
+  padding:0.42in var(--m-outer) 0.16in;
+  display:flex; justify-content:space-between; align-items:flex-end; gap:var(--s4);
+}
+.cv-eyebrow{
+  font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600;
+  letter-spacing:.26em; text-transform:uppercase; color:var(--paper);
+}
+.cv-code{
+  font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:500;
+  letter-spacing:.2em; color:var(--signal-bright); white-space:nowrap;
+}
+
+.cv-body{ flex:1; padding:0.5in var(--m-outer) 0; display:flex; flex-direction:column; }
+.cv-title{
+  font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:98px;
+  line-height:0.86; letter-spacing:-0.005em; text-transform:uppercase;
+  margin:0 0 0.24in; max-width:6.9in;
+}
+.cv-rule{ height:var(--heavy); background:var(--signal-bright); width:2.1in; margin-bottom:0.2in; }
+.cv-sub{
+  font-size:19px; line-height:1.42; font-weight:400; color:var(--paper);
+  max-width:4.6in; margin:0 0 0.26in;
+}
+.cv-geo{
+  font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:22px;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--signal-bright);
+  margin:0 0 0.14in;
+}
+.cv-cred{
+  font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:400;
+  letter-spacing:.03em; color:var(--night-muted); margin:0;
+}
+
+/* labeled CSS-only placeholder, no external image */
+.ph{
+  margin:0.3in 0 0; border:var(--thin) dashed rgba(255,255,255,.42);
+  height:1.5in; display:flex; flex-direction:column; justify-content:flex-end;
+  padding:var(--s3);
+  background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.075) 0 2px,transparent 2px 9px);
+}
+.ph-cap{
+  font-family:'IBM Plex Mono',monospace; font-size:9.5px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--night-muted); line-height:1.5;
+}
+.ph-cap b{ color:var(--signal-bright); font-weight:600; }
+
+/* nameplate: the brokerage gets a stamped equipment plate, not a footnote */
+.cv-plate{
+  margin:0.28in var(--m-outer) 0.4in; border:var(--med) solid var(--signal-bright);
+  background:rgba(255,255,255,.045);
+}
+.cv-plate-top{ display:flex; border-bottom:var(--thin) solid rgba(255,255,255,.32); }
+.cv-plate-cell{ padding:0.16in 0.2in; }
+.cv-plate-cell.by{ flex:1.35; border-right:var(--thin) solid rgba(255,255,255,.32); }
+.cv-plate-cell.ed{ flex:1; }
+.plate-lab{
+  font-family:'IBM Plex Mono',monospace; font-size:9px; font-weight:600;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--signal-bright);
+  margin:0 0 var(--s2);
+}
+.cv-name{
+  font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:38px;
+  line-height:0.95; letter-spacing:.005em; text-transform:uppercase; margin:0 0 var(--s1);
+}
+.cv-brokerage{
+  font-family:'IBM Plex Mono',monospace; font-size:14px; font-weight:600;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--signal-bright); margin:0;
+}
+.cv-ed{ font-size:13px; line-height:1.62; margin:0; color:var(--paper); }
+.cv-ed span{ display:block; }
+.cv-plate-bottom{ padding:0.14in 0.2in 0.16in; }
+.cv-legal{
+  font-family:'IBM Plex Mono',monospace; font-size:11.5px; line-height:1.85;
+  letter-spacing:.02em; color:var(--paper); margin:0;
+}
+.cv-legal .sep{ color:var(--signal-bright); padding:0 .35em; }
+.cv-legal .nb{ white-space:nowrap; }
+
+/* [NOT FOUND] slot: fixed inline-block width so a real number drops in
+   without reflowing the line or the plate */
+.slot{
+  display:inline-block; min-width:10.5ch; text-align:left;
+  font-family:'IBM Plex Mono',monospace; font-weight:600;
+  border-bottom:var(--thin) solid var(--signal-bright); padding-bottom:1px;
+}
+.slot.dark{ border-bottom-color:var(--signal); color:var(--signal); }
+
+/* ============================================================
+   PANEL B: INTERIOR SPREAD, PAGES 19 AND 20
+   ============================================================ */
+.leaf{
+  display:flex; flex-direction:column;
+  padding:var(--m-top) var(--m-inner) var(--m-bottom) var(--m-outer);
+}
+.leaf.recto{ padding-left:var(--m-inner); padding-right:var(--m-outer); }
+
+/* running head band */
+.rh{
+  display:flex; align-items:baseline; gap:var(--s3);
+  border-bottom:var(--med) solid var(--ink); padding-bottom:var(--s2); margin-bottom:var(--s4);
+}
+.rh-sec{
+  font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:15px;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--ink);
+}
+.rh-doc{
+  font-family:'IBM Plex Mono',monospace; font-size:9px; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--muted); margin-left:auto;
+}
+
+/* the asymmetric body. Rail always sits on the OUTER edge, so the spread
+   opens with two note rails at the thumbs and the argument in the middle. */
+.cols{ flex:1 1 auto; display:grid; grid-template-columns:var(--col-rail) var(--col-gap) var(--col-main); min-height:0; }
+.cols.recto{ grid-template-columns:var(--col-main) var(--col-gap) var(--col-rail); }
+.main{ grid-column:3; min-width:0; min-height:0; }
+.cols.recto .main{ grid-column:1; }
+.rail{ grid-column:1; min-width:0; min-height:0; }
+.cols.recto .rail{ grid-column:3; }
+
+/* ---- main column typography ---- */
+.kick{ height:var(--bar); width:1.2in; background:var(--signal); margin-bottom:10px; }
+h1.hl{
+  font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:34px;
+  line-height:0.93; letter-spacing:-0.008em; color:var(--ink); margin:0 0 10px;
+}
+.deck{
+  font-size:14.5px; line-height:1.36; font-weight:500; color:var(--text);
+  margin:0 0 8px; padding-bottom:8px; border-bottom:var(--thin) solid var(--rule);
+}
+p.b{ font-size:14px; line-height:1.45; margin:0 0 7px; }
+p.b:last-child{ margin-bottom:0; }
+.beat{
+  font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:21px;
+  line-height:1.04; letter-spacing:.005em; color:var(--signal); text-transform:uppercase;
+  margin:7px 0 9px; padding-left:10px;
+  border-left:var(--heavy) solid var(--signal);
+}
+h2.sub{
+  font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:19px;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--ink);
+  margin:12px 0 9px; padding-top:6px; border-top:var(--med) solid var(--ink);
+}
+sup.cite{
+  font-family:'IBM Plex Mono',monospace; font-size:8.5px; font-weight:600;
+  color:var(--signal); vertical-align:super; line-height:0; padding-left:1px;
+}
+
+/* numbered list, flexbox marker pattern, never absolute */
+ol.steps{ list-style:none; margin:0 0 10px; padding:0; }
+ol.steps > li{
+  display:flex; gap:7px; align-items:flex-start;
+  font-size:13.5px; line-height:1.42; margin-bottom:6px;
+  break-inside:avoid;
+}
+ol.steps > li > .mk{
+  flex:0 0 16px; height:16px; margin-top:1px;
+  background:var(--ink); color:var(--paper);
+  font-family:'IBM Plex Mono',monospace; font-size:10px; font-weight:600;
+  display:flex; align-items:center; justify-content:center;
+}
+ol.steps > li > .tx{ flex:1 1 auto; min-width:0; }
+ol.steps b{ font-weight:700; color:var(--ink); }
+
+/* NOT FOUND panel: the largest object on page 19, and it spans the full
+   spread measure so it reads as a supplied tool, not an apology.
+   Structure carries it, not fill, so it survives grayscale. */
+.nf{
+  border:var(--med) solid var(--ink); background:var(--signal-tint);
+  margin:10px 0 0; break-inside:avoid;
+}
+.nf-bar{
+  background:var(--ink); color:var(--paper); padding:5px var(--s3);
+  display:flex; align-items:center; gap:var(--s2);
+  font-family:'IBM Plex Mono',monospace; font-size:9.5px; font-weight:600;
+  letter-spacing:.19em; text-transform:uppercase;
+}
+.nf-bar .reg{ margin-left:auto; color:var(--signal-bright); }
+.nf-in{ padding:9px 11px 10px; display:grid; grid-template-columns:1fr 1.5in; gap:0 13px; align-items:stretch; }
+.nf h3{
+  font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:26px;
+  line-height:0.94; letter-spacing:-0.005em; color:var(--ink); margin:0 0 7px;
+}
+.nf-say{ min-width:0; padding-right:13px; border-right:var(--med) solid var(--ink); }
+.nf-copy{ min-width:0; }
+.nf p{ font-size:11.5px; line-height:1.4; margin:0 0 5px; }
+.nf p:last-child{ margin-bottom:0; }
+
+/* full-width foot panel on page 20: the last of the argument, then the offer */
+.foot{
+  border-top:var(--med) solid var(--ink); margin-top:9px; padding-top:7px;
+  display:grid; grid-template-columns:1fr 3.42in; gap:0 16px; break-inside:avoid;
+}
+.foot p{ font-size:11.5px; line-height:1.42; margin:0; }
+.foot .offer{ padding-left:16px; border-left:var(--heavy) solid var(--signal); }
+.foot .offer p + p{ margin-top:5px; font-weight:600; color:var(--ink); }
+
+/* ---- the note rail ---- */
+.rail-in{
+  background:var(--rail); border-top:var(--heavy) solid var(--ink);
+  height:100%; padding:8px 10px 7px;
+  display:flex; flex-direction:column; overflow:hidden;
+}
+.rail-lab{
+  font-family:'IBM Plex Mono',monospace; font-size:8.5px; font-weight:600;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--muted);
+  margin:0 0 4px;
+}
+.rail-h{
+  font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:15.5px;
+  line-height:1.04; letter-spacing:.03em; text-transform:uppercase; color:var(--ink);
+  margin:0 0 6px; padding-bottom:5px; border-bottom:var(--med) solid var(--ink);
+}
+
+/* rail-set numbered list runs one notch tighter than the main column */
+.rail-steps > li{ font-size:10.5px; line-height:1.3; margin-bottom:1px; }
+.rail-steps > li > .mk{ flex:0 0 14px; height:14px; font-size:9px; }
+.notes{ margin-top:auto; padding-top:5px; border-top:var(--med) solid var(--ink); }
+
+/* aside, set inline in the main column */
+.aside{
+  background:var(--signal-tint); border:var(--thin) solid var(--ink);
+  border-left:var(--bar) solid var(--signal); padding:6px 10px 7px;
+  margin:0 0 8px; break-inside:avoid;
+}
+.aside p{ font-size:11.5px; line-height:1.4; margin:0; }
+.aside b{ color:var(--ink); font-weight:700; }
+.aside-lab{
+  font-family:'IBM Plex Mono',monospace; font-size:8px !important; font-weight:600;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--signal);
+  margin:0 0 4px !important;
+}
+
+/* diagram slot */
+.dia{ background:var(--paper); padding:0 13px 0 0; border-right:var(--thin) solid var(--ink); break-inside:avoid; align-self:start; }
+
+/* write-in block: the callout refuses to print a number, so it hands the
+   reader a ruled blank to write their own in. The thesis in one object. */
+.capture{ background:var(--paper); padding:0; align-self:start; }
+.cap-lab{
+  font-family:'IBM Plex Mono',monospace; font-size:8px; font-weight:600;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--signal);
+  margin:0 0 6px; padding-bottom:4px; border-bottom:var(--thin) solid var(--ink);
+}
+.dia svg{ display:block; width:100%; height:auto; }
+.dia-cap{
+  font-family:'IBM Plex Mono',monospace; font-size:7.2px; line-height:1.42;
+  letter-spacing:.04em; text-transform:uppercase; color:var(--muted);
+  margin:4px 0 0; border-top:var(--thin) solid var(--rule); padding-top:3px;
+}
+.dia-cap b{ color:var(--signal); font-weight:600; }
+
+/* fill-in fields: the pen affordance. Every blank is 15px tall, which is
+   the minimum a ballpoint needs at arm's length on a clipboard. */
+.field{ margin-bottom:5px; break-inside:avoid; }
+.field-lab{
+  font-family:'IBM Plex Mono',monospace; font-size:7.5px; font-weight:600;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:2px;
+}
+.field-line{ display:block; height:13px; border-bottom:var(--thin) solid var(--muted); }
+.ruled{ margin-top:6px; }
+.ruled .ln{ height:14px; border-bottom:var(--thin) solid var(--rule); }
+
+/* checklist: real checkboxes, sized for a pen */
+.chk{ list-style:none; margin:0 0 10px; padding:0; }
+.chk > li{ display:flex; gap:7px; align-items:flex-start; margin-bottom:6px; break-inside:avoid; }
+.chk > li > .box{
+  flex:0 0 14px; height:14px; margin-top:1px; background:var(--paper);
+  border:var(--med) solid var(--ink);
+}
+.chk > li > .tx{ flex:1 1 auto; min-width:0; font-size:10.5px; line-height:1.34; }
+.chk .tx b{ font-weight:700; color:var(--ink); }
+.subfields{ display:block; margin:5px 0 0; }
+
+/* phone block */
+.phone{
+  border:var(--med) solid var(--ink); background:var(--paper);
+  padding:8px 9px; margin-bottom:0; break-inside:avoid;
+}
+.phone p{ font-size:10px; line-height:1.36; margin:0 0 4px; }
+.phone p:last-child{ margin-bottom:0; }
+.phone b{ color:var(--ink); font-weight:700; }
+.phone .num{
+  font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:12.5px;
+  color:var(--signal); letter-spacing:.01em; white-space:nowrap;
+}
+.phone .head{
+  font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:15px;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--ink);
+  border-bottom:var(--thin) solid var(--ink); padding-bottom:4px; margin-bottom:7px;
+}
+
+/* soft close: a line, not a box */
+.close{
+  margin-top:auto; padding-top:9px; border-top:var(--med) solid var(--ink);
+}
+.close p{ font-size:11.5px; line-height:1.45; margin:0 0 6px; }
+.close p:last-child{ margin-bottom:0; font-weight:600; color:var(--ink); }
+
+/* ---- table ---- */
+.tbl-wrap{ margin:8px 0 9px; }
+table.dist{
+  width:100%; border-collapse:collapse; table-layout:fixed; break-inside:auto;
+  font-size:11.5px; line-height:1.15;
+}
+table.dist caption{
+  caption-side:top; text-align:left;
+  font-family:'IBM Plex Mono',monospace; font-size:8.5px; font-weight:600;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--muted);
+  padding-bottom:4px;
+}
+table.dist thead{ display:table-header-group; }
+table.dist tbody{ display:table-row-group; }
+table.dist th{
+  background:var(--ink); color:var(--paper); text-align:left;
+  font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:12px;
+  letter-spacing:.03em; text-transform:uppercase; padding:3px 6px 3px 5px;
+  border-right:var(--thin) solid rgba(255,255,255,.25);
+}
+table.dist th:last-child{ border-right:0; }
+table.dist td{
+  padding:1px 5px; border-bottom:var(--hair) solid var(--rule);
+  vertical-align:top; break-inside:avoid;
+}
+table.dist tbody tr:nth-child(even){ background:var(--zebra); }
+table.dist tbody tr{ break-inside:avoid; }
+table.dist td.id{
+  font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:11.5px;
+  color:var(--ink); white-space:nowrap;
+}
+table.dist td.dt{ font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:-0.01em; }
+table.dist col.c1{ width:13%; } table.dist col.c2{ width:36%; }
+table.dist col.c3{ width:24.5%; } table.dist col.c4{ width:26.5%; }
+
+/* NOT FOUND cell treatment: hatch plus the literal words, never color alone */
+.nfc{
+  display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:10px;
+  font-weight:600; letter-spacing:.1em; color:var(--signal);
+  border:var(--thin) solid var(--signal); padding:0 4px; white-space:nowrap;
+  background-image:repeating-linear-gradient(135deg,rgba(143,45,8,.13) 0 1.5px,transparent 1.5px 5px);
+}
+.state{
+  font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600;
+  letter-spacing:.06em; color:var(--ink); border-bottom:var(--med) solid var(--ink);
+}
+
+/* ---- source log, runs across the foot of the spread ---- */
+.log{
+  flex:0 0 auto; margin-top:10px; border-top:var(--heavy) solid var(--ink);
+  padding-top:5px; height:var(--log-h); display:flex; flex-direction:column; overflow:hidden;
+}
+/* page 19 carries 7 entries, page 20 carries 12, so the two bands are set
+   in proportion to what each side actually has to hold. */
+.log.short{ height:1.24in; }
+.log-head{
+  display:flex; align-items:baseline; gap:var(--s3); margin-bottom:4px;
+}
+.log-head .t{
+  font-family:'IBM Plex Mono',monospace; font-size:9px; font-weight:600;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--ink);
+}
+.log-head .n{
+  font-family:'IBM Plex Mono',monospace; font-size:9px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted); margin-left:auto;
+}
+.folio{
+  font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600;
+  background:var(--ink); color:var(--paper); padding:1px 7px; letter-spacing:.06em;
+}
+.log-cols{ flex:1; columns:2; column-gap:18px; column-rule:var(--hair) solid var(--rule); min-height:0; }
+.log-item{
+  display:flex; gap:5px; align-items:flex-start;
+  font-size:9.33px; line-height:1.32; color:var(--muted);
+  margin-bottom:3px; break-inside:avoid;
+}
+.log-item .no{
+  flex:0 0 auto; font-family:'IBM Plex Mono',monospace; font-size:9px;
+  font-weight:600; color:var(--signal);
+}
+.log-item .en{ flex:1 1 auto; min-width:0; }
+.log-item .u{
+  font-family:'IBM Plex Mono',monospace; font-size:8.3px; color:var(--muted);
+  overflow-wrap:anywhere; word-break:break-word;
+}
+
+/* ============================================================
+   PANEL C: LANDING HERO
+   ============================================================ */
+.hero{
+  background:var(--night); color:var(--paper); position:relative; overflow:hidden;
+  min-height:760px; display:flex; align-items:center;
+}
+.hero::before{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background-image:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 34px),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 34px);
+}
+.hero::after{
+  content:""; position:absolute; left:0; top:0; bottom:0; width:6px;
+  background:var(--signal-bright);
+}
+.hero-in{
+  position:relative; width:100%; max-width:1240px; margin:0 auto;
+  padding:72px 48px; display:grid; grid-template-columns:1.32fr 1fr; gap:56px; align-items:start;
+}
+.h-eyebrow{
+  font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600;
+  letter-spacing:.26em; text-transform:uppercase; color:var(--signal-bright);
+  margin:0 0 20px; display:flex; align-items:center; gap:12px;
+}
+.h-eyebrow::after{ content:""; flex:1; height:2px; background:var(--signal-bright); opacity:.55; }
+h1.h-head{
+  font-family:'Barlow Condensed',sans-serif; font-weight:700;
+  font-size:clamp(40px,4.9vw,70px); line-height:0.94; letter-spacing:-0.01em;
+  margin:0 0 26px; text-transform:uppercase;
+}
+.h-sub{ font-size:18px; line-height:1.58; color:var(--night-muted); margin:0 0 34px; max-width:31em; }
+.h-cta{ display:flex; flex-direction:column; align-items:flex-start; gap:10px; margin-bottom:34px; }
+a.btn{
+  display:inline-flex; align-items:center; gap:14px;
+  background:var(--signal-bright); color:var(--ink); text-decoration:none;
+  font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:22px;
+  letter-spacing:.09em; text-transform:uppercase; padding:16px 30px; border-radius:2px;
+  border:var(--med) solid var(--signal-bright);
+  transition:transform .16s cubic-bezier(.2,.9,.3,1.2), background-color .16s ease, box-shadow .16s ease;
+  box-shadow:0 3px 0 0 var(--signal);
+}
+a.btn .arw{ font-family:'IBM Plex Mono',monospace; font-size:17px; }
+a.btn:hover{ background:#F5772C; transform:translateY(-2px); box-shadow:0 5px 0 0 var(--signal); }
+a.btn:focus-visible{ outline:3px solid var(--paper); outline-offset:3px; }
+a.btn:active{ transform:translateY(1px); box-shadow:0 1px 0 0 var(--signal); }
+.h-micro{
+  font-family:'IBM Plex Mono',monospace; font-size:12.5px; font-weight:500;
+  letter-spacing:.06em; color:var(--night-muted); margin:0;
+}
+
+/* trust plate: the brokerage gets a designed slot */
+.h-plate{ border:var(--med) solid var(--signal-bright); background:rgba(255,255,255,.045); }
+.h-plate-lab{
+  background:var(--signal-bright); color:var(--ink); padding:4px 12px;
+  font-family:'IBM Plex Mono',monospace; font-size:9.5px; font-weight:600;
+  letter-spacing:.22em; text-transform:uppercase;
+}
+.h-plate-in{ padding:14px 16px 15px; }
+.h-trust{
+  font-family:'IBM Plex Mono',monospace; font-size:13px; line-height:1.85;
+  letter-spacing:.02em; margin:0; color:var(--paper);
+}
+.h-trust .sep{ color:var(--signal-bright); padding:0 .35em; }
+.h-trust .nb{ white-space:nowrap; }
+.h-trust .brk{ font-weight:600; color:var(--signal-bright); letter-spacing:.09em; text-transform:uppercase; }
+
+/* the value props rendered as a torn page from the manual */
+.h-card{ background:var(--paper); color:var(--text); border:var(--heavy) solid var(--ink); }
+.h-card-bar{
+  background:var(--ink); color:var(--paper); padding:7px 14px;
+  display:flex; align-items:center; gap:10px;
+  font-family:'IBM Plex Mono',monospace; font-size:9.5px; font-weight:600;
+  letter-spacing:.2em; text-transform:uppercase;
+}
+.h-card-bar .r{ margin-left:auto; color:var(--signal-bright); }
+.h-card-in{ padding:18px 18px 8px; background:var(--rail); }
+ul.props{ list-style:none; margin:0; padding:0; }
+ul.props > li{ display:flex; gap:12px; align-items:flex-start; margin-bottom:18px; }
+ul.props > li > .box{
+  flex:0 0 17px; height:17px; margin-top:2px; background:var(--paper);
+  border:var(--med) solid var(--ink);
+}
+ul.props > li > .tx{ flex:1 1 auto; min-width:0; }
+.prop-t{
+  font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:19px;
+  line-height:1.1; letter-spacing:.02em; text-transform:uppercase; color:var(--ink);
+  margin:0 0 5px;
+}
+.prop-b{ font-size:13px; line-height:1.5; margin:0; }
+.h-card-foot{
+  border-top:var(--med) solid var(--ink); padding:9px 14px;
+  font-family:'IBM Plex Mono',monospace; font-size:9px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted); background:var(--paper);
+}
+
+@media (max-width:900px){
+  .hero{ min-height:0; align-items:stretch; }
+  .hero-in{ grid-template-columns:1fr; gap:30px; padding:44px 22px 48px; }
+  .h-left{ display:flex; flex-direction:column; }
+  .h-left .h-eyebrow{ order:1; margin-bottom:14px; }
+  .h-left h1.h-head{ order:2; margin-bottom:18px; }
+  .h-left .h-sub{ order:3; font-size:16px; margin-bottom:24px; }
+  .h-left .h-cta{ order:4; margin-bottom:26px; }
+  .h-left .h-plate{ order:6; }
+  a.btn{ width:100%; justify-content:space-between; font-size:20px; padding:15px 20px; }
+  .h-card{ border-width:var(--med); }
+  .h-trust{ font-size:12px; line-height:1.9; }
+  .stage{ max-width:100%; overflow-x:auto; }
+  .spread{ }
+}
+@media (max-width:420px){
+  .hero-in{ padding:34px 16px 40px; }
+  h1.h-head{ font-size:34px; }
+  .prop-t{ font-size:17px; }
+}
+
+/* ============================================================
+   PRINT
+   ============================================================ */
+@page{ size:letter; margin:0; }
+@media print{
+  html,body{ background:var(--paper); }
+  *{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .rig{ padding:0; }
+  .rig-head,.cap{ display:none; }
+  .stage,.stage-full{ margin:0; max-width:none; }
+  .spread{ display:block; gap:0; }
+  .page{ box-shadow:none; page-break-after:always; break-after:page; }
+  .hero{ display:none; }
+  .nf,.aside,.phone,.dia,.h-card,.log-item,.chk > li,ol.steps > li,.field,.close{ break-inside:avoid; }
+  table.dist thead{ display:table-header-group; }
+  table.dist tfoot{ display:table-footer-group; }
+  table.dist tr{ break-inside:avoid; }
+}
+</style>
+</head>
+<body>
+<div class="rig">
+
+  <div class="rig-head">
+    Direction 1 of 6 &nbsp;<b>Field Manual</b><br>
+    Thesis: a tool you carry into the model home, not a brochure you read on the couch.
+  </div>
+
+  <!-- ==================== PANEL A ==================== -->
+  <span class="cap">Panel A &nbsp;/&nbsp; Cover &nbsp;/&nbsp; 8.5in x 11in</span>
+  <div class="stage">
+    <article class="page cover">
+
+      <div class="cv-mast">
+        <p class="cv-eyebrow">A Las Vegas new construction buyer guide</p>
+        <p class="cv-code">39 PP &nbsp;/&nbsp; LETTER &nbsp;/&nbsp; ED. 2026</p>
+      </div>
+
+      <div class="cv-body">
+        <h1 class="cv-title">Before You Walk Into the Model Home</h1>
+        <div class="cv-rule" role="presentation"></div>
+        <p class="cv-sub">A plain guide to buying a newly built home in<br>Las Vegas, Henderson, and Clark County.</p>
+        <p class="cv-geo">Las Vegas &nbsp;&middot;&nbsp; Henderson &nbsp;&middot;&nbsp; Clark County</p>
+        <p class="cv-cred">39 pages. Every number sourced and dated. Nothing invented.</p>
+
+        <div class="ph" role="img" aria-label="Placeholder block. No cover image exists yet. Reserved for a flat two color site plan hatch, printed as a tint.">
+          <p class="ph-cap"><b>Placeholder &middot; no image available</b><br>
+          Cover field. Reserved for a flat two color site plan hatch of a graded lot grid, printed as an 18 percent tint of the signal color. Never a photograph of a house.</p>
+        </div>
+      </div>
+
+      <div class="cv-plate">
+        <div class="cv-plate-top">
+          <div class="cv-plate-cell by">
+            <p class="plate-lab">Prepared by</p>
+            <p class="cv-name">Ryan Rose</p>
+            <p class="cv-brokerage">Real Broker, LLC</p>
+          </div>
+          <div class="cv-plate-cell ed">
+            <p class="plate-lab">Edition</p>
+            <p class="cv-ed">
+              <span>2026 Edition</span>
+              <span>Every fact verified July 25, 2026</span>
+              <span>Market pages on 36 and 37 are regenerated quarterly</span>
+            </p>
+          </div>
+        </div>
+        <div class="cv-plate-bottom">
+          <p class="cv-legal">
+            Ryan Rose, Real Broker, LLC. Nevada license #<span class="slot">[NOT FOUND]</span><br>
+            <span class="nb">702-747-5921</span><span class="sep">&middot;</span><span class="nb">ryan@rosehomeslv.com</span><span class="sep">&middot;</span><span class="nb">rosehomeslv.com</span>
+          </p>
+        </div>
+      </div>
+
+    </article>
+  </div>
+
+  <!-- ==================== PANEL B ==================== -->
+  <span class="cap">Panel B &nbsp;/&nbsp; Interior spread, pages 19 and 20 &nbsp;/&nbsp; two 8.5in x 11in pages, facing<br>
+  Measured: all body copy, both callouts, the 20 row table, the checklist and the phone block set complete.
+  Overset: the 19 entry source log needs 4.79in of two column band across the spread and this grid can spare 2.12in, so 6 of 19 entries render. SVG-04 is not placed. Both are named in rationale.md.</span>
+  <div class="stage">
+    <div class="spread">
+
+      <!-- ---------------- PAGE 19 ---------------- -->
+      <article class="page leaf">
+        <div class="rh">
+          <span class="rh-sec">SID and LID</span>
+          <span class="rh-doc">Section 19.0 &nbsp;/&nbsp; Core</span>
+        </div>
+
+        <div class="cols">
+
+          <!-- RAIL, outer edge, left. Structured content plus a place for a pen. -->
+          <div class="rail">
+            <div class="rail-in">
+
+              <p class="rail-lab">Checklist</p>
+              <h2 class="rail-h">Five things to know before you sign</h2>
+              <ol class="steps rail-steps">
+                <li><span class="mk" aria-hidden="true">1</span><span class="tx"><b>It is billed twice a year.</b> The bill goes out about sixty days before it is due.<sup class="cite">5</sup><!-- sid-billed-semiannually --></span></li>
+                <li><span class="mk" aria-hidden="true">2</span><span class="tx"><b>It is not part of your property tax bill.</b> It is billed separately, and it is usually not inside your monthly mortgage payment.<sup class="cite">6</sup><!-- sid-separate-bill --></span></li>
+                <li><span class="mk" aria-hidden="true">3</span><span class="tx"><b>It is a lien on the home until it is paid off.</b><sup class="cite">6</sup><!-- sid-separate-bill --></span></li>
+                <li><span class="mk" aria-hidden="true">4</span><span class="tx"><b>Missing a payment is serious.</b> In unincorporated Clark County a late payment adds 2 percent a month on the unpaid balance plus interest,<sup class="cite">7</sup><!-- sid-late-penalty --> and the county can begin foreclosure within sixty days of a delinquency.<sup class="cite">8</sup><!-- sid-delinquency-foreclosure --></span></li>
+                <li><span class="mk" aria-hidden="true">5</span><span class="tx"><b>Two houses on the same street can owe different amounts.</b> The cost is split by how much each lot benefits, calculated on a front foot, area, zone, or other fair basis.<sup class="cite">9</sup><!-- sid-apportionment --></span></li>
+              </ol>
+
+              <div class="notes">
+                <p class="rail-lab">At the model home &middot; write it down</p>
+                <div class="ruled"><div class="ln"></div><div class="ln"></div></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- MAIN -->
+          <div class="main">
+            <div class="kick" role="presentation"></div>
+            <h1 class="hl">The bill that does not come with your mortgage</h1>
+            <p class="deck">A special assessment can ride along with a new home for thirty years. Nobody at the model home has to bring it up.</p>
+
+            <p class="b">Las Vegas builds new neighborhoods on empty desert. Somebody has to pay for the streets, the sidewalks, the curbs, the streetlights, and the sewer and water lines that go in before the first house does.</p>
+
+            <p class="beat">Often that somebody is you.</p>
+
+            <p class="b">A Special Improvement District, usually shortened to SID, is a charge on the properties inside the district. It pays for exactly that kind of public work.<sup class="cite">1</sup><!-- sid-definition --> In Henderson the same thing is normally called a Local Improvement District, or LID. Different letter. Same idea.<sup class="cite">2</sup><!-- sid-henderson-billed-by-amg --></p>
+
+            <p class="b">Here is the part that surprises people. The district spreads that cost over ten to thirty years at a low interest rate.<sup class="cite">3</sup><!-- sid-term-length --> You do not clear it at closing. You pay a piece of it, twice a year, for decades.</p>
+
+            <div class="aside">
+              <p class="aside-lab">Aside</p>
+              <p><b>Why you never voted on it.</b> Most districts in new communities are created by what the county calls the developer method. It is negotiated between the developer and the government, and it does not require a protest hearing.<sup class="cite">4</sup><!-- sid-developer-method --> The district was in place before your lot had a house on it. There was no meeting for you to attend.</p>
+            </div>
+
+            <p class="b">Can you pay it off early? In unincorporated Clark County, yes, at any time, with a 3 percent prepayment penalty on the unpaid balance.<sup class="cite">10</sup><!-- sid-prepay-unincorporated, conflict cft-sid-prepay-penalty --> That is the county's rule. Districts inside a city can work differently. So ask for a written payoff quote for your district instead of assuming.</p>
+          </div>
+
+        </div>
+
+        <!-- NOT FOUND panel runs the full spread measure, under both columns.
+             It is the largest object on the page, by design. To its right sits
+             the write-in block: the callout that refuses to print a number hands
+             the reader a ruled blank for their own.
+
+             SVG-04 IS NOT PLACED ON THIS SPREAD. At a legible label size it needs
+             about 2.1in of width and there is no 4.4 square inch hole left after
+             the callout, the table, the checklist and the source log. It is built
+             and viewable at svg-04-unplaced.html, and it belongs on p17 or p21.
+             Its brief from design-sample-content.md is carried verbatim here so
+             nothing is lost:
+
+             [ SVG-04 ]
+             Title: How a special assessment sits next to your house payment
+
+             A vertical stacked block showing the layers of a monthly housing cost:
+             principal and interest, property tax, homeowners insurance, master HOA,
+             sub-association HOA. A dotted box encloses only the layers that normally
+             sit inside a mortgage escrow payment. The special assessment is drawn
+             OUTSIDE that dotted box, because it is billed separately and is usually
+             not in escrow.
+
+             Beneath the stack, a horizontal term bar labeled "10 to 30 years"
+             with a single tick showing where a buyer typically sells.
+
+             No dollar figures anywhere in this diagram. Proportions are schematic.
+             The diagram carries no number that is not in the fact ledger, and no
+             per-home assessment amount exists in the ledger.
+
+             Target size: about 45 percent of the page 19 text column height.
+        -->
+        <div class="nf">
+          <div class="nf-bar"><span>Not found</span><span class="reg">Register item 14</span></div>
+          <div class="nf-in">
+            <div class="nf-say">
+              <h3>I am not going to hand you a number.</h3>
+              <p>No government office and no developer publishes a per home or per community dollar amount for these assessments. I checked the Clark County Treasurer, Clark County Public Works, the City of Henderson, and the company that does the billing. None of them publishes one.</p>
+              <p>Third party websites do publish figures. They disagree with each other by more than five times for the same master plan.</p>
+              <p>A wrong number here would steer your budget for thirty years. So I would rather give you the lookup. It takes about five minutes, and it gives you the real number for your actual lot.</p>
+              <!-- NOT FOUND register item 14. Do not fill this with an estimate, an internal file, or a competitor's blog. -->
+            </div>
+            <div class="capture">
+              <p class="cap-lab">Your lot, your number</p>
+              <div class="field"><span class="field-lab">Amount each year</span><span class="field-line"></span></div>
+              <div class="field"><span class="field-lab">Final payment year</span><span class="field-line"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- source log, left half of the spread band -->
+        <div class="log short">
+          <div class="log-head">
+            <span class="folio">19</span>
+            <span class="t">Source log &middot; pages 19 and 20</span>
+            <span class="n">Verified 2026-07-25 &middot; entries 1 to 7</span>
+          </div>
+          <div class="log-cols">
+            <div class="log-item"><span class="no">1</span><span class="en">A special assessment is a charge on properties in a Special Improvement District, paying for streets, sidewalks, curbs and gutters, streetlights, sewer and water facilities <span class="u">[source: https://www.clarkcountynv.gov/government/elected_officials/county_treasurer/understanding-sids | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">2</span><span class="en">The City of Henderson bills its improvement districts through the same administrator <span class="u">[source: https://www.cityofhenderson.com/government/departments/finance/lid-special-assessment-property-tax/lid-special-assessments | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">3</span><span class="en">Districts finance improvements over 10 to 30 years at low interest rates <span class="u">[source: https://www.clarkcountynv.gov/government/departments/public_works_department/programs_and_services/special_improvement_districts.php | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">4</span><span class="en">Developer method, negotiated, no protest hearing required <span class="u">[source: https://www.clarkcountynv.gov/government/departments/public_works_department/programs_and_services/special_improvement_districts.php | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">5</span><span class="en">Semi-annual billing, bills mailed about 60 days before the due date <span class="u">[source: https://www.clarkcountynv.gov/government/elected_officials/county_treasurer/understanding-sids | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">6</span><span class="en">Billed separately from property taxes, and a lien on the property until the assessment is paid off <span class="u">[source: https://www.clarkcountynv.gov/government/elected_officials/county_treasurer/understanding-sids | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">7</span><span class="en">2 percent per month on the unpaid balance plus accrued interest, unincorporated Clark County <span class="u">[source: https://www.clarkcountynv.gov/government/elected_officials/county_treasurer/sid-payment-options | verified: 2026-07-25]</span></span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ---------------- PAGE 20 ---------------- -->
+      <article class="page leaf recto">
+        <div class="rh">
+          <span class="rh-sec">Before You Walk Into the Model Home &middot; 2026</span>
+          <span class="rh-doc">Section 19.0 &nbsp;/&nbsp; Core</span>
+        </div>
+
+        <div class="cols recto">
+
+          <!-- MAIN -->
+          <div class="main">
+            <h2 class="sub" style="margin-top:0;border-top:0;padding-top:0;">Some districts you may run into</h2>
+            <p class="b">Every district ends. Below are dates the county and the district administrator publish. Your lot may sit in a district that is not on this list, and it may sit in none at all.</p>
+
+            <div class="tbl-wrap">
+              <table class="dist">
+                <caption>Table 19.1 &middot; District payment schedule</caption>
+                <colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"></colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">District</th>
+                    <th scope="col">Where</th>
+                    <th scope="col">First payment</th>
+                    <th scope="col">Final payment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td class="id">819</td><td>Summerlin</td><td class="dt">April 1, 2026</td><td class="dt">April 1, 2055<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">818</td><td>Summerlin</td><td class="dt">April 1, 2025</td><td class="dt">October 1, 2054<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">817</td><td>Summerlin</td><td class="dt">April 1, 2024</td><td class="dt">April 1, 2053<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">159</td><td>Summerlin Village 16A</td><td class="dt"><span class="nfc">NOT FOUND</span></td><td class="dt">June 1, 2035<sup class="cite">12</sup></td></tr>
+                  <tr><td class="id">128A</td><td>The Summerlin Centre</td><td class="dt"><span class="nfc">NOT FOUND</span></td><td class="dt">December 1, 2030<sup class="cite">12</sup></td></tr>
+                  <tr><td class="id">151</td><td>Summerlin Mesa</td><td class="dt"><span class="nfc">NOT FOUND</span></td><td class="dt"><span class="state">Paid off</span> June 1, 2025<sup class="cite">12</sup></td></tr>
+                  <tr><td class="id">609</td><td>City of Las Vegas, Skye Canyon area</td><td class="dt">April 1, 2018</td><td class="dt">April 1, 2047<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">610</td><td>City of Las Vegas, Skye Canyon area</td><td class="dt">April 1, 2019</td><td class="dt">April 1, 2048<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">612</td><td>Skye Hills</td><td class="dt">April 1, 2021</td><td class="dt">April 1, 2050<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">611</td><td>Sunstone, phases I and II</td><td class="dt">April 1, 2021</td><td class="dt">April 1, 2050<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">613</td><td>Sunstone, phases III and IV</td><td class="dt">October 1, 2024</td><td class="dt">October 1, 2053<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">607</td><td>Providence</td><td class="dt"><span class="nfc">NOT FOUND</span></td><td class="dt"><span class="state">Matured</span><sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">121</td><td>Southern Highlands area</td><td class="dt"><span class="nfc">NOT FOUND</span></td><td class="dt">October 1, 2029<sup class="cite">12</sup></td></tr>
+                  <tr><td class="id">64</td><td>Valley Vista, North Las Vegas</td><td class="dt">September 1, 2020</td><td class="dt">March 1, 2049<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">66</td><td>Villages at Tule Springs, Village 1</td><td class="dt">March 1, 2023</td><td class="dt">March 1, 2052<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">60</td><td>Aliante, North Las Vegas</td><td class="dt"><span class="nfc">NOT FOUND</span></td><td class="dt"><span class="state">Matured</span><sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">T-18</td><td>Inspirada, Henderson</td><td class="dt">June 1, 2008</td><td class="dt">June 1, 2035<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">T-20</td><td>Rainbow Canyon, Henderson</td><td class="dt">June 1, 2020</td><td class="dt">June 1, 2048<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">T-21</td><td>Black Mountain Ranch, Henderson</td><td class="dt">December 1, 2022</td><td class="dt">June 1, 2051<sup class="cite">11</sup></td></tr>
+                  <tr><td class="id">T-22</td><td>Rainbow Canyon Phase II, Henderson</td><td class="dt">December 1, 2023</td><td class="dt">December 1, 2052<sup class="cite">11</sup></td></tr>
+                </tbody>
+              </table>
+              <!-- Claim-ids in table order: sid-summerlin-819, sid-summerlin-818, sid-summerlin-817, sid-summerlin-village16a-159 (conflict cft-sid-159-final-date, Treasurer date used), sid-summerlin-centre-128a, sid-summerlin-mesa-retired, sid-skye-canyon-609, sid-skye-canyon-610, sid-skye-hills-612, sid-sunstone-611, sid-sunstone-613, sid-providence-607-matured, sid-southern-highlands-121, sid-nlv-valley-vista-64, sid-nlv-tule-springs-66, sid-nlv-aliante-60-matured, sid-henderson-inspirada-t18, sid-henderson-rainbow-canyon-t20, sid-henderson-black-mountain-t21, sid-henderson-rainbow-canyon-t22 -->
+              <!-- Per conflict cft-skye-canyon-sid-number, districts 609 and 610 are cited by their published dates only. Do not describe what either one covers. -->
+            </div>
+
+            <p class="b">Look at districts 151 and 819. Both are in Summerlin. One made its final payment on June 1, 2025.<sup class="cite">12</sup><!-- sid-summerlin-mesa-retired --> The other collects until April 1, 2055.<sup class="cite">11</sup><!-- sid-summerlin-819 --></p>
+
+            <p class="beat">Same master plan. Thirty years apart.</p>
+
+            <p class="b">That is why the community name tells you almost nothing and the lot number tells you everything.</p>
+          </div>
+
+          <!-- RAIL, outer edge, right. The checklist lives here, as a thing you complete. -->
+          <div class="rail">
+            <div class="rail-in">
+
+              <p class="rail-lab">Checklist &middot; carry this in</p>
+              <h2 class="rail-h">Run this before you sign. It takes about five minutes.</h2>
+
+              <ul class="chk">
+                <li>
+                  <span class="box" aria-hidden="true"></span>
+                  <span class="tx"><b>1. Get the parcel number.</b> Ask the builder for the assessor parcel number for the exact lot you are buying. Not the community. The lot.</span>
+                </li>
+                <li>
+                  <span class="box" aria-hidden="true"></span>
+                  <span class="tx"><b>2. Run it.</b> Search that number at amgnv.com. The search covers Clark County and the cities of Las Vegas, North Las Vegas, and Henderson.<sup class="cite">16</sup><!-- sid-parcel-search --></span>
+                </li>
+                <li>
+                  <span class="box" aria-hidden="true"></span>
+                  <span class="tx"><b>3. Ask for four numbers in writing.</b> The amount each year. The balance left. The year it ends. The penalty to pay it off early.<!-- sid-lookup-steps -->
+                    <span class="subfields">
+                      <span class="field"><span class="field-lab">Amount each year</span><span class="field-line" style="display:block"></span></span>
+                      <span class="field"><span class="field-lab">Balance left</span><span class="field-line" style="display:block"></span></span>
+                      <span class="field"><span class="field-lab">Year it ends</span><span class="field-line" style="display:block"></span></span>
+                      <span class="field"><span class="field-lab">Early payoff penalty</span><span class="field-line" style="display:block"></span></span>
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="box" aria-hidden="true"></span>
+                  <span class="tx"><b>4. Watch your closing date.</b> If you close within about fifteen days of a billing date, tell escrow to pay the assessment at closing. It takes about fifteen days for the Assessor to change the mailing address, so the bill can go to the builder's old address and you will never see it.<sup class="cite">17</sup><!-- sid-closing-timing-trap --></span>
+                </li>
+              </ul>
+
+              <div class="phone">
+                <p class="head">Two numbers worth saving.</p>
+                <p><b>Assessment Management Group</b>, which handles billing, payoffs, and lien releases for most valley districts, and also bills Henderson's districts: <span class="num">(702) 796-0082</span><sup class="cite">18</sup><!-- sid-amg-phone, sid-administrator-amg --></p>
+                <p><b>Clark County Public Works</b>, for unincorporated county districts: <span class="num">(702) 455-6000</span><sup class="cite">19</sup><!-- sid-county-public-works-phone --></p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- full-width foot panel, mirroring the NOT FOUND panel on page 19 -->
+        <div class="foot">
+          <p>Two communities publish that they carry none at all. The developer of Cadence states its homes have no SID or LID fees.<sup class="cite">13</sup><!-- sid-cadence-none --> StoryBook publishes the same for Wellston Ridge.<sup class="cite">14</sup><!-- sid-wellston-ridge-none --> Take that as a good sign, and still run the parcel. A community that is not on a published list is not proof that your lot is clear.<sup class="cite">15</sup><!-- sid-absence-not-proof --></p>
+          <div class="offer">
+            <p>A house in a district that ends in 2029 and a house in a district that ends in 2055 are very different homes, even at the same sticker price. Ask early, while every community is still on your list.</p>
+            <p>Send me the address and I will run the parcel and tell you what is on it. No pressure, just the number.</p>
+          </div>
+        </div>
+
+        <!-- source log, right half of the spread band -->
+        <div class="log">
+          <div class="log-head">
+            <span class="t">Source log &middot; continued</span>
+            <span class="n">Entries 8 to 19</span>
+            <span class="folio" style="margin-left:auto">20</span>
+          </div>
+          <div class="log-cols">
+            <div class="log-item"><span class="no">8</span><span class="en">Foreclosure proceedings begin within 60 days of a delinquency <span class="u">[source: https://www.clarkcountynv.gov/government/elected_officials/county_treasurer/understanding-sids | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">9</span><span class="en">Apportioned on a front foot, area, zone, or other equitable basis, in proportion to special benefits derived <span class="u">[source: https://www.clarkcountynv.gov/government/elected_officials/county_treasurer/understanding-sids | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">10</span><span class="en">May be paid in full at any time with a 3 percent prepayment penalty on the unpaid balance, unincorporated Clark County <span class="u">[source: https://www.clarkcountynv.gov/government/elected_officials/county_treasurer/sid-payment-options | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">11</span><span class="en">District first and final payment dates <span class="u">[source: https://www.amgnv.com/PDF/importantdates.pdf | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">12</span><span class="en">Unincorporated Clark County district collections schedule and final payment dates <span class="u">[source: https://treasurer.co.clark.nv.us/Public_Web/Special_Assessments/Collections.aspx | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">13</span><span class="en">Cadence states its homes carry no SID or LID fees <span class="u">[source: https://cadencenv.com/faq/ | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">14</span><span class="en">StoryBook states Wellston Ridge carries no SIDs or LIDs <span class="u">[source: https://www.storybooknewhomes.com/Wellston-Ridge | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">15</span><span class="en">Absence from a published district list is not proof that a given lot carries no assessment <span class="u">[source: https://www.amgnv.com/PDF/importantdates.pdf | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">16</span><span class="en">Parcel search by parcel number, owner name, or street name, covering Clark County and the cities of Las Vegas, North Las Vegas, and Henderson <span class="u">[source: https://amgnv.com/parcelsearch_non_pop1.asp | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">17</span><span class="en">Properties closing escrow within about 15 days of the assessment bill mailing date should have assessments paid from escrow <span class="u">[source: https://www.amgnv.com/PDF/importantdates.pdf | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">18</span><span class="en">Assessment Management Group, (702) 796-0082, handles billing, payoffs, and lien releases for most valley districts <span class="u">[source: https://www.amgnv.com/PDF/importantdates.pdf | verified: 2026-07-25]</span> and <span class="u">[source: https://www.amgnv.com/improvementdistricts.asp | verified: 2026-07-25]</span></span></div>
+            <div class="log-item"><span class="no">19</span><span class="en">Clark County Public Works, (702) 455-6000, for unincorporated county districts <span class="u">[source: https://www.clarkcountynv.gov/government/departments/public_works_department/programs_and_services/special_improvement_districts.php | verified: 2026-07-25]</span></span></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ==================== PANEL C ==================== -->
+  <span class="cap">Panel C &nbsp;/&nbsp; Landing page hero &nbsp;/&nbsp; above the fold, responsive</span>
+  <div class="stage-full">
+    <section class="hero">
+      <div class="hero-in">
+
+        <div class="h-left">
+          <p class="h-eyebrow">Free 39 page field guide</p>
+          <h1 class="h-head">The sales rep at the model home works for the builder.</h1>
+          <p class="h-sub">Get the free 39 page guide to buying new construction in Las Vegas, Henderson, and Clark County. Every number in it is dated and sourced. Written for your side of the table.</p>
+
+          <div class="h-cta">
+            <a class="btn" href="#contact">Send me the guide <span class="arw" aria-hidden="true">&rarr;</span></a>
+            <p class="h-micro">The PDF comes by email.</p>
+          </div>
+
+          <div class="h-plate">
+            <p class="h-plate-lab">Licensed Nevada brokerage</p>
+            <div class="h-plate-in">
+              <p class="h-trust">
+                Ryan Rose<span class="sep">&middot;</span><span class="brk">Real Broker, LLC</span><span class="sep">&middot;</span>Las Vegas and Henderson<br>
+                <span class="nb">702-747-5921</span><span class="sep">&middot;</span><span class="nb">ryan@rosehomeslv.com</span><br>
+                Nevada license #<span class="slot">[NOT FOUND]</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-card">
+          <div class="h-card-bar"><span>Inside the guide</span><span class="r">3 of 39 pages</span></div>
+          <div class="h-card-in">
+            <ul class="props">
+              <li>
+                <span class="box" aria-hidden="true"></span>
+                <span class="tx">
+                  <p class="prop-t">The bill that is not in your mortgage.</p>
+                  <p class="prop-b">How a special improvement district can add a payment for up to thirty years, and the five minute lookup that gives you the number for your exact lot.</p>
+                </span>
+              </li>
+              <li>
+                <span class="box" aria-hidden="true"></span>
+                <span class="tx">
+                  <p class="prop-t">The tax cap a brand new home does not get.</p>
+                  <p class="prop-b">Why a newly built home has no property tax cap in its first year, and the postcard you have to sign after July 1 or you lose the 3 percent cap on your primary home.</p>
+                </span>
+              </li>
+              <li>
+                <span class="box" aria-hidden="true"></span>
+                <span class="tx">
+                  <p class="prop-t">What a builder incentive is actually worth.</p>
+                  <p class="prop-b">There are caps on how much a builder is allowed to pay toward your costs, and a rate buydown counts against them. Know the number before you sit down.</p>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="h-card-foot">Every number sourced and dated &middot; nothing invented</div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+</div>
+</body>
+</html>

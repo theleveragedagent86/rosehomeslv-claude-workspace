@@ -1,0 +1,7 @@
+{
+  "_comment": "Copy to config.local.json and fill in. config.local.json is gitignored, never commit it.",
+  "gcal_ics_url": "https://calendar.google.com/calendar/ical/XXXXXXXX%40group.calendar.google.com/private-XXXXXXXXXXXXXXXX/basic.ics",
+  "gcal_timezone": "America/Los_Angeles",
+  "annual_gci_goal": 100000,
+  "broker": { "split": 0.85, "cap": 4000, "cap_year_basis": "calendar" }
+}

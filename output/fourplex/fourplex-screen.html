@@ -1,0 +1,433 @@
+<title>Fourplex Screen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#F1F0EB; --surf:#FBFAF6; --surf2:#E8E7E0;
+  --ink:#151A1D; --ink2:#3B454B; --mute:#6B767D; --rule:#D6D4CB; --rule2:#C3C1B7;
+  --acc:#1C4D57; --acc-soft:#DCE6E6;
+  --good:#2F6B4C; --mid:#8A6C1E; --bad:#9E4522;
+  --a:#2F6B4C; --b:#5C7A46; --c:#96751F; --d:#A9553A;
+  --sh:0 1px 2px rgba(21,26,29,.05),0 8px 24px -14px rgba(21,26,29,.22);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0F1315; --surf:#161B1E; --surf2:#1E2529;
+    --ink:#E7E5DE; --ink2:#BEC4C6; --mute:#8B959A; --rule:#252D31; --rule2:#374146;
+    --acc:#6FB1B8; --acc-soft:#1B2B2E;
+    --good:#6FB287; --mid:#C7A34E; --bad:#D97F58;
+    --a:#6FB287; --b:#93B172; --c:#C7A34E; --d:#D9835E;
+    --sh:0 1px 2px rgba(0,0,0,.4),0 10px 30px -16px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0F1315; --surf:#161B1E; --surf2:#1E2529;
+  --ink:#E7E5DE; --ink2:#BEC4C6; --mute:#8B959A; --rule:#252D31; --rule2:#374146;
+  --acc:#6FB1B8; --acc-soft:#1B2B2E;
+  --good:#6FB287; --mid:#C7A34E; --bad:#D97F58;
+  --a:#6FB287; --b:#93B172; --c:#C7A34E; --d:#D9835E;
+  --sh:0 1px 2px rgba(0,0,0,.4),0 10px 30px -16px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);
+  font-family:Archivo,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 96px}
+.prose{max-width:68ch}
+h1,h2,h3{text-wrap:balance;margin:0}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+h1{font-size:clamp(34px,5.4vw,58px);font-weight:800;letter-spacing:-.035em;line-height:1.02;margin:14px 0 0}
+h2{font-size:clamp(23px,2.8vw,30px);font-weight:700;letter-spacing:-.025em;line-height:1.12}
+h3{font-size:17px;font-weight:700;letter-spacing:-.01em}
+p{margin:0}
+.lede{font-family:Newsreader,Georgia,serif;font-size:clamp(18px,2.1vw,21.5px);line-height:1.56;color:var(--ink2);font-weight:350}
+.body{font-family:Newsreader,Georgia,serif;font-size:17.5px;line-height:1.68;color:var(--ink2);font-weight:350}
+.body strong{font-weight:600;color:var(--ink)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+section{padding-top:56px}
+.stack{display:flex;flex-direction:column;gap:18px}
+.stack-s{display:flex;flex-direction:column;gap:10px}
+hr.r{border:0;border-top:1px solid var(--rule);margin:0}
+
+/* header */
+header{padding:62px 0 6px;border-bottom:1px solid var(--rule2)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;padding-bottom:26px;
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.05em;color:var(--mute);text-transform:uppercase}
+
+/* verdict tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:1px;background:var(--rule);
+  border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+.tile{background:var(--surf);padding:18px 18px 16px;display:flex;flex-direction:column;gap:5px}
+.tile .k{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--mute)}
+.tile .v{font-family:"IBM Plex Mono",monospace;font-size:29px;font-weight:600;letter-spacing:-.03em;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.tile .n{font-size:12.5px;line-height:1.4;color:var(--mute)}
+.tile.warn .v{color:var(--bad)}
+
+/* callout */
+.call{border-left:3px solid var(--acc);background:var(--acc-soft);padding:18px 22px;border-radius:0 3px 3px 0}
+.call p{font-family:Newsreader,Georgia,serif;font-size:17.5px;line-height:1.62;color:var(--ink)}
+
+/* assumptions */
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font-family:"IBM Plex Mono",monospace;font-size:11.5px;padding:6px 10px;border:1px solid var(--rule2);
+  border-radius:2px;color:var(--ink2);background:var(--surf)}
+.chip b{color:var(--ink);font-weight:600}
+
+/* table */
+.tblwrap{overflow-x:auto;border:1px solid var(--rule2);border-radius:3px;background:var(--surf);box-shadow:var(--sh)}
+table{border-collapse:collapse;width:100%;min-width:1080px}
+thead th{position:sticky;top:0;z-index:2;background:var(--surf2);color:var(--ink);
+  font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;text-align:right;
+  padding:11px 12px;border-bottom:1px solid var(--rule2);white-space:nowrap}
+thead th.l{text-align:left}
+thead th small{display:block;font-weight:400;letter-spacing:.03em;text-transform:none;color:var(--mute);font-size:10px}
+tbody tr{border-bottom:1px solid var(--rule)}
+tbody tr:last-child{border-bottom:0}
+tbody tr:hover{background:var(--surf2)}
+td{padding:12px;vertical-align:top}
+td.rk{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;color:var(--mute);
+  width:52px;border-left:3px solid transparent;padding-left:14px}
+tr[data-b="a"] td.rk{border-left-color:var(--a)}
+tr[data-b="b"] td.rk{border-left-color:var(--b)}
+tr[data-b="c"] td.rk{border-left-color:var(--c)}
+tr[data-b="d"] td.rk{border-left-color:var(--d)}
+td.ad{min-width:258px}
+.st{display:block;font-weight:600;font-size:14.5px;letter-spacing:-.012em;line-height:1.25}
+.sub{display:block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--mute);margin-top:3px;letter-spacing:.01em}
+.fl{display:block;font-size:11px;color:var(--bad);margin-top:4px}
+.fl.ok{color:var(--good)}
+td.n{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right;
+  font-size:13px;white-space:nowrap;color:var(--ink)}
+.sub2{display:block;font-size:10.5px;color:var(--mute);margin-top:2px;font-weight:400}
+td.hi{font-weight:600;font-size:14px}
+td.pos{color:var(--good);font-weight:600}
+td.near{color:var(--mid)}
+td.neg{color:var(--bad)}
+td.off{color:var(--acc);font-weight:500}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--mute);margin-top:12px}
+.legend i{display:inline-block;width:16px;height:3px;vertical-align:middle;margin-right:6px;border-radius:2px}
+
+/* pick cards */
+.picks{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;background:var(--rule);
+  border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+.pick{background:var(--surf);padding:22px;display:flex;flex-direction:column;gap:9px}
+.pick .lbl{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--acc)}
+.pick p{font-family:Newsreader,Georgia,serif;font-size:16px;line-height:1.6;color:var(--ink2)}
+.pick .fig{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--mute);padding-top:8px;border-top:1px solid var(--rule);margin-top:auto}
+
+/* rent comps */
+.comps{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+.cc{background:var(--surf);padding:14px 16px}
+.cc .z{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;color:var(--ink)}
+.cc .r{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--mute);line-height:1.7;margin-top:5px}
+.cc .r b{color:var(--ink2);font-weight:500}
+
+/* avoid list */
+ol.av{margin:0;padding-left:0;list-style:none;counter-reset:av;display:flex;flex-direction:column;gap:16px}
+ol.av li{counter-increment:av;padding-left:38px;position:relative;font-family:Newsreader,Georgia,serif;
+  font-size:17px;line-height:1.62;color:var(--ink2)}
+ol.av li::before{content:counter(av,decimal-leading-zero);position:absolute;left:0;top:2px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;color:var(--acc);letter-spacing:.06em}
+ol.av li b{color:var(--ink);font-weight:600}
+
+details{border:1px solid var(--rule2);border-radius:3px;background:var(--surf);overflow:hidden}
+summary{cursor:pointer;padding:15px 18px;font-size:13.5px;font-weight:600;letter-spacing:-.01em;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+ ";font-family:"IBM Plex Mono",monospace;color:var(--acc);font-weight:600}
+details[open] summary::before{content:"– "}
+details[open] summary{border-bottom:1px solid var(--rule)}
+details .tblwrap{border:0;border-radius:0;box-shadow:none}
+details table{min-width:820px}
+
+footer{margin-top:70px;padding-top:26px;border-top:1px solid var(--rule2);
+  font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--mute);line-height:1.75}
+a{color:var(--acc)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(max-width:640px){.wrap{padding:0 16px 64px}header{padding-top:40px}}
+</style>
+<style>
+.rdc{font-family:"IBM Plex Mono",monospace;font-size:10.5px;white-space:nowrap;padding-left:4px}
+.r-live{color:var(--good);font-weight:600}
+.r-work{color:var(--mid);font-weight:600}
+.r-long{color:var(--ink2)}
+.r-wait{color:var(--mute)}
+td.tgt{font-weight:700;color:var(--ink);background:var(--acc-soft)}
+.cc .mi{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--mute);margin-top:2px}
+.ladder{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+.rung{background:var(--surf);padding:18px;display:flex;flex-direction:column;gap:6px}
+.rung.hero{background:var(--acc-soft)}
+.rung .t{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--acc)}
+.rung .c{font-family:"IBM Plex Mono",monospace;font-size:22px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+.rung .d{font-size:12.5px;line-height:1.45;color:var(--mute)}
+.offer{border:1px solid var(--rule2);border-radius:3px;background:var(--surf);padding:22px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--sh)}
+.offer .hd{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:baseline;
+  padding-bottom:12px;border-bottom:1px solid var(--rule)}
+.offer .hd h3{font-size:19px}
+.offer .hd .amt{font-family:"IBM Plex Mono",monospace;font-size:26px;font-weight:600;letter-spacing:-.03em;color:var(--acc)}
+.offer .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
+.offer .kv .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);display:block}
+.offer .kv .v{font-family:"IBM Plex Mono",monospace;font-size:13.5px;color:var(--ink)}
+.offer p{font-family:Newsreader,Georgia,serif;font-size:16px;line-height:1.6;color:var(--ink2)}
+</style>
+<div class="wrap">
+<header>
+  <div class="eyebrow">102 fourplexes &middot; within 15 miles of Sahara &amp; Las Vegas Blvd</div>
+  <h1>Las&nbsp;Vegas Fourplex Screen</h1>
+  <div class="meta">
+    <span>Measured on in-place rent only</span>
+    <span>LVR MLS, 110 listings</span>
+    <span>25 Aug 2026</span>
+  </div>
+</header>
+
+<section class="stack">
+  <p class="lede">This is a measurement of what these 102 buildings currently collect and currently cost to operate. Every income figure is <strong>rent actually being paid today</strong>. No pro forma, no market-rent lift, no lease-up assumptions. Nothing here is a valuation, an appraisal, or a recommendation on what to pay.</p>
+
+  <div class="tiles">
+    <div class="tile"><span class="k">Median in-place cap</span><span class="v">3.79%</span><span class="n">96 buildings with rent</span></div>
+    <div class="tile"><span class="k">Cap range</span><span class="v">6.42%</span><span class="n">High. Low is &minus;0.17%</span></div>
+    <div class="tile"><span class="k">Median GRM</span><span class="v">14.1</span><span class="n">Lowest on the board: 9.8</span></div>
+    <div class="tile"><span class="k">Median price / unit</span><span class="v">$165k</span><span class="n">Asks run $435k to $1.31M</span></div>
+    <div class="tile"><span class="k">Median operating ratio</span><span class="v">46%</span><span class="n">Of effective gross income</span></div>
+  </div>
+</section>
+
+<section class="stack">
+  <div class="eyebrow">Arithmetic, not a recommendation</div>
+  <h2>What the debt costs</h2>
+  <p class="body">A 30-year loan at 7.25&nbsp;percent has an annual constant of <strong>8.19&nbsp;percent</strong>. At 25&nbsp;percent down you borrow 75&nbsp;percent, so annual debt service equals <strong>6.14&nbsp;percent of the purchase price</strong>. That figure is fixed by the loan terms alone and has nothing to do with any particular building.</p>
+  <div class="ladder">
+    <div class="rung"><span class="t">Annual loan constant</span><span class="c">8.19%</span><span class="d">7.25 percent, 30-year amortization, principal and interest.</span></div>
+    <div class="rung"><span class="t">Debt service</span><span class="c">6.14%</span><span class="d">Of purchase price, per year, at 75 percent loan to value.</span></div>
+    <div class="rung"><span class="t">Median cap on this list</span><span class="c">3.79%</span><span class="d">In-place net operating income divided by asking price.</span></div>
+    <div class="rung"><span class="t">Listings at or above 6.14%</span><span class="c">2 of 96</span><span class="d">Where in-place NOI covers debt service at the asking price.</span></div>
+  </div>
+  <div class="call"><p>The <strong>debt-service break-even</strong> column in the table is that same arithmetic run per building: in-place NOI divided by 6.14&nbsp;percent. It is the price at which rent exactly covers the note under those loan terms, nothing more. It is not a target, an offer, or an estimate of value.</p></div>
+</section>
+
+<section class="stack">
+  <div class="eyebrow">Ordered by in-place cap rate, highest first</div>
+  <h2>The top 25</h2>
+  <p class="body">Sorted strictly on in-place cap rate. No weighting, no composite score, no judgment applied. Buildings reporting no collected rent cannot produce a cap rate and are listed last. Distance is measured from Sahara Avenue and Las Vegas Boulevard.</p>
+  <div class="tblwrap">
+  <table>
+    <thead><tr>
+      <th class="l">#</th><th class="l">Property</th>
+      <th>Ask<small>per unit</small></th>
+      <th>In-place rent<small>per month</small></th>
+      <th>GRM<small>ask / annual rent</small></th>
+      <th>Est. opex<small>per year</small></th>
+      <th>NOI<small>in-place</small></th>
+      <th>Cap<small>in-place</small></th>
+      <th>Break-even<small>at 6.14%</small></th>
+    </tr></thead>
+    <tbody>
+<tr data-b="a"><td class="rk">1</td><td class="ad"><span class="st">1705 Breckenwood Court</span><span class="sub">Las Vegas 89115 &middot; 6.0 mi &middot; built 1971 &middot; 3/3/3/3 &middot; 59 DOM</span></td><td class="n">$775,000<span class="sub2">$193,750/unit</span></td><td class="n">$6,366<span class="sub2">4/4 leased</span></td><td class="n">10.15</td><td class="n">$24,358</td><td class="n">$49,742</td><td class="n hi">6.42%</td><td class="n tgt">$810,191</td></tr>
+<tr data-b="a"><td class="rk">2</td><td class="ad"><span class="st">4650 Koval 14 Lane</span><span class="sub">Las Vegas 89109 &middot; 2.2 mi &middot; built 1978 &middot; 3/3/3/3 &middot; 62 DOM</span><span class="fl">HOA $400/mo</span></td><td class="n">$659,900<span class="sub2">$164,975/unit</span></td><td class="n">$5,600<span class="sub2">4/4 leased</span></td><td class="n">9.82</td><td class="n">$23,829</td><td class="n">$41,355</td><td class="n hi">6.27%</td><td class="n tgt">$673,587</td></tr>
+<tr data-b="a"><td class="rk">3</td><td class="ad"><span class="st">2761 Mountain Vista Street</span><span class="sub">Las Vegas 89121 &middot; 4.6 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 551 DOM</span></td><td class="n">$675,000<span class="sub2">$168,750/unit</span></td><td class="n">$5,200<span class="sub2">4/4 leased</span></td><td class="n">10.82</td><td class="n">$22,211</td><td class="n">$38,317</td><td class="n hi">5.68%</td><td class="n tgt">$624,090</td></tr>
+<tr data-b="a"><td class="rk">4</td><td class="ad"><span class="st">5245 Golden Lane</span><span class="sub">Las Vegas 89119 &middot; 3.5 mi &middot; built 1977 &middot; 4/3/2/2 &middot; 118 DOM</span></td><td class="n">$586,000<span class="sub2">$146,500/unit</span></td><td class="n">$4,650<span class="sub2">4/4 leased</span></td><td class="n">10.50</td><td class="n">$21,045</td><td class="n">$33,081</td><td class="n hi">5.65%</td><td class="n tgt">$538,821</td></tr>
+<tr data-b="a"><td class="rk">5</td><td class="ad"><span class="st">2657 Kline Circle</span><span class="sub">Las Vegas 89121 &middot; 3.7 mi &middot; built 1974 &middot; 3/2/2/2 &middot; 206 DOM</span><span class="fl">cash only, no financing &middot; HOA $415/mo</span></td><td class="n">$779,900<span class="sub2">$194,975/unit</span></td><td class="n">$5,730<span class="sub2">4/4 leased</span></td><td class="n">11.34</td><td class="n">$23,533</td><td class="n">$43,164</td><td class="n hi">5.53%</td><td class="n tgt">$703,045</td></tr>
+<tr data-b="b"><td class="rk">6</td><td class="ad"><span class="st">203 Bruce Way</span><span class="sub">Henderson 89015 &middot; 11.7 mi &middot; built 1980 &middot; 2/2/2/2 &middot; 8 DOM</span></td><td class="n">$709,900<span class="sub2">$177,475/unit</span></td><td class="n">$5,300<span class="sub2">4/4 leased</span></td><td class="n">11.16</td><td class="n">$22,798</td><td class="n">$38,894</td><td class="n hi">5.48%</td><td class="n tgt">$633,499</td></tr>
+<tr data-b="b"><td class="rk">7</td><td class="ad"><span class="st">200 Kola Street</span><span class="sub">Henderson 89015 &middot; 11.7 mi &middot; built 1979 &middot; 2/2/2/2 &middot; 17 DOM</span></td><td class="n">$709,900<span class="sub2">$177,475/unit</span></td><td class="n">$5,200<span class="sub2">4/4 leased</span></td><td class="n">11.38</td><td class="n">$22,510</td><td class="n">$38,018</td><td class="n hi">5.36%</td><td class="n tgt">$619,235</td></tr>
+<tr data-b="b"><td class="rk">8</td><td class="ad"><span class="st">1830 Dwarf Star Drive</span><span class="sub">Las Vegas 89115 &middot; 5.2 mi &middot; built 1987 &middot; 2/2/2/2 &middot; 85 DOM</span></td><td class="n">$595,000<span class="sub2">$148,750/unit</span></td><td class="n">$4,490<span class="sub2">4/4 leased</span></td><td class="n">11.04</td><td class="n">$20,907</td><td class="n">$31,357</td><td class="n hi">5.27%</td><td class="n tgt">$510,728</td></tr>
+<tr data-b="b"><td class="rk">9</td><td class="ad"><span class="st">1805 Moser Drive</span><span class="sub">Henderson 89011 &middot; 9.9 mi &middot; built 1940 &middot; 2/1/1/1 &middot; 14 DOM</span><span class="fl">pre-1965 systems</span></td><td class="n">$660,000<span class="sub2">$165,000/unit</span></td><td class="n">$4,820<span class="sub2">4/4 leased</span></td><td class="n">11.41</td><td class="n">$23,123</td><td class="n">$32,981</td><td class="n hi">5.00%</td><td class="n tgt">$537,192</td></tr>
+<tr data-b="b"><td class="rk">10</td><td class="ad"><span class="st">6148 Camino De Rosa Drive</span><span class="sub">Las Vegas 89108 &middot; 4.4 mi &middot; built 1978 &middot; 2/2/2/2 &middot; 38 DOM</span></td><td class="n">$709,000<span class="sub2">$177,250/unit</span></td><td class="n">$4,850<span class="sub2">4/4 leased</span></td><td class="n">12.18</td><td class="n">$21,345</td><td class="n">$35,109</td><td class="n hi">4.95%</td><td class="n tgt">$571,853</td></tr>
+<tr data-b="b"><td class="rk">11</td><td class="ad"><span class="st">3244 Figler Court</span><span class="sub">N. Las Vegas 89030 &middot; 6.9 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 28 DOM</span></td><td class="n">$699,000<span class="sub2">$174,750/unit</span></td><td class="n">$4,800<span class="sub2">4/4 leased</span></td><td class="n">12.14</td><td class="n">$21,467</td><td class="n">$34,405</td><td class="n hi">4.92%</td><td class="n tgt">$560,384</td></tr>
+<tr data-b="b"><td class="rk">12</td><td class="ad"><span class="st">2679 Kline Circle</span><span class="sub">Las Vegas 89121 &middot; 3.7 mi &middot; built 1974 &middot; 2/2/2/3 &middot; 205 DOM</span><span class="fl">cash only, no financing &middot; HOA $415/mo</span></td><td class="n">$800,000<span class="sub2">$200,000/unit</span></td><td class="n">$5,594<span class="sub2">4/4 leased</span></td><td class="n">11.92</td><td class="n">$26,211</td><td class="n">$38,903</td><td class="n hi">4.86%</td><td class="n tgt">$633,644</td></tr>
+<tr data-b="b"><td class="rk">13</td><td class="ad"><span class="st">3232 Figler Court</span><span class="sub">N. Las Vegas 89030 &middot; 6.9 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 47 DOM</span></td><td class="n">$680,000<span class="sub2">$170,000/unit</span></td><td class="n">$4,600<span class="sub2">3/4 leased</span></td><td class="n">12.32</td><td class="n">$20,575</td><td class="n">$32,969</td><td class="n hi">4.85%</td><td class="n tgt">$536,991</td></tr>
+<tr data-b="b"><td class="rk">14</td><td class="ad"><span class="st">1524 Henry Drive</span><span class="sub">Las Vegas 89110 &middot; 4.6 mi &middot; built 1982 &middot; 2/2/2/2 &middot; 34 DOM</span></td><td class="n">$650,000<span class="sub2">$162,500/unit</span></td><td class="n">$4,500<span class="sub2">4/4 leased</span></td><td class="n">12.04</td><td class="n">$20,966</td><td class="n">$31,414</td><td class="n hi">4.83%</td><td class="n tgt">$511,664</td></tr>
+<tr data-b="b"><td class="rk">15</td><td class="ad"><span class="st">4796 Nova Lane</span><span class="sub">Las Vegas 89115 &middot; 6.0 mi &middot; built 1983 &middot; 2/2/2/2 &middot; 98 DOM</span></td><td class="n">$650,000<span class="sub2">$162,500/unit</span></td><td class="n">$4,375<span class="sub2">4/4 leased</span></td><td class="n">12.38</td><td class="n">$20,196</td><td class="n">$30,729</td><td class="n hi">4.73%</td><td class="n tgt">$500,514</td></tr>
+<tr data-b="b"><td class="rk">16</td><td class="ad"><span class="st">616 North 11th Street</span><span class="sub">Las Vegas 89101 &middot; 3.9 mi &middot; built 1956 &middot; 1/1/1/1 &middot; 116 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class</span></td><td class="n">$499,888<span class="sub2">$124,972/unit</span></td><td class="n">$3,575<span class="sub2">4/4 leased</span></td><td class="n">11.65</td><td class="n">$18,252</td><td class="n">$23,361</td><td class="n hi">4.67%</td><td class="n tgt">$380,493</td></tr>
+<tr data-b="b"><td class="rk">17</td><td class="ad"><span class="st">6988 Kilgore Drive</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1983 &middot; 2/2/2/2 &middot; 50 DOM</span></td><td class="n">$640,000<span class="sub2">$160,000/unit</span></td><td class="n">$4,300<span class="sub2">4/4 leased</span></td><td class="n">12.40</td><td class="n">$20,285</td><td class="n">$29,767</td><td class="n hi">4.65%</td><td class="n tgt">$484,842</td></tr>
+<tr data-b="b"><td class="rk">18</td><td class="ad"><span class="st">2894 Karen Avenue</span><span class="sub">Las Vegas 89121 &middot; 3.7 mi &middot; built 1974 &middot; 3/2/2/2 &middot; 91 DOM</span><span class="fl">seller may carry &middot; HOA $415/mo</span></td><td class="n">$800,000<span class="sub2">$200,000/unit</span></td><td class="n">$5,091<span class="sub2">4/4 leased</span></td><td class="n">13.10</td><td class="n">$22,658</td><td class="n">$36,601</td><td class="n hi">4.58%</td><td class="n tgt">$596,154</td></tr>
+<tr data-b="b"><td class="rk">19</td><td class="ad"><span class="st">2252 Ellis Street</span><span class="sub">N. Las Vegas 89030 &middot; 5.3 mi &middot; built 1963 &middot; 2/2/2/2 &middot; 29 DOM</span><span class="fl">seller may carry &middot; pre-1965 systems</span></td><td class="n">$640,000<span class="sub2">$160,000/unit</span></td><td class="n">$4,400<span class="sub2">4/4 leased</span></td><td class="n">12.12</td><td class="n">$22,129</td><td class="n">$29,087</td><td class="n hi">4.54%</td><td class="n tgt">$473,754</td></tr>
+<tr data-b="b"><td class="rk">20</td><td class="ad"><span class="st">2504 East Mesquite Avenue</span><span class="sub">Las Vegas 89101 &middot; 4.1 mi &middot; built 1963 &middot; 2/2/2/1 &middot; 99 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class</span></td><td class="n">$610,000<span class="sub2">$152,500/unit</span></td><td class="n">$4,077<span class="sub2">3/4 leased</span></td><td class="n">12.47</td><td class="n">$19,917</td><td class="n">$27,539</td><td class="n hi">4.51%</td><td class="n tgt">$448,547</td></tr>
+<tr data-b="b"><td class="rk">21</td><td class="ad"><span class="st">6920 Dunsbach Way</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1983 &middot; 2/2/2/2 &middot; 54 DOM</span></td><td class="n">$660,000<span class="sub2">$165,000/unit</span></td><td class="n">$4,300<span class="sub2">4/4 leased</span></td><td class="n">12.79</td><td class="n">$20,277</td><td class="n">$29,775</td><td class="n hi">4.51%</td><td class="n tgt">$484,965</td></tr>
+<tr data-b="b"><td class="rk">22</td><td class="ad"><span class="st">4684 Krissylouise Way</span><span class="sub">Las Vegas 89121 &middot; 4.6 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 59 DOM</span><span class="fl">HOA $975/mo</span></td><td class="n">$565,000<span class="sub2">$141,250/unit</span></td><td class="n">$4,585<span class="sub2">4/4 leased</span></td><td class="n">10.27</td><td class="n">$27,913</td><td class="n">$25,457</td><td class="n hi">4.51%</td><td class="n tgt">$414,633</td></tr>
+<tr data-b="c"><td class="rk">23</td><td class="ad"><span class="st">4783 Corsaire Avenue</span><span class="sub">Las Vegas 89115 &middot; 8.2 mi &middot; built 1983 &middot; 2/2/2/2 &middot; 79 DOM</span></td><td class="n">$650,000<span class="sub2">$162,500/unit</span></td><td class="n">$4,200<span class="sub2">4/4 leased</span></td><td class="n">12.90</td><td class="n">$19,759</td><td class="n">$29,129</td><td class="n hi">4.48%</td><td class="n tgt">$474,448</td></tr>
+<tr data-b="c"><td class="rk">24</td><td class="ad"><span class="st">4851 East Craig Road</span><span class="sub">Las Vegas 89115 &middot; 8.2 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 32 DOM</span></td><td class="n">$815,000<span class="sub2">$203,750/unit</span></td><td class="n">$4,980<span class="sub2">4/4 leased</span></td><td class="n">13.64</td><td class="n">$21,675</td><td class="n">$36,292</td><td class="n hi">4.45%</td><td class="n tgt">$591,112</td></tr>
+<tr data-b="c"><td class="rk">25</td><td class="ad"><span class="st">4272 Vornsand Drive</span><span class="sub">Las Vegas 89115 &middot; 8.2 mi &middot; built 1984 &middot; 1/1/3/3 &middot; 6 DOM</span></td><td class="n">$700,000<span class="sub2">$175,000/unit</span></td><td class="n">$4,400<span class="sub2">4/4 leased</span></td><td class="n">13.26</td><td class="n">$20,255</td><td class="n">$30,961</td><td class="n hi">4.42%</td><td class="n tgt">$504,278</td></tr>    </tbody>
+  </table>
+  </div>
+  <div class="legend">
+    <span><i style="background:var(--a)"></i>5.5%+ in-place cap</span>
+    <span><i style="background:var(--b)"></i>4.5 to 5.5%</span>
+    <span><i style="background:var(--c)"></i>3.5 to 4.5%</span>
+    <span><i style="background:var(--d)"></i>under 3.5%</span>
+    <span>All figures from collected rent only</span>
+  </div>
+</section>
+<section class="stack">
+  <div class="eyebrow">Straight from the Finance Consid field</div>
+  <h2>Financing terms the listings state</h2>
+<p class="lede">Most of these listings accept conventional financing. Six do not, or state something unusual. This is what the MLS says, verbatim, with no interpretation added.</p>
+<div class="picks">
+<div class="pick">
+  <span class="lbl">Cash only &middot; 2 listings</span>
+  <p><b>2657 Kline Circle</b>, $779,900, and <b>2679 Kline Circle</b>, $800,000. Both list Finance Consid as "Cash" with no conventional, FHA or VA. Both are 89121, built 1974, and both have been on market 205 and 206 days. 2657 carries the fifth-highest in-place cap rate on the list at 5.53 percent.</p>
+  <p class="fig">A 25 percent down conventional purchase is not available on either one as listed.</p>
+</div>
+<div class="pick">
+  <span class="lbl">Seller financing language &middot; 4 listings</span>
+  <p>Four listings name owner carry or an all-inclusive trust deed among accepted terms:</p>
+  <p class="fig"><b>2252 Ellis Street</b> &middot; $640,000 &middot; 4.54% in-place cap<br>Finance Consid: AITD, Cash, Conventional, FHA, VA</p>
+  <p class="fig"><b>2894 Karen Avenue</b> &middot; $800,000 &middot; 4.58% in-place cap<br>Finance Consid: Cash, Conventional, FHA, Owner Will Carry, VA</p>
+  <p class="fig"><b>2905 Elm Avenue</b> &middot; $750,000 &middot; 2.51% in-place cap<br>Finance Consid: Cash, Cash to Loan, Owner Will Carry</p>
+  <p class="fig"><b>2201 James Bilbray Drive</b> &middot; $815,000 &middot; 1.68% in-place cap<br>Finance Consid: Cash, Conventional, FHA, Owner Will Carry, VA</p>
+  <p class="fig">2894 Karen Avenue is additionally flagged Owner Will Carry: Y. No terms, rate, or balloon are stated in any of the four listings.</p>
+</div>
+</div>
+</section>
+<section class="stack">
+  <div class="eyebrow">Patterns in the data</div>
+  <h2>What the numbers show</h2>
+<ol class="av">
+<li><b>HOA dues vary enormously and are not reflected in asking price.</b> Twenty-three of the 102 carry an HOA; the median is $875 a month. Fourteen are at $800 a month or higher. Those fourteen have a median in-place cap of <b>3.15 percent</b> against <b>3.80 percent</b> for the no-HOA buildings in the same $500,000 to $700,000 asking range. At the extremes: 2201 James Bilbray Drive carries $1,884 a month and returns 1.68 percent; 2732 Alicialynn Way carries $975 a month and produces a negative NOI on its collected rent.</li>
+<li><b>Six listings report no collected rent at all.</b> 2527 Carroll Street, 2529 Valley Street, 736 North 10th Street, 728 North 11th Street, 732 North 11th Street, and 3608 East Cheyenne Avenue. Four of those are in 89101, listed 203 days, three of them at exactly $498,000. With no rent there is no cap rate, no GRM, and no debt-service break-even to compute.</li>
+<li><b>Four identical buildings share one asking price.</b> 4771, 4781, 4791 and 4851 East Craig Road are all listed at exactly $815,000, with in-place caps of 4.23, 4.31, 4.22 and 4.45 percent. Collected rents run $4,780 to $4,980 a month.</li>
+<li><b>The two most expensive listings return less than the median.</b> 1153 and 1165 Sierra Vista Drive are asking $1,310,000 each, the highest on the list, with in-place caps of 3.84 and 3.96 percent against a median of 3.79 percent.</li>
+<li><b>Advertised income and unit-level rent lines frequently disagree.</b> Where the two conflicted I used the lower figure. Six buildings needed a further correction from language in their own remarks. 905 East Bonanza Road advertises $43,200 of annual gross income while its remarks state that current monthly rent collected is $1,800, which is $21,600 a year. 3232 Figler Court's agent income sheet and its unit rent lines differ by $12,000 a year. 510 South 10th Street lists a single $4,200 rent that is the building total, not a per-unit figure.</li>
+<li><b>Thirty-two buildings predate 1965 and twenty have been listed more than 180 days.</b> Two have been listed more than a year: 2761 Mountain Vista Street at 551 days and 300 North 14th Street at 447 days.</li>
+</ol>
+</section>
+<section class="stack">
+  <div class="eyebrow">342 in-place leases</div>
+  <h2>What the rents actually are</h2>
+<p class="lede">These are not metro averages. Every figure below is a rent someone is paying right now inside one of these 102 buildings, taken from the unit-level rent lines and grouped by zip and bedroom count. 342 leases in all, shown here wherever a zip and bedroom pair had at least three of them.</p>
+<div class="comps">
+<div class="cc"><div class="z">89146 <span style="color:var(--mute);font-weight:400">Spring Valley</span></div><div class="mi">1.2 mi out</div><div class="r">2bd <b>$1,300</b> <span style="opacity:.55">n=4</span></div></div>
+<div class="cc"><div class="z">89169 <span style="color:var(--mute);font-weight:400">Strip East</span></div><div class="mi">2.0 mi out</div><div class="r">2bd <b>$1,574</b> <span style="opacity:.55">n=8</span></div></div>
+<div class="cc"><div class="z">89104 <span style="color:var(--mute);font-weight:400">Huntridge</span></div><div class="mi">2.0 mi out</div><div class="r">2bd <b>$1,250</b> <span style="opacity:.55">n=3</span></div></div>
+<div class="cc"><div class="z">89109 <span style="color:var(--mute);font-weight:400">Strip</span></div><div class="mi">2.2 mi out</div><div class="r">3bd <b>$1,400</b> <span style="opacity:.55">n=4</span></div></div>
+<div class="cc"><div class="z">89119 <span style="color:var(--mute);font-weight:400">UNLV / Airport</span></div><div class="mi">3.5 mi out</div><div class="r">1bd <b>$1,000</b> <span style="opacity:.55">n=6</span><br>2bd <b>$1,175</b> <span style="opacity:.55">n=6</span></div></div>
+<div class="cc"><div class="z">89101 <span style="color:var(--mute);font-weight:400">Downtown</span></div><div class="mi">3.9 mi out</div><div class="r">1bd <b>$975</b> <span style="opacity:.55">n=14</span><br>2bd <b>$998</b> <span style="opacity:.55">n=26</span></div></div>
+<div class="cc"><div class="z">89108 <span style="color:var(--mute);font-weight:400">Vegas Heights</span></div><div class="mi">4.0 mi out</div><div class="r">2bd <b>$1,162</b> <span style="opacity:.55">n=30</span></div></div>
+<div class="cc"><div class="z">89110 <span style="color:var(--mute);font-weight:400">East LV</span></div><div class="mi">4.6 mi out</div><div class="r">2bd <b>$1,100</b> <span style="opacity:.55">n=4</span></div></div>
+<div class="cc"><div class="z">89121 <span style="color:var(--mute);font-weight:400">East Sahara</span></div><div class="mi">4.6 mi out</div><div class="r">2bd <b>$1,145</b> <span style="opacity:.55">n=39</span><br>3bd <b>$1,285</b> <span style="opacity:.55">n=3</span></div></div>
+<div class="cc"><div class="z">89030 <span style="color:var(--mute);font-weight:400">N. Las Vegas</span></div><div class="mi">6.1 mi out</div><div class="r">1bd <b>$980</b> <span style="opacity:.55">n=3</span><br>2bd <b>$1,200</b> <span style="opacity:.55">n=19</span></div></div>
+<div class="cc"><div class="z">89115 <span style="color:var(--mute);font-weight:400">Nellis / NE</span></div><div class="mi">6.8 mi out</div><div class="r">1bd <b>$875</b> <span style="opacity:.55">n=6</span><br>2bd <b>$1,085</b> <span style="opacity:.55">n=50</span><br>3bd <b>$1,300</b> <span style="opacity:.55">n=10</span></div></div>
+<div class="cc"><div class="z">89156 <span style="color:var(--mute);font-weight:400">Sunrise Manor</span></div><div class="mi">8.5 mi out</div><div class="r">2bd <b>$1,075</b> <span style="opacity:.55">n=31</span><br>3bd <b>$1,150</b> <span style="opacity:.55">n=4</span></div></div>
+<div class="cc"><div class="z">89011 <span style="color:var(--mute);font-weight:400">Henderson NE</span></div><div class="mi">9.9 mi out</div><div class="r">1bd <b>$975</b> <span style="opacity:.55">n=3</span></div></div>
+<div class="cc"><div class="z">89015 <span style="color:var(--mute);font-weight:400">Henderson</span></div><div class="mi">11.7 mi out</div><div class="r">2bd <b>$1,050</b> <span style="opacity:.55">n=12</span></div></div></div>
+<p class="lede" style="font-size:16px">A 2-bedroom collects about $1,050 in Henderson and $1,574 two miles east of the Strip. That is a 50 percent spread on the same unit type inside the same 12-mile circle.</p>
+</section>
+<section class="stack">
+  <h2>The other 77 buildings</h2>
+<p class="lede">Ranked 26 through 102 on the same basis. The last six report no collected rent and so produce no cap rate.</p>
+<details><summary>Show the full list, 26 through 102</summary>
+  <div class="tblwrap">
+  <table>
+    <thead><tr>
+      <th class="l">#</th><th class="l">Property</th>
+      <th>Ask<small>per unit</small></th>
+      <th>In-place rent<small>per month</small></th>
+      <th>GRM</th>
+      <th>Est. opex<small>per year</small></th>
+      <th>NOI<small>in-place</small></th>
+      <th>Cap<small>in-place</small></th>
+      <th>Break-even<small>at 6.14%</small></th>
+    </tr></thead>
+    <tbody>
+<tr data-b="c"><td class="rk">26</td><td class="ad"><span class="st">637 North 11th Street</span><span class="sub">Las Vegas 89101 &middot; 3.9 mi &middot; built 1961 &middot; 2/2/2/2 &middot; 129 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class</span></td><td class="n">$699,999<span class="sub2">$175,000/unit</span></td><td class="n">$4,600<span class="sub2">4/4 leased</span></td><td class="n">12.68</td><td class="n">$22,729</td><td class="n">$30,815</td><td class="n hi">4.40%</td><td class="n tgt">$501,907</td></tr>
+<tr data-b="c"><td class="rk">27</td><td class="ad"><span class="st">4708 Krissylouise Way</span><span class="sub">Las Vegas 89121 &middot; 4.6 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 22 DOM</span><span class="fl">HOA $975/mo</span></td><td class="n">$560,000<span class="sub2">$140,000/unit</span></td><td class="n">$4,500<span class="sub2">4/4 leased</span></td><td class="n">10.37</td><td class="n">$27,758</td><td class="n">$24,622</td><td class="n hi">4.40%</td><td class="n tgt">$401,032</td></tr>
+<tr data-b="c"><td class="rk">28</td><td class="ad"><span class="st">4781 East Craig Road</span><span class="sub">Las Vegas 89115 &middot; 8.2 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 32 DOM</span></td><td class="n">$815,000<span class="sub2">$203,750/unit</span></td><td class="n">$4,855<span class="sub2">4/4 leased</span></td><td class="n">13.99</td><td class="n">$21,424</td><td class="n">$35,088</td><td class="n hi">4.31%</td><td class="n tgt">$571,501</td></tr>
+<tr data-b="c"><td class="rk">29</td><td class="ad"><span class="st">4671 Krissylouise Way</span><span class="sub">Las Vegas 89121 &middot; 4.6 mi &middot; built 1995 &middot; 2/2/2/2 &middot; 59 DOM</span><span class="fl">HOA $975/mo</span></td><td class="n">$568,888<span class="sub2">$142,222/unit</span></td><td class="n">$4,550<span class="sub2">4/4 leased</span></td><td class="n">10.42</td><td class="n">$28,528</td><td class="n">$24,434</td><td class="n hi">4.29%</td><td class="n tgt">$397,968</td></tr>
+<tr data-b="c"><td class="rk">30</td><td class="ad"><span class="st">4771 East Craig Road</span><span class="sub">Las Vegas 89115 &middot; 8.2 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 32 DOM</span></td><td class="n">$815,000<span class="sub2">$203,750/unit</span></td><td class="n">$4,790<span class="sub2">4/4 leased</span></td><td class="n">14.18</td><td class="n">$21,294</td><td class="n">$34,462</td><td class="n hi">4.23%</td><td class="n tgt">$561,303</td></tr>
+<tr data-b="c"><td class="rk">31</td><td class="ad"><span class="st">2321 North Jones Boulevard</span><span class="sub">Las Vegas 89108 &middot; 4.0 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 228 DOM</span></td><td class="n">$900,000<span class="sub2">$225,000/unit</span></td><td class="n">$5,425<span class="sub2">4/4 leased</span></td><td class="n">13.82</td><td class="n">$25,190</td><td class="n">$37,957</td><td class="n hi">4.22%</td><td class="n tgt">$618,228</td></tr>
+<tr data-b="c"><td class="rk">32</td><td class="ad"><span class="st">4791 East Craig Road</span><span class="sub">Las Vegas 89115 &middot; 8.2 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 32 DOM</span></td><td class="n">$815,000<span class="sub2">$203,750/unit</span></td><td class="n">$4,780<span class="sub2">4/4 leased</span></td><td class="n">14.21</td><td class="n">$21,274</td><td class="n">$34,365</td><td class="n hi">4.22%</td><td class="n tgt">$559,734</td></tr>
+<tr data-b="c"><td class="rk">33</td><td class="ad"><span class="st">5032 Pebble Beach Boulevard</span><span class="sub">Las Vegas 89108 &middot; 3.0 mi &middot; built 1962 &middot; 2/2/2/2 &middot; 109 DOM</span><span class="fl">pre-1965 systems</span></td><td class="n">$594,000<span class="sub2">$148,500/unit</span></td><td class="n">$4,000<span class="sub2">4/4 leased</span></td><td class="n">12.38</td><td class="n">$21,597</td><td class="n">$24,963</td><td class="n hi">4.20%</td><td class="n tgt">$406,590</td></tr>
+<tr data-b="c"><td class="rk">34</td><td class="ad"><span class="st">4284 Vornsand Drive</span><span class="sub">Las Vegas 89115 &middot; 8.2 mi &middot; built 1984 &middot; 1/1/3/3 &middot; 13 DOM</span></td><td class="n">$690,000<span class="sub2">$172,500/unit</span></td><td class="n">$4,196<span class="sub2">4/4 leased</span></td><td class="n">13.70</td><td class="n">$19,846</td><td class="n">$28,996</td><td class="n hi">4.20%</td><td class="n tgt">$472,272</td></tr>
+<tr data-b="c"><td class="rk">35</td><td class="ad"><span class="st">2209 Exeter Drive</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1983 &middot; 2/2/2/2 &middot; 216 DOM</span></td><td class="n">$629,900<span class="sub2">$157,475/unit</span></td><td class="n">$3,920<span class="sub2">4/4 leased</span></td><td class="n">13.39</td><td class="n">$19,346</td><td class="n">$26,283</td><td class="n hi">4.17%</td><td class="n tgt">$428,091</td></tr>
+<tr data-b="c"><td class="rk">36</td><td class="ad"><span class="st">1444 Silver Mesa Circle</span><span class="sub">Las Vegas 89169 &middot; 2.7 mi &middot; built 1963 &middot; 2/2/2/2 &middot; 215 DOM</span><span class="fl">pre-1965 systems</span></td><td class="n">$749,000<span class="sub2">$187,250/unit</span></td><td class="n">$5,200<span class="sub2">4/4 leased</span></td><td class="n">12.00</td><td class="n">$29,480</td><td class="n">$31,048</td><td class="n hi">4.15%</td><td class="n tgt">$505,701</td></tr>
+<tr data-b="c"><td class="rk">37</td><td class="ad"><span class="st">2728 Haddock Avenue</span><span class="sub">N. Las Vegas 89030 &middot; 6.1 mi &middot; built 1982 &middot; 2/2/2/2 &middot; 3 DOM</span></td><td class="n">$670,000<span class="sub2">$167,500/unit</span></td><td class="n">$3,868<span class="sub2">3/4 leased</span></td><td class="n">14.43</td><td class="n">$17,400</td><td class="n">$27,623</td><td class="n hi">4.12%</td><td class="n tgt">$449,918</td></tr>
+<tr data-b="c"><td class="rk">38</td><td class="ad"><span class="st">1620 Cordoba Lane</span><span class="sub">Las Vegas 89108 &middot; 4.0 mi &middot; built 1978 &middot; 2/2/2/2 &middot; 1 DOM</span><span class="fl">HOA $350/mo</span></td><td class="n">$650,000<span class="sub2">$162,500/unit</span></td><td class="n">$4,200<span class="sub2">3/4 leased</span></td><td class="n">12.90</td><td class="n">$22,324</td><td class="n">$26,564</td><td class="n hi">4.09%</td><td class="n tgt">$432,671</td></tr>
+<tr data-b="c"><td class="rk">39</td><td class="ad"><span class="st">4760 Lucite Lane</span><span class="sub">Las Vegas 89115 &middot; 8.2 mi &middot; built 1984 &middot; 1/1/3/3 &middot; 13 DOM</span></td><td class="n">$690,000<span class="sub2">$172,500/unit</span></td><td class="n">$4,050<span class="sub2">4/4 leased</span></td><td class="n">14.20</td><td class="n">$19,496</td><td class="n">$27,646</td><td class="n hi">4.01%</td><td class="n tgt">$450,294</td></tr>
+<tr data-b="c"><td class="rk">40</td><td class="ad"><span class="st">1165 Sierra Vista Drive</span><span class="sub">Las Vegas 89169 &middot; 2.0 mi &middot; built 1963 &middot; 2/2/2/2 &middot; 30 DOM</span><span class="fl">pre-1965 systems</span></td><td class="n">$1,310,000<span class="sub2">$327,500/unit</span></td><td class="n">$7,392<span class="sub2">4/4 leased</span></td><td class="n">14.77</td><td class="n">$34,129</td><td class="n">$51,914</td><td class="n hi">3.96%</td><td class="n tgt">$845,556</td></tr>
+<tr data-b="c"><td class="rk">41</td><td class="ad"><span class="st">828 Sagman Street</span><span class="sub">Las Vegas 89101 &middot; 3.9 mi &middot; built 1976 &middot; 1/1/2/3 &middot; 32 DOM</span><span class="fl">downtown C-class</span></td><td class="n">$639,900<span class="sub2">$159,975/unit</span></td><td class="n">$3,800<span class="sub2">4/4 leased</span></td><td class="n">14.03</td><td class="n">$19,139</td><td class="n">$25,093</td><td class="n hi">3.92%</td><td class="n tgt">$408,701</td></tr>
+<tr data-b="c"><td class="rk">42</td><td class="ad"><span class="st">1914 Cosmic Drive</span><span class="sub">Las Vegas 89115 &middot; 5.2 mi &middot; built 1987 &middot; 2/2/2/2 &middot; 50 DOM</span></td><td class="n">$550,000<span class="sub2">$137,500/unit</span></td><td class="n">$3,490<span class="sub2">4/4 leased</span></td><td class="n">13.13</td><td class="n">$19,087</td><td class="n">$21,536</td><td class="n hi">3.92%</td><td class="n tgt">$350,777</td></tr>
+<tr data-b="c"><td class="rk">43</td><td class="ad"><span class="st">536 North Circle</span><span class="sub">Las Vegas 89119 &middot; 2.0 mi &middot; built 1963 &middot; 2/2/2/2 &middot; 146 DOM</span><span class="fl">pre-1965 systems</span></td><td class="n">$820,000<span class="sub2">$205,000/unit</span></td><td class="n">$4,750<span class="sub2">4/4 leased</span></td><td class="n">14.39</td><td class="n">$23,366</td><td class="n">$31,924</td><td class="n hi">3.89%</td><td class="n tgt">$519,968</td></tr>
+<tr data-b="c"><td class="rk">44</td><td class="ad"><span class="st">1153 Sierra Vista Drive</span><span class="sub">Las Vegas 89169 &middot; 2.0 mi &middot; built 1963 &middot; 3/3/1/1 &middot; 30 DOM</span><span class="fl">pre-1965 systems</span></td><td class="n">$1,310,000<span class="sub2">$327,500/unit</span></td><td class="n">$7,400<span class="sub2">4/4 leased</span></td><td class="n">14.75</td><td class="n">$35,827</td><td class="n">$50,309</td><td class="n hi">3.84%</td><td class="n tgt">$819,416</td></tr>
+<tr data-b="c"><td class="rk">45</td><td class="ad"><span class="st">1313 North 23rd Street</span><span class="sub">Las Vegas 89101 &middot; 3.9 mi &middot; built 1963 &middot; 2/2/2/2 &middot; 329 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class</span></td><td class="n">$659,000<span class="sub2">$164,750/unit</span></td><td class="n">$4,000<span class="sub2">4/4 leased</span></td><td class="n">13.73</td><td class="n">$21,278</td><td class="n">$25,282</td><td class="n hi">3.84%</td><td class="n tgt">$411,788</td></tr>
+<tr data-b="c"><td class="rk">46</td><td class="ad"><span class="st">6935 Kepler Drive</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1983 &middot; 2/2/2/2 &middot; 49 DOM</span></td><td class="n">$630,000<span class="sub2">$157,500/unit</span></td><td class="n">$3,520<span class="sub2">3/4 leased</span></td><td class="n">14.91</td><td class="n">$17,031</td><td class="n">$23,942</td><td class="n hi">3.80%</td><td class="n tgt">$389,954</td></tr>
+<tr data-b="c"><td class="rk">47</td><td class="ad"><span class="st">140 Judy Lane</span><span class="sub">Henderson 89015 &middot; 11.7 mi &middot; built 1978 &middot; 2/2/2/2 &middot; 117 DOM</span></td><td class="n">$699,950<span class="sub2">$174,988/unit</span></td><td class="n">$4,000<span class="sub2">4/4 leased</span></td><td class="n">14.58</td><td class="n">$19,962</td><td class="n">$26,598</td><td class="n hi">3.80%</td><td class="n tgt">$433,219</td></tr>
+<tr data-b="c"><td class="rk">48</td><td class="ad"><span class="st">2536 Carroll Street</span><span class="sub">N. Las Vegas 89030 &middot; 6.1 mi &middot; built 1954 &middot; 3/2/1/1 &middot; 67 DOM</span><span class="fl">pre-1965 systems</span></td><td class="n">$749,900<span class="sub2">$187,475/unit</span></td><td class="n">$4,365<span class="sub2">4/4 leased</span></td><td class="n">14.32</td><td class="n">$22,326</td><td class="n">$28,483</td><td class="n hi">3.80%</td><td class="n tgt">$463,925</td></tr>
+<tr data-b="c"><td class="rk">49</td><td class="ad"><span class="st">147 Westminster Way</span><span class="sub">Henderson 89015 &middot; 11.7 mi &middot; built 1977 &middot; 2/2/2/2 &middot; 17 DOM</span></td><td class="n">$660,000<span class="sub2">$165,000/unit</span></td><td class="n">$3,820<span class="sub2">3/4 leased</span></td><td class="n">14.40</td><td class="n">$19,563</td><td class="n">$24,902</td><td class="n hi">3.77%</td><td class="n tgt">$405,594</td></tr>
+<tr data-b="c"><td class="rk">50</td><td class="ad"><span class="st">2937 Elm Avenue</span><span class="sub">Las Vegas 89101 &middot; 4.1 mi &middot; built 1963 &middot; 2/2/2/2 &middot; 126 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class</span></td><td class="n">$669,000<span class="sub2">$167,250/unit</span></td><td class="n">$3,795<span class="sub2">4/4 leased</span></td><td class="n">14.69</td><td class="n">$19,162</td><td class="n">$25,012</td><td class="n hi">3.74%</td><td class="n tgt">$407,383</td></tr>
+<tr data-b="c"><td class="rk">51</td><td class="ad"><span class="st">2313 Seco Adobe Circle</span><span class="sub">N. Las Vegas 89030 &middot; 6.4 mi &middot; built 2026 &middot; 2/2/2/2 &middot; 28 DOM</span></td><td class="n">$1,000,000<span class="sub2">$250,000/unit</span></td><td class="n">$5,580<span class="sub2">4/4 leased</span></td><td class="n">14.93</td><td class="n">$27,802</td><td class="n">$37,149</td><td class="n hi">3.71%</td><td class="n tgt">$605,070</td></tr>
+<tr data-b="c"><td class="rk">52</td><td class="ad"><span class="st">509 McKellar Circle</span><span class="sub">Las Vegas 89119 &middot; 2.0 mi &middot; built 1963 &middot; 1/1/1/1 &middot; 103 DOM</span><span class="fl">pre-1965 systems</span></td><td class="n">$675,000<span class="sub2">$168,750/unit</span></td><td class="n">$3,990<span class="sub2">4/4 leased</span></td><td class="n">14.10</td><td class="n">$21,403</td><td class="n">$25,041</td><td class="n hi">3.71%</td><td class="n tgt">$407,857</td></tr>
+<tr data-b="c"><td class="rk">53</td><td class="ad"><span class="st">416 North 15th Street</span><span class="sub">Las Vegas 89101 &middot; 3.3 mi &middot; built 1966 &middot; 1/1/1/1 &middot; 99 DOM</span><span class="fl">downtown C-class</span></td><td class="n">$589,900<span class="sub2">$147,475/unit</span></td><td class="n">$3,600<span class="sub2">3/4 leased</span></td><td class="n">13.66</td><td class="n">$20,206</td><td class="n">$21,698</td><td class="n hi">3.68%</td><td class="n tgt">$353,410</td></tr>
+<tr data-b="c"><td class="rk">54</td><td class="ad"><span class="st">2220 North Lamb Boulevard</span><span class="sub">Las Vegas 89115 &middot; 6.0 mi &middot; built 1971 &middot; 2/2/2/2 &middot; 207 DOM</span></td><td class="n">$619,900<span class="sub2">$154,975/unit</span></td><td class="n">$3,525<span class="sub2">4/4 leased</span></td><td class="n">14.65</td><td class="n">$18,267</td><td class="n">$22,764</td><td class="n hi">3.67%</td><td class="n tgt">$370,782</td></tr>
+<tr data-b="c"><td class="rk">55</td><td class="ad"><span class="st">1871 COSMIC Drive</span><span class="sub">Las Vegas 89115 &middot; 5.2 mi &middot; built 1987 &middot; 2/2/2/2 &middot; 50 DOM</span><span class="fl">HOA $875/mo</span></td><td class="n">$590,000<span class="sub2">$147,500/unit</span></td><td class="n">$4,300<span class="sub2">4/4 leased</span></td><td class="n">11.43</td><td class="n">$28,632</td><td class="n">$21,420</td><td class="n hi">3.63%</td><td class="n tgt">$348,881</td></tr>
+<tr data-b="c"><td class="rk">56</td><td class="ad"><span class="st">313 Jackson Avenue</span><span class="sub">Las Vegas 89106 &middot; 3.3 mi &middot; built 1963 &middot; 4/4/4/4 &middot; 129 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class</span></td><td class="n">$599,000<span class="sub2">$149,750/unit</span></td><td class="n">$3,600<span class="sub2">4/4 leased</span></td><td class="n">13.87</td><td class="n">$20,229</td><td class="n">$21,675</td><td class="n hi">3.62%</td><td class="n tgt">$353,039</td></tr>
+<tr data-b="c"><td class="rk">57</td><td class="ad"><span class="st">4915 East Russell RD Road</span><span class="sub">Las Vegas 89120 &middot; 5.5 mi &middot; built 2004 &middot; 2/2/3/3 &middot; 54 DOM</span><span class="fl">HOA $1300/mo</span></td><td class="n">$935,000<span class="sub2">$233,750/unit</span></td><td class="n">$6,200<span class="sub2">4/4 leased</span></td><td class="n">12.57</td><td class="n">$38,707</td><td class="n">$33,461</td><td class="n hi">3.58%</td><td class="n tgt">$545,000</td></tr>
+<tr data-b="c"><td class="rk">58</td><td class="ad"><span class="st">2508 East Mesquite Avenue</span><span class="sub">Las Vegas 89101 &middot; 4.1 mi &middot; built 1963 &middot; 2/2/1/2 &middot; 74 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class</span></td><td class="n">$675,000<span class="sub2">$168,750/unit</span></td><td class="n">$3,850<span class="sub2">3/4 leased</span></td><td class="n">14.61</td><td class="n">$21,087</td><td class="n">$23,727</td><td class="n hi">3.52%</td><td class="n tgt">$386,457</td></tr>
+<tr data-b="c"><td class="rk">59</td><td class="ad"><span class="st">2185 Exeter Drive</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1981 &middot; 2/2/2/2 &middot; 18 DOM</span></td><td class="n">$675,000<span class="sub2">$168,750/unit</span></td><td class="n">$3,657<span class="sub2">3/4 leased</span></td><td class="n">15.38</td><td class="n">$18,889</td><td class="n">$23,678</td><td class="n hi">3.51%</td><td class="n tgt">$385,668</td></tr>
+<tr data-b="d"><td class="rk">60</td><td class="ad"><span class="st">1721 Cordoba Lane</span><span class="sub">Las Vegas 89108 &middot; 4.0 mi &middot; built 1978 &middot; 2/2/2/2 &middot; 83 DOM</span><span class="fl">HOA $350/mo</span></td><td class="n">$665,000<span class="sub2">$166,250/unit</span></td><td class="n">$3,655<span class="sub2">4/4 leased</span></td><td class="n">15.16</td><td class="n">$19,374</td><td class="n">$23,170</td><td class="n hi">3.48%</td><td class="n tgt">$377,385</td></tr>
+<tr data-b="d"><td class="rk">61</td><td class="ad"><span class="st">510 South 10th Street</span><span class="sub">Las Vegas 89101 &middot; 2.5 mi &middot; built 1953 &middot; 1/1/1/1 &middot; 80 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class</span></td><td class="n">$785,000<span class="sub2">$196,250/unit</span></td><td class="n">$4,200<span class="sub2">4/4 leased</span></td><td class="n">15.58</td><td class="n">$22,042</td><td class="n">$26,846</td><td class="n hi">3.42%</td><td class="n tgt">$437,254</td></tr>
+<tr data-b="d"><td class="rk">62</td><td class="ad"><span class="st">4182 Orbit Avenue</span><span class="sub">Las Vegas 89115 &middot; 5.2 mi &middot; built 1988 &middot; 2/2/2/2 &middot; 7 DOM</span><span class="fl">HOA $875/mo</span></td><td class="n">$589,000<span class="sub2">$147,250/unit</span></td><td class="n">$4,168<span class="sub2">4/4 leased</span></td><td class="n">11.78</td><td class="n">$28,445</td><td class="n">$20,070</td><td class="n hi">3.41%</td><td class="n tgt">$326,897</td></tr>
+<tr data-b="d"><td class="rk">63</td><td class="ad"><span class="st">4961 Apollostar Court</span><span class="sub">Las Vegas 89115 &middot; 6.0 mi &middot; built 1982 &middot; 2/2/2/2 &middot; 121 DOM</span></td><td class="n">$650,000<span class="sub2">$162,500/unit</span></td><td class="n">$3,450<span class="sub2">3/4 leased</span></td><td class="n">15.70</td><td class="n">$18,289</td><td class="n">$21,869</td><td class="n hi">3.36%</td><td class="n tgt">$356,200</td></tr>
+<tr data-b="d"><td class="rk">64</td><td class="ad"><span class="st">6952 Issac Avenue</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1983 &middot; 2/2/2/2 &middot; 88 DOM</span></td><td class="n">$695,000<span class="sub2">$173,750/unit</span></td><td class="n">$3,600<span class="sub2">3/4 leased</span></td><td class="n">16.09</td><td class="n">$18,875</td><td class="n">$23,029</td><td class="n hi">3.31%</td><td class="n tgt">$375,089</td></tr>
+<tr data-b="d"><td class="rk">65</td><td class="ad"><span class="st">1709 Cordoba Lane</span><span class="sub">Las Vegas 89108 &middot; 4.0 mi &middot; built 1978 &middot; 2/2/2/2 &middot; 12 DOM</span><span class="fl">HOA $350/mo</span></td><td class="n">$669,900<span class="sub2">$167,475/unit</span></td><td class="n">$3,525<span class="sub2">4/4 leased</span></td><td class="n">15.84</td><td class="n">$19,138</td><td class="n">$21,893</td><td class="n hi">3.27%</td><td class="n tgt">$356,583</td></tr>
+<tr data-b="d"><td class="rk">66</td><td class="ad"><span class="st">2707 Aarondavid Drive</span><span class="sub">Las Vegas 89121 &middot; 4.6 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 3 DOM</span><span class="fl">HOA $890/mo</span></td><td class="n">$600,000<span class="sub2">$150,000/unit</span></td><td class="n">$4,225<span class="sub2">4/4 leased</span></td><td class="n">11.83</td><td class="n">$29,879</td><td class="n">$19,300</td><td class="n hi">3.22%</td><td class="n tgt">$314,353</td></tr>
+<tr data-b="d"><td class="rk">67</td><td class="ad"><span class="st">3315 Covey Lane</span><span class="sub">Las Vegas 89115 &middot; 6.8 mi &middot; built 1980 &middot; 2/2/2/2 &middot; 4 DOM</span></td><td class="n">$575,000<span class="sub2">$143,750/unit</span></td><td class="n">$3,000<span class="sub2">4/4 leased</span></td><td class="n">15.97</td><td class="n">$17,158</td><td class="n">$17,762</td><td class="n hi">3.09%</td><td class="n tgt">$289,311</td></tr>
+<tr data-b="d"><td class="rk">68</td><td class="ad"><span class="st">1926 Nebula Drive</span><span class="sub">Las Vegas 89115 &middot; 5.2 mi &middot; built 1988 &middot; 2/2/2/2 &middot; 7 DOM</span><span class="fl">HOA $875/mo</span></td><td class="n">$589,000<span class="sub2">$147,250/unit</span></td><td class="n">$3,800<span class="sub2">4/4 leased</span></td><td class="n">12.92</td><td class="n">$26,063</td><td class="n">$18,169</td><td class="n hi">3.08%</td><td class="n tgt">$295,937</td></tr>
+<tr data-b="d"><td class="rk">69</td><td class="ad"><span class="st">2269 Exeter Drive</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1983 &middot; 2/2/2/2 &middot; 228 DOM</span></td><td class="n">$629,900<span class="sub2">$157,475/unit</span></td><td class="n">$3,150<span class="sub2">3/4 leased</span></td><td class="n">16.66</td><td class="n">$17,827</td><td class="n">$18,839</td><td class="n hi">2.99%</td><td class="n tgt">$306,846</td></tr>
+<tr data-b="d"><td class="rk">70</td><td class="ad"><span class="st">2722 Alicialynn Way</span><span class="sub">Las Vegas 89121 &middot; 4.6 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 171 DOM</span><span class="fl">HOA $950/mo</span></td><td class="n">$615,000<span class="sub2">$153,750/unit</span></td><td class="n">$4,073<span class="sub2">4/4 leased</span></td><td class="n">12.58</td><td class="n">$29,195</td><td class="n">$18,215</td><td class="n hi">2.96%</td><td class="n tgt">$296,684</td></tr>
+<tr data-b="d"><td class="rk">71</td><td class="ad"><span class="st">2230 North Lamb Boulevard</span><span class="sub">Las Vegas 89115 &middot; 6.0 mi &middot; built 1971 &middot; 2/2/2/2 &middot; 207 DOM</span></td><td class="n">$619,900<span class="sub2">$154,975/unit</span></td><td class="n">$3,025<span class="sub2">3/4 leased</span></td><td class="n">17.08</td><td class="n">$17,263</td><td class="n">$17,948</td><td class="n hi">2.90%</td><td class="n tgt">$292,337</td></tr>
+<tr data-b="d"><td class="rk">72</td><td class="ad"><span class="st">155 Westminster Way</span><span class="sub">Henderson 89015 &middot; 11.7 mi &middot; built 1977 &middot; 2/2/2/2 &middot; 17 DOM</span></td><td class="n">$660,000<span class="sub2">$165,000/unit</span></td><td class="n">$3,145<span class="sub2">3/4 leased</span></td><td class="n">17.49</td><td class="n">$18,198</td><td class="n">$18,410</td><td class="n hi">2.79%</td><td class="n tgt">$299,852</td></tr>
+<tr data-b="d"><td class="rk">73</td><td class="ad"><span class="st">1967 Linn Lane</span><span class="sub">Las Vegas 89156 &middot; 6.8 mi &middot; built 1963 &middot; 4/4/2/2 &middot; 35 DOM</span><span class="fl">pre-1965 systems</span></td><td class="n">$724,900<span class="sub2">$181,225/unit</span></td><td class="n">$3,345<span class="sub2">4/4 leased</span></td><td class="n">18.06</td><td class="n">$19,970</td><td class="n">$18,965</td><td class="n hi">2.62%</td><td class="n tgt">$308,902</td></tr>
+<tr data-b="d"><td class="rk">74</td><td class="ad"><span class="st">2823 Wheelwright Drive</span><span class="sub">Las Vegas 89121 &middot; 4.6 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 49 DOM</span><span class="fl">HOA $500/mo</span></td><td class="n">$590,000<span class="sub2">$147,500/unit</span></td><td class="n">$3,170<span class="sub2">3/4 leased</span></td><td class="n">15.51</td><td class="n">$21,933</td><td class="n">$14,966</td><td class="n hi">2.54%</td><td class="n tgt">$243,760</td></tr>
+<tr data-b="d"><td class="rk">75</td><td class="ad"><span class="st">4622 Tracylynn Lane</span><span class="sub">Las Vegas 89121 &middot; 4.6 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 99 DOM</span><span class="fl">HOA $950/mo</span></td><td class="n">$559,000<span class="sub2">$139,750/unit</span></td><td class="n">$3,765<span class="sub2">4/4 leased</span></td><td class="n">12.37</td><td class="n">$29,774</td><td class="n">$14,051</td><td class="n hi">2.51%</td><td class="n tgt">$228,859</td></tr>
+<tr data-b="d"><td class="rk">76</td><td class="ad"><span class="st">2905 Elm Avenue</span><span class="sub">Las Vegas 89101 &middot; 4.1 mi &middot; built 1963 &middot; 2/2/2/2 &middot; 259 DOM</span><span class="fl">seller may carry &middot; pre-1965 systems &middot; downtown C-class</span></td><td class="n">$750,000<span class="sub2">$187,500/unit</span></td><td class="n">$3,900<span class="sub2">4/4 leased</span></td><td class="n">16.03</td><td class="n">$26,561</td><td class="n">$18,835</td><td class="n hi">2.51%</td><td class="n tgt">$306,785</td></tr>
+<tr data-b="d"><td class="rk">77</td><td class="ad"><span class="st">300 North 14th Street</span><span class="sub">Las Vegas 89101 &middot; 3.3 mi &middot; built 1946 &middot; 1/1/2/2 &middot; 447 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class</span></td><td class="n">$799,999<span class="sub2">$200,000/unit</span></td><td class="n">$3,200<span class="sub2">3/4 leased</span></td><td class="n">20.83</td><td class="n">$18,152</td><td class="n">$19,096</td><td class="n hi">2.39%</td><td class="n tgt">$311,026</td></tr>
+<tr data-b="d"><td class="rk">78</td><td class="ad"><span class="st">1872 Cosmic Drive</span><span class="sub">Las Vegas 89115 &middot; 5.2 mi &middot; built 1986 &middot; 2/2/2/2 &middot; 46 DOM</span><span class="fl">HOA $875/mo</span></td><td class="n">$555,000<span class="sub2">$138,750/unit</span></td><td class="n">$3,199<span class="sub2">4/4 leased</span></td><td class="n">14.46</td><td class="n">$24,392</td><td class="n">$12,845</td><td class="n hi">2.31%</td><td class="n tgt">$209,210</td></tr>
+<tr data-b="d"><td class="rk">79</td><td class="ad"><span class="st">5227 Greene Lane</span><span class="sub">Las Vegas 89119 &middot; 3.5 mi &middot; built 1977 &middot; 1/1/2/3 &middot; 50 DOM</span><span class="fl">HOA $810/mo</span></td><td class="n">$635,000<span class="sub2">$158,750/unit</span></td><td class="n">$2,996<span class="sub2">4/4 leased</span></td><td class="n">17.67</td><td class="n">$22,400</td><td class="n">$12,468</td><td class="n hi">1.96%</td><td class="n tgt">$203,072</td></tr>
+<tr data-b="d"><td class="rk">80</td><td class="ad"><span class="st">6982 Hopkins Drive</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1983 &middot; 3/3/3/3 &middot; 59 DOM</span><span class="fl">2/4 occupied</span></td><td class="n">$679,000<span class="sub2">$169,750/unit</span></td><td class="n">$2,580<span class="sub2">2/4 leased</span></td><td class="n">21.93</td><td class="n">$16,822</td><td class="n">$13,209</td><td class="n hi">1.95%</td><td class="n tgt">$215,149</td></tr>
+<tr data-b="d"><td class="rk">81</td><td class="ad"><span class="st">2501 Cedar Avenue</span><span class="sub">Las Vegas 89101 &middot; 4.1 mi &middot; built 1962 &middot; 2/1/1/2 &middot; 228 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class</span></td><td class="n">$580,000<span class="sub2">$145,000/unit</span></td><td class="n">$2,475<span class="sub2">3/4 leased</span></td><td class="n">19.53</td><td class="n">$17,865</td><td class="n">$10,944</td><td class="n hi">1.89%</td><td class="n tgt">$178,254</td></tr>
+<tr data-b="d"><td class="rk">82</td><td class="ad"><span class="st">1715 Santa Paula Drive</span><span class="sub">Las Vegas 89104 &middot; 2.0 mi &middot; built 1951 &middot; 2/2/2/2 &middot; 10 DOM</span><span class="fl">pre-1965 systems &middot; 2/4 occupied</span></td><td class="n">$599,000<span class="sub2">$149,750/unit</span></td><td class="n">$2,500<span class="sub2">2/4 leased</span></td><td class="n">19.97</td><td class="n">$17,988</td><td class="n">$11,112</td><td class="n hi">1.86%</td><td class="n tgt">$180,988</td></tr>
+<tr data-b="d"><td class="rk">83</td><td class="ad"><span class="st">2721 Eldora Circle</span><span class="sub">Las Vegas 89146 &middot; 1.2 mi &middot; built 1979 &middot; 2/2/2/2 &middot; 140 DOM</span><span class="fl">HOA $400/mo &middot; 2/4 occupied</span></td><td class="n">$725,000<span class="sub2">$181,250/unit</span></td><td class="n">$2,600<span class="sub2">2/4 leased</span></td><td class="n">23.24</td><td class="n">$17,841</td><td class="n">$12,423</td><td class="n hi">1.71%</td><td class="n tgt">$202,348</td></tr>
+<tr data-b="d"><td class="rk">84</td><td class="ad"><span class="st">2201 James Bilbray Drive</span><span class="sub">Las Vegas 89108 &middot; 4.4 mi &middot; built 1998 &middot; 2/2/2/2 &middot; 66 DOM</span><span class="fl">seller may carry &middot; HOA $1884/mo</span></td><td class="n">$815,000<span class="sub2">$203,750/unit</span></td><td class="n">$4,690<span class="sub2">4/4 leased</span></td><td class="n">14.48</td><td class="n">$40,864</td><td class="n">$13,727</td><td class="n hi">1.68%</td><td class="n tgt">$223,584</td></tr>
+<tr data-b="d"><td class="rk">85</td><td class="ad"><span class="st">1711 Santa Paula Drive</span><span class="sub">Las Vegas 89104 &middot; 2.0 mi &middot; built 1951 &middot; 2/2/2/2 &middot; 53 DOM</span><span class="fl">pre-1965 systems &middot; 2/4 occupied</span></td><td class="n">$599,999<span class="sub2">$150,000/unit</span></td><td class="n">$2,430<span class="sub2">2/4 leased</span></td><td class="n">20.58</td><td class="n">$18,191</td><td class="n">$10,094</td><td class="n hi">1.68%</td><td class="n tgt">$164,404</td></tr>
+<tr data-b="d"><td class="rk">86</td><td class="ad"><span class="st">6979 Issac Avenue</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1983 &middot; 2/2/2/2 &middot; 13 DOM</span><span class="fl">2/4 occupied</span></td><td class="n">$640,000<span class="sub2">$160,000/unit</span></td><td class="n">$2,300<span class="sub2">2/4 leased</span></td><td class="n">23.19</td><td class="n">$16,302</td><td class="n">$10,470</td><td class="n hi">1.64%</td><td class="n tgt">$170,534</td></tr>
+<tr data-b="d"><td class="rk">87</td><td class="ad"><span class="st">6217 Yerba Lane</span><span class="sub">Las Vegas 89108 &middot; 4.4 mi &middot; built 1985 &middot; 2/2/2/2 &middot; 341 DOM</span></td><td class="n">$769,000<span class="sub2">$192,250/unit</span></td><td class="n">$3,097<span class="sub2">4/4 leased</span></td><td class="n">20.69</td><td class="n">$24,263</td><td class="n">$11,788</td><td class="n hi">1.53%</td><td class="n tgt">$191,994</td></tr>
+<tr data-b="d"><td class="rk">88</td><td class="ad"><span class="st">2021 Daley Street</span><span class="sub">N. Las Vegas 89030 &middot; 5.3 mi &middot; built 1962 &middot; 2/2/1/2 &middot; 8 DOM</span><span class="fl">pre-1965 systems</span></td><td class="n">$575,000<span class="sub2">$143,750/unit</span></td><td class="n">$1,930<span class="sub2">3/4 leased</span></td><td class="n">24.83</td><td class="n">$16,415</td><td class="n">$6,050</td><td class="n hi">1.05%</td><td class="n tgt">$98,538</td></tr>
+<tr data-b="d"><td class="rk">89</td><td class="ad"><span class="st">6990 Dunsbach Way</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1983 &middot; 3/3/3/3 &middot; 59 DOM</span><span class="fl">2/4 occupied</span></td><td class="n">$775,000<span class="sub2">$193,750/unit</span></td><td class="n">$2,000<span class="sub2">2/4 leased</span></td><td class="n">32.29</td><td class="n">$15,709</td><td class="n">$7,571</td><td class="n hi">0.98%</td><td class="n tgt">$123,309</td></tr>
+<tr data-b="d"><td class="rk">90</td><td class="ad"><span class="st">905 East Bonanza Road</span><span class="sub">Las Vegas 89101 &middot; 3.9 mi &middot; built 1959 &middot; 2/2/2/2 &middot; 203 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class &middot; 2/4 occupied</span></td><td class="n">$490,000<span class="sub2">$122,500/unit</span></td><td class="n">$1,800<span class="sub2">2/4 leased</span></td><td class="n">22.69</td><td class="n">$16,247</td><td class="n">$4,705</td><td class="n hi">0.96%</td><td class="n tgt">$76,628</td></tr>
+<tr data-b="d"><td class="rk">91</td><td class="ad"><span class="st">716 North 11th Street</span><span class="sub">Las Vegas 89101 &middot; 3.9 mi &middot; built 1961 &middot; 2/2/2/2 &middot; 6 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class &middot; 1/4 occupied</span></td><td class="n">$674,888<span class="sub2">$168,722/unit</span></td><td class="n">$1,350<span class="sub2">1/4 leased</span></td><td class="n">41.66</td><td class="n">$13,741</td><td class="n">$1,973</td><td class="n hi">0.29%</td><td class="n tgt">$32,142</td></tr>
+<tr data-b="d"><td class="rk">92</td><td class="ad"><span class="st">6914 Appleton Drive</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1983 &middot; 2/2/2/2 &middot; None DOM</span><span class="fl">1/4 occupied</span></td><td class="n">$725,000<span class="sub2">$181,250/unit</span></td><td class="n">$1,300<span class="sub2">1/4 leased</span></td><td class="n">46.47</td><td class="n">$14,225</td><td class="n">$907</td><td class="n hi">0.13%</td><td class="n tgt">$14,770</td></tr>
+<tr data-b="d"><td class="rk">93</td><td class="ad"><span class="st">2341 Exeter Drive</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1983 &middot; 2/2/2/2 &middot; 18 DOM</span><span class="fl">1/4 occupied</span></td><td class="n">$680,000<span class="sub2">$170,000/unit</span></td><td class="n">$1,200<span class="sub2">1/4 leased</span></td><td class="n">47.22</td><td class="n">$14,104</td><td class="n">$-136</td><td class="n hi">-0.02%</td><td class="n tgt">n/a</td></tr>
+<tr data-b="d"><td class="rk">94</td><td class="ad"><span class="st">2317 North Jones Boulevard</span><span class="sub">Las Vegas 89108 &middot; 4.0 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 228 DOM</span><span class="fl">1/4 occupied</span></td><td class="n">$900,000<span class="sub2">$225,000/unit</span></td><td class="n">$1,400<span class="sub2">1/4 leased</span></td><td class="n">53.57</td><td class="n">$17,110</td><td class="n">$-814</td><td class="n hi">-0.09%</td><td class="n tgt">n/a</td></tr>
+<tr data-b="d"><td class="rk">95</td><td class="ad"><span class="st">2732 Alicialynn Way</span><span class="sub">Las Vegas 89121 &middot; 4.6 mi &middot; built 1984 &middot; 2/2/2/2 &middot; 36 DOM</span><span class="fl">HOA $975/mo &middot; 2/4 occupied</span></td><td class="n">$550,000<span class="sub2">$137,500/unit</span></td><td class="n">$1,920<span class="sub2">2/4 leased</span></td><td class="n">23.87</td><td class="n">$23,074</td><td class="n">$-725</td><td class="n hi">-0.13%</td><td class="n tgt">n/a</td></tr>
+<tr data-b="d"><td class="rk">96</td><td class="ad"><span class="st">6940 Hopkins Drive</span><span class="sub">Las Vegas 89156 &middot; 8.5 mi &middot; built 1983 &middot; 2/2/2/2 &middot; 18 DOM</span><span class="fl">1/4 occupied</span></td><td class="n">$675,000<span class="sub2">$168,750/unit</span></td><td class="n">$1,095<span class="sub2">1/4 leased</span></td><td class="n">51.37</td><td class="n">$13,875</td><td class="n">$-1,129</td><td class="n hi">-0.17%</td><td class="n tgt">n/a</td></tr>
+<tr data-b="d"><td class="rk">97</td><td class="ad"><span class="st">2529 Valley Street</span><span class="sub">Las Vegas 89101 &middot; 4.1 mi &middot; built 1959 &middot; 1/1/1/1 &middot; 203 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class &middot; no rent roll</span></td><td class="n">$435,000<span class="sub2">$108,750/unit</span></td><td class="n">none<span class="sub2">0/4 leased</span></td><td class="n">n/a</td><td class="n">n/a</td><td class="n">n/a</td><td class="n hi">-2.72%</td><td class="n tgt">n/a</td></tr>
+<tr data-b="d"><td class="rk">98</td><td class="ad"><span class="st">736 North 10th Street</span><span class="sub">Las Vegas 89101 &middot; 3.9 mi &middot; built 1955 &middot; 1/1/1/1 &middot; 203 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class &middot; no rent roll</span></td><td class="n">$498,000<span class="sub2">$124,500/unit</span></td><td class="n">none<span class="sub2">0/4 leased</span></td><td class="n">n/a</td><td class="n">n/a</td><td class="n">n/a</td><td class="n hi">-2.43%</td><td class="n tgt">n/a</td></tr>
+<tr data-b="d"><td class="rk">99</td><td class="ad"><span class="st">728 North 11th Street</span><span class="sub">Las Vegas 89101 &middot; 3.9 mi &middot; built 1962 &middot; 2/2/2/2 &middot; 203 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class &middot; no rent roll</span></td><td class="n">$498,000<span class="sub2">$124,500/unit</span></td><td class="n">none<span class="sub2">0/4 leased</span></td><td class="n">n/a</td><td class="n">n/a</td><td class="n">n/a</td><td class="n hi">-2.48%</td><td class="n tgt">n/a</td></tr>
+<tr data-b="d"><td class="rk">100</td><td class="ad"><span class="st">732 North 11th Street</span><span class="sub">Las Vegas 89101 &middot; 3.9 mi &middot; built 1961 &middot; 2/2/2/2 &middot; 203 DOM</span><span class="fl">pre-1965 systems &middot; downtown C-class &middot; no rent roll</span></td><td class="n">$498,000<span class="sub2">$124,500/unit</span></td><td class="n">none<span class="sub2">0/4 leased</span></td><td class="n">n/a</td><td class="n">n/a</td><td class="n">n/a</td><td class="n hi">-2.49%</td><td class="n tgt">n/a</td></tr>
+<tr data-b="d"><td class="rk">101</td><td class="ad"><span class="st">2527 Carroll Street</span><span class="sub">N. Las Vegas 89030 &middot; 6.1 mi &middot; built 1962 &middot; 2/2/2/1 &middot; 71 DOM</span><span class="fl">pre-1965 systems &middot; no rent roll</span></td><td class="n">$650,000<span class="sub2">$162,500/unit</span></td><td class="n">none<span class="sub2">0/4 leased</span></td><td class="n">n/a</td><td class="n">n/a</td><td class="n">n/a</td><td class="n hi">-1.65%</td><td class="n tgt">n/a</td></tr>
+<tr data-b="d"><td class="rk">102</td><td class="ad"><span class="st">3608 East Cheyenne Avenue</span><span class="sub">Las Vegas 89115 &middot; 6.8 mi &middot; built 1954 &middot; 3/3/3/3 &middot; 1 DOM</span><span class="fl">pre-1965 systems &middot; no rent roll</span></td><td class="n">$749,999<span class="sub2">$187,500/unit</span></td><td class="n">none<span class="sub2">0/4 leased</span></td><td class="n">n/a</td><td class="n">n/a</td><td class="n">n/a</td><td class="n hi">-2.37%</td><td class="n tgt">n/a</td></tr>
+    </tbody>
+  </table>
+  </div>
+</details>
+</section>
+<section class="stack">
+  <h2>How this was measured</h2>
+  <p class="lede">Everything here comes from the two MLS exports you sent, 110 Cross Property Agent Full detail sheets, parsed field by field.</p>
+  <ol class="av">
+    <li><b>Geography.</b> Each listing was placed by the township, range and section in its legal description, fit against known zip centroids, and measured from Sahara Avenue and Las Vegas Boulevard. Eight fell outside 15 miles and were removed: seven in Pahrump at 47 miles and one in Caliente at 108. That leaves the <b>102 buildings</b> shown. Nothing in Mesquite or Boulder City appeared in the export.</li>
+    <li><b>Income is collected rent.</b> Where the unit-level rent lines and the agent-stated gross income disagreed, the lower figure was used. Six buildings were corrected further from language in their own remarks. Vacant units contribute zero. No pro forma or market-rent figure appears anywhere on this page.</li>
+    <li><b>Expenses are built from parts, not from a ratio.</b> Taxes from the listed assessment grossed up 8 percent, insurance by construction vintage, HOA from the posted dues, utilities based on which ones the listing says are separately metered, 9 percent vacancy and credit loss, 8 to 10 percent management, a per-unit capital reserve, and turnover cost. The result runs a <b>46 percent median operating expense ratio</b>. Published cap rates were not used; one listing in the original 110 claimed a 92 percent NOI margin.</li>
+    <li><b>Cap rate is in-place NOI divided by asking price.</b> Nothing is adjusted for condition, and no growth is assumed.</li>
+    <li><b>Break-even is arithmetic from stated loan terms.</b> In-place NOI divided by 6.14 percent, which is annual debt service as a share of price at 25 percent down and 7.25 percent over 30 years. Change any of those inputs and the number changes. It describes the loan, not the building's worth.</li>
+  </ol>
+  <p class="lede" style="font-size:16px">The one structural observation the data supports: median in-place cap across these 102 buildings is <b>3.79 percent</b> while debt at the terms above costs <b>6.14 percent</b> of price per year. Two of the 96 buildings reporting rent produce enough in-place NOI to cover that at their asking price.</p>
+</section>
+<footer>
+  Sources: LVR MLS Cross Property Agent Full detail exports, 110 listings, parsed 2026-08-25. Distances measured from Sahara Avenue and Las Vegas Boulevard using the township, range and section in each legal description. Loan arithmetic assumes 25 percent down, 30-year conventional at 7.25 percent. Rent comps are 342 in-place leases drawn from the listings themselves.<br>
+  Nevada property tax does not reassess to sale price on transfer, so taxes were estimated from the listed assessment rather than from any purchase price. The 3 percent owner-occupied cap is lost on transfer and the 8 percent non-owner-occupied cap does not apply for the first fiscal year after a change of use. Verify with the Clark County Assessor.<br>
+  Operating expenses are estimates built from listing data, not from seller statements. Cap rates and break-even figures move with those estimates. Confirm rent rolls, leases, trailing 12-month statements, HOA dues and title condition in escrow before relying on anything here. This is a data summary, not an appraisal, a valuation, or investment advice.<br><br>
+  Ryan Rose &middot; Real Broker, LLC &middot; 702-747-5921 &middot; ryan@rosehomeslv.com &middot; rosehomeslv.com
+</footer>
+</div>

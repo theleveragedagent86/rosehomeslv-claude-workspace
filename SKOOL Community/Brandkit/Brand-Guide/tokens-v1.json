@@ -1,0 +1,33 @@
+{
+  "brand": "The Leveraged Agent",
+  "version": "1.0",
+  "set": "2026-08-19",
+  "note": "Canonical palette reconciled across the wordmark, monogram, and YouTube banner by pixel sampling. Supersedes the per-asset sampled values previously listed in Brandkit/CLAUDE.md.",
+  "color": {
+    "cream":      { "hex": "#F5F2EB", "role": "primary surface",              "source": "wordmark, 22.0% of all pixels, the single most common color in the artwork" },
+    "cream-sunk": { "hex": "#EAE6DA", "role": "sunken fill, dividers on cream","source": "derived from cream" },
+    "sage":       { "hex": "#B5CAC4", "role": "circuit traces, decorative only","source": "wordmark, dominant sage cluster" },
+    "teal-muted": { "hex": "#3E6B75", "role": "secondary text on cream, captions","source": "derived from teal" },
+    "teal":       { "hex": "#0F4C5C", "role": "primary ink, headlines, body",  "source": "banner flat fill, 26.9% of its teal cluster; monogram reads #104A56" },
+    "deep":       { "hex": "#08343E", "role": "dark surface",                  "source": "derived from teal" },
+    "gold":       { "hex": "#E8A33D", "role": "accent, never text on cream",   "source": "banner flat fill, 91.9% of its gold cluster; monogram reads #E8A232" },
+    "gold-ink":   { "hex": "#925E11", "role": "gold when it must be readable text on cream", "source": "derived, same hue and saturation as gold, lightness dropped to pass AA" }
+  },
+  "type": {
+    "headline": { "family": "Poppins", "weights": [600, 700], "tracking": "-0.02em" },
+    "body":     { "family": "Inter",   "weights": [400, 500], "lineHeight": 1.5 },
+    "note": "Set by Ryan 2026-08-18. Does NOT apply to the YouTube thumbnail template, which is locked to its own stack."
+  },
+  "logo": {
+    "clearSpace": "8% of the placed logo height, all four sides",
+    "minSize": {
+      "wordmark": { "screen": "240px wide", "print": "1.25in / 32mm wide" },
+      "monogram": { "screen": "32px", "faviconException": "16px" }
+    },
+    "measured": {
+      "wordmarkCapHeight": "97px at native 1424x752",
+      "wordmarkTaglineCapHeight": "53px at native 1424x752",
+      "monogramMarkWidth": "358px of 1024, 35% of the canvas"
+    }
+  }
+}

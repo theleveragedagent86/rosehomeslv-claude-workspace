@@ -1,0 +1,88 @@
+{
+  "palette": "v4-ultramarine",
+  "label": "Ultramarine",
+  "mood": "Electric, modern, high-trust. Reads tech-forward.",
+  "status": "proposed, not adopted",
+  "proposed": "2026-08-19",
+  "supersedes": null,
+  "note": "One accent only, no --la-accent-2. #1768E5 clears AA in both directions, 5.06:1 as text on white and 5.06:1 for white on it, so accent and accent-txt are the same value. This is the whole reason to prefer it over the old gold.",
+  "evidence": "ink #050E3D is Real Broker's measured ink. accent #1768E5 is Tom Ferry's measured CTA blue. Serhant's only accent is navy #001A72.",
+  "colors": {
+    "bg": {
+      "hex": "#FFFFFF",
+      "role": "primary surface, pure white"
+    },
+    "bg-2": {
+      "hex": "#F7F8FA",
+      "role": "sunken fill, table rows, inset panels"
+    },
+    "bg-inv": {
+      "hex": "#050E3D",
+      "role": "inverted surface, navy near-black"
+    },
+    "line": {
+      "hex": "#E4E7EF",
+      "role": "hairline and divider on bg, non-text"
+    },
+    "structure": {
+      "hex": "#0B3FA8",
+      "role": "deep blue, chart bars, structural fills, large headings"
+    },
+    "ink": {
+      "hex": "#050E3D",
+      "role": "primary text on bg"
+    },
+    "ink-2": {
+      "hex": "#55627F",
+      "role": "secondary text on bg and bg-2"
+    },
+    "ink-inv": {
+      "hex": "#FFFFFF",
+      "role": "primary text on bg-inv"
+    },
+    "ink-2-inv": {
+      "hex": "#6A7CAF",
+      "role": "secondary text on bg-inv"
+    },
+    "accent": {
+      "hex": "#1768E5",
+      "role": "THE accent, fills, buttons, links"
+    },
+    "accent-on": {
+      "hex": "#FFFFFF",
+      "role": "text placed ON accent"
+    },
+    "accent-txt": {
+      "hex": "#1768E5",
+      "role": "accent used AS text on bg or bg-2"
+    },
+    "accent-inv": {
+      "hex": "#5B9BFF",
+      "role": "accent used AS text on bg-inv"
+    }
+  },
+  "contrast": {
+    "ink_on_bg": 18.48,
+    "ink_on_bg-2": 17.39,
+    "ink-2_on_bg": 6.11,
+    "ink-2_on_bg-2": 5.75,
+    "structure_on_bg": 9.17,
+    "structure_on_bg-2": 8.63,
+    "ink-inv_on_bg-inv": 18.48,
+    "ink-2-inv_on_bg-inv": 4.5,
+    "accent-on_on_accent": 5.06,
+    "accent-txt_on_bg": 5.06,
+    "accent-txt_on_bg-2": 4.76,
+    "accent-inv_on_bg-inv": 6.67,
+    "line_on_bg": 1.24,
+    "FAIL_raw_accent_on_bg-inv": 3.65
+  },
+  "type": {
+    "font-head": "\"Poppins\", \"Futura\", \"Avenir Next\", sans-serif",
+    "font-body": "\"Inter\", -apple-system, \"Helvetica Neue\", sans-serif",
+    "weight-head": 800,
+    "track-head": "-0.03em",
+    "track-label": "0.14em",
+    "lh-body": "1.55"
+  }
+}

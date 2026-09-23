@@ -1,0 +1,140 @@
+{
+  "_README": "One of these per deal. Lives at <address-slug>/transaction.json. This file is the single source of truth for the transaction. Nothing in the deal gets typed twice. Delete this _README line before use.",
+  "address": "",
+  "address_slug": "",
+  "type": "buyer-resale | buyer-new-construction | seller",
+  "status": "active | pending | closed | cancelled",
+  "dual_agency": false,
+  "dual_agency_note": "",
+  "mls_id": "",
+  "apn": "",
+  "list_price": 0,
+  "purchase_price": 0,
+  "loan_amount": null,
+  "loan_type": "",
+  "contract_date": "",
+  "acceptance_date": "",
+  "coe_date": "",
+  "buyer": {
+    "name": "",
+    "email": "",
+    "phone": ""
+  },
+  "seller": {
+    "name": "",
+    "contact_name": "",
+    "email": "",
+    "phone": ""
+  },
+  "buyer_agent": {
+    "name": "",
+    "email": "",
+    "broker": ""
+  },
+  "listing_agent": {
+    "name": "",
+    "email": "",
+    "broker": ""
+  },
+  "listing_agent_tc": {
+    "name": "",
+    "email": ""
+  },
+  "escrow": {
+    "company": "",
+    "number": "",
+    "officer_name": "",
+    "officer_title": "",
+    "officer_email": "",
+    "officer_phone_office": "",
+    "officer_phone_cell": "",
+    "address": ""
+  },
+  "lender": {
+    "name": "",
+    "company": "",
+    "email": "",
+    "phone": "",
+    "nmls": "",
+    "address": ""
+  },
+  "inspector": {
+    "name": "",
+    "email": "",
+    "phone": ""
+  },
+  "builder": {
+    "name": "",
+    "rep_name": "",
+    "rep_email": ""
+  },
+  "referring_agent": {
+    "name": "",
+    "company": "",
+    "email": "",
+    "phone": "",
+    "license": "",
+    "note": ""
+  },
+  "financial": {
+    "emd": 0,
+    "emd_method": "",
+    "loan_amount": 0,
+    "loan_type": "",
+    "down_payment": 0,
+    "buyer_broker_comp_pct": 0,
+    "home_protection_plan": {
+      "required": false,
+      "paid_by": "",
+      "max_amount": 0,
+      "provider": ""
+    }
+  },
+  "_DATES_NOTE": "Every value below comes off the executed contract, not memory. Fill these in one pass the day the contract is executed. Delete this line before use.",
+  "contract_dates": {
+    "acceptance": "",
+    "open_escrow_deadline": "",
+    "emd_deadline": "",
+    "loan_application_deadline": "",
+    "preapproval_letter_deadline": "",
+    "hoa_resale_request_deadline": "",
+    "utilities_on_deadline": "",
+    "seller_disclosures_deadline": "",
+    "due_diligence_deadline": "",
+    "appraisal_contingency_deadline": "",
+    "ptr_delivery_deadline": "",
+    "hoa_cancel_right_deadline": "",
+    "loan_contingency_deadline": "",
+    "seller_vacate_deadline": "",
+    "walkthrough_window_start": "",
+    "walkthrough_window_end": "",
+    "coe": ""
+  },
+  "fee_splits": {
+    "escrow_fees": "",
+    "lenders_title_policy": "",
+    "owners_title_policy": "",
+    "real_property_transfer_tax": "",
+    "appraisal": "",
+    "home_inspection": "",
+    "termite_inspection": "",
+    "cic_demand": "",
+    "cic_capital_contribution": "",
+    "cic_final_inspection": "",
+    "cic_transfer_fee": ""
+  },
+  "additional_terms": [],
+  "leaseback": {
+    "days": null,
+    "start": "",
+    "security_deposit": null,
+    "terms": ""
+  },
+  "disclosures_required": [],
+  "completed_steps": [],
+  "triggered_events": [],
+  "next_step": null,
+  "next_step_date": null,
+  "created_at": "",
+  "closed_date": ""
+}

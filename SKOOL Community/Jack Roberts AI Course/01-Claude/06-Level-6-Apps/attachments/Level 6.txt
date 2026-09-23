@@ -1,0 +1,1039 @@
+ Hey there, beautiful AI automator and welcome to level six.
+ We're going to talk about apps.
+ Now, by the end of this module, you're going to start some pretty cool stuff.
+ First of all, we're going to cover app architecture, front-end, back-end, autom
+ations, integrations.
+ We're going to go through the blast framework for building anything on any app
+ that we want.
+ We're going to cover sign-in flows.
+ We're going to understand what is modal, what the hell is going on, some
+ different bits
+ and pieces you're going to find quite interesting.
+ I'm going to touch on how we follow up and then we're also going to go ahead
+ and integrate
+ stripes.
+ We're going to take payments for these things if you would like to.
+ Let's begin from the top on apps and what this actually means.
+ First of all, we can build essentially apps in less than 60 minutes.
+ This is the huge unlock.
+ I remember my last tech started at my CTO, which I bought on board, and funnily
+ enough,
+ all the stuff that I had a technical team to do at that time, I could now do
+ with AI.
+ That's where we're at.
+ I remember once I once asked him, I said, "We need this full dashboard.
+ How long will that take?"
+ I said, "Probably three months.
+ Now you'll be looking at maybe 30 minutes maximum."
+ Also, it looks perfect, which is awesome.
+ The idea with this is we are going to build beautiful apps and the central
+ philosophy that
+ we have here is if you can imagine it, you can build it.
+ Effectively, we're limited now by our imagination.
+ A couple of things we want to understand here.
+ LLMs themselves are probabilistic, but when we're building apps and stuff,
+ there are certain
+ areas in which we want to be a little bit more deterministic.
+ This is one of the big differences between how language models work.
+ In other words, if you ask a language model the same question 100 times, you
+ will often
+ get 100 different answers.
+ It's important to bear their mind when we're thinking about how we integrate AI
+ into our
+ apps and systems.
+ In our last module on websites, which was the level, I believe that was the
+ level three,
+ we built, in fact, it was level four, right?
+ Now, level two, I get it right, build the website and your display.
+ We built this beautiful website.
+ Very cool.
+ We like it.
+ Very good.
+ That's what I mentioned now, too.
+ What if I want to capture emails?
+ Well, great question.
+ Let's first start by figuring out how we can capture emails and then store
+ those emails
+ in a real cool database and or send them off to our CRM, which is I'm pretty
+ cool, right?
+ Now, let's say that our offer is we want to sign up, we're going to send you a
+ free
+ search and search.
+ How would we physically do that?
+ Well, the first thing we want to do is open up the beautiful cloud code, and
+ when we're
+ here, I've got this one here.
+ Great.
+ What I'm going to do here is full screen is bad boy, and we're going to start a
+ conversation.
+ So here we go.
+ I would like to go ahead for me and add in an email capture.
+ Okay.
+ And effectively, what we're going to have is the ability to ask for that name.
+ We're going to ask for their email, and then we're going to ask them one other
+ question.
+ So that other question could be something like, let's see, how much money are
+ you making
+ and give them five options from zero to $1,000 all the way up to $1 million
+ plus.
+ And then based on that, we can track and save that.
+ And then the fourth one should be, what is the biggest problem that you have
+ right now?
+ All right.
+ Now, when that's done, I would like it to go ahead and save all of that
+ information
+ into Superbase.
+ And once we've done that, we're then going to go ahead and connect that to our
+ CRM.
+ So first of all, beautiful design.
+ There's four or five questions, and then we're going to go ahead and connect
+ that to Superbase.
+ Now, why are we doing that in Superbase?
+ Good question.
+ Superbase is essentially Microsoft Excel that's been hit by Jim on a six-year
+ protocol, loaded
+ Mexican supplements, and it's been on storage, basically.
+ It's an awesome place for us to store everything that we need to.
+ For example, when you look at aiwithjap.com, which is our community exclusive
+ system that
+ stores loads of stuff from YouTube chat, community search, all the accounts
+ that we have that
+ have been created with this are actually stored in Superbase, our Texas speech
+ startup Glider.
+ We use Superbase.
+ So Superbase is just this wonderful, brilliant place to store all of this
+ knowledge, which
+ is fantastic.
+ So the idea is that we're going to capture this information from the customer,
+ but we
+ need somewhere to physically store it.
+ So we need a point of record that contains all of this information, and then
+ once we
+ have it in Superbase, we can effectively build anything that we want to.
+ So I'm going to come back over now.
+ I'm going to see this here.
+ So do you want to quote any project for Northline, which is recommended, or use
+ an existing
+ project mine?
+ We're going to say, hey, go ahead and create a brand new one.
+ That'd be fantastic.
+ And then we're going to hijack existing CTA's into multi step model.
+ That sounds great.
+ So let's do that.
+ I'm going to say, awesome, let's add a CTA.
+ So the offer, well, I want some kind of offer, like, let's say, claim your free
+ X or it needs
+ to be relevant to the proposition that we've got.
+ So it needs to be a small snack size thing that somebody on our page would
+ actually want.
+ Okay, beautiful.
+ Come down and submit on that.
+ And then it's going to go ahead and do it.
+ Now we can just connect effectively what we're going to do now is connect to
+ Superbase
+ via Claude.
+ Well, before we do that, we've got a few more questions.
+ So three five minute website, tear down.
+ That's a really cool little one we could add actually free call web vitals.
+ The web vitals is not so cool, free 20 minute call.
+ I think the website tear down is good, right?
+ So you could say we've added, for instance, thousands of dollars, like one
+ single change
+ in your website could make you tens of thousands of dollars.
+ I'm going to give you a completely free breakdown, blah, blah, blah, and then
+ this is an excuse
+ to send a loomie.
+ So you're going to get this is in 24 hours personalized to your inbox, which is
+ really
+ cool, right?
+ Then we could do something falling up with that.
+ So what we need to do now is effectively connect this to Superbase, so click on
+ the plus, click
+ on connectors.
+ I've already got Superbase, but if you haven't, you'll remember from earlier
+ modules, exactly
+ how to do that.
+ Now I believe that Superbase is a pre-authorized connection.
+ So Claude and browse connectors, and we should see Superbase down here.
+ If I type in men, there it is.
+ We click on them and all you're going to do is just connect it.
+ It will open up a new window and then from that window you can connect it
+ together and
+ then you'll be ready to rock and roll with wonderful Superbase and basically
+ just connect
+ everything.
+ And if you can see guys, it's gone ahead and created it, so if I come back over
+ to Superbase,
+ you can see Northline has magically, mystically appeared.
+ So now we have our own very own Superbase project and this could be where we
+ store all
+ of our data.
+ Now there are so many different ways that we could do it, different places we
+ could store
+ it, but Superbase is great, very easy to get in and they've got a very user-
+friendly API
+ and MCP, which you just connect, correct account, completely free, sync it up,
+ and then you're
+ going to be able to rock and roll.
+ Okay, great.
+ Got it.
+ Let's take a look to see what the actual sign-up form looks like.
+ So have we got it on the page?
+ I'm scrolling down and do I see it?
+ Five free, five minute tag on, claim your free tag on.
+ All right, cool.
+ We click on this.
+ What's my name?
+ My name is Santa.
+ Was it Jack?
+ Where should we send it?
+ And email address.
+ Come down.
+ What's your up?
+ Okay, cool.
+ So quick thing.
+ I'm going to come back over.
+ We want to improve this.
+ This is not my Instagram tracker.
+ I'm going to go over here and give it some info.
+ So first of all, dude, I would like the first question to be visible.
+ When I look at it, it's not really clear what I'm clicking on.
+ In addition to that, when information is complete, I want you to save that for
+ me in
+ Superbase.
+ And then I'd like you to add it to BeHive, which is my email database.
+ Okay.
+ Now, with that in mind, tell me what you require for me to set that up with BeH
+ive, and then
+ we're going to do a full run through together.
+ And then we'll just send that one off.
+ So then we have a question.
+ Tag, tag, tag down leads and BeHive.
+ Yep, let's do it.
+ Because in BeHive, you can tag them now.
+ Whether you're using BeHive or go high level or any, like a Brevo, it doesn't
+ matter.
+ It's the exact same process.
+ All we're saying is, hey, Claude, tell me what do you need to connect to the
+ thing.
+ That's literally it.
+ And then whenever it says, we give it teaching you how to fish, you'll eat fish
+ for a lifetime.
+ So, yep.
+ Go ahead and tag them.
+ That's fine.
+ It's a hit.
+ BeHive, welcome.
+ You want trigger BeHive's welcome automation recommended.
+ I'm going to say no for this just because I'm doing it as a demo for you, which
+ is fine.
+ Skip double opt-in.
+ So, on emails, basically, the liberability has came.
+ So, if you don't do this and the leak quality is high, then don't worry about
+ the block
+ tim.
+ If a leak quality is questionable, double opt-in means, hey, you said you
+ wanted it, it'll
+ say great.
+ To confirm this, click this button.
+ That keeps your deliverability high.
+ I actually remove people that don't read emails because it's just not good for
+ the quality
+ and health of your email garden.
+ So, I would usually go for do the double opt-in.
+ Again, it says you'll lose about 30% of growth, but, again, it's quality of a
+ quantity, and
+ what good is an email list if nobody reads it.
+ So, it's asking for the BeHive API key, which is fantastic, and a publication
+ ID, and it
+ shows the format.
+ Cool.
+ So, what we're going to do is I'm going to swing over now to this page here,
+ and I have
+ BeHive right here, which is this beautiful thing.
+ I'm not a big fan of the black design, actually, but what we're going to do is
+ you can come
+ over on the left-hand side to API, and over here, I've got the API, and what
+ will happen
+ to know is if you can get the API, you can actually get the publication ID
+ yourself.
+ So, I'm going to go ahead and create a new API key and get this one set up.
+ I'm going to call this one, test, or 6.5, 6.5, come down and create a new key.
+ And then, once you've done that, you're just going to simply copy that key,
+ head back over
+ to Claude, and just drop it over there.
+ You'll be ready to go.
+ Okay, beautiful.
+ So, now, I've been opened up.
+ Here's a website.
+ We can scroll down now.
+ We can have a look at our great and wonderful teardown.
+ Your free five-minute teardown, I'm going to do, actually, I want a little bit
+ of a blender
+ on that.
+ Hey, do me a quick favor.
+ I would like, in fact, I would like a kind of beautiful, even in the multi-
+chloric gradient
+ we've got on websites, let's just add that as a subtle, little distinction
+ around the
+ bottom.
+ Do you know how, kind of, outside of it, so it draws you in a little bit on the
+ actual
+ CT?
+ I think that would be really nice.
+ Now, here's a key thing that's going to happen here, and I want this to sink in
+.
+ On a front-end website, we can't connect it directly to BeHive, because to do
+ that, we'd
+ have to expose our API key, basically.
+ What we do instead is we send them to Superbase, and then essentially, what's
+ happening here
+ is Superbase can let you run scripts.
+ You don't have to know anything about it, but Claude will effectively set up
+ automations
+ in Superbase such that whenever an email and a name hits this table, send this
+ over to
+ Superbase, and that's exactly how it's all connected.
+ For instance, let's go through this and figure it out.
+ My name is Jack.
+ Let's have a look.
+ Where should we send it?
+ Let's add this email address, and click on Continue, which site should we share
+ down?
+ glido.com.
+ Whatever we want to add in there, click on Continue, roughly where's the
+ business at?
+ I mean, this is not bad, right?
+ Let's say we're growing at this level.
+ The biggest thing that's coming down right now is the lack of coffee in this
+ room, okay?
+ True story.
+ Or maybe it isn't.
+ Let's send it off.
+ You're 10 down and coming.
+ I like confetti.
+ Hey, dude, give me favor.
+ I'd also have confetti once that has sent off and complete, please.
+ Then what we also need to do, dude, is really explain why.
+ Instead of three five minutes head-on for your site, just say one insight could
+ make
+ you $10,000.
+ Then underneath, grab your three five minutes head-on from our growth experts,
+ something
+ like that.
+ It's a little bit more interesting.
+ Why don't we also hit the top?
+ Maybe tear down, or should we say what would be a better way of explaining that
+?
+ Maybe something like roast.
+ I think tear down's okay, but I'm just bit bullying ideas, okay?
+ The main CTA at the top doesn't have to be tear down per se, all right, and I'm
+ going
+ to send this bad boy off.
+ Now that's done.
+ That's all been done.
+ We want a validate that exists.
+ If I click on Northland over here, let's go over now to the table editor on the
+ top left.
+ I just want to show you that this exists.
+ I click on Leads.
+ Do I see my lead?
+ We will know if I do appear and look at this Jack, email, glider.
+ So this is all done and stored.
+ And if I want to have a dash, but it looks at this, I can do that no frickin
+ problem
+ at all.
+ And I can even head over to BeHive and check what's going on with that directly
+ right within
+ my actual list.
+ And now we've got the system running up now.
+ And again, to publish to Vercel, we'll just say, hey, dude, go ahead and
+ publish these
+ changes to the GitHub and live on Vercel.
+ What that affects for me is no matter whatever the hell we're doing.
+ This is going to run on the background for us and we'll capture as emails.
+ But the next thing that I kind of want to do is build a bit of a backend
+ dashboard to
+ this fryer.
+ So we've got a nice website.
+ It's cool.
+ But what if I want to have a login section?
+ What if I want to have some products behind that?
+ Well, to do that, we can literally just do this.
+ Hey, man, I would now like a sign up and login section.
+ I want all of it authenticated and managed in Superbase.
+ I'd like the ability for the user to create an account, okay?
+ Sign in.
+ I want to sign in.
+ I want to see, for example, their website.
+ In fact, why don't we turn the tab down into a creating account section?
+ Or maybe they can log in and sign up and when they log in there, I just want a
+ beautiful
+ gorgeous dashboard in the exact same style of the website and we're going to
+ show them
+ some different metrics.
+ Maybe we could scrape some stuff from their website running a script in the
+ background.
+ Maybe we could run through some SEO analysis.
+ Why don't we go ahead and look for some get-ups that let us do that and just
+ make that page
+ as valuable as humanly possible and I want that to be all connected,
+ authenticated and
+ connected to Superbase.
+ You'll notice, I basically just yapped, told it to do things and I send it off.
+ You'll notice that's going to be a little bit of a pattern that we have right
+ now.
+ We're going to do this.
+ I want to have done that and then I'm going to show you how we can even, if we
+ wanted
+ to, collect payments, which can put dollar signs into your bank account.
+ And I remember the example is irrelevant, right?
+ Oh, actually, I need to ask to do this as well.
+ Hang on a second.
+ We need to get rid of this because this is too crazy.
+ I also needed to remove this from the website.
+ I don't like the section where it says booking projects for Q3.
+ It's not what I want.
+ And look at that.
+ Did you see that?
+ Confetti.
+ Do you see how it just elevates?
+ Ever so slightly the design of it.
+ And then what it also might do is say, "Hey, also, I want to change the video
+ asset we
+ have on the home page.
+ I want to change that to just a standard, beautiful laptop with an image that
+ has the
+ right level of white space in it."
+ Okay? And then actually, what you also want to see is I want you to remove
+ selected work.
+ And I want to have some kind of credibility that we are GDPR, HIPAA, and also
+ some other
+ kind of like heavy compliance thing as well.
+ We need to show that under the 10K insight because we're not showing enough
+ reviews yet.
+ We want to really bump up that credibility.
+ All right.
+ I'm going to send that one off there.
+ Why am I doing that?
+ The video animation is cool, but maybe you want to go with the image and you
+ can literally,
+ as you're seeing here, just change this around as and when we want to, then we
+ send that
+ one off.
+ And then essentially called is just going to work for us in the background.
+ And you know, we're at a level now where we're basically speaking to websites.
+ That's essentially what's happening where we are speaking and things are
+ happening.
+ And once we give it the right connections, we effectively build anything that
+ we freaking
+ want to.
+ So it's really cool.
+ It's coming and asking the cloud for country questions.
+ How should the signups work?
+ So do we keep the head down?
+ If you leave the magnet and add a separate signup, or do you want to keep it as
+ part
+ of one?
+ So we're going to do this with the recommended option.
+ And then we've got magic link, which is awesome.
+ And then we have you build, ship the full version first.
+ Let's go ahead and do that and rock and roll.
+ Now, cool thing going to do in your super base if you have not already is the
+ following.
+ Okay.
+ So I've opened up super base.
+ I believe now we're going to come down here to the project settings on the
+ bottom left.
+ And then you're going to see down here your API keys, integrations,
+ infrastructure.
+ I want you to come over and I think it is under security.
+ I apologize.
+ Actually, it's authentication.
+ And on the left hand side, you're going to come down to at the bottom.
+ It's going to be sign in providers.
+ All right.
+ And what I want you to do is just on toggle this confirm email.
+ What is effective means is we're going to let people just what we're building
+ the app actually
+ create the account without confirming the email.
+ Once we go live, you are going to re-enable this because you will be amazed at
+ the amount
+ of spammers that come in.
+ I mean, I just talk about spammers and bells start going off, but you'll be
+ amazed about
+ people who try to just fudge things.
+ So we'll just turn that off for your sanity while you're doing this.
+ And the other cool thing here about Superbase is you see all these different
+ things here.
+ We can have a, hey, sign in with Google, by the way, heavily, heavily, heavily
+ recommend.
+ You have a sign in with Google, one click sign in, it's standard now, but you
+ can get
+ up as a good one.
+ And so is Google.
+ So just make sure you just turn that off for me while it's running through just
+ to make
+ testing easier.
+ Beautiful.
+ It's not ran in the background.
+ It's done a great job.
+ Now, the context is getting a little on the heavier side.
+ So what I'm going to do is come down here.
+ I'm going to do a forge slash and I'm going to compact this conversation.
+ So it retains the context and it will work very well for us.
+ So let's go ahead and check out what this looks like.
+ So I'm on the website.
+ Let's scroll down a little bit.
+ If you've got everything in here, going to come down to the bottom, one in
+ sight, can
+ make you $10,000.
+ I'm just going to refine the background a little bit on this.
+ I think it's too much.
+ I want to be multi caloric.
+ I'm going to come back and give it about feedback.
+ We can do that as a combination with everything else we're doing.
+ So first name is Jack.
+ Let's get over here and we'll type in Jack, come down and get started.
+ The email can be this with some spaces in it, which type should we tie down?
+ Let's just do glider.com, hit enter.
+ We are $1,000 plus.
+ I would like to get more traffic to my beautiful websites.
+ All right.
+ I'm going to come down here, click on clear my tie down.
+ This is not loading, which is great.
+ I'm going to confetti.
+ We all love a good, beautiful confetti.
+ Spinning up your dashboard, logging in and analyzing your site, hang tight.
+ This takes a second.
+ Cool.
+ So it's logged soon, but it didn't ask for a password.
+ Wow, guys.
+ Look at this.
+ You just automatically scrape all the stuff because I give it that beautiful
+ prompt.
+ So we need to go back, give it the feedback and say, hey, we need to ask them
+ to basically
+ provide a password as they're logging in.
+ Now, as you can see here, I've given it some for the feedback that I wanted to
+ go ahead.
+ They need to create a password before they sign up and I just want those
+ changes made
+ to the password sign up so it can be ready to rock and roll.
+ And this is basically it.
+ We give it some feedback.
+ We come back and then we keep going around until it's at a position that we're
+ really
+ happy with.
+ All right, guys.
+ So now it's done.
+ I'm going to come back over.
+ We are going to refresh this page.
+ Okay.
+ So I'm going to sign out around now and let's have a look at this.
+ So I need to change this design because it's got too much height on it.
+ You see how I click this image?
+ It's got too much height above and below because I decided to go for a static
+ image on this
+ one.
+ So what I effectively need to do is come back over and just give that feedback
+ real quick
+ so it can work on that in the background.
+ Let's copy the screen, come down, shoot back over and say, hey, there, my man,
+ there's still
+ way too much height above and below.
+ I think the image is too tall.
+ Don't just crop some of that image down so it fits in perfectly.
+ Thank you.
+ All right.
+ And then we're going to come down.
+ I'm going to throw in the image and then we come back over.
+ Now let's go down and rest my site.
+ What's my name?
+ I go for Jack.
+ Continue.
+ Company is this one with a few random things.
+ Our site can be Lido.com hit enter.
+ I love I can enter and go.
+ That's really cool.
+ So scale is one million plus.
+ I would like to get more visitors to my traffic.
+ Actually, what I could do here to be found is we could even have AI analyzed
+ like this
+ specific sign here, which is cool.
+ Click on continue.
+ Create a password.
+ Babes created a brave is greatly random crazy password.
+ So I'm just going to copy this as well.
+ Create account claim to add on.
+ Okay.
+ When we've seen our confetti, there we go.
+ I like it.
+ That's cool.
+ Spinning up dashboard.
+ Also, adding learning animation when you spin up dashboard, a little side note,
+ I don't
+ like black confetti pieces.
+ Just change that to something else.
+ And if the confetti can originate from the central box rather than just running
+ mean
+ scattered out, I think that'd be a nice design improvement.
+ Okay.
+ Throw that in.
+ Come back over.
+ Here we go.
+ Here's your teardown Jack.
+ Wow.
+ And now we have a beautiful dashboard.
+ Look at this.
+ Teardown.
+ Stop tight.
+ This is interesting.
+ So you get the idea, we can basically play around with this now and have a good
+ time.
+ So if I duplicate this page, real quick, because I don't have my password, I'm
+ going
+ to sign out.
+ I'm going to log in and then we'll need the password.
+ So this, I just remembered it.
+ I click on this.
+ Do I log in?
+ Does that happen?
+ And we're around.
+ So now we have full password authentication.
+ One thing to do is to push this one live to the cell.
+ I'm going to say, hey, though, I'd like to go ahead and push this live to the
+ cell for
+ me when these changes are complete and then send that off.
+ Now the next thing I want to do realistically is show you how you can collect
+ payments.
+ Now, think about it like this, essentially anything you imagine, you can
+ integrate.
+ Now if you know how to integrate PayPal, which is one of the trickier ones, you
+ can effectively
+ do anything that you want to, right?
+ So I wonder if we could have in here a premium feature, and then maybe we could
+ have like
+ a standard feature, right?
+ So how would we do that?
+ Well, we'd come back over.
+ Now here's the thing.
+ This is busy working on most changes in the background, but what we can do
+ within Cloud
+ is create what's called a fork.
+ And you can see on the left hand side here, I've got different things.
+ Now I can right click on this.
+ I can rename.
+ I'm going to call this one or call this one BTG.
+ I just call this AI jack website, OK?
+ Now, what I would do is I'd come down here and click on Zara's, I'd come down
+ and click
+ on fork, and now I'm on AI jack website fork, which I'm going to bring up for
+ my reasons.
+ Now effectively here, I've got the same AI jack website, but it's like a new
+ window.
+ So this can now work on something different with all the previous contacts.
+ So I can come down here, click on rename, and call this AI website, AI jack
+ website,
+ and then call this one pay actually course on stripe, right?
+ Beautiful.
+ So now let's do this.
+ Hey there.
+ I'd like to integrate stripe.
+ What I would love to happen in the dashboard section is a basically color in
+ there and
+ effectively I want standard and I want premium.
+ Premium is going to be £10 a month to sign up, OK?
+ Now what I want you to do is walk me through how to set up stripe and as
+ succinct what
+ is possible, checking the very latest documentation with clear instructions no
+ longer than they
+ need to be.
+ And I'm going to give you the requisite files.
+ Your objective is to require as little from me as possible in the setup of this
+, making
+ it as secure as possible at the same time.
+ I'm going to send that prompt off and then we can begin.
+ Now I actually know how to integrate stripes in several times, but I'm really
+ more just
+ showing you this because I want you to know how to problem solve and build your
+ way through
+ everything.
+ AI has the answers and knows how to do many different things.
+ We're just going to prompt it to do that.
+ But what we're definitely, definitely, definitely going to need is a stripe
+ account.
+ So what I want you to do now is head over to stripe.com and create a brand new
+ account.
+ OK, cool.
+ So I am in a fake, some say it's fake, Santa is actually real, fake account in
+ Sandbox.
+ You can switch Sandbox by the way by clicking up here and you can enter Sandbox
+ or exit
+ Sandbox.
+ While we're testing or we're getting everything correct, we always use Sandbox.
+ It's fake.
+ All the credentials aren't real.
+ And then we can do essentially anything that we like to with them, which is
+ very cool.
+ So we come back over and say, hey, do you have a secret kit?
+ I'll grab my test, super clean now.
+ You have an account.
+ Go to the dashboardstrap.com developers API keys, copy, secret key.
+ All right, cool.
+ Let's go find our super key.
+ Would you believe?
+ Oh, my gosh, let's try that.
+ We come back over just like that and we paste it in.
+ Sweet.
+ Actually, I can just tell them.
+ I think we've got next.
+ Free.
+ This is pretty simple.
+ Happy with my proposal.
+ Yes, that's fine.
+ Go ahead and do that.
+ Sweet.
+ And then I'll need to know products.
+ So of course we need to have a product.
+ If I click on products, you can if you want to under product catalogs, create
+ your own beautiful
+ products by coming up here, click on create a product.
+ We can type in the name together.
+ We can type in the description together and upload an image.
+ So let's go ahead and call this one website max.
+ All right.
+ And what we're going to do as well is say daily insights to grow your bottom
+ line through
+ an optimized website.
+ Okay, that wouldn't be the best thing, but you get the idea and we're going to
+ upload
+ an image.
+ So let's go ahead and grab a random image that we have on our computer who
+ knows what
+ we're going to find.
+ It could be anything.
+ Let's give the Hermes logo.
+ Sweet.
+ Okay.
+ We like it.
+ Cool.
+ All right.
+ Click X on that.
+ Doesn't really know they click on open and we'll get together.
+ Pricing is going to be recurring.
+ It's going to be 10 pounds and it's going to build every single month and we
+ just call
+ it Hermes website.
+ Actually, no website max is fine.
+ Come down.
+ Click on add products.
+ Okay.
+ Cool.
+ When that's done, you can see we have website max.
+ So if we click on this, we have everything that we need and we have a product
+ ID.
+ I'm going to come back over and say, Hey, by the way, here is the product ID
+ for the
+ one that I want to sell.
+ I've already created one, which is fine now.
+ So I'd like you to go ahead and solve this product.
+ Please.
+ All right.
+ And then give it the ID right there.
+ And then just like it works, it's magic in the background, essentially.
+ And whilst that's happening, guys, what you'll notice is I'm going to bring
+ this up to the
+ top so you can see everything that's going on here.
+ Also, a lot of what I'm doing here is just showing you how I typically work
+ when I'm
+ building stuff, right?
+ So a Jack website.
+ Now I'm going to come back over here and see what he's done here at image.
+ He says it's done.
+ Wow.
+ Look at that.
+ That's freaking crisp.
+ Can you see that in the top right hand corner?
+ That's freaking nice.
+ So I'm going to say, awesome.
+ Now what I'd like to do is a following.
+ I want to spin up a couple of subagents.
+ Okay.
+ One is going to be purely on copy.
+ So I want you to go deep research on what are the best practices for copy of
+ this kind
+ of website.
+ I want to look at essentially with the objective to convert for these kind of
+ websites, what
+ websites are crushing it?
+ What can we learn from that?
+ And how can we improve the copy on our own website to make it as effective as
+ possible?
+ Kind of multiple subagents to do this, and I want you to critically analyze
+ their inputs
+ to socialize it in a way that we can actually get some good output.
+ Go ahead and do that.
+ Make sure you're thorough detailed, but don't over analyze.
+ All right.
+ I'm going to send that one off.
+ I like just spinning up little cohorts of agents to go and task them to do
+ things and
+ let them have a little crack and stuff.
+ And that can all be happening in the background whilst we're building out all
+ of our integrations
+ for our business, basically.
+ And then me more guys, we've actually had some feedback from our agent that was
+ doing
+ a lot of research here.
+ So to form with, I'd ship first a shipper site with traffic you're buying, a
+ five-minute
+ loop tied out of yours free, a new one in three weeks, if it's broken, blah,
+ blah, blah.
+ Just come back with loads of different suggestions.
+ I might just be like, "Hey dude, sounds great.
+ Let's ship it and move."
+ So just come back with some ideas, validate it, make sure you're happy with it,
+ and then
+ we can send it off.
+ Beautiful.
+ So let's come back with some actions for today, which is quick this private web
+ hook, which
+ we can do right here.
+ And what I'm going to do actually is just say, "Hey, can you do this for us?"
+ "Hey, could you go ahead and just use the Superbase CLI to action all of this
+ for us, please?"
+ And the reason why I do this in particular is because a lot of the times you'll
+ find
+ that Clud says, "Hey, Jack, can you do this?
+ Can you do this?"
+ In reality, it has the ability to do it ourselves.
+ So where possible, I prefer the AIs to do it if it's just going to go ahead and
+ save
+ its time and we can building other things at the same time.
+ And then we step in to make the adjustments as in when we need to.
+ And so you can see, guys, it's said, "Hey, I can do that.
+ I just need the Superbase CLI, and once I've done that, I can do it."
+ So let's go ahead and that for it, all we're going to do is come down and grab
+ the Superbase
+ login right here.
+ By the way, it can also run it here if it wants to, but let's come ahead and
+ entertain
+ it.
+ So if I come up here to the top and I click on this button here, I can see
+ Terminal, I enter
+ Superbase login like so, and I'm going to enter, cool, press Enter to open
+ browser and log
+ in automatically.
+ Let's do it.
+ We open it up.
+ I'm going to log in, give that a beautiful second.
+ You see what I mean about pushing back in challenge and it's like, "Bro, you do
+ it.
+ You just do it for me."
+ Most of the time, go ahead and accomplish that for us.
+ Okay, and it's come back and it's after a code, so we are just going to copy
+ that code
+ and then we are going to go back over to here and it's entered the verification
+ code like
+ so.
+ Give that a moment and it's ready to rock and roll.
+ Cool.
+ When I'm fully logged in.
+ Hey, bro, we are fully logged in.
+ Okay, come down and send that off.
+ People say, "Jack, how many tokens do I sing, bro?"
+ And I will tell you, not nearly as many as I should.
+ Beautiful.
+ And just like that, guys, like I said, I actually didn't do a single action.
+ I pushed back and it's now done.
+ So now it is ready to rock and roll.
+ So let's go ahead and test this bad boy out.
+ So I've opened it up.
+ It's spinning up the dashboard.
+ There you go, asking us to log in and I think we got all our credentials on
+ here, right?
+ And does it have our passport?
+ Not quite yet.
+ So let's go ahead and just make a new account for the second bit.
+ Ship a site with the traffic, you're buying, come down and we can see lots of
+ things going
+ on here.
+ All right, cool.
+ What I'm going to do, I don't like the H1 that it's changed to and I think this
+ needs
+ to be changed a little bit.
+ Let me just screenshot this and come back real quick, come over to the website.
+ Hey, Debroski, I preferred the original H1.
+ Also the H2 has one word on the second line.
+ That can never happen.
+ Just bring that in and reduce the width, please.
+ All right, come down and then we're just going to paste in that image, come
+ back over.
+ And let's go ahead and roast my site.
+ Again, we'll just enter some name, GIc with a load of keys.
+ Where should we send it?
+ This random email address here.
+ What's actually with Tedda, I'm going to get a lighter.com.
+ I am looking for Scaled.
+ I would like to get more traffic, please, and more coffee whilst I'm at it.
+ Cool.
+ Come down, click on Continue.
+ Create a password.
+ Let's just use this strong password here and copy that bad boy.
+ Create a count and clear Tedda, so just give this a hot moment and it should
+ just go ahead
+ and sign in.
+ There you go.
+ Looks much better and crucially, guys, remove the black confetti.
+ I love the spinning up dashboard loading animation.
+ I think that's really crisp.
+ All right, give it a second.
+ And now we are in.
+ All right, cool.
+ So unlock website.
+ Max.
+ Again, I wouldn't position it like this, but again, the main thing is the
+ integration.
+ As you've seen now, we have just some features that we've hidden.
+ Okay.
+ Best way to get from Dubai soon, by the way, is to give them free stuff that's
+ so incredibly
+ valuable.
+ They couldn't believe that it's free and they will run to give you a paid stuff
+.
+ But also, the paid stuff needs to be valuable that they want.
+ So if I click on Upgrade to Website Max, what do we see?
+ Give that a moment and it should open up straight, but the first time I'm
+ saying this is right
+ now with you.
+ And look, website Max, do you see how much value it adds, guys, just having
+ that logo
+ on the left hand side there?
+ And I've entered some fake information in and you can now click on Subscribe
+ and let's
+ just see what happens when I do that.
+ It's not working, processing for us in the background, and let's see if this
+ works.
+ And we know this works because when we come back to the dashboard, that should
+ be fully
+ integrated, right?
+ And do we see this?
+ Normally one of the things that you're going to see is it doesn't recognize
+ that you're
+ on Pro sometimes.
+ But look at this, website Max.
+ Freaking crazy.
+ A hardware that works.
+ Well, when I refresh it, yeah, done.
+ We're literally fully set up there and I can reanalyze it.
+ I can sign out.
+ And back in now.
+ Let's log in one more time.
+ Let's see if it brings up credentials.
+ And do I see Max there?
+ Sweet.
+ And then how do we then turn this into cool features?
+ Well, we come back over and we say something like coming to the website.
+ When they're signed into Max, here's the features and systems that I want to
+ include.
+ Then you go on and explain it.
+ Now, crucially, what I'm going to do is to add in open router API key because
+ if I want
+ AI features, I need to do that.
+ So you're going to literally head over to open router.
+ Okay.
+ So grab an API key, that's straightforward, come back over and say, hey, for
+ the AI features
+ and all the things that you do, I want you to use the open router API key.
+ And I want you to go ahead and use the sonnet model until they've done 10
+ messages per
+ day maximum, then it's going to drop down to a cheaper model.
+ I also want you to implement rate limits such that it cannot be abused and just
+ make sure
+ you're watching the total credit spans.
+ This will just happen to protect against anyone who's using your chat systems.
+ And guys, it's literally as easy as that.
+ Now, the final thing I want to share with you is emails.
+ How do we email people?
+ Go check this out.
+ I would like to now set up onboarding welcome emails.
+ To do this, I would like to use recent unless you can think of the better
+ alternative, tell
+ me everything you need to connect to recent and I'd like to show me what the
+ sample email
+ would actually look like.
+ Now, recent is so cool and here I am on recent.
+ Funn enough, this is what I use when I'm sending emails for things on.
+ I freaking love this website, by the way.
+ This is a gorgeous website.
+ This would be one that you want to look at.
+ This is fantastic, guys.
+ So how do we do it?
+ Basically, it's just like, think about giving it to your AI, basically.
+ You're going to come out and create an account, so you're going to log in or
+ get started.
+ Let's create an account together.
+ I'm going to log in here with GitHub.
+ Why?
+ Because I can get up.
+ Fantastic.
+ Now, I've just zoomed in here now.
+ You can't see the emails here, but you'll notice that these guys actually ask
+ for a reset
+ code with my AI, right?
+ Because this is AI rejects all these people, but it's how frequently people ask
+ for reset
+ codes, and I can see all of that within recent.
+ You can search at broadcast, automations, templates, shows your audience
+ metrics, all
+ that kind of stuff.
+ It is really freaking cool.
+ We come back over now to Claude on the left-hand side.
+ But before we do that, we're going to come up with the API keys down here.
+ I'm going to go ahead and create a brand new API key and share that with Claude
+ like so.
+ So click on create API key, add a go, and this is a random email that we get.
+ Let's come back over and create that API key.
+ Give it a name like, let's call it the website like sales, websites, Claude,
+ permission for
+ access domain.
+ Just give it a domain you're happy with, and you can send that one off.
+ I should point out domains.
+ You can attach your domains to recent, so it looks like it's actually
+ physically coming
+ from you.
+ And then come back over, and then I'm just going to literally drop the key in
+ here to
+ Claude.
+ You can see here it actually says, "Look, quick send from onboarding@recent.dev
+."
+ That's like easy peasy.
+ Or you can verify a brand with your DNS records, and then it'll just come
+ directly from your
+ brand.
+ We're going to do the quick send.
+ And then we're going to drop our API key in the chat.
+ And guys, if you look at this, it said, "I've sent you a test email.
+ I opened up the email.
+ I want you to believe.
+ I got this email.
+ Got it, Jack.
+ Your turn has been recorded.
+ Come down, open my dashboard."
+ And then obviously what you would do then is say, because I want this change.
+ I want that change, and you basically perfect this to get to a point where it
+ looks absolutely
+ gorgeous.
+ And now you got all the principles and know how to build any apps to your heart
+, content,
+ and desire.
+ This is stuff I have never shared anywhere else.
+ I always keep my best exclusive stuff for you.
+ I work for you.
+ It is a freaking incredible system.
+ If you can imagine it, you can build it.
+ So with that, enjoy the coffee you had.
+ And when you're ready, I'm going to see you down below for level seven.
+ You're not going to want to miss level seven.
+ I'll catch you over there once you've finished.

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Inter:wght@400;500&family=Raleway:wght@600&display=swap">
+  <style>
+    *,*::before,*::after { box-sizing: border-box; }
+    body { margin: 0; width: 1080px; height: 1350px; overflow: hidden; }
+    a { color: #1768E5; text-decoration: none; }
+    a:hover { color: #0B3FA8; }
+    .slide { position: relative; width: 1080px; height: 1350px;
+             padding: 152px 64px 166px; display: flex; flex-direction: column; }
+    .rail { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; }
+    .label { font-family: 'Raleway',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 600; font-size: 22px;
+             letter-spacing: 0.15em; text-transform: uppercase; }
+    .idx { font-family: 'Raleway',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.15em; }
+    .mono { width: 64px; height: 64px; flex: 0 0 auto; }
+    .monorow { display: flex; justify-content: flex-end; }
+
+    .slide { background: #FFFFFF; }
+    .label { color: #55627F; }
+    .idx { color: #9AA3BC; }
+    .hooks { flex: 1; display: flex; flex-direction: column; justify-content: center;
+             gap: 38px; }
+    .hook { display: flex; gap: 30px; align-items: flex-start; }
+    .num { font-family: 'Barlow','Helvetica Neue',Arial,sans-serif; font-weight: 800; font-size: 60px; line-height: 1.1;
+           letter-spacing: -0.03em; color: #0B3FA8; min-width: 84px; }
+    .txt { font-family: 'Inter',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 500; font-size: 48px; line-height: 1.28;
+           letter-spacing: -0.012em; color: #050E3D; }
+
+  </style>
+</helmet>
+<div class="slide">
+  <div class="rail">
+    <div class="label">Text on black, no footage at all</div>
+    <div class="idx">04 / 06</div>
+  </div>
+  <div class="hooks">
+    <div class="hook"><div class="num">11</div><div class="txt">&ldquo;Your offer was not too low.<br>It was too slow.&rdquo;</div></div>
+    <div class="hook"><div class="num">12</div><div class="txt">&ldquo;The inspection is not<br>where you negotiate.&rdquo;</div></div>
+    <div class="hook"><div class="num">13</div><div class="txt">&ldquo;Three reasons your house<br>did not sell.&rdquo;</div></div>
+    <div class="hook"><div class="num">14</div><div class="txt">&ldquo;You are not competing on price.<br>You are competing on terms.&rdquo;</div></div>
+    <div class="hook"><div class="num">15</div><div class="txt">&ldquo;Sellers, the first two<br>weeks decide everything.&rdquo;</div></div>
+  </div>
+  <div class="monorow"><img class="mono" src="monogram.png" alt=""></div>
+</div>
+</x-dc>
+</body>
+</html>

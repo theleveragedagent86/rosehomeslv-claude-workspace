@@ -1,0 +1,71 @@
+LOFTY PAGE SETTINGS - RELOCATION HUB
+====================================
+
+URL slug:
+moving-to-las-vegas
+
+  WHY THIS SLUG AND NOT "relocation-hub":
+  "moving to las vegas" is the head term people actually search. It gets
+  far more volume than "relocation". The slug is a ranking asset, so use
+  the words people type. Your nav label can still read "Relocation".
+  If you would rather stay consistent with las-vegas-new-construction, use
+  relocation-hub instead and change the canonical + the 2 schema URLs
+  in ALL-IN-ONE-relocation.html to match. Pick one before you publish.
+
+
+Meta Title (48 chars, limit 60):
+Moving to Las Vegas: Relocation Guide | Ryan Rose
+
+
+Meta Description (149 chars, limit 160):
+Moving to Las Vegas? What really changes when you relocate to Nevada, how to pick the right area, and a local Realtor who has done this many times.
+
+
+Meta Keywords (91 chars, limit 100):
+moving to las vegas, relocating to las vegas, las vegas relocation, henderson nv relocation
+
+
+Canonical URL:
+https://www.rosehomeslv.com/moving-to-las-vegas
+
+
+WHAT TO PASTE
+=============
+
+ALL-IN-ONE-relocation.html
+  Everything: the style block, the page body, and all three JSON-LD
+  schema blocks. Paste the whole file into one HTML / custom code
+  module on the page. Same as you did on the New Construction hub.
+
+Do NOT paste any Google Analytics or Meta Pixel tags. Lofty injects
+G-50N1D59DW6 and pixel 621835647008401 automatically at publish.
+
+
+IMPORTANT - READ BEFORE PUBLISHING
+==================================
+
+1. You already have /relocation-guide live. That is a 56 word lead
+   capture squeeze page with two H1s and no schema. It cannot rank.
+   Its title tag is currently:
+     "Free Las Vegas Relocation Guide | Moving to Vegas Tips & Neighborhoods"
+   That title competes with this new hub for the same words.
+
+   Do NOT delete /relocation-guide. It converts. Instead retitle it so
+   the two pages stop fighting:
+     New title:  Get the Free Las Vegas Relocation Guide | Ryan Rose
+     New desc:   Send me your email and I will send the guide, plus the
+                 neighborhoods and price ranges that actually fit you.
+   Then the hub ranks and the squeeze page converts. This page links
+   to it in three places.
+
+2. After publishing, add "Relocation" to the main nav and the footer,
+   same as you did for New Construction. Not before it is live.
+
+3. Images are hotlinked from the CDN, nothing to upload.
+
+
+AFTER PUBLISHING
+================
+- Request indexing in Google Search Console for the new URL.
+- Confirm it shows up in /sitemap.xml (it should within a day).
+- Run the Rich Results Test on the URL and confirm FAQPage validates.

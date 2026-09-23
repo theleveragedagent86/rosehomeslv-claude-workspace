@@ -1,0 +1,1042 @@
+<!-- ================================================================
+     ROSE HOMES LV, NORTH LAS VEGAS NEW CONSTRUCTION, PART 2 of 2 (BELOW the featured listings)
+     Page: https://www.rosehomeslv.com/north-las-vegas-new-construction
+     Paste into the Lofty HTML / custom code module BELOW
+     the Featured Listings block you build in Lofty's editor.
+
+     GENERATED FILE. Do not hand-edit. Edit geo-spokes/north-las-vegas/content.json
+     and run: python3 geo-spokes/_build/build.py north-las-vegas
+     CSS and script come from new-construction-hub/part-1-above-listings.html.
+
+     Design tokens: SKOOL Brandkit "Vector" v2.0.
+     ================================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   ROSE HOMES LV, NEW CONSTRUCTION HUB
+   Design system: Marketing/nrg-research/09-hub-design-system.md
+   Content spec:  Marketing/nrg-research/10-hub-content-blueprint.md
+   ============================================================ */
+:root{
+  /* ============================================================
+     THE LEVERAGED AGENT DESIGN SYSTEM v2.0 "VECTOR"
+     Source of truth: SKOOL Community/Brandkit/Brand-Guide/tokens.css
+                      SKOOL Community/Brandkit/Brand-Guide/BRAND-GUIDE.md
+     Adopted 2026-08-19. Every pairing below is WCAG 2.1 computed.
+
+     THE THREE RULES OF THIS SYSTEM, do not break them:
+       1. ONE accent, ONE value. #1768E5 works as a fill AND as text on
+          white, so it needs no second darker variant. Never add one.
+       2. Black is a SURFACE, never a text color. The pop is structural,
+          a full-bleed black band butted against white, not chromatic.
+       3. NO warm colors. No cream, no gold, no sage, no orange.
+     ============================================================ */
+
+  /* SURFACES */
+  --dark:#ffffff;          /* la-bg       primary surface, pure white */
+  --dark-surface:#f7f8fa;  /* la-bg-2     sunken fill, cards, table rows */
+  --dark-card:#ffffff;
+  --white:#ffffff;
+  --inv:#000000;           /* la-bg-inv   TRUE black. A SURFACE, never text. */
+  --line:#e4e7ef;          /* la-line     hairline, 1.24. NOT a text color. */
+  --structure:#0b3fa8;     /* la-structure  rules, bars, fills, 9.17.
+                                            NOT a text color. */
+
+  /* INK */
+  --text-dark:#050e3d;     /* la-ink        18.48 on white */
+  --text-body:#050e3d;     /* same ink, hierarchy comes from weight and size */
+  --text-meta:#55627f;     /* la-ink-2      6.11 on bg, 5.75 on bg-2 */
+  --ink-inv:#ffffff;       /* la-ink-inv    21.00 on black */
+  --ink-2-inv:#9aa3bc;     /* la-ink-2-inv  8.34 on black */
+
+  /* ACCENT, one accent, one value */
+  --accent:#1768e5;        /* la-accent      fills, buttons, links */
+  --accent-on:#ffffff;     /* la-accent-on   text placed ON accent, 5.06 */
+  --accent-ink:#1768e5;    /* la-accent-txt  the SAME blue as text on white, 5.06.
+                                             Not a second value, the same one. */
+  --accent-inv:#5b9bff;    /* la-accent-inv  accent as text on black, 7.58 */
+  --accent-hover:#0b3fa8;  /* reuses la-structure as the pressed state.
+                              Not a new accent, an existing token. */
+  --accent-muted:rgba(23,104,229,.10);
+  --accent-tint:rgba(23,104,229,.05);
+  --accent-line:rgba(23,104,229,.32);
+
+  /* ALPHA-INK SCALE, hairlines and tints, derived from la-ink */
+  --w60:rgba(5,14,61,.70); --w40:rgba(5,14,61,.55);
+  --w20:rgba(5,14,61,.32); --w08:rgba(5,14,61,.12); --w04:rgba(5,14,61,.05);
+
+  /* GEOMETRY */
+  --radius:8px; --radius-sm:4px; --radius-pill:999px;
+  --container:1180px; --measure:68ch; --rail:260px; --rail-gap:48px;
+  --nav-h:60px;
+  --anchor-off:88px;   /* scroll-padding, clears Lofty's fixed site nav on anchor jumps */
+  --rail-top:24px;     /* how high the sticky rail rides. Deliberately NOT --anchor-off:
+                          the rail sits near the top of the viewport, while anchor jumps
+                          still need clearance for Lofty's nav. */
+
+  /* SHADOWS, ink-tinted, used sparingly */
+  --shadow-sm:0 1px 2px rgba(5,14,61,.05);
+  --shadow-card:0 1px 2px rgba(5,14,61,.05),0 6px 18px -10px rgba(5,14,61,.14);
+  --shadow-lift:0 2px 4px rgba(5,14,61,.06),0 14px 32px -14px rgba(5,14,61,.22);
+  --shadow-rail:0 1px 2px rgba(5,14,61,.04),0 10px 30px -18px rgba(5,14,61,.20);
+  --shadow-band:0 24px 60px -32px rgba(5,14,61,.50);
+
+  /* MOTION */
+  --t:220ms cubic-bezier(.2,.6,.2,1);
+  --t-slow:420ms cubic-bezier(.2,.6,.2,1);
+
+  /* TYPE, settled 2026-08-19.
+     Barlow 800 headlines. Raleway 600 SUBTEXT ONLY (eyebrow, subhead, small
+     label), never a running paragraph. Inter 400/500 body at line-height 1.6.
+     The 800-to-400 gap carries the whole hierarchy: there is no serif here. */
+  --font-display:'Barlow','Helvetica Neue',Arial,sans-serif;
+  --font-head:'Barlow','Helvetica Neue',Arial,sans-serif;
+  --font-label:'Raleway','Helvetica Neue',Arial,sans-serif;
+  --font-body:'Inter',-apple-system,'Helvetica Neue',Arial,sans-serif;
+  --weight-head:800;
+  --weight-sub:600;
+  --track-head:-.028em;
+  --track-sub:.01em;
+  --track-label:.15em;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+/* CRITICAL: overflow-x must be `clip`, NOT `hidden`.
+   `hidden` computes overflow-y to auto, which silently kills position:sticky. */
+html{
+  font-size:16px; scroll-behavior:smooth; scroll-padding-top:var(--anchor-off);
+  width:100%; max-width:100%; overflow-x:clip; background:var(--dark);
+}
+@media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
+
+body{
+  margin:0 !important; padding:0 !important;
+  width:100%; max-width:100%; overflow-x:clip;
+  background:var(--dark); color:var(--text-body);
+  font-family:var(--font-body); font-size:18px; line-height:1.75; font-weight:400;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+}
+
+h1,h2,h3,h4{ color:var(--text-dark); margin:0; text-wrap:balance; }
+img{ max-width:100%; display:block; }
+
+.rh-container{ max-width:var(--container); margin:0 auto; padding:0 28px; width:100%; }
+.rh-section{ padding:80px 0; }
+.rh-section--base{ background:var(--dark); }
+.rh-section--alt{ background:var(--dark-surface); }
+.rh-section--inv{ background:var(--inv); color:var(--ink-inv); }
+
+/* ---------- eyebrow ---------- */
+.rh-eyebrow{
+  font-family:var(--font-label);
+  display:flex; align-items:center; gap:14px;
+  font-size:11px; font-weight:var(--weight-sub); letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--accent-ink); margin:0 0 18px;
+}
+.rh-eyebrow::after{ content:''; flex:1; height:1px; background:var(--accent-line); }
+.rh-section--inv .rh-eyebrow{ color:var(--accent-inv); }
+.rh-section--inv .rh-eyebrow::after{ background:rgba(91,155,255,.45); }
+
+/* ---------- breadcrumb ---------- */
+.rh-crumb{ background:var(--dark); padding:14px 0 0; font-size:13px; color:var(--text-meta); }
+.rh-crumb a{ color:var(--text-dark); text-decoration:none; }
+.rh-crumb a:hover{ color:var(--accent-ink); text-decoration:underline; }
+
+/* ---------- hero ---------- */
+/* WHITE HERO WITH A DISSOLVING PHOTO.
+   The photograph sits on the right and fades out into the page instead of
+   meeting the copy at a hard vertical edge. Two washes do it: a white-to-clear
+   one across its left side, and a shorter one along its bottom. There is no
+   seam anywhere and no box around the image.
+   Ryan rejected both the black panel and the hard cut, in that order. Do not
+   reintroduce either. */
+.rh-hero{
+  position:relative; background:var(--white); color:var(--text-dark);
+  overflow:hidden;
+}
+.rh-hero__media{
+  position:absolute; top:0; right:0; bottom:0; left:auto;
+  width:64%; margin:0; z-index:0; pointer-events:none;
+}
+.rh-hero__media img{
+  display:block; width:100%; height:100%;
+  object-fit:cover; object-position:50% 58%;
+}
+/* The dissolve. Stays fully opaque past where the copy ends, so the headline
+   never sits on a half-transparent photo, then falls away to nothing. */
+.rh-hero__media::after{
+  content:''; position:absolute; inset:0;
+  background:
+    linear-gradient(to right,
+      #fff 0%, #fff 28%,
+      rgba(255,255,255,.55) 46%,
+      rgba(255,255,255,.12) 62%,
+      rgba(255,255,255,0) 76%),
+    linear-gradient(to top,
+      #fff 0%, rgba(255,255,255,.45) 12%, rgba(255,255,255,0) 30%),
+    linear-gradient(to bottom,
+      #fff 0%, rgba(255,255,255,.40) 9%, rgba(255,255,255,0) 22%);
+}
+.rh-hero__inner{
+  position:relative; z-index:1;
+  display:flex; align-items:center;
+  min-height:clamp(520px,58vh,640px);
+  padding-top:76px; padding-bottom:76px;
+}
+.rh-hero__panelInner{ width:100%; max-width:540px; }
+.rh-hero__kicker{
+  font-family:var(--font-label);
+  font-size:11px; font-weight:var(--weight-sub); letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--accent-ink); margin:0 0 18px;
+}
+.rh-hero h1{
+  font-family:var(--font-display); font-size:clamp(36px,3.9vw,58px);
+  line-height:1.04; font-weight:var(--weight-head); letter-spacing:var(--track-head);
+  color:var(--text-dark); margin:0 0 18px; max-width:15ch; text-wrap:balance;
+}
+.rh-hero__sub{
+  font-size:clamp(16px,1.25vw,18px); line-height:1.6; color:var(--text-body);
+  max-width:46ch; margin:0 0 28px;
+}
+.rh-hero__stats{
+  /* 2x2, not a 4-wide flex row. The column is narrow, so four across wraps
+     3+1 and looks accidental. */
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px 28px; margin:0 0 30px; max-width:400px;
+  padding:24px 0 0; border-top:1px solid var(--line);
+}
+.rh-stat__num{
+  font-family:var(--font-display); font-size:clamp(26px,2.5vw,38px);
+  line-height:.95; font-weight:var(--weight-head); letter-spacing:var(--track-head);
+  color:var(--accent-ink); display:block;   /* 5.06 on white */
+}
+.rh-stat__label{
+  font-family:var(--font-label); font-weight:var(--weight-sub);
+  font-size:11px; letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--text-meta); margin-top:6px; display:block;
+}
+.rh-hero__cta{ display:flex; flex-wrap:wrap; gap:12px; }
+
+/* Mid desktop: pull the photo in and narrow the column, so the opaque part of
+   the dissolve still clears the end of the copy. */
+@media (min-width:960px) and (max-width:1279px){
+  .rh-hero__media{ width:58%; }
+  .rh-hero__panelInner{ max-width:460px; }
+}
+
+/* ---- MOBILE: photo band on top, dissolving downward into the copy ---- */
+@media (max-width:959px){
+  .rh-hero{ display:flex; flex-direction:column; }
+  .rh-hero__media{
+    position:relative; top:auto; right:auto; bottom:auto;
+    width:100%; height:clamp(230px,52vw,340px); order:1;
+  }
+  .rh-hero__media::after{
+    /* stacked: dissolve down into the copy, and soften the top edge so the
+       photo does not butt hard against the breadcrumb */
+    background:
+      linear-gradient(to top,
+        #fff 0%, rgba(255,255,255,.72) 16%, rgba(255,255,255,.18) 34%, rgba(255,255,255,0) 56%),
+      linear-gradient(to bottom,
+        #fff 0%, rgba(255,255,255,.35) 7%, rgba(255,255,255,0) 18%);
+  }
+  .rh-hero__inner{ order:2; min-height:0; padding-top:22px; padding-bottom:52px; }
+  .rh-hero__panelInner{ max-width:none; }
+  .rh-hero h1{ font-size:clamp(32px,7.4vw,44px); max-width:18ch; }
+  .rh-hero__sub{ max-width:62ch; }
+  .rh-hero__stats{ max-width:none; gap:20px 24px; }
+}
+@media (max-width:479px){
+  .rh-hero__media{ height:clamp(200px,48vw,260px); }
+  .rh-hero__cta{ gap:10px; }
+  .rh-hero__cta .rh-btn{ flex:1 1 auto; }
+  .rh-hero__cta .rh-btn--primary{ flex:1 1 100%; }
+}
+
+/* ---------- buttons ---------- */
+.rh-btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  padding:14px 26px; border-radius:var(--radius-pill);
+  font-family:var(--font-body); font-size:14px; font-weight:600; letter-spacing:.02em;
+  text-decoration:none; cursor:pointer; border:1.5px solid transparent;
+  transition:transform var(--t), background-color var(--t), color var(--t), border-color var(--t), box-shadow var(--t);
+}
+/* Vector primary: the accent fill with white on it. 5.06:1, passes AA.
+   This is the one place the accent is used as a fill. */
+.rh-btn--primary{ background:var(--accent); color:var(--accent-on); border-color:var(--accent); }
+.rh-btn--primary:hover{ background:var(--accent-hover); border-color:var(--accent-hover); transform:translateY(-2px); box-shadow:var(--shadow-lift); }
+.rh-btn--primary:active{ transform:translateY(0); }
+
+.rh-btn--ghost{ background:transparent; color:var(--accent-ink); border-color:var(--accent); }
+.rh-btn--ghost:hover{ background:var(--accent-muted); transform:translateY(-2px); }
+.rh-btn--ghost:active{ transform:translateY(0); }
+
+/* on true-black surfaces the ghost flips to the inverse accent, 7.58:1 */
+/* Only on true-black surfaces does the ghost flip to the inverse accent,
+   7.58:1. The hero is white now, so it is deliberately not in this list. */
+.rh-section--inv .rh-btn--ghost{ color:var(--accent-inv); border-color:rgba(91,155,255,.55); }
+.rh-section--inv .rh-btn--ghost:hover{ background:rgba(91,155,255,.14); }
+
+
+.rh-btn--sm{ padding:11px 18px; font-size:13px; }
+.rh-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+/* ---------- direct answer + takeaways ---------- */
+.rh-answer{
+  margin:0 0 34px; padding:28px 32px;
+  background:var(--dark-card); border:1px solid var(--w08);
+  border-left:4px solid var(--accent); border-radius:var(--radius);
+  box-shadow:var(--shadow-card);
+}
+.rh-answer p{ margin:0; font-size:19px; line-height:1.7; color:var(--text-dark); max-width:none; }
+
+.rh-takeaways{
+  margin:0 0 40px; padding:30px 34px;
+  background:var(--accent-tint); border:1px solid var(--accent-line);
+  border-radius:var(--radius);
+}
+.rh-takeaways h3{
+  font-size:11px; font-weight:var(--weight-sub); letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--accent-ink); margin:0 0 18px;
+}
+.rh-takeaways ol{ margin:0; padding-left:22px; }
+.rh-takeaways li{ margin-bottom:14px; line-height:1.65; }
+.rh-takeaways li:last-child{ margin-bottom:0; }
+.rh-takeaways li::marker{ color:var(--accent-ink); font-weight:600; }
+
+/* ---------- byline ---------- */
+.rh-byline{
+  font-size:14px; color:var(--text-meta); margin:0 0 42px;
+  padding-bottom:22px; border-bottom:1px solid var(--w08);
+}
+.rh-byline strong{ color:var(--text-dark); font-weight:600; }
+
+/* ---------- area pills ---------- */
+.rh-pills{ display:flex; flex-wrap:wrap; gap:10px; margin:22px 0 0; }
+.rh-pill{
+  display:inline-flex; align-items:center; padding:10px 20px;
+  background:var(--dark-card); border:1px solid var(--w08);
+  border-radius:var(--radius-pill); text-decoration:none;
+  font-size:14px; font-weight:500; color:var(--text-dark);
+  box-shadow:var(--shadow-sm);
+  transition:transform var(--t), border-color var(--t), box-shadow var(--t), color var(--t);
+}
+.rh-pill:hover{ transform:translateY(-2px); border-color:var(--accent); color:var(--accent-ink); box-shadow:var(--shadow-card); }
+.rh-pill:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+/* ---------- article shell + sticky rail ---------- */
+.rh-article-shell{ display:block; }
+@media (min-width:1024px){
+  .rh-article-shell{
+    display:grid; grid-template-columns:minmax(0,1fr) var(--rail);
+    gap:var(--rail-gap); align-items:start;
+  }
+}
+.rh-prose{ min-width:0; }
+.rh-prose > *{ max-width:var(--measure); }
+.rh-prose > .rh-wide{ max-width:none; }
+
+.rh-prose h2{
+  font-family:var(--font-head); font-size:clamp(26px,3vw,38px);
+  line-height:1.14; font-weight:var(--weight-head); letter-spacing:var(--track-head);
+  margin:76px 0 20px; scroll-margin-top:var(--anchor-off);
+}
+.rh-prose > h2:first-child{ margin-top:0; }
+.rh-prose h3{
+  font-family:var(--font-head); font-size:clamp(18px,1.4vw,21px);
+  line-height:1.34; font-weight:700; letter-spacing:-.018em;
+  margin:40px 0 12px; scroll-margin-top:var(--anchor-off);
+}
+.rh-prose p{ margin:0 0 22px; }
+.rh-lede{ font-size:20px; line-height:1.68; letter-spacing:-.003em; color:var(--text-dark); margin:0 0 26px; }
+.rh-prose ul,.rh-prose ol{ margin:0 0 22px; padding-left:22px; }
+.rh-prose li{ margin-bottom:10px; padding-left:4px; }
+.rh-prose li::marker{ color:var(--accent-ink); }
+.rh-prose strong{ font-weight:600; color:var(--text-dark); }
+.rh-prose a{
+  color:var(--text-dark); text-decoration:underline; text-decoration-color:var(--accent);
+  text-decoration-thickness:1.5px; text-underline-offset:3px;
+  transition:color var(--t), text-decoration-color var(--t);
+}
+.rh-prose a:hover{ color:var(--accent-ink); text-decoration-color:var(--accent-ink); }
+
+.rh-rail{ margin:0 0 44px; }
+.rh-toc{
+  background:var(--dark-surface); border:1px solid var(--w08);
+  border-left:3px solid var(--accent); border-radius:var(--radius);
+  padding:22px 26px; box-shadow:var(--shadow-sm);
+}
+.rh-toc__title{
+  font-family:var(--font-label);
+  margin:0 0 14px; font-size:11px; font-weight:600;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--accent-ink);
+}
+.rh-toc__progress{ display:none; }
+.rh-toc__scroll{ min-width:0; }
+.rh-toc__list{ columns:2; column-gap:30px; margin:0; padding-left:20px; list-style:decimal; }
+.rh-toc__list li{ break-inside:avoid; margin-bottom:8px; }
+.rh-toc__list li::marker{ color:var(--w20); font-size:12px; }
+.rh-toc__list a{
+  color:var(--text-body); text-decoration:none; font-size:14px;
+  display:block; transition:color var(--t), transform var(--t);
+}
+.rh-toc__list a:hover{ color:var(--accent-ink); transform:translateX(2px); }
+.rh-toc__list a:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+.rh-toc__cta{ display:none; }
+@media (max-width:700px){ .rh-toc__list{ columns:1; } }
+
+@media (min-width:1024px){
+  /* The rail is a sticky FRAME. It rides high in the viewport (--rail-top)
+     and never scrolls itself. */
+  .rh-rail{
+    position:-webkit-sticky; position:sticky; top:var(--rail-top); margin:0;
+    max-height:calc(100vh - var(--rail-top) - 24px);
+    display:flex; z-index:5;
+  }
+
+  /* CRITICAL: the scroll lives on .rh-toc__scroll, NOT on .rh-toc or .rh-rail.
+     If the bordered box is itself the scroll container, its bottom border
+     scrolls out of view and the panel looks open-ended at the bottom.
+     Here the border stays on a clipped flex frame and only the list moves. */
+  .rh-toc{
+    display:flex; flex-direction:column;
+    min-height:0; max-height:100%;
+    padding:18px 0 0;      /* side padding moves to the children, so the
+                              scrollbar sits inside the border */
+    overflow:hidden;       /* clips the list to the rounded corners */
+    box-shadow:var(--shadow-rail);
+  }
+  .rh-toc__title{ flex:0 0 auto; padding:0 18px; margin:0 0 12px; }
+  .rh-toc__progress{
+    flex:0 0 auto; display:block; position:relative; height:2px;
+    background:var(--w08); border-radius:999px; margin:0 18px 14px; overflow:hidden;
+  }
+  .rh-toc__progress-fill{
+    position:absolute; inset:0; background:var(--accent);
+    transform-origin:left center; transform:scaleX(0);
+    transition:transform var(--t-slow);
+  }
+  .rh-toc__scroll{
+    flex:1 1 auto; min-height:0;
+    overflow-y:auto; overscroll-behavior:contain;
+    padding:0 10px 2px;
+    scrollbar-width:thin; scrollbar-color:var(--w20) transparent;
+  }
+  .rh-toc__scroll::-webkit-scrollbar{ width:6px; }
+  .rh-toc__scroll::-webkit-scrollbar-thumb{ background:var(--w20); border-radius:999px; }
+  .rh-toc__scroll::-webkit-scrollbar-track{ background:transparent; }
+  /* Sticky fade so a cut-off list reads as scrollable, not as a hard edge. */
+  .rh-toc__scroll::after{
+    content:''; display:block; position:sticky; bottom:0;
+    height:22px; margin-top:-22px; pointer-events:none;
+    background:linear-gradient(to top, var(--dark-surface), rgba(247,248,250,0));
+  }
+  .rh-toc__list{ columns:1; padding-left:0; list-style:none; counter-reset:toc; }
+  .rh-toc__list li{ counter-increment:toc; margin-bottom:1px; }
+  .rh-toc__list a{ position:relative; padding:6px 8px 6px 30px; font-size:13px; line-height:1.45; color:var(--text-meta); }
+  .rh-toc__list a::before{
+    content:counter(toc,decimal-leading-zero); position:absolute; left:8px; top:7px;
+    font-size:10px; font-weight:600; letter-spacing:.04em; color:var(--w20);
+    font-variant-numeric:tabular-nums; transition:color var(--t);
+  }
+  .rh-toc__list a::after{
+    content:''; position:absolute; left:0; top:4px; bottom:4px; width:2px;
+    border-radius:999px; background:var(--accent);
+    transform:scaleY(0); transform-origin:center; transition:transform var(--t);
+  }
+  .rh-toc__list a:hover{ color:var(--text-dark); transform:none; }
+  .rh-toc__list a:hover::before{ color:var(--accent-ink); }
+  .rh-toc__list a[aria-current="true"]{ color:var(--text-dark); font-weight:600; background:var(--accent-muted); border-radius:var(--radius-sm); }
+  .rh-toc__list a[aria-current="true"]::before{ color:var(--accent-ink); }
+  .rh-toc__list a[aria-current="true"]::after{ transform:scaleY(1); }
+  /* CTA is pinned to the bottom of the frame, above the border, never scrolls. */
+  .rh-toc__cta{
+    flex:0 0 auto; display:inline-flex; width:auto; justify-content:center;
+    margin:10px 14px 14px; border-radius:var(--radius-sm);
+  }
+}
+@supports not (position:sticky){
+  @media (min-width:1024px){ .rh-rail{ position:static; max-height:none; overflow:visible; } }
+}
+
+/* ---------- builder grid ---------- */
+.rh-filters{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 32px; }
+.rh-chip{
+  padding:9px 18px; border-radius:var(--radius-pill);
+  border:1px solid var(--w08); background:var(--dark-card);
+  font-size:13px; font-weight:500; color:var(--text-meta); cursor:pointer;
+  font-family:var(--font-body);
+  transition:transform var(--t), border-color var(--t), color var(--t), background-color var(--t);
+}
+.rh-chip:hover{ transform:translateY(-1px); border-color:var(--accent); color:var(--accent-ink); }
+/* a black fill is a SURFACE, which the system allows. Text on it is white. */
+.rh-chip[aria-pressed="true"]{ background:var(--inv); color:var(--ink-inv); border-color:var(--inv); }
+.rh-chip:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+.rh-builders{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(238px,1fr));
+  gap:18px; margin:0; padding:0; list-style:none;
+}
+.rh-builder{
+  position:relative; background:var(--dark-card); border:1px solid var(--w08);
+  border-radius:var(--radius); padding:24px 22px 22px; overflow:hidden;
+  box-shadow:var(--shadow-card);
+  transition:transform var(--t), box-shadow var(--t), border-color var(--t);
+}
+/* builder brand color is DECORATIVE ONLY. It never carries text. */
+.rh-builder::before{
+  content:''; position:absolute; top:0; left:0; right:0; height:4px;
+  background:var(--b,var(--inv));
+}
+.rh-builder:hover{ transform:translateY(-3px); box-shadow:var(--shadow-lift); border-color:var(--w20); }
+.rh-builder h3{ font-size:17px; font-weight:700; letter-spacing:-.005em; margin:0 0 6px; color:var(--text-dark); }
+.rh-builder__tier{
+  display:inline-block; font-size:10px; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--accent-ink); margin:0 0 12px;
+}
+.rh-builder__note{ font-size:14px; line-height:1.55; color:var(--text-body); margin:0 0 16px; }
+.rh-builder__link{
+  font-size:13px; font-weight:600; color:var(--text-dark); text-decoration:none;
+  display:inline-flex; align-items:center; gap:6px;
+  transition:gap var(--t), color var(--t);
+}
+.rh-builder__link:hover{ gap:11px; color:var(--accent-ink); }
+.rh-builder__link:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+/* ---------- tables ---------- */
+.rh-tablewrap{
+  margin:0 0 30px; overflow-x:auto; border:1px solid var(--w08);
+  border-radius:var(--radius); background:var(--dark-card); box-shadow:var(--shadow-sm);
+  -webkit-overflow-scrolling:touch;
+}
+.rh-table{ width:100%; border-collapse:collapse; min-width:620px; }
+.rh-table th{
+  background:var(--inv); color:var(--ink-inv);
+  font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+  text-align:left; padding:14px 16px; white-space:nowrap;
+}
+.rh-table td{ font-size:15px; padding:14px 16px; border-top:1px solid var(--w08); vertical-align:top; }
+.rh-table tbody tr:nth-child(even){ background:var(--accent-tint); }
+.rh-table th:first-child,.rh-table td:first-child{ position:sticky; left:0; }
+.rh-table th:first-child{ background:var(--inv); z-index:2; }
+.rh-table td:first-child{ background:var(--dark-card); font-weight:600; color:var(--text-dark); }
+.rh-table tbody tr:nth-child(even) td:first-child{ background:var(--dark-surface); }
+.rh-tablenote{ font-size:12.5px; font-style:italic; color:var(--text-meta); margin:-18px 0 30px; }
+
+/* NOT FOUND marker, deliberately visible so it cannot ship unnoticed */
+.nf{
+  display:inline-block; padding:1px 7px; border-radius:4px;
+  background:rgba(183,60,43,.10); border:1px dashed rgba(183,60,43,.5);
+  color:#8d3223; font-size:12px; font-weight:600; letter-spacing:.04em;
+  font-family:var(--font-body); white-space:nowrap;
+}
+
+/* ---------- listings slot ---------- */
+.rh-idx{
+  border:2px dashed var(--accent-line); border-radius:var(--radius);
+  background:var(--accent-tint); padding:44px 30px; text-align:center; margin:0 0 26px;
+}
+.rh-idx__title{ font-family:var(--font-head); font-size:20px; font-weight:800; letter-spacing:-.02em; color:var(--text-dark); margin:0 0 10px; }
+.rh-idx__body{ font-size:15px; color:var(--text-body); max-width:56ch; margin:0 auto 22px; }
+
+/* ---------- FAQ (always open, not an accordion) ---------- */
+.rh-faq{ margin:0; }
+.rh-faq__item{ padding:26px 0; border-bottom:1px solid var(--w08); }
+.rh-faq__item:first-child{ border-top:1px solid var(--w08); }
+.rh-faq h3{ margin:0 0 10px; }
+.rh-faq p{ margin:0; }
+
+/* ---------- CTA band ---------- */
+.rh-band{
+  background:var(--inv); color:var(--ink-inv);
+  border-radius:var(--radius); padding:52px 44px; margin:0;
+  box-shadow:var(--shadow-band); position:relative; overflow:hidden;
+}
+/* Hard-edged accent rule, not a gradient wash. Same structural device as the
+   hero seam, so the black CTA band reads as part of the same system. */
+.rh-band::before{
+  content:''; position:absolute; left:0; top:0; bottom:0; width:6px;
+  background:var(--accent);
+}
+.rh-band > *{ position:relative; z-index:2; }
+.rh-band h2{
+  font-family:var(--font-display); font-size:clamp(30px,4vw,50px);
+  line-height:1.06; font-weight:var(--weight-head); letter-spacing:var(--track-head);
+  color:var(--ink-inv); margin:0 0 16px;
+}
+.rh-band p{ color:var(--ink-inv); max-width:56ch; margin:0 0 28px; }
+.rh-band__contact{
+  margin-top:30px; padding-top:24px; border-top:1px solid rgba(255,255,255,.18);
+  font-size:14px; color:var(--ink-2-inv); line-height:1.9;
+}
+.rh-band__contact a{ color:var(--accent); text-decoration:none; }
+.rh-band__contact a:hover{ text-decoration:underline; }
+
+/* ---------- sources ---------- */
+/* Area fact block: the concrete who/where/how-much under each area H2 */
+.rh-areafacts{
+  background:var(--dark-surface); border:1px solid var(--w08);
+  border-left:3px solid var(--accent); border-radius:var(--radius);
+  padding:18px 22px; margin:0 0 26px; font-size:16px; line-height:1.7;
+}
+.rh-areafacts strong{ color:var(--text-dark); font-weight:600; }
+.rh-source{ font-size:.85em; font-style:italic; color:var(--text-meta); margin:0 0 10px; }
+.rh-source a{ color:var(--accent-ink); }
+
+/* ---------- mobile sticky CTA bar ---------- */
+.rh-mobilebar{
+  position:fixed; left:0; right:0; bottom:0; z-index:900;
+  display:flex; gap:8px; padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(0,0,0,.96); backdrop-filter:blur(14px);
+  border-top:1px solid var(--accent);
+}
+.rh-mobilebar .rh-btn{ flex:1; padding:12px 10px; font-size:13px; }
+@media (min-width:1024px){ .rh-mobilebar{ display:none; } }
+body{ padding-bottom:0; }
+@media (max-width:1023px){ body{ padding-bottom:74px !important; } }
+
+/* ---------- reveal ---------- */
+.rh-reveal{ opacity:0; transform:translateY(14px); transition:opacity var(--t-slow), transform var(--t-slow); }
+.rh-reveal.is-in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion:reduce){
+  .rh-reveal{ opacity:1; transform:none; transition:none; }
+  *{ animation-duration:.01ms !important; transition-duration:.01ms !important; }
+}
+
+@media (max-width:640px){
+  .rh-section{ padding:56px 0; }
+  .rh-container{ padding:0 20px; }
+  .rh-band{ padding:38px 24px; }
+  .rh-answer{ padding:22px 22px; }
+  .rh-takeaways{ padding:24px 22px; }
+}
+</style>
+
+<div class="nc-hub">
+
+  <!-- ============ ARTICLE ZONE, PART 2 (rail resumes below the listings) ============ -->
+  <section class="rh-section rh-section--base" id="guide-2">
+    <div class="rh-container">
+      <div class="rh-article-shell">
+
+        <!-- ---------- PROSE COLUMN ---------- -->
+        <div class="rh-prose">
+
+          <h2 id="where">Where in North Las Vegas are new homes going up?</h2>
+          <p class="rh-lede">Most new building sits along and north of the 215 Beltway. The two biggest pockets are near Tule Springs in ZIP 89084. Lennar also has smaller townhome communities in ZIPs 89031 and 89081.</p>
+          <h3>Heartland at Tule Springs</h3>
+          <p class="rh-areafacts">
+            <strong>Builder:</strong> D.R. Horton, gated master plan<br>
+            <strong>Phases selling:</strong> 9, with Serenity coming soon<br>
+            <strong>Price range:</strong> the $333s at Heartland Trails to the $721s at Heartland Summit Phase V<br>
+            <strong>Worth knowing:</strong> community parks, dog parks, and walking trails, with views of Tule Springs Fossil Beds National Monument. D.R. Horton says Aliante Golf Club is 1 mile from Heartland Trails.
+          </p>
+          <h3>Sandstone at Tule Springs</h3>
+          <p class="rh-areafacts">
+            <strong>Builder:</strong> KB Home, opened September 4, 2026<br>
+            <strong>Where:</strong> North 5th Street and the 215 Beltway<br>
+            <strong>Size:</strong> more than 1,500 homes across 4 neighborhoods<br>
+            <strong>Selling now:</strong> Landings and Reserves. Meadows and Gardens are coming fall 2026.<br>
+            <strong>Worth knowing:</strong> more than 12 acres of planned parks, a trail system, and a new trailhead to the Fossil Beds monument, plus pickleball and basketball courts and a dog park
+          </p>
+          <h3>The West End</h3>
+          <p class="rh-areafacts">
+            <strong>Builder:</strong> Lennar<br>
+            <strong>Where:</strong> ZIP 89032<br>
+            <strong>Collections:</strong> Courts and Gardens townhomes, Groves single family homes<br>
+            <strong>Price range:</strong> $403,990 to $489,990
+          </p>
+          <h3>Lennar townhome communities and Briscoe</h3>
+          <p class="rh-areafacts">
+            <strong>Heritage Square:</strong> gated townhomes in 89031 from $313,490, close to the 215<br>
+            <strong>Solara:</strong> gated townhomes in 89031 from $328,990, close to I-15<br>
+            <strong>Grandview:</strong> gated townhomes in 89081 from $330,990, near Tropical Breeze Park and its splash pad<br>
+            <strong>Meridian:</strong> coming soon at Centennial and Losee, near Nellis Air Force Base<br>
+            <strong>Briscoe:</strong> KB Home in 89081, last homes from $449,750
+          </p>
+          <p>You may see Valley Vista named online as a North Las Vegas new home area. I could not confirm a neighborhood selling there on any builder's site in September 2026, so it is not in the table.</p>
+
+          <h2 id="prices">What do new homes cost in North Las Vegas?</h2>
+          <p class="rh-lede">Published starting prices run from $313,490 at Heritage Square to the $721s at Heartland Summit Phase V. The type of home you want sets most of that spread.</p>
+          <div class="rh-wide">
+            <div class="rh-tablewrap">
+              <table class="rh-table">
+                <thead><tr><th>What you want</th><th>Where to look</th><th>Starts from</th></tr></thead>
+                <tbody>
+                    <tr><td>A gated townhome</td><td>Heritage Square, Solara, Grandview, Heartland Trails</td><td>$313,490</td></tr>
+                    <tr><td>A townhome with a little more space</td><td>Courts and Gardens at The West End</td><td>$403,990</td></tr>
+                    <tr><td>A two-story single family home</td><td>Landings, Heartland Cottages, Heartland Bay, Reserves, Groves</td><td>High $300s</td></tr>
+                    <tr><td>A single-story home</td><td>Heartland Grove, Heartland Manor Phase IV</td><td>$520s</td></tr>
+                    <tr><td>A 3 or 4-car garage</td><td>Heartland Falls 3 Car, Heartland Manor Phase IV</td><td>$547s</td></tr>
+                    <tr><td>Six bedrooms</td><td>Heartland Summit Phase V</td><td>$721s</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="rh-tablenote">From builder community pages, accessed September 16, 2026. Starting prices are for the base plan. Briscoe also offers one-story plans, from $449,750 for its lowest priced plan, and is closing out.</p>
+          </div>
+          <p>Three things move the price the most. First is one story versus two. At Heartland, a 1,839 square foot single-story at Grove starts in the $520s, while the largest two-story plan at Cottages, 1,865 square feet, is in the $461s. Second is the garage. Heartland Manor Phase IV starts in the $601s with a 3-car garage and the $634s with a 4-car garage, on the same 2,300 square foot base plan. Third is the lot. KB Home notes that a homesite premium may apply. I explain how those work in <a href="/blog/lot-premiums-explained-las-vegas-new-construction">lot premiums in Las Vegas new construction</a>.</p>
+          <p>Prices also change fast here because phases sell out. Always work from a dated price sheet for the exact phase you want.</p>
+
+          <h2 id="monthly-costs">What will you pay each month on top of the mortgage?</h2>
+          <p class="rh-lede">Plan for an HOA, property tax, and possibly a special improvement district payment. The catch in North Las Vegas is that the builder pages I checked do not clearly publish the amounts, so you have to ask.</p>
+          <div class="rh-wide">
+            <div class="rh-tablewrap">
+              <table class="rh-table">
+                <thead><tr><th>Cost</th><th>What it is</th><th>What to ask for</th></tr></thead>
+                <tbody>
+                    <tr><td>HOA</td><td>Heartland lists an HOA as a feature, and many of the townhome communities are gated.</td><td>The HOA budget and monthly amount, in writing</td></tr>
+                    <tr><td>Master and sub-master HOA</td><td>Some Tule Springs area homes pay into more than one association. Villages at Tule Springs has a Village 1 Sub-Master Association.</td><td>Every association the home belongs to</td></tr>
+                    <tr><td>SID payment</td><td>A special assessment that shows up on your property tax bill.</td><td>The parcel lookup on the Clark County Treasurer site</td></tr>
+                    <tr><td>Property tax</td><td>Clark County, with a 3% yearly cap on increases for a primary home</td><td>The estimated tax on the exact lot</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="rh-tablenote">Clear HOA and SID amounts were not published on the D.R. Horton, KB Home, or Lennar pages accessed September 16, 2026. Lennar's page data does not flag a special assessment for its North Las Vegas communities, but that is not a legal disclosure. Read the public offering statement.</p>
+          </div>
+          <p>The SID is the one people miss, because it is not part of your HOA dues. The Clark County Treasurer explains that a SID appears on the property tax bill and can be checked by parcel. Before you sign, get the parcel number and look it up. I break down how these charges work in <a href="/blog/sid-lid-taxes-explained-las-vegas-new-construction">SID and LID taxes explained</a> and why some homes pay more than one HOA in <a href="/blog/hoa-fees-las-vegas-new-construction">HOA fees in Las Vegas new construction</a>.</p>
+
+          <h2 id="schools">Which schools are near the new North Las Vegas neighborhoods?</h2>
+          <p class="rh-lede">These are the schools each builder lists as nearby. They are not confirmed zoned schools, so treat this as a starting point and check the exact address with CCSD.</p>
+          <div class="rh-wide">
+            <div class="rh-tablewrap">
+              <table class="rh-table">
+                <thead><tr><th>Where the home is</th><th>Elementary</th><th>Middle</th><th>High</th></tr></thead>
+                <tbody>
+                    <tr><td>Heartland at Tule Springs</td><td>Vincent L. Triggs</td><td>Anthony Saville</td><td>Legacy</td></tr>
+                    <tr><td>Landings at Sandstone</td><td>Don E. Hayden or Ruby Duncan</td><td>Brian and Teri Cram</td><td>Legacy</td></tr>
+                    <tr><td>Reserves at Sandstone</td><td>Vincent L. Triggs</td><td>Anthony Saville</td><td>Legacy</td></tr>
+                    <tr><td>Briscoe</td><td>D.L. "Dusty" Dickens</td><td>Clifford O. Findlay</td><td>Mojave</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="rh-tablenote">Schools listed as nearby on D.R. Horton and KB Home community pages, accessed September 16, 2026. A nearby school is not always the zoned school, and zones change. Confirm your exact address with the <a href="https://ccsd.net/schools/zoning/" rel="nofollow">CCSD zoning search</a>.</p>
+          </div>
+          <p>Distance matters here too. D.R. Horton lists Legacy High less than 2 miles from Heartland, but Saville Middle about 4 to 5 miles away. KB Home also lists Carroll M. Johnston STEM Academy of Environmental Studies and Northeast Career and Technical Academy near Briscoe.</p>
+
+          <h2 id="location">Where is North Las Vegas, and what is close by?</h2>
+          <p class="rh-lede">North Las Vegas covers the north side of the valley. The newest building runs along and north of the 215 Beltway, from the Tule Springs area east toward I-15.</p>
+          <ul>
+            <li><strong>Getting around:</strong> the 215 Beltway, I-15, and I-11 all serve the city. Sandstone sits right at North 5th Street and the 215. Lennar places Heritage Square close to the 215 and Solara close to I-15.</li>
+            <li><strong>Commute:</strong> drive your route at the hour you would actually drive it before you commit, especially if you work on the south end of the valley.</li>
+            <li><strong>Nellis Air Force Base:</strong> Lennar markets Meridian, on the east side, for its closeness to the base.</li>
+            <li><strong>Tule Springs Fossil Beds National Monument:</strong> Heartland markets trail access and views of the monument, and Sandstone plans a new trailhead to it.</li>
+            <li><strong>Parks:</strong> Sandstone plans more than 12 acres of parks, Heartland has community parks and dog parks, and Tropical Breeze Park near Grandview has a splash pad and walking trails.</li>
+            <li><strong>Golf:</strong> Aliante Golf Club, which D.R. Horton places 1 mile from Heartland Trails.</li>
+          </ul>
+          <p>Every community on this page lists its city as North Las Vegas. That is its own city, separate from the City of Las Vegas, so check the city on any address you find online before you assume it belongs here.</p>
+
+          <h2 id="watch-outs">What should you know before buying new in North Las Vegas?</h2>
+          <p class="rh-lede">The starting prices here are easy to like. A few things are worth checking before you fall for a model.</p>
+          <ul>
+            <li><strong>Know what the low price buys.</strong> Most new homes under $400,000 here are gated two-story townhomes. Single-story detached homes at Heartland start in the $520s.</li>
+            <li><strong>Get the HOA and SID in writing.</strong> The builder pages do not clearly publish either one. Ask for the HOA budget and look up the parcel with the Clark County Treasurer.</li>
+            <li><strong>Ask about every association.</strong> Some Tule Springs area homes pay a master and a sub-master HOA.</li>
+            <li><strong>Move fast, but not blind.</strong> Two Heartland phases have already dropped off D.R. Horton's site, and Heartland Falls 3 Car is marked Final Opportunities.</li>
+            <li><strong>Expect construction for years.</strong> Sandstone opened in September 2026 with more than 1,500 homes still to come, and two of its neighborhoods are not open yet.</li>
+            <li><strong>Visit near Nellis at different times.</strong> If you are looking at the east side, like Meridian, drive by in the morning and evening to hear the area for yourself.</li>
+            <li><strong>Nearby is not zoned.</strong> The schools on a builder's page are nearby, not always the ones your address is zoned for.</li>
+          </ul>
+
+          <h2 id="your-agent">Why bring your own agent to a North Las Vegas model home?</h2>
+          <p class="rh-lede">The friendly person at the sales desk works for the builder. Their job is to sell that builder's homes at that builder's price.</p>
+          <p>In North Las Vegas you might be comparing a Lennar townhome, a D.R. Horton phase that is almost sold out, and a KB Home in a master plan that just opened, each with different lot premiums, HOAs, and possible SIDs. Having someone on your side who lines those up costs you nothing, because the builder pays the buyer agent commission either way. The one rule: most builders require your agent to be registered on your very first visit. <a href="/las-vegas-new-construction#why-ryan">Here is what having your own agent actually changes</a>.</p>
+
+          <h2 id="faq">Questions about new construction in North Las Vegas</h2>
+          <div class="rh-faq rh-wide">
+            <div class="rh-faq__item">
+              <h3>What is the cheapest new construction in North Las Vegas right now?</h3>
+              <p>Heritage Square by Lennar, with gated townhomes from $313,490 as of September 16, 2026. KB Home lists its upcoming Meadows townhomes at Sandstone in the low $300s, coming fall 2026.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>Are there new single-story homes in North Las Vegas?</h3>
+              <p>Yes. D.R. Horton's Heartland Grove has single-story homes from 1,839 square feet starting in the $520s, and Heartland Manor Phase IV has single-story homes from 2,300 to 2,754 square feet starting in the $601s. KB Home's Briscoe also has one-story plans, but it is closing out.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>What is Sandstone at Tule Springs?</h3>
+              <p>It is KB Home's new North Las Vegas master plan at North 5th Street and the 215 Beltway. It opened September 4, 2026, with more than 1,500 homes planned across four neighborhoods. Landings starts in the high $300s and Reserves in the mid $400s.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>Which builders are building in North Las Vegas?</h3>
+              <p>D.R. Horton, KB Home, and Lennar all have North Las Vegas communities confirmed on their own websites as of September 16, 2026. Other builders may also sell here, so ask me for the current list before you tour.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>Do new homes in North Las Vegas have SID fees?</h3>
+              <p>Some may. A SID payment shows up on your property tax bill, not in your HOA, and the builder pages I checked did not publish one. Look up the parcel on the Clark County Treasurer site and read the public offering statement before you sign.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>How much are HOA fees for new homes in North Las Vegas?</h3>
+              <p>It depends on the community, and D.R. Horton, KB Home, and Lennar did not clearly publish HOA amounts on the pages I checked. Some Tule Springs area homes also pay a sub-master association, so ask for every HOA amount in writing.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>What schools serve Heartland at Tule Springs?</h3>
+              <p>D.R. Horton lists Vincent L. Triggs Elementary, Anthony Saville Middle, and Legacy High as nearby schools. Nearby does not always mean zoned, so confirm your exact address on the CCSD zoning search.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>Is there new 55 and better construction in North Las Vegas?</h3>
+              <p>None of the communities confirmed on builder sites for this page are age restricted. If a 55 and better community is what you want, reach out and I will check what is selling across the valley.</p>
+            </div>
+          </div>
+
+          <h2 id="other-areas">Where else is new construction going up?</h2>
+          <p>
+            North Las Vegas is one of seven parts of the valley with steady new home building. The full guide
+            compares all of them side by side, with prices, builders, and the buying process.
+          </p>
+          <div class="rh-pills">
+            <a class="rh-pill" href="/las-vegas-new-construction">All Las Vegas new construction</a>
+            <a class="rh-pill" href="/summerlin-new-construction">Summerlin</a>
+            <a class="rh-pill" href="/henderson-new-construction">Henderson</a>
+            <a class="rh-pill" href="/southwest-las-vegas-new-construction">Southwest Las Vegas</a>
+            <a class="rh-pill" href="/skye-canyon-new-construction">Skye Canyon</a>
+            <a class="rh-pill" href="/centennial-hills-new-construction">Centennial Hills</a>
+            <a class="rh-pill" href="/lake-las-vegas-new-construction">Lake Las Vegas</a>
+          </div>
+
+          <h2 id="sources">Sources and how this page is maintained</h2>
+          <p>
+            Every price and neighborhood on this page comes from a builder, the master plan
+            developer, or a public agency, and the sources are listed below. Where a number could not
+            be confirmed it was left out rather than guessed.
+          </p>
+          <p>
+            Starting prices change with every release, and neighborhoods sell out. Treat the numbers
+            here as a starting point, not a quote. This page was last reviewed in September 2026.
+          </p>
+          <p class="rh-source">Source: <a href="https://www.prnewswire.com/news-releases/kb-home-opens-sandstone-a-new-master-planned-community-of-over-1-500-homes-in-a-prime-north-las-vegas-location-302870298.html" rel="nofollow">KB Home opens Sandstone in North Las Vegas, September 4, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.kbhome.com/new-homes-las-vegas/landings-at-sandstone-at-tule-springs" rel="nofollow">KB Home, Landings at Sandstone at Tule Springs, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.kbhome.com/new-homes-las-vegas/reserves-at-sandstone-at-tule-springs" rel="nofollow">KB Home, Reserves at Sandstone at Tule Springs, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.kbhome.com/new-homes-las-vegas" rel="nofollow">KB Home, Las Vegas communities, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.kbhome.com/new-homes-las-vegas/briscoe" rel="nofollow">KB Home, Briscoe, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.drhorton.com/nevada/las-vegas/north-las-vegas/heartland-trails-at-tule-springs" rel="nofollow">D.R. Horton, Heartland Trails at Tule Springs, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.drhorton.com/nevada/las-vegas/north-las-vegas/heartland-cottages-at-tule-springs" rel="nofollow">D.R. Horton, Heartland Cottages at Tule Springs, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.drhorton.com/nevada/las-vegas/north-las-vegas/heartland-grove-at-tule-springs" rel="nofollow">D.R. Horton, Heartland Grove at Tule Springs, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.drhorton.com/nevada/las-vegas/north-las-vegas/heartland-manor-phase-iv-at-tule-springs" rel="nofollow">D.R. Horton, Heartland Manor Phase IV, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.drhorton.com/nevada/las-vegas/north-las-vegas/heartland-summit-phase-v-at-tule-springs" rel="nofollow">D.R. Horton, Heartland Summit Phase V, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/the-west-end/courts" rel="nofollow">Lennar, Courts at The West End, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/the-west-end/gardens" rel="nofollow">Lennar, Gardens at The West End, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/the-west-end/groves" rel="nofollow">Lennar, Groves at The West End, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/heritage-square" rel="nofollow">Lennar, Heritage Square, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/solara" rel="nofollow">Lennar, Solara, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/grandview" rel="nofollow">Lennar, Grandview, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.lennar.com/new-homes/nevada/las-vegas/north-las-vegas/meridian" rel="nofollow">Lennar, Meridian, accessed September 16, 2026</a></p>
+          <p class="rh-source">Source: <a href="https://www.mytulesprings.com/" rel="nofollow">Villages at Tule Springs Village 1 Sub-Master Association</a></p>
+          <p class="rh-source">Source: <a href="https://www.clarkcountynv.gov/government/elected_officials/county_treasurer/understanding-sids" rel="nofollow">Clark County Treasurer, understanding SIDs</a></p>
+          <p class="rh-source">Source: <a href="https://ccsd.net/schools/zoning/" rel="nofollow">CCSD zoning search</a></p>
+        </div><!-- /.rh-prose -->
+
+        <!-- ---------- STICKY TOC RAIL ---------- -->
+        <aside class="rh-rail">
+          <nav class="rh-toc" aria-labelledby="rh-toc-title-2">
+            <p class="rh-toc__title" id="rh-toc-title-2">On This Page</p>
+            <div class="rh-toc__progress" aria-hidden="true"><span class="rh-toc__progress-fill"></span></div>
+            <div class="rh-toc__scroll">
+            <ol class="rh-toc__list">
+              <li><a href="#neighborhoods">Neighborhoods selling now</a></li>
+              <li><a href="#builders">North Las Vegas builders</a></li>
+              <li><a href="#listings">Homes for sale now</a></li>
+              <li><a href="#where">Where they are building</a></li>
+              <li><a href="#prices">What it costs</a></li>
+              <li><a href="#monthly-costs">HOA, SID, and taxes</a></li>
+              <li><a href="#schools">Nearby schools</a></li>
+              <li><a href="#location">Location and nearby</a></li>
+              <li><a href="#watch-outs">Before you buy</a></li>
+              <li><a href="#your-agent">Your own agent</a></li>
+              <li><a href="#faq">Questions and answers</a></li>
+              <li><a href="#other-areas">Other areas</a></li>
+              <li><a href="#sources">Sources</a></li>
+            </ol>
+            </div><!-- /.rh-toc__scroll -->
+            <a class="rh-btn rh-btn--primary rh-btn--sm rh-toc__cta" href="#contact">Talk to Ryan</a>
+          </nav>
+        </aside>
+      </div><!-- /.rh-article-shell -->
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="rh-section rh-section--base" id="contact">
+    <div class="rh-container">
+      <div class="rh-band">
+        <h2>Touring North Las Vegas models soon?</h2>
+        <p>
+          Let me line up the neighborhoods that fit your budget, with current prices and the HOA and SID questions already asked, before your first visit. There is no cost to you, and I will be registered with the builder from day one.
+        </p>
+        <a class="rh-btn rh-btn--primary" href="tel:7027475921">Call or text 702-747-5921</a>
+        <div class="rh-band__contact">
+          <strong style="color:var(--ink-inv);">Ryan Rose</strong><br>
+          Real Broker, LLC<br>
+          <a href="tel:7027475921">702-747-5921</a><br>
+          <a href="mailto:ryan@rosehomeslv.com">ryan@rosehomeslv.com</a><br>
+          <a href="https://www.rosehomeslv.com">rosehomeslv.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MOBILE STICKY BAR ============ -->
+  <div class="rh-mobilebar">
+    <a class="rh-btn rh-btn--ghost" href="#listings">Homes</a>
+    <a class="rh-btn rh-btn--ghost" href="#neighborhoods">Neighborhoods</a>
+    <a class="rh-btn rh-btn--primary" href="#contact">Talk to Ryan</a>
+  </div>
+
+</div><!-- /.nc-hub -->
+
+<script>
+/* ============================================================
+   ROSE HOMES LV, NEW CONSTRUCTION HUB
+   This script is shipped in BOTH Lofty embeds (above and below the
+   featured-listings block). Two copies will be present in the DOM.
+   The __rhHubInit guard makes the second one a no-op, and init is
+   deferred to DOMContentLoaded so whichever copy runs first still
+   sees BOTH embeds and wires up both TOC rails.
+   ============================================================ */
+(function () {
+  if (window.__rhHubInit) { return; }
+  window.__rhHubInit = true;
+
+  function init() {
+  /* ---------- builder tier filter ---------- */
+  var chips = document.querySelectorAll('.rh-chip');
+  var cards = document.querySelectorAll('.rh-builder');
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var f = chip.getAttribute('data-filter');
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c === chip)); });
+      cards.forEach(function (card) {
+        card.style.display = (f === 'all' || card.getAttribute('data-tier') === f) ? '' : 'none';
+      });
+    });
+  });
+
+  /* ---------- TOC scroll-spy + reading progress ---------- */
+  /* There are two rails, one per embed, with identical link lists.
+     Collect every link, but build the target list from UNIQUE ids in
+     document order so the spy math is not thrown off by duplicates. */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.rh-toc__list a'));
+  var fills = Array.prototype.slice.call(document.querySelectorAll('.rh-toc__progress-fill'));
+
+  var seen = {};
+  var targets = [];
+  links.forEach(function (a) {
+    var id = a.getAttribute('href').slice(1);
+    if (seen[id]) { return; }
+    var el = document.getElementById(id);
+    if (!el) { return; }
+    seen[id] = true;
+    targets.push(el);
+  });
+  /* document order, in case the two rails disagree or a section moved */
+  targets.sort(function (x, y) {
+    return x.getBoundingClientRect().top - y.getBoundingClientRect().top;
+  });
+
+  var current = null;
+  function setActive(id) {
+    if (id === current) { return; }
+    current = id;
+    links.forEach(function (a) {
+      var on = a.getAttribute('href') === '#' + id;
+      if (on) { a.setAttribute('aria-current', 'true'); }
+      else { a.removeAttribute('aria-current'); }
+      /* keep the highlighted entry visible inside its own scroller */
+      if (on) {
+        var box = a.closest ? a.closest('.rh-toc__scroll') : null;
+        if (box && box.scrollHeight > box.clientHeight) {
+          var t = a.offsetTop - box.offsetTop;
+          var want = t - (box.clientHeight / 2) + (a.offsetHeight / 2);
+          var max = box.scrollHeight - box.clientHeight;
+          box.scrollTop = Math.max(0, Math.min(max, want));
+        }
+      }
+    });
+  }
+
+  /* Scroll-position based, not IntersectionObserver.
+     IO only fires on state CHANGES, so an anchor jump or a page load
+     part-way down can leave nothing highlighted. Computing the active
+     heading from scroll position is deterministic and always correct. */
+  var OFFSET = 100;
+  function updateSpy() {
+    if (!targets.length) { return; }
+    var y = window.scrollY + OFFSET;
+    var active = targets[0];
+    for (var i = 0; i < targets.length; i++) {
+      if (targets[i].getBoundingClientRect().top + window.scrollY <= y) { active = targets[i]; }
+      else { break; }
+    }
+    /* at the very bottom, force the last entry so the end of the page reads correctly */
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+      active = targets[targets.length - 1];
+    }
+    setActive(active.id);
+  }
+
+  /* progress writes scaleX only, never width */
+  function updateProgress() {
+    if (!fills.length) { return; }
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    var p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+    fills.forEach(function (f) { f.style.transform = 'scaleX(' + p + ')'; });
+  }
+
+  /* Coalesce with cancel/re-request rather than a boolean latch.
+     A latch that is only cleared inside the rAF callback stays stuck
+     forever if a frame never fires (background tab, hidden or zero-height
+     viewport), which silently kills the spy for the rest of the session. */
+  var rafId = null;
+  function onScroll() {
+    if (rafId !== null) { window.cancelAnimationFrame(rafId); }
+    rafId = window.requestAnimationFrame(function () {
+      rafId = null;
+      updateProgress();
+      updateSpy();
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  window.addEventListener('hashchange', function () { setTimeout(onScroll, 50); });
+  /* Lofty renders its own featured-listings block between the two embeds.
+     Its images change the page height after load, which moves every
+     heading below it, so re-measure once everything has settled. */
+  window.addEventListener('load', function () { setTimeout(onScroll, 120); });
+  updateProgress();
+  updateSpy();
+
+  /* ---------- #contact scrolls to the Lofty form below the embed ---------- */
+  function scrollToContact(e) {
+    e.preventDefault();
+    var band = document.getElementById('contact');
+    if (band) { band.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    setTimeout(function () {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }, 600);
+  }
+  document.querySelectorAll('a[href="#contact"]').forEach(function (a) {
+    a.addEventListener('click', scrollToContact);
+  });
+
+  /* ---------- reveal ---------- */
+  if ('IntersectionObserver' in window) {
+    var ro = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); ro.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.rh-reveal').forEach(function (el) { ro.observe(el); });
+  }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>

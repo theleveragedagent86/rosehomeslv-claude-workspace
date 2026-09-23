@@ -1,0 +1,15 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html",     "x": 0,    "y": 0,    "w": 1080, "h": 1350, "title": "01 Cover", "print": "fixed" },
+    { "file": "S02Zero.dc.html",  "x": 1200, "y": 0,    "w": 1080, "h": 1350, "title": "02 Zero", "print": "fixed" },
+    { "file": "S03Folder.dc.html","x": 2400, "y": 0,    "w": 1080, "h": 1350, "title": "03 One folder", "print": "fixed" },
+    { "file": "S04Broker.dc.html","x": 3600, "y": 0,    "w": 1080, "h": 1350, "title": "04 BROKER", "print": "fixed" },
+    { "file": "S05Skills.dc.html","x": 4800, "y": 0,    "w": 1080, "h": 1350, "title": "05 Skills", "print": "fixed" },
+    { "file": "S06Rules.dc.html", "x": 0,    "y": 1560, "w": 1080, "h": 1350, "title": "06 Rules", "print": "fixed" },
+    { "file": "S07Versus.dc.html","x": 1200, "y": 1560, "w": 1080, "h": 1350, "title": "07 Versus", "print": "fixed" },
+    { "file": "S08Start.dc.html", "x": 2400, "y": 1560, "w": 1080, "h": 1350, "title": "08 Start here", "print": "fixed" },
+    { "file": "S09Cta.dc.html",   "x": 3600, "y": 1560, "w": 1080, "h": 1350, "title": "09 CTA", "print": "fixed" },
+    { "file": "Caption.dc.html",  "x": 4800, "y": 1560, "w": 1080, "h": 2600, "title": "Caption", "print": "flow" }
+  ],
+  "launch": { "view": "canvas" }
+}

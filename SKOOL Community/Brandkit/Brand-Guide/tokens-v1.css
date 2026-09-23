@@ -1,0 +1,24 @@
+/* The Leveraged Agent — canonical design tokens, v1.0, set 2026-08-19 */
+/* Source of truth: SKOOL Community/Brandkit/Brand-Guide/BRAND-GUIDE.md */
+
+:root {
+  /* surfaces */
+  --la-cream:       #F5F2EB;  /* primary surface */
+  --la-cream-sunk:  #EAE6DA;  /* sunken fill, dividers on cream */
+  --la-deep:        #08343E;  /* dark surface */
+
+  /* ink */
+  --la-teal:        #0F4C5C;  /* primary ink, 8.5:1 on cream */
+  --la-teal-muted:  #3E6B75;  /* secondary text on cream, 5.3:1 */
+
+  /* accent */
+  --la-gold:        #E8A33D;  /* accent, 6.2:1 on deep, NEVER text on cream */
+  --la-gold-ink:    #925E11;  /* readable gold text on cream, 4.9:1 */
+  --la-sage:        #B5CAC4;  /* circuit traces, decorative only on cream */
+
+  /* type */
+  --la-font-head:   "Poppins", "Futura", "Avenir Next", sans-serif;
+  --la-font-body:   "Inter", -apple-system, "Helvetica Neue", sans-serif;
+  --la-track-head:  -0.02em;
+  --la-lh-body:     1.5;
+}

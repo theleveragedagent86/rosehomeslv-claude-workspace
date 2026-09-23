@@ -1,0 +1,36 @@
+/* The Leveraged Agent, canonical design tokens, v2.0 "Vector", adopted 2026-08-19 */
+/* Supersedes v1.0 cream/teal/gold, archived as tokens-v1.css */
+/* Source of truth: SKOOL Community/Brandkit/Brand-Guide/BRAND-GUIDE.md */
+/* Every pairing below is WCAG 2.1 computed, not eyeballed. Minimum pair is 4.76. */
+
+:root {
+  /* surfaces */
+  --la-bg:             #FFFFFF;  /* primary surface, pure white */
+  --la-bg-2:           #F7F8FA;  /* sunken fill, table rows, inset panels */
+  --la-bg-inv:         #000000;  /* inverted surface, TRUE black. A surface, never text */
+  --la-line:           #E4E7EF;  /* hairline and divider on bg, non-text. 1.24 */
+  --la-structure:      #0B3FA8;  /* deep blue. Chart bars, structural fills. 9.17 on bg */
+
+  /* ink */
+  --la-ink:            #050E3D;  /* primary text on bg. 18.48 */
+  --la-ink-2:          #55627F;  /* secondary text. 6.11 on bg, 5.75 on bg-2 */
+  --la-ink-inv:        #FFFFFF;  /* primary text on bg-inv. 21.00 */
+  --la-ink-2-inv:      #9AA3BC;  /* secondary text on bg-inv. 8.34 */
+
+  /* accent, and there is only one */
+  --la-accent:         #1768E5;  /* fills, buttons, links */
+  --la-accent-on:      #FFFFFF;  /* text ON accent. 5.06 */
+  --la-accent-txt:     #1768E5;  /* accent AS text on bg. 5.06 on bg, 4.76 on bg-2 */
+  --la-accent-inv:     #5B9BFF;  /* accent AS text on bg-inv. 7.58 */
+
+  /* type, settled 2026-08-19 (pairing P08 + the 600-900 weight ladder) */
+  --la-font-head:      "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --la-font-sub:       "Raleway", "Helvetica Neue", Arial, sans-serif;
+  --la-font-body:      "Inter", -apple-system, "Helvetica Neue", sans-serif;
+  --la-weight-head:    800;      /* ExtraBold. Headlines AND thumbnail titles */
+  --la-weight-sub:     600;      /* SemiBold */
+  --la-track-head:     -0.028em;
+  --la-track-sub:      0.01em;
+  --la-track-label:    0.15em;
+  --la-lh-body:        1.6;
+}

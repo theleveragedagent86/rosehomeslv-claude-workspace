@@ -1,0 +1,87 @@
+{
+  "palette": "v2-voltage",
+  "label": "Voltage",
+  "mood": "dark-first, high-chroma, tech-forward",
+  "status": "proposed, not adopted",
+  "proposed": "2026-08-19",
+  "supersedes": null,
+  "note": "v1 tokens.css remains the shipping palette until Ryan adopts one of these.",
+  "colors": {
+    "bg": {
+      "hex": "#04171C",
+      "role": "primary surface, near-black with a teal cast"
+    },
+    "bg-2": {
+      "hex": "#0A2A33",
+      "role": "elevated surface, cards and panels"
+    },
+    "bg-inv": {
+      "hex": "#F2EFE6",
+      "role": "inverted surface, bone, for light sections and print"
+    },
+    "line": {
+      "hex": "#1B3239",
+      "role": "hairline and divider on bg, non-text"
+    },
+    "structure": {
+      "hex": "#14586A",
+      "role": "decorative teal: chart bars, rules, circuit traces. NEVER text"
+    },
+    "ink": {
+      "hex": "#F2EFE6",
+      "role": "primary text on bg"
+    },
+    "ink-2": {
+      "hex": "#7D98A1",
+      "role": "secondary text on bg"
+    },
+    "ink-inv": {
+      "hex": "#04171C",
+      "role": "primary text on bg-inv"
+    },
+    "accent": {
+      "hex": "#2DE2C5",
+      "role": "primary accent, aqua. Buttons, links, key numerals"
+    },
+    "accent-on": {
+      "hex": "#04171C",
+      "role": "text placed ON accent"
+    },
+    "accent-txt-inv": {
+      "hex": "#0F7B65",
+      "role": "accent used AS text on bg-inv"
+    },
+    "accent-2": {
+      "hex": "#FFB627",
+      "role": "secondary accent, amber. Data, highlights, one element per view"
+    },
+    "accent-2-on": {
+      "hex": "#04171C",
+      "role": "text placed ON accent-2"
+    },
+    "accent-2-txt-inv": {
+      "hex": "#916308",
+      "role": "accent-2 used AS text on bg-inv"
+    }
+  },
+  "contrast": {
+    "ink_on_bg": 15.96,
+    "ink-2_on_bg": 6.01,
+    "ink-2_on_bg-2": 4.94,
+    "ink-inv_on_bg-inv": 15.96,
+    "accent_on_bg": 11.18,
+    "accent_on_bg-2": 9.19,
+    "accent-on_on_accent": 11.18,
+    "accent-txt-inv_on_bg-inv": 4.52,
+    "accent-2_on_bg": 10.46,
+    "accent-2_on_bg-2": 8.6,
+    "accent-2-on_on_accent-2": 10.46,
+    "accent-2-txt-inv_on_bg-inv": 4.58
+  },
+  "type": {
+    "font-head": "\"Poppins\", \"Futura\", \"Avenir Next\", sans-serif",
+    "font-body": "\"Inter\", -apple-system, \"Helvetica Neue\", sans-serif",
+    "track-head": "-0.03em",
+    "lh-body": "1.55"
+  }
+}

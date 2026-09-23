@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rebels — Wordmark Lockups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#08090C; --line:#2E2A2C; --scarlet-hot:#F0203E;
+    --ice:#F1EFEF; --gray:#7E7A7C; --gray-2:#A7A8AA;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{background:var(--ink);}
+  body{width:1700px;color:var(--ice);font-family:'Barlow Condensed',sans-serif;}
+  .sheet{
+    width:1700px;min-height:1720px;padding:56px 56px 48px;position:relative;
+    background:
+      radial-gradient(110% 42% at 50% -6%, rgba(206,14,45,.34) 0%, rgba(206,14,45,0) 62%),
+      radial-gradient(90% 42% at 50% 108%, rgba(120,10,26,.26) 0%, rgba(120,10,26,0) 68%),
+      linear-gradient(178deg,#12100F,#08090C 52%,#0B0A0B);
+  }
+  .head{text-align:center;margin-bottom:40px;}
+  .kicker{font-size:19px;font-weight:600;letter-spacing:.44em;text-indent:.44em;color:var(--gray-2);}
+  h1{
+    font-family:'Anton',sans-serif;font-size:86px;line-height:.9;letter-spacing:-.03em;
+    text-transform:uppercase;margin-top:13px;
+    background:linear-gradient(180deg,#fff 6%,#E6E2E2 38%,#918C8E 100%);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  .sub{margin-top:13px;font-size:20px;font-weight:600;letter-spacing:.20em;color:var(--scarlet-hot);text-transform:uppercase;}
+
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .card{
+    border:1px solid var(--line);border-radius:6px;overflow:hidden;
+    background:linear-gradient(180deg,rgba(40,32,34,.66),rgba(18,16,17,.88));
+    box-shadow:inset 0 1px 0 rgba(241,239,239,.06),0 14px 32px rgba(0,0,0,.5);
+    display:flex;flex-direction:column;position:relative;
+  }
+  .card.pick{ border-color:rgba(240,32,62,.62);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 0 1px rgba(240,32,62,.22),0 16px 36px rgba(120,10,26,.42);}
+  .tag{
+    position:absolute;top:11px;right:11px;z-index:3;
+    font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    color:#fff;background:linear-gradient(180deg,var(--scarlet-hot),#A50E24);
+    padding:5px 10px;border-radius:3px;border:1px solid rgba(255,255,255,.2);
+  }
+  .art{
+    height:400px;display:flex;align-items:center;justify-content:center;padding:20px 24px;
+    background:linear-gradient(180deg,#16191F,#0A0A0B);
+    border-bottom:1px solid var(--line);
+  }
+  .art img{max-width:100%;max-height:100%;object-fit:contain;}
+  .cap{padding:17px 20px 19px;display:flex;align-items:baseline;gap:12px;}
+  .no{font-family:'Anton',sans-serif;font-size:30px;line-height:1;color:var(--scarlet-hot);min-width:38px;}
+  .nm{font-size:24px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ice);}
+  .note{margin-left:auto;font-size:15px;font-weight:600;letter-spacing:.06em;color:var(--gray);text-transform:none;}
+  .foot{margin-top:34px;text-align:center;
+    font-size:17px;font-weight:600;letter-spacing:.14em;color:var(--gray);text-transform:uppercase;line-height:1.75;}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="head">
+    <div class="kicker">8U Mite League &nbsp;•&nbsp; Las Vegas</div>
+    <h1>Wordmark Lockups</h1>
+    <div class="sub">Blank red kit &nbsp;•&nbsp; player in front of the block letters</div>
+  </div>
+
+  <div class="grid">
+    <div class="card pick">
+      <div class="tag">Pick</div>
+      <div class="art"><img src="lockup-stride.png" alt=""></div>
+      <div class="cap"><span class="no">18</span><span class="nm">Stride</span><span class="note">widest silhouette, word reads best</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="lockup-swagger.png" alt=""></div>
+      <div class="cap"><span class="no">19</span><span class="nm">Swagger</span><span class="note">big-hat cartoon style</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="lockup-drive.png" alt=""></div>
+      <div class="cap"><span class="no">20</span><span class="nm">Drive</span><span class="note">compact, crouched</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="lockup-slapshot.png" alt=""></div>
+      <div class="cap"><span class="no">21</span><span class="nm">Slapshot</span><span class="note">most energy, covers most letters</span></div>
+    </div>
+    <div class="card" style="grid-column:span 2">
+      <div class="art" style="height:430px"><img src="lockup-stride-small.png" alt=""></div>
+      <div class="cap"><span class="no">22</span><span class="nm">Stride &mdash; smaller mascot</span><span class="note">same art, scaled down so all six letters read</span></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    Transparent PNG &nbsp;•&nbsp; 2400 &times; 1400 &nbsp;•&nbsp; blank jersey, head-to-toe red<br>
+    Scarlet #CE0E2D &nbsp;•&nbsp; Deep red #8E0B1E &nbsp;•&nbsp; White &nbsp;•&nbsp; Black
+  </div>
+</div>
+</body>
+</html>

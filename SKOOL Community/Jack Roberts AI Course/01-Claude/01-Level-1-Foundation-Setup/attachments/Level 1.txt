@@ -1,0 +1,1017 @@
+ How do beautiful AI automates and what can two level one in this Claude code
+ masterclass?
+ So what we're going to do is foundation and sets up
+ We're going to first of all going to install Claude code. I'm going to teach you
+ where we're going to use this what that looks like
+ I'm going to show you the interface so you can get used to what that physically
+ is what all the buttons are
+ How do I access everything then I'm going to tell you what plan you might want
+ to be on and how we actually optimize your monetization
+ So you don't pay that much money. We're going to look at permissions. We're
+ going to look at the different interfaces within Claude code
+ I'm going to show you some slash commands that are going to save you some good
+ time
+ I'm going to show you an example of how we use Claude on your actual desktop
+ So you can get the very first look and feel of the power of Claude code
+ I'm going to show you how you connect some of your basic tools
+ I'm going to show you some good folder structure stuff then I'm going to show
+ you what GitHub is and oh my gosh
+ That sounds complicated, but I promise you I'm going to open your eyes to
+ something really really decent
+ And then I'm going to show you called the MD and plan that cool
+ So what we're going to move today is installing Claude code now
+ Think of this as the foundations and where we use called code. So you'll be
+ very aware for example
+ With chat GPT or Claude itself, right? These are normally how we use the
+ software's we go on
+ Let me say hey, how hot is it in Dubai today?
+ Yes, get random questions and basically you get answers now
+ The idea with Claude code is effectively rather than everything being online
+ What we're going to do is bring this into our desk top
+ So we're going to download an app together and we're going to use Claude that
+ to essentially unlock capabilities
+ You cannot simply access online
+ So the first concept I want you to understand is what we call the environment
+ if you think about Claude code as a model
+ Claude code is like
+ Think of it like Tony Stark. Okay, and then the environment is the Ironman
+ suits
+ Okay, and there's many different Ironman suits that we could work one is called
+ the Claude desktop app another one is
+ Gravity another one is VS code we call these basically
+ Integrated development environments or we call them IDEs for shorts. Okay, and
+ it basically they could be any individual things if I just say IDE
+ Different options. There are many different ones a lot of them just run off
+ something called VS code
+ But don't worry about that for now. So what I'd love you to do first of all is
+ come over and download Claude code
+ Okay, I'm gonna come and do this and effectively all you're gonna do
+ I'll come on to all my real quick come back over to our desktop
+ Let's click on all and just download this you come over to this website right
+ here at Claude.com 4/download and download it for Mac OS
+ And then once you do that you'll see an interface that looks something like
+ this now
+ You will be asked to connect your Claude basically your Claude account to your
+ online one
+ Which is fine you open it up
+ So you just need to make sure that you actually have a Claude account first and
+ foremost that you can go ahead and use now
+ Before I show you some of the what's inside this I want to download a second
+ thing for me
+ And the one that I use is anti gravity in reality. This could be anything. It
+ could be VS code
+ It could even be codex so effectively what we want to go ahead and do just so I
+ can show it
+ This looks like I'm all using the same thing
+ download anti gravity
+ Okay, open this one up download this one and effect so much have done that you
+ connect your Google account to it now anti gravity is
+ Google's integrated development environment, and it's really cool and the
+ reason why you may want to have both the Claude app and
+ The separate thing is because if you ever want to leave the Claudia ecosystem
+ to do some other magical things with different models
+ You can't do that in the Claude desktop app
+ You're really limited to one model and I'm not going to get ahead of ourselves
+ here
+ But I would just like you to have this on on your desktops you can play around
+ with it
+ Now let's take a look at the Claude desktop app first and foremost so you can
+ get a real sense of what this physically looks like, okay?
+ So you'll notice you have three things here chat co-work and code these are the
+ three different models of
+ Claude code so we can use them all for very different reasons if I look at the
+ UI I basically all do I can ask questions
+ Let's start with chat. This is basically the regular chat that you have just
+ like you do online
+ But it's on your desktop really freaking cool at any point we can come down
+ here and select the model that we like to
+ open 4.7 is
+ Allegedly its most powerful model. It's also very token 100 hungry son of 4.6
+ is great for most today today things
+ Co-work on the other hand is really designed for business professionals
+ It's basically code but a user-friendly version of code if you know how to use
+ co-work
+ You should almost always move over to code because code is the unlimited
+ version of co-work now
+ This isn't a club co-work to tour up the loads of great videos on this
+ But just to explain how this works basically you can ask it to do various
+ different things on your computer and instead of it being on the web when we
+ Give it instructions
+ Effectively you pick a project so think of the project is like a folder so I
+ could say hey
+ I want you to work on my desktop, okay? I click always allow but I could say
+ something like hey that quote for me a folder called
+ Ice coffee on my desktop and write two files in that one wide coffee is great
+ and the second wide coffee is not great
+ You can give it these commands send it off and use this now
+ No, the cool thing about this being downloaded on our computer is basically
+ that it can do anything
+ They want to on our computer now it can manipulate files
+ It can find things if you have like invoices or you have information about
+ yourself
+ It can root through things find information and do lots of wonderful things now
+ co-work and code can do the exact same thing here
+ I'm just showing you an example the kind of thing you can do is you'll see
+ right now
+ We've just asked to do something. They show you everything that's going on a
+ Once that's complete it will work now one key thing you want to understand.
+ Okay, it's what we call permissions
+ So permissions basically as you can see it's essentially how much you were
+ allowing it to do and are you comfortable with it physically doing?
+ And as you can see now it's created two folders
+ Well one folder with the information on ice coffee. Why coffee is great. Why
+ coffee is not great
+ And you can see it even opens up for us in anti gravity, which is really
+ freaking cool
+ So that's a great example of how this works now if I come over to code is for
+ instance
+ What do we have in code code now?
+ You'll see these things down here
+ Let me show you the interface just to understand what this looks like and your
+ new environment on the left-hand side is going to be where all of your
+ Previous projects live all the conversations you have will be there on the left
+-hand side down and we have the following
+ So if you come down here, you have the permissions
+ Ask permissions is basically it will ask you for everything so we say build me
+ a website or do this thing
+ It's like Jack is it okay if I do X Jack is it okay if I do why except edit
+ edits means will let it edit
+ By itself without any kind of supervision
+ Plan mode is basically when if you think about you know, you want to think of a
+ difficult
+ Topic or you're giving it a big task
+ Plan mode is great because what plan middle do is get it to think more deeply
+ about the conversation
+ The actual creator of Claude code so he begins every project with plan mode and
+ you spar back and forth
+ What a little hack is you always want to say to Claude my stated intention is
+ like I am asking you to do this because the thing
+ I want to be true is insert the blank let it know you're intended intention
+ality
+ The bypass permissions is basically on hinge mode
+ Essentially means that it will not ask you for anything you trust in the model
+ It will run riot and do everything and you don't need to also approve it
+ So you can use that based on your discretion
+ But the time being you may want to just be on except edits mode to get started
+ cool
+ Then we have this mic button so you can press and hold I use glado
+ It's actually my start up. I used it because it's saving so much time. It's a
+ fast system is private in the world right now
+ Which is cool we can add files to this so I can add a file just like so add
+ files
+ What's it? I can add this image I created and I can say hey there? What is this
+ image so?
+ And you can pretty much ask questions about it really freaking cool
+ I quite like the look of it you can add files and HTML and we're gonna be very
+ deep on that in this video
+ So you can see exactly what I mean then down here. We have the models so again
+ 4.7 4.7 son at 4.6
+ Honestly speaking you have a limitation so you'll see down here this little
+ thing
+ This tells you how much you've used of your planning. I'm gonna tell you what
+ plan
+ I would recommend for you personally in a second. Okay, this is your context
+ window. So context window
+ think about a eyes as a
+ Very very smart a 200 IQ individual that also has amnesia. Okay. Now a context
+ window is how much of the conversation?
+ Can Claude remember and retain?
+ Accurately so the limit here is one million tokens, which is about
+ 750,000 words that's like quite a few but four or so Harry Potter books for
+ context now
+ What does that mean? It means and this is a really important thing for you to
+ understand. I want to pull up a graph to show you this
+ Okay, so what these scary looking charts are telling us here is something
+ called context rot
+ So context rot basically means that the longer a conversation gets on the worse
+ the performance of the model
+ It just gets worse over time. So what does that effectively mean for us? You
+ can see all these
+ charts tell the same thing this is
+ Basically how long the conversation is and this is a performance
+ So you don't need a degree in applied mathematics to figure out that those
+ graphs are not heading in the right direction
+ So from our point of view we want the graphs to go up rather than down
+ So what we do when we're using softwares like this is we're very protective of
+ our context window
+ So if you know think about it a good good rubric for making these decisions is
+ one task
+ one
+ Window that's it and there's a couple things you can do
+ I don't want to show you all the hacks just a memory so I don't ever well me
+ But basically you can do forward slash clear. Okay, and that will clear the
+ entire conversation completely fresh
+ Or another one you can do down here is compact and what compact does is instead
+ of removing everything
+ It just assets are ruthlessly summarized so you can have like the essence of
+ the conversation, but not have context rot
+ So remember it will start to hallucinate and it will be confidently
+ Incorrect, which is the most dangerous version up to be aware of that but
+ models hallucinate somewhere between 1 to 10% of a time
+ So you have to bear that in mind. Okay, so we want to be very careful of that
+ So that's your context when it was kind of zero because we did a beautiful
+ recent
+ We have a five-hour limit which is how much you can use it within five hours
+ weekly all models
+ And then with the Claude design now
+ I'm going to show you something very cool on Claude design a very new software
+ that came out recently
+ I got a clone to help you save on tokens there and then we've got sonnet on it
+ So that's where we can watch and monitor everything that's going on there now
+ if I bring this over here for example
+ I want to show you what your profile looks like so I can click on my name. I've
+ got my settings
+ So on my settings you will not be able to do bypass mode on Claude code
+ Which will start with first unless you have this enabled. Okay, you have
+ referral link
+ You get three guest passes to people if you want to and then you can see
+ basically can go down
+ I have a look at all the different settings most of them
+ You're not realistically going to use but it's good to know what's going on in
+ the general section
+ We have instructions for Claude. So these are basically how you would like
+ Claude to behave
+ So I like direct and casual no fluff no corporate speak bullet points
+ I'll do if I'll put your mind down below so you can literally just have a look
+ at this
+ And you can basically copy this if you want to I just find the stuff really
+ helpful
+ It doesn't need to be too much stuff about you per se
+ This is just how do you want Claude to communicate with you you want it to look
+ around corners?
+ You want it to challenge your thinking you want it to be non-stick-afantic
+ In other words don't agree with everything. I'm saying you want to be maximally
+ truth-seeking as a longboard set
+ Beautiful, and then we've got appearance so we're gonna do light mode dark mode
+ if one to we can go dark mode and keep it nice and crisp
+ If we like I like light mode they call me crazy and madman for doing them
+ Then you got your account various things on privacy and all information that
+ you would pretty much expect and it effectively is the tell
+ They are of this entire interface for code co-work and chat if you want to go
+ deep on code
+ I'll put a link down below in the section so you can have a look at that co-
+work is a great entry point for
+ Business owners that want to get started, but in reality if I were advising
+ myself a couple years ago
+ I would honestly recommend doing code over co-work because remember co-work is
+ like code
+ But with stabilizers on you're gonna run with limitations, and you're not gonna
+ melt it and basically access the full panoply of skills
+ I'm showing you so let's come back over to our course materials and just recap
+ a couple of key things that are going to be
+ Important for you to understand okay, so
+ Here if I come back up and show you this so what we've done we've installed
+ Claude
+ We've got everything set up now the interesting thing is if you download anti
+ gravity what you're gonna find on the right hand side
+ Here is anti gravity now you can say something like this hey there
+ I would like you to install Claude code on to my computer and install any other
+ Dependencies that are required to run that on my computer once that's done
+ Let me know so you can literally chat to anti gravity chat to these models
+ And they will always instruct you on how to build anything themselves
+ So they give you that step-by-step guy if you ever don't know just say did
+ This is what I want to do help me do it and you can do it now with an anti
+ gravity
+ For example if you want to run Claude what you would do is on the left hand
+ side you see I've got this little Claude code thing here
+ To get that you're gonna come up to the top left and you're looking for
+ extensions
+ Right which is gonna be that and all you're gonna do is type in Claude like so
+ and when you type Claude's now
+ Would you believe it Claude does actually appear which is what we love to see
+ and you're going to install just like that now
+ When that's happened what you'll see is you can click on Claude here and click
+ on new session like so
+ And that will open up Claude there now the first thing that you'll need to do
+ is actually log in
+ So let me log out and show what that process looks like
+ Come down. I believe I can just log in there. You'll see this Claude AI
+ subscription your API key or something else now
+ There's two ways to use Claude here one is with an API key which means your
+ bill per token
+ But also if you had a close subscription you can just click this click open
+ It'll fully be connected you sign in you authorize it just like that. We say
+ that's fine
+ Go ahead and connect to please you need to come back over and then you're ready
+ to rock and roll and you're all sorted
+ So that's how you get it and then it literally you can go ahead and use this as
+ much as you physically want to so
+ Let's come back over here and pick up on these details. So we've installed
+ Claude in our computer now
+ Let's just refresh what we've done and we can physically use it
+ But you can't use it unless you've got a subscription. So okay the free Claude
+ AI plan does not include Claude code
+ You need the pro max team enterprise or console at the API key now. There are
+ three ways we can talk to Claude
+ We can do it in the raw shell. Okay. So for example one thing that you'll see
+ and I just want to put this on your radar
+ So you know you could open up something called the terminal
+ So if you do command and spacebar, okay
+ Which is spotlight search and I type in terminal like this something will pop
+ up that looks like this
+ This looks really codey. This is always what I thought coding looked like
+ before I started doing any of this stuff
+ Now all this is is the unsexy version of everything else
+ Antigravity is a UI friendly version of this basically all this is is this
+ terminal plus loads of stuff on top of it
+ That makes it look better systems processes organizations for those design all
+ Claude code is is that terminal with lots of other UI built on top?
+ That's it now you can run commands directly into
+ The terminal to run things in my view. It's a bit of a dying art form
+ Simply because you can just tell the language moral to do it and it will do it
+ for you
+ And you don't need to learn that so very specific on that sub but just for you
+ information
+ I could do forward slash or just let you come in and type in Claude and
+ Then once you type in Claude's name Claude appears. I say I trust the father
+ now
+ I'm actually chatting to Claude when this all lads up. So you get the idea of
+ how I fit together
+ Cool we have the insquoted view which is basically everything that I showed you
+ and then you've got the full G UI
+ If you can do an anti-gravity
+ Cool, so let's talk about the plans actually for Claude
+ So I'm gonna go up and just show you what they look like on the interface
+ And you can grab them by clicking on your name down the bottom left and you
+ come up here to view all plans
+ Now there's three levels to this you have three you have pro and then you have
+ max
+ I'm on the max plus so you can see what do we get you get Claude code directly
+ in code base
+ So you'll need this basically think of this as the floor
+ In order to actually use Claude code. Okay, you can use kind of work a bit more
+. Hi usage limits deep bridge
+ Basically deep research analysis, but in max we get way more usage. That's
+ effectively
+ All you're really getting is way more usage
+ I'm gonna tell exactly what I would recommend that you do and how best to think
+ about this
+ Okay
+ But as I've kind of explained here and this really is the crux of the way that
+ I think about it is that pro is the floor
+ Max is really the level up and then we can tag in different models and get a
+ bit fancy and complicated as we go
+ So again, there's just a review of everything to do now
+ What should you do the mindset? I would love you to think about now
+ The last thing we want is a million subscriptions that aren't adding value the
+ reality though is I don't see Claude Max
+ Now I am personally on the Claude Max Ultra
+ I think even if I go to adjust usage you can see I'm on the 20x. I should
+ remember 20x actually yet
+ I'm on the 20x so I'm paying 108 squared plus VAT for this the reason I do this
+ is I don't see this as a
+ Netflix, I don't see this as a I'm missing on these Laquat like a Laquat
+ subscription or whatever
+ This is the cheapest AI employee you will ever find like it's just like
+ It's just think of this is instead of paying 50k a year for somebody I get AI
+ So we I'm gonna show you how you optimize and pay less, but this is a complete
+ number
+ And this is from the highest leverage you're gonna get in your dollars
+ Think you need your S&P 500 the S&P 500
+ Economics using these AI tools you are already so far ahead because you're
+ using this that's what I see now
+ What I'd recommend you do is get started number $20 and you will eventually hit
+ a limit and when you hit that limit
+ Then I would recommend that you upgrade obviously
+ I want you to win so you can do whatever you want to of course, but I'm just I
+ just want to help you reframe this because
+ It just gives you unlimited access and Claude right now is one of the most
+ powerful models on planet
+ On looks like chat to be T5.5 so that's how I think about it start with pro
+ And then go straight to max when you're uploaded and you're ready to rock and
+ roll
+ It's a incredible investment and if you want to look at different ways
+ We can hack it and get 99 you know 95% of performance 1% the cost I can show
+ you that as well inside this course
+ So let's go into permission words and a little bit of detail
+ So we've got three here ask first except edits and bypass and by the way this
+ very
+ Presentation is in right now is made by my guest at club like I'll show you how
+ you do it as well inside the inside the materials
+ Because really cool so how do I actually decide so I can say we've got three
+ ask before edits
+ Which is approved every file edit it proves every shell command best for
+ unfamiliar repost so for example again in Claude
+ I open this bad boy up you can see if I come over to code on the right hand
+ side
+ What do I do except edits is exactly how you do it and you can shift around
+ them if you want to also prove edits
+ So edits in the work, you know, it's basically other shell commands will still
+ ask this one here
+ If you think about it's like they use this most daily then bypass they say is
+ dangerous
+ No promises or live demos sandbox is deaf containers never on a real machine
+ person
+ No, one thing you may find you're doing is
+ Using dangerous past permissions if you're in trying to get a lot done in a
+ short period of time and you trust the environment
+ Okay, so you can always flex these up based on these three different principles
+ But you don't want to give the full unfettered crazy amount access to start the
+ box
+ So we've covered where you can access Claude the chat on the website Claude Cow
+ard
+ Claude code you have managed agents that we can talk about and then you've got
+ the developer platform
+ So we have a look at as well. All right, so let's talk a little bit hacks now
+ and eight commands it can run daily
+ So number one is context this shows how the full context window hit and when
+ response gets sluggish
+ So if you're like dude, what is going on here?
+ Have I just hit something like hey there dude?
+ What is the best city in the world to live in okay?
+ And we start some kind of random conversation up with Claude code by the way
+ I find myself increasingly just chatting in Claude code now
+ And the reason for that is because I often find that when I'm having
+ conversations Claude
+ I don't know where the conversation might go right?
+ It might be the case that I want to build something and all the context is
+ already in the situation materials so I can do forward slash
+ context, okay
+ And this will basically tell you
+ How much contact you've got?
+ Now the cool thing if you're in the Claude app you actually get this
+ information down here anyway
+ So you can see but if you're an anti-gravity for example, and I say something
+ like hey there dude
+ Who is the tallest man to ever live?
+ Once again, we start a conversation
+ I can let you go ahead and check now all this wonderful stuff by forward slash
+ and context and you'll see
+ Right there. It's our context usage which should be very low and you can see
+ all of the things
+ What's using up the system prompt 9,000 tokens so you get the idea of how this
+ stuff all fits together, okay?
+ So manage I can budget compact is what we talked about earlier
+ So this squeezes the conversation into a summary keeps you going past the limit
+ We have a big conversation, but I kind of want to take that as a kernel and
+ move it somewhere else
+ We can do that we have clear which wipes the conversation context list entirely
+ We have the model so again
+ This lets us switch between models if you're in the Claude environment here for
+ example, I just come down here and do model
+ Go switch model and now I can switch to any different model that I like to
+ which is very very cool again
+ Work just in the terminal as well if I'm in a terminal for example, I do for
+ slash model
+ You get the idea, right? You can kind of come down. You can see all the
+ different things
+ Yes, that's cool
+ And you can pick the ones that you like which is very decent then you have cost
+ so live token your switching cost in it
+ Now this is a cool one
+ So one of the things you're going to learn in this course is about get up and a
+ get up is just a place where we saw files
+ And explain that in a short period of time, but when you download a resource
+ from our classroom
+ One of the things we want to close it up is to familiarize itself with the repo
+, okay?
+ So let me give you an example. So this is open design
+ This is something that I actually follow enough just to do video on yesterday
+ And we are right there living and live and as you can see at the top
+ But let's say that you get a get to rip it right now open designs are cool
+ design system
+ When you're thinking of get up okay, get up is what we call it gets basically a
+ repository
+ And I was like did this is so basically all it really means is place we store
+ code
+ So think of it as almost like Facebook book for nerds
+ It's like it's like Facebook book for developers basically and what people can
+ do and I'll show you how you do this as well
+ Is when you build an app you can put it on to get up now
+ It can even just be a place that you store it and it's private and you're the
+ only person that can see it or you can make it public
+ So if you build a piece of software, I think dude
+ I've got a really cool skill, but doesn't really this and I want to check the
+ world you can do that and all GitHub does
+ It's like a Google Drive and plus Facebook for developers. That is it and you
+ can have collaborators on it to help you build it
+ Let's stop. So for example our starter pick glider, right?
+ It's really cool glider lives on github
+ So all glider is on github and we have like three developers that build on gl
+ider and they all share the same
+ Repent and so if you came on to glider you'd see three contributors that right
+ and they can all push changes to it and
+ Contribute and work together on it and these kind of things can have lots of
+ multi different computers as well
+ Which is really freaking cool now if I get on here and I have one a clone of
+ Reaper
+ All I ever do is go here and I just copy a copy the link that is literally all
+ I do then I come over to
+ Anything I want to now one of the biggest differences between
+ Anti-gravity and Claude of desktop app is it what you'll see actually and I
+ fact I'll show you this in a second
+ But I come over to anti-gravity here
+ I could say something like hey there
+ I'd like you to go ahead and clone this repo into this folder
+ The first thing we want to do of course is go and open a folder just to show
+ what that looks like
+ Click on this and let's call me folder and we'll call this one test 5 for okay
+ Beautiful click on open and now we're in test 5 for sweet. Yes, I trust this
+ now
+ If you're an anti-gravity for example, you'll see the files on left hand side
+ But again, this works exactly the same in Claude desktop app. I'm just showing
+ you for instance
+ Hey, go ahead and clone this repo. All right, and you can paste it in there
+ Just like it could do include codes if I come back over now to Claude code
+ I've got a new session here and all I'm gonna say is give it the repo clone it
+ and what I might do is click a folder
+ Let's come down here pick test 5 for and this is all you do when you're picking
+ environments
+ And then you click on open and then we send that one off
+ I know what it's gonna do now is literally grab that repo and put it into that
+ folder for us
+ So for example if I come on to my desktop now
+ And I come out of iced coffee because we don't need this one, right?
+ Let's go back and just check you can see once I bring this bad boy up and the
+ fact if I bring it over here
+ I've got I click on open design and all it's done is download all the files.
+ How cool is that?
+ So that's basically it now if I wanted to chat to about it Claude doesn't hasn
+'t read anything yet, right?
+ So let's take a quick look at our contact
+ So our context at the moment is 46.3 camp
+ I could for example come down here and do forward slash and I might say in it
+ which is to initialize okay in it
+ Just means dude become familiar with the code base. That is all I'm saying to
+ okay now
+ The other thing you've got down here is the effort level which is how much
+ effort you want it to put into it low medium at high extra
+ max my recommendation and the official recommendation is extra high extra high
+ is like the highest before if you go max
+ it can almost sometimes
+ Overthink and get stuck in circles it becomes a little bit a little bit neuro
+tics just bear that in mind
+ Okay, so if you go too high up on that as well now look it's asking for
+ permissions. I'm gonna say I allow that that's absolutely fine
+ And then as you can see Claude code has finished that now
+ This is a really good little hack to bear mind
+ So you can see this in the top right if you click on this like so you have all
+ these different things
+ So preview is one of files been created just like the one that I'm showing you
+ through
+ You can see your preview of something I can also take a look at the files which
+ I think is the coolest thing
+ So that thing that I downloaded all the files are basically it depends on the
+ thing that I'm opening up
+ But you can see I've got everything here. It's visit a brand kit
+ I can see all the files in my brand kit really cool. So I can check out files
+ here
+ I can do various other things I can check out tasks
+ So if this is got a multi-step process like build me a website do this to this
+ it is all the tasks
+ We'll basically appear for you there on the right hand side
+ The other thing that you can do here is the plan mode obviously you've got the
+ diff now
+ The diff itself is not something you're gonna use quite regularly
+ But if you come down to it to terminal this is where you can now run terminal
+ commands again
+ I could actually if I want to run Claude
+ Within Claude so I've got a Claude on the right hand side a chord in the middle
+ I've got mine on light mode
+ But you kind of get the idea of how that all works and so that's the kind of
+ commitment how that will fit physically connects together
+ So we come back over then and take a look at the next thing. I want to show you
+ on the command side
+ Which is going to be right at the bottom. Oh, here we go actually my apologies
+ So we've got in it. We've got memory
+ So let's every club that MD loaded open and edit a memory and then you have
+ plans
+ So again, this is where you want to execute plans, but you can just go ahead
+ and do that toggle if you want to
+ So with all this in mind, let's give Claude a little bit of a task
+ So my desktop is looking a little bit messy
+ So what I might do is come back over to Claude for example
+ I might click on a fresh and brand new session and now I'm here
+ Why don't we go ahead as to do something? Hey there, dude?
+ My desktop is a little bit messy. Could you give it do me a favor and just
+ organize it for me, please?
+ All right, sweet send that one off
+ I'm gonna go ahead and let it just bypass permissions on this one send off and
+ let it do some magical work
+ And I'll organize it and different things now as I'll show you later in this
+ video
+ We can set this up to do this consistently with something called
+ Routines which is really decent and we'll call schedule task, which is
+ fantastic. We can see it's doing everything now
+ It's just gonna organize it into various different folders
+ So we'll let it do that work in the background now obviously when using this I
+ don't recommend bypass permissions
+ You're gonna want to go on to accept edits
+ So for example, I might just say something like you leave today's items at the
+ root organize everything else
+ Organize everything include today's items different structures
+ So you basically can go through and do this and it will organize your entire
+ Desktop or downloads folder as per basically your requests
+ So now we've accomplished that and we've done a very own desktop automation
+ The next thing I want to do is basically connect and give Claude the ability to
+ do anything because a supercomputer
+ But doesn't connect to our world doesn't do anything for us
+ So you can pretty much connect Claude to any app that you want to on a planet
+ So let's take a look at what that looks like so in the desktop app for Claude
+ The way that this looks is you can come down here
+ And you're gonna see if I pull down a fan exactly what the connectors are
+ I believe it's down here on the plus and you've got these different items here,
+ okay
+ I went to click on connectors and click on manage connectors now
+ What am I looking at here Jack? Well, all you're gonna do to connect a
+ connector together is click on the plus and click on browse
+ Connectors now think of this as willy wonk is important for stuff
+ I can connect it if I want to connect to something what I'd basically do is
+ type it in here first to see if it exists
+ So one that I haven't connected yet, which is a good one for us is Google Drive
+, right?
+ Let's get it and let's connect Google Drive by clicking on the plus button
+ opens up in the window
+ I pick the account. I want to connect it, which is this bad boy here. Give that
+ a hot second. Let's connect come down click on continue
+ I'm gonna say we're okay with that. Mr. Claude. Please go ahead and do that and
+ now I should come back
+ We reopen Claude and that should all be connected for us
+ So if I come back over to our desktop app now
+ We should be able to see Google Drive following that then here we can pretty
+ much decide
+ What the permission so I do always allow it will allow it to go ahead and do
+ things
+ So now we're connected to Google Drive. Let's actually put this to the test if
+ I come back
+ I can come over here and say hey there dude. I'm write me a 50 word
+ Poem on actually scratch that create for me a folder in my Google Drive called
+ Dexter Springer Spaniel and give me the link to that Google Drive. Okay, so now
+ it's all linked together
+ It will help be able to use that connector itself
+ So we're gonna give that hot second to do that and we'll be able to see it's
+ gonna be using the Google Drive
+ Connected up. Now the cool idea here is that we basically connect it
+ So first thing it does is searches its tools to make sure it works
+ We're gonna say that is fine. Go ahead and do that
+ So it's now using Google Drive and it is that when we connect to the different
+ tools and softwares that we want
+ We can pretty much do anything to so the folders right. Let's check it out
+ Oh, and now I'm in Google Drive and as you can see I now have
+ The Dexter Springer Spaniel folder which should be empty now. I could say do
+ some research and do you see what I'm saying?
+ It's really really freaking cool. So that's just one example
+ So let's go over the most popular connectors that you're gonna want to connect
+ together
+ So I come through to connect is I click on manage connectors again
+ We've got loads of really really cool ones here
+ Let me run you through some ones that I've got I've got canvas if I'm building
+ out presentations
+ I can use them fire crawl is a really really cool one fire crawl basically
+ If you think about it like this like fire crawl itself and this is actually a
+ fantastic example of how to use fire crawl
+ so this is a custom connector which I'll show you in a second how you set it up
+ fire crawl basically lets you search the Internet and
+ Basically the internet is not designed for language models designed for humans
+ And what this allows you to do is get basically
+ It's kind of configured in a way that the models can read it and it saves you
+ on tokens
+ So instead of reading like HTML loads of nonsense and forever scrolling pages
+ It just extracts the key information which makes up much cheaper for you
+ You've got get up, which is what you're gonna want. We've got Gmail Google
+ Drive
+ Granola is the thing that I'm using right now for meetings
+ so if I join a meeting my granola note ticket actually connects to it and
+ Doesn't join the meeting just sits there and listens and effectively what I can
+ do now is ask it any questions about any meeting
+ That I've had notions really good. Zap is fantastic
+ Superbase is where we're gonna store a lot of data and but don't worry about
+ all the specifics now
+ We can add these as I go
+ But just as a frankly for example if I come back over and I say something like
+ hey there dude without telling me anything about the meeting
+ What was the title of the last meeting that I had check with granola? Okay now
+ you don't even need to?
+ Detail what the thing is it will go ahead and do that for you automatically. So
+ I've just said hey go and check it out
+ Now it should use the granola tool call and should tell me the last meeting was
+ our weekly coffee
+ Catch up. All right, so let's go see if that pulls it up accurately for us
+ So essentially this step here guys is grabbing a beautiful coffee. I go and I
+ might say cool
+ What was one interesting thing that came out of that call?
+ All right, I might say did Jack have any actions off the back of that's cool.
+ Okay, whatever it is
+ I can now for any meeting I've had ever basically chat now with Claude and grab
+ it and I can do the same things
+ I could say look go ahead and write me a briefing document based on that call
+ and put it in the folder
+ Which I'm going to show you how to do right now. So it's going to check the
+ meetings one interesting nugget was
+ Smith major bubble mercy. So I might say awesome cool
+ I want you to extract the five most viable insights from that meeting and then
+ do me favor
+ Put it in the Dexter Sprungus by your folder in my Google Drive and then just
+ give me the link to that document
+ Please make it look beautiful
+ And then we're going to send that one off and let it work. It's magic
+ Wonderful and just like that. It's done so if I click on a auto coffee
+ I should have a folder in here somewhere look at this mate interest and it's
+ written a HTML
+ Which is really cool by the way hack if you ever have any HTML you want to view
+ what you can do is come back over to Google
+ You can even type in a HTML
+ Yeah, or you could do this directly with and Claude if you want to but if I
+ click on a HTML beautify
+ I think is my favorite one I throw it in and then we have everything here
+ Which is all the actions from the court Jack's created a dedicated video on a
+ memory system
+ Do you pre-search a memory system graph everything after approval blah blah
+ blah? That's how freaking cool is so let's come back over now
+ And so you can basically connect your world, but what do we do if there's no
+ connector?
+ So for example if I come over here to plugins I click on
+ Let's click on to be connected and manage connectors. I have something called
+ fire crawl here
+ Okay, which is a custom connector. What I want to do is basically I'm going to
+ delete this so you can see it together
+ Okay, now look I'm gonna remove this get out of here fire crawl so level one is
+ the basic connection level two is
+ Custom so to get custom I click on plus I can browse connectors. I want to find
+ fire crawl
+ Right, let's have a look. There is no fire crawl. What do we do?
+ Well, what we're going to do is quite a custom connector
+ Okay, so this is a good skill for you to learn if the thing you want isn't that
+ so look at this I click on add custom connector
+ And what we're going to do is type in the name fire crawl
+ And this is the first thing that we're going to do when building stuff. Okay,
+ so all we need to do is come down and take a screenshot of this
+ Okay, like so and then you can do this by the Mac by just doing command shift
+ five
+ Or you can literally copy it if you prefer. We're gonna go back over then to
+ let's just go to a random chat window on claw.com
+ And what I'm going to do is basically just ask it a super simple question
+ I'm going to say hey there. I'm using the claw desktop app. I want to add
+ Fireflies as a custom connector. Tell me what is the
+ MCP URL that I need to use for that and then basically send that off
+ And then when we've entered that in I'm going to send that bad boy off and it
+'ll basically grab it for us
+ Now I could even show you this online, but I just want to show you remember you
+ teach a man to fish he'll eat for a lifetime
+ You give him the fish he's hungry by dinner. So we want to teach her to fish
+ cool. So that's absolutely fine
+ Yeah, it's five core. We want not five flies. I should say actually. Yes, it is
+ fire
+ crawl
+ Beautiful
+ And we don't want fireflies because we're not interested in fireflies five
+ flies is it'll turn to meeting the attacker
+ We used to use before granola came along. We must prefer granola why I prefer
+ granola at the moment
+ So it's fire crawl and this will literally go ahead to the fire crawl
+ documentation and grab it
+ The thing I can do if I want to is literally come into google and I've just
+ typed in fire crawl mcp
+ Which stands for model context protocol
+ Model context protocol by the way is just a like a universal remote control
+ Okay, and basically what it means it allows
+ Claude to connect to anything very mcp there's a separate way we can do this
+ via what's called a cli
+ Which is even even more token friendly, but I just want to start with the
+ basics
+ So you can see this is what we need here. This remote has url
+ So I just copy it just like that and again, we should get the same sort of
+ response here
+ And as you can see it's exactly the same mcp url, which is that all right now
+ come back over to claud
+ Like so i'm going to come down here and enter this in and all we did then is
+ our
+ API key, so let's come over to fire crawl dot dev real quick. I would click on
+ fire crawl dot dev
+ and let's go ahead and
+ Get this bad boy loaded up
+ Okay, cool. So click on dashboard sweet and I should have an API key here great
+ So obviously in reality that ever exposure API keys I rotate this one just at
+ best practice
+ I come back over and all i'm going to do is just remove this like so
+ Command v hit add and then fire crawl should be in and we see that as a custom
+ connector
+ And it is all fully rocking and rolling just like that and to put it up to the
+ test
+ What I can do is come back up with the customize. I could say hey use fire
+ crawl dot dev
+ To go ahead and grab for me the brand identity of glido.com. So this is a cool
+ thing about
+ Fire crawls it can do lots of cool stuff. So for example, if I come over to gl
+ider.com, right?
+ Let's have a look what this can effectively do now is grab all of the brand
+ Shizzle and the nizzle from this website. That's why that's why fire crawl so
+ freaking cool
+ So come back over we're going to allow it to do that because one thing that it
+ can do is search by branding
+ Which is very cool. So we give that a hot second and then this work for us
+ beautifully
+ I'm just like that in a matter of seconds
+ It's gone and grab it for us. It's giving us all the breakdown of all the files
+ everything exists like that
+ And we've got it. The tone is modern and the energy is high. I like the sound
+ of that very cool
+ So that is level two. What is level three? Well level three would be something
+ that we can use for an API
+ So for example, what if I want to grab the transcript of something?
+ Well, one thing we want to do is use a youtube API for that now you don't have
+ to do this
+ But I just want to put it on your radar
+ Just so you know exactly how to do it. And this is one of the reasons why I
+ prefer code
+ Overcoat work. So for example, what we can do here if you come over to and it's
+ console dot google.com
+ All right
+ But I think it is. I've just come over to google and grab this bad boy because
+ it is console dot google
+ Dot com
+ Because some things will just be an API key. So let me come up to google get
+ the right website and then we can pick it up
+ Okay, here we are. So if you go to console dot bar dot google dot com now
+ This is basically if you wanted to connect to the google world, right?
+ Now what say I want to grab some stuff from a youtube API
+ Maybe I want to be able to pull data points about my youtube
+ Well, what I can do here is come over and Barry you may not need this
+ This is the very specific use case, but I just want to show you how this works,
+ right?
+ I click on youtube
+ I basically find the youtube API which would be v3 click on this bad boy
+ Let this load up give it a second. I can try this API manager. I'm going to try
+ it
+ Really cool. I'll open this one up, which is cool. And we got here rocking and
+ rolling, which is fine
+ Then I'm going to come and click on home
+ And then when you come back here once you've had to play around with it and you
+ click on manage
+ All we're going to do is create a brand new API key
+ And this is how you get a lot of cool stuff with youtube and instead
+ straightforward at this ui is very out of date
+ It doesn't look great for I come down and click on credentials like so
+ I can come down to create a new credential create a new API key give it API key
+ for which is cool
+ Click on create API selected. I'm just going to actually say all of them are
+ fine
+ So let's give this actually these are restrictions. Excuse me. So we're happy
+ with no restrictions. I think it's fine
+ Authenticate API calls service count. No, that's fine
+ API selection fund looks like it wants me to give one example of this
+ So let's go with this puppy right here
+ So I think this is a new one about it and you're basically selecting things
+ that you wanted to access
+ So we click on okay. It's got eight API calls, which is cool
+ I'm gonna click on create
+ Then it'll give us a beautiful API key then we can basically use all these
+ Google services
+ If we want to so give that a hot second to create
+ There's our API key. I come this icon now back over to Claude
+ I can basically say hey, the dude. I want to use the YouTube API key
+ And I would like to head and get the transcript from our latest video on the
+ jack Roberts
+ YouTube channel and then give me a tldr of that video
+ Please and if you could also grab the comments and give me a tldr of the
+ comment sentimentality also
+ Cool. I'm gonna come down now. There are ways of hacks and ways around this
+ like i'll show you in the video
+ But sometimes just getting direct API is freaking really cool
+ And then we can save this with include just by being like dude like save this
+ basically to your core memory
+ Come down click on allow once and all good to rock and roll
+ Beautiful and just like that. It's gotten everything for us
+ It's pulled down my link to show the comments the video till they are and it's
+ got everything that it needs
+ Now the final thing that you're gonna want to be able to do is what's called
+ accessing something via the cli
+ Well, what does that mean jack?
+ It's the command line interface and it's known as token efficient way of
+ accessing anything
+ So what we could say to it is something on the lines of this like cool dude
+ I would like you to be able to check out my github repositories
+ And what i'd like you to do is to connect to github via the cli
+ Could you confirm if you're not connected? I'd like to refresh that connection,
+ please
+ All right. Now this is really really freaking cool effectively
+ What this will enable us to do then is get up when we want to download things
+ We want to create apps and websites. We can at any point we want to just pretty
+ much give command
+ It's connected and we can pull things update things to whatever we literally
+ want to so it's all fully off
+ I'm gonna say cool. I would like to I'd like you to remove that and then I'd
+ like you to reconnect for me
+ Please so I can demonstrate what this looks like
+ Okay, do that and the things I do for the jackrubs a automation community. I'm
+ disconnected. I'm reconnecting
+ We're doing all the awesome things. So once this is disconnected, we can take a
+ look cool
+ So now it's asking to login. So what we're gonna do is copy this code hit this
+ one on here
+ It'll open up a brand new window when click on continue and we should give it a
+ code
+ We copy and paste that bad boy in now. We're fully connected. We authorize
+ github, which is cool
+ We give it the password, which is auto saved and now what's up when I come back
+ over here
+ I'm gonna say great. We've just connected that. Is that all done?
+ And then that should we'll be rocking and rolling right there. Okay, done
+ beautiful. So now for example, I could say something like
+ Awesome, great. Could you for example tell me the last repo that I created,
+ please?
+ Now the cool thing about this is when we want to update any of our websites, it
+'s all
+ Hardwired and connected in so wherever possible you always want to go for the
+ CLI above everything else because it's just way easier to do that and you can
+ post and manage everything
+ And it's the exact same thing with anti gravity
+ It remembers it and they go code megacore strategy was the last thing that I
+ did there
+ And then this takes us very nicely on to what I would call your project
+ infrastructure now
+ This is best understood as the following okay, so let's go over to your
+ environment now whether this is clored or
+ By gravity, it's the exact same thing the way we organize our folders will
+ either make our live a pleasure or something
+ Well, we were literally pulling our hairs out as we do. So what I would love
+ you to do is in whatever model you've been using
+ So for example, let's say I've been using code code. I might just say something
+ like this
+ Hey based on all of our conversations. I would like to do the following which
+ is organize everything that I do and talk about in
+ Five to eight categories now ask this to any model could be on chat gpt or cl
+aud
+ And effectively what we want to do is create five to eight projects no more
+ than eight
+ If it's any more than eight it's too much. You need to simplify the animal
+ But and these are the things that you're going to be working on and thinking
+ about for example
+ I might have one for community for our beautiful community for you
+ And my second project might be something like the lighter my speech tech
+ startup, right?
+ I haven't got a cap on but you get the idea third one might be health
+ Oh everything about the curve and
+ Nutrition I might have one on family. I might have fifth would be one of my
+ clients
+ So you essentially anything that you would ever typically talk to cord about on
+ a day-to-day basis have that as five to eight projects
+ If you're doing that in co-work for example, you may have that in your project
+ section here, right?
+ Cool alternatively in code though, you would say something like
+ Create for me those seven folders on my desktop each of which with a claud.md
+ file
+ Okay, now once you've got that I want you to give each of those five to eight
+ projects
+ The following mdfop and it is this one here now
+ This is for your knowledge system that we're going to do later on in the course
+ So don't worry about it right now
+ But these are your mega project operating manuals
+ They're basically displaying to explain everything about what the project's
+ about what it looks like what it does
+ That's one thing now. We have these eight projects the jack what if i'm
+ building something particular but doesn't fit now
+ What if i'm building a subfolder maybe i'm building a website for a client or
+ maybe i just want to build an app
+ Well, what we want to use is a claud.md file
+ So think about claud at this claud.md file as a series of instructions that we
+'re using
+ Okay, when we're building something so for example if i'm building a website
+ out we have a system to use now
+ What i've built here is like based on all the experience i've done. I've done
+ deep research on this
+ We've looked at andrik pathy one of the co-founders of open ai. He led the team
+ at tesla's ai
+ And he has some very simple clear philosophies on
+ Instructions that we can give claud that drastically improves its performance
+ because it falls in four areas like it basically edits too much
+ It can be erroneous. It's about simplification. It's about only editing we need
+ to so based on all of this stuff
+ What i've got for you here is what we call the the behavior block think before
+ coding simplicity first surgical changes
+ Gold-driven execution. Okay now i've broken down what i call the ballast
+ framework, which is the brief
+ The loop the architect the ship and then also at the bottom you can see all the
+ different specifics
+ So effectively what you do whenever you create anything for a new project or
+ you're going to do is come down here
+ Literally grab all this information and then just throw it into your
+ Into your project and when you've got that basically you'll then have a series
+ of really clear
+ Crisp instructions that you can use to build everything you want so pop both
+ these links down below
+ And all you do is just essentially feed this to claud whenever you're creating
+ a brand new project
+ So to reiterate you're going to use this folder here when you build a new
+ project you're building a website
+ You're building an app you're thinking about any new project use this folder
+ here
+ And then this one is your five to eight core memory systems to keep things like
+ the glider or the community whatever it is
+ These are the project operating models from that and they're effectively when
+ we create a new project
+ And we bring that in we feed it to claud and then it is ready to rock and roll
+ We want to keep the total length of this claud that MD fault once you've
+ completed it to around
+ 200 words maximum because any any greater than 200 words and effectively we
+ start to really decay the context window
+ And it doesn't need to be that complicated as you'll see when we physically
+ bolt that out
+ So taking a step back. What have we done? We've installed it. We've done to the
+ interface
+ We know exactly which we're buying and you've effectively set up the entire
+ foundation
+ Which means the next thing you're going to be ready to do now is to actually
+ build something freaking beautiful
+ And we can put all that knowledge to take to the actual test
+ So get that coffee and I'll catch you inside the next beautiful module

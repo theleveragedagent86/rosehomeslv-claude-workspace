@@ -1,0 +1,230 @@
+<meta charset="utf-8"><title>Ultramarine vs Meridian vs Vector</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--la-font-head:"Poppins",sans-serif;--la-font-body:"Inter",sans-serif;--la-weight-head:800;--la-track-head:-0.03em;--la-lh-body:1.55}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#141414;font-family:Inter,system-ui,sans-serif;padding-bottom:70px}
+.hdr{padding:32px 40px 8px;color:#f2f2f2;font-family:Poppins;font-size:25px;font-weight:700;letter-spacing:-.02em}
+.hdrsub{padding:0 40px 28px;color:#8d8d8d;font-size:13px;line-height:1.65;max-width:900px}
+.hdrsub b{color:#dcdcdc;font-weight:600}
+
+.card{margin:0 40px 38px;border-radius:18px;overflow:hidden;font-family:var(--la-font-body)}
+.top{background:var(--la-bg);color:var(--la-ink);padding:34px 40px 36px}
+.name{font-family:var(--la-font-head);font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--la-accent-txt)}
+.name .new{background:var(--la-accent);color:var(--la-accent-on);padding:3px 8px;border-radius:20px;margin-left:10px;letter-spacing:.1em}
+.sub{font-family:var(--la-font-head);font-size:13px;font-weight:600;color:var(--la-ink-2);margin-top:7px;letter-spacing:0}
+.note{font-size:12.5px;line-height:1.65;color:var(--la-ink-2);max-width:720px;margin-top:12px;padding-left:12px;border-left:2px solid var(--la-line)}
+h2{font-family:var(--la-font-head);font-weight:var(--la-weight-head);letter-spacing:var(--la-track-head);font-size:40px;line-height:1.08;margin-top:26px;color:var(--la-ink)}
+h2 em{font-style:normal;color:var(--la-accent-txt)}
+.lede{font-size:15px;line-height:var(--la-lh-body);color:var(--la-ink-2);max-width:640px;margin-top:13px}
+.lede a{color:var(--la-accent-txt);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.btns{display:flex;gap:11px;margin-top:22px;align-items:center}
+.b1{background:var(--la-accent);color:var(--la-accent-on);padding:12px 22px;border-radius:9px;font-weight:650;font-size:14px}
+.b2{background:transparent;color:var(--la-accent-txt);padding:12px 22px;border-radius:9px;font-weight:650;font-size:14px;box-shadow:inset 0 0 0 1.5px var(--la-accent)}
+.b3{background:var(--la-bg-2);color:var(--la-ink);padding:12px 22px;border-radius:9px;font-weight:650;font-size:14px;box-shadow:inset 0 0 0 1px var(--la-line)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:26px}
+.c{background:var(--la-bg-2);border-radius:13px;padding:19px;box-shadow:inset 0 0 0 1px var(--la-line)}
+.eb{width:30px;height:30px;border-radius:8px;background:var(--la-accent);color:var(--la-accent-on);font-family:var(--la-font-head);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+.ch{font-family:var(--la-font-head);font-weight:700;font-size:15px;margin-top:12px;color:var(--la-ink);letter-spacing:-.01em}
+.cb{font-size:12.5px;line-height:1.6;color:var(--la-ink-2);margin-top:6px}
+
+.dark{background:var(--la-bg-inv);color:var(--la-ink-inv);padding:38px 40px 40px}
+.dlabel{font-family:var(--la-font-head);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--la-accent-inv)}
+.dh{font-family:var(--la-font-head);font-weight:var(--la-weight-head);letter-spacing:var(--la-track-head);font-size:38px;line-height:1.08;margin-top:13px;color:var(--la-ink-inv)}
+.dh em{font-style:normal;color:var(--la-accent-inv)}
+.dp{font-size:14px;line-height:1.6;color:var(--la-ink-2-inv);max-width:600px;margin-top:12px}
+.dstats{display:flex;gap:44px;margin-top:26px}
+.dn{font-family:var(--la-font-head);font-weight:800;font-size:38px;letter-spacing:-.03em;color:var(--la-accent-inv)}
+.dl{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--la-ink-2-inv);margin-top:4px}
+.dbtn{display:inline-block;background:var(--la-accent);color:var(--la-accent-on);padding:13px 26px;border-radius:9px;font-weight:650;font-size:14px;margin-top:26px}
+
+.small{background:var(--la-bg);padding:30px 40px 34px;border-top:1px solid var(--la-line)}
+.slab{font-family:var(--la-font-head);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--la-ink-2)}
+.srow{display:flex;gap:22px;margin-top:16px;align-items:flex-start;flex-wrap:wrap}
+.thumb{width:320px;height:180px;border-radius:10px;background:var(--la-bg-inv);position:relative;overflow:hidden;flex:none}
+.thumb .tt{position:absolute;left:18px;top:34px;width:200px;font-family:var(--la-font-head);font-weight:800;font-size:25px;line-height:1.12;letter-spacing:-.03em;color:var(--la-ink-inv)}
+.thumb .tt em{font-style:normal;color:var(--la-accent-inv)}
+.thumb .tb{position:absolute;left:18px;bottom:18px;background:var(--la-accent);color:var(--la-accent-on);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 11px;border-radius:5px}
+.thumbw{width:320px;height:180px;border-radius:10px;background:var(--la-bg-2);position:relative;overflow:hidden;flex:none;box-shadow:inset 0 0 0 1px var(--la-line)}
+.thumbw .tt{position:absolute;left:18px;top:34px;width:210px;font-family:var(--la-font-head);font-weight:800;font-size:25px;line-height:1.12;letter-spacing:-.03em;color:var(--la-ink)}
+.thumbw .tt em{font-style:normal;color:var(--la-accent-txt)}
+.thumbw .tb{position:absolute;left:18px;bottom:18px;background:var(--la-accent);color:var(--la-accent-on);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 11px;border-radius:5px}
+.tiny{flex:1;min-width:230px;font-size:13px;line-height:1.7;color:var(--la-ink-2)}
+.tiny a{color:var(--la-accent-txt);font-weight:600}
+.tiny .mini{display:inline-block;background:var(--la-accent);color:var(--la-accent-on);font-size:11px;font-weight:700;padding:5px 11px;border-radius:6px;margin-top:9px}
+
+.sw{display:flex;gap:0;margin-top:24px;border-radius:10px;overflow:hidden}
+.sw div{flex:1;padding:13px 9px;font-size:10px;font-weight:600;font-family:Inter;letter-spacing:.01em}
+
+.foot{margin:0 40px;border-radius:18px;background:#FFFFFF;padding:34px 40px 38px;font-family:Inter;color:#1a1a1a}
+.foot h3{font-family:Poppins;font-weight:800;font-size:24px;letter-spacing:-.03em}
+.foot p{font-size:14px;line-height:1.65;color:#5a5a5a;max-width:760px;margin-top:11px}
+.orow{display:flex;gap:13px;margin-top:22px;flex-wrap:wrap}
+.ocell{flex:1;min-width:190px;border-radius:11px;padding:17px;font-size:12.5px;line-height:1.5}
+.ocell b{display:block;font-family:Poppins;font-weight:700;font-size:15px;margin-bottom:7px;letter-spacing:-.01em}
+.ov{font-size:11px;font-weight:700;letter-spacing:.06em;margin-top:9px;display:block}
+
+.ultramarine{--la-bg:#FFFFFF;--la-bg-2:#F7F8FA;--la-bg-inv:#050E3D;--la-line:#E4E7EF;--la-structure:#0B3FA8;--la-ink:#050E3D;--la-ink-2:#55627F;--la-ink-inv:#FFFFFF;--la-ink-2-inv:#6A7CAF;--la-accent:#1768E5;--la-accent-on:#FFFFFF;--la-accent-txt:#1768E5;--la-accent-inv:#5B9BFF}
+.meridian{--la-bg:#FFFFFF;--la-bg-2:#F7F7F7;--la-bg-inv:#000000;--la-line:#E3E3E3;--la-structure:#001A72;--la-ink:#212121;--la-ink-2:#5C5C5C;--la-ink-inv:#FFFFFF;--la-ink-2-inv:#B9B9B9;--la-accent:#001A72;--la-accent-on:#FFFFFF;--la-accent-txt:#001A72;--la-accent-inv:#7290FF}
+.vector{--la-bg:#FFFFFF;--la-bg-2:#F7F8FA;--la-bg-inv:#000000;--la-line:#E4E7EF;--la-structure:#0B3FA8;--la-ink:#050E3D;--la-ink-2:#55627F;--la-ink-inv:#FFFFFF;--la-ink-2-inv:#9AA3BC;--la-accent:#1768E5;--la-accent-on:#FFFFFF;--la-accent-txt:#1768E5;--la-accent-inv:#5B9BFF}
+</style>
+<div class="hdr">The shortlist: Ultramarine, Meridian, and the hybrid</div>
+<div class="hdrsub">Red and violet are out. <b>Vector is new</b>, built because the two you are choosing between are
+not really competing on hue, they are competing on <b>structure</b>. Meridian's pop is the full-bleed black band,
+not its navy. Ultramarine's pop is the blue, on a navy surface that is softer than black. Vector takes the black
+surface and the electric blue together.<br><br>
+Every card below now carries a <b>real dark section</b>, which the earlier preview did not. That matters:
+Meridian was being judged on a page that barely used its main move.</div>
+
+<div class="card ultramarine">
+ <div class="top">
+  <div class="name">Ultramarine</div>
+  <div class="sub">White page, navy ink, electric blue accent</div>
+  <div class="note">Tom Ferry blue on Real Broker ink. The dark surface is a deep navy, not black, so the light and dark halves feel like one continuous brand rather than two modes.</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Module 03 walks you through the exact follow-up sequence, then hands you the
+   automation so it runs without you. <a href="#">See the full breakdown</a> before you start.</div>
+  <div class="btns"><span class="b1">Start Module 03</span><span class="b2">Watch the intro</span><span class="b3">Download the workbook</span></div>
+  <div class="grid">
+   <div class="c"><div class="eb">1</div><div class="ch">Map the handoff</div><div class="cb">Write down every step you personally touch between lead and appointment.</div></div>
+   <div class="c"><div class="eb">2</div><div class="ch">Cut the middle</div><div class="cb">Anything that does not need your judgment gets a template and a trigger.</div></div>
+   <div class="c"><div class="eb">3</div><div class="ch">Let it run</div><div class="cb">Watch it for a week, fix what breaks, then stop looking at it.</div></div>
+  </div>
+ </div>
+ <div class="dark">
+  <div class="dlabel">The full-bleed dark section</div>
+  <div class="dh">This is where the palette either <em>holds up</em> or falls apart.</div>
+  <div class="dp">Every brand in the research set uses a dark band like this. Judge the candidates here as
+   hard as you judge them on white, because half your slides, thumbnails and covers live on this surface.</div>
+  <div class="dstats">
+   <div><div class="dn">12 hrs</div><div class="dl">Saved per week</div></div>
+   <div><div class="dn">4 min</div><div class="dl">Median first reply</div></div>
+   <div><div class="dn">38</div><div class="dl">Agents running it</div></div>
+  </div>
+  <div class="dbtn">Join the community</div>
+ </div>
+ <div class="small">
+  <div class="slab">At real working size</div>
+  <div class="srow">
+   <div class="thumb"><div class="tt">your leads are <em>ghosting</em> you</div><div class="tb">Module 03</div></div>
+   <div class="thumbw"><div class="tt">stop doing this <em>manually</em></div><div class="tb">New</div></div>
+   <div class="tiny">Body copy at 13px, the size it actually ships at in a carousel caption or a Skool post.
+    An inline <a href="#">link like this one</a> has to be findable without being loud, and a
+    <span class="mini">SMALL PILL</span> has to stay readable at a glance.</div>
+  </div>
+  <div class="sw"><div style="background:#FFFFFF;color:#050E3D;box-shadow:inset 0 0 0 1px #E4E7EF">bg #FFFFFF</div><div style="background:#F7F8FA;color:#050E3D">bg-2 #F7F8FA</div><div style="background:#0B3FA8;color:#FFFFFF">structure #0B3FA8</div><div style="background:#55627F;color:#FFFFFF">ink-2 #55627F</div><div style="background:#1768E5;color:#FFFFFF">accent #1768E5</div><div style="background:#050E3D;color:#FFFFFF">bg-inv #050E3D</div></div>
+ </div>
+</div>
+
+<div class="card meridian">
+ <div class="top">
+  <div class="name">Meridian</div>
+  <div class="sub">White page, TRUE black surface, navy accent</div>
+  <div class="note">Serhant's exact system, measured. The pop is structural, not chromatic: full-bleed black against white. Navy at 15.1:1 is a very safe accent and a very quiet one, so watch whether the blue registers as a color at all here.</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Module 03 walks you through the exact follow-up sequence, then hands you the
+   automation so it runs without you. <a href="#">See the full breakdown</a> before you start.</div>
+  <div class="btns"><span class="b1">Start Module 03</span><span class="b2">Watch the intro</span><span class="b3">Download the workbook</span></div>
+  <div class="grid">
+   <div class="c"><div class="eb">1</div><div class="ch">Map the handoff</div><div class="cb">Write down every step you personally touch between lead and appointment.</div></div>
+   <div class="c"><div class="eb">2</div><div class="ch">Cut the middle</div><div class="cb">Anything that does not need your judgment gets a template and a trigger.</div></div>
+   <div class="c"><div class="eb">3</div><div class="ch">Let it run</div><div class="cb">Watch it for a week, fix what breaks, then stop looking at it.</div></div>
+  </div>
+ </div>
+ <div class="dark">
+  <div class="dlabel">The full-bleed dark section</div>
+  <div class="dh">This is where the palette either <em>holds up</em> or falls apart.</div>
+  <div class="dp">Every brand in the research set uses a dark band like this. Judge the candidates here as
+   hard as you judge them on white, because half your slides, thumbnails and covers live on this surface.</div>
+  <div class="dstats">
+   <div><div class="dn">12 hrs</div><div class="dl">Saved per week</div></div>
+   <div><div class="dn">4 min</div><div class="dl">Median first reply</div></div>
+   <div><div class="dn">38</div><div class="dl">Agents running it</div></div>
+  </div>
+  <div class="dbtn">Join the community</div>
+ </div>
+ <div class="small">
+  <div class="slab">At real working size</div>
+  <div class="srow">
+   <div class="thumb"><div class="tt">your leads are <em>ghosting</em> you</div><div class="tb">Module 03</div></div>
+   <div class="thumbw"><div class="tt">stop doing this <em>manually</em></div><div class="tb">New</div></div>
+   <div class="tiny">Body copy at 13px, the size it actually ships at in a carousel caption or a Skool post.
+    An inline <a href="#">link like this one</a> has to be findable without being loud, and a
+    <span class="mini">SMALL PILL</span> has to stay readable at a glance.</div>
+  </div>
+  <div class="sw"><div style="background:#FFFFFF;color:#212121;box-shadow:inset 0 0 0 1px #E3E3E3">bg #FFFFFF</div><div style="background:#F7F7F7;color:#212121">bg-2 #F7F7F7</div><div style="background:#001A72;color:#FFFFFF">structure #001A72</div><div style="background:#5C5C5C;color:#FFFFFF">ink-2 #5C5C5C</div><div style="background:#001A72;color:#FFFFFF">accent #001A72</div><div style="background:#000000;color:#FFFFFF">bg-inv #000000</div></div>
+ </div>
+</div>
+
+<div class="card vector">
+ <div class="top">
+  <div class="name">Vector<span class="new">NEW</span></div>
+  <div class="sub">Meridian's structure, Ultramarine's accent</div>
+  <div class="note">The hybrid, built for this decision. Keeps the white-plus-true-black surface system that is the actual reason Meridian looks expensive, and puts the electric blue back on top of it instead of a navy that disappears. Pop twice: structural and chromatic.</div>
+  <h2>Build the system <em>once</em>. Let it run.</h2>
+  <div class="lede">Module 03 walks you through the exact follow-up sequence, then hands you the
+   automation so it runs without you. <a href="#">See the full breakdown</a> before you start.</div>
+  <div class="btns"><span class="b1">Start Module 03</span><span class="b2">Watch the intro</span><span class="b3">Download the workbook</span></div>
+  <div class="grid">
+   <div class="c"><div class="eb">1</div><div class="ch">Map the handoff</div><div class="cb">Write down every step you personally touch between lead and appointment.</div></div>
+   <div class="c"><div class="eb">2</div><div class="ch">Cut the middle</div><div class="cb">Anything that does not need your judgment gets a template and a trigger.</div></div>
+   <div class="c"><div class="eb">3</div><div class="ch">Let it run</div><div class="cb">Watch it for a week, fix what breaks, then stop looking at it.</div></div>
+  </div>
+ </div>
+ <div class="dark">
+  <div class="dlabel">The full-bleed dark section</div>
+  <div class="dh">This is where the palette either <em>holds up</em> or falls apart.</div>
+  <div class="dp">Every brand in the research set uses a dark band like this. Judge the candidates here as
+   hard as you judge them on white, because half your slides, thumbnails and covers live on this surface.</div>
+  <div class="dstats">
+   <div><div class="dn">12 hrs</div><div class="dl">Saved per week</div></div>
+   <div><div class="dn">4 min</div><div class="dl">Median first reply</div></div>
+   <div><div class="dn">38</div><div class="dl">Agents running it</div></div>
+  </div>
+  <div class="dbtn">Join the community</div>
+ </div>
+ <div class="small">
+  <div class="slab">At real working size</div>
+  <div class="srow">
+   <div class="thumb"><div class="tt">your leads are <em>ghosting</em> you</div><div class="tb">Module 03</div></div>
+   <div class="thumbw"><div class="tt">stop doing this <em>manually</em></div><div class="tb">New</div></div>
+   <div class="tiny">Body copy at 13px, the size it actually ships at in a carousel caption or a Skool post.
+    An inline <a href="#">link like this one</a> has to be findable without being loud, and a
+    <span class="mini">SMALL PILL</span> has to stay readable at a glance.</div>
+  </div>
+  <div class="sw"><div style="background:#FFFFFF;color:#050E3D;box-shadow:inset 0 0 0 1px #E4E7EF">bg #FFFFFF</div><div style="background:#F7F8FA;color:#050E3D">bg-2 #F7F8FA</div><div style="background:#0B3FA8;color:#FFFFFF">structure #0B3FA8</div><div style="background:#55627F;color:#FFFFFF">ink-2 #55627F</div><div style="background:#1768E5;color:#FFFFFF">accent #1768E5</div><div style="background:#000000;color:#FFFFFF">bg-inv #000000</div></div>
+ </div>
+</div>
+
+<div class="foot">
+ <h3>Why the orange did not pop, and what brighter would actually cost</h3>
+ <p>Your read was right, and the reason is mechanical, not aesthetic. Every accent in this set was darkened
+  until white text sits on it at 4.5:1 or better. For blue and red that happens while the color is still vivid.
+  For orange it does not. By the time orange is dark enough to carry white text, it has lost most of its chroma
+  and starts reading brown. That is the <code>#BB4C0A</code> you saw.</p>
+ <p>Going brighter would <b>not</b> be too loud. It would just force dark text on the fill instead of white,
+  which is the exact two-value problem that killed Rosewood and that the gold had in v1. That is the real cost,
+  not volume.</p>
+ <div class="orow">
+  <div class="ocell" style="background:#F26F21;color:#FFFFFF">
+   <b style="color:#FFFFFF">#F26F21 + white</b>Tom Ferry's actual orange, white text on it.
+   <span class="ov">2.97:1 FAILS</span></div>
+  <div class="ocell" style="background:#F26F21;color:#1A1310">
+   <b style="color:#1A1310">#F26F21 + near-black</b>Same bright orange, dark text. This works, but now the
+   accent needs a second value for links.
+   <span class="ov">6.18:1 passes</span></div>
+  <div class="ocell" style="background:#BB4C0A;color:#FFFFFF">
+   <b style="color:#FFFFFF">#BB4C0A + white</b>The corrected orange. One value, works everywhere, and reads
+   muddy next to a blue.
+   <span class="ov">5.06:1 passes</span></div>
+  <div class="ocell" style="background:#1768E5;color:#FFFFFF">
+   <b style="color:#FFFFFF">#1768E5 + white</b>Blue clears the same bar while staying fully saturated.
+   This is the whole argument.
+   <span class="ov">5.06:1 passes</span></div>
+ </div>
+ <p style="margin-top:20px"><b>On the blue bias:</b> it is not a bias worth correcting. Serhant, Sotheby's,
+  Real Broker and Tom Ferry all land on navy or blue, and it is the only hue that reads authoritative without
+  raising its voice. The genuine risk with blue is looking generic, and that risk is handled by structure,
+  the true-black surface, not by switching hue.</p>
+</div>

@@ -1,0 +1,748 @@
+ Hey there, beautiful AI automator.
+ Welcome to level eight.
+ Well, we're gonna be talking about design systems.
+ So first things I've done about our design systems.
+ I'm gonna be talking about Claude in this video
+ amongst other things though.
+ But let me start off with what I mean
+ when we talk about design.
+ So design, we need to understand now is code.
+ The core premise and idea of using AI in design
+ is that AI is inherently bad at design.
+ And it does this because it doesn't understand
+ what great design is.
+ So the idea here is that if we can codify
+ what great and brilliant design is,
+ we could actually reliably reproduce it.
+ That is the art form that you're gonna learn
+ inside this beautiful chapter.
+ So let's just unpack that a little bit.
+ Design used to live elsewhere, okay.
+ For 20 over 20 years, the design surface
+ has always been a separate app.
+ You go to Premiere Pro, you go to Photoshop,
+ you all these different locations.
+ You design in one place, engineers rebuilt it in another.
+ Now the surface is the code itself.
+ So historically, you should design these apps.
+ More and more, we are seeing code design emerge
+ and you are very much at the front end of it.
+ I noticed because I pretty spent all day every day
+ looking at the stuff and you were absolutely crushing it.
+ Now, before I explain what open code is,
+ you may have seen or you may be familiar
+ with the concept of a core design.
+ Now, this itself is no additional new capabilities.
+ This is the same underlying model.
+ But effectively, what could have done here
+ is basically integrated a series of prompts
+ and systems.
+ So you can use core design,
+ but it is gonna eat your tokens like you aren't gonna believe.
+ So one of the things that we're gonna be using
+ for designing in general,
+ to give you a bit of a design framework system,
+ is you can use something called open design.
+ And open design is very cool,
+ very easy to get started, very decent.
+ I'll put a link down below this tutorial
+ for my full video on it.
+ But I want to cover briefly how it works,
+ what it looks like, so we can copy this to the clipboard.
+ Then in your core code session,
+ you can drop in the git repo and say,
+ "Hey, open this and download it."
+ Now, what open design is,
+ is a open source version of Cloud Design,
+ which effectively means we don't have to just use Cloud Code.
+ We can use any other model, we can use deep-seek,
+ we can use chat, GPT, we can use Grok,
+ we can use anything they want to.
+ And what the gals and goings over here have done,
+ it's effectively replicated Cloud Design.
+ So, very cool, basically builds out all this stuff,
+ but I'm gonna show you how you go several layers above this,
+ but I just wanted to initially show you
+ what you can do as an alternative,
+ if you are using Cloud Design,
+ to actually build out your stuff.
+ So, this is like kind of a little bit like a brand system.
+ Think of it as a local UI,
+ that looks pretty much exactly like this.
+ Design system examples, blah, blah, you get the idea.
+ It's effectively a local UI
+ where you can build all of this stuff together
+ in one location.
+ And topic, by the way,
+ I'm gonna try to claim all the four horsemen of the apocalypse.
+ Design, finance, law, you'll see them stack that out.
+ Now, we'll come back over to Cloud, for example,
+ we're happy to do this.
+ I'm gonna say delete and clone fresh.
+ So, I've already got one downloaded,
+ but we're gonna go through the exact same system together
+ and get this one rocking and rolling.
+ Okay, beautiful, that's all done.
+ I'm gonna say, awesome, open this up for me, please.
+ Okay, so I just wanna give you
+ a couple of different flavors and tools.
+ Now, like any great designer,
+ you're gonna have many things you can use,
+ you know, you're gonna have many colors on your paintbrush,
+ which is cool.
+ So, we're gonna get this one opened up
+ and then we can actually show you exactly what this looks like.
+ But I'm also gonna show you something that I built
+ that I think is one of the most underrated things
+ that I've ever built, actually.
+ And, honestly, what it built me was freaking amazing
+ and I'll show you exactly what I mean.
+ So, check this one up.
+ We've got desktop open design.
+ So, we can open this bad boy up.
+ And I'm gonna say,
+ hey, dude, I want you to run the application, okay?
+ So, I can actually use it.
+ Now, it's got a specific application to it.
+ So, it needs to literally run up,
+ not within a file per se,
+ but it's got its own Electron app,
+ which I'll open it for as automatically.
+ And, whilst that is now installing the relevant dependencies,
+ which is great, it's gonna open up the app for us, okay?
+ Now, let me come over and explain something
+ I think you're gonna find very, very interesting.
+ So, I've added here for you, something called power design.
+ Effectively, what I did is,
+ my logic, like I said, was if we could codify
+ what brand design looks like, we could essentially do it.
+ So, what I did when we did some deep research
+ is I essentially learned on the fact
+ that there are 20 universal design rules
+ for AI design superpowers.
+ And, when you wanna build presentations,
+ which is the first thing I'm gonna show you here,
+ you can actually reliably understand
+ that they all have these 20,
+ the best ones have these 20 things.
+ And, you can go down and have a look at this,
+ for example, if you want to, you can see it all.
+ For example, this tells you about cognitive load,
+ this idea that you want system one thinking,
+ not system two.
+ You know, it's got things in, like, white space.
+ When I look at this slide,
+ it should be glanceable in three seconds.
+ So, if first thing is, if you're ever building HTML slides,
+ genuinely, the way that you do this is,
+ I want you to physically, okay, come over to my GitHub repo
+ that I created down here, and literally just copy this,
+ then head over to Claude, and open up a brand new system,
+ just what Claude's open design in the background.
+ And then I want you to give it an idea.
+ For example, I'm gonna say, hey there,
+ I wanna create a gorgeous slide, use a below repo,
+ install it, clone it, learn everything about it,
+ and then give me a couple of different brand examples
+ that I could use to build some beautiful slides, all right?
+ Dead, dead, dead, straight forward,
+ then just literally drop in that GitHub repo.
+ Now, this will make sure that any slides that you design
+ match those designs literally, perfectly.
+ This is how freaking cool it is.
+ So, we're gonna literally set this on its way
+ in the background, and then we can go through
+ what open design looks like, you can see what that looks like.
+ Now, in reality, Jack, what I use open design,
+ what I use, Claude, well, the truth is,
+ I want you to be able to use both,
+ and you're gonna decide what the best tool
+ is for the specific job.
+ When I'm building HTML presentations,
+ most of the time, I'm doing it in Claude,
+ because I've built a skill for that.
+ But if I had my own specific brand that I was looking at,
+ and I wanted to really kind of simplify it,
+ and I just wanted to really make it a lot,
+ like, very standardize, I might look at something
+ like this Electron App for open design, okay?
+ So, while this is working in the background,
+ let's go through this, you can pick a local coding agent,
+ so we'll do that, and this will show the different CLIs
+ that we have on our computer.
+ Very similar to what I built, actually,
+ with our Claude OS operating system, which is fantastic.
+ And effectively, you're just gonna be using
+ anyone that you want to.
+ Now, it's good to know that Opus 4.7, as of today,
+ is the most powerful one out there.
+ So we're gonna pick Claude Code, that's fantastic.
+ You can see we've got a lot of options here.
+ Click on Continue, about me.
+ Again, they're just kind of data mining here.
+ We're just gonna go ahead and finish the setup up.
+ Now, open design effectively is,
+ think of this as your new design interface
+ that you can use for anything that you want to.
+ As you can see, they've got things
+ that have been built by the community.
+ You can see lots of different examples here,
+ Kanban boards.
+ It's probably just the easiest way to get started.
+ In open design itself, you've got products
+ from left to the side, your designs, you've got automations.
+ Don't look at the automations,
+ let's think about the automations, design systems.
+ It's basically, if you want a nice UI,
+ go ahead and use this.
+ Okay, it's like a good starter pack
+ for getting ready, add your integration to,
+ you know, the guys are working really hard on this.
+ I'd say this is probably going to be better
+ if you use the Cloud, just because of its breadth.
+ But I just wanted to put this on your table,
+ on your kind of radar, like if you wanted to build a slide.
+ If you wanted something versatile,
+ they could go with many different things
+ and use many different models.
+ This would be the one to do it.
+ And I'm also going to put a link in the section
+ where you can give it a deep dive on open design
+ if you want to.
+ Now, you understand what that looks like?
+ Let me go ahead and show you some pretty crazy sauce.
+ Okay, so it's come back with a few different ideas.
+ So Stripe is gorgeous.
+ Let's go ahead and build me a,
+ let's call it a five page slide deck on Stripe.
+ And I want you to go to the website to get a few assets.
+ And I also want you to use my key,
+ basically API generator key to generate me
+ a couple of images on there,
+ in line with their perfect brand style,
+ as you see appropriate, okay?
+ Just completely random things, send that one off there.
+ Now, if you don't have a key API,
+ they're straightforward to set up.
+ Basically, all you're going to do is come over to keyer.ai.
+ All right, and this is probably one of the cheaper ways
+ to get image gen done.
+ And I think if you come over,
+ let me just make sure that I'm signed into this one.
+ You can literally just give it API key.
+ Let me just sign it real quick.
+ Okay, great, here I am.
+ Then API keys on the left-hand side,
+ just come down, create a brand new API key, share it.
+ It's like a really cheap way to create images.
+ And if you didn't presentations, it'll do it.
+ Now, this is going to go ahead and create something
+ in the style of linear.
+ So just for our reference,
+ let's see what linear actually physically looks like
+ and what the website is.
+ This is linear.app, it's black, it's white, very crisp.
+ Get a really nice website, quite frankly,
+ really nice website.
+ And so what we do, basically,
+ is we want to extract the brand identity.
+ So here's the thing.
+ AI is like a 500 IQ insight, extremely capable,
+ but if you don't instruct a properly, it will eat crayons.
+ Like, it really doesn't know what it's doing
+ unless you explain what this looks like.
+ And one of the things that I'm going to give you down below
+ is access to this.
+ Now, this is an example of what I call brand extraction.
+ And I spent the day, actually two days,
+ building you something, building you a literal skill
+ that you can download, add to Claude,
+ and all it'll basically ask you for is a website.
+ And it will basically build you a design blueprint
+ for that website.
+ So for example, this is based on the anti-gravity website.
+ I mean, look how crisp this is, guys.
+ Can you see the level of detail and spacing
+ that this has got?
+ I've never seen anything like this.
+ That is all unique, all 100% unique.
+ I'll even click this down below
+ so you can check it out and see what I mean,
+ how freaking cool this thing actually is.
+ For example, guys, all you're going to do
+ is come down and download this design extractor skill
+ and you will get a zip file.
+ So once we've done that, literally for zip,
+ you're just going to say, hey, I want you to download this,
+ unzip it, and follow the instructions.
+ And what this will do, guys, is ask you for a brand
+ and it'll ask you what's your business about.
+ And it will give you an unbelievable,
+ what we call extraction idea.
+ I spent days building this.
+ It is the latest thing.
+ This is available nowhere in the world,
+ except for this community.
+ You don't get anywhere else except inside this community
+ because I just played with it.
+ And I compared it to just general other techniques.
+ The idea behind it is, you know,
+ AI doesn't know why design is good design.
+ You see what I'm saying?
+ So what we can physically do here,
+ if you actually go down and look at this,
+ is understand what the design elements of a website are.
+ Like, this is a good example.
+ This is a website.
+ I thought, okay, this looks cool.
+ What if we could extract the design elements?
+ And the whole thing will give you a file like this.
+ So for example, it'll capture a screenshot
+ of a whole thing to what it looks like.
+ It shows you a scaffold of,
+ hey, this is what it needs to look like.
+ And then whether you are in cloud code,
+ AI studio, whatever it is,
+ you can then just explain it
+ and it will build that in for you, okay?
+ So for example, if I come back over now,
+ you can see this is the original,
+ then this is the one that I built,
+ like off the back of it.
+ And again, I can refresh this.
+ I'll just get this one loaded.
+ And as you can see, guys, I built this from it.
+ How freaking cool is that?
+ And all I did is it's the same process.
+ I said, do it for this website.
+ I gave it a bit of feedback.
+ I added an image, which I'm gonna show you
+ how to do in a second.
+ And then I can build this whole beautiful thing.
+ And I would make the point that I think this looks better.
+ And the key thing here as well is like,
+ we just, we've communicated
+ what the actual value proposition is in a sentence.
+ Load your website for $0.
+ And I built that from an actual framework
+ that we got from this.
+ Again, this is basically how it all connects together.
+ Like it literally is just doing a case of extracting it.
+ And then just like actually using the systems,
+ to go ahead and physically build it.
+ You can see this is the original.
+ And this is it.
+ And again, it just extracts the brand identity.
+ It's so cool.
+ I think this one's a lot freaking cool.
+ I like it.
+ But this is the thing,
+ and I put that skill down below.
+ So literally you can use this now
+ replically because templates are common.
+ They're used everywhere.
+ Building scratches are okay, but it takes time.
+ This really just enables you to find
+ any kind of website you want to.
+ And basically find, or what is it about this website
+ that I like?
+ Well, I like the fact that it kind of like articulates it.
+ It breaks it down in so many different levels.
+ Like it has like 18 different modes of,
+ if not more modes of analysis,
+ and breaks down specifically what it looks like.
+ So you can get websites that look and feel
+ like other ones do it.
+ Like this one here, for example,
+ like if I refresh this,
+ that's really gorgeous.
+ And you'll see the design is just like anti-gravity,
+ for example, right?
+ How freaking fresh is that?
+ It's super crisp.
+ And guys, I'll show you exactly how I did it.
+ Now, one of the interesting ways that I did this, actually,
+ you'll see if I log in now, if I come over to images,
+ I effectively built a rocket ship.
+ 'Cause I thought, look, wouldn't it be cool
+ if, you know, the text of the image,
+ which is not this one or this one,
+ it is not, it is over here.
+ Let me go ahead and grab this bad boy,
+ which is eluding me.
+ It's like launching a website.
+ So I think we should lean into the launch site.
+ So launch a website for $0.
+ And I wanted a subtle animation in the background
+ that will just beautifully flow in.
+ Like look at the houses here, right?
+ So what I basically did is I created an image
+ and I was like, I could click,
+ create for me a rocket launching, which is cool.
+ But what I found is when I started to integrate it over there,
+ and I've got a full video on this, by the way,
+ it'll be live on my YouTube channel
+ and inside the community by Thomas Goes Live,
+ and I referenced all these exclusive resources
+ that you only get.
+ But one of the things you'll notice is that like this,
+ didn't contrast while you're into the background.
+ So what I did is based on the website,
+ I literally guys went back over and I was like,
+ look, this is cool.
+ I just referenced it.
+ And for example, I just came over and I said,
+ look, I want this to be on the right hand side.
+ And in fact, what I did is I had Claude write me a prompt
+ that said, look, rewrite me a prompt to edit this image
+ such that it would work perfectly on our website.
+ And that's exactly what it did.
+ Then once I had that, I just literally downloaded it.
+ I went over to video at the top.
+ Now, you don't have to use Higgs for guys.
+ This is just, it's just easiest to do this.
+ I throw it in and I said, look,
+ I want you to launch this.
+ I don't want the rocket to take off screen,
+ but I just want it to look like it's about to take off.
+ And then it gives me, it gives me this.
+ We even get the background, you can see.
+ These are different examples.
+ This is a different one.
+ This one, I think, is even better, actually.
+ Yeah, that's crazy.
+ But this is another example, right?
+ I think that one loops a lot better.
+ But my point was that it needs to actually feel like a loop.
+ So I think this one's even better than we had,
+ because it feels like it's a nice, fantastic one.
+ So if I wanted to use this one, all I would do is download this.
+ Let's go ahead and download this bad boy, like so.
+ And then we head straight over to Claude.
+ And then I'm over here.
+ So I want to change the design.
+ All I'm going to do now is say, hey there, man,
+ I'd like you to replace the video with the latest video
+ that I downloaded on my computer.
+ I think the graphic just looks better.
+ OK, check this out.
+ I hit this one off.
+ Now, look at this.
+ This is going to blow your mind.
+ This is how you design.
+ You use a combination of what looks good, looks decent.
+ And I plan back and forth with the imagery in the text.
+ So this is not going to change it.
+ And you're going to see this image
+ is going to fully update in a moment.
+ And then you're going to be able to do the whole thing
+ in the video.
+ Again, I'm going to have to touch a single thing.
+ The video is 15 seconds.
+ It's 4K.
+ And we're going to see-- I think they've changed it.
+ Look at that.
+ How freaking crisp is that, guys?
+ Like, that is legitimately wild.
+ And it just loops perfectly.
+ And so like, what I really love about this design
+ is the fact that it just sits there in the background
+ doing its own thing.
+ And I'll put a link for it down below
+ so you can check out it on our website if you want to.
+ But it is super crisp.
+ And if I wanted to publish this, I'd just say, hey, dude,
+ quote for me, a private GitHub repo, OK?
+ And then what I want you to do is just publish this to Verssell
+ and give me a link to that Verssell, please.
+ All right, and send that one off.
+ And then we are ready to rock and roll.
+ Then just like that, it is now published on Verssell.
+ So I click on the link, and we open it up,
+ and it is authenticated.
+ I am really at the real deal, and there we go.
+ It's loading up.
+ And you can see we've got this rock and rolling.
+ We just need to add a logo to it.
+ But, guys, all I did was the complete brand extraction.
+ And I'm also going to put down below a full research
+ skill that, once you've completed this off, guys,
+ what it will do is find your top 10 competitors.
+ And there will be ruthless research, literally,
+ just for me describing it, you describe what your business is.
+ It will go ahead and find loads of data on what are the best
+ guys in your niche doing.
+ If you're doing roofing in Texas,
+ what are the top 10 brothers in Texas doing?
+ You just download, deserve, upload it to Claude,
+ and do all of that automatically for you, basically,
+ which is freaking amazing.
+ And then we have this beautiful--
+ I just think that this is a really crisp, beautiful website.
+ I really, really back this.
+ I think it's really tasty.
+ And again, this was on two generations.
+ You could have done this on 2030.
+ Like, it's really, really freaking cool.
+ So you just get the idea of how these design systems work.
+ And the best way to do it, the main principle takeaway here
+ is extraction, design identity extraction.
+ That's basically it.
+ And then, guys, for example, if I come over here,
+ you can see that I have these graphics, right,
+ on AI with Jack things.
+ If I come to sign out, for instance,
+ and just show you what this looks like.
+ And we're going to head and create a new account
+ under my name real quick.
+ Let's go ahead and do this.
+ Now, if you haven't created an account on this already,
+ I highly recommend that you do.
+ Let me come and just give a bit of a fake email on this one
+ and create an account for the purposes of this video.
+ Basically, if you create an account,
+ make a person in the community, saying hello,
+ introducing yourself.
+ And then within 24 hours, your account will appear here.
+ I recommend you do your own, because there's
+ loads of little goodies and specifics about your account,
+ in particular, that you want to check out.
+ But one of the things I did with this,
+ and I spent a few days building this roadmap feature up,
+ is I focused on these animations.
+ You see this, I was almost like a game loading.
+ This, to me, I'm like, call it a rabbit hole.
+ I really care about our community,
+ and I want to put this attention detail in everything
+ I do for you.
+ How did I do that?
+ Well, it's the same process.
+ I found a reference image I thought was cool.
+ I built out characters that represent our community.
+ Believe it or not, these four characters
+ are the four archetypes in our community.
+ They represent, if you think of an X and Y axis,
+ one axis is technical skill, and the other axis
+ is kind of like business skill.
+ So like, how experienced of an entrepreneur are you,
+ and how technical are you.
+ And you could be any one of these four quadrants
+ from Warrior Wizard and Ninja to Dragon.
+ They're all awesome, and you need to touch
+ and climb all four of them.
+ But how did I do that?
+ I created it on an image generator, and did effectively,
+ I came on this, again, same with our Hermes dashboard.
+ It's freaking beautiful.
+ I mean, I'm literally just giving you all the freakin' source.
+ Like, I'm unleashing this is exactly how I work.
+ And you can see, if I come down, look at this.
+ What I did, I had to start from an end frame being the same.
+ Now, I'll be so honest with you,
+ this took like four or five girls to get,
+ 'cause you'll notice as you go through these,
+ sometimes, yeah, this is one I think I use.
+ It checks the sword, he can put it back, and that's fine.
+ But other ones, look, you can see what I mean.
+ Like, they'll just go, they'll really bug out.
+ (loud bang)
+ Okay, maybe that's really cool.
+ But to me, I didn't like that level of quality.
+ It's like sorting into like something else going on there.
+ So, there'll be occasions where you need to do that.
+ What you need to make sure you're doing is start frame
+ and frame, typically use 4K rather than 720.
+ This one was 720, but you wanna use 4K.
+ Then you can just insert it anywhere you want to,
+ and it looks crisp.
+ Now, it looks, as I finished, we now literally have
+ the linear slides.
+ Let me just zoom out of this so I can show you
+ what I'm talking about.
+ Cool, now this is, I have not seen these slides before,
+ so this is me looking them with you.
+ The system for modern software development,
+ linear is a purpose book tool for planning
+ and building products from issue to release.
+ Cool, and we've got an image there.
+ I think that looks pretty crisp.
+ Should we check out and just have a live comparison
+ to the website?
+ Again, what's the kind of that moral of the story?
+ Brand extraction.
+ That's it, that's what we're doing.
+ It's not copying any of the code.
+ What it's doing is understanding what is the code doing.
+ For example, if you look at the anti-gravity website,
+ for example, it's like maybe no more than 10 words per page.
+ Awesome, spacing, fonts, universal design things.
+ We can use universal design Lego pieces
+ and ingredients that we can move them around.
+ So first side is good.
+ What we believe, software is built by teams at SHIP.
+ Very cool, I love the logo guys on the bottom left as well.
+ That's really crisp.
+ And then we've got two out of five down below.
+ One workflow, enter and, cool.
+ This one here, built by teams who care.
+ And look at the, guys, look at the logos, like genuinely.
+ People say I get too excited about logos.
+ I'm saying I don't get nearly enough excited.
+ And then we've got this nice little blue hue at the bottom left.
+ Now bear in mind, we didn't go back and forth to this.
+ We just said go to linear, do me an image and build it.
+ I can make any changes.
+ I could say, hey, turn this up, turn this up.
+ And bear in mind, because it's using my GitHub power design repo,
+ the ratio of these two text sizes here,
+ follow the golden ratio of 1.67.
+ So you know that kind of spiral thing,
+ from like math.
+ Effectively, that's how you get like Apple level websites
+ that just look good.
+ But then we're going to explain why it looks good.
+ There's actually a ratio of sizes.
+ So for example, the distance between this text
+ and this line, and this text and this line should be equal.
+ I should be able to glance at the page
+ in three seconds, go what it's about.
+ And also the ratio of this text and this text
+ must be in multiples of 1.67 if you want it to be perfect
+ in line with everything else.
+ Then you'll also notice we have nothing touching the sides.
+ You see this?
+ There's a sufficient white space all the way around.
+ This is all because of the power design repo.
+ This is what I use all day, every day.
+ Then you've got the actual presentations that I'm using, right?
+ So on level eight design systems, okay?
+ Now this is a skill that I built in Claude.
+ And I basically said, this is what I want.
+ This is a style I want.
+ And I went back and back and forth.
+ Then when it was done, I basically went over to Claude.
+ And I was like, hey, turn this into a skill.
+ And again, the other skill that I added into this
+ was a infographic generator.
+ I said, I want to build generated skills.
+ Then I just added the two skills together.
+ So now it builds my HTML effects
+ and it also adds in whatever I want to.
+ And so hopefully this is all starting to,
+ I know I've covered quite a lot here,
+ but even this deck itself was built with Claude
+ using these design principles.
+ I think it's gorgeous.
+ All I did with this guys is I gave it a reference image
+ of a woman I found, basically on something.
+ And I was like, dude, just build me out
+ 20 images look like this.
+ Programmatic crochet of images,
+ I think is one of the coolest things, honestly speaking.
+ And guys, this is another example.
+ For Gladio, I'll speak to tech startup
+ where I design this Pokemon.
+ You see this?
+ Same process.
+ How freaking cool is this?
+ I even had the guy integrated it.
+ Now this probably took me maybe three hours
+ to get like, it's not perfect,
+ but this is gonna be what we're gonna have.
+ Something like this in Gladio, right?
+ It shows you how fast you are typing,
+ your average words.
+ And again, we have this nice little graphics.
+ Now, this is a direction I want to take this in.
+ I'm gonna, we can add 100 words to show
+ and you will actually level up
+ and then your avatar will increase basically
+ and you get to like Venusaur or Charizard
+ or whatever the thing is and it's reflected out it.
+ Again, this design system I just built using Claude.
+ It's the exact same thing.
+ But it's about knowing when to tag in
+ and bring in the different resources.
+ So for example, one of the things we want to do in the app
+ is you know, equate how much time you save
+ to how much of your life you buy back, you know?
+ So for example, a hundred and seven to six hours,
+ that's enough time to learn how to all pay.
+ And we've got these little mini micro goals
+ all the way through the app,
+ which I thought was really cool.
+ Like one is what you could do with that time.
+ I mean, there's a million different ways
+ when the showcase it, but we want to give you like,
+ I say weird, like I want to put in the like images
+ to show you like physically, you could have learned
+ how to play chess at like a ground mass level.
+ You want to be in that kind of level of,
+ of edge and wonder that, which is fantastic.
+ So these are all the kind of things you can do with design
+ if you know how to leverage the right systems
+ that we've covered, it's like this module.
+ And the last one I just want to touch on on the website.
+ So guys, is if you come over to Spline,
+ I pop up on Spline, which is very lovely,
+ but you can see these things here, okay?
+ Look at this.
+ This is 3D assets where basically you go down
+ and you can build out these 3D assets,
+ basically doing the sort of stuff using Spline, if you wish.
+ Now again, it's a 3D asset.
+ It's cool, adds a bit of finesse and design.
+ It's cool.
+ Honestly speaking, if you're just getting started,
+ the highest leverage point of your time
+ will be building the exact systems that I put out for you here.
+ So you can do anything that you want to using these systems
+ just like this and build up whatever you want to.
+ But this design stuff guys is so, so freaking cool.
+ And it's like, I love it.
+ I really, really love it.
+ If you could have a superpower in this new AI world,
+ design would be the thing to look into,
+ because it's just gorgeous.
+ I would just keep this in the background 24/7.
+ It's fantastic.
+ And it's only took me like 20 minutes to build,
+ genuinely speaking.
+ So you've got all the design sources,
+ this is the exact process I do.
+ This is exactly how I use Cloud
+ to build these incredible design systems.
+ And so the idea is you're gonna build your own design profile
+ for your own personal brand, your own library,
+ your tokens, your brand kit, your components.
+ One cool website I would recommend
+ if you're looking by the way for closed schemes.
+ Again, find color pairings that work.
+ They've already done a lot of hard work for you.
+ This is a cool website, coollaws.co,
+ this shows loads of stuff.
+ One of them I first text art up.
+ I was like, this is really cool, wouldn't this be great?
+ And that's genuinely speaking.
+ How we got the color palette.
+ And I picked blue because it was a lot to do with data.
+ And like trust is really important with data.
+ So that's one of the reasons I double clicked
+ on the blue side.
+ And yeah, you can literally build out
+ all these incredible things.
+ Now, design is something you get better at
+ the more that you practice.
+ And I'm super obsessed about it.
+ So you're always gonna get my latest tools and tricks
+ and gizmos and strategies that could crap
+ and give you what it is inside the community.
+ I always share that stuff with you.
+ But then we could design stuff.
+ What we're gonna look at next is compliance and maintenance.
+ This is the stuff that you really need to understand.
+ You have to lock this stuff down.
+ If you're gonna scale, if you're working for clients,
+ you've got to wrap your head around it.
+ I can't wait to talk to you about so many details.
+ And I'll catch you inside the next beautiful module.

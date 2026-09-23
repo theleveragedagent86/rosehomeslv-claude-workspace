@@ -1,0 +1,26 @@
+{
+  "id": "leveraged-agent",
+  "label": "The Leveraged Agent",
+  "channel": "Ryan Rose, AI systems for real estate agents",
+  "audience": "Real estate agents and team leaders",
+  "colors": {
+    "navy": "#0A0A0A",
+    "gold": "#7C5CFF",
+    "white": "#FFFFFF",
+    "offWhite": "#F4F4F5",
+    "slate": "#6B7280",
+    "alert": "#D64545"
+  },
+  "fonts": {
+    "headline": "Montserrat",
+    "headlineWeight": 800,
+    "kicker": "Montserrat",
+    "kickerWeight": 600,
+    "label": "Montserrat",
+    "labelWeight": 600
+  },
+  "cutout": "assets/ryan-cutout.png",
+  "plateStyle": "Clean, high-key, near-white studio or desk environment. Screens, dashboards, and workflow diagrams as abstract shapes rather than legible UI. Never a Las Vegas skyline, this is not the realtor brand.",
+  "seasonNotes": "Season-neutral. Interiors and abstract backgrounds only.",
+  "disclaimer": ""
+}

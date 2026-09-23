@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ENDING overlay. The Leveraged Agent, Vector v2.0 inverted.
+
+         Same like/subscribe chips as like-subscribe.html, plus the wordmark
+         in the TOP HALF, left aligned. 20s, no exit animation, because the
+         video cuts on it.
+
+         TRANSPARENT BACKGROUND ON PURPOSE. Alpha MOV, sits on a track above
+         the recorded footage.
+
+         EVERYTHING LIVES IN THE LEFT COLUMN. That is deliberate: the right
+         side of the frame stays empty so YouTube's clickable end screen
+         cards have somewhere to land that is not on top of the brand. Do not
+         spread these elements across the frame. */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+      }
+      body { font-family: "Barlow", "Helvetica Neue", Arial, sans-serif; }
+
+      #root {
+        position: relative; width: 1920px; height: 1080px;
+        background: transparent;
+      }
+
+      /* ---------- the wordmark, top half, left aligned ---------- */
+
+      /* The wordmark sits on its own panel, exactly like the chips below.
+         RYAN APPROVED THIS PANEL on 2026-08-24, by name. Do not strip it.
+
+         Two things were tried before it and are both dead: a soft full-bleed
+         radial scrim, which read as a giant dark oval over light footage,
+         and bare white type with a dark keyline, which he did not want. The
+         panel survives any footage brightness and makes the left column one
+         coherent object.
+
+         It also holds STILL. An earlier version drifted slowly upward
+         through the hold and he rejected that outright. Nothing here moves
+         after the entrance. */
+      .brand {
+        position: absolute; left: 96px; top: 244px;
+        background: rgba(6, 10, 26, 0.93);
+        border: 1px solid #2A3550;
+        border-radius: 24px;
+        padding: 40px 52px 42px;
+        box-shadow: 0 8px 22px rgba(0,0,0,0.45), 0 30px 70px -24px rgba(0,0,0,0.75);
+      }
+
+      .ruleWrap { width: 132px; height: 3px; overflow: hidden; }
+      .rule {
+        width: 100%; height: 100%; background: #5B9BFF;
+        transform: scaleX(0); transform-origin: 0% 50%;
+      }
+
+      .markwrap { overflow: hidden; padding: 0 4px; margin: 26px 0 0 -4px; }
+      .mark {
+        font-weight: 800; font-size: 66px; line-height: 1;
+        letter-spacing: -0.028em; color: #FFFFFF; white-space: nowrap;
+      }
+
+      .sub {
+        margin-top: 20px;
+        font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
+        font-weight: 600; font-size: 19px;
+        letter-spacing: 0.15em; text-transform: uppercase;
+        color: #9AA3BC;
+      }
+
+      /* ---------- the chips, bottom left, identical to the mid-roll cut ---------- */
+      .dock {
+        position: absolute; left: 96px; bottom: 132px;
+        display: flex; align-items: center; gap: 20px;
+      }
+
+      .chip {
+        display: flex; align-items: center; gap: 20px;
+        height: 116px; padding: 0 40px;
+        border-radius: 58px;
+        box-shadow: 0 8px 22px rgba(0,0,0,0.45), 0 30px 70px -24px rgba(0,0,0,0.75);
+      }
+
+      .chip.like {
+        background: rgba(6, 10, 26, 0.93);
+        border: 1px solid #2A3550;
+      }
+      .chip.like .label { color: #FFFFFF; }
+
+      /* accent as a FILL with white on it, the canonical 5.06:1 pairing */
+      .chip.sub2 {
+        background: #1768E5;
+        border: 1px solid #1768E5;
+      }
+      .chip.sub2 .label { color: #FFFFFF; }
+
+      .label {
+        font-weight: 800; font-size: 42px;
+        letter-spacing: -0.028em; text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .ico { width: 54px; height: 54px; flex: none; display: block; }
+      .ico.thumb { transform-origin: 26% 78%; }
+
+      /* Centred on the 54px icon, so the offset is (54 - 72) / 2. Sibling of
+         the icon, not a child, because the icon scales and rotates on the
+         press and the ring must not inherit that. */
+      .ring {
+        position: absolute; left: -9px; top: -9px;
+        width: 72px; height: 72px; border-radius: 50%;
+        border: 3px solid #5B9BFF;
+        opacity: 0; pointer-events: none;
+      }
+      .likeInner { position: relative; display: flex; align-items: center; gap: 20px; }
+
+      .play {
+        width: 0; height: 0; flex: none;
+        border-left: 34px solid #FFFFFF;
+        border-top: 21px solid transparent;
+        border-bottom: 21px solid transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="like-subscribe-end"
+      data-start="0"
+      data-duration="20"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="brand" id="brand">
+        <div class="ruleWrap"><div class="rule" id="rule"></div></div>
+        <div class="markwrap"><div class="mark" id="mark">THE LEVERAGED AGENT</div></div>
+        <div class="sub" id="sub">AI Systems For Real Estate</div>
+      </div>
+
+      <div class="dock">
+        <div class="chip like" id="chipLike">
+          <div class="likeInner">
+            <svg class="ico thumb" id="thumb" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect x="2.5" y="13.3" width="6.6" height="16.4" rx="1.9" fill="#5B9BFF" />
+              <path
+                d="M11.4 29.7 L24 29.7 C26.1 29.7 27.6 28.3 27.9 26.5 L29.6 17.6 C30 15.4 28.4 13.4 26.1 13.4 L19.2 13.4 L20.4 7.3 C20.8 5.2 19.4 3.1 17.2 2.7 C16.4 2.55 15.6 3 15.3 3.75 L11.9 12.2 C11.55 13.05 11.4 13.7 11.4 14.5 Z"
+                fill="#5B9BFF"
+              />
+            </svg>
+            <div class="ring" id="ring"></div>
+          </div>
+          <div class="label">Like</div>
+        </div>
+
+        <div class="chip sub2" id="chipSub">
+          <div class="play"></div>
+          <div class="label">Subscribe</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      /* brand in first, it is the anchor. Entrance only, then it holds dead
+         still for the rest of the 20 seconds. */
+      tl.fromTo("#brand", { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 0);
+      tl.to("#rule", { scaleX: 1, duration: 0.7, ease: "power3.out" }, 0.12);
+      tl.fromTo("#mark", { yPercent: 110 }, { yPercent: 0, duration: 0.66, ease: "power3.out" }, 0.3);
+      tl.fromTo("#sub", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.62);
+
+      /* chips answer it */
+      tl.fromTo("#chipLike", { opacity: 0, x: -140 }, { opacity: 1, x: 0, duration: 0.62, ease: "back.out(1.5)" }, 0.8);
+      tl.fromTo("#chipSub", { opacity: 0, x: -140 }, { opacity: 1, x: 0, duration: 0.62, ease: "back.out(1.5)" }, 0.96);
+
+      /* the thumb gets pressed once.
+         immediateRender:false is load bearing. GSAP fromTo defaults it to
+         true, which stamps the from-state at build time and would leave the
+         ring sitting at 0.9 opacity from frame 0 until this tween starts. */
+      tl.to("#thumb", { scale: 0.78, rotation: -12, duration: 0.16, ease: "power2.in" }, 1.95);
+      tl.to("#thumb", { scale: 1, rotation: 0, duration: 0.42, ease: "back.out(3)" }, 2.11);
+      tl.fromTo(
+        "#ring",
+        { opacity: 0.9, scale: 0.4 },
+        { opacity: 0, scale: 2.15, duration: 0.62, ease: "power2.out", immediateRender: false },
+        2.1
+      );
+
+      /* Three subscribe pulses spread across the 20s hold, so a frame grabbed
+         at second 14 is not a frozen picture. No exit: the video cuts on this. */
+      [2.9, 8.4, 14.2].forEach(function (t) {
+        tl.to("#chipSub", { scale: 1.055, duration: 0.22, ease: "power2.out" }, t);
+        tl.to("#chipSub", { scale: 1, duration: 0.5, ease: "back.out(2.4)" }, t + 0.22);
+      });
+
+      window.__timelines["like-subscribe-end"] = tl;
+    </script>
+  </body>
+</html>

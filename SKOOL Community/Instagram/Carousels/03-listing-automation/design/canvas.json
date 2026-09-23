@@ -1,0 +1,79 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "Phase1Prelist.dc.html",
+      "x": 1200,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "Phase2Photos.dc.html",
+      "x": 2400,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "Phase3Launch.dc.html",
+      "x": 3600,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "Phase4Week.dc.html",
+      "x": 0,
+      "y": 1510,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "Phase5Pending.dc.html",
+      "x": 1200,
+      "y": 1510,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "Close.dc.html",
+      "x": 2400,
+      "y": 1510,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "pattern-note",
+      "x": 0,
+      "y": -200,
+      "w": 1080,
+      "text": "Pattern: Whitney Bartlette numbered-list carousel.\nCount in the cover, the list IS the deliverable, no keyword gate.\nBlack cover and close, white list slides between. That alternation is the only structural device."
+    },
+    {
+      "id": "install-note",
+      "x": 2400,
+      "y": 1360,
+      "w": 1080,
+      "text": "Item 3 (MLS remarks) uses listing-description, which is BUILT but NOT INSTALLED per ryan-built-inventory.md. Install before this posts."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}

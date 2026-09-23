@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rebels 8U &mdash; First Half Season Schedule 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#08090C; --surface:#161B23; --line:#2A323F;
+    --red:#E01B33; --red-hot:#FF3049; --red-deep:#7E0C1B; --red-ember:#B01426;
+    --ice:#EEF4FA; --steel:#7C8794; --steel-2:#A9B4C0;
+    --pad:48px;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ background:var(--ink); }
+  body{ width:1080px; font-family:'Inter',-apple-system,sans-serif;
+        -webkit-font-smoothing:antialiased; color:var(--ice); }
+
+  .poster{
+    position:relative; width:1080px; min-height:2332px; overflow:hidden;
+    display:flex; flex-direction:column;
+    background:
+      radial-gradient(120% 46% at 50% -6%,  rgba(224,27,51,.42) 0%, rgba(224,27,51,0) 62%),
+      radial-gradient(85% 32% at 108% 24%,  rgba(255,48,73,.16) 0%, rgba(255,48,73,0) 70%),
+      radial-gradient(90% 36% at -12% 70%,  rgba(126,12,27,.32) 0%, rgba(126,12,27,0) 72%),
+      radial-gradient(130% 48% at 50% 110%, rgba(224,27,51,.24) 0%, rgba(224,27,51,0) 66%),
+      linear-gradient(178deg,#0D1016 0%,#08090C 46%,#0A0C11 100%);
+  }
+  .poster::before{
+    content:''; position:absolute; inset:0; z-index:6; pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+    opacity:.055; mix-blend-mode:overlay;
+  }
+  .slashes{
+    position:absolute; inset:0; z-index:0; pointer-events:none;
+    background-image:repeating-linear-gradient(104deg,
+      rgba(238,244,250,.030) 0px, rgba(238,244,250,.030) 2px,
+      transparent 2px, transparent 74px);
+    -webkit-mask-image:radial-gradient(70% 56% at 50% 38%,#000 0%,transparent 78%);
+            mask-image:radial-gradient(70% 56% at 50% 38%,#000 0%,transparent 78%);
+  }
+
+  header{ position:relative; z-index:2; padding:34px var(--pad) 0; text-align:center; }
+  .crest{
+    width:186px; height:186px; margin:0 auto 4px; display:block;
+    filter:
+      drop-shadow( 3px 0 0 rgba(238,244,250,.9)) drop-shadow(-3px 0 0 rgba(238,244,250,.9))
+      drop-shadow(0  3px 0 rgba(238,244,250,.9)) drop-shadow(0 -3px 0 rgba(238,244,250,.9))
+      drop-shadow(0 0 34px rgba(224,27,51,.55))
+      drop-shadow(0 26px 46px rgba(0,0,0,.72));
+  }
+  .season{ font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:600;
+           letter-spacing:.46em; text-indent:.46em; color:var(--steel-2); margin-bottom:10px; }
+  .title{
+    font-family:'Anton',sans-serif; font-size:104px; line-height:.82;
+    letter-spacing:-.038em; text-transform:uppercase;
+    background:linear-gradient(180deg,#FFF 4%,#E3EBF4 36%,#96A3B2 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 6px 0 rgba(0,0,0,.42));
+  }
+  .title .sm{ display:block; font-size:58px; letter-spacing:-.03em; margin-top:6px; }
+  .year-rule{ display:flex; align-items:center; justify-content:center; gap:22px; margin-top:16px; }
+  .year-rule .bar{ height:2px; flex:1; max-width:222px;
+                   background:linear-gradient(90deg,transparent,var(--red) 78%); }
+  .year-rule .bar.r{ background:linear-gradient(270deg,transparent,var(--red) 78%); }
+  .year-rule .yr{ font-family:'Barlow Condensed',sans-serif; font-size:30px; font-weight:700;
+                  letter-spacing:.22em; text-indent:.22em; color:var(--red-hot); white-space:nowrap; }
+
+  .stats{
+    display:flex; justify-content:center; margin:22px auto 0; width:max-content;
+    border:1px solid var(--line); border-radius:4px;
+    background:linear-gradient(180deg,rgba(29,36,48,.86),rgba(16,20,26,.86));
+    box-shadow:inset 0 1px 0 rgba(238,244,250,.06),0 14px 30px rgba(0,0,0,.5);
+  }
+  .stat{ padding:11px 34px; text-align:center; }
+  .stat + .stat{ border-left:1px solid var(--line); }
+  .stat b{ display:block; font-family:'Anton',sans-serif; font-size:42px; line-height:1; color:var(--ice); }
+  .stat.hot b{ color:var(--red-hot); }
+  .stat span{ display:block; margin-top:7px; font-family:'Barlow Condensed',sans-serif;
+              font-size:15px; font-weight:600; letter-spacing:.22em; text-indent:.22em;
+              color:var(--steel); text-transform:uppercase; }
+
+  /* two-column body */
+  main{ position:relative; z-index:2; flex:1; padding:26px var(--pad) 0;
+        display:grid; grid-template-columns:1fr 1fr; gap:20px; align-content:start; }
+  .col{ display:flex; flex-direction:column; gap:8px; }
+
+  .mhead{
+    display:flex; align-items:baseline; justify-content:space-between;
+    margin-top:12px; padding:0 4px 7px;
+    border-bottom:1px solid var(--line);
+    font-family:'Barlow Condensed',sans-serif; text-transform:uppercase;
+  }
+  .col > .mhead:first-child{ margin-top:0; }
+  .mhead span{ font-size:27px; font-weight:700; letter-spacing:.16em; color:var(--ice); }
+  .mhead span i{ font-style:normal; font-size:17px; color:var(--steel); letter-spacing:.1em; }
+  .mhead em{ font-style:normal; font-size:15px; font-weight:600; letter-spacing:.18em; color:var(--steel); }
+  .mhead em::after{ content:' ICE'; }
+
+  .e{
+    position:relative; display:grid; grid-template-columns:56px 1fr auto;
+    align-items:center; gap:14px;
+    padding:10px 12px 10px 16px; border-radius:4px;
+    border:1px solid var(--line);
+    background:linear-gradient(180deg,rgba(29,36,48,.72) 0%,rgba(16,20,26,.82) 100%);
+    box-shadow:inset 0 1px 0 rgba(238,244,250,.05),0 6px 14px rgba(0,0,0,.36);
+    overflow:hidden;
+  }
+  .e::before{ content:''; position:absolute; left:0; top:0; bottom:0; width:5px;
+              background:var(--steel); opacity:.5; }
+
+  .e.game{
+    border-color:rgba(224,27,51,.46);
+    background:
+      linear-gradient(90deg,rgba(224,27,51,.20) 0%,rgba(224,27,51,.05) 40%,rgba(224,27,51,0) 70%),
+      linear-gradient(180deg,rgba(45,24,30,.94) 0%,rgba(20,12,15,.94) 100%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 8px 20px rgba(126,12,27,.34);
+  }
+  .e.game::before{ background:linear-gradient(180deg,var(--red-hot),var(--red-ember));
+                   opacity:1; box-shadow:0 0 14px rgba(255,48,73,.7); }
+
+  .e.holiday{
+    border-color:rgba(150,200,235,.34);
+    background:
+      linear-gradient(90deg,rgba(120,180,225,.14) 0%,rgba(120,180,225,.04) 40%,rgba(120,180,225,0) 70%),
+      linear-gradient(180deg,rgba(26,36,48,.90) 0%,rgba(14,18,24,.92) 100%);
+  }
+  .e.holiday::before{ background:linear-gradient(180deg,#BFE2F5,#6FA8CC);
+                      opacity:1; box-shadow:0 0 12px rgba(150,205,240,.5); }
+
+  .d{ text-align:center; }
+  .d b{ display:block; font-family:'Anton',sans-serif; font-size:38px; line-height:.92;
+        letter-spacing:-.02em; color:var(--ice); }
+  .d span{ display:block; margin-top:1px; font-family:'Barlow Condensed',sans-serif;
+           font-size:14px; font-weight:700; letter-spacing:.18em; text-indent:.18em;
+           color:var(--steel); text-transform:uppercase; }
+  .e.game .d span{ color:var(--red-hot); }
+  .e.holiday .d span{ color:#A9D4EC; }
+
+  .m{ min-width:0; }
+  .t{ font-family:'Anton',sans-serif; font-size:25px; line-height:1.05;
+      letter-spacing:-.015em; color:var(--ice); white-space:nowrap; }
+  .t span{ font-family:'Barlow Condensed',sans-serif; font-size:18px; font-weight:600;
+           color:var(--steel-2); }
+  .where{ margin-top:3px; font-family:'Barlow Condensed',sans-serif; font-size:15px;
+          font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#E8B23A;
+          white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+  .tag{ font-family:'Barlow Condensed',sans-serif; font-size:15px; font-weight:700;
+        letter-spacing:.16em; text-indent:.16em; text-transform:uppercase;
+        padding:7px 11px; border-radius:3px; white-space:nowrap; }
+  .tag.p{ color:var(--steel-2); border:1px solid var(--line); background:rgba(238,244,250,.045); }
+  .tag.g{ color:#fff; background:linear-gradient(180deg,var(--red-hot),var(--red-ember));
+          border:1px solid rgba(255,255,255,.20);
+          box-shadow:inset 0 1px 0 rgba(255,255,255,.32),0 5px 12px rgba(224,27,51,.5); }
+  .tag.h{ color:#0C1218; background:linear-gradient(180deg,#DCEEF9,#92BFD9);
+          border:1px solid rgba(255,255,255,.34);
+          box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 5px 12px rgba(120,180,225,.34); }
+
+  footer{ position:relative; z-index:2; margin-top:26px; padding:24px var(--pad) 30px;
+          border-top:1px solid var(--line);
+          background:linear-gradient(180deg,rgba(8,9,12,0),rgba(8,9,12,.85)); }
+  .foot-main{ display:flex; align-items:center; justify-content:center; gap:34px; }
+  .mascot{
+    height:196px; width:auto; flex:none;
+    filter:
+      drop-shadow( 5px 0 0 #fff) drop-shadow(-5px 0 0 #fff)
+      drop-shadow(0  5px 0 #fff) drop-shadow(0 -5px 0 #fff)
+      drop-shadow( 4px  4px 0 #fff) drop-shadow(-4px -4px 0 #fff)
+      drop-shadow(0 14px 22px rgba(0,0,0,.6));
+  }
+  .foot-info{ flex:none; }
+  .venue{ display:flex; align-items:baseline; justify-content:center; gap:14px;
+          font-family:'Barlow Condensed',sans-serif; text-transform:uppercase; }
+  .venue .k{ font-size:16px; font-weight:600; letter-spacing:.26em; text-indent:.26em; color:var(--steel); }
+  .venue .v{ font-size:28px; font-weight:700; letter-spacing:.05em; color:var(--ice); }
+  .coaches{ margin-top:18px; display:flex; align-items:center; justify-content:center; gap:18px;
+            font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:600;
+            letter-spacing:.18em; color:var(--steel-2); text-transform:uppercase; }
+  .coaches .sep{ color:var(--red); }
+  .note{ margin-top:14px; text-align:center; font-size:13px; letter-spacing:.04em;
+         line-height:1.7; color:#5C6672; }
+  .note b{ color:#E8B23A; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="slashes"></div>
+
+  <header>
+    <img class="crest" src="../Logos/FINAL/patch-crest-roundel.svg" alt="Rebels">
+    <div class="season">8U Mite League</div>
+    <div class="title">First Half<span class="sm">Season Schedule</span></div>
+    <div class="year-rule">
+      <span class="bar"></span>
+      <span class="yr">Aug 16 &ndash; Dec 29, 2026</span>
+      <span class="bar r"></span>
+    </div>
+
+    <div class="stats">
+      <div class="stat hot"><b>11</b><span>Games</span></div>
+      <div class="stat"><b>17</b><span>Practices</span></div>
+      <div class="stat"><b>29</b><span>Ice Times</span></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="col">
+      <div class="mhead"><span>August</span><em>5</em></div>
+      <div class="e game"><div class="d"><b>16</b><span>Sun</span></div><div class="m"><div class="t">9:40 AM <span>&ndash; 10:30 AM</span></div></div><div class="tag g">Game</div></div>
+      <div class="e practice"><div class="d"><b>18</b><span>Tue</span></div><div class="m"><div class="t">5:10 PM <span>&ndash; 6:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e game"><div class="d"><b>23</b><span>Sun</span></div><div class="m"><div class="t">2:20 PM <span>&ndash; 3:10 PM</span></div></div><div class="tag g">Game</div></div>
+      <div class="e practice"><div class="d"><b>25</b><span>Tue</span></div><div class="m"><div class="t">5:10 PM <span>&ndash; 6:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e game"><div class="d"><b>30</b><span>Sun</span></div><div class="m"><div class="t">4:20 PM <span>&ndash; 5:10 PM</span></div><div class="where">Summerlin Hosp. Rink A</div></div><div class="tag g">Game</div></div>
+      <div class="mhead"><span>September</span><em>6</em></div>
+      <div class="e practice"><div class="d"><b>01</b><span>Tue</span></div><div class="m"><div class="t">6:10 PM <span>&ndash; 7:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e game"><div class="d"><b>13</b><span>Sun</span></div><div class="m"><div class="t">2:30 PM <span>&ndash; 3:20 PM</span></div><div class="where">Summerlin Hosp. Rink A</div></div><div class="tag g">Game</div></div>
+      <div class="e practice"><div class="d"><b>15</b><span>Tue</span></div><div class="m"><div class="t">6:10 PM <span>&ndash; 7:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e game"><div class="d"><b>20</b><span>Sun</span></div><div class="m"><div class="t">2:40 PM <span>&ndash; 3:30 PM</span></div></div><div class="tag g">Game</div></div>
+      <div class="e practice"><div class="d"><b>22</b><span>Tue</span></div><div class="m"><div class="t">6:10 PM <span>&ndash; 7:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e game"><div class="d"><b>27</b><span>Sun</span></div><div class="m"><div class="t">5:00 PM <span>&ndash; 5:50 PM</span></div></div><div class="tag g">Game</div></div>
+      <div class="mhead"><span>October</span><em>7</em></div>
+      <div class="e game"><div class="d"><b>04</b><span>Sun</span></div><div class="m"><div class="t">3:40 PM <span>&ndash; 4:30 PM</span></div></div><div class="tag g">Game</div></div>
+      <div class="e practice"><div class="d"><b>06</b><span>Tue</span></div><div class="m"><div class="t">7:10 PM <span>&ndash; 8:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e practice"><div class="d"><b>13</b><span>Tue</span></div><div class="m"><div class="t">7:10 PM <span>&ndash; 8:00 PM</span></div></div><div class="tag p">Prac</div></div>
+    </div>
+    <div class="col">
+      <div class="mhead"><span>October <i>cont.</i></span><em>7</em></div>
+      <div class="e game"><div class="d"><b>16</b><span>Fri</span></div><div class="m"><div class="t">7:00 PM <span>&ndash; 7:50 PM</span></div><div class="where">America First Center &middot; Rink 2</div></div><div class="tag g">Game</div></div>
+      <div class="e practice"><div class="d"><b>20</b><span>Tue</span></div><div class="m"><div class="t">7:10 PM <span>&ndash; 8:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e game"><div class="d"><b>25</b><span>Sun</span></div><div class="m"><div class="t">6:00 PM <span>&ndash; 6:50 PM</span></div></div><div class="tag g">Game</div></div>
+      <div class="e practice"><div class="d"><b>27</b><span>Tue</span></div><div class="m"><div class="t">5:10 PM <span>&ndash; 6:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="mhead"><span>November</span><em>4</em></div>
+      <div class="e practice"><div class="d"><b>03</b><span>Tue</span></div><div class="m"><div class="t">5:20 PM <span>&ndash; 6:10 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e practice"><div class="d"><b>17</b><span>Tue</span></div><div class="m"><div class="t">5:10 PM <span>&ndash; 6:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e game"><div class="d"><b>20</b><span>Fri</span></div><div class="m"><div class="t">5:40 PM <span>&ndash; 6:30 PM</span></div><div class="where">Summerlin Hosp. Rink A</div></div><div class="tag g">Game</div></div>
+      <div class="e practice"><div class="d"><b>24</b><span>Tue</span></div><div class="m"><div class="t">6:10 PM <span>&ndash; 7:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="mhead"><span>December</span><em>7</em></div>
+      <div class="e practice"><div class="d"><b>01</b><span>Tue</span></div><div class="m"><div class="t">6:10 PM <span>&ndash; 7:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e practice"><div class="d"><b>08</b><span>Tue</span></div><div class="m"><div class="t">6:10 PM <span>&ndash; 7:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e practice"><div class="d"><b>15</b><span>Tue</span></div><div class="m"><div class="t">6:10 PM <span>&ndash; 7:00 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e game"><div class="d"><b>20</b><span>Sun</span></div><div class="m"><div class="t">4:10 PM <span>&ndash; 5:00 PM</span></div></div><div class="tag g">Game</div></div>
+      <div class="e holiday"><div class="d"><b>21</b><span>Mon</span></div><div class="m"><div class="t">3:00 PM <span>&ndash; 4:30 PM</span></div></div><div class="tag h">Skate</div></div>
+      <div class="e practice"><div class="d"><b>26</b><span>Sat</span></div><div class="m"><div class="t">1:40 PM <span>&ndash; 2:30 PM</span></div></div><div class="tag p">Prac</div></div>
+      <div class="e practice"><div class="d"><b>29</b><span>Tue</span></div><div class="m"><div class="t">7:10 PM <span>&ndash; 8:00 PM</span></div></div><div class="tag p">Prac</div></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="foot-main">
+      <img class="mascot" src="../Logos/FINAL/shirt-mascot-skating-1200.png" alt="">
+      <div class="foot-info">
+        <div class="venue">
+          <span class="k">Rink</span>
+          <span class="v">City National Arena</span>
+        </div>
+        <div class="coaches">
+          <span>Coach Ryan Rose</span>
+          <span class="sep">&bull;</span>
+          <span>Coach Kane Osmars</span>
+        </div>
+      </div>
+    </div>
+    <div class="note">
+      Every session is Ghost Energy Rink B unless the date says otherwise in <b>gold</b>. The Oct 16 game is at America First Center in Henderson, not City National Arena.
+      Game days: the Rebels play the other teams sharing the ice.
+      Times are per the league&rsquo;s First Half Season Schedule and are subject to change.
+    </div>
+  </footer>
+</div>
+</body>
+</html>

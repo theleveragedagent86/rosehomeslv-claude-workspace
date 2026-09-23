@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How to Use the Weekly Seller Update Builder</title>
+<link rel="stylesheet" href="../../../Brandkit/Design-System/fonts/fonts.css">
+<style>
+  :root{
+    --bg:#FFFFFF;
+    --bg-2:#F7F8FA;
+    --bg-inv:#000000;
+    --line:#E4E7EF;
+    --ink:#050E3D;
+    --ink-2:#55627F;
+    --ink-inv:#FFFFFF;
+    --ink-2-inv:#9AA3BC;
+    --accent:#1768E5;
+    --accent-inv:#5B9BFF;
+    --head:"Barlow","Helvetica Neue",Arial,sans-serif;
+    --sub:"Raleway","Helvetica Neue",Arial,sans-serif;
+    --body:"Inter",-apple-system,"Helvetica Neue",sans-serif;
+  }
+  @page{size:Letter;margin:0;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.55;font-size:13px;}
+  .page{width:8.5in;height:11in;margin:0 auto;padding:0.62in 0.72in 0.5in;background:var(--bg);position:relative;overflow:hidden;}
+  .page + .page{page-break-before:always;}
+
+  header{display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid var(--ink);padding-bottom:14px;margin-bottom:24px;}
+  header img{height:46px;width:auto;}
+  .kicker{text-align:right;font-family:var(--head);font-size:10.5px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);font-weight:700;}
+  .kicker span{display:block;color:var(--ink-2);font-weight:600;margin-top:2px;}
+
+  h1{font-family:var(--head);font-size:36px;line-height:1.05;letter-spacing:-0.028em;color:var(--ink);font-weight:800;margin-bottom:10px;}
+  h1 .accent{color:var(--accent);}
+  .sub{font-family:var(--sub);font-weight:600;font-size:16px;letter-spacing:0.01em;color:var(--ink);margin-bottom:8px;}
+  .lede{font-size:13.5px;color:var(--ink-2);max-width:6.4in;margin-bottom:22px;}
+
+  h2{font-family:var(--head);font-size:12px;text-transform:uppercase;letter-spacing:0.15em;color:var(--accent);font-weight:800;margin:22px 0 12px;display:flex;align-items:center;gap:10px;break-after:avoid;}
+  h2::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  .need{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+  .chip{background:var(--bg-2);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:8px;padding:12px 13px;break-inside:avoid;}
+  .chip b{font-family:var(--head);font-weight:700;color:var(--ink);display:block;font-size:14px;line-height:1.2;margin-bottom:4px;}
+  .chip span{font-size:11.5px;color:var(--ink-2);line-height:1.45;display:block;}
+
+  ol.steps{list-style:none;counter-reset:step;}
+  ol.steps > li{counter-increment:step;position:relative;padding:11px 0 11px 50px;border-bottom:1px solid var(--line);}
+  ol.steps > li:last-child{border-bottom:none;}
+  ol.steps > li::before{content:counter(step);position:absolute;left:0;top:10px;width:32px;height:32px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--head);font-weight:800;font-size:15px;}
+  ol.steps > li b{font-family:var(--head);font-weight:700;color:var(--ink);font-size:15px;}
+  ol.steps > li p{font-size:12.5px;color:var(--ink-2);margin-top:1px;}
+  code{font-family:"SF Mono",Menlo,monospace;font-size:11.5px;background:var(--bg-2);border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:var(--ink);}
+
+  .weekly{margin-top:14px;display:flex;align-items:center;gap:16px;background:var(--bg-2);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:12px 16px;}
+  .weekly .cmd{font-family:"SF Mono",Menlo,monospace;font-size:14px;font-weight:600;color:var(--accent);white-space:nowrap;}
+  .weekly span{font-size:12px;color:var(--ink-2);}
+
+  /* page 2 */
+  .outputs{background:var(--bg-inv);color:var(--ink-inv);border-radius:12px;padding:22px 26px;break-inside:avoid;}
+  .outputs h3{font-family:var(--head);font-size:12px;text-transform:uppercase;letter-spacing:0.15em;color:var(--accent-inv);margin-bottom:16px;font-weight:800;}
+  .outputs .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;}
+  .outputs .item{display:flex;gap:11px;align-items:flex-start;}
+  .outputs .letter{color:#fff;background:var(--accent);min-width:24px;height:24px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:var(--head);font-weight:800;font-size:13px;margin-top:1px;}
+  .outputs .item b{font-family:var(--head);font-weight:700;color:#fff;font-size:14.5px;}
+  .outputs .item div span{display:block;color:var(--ink-2-inv);font-size:11.5px;line-height:1.4;margin-top:1px;}
+
+  .rounds{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;}
+  .round{border:1px solid var(--line);border-radius:8px;padding:9px 10px;background:var(--bg);}
+  .round .n{font-family:var(--head);font-weight:800;font-size:18px;color:var(--accent);line-height:1;}
+  .round b{display:block;font-family:var(--head);font-weight:700;font-size:12.5px;color:var(--ink);margin-top:4px;line-height:1.2;}
+  .round span{display:block;font-size:10.5px;color:var(--ink-2);line-height:1.35;margin-top:2px;}
+  .legend{font-size:11px;color:var(--ink-2);margin-top:8px;}
+  .legend b{color:var(--ink);}
+
+  .tips{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;}
+  .tip{background:var(--bg-2);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:8px;padding:12px 14px;break-inside:avoid;}
+  .tip b{font-family:var(--head);font-weight:700;color:var(--ink);font-size:14px;display:block;margin-bottom:4px;line-height:1.2;}
+  .tip span{font-size:11.5px;color:var(--ink-2);line-height:1.45;display:block;}
+
+  .why{background:var(--bg-2);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-top:14px;font-size:12px;color:var(--ink-2);}
+  .why b{color:var(--ink);}
+  .why .num{color:var(--accent);font-weight:600;}
+
+  footer{position:absolute;left:0.72in;right:0.72in;bottom:0.45in;padding-top:12px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;font-size:10.5px;color:var(--ink-2);}
+  footer .brand{font-family:var(--head);font-weight:800;color:var(--ink);}
+  footer .tag{color:var(--accent);font-weight:500;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <header>
+    <img src="logo.svg" alt="The Leveraged Agent">
+    <div class="kicker">Level 5 &middot; Listing Launch<span>Quick-Start Guide</span></div>
+  </header>
+
+  <h1>How to Use the <span class="accent">Weekly Seller Update</span> Builder</h1>
+  <p class="sub">One paste. One interview. A seller update that runs itself every week.</p>
+  <p class="lede">This prompt builds a system that turns your listing's views, showings, feedback and marketing into a branded seller report and a ready-to-send email. It interviews you first, so every number is real and every word sounds like you. You set it up once. After that, it's one command a week.</p>
+
+  <h2>What you'll need</h2>
+  <div class="need">
+    <div class="chip"><b>Claude Code + your Business Brain</b><span>Open it inside the folder you built in Level 1.</span></div>
+    <div class="chip"><b>Your listing basics</b><span>Address, MLS number, list price and the seller's email.</span></div>
+    <div class="chip"><b>Your logins open in Chrome</b><span>Zillow, Homes.com, your CRM, Meta Ads and your showing service.</span></div>
+    <div class="chip"><b>About 20 minutes</b><span>For the first run only. Every week after that is about 5.</span></div>
+  </div>
+
+  <h2>The five steps</h2>
+  <ol class="steps">
+    <li><b>Open Claude Code in your Business Brain.</b><p>Same folder as always. It reads your CLAUDE.md, voice and brand before it asks you anything.</p></li>
+    <li><b>Switch to Plan Mode.</b><p>Press <code>Shift+Tab</code> until the bottom of the screen says "plan mode." Nothing gets built until you say so.</p></li>
+    <li><b>Paste the whole prompt file and hit Enter.</b><p>Open "weekly-seller-update-plan-prompt.md," copy everything, and paste it in. Don't add anything else yet.</p></li>
+    <li><b>Answer the interview.</b><p>It asks in 10 short rounds: you, the listing, the seller, where your views live, showings, marketing, nearby listings and how you deliver. Don't know one? Say so. It marks it "NOT FOUND" and never guesses.</p></li>
+    <li><b>Read the plan, approve it, and let it build.</b><p>You'll see every file it will make and every step of the weekly run. Approve it and Claude builds the whole system.</p></li>
+  </ol>
+
+  <div class="weekly">
+    <div class="cmd">/weekly-update 123 Main St</div>
+    <span><b style="color:var(--ink);font-weight:600">Every week after that.</b> It asks a few quick questions, pulls the numbers, builds the report and drafts the email. You read it and hit send.</span>
+  </div>
+
+  <footer>
+    <div><span class="brand">The Leveraged Agent</span> &nbsp;&middot;&nbsp; <span class="tag">AI workflows for working agents</span></div>
+    <div>Level 5 &middot; Weekly Seller Update &middot; Page 1 of 2</div>
+  </footer>
+</div>
+
+<div class="page">
+  <h2 style="margin-top:0">What the system gives you back</h2>
+  <div class="outputs">
+    <h3>Five pieces, every week, fully yours</h3>
+    <div class="grid">
+      <div class="item"><span class="letter">A</span><div><b>The Seller Report</b><span>A branded page with a short summary, total online views by site, a plain-talk showings recap and your marketing numbers.</span></div></div>
+      <div class="item"><span class="letter">B</span><div><b>A CRM-Ready Copy</b><span>The same report as one file you paste into your landing page. Same link for the seller every week.</span></div></div>
+      <div class="item"><span class="letter">C</span><div><b>The Seller Email Draft</b><span>Summary, report link and nearby listings to watch. Drafted, never sent. You send it.</span></div></div>
+      <div class="item"><span class="letter">D</span><div><b>Running Records</b><span>A view history, one showing log and one feedback file, so next week starts where this one ended.</span></div></div>
+      <div class="item"><span class="letter">E</span><div><b>Your /weekly-update Command</b><span>A skill saved in your Business Brain. Works on every listing you take from now on.</span></div></div>
+    </div>
+  </div>
+
+  <h2>What the interview asks you</h2>
+  <div class="rounds">
+    <div class="round"><div class="n">01</div><b>You + brand</b><span>Name, headshot, colors, sign-off</span></div>
+    <div class="round"><div class="n">02</div><b>The listing</b><span>Address, MLS #, price, hero photo</span></div>
+    <div class="round"><div class="n">03</div><b>The seller</b><span>Name they go by, email, what stays private</span></div>
+    <div class="round"><div class="n">04</div><b>Online views</b><span>Each site's link and where its views live</span></div>
+    <div class="round"><div class="n">05</div><b>Showings</b><span>Showing service, feedback sources</span></div>
+    <div class="round"><div class="n">06</div><b>Marketing</b><span>Mailers, Meta ads, agent emails</span></div>
+    <div class="round"><div class="n">07</div><b>Competition</b><span>3 to 5 nearby listings or solds</span></div>
+    <div class="round"><div class="n">08</div><b>This week</b><span>Tone, the one takeaway, what's next</span></div>
+    <div class="round"><div class="n">09</div><b>Delivery</b><span>Report link, subject line, draft or send</span></div>
+    <div class="round"><div class="n">10</div><b>Autopilot</b><span>Skill, reminders, what happens at pending</span></div>
+  </div>
+  <p class="legend"><b>Rounds 1 to 7 and 9 to 10 are one-time setup.</b> Round 8, plus new feedback and mailer rounds, is all it asks you each week.</p>
+
+  <h2>Three tips to get the best output</h2>
+  <div class="tips">
+    <div class="tip"><b>Log in before you start</b><span>Open every site in Chrome first. It pauses for a login, but it never types your passwords.</span></div>
+    <div class="tip"><b>Paste your texts in</b><span>Feedback from texts and calls is the best stuff. Paste it in raw. It keeps the agent's actual words.</span></div>
+    <div class="tip"><b>Pick your tone on purpose</b><span>Momentum, subtle repositioning or hold steady. It never tells your seller in writing to cut the price.</span></div>
+  </div>
+
+  <div class="why">
+    <b>Why it works:</b> it was built backward from a real listing, not a template. Ryan's 29 Amber Rock St ran five weekly updates through <span class="num">30 days</span> on market, <span class="num">21 showings</span> and <span class="num">5,500+ online views</span>. Every snag from those weeks is built in as a question: the seller who goes by a different name, feedback split across two files, a view count that dropped because a site only counts the last 30 days, and offer amounts that belong in a phone call, not a report.
+  </div>
+
+  <footer>
+    <div><span class="brand">The Leveraged Agent</span> &nbsp;&middot;&nbsp; <span class="tag">AI workflows for working agents</span></div>
+    <div>Level 5 &middot; Weekly Seller Update &middot; Page 2 of 2</div>
+  </footer>
+</div>
+
+</body>
+</html>

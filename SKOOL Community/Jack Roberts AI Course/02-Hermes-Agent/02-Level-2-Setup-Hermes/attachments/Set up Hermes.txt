@@ -1,0 +1,621 @@
+ Hey there, beautiful AI automator and welcome to level two in the Hermes master
+class.
+ In this video, I'm going to show you exactly how to install and deploy Hermes
+ agent in the most unbelievably simple and safe way possible.
+ I'm going to show exactly what I'm doing with my Hermes agent, what I think is
+ the
+ best way as well as every alternative.
+ So, you know, exactly where you stand and you have full optionality to make a
+ good
+ decision for yourself.
+ Now, let's kick off with how can we actually run Hermes agent?
+ Because there's essentially three ways to do it.
+ Think about it like this.
+ Three different houses it could live in for one tenant.
+ So we have an option A, which is on your machine.
+ This could be your laptop or if you're so inclined, you may go ahead and buy a
+ Mac
+ Mini and Mac Mini, for example, would look at something like this.
+ I actually went into Apple and I bought a piece of hardware.
+ It looks kind of similar to this, a little bit different.
+ It's not quite this size, but I probably spent, I don't know, four or five
+ thousand
+ dollars on it, you don't need to spend that much money on it.
+ And in fact, what you could do if you wanted to is run it on an old laptop.
+ You could run it on an old Windows laptop.
+ They're not too crazy in terms of pricing.
+ So if I say the cost in USD, just to give you an idea of what that looks like.
+ Come into AI mode and I can show you what is a Mac Mini.
+ People like Mac Mini's because they're dependable, they're reliable.
+ You can get one for like 800 bucks, but realistically, you could run it on any
+ device that you want to any old laptop.
+ I went big because I'm investing in my own AI lab.
+ I think it's the future and also it's fun, super exciting.
+ So I run mine on my own metal and it runs 24/7.
+ And I love the fact that it lives on my Mac and I can just see it and touch it.
+ And I explained why this is such a good idea to second and why you want to go
+ to
+ this one versus other different options at the moment.
+ Now, why is running on your machine so good?
+ Well, here's the thing.
+ One of the biggest benefits of Hermes agent is the fact that it can do stuff
+ with your files if you need it to.
+ The fact that it has got access to everything else because I have
+ clone this computer, I can actually ask Hermes directly, hey, what did I talk
+ about yesterday on an access to all those files?
+ And so it can do things for me.
+ It can find out files I have my desktop and I know where it's running.
+ It is just something about having physical AI, local AI running locally
+ that is just really, really cool.
+ And there was a lot of fear mongering, quite frankly, last year
+ on open cloud and a lot of people were saying, I will never let this run wild
+ on my laptop.
+ But what you have to think about is you already are.
+ You're already doing that.
+ You're already, if you're using cloud on your own computer, you're already
+ letting AI onto your computer.
+ It just gives it more optionality.
+ And in many respects, doing it on a VPS, if you don't know what you're doing,
+ is way more risky anyway.
+ Now, it's not an option for everybody to run up locally.
+ And maybe you don't want to do that for a few different reasons.
+ So I'm going to show you all the different routes and different ideas you can
+ do.
+ So option A is running on your computer.
+ This is what I like to do.
+ And I would recommend my best friend.
+ I got hired for coming to do this.
+ I would say let's run a local.
+ Now, option number two is darker.
+ Now, you think, Jack, what is darker?
+ What is this all about?
+ Well, darker is a really cool concept of if you think about, let's say your
+ house is your computer.
+ Now, what I do is I say, Hey, Hermes, run around the house.
+ It's fine.
+ You can do what you want to do in darker.
+ What we do is we have what we call, it's called containerization.
+ We give it a container.
+ In other words, we kind of carve out a piece of space on your computer and
+ Hermes
+ lives in this container.
+ It cannot leave it.
+ It can only live on that.
+ So essentially it's running on your own computer, but it can't touch anything
+ outside of the container.
+ It can't look and pair at the files.
+ So if you had like images about your master plan to bring out a competitor for
+ Laquara or something, as you can tell them quite on the hype for that right now
+.
+ And you didn't want to see those images.
+ You don't want to access those files.
+ We can run it in a container.
+ Using software called Docker.
+ I'm not sure you hate to do that.
+ Then option three is running it in the cloud.
+ Weirdly enough, we went from local was the way then cloud was a future.
+ Now we're coming back to local again, but you can if you want to run it on a V
+PS,
+ but just a bit on a transparency point, a lot of content will always tie you
+ doing a VPS doing a VPS.
+ And honestly, the reason for that is because they're sponsored videos.
+ They just are like they get paid to mention it, sign up to XYZ VPS down below.
+ And they get a they get even get a kickback or we just get sponsored to do it.
+ So and if you think about it, why would a creator?
+ Well, I don't recommend it on VPS.
+ I get the I get the same emails from these companies.
+ I don't personally recommend still in the VPS, but just so you know,
+ that a lot of people that do push VPS wonder how many times they do actually
+ run it locally themselves.
+ So I'm not saying that VPS is not bad, but just make an informed decision.
+ You just make sure you're doing it on a VPS because you want to do it on a VPS,
+ not just because that's the way that it's been shown.
+ OK, so just want to put that out that is like,
+ trans-barrowancy people are paid to talk to you on a VPS in reality.
+ You know, I got off of that.
+ I said, I don't believe that's the right way.
+ I believe in local.
+ So I'm pushing local.
+ That's what I believe.
+ That's why I talk about, you know, doing it locally versus VPS.
+ I always try to do what I personally do and I'm not I'm not for sale on that
+ way.
+ So that's really important to bear in mind.
+ But one of the reasons why you may want to do VPS is let's say, for example,
+ you don't have a second computer, you just don't.
+ And it's not convenient for you to do so.
+ Or you do want it running in the cloud.
+ So it's on 24/7 and I have to worry about it.
+ Think about it, touch it, you can do that yourself.
+ And you can access maybe better hardware than you could do on your own computer
+.
+ I think the gold standard genuinely is buying a Mac mini or a good computer
+ and running it locally or a laptop.
+ And if not, Docker, if you're very security concerned and very kind of maybe
+ can be continually minded is an option to do local and then VPS, if not.
+ So cool little breakdown here is your machine.
+ Fastest to set up like literally you'd be set up in seconds, full access your
+ files
+ and use only on when you're up to bed.
+ It's best for learning it and daily driving where everybody should begin
+ and where I live.
+ I love it, Docker, clean, repeatable, disposable installs.
+ It's isolated from the rest of your system, but it's one more layer you
+ can learn about.
+ So it's an extra thing that we've got to do.
+ It's best for a tidy, reproducible setup on your machine or your server.
+ Then we have the VPS.
+ And by the way, you may, for example, do Docker.
+ If you had like, let's say one machine and you wanted multiple versions of
+ different
+ enemies agent that your team could use.
+ Then we have VPS truly always runs while you sleep from five bucks a month
+ from how much it will work, no local files unless you are wired.
+ And this is kind of an added complexity.
+ Like if you want to bring in the agenda operating system, we have to do some
+ wiring and getting to show you all of that inside this masterclass.
+ But it's best for always on and schedule agents.
+ My honest take, as I say, is to start on your machine.
+ It's the fastest path to, oh, my goodness, it freaking works.
+ So on your own metal, you can install it with one line.
+ What is that one line of code?
+ Well, I've got it right here and I basically goes, what I'm going to put
+ these files for you down below so you can grab it.
+ If not, if you want to, what you can do is head over to the Hermes website,
+ which we'll do together.
+ Let's go check this out and we can install it together right now.
+ Now mine won't install because I kind of already installed it.
+ I just copy this.
+ The little hack for you is you're going to come down.
+ If you're on a Mac, just come down and do command and spacebar, like so.
+ So I can find them in applications.
+ And what we're looking for is the terminal and the terminal appears.
+ Terminal, by the way, just fancy way of, I know when I first started doing this
+,
+ I have a non-coding background.
+ I actually studied law and I did like various things, my startup and business
+ and stuff, and I didn't come from accounting background.
+ So terminal can be very like, it's a bit weird, right?
+ All you do, all this is, is just code and it talks to the computer.
+ And when cloud does stuff for you, it's doing it.
+ Basically talking to your computer.
+ Now, all you're going to do is come down and paste this in.
+ That is it, then hit enter.
+ Simple as that.
+ And that is now literally installing Hermes onto your computer.
+ How cool is this?
+ Now, I already have mine on there.
+ OK, so you're going to see, basically, it's not going to be through some
+ various
+ different bits and pieces I can do if I want to.
+ It's updating it.
+ It's grabbing different information, obviously not quite updating it,
+ but it's basically downloading it to the computer.
+ And once it's done that, we can actually go ahead and begin the process
+ of setting up Hermes agent.
+ But I'm going to set up a brand new one on Docker for you.
+ So we can go to that process together and setting up the keys so you can be
+ fully
+ ready to rock and rock so I can reconfigure it.
+ I can select providers.
+ I can do various different things, which is cool.
+ That's how you do it.
+ You go to the process, then Hermes is running.
+ That's basically it.
+ That is how frickin simple it is.
+ It's what I've been, what about you already to rock and roll once you get that
+ sorted out.
+ So let's add to go ahead now and set it up on Docker.
+ And then we're going to go ahead and do VPS.
+ Now, the great news for you is that I have, over here on our level two thing,
+ I have a full setup guide for Hermes Docker and I'm going to come over here.
+ And as you can see, we have everything that we need.
+ So first thing I want to do is go over and actually physically download Docker.
+ So not a GitHub.
+ Let's go over to Google Docker.
+ All right, come down and let's go ahead and download the Docker desktop,
+ which is going to be beautiful.
+ I think we go ahead and sign in and create an account first.
+ Actually, let's just go for download Docker on Mac.
+ OK, come down, send this bad boy off and install Docker desktop, which is cool.
+ Yeah, Apple Silicon from my side.
+ Obviously, just do windows if you're on windows and then I think I'm going to
+ want to go ahead
+ and we can just go ahead and grab this bad boy and do some magic with it.
+ So let's click on this and then we should be able to drag that one over.
+ Beautiful, cool.
+ And then I think we do command spacebar and then just open up Docker.
+ Where is Docker?
+ Docker is eluding us.
+ OK, so we'll just go through it to applications.
+ And in that case, let's come off this guy and find this guy.
+ OK, it might be it may be accessible now, but if it comes to applications,
+ let's try and find this bad boy.
+ OK, come over and grab it.
+ There we go, Docker.
+ We found him and I'm going to bring him down and let him hang out inside the
+ bar at the bottom.
+ Cool. So we're going to open this one up.
+ That's cool. I enter in my password.
+ And then what I recommend that you do is sign in and or create an account.
+ So I'm going to click on sign in, continue with GitHub.
+ It's the easiest one.
+ If you have a GitHub, it's just a place with store files.
+ I highly, highly recommend that you grab an account there.
+ We're going to come down and log in, which is fantastic.
+ And then we're ready to rock and roll.
+ Cool. So I verified that I am a real life human being, opens up.
+ And what do you believe it?
+ I am now fully signed in, which is fantastic.
+ So we have these single containers.
+ We have these things called images.
+ I'll explain exactly what we're doing here.
+ And what it looks like.
+ But in honesty, guys, the best way to get things set up,
+ generally speaking, is actually via cloud.
+ So I've got the full instructions right on.
+ I've put now the running doc and Hermes, right?
+ Basically, you've got to install Docker runtime, make a separate brand.
+ Sounds like a lot of stuff going on.
+ What we're going to do is literally copy all of this like this,
+ control and see.
+ And then we're going to open up a brand new cloud conversation.
+ And effectively, whilst I can show you step by step,
+ I also want to show you the way of how you can actually use
+ cloud to understand how to do various things.
+ So I'm going to say, hey, that I would like to install.
+ I've just downloaded the Docker app.
+ I would like to run a separate instance of Hermes agents in Docker.
+ So I want you to configure anything that needs to be configured.
+ I want you to have a look at the setup guide down below,
+ such that I can run Hermes agent in Docker.
+ I want you to download Hermes agent onto this Docker.
+ And then I want you to open it up so I can go through the entire setup process
+ inside Docker and then let me know if there's any other information
+ that I need to know in this process.
+ All right, going to come down.
+ What have been, what about?
+ Control V, post everything in, and then cloud
+ can shepherd you through the entire process.
+ Now, I also recommend that you do this because having an independent guide,
+ walking through things and explaining how this works.
+ For example, I could say, hey, explain to me how containers work inside Docker,
+ like I'm five years old.
+ Actually, not like quite five years old, but like I am maybe 10 or 12 years old
+ in a way that understands and a way that I can understand,
+ talk about images, talk about containers.
+ And obviously, I know what these things are, but you can actually
+ get cloud to explain these things to you so you understand every single part
+ of the entire process.
+ Now, cloud in the background is going to install everything for us in Docker.
+ It will open up and then we can rock and roll.
+ Guys, just like that, it's now actually opened up.
+ You see Jack Roberts hyphen Docker.
+ So effectively what it does is it runs the exact same commands, but it prefixes
+ it.
+ In other words, as to the beginning of that command, a Docker, which means that
+ I want you to run it, but you're running it in the Docker containment.
+ Now, you can see we've got the quick setup, the full setup and the blank slate.
+ Beautiful.
+ So now we've got it.
+ What we're going to do guys is come down and do the full setup like some and it
+'s
+ up and down to go up and down.
+ And bear in mind, it's the same setup code.
+ We've just prefixed it with Docker, which is great.
+ So we're going to do space parts to do the full setup.
+ And then the first thing we're going to do is basically decide which model we
+ want
+ to choose for the setup itself.
+ Now, there's two I really want you to get.
+ The first one is going to be open router.
+ And all you're going to do is come down like so and it's going to ask you
+ for your open routes key.
+ Now, when you give it your open router API key, you can effectively connect to
+ literally every model on the planet.
+ So all you're literally going to do is come over to open router, like so,
+ forward slash AI, forward slash models and then you're looking to go and grab
+ your API key.
+ And as you can see, you can access all the models, TPC before flash, minimax M3
+,
+ cloud opens 4.8 for basically every single model you can imagine.
+ You can get including fable five.
+ It's incredible.
+ So then if you come onto your profile over here in the bottom left and then you
+ come over to API keys, you can let you come over.
+ You can create a new API key, call it something like Hermes agent credit limit.
+ Just put how many, how much credit you're happy spending on a monthly basis,
+ call it a hundred dollars.
+ You won't really use that unless you get bonkers and you can reset that monthly
+.
+ Now, expiration, go ahead and create and then you've got an API key.
+ You can actually copy this, come straight back over to Hermes agent, like so.
+ And then come down and enter.
+ And then that is going to be configured to that now.
+ So you're all ready to rock and roll basically.
+ So you're setting a set to go.
+ Now, this stage, you want to set what the model is that you want to go ahead
+ and pick, which is cool.
+ I would recommend in this case, let's go for and throw up.
+ Opus 4.8.
+ You can see the son of son of models.
+ You can video to have a look at all the different ones you want to go with.
+ Let's say I want to go deep seek V4 pro, which is very powerful and very, very
+ cheap.
+ As you can see, so come click on space bar on that.
+ Then you've got the different terminal back end.
+ So we want to come down here and do darker, which is fantastic.
+ Then you can basically set your messaging platform, decide what you want to
+ connect
+ to, you could do telegram, whatever you want to, you name them.
+ Now to telegram, it's that for it for just click on space bar here for a second
+,
+ which is great, then hit enter, which is awesome.
+ And then the next thing it's going to go ahead and do here is going to either
+ ask
+ you to scan your code and confirm and telegram, which is great, or create
+ ourselves.
+ So with this, go ahead and do one, which is going to be to scan a QR code
+ and confirm and telegram that we're done.
+ So press one, hit enter.
+ And then we have this beautiful basically QR code.
+ So we're going to go ahead and copy this.
+ Now, once you've done that, guys, what it will basically ask you to do is
+ confirm if this is the only account you want to connect to, make sure that is
+ the
+ case and it's the only user ID.
+ And what that essentially means is that no other user ID can message your own
+ specific Hermes agent.
+ Then you've got all these different tools for CLI.
+ That's all fine.
+ The way that it is, just come down and click on space bar once you've done
+ that sort of stuff and click on enter when you basically selected all the ones
+ that you're comfortable with and all the stuff you want to add.
+ Again, it's completely based on your own specific requirements.
+ And what's really cool this guys, I've included it down below for you as well.
+ Excuse me, is that you can actually set a alias in your terminal, which means
+ that instead of running this every single time, you just use the word Herk and
+ Herk
+ basically just shortcuts a lot of stuff.
+ So it's basically whatever the key Hermes command is, but basically you just
+ enter this in and then you're ready to rock and roll.
+ So for example, if we copy and paste this, throw this one in.
+ And for instance, we should then actually get that rocking and rolling.
+ So we can actually test this now by just coming down and doing Herk space
+ version.
+ And if that's correct, it should tell us what version of Hermes
+ agent is running on our Docker and by looks things that has worked beautifully.
+ Perfect.
+ And what we can do now as well guys is we can go ahead and why don't go ahead
+ and just run Hermes agent inside the terminal.
+ So let's come over here and let's go ahead and just do Herk.
+ All right, come.
+ Let's open up the terminal like so and then just enter this one in.
+ And that effectively is just Hermes.
+ So this will begin the whole chat conversation with Hermes agent.
+ As you can see, we've got a deep-seek V4 Pro, which is Epic.
+ And then I can begin the conversation.
+ I can say, hey, and then we should get some information back from Hermes.
+ In a second, freezing is having to think you can see we've got the UI here,
+ pipping and popping.
+ And then we'll get that back.
+ Hey, what's up, ready to jump into something.
+ So you have officially set up Hermes agent inside of the terminal.
+ Now, if you want to chat to it in Telegram, that should then be live in there
+ for you as well.
+ But if this new updated version didn't work, I'll put a link down below for the
+ previous
+ tutorial, which also covers how to set up the traditional way with creating a
+ new
+ box so you can rock and rock.
+ Now, this does very nice things on to just very briefly when we're talking
+ about
+ darker, how this whole thing actually works.
+ So let's take a look at darker.
+ If that's what we'd love to do, it's optional, as I say, not required.
+ It's an additional step.
+ But it's a if you want something best way to think about it is as a shipping
+ container.
+ You pack it once and it runs the exact same way on every ship, any port, any
+ machine.
+ It isn't just limited to one individual instance like that.
+ Now, you have something called the image, which is like the cookie cutter.
+ And then you have what's called containers inside of Docker.
+ And I'll put this down below so you can take it if you want to.
+ But the idea is that we have what's called images inside Docker, right?
+ So I open up Docker, you'll see on the left hand side, we have these images.
+ These are things that would run it.
+ Now, images themselves are frozen templates of an app and it's everything that
+ it needs to run.
+ It's read only and this never changes.
+ Then you have the container, which is a live running copy of that image.
+ It's isolated and disposable, which is fantastic.
+ And obviously, you can see a few other technical aspects of registry
+ volume port mapping and Docker composing.
+ Again, just a little bit more technical detail if you do want to run it in
+ Docker,
+ but that option is available there for you, if you would like.
+ Now, to set up Hermes on the VPS, I'm going to go ahead and use hosting it.
+ They're not sponsoring us or anything like that.
+ It's just an easy way to get it up and running.
+ So you're going to basically hpanelhostinger.com/homes/homes/get-started.
+ I'll put a link in the panel in the actual classroom, if you'd like, so you can
+ use that.
+ Again, my recommendation is that you go local.
+ But if you did want to do it, let me show how it works.
+ Come down and click on and get started.
+ I'm going to go for a managed Hermes agent managed forest.
+ That's fine, $5.99 a month.
+ Again, you've got a kind of like a cost associated to it because it's there.
+ We're going to go for one month on the purpose of this.
+ We don't want your Nexus AI credits.
+ Thank you very much.
+ Come down.
+ I've got my PayPal address there.
+ Come down.
+ Let me just go ahead and complete the payment for you so I can show how it
+ works.
+ Cool.
+ And then you've got a simple basic setup where you can add in your API key, for
+ example,
+ for the different models, which is cool.
+ So open AI, I'm Thoropic and Gemini.
+ I'm going to go ahead and skip this just for the purpose of demonstration.
+ Then it's setting up the Hermes agent, which should take a couple of seconds.
+ And then when that's done, we should be able to rock and roll.
+ And what is called about this setup to be fair is it let you have a bot token.
+ So you can actually basically create it.
+ Now, you literally follow this process, go to the bot father, starting to chat
+ forward slash on your bar, et cetera, et cetera.
+ We're going to skip this one for the moment and then we're all set.
+ So if you come down here, we can open up the whole conversation.
+ So let's do that, open it up.
+ And then we actually have an interface here on our hosting site.
+ They've been come down to and say, Hey, and begin a conversation.
+ This won't work though, because we do not have a model attached to it.
+ But now this is 100% running on a VPS that's hosted remotely by hosting it.
+ Then if you come to hpanel.hosting.com, you can see we actually now have this
+ here,
+ which is what's running right now.
+ You can see how it's running and everything's going on with it, which is pretty
+ cool.
+ Your CPU usage, your memory usage, your disk usage, et cetera, et cetera.
+ Now, bear in mind, this individual specific thing they've got here, guys, is
+ like a UI
+ that hosting it has built.
+ It's basically just designed to run it online very, very easily.
+ You don't have to use this.
+ If you want to, you can literally just come down, get a completely new system
+ and run it on a terminal.
+ And then it would just be the UI.
+ This is like the very easy way of getting it set up to run it there.
+ And then you just chat to it directly there.
+ You're basically your, your telegram.
+ I recommend that you go down the more manual route if you are going to do VPS.
+ But if you just want to get up and running and set up, you can do it this way,
+ too.
+ So now we've covered set up.
+ Let's go ahead and talk about how we're actually going to get this running
+ and what we need to do here.
+ So effectively, one of the really cool things that we can do with our Hermes
+ agent
+ now is to go ahead, schedule it and also trigger things to happen, which is
+ awesome.
+ And what I mean by that is we can drop commands to Hermes agent and say, Hey,
+ go ahead and do this thing for me at this time.
+ And so one of the things that I highly recommend that you do with your Hermes
+ agent,
+ OK, is to come over and give it a prompt like this, which is what we call the
+ morning
+ brief. Hey, that I would like to go ahead for me every single morning.
+ For me, a morning brief.
+ I would like you to include in that an overview of what the weather is going to
+ be
+ that day and any suggestions about things that I could do to improve based on
+ our
+ previous conversations that's happened so far that week.
+ Then what we can do is and I'm going to show you these different skills as we
+ get
+ deeper into the video in the masterclass.
+ One of the things that we can actually do is have it check all of our emails
+ and check
+ our calendars and give us a unique breakdown of everything that's happening
+ that
+ there. But just to show you how this works, practically, I could say, Hey,
+ could you just remind me in two minutes that I need to go ahead and walk next
+ to
+ my springer's manual? OK, go down there.
+ And what basically this will do is bring it a spaniel.
+ People don't know what the springer's spaniel is, but it's super important.
+ It will actually make an record of the fact that we've asked it to do that and
+ it
+ will come back and remind us.
+ It's a very, very cool thing, the way that Hermes works like that.
+ It can set these reminders and it's quite a schedule.
+ So in two minutes time, we are going to get a message now from Hermes reminding
+ us
+ of that fact. Now, before we go into connections that are going to completely
+ open up your world in the next level of this masterclass, I want you to do one
+ of the most important things to a Hermes agent and that's given a lifeline to
+ create
+ a digital replica of it.
+ Now, the way we're going to do that is with GitHub.
+ If you open up the agentic operating system, that'll be available in the cloud
+ master class just above this one in the current configuration.
+ Effectively, what this is going to able to do, I'm going to scroll down and
+ grab it.
+ OK, let me show you where this particular piece of code is.
+ OK, it's right here on the left and side.
+ Connect to GitHub. Now, effectively, GitHub, if you are not familiar, as I said
+ before,
+ is basically an online repo full of loads of information and bits and bobs.
+ Effectively, all code just kind of lives in GitHub.
+ So here's one I made called power design, which is really cool.
+ All the code for that lives are or you might have skills for your agents.
+ And what we want to do is quite a private repo inside Hermes.
+ And effectively, what we want to do is to create a copy of itself on that every
+ day.
+ So 100% private, you're the only person that can access it.
+ But what it means is if you make a change to Hermes.
+ And for some reason, it stops working or it breaks or anything like that, right
+?
+ We can always revert it.
+ We can send it back.
+ We can change it because, as you can see here, we are backing up.
+ We bought it as a spare key for Hermes and we've version controlled it.
+ So you say, I like the Hermes I spoke to six weeks ago.
+ We can bring it back to life because every day is a completely new blueprint,
+ which is cool.
+ So effectively, what happens is every day at a certain time, it just basically
+ recommits itself.
+ So all you're going to do is copy that prompt.
+ And if you haven't seen the code master class, I highly recommend that you
+ water all the way through, including the agenda get a worse.
+ I'm going to go deep on it on here, too.
+ But it will give you a good foundational overview of how all this stuff works.
+ So what we're going to do is grab Hermes.
+ And then essentially, once in Hermes agent, just come over and drop this prompt
+ into it.
+ And effectively, this will then go ahead and ask you to sign into GitHub, which
+ we'll do via your CLI.
+ So I'm going to say, hey, that can I just confirm, are you connected to my
+ GitHub?
+ And could we just refresh that connection for demonstration purposes, please?
+ Then just quickly confirm for me, do you make a backup copy of yourself every
+ single day?
+ And then go ahead and just send that one off and let him his work is magic.
+ So as you can see, home is come back and just confirm how that works,
+ where the Hermes install lives, how it works.
+ It checks to get repo for any main ship changes.
+ Paul's latest date from main resource sync dependencies if needed.
+ So this is really how it kind of actually physically updates to the latest one.
+ So your personal home is backup mirror, though, as you can see, it's a daily
+ schedule, it runs every single day.
+ And you can connect Hermes to your getter by just saying, hey, I want you to
+ update my get to repo.
+ And those instructions will give Hermes a step by step roadmap to open up and
+ sync,
+ meaning that your Hermes agent will be updated and basically a photocopy of
+ that
+ will be live every single day, which is super, super powerful to do at a highly
+,
+ highly recommended. Now, what we're going to do in the next module next chapter
+ is
+ actually connected to our entire world.
+ So we can take all this beautiful firepower we've got in the Hermes agent and
+ take it
+ to a complete new level.
+ And so in the next masterclass section, we're going to be covering how you can
+ connect your entire world in Hermes agent.
+ I'm going to show you the reading decision tree.
+ We're going to go through an open room to masterclass so you understand exactly
+ what
+ you need to do to elevate them.
+ I'm going to show you how you can get your own models running and your own
+ personal AI lab so you can use local models with Hermes agent.
+ I'm going to show you a few of the things that are going to blow your mind in
+ terms
+ of performance as well as connecting your entire world and some pretty
+ incredible
+ use cases, get that coffee and lockdown and I'll catch you inside the next
+ training.

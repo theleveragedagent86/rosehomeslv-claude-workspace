@@ -1,0 +1,25 @@
+/* The Leveraged Agent - palette v2 "Voltage" - dark-first, high-chroma, tech-forward
+   Proposed 2026-08-19. v1 (Brand-Guide/tokens.css) is still the shipping palette.
+   Every text pairing below is WCAG 2.1 AA verified, computed not eyeballed.
+   Spec and migration table: Brand-Guide/V2-PALETTES.md */
+:root {
+  --la-bg:                #04171C;  /* primary surface, near-black with a teal cast */
+  --la-bg-2:              #0A2A33;  /* elevated surface, cards and panels */
+  --la-bg-inv:            #F2EFE6;  /* inverted surface, bone, for light sections and print */
+  --la-line:              #1B3239;  /* hairline and divider on bg, non-text */
+  --la-structure:         #14586A;  /* decorative teal: chart bars, rules, circuit traces. NEVER text */
+  --la-ink:               #F2EFE6;  /* primary text on bg */
+  --la-ink-2:             #7D98A1;  /* secondary text on bg */
+  --la-ink-inv:           #04171C;  /* primary text on bg-inv */
+  --la-accent:            #2DE2C5;  /* primary accent, aqua. Buttons, links, key numerals */
+  --la-accent-on:         #04171C;  /* text placed ON accent */
+  --la-accent-txt-inv:    #0F7B65;  /* accent used AS text on bg-inv */
+  --la-accent-2:          #FFB627;  /* secondary accent, amber. Data, highlights, one element per view */
+  --la-accent-2-on:       #04171C;  /* text placed ON accent-2 */
+  --la-accent-2-txt-inv:  #916308;  /* accent-2 used AS text on bg-inv */
+
+  --la-font-head:         "Poppins", "Futura", "Avenir Next", sans-serif;
+  --la-font-body:         "Inter", -apple-system, "Helvetica Neue", sans-serif;
+  --la-track-head:        -0.03em;
+  --la-lh-body:           1.55;
+}

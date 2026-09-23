@@ -1,0 +1,50 @@
+{
+  "palette": "v3-broker",
+  "label": "Broker",
+  "mood": "Achromatic base, one accent, tinted near-black ink. The measured convention of high-pedigree US brokerages, applied to the existing Leveraged Agent colors.",
+  "status": "proposed, not adopted",
+  "proposed": "2026-08-19",
+  "supersedes": null,
+  "note": "v1 tokens.css remains the shipping palette until Ryan adopts one of these. Both brand colors are unchanged from v1: deep #08343E and gold #E8A33D. The cream base becomes pure white and sage #B5CAC4 is deleted. There is deliberately no accent-2: one accent is the point.",
+  "evidence": "Brand-Guide/PEDIGREE-BRAND-RESEARCH.md and Brand-Guide/pedigree-board.html",
+  "colors": {
+    "bg":           { "hex": "#FFFFFF", "role": "primary surface, pure white. Do not tint it" },
+    "bg-2":         { "hex": "#F7F7F7", "role": "sunken fill, table rows, inset panels" },
+    "bg-inv":       { "hex": "#08343E", "role": "inverted surface, brand deep teal. Plays black's role" },
+    "line":         { "hex": "#E3E7E8", "role": "hairline and divider on bg, non-text" },
+    "structure":    { "hex": "#0F4C5C", "role": "canonical teal. Chart bars, structural fills, large headings" },
+    "ink":          { "hex": "#08343E", "role": "primary text on bg" },
+    "ink-2":        { "hex": "#3C646F", "role": "secondary text on bg and bg-2" },
+    "ink-inv":      { "hex": "#FFFFFF", "role": "primary text on bg-inv" },
+    "ink-2-inv":    { "hex": "#90ABB2", "role": "secondary text on bg-inv" },
+    "accent":       { "hex": "#E8A33D", "role": "THE accent, canonical gold. Fills and buttons, never text on bg" },
+    "accent-on":    { "hex": "#08343E", "role": "text placed ON accent" },
+    "accent-txt":   { "hex": "#9D6513", "role": "accent used AS text on bg or bg-2" },
+    "accent-inv":   { "hex": "#E8A33D", "role": "accent used AS text on bg-inv. Raw gold is legible there" }
+  },
+  "contrast": {
+    "ink_on_bg": 13.37,
+    "ink_on_bg-2": 12.48,
+    "ink-2_on_bg": 6.47,
+    "ink-2_on_bg-2": 6.04,
+    "structure_on_bg": 9.51,
+    "structure_on_bg-2": 8.88,
+    "ink-inv_on_bg-inv": 13.37,
+    "ink-2-inv_on_bg-inv": 5.51,
+    "accent-on_on_accent": 6.2,
+    "accent_on_bg-inv": 6.2,
+    "accent-txt_on_bg": 4.88,
+    "accent-txt_on_bg-2": 4.55,
+    "line_on_bg": 1.25,
+    "FAIL_accent_on_bg": 2.16,
+    "FAIL_white_on_accent": 1.86
+  },
+  "type": {
+    "font-head": "\"Poppins\", \"Futura\", \"Avenir Next\", sans-serif",
+    "font-body": "\"Inter\", -apple-system, \"Helvetica Neue\", sans-serif",
+    "weight-head": 800,
+    "track-head": "-0.03em",
+    "track-label": "0.14em",
+    "lh-body": "1.55"
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; }
+  .thumb { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--navy); }
+
+  /* Two plates split on a slight diagonal, gold seam down the middle. */
+  .half { position: absolute; top: 0; height: 100%; width: 58%; overflow: hidden; }
+  .half img { width: 100%; height: 100%; object-fit: cover; }
+  .half.left  { left: 0;  clip-path: polygon(0 0, 100% 0, calc(100% - 76px) 100%, 0 100%); }
+  .half.right { right: 0; clip-path: polygon(76px 0, 100% 0, 100% 100%, 0 100%); }
+  .half::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(to top, color-mix(in srgb, var(--navy) 88%, transparent) 0%,
+                color-mix(in srgb, var(--navy) 20%, transparent) 46%, transparent 70%);
+  }
+  .seam {
+    position: absolute; top: -20px; bottom: -20px; left: 50%; width: 8px;
+    background: var(--gold); transform: translateX(-50%) rotate(3deg);
+    box-shadow: 0 0 26px rgba(0,0,0,0.6);
+  }
+
+  .side {
+    position: absolute; bottom: 132px; width: 44%;
+    font-family: var(--headlineFont); font-weight: var(--headlineWeight);
+    font-size: 76px; line-height: 0.98; letter-spacing: -0.03em;
+    text-transform: uppercase; color: #fff; text-align: center;
+    text-shadow: 0 4px 18px rgba(0,0,0,0.85);
+  }
+  .side.left  { left: 22px; }
+  .side.right { right: 22px; }
+  .side .sub {
+    display: block; margin-top: 12px;
+    font-family: var(--labelFont); font-weight: 700; font-size: 34px;
+    letter-spacing: 0.04em; color: var(--gold);
+  }
+
+  .vs {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 148px; height: 148px; border-radius: 50%;
+    background: var(--gold); color: var(--navy);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--headlineFont); font-weight: 900; font-size: 62px;
+    letter-spacing: -0.03em; box-shadow: 0 10px 34px rgba(0,0,0,0.65);
+    border: 7px solid var(--navy);
+  }
+
+  .kicker {
+    position: absolute; top: 34px; left: 50%; transform: translateX(-50%);
+    font-family: var(--kickerFont); font-weight: var(--kickerWeight);
+    font-size: 30px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: #fff; background: color-mix(in srgb, var(--navy) 85%, transparent);
+    padding: 8px 26px; border-radius: 3px;
+  }
+
+  .disclaimer {
+    position: absolute; left: 26px; bottom: 22px;
+    font-family: var(--labelFont); font-weight: 600; font-size: 18px;
+    letter-spacing: 0.08em; text-transform: uppercase; color: #fff; opacity: 0.6;
+  }
+</style>
+</head>
+<body>
+  <div class="thumb">
+    <div class="half left"><img id="plateLeft"></div>
+    <div class="half right"><img id="plateRight"></div>
+    <div class="seam"></div>
+    <div class="kicker" id="kicker" hidden></div>
+    <div class="side left" id="sideLeft"></div>
+    <div class="side right" id="sideRight"></div>
+    <div class="vs" id="vs">VS</div>
+    <div class="disclaimer" id="disclaimer" hidden></div>
+  </div>
+
+<script>
+const SPEC = /*SPEC*/null;
+const { brand } = SPEC;
+
+const root = document.documentElement.style;
+root.setProperty('--navy', brand.colors.navy);
+root.setProperty('--gold', brand.colors.gold);
+root.setProperty('--alert', brand.colors.alert);
+root.setProperty('--headlineFont', brand.fonts.headline);
+root.setProperty('--headlineWeight', brand.fonts.headlineWeight);
+root.setProperty('--kickerFont', brand.fonts.kicker);
+root.setProperty('--kickerWeight', brand.fonts.kickerWeight);
+root.setProperty('--labelFont', brand.fonts.label);
+
+const show = (id, fn) => { const el = document.getElementById(id); el.hidden = false; fn(el); };
+// "Summerlin|from $520K" renders the part after | as the gold subline.
+const side = (s) => {
+  const [main, sub] = s.split('|');
+  return main + (sub ? `<span class="sub">${sub}</span>` : '');
+};
+
+document.getElementById('plateLeft').src = SPEC.plateLeft;
+document.getElementById('plateRight').src = SPEC.plateRight;
+document.getElementById('sideLeft').innerHTML = side(SPEC.left);
+document.getElementById('sideRight').innerHTML = side(SPEC.right);
+document.getElementById('vs').textContent = SPEC.vs || 'VS';
+
+// This layout deliberately carries no face: the two options are the subject, and a
+// cutout large enough to read would cover one side's label. Use face-right for the
+// concepts where Ryan needs to be in frame.
+if (SPEC.kicker) show('kicker', el => el.textContent = SPEC.kicker);
+if (SPEC.disclaimer ?? brand.disclaimer) {
+  show('disclaimer', el => el.textContent = SPEC.disclaimer ?? brand.disclaimer);
+}
+
+// Both sides share one size so neither reads as the bigger option.
+document.fonts.ready.then(() => {
+  const sides = [document.getElementById('sideLeft'), document.getElementById('sideRight')];
+  let size = 76;
+  const overflows = () => sides.some(el => el.scrollWidth > el.clientWidth);
+  while (size > 44 && overflows()) {
+    size -= 2;
+    sides.forEach(el => el.style.fontSize = size + 'px');
+  }
+});
+</script>
+</body>
+</html>

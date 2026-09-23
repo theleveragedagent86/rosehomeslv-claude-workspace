@@ -1,0 +1,71 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "PhotosVO.dc.html",
+      "x": 1200,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "ScreenRec.dc.html",
+      "x": 2400,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "TextOnly.dc.html",
+      "x": 3600,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "GreenScreen.dc.html",
+      "x": 0,
+      "y": 1510,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    },
+    {
+      "file": "Close.dc.html",
+      "x": 1200,
+      "y": 1510,
+      "w": 1080,
+      "h": 1350,
+      "print": "fixed"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "pattern-note",
+      "x": 0,
+      "y": -280,
+      "w": 1080,
+      "text": "Pattern: Whitney Bartlette numbered-list carousel. Count in the cover, the list IS the deliverable, no keyword gate.\nSorted by how little the format asks of you, so the lowest-effort options sit first where the objection lives.\nEvery hook is for a format where you never appear on camera: listing photos, a screen recording, text on black, green screen."
+    },
+    {
+      "id": "band-note",
+      "x": 2400,
+      "y": 1360,
+      "w": 1080,
+      "text": "All six slides sit inside the 4:5 safe band (y 152..1184), so the set lines up on swipe and any slide survives the 1:1 profile-grid crop.\nVerify with: node ~/.claude/skills/skool-carousel/references/check-slides.mjs"
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}

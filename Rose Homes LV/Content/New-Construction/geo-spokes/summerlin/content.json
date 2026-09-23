@@ -1,0 +1,299 @@
+{
+  "area": "Summerlin",
+  "slug": "summerlin-new-construction",
+  "place_name": "Summerlin, Las Vegas, Nevada",
+  "locality": "Las Vegas",
+  "updated_iso": "2026-09-16",
+  "updated_text": "September 16, 2026",
+  "reviewed_text": "September 2026",
+  "read_minutes": 12,
+
+  "seo": {
+    "title": "Summerlin New Construction Homes and Builders",
+    "description": "26 new home neighborhoods are selling in Summerlin, from $397,990 townhomes to $2M homes in The Peaks. Builders, HOA, SIDs, and schools, checked Sept 2026.",
+    "keywords": "summerlin new construction, new homes summerlin, grand park summerlin, summerlin west builders",
+    "og_title": "New Construction Homes in Summerlin",
+    "og_description": "Every new home neighborhood selling in Summerlin right now, with builders, starting prices, HOA, SIDs, and zoned schools."
+  },
+
+  "hero": {
+    "kicker": "Rose Homes LV &middot; Summerlin, west Las Vegas",
+    "h1": "New Construction Homes in Summerlin",
+    "sub": "Twenty six neighborhoods are selling new homes in Summerlin right now, from townhomes under $400,000 to guard gated homes near $2 million. Here is every one of them, and what to check before you visit a model.",
+    "stats": [
+      ["26", "Neighborhoods selling"],
+      ["7", "Villages building"],
+      ["9", "Active builders"],
+      ["$69", "West master HOA a month"]
+    ],
+    "image": {
+      "src": "https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-summerlin.jpg",
+      "alt": "Contemporary two-story homes on a west Las Vegas street with the Spring Mountains in the distance",
+      "width": 900,
+      "height": 672
+    },
+    "secondary_cta": "Browse neighborhoods",
+    "mobile_label": "Neighborhoods"
+  },
+
+  "answer": "Summerlin is a 22,500 acre master plan on the west edge of the Las Vegas Valley, built by Howard Hughes. As of September 10, 2026, the Summerlin home search lists 26 neighborhoods selling new homes across 7 villages, and most of them sit west of the 215 Beltway in Grand Park, Kestrel, Kestrel Commons, La Madre Peaks, and Redpoint Square. Nine builders are active, led by Toll Brothers and Tri Pointe. Starting prices run from $397,990 for a KB Home townhome in Grand Park to $1,998,995 in Toll Brothers' guard gated Ascension. On top of the price, plan for a $69 a month Summerlin West master HOA, a neighborhood HOA, and in many villages a City of Las Vegas SID payment on your tax bill.",
+
+  "takeaways": [
+    "Grand Park is where most of the building is. Eleven of the 26 selling neighborhoods are there, west of the 215 and north of Far Hills Avenue.",
+    "Starting prices change with every release. The Summerlin home search and Summerlin's own July article already disagree by tens of thousands on some neighborhoods, so ask the builder for a dated price sheet.",
+    "You pay two HOAs. The Summerlin West master assessment is $69 a month in 2026, and each neighborhood adds its own fee on top.",
+    "Many Summerlin West villages sit inside a City of Las Vegas special improvement district. That payment is on your property tax bill, not in your HOA, so ask for the balance on the exact lot.",
+    "School zones can split inside one village. Kestrel Commons has addresses zoned to two different elementary schools, so check the exact address with CCSD.",
+    "Register your own agent on your first visit to a Summerlin model. The sales team works for the builder."
+  ],
+
+  "part1_sections": [
+    {
+      "id": "neighborhoods",
+      "toc": "Neighborhoods selling now",
+      "h2": "Which new neighborhoods are selling in Summerlin right now?",
+      "blocks": [
+        {"lede": "These are the neighborhoods listed as selling in the Summerlin home search on September 10, 2026, sorted from the lowest starting price to the highest. Where a neighborhood sells two collections, each gets its own row."},
+        {"table": {
+          "head": ["Neighborhood", "Builder", "Village", "Home type", "Size (sq ft)", "Starts from"],
+          "rows": [
+            ["Caldwell Park, Groves", "KB Home", "Grand Park", "Townhome", "1,430 to 1,947", "$397,990"],
+            ["The Loughton", "Toll Brothers", "Summerlin Centre", "Condo", "1,003 to 1,370", "$449,995"],
+            ["Lark Hill", "Taylor Morrison", "Kestrel Commons", "Townhome", "1,645 to 2,163", "$469,990"],
+            ["Dove Rock", "Woodside Homes", "Kestrel", "Townhome and single family", "1,724 to 2,217", "$519,990"],
+            ["Caldwell Park, Landings", "KB Home", "Grand Park", "Single family", "1,832 to 2,466", "$538,990"],
+            ["Vertex", "Tri Pointe Homes", "Redpoint Square", "Townhome", "1,790 to 1,914", "$546,663"],
+            ["Iris Glen", "Richmond American", "Grand Park", "Paired home", "2,040 to 2,450", "$574,950"],
+            ["Cordillera", "Toll Brothers", "Redpoint Square", "Townhome", "1,803 to 2,154", "$576,995"],
+            ["Alton, Landings", "KB Home", "Grand Park", "Single family", "1,832 to 2,466", "$599,990"],
+            ["Raven Crest", "Toll Brothers", "Kestrel Commons", "Townhome", "2,300 to 2,640", "$634,995"],
+            ["Sandpiper", "Lennar", "Kestrel Commons", "Two-story", "2,055 to 2,405", "$666,990"],
+            ["Alton, Reserves", "KB Home", "Grand Park", "Single family", "1,634 to 3,063", "$684,990"],
+            ["Aberdeen, Collection I", "Tri Pointe Homes", "Grand Park", "Not published", "1,869 to 2,279", "$694,500"],
+            ["Esplanade at Red Rock", "Taylor Morrison", "La Madre Peaks", "Single-story", "1,569 to 3,406", "$698,990"],
+            ["Aberdeen, Collection II", "Tri Pointe Homes", "Grand Park", "Not published", "2,450 to 2,687", "$758,500"],
+            ["Mockingbird", "Lennar", "Kestrel", "Two-story", "3,000 to 3,335", "$796,990"],
+            ["Cloudbreak Ridge, Enclaves", "KB Home", "La Madre Peaks", "Not published", "2,251 to 2,387", "$824,990"],
+            ["Cloudbreak Ridge, Reserves", "KB Home", "La Madre Peaks", "Not published", "2,753 to 3,095", "$839,990"],
+            ["Brantley", "Pulte Homes", "Grand Park", "Single family", "2,194 to 4,731", "$879,990"],
+            ["Ashland", "Taylor Morrison", "Grand Park", "Single family", "2,450 to 3,306", "$1,039,990"],
+            ["Primrose Park", "Richmond American", "Grand Park", "Single family", "3,410 to 3,690", "$1,127,950"],
+            ["Glenrock", "Toll Brothers", "Grand Park", "Single family", "2,897 to 4,557", "$1,398,995"],
+            ["Carlisle Peak", "Tri Pointe Homes", "Grand Park", "Single family", "3,590 to 4,065", "$1,404,000"],
+            ["Agave Ridge", "Tri Pointe Homes", "La Madre Peaks", "Not published", "2,779 to 3,842", "$1,550,000"],
+            ["Arcadia", "SHAWOOD", "Grand Park", "Not published", "3,176 to 3,399", "$1,594,990"],
+            ["Carlisle Ridge", "Tri Pointe Homes", "Grand Park", "Single family", "3,234 to 4,417", "$1,645,000"],
+            ["Cactus Bloom", "Richmond American", "La Madre Peaks", "Not published", "3,470 to 4,010", "$1,734,950"],
+            ["Ascension, Crestline", "Toll Brothers", "The Peaks", "Single family, guard gated", "4,783 to 4,998", "$1,854,995"],
+            ["Fairview", "Lennar", "Grand Park", "Single-story with Next Gen suite", "3,793 to 3,972", "$1,898,990"],
+            ["Ascension, Highrock", "Toll Brothers", "The Peaks", "Single family, guard gated", "3,623 to 3,940", "$1,998,995"],
+            ["Reflection Ridge", "Toll Brothers", "La Madre Peaks", "Not published", "3,318 to 3,815", "Price on request"]
+          ],
+          "note": "Starting prices are the lowest published plan price in the <a href=\"https://summerlin.com/live/home-search/\" rel=\"nofollow\">Summerlin home search</a>, page updated September 10, 2026. They are base prices before lot premiums and design center choices, and they change with every release. Astra at La Madre Peaks also sells 167 custom homesites on 171 acres, with no published price. Monument in Reverence, and several older Redpoint and Kestrel neighborhoods, no longer show in the search. Some may be sold out, and some may still have a quick move-in home, so check with the builder."
+        }},
+        {"p": "If you want the story behind a village before you tour it, I have written guides to <a href=\"/blog/grand-park-summerlin-village-guide\">Grand Park</a> and <a href=\"/blog/la-madre-peaks-summerlin-new-construction-2026\">La Madre Peaks</a>."}
+      ]
+    },
+    {
+      "id": "builders",
+      "toc": "Summerlin builders",
+      "h2": "Which builders are building in Summerlin?",
+      "blocks": [
+        {"lede": "Nine builders have neighborhoods selling in Summerlin. Toll Brothers and Tri Pointe have the most, and between them they cover everything from a condo in Summerlin Centre to a guard gated home in The Peaks."},
+        {"builders": {
+          "cards": [
+            {"key": "toll-brothers", "note": "Six neighborhoods, the most in Summerlin. The Loughton condos from $449,995, Cordillera and Raven Crest townhomes, Glenrock in Grand Park, Reflection Ridge, and guard gated Ascension in The Peaks from $1,854,995."},
+            {"key": "tri-pointe", "note": "Five neighborhoods. Vertex townhomes in Redpoint Square from $546,663, Aberdeen in Grand Park from $694,500, and larger homes at Carlisle Peak, Carlisle Ridge, and Agave Ridge from $1,404,000."},
+            {"key": "kb-home", "note": "Three neighborhoods and the lowest start in Summerlin. Caldwell Park townhomes from $397,990, Alton in Grand Park from $599,990, and Cloudbreak Ridge in La Madre Peaks from $824,990."},
+            {"key": "lennar", "note": "Three neighborhoods. Sandpiper in Kestrel Commons from $666,990, Mockingbird in Kestrel from $796,990, and Fairview in Grand Park, single-story homes with a Next Gen suite from $1,898,990."},
+            {"key": "taylor-morrison", "note": "Three neighborhoods. Lark Hill townhomes from $469,990, Esplanade at Red Rock single-story homes from $698,990, and Ashland in Grand Park from $1,039,990."},
+            {"key": "richmond-american", "note": "Three neighborhoods. Iris Glen paired homes from $574,950, Primrose Park from $1,127,950, and Cactus Bloom in La Madre Peaks from $1,734,950."},
+            {"key": "woodside", "note": "Dove Rock in Kestrel, with townhomes from $519,990 and single family homes from $549,990."},
+            {"key": "pulte-del-webb", "note": "Brantley in Grand Park from $879,990, with plans up to 4,731 square feet. No Del Webb 55 and better neighborhood is selling in Summerlin right now."}
+          ],
+          "note": "The ninth builder is SHAWOOD, by Sekisui House. Arcadia in Grand Park, from $1,594,990, is its first Nevada neighborhood. D.R. Horton, Century Communities, Beazer, LGI, Meritage, and Shea are not building in Summerlin. Want the full builder by builder breakdown? Read <a href=\"/blog/every-builder-summerlin-2026\">every builder in Summerlin</a>."
+        }}
+      ]
+    }
+  ],
+
+  "listings": {
+    "h2": "New construction homes for sale in Summerlin right now",
+    "lede": "These are active MLS listings of newly built homes in Summerlin. Keep in mind that some Summerlin new homes are sold straight from the builder's sales office and may never reach the MLS, so the table above is the fuller picture.",
+    "lofty_filter": "Location: Summerlin (use Lofty's Summerlin area or subdivision if offered, otherwise ZIP 89138, which covers every Summerlin West new build address in the Summerlin home search). Year Built: 2025 or newer. Property type: single family, townhouse, condo. Status: active. Sort: newest."
+  },
+
+  "part2_sections": [
+    {
+      "id": "where",
+      "toc": "Where they are building",
+      "h2": "Where in Summerlin are new homes going up?",
+      "blocks": [
+        {"lede": "Almost all of it is in Summerlin West, the newest part of the master plan, west of the 215 Beltway. Two small pockets sit elsewhere: The Loughton in Summerlin Centre, and Ascension in The Peaks."},
+        {"h3": "Grand Park"},
+        {"facts": [
+          ["Neighborhoods selling", "11, the most of any village"],
+          ["Where", "west of the 215 Beltway, north of Far Hills Avenue"],
+          ["Price range", "$397,990 at Caldwell Park to $1,898,990 at Fairview"],
+          ["Worth knowing", "home to Grand Park, Summerlin's largest park at more than 90 acres"]
+        ]},
+        {"h3": "La Madre Peaks"},
+        {"facts": [
+          ["Neighborhoods selling", "5, plus Astra custom homesites"],
+          ["Price range", "$698,990 at Esplanade at Red Rock to $1,734,950 at Cactus Bloom"],
+          ["Worth knowing", "at the base of the La Madre mountains, with Red Rock Canyon as the backdrop. Esplanade at Red Rock is the single-story choice here."]
+        ]},
+        {"h3": "Kestrel and Kestrel Commons"},
+        {"facts": [
+          ["Neighborhoods selling", "5"],
+          ["Price range", "$469,990 at Lark Hill to $796,990 at Mockingbird"],
+          ["Worth knowing", "Raven Crest, Mockingbird, and Sandpiper all opened in 2025. A good place to look for a townhome or a first Summerlin home."]
+        ]},
+        {"h3": "Redpoint Square, Summerlin Centre, and The Peaks"},
+        {"facts": [
+          ["Redpoint Square", "Vertex and Cordillera townhomes, from $546,663"],
+          ["Summerlin Centre", "The Loughton condos by Toll Brothers, 1 and 2 bedrooms, from $449,995, near Downtown Summerlin"],
+          ["The Peaks", "Ascension by Toll Brothers, guard gated, from $1,854,995"]
+        ]},
+        {"p": "Reverence and the older Redpoint neighborhoods show no active listings in the Summerlin home search right now. A builder may still have a quick move-in home there, so ask. Otherwise, resale is the likely path."}
+      ]
+    },
+    {
+      "id": "prices",
+      "toc": "What it costs",
+      "h2": "What do new homes cost in Summerlin?",
+      "blocks": [
+        {"lede": "Published starting prices run from $397,990 to $1,998,995, and the highest single plan in the search starts at $2,249,995. Summerlin's own summary is homes from the $400,000s to more than $1 million."},
+        {"table": {
+          "head": ["What you want", "Where to look", "Starts from"],
+          "rows": [
+            ["A condo", "The Loughton, Summerlin Centre", "$449,995"],
+            ["A townhome", "Caldwell Park, Lark Hill, Dove Rock, Vertex, Cordillera, Raven Crest", "$397,990"],
+            ["A detached home under $700,000", "Caldwell Park, Dove Rock, Alton", "$538,990"],
+            ["A single-story home", "Esplanade at Red Rock, Fairview", "$698,990"],
+            ["A large home in Grand Park", "Brantley, Ashland, Primrose Park, Glenrock, Carlisle", "$879,990"],
+            ["A guard gated home", "Ascension, The Peaks", "$1,854,995"]
+          ],
+          "note": "From the Summerlin home search, updated September 10, 2026. Starting prices are the lowest published plan price."
+        }},
+        {"p": "Three things move the price the most. First is the type of home, since a townhome in Kestrel Commons and a 4,000 square foot home in Grand Park are different products. Second is where the lot sits, because a lot with a view west of the 215 can cost more. Third is the design center. The number on the sign rarely includes the flooring, cabinets, and yard most buyers end up choosing."},
+        {"p": "Prices also move between releases. Brantley shows $879,990 in the September search, below the $900,000 in Summerlin's July article, while Iris Glen and Sandpiper went up. Always work from a dated price sheet."}
+      ]
+    },
+    {
+      "id": "monthly-costs",
+      "toc": "HOA, SID, and taxes",
+      "h2": "What will you pay each month on top of the mortgage?",
+      "blocks": [
+        {"lede": "In Summerlin West you are looking at two HOA fees, property tax, and in many villages a special improvement district payment. Here is how each one works."},
+        {"table": {
+          "head": ["Cost", "What it is", "Amount"],
+          "rows": [
+            ["Master HOA", "Summerlin West Community Association", "$69 a month in 2026, up from $60"],
+            ["Neighborhood HOA", "Your own neighborhood's association, on top of the master fee", "Set by each neighborhood, ask the builder"],
+            ["SID payment", "Pays back bonds for public improvements, billed apart from your HOA", "Varies by parcel, check the lot"],
+            ["Property tax", "Clark County, with a 3% yearly cap on increases for a primary home", "Based on assessed value"]
+          ],
+          "note": "Master HOA amounts are the 2026 assessments reported from the Summerlin Council's newsletter. Summerlin North is $74 and Summerlin South is $76."
+        }},
+        {"p": "The SID is the one people miss. Summerlin West was built with City of Las Vegas special improvement districts, including SID 814, which covers Summerlin Villages 21 and 24A. The payment shows up as its own line on your property tax bill, not in your HOA dues, and the amount depends on the parcel. Before you sign, ask for the SID balance and yearly payment on the exact lot. I explain how these work in <a href=\"/blog/sid-lid-fees-explained-summerlin\">SID and LID fees in Summerlin</a>."}
+      ]
+    },
+    {
+      "id": "schools",
+      "toc": "Zoned schools",
+      "h2": "Which schools serve the new Summerlin neighborhoods?",
+      "blocks": [
+        {"lede": "Most new Summerlin West homes are zoned to Palo Verde High School. The elementary and middle school depend on where in the village the home sits."},
+        {"table": {
+          "head": ["Where the home is", "Elementary", "Middle", "High"],
+          "rows": [
+            ["Grand Park, north (Aberdeen, Arcadia, Iris Glen)", "Givens", "Becker", "Palo Verde"],
+            ["Grand Park, south (Fairview)", "Givens", "Rogich", "Palo Verde"],
+            ["Redpoint Square (Cordillera, Vertex)", "Givens", "Becker", "Palo Verde"],
+            ["La Madre Peaks (Esplanade, Agave Ridge, Cactus Bloom, Cloudbreak Ridge, Reflection Ridge)", "Givens", "Becker", "Palo Verde"],
+            ["Kestrel Commons (Raven Crest)", "Givens", "Becker", "Palo Verde"],
+            ["Kestrel Commons (Lark Hill)", "Lummis", "Becker", "Palo Verde"],
+            ["Kestrel (Dove Rock, Mockingbird)", "Lummis", "Becker", "Palo Verde"],
+            ["Summerlin Centre (The Loughton)", "Goolsby", "Rogich", "Palo Verde"]
+          ],
+          "note": "From CCSD zoning data for the 2026 to 2027 school year, checked at an address inside each neighborhood. Zones can split inside one village and can change, so confirm your exact address with the <a href=\"https://ccsd.net/schools/zoning/\" rel=\"nofollow\">CCSD zoning search</a>."
+        }},
+        {"p": "Summerlin also has charter and private options, including Doral Academy Red Rock, West Career and Technical Academy, Bishop Gorman, Faith Lutheran, and The Meadows School. No new public schools have been announced for Summerlin West."}
+      ]
+    },
+    {
+      "id": "location",
+      "toc": "Location and nearby",
+      "h2": "Where is Summerlin, and what is close by?",
+      "blocks": [
+        {"lede": "Summerlin is on the west edge of the valley, with Red Rock Canyon behind La Madre Peaks. The new villages sit west of the 215 Beltway."},
+        {"ul": [
+          "<strong>Getting around:</strong> the 215 Beltway runs along the east edge of the new villages. Summerlin Parkway is the other main freeway.",
+          "<strong>Downtown Summerlin:</strong> the main shopping and dining center for the master plan. The Loughton condos sit right in that core.",
+          "<strong>Parks and trails:</strong> Summerlin has more than 200 miles of trails. Grand Park, at more than 90 acres, anchors the busiest new village.",
+          "<strong>Golf:</strong> ten golf courses inside Summerlin.",
+          "<strong>Red Rock Canyon:</strong> the backdrop to La Madre Peaks."
+        ]},
+        {"p": "Summerlin West is inside the City of Las Vegas. The Peaks, where Ascension sits, is part of Summerlin South, which is unincorporated Clark County. That changes which government bills your SID and handles services, so it is worth knowing before you buy."}
+      ]
+    },
+    {
+      "id": "watch-outs",
+      "toc": "Before you buy",
+      "h2": "What should you know before buying new in Summerlin?",
+      "blocks": [
+        {"lede": "Summerlin is a well run master plan, but a few things catch new buyers off guard."},
+        {"ul": [
+          "<strong>Ask for a dated price sheet.</strong> Published prices for the same neighborhood differ by tens of thousands of dollars between Summerlin's own sources.",
+          "<strong>Get both HOA numbers.</strong> The $69 master fee is only part of it. The neighborhood fee is set separately.",
+          "<strong>Check the SID on the exact lot.</strong> It is billed with your property tax, and the amount depends on the parcel.",
+          "<strong>Do not assume a gate.</strong> Ascension in The Peaks is guard gated. For any other neighborhood, confirm gate status with the builder before you count on it.",
+          "<strong>Check age rules in writing.</strong> Summerlin describes Esplanade at Red Rock as an all ages community, but some sites list it as 55 and better. Read the governing documents.",
+          "<strong>Expect construction.</strong> Summerlin planned 11 new neighborhoods for 2026, so building traffic west of the 215 will be around for a while.",
+          "<strong>Look past the MLS.</strong> Some quick move-in homes are sold directly by the builder and may not show up in the Summerlin home search or on listing sites."
+        ]}
+      ]
+    },
+    {
+      "id": "your-agent",
+      "toc": "Your own agent",
+      "h2": "Why bring your own agent to a Summerlin model home?",
+      "blocks": [
+        {"lede": "The friendly person at the sales desk works for the builder. Their job is to sell that builder's homes at that builder's price."},
+        {"p": "In Summerlin you might be comparing a Toll Brothers townhome, a KB Home in Grand Park, and a Taylor Morrison single-story in La Madre Peaks, all with different lot premiums, HOAs, and SIDs. Having someone on your side who lines those up for you costs you nothing, because the builder pays the buyer agent commission either way. The one rule: most builders require your agent to be registered on your very first visit. <a href=\"/las-vegas-new-construction#why-ryan\">Here is what having your own agent actually changes</a>."}
+      ]
+    }
+  ],
+
+  "faq": [
+    ["What is the cheapest new construction in Summerlin right now?", "Caldwell Park by KB Home in Grand Park, with townhomes from $397,990 as of September 10, 2026. The Loughton condos by Toll Brothers in Summerlin Centre start at $449,995."],
+    ["How many new home neighborhoods are selling in Summerlin?", "The Summerlin home search lists 26 neighborhoods selling across 7 villages as of September 10, 2026. Eleven of them are in Grand Park."],
+    ["What are the HOA fees for new homes in Summerlin West?", "The Summerlin West master assessment is $69 a month in 2026, up from $60. Each neighborhood adds its own HOA fee on top, so ask the builder for the exact total."],
+    ["Do new Summerlin homes have SID payments?", "Many do. Summerlin West villages were built with City of Las Vegas special improvement districts, such as SID 814. The payment is on your property tax bill, so check the balance for the exact parcel before you sign."],
+    ["Which schools serve the new Summerlin West neighborhoods?", "For 2026 to 2027, most of Grand Park, Redpoint Square, and La Madre Peaks is zoned to Givens Elementary, Becker Middle, and Palo Verde High. Kestrel addresses, and some in Kestrel Commons, go to Lummis Elementary instead. Always check your exact address with CCSD."],
+    ["Is Summerlin in the City of Las Vegas or Clark County?", "Most of Summerlin, including the Summerlin West villages where most new homes are built, is inside the City of Las Vegas. Summerlin South, which includes The Peaks, is unincorporated Clark County."],
+    ["Are there single-story new homes in Summerlin?", "Yes. Esplanade at Red Rock by Taylor Morrison in La Madre Peaks starts at $698,990, and Fairview by Lennar in Grand Park offers single-story homes with a Next Gen suite from $1,898,990."],
+    ["Are there guard gated new homes in Summerlin?", "Ascension by Toll Brothers in The Peaks is guard gated, with homes from $1,854,995. For any other neighborhood, confirm gate status with the builder."]
+  ],
+
+  "cta": {
+    "h2": "Touring Summerlin models soon?",
+    "p": "Let me line up the neighborhoods that fit your budget, with current prices, HOA, and SID numbers, before your first visit. There is no cost to you, and I will be registered with the builder from day one."
+  },
+
+  "sources": [
+    ["Summerlin home search, updated September 10, 2026", "https://summerlin.com/live/home-search/"],
+    ["Summerlin, new neighborhoods for every stage of life, July 20, 2026", "https://summerlin.com/new-summerlin-neighborhoods-offer-homes-in-all-sizes-prices-for-every-stage-of-life/"],
+    ["Summerlin, 2025 year in review and 2026 outlook, December 29, 2025", "https://summerlin.com/summerlin-closes-out-2025-with-10-new-neighborhoods-marks-36th-year-of-development-in-2026/"],
+    ["Summerlin, Aberdeen by Tri Pointe opens, June 4, 2026", "https://summerlin.com/aberdeen-by-tri-pointe-homes-opens-in-summerlin/"],
+    ["Summerlin, Esplanade at Red Rock opens, July 6, 2026", "https://summerlin.com/summerlin-welcomes-its-newest-neighborhood-esplanade-at-red-rock-by-taylor-morrison/"],
+    ["Summerlin builders", "https://summerlin.com/live/builders/"],
+    ["Summerlin schools", "https://summerlin.com/explore/schools/"],
+    ["Summerlin HOA assessments for 2026, October 9, 2025", "https://www.audilous.com/old-school-hits-vegas/summerlin-homeowners-face-hoa-fee-increases-starting-january-2026/"],
+    ["Summerlin West Community Association", "https://www.summerlink.com/residents/summerlin-west-community-association/"],
+    ["City of Las Vegas SID 814, Summerlin Villages 21 and 24A", "https://www.constructionjournal.com/projects/details/e68121a67df44d7ea6f36f233892363e.html"],
+    ["CCSD zoning search, school year 2026 to 2027", "https://ccsd.net/schools/zoning/"],
+    ["Summerlin, Nevada", "https://en.wikipedia.org/wiki/Summerlin,_Nevada"]
+  ]
+}

@@ -1,0 +1,157 @@
+<meta charset="utf-8"><title>Barlow weight ladder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#141414;font-family:Inter,system-ui,sans-serif;padding-bottom:70px}
+.hdr{padding:34px 40px 8px;color:#f2f2f2;font-family:Barlow;font-size:27px;font-weight:800;letter-spacing:-.028em}
+.hdrsub{padding:0 40px 26px;color:#8d8d8d;font-size:13px;line-height:1.7;max-width:940px}
+.hdrsub b{color:#dcdcdc;font-weight:600}
+
+.cmp{margin:0 40px 30px;background:#FFFFFF;border-radius:16px;padding:28px 38px 32px}
+.cmp h3{font-family:Barlow;font-weight:800;font-size:23px;letter-spacing:-.028em;color:#050E3D}
+.cmp .intro{font-size:13px;line-height:1.65;color:#55627F;margin-top:8px;max-width:820px}
+.lrow{display:flex;align-items:baseline;gap:20px;border-top:1px solid #E4E7EF;padding:15px 0 13px;margin-top:0}
+.ln{font-size:11px;font-weight:700;letter-spacing:.1em;color:#FFFFFF;background:#1768E5;padding:4px 9px;border-radius:5px;flex:none;width:52px;text-align:center}
+.lt{font-family:Barlow;font-size:40px;line-height:1.05;color:#050E3D}
+.mrow{display:flex;gap:14px;margin-top:26px;flex-wrap:nowrap}
+.mini{flex:1 1 0;min-width:0;max-width:300px;aspect-ratio:16/9;border-radius:9px;background:#000000;position:relative;overflow:hidden;container-type:inline-size}
+.mt{position:absolute;left:5.6cqi;top:9.3cqi;width:70cqi;font-family:Barlow;font-size:8.3cqi;line-height:1.12;color:#FFFFFF}
+.mt em{font-style:normal;color:#5B9BFF}
+.mn{position:absolute;left:5.6cqi;bottom:5cqi;background:#1768E5;color:#FFFFFF;font-size:3.4cqi;font-weight:700;letter-spacing:.09em;padding:1.7cqi 3.4cqi;border-radius:5px}
+
+.card{margin:0 40px 30px;border-radius:16px;overflow:hidden;background:#FFFFFF}
+.top{padding:30px 38px 30px;color:#050E3D}
+.hd{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.pid{font-size:11px;font-weight:700;letter-spacing:.1em;color:#FFFFFF;background:#1768E5;padding:4px 9px;border-radius:5px}
+.ttl{font-size:15px;font-weight:700;color:#050E3D;letter-spacing:-.01em}
+.tag{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#55627F}
+h2{font-family:Barlow;font-size:41px;line-height:1.07;margin-top:19px;color:#050E3D}
+h2 em{font-style:normal;color:#1768E5}
+.sh{font-family:Raleway;font-weight:600;font-size:15px;margin-top:11px;color:#55627F;letter-spacing:.01em}
+.body{font-size:14px;line-height:1.62;color:#55627F;max-width:800px;margin-top:14px}
+.row{display:flex;gap:15px;align-items:center;margin-top:20px;flex-wrap:wrap}
+.btn{background:#1768E5;color:#FFFFFF;padding:11px 21px;border-radius:8px;font-weight:600;font-size:14px}
+.lbl{font-family:Raleway;font-weight:600;font-size:11px;letter-spacing:.15em;color:#1768E5}
+.meta{font-size:13px;color:#55627F}
+.strip{display:flex;gap:18px;padding:22px 38px 26px;background:#F7F8FA;border-top:1px solid #E4E7EF;align-items:flex-start}
+.thumb{width:300px;height:169px;border-radius:9px;background:#000000;position:relative;overflow:hidden;flex:none}
+.thumb.w{background:#FFFFFF;box-shadow:inset 0 0 0 1px #E4E7EF}
+.thumb .tt{position:absolute;left:17px;top:30px;width:200px;font-family:Barlow;font-size:24px;line-height:1.13;color:#FFFFFF}
+.thumb .tt em{font-style:normal;color:#5B9BFF}
+.thumb.w .tt{color:#050E3D}
+.thumb.w .tt em{color:#1768E5}
+.thumb .tb{position:absolute;left:17px;bottom:16px;background:#1768E5;color:#FFFFFF;font-size:10px;font-weight:700;letter-spacing:.09em;padding:5px 10px;border-radius:5px}
+.spec{flex:1;min-width:210px;font-size:12px;line-height:1.75;color:#55627F}
+.spec b{color:#050E3D;font-weight:600}
+.spec .note{display:block;margin-top:8px;font-size:11.5px;color:#050E3D;opacity:.9}
+</style>
+
+<div class="hdr">Barlow 600 to 900, on P08</div>
+<div class="hdrsub">Everything else is held at P08: <b>Raleway 600</b> subtext, <b>Inter 400/500</b> body, Vector palette.
+Only the headline weight moves.<br><br>
+<b>Tracking is not constant, on purpose.</b> Heavier weights need more negative tracking, because the letterforms get
+wider and the space between them looks proportionally larger. Locking tracking across all four would make 900 look
+loose and 600 look cramped, and you would be judging the tracking instead of the weight. The values used here are the
+ones you would actually ship: 600 at -0.020em, 700 at -0.024em, 800 at -0.028em, 900 at -0.032em.<br><br>
+<b>Judge the thumbnails first.</b> The headline differences are obvious at 41px and mostly cosmetic. The 320px
+thumbnail is where weight actually changes whether someone stops scrolling.</div>
+
+<div class="cmp">
+ <h3>All four, stacked</h3>
+ <p class="intro">Adjacent comparison at headline size. Look at the counters, the enclosed white space inside a, e, o and g.
+  That is what closes up as weight increases, and it is the thing that decides whether a weight survives at small sizes.</p>
+ <div class="lrow"><span class="ln">600</span><span class="lt" style="font-weight:600;letter-spacing:-0.020em">Build the system once</span></div><div class="lrow"><span class="ln">700</span><span class="lt" style="font-weight:700;letter-spacing:-0.024em">Build the system once</span></div><div class="lrow"><span class="ln">800</span><span class="lt" style="font-weight:800;letter-spacing:-0.028em">Build the system once</span></div><div class="lrow"><span class="ln">900</span><span class="lt" style="font-weight:900;letter-spacing:-0.032em">Build the system once</span></div>
+ <p class="intro" style="margin-top:26px"><b style="color:#050E3D">Now the same four at real thumbnail size, roughly 290px wide, which is the actual test.</b></p>
+ <div class="mrow"><div class="mini"><div class="mt" style="font-weight:600;letter-spacing:-0.020em">your leads are<br><em>ghosting</em> you</div><div class="mn">600</div></div><div class="mini"><div class="mt" style="font-weight:700;letter-spacing:-0.024em">your leads are<br><em>ghosting</em> you</div><div class="mn">700</div></div><div class="mini"><div class="mt" style="font-weight:800;letter-spacing:-0.028em">your leads are<br><em>ghosting</em> you</div><div class="mn">800</div></div><div class="mini"><div class="mt" style="font-weight:900;letter-spacing:-0.032em">your leads are<br><em>ghosting</em> you</div><div class="mn">900</div></div></div>
+</div>
+
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">600</span><span class="ttl">Barlow SemiBold</span><span class="tag">tracking -0.020em</span></div>
+  <h2 style="font-weight:600;letter-spacing:-0.020em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh">Module 03, the follow-up engine</div>
+  <p class="body">Too light to carry a headline on its own. Reads like a subhead that got enlarged. On the black thumbnail the strokes start to thin out and it loses authority at a scroll-past glance.</p>
+  <div class="row">
+   <span class="btn">Start Module 03</span>
+   <span class="lbl">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-weight:600;letter-spacing:-0.020em">your leads are <em>ghosting</em> you</div><div class="tb">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-weight:600;letter-spacing:-0.020em">stop doing this <em>manually</em></div><div class="tb">NEW</div></div>
+  <div class="spec">
+   <b>Display</b> Barlow 600 SemiBold, tracking -0.020em<br>
+   <b>Subtext</b> Raleway 600 &nbsp;<b>Body</b> Inter 400/500<br>
+   <span class="note">Not a headline weight. Useful as a card title or a section label at 18 to 22px.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">700</span><span class="ttl">Barlow Bold</span><span class="tag">tracking -0.024em</span></div>
+  <h2 style="font-weight:700;letter-spacing:-0.024em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh">Module 03, the follow-up engine</div>
+  <p class="body">The default bold. Perfectly fine and completely unremarkable. The problem is the gap: against Inter 400 body it is only three steps of weight, so the hierarchy is softer than it looks here in isolation.</p>
+  <div class="row">
+   <span class="btn">Start Module 03</span>
+   <span class="lbl">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-weight:700;letter-spacing:-0.024em">your leads are <em>ghosting</em> you</div><div class="tb">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-weight:700;letter-spacing:-0.024em">stop doing this <em>manually</em></div><div class="tb">NEW</div></div>
+  <div class="spec">
+   <b>Display</b> Barlow 700 Bold, tracking -0.024em<br>
+   <b>Subtext</b> Raleway 600 &nbsp;<b>Body</b> Inter 400/500<br>
+   <span class="note">Safe, but it is buying you the least separation from body copy.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">800</span><span class="ttl">Barlow ExtraBold</span><span class="tag">tracking -0.028em</span></div>
+  <h2 style="font-weight:800;letter-spacing:-0.028em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh">Module 03, the follow-up engine</div>
+  <p class="body">What P08 uses. Dense enough to hold a 320px thumbnail, still open enough that the counters inside a, e and o do not fill in. Five steps clear of Inter 400, which is where the hierarchy comes from now that there is no serif in the mix.</p>
+  <div class="row">
+   <span class="btn">Start Module 03</span>
+   <span class="lbl">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-weight:800;letter-spacing:-0.028em">your leads are <em>ghosting</em> you</div><div class="tb">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-weight:800;letter-spacing:-0.028em">stop doing this <em>manually</em></div><div class="tb">NEW</div></div>
+  <div class="spec">
+   <b>Display</b> Barlow 800 ExtraBold, tracking -0.028em<br>
+   <b>Subtext</b> Raleway 600 &nbsp;<b>Body</b> Inter 400/500<br>
+   <span class="note">The recommendation. Headline and thumbnail both work at this weight.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">900</span><span class="ttl">Barlow Black</span><span class="tag">tracking -0.032em</span></div>
+  <h2 style="font-weight:900;letter-spacing:-0.032em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh">Module 03, the follow-up engine</div>
+  <p class="body">Hits hardest in the thumbnail and is the loudest at 320px. The cost is up close: at 41px the counters tighten, letter shapes start to merge, and long headlines get heavy fast. Barlow 900 is narrow enough that it survives this better than Poppins would.</p>
+  <div class="row">
+   <span class="btn">Start Module 03</span>
+   <span class="lbl">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-weight:900;letter-spacing:-0.032em">your leads are <em>ghosting</em> you</div><div class="tb">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-weight:900;letter-spacing:-0.032em">stop doing this <em>manually</em></div><div class="tb">NEW</div></div>
+  <div class="spec">
+   <b>Display</b> Barlow 900 Black, tracking -0.032em<br>
+   <b>Subtext</b> Raleway 600 &nbsp;<b>Body</b> Inter 400/500<br>
+   <span class="note">Worth considering for thumbnails ONLY, with 800 for on-page headlines. Splitting them is legitimate.</span>
+  </div>
+ </div>
+</div>

@@ -1,0 +1,362 @@
+<meta charset="utf-8"><title>Font pairings on Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@400;600;800&family=Poppins:wght@400;500;600;800&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#141414;font-family:Inter,system-ui,sans-serif;padding-bottom:70px}
+.hdr{padding:34px 40px 8px;color:#f2f2f2;font-family:Poppins;font-size:25px;font-weight:800;letter-spacing:-.03em}
+.hdrsub{padding:0 40px 26px;color:#8d8d8d;font-size:13px;line-height:1.7;max-width:940px}
+.hdrsub b{color:#dcdcdc;font-weight:600}
+
+.card{margin:0 40px 30px;border-radius:16px;overflow:hidden;background:#FFFFFF}
+.top{padding:30px 38px 30px;color:#050E3D}
+.hd{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.pid{font-family:Inter;font-size:11px;font-weight:700;letter-spacing:.1em;color:#FFFFFF;background:#1768E5;padding:4px 9px;border-radius:5px}
+.ttl{font-family:Inter;font-size:15px;font-weight:700;color:#050E3D;letter-spacing:-.01em}
+.tag{font-family:Inter;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#55627F}
+h2{font-size:41px;line-height:1.07;margin-top:19px;color:#050E3D}
+h2 em{font-style:normal;color:#1768E5}
+.sh{font-size:15px;margin-top:11px;color:#55627F;letter-spacing:.01em !important}
+.body{font-size:15px;color:#55627F;max-width:760px;margin-top:14px;font-weight:400}
+.body.sm{font-size:13px;margin-top:9px;max-width:800px}
+.body a{color:#1768E5;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.row{display:flex;gap:15px;align-items:center;margin-top:20px;flex-wrap:wrap}
+.btn{background:#1768E5;color:#FFFFFF;padding:11px 21px;border-radius:8px;font-weight:600;font-size:14px}
+.lbl{font-size:11px;letter-spacing:.15em;color:#1768E5}
+.meta{font-size:13px;color:#55627F}
+
+.strip{display:flex;gap:18px;padding:22px 38px 26px;background:#F7F8FA;border-top:1px solid #E4E7EF;align-items:flex-start}
+.thumb{width:300px;height:169px;border-radius:9px;background:#000000;position:relative;overflow:hidden;flex:none}
+.thumb.w{background:#FFFFFF;box-shadow:inset 0 0 0 1px #E4E7EF}
+.thumb .tt{position:absolute;left:17px;top:30px;width:195px;font-size:24px;line-height:1.13;color:#FFFFFF}
+.thumb .tt em{font-style:normal;color:#5B9BFF}
+.thumb.w .tt{color:#050E3D}
+.thumb.w .tt em{color:#1768E5}
+.thumb .tb{position:absolute;left:17px;bottom:16px;background:#1768E5;color:#FFFFFF;font-size:10px;font-weight:700;letter-spacing:.09em;padding:5px 10px;border-radius:5px}
+.spec{flex:1;min-width:210px;font-size:12px;line-height:1.75;color:#55627F}
+.spec b{color:#050E3D;font-weight:600}
+.spec .note{display:block;margin-top:8px;font-size:11.5px;color:#55627F;opacity:.85}
+
+.avwrap{margin:0 40px;background:#FFFFFF;border-radius:16px;padding:30px 38px 34px}
+.avwrap h3{font-family:Archivo;font-weight:800;font-size:23px;letter-spacing:-.032em;color:#050E3D}
+.avwrap .intro{font-family:Inter;font-size:14px;line-height:1.65;color:#55627F;margin-top:9px;max-width:780px}
+.av{border-top:1px solid #E4E7EF;padding-top:17px;margin-top:19px}
+.avh{font-size:22px;color:#050E3D}
+.av p{font-size:13px;color:#55627F;margin-top:7px;max-width:820px}
+.av .dem{font-size:13px;color:#050E3D;background:#F7F8FA;padding:12px 14px;border-radius:8px;margin-top:9px;max-width:640px;border-left:2px solid #E4E7EF}
+</style>
+
+<div class="hdr">Font pairings, all on the Vector palette</div>
+<div class="hdrsub">Color is held constant so you are only judging type. Every card uses the same headline, the same 13px paragraph,
+and the same two thumbnails, because <b>display faces all look good big</b> and the decision actually gets made at
+caption size and at 320px.<br><br>
+<b>Space Grotesk, Fraunces and Bodoni Moda are out</b> at your call, so the surviving faces are Poppins, Inter, Archivo,
+Inter Tight, Barlow and Raleway. That removes every serif, which means this is now a decision between grotesks and the
+hierarchy has to come from weight, size and width instead of from a contrast of face.<br><br>
+<b>Raleway appears in two different roles here.</b> As a display face it is P12. As <i>subtext</i>, meaning the eyebrow,
+the subhead and the small label but never a paragraph, it is P02, P05, P08 and P09. The second role is the one that
+works, and the reason is at the bottom of the page.<br><br>
+Tracking is <b>not</b> constant. Each face carries the value that is actually correct for it, and the spec block on
+every card lists it.</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">P01</span><span class="ttl">Poppins 800 + Inter</span><span class="tag">The v1 default</span></div>
+  <h2 style="font-family:'Poppins';font-weight:800;letter-spacing:-0.03em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh" style="font-family:'Poppins';font-weight:800;letter-spacing:-0.03em">Module 03, the follow-up engine</div>
+  <p class="body" style="font-family:'Inter';line-height:1.60;letter-spacing:0">Geometric display over a neutral workhorse. Safe and legible, and the single most common pairing in the coaching space, which is both why it works and why it does not differentiate you.</p>
+  <p class="body sm" style="font-family:'Inter';line-height:1.60;letter-spacing:0">This second paragraph is 13px, the size body copy actually ships at in a carousel caption or a Skool post. Read it fast and see whether it holds. An <a href="#">inline link</a> sits in here too, because links are where a body face usually breaks down first. If your eye snags anywhere in this block, the pairing is wrong no matter how good the headline looked.</p>
+  <div class="row">
+   <span class="btn" style="font-family:'Inter'">Start Module 03</span>
+   <span class="lbl" style="font-family:'Poppins';font-weight:600">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta" style="font-family:'Inter'">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-family:'Poppins';font-weight:800;letter-spacing:-0.03em">your leads are <em>ghosting</em> you</div><div class="tb" style="font-family:'Poppins'">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-family:'Poppins';font-weight:800;letter-spacing:-0.03em">stop doing this <em>manually</em></div><div class="tb" style="font-family:'Poppins'">NEW</div></div>
+  <div class="spec" style="font-family:Inter">
+   <b>Display</b> Poppins 800, tracking -0.03em<br>
+   <b>Body</b> Inter 400/500, line-height 1.60<br>
+   <span class="note">Judge the two thumbnails as hard as the headline. Half of what you ship is a 320px card.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">P02</span><span class="ttl">Poppins 800 + Raleway subtext + Inter</span><span class="tag">v1 head, raleway accent</span></div>
+  <h2 style="font-family:'Poppins';font-weight:800;letter-spacing:-0.03em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh" style="font-family:'Raleway';font-weight:600;letter-spacing:0">Module 03, the follow-up engine</div>
+  <p class="body" style="font-family:'Inter';line-height:1.60;letter-spacing:0">Keeps your existing Poppins headline, then uses Raleway for the one short line under it. Raleway is doing decoration, not reading, which is the only job it is actually good at.</p>
+  <p class="body sm" style="font-family:'Inter';line-height:1.60;letter-spacing:0">This second paragraph is 13px, the size body copy actually ships at in a carousel caption or a Skool post. Read it fast and see whether it holds. An <a href="#">inline link</a> sits in here too, because links are where a body face usually breaks down first. If your eye snags anywhere in this block, the pairing is wrong no matter how good the headline looked.</p>
+  <div class="row">
+   <span class="btn" style="font-family:'Inter'">Start Module 03</span>
+   <span class="lbl" style="font-family:'Raleway';font-weight:600">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta" style="font-family:'Inter'">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-family:'Poppins';font-weight:800;letter-spacing:-0.03em">your leads are <em>ghosting</em> you</div><div class="tb" style="font-family:'Raleway'">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-family:'Poppins';font-weight:800;letter-spacing:-0.03em">stop doing this <em>manually</em></div><div class="tb" style="font-family:'Raleway'">NEW</div></div>
+  <div class="spec" style="font-family:Inter">
+   <b>Display</b> Poppins 800, tracking -0.03em<br>
+   <b>Body</b> Inter 400/500, line-height 1.60<br><b>Subtext</b> Raleway 600, the eyebrow and subhead role only<br>
+   <span class="note">Judge the two thumbnails as hard as the headline. Half of what you ship is a 320px card.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">P03</span><span class="ttl">Poppins 800 + Barlow</span><span class="tag">Geometric + compact</span></div>
+  <h2 style="font-family:'Poppins';font-weight:800;letter-spacing:-0.03em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh" style="font-family:'Poppins';font-weight:800;letter-spacing:-0.03em">Module 03, the follow-up engine</div>
+  <p class="body" style="font-family:'Barlow';line-height:1.62;letter-spacing:0.004em">Same Poppins continuity, but Barlow is narrower than Inter and fits more words per line. Useful when captions run long.</p>
+  <p class="body sm" style="font-family:'Barlow';line-height:1.62;letter-spacing:0.004em">This second paragraph is 13px, the size body copy actually ships at in a carousel caption or a Skool post. Read it fast and see whether it holds. An <a href="#">inline link</a> sits in here too, because links are where a body face usually breaks down first. If your eye snags anywhere in this block, the pairing is wrong no matter how good the headline looked.</p>
+  <div class="row">
+   <span class="btn" style="font-family:'Barlow'">Start Module 03</span>
+   <span class="lbl" style="font-family:'Poppins';font-weight:600">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta" style="font-family:'Barlow'">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-family:'Poppins';font-weight:800;letter-spacing:-0.03em">your leads are <em>ghosting</em> you</div><div class="tb" style="font-family:'Poppins'">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-family:'Poppins';font-weight:800;letter-spacing:-0.03em">stop doing this <em>manually</em></div><div class="tb" style="font-family:'Poppins'">NEW</div></div>
+  <div class="spec" style="font-family:Inter">
+   <b>Display</b> Poppins 800, tracking -0.03em<br>
+   <b>Body</b> Barlow 400/500, line-height 1.62<br>
+   <span class="note">Judge the two thumbnails as hard as the headline. Half of what you ship is a 320px card.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">P04</span><span class="ttl">Archivo 800 + Inter</span><span class="tag">Editorial</span></div>
+  <h2 style="font-family:'Archivo';font-weight:800;letter-spacing:-0.032em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh" style="font-family:'Archivo';font-weight:800;letter-spacing:-0.032em">Module 03, the follow-up engine</div>
+  <p class="body" style="font-family:'Inter';line-height:1.60;letter-spacing:0">Archivo is a grotesk, so the headline holds tighter and reads more like a publication than a course. Closest of anything here to the measured pedigree set. Inter keeps the body invisible.</p>
+  <p class="body sm" style="font-family:'Inter';line-height:1.60;letter-spacing:0">This second paragraph is 13px, the size body copy actually ships at in a carousel caption or a Skool post. Read it fast and see whether it holds. An <a href="#">inline link</a> sits in here too, because links are where a body face usually breaks down first. If your eye snags anywhere in this block, the pairing is wrong no matter how good the headline looked.</p>
+  <div class="row">
+   <span class="btn" style="font-family:'Inter'">Start Module 03</span>
+   <span class="lbl" style="font-family:'Archivo';font-weight:600">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta" style="font-family:'Inter'">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-family:'Archivo';font-weight:800;letter-spacing:-0.032em">your leads are <em>ghosting</em> you</div><div class="tb" style="font-family:'Archivo'">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-family:'Archivo';font-weight:800;letter-spacing:-0.032em">stop doing this <em>manually</em></div><div class="tb" style="font-family:'Archivo'">NEW</div></div>
+  <div class="spec" style="font-family:Inter">
+   <b>Display</b> Archivo 800, tracking -0.032em<br>
+   <b>Body</b> Inter 400/500, line-height 1.60<br>
+   <span class="note">Judge the two thumbnails as hard as the headline. Half of what you ship is a 320px card.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">P05</span><span class="ttl">Archivo 800 + Raleway subtext + Inter</span><span class="tag">Editorial + accent</span></div>
+  <h2 style="font-family:'Archivo';font-weight:800;letter-spacing:-0.032em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh" style="font-family:'Raleway';font-weight:600;letter-spacing:0">Module 03, the follow-up engine</div>
+  <p class="body" style="font-family:'Inter';line-height:1.60;letter-spacing:0">The editorial pairing with one softer line under the headline. Raleway breaks up an otherwise very tight, very grotesk page without touching the body copy.</p>
+  <p class="body sm" style="font-family:'Inter';line-height:1.60;letter-spacing:0">This second paragraph is 13px, the size body copy actually ships at in a carousel caption or a Skool post. Read it fast and see whether it holds. An <a href="#">inline link</a> sits in here too, because links are where a body face usually breaks down first. If your eye snags anywhere in this block, the pairing is wrong no matter how good the headline looked.</p>
+  <div class="row">
+   <span class="btn" style="font-family:'Inter'">Start Module 03</span>
+   <span class="lbl" style="font-family:'Raleway';font-weight:600">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta" style="font-family:'Inter'">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-family:'Archivo';font-weight:800;letter-spacing:-0.032em">your leads are <em>ghosting</em> you</div><div class="tb" style="font-family:'Raleway'">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-family:'Archivo';font-weight:800;letter-spacing:-0.032em">stop doing this <em>manually</em></div><div class="tb" style="font-family:'Raleway'">NEW</div></div>
+  <div class="spec" style="font-family:Inter">
+   <b>Display</b> Archivo 800, tracking -0.032em<br>
+   <b>Body</b> Inter 400/500, line-height 1.60<br><b>Subtext</b> Raleway 600, the eyebrow and subhead role only<br>
+   <span class="note">Judge the two thumbnails as hard as the headline. Half of what you ship is a 320px card.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">P06</span><span class="ttl">Archivo 800 + Barlow</span><span class="tag">All-grotesk</span></div>
+  <h2 style="font-family:'Archivo';font-weight:800;letter-spacing:-0.032em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh" style="font-family:'Archivo';font-weight:800;letter-spacing:-0.032em">Module 03, the follow-up engine</div>
+  <p class="body" style="font-family:'Barlow';line-height:1.62;letter-spacing:0.004em">The most brokerage-looking combination on this page. The risk is that Archivo and Barlow are close relatives, so hierarchy leans almost entirely on size and weight.</p>
+  <p class="body sm" style="font-family:'Barlow';line-height:1.62;letter-spacing:0.004em">This second paragraph is 13px, the size body copy actually ships at in a carousel caption or a Skool post. Read it fast and see whether it holds. An <a href="#">inline link</a> sits in here too, because links are where a body face usually breaks down first. If your eye snags anywhere in this block, the pairing is wrong no matter how good the headline looked.</p>
+  <div class="row">
+   <span class="btn" style="font-family:'Barlow'">Start Module 03</span>
+   <span class="lbl" style="font-family:'Archivo';font-weight:600">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta" style="font-family:'Barlow'">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-family:'Archivo';font-weight:800;letter-spacing:-0.032em">your leads are <em>ghosting</em> you</div><div class="tb" style="font-family:'Archivo'">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-family:'Archivo';font-weight:800;letter-spacing:-0.032em">stop doing this <em>manually</em></div><div class="tb" style="font-family:'Archivo'">NEW</div></div>
+  <div class="spec" style="font-family:Inter">
+   <b>Display</b> Archivo 800, tracking -0.032em<br>
+   <b>Body</b> Barlow 400/500, line-height 1.62<br>
+   <span class="note">Judge the two thumbnails as hard as the headline. Half of what you ship is a 320px card.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">P07</span><span class="ttl">Barlow 800 + Inter</span><span class="tag">Barlow head, control</span></div>
+  <h2 style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh" style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">Module 03, the follow-up engine</div>
+  <p class="body" style="font-family:'Inter';line-height:1.60;letter-spacing:0">Barlow as the display face on its own. It is narrower and slightly rounded, so it reads a little friendlier than Archivo and a lot less trendy than Poppins. Compare this to P08 to see what Raleway is actually adding.</p>
+  <p class="body sm" style="font-family:'Inter';line-height:1.60;letter-spacing:0">This second paragraph is 13px, the size body copy actually ships at in a carousel caption or a Skool post. Read it fast and see whether it holds. An <a href="#">inline link</a> sits in here too, because links are where a body face usually breaks down first. If your eye snags anywhere in this block, the pairing is wrong no matter how good the headline looked.</p>
+  <div class="row">
+   <span class="btn" style="font-family:'Inter'">Start Module 03</span>
+   <span class="lbl" style="font-family:'Barlow';font-weight:600">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta" style="font-family:'Inter'">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">your leads are <em>ghosting</em> you</div><div class="tb" style="font-family:'Barlow'">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">stop doing this <em>manually</em></div><div class="tb" style="font-family:'Barlow'">NEW</div></div>
+  <div class="spec" style="font-family:Inter">
+   <b>Display</b> Barlow 800, tracking -0.028em<br>
+   <b>Body</b> Inter 400/500, line-height 1.60<br>
+   <span class="note">Judge the two thumbnails as hard as the headline. Half of what you ship is a 320px card.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">P08</span><span class="ttl">Barlow 800 + Raleway subtext + Inter</span><span class="tag">What you asked for</span></div>
+  <h2 style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh" style="font-family:'Raleway';font-weight:600;letter-spacing:0">Module 03, the follow-up engine</div>
+  <p class="body" style="font-family:'Inter';line-height:1.60;letter-spacing:0">Barlow headline, Raleway on the subhead and the small label, Inter carrying the paragraphs. This is the version of your question that works: Raleway stays at 15px and above and never has to hold a block of text.</p>
+  <p class="body sm" style="font-family:'Inter';line-height:1.60;letter-spacing:0">This second paragraph is 13px, the size body copy actually ships at in a carousel caption or a Skool post. Read it fast and see whether it holds. An <a href="#">inline link</a> sits in here too, because links are where a body face usually breaks down first. If your eye snags anywhere in this block, the pairing is wrong no matter how good the headline looked.</p>
+  <div class="row">
+   <span class="btn" style="font-family:'Inter'">Start Module 03</span>
+   <span class="lbl" style="font-family:'Raleway';font-weight:600">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta" style="font-family:'Inter'">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">your leads are <em>ghosting</em> you</div><div class="tb" style="font-family:'Raleway'">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">stop doing this <em>manually</em></div><div class="tb" style="font-family:'Raleway'">NEW</div></div>
+  <div class="spec" style="font-family:Inter">
+   <b>Display</b> Barlow 800, tracking -0.028em<br>
+   <b>Body</b> Inter 400/500, line-height 1.60<br><b>Subtext</b> Raleway 600, the eyebrow and subhead role only<br>
+   <span class="note">Judge the two thumbnails as hard as the headline. Half of what you ship is a 320px card.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">P09</span><span class="ttl">Barlow 800 + Raleway subtext + Barlow</span><span class="tag">One family + accent</span></div>
+  <h2 style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh" style="font-family:'Raleway';font-weight:600;letter-spacing:0">Module 03, the follow-up engine</div>
+  <p class="body" style="font-family:'Barlow';line-height:1.62;letter-spacing:0.004em">Barlow does both headline and body, Raleway is the only other face on the page. Cheap to maintain and very consistent, but the headline has to be much larger and much heavier to stay separate from the body.</p>
+  <p class="body sm" style="font-family:'Barlow';line-height:1.62;letter-spacing:0.004em">This second paragraph is 13px, the size body copy actually ships at in a carousel caption or a Skool post. Read it fast and see whether it holds. An <a href="#">inline link</a> sits in here too, because links are where a body face usually breaks down first. If your eye snags anywhere in this block, the pairing is wrong no matter how good the headline looked.</p>
+  <div class="row">
+   <span class="btn" style="font-family:'Barlow'">Start Module 03</span>
+   <span class="lbl" style="font-family:'Raleway';font-weight:600">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta" style="font-family:'Barlow'">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">your leads are <em>ghosting</em> you</div><div class="tb" style="font-family:'Raleway'">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">stop doing this <em>manually</em></div><div class="tb" style="font-family:'Raleway'">NEW</div></div>
+  <div class="spec" style="font-family:Inter">
+   <b>Display</b> Barlow 800, tracking -0.028em<br>
+   <b>Body</b> Barlow 400/500, line-height 1.62<br><b>Subtext</b> Raleway 600, the eyebrow and subhead role only<br>
+   <span class="note">Judge the two thumbnails as hard as the headline. Half of what you ship is a 320px card.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">P10</span><span class="ttl">Barlow 800 + Archivo</span><span class="tag">Barlow head, heavier body</span></div>
+  <h2 style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh" style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">Module 03, the follow-up engine</div>
+  <p class="body" style="font-family:'Archivo';line-height:1.60;letter-spacing:0">Archivo has more presence than Inter at body size. Reads more substantial, slightly less neutral. Only worth it if you want the paragraphs to feel deliberate rather than invisible.</p>
+  <p class="body sm" style="font-family:'Archivo';line-height:1.60;letter-spacing:0">This second paragraph is 13px, the size body copy actually ships at in a carousel caption or a Skool post. Read it fast and see whether it holds. An <a href="#">inline link</a> sits in here too, because links are where a body face usually breaks down first. If your eye snags anywhere in this block, the pairing is wrong no matter how good the headline looked.</p>
+  <div class="row">
+   <span class="btn" style="font-family:'Archivo'">Start Module 03</span>
+   <span class="lbl" style="font-family:'Barlow';font-weight:600">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta" style="font-family:'Archivo'">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">your leads are <em>ghosting</em> you</div><div class="tb" style="font-family:'Barlow'">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-family:'Barlow';font-weight:800;letter-spacing:-0.028em">stop doing this <em>manually</em></div><div class="tb" style="font-family:'Barlow'">NEW</div></div>
+  <div class="spec" style="font-family:Inter">
+   <b>Display</b> Barlow 800, tracking -0.028em<br>
+   <b>Body</b> Archivo 400/500, line-height 1.60<br>
+   <span class="note">Judge the two thumbnails as hard as the headline. Half of what you ship is a 320px card.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">P11</span><span class="ttl">Inter Tight 800 + Inter</span><span class="tag">One family</span></div>
+  <h2 style="font-family:'Inter Tight';font-weight:800;letter-spacing:-0.032em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh" style="font-family:'Inter Tight';font-weight:800;letter-spacing:-0.032em">Module 03, the follow-up engine</div>
+  <p class="body" style="font-family:'Inter';line-height:1.60;letter-spacing:0">Same superfamily top to bottom. Cheapest to maintain and impossible to get wrong, and also the least distinctive option here.</p>
+  <p class="body sm" style="font-family:'Inter';line-height:1.60;letter-spacing:0">This second paragraph is 13px, the size body copy actually ships at in a carousel caption or a Skool post. Read it fast and see whether it holds. An <a href="#">inline link</a> sits in here too, because links are where a body face usually breaks down first. If your eye snags anywhere in this block, the pairing is wrong no matter how good the headline looked.</p>
+  <div class="row">
+   <span class="btn" style="font-family:'Inter'">Start Module 03</span>
+   <span class="lbl" style="font-family:'Inter Tight';font-weight:600">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta" style="font-family:'Inter'">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-family:'Inter Tight';font-weight:800;letter-spacing:-0.032em">your leads are <em>ghosting</em> you</div><div class="tb" style="font-family:'Inter Tight'">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-family:'Inter Tight';font-weight:800;letter-spacing:-0.032em">stop doing this <em>manually</em></div><div class="tb" style="font-family:'Inter Tight'">NEW</div></div>
+  <div class="spec" style="font-family:Inter">
+   <b>Display</b> Inter Tight 800, tracking -0.032em<br>
+   <b>Body</b> Inter 400/500, line-height 1.60<br>
+   <span class="note">Judge the two thumbnails as hard as the headline. Half of what you ship is a 320px card.</span>
+  </div>
+ </div>
+</div>
+<div class="card">
+ <div class="top">
+  <div class="hd"><span class="pid">P12</span><span class="ttl">Raleway 800 + Inter</span><span class="tag">Raleway as display</span></div>
+  <h2 style="font-family:'Raleway';font-weight:800;letter-spacing:-0.028em">Build the system <em>once</em>. Let it run.</h2>
+  <div class="sh" style="font-family:'Raleway';font-weight:800;letter-spacing:-0.028em">Module 03, the follow-up engine</div>
+  <p class="body" style="font-family:'Inter';line-height:1.60;letter-spacing:0">Raleway is elegant at 400 to 600, but at 800 it thickens and loses much of what made it elegant. Judge it in the thumbnails, not the headline.</p>
+  <p class="body sm" style="font-family:'Inter';line-height:1.60;letter-spacing:0">This second paragraph is 13px, the size body copy actually ships at in a carousel caption or a Skool post. Read it fast and see whether it holds. An <a href="#">inline link</a> sits in here too, because links are where a body face usually breaks down first. If your eye snags anywhere in this block, the pairing is wrong no matter how good the headline looked.</p>
+  <div class="row">
+   <span class="btn" style="font-family:'Inter'">Start Module 03</span>
+   <span class="lbl" style="font-family:'Raleway';font-weight:600">MODULE 03 &middot; 14 MIN</span>
+   <span class="meta" style="font-family:'Inter'">Updated today</span>
+  </div>
+ </div>
+ <div class="strip">
+  <div class="thumb"><div class="tt" style="font-family:'Raleway';font-weight:800;letter-spacing:-0.028em">your leads are <em>ghosting</em> you</div><div class="tb" style="font-family:'Raleway'">MODULE 03</div></div>
+  <div class="thumb w"><div class="tt" style="font-family:'Raleway';font-weight:800;letter-spacing:-0.028em">stop doing this <em>manually</em></div><div class="tb" style="font-family:'Raleway'">NEW</div></div>
+  <div class="spec" style="font-family:Inter">
+   <b>Display</b> Raleway 800, tracking -0.028em<br>
+   <b>Body</b> Inter 400/500, line-height 1.60<br>
+   <span class="note">Judge the two thumbnails as hard as the headline. Half of what you ship is a 320px card.</span>
+  </div>
+ </div>
+</div>
+<div class="avwrap">
+ <h3>Combinations to skip, and why</h3>
+ <p class="intro">These come up naturally from the same six faces, so they are worth ruling out on the record rather than
+  rediscovering later. None of them are broken. They just cost you either legibility or hierarchy.</p>
+ <div class="av">
+ <div class="avh" style="font-family:'Raleway';font-weight:800;letter-spacing:-0.028em">Raleway as running body</div>
+ <p style="font-family:'Inter';line-height:1.60">This is the distinction that matters for your question. Raleway has a low x-height and tight apertures. At 15px and up on a single short line it looks refined, which is why it works as subtext in P02, P05, P08 and P09. At 13px across a full paragraph it goes mushy, and 13px across a full paragraph is what a Skool post actually is. Read the block below and then read the one under P08.</p>
+ <p class="dem" style="font-family:'Raleway';line-height:1.66;letter-spacing:0.006em">Module 03 walks you through the exact follow-up sequence, then hands you the automation so it runs without you. Set it once and stop thinking about it. An <a href="#" style="color:#1768E5;font-weight:600">inline link</a> in here is where it gets worst.</p>
+</div>
+<div class="av">
+ <div class="avh" style="font-family:'Raleway';font-weight:800;letter-spacing:-0.028em">Raleway head + Raleway subtext</div>
+ <p style="font-family:'Inter';line-height:1.60">Two lines of the same low x-height face stacked on top of each other. The subhead stops reading as a separate level and the whole block flattens. If Raleway is your display face, the subtext has to be something else.</p>
+ <p class="dem" style="font-family:'Raleway';line-height:1.5;letter-spacing:0.006em"><span style="font-size:20px;font-weight:800;letter-spacing:-0.028em">Build the system once</span><br>Module 03, the follow-up engine</p>
+</div>
+<div class="av">
+ <div class="avh" style="font-family:'Poppins';font-weight:800;letter-spacing:-0.03em">Poppins + Poppins</div>
+ <p style="font-family:'Inter';line-height:1.60">Poppins is geometric and wide. It is built for headlines. At 13px in a paragraph the round shapes and low x-height slow reading down noticeably, and long copy gets tiring.</p>
+ <p class="dem" style="font-family:'Poppins';line-height:1.66;letter-spacing:0">Module 03 walks you through the exact follow-up sequence, then hands you the automation so it runs without you. Set it once and stop thinking about it.</p>
+</div>
+<div class="av">
+ <div class="avh" style="font-family:'Inter Tight';font-weight:800;letter-spacing:-0.032em">Inter Tight + Inter, at similar sizes</div>
+ <p style="font-family:'Inter';line-height:1.60">Included above as P11 because it is a legitimate cost-saving choice, but be aware: if the headline is not much larger and much heavier, the two are indistinguishable and the page reads flat. Now that every serif is gone, this failure mode applies to Archivo + Barlow and to Barlow + Barlow as well. Buy your hierarchy with weight and size.</p>
+ <p class="dem" style="font-family:'Inter';line-height:1.60;letter-spacing:0">Module 03 walks you through the exact follow-up sequence, then hands you the automation so it runs without you. Set it once and stop thinking about it.</p>
+</div>
+</div>

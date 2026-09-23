@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Inter:wght@400;500&family=Raleway:wght@600&display=swap">
+  <style>
+    *,*::before,*::after { box-sizing: border-box; }
+    body { margin: 0; width: 1080px; height: 1350px; overflow: hidden; }
+    a { color: #1768E5; text-decoration: none; }
+    a:hover { color: #0B3FA8; }
+    .slide { position: relative; width: 1080px; height: 1350px;
+             padding: 152px 64px 166px; display: flex; flex-direction: column; }
+    .rail { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; }
+    .label { font-family: 'Raleway',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 600; font-size: 22px;
+             letter-spacing: 0.15em; text-transform: uppercase; }
+    .idx { font-family: 'Raleway',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.15em; }
+    .mono { width: 64px; height: 64px; flex: 0 0 auto; }
+    .monorow { display: flex; justify-content: flex-end; }
+
+    .slide { background: #000000; }
+    .label { color: #9AA3BC; }
+    .idx { color: #55627F; }
+    .core { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 40px; }
+    .stat { font-family: 'Barlow','Helvetica Neue',Arial,sans-serif; font-weight: 800; font-size: 66px; line-height: 1.06;
+            letter-spacing: -0.028em; color: #FFFFFF; max-width: 860px; }
+    .hi { color: #5B9BFF; }
+    .cta { align-self: flex-start; background: #1768E5; border-radius: 20px;
+           padding: 38px 52px; font-family: 'Barlow','Helvetica Neue',Arial,sans-serif; font-weight: 800; font-size: 46px;
+           letter-spacing: -0.02em; color: #FFFFFF; margin-top: 16px; }
+    .mark { font-family: 'Barlow','Helvetica Neue',Arial,sans-serif; font-weight: 800; font-size: 34px;
+            letter-spacing: -0.028em; color: #FFFFFF; }
+    .rule { width: 72px; height: 5px; background: #1768E5; margin-bottom: 14px; }
+
+  </style>
+</helmet>
+<div class="slide">
+  <div class="rail">
+    <div class="label">The point</div>
+    <div class="idx">06 / 06</div>
+  </div>
+  <div class="core">
+    <div class="stat">The camera was never the problem.</div>
+    <div class="stat">Not having <span class="hi">the first line</span> was.</div>
+    <div class="cta">Save this. Use one tomorrow.</div>
+  </div>
+  <div>
+    <div class="rule"></div>
+    <div class="mark">The Leveraged Agent</div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

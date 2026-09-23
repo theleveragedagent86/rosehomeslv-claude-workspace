@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SVG-04, unplaced. Field Manual direction</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+:root{
+  --ink:#101418; --text:#2A3138; --muted:#5A646D; --signal:#8F2D08;
+  --paper:#FFFFFF; --rail:#EFEEE9; --rule:#C6C4BC;
+}
+*{box-sizing:border-box}
+body{background:#6b6b6b;margin:0;padding:48px 24px;font-family:'IBM Plex Sans',system-ui,sans-serif}
+.cap{color:#EFEFEC;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.2em;
+     text-transform:uppercase;max-width:660px;margin:0 auto 14px;line-height:1.9}
+.sheet{background:var(--paper);max-width:660px;margin:0 auto;padding:30px 34px 34px;
+       box-shadow:0 0 0 1px rgba(0,0,0,.45),0 20px 44px rgba(0,0,0,.42)}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;line-height:0.95;
+   letter-spacing:-0.008em;color:var(--ink);margin:0 0 10px}
+.lab{font-family:'IBM Plex Mono',monospace;font-size:8.5px;font-weight:600;letter-spacing:.2em;
+     text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+p{font-size:14px;line-height:1.45;color:var(--text);margin:0 0 10px}
+.kick{height:5px;width:1.2in;background:var(--signal);margin-bottom:12px}
+.dia{width:2.1in;background:var(--paper);border:1px solid var(--ink);padding:7px;margin:18px 0}
+.dia svg{display:block;width:100%;height:auto}
+.dia-cap{font-family:'IBM Plex Mono',monospace;font-size:7.2px;line-height:1.42;letter-spacing:.04em;
+  text-transform:uppercase;color:var(--muted);margin:5px 0 0;border-top:1px solid var(--rule);padding-top:4px}
+.dia-cap b{color:var(--signal);font-weight:600}
+.note{background:var(--rail);border-top:3px solid var(--ink);padding:12px 14px;margin-top:20px}
+.note p{font-size:12.5px;margin:0 0 7px}
+.note p:last-child{margin-bottom:0}
+</style>
+</head>
+<body>
+<p class="cap">Field Manual &nbsp;/&nbsp; SVG-04, built but not placed on the pages 19 and 20 spread</p>
+<div class="sheet">
+  <div class="kick"></div>
+  <h1>SVG-04, at its minimum legible size</h1>
+  <p class="lab">Figure component, 2.1in wide</p>
+  <p>This is the diagram the sample content specifies for page 19. It is rendered here at
+  2.1in, which is the narrowest this direction will set a figure: below that its labels fall
+  under 6pt and it stops being readable at arm's length.</p>
+
+  <div class="dia">
+<svg viewBox="0 0 200 198" role="img" aria-labelledby="svg04t svg04d" xmlns="http://www.w3.org/2000/svg">
+  <title id="svg04t">How a special assessment sits next to your house payment</title>
+  <desc id="svg04d">A schematic vertical stack of monthly housing cost layers. From the top down: principal and interest, property tax, homeowners insurance, master homeowners association, and sub association. A dotted box encloses only principal and interest, property tax, and insurance, the layers that normally sit inside a mortgage escrow payment. The special assessment is drawn as a separate hatched block outside and below that box, because it is billed separately and is usually not in escrow. Beneath the stack a horizontal bar is labeled ten to thirty years, with a single tick mark near the left end showing where a buyer typically sells. No dollar figures appear anywhere. Proportions are schematic.</desc>
+  <defs>
+  <pattern id="hatch04" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+  <line x1="0" y1="0" x2="0" y2="6" stroke="#8F2D08" stroke-width="1.8"/>
+  </pattern>
+  </defs>
+  <g font-family="IBM Plex Mono, monospace" font-weight="600">
+  <rect x="1" y="1" width="198" height="66" fill="none" stroke="#101418" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <rect x="6" y="6" width="188" height="24" fill="#101418"/>
+  <text x="12" y="21" font-size="9" fill="#FFFFFF">PRINCIPAL + INTEREST</text>
+  <rect x="6" y="33" width="188" height="16" fill="#5A646D"/>
+  <text x="12" y="44.5" font-size="9" fill="#FFFFFF">PROPERTY TAX</text>
+  <rect x="6" y="51" width="188" height="13" fill="#C6C4BC"/>
+  <text x="12" y="60.5" font-size="9" fill="#101418">INSURANCE</text>
+  <text x="1" y="77" font-size="7.6" fill="#5A646D">DOTTED BOX = NORMALLY INSIDE ESCROW</text>
+  <rect x="6" y="83" width="188" height="13" fill="#FFFFFF" stroke="#101418" stroke-width="1.2"/>
+  <text x="12" y="92.5" font-size="9" fill="#101418">MASTER HOA</text>
+  <rect x="6" y="98" width="188" height="13" fill="#FFFFFF" stroke="#101418" stroke-width="1.2"/>
+  <text x="12" y="107.5" font-size="9" fill="#101418">SUB ASSOCIATION</text>
+  <text x="1" y="122" font-size="7.6" fill="#5A646D">BILLED ON ITS OWN, NOT IN ESCROW</text>
+  <line x1="1" y1="129" x2="199" y2="129" stroke="#8F2D08" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="6" y="136" width="188" height="24" fill="url(#hatch04)" stroke="#8F2D08" stroke-width="2"/>
+  <rect x="11" y="141" width="178" height="14" fill="#FFFFFF"/>
+  <text x="15" y="151.5" font-size="9" fill="#8F2D08">SPECIAL ASSESSMENT</text>
+  <text x="1" y="171" font-size="7.6" fill="#8F2D08">OUTSIDE THE BOX. HOW LONG IT RUNS:</text>
+  <rect x="6" y="176" width="188" height="13" fill="#EFEEE9" stroke="#101418" stroke-width="1.2"/>
+  <text x="112" y="185.5" font-size="9" fill="#101418">10 TO 30 YEARS</text>
+  <line x1="52" y1="173" x2="52" y2="192" stroke="#8F2D08" stroke-width="2"/>
+  <text x="1" y="197" font-size="7.6" fill="#5A646D">TICK = WHERE A BUYER TYPICALLY SELLS</text>
+  </g>
+  </svg>
+    <p class="dia-cap"><b>[ SVG-04 ]</b> How a special assessment sits next to your house payment. Schematic, no dollar figures.</p>
+  </div>
+
+  <div class="note">
+    <p class="lab">Why it is not on the spread</p>
+    <p>Pages 19 and 20 carry 1,629 set words against a 720 word ceiling for a two page spread.
+    After the body prose, the aside, the NOT FOUND callout, the 20 row table, the four step
+    checklist, the phone block and the soft close all set complete, there is no 4.4 square inch
+    hole left on either page.</p>
+    <p>It belongs on page 17 or page 21, where the monthly payment stack is already the subject.
+    Placing it there also removes the only reason page 19 was ever short.</p>
+  </div>
+</div>
+</body>
+</html>

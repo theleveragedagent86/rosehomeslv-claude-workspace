@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Leveraged Agent, logo sheet v2.0 Vector</title>
+<link rel="stylesheet" href="../Design-System/tokens.css">
+<script src="../Design-System/logo.js" defer></script>
+<style>
+  /* Body stays transparent so build.mjs can shoot cut-out variants with
+     omitBackground. Every frame that needs a ground paints its own. */
+  body{margin:0;background:transparent;padding:0}
+  .frame{display:flex;align-items:center;justify-content:center;width:fit-content;overflow:hidden;line-height:0}
+  .frame--pad{padding:8%}          /* clear space = 8% of the placed height */
+  .on-white{background:var(--la-bg)}
+  .on-black{background:var(--la-bg-inv)}
+  la-logo{display:block}
+</style>
+</head>
+<body>
+
+<!-- ============ cut-outs, transparent ground ============ -->
+<div class="frame" data-export="logo-lockup" data-transparent>
+  <la-logo variant="lockup" no-tagline style="width:1200px"></la-logo></div>
+<div class="frame" data-export="logo-lockup-inverse" data-transparent>
+  <la-logo variant="lockup" inverse no-tagline style="width:1200px"></la-logo></div>
+<div class="frame" data-export="logo-lockup-tagline" data-transparent>
+  <la-logo variant="lockup" style="width:1200px"></la-logo></div>
+<div class="frame" data-export="logo-lockup-tagline-inverse" data-transparent>
+  <la-logo variant="lockup" inverse style="width:1200px"></la-logo></div>
+
+<div class="frame" data-export="logo-wordmark" data-transparent>
+  <la-logo variant="wordmark" no-tagline style="width:2000px"></la-logo></div>
+<div class="frame" data-export="logo-wordmark-inverse" data-transparent>
+  <la-logo variant="wordmark" inverse no-tagline style="width:2000px"></la-logo></div>
+<div class="frame" data-export="logo-wordmark-tagline" data-transparent>
+  <la-logo variant="wordmark" style="width:2000px"></la-logo></div>
+<div class="frame" data-export="logo-wordmark-tagline-inverse" data-transparent>
+  <la-logo variant="wordmark" inverse style="width:2000px"></la-logo></div>
+
+<!-- ============ monograms, they paint their own field ============ -->
+<div class="frame" data-export="logo-monogram">
+  <la-logo variant="monogram" style="width:1024px;height:1024px"></la-logo></div>
+<div class="frame" data-export="logo-monogram-inverse">
+  <la-logo variant="monogram" inverse style="width:1024px;height:1024px"></la-logo></div>
+<div class="frame" data-export="logo-monogram-accent">
+  <la-logo variant="accent" style="width:1024px;height:1024px"></la-logo></div>
+
+<div class="frame" data-export="favicon-512">
+  <la-logo variant="favicon" style="width:512px;height:512px"></la-logo></div>
+<div class="frame" data-export="favicon-32">
+  <la-logo variant="favicon" style="width:32px;height:32px"></la-logo></div>
+
+<!-- ============ the five canonical Brandkit files ============
+     Filenames and pixel dimensions are frozen: ~44 bundled copies under
+     hyperframes-student-kit/video-projects/*/assets/ reference them by name,
+     and compositions size them by these exact dimensions. -->
+<div class="frame on-white" data-export="leveraged-agent-logo"
+     style="width:1424px;height:752px">
+  <la-logo variant="lockup" no-tagline style="width:1180px"></la-logo></div>
+
+<div class="frame on-black" data-export="leveraged-agent-logo-dark"
+     style="width:1424px;height:752px">
+  <la-logo variant="lockup" inverse no-tagline style="width:1180px"></la-logo></div>
+
+<div class="frame" data-export="leveraged-agent-logo-small"
+     style="width:1024px;height:1024px">
+  <la-logo variant="monogram" style="width:1024px;height:1024px"></la-logo></div>
+
+<div class="frame" data-export="leveraged-agent-logo-small-dark"
+     style="width:1024px;height:1024px">
+  <la-logo variant="monogram" inverse style="width:1024px;height:1024px"></la-logo></div>
+
+</body>
+</html>

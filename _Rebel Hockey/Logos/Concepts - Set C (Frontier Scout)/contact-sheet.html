@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rebels 8U — Frontier Scout Mascot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#08090C; --line:#2E2A2C; --scarlet:#CE0E2D; --scarlet-hot:#F0203E;
+    --ice:#F1EFEF; --gray:#7E7A7C; --gray-2:#A7A8AA; --tan:#D9A05B;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{background:var(--ink);}
+  body{width:1600px;color:var(--ice);font-family:'Barlow Condensed',sans-serif;}
+  .sheet{
+    width:1600px;min-height:1560px;padding:58px 58px 50px;position:relative;
+    background:
+      radial-gradient(110% 45% at 50% -6%, rgba(206,14,45,.36) 0%, rgba(206,14,45,0) 62%),
+      radial-gradient(90% 45% at 50% 108%, rgba(120,10,26,.28) 0%, rgba(120,10,26,0) 68%),
+      linear-gradient(178deg,#12100F,#08090C 52%,#0B0A0B);
+  }
+  .sheet::before{
+    content:'';position:absolute;inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+    opacity:.05;mix-blend-mode:overlay;pointer-events:none;z-index:5;
+  }
+  .head{text-align:center;position:relative;z-index:2;margin-bottom:42px;}
+  .kicker{font-size:19px;font-weight:600;letter-spacing:.44em;text-indent:.44em;color:var(--gray-2);}
+  h1{
+    font-family:'Anton',sans-serif;font-size:92px;line-height:.9;letter-spacing:-.03em;
+    text-transform:uppercase;margin-top:13px;
+    background:linear-gradient(180deg,#fff 6%,#E6E2E2 38%,#918C8E 100%);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  .sub{margin-top:13px;font-size:21px;font-weight:600;letter-spacing:.20em;color:var(--scarlet-hot);text-transform:uppercase;}
+
+  .grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .card{
+    border:1px solid var(--line);border-radius:6px;overflow:hidden;
+    background:linear-gradient(180deg,rgba(40,32,34,.7),rgba(18,16,17,.88));
+    box-shadow:inset 0 1px 0 rgba(241,239,239,.06),0 14px 32px rgba(0,0,0,.5);
+    display:flex;flex-direction:column;position:relative;
+  }
+  .card.pick{ border-color:rgba(240,32,62,.62);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 0 1px rgba(240,32,62,.22),0 16px 36px rgba(120,10,26,.42);}
+  .tag{
+    position:absolute;top:12px;right:12px;z-index:3;
+    font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    color:#fff;background:linear-gradient(180deg,var(--scarlet-hot),#A50E24);
+    padding:6px 11px;border-radius:3px;border:1px solid rgba(255,255,255,.2);
+  }
+  .art{
+    height:430px;display:flex;align-items:center;justify-content:center;padding:24px;
+    background:
+      radial-gradient(75% 75% at 50% 44%, rgba(206,14,45,.17) 0%, rgba(206,14,45,0) 72%),
+      linear-gradient(180deg,#181415,#0A0A0B);
+    border-bottom:1px solid var(--line);
+  }
+  .art img{max-width:100%;max-height:100%;object-fit:contain;
+    filter:drop-shadow(0 14px 26px rgba(0,0,0,.65));}
+  .cap{padding:18px 21px 20px;display:flex;align-items:baseline;gap:12px;}
+  .no{font-family:'Anton',sans-serif;font-size:32px;line-height:1;color:var(--scarlet-hot);min-width:40px;}
+  .nm{font-size:25px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ice);}
+  .fmt{margin-left:auto;font-size:13px;font-weight:600;letter-spacing:.15em;color:var(--gray);
+    border:1px solid var(--line);border-radius:3px;padding:5px 9px;text-transform:uppercase;}
+  .foot{position:relative;z-index:2;margin-top:38px;text-align:center;
+    font-size:17px;font-weight:600;letter-spacing:.15em;color:var(--gray);text-transform:uppercase;line-height:1.75;}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="head">
+    <div class="kicker">8U Mite League &nbsp;•&nbsp; Las Vegas</div>
+    <h1>Frontier Scout &mdash; Hockey Edition</h1>
+    <div class="sub">Stick instead of the rifle &nbsp;•&nbsp; dialed kid-friendly</div>
+  </div>
+
+  <div class="grid">
+    <div class="card pick">
+      <div class="tag">Crest pick</div>
+      <div class="art"><img src="24-crest-transparent.png" alt=""></div>
+      <div class="cap"><span class="no">12</span><span class="nm">Crest</span><span class="fmt">4K PNG</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="21-tip-hat-transparent.png" alt=""></div>
+      <div class="cap"><span class="no">13</span><span class="nm">Tip of the Hat</span><span class="fmt">4K PNG</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="25-slapshot-transparent.png" alt=""></div>
+      <div class="cap"><span class="no">14</span><span class="nm">Slapshot</span><span class="fmt">4K PNG</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="23-skating-transparent.png" alt=""></div>
+      <div class="cap"><span class="no">15</span><span class="nm">In Jersey</span><span class="fmt">4K PNG</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="22-swagger-transparent.png" alt=""></div>
+      <div class="cap"><span class="no">16</span><span class="nm">Swagger Walk</span><span class="fmt">4K PNG</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><img src="26-vector-t.svg" alt=""></div>
+      <div class="cap"><span class="no">17</span><span class="nm">Vector / Embroidery</span><span class="fmt">SVG</span></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    Original character &nbsp;•&nbsp; not UNLV's Hey Reb! and no trademarked marks used<br>
+    Scarlet #CE0E2D &nbsp;•&nbsp; Tan #D9A05B &nbsp;•&nbsp; White &nbsp;•&nbsp; Black
+  </div>
+</div>
+</body>
+</html>

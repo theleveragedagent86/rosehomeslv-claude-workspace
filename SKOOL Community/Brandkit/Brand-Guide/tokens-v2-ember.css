@@ -1,0 +1,25 @@
+/* The Leveraged Agent - palette v2 "Ember" - light-first, warm, maximum hue tension against teal
+   Proposed 2026-08-19. v1 (Brand-Guide/tokens.css) is still the shipping palette.
+   Every text pairing below is WCAG 2.1 AA verified, computed not eyeballed.
+   Spec and migration table: Brand-Guide/V2-PALETTES.md */
+:root {
+  --la-bg:            #FBF7F0;  /* primary surface, paper */
+  --la-bg-2:          #F1EDE7;  /* sunken fill, table rows, inset panels */
+  --la-bg-inv:        #0A2028;  /* inverted surface, near-black teal */
+  --la-line:          #E6E1D8;  /* hairline and divider on bg, non-text */
+  --la-structure:     #0B3D4A;  /* heritage teal. Headings, chart bars, structural fills */
+  --la-ink:           #0A2028;  /* primary text on bg */
+  --la-ink-2:         #3B6472;  /* secondary text on bg */
+  --la-ink-inv:       #FBF7F0;  /* primary text on bg-inv */
+  --la-accent:        #FF5F2E;  /* primary accent, ember. Fills and buttons only, NEVER text on bg */
+  --la-accent-on:     #0A2028;  /* text placed ON accent. Not white, white is 3.03:1 and fails */
+  --la-accent-txt:    #C43708;  /* accent used AS text on bg or bg-2 */
+  --la-accent-2:      #F0A500;  /* secondary accent, amber. Numerals and highlights on bg-inv */
+  --la-accent-2-on:   #0A2028;  /* text placed ON accent-2 */
+  --la-accent-2-txt:  #8F6103;  /* accent-2 used AS text on bg or bg-2 */
+
+  --la-font-head:     "Poppins", "Futura", "Avenir Next", sans-serif;
+  --la-font-body:     "Inter", -apple-system, "Helvetica Neue", sans-serif;
+  --la-track-head:    -0.03em;
+  --la-lh-body:       1.55;
+}

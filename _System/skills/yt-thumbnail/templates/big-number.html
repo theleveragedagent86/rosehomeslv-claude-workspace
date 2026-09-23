@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; }
+  .thumb { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--navy); }
+
+  .plate { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .scrim {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(100deg, var(--navy) 0%, color-mix(in srgb, var(--navy) 90%, transparent) 42%,
+                     color-mix(in srgb, var(--navy) 30%, transparent) 66%, transparent 80%),
+      linear-gradient(to top, color-mix(in srgb, var(--navy) 75%, transparent) 0%, transparent 28%);
+  }
+
+  .cutout {
+    position: absolute; right: -30px; bottom: 0; height: 700px; width: auto;
+    filter: drop-shadow(-18px 10px 26px rgba(0,0,0,0.55));
+  }
+
+  .copy { position: absolute; left: 60px; top: 0; bottom: 0; width: 690px;
+          display: flex; flex-direction: column; justify-content: center; }
+
+  .kicker {
+    font-family: var(--kickerFont); font-weight: var(--kickerWeight);
+    font-size: 30px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 18px;
+  }
+
+  .stat {
+    font-family: var(--headlineFont); font-weight: 900;
+    font-size: 210px; line-height: 0.86; letter-spacing: -0.045em;
+    color: #fff; text-shadow: 0 6px 24px rgba(0,0,0,0.8);
+  }
+  .stat .unit { font-size: 0.46em; letter-spacing: -0.02em; }
+
+  /* Direction chip: gold for up, red for down. Set spec.direction to 'up' or 'down'.
+     align-self keeps it hugging its text instead of stretching the flex column. */
+  .delta {
+    align-self: flex-start;
+    display: inline-flex; align-items: center; gap: 10px; margin-top: 20px;
+    font-family: var(--labelFont); font-weight: 800; font-size: 42px;
+    padding: 6px 20px 8px; border-radius: 4px; color: var(--navy); background: var(--gold);
+  }
+  .delta.down { background: var(--alert); color: #fff; }
+
+  .label {
+    margin-top: 22px; max-width: 660px;
+    font-family: var(--headlineFont); font-weight: var(--headlineWeight);
+    font-size: 60px; line-height: 1.02; letter-spacing: -0.02em;
+    text-transform: uppercase; color: #fff;
+    text-shadow: 0 4px 16px rgba(0,0,0,0.75);
+  }
+  .label .accent { color: var(--gold); }
+
+  .disclaimer {
+    position: absolute; left: 60px; bottom: 26px;
+    font-family: var(--labelFont); font-weight: 600; font-size: 19px;
+    letter-spacing: 0.08em; text-transform: uppercase; color: #fff; opacity: 0.6;
+  }
+</style>
+</head>
+<body>
+  <div class="thumb">
+    <img class="plate" id="plate" hidden>
+    <div class="scrim"></div>
+    <img class="cutout" id="cutout" hidden>
+    <div class="copy">
+      <div class="kicker" id="kicker" hidden></div>
+      <div class="stat" id="stat"></div>
+      <div class="delta" id="delta" hidden></div>
+      <div class="label" id="label" hidden></div>
+    </div>
+    <div class="disclaimer" id="disclaimer" hidden></div>
+  </div>
+
+<script>
+const SPEC = /*SPEC*/null;
+const { brand } = SPEC;
+
+const root = document.documentElement.style;
+root.setProperty('--navy', brand.colors.navy);
+root.setProperty('--gold', brand.colors.gold);
+root.setProperty('--alert', brand.colors.alert);
+root.setProperty('--headlineFont', brand.fonts.headline);
+root.setProperty('--headlineWeight', brand.fonts.headlineWeight);
+root.setProperty('--kickerFont', brand.fonts.kicker);
+root.setProperty('--kickerWeight', brand.fonts.kickerWeight);
+root.setProperty('--labelFont', brand.fonts.label);
+
+const show = (id, fn) => { const el = document.getElementById(id); el.hidden = false; fn(el); };
+const accent = (s) => s.replace(/\[\[(.+?)\]\]/g, '<span class="accent">$1</span>').replace(/\n/g, '<br>');
+
+if (SPEC.plate) show('plate', el => el.src = SPEC.plate);
+if (SPEC.cutout) show('cutout', el => el.src = SPEC.cutout);
+if (SPEC.kicker) show('kicker', el => el.textContent = SPEC.kicker);
+if (SPEC.label) show('label', el => el.innerHTML = accent(SPEC.label));
+if (SPEC.disclaimer ?? brand.disclaimer) {
+  show('disclaimer', el => el.textContent = SPEC.disclaimer ?? brand.disclaimer);
+}
+if (SPEC.delta) {
+  show('delta', el => {
+    el.textContent = (SPEC.direction === 'down' ? '▼ ' : '▲ ') + SPEC.delta;
+    if (SPEC.direction === 'down') el.classList.add('down');
+  });
+}
+
+// [[K]] inside a stat renders as a smaller unit suffix: "381[[K]]" -> 381 with small K.
+document.getElementById('stat').innerHTML =
+  SPEC.stat.replace(/\[\[(.+?)\]\]/g, '<span class="unit">$1</span>');
+
+document.fonts.ready.then(() => {
+  const stat = document.getElementById('stat');
+  const box = stat.parentElement;
+  let size = 210;
+  while (size > 110 && stat.scrollWidth > box.clientWidth) {
+    size -= 4;
+    stat.style.fontSize = size + 'px';
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 322" width="100%"
+     role="img" aria-labelledby="sv02t sv02d" font-family="Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif">
+<title id="sv02t">Who works for whom at a model home</title>
+<desc id="sv02d">Two columns divided by a dashed line. The builder's side holds the on-site sales representative, who is paid by and represents the builder. Your side holds an agent who represents you and owes four duties Nevada does not allow to be waived: reasonable care, confidentiality for one year after the agreement ends, presenting every offer, and disclosing known material facts. A footer notes the written buyer agreement required since August 17, 2024 and the Duties Owed form.</desc>
+<style>.sv-h{font:700 13px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;letter-spacing:.002em}
+.sv-k{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52;letter-spacing:.09em;text-transform:uppercase}
+.sv-l{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-b{font:400 9.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-s{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52}
+.sv-n{font:700 11px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;font-variant-numeric:tabular-nums}
+.sv-r{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-rs{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-nf{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#B8360F;letter-spacing:.06em}
+.sv-c{text-anchor:middle}
+.sv-e{text-anchor:end}</style>
+<defs>
+<marker id="sv-tri" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#2C3F6B"/></marker>
+<marker id="sv-tric" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#B8360F"/></marker>
+<marker id="sv-trim" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#5F5A52"/></marker>
+<pattern id="sv-hatch" width="6" height="6" patternTransform="rotate(45)"
+         patternUnits="userSpaceOnUse">
+  <rect width="6" height="6" fill="#EDE9E0"/>
+  <line x1="0" y1="0" x2="0" y2="6" stroke="#847B6D" stroke-width="1.6"/>
+</pattern>
+</defs>
+<rect width="700" height="322" fill="#F7F5F0"/>
+<text x="0" y="14" class="sv-k">Page 3</text><text x="0" y="31" class="sv-h">Who works for whom at a model home</text>
+<line x1="350.0" y1="44" x2="350.0" y2="258" stroke="#847B6D" stroke-width="1" stroke-dasharray="3 4"/>
+<rect x="0" y="44" width="330" height="30" rx="6" fill="#28375A"/>
+<text x="14" y="64" class="sv-r" style="letter-spacing:.08em">THE BUILDER'S SIDE</text>
+<rect x="0" y="84" width="330" height="52" rx="6" fill="#EDE9E0" stroke="#847B6D" stroke-width="1"/>
+<text x="14" y="104" class="sv-l">The on-site sales representative</text>
+<text x="14" y="120" class="sv-s"><tspan x="14" dy="0">Paid by the builder. Represents the builder. One national builder</tspan><tspan x="14" dy="11">publishes exactly that in its own buyer materials.</tspan></text>
+<text x="14" y="168" class="sv-l">What that means for you</text>
+<circle cx="20" cy="182.5" r="2.4" fill="#5F5A52"/>
+<text x="32" y="186" class="sv-b"><tspan x="32" dy="0">They are not your agent and owe you no duty of loyalty.</tspan></text>
+<circle cx="20" cy="208.5" r="2.4" fill="#5F5A52"/>
+<text x="32" y="212" class="sv-b"><tspan x="32" dy="0">Anything you tell them, you have told the builder.</tspan></text>
+<circle cx="20" cy="234.5" r="2.4" fill="#5F5A52"/>
+<text x="32" y="238" class="sv-b"><tspan x="32" dy="0">This is a role difference, not a character judgment.</tspan></text>
+<rect x="370" y="44" width="330" height="30" rx="6" fill="#304880"/>
+<text x="384" y="64" class="sv-r" style="letter-spacing:.08em">YOUR SIDE</text>
+<rect x="370" y="84" width="330" height="52" rx="6" fill="#FBEFD3" stroke="#847B6D" stroke-width="1"/>
+<text x="384" y="104" class="sv-l">An agent who represents you</text>
+<text x="384" y="120" class="sv-s"><tspan x="384" dy="0">Owes duties Nevada does not let either of you waive, even by</tspan><tspan x="384" dy="11">agreement.</tspan></text>
+<text x="384" y="168" class="sv-l">Duties that cannot be waived</text>
+<path d="M386.8 182.5 l2.5600000000000005 2.8800000000000003 l4.800000000000001 -6.08" fill="none" stroke="#2C3F6B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="402" y="186" class="sv-b">Reasonable care</text>
+<path d="M386.8 200.5 l2.5600000000000005 2.8800000000000003 l4.800000000000001 -6.08" fill="none" stroke="#2C3F6B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="402" y="204" class="sv-b">Confidentiality, for one year after the agreement ends</text>
+<path d="M386.8 218.5 l2.5600000000000005 2.8800000000000003 l4.800000000000001 -6.08" fill="none" stroke="#2C3F6B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="402" y="222" class="sv-b">Presenting every offer</text>
+<path d="M386.8 236.5 l2.5600000000000005 2.8800000000000003 l4.800000000000001 -6.08" fill="none" stroke="#2C3F6B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="402" y="240" class="sv-b">Disclosing known material facts</text>
+<rect x="0" y="268" width="700" height="46" rx="6" fill="#E4E9F2"/><text x="12" y="287" class="sv-b"><tspan x="12" dy="0">Since August 17, 2024 you and your agent sign a written agreement spelling out how the agent is paid, before you tour. A Nevada licensee</tspan><tspan x="12" dy="12">must also disclose every source they are paid from, and hand every party the Duties Owed form.</tspan></text>
+</svg>

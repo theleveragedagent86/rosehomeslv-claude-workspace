@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 296" width="100%"
+     role="img" aria-labelledby="sv01t sv01d" font-family="Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif">
+<title id="sv01t">Which path is yours</title>
+<desc id="sv01d">Three panels, one per reader path. Path A, moving here, pages 6 to 9. Path B, moving up, pages 10 to 13. Path C, first build, pages 14 to 17. Arrows from all three converge on a single bar reading page 18, everyone back together.</desc>
+<style>.sv-h{font:700 13px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;letter-spacing:.002em}
+.sv-k{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52;letter-spacing:.09em;text-transform:uppercase}
+.sv-l{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-b{font:400 9.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-s{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52}
+.sv-n{font:700 11px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;font-variant-numeric:tabular-nums}
+.sv-r{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-rs{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-nf{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#B8360F;letter-spacing:.06em}
+.sv-c{text-anchor:middle}
+.sv-e{text-anchor:end}</style>
+<defs>
+<marker id="sv-tri" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#2C3F6B"/></marker>
+<marker id="sv-tric" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#B8360F"/></marker>
+<marker id="sv-trim" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#5F5A52"/></marker>
+<pattern id="sv-hatch" width="6" height="6" patternTransform="rotate(45)"
+         patternUnits="userSpaceOnUse">
+  <rect width="6" height="6" fill="#EDE9E0"/>
+  <line x1="0" y1="0" x2="0" y2="6" stroke="#847B6D" stroke-width="1.6"/>
+</pattern>
+</defs>
+<rect width="700" height="296" fill="#F7F5F0"/>
+<text x="0" y="14" class="sv-k">Page 5</text><text x="0" y="31" class="sv-h">Which of these sounds like you?</text>
+<rect x="0" y="52" width="218" height="128" rx="10" fill="#304880"/>
+<text x="20" y="94" style="font:700 26px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">A</text>
+<text x="50" y="90" class="sv-rs" style="letter-spacing:.08em">PATH A · MOVING HERE</text>
+<text x="20" y="118" class="sv-r"><tspan x="20" dy="0">You do not live in Nevada yet.</tspan></text>
+<text x="20" y="166" class="sv-rs">Pages 6 to 9</text>
+<rect x="241" y="52" width="218" height="128" rx="10" fill="#141A27"/>
+<text x="261" y="94" style="font:700 26px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">B</text>
+<text x="291" y="90" class="sv-rs" style="letter-spacing:.08em">PATH B · MOVING UP</text>
+<text x="261" y="118" class="sv-r"><tspan x="261" dy="0">You own a home here and want a</tspan><tspan x="261" dy="13">bigger one.</tspan></text>
+<text x="261" y="166" class="sv-rs">Pages 10 to 13</text>
+<rect x="482" y="52" width="218" height="128" rx="10" fill="#EDE9E0" stroke="#847B6D" stroke-width="1"/>
+<rect x="482" y="52" width="6" height="128" rx="3" fill="#141A27"/>
+<text x="502" y="94" style="font:700 26px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436">C</text>
+<text x="532" y="90" class="sv-s" style="letter-spacing:.08em">PATH C · FIRST BUILD</text>
+<text x="502" y="118" class="sv-l"><tspan x="502" dy="0">Your first newly built home, or</tspan><tspan x="502" dy="13">your first home at all.</tspan></text>
+<text x="502" y="166" class="sv-s">Pages 14 to 17</text>
+<path d="M109.0 180 L109.0 200 L350.0 200" fill="none" stroke="#2C3F6B" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M350.0 180 L350.0 200 L350.0 200" fill="none" stroke="#2C3F6B" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M591.0 180 L591.0 200 L350.0 200" fill="none" stroke="#2C3F6B" stroke-width="1.5" stroke-linejoin="round"/>
+<line x1="350.0" y1="200" x2="350.0" y2="214" stroke="#2C3F6B" stroke-width="1.6" marker-end="url(#sv-tri)"/>
+<rect x="0" y="216" width="700" height="34" rx="8" fill="#28375A"/>
+<text x="350.0" y="237" class="sv-r sv-c">Page 18. Everyone back together.</text>
+<text x="0" y="278" class="sv-s"><tspan x="0" dy="0">If two of them fit, read both. They are four pages each. The edge tab on pages 6 to 17 lets you thumb straight to your path without opening the guide.</tspan></text>
+</svg>

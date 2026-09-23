@@ -1,0 +1,36 @@
+/* The Leveraged Agent, v4 candidate "Vector"
+   ADOPTED 2026-08-19. Promoted to tokens.css as brand v2.0.
+   Use tokens.css, not this file. This is the candidate record.
+
+   Meridian's structure with Ultramarine's accent. White and true black as co-equal
+   surfaces, per Serhant, Compass and Eklund Gomes, but the single accent is Tom Ferry's
+   electric blue #1768E5 instead of a deep navy. That gives you pop twice: structural,
+   from full-bleed black against white, and chromatic, from the blue.
+   Built after Ryan narrowed to Ultramarine vs Meridian on 2026-08-19.
+
+   Every pairing below is WCAG 2.1 computed, not eyeballed. Minimum pair is 4.76. */
+
+:root {
+  --la-bg:             #FFFFFF;  /* primary surface, pure white */
+  --la-bg-2:           #F7F8FA;  /* sunken fill, table rows, inset panels. Faint cool cast */
+  --la-bg-inv:         #000000;  /* inverted surface, TRUE black. A surface, never text */
+  --la-line:           #E4E7EF;  /* hairline and divider on bg, non-text. 1.24 */
+  --la-structure:      #0B3FA8;  /* deep blue. Chart bars, structural fills. 9.17 on bg */
+
+  --la-ink:            #050E3D;  /* primary text on bg. 18.48 */
+  --la-ink-2:          #55627F;  /* secondary text. 6.11 on bg, 5.75 on bg-2 */
+  --la-ink-inv:        #FFFFFF;  /* primary text on bg-inv. 21.00 */
+  --la-ink-2-inv:      #9AA3BC;  /* secondary text on bg-inv. 8.34 */
+
+  --la-accent:         #1768E5;  /* THE accent. Fills, buttons, links */
+  --la-accent-on:      #FFFFFF;  /* text placed ON accent. 5.06 */
+  --la-accent-txt:     #1768E5;  /* accent used AS text on bg. 5.06 on bg, 4.76 on bg-2 */
+  --la-accent-inv:     #5B9BFF;  /* accent used AS text on bg-inv. 7.58 on true black */
+
+  --la-font-head:      "Poppins", "Futura", "Avenir Next", sans-serif;
+  --la-font-body:      "Inter", -apple-system, "Helvetica Neue", sans-serif;
+  --la-weight-head:    800;
+  --la-track-head:     -0.03em;
+  --la-track-label:    0.14em;
+  --la-lh-body:        1.55;
+}

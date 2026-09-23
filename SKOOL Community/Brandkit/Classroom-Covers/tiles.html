@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Leveraged Agent, classroom tiles</title>
+<link rel="stylesheet" href="../Design-System/tokens.css">
+<link rel="stylesheet" href="../Design-System/la-components.css">
+<link rel="stylesheet" href="../Design-System/classroom-cover.css">
+<script src="../Design-System/logo.js" defer></script>
+<style>
+body{margin:0;background:var(--la-bg-2);padding:32px;font:var(--type-body)}
+.page{max-width:1536px;margin:0 auto}
+.head{margin-bottom:28px}
+.head h1{font-family:var(--font-display);font-weight:800;font-size:41px;
+        letter-spacing:-0.028em;line-height:1.06;margin:8px 0 6px}
+.head p{font:var(--type-body);color:var(--la-ink-2);margin:0;max-width:70ch}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.cell{width:100%;aspect-ratio:1600/847;overflow:hidden;position:relative}
+.cell .cov{position:absolute;top:0;left:0;transform-origin:top left}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="head">
+<span class="la-micro">Classroom tiles &middot; 1600 &times; 847</span>
+<h1>Leveraged Agent classroom</h1>
+<p>Type only, no icon. The meta label carries the module number and no runtime,
+because a module can hold several videos. Titles balance across two lines at most.</p>
+</div>
+<div class="grid">
+<div class="cell"><div class="cov">
+  <p class="cov__meta">Module 01</p>
+  <h1 class="cov__title">Start here</h1>
+  <hr class="cov__rule">
+  <p class="cov__sub">Watch this first, then build one thing.</p>
+  <div class="cov__mark"><la-logo variant="wordmark" inverse no-tagline></la-logo></div>
+</div></div>
+<div class="cell"><div class="cov">
+  <p class="cov__meta">Module 02</p>
+  <h1 class="cov__title">Follow-up that does not stop</h1>
+  <hr class="cov__rule">
+  <p class="cov__sub">Every new lead gets nine touches without you remembering any of them.</p>
+  <div class="cov__mark"><la-logo variant="wordmark" inverse no-tagline></la-logo></div>
+</div></div>
+<div class="cell"><div class="cov">
+  <p class="cov__meta">Module 03</p>
+  <h1 class="cov__title">The listing launch package</h1>
+  <hr class="cov__rule">
+  <p class="cov__sub">Nine assets from one address, built before the sign goes up.</p>
+  <div class="cov__mark"><la-logo variant="wordmark" inverse no-tagline></la-logo></div>
+</div></div>
+<div class="cell"><div class="cov">
+  <p class="cov__meta">Module 04</p>
+  <h1 class="cov__title">Open houses</h1>
+  <hr class="cov__rule">
+  <p class="cov__sub">Your open house, fully automated.</p>
+  <div class="cov__mark"><la-logo variant="wordmark" inverse no-tagline></la-logo></div>
+</div></div>
+<div class="cell"><div class="cov">
+  <p class="cov__meta">Module 05</p>
+  <h1 class="cov__title">Your sphere on a schedule</h1>
+  <hr class="cov__rule">
+  <p class="cov__sub">One monthly touch that does not read like a mass send.</p>
+  <div class="cov__mark"><la-logo variant="wordmark" inverse no-tagline></la-logo></div>
+</div></div>
+<div class="cell"><div class="cov">
+  <p class="cov__meta">Module 06</p>
+  <h1 class="cov__title">Photos become leads</h1>
+  <hr class="cov__rule">
+  <p class="cov__sub">Turn a shoot into a week of posts without opening a design tool.</p>
+  <div class="cov__mark"><la-logo variant="wordmark" inverse no-tagline></la-logo></div>
+</div></div>
+<div class="cell"><div class="cov">
+  <p class="cov__meta">Module 07</p>
+  <h1 class="cov__title">The offer packet</h1>
+  <hr class="cov__rule">
+  <p class="cov__sub">Same packet, every time, assembled from the address.</p>
+  <div class="cov__mark"><la-logo variant="wordmark" inverse no-tagline></la-logo></div>
+</div></div>
+</div>
+</div>
+<script src="fit-title.js"></script>
+</body>
+</html>

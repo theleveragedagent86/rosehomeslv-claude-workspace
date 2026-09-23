@@ -1,0 +1,1390 @@
+<!-- ================================================================
+     ROSE HOMES LV — NEW CONSTRUCTION HUB — PART 2 of 2 (BELOW the featured listings)
+     Paste into the Lofty HTML / custom code module BELOW
+     the Featured Listings block you build in Lofty's editor.
+
+     This page ships as TWO embeds because Lofty's featured-listings
+     block is native and cannot live inside a custom HTML embed.
+     PART 1 goes above it, PART 2 goes below it.
+
+     Each embed carries its own "On This Page" rail. A sticky element
+     cannot escape its own embed's container, so one rail cannot span
+     both halves. Two identical rails at the same offset read as one
+     continuous panel: the first scrolls away as the listings block
+     arrives, the second picks up at the same position. Both are driven
+     by one script that queries the whole document, so they highlight
+     in sync.
+
+     Design tokens: SKOOL Brandkit "Vector" v2.0.
+     Content spec:  Marketing/nrg-research/10-hub-content-blueprint.md
+     ================================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   ROSE HOMES LV — NEW CONSTRUCTION HUB
+   Design system: Marketing/nrg-research/09-hub-design-system.md
+   Content spec:  Marketing/nrg-research/10-hub-content-blueprint.md
+   ============================================================ */
+:root{
+  /* ============================================================
+     THE LEVERAGED AGENT DESIGN SYSTEM v2.0 "VECTOR"
+     Source of truth: SKOOL Community/Brandkit/Brand-Guide/tokens.css
+                      SKOOL Community/Brandkit/Brand-Guide/BRAND-GUIDE.md
+     Adopted 2026-08-19. Every pairing below is WCAG 2.1 computed.
+
+     THE THREE RULES OF THIS SYSTEM, do not break them:
+       1. ONE accent, ONE value. #1768E5 works as a fill AND as text on
+          white, so it needs no second darker variant. Never add one.
+       2. Black is a SURFACE, never a text color. The pop is structural,
+          a full-bleed black band butted against white, not chromatic.
+       3. NO warm colors. No cream, no gold, no sage, no orange.
+     ============================================================ */
+
+  /* SURFACES */
+  --dark:#ffffff;          /* la-bg       primary surface, pure white */
+  --dark-surface:#f7f8fa;  /* la-bg-2     sunken fill, cards, table rows */
+  --dark-card:#ffffff;
+  --white:#ffffff;
+  --inv:#000000;           /* la-bg-inv   TRUE black. A SURFACE, never text. */
+  --line:#e4e7ef;          /* la-line     hairline, 1.24. NOT a text color. */
+  --structure:#0b3fa8;     /* la-structure  rules, bars, fills, 9.17.
+                                            NOT a text color. */
+
+  /* INK */
+  --text-dark:#050e3d;     /* la-ink        18.48 on white */
+  --text-body:#050e3d;     /* same ink, hierarchy comes from weight and size */
+  --text-meta:#55627f;     /* la-ink-2      6.11 on bg, 5.75 on bg-2 */
+  --ink-inv:#ffffff;       /* la-ink-inv    21.00 on black */
+  --ink-2-inv:#9aa3bc;     /* la-ink-2-inv  8.34 on black */
+
+  /* ACCENT — one accent, one value */
+  --accent:#1768e5;        /* la-accent      fills, buttons, links */
+  --accent-on:#ffffff;     /* la-accent-on   text placed ON accent, 5.06 */
+  --accent-ink:#1768e5;    /* la-accent-txt  the SAME blue as text on white, 5.06.
+                                             Not a second value, the same one. */
+  --accent-inv:#5b9bff;    /* la-accent-inv  accent as text on black, 7.58 */
+  --accent-hover:#0b3fa8;  /* reuses la-structure as the pressed state.
+                              Not a new accent, an existing token. */
+  --accent-muted:rgba(23,104,229,.10);
+  --accent-tint:rgba(23,104,229,.05);
+  --accent-line:rgba(23,104,229,.32);
+
+  /* ALPHA-INK SCALE — hairlines and tints, derived from la-ink */
+  --w60:rgba(5,14,61,.70); --w40:rgba(5,14,61,.55);
+  --w20:rgba(5,14,61,.32); --w08:rgba(5,14,61,.12); --w04:rgba(5,14,61,.05);
+
+  /* GEOMETRY */
+  --radius:8px; --radius-sm:4px; --radius-pill:999px;
+  --container:1180px; --measure:68ch; --rail:260px; --rail-gap:48px;
+  --nav-h:60px;
+  --anchor-off:88px;   /* scroll-padding, clears Lofty's fixed site nav on anchor jumps */
+  --rail-top:24px;     /* how high the sticky rail rides. Deliberately NOT --anchor-off:
+                          the rail sits near the top of the viewport, while anchor jumps
+                          still need clearance for Lofty's nav. */
+
+  /* SHADOWS — ink-tinted, used sparingly */
+  --shadow-sm:0 1px 2px rgba(5,14,61,.05);
+  --shadow-card:0 1px 2px rgba(5,14,61,.05),0 6px 18px -10px rgba(5,14,61,.14);
+  --shadow-lift:0 2px 4px rgba(5,14,61,.06),0 14px 32px -14px rgba(5,14,61,.22);
+  --shadow-rail:0 1px 2px rgba(5,14,61,.04),0 10px 30px -18px rgba(5,14,61,.20);
+  --shadow-band:0 24px 60px -32px rgba(5,14,61,.50);
+
+  /* MOTION */
+  --t:220ms cubic-bezier(.2,.6,.2,1);
+  --t-slow:420ms cubic-bezier(.2,.6,.2,1);
+
+  /* TYPE — settled 2026-08-19.
+     Barlow 800 headlines. Raleway 600 SUBTEXT ONLY (eyebrow, subhead, small
+     label), never a running paragraph. Inter 400/500 body at line-height 1.6.
+     The 800-to-400 gap carries the whole hierarchy: there is no serif here. */
+  --font-display:'Barlow','Helvetica Neue',Arial,sans-serif;
+  --font-head:'Barlow','Helvetica Neue',Arial,sans-serif;
+  --font-label:'Raleway','Helvetica Neue',Arial,sans-serif;
+  --font-body:'Inter',-apple-system,'Helvetica Neue',Arial,sans-serif;
+  --weight-head:800;
+  --weight-sub:600;
+  --track-head:-.028em;
+  --track-sub:.01em;
+  --track-label:.15em;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+/* CRITICAL: overflow-x must be `clip`, NOT `hidden`.
+   `hidden` computes overflow-y to auto, which silently kills position:sticky. */
+html{
+  font-size:16px; scroll-behavior:smooth; scroll-padding-top:var(--anchor-off);
+  width:100%; max-width:100%; overflow-x:clip; background:var(--dark);
+}
+@media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
+
+body{
+  margin:0 !important; padding:0 !important;
+  width:100%; max-width:100%; overflow-x:clip;
+  background:var(--dark); color:var(--text-body);
+  font-family:var(--font-body); font-size:18px; line-height:1.75; font-weight:400;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+}
+
+h1,h2,h3,h4{ color:var(--text-dark); margin:0; text-wrap:balance; }
+img{ max-width:100%; display:block; }
+
+.rh-container{ max-width:var(--container); margin:0 auto; padding:0 28px; width:100%; }
+.rh-section{ padding:80px 0; }
+.rh-section--base{ background:var(--dark); }
+.rh-section--alt{ background:var(--dark-surface); }
+.rh-section--inv{ background:var(--inv); color:var(--ink-inv); }
+
+/* ---------- eyebrow ---------- */
+.rh-eyebrow{
+  font-family:var(--font-label);
+  display:flex; align-items:center; gap:14px;
+  font-size:11px; font-weight:var(--weight-sub); letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--accent-ink); margin:0 0 18px;
+}
+.rh-eyebrow::after{ content:''; flex:1; height:1px; background:var(--accent-line); }
+.rh-section--inv .rh-eyebrow{ color:var(--accent-inv); }
+.rh-section--inv .rh-eyebrow::after{ background:rgba(91,155,255,.45); }
+
+/* ---------- breadcrumb ---------- */
+.rh-crumb{ background:var(--dark); padding:14px 0 0; font-size:13px; color:var(--text-meta); }
+.rh-crumb a{ color:var(--text-dark); text-decoration:none; }
+.rh-crumb a:hover{ color:var(--accent-ink); text-decoration:underline; }
+
+/* ---------- hero ---------- */
+/* WHITE HERO WITH A DISSOLVING PHOTO.
+   The photograph sits on the right and fades out into the page instead of
+   meeting the copy at a hard vertical edge. Two washes do it: a white-to-clear
+   one across its left side, and a shorter one along its bottom. There is no
+   seam anywhere and no box around the image.
+   Ryan rejected both the black panel and the hard cut, in that order. Do not
+   reintroduce either. */
+.rh-hero{
+  position:relative; background:var(--white); color:var(--text-dark);
+  overflow:hidden;
+}
+.rh-hero__media{
+  position:absolute; top:0; right:0; bottom:0; left:auto;
+  width:64%; margin:0; z-index:0; pointer-events:none;
+}
+.rh-hero__media img{
+  display:block; width:100%; height:100%;
+  object-fit:cover; object-position:50% 58%;
+}
+/* The dissolve. Stays fully opaque past where the copy ends, so the headline
+   never sits on a half-transparent photo, then falls away to nothing. */
+.rh-hero__media::after{
+  content:''; position:absolute; inset:0;
+  background:
+    linear-gradient(to right,
+      #fff 0%, #fff 28%,
+      rgba(255,255,255,.55) 46%,
+      rgba(255,255,255,.12) 62%,
+      rgba(255,255,255,0) 76%),
+    linear-gradient(to top,
+      #fff 0%, rgba(255,255,255,.45) 12%, rgba(255,255,255,0) 30%),
+    linear-gradient(to bottom,
+      #fff 0%, rgba(255,255,255,.40) 9%, rgba(255,255,255,0) 22%);
+}
+.rh-hero__inner{
+  position:relative; z-index:1;
+  display:flex; align-items:center;
+  min-height:clamp(520px,58vh,640px);
+  padding-top:76px; padding-bottom:76px;
+}
+.rh-hero__panelInner{ width:100%; max-width:540px; }
+.rh-hero__kicker{
+  font-family:var(--font-label);
+  font-size:11px; font-weight:var(--weight-sub); letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--accent-ink); margin:0 0 18px;
+}
+.rh-hero h1{
+  font-family:var(--font-display); font-size:clamp(36px,3.9vw,58px);
+  line-height:1.04; font-weight:var(--weight-head); letter-spacing:var(--track-head);
+  color:var(--text-dark); margin:0 0 18px; max-width:15ch; text-wrap:balance;
+}
+.rh-hero__sub{
+  font-size:clamp(16px,1.25vw,18px); line-height:1.6; color:var(--text-body);
+  max-width:46ch; margin:0 0 28px;
+}
+.rh-hero__stats{
+  /* 2x2, not a 4-wide flex row. The column is narrow, so four across wraps
+     3+1 and looks accidental. */
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px 28px; margin:0 0 30px; max-width:400px;
+  padding:24px 0 0; border-top:1px solid var(--line);
+}
+.rh-stat__num{
+  font-family:var(--font-display); font-size:clamp(26px,2.5vw,38px);
+  line-height:.95; font-weight:var(--weight-head); letter-spacing:var(--track-head);
+  color:var(--accent-ink); display:block;   /* 5.06 on white */
+}
+.rh-stat__label{
+  font-family:var(--font-label); font-weight:var(--weight-sub);
+  font-size:11px; letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--text-meta); margin-top:6px; display:block;
+}
+.rh-hero__cta{ display:flex; flex-wrap:wrap; gap:12px; }
+
+/* Mid desktop: pull the photo in and narrow the column, so the opaque part of
+   the dissolve still clears the end of the copy. */
+@media (min-width:960px) and (max-width:1279px){
+  .rh-hero__media{ width:58%; }
+  .rh-hero__panelInner{ max-width:460px; }
+}
+
+/* ---- MOBILE: photo band on top, dissolving downward into the copy ---- */
+@media (max-width:959px){
+  .rh-hero{ display:flex; flex-direction:column; }
+  .rh-hero__media{
+    position:relative; top:auto; right:auto; bottom:auto;
+    width:100%; height:clamp(230px,52vw,340px); order:1;
+  }
+  .rh-hero__media::after{
+    /* stacked: dissolve down into the copy, and soften the top edge so the
+       photo does not butt hard against the breadcrumb */
+    background:
+      linear-gradient(to top,
+        #fff 0%, rgba(255,255,255,.72) 16%, rgba(255,255,255,.18) 34%, rgba(255,255,255,0) 56%),
+      linear-gradient(to bottom,
+        #fff 0%, rgba(255,255,255,.35) 7%, rgba(255,255,255,0) 18%);
+  }
+  .rh-hero__inner{ order:2; min-height:0; padding-top:22px; padding-bottom:52px; }
+  .rh-hero__panelInner{ max-width:none; }
+  .rh-hero h1{ font-size:clamp(32px,7.4vw,44px); max-width:18ch; }
+  .rh-hero__sub{ max-width:62ch; }
+  .rh-hero__stats{ max-width:none; gap:20px 24px; }
+}
+@media (max-width:479px){
+  .rh-hero__media{ height:clamp(200px,48vw,260px); }
+  .rh-hero__cta{ gap:10px; }
+  .rh-hero__cta .rh-btn{ flex:1 1 auto; }
+  .rh-hero__cta .rh-btn--primary{ flex:1 1 100%; }
+}
+
+/* ---------- buttons ---------- */
+.rh-btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  padding:14px 26px; border-radius:var(--radius-pill);
+  font-family:var(--font-body); font-size:14px; font-weight:600; letter-spacing:.02em;
+  text-decoration:none; cursor:pointer; border:1.5px solid transparent;
+  transition:transform var(--t), background-color var(--t), color var(--t), border-color var(--t), box-shadow var(--t);
+}
+/* Vector primary: the accent fill with white on it. 5.06:1, passes AA.
+   This is the one place the accent is used as a fill. */
+.rh-btn--primary{ background:var(--accent); color:var(--accent-on); border-color:var(--accent); }
+.rh-btn--primary:hover{ background:var(--accent-hover); border-color:var(--accent-hover); transform:translateY(-2px); box-shadow:var(--shadow-lift); }
+.rh-btn--primary:active{ transform:translateY(0); }
+
+.rh-btn--ghost{ background:transparent; color:var(--accent-ink); border-color:var(--accent); }
+.rh-btn--ghost:hover{ background:var(--accent-muted); transform:translateY(-2px); }
+.rh-btn--ghost:active{ transform:translateY(0); }
+
+/* on true-black surfaces the ghost flips to the inverse accent, 7.58:1 */
+/* Only on true-black surfaces does the ghost flip to the inverse accent,
+   7.58:1. The hero is white now, so it is deliberately not in this list. */
+.rh-section--inv .rh-btn--ghost{ color:var(--accent-inv); border-color:rgba(91,155,255,.55); }
+.rh-section--inv .rh-btn--ghost:hover{ background:rgba(91,155,255,.14); }
+
+
+.rh-btn--sm{ padding:11px 18px; font-size:13px; }
+.rh-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+/* ---------- direct answer + takeaways ---------- */
+.rh-answer{
+  margin:0 0 34px; padding:28px 32px;
+  background:var(--dark-card); border:1px solid var(--w08);
+  border-left:4px solid var(--accent); border-radius:var(--radius);
+  box-shadow:var(--shadow-card);
+}
+.rh-answer p{ margin:0; font-size:19px; line-height:1.7; color:var(--text-dark); max-width:none; }
+
+.rh-takeaways{
+  margin:0 0 40px; padding:30px 34px;
+  background:var(--accent-tint); border:1px solid var(--accent-line);
+  border-radius:var(--radius);
+}
+.rh-takeaways h3{
+  font-size:11px; font-weight:var(--weight-sub); letter-spacing:var(--track-label); text-transform:uppercase;
+  color:var(--accent-ink); margin:0 0 18px;
+}
+.rh-takeaways ol{ margin:0; padding-left:22px; }
+.rh-takeaways li{ margin-bottom:14px; line-height:1.65; }
+.rh-takeaways li:last-child{ margin-bottom:0; }
+.rh-takeaways li::marker{ color:var(--accent-ink); font-weight:600; }
+
+/* ---------- byline ---------- */
+.rh-byline{
+  font-size:14px; color:var(--text-meta); margin:0 0 42px;
+  padding-bottom:22px; border-bottom:1px solid var(--w08);
+}
+.rh-byline strong{ color:var(--text-dark); font-weight:600; }
+
+/* ---------- area pills ---------- */
+.rh-pills{ display:flex; flex-wrap:wrap; gap:10px; margin:22px 0 0; }
+.rh-pill{
+  display:inline-flex; align-items:center; padding:10px 20px;
+  background:var(--dark-card); border:1px solid var(--w08);
+  border-radius:var(--radius-pill); text-decoration:none;
+  font-size:14px; font-weight:500; color:var(--text-dark);
+  box-shadow:var(--shadow-sm);
+  transition:transform var(--t), border-color var(--t), box-shadow var(--t), color var(--t);
+}
+.rh-pill:hover{ transform:translateY(-2px); border-color:var(--accent); color:var(--accent-ink); box-shadow:var(--shadow-card); }
+.rh-pill:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+/* ---------- article shell + sticky rail ---------- */
+.rh-article-shell{ display:block; }
+@media (min-width:1024px){
+  .rh-article-shell{
+    display:grid; grid-template-columns:minmax(0,1fr) var(--rail);
+    gap:var(--rail-gap); align-items:start;
+  }
+}
+.rh-prose{ min-width:0; }
+.rh-prose > *{ max-width:var(--measure); }
+.rh-prose > .rh-wide{ max-width:none; }
+
+.rh-prose h2{
+  font-family:var(--font-head); font-size:clamp(26px,3vw,38px);
+  line-height:1.14; font-weight:var(--weight-head); letter-spacing:var(--track-head);
+  margin:76px 0 20px; scroll-margin-top:var(--anchor-off);
+}
+.rh-prose > h2:first-child{ margin-top:0; }
+.rh-prose h3{
+  font-family:var(--font-head); font-size:clamp(18px,1.4vw,21px);
+  line-height:1.34; font-weight:700; letter-spacing:-.018em;
+  margin:40px 0 12px; scroll-margin-top:var(--anchor-off);
+}
+.rh-prose p{ margin:0 0 22px; }
+.rh-lede{ font-size:20px; line-height:1.68; letter-spacing:-.003em; color:var(--text-dark); margin:0 0 26px; }
+.rh-prose ul,.rh-prose ol{ margin:0 0 22px; padding-left:22px; }
+.rh-prose li{ margin-bottom:10px; padding-left:4px; }
+.rh-prose li::marker{ color:var(--accent-ink); }
+.rh-prose strong{ font-weight:600; color:var(--text-dark); }
+.rh-prose a{
+  color:var(--text-dark); text-decoration:underline; text-decoration-color:var(--accent);
+  text-decoration-thickness:1.5px; text-underline-offset:3px;
+  transition:color var(--t), text-decoration-color var(--t);
+}
+.rh-prose a:hover{ color:var(--accent-ink); text-decoration-color:var(--accent-ink); }
+
+.rh-rail{ margin:0 0 44px; }
+.rh-toc{
+  background:var(--dark-surface); border:1px solid var(--w08);
+  border-left:3px solid var(--accent); border-radius:var(--radius);
+  padding:22px 26px; box-shadow:var(--shadow-sm);
+}
+.rh-toc__title{
+  font-family:var(--font-label);
+  margin:0 0 14px; font-size:11px; font-weight:600;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--accent-ink);
+}
+.rh-toc__progress{ display:none; }
+.rh-toc__scroll{ min-width:0; }
+.rh-toc__list{ columns:2; column-gap:30px; margin:0; padding-left:20px; list-style:decimal; }
+.rh-toc__list li{ break-inside:avoid; margin-bottom:8px; }
+.rh-toc__list li::marker{ color:var(--w20); font-size:12px; }
+.rh-toc__list a{
+  color:var(--text-body); text-decoration:none; font-size:14px;
+  display:block; transition:color var(--t), transform var(--t);
+}
+.rh-toc__list a:hover{ color:var(--accent-ink); transform:translateX(2px); }
+.rh-toc__list a:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+.rh-toc__cta{ display:none; }
+@media (max-width:700px){ .rh-toc__list{ columns:1; } }
+
+@media (min-width:1024px){
+  /* The rail is a sticky FRAME. It rides high in the viewport (--rail-top)
+     and never scrolls itself. */
+  .rh-rail{
+    position:-webkit-sticky; position:sticky; top:var(--rail-top); margin:0;
+    max-height:calc(100vh - var(--rail-top) - 24px);
+    display:flex; z-index:5;
+  }
+
+  /* CRITICAL: the scroll lives on .rh-toc__scroll, NOT on .rh-toc or .rh-rail.
+     If the bordered box is itself the scroll container, its bottom border
+     scrolls out of view and the panel looks open-ended at the bottom.
+     Here the border stays on a clipped flex frame and only the list moves. */
+  .rh-toc{
+    display:flex; flex-direction:column;
+    min-height:0; max-height:100%;
+    padding:18px 0 0;      /* side padding moves to the children, so the
+                              scrollbar sits inside the border */
+    overflow:hidden;       /* clips the list to the rounded corners */
+    box-shadow:var(--shadow-rail);
+  }
+  .rh-toc__title{ flex:0 0 auto; padding:0 18px; margin:0 0 12px; }
+  .rh-toc__progress{
+    flex:0 0 auto; display:block; position:relative; height:2px;
+    background:var(--w08); border-radius:999px; margin:0 18px 14px; overflow:hidden;
+  }
+  .rh-toc__progress-fill{
+    position:absolute; inset:0; background:var(--accent);
+    transform-origin:left center; transform:scaleX(0);
+    transition:transform var(--t-slow);
+  }
+  .rh-toc__scroll{
+    flex:1 1 auto; min-height:0;
+    overflow-y:auto; overscroll-behavior:contain;
+    padding:0 10px 2px;
+    scrollbar-width:thin; scrollbar-color:var(--w20) transparent;
+  }
+  .rh-toc__scroll::-webkit-scrollbar{ width:6px; }
+  .rh-toc__scroll::-webkit-scrollbar-thumb{ background:var(--w20); border-radius:999px; }
+  .rh-toc__scroll::-webkit-scrollbar-track{ background:transparent; }
+  /* Sticky fade so a cut-off list reads as scrollable, not as a hard edge. */
+  .rh-toc__scroll::after{
+    content:''; display:block; position:sticky; bottom:0;
+    height:22px; margin-top:-22px; pointer-events:none;
+    background:linear-gradient(to top, var(--dark-surface), rgba(247,248,250,0));
+  }
+  .rh-toc__list{ columns:1; padding-left:0; list-style:none; counter-reset:toc; }
+  .rh-toc__list li{ counter-increment:toc; margin-bottom:1px; }
+  .rh-toc__list a{ position:relative; padding:6px 8px 6px 30px; font-size:13px; line-height:1.45; color:var(--text-meta); }
+  .rh-toc__list a::before{
+    content:counter(toc,decimal-leading-zero); position:absolute; left:8px; top:7px;
+    font-size:10px; font-weight:600; letter-spacing:.04em; color:var(--w20);
+    font-variant-numeric:tabular-nums; transition:color var(--t);
+  }
+  .rh-toc__list a::after{
+    content:''; position:absolute; left:0; top:4px; bottom:4px; width:2px;
+    border-radius:999px; background:var(--accent);
+    transform:scaleY(0); transform-origin:center; transition:transform var(--t);
+  }
+  .rh-toc__list a:hover{ color:var(--text-dark); transform:none; }
+  .rh-toc__list a:hover::before{ color:var(--accent-ink); }
+  .rh-toc__list a[aria-current="true"]{ color:var(--text-dark); font-weight:600; background:var(--accent-muted); border-radius:var(--radius-sm); }
+  .rh-toc__list a[aria-current="true"]::before{ color:var(--accent-ink); }
+  .rh-toc__list a[aria-current="true"]::after{ transform:scaleY(1); }
+  /* CTA is pinned to the bottom of the frame, above the border, never scrolls. */
+  .rh-toc__cta{
+    flex:0 0 auto; display:inline-flex; width:auto; justify-content:center;
+    margin:10px 14px 14px; border-radius:var(--radius-sm);
+  }
+}
+@supports not (position:sticky){
+  @media (min-width:1024px){ .rh-rail{ position:static; max-height:none; overflow:visible; } }
+}
+
+/* ---------- builder grid ---------- */
+.rh-filters{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 32px; }
+.rh-chip{
+  padding:9px 18px; border-radius:var(--radius-pill);
+  border:1px solid var(--w08); background:var(--dark-card);
+  font-size:13px; font-weight:500; color:var(--text-meta); cursor:pointer;
+  font-family:var(--font-body);
+  transition:transform var(--t), border-color var(--t), color var(--t), background-color var(--t);
+}
+.rh-chip:hover{ transform:translateY(-1px); border-color:var(--accent); color:var(--accent-ink); }
+/* a black fill is a SURFACE, which the system allows. Text on it is white. */
+.rh-chip[aria-pressed="true"]{ background:var(--inv); color:var(--ink-inv); border-color:var(--inv); }
+.rh-chip:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+.rh-builders{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(238px,1fr));
+  gap:18px; margin:0; padding:0; list-style:none;
+}
+.rh-builder{
+  position:relative; background:var(--dark-card); border:1px solid var(--w08);
+  border-radius:var(--radius); padding:24px 22px 22px; overflow:hidden;
+  box-shadow:var(--shadow-card);
+  transition:transform var(--t), box-shadow var(--t), border-color var(--t);
+}
+/* builder brand color is DECORATIVE ONLY. It never carries text. */
+.rh-builder::before{
+  content:''; position:absolute; top:0; left:0; right:0; height:4px;
+  background:var(--b,var(--inv));
+}
+.rh-builder:hover{ transform:translateY(-3px); box-shadow:var(--shadow-lift); border-color:var(--w20); }
+.rh-builder h3{ font-size:17px; font-weight:700; letter-spacing:-.005em; margin:0 0 6px; color:var(--text-dark); }
+.rh-builder__tier{
+  display:inline-block; font-size:10px; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--accent-ink); margin:0 0 12px;
+}
+.rh-builder__note{ font-size:14px; line-height:1.55; color:var(--text-body); margin:0 0 16px; }
+.rh-builder__link{
+  font-size:13px; font-weight:600; color:var(--text-dark); text-decoration:none;
+  display:inline-flex; align-items:center; gap:6px;
+  transition:gap var(--t), color var(--t);
+}
+.rh-builder__link:hover{ gap:11px; color:var(--accent-ink); }
+.rh-builder__link:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+/* ---------- tables ---------- */
+.rh-tablewrap{
+  margin:0 0 30px; overflow-x:auto; border:1px solid var(--w08);
+  border-radius:var(--radius); background:var(--dark-card); box-shadow:var(--shadow-sm);
+  -webkit-overflow-scrolling:touch;
+}
+.rh-table{ width:100%; border-collapse:collapse; min-width:620px; }
+.rh-table th{
+  background:var(--inv); color:var(--ink-inv);
+  font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+  text-align:left; padding:14px 16px; white-space:nowrap;
+}
+.rh-table td{ font-size:15px; padding:14px 16px; border-top:1px solid var(--w08); vertical-align:top; }
+.rh-table tbody tr:nth-child(even){ background:var(--accent-tint); }
+.rh-table th:first-child,.rh-table td:first-child{ position:sticky; left:0; }
+.rh-table th:first-child{ background:var(--inv); z-index:2; }
+.rh-table td:first-child{ background:var(--dark-card); font-weight:600; color:var(--text-dark); }
+.rh-table tbody tr:nth-child(even) td:first-child{ background:var(--dark-surface); }
+.rh-tablenote{ font-size:12.5px; font-style:italic; color:var(--text-meta); margin:-18px 0 30px; }
+
+/* NOT FOUND marker — deliberately visible so it cannot ship unnoticed */
+.nf{
+  display:inline-block; padding:1px 7px; border-radius:4px;
+  background:rgba(183,60,43,.10); border:1px dashed rgba(183,60,43,.5);
+  color:#8d3223; font-size:12px; font-weight:600; letter-spacing:.04em;
+  font-family:var(--font-body); white-space:nowrap;
+}
+
+/* ---------- listings slot ---------- */
+.rh-idx{
+  border:2px dashed var(--accent-line); border-radius:var(--radius);
+  background:var(--accent-tint); padding:44px 30px; text-align:center; margin:0 0 26px;
+}
+.rh-idx__title{ font-family:var(--font-head); font-size:20px; font-weight:800; letter-spacing:-.02em; color:var(--text-dark); margin:0 0 10px; }
+.rh-idx__body{ font-size:15px; color:var(--text-body); max-width:56ch; margin:0 auto 22px; }
+
+/* ---------- FAQ (always open, not an accordion) ---------- */
+.rh-faq{ margin:0; }
+.rh-faq__item{ padding:26px 0; border-bottom:1px solid var(--w08); }
+.rh-faq__item:first-child{ border-top:1px solid var(--w08); }
+.rh-faq h3{ margin:0 0 10px; }
+.rh-faq p{ margin:0; }
+
+/* ---------- CTA band ---------- */
+.rh-band{
+  background:var(--inv); color:var(--ink-inv);
+  border-radius:var(--radius); padding:52px 44px; margin:0;
+  box-shadow:var(--shadow-band); position:relative; overflow:hidden;
+}
+/* Hard-edged accent rule, not a gradient wash. Same structural device as the
+   hero seam, so the black CTA band reads as part of the same system. */
+.rh-band::before{
+  content:''; position:absolute; left:0; top:0; bottom:0; width:6px;
+  background:var(--accent);
+}
+.rh-band > *{ position:relative; z-index:2; }
+.rh-band h2{
+  font-family:var(--font-display); font-size:clamp(30px,4vw,50px);
+  line-height:1.06; font-weight:var(--weight-head); letter-spacing:var(--track-head);
+  color:var(--ink-inv); margin:0 0 16px;
+}
+.rh-band p{ color:var(--ink-inv); max-width:56ch; margin:0 0 28px; }
+.rh-band__contact{
+  margin-top:30px; padding-top:24px; border-top:1px solid rgba(255,255,255,.18);
+  font-size:14px; color:var(--ink-2-inv); line-height:1.9;
+}
+.rh-band__contact a{ color:var(--accent); text-decoration:none; }
+.rh-band__contact a:hover{ text-decoration:underline; }
+
+/* ---------- sources ---------- */
+/* Area fact block: the concrete who/where/how-much under each area H2 */
+.rh-areafacts{
+  background:var(--dark-surface); border:1px solid var(--w08);
+  border-left:3px solid var(--accent); border-radius:var(--radius);
+  padding:18px 22px; margin:0 0 26px; font-size:16px; line-height:1.7;
+}
+.rh-areafacts strong{ color:var(--text-dark); font-weight:600; }
+.rh-source{ font-size:.85em; font-style:italic; color:var(--text-meta); margin:0 0 10px; }
+.rh-source a{ color:var(--accent-ink); }
+
+/* ---------- mobile sticky CTA bar ---------- */
+.rh-mobilebar{
+  position:fixed; left:0; right:0; bottom:0; z-index:900;
+  display:flex; gap:8px; padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(0,0,0,.96); backdrop-filter:blur(14px);
+  border-top:1px solid var(--accent);
+}
+.rh-mobilebar .rh-btn{ flex:1; padding:12px 10px; font-size:13px; }
+@media (min-width:1024px){ .rh-mobilebar{ display:none; } }
+body{ padding-bottom:0; }
+@media (max-width:1023px){ body{ padding-bottom:74px !important; } }
+
+/* ---------- reveal ---------- */
+.rh-reveal{ opacity:0; transform:translateY(14px); transition:opacity var(--t-slow), transform var(--t-slow); }
+.rh-reveal.is-in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion:reduce){
+  .rh-reveal{ opacity:1; transform:none; transition:none; }
+  *{ animation-duration:.01ms !important; transition-duration:.01ms !important; }
+}
+
+@media (max-width:640px){
+  .rh-section{ padding:56px 0; }
+  .rh-container{ padding:0 20px; }
+  .rh-band{ padding:38px 24px; }
+  .rh-answer{ padding:22px 22px; }
+  .rh-takeaways{ padding:24px 22px; }
+}
+</style>
+
+<div class="nc-hub">
+
+  <!-- ============ ARTICLE ZONE — PART 2 (rail resumes below the listings) ============ -->
+  <section class="rh-section rh-section--base" id="guide-2">
+    <div class="rh-container">
+      <div class="rh-article-shell">
+
+        <!-- ---------- PROSE COLUMN ---------- -->
+        <div class="rh-prose">
+
+          <h2 id="why-new">Why do so many Las Vegas buyers choose new construction?</h2>
+          <p>
+            Las Vegas has room to grow and a steady stream of people moving in, so builders keep
+            opening communities on the edges of the valley. That gives buyers something a lot of
+            older metros cannot offer, which is real choice in a brand new home at a range of price
+            points.
+          </p>
+          <p>
+            The practical draw is condition. Everything is new, so there is no roof to replace, no
+            water heater near the end of its life, and no surprise repair in year two. The home also
+            comes with a warranty, which a resale home does not.
+          </p>
+          <p>
+            The second draw is the incentive structure. Builders would rather buy your interest rate
+            down or credit your closing costs than cut the base price, because a price cut resets the
+            value of every home they have left to sell in that community. That means the negotiation
+            in new construction usually happens on financing and upgrades rather than on price.
+          </p>
+          <p>
+            The tradeoff is time and cost certainty. A home built from dirt takes months, and the
+            finished number is usually well above the base price on the sign. The rest of this guide
+            covers exactly where those extra costs come from.
+          </p>
+
+          <h2 id="summerlin">What is new construction like in Summerlin?</h2>
+          <p>
+            Summerlin is the valley's best known master plan, on the west side against the Red Rock
+            foothills. New construction there is concentrated in the newer western villages rather
+            than the older established ones.
+          </p>
+          <p>
+            Summerlin runs higher than the valley average on price, and lot premiums are a real
+            factor because elevation and view matter a lot on that side of town. A homesite with a
+            Strip view or a Red Rock view can carry a premium well above a standard interior lot.
+          </p>
+          <p>
+            One thing worth knowing: many Summerlin new homes never appear on the MLS at all, because
+            builders sell them directly from the sales office. If you are only watching listing
+            sites, you are seeing a fraction of what is available.
+          </p>
+          <p class="rh-areafacts">
+            <strong>Where they are building:</strong> the western villages, mainly Kestrel, Stonebridge,
+            Redpoint, Reverence, and the newer Grand Park.
+            <strong>Builders you will see:</strong> Toll Brothers, Pulte, Lennar, KB Home, Tri Pointe,
+            and Woodside.
+            <strong>Roughly what it costs:</strong> attached product starts in the low $400s, and
+            detached homes run up past $3 million in the higher villages.
+          </p>
+
+          <h2 id="henderson">What is new construction like in Henderson?</h2>
+          <p>
+            Henderson sits southeast of Las Vegas and is its own city with its own services. It
+            consistently ranks well for safety and schools, which is why it draws so many families
+            and relocating buyers.
+          </p>
+          <p>
+            New construction in Henderson is spread across several large master plans, and the price
+            range is wide. You can find attainable attached product and multi million dollar hillside
+            homes within a fairly short drive of each other.
+          </p>
+          <p>
+            Henderson is also where SID and LID assessments come up most often, because several of
+            its newer master plans funded infrastructure that way. Always ask for the assessment
+            amount in writing before you sign.
+          </p>
+          <p class="rh-areafacts">
+            <strong>Where they are building:</strong> Cadence is the largest and most active, with
+            roughly 12,250 homes planned and a few years of buildout left. Inspirada is nearly finished
+            and closing out. MacDonald Highlands and Ascaya hold the custom and hillside end.
+            <strong>Builders you will see:</strong> Lennar, KB Home, Century Communities, Beazer, Toll
+            Brothers, and Tri Pointe.
+            <strong>Roughly what it costs:</strong> entry homes at Cadence start in the mid $300s, and
+            the custom hillside end runs into eight figures. Henderson has the widest spread of any
+            area on this page.
+          </p>
+
+          <h2 id="north-las-vegas">What is new construction like in North Las Vegas?</h2>
+          <p>
+            North Las Vegas is where the most attainable new construction in the valley tends to be.
+            If your budget is under the metro median, this is usually the first place to look.
+          </p>
+          <p>
+            The area has changed a lot over the last decade. Newer master plans on the north and
+            northwest edges are well planned, with parks and schools built in rather than added
+            later.
+          </p>
+          <p>
+            The tradeoff is commute. If you work on the south end of the valley or on the Strip,
+            drive the route at the hour you would actually drive it before you commit.
+          </p>
+          <p class="rh-areafacts">
+            <strong>Where they are building:</strong> Villages at Tule Springs and Valley Vista carry
+            most of the activity, out on the far north edge.
+            <strong>Builders you will see:</strong> KB Home, Lennar, Tri Pointe, and D.R. Horton, which
+            opened six neighborhoods inside Tule Springs alone.
+            <strong>Roughly what it costs:</strong> Tule Springs starts in the $350s. As of July 2026
+            the median list price across North Las Vegas homes built 2024 or newer was about $465,000,
+            the most attainable new construction median in the valley.
+          </p>
+
+          <h2 id="southwest">What is new construction like in Southwest Las Vegas?</h2>
+          <p>
+            The southwest is one of the fastest growing parts of the valley, helped by its access to
+            the 215 and its proximity to the airport and the south Strip.
+          </p>
+          <p>
+            Product here ranges from townhomes through larger single family homes, so it draws a mix
+            of first time buyers, move-up families, and people who want a newer home with a short
+            commute.
+          </p>
+          <p class="rh-areafacts">
+            <strong>Where they are building:</strong> in and around Mountain's Edge, Rhodes Ranch, and
+            Silverado Ranch, plus infill along the 215.
+            <strong>Builders you will see:</strong> KB Home, Century Communities, Pulte, and Lennar.
+            <strong>Roughly what it costs:</strong> attached product and smaller detached homes open the
+            range, and executive homes on golf frontage at Rhodes Ranch reach the $700s and above.
+          </p>
+
+          <h2 id="skye-canyon">What is new construction like in Skye Canyon?</h2>
+          <p>
+            Skye Canyon is a master plan in the northwest, up against the higher desert near Mount
+            Charleston. It sits at a higher elevation than most of the valley, so it runs a little
+            cooler, and it is built around an outdoor and trails lifestyle.
+          </p>
+          <p>
+            It is still actively building, which means there is genuine new inventory rather than
+            just resales of homes built five years ago.
+          </p>
+          <p class="rh-areafacts">
+            <strong>Builders you will see:</strong> Century Communities, Toll Brothers, and LGI Homes.
+            <strong>Roughly what it costs:</strong> the master plan markets new homes from the $400s.
+            Inventory is thin. In mid 2026 there were around 18 new homes listed at a median near
+            $625,000, which tells you it sells faster than it lists.
+          </p>
+
+          <h2 id="centennial-hills">What is new construction like in Centennial Hills?</h2>
+          <p>
+            Centennial Hills covers the northwest corner of the valley. It is established enough to
+            have full services and shopping, but still has pockets of new building on its outer
+            edges.
+          </p>
+          <p>
+            It tends to appeal to buyers who want a newer home and a quieter setting without moving
+            as far out as Skye Canyon.
+          </p>
+          <p class="rh-areafacts">
+            <strong>Builders you will see:</strong> Lennar, KB Home, Toll Brothers, Pulte, Woodside,
+            and Century Communities.
+            <strong>Roughly what it costs:</strong> from the $400,000s, running past $1 million for
+            larger homes on view lots along the outer edges.
+          </p>
+
+          <h2 id="lake-las-vegas">What is new construction like in Lake Las Vegas?</h2>
+          <p>
+            Lake Las Vegas is a resort style master plan built around a man made lake on the far
+            east side of Henderson. It is a distinct setting, with golf, a village center, and a
+            large share of guard gated neighborhoods.
+          </p>
+          <p>
+            It draws second home buyers and retirees more than it draws commuters, mostly because of
+            the drive time to the rest of the valley. If you are considering it as a primary
+            residence, drive the commute first.
+          </p>
+          <p class="rh-areafacts">
+            <strong>Builders you will see:</strong> Toll Brothers and Tri Pointe on the lake and golf
+            frontage, Pulte and Richmond American on production, and Christopher Homes and Blue Heron
+            at the custom end.
+            <strong>Roughly what it costs:</strong> the master plan publishes new homes from the mid
+            $400,000s, and custom lakefront and hillside work runs into the millions. Resale sites often
+            quote a much higher entry number, because what happens to be listed at any moment skews well
+            above the builders' published starting prices. Ask what is releasing, not what is listed.
+          </p>
+          <p>
+            Budget for the HOA here. Combined dues run roughly $185 to $485 a month depending on the
+            sub village, and the production villages sit at the low end of that.
+          </p>
+
+          <h2 id="launches">Which new communities are opening now?</h2>
+          <p>
+            New communities open and sell out on their own schedule, so this table needs a refresh
+            every month or two to stay honest.
+          </p>
+          <div class="rh-wide">
+            <div class="rh-tablewrap">
+              <table class="rh-table">
+                <thead><tr><th>Master plan</th><th>Area</th><th>Builders releasing</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td>Summerlin west villages</td><td>Summerlin</td><td>Toll Brothers, Pulte, Lennar, KB Home, Tri Pointe, Woodside</td><td>Actively releasing across Kestrel, Stonebridge, Redpoint, Reverence, and Grand Park</td></tr>
+                  <tr><td>Cadence</td><td>Henderson</td><td>Lennar, KB Home, Century Communities, Beazer, Toll Brothers</td><td>Actively releasing. Around 12,250 homes planned, a few years of buildout left</td></tr>
+                  <tr><td>Inspirada</td><td>Henderson</td><td>KB Home, Toll Brothers, Tri Pointe</td><td>Closing out. Roughly 75 homes left before it finishes for good</td></tr>
+                  <tr><td>Villages at Tule Springs</td><td>North Las Vegas</td><td>KB Home, Lennar, Tri Pointe, D.R. Horton</td><td>Actively releasing. D.R. Horton alone opened six neighborhoods here</td></tr>
+                  <tr><td>Valley Vista</td><td>North Las Vegas</td><td>Multiple production builders</td><td>Actively releasing</td></tr>
+                  <tr><td>Skye Canyon</td><td>Northwest</td><td>Century Communities, Toll Brothers, LGI Homes</td><td>Actively releasing, with thin standing inventory</td></tr>
+                  <tr><td>Lake Las Vegas</td><td>East Henderson</td><td>Toll Brothers, Tri Pointe, Pulte, Richmond American, Christopher Homes, Blue Heron</td><td>Actively releasing across production and custom</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="rh-tablenote">
+              Individual neighborhoods inside these master plans open and sell out on their own
+              schedule, which is why this table tracks master plans rather than trying to list every
+              neighborhood and its opening price. Those go stale in weeks. Last reviewed September 2026.
+            </p>
+          </div>
+
+          <h2 id="builder-comparison">National builders or local builders, which is right for you?</h2>
+          <p>
+            This is the question that decides most of the rest. National builders give you price
+            certainty, a repeatable process, and a warranty department that will still exist in ten
+            years. Local builders give you flexibility, a shorter chain of command, and usually a
+            better shot at getting a change approved.
+          </p>
+          <div class="rh-wide">
+            <div class="rh-tablewrap">
+              <table class="rh-table">
+                <thead><tr><th>Factor</th><th>National builder</th><th>Local builder</th></tr></thead>
+                <tbody>
+                  <tr><td>Price certainty</td><td>High, set price lists</td><td>Varies more by project</td></tr>
+                  <tr><td>Ability to customize</td><td>Limited to published options</td><td>Usually more flexible</td></tr>
+                  <tr><td>Build timeline</td><td>More predictable</td><td>Can vary more</td></tr>
+                  <tr><td>Design center</td><td>Formal studio appointment</td><td>Often more informal</td></tr>
+                  <tr><td>Warranty administration</td><td>Dedicated department</td><td>Direct to the builder</td></tr>
+                  <tr><td>Financing incentives</td><td>Often larger, tied to in-house lender</td><td>Usually smaller</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="rh-tablenote">
+              General characteristics, not a rating of any specific builder. Confirm details with the
+              builder you are actually considering.
+            </p>
+          </div>
+
+          <h2 id="price-by-area">What do new construction homes cost by area?</h2>
+          <p>
+            Price varies more by area than by builder in Las Vegas. The same builder will price the
+            same floor plan differently in Summerlin than in North Las Vegas, because the land costs
+            differently.
+          </p>
+          <div class="rh-wide">
+            <div class="rh-tablewrap">
+              <table class="rh-table">
+                <thead><tr><th>Area</th><th>Starts around</th><th>Runs up to</th><th>What drives the spread</th></tr></thead>
+                <tbody>
+                  <tr><td>Summerlin</td><td>Low $400s</td><td>$3M+</td><td>Attached product opens the range. Elevation and Strip or Red Rock views carry the top.</td></tr>
+                  <tr><td>Henderson</td><td>Mid $300s</td><td>$15M+</td><td>Cadence at the low end, MacDonald Highlands and Ascaya at the custom hillside end.</td></tr>
+                  <tr><td>North Las Vegas</td><td>$350s</td><td>$800s</td><td>Median list for homes built 2024 or newer was about $465,000 in July 2026.</td></tr>
+                  <tr><td>Southwest Las Vegas</td><td>$400s</td><td>$700s+</td><td>Golf frontage and executive homes at Rhodes Ranch carry the upper end.</td></tr>
+                  <tr><td>Skye Canyon</td><td>$400s</td><td>$1M+</td><td>Thin inventory. Median new listing sat near $625,000 in mid 2026.</td></tr>
+                  <tr><td>Centennial Hills</td><td>$400s</td><td>$1M+</td><td>Established area, with new building only on the outer edges.</td></tr>
+                  <tr><td>Lake Las Vegas</td><td>Mid $400s</td><td>$8M+</td><td>Production villages at the bottom, custom lakefront and hillside at the top.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="rh-tablenote">
+              These are builder starting prices and published ranges, not sold comps, and they are
+              rounded on purpose. They move with every release and every incentive cycle. If you want
+              real numbers for a specific community, ask and I will pull current MLS and builder data
+              for it. Last reviewed September 2026.
+            </p>
+          </div>
+
+          <h2 id="new-vs-resale">New construction or resale, which makes more sense?</h2>
+          <p>
+            There is no single right answer. The honest version is that new construction costs more
+            up front and less in maintenance, and resale is the reverse.
+          </p>
+          <div class="rh-wide">
+            <div class="rh-tablewrap">
+              <table class="rh-table">
+                <thead><tr><th>Factor</th><th>New construction</th><th>Resale</th></tr></thead>
+                <tbody>
+                  <tr><td>Price per square foot</td><td>Usually higher</td><td>Usually lower</td></tr>
+                  <tr><td>Condition</td><td>Everything new</td><td>Varies, inspect carefully</td></tr>
+                  <tr><td>Warranty</td><td>1-2-10 coverage included</td><td>None unless purchased</td></tr>
+                  <tr><td>Customization</td><td>You choose finishes</td><td>What is there is what you get</td></tr>
+                  <tr><td>Move-in timing</td><td>Months if built from dirt</td><td>Typically 30 to 45 days</td></tr>
+                  <tr><td>Landscaping</td><td>Often your cost</td><td>Usually established</td></tr>
+                  <tr><td>Negotiation</td><td>On incentives and upgrades</td><td>On price</td></tr>
+                  <tr><td>Neighborhood</td><td>Still filling in</td><td>Established, you can see it</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2 id="step-by-step">How do you buy a new construction home, step by step?</h2>
+          <p>Six steps, in the order they actually happen.</p>
+          <ol>
+            <li><strong>Get your financing sorted first.</strong> Talk to a lender before you visit a
+                model home, so you know your real number and are not negotiating from a guess.</li>
+            <li><strong>Bring your agent to the very first visit.</strong> This is the one step people
+                get wrong. Most builders require your agent to register with you on your first visit,
+                and if you go alone, you may not be able to add representation later.</li>
+            <li><strong>Pick the community, then the lot, then the plan.</strong> In that order. The
+                lot is the only part you can never change.</li>
+            <li><strong>Sign the purchase agreement and review it properly.</strong> Builder contracts
+                are written by the builder. Look closely at the delay language, the arbitration
+                clause, and what happens if the appraisal comes in low.</li>
+            <li><strong>Go to the design center with a budget already set.</strong> Decide your number
+                before the appointment, not during it.</li>
+            <li><strong>Do a pre-drywall walkthrough and a final walkthrough.</strong> Consider hiring
+                your own inspector for both. The builder's inspections are for the builder.</li>
+          </ol>
+
+          <h2 id="incentives">What incentives do Las Vegas builders offer?</h2>
+          <p>
+            Builders compete on financing and credits rather than on base price. The most common
+            forms are a rate buydown through the builder's preferred lender, a closing cost credit,
+            and a design center credit.
+          </p>
+          <p>
+            Two things worth knowing. First, the biggest incentives are usually tied to using the
+            builder's own lender, so compare the total cost against an outside lender rather than
+            just the incentive headline. Second, incentives are usually largest on standing inventory
+            the builder wants moved before quarter end.
+          </p>
+          <div class="rh-wide">
+            <div class="rh-tablewrap">
+              <table class="rh-table">
+                <thead><tr><th>Incentive</th><th>Typical range</th><th>Usually depends on</th></tr></thead>
+                <tbody>
+                  <tr><td>Closing cost credit</td><td>$5,000 to $25,000</td><td>Largest when you finance through the builder's preferred lender, and larger on standing inventory.</td></tr>
+                  <tr><td>Permanent rate buydown</td><td>Roughly 1 to 2 points off the note rate</td><td>Almost always tied to the builder's lender. Most common on quick move-in homes.</td></tr>
+                  <tr><td>Temporary buydown (2-1 or 1-0)</td><td>First year or two of payment relief</td><td>Your rate steps back up to the note rate after the buydown period ends. Read the terms.</td></tr>
+                  <tr><td>Design center or upgrade credit</td><td>$10,000 to $50,000</td><td>Most common on to-be-built homes, where you still have selections left to make.</td></tr>
+                  <tr><td>Lot premium waiver</td><td>Varies widely</td><td>Offered on homesites the builder has had trouble moving, rarely on the good lots.</td></tr>
+                  <tr><td>Base price reduction</td><td>Around 6% when it happens</td><td>The least common lever. Nationally about 35% of builders cut prices in August 2026, averaging 6%.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="rh-tablenote">
+              <strong>Read this before you use these numbers.</strong> These are general ranges for the
+              Las Vegas market, not quotes. Builder incentives change weekly in some communities and
+              monthly in most, and they vary by community, by floor plan, and by individual home. The
+              same builder will offer very different terms on a standing home than on a to-be-built one.
+              Do not walk into a sales office quoting this table. Reach out and I will get you what a
+              specific builder is actually offering that week.
+            </p>
+          </div>
+
+          <h2 id="sid-lid">What are SID and LID assessments?</h2>
+          <p>
+            A Special Improvement District or Local Improvement District is a way local government
+            funds the infrastructure for a new area. Roads, sewer, and utilities get built up front,
+            and the cost is assessed against the homes that benefit from it.
+          </p>
+          <p>
+            For you as a buyer, it shows up as a separate bill from your property tax. It can run for
+            10 to 20 years. Some sellers pay it off at closing and some do not, and some buyers do not
+            find out it exists until after they move in.
+          </p>
+          <p>
+            Ask two questions in writing before you sign: is there a SID or LID on this home, and what
+            is the exact remaining balance and annual amount. Amounts are community specific, so no
+            single number applies across the valley.
+          </p>
+
+          <h2 id="warranties">What warranty comes with a new home in Nevada?</h2>
+          <p>
+            New homes in Nevada are generally covered by what the industry calls a 1-2-10 warranty.
+            One year on workmanship and finishes, two years on the systems like plumbing, electrical,
+            and HVAC, and ten years on major structural components.
+          </p>
+          <p>
+            Nevada also has a statutory process for construction defect claims. That process has
+            specific notice requirements and deadlines, so if you think you have a structural problem,
+            get advice early rather than late.
+          </p>
+          <p>
+            Read the warranty document itself rather than relying on a summary. What counts as a
+            covered defect, and what the builder is required to do about it, is defined in that
+            document.
+          </p>
+
+          <h2 id="lot-premiums">What do lot premiums and design center upgrades really add?</h2>
+          <p>
+            This is where the base price on the sign turns into the number you actually pay.
+          </p>
+          <h3>Lot premiums</h3>
+          <p>
+            A lot premium is what the builder charges for a better homesite. Corner lots, larger
+            lots, view lots, and lots backing open space instead of another house all carry premiums.
+            The range across the valley is wide, and view lots in the foothills carry the largest
+            premiums by a significant margin.
+          </p>
+          <p>
+            The thing to weigh is resale. A premium you pay for something permanent, like a view or
+            backing open space, tends to hold value. A premium for something that is only better
+            until the next phase gets built does not.
+          </p>
+          <h3>Design center upgrades</h3>
+          <p>
+            The design center is where most budgets slip. Flooring, cabinets, countertops, and
+            lighting add up quickly, and the appointment is designed to make upgrading easy.
+          </p>
+          <p>
+            A practical approach: upgrade the things that are hard to change later, like flooring,
+            cabinet layout, and anything structural or behind a wall. Hold off on the things you can
+            swap out yourself in a few years, like light fixtures and mirrors.
+          </p>
+
+          <h2 id="why-ryan">What does having your own agent actually change?</h2>
+          <p>
+            The person sitting at the desk in the model home is paid by the builder. They are usually
+            helpful and often very good at their job, but they represent the builder in the
+            transaction, not you.
+          </p>
+          <p>
+            In Nevada the builder pays the buyer agent commission out of the same marketing budget
+            either way. Bringing your own agent does not raise your price, and not bringing one does
+            not lower it.
+          </p>
+          <p>What that representation is for, practically:</p>
+          <ul>
+            <li>Reading the builder contract before you sign it, especially the delay, arbitration,
+                and appraisal language</li>
+            <li>Telling you which upgrades hold value at resale and which do not</li>
+            <li>Comparing the builder's lender incentive against an outside lender on total cost</li>
+            <li>Being at the pre-drywall and final walkthroughs on your side</li>
+            <li>Knowing which communities have SID or LID assessments before you fall in love with a
+                floor plan</li>
+          </ul>
+          <p>
+            The one thing that matters most: register on your first visit. It is the single step that
+            is hard to undo.
+          </p>
+
+          <h2 id="faq">Questions and answers</h2>
+          <div class="rh-faq rh-wide">
+            <div class="rh-faq__item">
+              <h3>Do I need a Realtor to buy new construction in Las Vegas?</h3>
+              <p>You are not required to have one, but it costs you nothing to bring one. The builder
+                 pays the buyer agent commission out of the same budget either way. The sales
+                 representative at the model home works for the builder.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>When do I have to register my agent?</h3>
+              <p>On your first visit, before you tour. Most builders will not allow an agent to be
+                 added after you have already registered on your own.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>How long does it take to build a home in Las Vegas?</h3>
+              <p>A home started from dirt generally takes several months. Standing inventory that is
+                 already finished can close on a normal timeline. Ask for the specific expected
+                 completion date in writing, and check what the contract says if it slips.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>Can I negotiate the price of a new construction home?</h3>
+              <p>Usually not the base price, because cutting it would reset the value of every home
+                 the builder has left to sell. Incentives, upgrades, and closing costs are where the
+                 negotiation actually happens.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>What is a lot premium and how much does it add?</h3>
+              <p>It is what the builder charges for a better homesite, such as a view lot, a corner,
+                 or a lot backing open space. Amounts vary widely by community and are highest on
+                 view lots in the foothills.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>How much should I plan to spend at the design center?</h3>
+              <p>Set your number before the appointment. Put it toward things that are hard to change
+                 later, like flooring and anything structural, and hold off on things you can easily
+                 swap yourself.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>What is a SID or LID and will I have one?</h3>
+              <p>It is an infrastructure assessment billed separately from your property tax, common
+                 in newer master plans. Ask in writing whether the home has one and what the exact
+                 remaining balance and annual payment are.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>What does the new home warranty cover?</h3>
+              <p>Generally one year on workmanship, two years on systems, and ten years on structure.
+                 Read the actual warranty document, because what counts as a covered defect is
+                 defined there.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>Should I use the builder's lender?</h3>
+              <p>Compare it properly. Builder incentives are often tied to the in-house lender, so
+                 look at the total cost including rate and fees against an outside lender, not just
+                 the size of the credit.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>Do I need my own inspection on a brand new home?</h3>
+              <p>It is worth considering, at both pre-drywall and final walkthrough. The builder's
+                 inspections are done for the builder.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>Can I put grass in my front yard?</h3>
+              <p>No. Southern Nevada restricts turf in new residential front yards, so plan your
+                 landscape budget around desert planting.</p>
+            </div>
+            <div class="rh-faq__item">
+              <h3>Is new construction a better buy than resale?</h3>
+              <p>It depends on what you value. New costs more up front and less in maintenance, and
+                 comes with a warranty. Resale usually costs less per square foot and lets you see
+                 the finished neighborhood before you commit.</p>
+            </div>
+          </div>
+
+          <h2 id="sources">Sources and how this page is maintained</h2>
+          <p>
+            Every number on this page is traceable to a source, and the sources are listed below.
+            Nothing here is estimated to fill a gap. Where a figure could not be verified, the claim
+            was cut rather than guessed, because a wrong price or incentive figure is worse than no
+            figure at all.
+          </p>
+          <p>
+            Prices and incentives are the fastest moving numbers on this page. Builder starting prices
+            reset with each release, and incentives change weekly in some communities. Treat everything
+            here as a starting point for a conversation, not as a quote. This page was last reviewed in
+            September 2026.
+          </p>
+          <p class="rh-source">Source: <a href="https://www.clarkcountynv.gov/">Clark County, Nevada</a></p>
+          <p class="rh-source">Source: <a href="https://www.leg.state.nv.us/NRS/">Nevada Revised Statutes</a></p>
+          <p class="rh-source">Source: <a href="https://tax.nv.gov/">Nevada Department of Taxation</a></p>
+          <p class="rh-source">Source: <a href="https://www.snwa.com/">Southern Nevada Water Authority</a></p>
+          <p class="rh-source">Source: <a href="https://red.nv.gov/">Nevada Real Estate Division</a></p>
+          <p class="rh-source">Source: <a href="https://www.nvcontractorsboard.com/">Nevada State Contractors Board</a></p>
+          <p class="rh-source">Source: <a href="https://www.nahb.org/news-and-economics/housing-economics/indices/housing-market-index" rel="nofollow">NAHB / Wells Fargo Housing Market Index</a></p>
+          <p class="rh-source">Source: <a href="https://www.summerlin.com/" rel="nofollow">Summerlin</a></p>
+          <p class="rh-source">Source: <a href="https://www.cadencenv.com/" rel="nofollow">Cadence, Henderson</a></p>
+          <p class="rh-source">Source: <a href="https://skyecanyon.com/homes/" rel="nofollow">Skye Canyon</a></p>
+          <p class="rh-source">Source: <a href="https://lakelasvegas.com/new-homes/" rel="nofollow">Lake Las Vegas</a></p>
+          <p class="rh-source">Source: <a href="https://www.newhomesource.com/builders/nv/las-vegas-area" rel="nofollow">NewHomeSource, Las Vegas builders</a></p>
+          <p class="rh-source">Source: <a href="https://www.reviewjournal.com/homes/new-homes/" rel="nofollow">Las Vegas Review-Journal, New Homes</a></p>
+          <p class="rh-tablenote" style="margin-top:18px;">
+            The first six citations are standing authorities for the tax, warranty, licensing, and
+            water rules on this page. Those rules change rarely. The rest are the market sources
+            behind the price bands, the builder counts, and the incentive ranges, and those need a
+            fresh look every quarter.
+          </p>
+        </div><!-- /.rh-prose -->
+
+        <!-- ---------- STICKY TOC RAIL ---------- -->
+        <aside class="rh-rail">
+          <nav class="rh-toc" aria-labelledby="rh-toc-title-2">
+            <p class="rh-toc__title" id="rh-toc-title-2">On This Page</p>
+            <div class="rh-toc__progress" aria-hidden="true"><span class="rh-toc__progress-fill"></span></div>
+            <div class="rh-toc__scroll">
+            <ol class="rh-toc__list">
+              <li><a href="#builders">Las Vegas builders</a></li>
+              <li><a href="#listings">New homes for sale now</a></li>
+              <li><a href="#why-new">Why buy new in Las Vegas</a></li>
+              <li><a href="#summerlin">Summerlin</a></li>
+              <li><a href="#henderson">Henderson</a></li>
+              <li><a href="#north-las-vegas">North Las Vegas</a></li>
+              <li><a href="#southwest">Southwest Las Vegas</a></li>
+              <li><a href="#skye-canyon">Skye Canyon</a></li>
+              <li><a href="#centennial-hills">Centennial Hills</a></li>
+              <li><a href="#lake-las-vegas">Lake Las Vegas</a></li>
+              <li><a href="#launches">New communities</a></li>
+              <li><a href="#builder-comparison">Builder comparison</a></li>
+              <li><a href="#price-by-area">Prices by area</a></li>
+              <li><a href="#new-vs-resale">New vs resale</a></li>
+              <li><a href="#step-by-step">The buying steps</a></li>
+              <li><a href="#incentives">Builder incentives</a></li>
+              <li><a href="#sid-lid">SID and LID taxes</a></li>
+              <li><a href="#warranties">Warranties</a></li>
+              <li><a href="#lot-premiums">Lot premiums and upgrades</a></li>
+              <li><a href="#why-ryan">Working with Ryan</a></li>
+              <li><a href="#faq">Questions and answers</a></li>
+              <li><a href="#sources">Sources</a></li>
+            </ol>
+            </div><!-- /.rh-toc__scroll -->
+            <a class="rh-btn rh-btn--primary rh-btn--sm rh-toc__cta" href="#contact">Get the builder list</a>
+          </nav>
+        </aside>
+      </div><!-- /.rh-article-shell -->
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="rh-section rh-section--base" id="contact">
+    <div class="rh-container">
+      <div class="rh-band">
+        <h2>Thinking about a new build?</h2>
+        <p>
+          If you are early in the process, the most useful thing is usually a short conversation
+          before you visit your first model home. No pressure, and no cost to you.
+        </p>
+        <a class="rh-btn rh-btn--primary" href="tel:7027475921">Call or text 702-747-5921</a>
+        <div class="rh-band__contact">
+          <strong style="color:var(--ink-inv);">Ryan Rose</strong><br>
+          Real Broker, LLC<br>
+          <a href="tel:7027475921">702-747-5921</a><br>
+          <a href="mailto:ryan@rosehomeslv.com">ryan@rosehomeslv.com</a><br>
+          <a href="https://www.rosehomeslv.com">rosehomeslv.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MOBILE STICKY BAR ============ -->
+  <div class="rh-mobilebar">
+    <a class="rh-btn rh-btn--ghost" href="#listings">Homes</a>
+    <a class="rh-btn rh-btn--ghost" href="#builders">Builders</a>
+    <a class="rh-btn rh-btn--primary" href="#contact">Talk to Ryan</a>
+  </div>
+
+</div><!-- /.nc-hub -->
+
+<script>
+/* ============================================================
+   ROSE HOMES LV — NEW CONSTRUCTION HUB
+   This script is shipped in BOTH Lofty embeds (above and below the
+   featured-listings block). Two copies will be present in the DOM.
+   The __rhHubInit guard makes the second one a no-op, and init is
+   deferred to DOMContentLoaded so whichever copy runs first still
+   sees BOTH embeds and wires up both TOC rails.
+   ============================================================ */
+(function () {
+  if (window.__rhHubInit) { return; }
+  window.__rhHubInit = true;
+
+  function init() {
+  /* ---------- builder tier filter ---------- */
+  var chips = document.querySelectorAll('.rh-chip');
+  var cards = document.querySelectorAll('.rh-builder');
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var f = chip.getAttribute('data-filter');
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c === chip)); });
+      cards.forEach(function (card) {
+        card.style.display = (f === 'all' || card.getAttribute('data-tier') === f) ? '' : 'none';
+      });
+    });
+  });
+
+  /* ---------- TOC scroll-spy + reading progress ---------- */
+  /* There are two rails, one per embed, with identical link lists.
+     Collect every link, but build the target list from UNIQUE ids in
+     document order so the spy math is not thrown off by duplicates. */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.rh-toc__list a'));
+  var fills = Array.prototype.slice.call(document.querySelectorAll('.rh-toc__progress-fill'));
+
+  var seen = {};
+  var targets = [];
+  links.forEach(function (a) {
+    var id = a.getAttribute('href').slice(1);
+    if (seen[id]) { return; }
+    var el = document.getElementById(id);
+    if (!el) { return; }
+    seen[id] = true;
+    targets.push(el);
+  });
+  /* document order, in case the two rails disagree or a section moved */
+  targets.sort(function (x, y) {
+    return x.getBoundingClientRect().top - y.getBoundingClientRect().top;
+  });
+
+  var current = null;
+  function setActive(id) {
+    if (id === current) { return; }
+    current = id;
+    links.forEach(function (a) {
+      var on = a.getAttribute('href') === '#' + id;
+      if (on) { a.setAttribute('aria-current', 'true'); }
+      else { a.removeAttribute('aria-current'); }
+      /* keep the highlighted entry visible inside its own scroller */
+      if (on) {
+        var box = a.closest ? a.closest('.rh-toc__scroll') : null;
+        if (box && box.scrollHeight > box.clientHeight) {
+          var t = a.offsetTop - box.offsetTop;
+          var want = t - (box.clientHeight / 2) + (a.offsetHeight / 2);
+          var max = box.scrollHeight - box.clientHeight;
+          box.scrollTop = Math.max(0, Math.min(max, want));
+        }
+      }
+    });
+  }
+
+  /* Scroll-position based, not IntersectionObserver.
+     IO only fires on state CHANGES, so an anchor jump or a page load
+     part-way down can leave nothing highlighted. Computing the active
+     heading from scroll position is deterministic and always correct. */
+  var OFFSET = 100;
+  function updateSpy() {
+    if (!targets.length) { return; }
+    var y = window.scrollY + OFFSET;
+    var active = targets[0];
+    for (var i = 0; i < targets.length; i++) {
+      if (targets[i].getBoundingClientRect().top + window.scrollY <= y) { active = targets[i]; }
+      else { break; }
+    }
+    /* at the very bottom, force the last entry so the end of the page reads correctly */
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+      active = targets[targets.length - 1];
+    }
+    setActive(active.id);
+  }
+
+  /* progress writes scaleX only, never width */
+  function updateProgress() {
+    if (!fills.length) { return; }
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    var p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+    fills.forEach(function (f) { f.style.transform = 'scaleX(' + p + ')'; });
+  }
+
+  /* Coalesce with cancel/re-request rather than a boolean latch.
+     A latch that is only cleared inside the rAF callback stays stuck
+     forever if a frame never fires (background tab, hidden or zero-height
+     viewport), which silently kills the spy for the rest of the session. */
+  var rafId = null;
+  function onScroll() {
+    if (rafId !== null) { window.cancelAnimationFrame(rafId); }
+    rafId = window.requestAnimationFrame(function () {
+      rafId = null;
+      updateProgress();
+      updateSpy();
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  window.addEventListener('hashchange', function () { setTimeout(onScroll, 50); });
+  /* Lofty renders its own featured-listings block between the two embeds.
+     Its images change the page height after load, which moves every
+     heading below it, so re-measure once everything has settled. */
+  window.addEventListener('load', function () { setTimeout(onScroll, 120); });
+  updateProgress();
+  updateSpy();
+
+  /* ---------- #contact scrolls to the Lofty form below the embed ---------- */
+  function scrollToContact(e) {
+    e.preventDefault();
+    var band = document.getElementById('contact');
+    if (band) { band.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    setTimeout(function () {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }, 600);
+  }
+  document.querySelectorAll('a[href="#contact"]').forEach(function (a) {
+    a.addEventListener('click', scrollToContact);
+  });
+
+  /* ---------- reveal ---------- */
+  if ('IntersectionObserver' in window) {
+    var ro = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); ro.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.rh-reveal').forEach(function (el) { ro.observe(el); });
+  }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>

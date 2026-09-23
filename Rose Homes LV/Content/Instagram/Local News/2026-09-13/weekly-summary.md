@@ -1,0 +1,45 @@
+# Weekly News Summary | 2026-09-13
+Clark County, NV | Rose Homes LV | Ryan Rose, Real Broker LLC
+
+### Government and Development (6 stories)
+
+- **Mandatory Fall Watering Rules Are On and Sunday Watering Can Cost You** (#6, Red) SNWA's mandatory fall schedule runs September 1 through October 31, limits irrigation to three assigned days a week, bans Sunday watering, and carries water-waste fees. *Viral potential: a rule with fines attached that touches every yard in the valley gets instant "I did not know that" comments and a lot of shares to neighbors.*
+- **F1 Track Work Is Closing Harmon Lanes Overnight Through September 18** (#11, Orange) Track lighting and bridge work for the November Grand Prix closes two Harmon Avenue lanes from 9 p.m. to 6 a.m. through September 18. *Viral potential: F1 traffic is a yearly sore spot for locals, and the first closures of the season reliably set off the "here we go again" comments.*
+- **KB Home Opens a 1,500-Home North Las Vegas Community Starting in the $300,000s** (#12, Orange) KB Home opened Sandstone on nearly 300 acres near the 215 Beltway and North Fifth Street, planned for more than 1,500 homes. *Viral potential: a starting price with a three in front of it in today's valley is the kind of number people screenshot and send to friends who gave up on buying.*
+- **Clark County Advances a 348-Unit Veterans Housing Complex Planners Wanted Denied** (#18, Orange) Zoning commissioners rezoned 15 of 31 acres to residential multifamily for a 348-unit veterans housing project the planning department had recommended denying. *Viral potential: commissioners overriding their own planning staff on veterans housing is a split-opinion story that pulls strong comments from both sides.*
+- **HOV Lanes Stay Closed on I-11 and U.S. 95 Through September** (#21, Yellow) The NDOT and RTC SafeTech Corridor project keeps HOV lanes closed both directions between Rancho Drive and Rainbow Boulevard through September. *Viral potential: commute pain is always good for a vent in the comments, especially for northwest valley drivers.*
+- **A $37.7 Million Lake Mead Boulevard Rebuild Runs Through the Rest of 2026** (#22, Yellow) A $37.7 million roadway, utility, and traffic system upgrade between Simmons Street and Losee Road continues through the end of the year. *Viral potential: useful, sharable info for North Las Vegas residents who drive that stretch every day.*
+
+### School Board and Education (5 stories)
+
+- **CCSD Is Cutting $51.6 Million This Fall After Losing 10,400 Students** (#1, Red, Extremely Important) CCSD is cutting $51.6 million this fall, $29.1 million from individual schools and $22.5 million from the central office, after enrollment dropped by more than 10,400 students. *Viral potential: a district-wide cut of this size hits staffing and programs at every neighborhood school, so parents will argue about it, share it, and tag their school's page.*
+- **EXCLUDED (#2)** A CCSD police use-of-force story broken out by student race was dropped under the identity-conflict rule. Not produced.
+- **45 Clark County Kids Have Been Hit by Cars in the First 22 School Days** (#3, Red) Forty-five Clark County schoolchildren were struck by vehicles in the first 22 school days, including 23 on e-scooters, with drivers at fault in about 60% of cases. *Viral potential: every parent in Clark County feels this one in their stomach, and the e-scooter breakdown will start a fight about who is really at fault.*
+- **CCSD Breaks Ground on a $150 Million Pre-K Through 8th Grade Campus** (#14, Orange) CCSD broke ground on the James Cashman pre-K through 8 campus, a $150 million consolidated build replacing a 60-year-old school with added vocational focus. *Viral potential: a nine-figure school build that replaces a 60-year-old building triggers both nostalgia from alumni and excitement from current families.*
+- **New $92.9 Million Skye Canyon Elementary Could Be Named for the Late Sen. Joyce Woodhouse** (#19, Orange) A CCSD naming committee recommended the new 108,000-square-foot Skye Canyon elementary, opening August 2027, be named for the former educator and state senator who died in May. *Viral potential: naming a school after a beloved educator who died this year carries real emotion, and Skye Canyon parents will share it as their school.*
+
+### Hockey (5 stories)
+
+- **Mark Stone Signs a Two-Year Extension at $9 Million a Year** (#7, Red) The Golden Knights extended captain Mark Stone through the 2028-29 season at a $9 million average annual value. *Viral potential: the captain and Cup hero locked in through 2029 is the biggest VGK news of the week, and fans will debate the money and the term all day.*
+- **Golden Knights Give Homegrown Braeden Bowman Six Years at $3.4 Million a Year** (#15, Orange) Vegas signed 23-year-old forward Braeden Bowman, who came up through the Henderson Silver Knights, to a six-year extension through 2032-33. *Viral potential: a player who came up through Henderson getting a six-year deal is the feel-good pipeline story local fans love to claim.*
+- **The Strip Has Only One Real Outdoor Ice Rink Left and It Reopens November 19** (#16, Orange) Fontainebleau's nearly 8,000-square-foot rooftop Oasis Ice Rink reopens November 19 through January 17, with Nevada locals pricing starting at $15. *Viral potential: holiday nostalgia plus the loss of the Cosmopolitan rink makes this a tagging story for families planning December outings.*
+- **PWHL Las Vegas Opens Camp November 18 With Two Preseason Games in Henderson** (#17, Orange) PWHL Las Vegas opens training camp November 18 and hosts Minnesota and Vancouver at America First Center in Henderson before regular season games at T-Mobile Arena. *Viral potential: real dates for the valley's new pro women's team give fans something concrete to plan around and share with hockey parents.*
+- **Golden Knights Rookies Get Shut Out 3-0 by Utah to Open the Rookie Faceoff** (#20, Orange) Vegas prospects were blanked 3-0 by the Utah Mammoth behind a 21-save shutout in the Rookie Faceoff opener in San Jose. *Viral potential: losing to Utah stings for VGK fans and the new rivalry angle guarantees back-and-forth in the comments.*
+
+### Real Estate Market (6 stories, 3 local, 3 national-to-local)
+
+- **Las Vegas Median Home Price Slid to $475,000 and Sales Fell 11.9% in One Month** (#4, Red, local) The Southern Nevada median existing single-family price fell to $475,000 in August, $15,000 off the May and June record, while total sales dropped 11.9% from July. *Viral potential: this is the number every homeowner in the valley screenshots, and sellers and buyers will fight in the comments about whether the market is crashing or just normalizing.*
+- **National Prices Just Hit a Record. Las Vegas Prices Went the Other Way.** (#5, Red, national-to-local) The national median hit a record $434,100 in July and rose 1.4% year over year while the Las Vegas median fell 1% to $475,000. *Viral potential: the national headline and the local reality point in opposite directions, and that contrast is the hook that makes people send it to a friend who is about to list.*
+- **New Vegas Homes Closed $106,930 Above Resale While Builder Permits Fell 25%** (#8, Orange, local) New single-family homes in Southern Nevada closed at a median of $581,930 in July while existing single-family homes sold at $475,000 in August, and builders pulled 4,776 permits through July, down 25% from 2025. *Viral potential: a six-figure gap between a brand new house and a resale house is a number people screenshot, and the permit pullback turns it into a 2027 supply argument.*
+- **National Sales Slipped 2%. Southern Nevada Dropped Almost Six Times That.** (#9, Orange, national-to-local) NAR reported existing-home sales down 2.0% nationally in August while Southern Nevada sales fell 11.9% month over month with about 4.5 months of supply. *Viral potential: people assume Vegas follows the country, and the size of the gap is the surprise that makes them stop scrolling.*
+- **The Mortgage Rate in the Headlines Is Not the Rate Nevada Borrowers Got** (#10, Orange, national-to-local) Freddie Mac's national 30-year average was 6.76% the same week Nevada quotes ran near 7.125%, roughly a third to a half point higher for local borrowers. *Viral potential: everyone quotes the national rate they saw on the news, and finding out the local quote was higher makes people comment with their own numbers.*
+- **Vegas Condos Went Up While Houses Went Down** (#13, Orange, local) The condo and townhome median rose 0.6% to $299,900 in August with inventory up 6.0% year over year, the opposite direction from single-family. *Viral potential: it is a counterintuitive split in the same month's data, and first-time buyers priced out at $475,000 will share it as a lifeline.*
+
+### Content Stats
+- Total stories: 22 (minimum 21)
+- Video scripts: 1 x 75s, 6 x 60s, 13 x 45s, 2 x 30s, 0 x 15s
+- Estimated total recording time: 18 minutes
+- Blog posts: 22 (~2400 words each)
+- Reddit posts: 6 (real estate stories only)
+- Instagram captions: 22
+- YouTube descriptions: 22

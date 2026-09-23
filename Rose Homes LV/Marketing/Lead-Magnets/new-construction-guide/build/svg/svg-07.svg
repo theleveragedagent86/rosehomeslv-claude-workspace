@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 402" width="100%"
+     role="img" aria-labelledby="sv07t sv07d" font-family="Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif">
+<title id="sv07t">Two clocks, your rate lock and the build calendar</title>
+<desc id="sv07d">Two parallel horizontal timelines. The upper one is the build: a short pre-construction period, then four to five months of build published by one builder and six to twelve months by another, ending at a contractual outside date of two years from signing. The lower one is your rate lock: a short locked window followed by a long hatched unlocked stretch during which the rate moves weekly. Three marked collision points: the lock expiring before the house is finished, the builder's forward commitment rate pool running dry, and the appraisal landing months after the price was set.</desc>
+<style>.sv-h{font:700 13px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;letter-spacing:.002em}
+.sv-k{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52;letter-spacing:.09em;text-transform:uppercase}
+.sv-l{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-b{font:400 9.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-s{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52}
+.sv-n{font:700 11px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;font-variant-numeric:tabular-nums}
+.sv-r{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-rs{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-nf{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#B8360F;letter-spacing:.06em}
+.sv-c{text-anchor:middle}
+.sv-e{text-anchor:end}</style>
+<defs>
+<marker id="sv-tri" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#2C3F6B"/></marker>
+<marker id="sv-tric" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#B8360F"/></marker>
+<marker id="sv-trim" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#5F5A52"/></marker>
+<pattern id="sv-hatch" width="6" height="6" patternTransform="rotate(45)"
+         patternUnits="userSpaceOnUse">
+  <rect width="6" height="6" fill="#EDE9E0"/>
+  <line x1="0" y1="0" x2="0" y2="6" stroke="#847B6D" stroke-width="1.6"/>
+</pattern>
+</defs>
+<rect width="700" height="402" fill="#F7F5F0"/>
+<text x="0" y="14" class="sv-k">Page 23</text><text x="0" y="31" class="sv-h">Two clocks: your rate lock and the build calendar</text>
+<text x="0" y="78" class="sv-k">THE BUILD</text>
+<rect x="128" y="62" width="572" height="22" rx="4" fill="#EDE9E0" stroke="#847B6D" stroke-width="1"/>
+<rect x="128" y="62" width="57.2" height="22" rx="4" fill="#242F4A"/>
+<text x="156.6" y="52" class="sv-s sv-c">pre-construction</text>
+<rect x="185.2" y="62" width="240.23999999999998" height="22" rx="6" fill="#2C3F6B"/>
+<text x="191.2" y="77" class="sv-rs">one builder publishes 4 to 5 months of build</text>
+<text x="448.32000000000005" y="77" class="sv-s">another publishes 6 to 12 months</text>
+<text x="0" y="96" class="sv-s"><tspan x="0" dy="0">Eleven of the twelve</tspan><tspan x="0" dy="11">volume builders publish no</tspan><tspan x="0" dy="11">contract-to-close time for</tspan><tspan x="0" dy="11">Las Vegas at all.</tspan></text>
+<line x1="700" y1="56" x2="700" y2="128" stroke="#141A27" stroke-width="1.6"/>
+<text x="700" y="48" class="sv-s sv-e">outside date in the contract</text>
+<text x="700" y="36" class="sv-s sv-e">two years from signing, in one published clause</text>
+<text x="0" y="154" class="sv-k">YOUR RATE LOCK</text>
+<rect x="128" y="138" width="171.6" height="22" rx="4" fill="#304880"/>
+<text x="134" y="153" class="sv-rs">lock window</text>
+<rect x="299.6" y="138" width="400.4" height="22" rx="4" fill="url(#sv-hatch)" stroke="#847B6D" stroke-width="1"/>
+<text x="307.6" y="153" class="sv-s">unlocked, and the rate moves weekly</text>
+<text x="0" y="172" class="sv-s"><tspan x="0" dy="0">In July 2026 the national</tspan><tspan x="0" dy="11">30 year average moved</tspan><tspan x="0" dy="11">every single week, 6.43 to</tspan><tspan x="0" dy="11">6.58 percent. That is a</tspan><tspan x="0" dy="11">survey average, not a</tspan><tspan x="0" dy="11">quote.</tspan></text>
+<line x1="299.6" y1="58" x2="299.6" y2="166" stroke="#B8360F" stroke-width="1.2" stroke-dasharray="4 3"/>
+<circle cx="299.6" cy="176" r="8.5" fill="#B8360F"/>
+<text x="299.6" y="179.5" class="sv-c" style="font:700 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">1</text>
+<line x1="482.64" y1="58" x2="482.64" y2="166" stroke="#B8360F" stroke-width="1.2" stroke-dasharray="4 3"/>
+<circle cx="482.64" cy="176" r="8.5" fill="#B8360F"/>
+<text x="482.64" y="179.5" class="sv-c" style="font:700 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">2</text>
+<line x1="631.36" y1="58" x2="631.36" y2="166" stroke="#B8360F" stroke-width="1.2" stroke-dasharray="4 3"/>
+<circle cx="631.36" cy="176" r="8.5" fill="#B8360F"/>
+<text x="631.36" y="179.5" class="sv-c" style="font:700 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">3</text>
+<text x="0" y="260" class="sv-k">THREE PLACES THE CLOCKS COLLIDE</text>
+<circle cx="8.0" cy="275" r="8.5" fill="#B8360F"/>
+<text x="8.0" y="278.5" class="sv-c" style="font:700 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">1</text>
+<text x="24.0" y="278" class="sv-l"><tspan x="24.0" dy="0">Your lock expires before the house</tspan><tspan x="24.0" dy="12">is finished.</tspan></text>
+<text x="0.0" y="310" class="sv-s"><tspan x="0.0" dy="0">Extending costs money, floating costs certainty,</tspan><tspan x="0.0" dy="11">and no builder publishes a fee schedule.</tspan></text>
+<circle cx="241.33333333333334" cy="275" r="8.5" fill="#B8360F"/>
+<text x="241.33333333333334" y="278.5" class="sv-c" style="font:700 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">2</text>
+<text x="257.33333333333337" y="278" class="sv-l"><tspan x="257.33333333333337" dy="0">The builder's rate pool runs dry.</tspan></text>
+<text x="233.33333333333334" y="310" class="sv-s"><tspan x="233.33333333333334" dy="0">A builder can pay a lender in advance to lock a</tspan><tspan x="233.33333333333334" dy="11">below market rate on a pool of future loans. Two</tspan><tspan x="233.33333333333334" dy="11">publish that the rate lasts only until the pool</tspan><tspan x="233.33333333333334" dy="11">is depleted or expires.</tspan></text>
+<circle cx="474.6666666666667" cy="275" r="8.5" fill="#B8360F"/>
+<text x="474.6666666666667" y="278.5" class="sv-c" style="font:700 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0">3</text>
+<text x="490.6666666666667" y="278" class="sv-l"><tspan x="490.6666666666667" dy="0">The appraisal lands months after the</tspan><tspan x="490.6666666666667" dy="12">price was set.</tspan></text>
+<text x="466.6666666666667" y="310" class="sv-s"><tspan x="466.6666666666667" dy="0">A price agreed today gets appraised five to</tspan><tspan x="466.6666666666667" dy="11">twelve months from now, and an appraisal that</tspan><tspan x="466.6666666666667" dy="11">moves your loan-to-value can push you across the</tspan><tspan x="466.6666666666667" dy="11">$832,750 conforming line.</tspan></text>
+<rect x="0" y="368" width="64" height="14" rx="3" fill="#FBE5DA"/><text x="32.0" y="378.2" class="sv-nf sv-c">NOT FOUND</text>
+<text x="72" y="378" class="sv-s"><tspan x="72" dy="0">Extended lock, float-down and lock extension fee schedules. The guide teaches the six questions instead of printing a fee.</tspan></text>
+</svg>

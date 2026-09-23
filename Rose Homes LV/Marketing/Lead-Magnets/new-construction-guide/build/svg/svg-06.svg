@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" width="100%"
+     role="img" aria-labelledby="sv06t sv06d" font-family="Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif">
+<title id="sv06t">Where builder incentive money can and cannot go</title>
+<desc id="sv06d">Three buckets a builder incentive can fill, each marked with a check: closing costs, a rate buydown, and prepaids including up to twelve months of HOA assessments. A fourth, hatched and marked with a cross, is the one it can never fill: your down payment, your reserves, or your own minimum required contribution. Alongside, a cap ladder for a conventional loan showing 3 percent when the loan is over 90 percent of value, 6 percent between 75.01 and 90 percent, 9 percent at 75 percent or less, and 2 percent on an investment property. No FHA percentage is printed because the sources conflict.</desc>
+<style>.sv-h{font:700 13px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;letter-spacing:.002em}
+.sv-k{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52;letter-spacing:.09em;text-transform:uppercase}
+.sv-l{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-b{font:400 9.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436}
+.sv-s{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#5F5A52}
+.sv-n{font:700 11px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#1C2436;font-variant-numeric:tabular-nums}
+.sv-r{font:600 10px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-rs{font:500 8.6px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#F7F5F0}
+.sv-nf{font:700 8.4px Archivo,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;fill:#B8360F;letter-spacing:.06em}
+.sv-c{text-anchor:middle}
+.sv-e{text-anchor:end}</style>
+<defs>
+<marker id="sv-tri" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#2C3F6B"/></marker>
+<marker id="sv-tric" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#B8360F"/></marker>
+<marker id="sv-trim" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="6" markerHeight="6"
+        orient="auto-start-reverse"><path d="M0 0.8 L7.5 4 L0 7.2 z" fill="#5F5A52"/></marker>
+<pattern id="sv-hatch" width="6" height="6" patternTransform="rotate(45)"
+         patternUnits="userSpaceOnUse">
+  <rect width="6" height="6" fill="#EDE9E0"/>
+  <line x1="0" y1="0" x2="0" y2="6" stroke="#847B6D" stroke-width="1.6"/>
+</pattern>
+</defs>
+<rect width="700" height="360" fill="#F7F5F0"/>
+<text x="0" y="14" class="sv-k">Page 22</text><text x="0" y="31" class="sv-h">Where the incentive money can and cannot go</text>
+<text x="0" y="60" class="sv-k">THREE BUCKETS IT CAN FILL</text>
+<rect x="0" y="70" width="148" height="84" rx="6" fill="#FBEFD3" stroke="#847B6D" stroke-width="1"/>
+<path d="M12.8 90 l2.5600000000000005 2.8800000000000003 l4.800000000000001 -6.08" fill="none" stroke="#2C3F6B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="28" y="94" class="sv-l">Closing costs</text>
+<text x="12" y="114" class="sv-s"><tspan x="12" dy="0">Title, escrow, recording,</tspan><tspan x="12" dy="11">lender fees.</tspan></text>
+<rect x="160" y="70" width="148" height="84" rx="6" fill="#FBEFD3" stroke="#847B6D" stroke-width="1"/>
+<path d="M172.8 90 l2.5600000000000005 2.8800000000000003 l4.800000000000001 -6.08" fill="none" stroke="#2C3F6B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="188" y="94" class="sv-l">A rate buydown</text>
+<text x="172" y="114" class="sv-s"><tspan x="172" dy="0">A lump sum into a separate</tspan><tspan x="172" dy="11">escrow account, released</tspan><tspan x="172" dy="11">monthly.</tspan></text>
+<rect x="320" y="70" width="148" height="84" rx="6" fill="#FBEFD3" stroke="#847B6D" stroke-width="1"/>
+<path d="M332.8 90 l2.5600000000000005 2.8800000000000003 l4.800000000000001 -6.08" fill="none" stroke="#2C3F6B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="348" y="94" class="sv-l">Prepaids</text>
+<text x="332" y="114" class="sv-s"><tspan x="332" dy="0">Plus up to 12 months of</tspan><tspan x="332" dy="11">HOA assessments.</tspan></text>
+<rect x="480" y="70" width="220" height="84" rx="6" fill="#F7F5F0" stroke="#5F5A52" stroke-width="1.6"/>
+<path d="M481 76 h218 v22 h-218 z" fill="url(#sv-hatch)"/>
+<rect x="480" y="70" width="220" height="84" rx="6" fill="none" stroke="#5F5A52" stroke-width="1.6"/>
+<path d="M492.8 102.8 l6.4 6.4 M499.2 102.8 l-6.4 6.4" fill="none" stroke="#B8360F" stroke-width="1.9" stroke-linecap="round"/>
+<text x="508" y="110" class="sv-l">Never your down payment</text>
+<text x="492" y="128" class="sv-s"><tspan x="492" dy="0">Nor your reserves, nor your own minimum</tspan><tspan x="492" dy="11">required contribution.</tspan></text>
+<text x="0" y="190" class="sv-k">THE CAP LADDER, CONVENTIONAL LOAN</text>
+<text x="0" y="206" class="sv-b"><tspan x="0" dy="0">How much a builder is allowed to pay toward your costs scales with your</tspan><tspan x="0" dy="12">down payment. Buydowns count against this cap, which is why a builder</tspan><tspan x="0" dy="12">cannot stack an unlimited buydown on unlimited closing cost help.</tspan></text>
+<text x="400" y="208" class="sv-b">Loan over 90% of value</text>
+<rect x="550" y="196" width="110" height="16" rx="3" fill="#EDE9E0"/>
+<rect x="550" y="196" width="36.300000000000004" height="16" rx="3" fill="#2C3F6B"/>
+<text x="668" y="208" class="sv-n">3%</text>
+<text x="400" y="238" class="sv-b">75.01% to 90%</text>
+<rect x="550" y="226" width="110" height="16" rx="3" fill="#EDE9E0"/>
+<rect x="550" y="226" width="72.60000000000001" height="16" rx="3" fill="#2C3F6B"/>
+<text x="668" y="238" class="sv-n">6%</text>
+<text x="400" y="268" class="sv-b">75% or less</text>
+<rect x="550" y="256" width="110" height="16" rx="3" fill="#EDE9E0"/>
+<rect x="550" y="256" width="110.0" height="16" rx="3" fill="#2C3F6B"/>
+<text x="668" y="268" class="sv-n">9%</text>
+<text x="400" y="298" class="sv-b">Investment property</text>
+<rect x="550" y="286" width="110" height="16" rx="3" fill="#EDE9E0"/>
+<rect x="550" y="286" width="24.2" height="16" rx="3" fill="#2C3F6B"/>
+<text x="668" y="298" class="sv-n">2%</text>
+<rect x="0" y="268" width="380" height="46" rx="6" fill="#E4E9F2"/><text x="12" y="287" class="sv-b"><tspan x="12" dy="0">On a VA loan, a builder funded temporary buydown is a seller concession</tspan><tspan x="12" dy="12">capped at 4 percent of reasonable value.</tspan></text>
+<rect x="0" y="326" width="64" height="14" rx="3" fill="#FBE5DA"/><text x="32.0" y="336.2" class="sv-nf sv-c">NOT FOUND</text>
+<text x="72" y="336" class="sv-s"><tspan x="72" dy="0">No FHA contribution percentage is printed here. The sources conflict.</tspan></text>
+</svg>

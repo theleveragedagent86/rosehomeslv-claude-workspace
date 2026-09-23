@@ -1,0 +1,139 @@
+LOFTY PAGE SETTINGS - LAS VEGAS NEW CONSTRUCTION HUB   [NOT YET PUBLISHED]
+==========================================================================
+
+Replaces the hub currently live at /new-construction-hub.
+Old page SEO sheet: output/local-seo/pages/paste/0-seo-fields.txt
+
+
+URL SLUG
+========
+las-vegas-new-construction
+
+Full URL:
+https://www.rosehomeslv.com/las-vegas-new-construction
+
+
+META TITLE   (use this one, 35 chars)
+=====================================
+New Construction Homes in Las Vegas
+
+*** LOFTY APPENDS " | Ryan Rose" TO WHATEVER YOU TYPE. ***
+Confirmed live 2026-09-15: the field was set to "New Construction Homes in
+Las Vegas | Builder Guide" (51) and the page rendered a 63-char title,
+"New Construction Homes in Las Vegas | Builder Guide | Ryan Rose", which
+Google truncates. The suffix is 12 characters, so keep this field at 48 or
+fewer. The bare keyword phrase above lands at 47 with the suffix.
+
+Alternates (all shown BEFORE Lofty's 12-char suffix):
+  New Construction Homes in Las Vegas                    (35 -> 47 live)
+  New Construction Homes in Las Vegas | Guide            (43 -> 55 live)
+  Las Vegas New Construction Homes and Builders          (45 -> 57 live)
+
+Keyword goes first on purpose. "New construction homes Las Vegas" is the
+head term this page is built to win, and Google truncates the tail, not the
+head. Do not lead with the brand name.
+
+
+META DESCRIPTION   (use this one, 158 chars, limit 160)
+=======================================================
+A full guide to buying new construction in Las Vegas. Twenty builders, seven areas, incentives, warranties, and the one mistake that costs you representation.
+
+Alternates:
+  Twenty builders, seven parts of the valley, and what to know before you
+  visit a model home. Ryan Rose represents you at no cost to you, not the
+  builder.                                                            (152)
+
+Note: the description is not a ranking factor, it is a click factor. The
+"one mistake that costs you representation" line is the hook, it maps to the
+register-your-agent-first section of the page.
+
+
+META KEYWORDS   (94 chars, limit 100)
+=====================================
+new construction las vegas, new build homes las vegas, henderson new construction, builder rep
+
+Lofty exposes the field and Google ignores it. Filled in for consistency with
+the rest of the site, not for ranking.
+
+
+CANONICAL URL
+=============
+https://www.rosehomeslv.com/las-vegas-new-construction
+
+
+OPEN GRAPH / TWITTER
+====================
+og:title
+  New Construction Homes in Las Vegas
+
+og:description
+  Twenty builders, seven parts of the valley, and what to know before you
+  visit a model home.
+
+og:type            article
+og:url             https://www.rosehomeslv.com/las-vegas-new-construction
+twitter:card       summary_large_image
+
+*** LIVE CHECK 2026-09-15: og:image is currently Lofty's generic default,
+    https://cdn.chime.me/image/fs/user-info/2025115/11/w1200_original_1abb6c8d-...png
+    Every share of this page uses that placeholder until it is replaced. ***
+
+og:image  (preferred, 1200x630, NOT UPLOADED YET)
+  Upload output/local-seo/pages/covers/og-share-1200x630.png to the image
+  repo under new-construction/, then use:
+  https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/og-share-1200x630.jpg
+
+og:image  (works today, already hosted, 1600x1194 so social will crop it)
+  https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/hero-new-construction.jpg
+
+og:image:alt
+  A new construction home in a Las Vegas valley community with homes still
+  being framed behind it
+
+
+H1 ON THE PAGE   (already in part 1, do not duplicate in Lofty)
+===============================================================
+New Construction Homes in Las Vegas
+
+Lofty page-builder blocks can inject their own H1. If the published page ends
+up with two H1s, delete Lofty's, not the one in the embed.
+
+
+WHAT GETS PASTED
+================
+part-1-above-listings.html   HTML module ABOVE the Featured Listings block
+(Lofty Featured Listings block, built in Lofty's editor, filter: year built
+ 2025 or newer, Clark County, not city)
+part-2-below-listings.html   HTML module BELOW the Featured Listings block
+
+_preview-stitched.html is a local preview only. Never paste it.
+
+Schema (Article, BreadcrumbList, FAQPage) is already inside part 1 as a
+JSON-LD @graph block. Do NOT put it in Lofty's Page Script field, that field
+caps at 5,000 characters and the block is larger.
+
+Do NOT paste Google Analytics or Meta Pixel tags. Lofty injects
+G-50N1D59DW6 and pixel 621835647008401 automatically at publish.
+
+
+LAUNCH CHECKLIST
+================
+[ ] Build the Featured Listings block in Lofty first
+[ ] Create the page as a CMS site page, so it lands in the sitemap
+[ ] Paste part 1 above, part 2 below
+[ ] Enter title + description + canonical MANUALLY. Lofty does not carry SEO
+    fields across a landing-page conversion, it reverts them to generic
+    defaults. Re-check them after any conversion.
+[ ] 301 /new-construction-hub to /las-vegas-new-construction. That old slug
+    has been indexed since August 2026. If Lofty has no redirect feature,
+    leave a short stub page at the old slug linking here. Do not just delete
+    the old page.
+[ ] Check /new-construction-las-vegas is still handled (it was an older slug,
+    already retired, currently a soft 404)
+[ ] Update the nav link. LIVE CHECK 2026-09-15: there is exactly ONE site
+    link to the hub, a header menu item labeled "New Construction HUB"
+    pointing at /new-construction-hub. There is no footer link. Repoint that
+    menu item to /las-vegas-new-construction and retitle it "New Construction".
+[ ] Validate FAQPage in the Rich Results Test
+[ ] Request indexing in Search Console
+[ ] Confirm the sticky rail still works inside Lofty's wrapper

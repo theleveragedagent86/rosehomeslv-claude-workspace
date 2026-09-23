@@ -1,0 +1,26 @@
+{
+  "id": "rose-homes",
+  "label": "Rose Homes LV",
+  "channel": "Ryan Rose, Las Vegas real estate",
+  "audience": "Las Vegas buyers, sellers, and relocators",
+  "colors": {
+    "navy": "#1C2333",
+    "gold": "#C9A86E",
+    "white": "#FFFFFF",
+    "offWhite": "#F7F5F0",
+    "slate": "#8A8FA8",
+    "alert": "#D64545"
+  },
+  "fonts": {
+    "headline": "Montserrat",
+    "headlineWeight": 800,
+    "kicker": "Playfair Display",
+    "kickerWeight": 700,
+    "label": "Montserrat",
+    "labelWeight": 600
+  },
+  "cutout": "assets/ryan-cutout.png",
+  "plateStyle": "High-contrast Las Vegas: Strip skyline at dusk, red-rock desert, Summerlin or Henderson master-plan streetscapes, stucco-and-tile new construction. Warm desert light, deep shadows, never generic stock city.",
+  "seasonNotes": "Las Vegas has no snow and no autumn colour. Palms, gravel xeriscape, and hard sun year-round. Summer light is bleached and vertical; winter light is low and gold.",
+  "disclaimer": "Ryan Rose · Real Broker, LLC"
+}

@@ -1,0 +1,37 @@
+/* The Leveraged Agent - palette v3 "Broker" - achromatic base, one accent, tinted near-black ink.
+   Proposed 2026-08-19. v1 (Brand-Guide/tokens.css) is still the shipping palette.
+
+   Derived from measured convention, not taste. See Brand-Guide/PEDIGREE-BRAND-RESEARCH.md:
+   9 of 10 high-pedigree US brokerages build on pure white/black, all ship exactly one accent,
+   and all use a color-cast near-black as ink. This palette is that formula with Ryan's ink
+   and Ryan's gold, which already matches the Altman Brothers' #D2AD41.
+
+   Both brand colors are UNCHANGED from v1: deep #08343E and gold #E8A33D.
+   The changes are: cream base becomes pure white, and sage is deleted.
+   Existing logo files stay valid because they were already built to sit on white or on deep.
+
+   There is deliberately NO --la-accent-2. One accent is the whole point of this palette.
+   Every text pairing below is WCAG 2.1 AA verified, computed not eyeballed.
+   Spec and migration table: Brand-Guide/V3-BROKER.md */
+:root {
+  --la-bg:            #FFFFFF;  /* primary surface, pure white. Do not tint it */
+  --la-bg-2:          #F7F7F7;  /* sunken fill, table rows, inset panels. Serhant's near-white */
+  --la-bg-inv:        #08343E;  /* inverted surface, brand deep teal. Plays black's role */
+  --la-line:          #E3E7E8;  /* hairline and divider on bg, non-text */
+  --la-structure:     #0F4C5C;  /* canonical teal. Chart bars, structural fills, large headings */
+  --la-ink:           #08343E;  /* primary text on bg */
+  --la-ink-2:         #3C646F;  /* secondary text on bg and bg-2 */
+  --la-ink-inv:       #FFFFFF;  /* primary text on bg-inv */
+  --la-ink-2-inv:     #90ABB2;  /* secondary text on bg-inv */
+  --la-accent:        #E8A33D;  /* THE accent, canonical gold. Fills and buttons, NEVER text on bg */
+  --la-accent-on:     #08343E;  /* text placed ON accent. Not white, white is 1.86:1 and fails badly */
+  --la-accent-txt:    #9D6513;  /* accent used AS text on bg or bg-2 */
+  --la-accent-inv:    #E8A33D;  /* accent used AS text on bg-inv. Raw gold works there, 6.2:1 */
+
+  --la-font-head:     "Poppins", "Futura", "Avenir Next", sans-serif;
+  --la-font-body:     "Inter", -apple-system, "Helvetica Neue", sans-serif;
+  --la-weight-head:   800;      /* was 700 in v1. Serhant runs 800, Ferry runs 700 */
+  --la-track-head:    -0.03em;
+  --la-track-label:   0.14em;   /* wide-tracked uppercase labels, the Camp A move */
+  --la-lh-body:       1.55;
+}

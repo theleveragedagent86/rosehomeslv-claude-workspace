@@ -1,0 +1,313 @@
+{
+  "area": "Henderson",
+  "slug": "henderson-new-construction",
+  "place_name": "Henderson, Nevada",
+  "locality": "Henderson",
+  "updated_iso": "2026-09-16",
+  "updated_text": "September 16, 2026",
+  "reviewed_text": "September 2026",
+  "read_minutes": 14,
+
+  "seo": {
+    "title": "Henderson New Construction Homes and Builders",
+    "description": "New homes in Henderson start at $326,990 at KB Home's Meriden. Cadence, Inspirada, and Meriden neighborhoods, with builders and schools. Sept 2026.",
+    "keywords": "henderson new construction, new homes henderson nv, cadence henderson, inspirada, meriden",
+    "og_title": "New Construction Homes in Henderson",
+    "og_description": "The new home neighborhoods selling in Henderson right now, with builders, starting prices, HOA and LID facts, and builder-listed schools."
+  },
+
+  "hero": {
+    "kicker": "Rose Homes LV &middot; Henderson, Nevada",
+    "h1": "New Construction Homes in Henderson",
+    "sub": "Most of Henderson's new homes are going up in Cadence, Inspirada, and KB Home's new Meriden, from townhomes in the $320,000s to large family homes in the $700,000s. Here is what is selling, and what to check before you visit a model.",
+    "stats": [
+      ["32", "Neighborhoods in our table"],
+      ["4", "Master plans building"],
+      ["11", "Active builders"],
+      ["12,250", "Homes planned in Cadence"]
+    ],
+    "image": {
+      "src": "https://cdn.jsdelivr.net/gh/theleveragedagent86/rhlv-site-images@main/new-construction/community-henderson.jpg",
+      "alt": "Illustration of a master-planned street with single and two-story homes beside a green park",
+      "width": 900,
+      "height": 672
+    },
+    "secondary_cta": "Browse neighborhoods",
+    "mobile_label": "Neighborhoods"
+  },
+
+  "answer": "Most new homes in Henderson are being built in four master plans: Cadence in east Henderson off Lake Mead Parkway, Inspirada in southwest Henderson, KB Home's Meriden, which opened April 10, 2026, and Lennar's Black Mountain Ranch. Cadence is the biggest, with 2,200 acres and up to 12,250 homes planned. Eleven builders are active, led by KB Home, Lennar, D.R. Horton, and Woodside. Published 2026 starting prices run from $326,990 for a KB Home townhome at Meriden to $724,990 at D.R. Horton's Symmetry Summit II in Cadence. Inspirada is closing out, so choices there are shrinking. One tip: the Cadence FAQ says Cadence has no SID or LID fees, but that is not true of every Henderson home, so check the exact parcel.",
+
+  "takeaways": [
+    "Meriden is the newest place to look. KB Home opened it on April 10, 2026, with five neighborhoods and townhomes from $326,990.",
+    "Cadence has the most builders. Its site lists Beazer, Century Communities, D.R. Horton, Lennar, Richmond American, Taylor Morrison, and Woodside.",
+    "Inspirada is in its last stretch. KB Home marks its two neighborhoods there Last Chance and Final Opportunity, so fewer homes are left.",
+    "Cadence's official FAQ says there are no SID or LID fees. Some Cadence townhome and condo neighborhoods can still have other assessment fees, so ask.",
+    "Several Cadence builder pages were last updated in 2024 or 2025. For those neighborhoods, get a current price sheet from the builder before you compare.",
+    "Some builder sites label Lake Las Vegas homes as Henderson. Those are on my separate Lake Las Vegas page, not in this table."
+  ],
+
+  "part1_sections": [
+    {
+      "id": "neighborhoods",
+      "toc": "Neighborhoods selling now",
+      "h2": "Which new neighborhoods are selling in Henderson right now?",
+      "blocks": [
+        {"lede": "These are the Henderson neighborhoods with homes for sale on the builders' own pages, sorted from the lowest starting price to the highest. Neighborhoods without a 2026 dated price are listed at the bottom."},
+        {"table": {
+          "head": ["Neighborhood", "Builder", "Master plan", "Home type", "Size (sq ft)", "Starts from"],
+          "rows": [
+            ["Meadows at Meriden", "KB Home", "Meriden", "Two-story townhome", "1,396 to 1,657", "$326,990"],
+            ["Avenues at Meriden", "KB Home", "Meriden", "Three-story townhome", "1,574 to 1,947", "$338,990"],
+            ["Symmetry Trails II", "D.R. Horton", "Cadence", "Townhome", "1,309 to 1,410", "$350,990"],
+            ["Highpointe", "Lennar", "Black Mountain Ranch", "Multi-family plans, including NextGen", "1,696 to 1,927", "$355,990"],
+            ["Liberty at Meriden", "KB Home", "Meriden", "Two-story single family", "1,353 to 1,765", "$358,990"],
+            ["Carlton", "Lennar", "Cadence", "Single family, single-story plans", "1,248 to 1,724", "$390,990"],
+            ["Quail Crossings", "Lennar", "Cadence", "Single family", "1,270 to 1,711", "$391,990"],
+            ["Peaks at Meriden", "KB Home", "Meriden", "Three-story single family", "1,720 to 2,320", "$391,990"],
+            ["Landings at Caspian Bay", "KB Home", "Not named by builder", "Two-story single family", "1,572 to 2,469", "$399,990"],
+            ["Midtown Forte", "Lennar", "Cadence", "Single family, three-story plans", "1,486 to 2,153", "$420,263"],
+            ["Reserves at Caspian Bay", "KB Home", "Not named by builder", "One and two-story single family", "1,849 to 3,066", "$427,990"],
+            ["Glades at Meriden", "KB Home", "Meriden", "Two-story single family", "1,572 to 2,469", "$446,990"],
+            ["Symmetry Bay II", "D.R. Horton", "Cadence", "Two-story single family", "1,795 to 1,802", "$467,990"],
+            ["Gardens at Inspirada (Last Chance)", "KB Home", "Inspirada", "Two-story single family", "1,558 to 2,044", "$489,750"],
+            ["Highview", "Tri Pointe Homes", "Inspirada", "Two-story townhome", "1,640 to 1,924", "$509,153"],
+            ["Symmetry Falls II", "D.R. Horton", "Cadence", "Single family", "2,436 to 3,000", "$520,990"],
+            ["Amiata Collection", "Toll Brothers", "Inspirada", "Townhome, rooftop deck option", "1,803 to 2,154", "$525,000"],
+            ["Landings at Inspirada (Final Opportunity)", "KB Home", "Inspirada", "Two-story single family", "1,150 to 2,469", "$549,750"],
+            ["Interlude", "Richmond American", "Cadence", "Single family", "2,620 to 3,280", "$549,950"],
+            ["Lucere Place", "Lennar", "Inspirada", "Single family", "2,590 to 2,770", "$578,990"],
+            ["Symmetry Manor", "D.R. Horton", "Cadence", "Single family, including single-story", "2,300 to 2,754", "$579,990"],
+            ["Lucere Square", "Lennar", "Inspirada", "Single family", "3,000 to 3,335", "$656,990"],
+            ["Symmetry Summit II", "D.R. Horton", "Cadence", "Single family", "3,765 to 4,425", "$724,990"],
+            ["Cantata Point", "Beazer Homes", "Cadence", "Townhome", "1,330 to 2,256", "Ask for current pricing"],
+            ["Aria Crossing", "Beazer Homes", "Cadence", "Single family, including single-story", "1,769 to 2,735", "Ask for current pricing"],
+            ["Modena I", "Century Communities", "Cadence", "Single family", "1,675 to 2,114", "Ask for current pricing"],
+            ["Modena II", "Century Communities", "Cadence", "Two-story single family", "1,943 to 2,119", "Ask for current pricing"],
+            ["Opus", "Taylor Morrison", "Cadence", "Two-story single family", "1,856 to 2,779", "Ask for current pricing"],
+            ["Meridian", "Woodside Homes", "Cadence", "Single family", "1,284 to 1,598", "Ask for current pricing"],
+            ["Acacia", "Woodside Homes", "Cadence", "Single family", "1,732 to 2,153", "Ask for current pricing"],
+            ["Ashwood", "Woodside Homes", "Cadence", "Single family", "2,153", "Ask for current pricing"],
+            ["Adair", "Woodside Homes", "Cadence", "Single family", "2,829", "Ask for current pricing"]
+          ],
+          "note": "Starting prices are the lowest published plan price on each builder's own website, checked September 16, 2026. Two come from Cadence builder pages instead: D.R. Horton (page updated January 2, 2026) and Richmond American (page updated May 20, 2026). Prices are base prices before lot premiums, design center choices, and HOA, and they change with every release. \"Ask for current pricing\" means the only price we found was on a Cadence builder page last updated in 2024 or 2025, so we left the old number off. KB Home does not name a master plan for Caspian Bay, and its address is in ZIP 89002. Lennar's Preston Terrace, Preston Pointe, and Serenity Place in Cadence are sold out."
+        }},
+        {"p": "Pulte and Shea communities in Henderson are not in this table because I could not verify their current details. If one of them is on your list, <a href=\"#contact\">ask me</a> and I will pull the latest. Looking at Lake Las Vegas? Those neighborhoods have <a href=\"/lake-las-vegas-new-construction\">their own page</a>."}
+      ]
+    },
+    {
+      "id": "builders",
+      "toc": "Henderson builders",
+      "h2": "Which builders are building in Henderson?",
+      "blocks": [
+        {"lede": "Eleven builders are active in Henderson outside Lake Las Vegas. Lennar and KB Home have the most neighborhoods, and they are the only two building in more than one master plan."},
+        {"builders": {
+          "cards": [
+            {"key": "kb-home", "note": "Nine neighborhoods and the lowest start in Henderson. Five at Meriden from $326,990, Landings and Reserves at Caspian Bay from $399,990, and the last homes at Gardens and Landings at Inspirada."},
+            {"key": "lennar", "note": "Six neighborhoods in the table above. Carlton, Quail Crossings, and Midtown Forte in Cadence from $390,990, Lucere Place and Lucere Square in Inspirada, and Highpointe in Black Mountain Ranch from $355,990."},
+            {"key": "dr-horton", "note": "Five Symmetry neighborhoods in Cadence, from Symmetry Trails II townhomes at $350,990 to Symmetry Summit II homes up to 4,425 square feet from $724,990."},
+            {"key": "woodside", "note": "Four neighborhoods in Cadence: Meridian, Acacia, Ashwood, and Adair. Its Cadence page was last updated in December 2025, so ask for current prices."},
+            {"key": "beazer", "note": "Cantata Point townhomes and Aria Crossing single family homes in Cadence, both with Ready+ Solar. Ask for current prices."},
+            {"key": "century-communities", "note": "Modena I and Modena II in Cadence. Ask for current prices."},
+            {"key": "richmond-american", "note": "Interlude in Cadence, homes from 2,620 to 3,280 square feet from $549,950."},
+            {"key": "taylor-morrison", "note": "Opus in Cadence, two-story homes from 1,856 to 2,779 square feet. Ask for current prices."},
+            {"key": "toll-brothers", "note": "Amiata Collection townhomes in Inspirada from $525,000, with a rooftop deck option. Its Incanta Lago is in Lake Las Vegas."},
+            {"key": "tri-pointe", "note": "Highview townhomes in Inspirada from $509,153, with a private neighborhood pool."},
+            {"key": "christopher", "note": "SkyVu, luxury custom homes in MacDonald Highlands. The sales office is on MacDonald Ranch Drive. Ask for current homes and pricing."}
+          ],
+          "note": "Pulte and Shea communities in Henderson are not listed here because their current details could not be verified. Del Webb's Henderson 55 and better community is in Lake Las Vegas. Blue Heron has also been reported building luxury spec homes in MacDonald Highlands. Want help with any of these? <a href=\"#contact\">Just ask</a>."
+        }}
+      ]
+    }
+  ],
+
+  "listings": {
+    "h2": "New construction homes for sale in Henderson right now",
+    "lede": "These are active MLS listings of newly built homes in Henderson. Some new homes are sold straight from the builder's sales office and may never reach the MLS, so the table above is the fuller picture.",
+    "lofty_filter": "City: Henderson. Exclude the Lake Las Vegas area or subdivisions if Lofty offers that option (Lake Las Vegas has its own page). Year Built: 2025 or newer. Property type: single family, townhouse, condo. Status: active. Sort: newest."
+  },
+
+  "part2_sections": [
+    {
+      "id": "where",
+      "toc": "Where they are building",
+      "h2": "Where in Henderson are new homes going up?",
+      "blocks": [
+        {"lede": "Four master plans carry most of the building: Cadence in the east, Inspirada in the southwest, KB Home's Meriden, and Lennar's Black Mountain Ranch. A few luxury custom homes are also going up in MacDonald Highlands."},
+        {"h3": "Cadence"},
+        {"facts": [
+          ["Size", "2,200 acres, up to 12,250 homes planned plus 1.1 million square feet of commercial space"],
+          ["Where", "east Henderson, off Lake Mead Parkway"],
+          ["Price range", "Cadence says the $300,000s to the $700,000s"],
+          ["Worth knowing", "home sales began in December 2014. Seven builders are listed, the most of any Henderson master plan."]
+        ]},
+        {"h3": "Inspirada"},
+        {"facts": [
+          ["Where", "southwest Henderson, ZIP 89044"],
+          ["Neighborhoods selling", "6, two of them marked Last Chance or Final Opportunity"],
+          ["Price range", "$489,750 at Gardens at Inspirada to $656,990 at Lucere Square"],
+          ["Worth knowing", "the Solista Community Center and Toll Brothers Clubhouse are HOA facilities, and the community hosts weekly events like the Fresh52 Farmers' Market"]
+        ]},
+        {"h3": "Meriden"},
+        {"facts": [
+          ["Opened", "April 10, 2026, a KB Home master plan"],
+          ["Where", "near Galleria Drive and Stephanie Street, with access to I-11 and I-215"],
+          ["Neighborhoods selling", "5: Meadows, Avenues, Liberty, Peaks, and Glades"],
+          ["Price range", "$326,990 at Meadows to $446,990 at Glades"]
+        ]},
+        {"h3": "Black Mountain Ranch, Caspian Bay, and MacDonald Highlands"},
+        {"facts": [
+          ["Black Mountain Ranch", "Lennar marks it Last Chance. Highpointe starts at $355,990."],
+          ["Caspian Bay", "KB Home's Landings and Reserves, ZIP 89002, from $399,990"],
+          ["MacDonald Highlands", "luxury custom homes, including Christopher Homes' SkyVu. Prices not published."]
+        ]},
+        {"p": "If Inspirada is your first choice, read my guide to <a href=\"/blog/inspirada-henderson-last-chance-buildout\">Inspirada's last chance buildout</a>. For Lennar's pocket near Black Mountain, see <a href=\"/blog/black-mountain-ranch-lennar-new-construction\">Black Mountain Ranch by Lennar</a>."}
+      ]
+    },
+    {
+      "id": "prices",
+      "toc": "What it costs",
+      "h2": "What do new homes cost in Henderson?",
+      "blocks": [
+        {"lede": "Published 2026 starting prices run from $326,990 to $724,990 for production homes. Cadence describes its own range as the $300,000s to the $700,000s."},
+        {"table": {
+          "head": ["What you want", "Where to look", "Starts from"],
+          "rows": [
+            ["A townhome", "Meadows and Avenues at Meriden, Symmetry Trails II, Highview, Amiata", "$326,990"],
+            ["A detached home under $400,000", "Liberty and Peaks at Meriden, Carlton, Quail Crossings, Landings at Caspian Bay", "$358,990"],
+            ["A single-story plan", "Carlton in Cadence, Symmetry Manor in Cadence", "$390,990"],
+            ["A home in Inspirada", "Gardens, Landings, Lucere Place, Lucere Square", "$489,750"],
+            ["A large family home", "Symmetry Falls II, Interlude, Lucere Square, Symmetry Summit II", "$520,990"]
+          ],
+          "note": "From builder websites checked September 16, 2026, and Cadence builder pages updated in 2026. Starting prices are the lowest published plan price."
+        }},
+        {"p": "Three things move the price the most. First is the type of home, since a Meriden townhome and a 4,000 square foot Symmetry Summit II home are different products. Second is the master plan. Inspirada's last homes are priced above most of Cadence and Meriden. Third is the lot. KB Home notes that a homesite premium may apply at every Henderson neighborhood, and its prices do not include HOA."},
+        {"p": "At the top of the market, MacDonald Highlands sells hillside custom and spec homes. Those prices are not published the same way, so ask for current homes."}
+      ]
+    },
+    {
+      "id": "monthly-costs",
+      "toc": "HOA, LID, and taxes",
+      "h2": "What will you pay each month on top of the mortgage?",
+      "blocks": [
+        {"lede": "Plan for a master HOA, often a neighborhood HOA, property tax, and in some parts of Henderson a local improvement district payment. Here is what we could confirm."},
+        {"table": {
+          "head": ["Cost", "What it is", "Amount"],
+          "rows": [
+            ["Master HOA", "Cadence and Inspirada each have a master association", "Not published on the official pages we checked, ask the builder"],
+            ["Neighborhood HOA", "Your own neighborhood's association, on top of the master fee", "$191 a month at Highview in Inspirada, others set by each neighborhood"],
+            ["Other assessments", "Cadence says some townhome and condo neighborhoods can have non-HOA assessment fees", "Ask for the exact neighborhood"],
+            ["SID or LID", "A special assessment billed apart from your HOA", "None in Cadence per its FAQ, check the parcel anywhere else"],
+            ["Property tax", "Clark County, with a 3% yearly cap on increases for a primary home", "Based on assessed value"]
+          ],
+          "note": "Cadence details are from the <a href=\"https://cadencenv.com/faqs/\" rel=\"nofollow\">Cadence FAQ</a>, updated June 16, 2026. Highview HOA dues are from Tri Pointe's Highview page, checked September 16, 2026."
+        }},
+        {"p": "The Cadence FAQ is clear that Cadence has no SID or LID fees. You may still read blogs that quote SID or LID ranges for Cadence, but those do not match the master plan's own answer. Other parts of Henderson can be a different story. The City of Henderson bills its LIDs through Assessment Management Group, and a balance can pass to the buyer when a home sells. Before you sign, ask for the LID status on the exact parcel."},
+        {"p": "Cadence's FAQ also says Henderson has the lowest tax rate in the Las Vegas Valley. That is the developer's claim, so check the rate on your parcel with the county."}
+      ]
+    },
+    {
+      "id": "schools",
+      "toc": "Schools",
+      "h2": "Which schools serve the new Henderson neighborhoods?",
+      "blocks": [
+        {"lede": "Builders list these schools for their neighborhoods. We have not checked them against CCSD's zoning search, so treat them as a starting point."},
+        {"table": {
+          "head": ["Where the home is", "Elementary", "Middle", "High"],
+          "rows": [
+            ["Inspirada (KB Home Gardens and Landings)", "Robert and Sandy Ellis, and Wallin", "Del E. Webb", "Liberty"],
+            ["Inspirada (Tri Pointe Highview)", "Robert and Sandy Ellis", "Del E. Webb", "Liberty"],
+            ["Meriden (KB Home)", "Jim Thorpe, and Harriet A. Treem", "Francis H. Cortney", "Not listed by builder"],
+            ["Caspian Bay (KB Home)", "Fay Galloway", "Jack and Terry Mannion", "Foothill"]
+          ],
+          "note": "Schools the builder lists for this neighborhood, confirm with the <a href=\"https://ccsd.net/schools/zoning/\" rel=\"nofollow\">CCSD zoning search</a>. Builder lists are not CCSD verified, and zones change. Cadence zoned schools are left out because we could not confirm them."
+        }},
+        {"p": "Cadence's own school page lists choice options near the community: Coral Academy of Science Las Vegas, which opened a Pre-K to 12 charter campus in Cadence for the 2022 to 2023 school year, plus Pinecrest Academy, Legacy Traditional School, and Lake Mead Christian Academy. For a closer look at zones, see <a href=\"/blog/best-school-zones-henderson-new-construction\">school zones for Henderson new construction</a>."}
+      ]
+    },
+    {
+      "id": "location",
+      "toc": "Location and nearby",
+      "h2": "Where are the new Henderson neighborhoods, and what is close by?",
+      "blocks": [
+        {"lede": "All of the neighborhoods on this page are in the City of Henderson. Cadence is on the east side, Inspirada is in the southwest, and Meriden sits near I-11 and I-215."},
+        {"ul": [
+          "<strong>Cadence:</strong> off Lake Mead Parkway. Cadence says it is minutes from Lake Mead National Recreation Area, Harry Reid International Airport, and the Strip.",
+          "<strong>Cadence parks:</strong> a Central Park of nearly 50 acres with two amphitheaters, splash pads, and pickleball, a 100-acre sports park, 10 neighborhood parks, and nearly 450 acres of open space. The Central Park Pool is open May 1 to October 31.",
+          "<strong>Near Cadence:</strong> the Water Street District, Galleria at Sunset, Cowabunga Bay, America First Center, and the Henderson Bird Viewing Preserve.",
+          "<strong>Meriden:</strong> KB Home points to quick access to Interstates 11 and 215.",
+          "<strong>Black Mountain Ranch:</strong> Lennar says Las Vegas is 15 miles away.",
+          "<strong>Inspirada:</strong> the Solista Community Center, the Toll Brothers Clubhouse, and weekly community events."
+        ]},
+        {"p": "Drive times change a lot by time of day. If a commute matters, test it at rush hour before you pick a lot."}
+      ]
+    },
+    {
+      "id": "watch-outs",
+      "toc": "Before you buy",
+      "h2": "What should you know before buying new in Henderson?",
+      "blocks": [
+        {"lede": "Henderson has good choices at many price points, but a few things catch new buyers off guard."},
+        {"ul": [
+          "<strong>Check the price date.</strong> Several Cadence builder pages were last updated in 2024 or 2025. Ask the builder for a dated price sheet.",
+          "<strong>Closeouts move fast.</strong> Inspirada neighborhoods carry Last Chance and Final Opportunity badges, Lennar marks Black Mountain Ranch Last Chance, and three Lennar Cadence neighborhoods are already sold out.",
+          "<strong>Ask about stairs.</strong> Avenues and Peaks at Meriden are three-story plans, and Midtown in Cadence has three-story plans too.",
+          "<strong>Budget for the lot.</strong> KB Home says a homesite premium may apply at every Henderson neighborhood.",
+          "<strong>Get every fee.</strong> Cadence has sub-associations, and some townhome and condo neighborhoods can add non-HOA assessments.",
+          "<strong>Plan the pool.</strong> In Cadence, a backyard pool needs Design Review Committee approval.",
+          "<strong>Know your neighbors.</strong> Cadence includes build-to-rent operators such as American Homes 4 Rent and Elysian Homes.",
+          "<strong>Check the address.</strong> Builder sites label some Lake Las Vegas homes as Henderson. Those are on my separate Lake Las Vegas page."
+        ]}
+      ]
+    },
+    {
+      "id": "your-agent",
+      "toc": "Your own agent",
+      "h2": "Why bring your own agent to a Henderson model home?",
+      "blocks": [
+        {"lede": "The friendly person at the sales desk works for the builder. Their job is to sell that builder's homes at that builder's price."},
+        {"p": "In Henderson you might be comparing a KB Home townhome at Meriden, a D.R. Horton home in Cadence, and a Lennar home in Inspirada, each with different lot premiums, HOAs, and assessments. Having someone on your side who lines those up costs you nothing, because the builder pays the buyer agent commission either way. The one rule: most builders require your agent to be registered on your very first visit. <a href=\"/las-vegas-new-construction#why-ryan\">Here is what having your own agent actually changes</a>."}
+      ]
+    }
+  ],
+
+  "faq": [
+    ["What is the cheapest new construction in Henderson right now?", "Meadows at Meriden by KB Home, with two-story townhomes from $326,990 as of September 16, 2026. The lowest detached homes start in the $350,000s, like Liberty at Meriden from $358,990."],
+    ["Does Cadence have SID or LID fees?", "The Cadence master plan FAQ says there are no SID or LID fees. Some townhome and condo neighborhoods in Cadence can have non-HOA assessment fees, so check each neighborhood."],
+    ["Is Inspirada still building new homes?", "Yes, but it is closing out. KB Home marks its Inspirada neighborhoods Last Chance and Final Opportunity, and Lennar's Lucere Place starts from $578,990."],
+    ["Who builds in Cadence?", "Cadence lists Beazer, Century Communities, D.R. Horton, Lennar, Richmond American, Taylor Morrison, and Woodside. Homes range from 1,300 to 4,425 square feet, including townhomes, duplexes, and one, two, and three-story homes."],
+    ["What is Meriden in Henderson?", "Meriden is a KB Home master plan that opened April 10, 2026, near Galleria Drive and Stephanie Street with access to I-11 and I-215. It has five neighborhoods: Avenues, Glades, Liberty, Meadows, and Peaks."],
+    ["How big is Cadence?", "Cadence covers 2,200 acres and plans up to 12,250 homes plus 1.1 million square feet of commercial space. It has nearly 450 acres of parks and open space, including a Central Park of nearly 50 acres."],
+    ["What schools serve Inspirada new homes?", "Builders list Robert and Sandy Ellis Elementary, Del E. Webb Middle, and Liberty High School for Inspirada. Always confirm the exact address with the <a href=\"https://ccsd.net/schools/zoning/\" rel=\"nofollow\">CCSD zoning search</a>."],
+    ["Are there 55 and better new homes in Henderson?", "Heritage at Cadence by Lennar is an age-qualified neighborhood inside Cadence, so ask for current availability. Del Webb's Henderson 55 and better community is in Lake Las Vegas, covered on my <a href=\"/lake-las-vegas-new-construction\">Lake Las Vegas page</a>."]
+  ],
+
+  "cta": {
+    "h2": "Touring Henderson models soon?",
+    "p": "Let me line up the neighborhoods that fit your budget, with current prices, HOA, and LID facts, before your first visit. There is no cost to you, and I will be registered with the builder from day one."
+  },
+
+  "sources": [
+    ["Cadence FAQ, updated June 16, 2026", "https://cadencenv.com/faqs/"],
+    ["Cadence home page, 2026", "https://cadencenv.com/"],
+    ["Cadence schools, updated March 4, 2026", "https://cadencenv.com/schools/"],
+    ["Cadence, Lennar page, updated June 16, 2026", "https://cadencenv.com/lennar/"],
+    ["Cadence, D.R. Horton page, updated January 2, 2026", "https://cadencenv.com/dr-horton/"],
+    ["Cadence, Richmond American page, updated May 20, 2026", "https://cadencenv.com/richmond-american-homes/"],
+    ["Cadence, Woodside Homes page, updated December 3, 2025", "https://cadencenv.com/woodside-homes/"],
+    ["Cadence, Century Communities page, updated September 30, 2025", "https://cadencenv.com/century-communities/"],
+    ["Cadence, Beazer Homes page, updated February 24, 2025", "https://cadencenv.com/beazer/"],
+    ["Cadence, Taylor Morrison page, updated September 20, 2024", "https://cadencenv.com/taylorm/"],
+    ["Lennar, Henderson new homes, checked September 16, 2026", "https://www.lennar.com/new-homes/nevada/las-vegas/henderson"],
+    ["KB Home, Las Vegas area new homes, checked September 16, 2026", "https://www.kbhome.com/new-homes-las-vegas"],
+    ["KB Home opens Meriden, April 10, 2026", "https://www.stocktitan.net/news/KBH/kb-home-opens-meriden-a-new-master-planned-community-in-a-prime-njsnyyljtegg.html"],
+    ["Toll Brothers, Henderson, checked September 16, 2026", "https://www.tollbrothers.com/luxury-homes/Henderson-NV"],
+    ["Tri Pointe Homes, Highview, checked September 16, 2026", "https://www.tripointehomes.com/nv/las-vegas/highview"],
+    ["Inspirada Community Association", "https://www.inspiradaca.org/"],
+    ["Christopher Homes", "https://www.christopherhomes.com/"],
+    ["Del Webb, Henderson", "https://www.delwebb.com/homes/nevada/las-vegas/henderson"],
+    ["Las Vegas Review-Journal, Blue Heron MacDonald Highlands homes, 2026", "https://www.reviewjournal.com/business/vegas-business/building-las-vegas/luxury-homebuilder-lists-3-new-macdonald-highland-homes-totaling-50m-3618128/"],
+    ["City of Henderson, LID special assessments", "https://www.cityofhenderson.com/government/departments/finance/lid-special-assessment-property-tax/lid-special-assessments"],
+    ["CCSD zoning search", "https://ccsd.net/schools/zoning/"]
+  ]
+}
