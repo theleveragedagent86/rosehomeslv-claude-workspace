@@ -23,11 +23,15 @@ Scored on one thing: does the answer name Ryan Rose or cite rosehomeslv.com.
 
 ## Index check
 
-DuckDuckGo finds older rosehomeslv.com/blog posts, but zero AEO slugs
-(`buyers-agent-summerlin`, `luxury-home-realtor-summerlin`,
-`gated-community-realtor-summerlin`). The new posts were not crawled yet as of
-this date, so nothing here measures the content's quality. It measures that the
-content is too new to have had a chance.
+**Google has already crawled the AEO posts.** A `site:rosehomeslv.com` search
+returns Listing Agent in North Las Vegas, Listing Agent in Henderson, Listing
+Agent in Summerlin, Buyer's Agent in Henderson and Who Pays the Buyer's Agent
+in Las Vegas, one of them crawled 22 hours before this test. DuckDuckGo shows
+none of these slugs, and Perplexity cited none of them, so the gap is those
+engines' own indexes, not Google's.
+
+That makes the zero score more meaningful than a pure "too new" result. The
+pages exist in Google's index and still did not get picked as a source.
 
 ## What the baseline actually shows
 
