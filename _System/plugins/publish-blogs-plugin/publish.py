@@ -35,6 +35,8 @@ def find_blog_files(community_dir, post_filter=None):
     for f in sorted(community_dir.iterdir()):
         if f.suffix != ".html":
             continue
+        if re.search(r"seo[-_]?package|[-_]seo$", f.stem, re.I):
+            continue          # the SEO package itself, not a post
         m = re.match(r'(?:post|blog)-?(\d+)', f.stem)
         if m:
             num = int(m.group(1))
@@ -61,7 +63,7 @@ def find_blog_files(community_dir, post_filter=None):
     if not files:
         n = 0
         for f in sorted(community_dir.iterdir()):
-            if f.suffix == ".html":
+            if f.suffix == ".html" and not re.search(r"seo[-_]?package|[-_]seo$", f.stem, re.I):
                 n += 1
                 if post_filter is None or n in post_filter:
                     files.append((n, f))
@@ -367,9 +369,13 @@ def prepare_posts(community_dir, community_name, post_filter=None):
     for post_num, html_file in blog_files:
         title, body, schema = extract_blog_data(html_file)
         # Slug-named files match their SEO entry by slug; numbered files by number
-        seo = seo_by_slug.get(html_file.stem) or all_seo.get(post_num, {})
+        # Numbered files are postNN-<slug> / NN-<slug>; their SEO entry is keyed
+        # by the bare slug, so try the stem stripped of that prefix too.
+        stem = html_file.stem
+        bare = re.sub(r"^(?:batch\d+-)?(?:post|blog|story|bonus)?-?\d+-", "", stem)
+        seo = seo_by_slug.get(stem) or seo_by_slug.get(bare) or all_seo.get(post_num, {})
         # Schema fields as fallback for missing SEO package data
-        slug = seo.get("slug") or schema.get("slug")
+        slug = seo.get("slug") or schema.get("slug") or bare
         meta_title = seo.get("meta_title") or schema.get("title")
         meta_keywords = seo.get("meta_keywords") or schema.get("meta_keywords")
         meta_description = seo.get("meta_description") or schema.get("meta_description")

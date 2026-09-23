@@ -61,7 +61,11 @@ def build_graph(article):
     """
     article = dict(article)
     article.pop("@context", None)
-    url = (article.get("mainEntityOfPage") or {}).get("@id", "")
+    mep = article.get("mainEntityOfPage")
+    if isinstance(mep, str):          # some files store it as a bare URL
+        mep = {"@id": mep}
+        article["mainEntityOfPage"] = {"@type": "WebPage", "@id": mep["@id"]}
+    url = (mep or {}).get("@id", "")
     if url:
         article["@id"] = f"{url}#article"
     article["author"] = {"@id": PERSON_ID}
@@ -103,14 +107,19 @@ def lists_to_ul(html):
     return re.sub(r"<p>(.*?)</p>", fix, html, flags=re.DOTALL)
 
 
-def prepare(folder, category, post_filter):
+def prepare(folder, category, post_filter, allow_no_schema=False):
     posts = pb.prepare_posts(folder, category, post_filter)
     errors = []
     for p in posts:
         raw = (folder / p["file"]).read_text(encoding="utf-8")
         schema_json, err = ln.extract_schema(raw)
         if err or not schema_json:
-            errors.append(f"{p['file']}: {err or 'no JSON-LD block'}")
+            if not allow_no_schema:
+                errors.append(f"{p['file']}: {err or 'no JSON-LD block'}")
+                continue
+            p["schema"] = ""          # backfill_schema.py builds it from the live post
+            p["body"] = lists_to_ul(JSONLD_RE.sub("", p["body"]).strip())
+            p["label"] = f"Post {p['number']}"
             continue
         p["schema"] = build_graph(json.loads(schema_json))
         # Never ship schema in the body
@@ -138,6 +147,22 @@ def parse_filter(spec):
     return nums
 
 
+def clean_slug(slug):
+    """Some SEO packages write the slug as '/blogs/name'. Lofty stores that
+    verbatim and the post ends up unreachable, so keep only the last segment."""
+    return re.sub(r"^/?blogs?/", "", (slug or "").strip()).strip("/")
+
+
+def trim_keywords(kw, limit=500):
+    """Lofty rejects a save outright (error 601) when seoKeyword runs past 500
+    characters. Cut at a comma so a keyword is never left half-written."""
+    kw = (kw or "").strip()
+    if len(kw) <= limit:
+        return kw
+    cut = kw[:limit]
+    return (cut.rsplit(",", 1)[0] if "," in cut else cut).strip()
+
+
 def api_publish(posts, args):
     """Publish through Lofty's API from any open cms.lofty.com tab: no focus,
     no tab number, nothing to leave alone."""
@@ -147,6 +172,8 @@ def api_publish(posts, args):
         print("Cancelled.")
         return
     print("\nChecking for slugs that already exist in Lofty...")
+    for p in posts:
+        p["slug"] = clean_slug(p["slug"])
     existing = L.find_by_slug([p["slug"] for p in posts])
     if existing:
         print(f"  Already published: {', '.join(sorted(existing))}")
@@ -160,7 +187,7 @@ def api_publish(posts, args):
         print("  None. All slugs are new.")
     print(f"\nPublishing {len(posts)} posts...")
     rows = L.create([{
-        "title": p["title"], "slug": p["slug"], "content": p["body"],
+        "title": p["title"], "slug": clean_slug(p["slug"]), "content": p["body"],
         "seoTitle": p["meta_title"], "seoKeyword": p["meta_keywords"],
         "seoDescription": p["meta_description"], "customSchema": p["schema"],
     } for p in posts], args.category)
@@ -175,6 +202,9 @@ def main():
     ap = argparse.ArgumentParser(description="Publish a slug-named blog folder to Lofty")
     ap.add_argument("folder", help="Folder name under Claude Blogs, e.g. 'AEO Best Choice'")
     ap.add_argument("--posts", help="Post numbers from the preview list: '1-10' or '1,5,8'")
+    ap.add_argument("--slugs", nargs="+", help="Only these slugs")
+    ap.add_argument("--allow-no-schema", action="store_true",
+                    help="Publish files that have no JSON-LD; backfill_schema.py fills it after")
     ap.add_argument("--category", default="Las Vegas Real Estate")
     ap.add_argument("--ui", action="store_true",
                     help="Old way: drive the editor on a focused Chrome tab (needs --tab)")
@@ -191,7 +221,12 @@ def main():
         sys.exit(1)
     ln.TAB = f"tab {args.tab}"
 
-    posts = prepare(folder, args.category, parse_filter(args.posts))
+    posts = prepare(folder, args.category, parse_filter(args.posts), args.allow_no_schema)
+    if args.slugs:
+        want = set(args.slugs)
+        posts = [p for p in posts if p["slug"] in want]
+        for s in sorted(want - {p["slug"] for p in posts}):
+            print(f"  [!!] slug not found in folder: {s}")
     print(f"\nFound {len(posts)} posts in {args.folder} (category: {args.category}):")
     for p in posts:
         print(f"  {p['label']}: {p['title'][:60]}")
