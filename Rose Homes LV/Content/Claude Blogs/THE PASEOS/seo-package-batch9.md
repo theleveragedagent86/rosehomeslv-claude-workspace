@@ -55,7 +55,7 @@
 - **Slug:** golf-courses-near-paseos-summerlin
 - **Category:** Attractions
 - **SEO Title:** Golf Courses Near The Paseos Summerlin (38 chars)
-- **Meta Description:** Four top golf courses near The Paseos in Summerlin including TPC Summerlin, TPC Las Vegas, Angel Park, and Bear's Best. Public and private options. (146 chars)
-- **Keywords:** golf courses near The Paseos, Summerlin golf courses, TPC Summerlin, TPC Las Vegas, Angel Park Golf Club, Bear's Best Las Vegas, public golf Summerlin, private golf Summerlin, golf near Paseos Summerlin, Jack Nicklaus golf Las Vegas, PGA TOUR Summerlin, Shriners Open golf, golf communities Las Vegas, 89138 golf courses, best golf Las Vegas, Summerlin West golf, golf homes Summerlin, Bobby Weed golf course, Ryan Rose Las Vegas realtor, Rose Homes LV
+- **Meta Description:** Golf near The Paseos in Summerlin: TPC Summerlin, TPC Las Vegas, and Angel Park, plus Bear's Best, now closed and becoming private Amara. (135 chars)
+- **Keywords:** golf courses near The Paseos, Summerlin golf courses, TPC Summerlin, TPC Las Vegas, Angel Park Golf Club, Bear's Best Las Vegas closed, Amara Golf Club The Ridges, public golf Summerlin, private golf Summerlin, golf near Paseos Summerlin, Jack Nicklaus golf Las Vegas, PGA TOUR Summerlin, Shriners Open golf, 89138 golf courses, best golf Las Vegas, Summerlin West golf, golf homes Summerlin, Bobby Weed golf course, Ryan Rose Las Vegas realtor, Rose Homes LV
 - **Schema Date:** 2026-03-07
 - **Internal Links Used:** tpc-summerlin-near-paseos, paseos-summerlin-village-guide, paseos-home-prices-2026

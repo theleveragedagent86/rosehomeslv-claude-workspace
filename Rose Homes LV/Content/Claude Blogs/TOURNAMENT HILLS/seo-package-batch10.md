@@ -6,7 +6,7 @@
 - **Meta Title:** Tournament Hills vs The Ridges Summerlin | Ryan Rose
 - **Meta Description:** Compare Tournament Hills and The Ridges in Summerlin on price, lot size, architecture, and golf access. See which guard gated community fits your lifestyle.
 - **Primary Keyword:** Tournament Hills vs The Ridges Summerlin
-- **Secondary Keywords:** Summerlin luxury communities comparison, The Ridges homes, guard gated Summerlin, TPC Summerlin vs Bear's Best
+- **Secondary Keywords:** Summerlin luxury communities comparison, The Ridges homes, guard gated Summerlin, TPC Summerlin vs Amara Golf Club
 - **URL:** https://www.rosehomeslv.com/blog/tournament-hills-vs-the-ridges
 - **Internal Links Used:** tournament-hills-luxury-homes, best-luxury-neighborhoods-summerlin, tournament-hills-vs-canyon-fairways
 

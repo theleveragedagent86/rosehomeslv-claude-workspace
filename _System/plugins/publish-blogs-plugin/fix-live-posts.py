@@ -136,7 +136,10 @@ def gather(folder, mode, post_filter, slug_filter):
             posts.append({"number": i, "file": f.name, "slug": slug_for(f), "title": title,
                           "schema": schema})
     else:
-        posts = aeo.prepare(folder, "unused", None)
+        # Pass the number filter down: prepare() validates every file it loads
+        # and exits on the first one missing JSON-LD, so a folder with a few
+        # unpublishable legacy files would otherwise block fixing any post in it.
+        posts = aeo.prepare(folder, "unused", post_filter)
     if post_filter:
         posts = [p for p in posts if p["number"] in post_filter]
     if slug_filter:

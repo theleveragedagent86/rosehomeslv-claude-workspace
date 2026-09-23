@@ -60,6 +60,14 @@ def find_blog_files(community_dir, post_filter=None):
     # Slug-named files (e.g. AEO folders: buyers-agent-henderson-nv.html) have no
     # post number. Number them 1..N in alphabetical order so --posts still works;
     # prepare_posts matches their SEO data by slug instead of by number.
+    # A slug can start with a number too (55-plus-community-realtor-summerlin),
+    # so a handful of "numbered" hits in a slug-named folder is a false match.
+    # If most files did not parse as numbered, treat the whole folder as slugs.
+    total = sum(1 for f in community_dir.iterdir()
+                if f.suffix == ".html"
+                and not re.search(r"seo[-_]?package|[-_]seo$", f.stem, re.I))
+    if files and post_filter is None and len(files) < total / 2:
+        files = []
     if not files:
         n = 0
         for f in sorted(community_dir.iterdir()):

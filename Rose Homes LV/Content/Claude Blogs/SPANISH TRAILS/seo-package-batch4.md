@@ -60,7 +60,7 @@ spanish-trail-membership-cost
 
 **Meta Description:** The best golf course communities in Las Vegas include Spanish Trail, Southern Highlands, Red Rock Country Club, TPC Las Vegas, and more. Full comparison guide.
 
-**Keywords:** best golf course communities Las Vegas, golf communities Las Vegas, Spanish Trail golf, Southern Highlands golf, Red Rock Country Club, TPC Las Vegas, Bear's Best Las Vegas, Anthem Country Club, DragonRidge Country Club, Canyon Gate Country Club, Siena Golf Club, Las Vegas Country Club, private golf Las Vegas, golf course homes Las Vegas, Ryan Rose, Rose Homes LV
+**Keywords:** best golf course communities Las Vegas, golf communities Las Vegas, Spanish Trail golf, Southern Highlands golf, Red Rock Country Club, TPC Las Vegas, Amara Golf Club The Ridges, Anthem Country Club, DragonRidge Country Club, Canyon Gate Country Club, Siena Golf Club, Las Vegas Country Club, private golf Las Vegas, golf course homes Las Vegas, Ryan Rose, Rose Homes LV
 
 **Slug:**
 best-golf-course-communities-las-vegas

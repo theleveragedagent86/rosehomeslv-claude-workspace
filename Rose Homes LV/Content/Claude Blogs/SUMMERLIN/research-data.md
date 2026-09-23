@@ -196,7 +196,7 @@ Summerlin has a **two-tier HOA governance system:**
 - Elevated home sites with valley and mountain views
 - Homes typically start over $1 million (many $2M-$10M+)
 - **Club Ridges:** Private 9,000 sq ft facility with full fitness center, resort and lap pools, steam rooms, lighted tennis courts
-- Adjacent to Bear's Best Golf Course (Jack Nicklaus design)
+- Adjacent to the former Bear's Best Golf Course (Jack Nicklaus design), closed to public play June 28, 2025 and being rebuilt as Amara Golf Club at The Ridges, a private members club
 
 ### The Summit Club
 - Ultra-luxury guard-gated community next to The Ridges
@@ -324,7 +324,7 @@ Summerlin has a **two-tier HOA governance system:**
 ### Semi-Private / Public Courses
 | Course | Designer | Notes |
 |--------|----------|-------|
-| Bear's Best Las Vegas | Jack Nicklaus | Premium public; located in The Ridges area |
+| Bear's Best Las Vegas | Jack Nicklaus | CLOSED to public play June 28, 2025; becoming Amara Golf Club at The Ridges, private members club |
 | Angel Park (Mountain Course) | Arnold Palmer | Public; Red Rock foothills with panoramic views |
 | Angel Park (Palm Course) | Arnold Palmer | Public; companion course |
 | Siena Golf Club | Lee Schmidt / Brian Curley | 55+ community course; Italian-themed; 18 holes |

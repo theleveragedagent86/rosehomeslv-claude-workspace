@@ -561,7 +561,7 @@ Source: [bocaparklasvegas.com](https://bocaparklasvegas.com/)
 | **Location** | Northwest LV; Red Rock adjacent | South LV; off I-15 | [genenorthup.com](https://genenorthup.com/blog/how-southern-highlands-compares-to-other-luxury-las-vegas-communities) |
 | **Aesthetic** | Ultra-modern; floor-to-ceiling glass (The Ridges) | Mediterranean/Tuscan-inspired; larger lots | [genenorthup.com](https://genenorthup.com/blog/how-southern-highlands-compares-to-other-luxury-las-vegas-communities) |
 | **Strip/Airport Access** | 20-35 min to Strip; 25-35 min to airport | Better proximity; direct I-15 access | [genenorthup.com](https://genenorthup.com/blog/how-southern-highlands-compares-to-other-luxury-las-vegas-communities) |
-| **Golf** | TPC Summerlin (PGA Tour); Bear's Best; Angel Park | Southern Highlands Golf Club (private championship) | Multiple |
+| **Golf** | TPC Summerlin (PGA Tour); Angel Park; former Bear's Best now private Amara Golf Club | Southern Highlands Golf Club (private championship) | Multiple |
 | **Pricing** | Similar at comparable quality levels | $450K townhomes to multi-million estates | [genenorthup.com](https://genenorthup.com/blog/how-southern-highlands-compares-to-other-luxury-las-vegas-communities) |
 | **Red Rock Canyon** | 10-20 min | 30-40 min | Multiple |
 | **Character** | Active; many commercial developments; high visibility | Quieter; less through-traffic; luxury without spotlight | [genenorthup.com](https://genenorthup.com/blog/how-southern-highlands-compares-to-other-luxury-las-vegas-communities) |

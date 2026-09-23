@@ -33,13 +33,13 @@ ridgebrook-summerlin-south-hoa-association
 ### Post 33: Golf Courses Near Ridgebrook Las Vegas
 
 **SEO Title** (max 60 chars):
-Golf Courses Near Ridgebrook Las Vegas | 4 Options
+Golf Courses Near Ridgebrook Las Vegas | 3 Options
 
 **Meta Description** (max 150 chars):
-Four golf courses near Ridgebrook in Summerlin including Arroyo Golf Club, Siena Golf Club, Red Rock Country Club, and Bear's Best Las Vegas.
+Three golf courses near Ridgebrook in Summerlin including Arroyo Golf Club, Siena Golf Club, and Red Rock Country Club, plus private Amara Golf Club.
 
 **Keywords** (max 500 chars, comma-separated):
-golf courses near Ridgebrook, Ridgebrook golf Las Vegas, Arroyo Golf Club Summerlin, Siena Golf Club Las Vegas, Red Rock Country Club golf, Bear's Best Las Vegas, Ridgebrook Summerlin golf, golf near 89135, Summerlin golf courses, public golf Summerlin, private golf Summerlin Las Vegas, Arnold Palmer golf Las Vegas, golf communities Summerlin, Las Vegas golf near Ridgebrook, Ridgebrook golfer neighborhood
+golf courses near Ridgebrook, Ridgebrook golf Las Vegas, Arroyo Golf Club Summerlin, Siena Golf Club Las Vegas, Red Rock Country Club golf, Amara Golf Club The Ridges, Ridgebrook Summerlin golf, golf near 89135, Summerlin golf courses, public golf Summerlin, private golf Summerlin Las Vegas, Arnold Palmer golf Las Vegas, golf communities Summerlin, Las Vegas golf near Ridgebrook, Ridgebrook golfer neighborhood
 
 **Slug**:
 golf-courses-near-ridgebrook

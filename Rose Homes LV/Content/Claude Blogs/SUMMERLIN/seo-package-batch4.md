@@ -11,7 +11,7 @@ The Ridges Summerlin: Ultra-Luxury Guide | Ryan Rose
 Guide to The Ridges in Summerlin. Explore custom estates from $1M to $10M+, Club Ridges amenities, views, and what makes this community ultra-luxury.
 
 **Keywords** (max 500 chars, comma-separated):
-The Ridges Summerlin, Ridges luxury homes, Summerlin ultra luxury, guard gated Summerlin, Club Ridges amenities, Bear's Best Golf Summerlin, custom estates Summerlin, The Ridges home prices, Summerlin luxury real estate, Las Vegas luxury homes, The Ridges Las Vegas, Ridges Summerlin views, luxury guard gated Las Vegas, contemporary homes Summerlin, Summerlin custom homes, The Ridges community, Ridges homes for sale, Summerlin million dollar homes
+The Ridges Summerlin, Ridges luxury homes, Summerlin ultra luxury, guard gated Summerlin, Club Ridges amenities, Amara Golf Club The Ridges, custom estates Summerlin, The Ridges home prices, Summerlin luxury real estate, Las Vegas luxury homes, The Ridges Las Vegas, Ridges Summerlin views, luxury guard gated Las Vegas, contemporary homes Summerlin, Summerlin custom homes, The Ridges community, Ridges homes for sale, Summerlin million dollar homes
 
 **Slug**:
 the-ridges-summerlin-luxury-guide

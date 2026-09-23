@@ -55,7 +55,7 @@ Best Golf Course Communities in Las Vegas | Ryan Rose
 Compare the best golf course communities in Las Vegas including Rhodes Ranch, Southern Highlands, Red Rock Country Club, TPC Summerlin, and more.
 
 **Keywords** (max 500 chars, comma-separated):
-best golf communities Las Vegas, golf course communities Las Vegas, Rhodes Ranch golf community, Southern Highlands golf, Red Rock Country Club Las Vegas, TPC Summerlin homes, DragonRidge Country Club, Anthem Country Club Las Vegas, Canyon Gate Country Club, Bear's Best Las Vegas, affordable golf community Las Vegas, guard gated golf Las Vegas, Las Vegas golf neighborhoods comparison, Rhodes Ranch 89148, Ryan Rose, Rose Homes LV
+best golf communities Las Vegas, golf course communities Las Vegas, Rhodes Ranch golf community, Southern Highlands golf, Red Rock Country Club Las Vegas, TPC Summerlin homes, DragonRidge Country Club, Anthem Country Club Las Vegas, Canyon Gate Country Club, Amara Golf Club The Ridges, affordable golf community Las Vegas, guard gated golf Las Vegas, Las Vegas golf neighborhoods comparison, Rhodes Ranch 89148, Ryan Rose, Rose Homes LV
 
 **Slug**:
 best-golf-communities-las-vegas-rhodes-ranch

@@ -32,4 +32,15 @@ plugins/
   `--ui` = old tab-4 editor method. The local-news `_dist` zip bundles a copy of
   lofty_api.py; in the workspace those two load it from `../publish-blogs-plugin/`.
 
+**AEO price refresh chain (added 2026-09-23), all in `publish-blogs-plugin/`:**
+- `market-stats.py <csv>` = turns Ryan's MLS "Agent Single Line" sold export into dated
+  per-area stats (median, middle half, $/sq ft, DOM, property-type split) in
+  `Rose Homes LV/Content/Research/market-stats/`. Areas are zip-code groupings.
+- `apply-market-stats.py` = rewrites the generated "## What Homes Are Selling For in <Area>"
+  section in all 184 AEO posts from `market-stats-latest.json`. Idempotent, replaces rather
+  than appends, and skips the 6 Nevada-law posts where price is irrelevant.
+- `refresh-market-stats.py` = the driver: newest export -> stats -> posts -> Lofty ->
+  schema backfill. Refuses an export older than 21 days. `--dry-run` stops before publishing.
+  Run on the 1st and 15th by the `aeo-market-stats-refresh` scheduled task.
+
 **Maintenance rule:** When you add/remove a plugin, update this map. When you edit a plugin, re-zip to `../_dist/` and sync the running copy in `~/.claude/` if the change should go live. Never leave the map stale.

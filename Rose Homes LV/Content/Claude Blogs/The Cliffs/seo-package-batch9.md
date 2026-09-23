@@ -20,10 +20,10 @@ tpc-summerlin-golf-near-cliffs
 Bear's Best Golf Near The Cliffs | Jack Nicklaus Design
 
 **Meta Description** (max 150 chars):
-Bear's Best Las Vegas is a Jack Nicklaus designed golf course in Summerlin's Ridges area, featuring 18 recreated signature holes near The Cliffs.
+Bear's Best Las Vegas closed to public play in June 2025 and is becoming Amara Golf Club at The Ridges, a private club near The Cliffs.
 
 **Keywords** (max 500 chars, comma-separated):
-Bear's Best Las Vegas golf, Bear's Best near The Cliffs, Jack Nicklaus golf course Las Vegas, golf courses Summerlin NV, The Ridges golf Summerlin, Bear's Best signature holes, best golf courses Las Vegas 2026, Nicklaus design golf Las Vegas, golf homes Summerlin, Cliffs Summerlin golf access, luxury golf community Las Vegas, Bear's Best Las Vegas tee times, desert golf courses Las Vegas, Summerlin golf courses near homes, golf lifestyle Summerlin, guard gated golf community Summerlin, homes near Bear's Best Las Vegas, Las Vegas golf real estate 2026
+Bear's Best Las Vegas closed, Bear's Best near The Cliffs, Amara Golf Club The Ridges, Jack Nicklaus golf course Las Vegas, golf courses Summerlin NV, The Ridges golf Summerlin, Bear's Best signature holes, Bear's Best private club, Nicklaus design golf Las Vegas, golf homes Summerlin, Cliffs Summerlin golf access, luxury golf community Las Vegas, Mulligan Holdings Bear's Best, Summerlin golf courses near homes, homes near Bear's Best Las Vegas, Las Vegas golf real estate 2026
 
 **Slug**:
 bears-best-golf-near-cliffs

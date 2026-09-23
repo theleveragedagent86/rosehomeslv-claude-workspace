@@ -14,7 +14,7 @@
 **Secondary Keywords:** Summerlin golf courses ranked, best golf courses Las Vegas, Summerlin golf community, golf in Summerlin NV, Summerlin golf course homes
 
 **Meta Title:** Golf Courses in Summerlin: All 10 Courses Ranked (2026)
-**Meta Description:** Summerlin features 10 golf courses from private PGA TOUR venues to public Nicklaus and Palmer designs. Complete ranking of every course for 2026.
+**Meta Description:** Summerlin features 10 golf courses from private PGA TOUR venues to public Arnold Palmer designs. Complete ranking of every course for 2026.
 
 **Internal Links Used:**
 - /blog/tpc-summerlin-pga-tour-guide
@@ -47,10 +47,10 @@
 **Category:** Parks & Recreation
 
 **Primary Keyword:** Bear's Best Las Vegas
-**Secondary Keywords:** Bear's Best golf Summerlin, Jack Nicklaus golf Las Vegas, public golf courses Summerlin, Bear's Best tee times, Nicklaus design Las Vegas
+**Secondary Keywords:** Bear's Best closed, Amara Golf Club The Ridges, Bear's Best golf Summerlin, Jack Nicklaus golf Las Vegas, private golf club Summerlin
 
 **Meta Title:** Bear's Best Golf Club Summerlin: Nicklaus Design (2026)
-**Meta Description:** Bear's Best Las Vegas is a Jack Nicklaus designed public course in Summerlin recreating 18 of his most famous holes. Tee times, rates, and nearby homes.
+**Meta Description:** Bear's Best Las Vegas closed to public play in June 2025 and is becoming Amara Golf Club at The Ridges, a private club. What it means for homes.
 
 **Internal Links Used:**
 - /blog/golf-courses-summerlin-ranked

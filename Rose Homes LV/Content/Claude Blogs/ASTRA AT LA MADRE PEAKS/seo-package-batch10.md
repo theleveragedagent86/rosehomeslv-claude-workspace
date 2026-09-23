@@ -7,7 +7,7 @@ Astra vs The Ridges Summerlin | Luxury Home Comparison
 Compare Astra at La Madre Peaks and The Ridges in Summerlin including lot sizes, home prices, elevation, and amenities for luxury buyers.
 
 **Keywords** (max 500 chars):
-Astra vs The Ridges Summerlin, Astra at La Madre Peaks comparison, The Ridges Summerlin luxury homes, Summerlin guard gated communities, luxury homes Summerlin comparison, Astra lot sizes vs Ridges, custom homes Summerlin, Las Vegas luxury real estate, Summerlin elevation views, Howard Hughes Astra, Bear's Best Golf Course Ridges, Summerlin custom estates, guard gated Summerlin communities, La Madre Peaks vs Ridges, luxury lot prices Summerlin 2026
+Astra vs The Ridges Summerlin, Astra at La Madre Peaks comparison, The Ridges Summerlin luxury homes, Summerlin guard gated communities, luxury homes Summerlin comparison, Astra lot sizes vs Ridges, custom homes Summerlin, Las Vegas luxury real estate, Summerlin elevation views, Howard Hughes Astra, Amara Golf Club Ridges, Summerlin custom estates, guard gated Summerlin communities, La Madre Peaks vs Ridges, luxury lot prices Summerlin 2026
 
 **Slug**:
 astra-vs-ridges-summerlin

@@ -1,0 +1,1574 @@
+{
+  "source": "Las Vegas MLS closed sales export (Agent Single Line)",
+  "pulled": "2026-09-23",
+  "window_start": "2026-07-25",
+  "window_end": "2026-09-23",
+  "window_text": "July 25, 2026 through September 23, 2026",
+  "total_sales": 4106,
+  "areas": {
+    "Las Vegas (valley wide)": {
+      "count": 4106,
+      "median": 440000,
+      "low": 74000,
+      "high": 17250000,
+      "p25": 359976,
+      "p75": 573488,
+      "median_ppsf": 250,
+      "median_dom": 28,
+      "by_type": {
+        "single family": {
+          "count": 3245,
+          "median": 480000
+        },
+        "townhome": {
+          "count": 465,
+          "median": 340000
+        },
+        "condo": {
+          "count": 359,
+          "median": 216000
+        }
+      },
+      "zips": "all"
+    },
+    "Summerlin": {
+      "count": 446,
+      "median": 610000,
+      "low": 162500,
+      "high": 11000000,
+      "p25": 436375,
+      "p75": 978500,
+      "median_ppsf": 315,
+      "median_dom": 32,
+      "by_type": {
+        "single family": {
+          "count": 356,
+          "median": 679750
+        },
+        "townhome": {
+          "count": 57,
+          "median": 420000
+        },
+        "condo": {
+          "count": 33,
+          "median": 288500
+        }
+      },
+      "zips": [
+        "89134",
+        "89135",
+        "89138",
+        "89144",
+        "89145"
+      ]
+    },
+    "Summerlin West": {
+      "count": 238,
+      "median": 588750,
+      "low": 215000,
+      "high": 2575000,
+      "p25": 499250,
+      "p75": 812250,
+      "median_ppsf": 283,
+      "median_dom": 36,
+      "by_type": {
+        "single family": {
+          "count": 214,
+          "median": 602500
+        },
+        "townhome": {
+          "count": 19,
+          "median": 529000
+        },
+        "condo": {
+          "count": 5,
+          "median": 230000
+        }
+      },
+      "zips": [
+        "89138",
+        "89166"
+      ]
+    },
+    "Henderson": {
+      "count": 870,
+      "median": 485000,
+      "low": 115000,
+      "high": 17250000,
+      "p25": 385000,
+      "p75": 630000,
+      "median_ppsf": 258,
+      "median_dom": 35,
+      "by_type": {
+        "single family": {
+          "count": 692,
+          "median": 523745
+        },
+        "townhome": {
+          "count": 125,
+          "median": 350000
+        },
+        "condo": {
+          "count": 48,
+          "median": 271500
+        }
+      },
+      "zips": [
+        "89002",
+        "89011",
+        "89012",
+        "89014",
+        "89015",
+        "89044",
+        "89052",
+        "89074"
+      ]
+    },
+    "Green Valley (Henderson)": {
+      "count": 228,
+      "median": 492250,
+      "low": 163000,
+      "high": 17250000,
+      "p25": 387500,
+      "p75": 649750,
+      "median_ppsf": 273,
+      "median_dom": 36,
+      "by_type": {
+        "single family": {
+          "count": 176,
+          "median": 535000
+        },
+        "townhome": {
+          "count": 26,
+          "median": 347500
+        },
+        "condo": {
+          "count": 26,
+          "median": 247000
+        }
+      },
+      "zips": [
+        "89012",
+        "89014",
+        "89074"
+      ]
+    },
+    "Seven Hills / Anthem (Henderson 89052)": {
+      "count": 128,
+      "median": 600750,
+      "low": 202500,
+      "high": 5950000,
+      "p25": 412175,
+      "p75": 786250,
+      "median_ppsf": 285,
+      "median_dom": 39,
+      "by_type": {
+        "single family": {
+          "count": 108,
+          "median": 645000
+        },
+        "condo": {
+          "count": 16,
+          "median": 295000
+        }
+      },
+      "zips": [
+        "89052"
+      ]
+    },
+    "Inspirada (Henderson)": {
+      "count": 156,
+      "median": 532375,
+      "low": 345000,
+      "high": 1440000,
+      "p25": 452750,
+      "p75": 659000,
+      "median_ppsf": 262,
+      "median_dom": 38,
+      "by_type": {
+        "single family": {
+          "count": 140,
+          "median": 545000
+        },
+        "townhome": {
+          "count": 16,
+          "median": 412500
+        }
+      },
+      "zips": [
+        "89044"
+      ]
+    },
+    "North Las Vegas": {
+      "count": 500,
+      "median": 415000,
+      "low": 90000,
+      "high": 848000,
+      "p25": 365000,
+      "p75": 477250,
+      "median_ppsf": 231,
+      "median_dom": 20,
+      "by_type": {
+        "single family": {
+          "count": 437,
+          "median": 428000
+        },
+        "townhome": {
+          "count": 55,
+          "median": 330000
+        },
+        "condo": {
+          "count": 8,
+          "median": 232500
+        }
+      },
+      "zips": [
+        "89030",
+        "89031",
+        "89032",
+        "89081",
+        "89084",
+        "89086"
+      ]
+    },
+    "Aliante (North Las Vegas)": {
+      "count": 175,
+      "median": 456990,
+      "low": 210000,
+      "high": 765000,
+      "p25": 370000,
+      "p75": 530000,
+      "median_ppsf": 232,
+      "median_dom": 24,
+      "by_type": {
+        "single family": {
+          "count": 145,
+          "median": 475000
+        },
+        "townhome": {
+          "count": 27,
+          "median": 329000
+        }
+      },
+      "zips": [
+        "89084",
+        "89086"
+      ]
+    },
+    "Centennial Hills": {
+      "count": 240,
+      "median": 547500,
+      "low": 155000,
+      "high": 4250000,
+      "p25": 401250,
+      "p75": 703500,
+      "median_ppsf": 247,
+      "median_dom": 26,
+      "by_type": {
+        "single family": {
+          "count": 216,
+          "median": 580500
+        },
+        "townhome": {
+          "count": 15,
+          "median": 345000
+        },
+        "condo": {
+          "count": 9,
+          "median": 260000
+        }
+      },
+      "zips": [
+        "89131",
+        "89143",
+        "89149"
+      ]
+    },
+    "Centennial Hills and Skye Canyon": {
+      "count": 368,
+      "median": 525000,
+      "low": 155000,
+      "high": 4250000,
+      "p25": 422487,
+      "p75": 662250,
+      "median_ppsf": 250,
+      "median_dom": 29,
+      "by_type": {
+        "single family": {
+          "count": 332,
+          "median": 544375
+        },
+        "townhome": {
+          "count": 22,
+          "median": 353500
+        },
+        "condo": {
+          "count": 14,
+          "median": 253995
+        }
+      },
+      "zips": [
+        "89131",
+        "89143",
+        "89149",
+        "89166"
+      ]
+    },
+    "Skye Canyon / Summerlin North (89166)": {
+      "count": 128,
+      "median": 510000,
+      "low": 215000,
+      "high": 1015000,
+      "p25": 442875,
+      "p75": 570000,
+      "median_ppsf": 255,
+      "median_dom": 35,
+      "by_type": {
+        "single family": {
+          "count": 116,
+          "median": 525000
+        },
+        "townhome": {
+          "count": 7,
+          "median": 379000
+        },
+        "condo": {
+          "count": 5,
+          "median": 230000
+        }
+      },
+      "zips": [
+        "89166"
+      ]
+    },
+    "Providence (Las Vegas)": {
+      "count": 223,
+      "median": 500000,
+      "low": 155000,
+      "high": 4250000,
+      "p25": 415000,
+      "p75": 619900,
+      "median_ppsf": 249,
+      "median_dom": 30,
+      "by_type": {
+        "single family": {
+          "count": 194,
+          "median": 525000
+        },
+        "townhome": {
+          "count": 17,
+          "median": 350000
+        },
+        "condo": {
+          "count": 12,
+          "median": 253995
+        }
+      },
+      "zips": [
+        "89149",
+        "89166"
+      ]
+    },
+    "Spring Valley": {
+      "count": 375,
+      "median": 475000,
+      "low": 123000,
+      "high": 3030000,
+      "p25": 375000,
+      "p75": 618000,
+      "median_ppsf": 254,
+      "median_dom": 27,
+      "by_type": {
+        "single family": {
+          "count": 284,
+          "median": 532750
+        },
+        "townhome": {
+          "count": 35,
+          "median": 385000
+        },
+        "condo": {
+          "count": 56,
+          "median": 225500
+        }
+      },
+      "zips": [
+        "89113",
+        "89117",
+        "89147",
+        "89148"
+      ]
+    },
+    "Southern Highlands": {
+      "count": 113,
+      "median": 570000,
+      "low": 275000,
+      "high": 6000000,
+      "p25": 479990,
+      "p75": 750000,
+      "median_ppsf": 250,
+      "median_dom": 28,
+      "by_type": {
+        "single family": {
+          "count": 105,
+          "median": 580000
+        },
+        "townhome": {
+          "count": 8,
+          "median": 383500
+        }
+      },
+      "zips": [
+        "89141"
+      ]
+    },
+    "Mountains Edge": {
+      "count": 133,
+      "median": 435000,
+      "low": 275000,
+      "high": 1200000,
+      "p25": 384495,
+      "p75": 541500,
+      "median_ppsf": 246,
+      "median_dom": 27,
+      "by_type": {
+        "single family": {
+          "count": 108,
+          "median": 449995
+        },
+        "townhome": {
+          "count": 24,
+          "median": 349940
+        }
+      },
+      "zips": [
+        "89178",
+        "89179"
+      ]
+    },
+    "Enterprise / southwest": {
+      "count": 415,
+      "median": 490000,
+      "low": 175000,
+      "high": 6000000,
+      "p25": 407000,
+      "p75": 610000,
+      "median_ppsf": 252,
+      "median_dom": 28,
+      "by_type": {
+        "single family": {
+          "count": 343,
+          "median": 525000
+        },
+        "townhome": {
+          "count": 50,
+          "median": 376000
+        },
+        "condo": {
+          "count": 22,
+          "median": 237000
+        }
+      },
+      "zips": [
+        "89113",
+        "89141",
+        "89148",
+        "89178"
+      ]
+    }
+  },
+  "zips": {
+    "89002": {
+      "count": 82,
+      "median": 453500,
+      "low": 195800,
+      "high": 4000000,
+      "p25": 384000,
+      "p75": 551750,
+      "median_ppsf": 247,
+      "median_dom": 32,
+      "by_type": {
+        "single family": {
+          "count": 67,
+          "median": 485000
+        },
+        "townhome": {
+          "count": 15,
+          "median": 312500
+        }
+      }
+    },
+    "89011": {
+      "count": 165,
+      "median": 439990,
+      "low": 145000,
+      "high": 829900,
+      "p25": 355000,
+      "p75": 546975,
+      "median_ppsf": 243,
+      "median_dom": 26,
+      "by_type": {
+        "single family": {
+          "count": 118,
+          "median": 494915
+        },
+        "townhome": {
+          "count": 43,
+          "median": 335000
+        }
+      }
+    },
+    "89012": {
+      "count": 87,
+      "median": 596000,
+      "low": 163000,
+      "high": 17250000,
+      "p25": 456800,
+      "p75": 1059950,
+      "median_ppsf": 294,
+      "median_dom": 39,
+      "by_type": {
+        "single family": {
+          "count": 74,
+          "median": 627500
+        },
+        "townhome": {
+          "count": 8,
+          "median": 385700
+        },
+        "condo": {
+          "count": 5,
+          "median": 360000
+        }
+      }
+    },
+    "89014": {
+      "count": 46,
+      "median": 450000,
+      "low": 170000,
+      "high": 1375000,
+      "p25": 319750,
+      "p75": 507500,
+      "median_ppsf": 232,
+      "median_dom": 42,
+      "by_type": {
+        "single family": {
+          "count": 32,
+          "median": 476500
+        },
+        "townhome": {
+          "count": 5,
+          "median": 320000
+        },
+        "condo": {
+          "count": 9,
+          "median": 212000
+        }
+      }
+    },
+    "89015": {
+      "count": 111,
+      "median": 415000,
+      "low": 115000,
+      "high": 1350000,
+      "p25": 340000,
+      "p75": 520000,
+      "median_ppsf": 245,
+      "median_dom": 34,
+      "by_type": {
+        "single family": {
+          "count": 83,
+          "median": 465000
+        },
+        "townhome": {
+          "count": 21,
+          "median": 353000
+        }
+      }
+    },
+    "89030": {
+      "count": 29,
+      "median": 330000,
+      "low": 90000,
+      "high": 439900,
+      "p25": 299995,
+      "p75": 358500,
+      "median_ppsf": 237,
+      "median_dom": 14,
+      "by_type": {
+        "single family": {
+          "count": 28,
+          "median": 331000
+        }
+      }
+    },
+    "89031": {
+      "count": 155,
+      "median": 415000,
+      "low": 180000,
+      "high": 848000,
+      "p25": 375000,
+      "p75": 457000,
+      "median_ppsf": 239,
+      "median_dom": 19,
+      "by_type": {
+        "single family": {
+          "count": 140,
+          "median": 420000
+        },
+        "townhome": {
+          "count": 13,
+          "median": 330000
+        }
+      }
+    },
+    "89032": {
+      "count": 71,
+      "median": 411900,
+      "low": 202000,
+      "high": 534999,
+      "p25": 365000,
+      "p75": 445000,
+      "median_ppsf": 232,
+      "median_dom": 17,
+      "by_type": {
+        "single family": {
+          "count": 63,
+          "median": 417500
+        },
+        "townhome": {
+          "count": 6,
+          "median": 322500
+        }
+      }
+    },
+    "89044": {
+      "count": 156,
+      "median": 532375,
+      "low": 345000,
+      "high": 1440000,
+      "p25": 452750,
+      "p75": 659000,
+      "median_ppsf": 262,
+      "median_dom": 38,
+      "by_type": {
+        "single family": {
+          "count": 140,
+          "median": 545000
+        },
+        "townhome": {
+          "count": 16,
+          "median": 412500
+        }
+      }
+    },
+    "89052": {
+      "count": 128,
+      "median": 600750,
+      "low": 202500,
+      "high": 5950000,
+      "p25": 412175,
+      "p75": 786250,
+      "median_ppsf": 285,
+      "median_dom": 39,
+      "by_type": {
+        "single family": {
+          "count": 108,
+          "median": 645000
+        },
+        "condo": {
+          "count": 16,
+          "median": 295000
+        }
+      }
+    },
+    "89074": {
+      "count": 95,
+      "median": 465000,
+      "low": 209000,
+      "high": 2800000,
+      "p25": 364900,
+      "p75": 590000,
+      "median_ppsf": 269,
+      "median_dom": 31,
+      "by_type": {
+        "single family": {
+          "count": 70,
+          "median": 523500
+        },
+        "townhome": {
+          "count": 13,
+          "median": 344500
+        },
+        "condo": {
+          "count": 12,
+          "median": 270250
+        }
+      }
+    },
+    "89081": {
+      "count": 70,
+      "median": 407000,
+      "low": 285000,
+      "high": 579900,
+      "p25": 368000,
+      "p75": 451250,
+      "median_ppsf": 214,
+      "median_dom": 22,
+      "by_type": {
+        "single family": {
+          "count": 61,
+          "median": 413250
+        },
+        "townhome": {
+          "count": 8,
+          "median": 335500
+        }
+      }
+    },
+    "89084": {
+      "count": 151,
+      "median": 457990,
+      "low": 210000,
+      "high": 765000,
+      "p25": 375000,
+      "p75": 547990,
+      "median_ppsf": 235,
+      "median_dom": 21,
+      "by_type": {
+        "single family": {
+          "count": 127,
+          "median": 485000
+        },
+        "townhome": {
+          "count": 22,
+          "median": 326995
+        }
+      }
+    },
+    "89086": {
+      "count": 24,
+      "median": 417500,
+      "low": 295000,
+      "high": 575000,
+      "p25": 351000,
+      "p75": 483250,
+      "median_ppsf": 207,
+      "median_dom": 32,
+      "by_type": {
+        "single family": {
+          "count": 18,
+          "median": 465000
+        },
+        "townhome": {
+          "count": 5,
+          "median": 343000
+        }
+      }
+    },
+    "89101": {
+      "count": 19,
+      "median": 300000,
+      "low": 129000,
+      "high": 430000,
+      "p25": 235000,
+      "p75": 366000,
+      "median_ppsf": 198,
+      "median_dom": 29,
+      "by_type": {
+        "single family": {
+          "count": 15,
+          "median": 299000
+        }
+      }
+    },
+    "89102": {
+      "count": 27,
+      "median": 400000,
+      "low": 110000,
+      "high": 950000,
+      "p25": 340000,
+      "p75": 505000,
+      "median_ppsf": 267,
+      "median_dom": 14,
+      "by_type": {
+        "single family": {
+          "count": 22,
+          "median": 422500
+        }
+      }
+    },
+    "89103": {
+      "count": 49,
+      "median": 255000,
+      "low": 110000,
+      "high": 608999,
+      "p25": 179250,
+      "p75": 369000,
+      "median_ppsf": 224,
+      "median_dom": 23,
+      "by_type": {
+        "single family": {
+          "count": 15,
+          "median": 435000
+        },
+        "townhome": {
+          "count": 9,
+          "median": 345000
+        },
+        "condo": {
+          "count": 22,
+          "median": 175750
+        }
+      }
+    },
+    "89104": {
+      "count": 33,
+      "median": 375000,
+      "low": 127000,
+      "high": 575000,
+      "p25": 312500,
+      "p75": 422500,
+      "median_ppsf": 254,
+      "median_dom": 14,
+      "by_type": {
+        "single family": {
+          "count": 29,
+          "median": 389900
+        }
+      }
+    },
+    "89106": {
+      "count": 28,
+      "median": 357492,
+      "low": 200000,
+      "high": 425000,
+      "p25": 308750,
+      "p75": 375000,
+      "median_ppsf": 252,
+      "median_dom": 16,
+      "by_type": {
+        "single family": {
+          "count": 24,
+          "median": 359988
+        }
+      }
+    },
+    "89107": {
+      "count": 61,
+      "median": 345000,
+      "low": 115000,
+      "high": 3150000,
+      "p25": 270000,
+      "p75": 408000,
+      "median_ppsf": 238,
+      "median_dom": 21,
+      "by_type": {
+        "single family": {
+          "count": 40,
+          "median": 377750
+        },
+        "townhome": {
+          "count": 17,
+          "median": 305000
+        }
+      }
+    },
+    "89108": {
+      "count": 100,
+      "median": 367450,
+      "low": 144000,
+      "high": 870000,
+      "p25": 278625,
+      "p75": 408742,
+      "median_ppsf": 242,
+      "median_dom": 20,
+      "by_type": {
+        "single family": {
+          "count": 70,
+          "median": 392500
+        },
+        "townhome": {
+          "count": 9,
+          "median": 245000
+        },
+        "condo": {
+          "count": 21,
+          "median": 210000
+        }
+      }
+    },
+    "89110": {
+      "count": 66,
+      "median": 386995,
+      "low": 115000,
+      "high": 815000,
+      "p25": 332500,
+      "p75": 459000,
+      "median_ppsf": 230,
+      "median_dom": 29,
+      "by_type": {
+        "single family": {
+          "count": 50,
+          "median": 405000
+        },
+        "townhome": {
+          "count": 10,
+          "median": 335000
+        }
+      }
+    },
+    "89113": {
+      "count": 84,
+      "median": 544750,
+      "low": 175000,
+      "high": 3030000,
+      "p25": 428625,
+      "p75": 689750,
+      "median_ppsf": 261,
+      "median_dom": 33,
+      "by_type": {
+        "single family": {
+          "count": 67,
+          "median": 573000
+        },
+        "townhome": {
+          "count": 5,
+          "median": 515000
+        },
+        "condo": {
+          "count": 12,
+          "median": 236500
+        }
+      }
+    },
+    "89115": {
+      "count": 50,
+      "median": 345000,
+      "low": 100000,
+      "high": 450000,
+      "p25": 263750,
+      "p75": 376250,
+      "median_ppsf": 224,
+      "median_dom": 20,
+      "by_type": {
+        "single family": {
+          "count": 37,
+          "median": 355000
+        },
+        "condo": {
+          "count": 6,
+          "median": 132500
+        }
+      }
+    },
+    "89117": {
+      "count": 107,
+      "median": 555000,
+      "low": 123000,
+      "high": 2100000,
+      "p25": 359900,
+      "p75": 749900,
+      "median_ppsf": 255,
+      "median_dom": 23,
+      "by_type": {
+        "single family": {
+          "count": 80,
+          "median": 647000
+        },
+        "townhome": {
+          "count": 6,
+          "median": 355000
+        },
+        "condo": {
+          "count": 21,
+          "median": 205000
+        }
+      }
+    },
+    "89118": {
+      "count": 41,
+      "median": 344000,
+      "low": 140000,
+      "high": 1083000,
+      "p25": 242500,
+      "p75": 482500,
+      "median_ppsf": 238,
+      "median_dom": 36,
+      "by_type": {
+        "single family": {
+          "count": 19,
+          "median": 460000
+        },
+        "townhome": {
+          "count": 7,
+          "median": 370000
+        },
+        "condo": {
+          "count": 15,
+          "median": 239000
+        }
+      }
+    },
+    "89119": {
+      "count": 38,
+      "median": 375000,
+      "low": 74000,
+      "high": 625000,
+      "p25": 192500,
+      "p75": 436375,
+      "median_ppsf": 229,
+      "median_dom": 28,
+      "by_type": {
+        "single family": {
+          "count": 25,
+          "median": 420000
+        },
+        "condo": {
+          "count": 10,
+          "median": 160000
+        }
+      }
+    },
+    "89120": {
+      "count": 44,
+      "median": 407500,
+      "low": 120000,
+      "high": 3050000,
+      "p25": 305500,
+      "p75": 502500,
+      "median_ppsf": 223,
+      "median_dom": 22,
+      "by_type": {
+        "single family": {
+          "count": 33,
+          "median": 430000
+        },
+        "condo": {
+          "count": 7,
+          "median": 155000
+        }
+      }
+    },
+    "89121": {
+      "count": 90,
+      "median": 350000,
+      "low": 171000,
+      "high": 800000,
+      "p25": 292500,
+      "p75": 416250,
+      "median_ppsf": 214,
+      "median_dom": 30,
+      "by_type": {
+        "single family": {
+          "count": 53,
+          "median": 400000
+        },
+        "townhome": {
+          "count": 28,
+          "median": 293500
+        },
+        "condo": {
+          "count": 6,
+          "median": 193000
+        }
+      }
+    },
+    "89122": {
+      "count": 83,
+      "median": 340000,
+      "low": 120000,
+      "high": 570000,
+      "p25": 265000,
+      "p75": 380000,
+      "median_ppsf": 222,
+      "median_dom": 32,
+      "by_type": {
+        "single family": {
+          "count": 54,
+          "median": 363750
+        },
+        "condo": {
+          "count": 13,
+          "median": 147500
+        }
+      }
+    },
+    "89123": {
+      "count": 100,
+      "median": 449000,
+      "low": 198000,
+      "high": 940000,
+      "p25": 385125,
+      "p75": 538750,
+      "median_ppsf": 244,
+      "median_dom": 32,
+      "by_type": {
+        "single family": {
+          "count": 80,
+          "median": 475000
+        },
+        "condo": {
+          "count": 18,
+          "median": 247500
+        }
+      }
+    },
+    "89128": {
+      "count": 62,
+      "median": 400000,
+      "low": 153500,
+      "high": 1405000,
+      "p25": 232750,
+      "p75": 501962,
+      "median_ppsf": 235,
+      "median_dom": 36,
+      "by_type": {
+        "single family": {
+          "count": 36,
+          "median": 475950
+        },
+        "condo": {
+          "count": 22,
+          "median": 206500
+        }
+      }
+    },
+    "89129": {
+      "count": 90,
+      "median": 405000,
+      "low": 225000,
+      "high": 3000000,
+      "p25": 350500,
+      "p75": 488750,
+      "median_ppsf": 239,
+      "median_dom": 27,
+      "by_type": {
+        "single family": {
+          "count": 77,
+          "median": 410000
+        },
+        "townhome": {
+          "count": 7,
+          "median": 314000
+        },
+        "condo": {
+          "count": 6,
+          "median": 230000
+        }
+      }
+    },
+    "89130": {
+      "count": 52,
+      "median": 447000,
+      "low": 133000,
+      "high": 1000000,
+      "p25": 382475,
+      "p75": 550000,
+      "median_ppsf": 248,
+      "median_dom": 24,
+      "by_type": {
+        "single family": {
+          "count": 45,
+          "median": 460000
+        }
+      }
+    },
+    "89131": {
+      "count": 85,
+      "median": 595500,
+      "low": 219000,
+      "high": 1225000,
+      "p25": 432500,
+      "p75": 740000,
+      "median_ppsf": 252,
+      "median_dom": 25,
+      "by_type": {
+        "single family": {
+          "count": 80,
+          "median": 601500
+        }
+      }
+    },
+    "89134": {
+      "count": 129,
+      "median": 474000,
+      "low": 249000,
+      "high": 5800000,
+      "p25": 410000,
+      "p75": 614500,
+      "median_ppsf": 297,
+      "median_dom": 36,
+      "by_type": {
+        "single family": {
+          "count": 99,
+          "median": 525000
+        },
+        "townhome": {
+          "count": 30,
+          "median": 362000
+        }
+      }
+    },
+    "89135": {
+      "count": 109,
+      "median": 919000,
+      "low": 325000,
+      "high": 11000000,
+      "p25": 586500,
+      "p75": 1855000,
+      "median_ppsf": 367,
+      "median_dom": 33,
+      "by_type": {
+        "single family": {
+          "count": 94,
+          "median": 1042500
+        },
+        "townhome": {
+          "count": 7,
+          "median": 540000
+        },
+        "condo": {
+          "count": 8,
+          "median": 412000
+        }
+      }
+    },
+    "89138": {
+      "count": 110,
+      "median": 807500,
+      "low": 455000,
+      "high": 2575000,
+      "p25": 642212,
+      "p75": 1256250,
+      "median_ppsf": 331,
+      "median_dom": 37,
+      "by_type": {
+        "single family": {
+          "count": 98,
+          "median": 847500
+        },
+        "townhome": {
+          "count": 12,
+          "median": 604975
+        }
+      }
+    },
+    "89139": {
+      "count": 75,
+      "median": 475000,
+      "low": 330000,
+      "high": 1800000,
+      "p25": 400000,
+      "p75": 548500,
+      "median_ppsf": 241,
+      "median_dom": 36,
+      "by_type": {
+        "single family": {
+          "count": 74,
+          "median": 475000
+        }
+      }
+    },
+    "89141": {
+      "count": 113,
+      "median": 570000,
+      "low": 275000,
+      "high": 6000000,
+      "p25": 479990,
+      "p75": 750000,
+      "median_ppsf": 250,
+      "median_dom": 28,
+      "by_type": {
+        "single family": {
+          "count": 105,
+          "median": 580000
+        },
+        "townhome": {
+          "count": 8,
+          "median": 383500
+        }
+      }
+    },
+    "89142": {
+      "count": 39,
+      "median": 360000,
+      "low": 120000,
+      "high": 775000,
+      "p25": 279000,
+      "p75": 475000,
+      "median_ppsf": 220,
+      "median_dom": 13,
+      "by_type": {
+        "single family": {
+          "count": 28,
+          "median": 417450
+        }
+      }
+    },
+    "89143": {
+      "count": 60,
+      "median": 562500,
+      "low": 365000,
+      "high": 1300000,
+      "p25": 430000,
+      "p75": 668436,
+      "median_ppsf": 245,
+      "median_dom": 31,
+      "by_type": {
+        "single family": {
+          "count": 58,
+          "median": 572475
+        }
+      }
+    },
+    "89144": {
+      "count": 43,
+      "median": 485000,
+      "low": 250000,
+      "high": 1850000,
+      "p25": 403000,
+      "p75": 800000,
+      "median_ppsf": 302,
+      "median_dom": 33,
+      "by_type": {
+        "single family": {
+          "count": 29,
+          "median": 640000
+        },
+        "condo": {
+          "count": 10,
+          "median": 317000
+        }
+      }
+    },
+    "89145": {
+      "count": 55,
+      "median": 395000,
+      "low": 162500,
+      "high": 2175000,
+      "p25": 288500,
+      "p75": 462000,
+      "median_ppsf": 241,
+      "median_dom": 23,
+      "by_type": {
+        "single family": {
+          "count": 36,
+          "median": 430000
+        },
+        "condo": {
+          "count": 15,
+          "median": 236000
+        }
+      }
+    },
+    "89146": {
+      "count": 20,
+      "median": 328000,
+      "low": 155000,
+      "high": 1350000,
+      "p25": 215750,
+      "p75": 426225,
+      "median_ppsf": 206,
+      "median_dom": 23,
+      "by_type": {
+        "single family": {
+          "count": 11,
+          "median": 399900
+        },
+        "condo": {
+          "count": 9,
+          "median": 215000
+        }
+      }
+    },
+    "89147": {
+      "count": 75,
+      "median": 400000,
+      "low": 170000,
+      "high": 870000,
+      "p25": 340000,
+      "p75": 485000,
+      "median_ppsf": 254,
+      "median_dom": 27,
+      "by_type": {
+        "single family": {
+          "count": 50,
+          "median": 440000
+        },
+        "townhome": {
+          "count": 11,
+          "median": 345000
+        },
+        "condo": {
+          "count": 14,
+          "median": 230000
+        }
+      }
+    },
+    "89148": {
+      "count": 109,
+      "median": 465000,
+      "low": 200000,
+      "high": 2950000,
+      "p25": 399888,
+      "p75": 558750,
+      "median_ppsf": 252,
+      "median_dom": 27,
+      "by_type": {
+        "single family": {
+          "count": 87,
+          "median": 480000
+        },
+        "townhome": {
+          "count": 13,
+          "median": 415209
+        },
+        "condo": {
+          "count": 9,
+          "median": 235000
+        }
+      }
+    },
+    "89149": {
+      "count": 95,
+      "median": 465000,
+      "low": 155000,
+      "high": 4250000,
+      "p25": 350000,
+      "p75": 770000,
+      "median_ppsf": 243,
+      "median_dom": 25,
+      "by_type": {
+        "single family": {
+          "count": 78,
+          "median": 505750
+        },
+        "townhome": {
+          "count": 10,
+          "median": 339000
+        },
+        "condo": {
+          "count": 7,
+          "median": 260000
+        }
+      }
+    },
+    "89156": {
+      "count": 41,
+      "median": 345000,
+      "low": 117000,
+      "high": 475000,
+      "p25": 265500,
+      "p75": 392500,
+      "median_ppsf": 218,
+      "median_dom": 26,
+      "by_type": {
+        "single family": {
+          "count": 30,
+          "median": 360000
+        }
+      }
+    },
+    "89166": {
+      "count": 128,
+      "median": 510000,
+      "low": 215000,
+      "high": 1015000,
+      "p25": 442875,
+      "p75": 570000,
+      "median_ppsf": 255,
+      "median_dom": 35,
+      "by_type": {
+        "single family": {
+          "count": 116,
+          "median": 525000
+        },
+        "townhome": {
+          "count": 7,
+          "median": 379000
+        },
+        "condo": {
+          "count": 5,
+          "median": 230000
+        }
+      }
+    },
+    "89169": {
+      "count": 17,
+      "median": 204000,
+      "low": 80000,
+      "high": 711800,
+      "p25": 123000,
+      "p75": 444995,
+      "median_ppsf": 216,
+      "median_dom": 49,
+      "by_type": {
+        "single family": {
+          "count": 5,
+          "median": 470000
+        },
+        "condo": {
+          "count": 10,
+          "median": 160500
+        }
+      }
+    },
+    "89178": {
+      "count": 109,
+      "median": 420000,
+      "low": 275000,
+      "high": 1200000,
+      "p25": 374935,
+      "p75": 537150,
+      "median_ppsf": 248,
+      "median_dom": 25,
+      "by_type": {
+        "single family": {
+          "count": 84,
+          "median": 452500
+        },
+        "townhome": {
+          "count": 24,
+          "median": 349940
+        }
+      }
+    },
+    "89179": {
+      "count": 24,
+      "median": 445000,
+      "low": 385000,
+      "high": 750000,
+      "p25": 415500,
+      "p75": 598750,
+      "median_ppsf": 240,
+      "median_dom": 32,
+      "by_type": {
+        "single family": {
+          "count": 24,
+          "median": 445000
+        }
+      }
+    },
+    "89183": {
+      "count": 61,
+      "median": 387500,
+      "low": 210000,
+      "high": 850000,
+      "p25": 342500,
+      "p75": 443725,
+      "median_ppsf": 242,
+      "median_dom": 31,
+      "by_type": {
+        "single family": {
+          "count": 51,
+          "median": 400000
+        },
+        "townhome": {
+          "count": 6,
+          "median": 320000
+        }
+      }
+    }
+  }
+}
