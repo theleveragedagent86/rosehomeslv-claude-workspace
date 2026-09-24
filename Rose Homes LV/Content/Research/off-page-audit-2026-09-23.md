@@ -94,8 +94,12 @@ cannot be added as named areas. They are already covered by ZIP, since 89178,
 Summerlin, Nellis AFB, Aliante and Tule Springs stay, because wide coverage
 matters more here than list order.
 
-**Still open on Zillow:** the About me text is the generic Ethical Vegas Realtor
-bio and never names the southwest valley or Summerlin. Reviews sit at 2.
+**Bio rewritten 2026-09-23:** About me now opens on the southwest valley and
+Summerlin, names Mountain's Edge, Southern Highlands, Spring Valley, Enterprise
+and Henderson, keeps the No pressure, No BS line, and closes on call or text
+702-747-5921. Licensed since 2018 is stated in the first sentence.
+
+**Still open on Zillow:** reviews sit at 2, versus 5 on Google.
 
 ### 4. Homes.com contradicts Zillow
 
