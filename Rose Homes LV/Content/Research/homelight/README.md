@@ -35,12 +35,14 @@ that basis, which is a HomeLight decision, not a data problem.
 
 ## Two things to know about the data
 
-**LISTING DATE is derived on every row, not reported.** For the seven MLS deals it
-is close date minus DOM, which approximates the list date but is not it, because DOM
-does not count every day a listing sits. For the two builder deals there is no
-listing at all, so the purchase agreement date from the transaction file stands in:
-2026-03-21 for All Hallows, 2026-08-12 for Semitone. Confirm before upload if
-HomeLight is strict about this column.
+**LISTING DATE is real on the seven MLS rows.** It was pulled from the Cross Property
+Agent Full DETAIL report (`~/Downloads/Agent_Full_DETAIL1223.pdf`), which carries an
+explicit List Date per property. An earlier version of this file derived those dates as
+close date minus DOM, and every one of them was wrong by two to six weeks, because DOM
+does not count every day a listing sits. Do not reintroduce that shortcut.
+
+The two builder deals still have no listing, so their purchase agreement dates stand in:
+2026-03-21 for All Hallows, 2026-08-12 for Semitone.
 
 **29 Amber Rock St has a price conflict.** The MLS says $457,000 closed 5/29/2026.
 `Clients/Transactions/29-Amber-Rock-St/transaction.json` says $475,000 with a COE of
