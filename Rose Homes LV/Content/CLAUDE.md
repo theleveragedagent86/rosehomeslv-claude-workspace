@@ -8,7 +8,7 @@ The content factory. Several sub-folders have their **own** `CLAUDE.md` — read
 - **Reddit/** — Reddit engagement working folder (scripts, trackers, calendar). `Reddit` and `subreddit-post` skills use it. **Has its own CLAUDE.md.**
 - **YouTube/** — YouTube scripts/packages (`youtube-manager`, `yt-long`).
 - **CCSD/** — Clark County School District local-news research.
-- **Research/** — neighborhood/topic research notes (formerly "A Bunch Of Skills"). Includes `market-stats/`, the dated per-area sold-price stats built from Ryan's MLS "Agent Single Line" export by `market-stats.py`; `market-stats-latest.json` is what feeds the price section in every AEO post.
+- **Research/** — neighborhood/topic research notes (formerly "A Bunch Of Skills"). Includes `market-stats/`, the dated per-area sold-price stats built from Ryan's MLS "Agent Single Line" export by `market-stats.py`; `market-stats-latest.json` is what feeds the price section in every AEO post. Also `homelight/`, the HomeLight past-transaction upload: Ryan's own closed deals mapped to HomeLight's CSV template, with a README naming what is still missing.
 - **lofty-link-audit/** — Lofty CMS link audit utility/output.
 
 ---
@@ -40,6 +40,7 @@ Content/
 ├── YouTube/            YouTube scripts/packages
 ├── CCSD/               school-district local-news research
 ├── Research/           neighborhood/topic research notes + market-stats/ (dated sold-price pulls)
+│                    incl. homelight/ (HomeLight transaction upload CSV + README)
 └── lofty-link-audit/   Lofty link audit
 ```
 
