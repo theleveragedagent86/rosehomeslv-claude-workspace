@@ -116,6 +116,16 @@ That last one is not a profile problem, it is a production problem. Directories
 derive specialty from where deals actually close, so the niche gets built by
 closings, not by bios.
 
+**Done 2026-09-23:** the bio was replaced with the same southwest and Summerlin
+text used on Zillow, so the Top Producing Las Vegas Real Estate Team line is
+gone. Specializations now read Military Families, Veteran's Programs, Luxury
+Homes, New Construction, First Time Homebuyers and Relocation. Senior
+Communities was removed and Relocation added, which lines the list up with
+Google and Zillow. Started Working already read August 2018.
+
+**Still open on Homes.com:** nothing on the profile itself. Areas Ryan is
+Experienced In will only move when southwest and Summerlin deals close.
+
 ### 5. Agent Pronto is publishing weak numbers on page one
 
 Agent Pronto ranks on page one of Google for his name and shows "3 sales past 3
