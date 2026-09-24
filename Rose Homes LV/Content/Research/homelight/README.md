@@ -19,28 +19,28 @@ drop them, but know that going in.
 
 Total: 9 rows.
 
-## What is still missing
+## Status
 
-Ryan supplied original list prices and the missing sides on 2026-09-23, so the
-seven MLS rows are complete.
+Complete. Every HomeLight-required column is filled on all nine rows. Ryan supplied
+the original list prices and the missing sides on 2026-09-23.
 
-**The two new construction rows have no ORIGINAL LISTING PRICE**, which HomeLight
-marks REQUIRED. 3550 All Hallows and 659 Semitone were never listed in the MLS, so
-no original list price exists for them. Either supply the builder's pre-discount
-contract price, or drop those two rows. They also cannot be verified against a
-production report, for the same reason.
+**29 Amber Rock is entered as Both, not Buyer.** Ryan's "buyer side for all" answered
+a question about three other deals. `Clients/Transactions/29-Amber-Rock-St/transaction.json`
+records Amber Rock as dual agency, "Ryan represents both buyer and seller in this
+transaction." Change it to Buyer only if that note is wrong.
 
-**29 Amber Rock is entered as Both, not Buyer.** Ryan said buyer side for the three
-unknowns, and Amber Rock was not one of them:
-`Clients/Transactions/29-Amber-Rock-St/transaction.json` records it as dual agency,
-"Ryan represents both buyer and seller in this transaction." Change it to Buyer only
-if that note is wrong.
+**The two builder deals still cannot be verified** against an MLS production report,
+because they were never listed. 3550 All Hallows and 659 Semitone may be rejected on
+that basis, which is a HomeLight decision, not a data problem.
 
 ## Two things to know about the data
 
-**LISTING DATE is derived, not reported.** It is close date minus DOM. That is a
-close approximation, not the MLS list date, because DOM does not count every day a
-listing sits. Confirm before upload if HomeLight is strict about it.
+**LISTING DATE is derived on every row, not reported.** For the seven MLS deals it
+is close date minus DOM, which approximates the list date but is not it, because DOM
+does not count every day a listing sits. For the two builder deals there is no
+listing at all, so the purchase agreement date from the transaction file stands in:
+2026-03-21 for All Hallows, 2026-08-12 for Semitone. Confirm before upload if
+HomeLight is strict about this column.
 
 **29 Amber Rock St has a price conflict.** The MLS says $457,000 closed 5/29/2026.
 `Clients/Transactions/29-Amber-Rock-St/transaction.json` says $475,000 with a COE of
