@@ -80,6 +80,23 @@ count is what the directories rank on.
   does not want.
 - 2 reviews, versus 5 on Google. The Google reviews are not being mirrored.
 
+**Done 2026-09-23:** Senior Communities was removed from Specialties, leaving
+nine, all on-niche. Spring Valley was added to Service areas and landed near the
+front of the neighborhood block, so the profile is now at 64 areas. In business
+since already reads 2018, so no fix was needed there.
+
+**Correction to the bullet above:** Zillow's picker has no entry at all for
+Mountain's Edge, Southern Highlands, Rhodes Ranch or Summerlin West, so those
+cannot be added as named areas. They are already covered by ZIP, since 89178,
+89179, 89141, 89148, 89135, 89138, 89161 and 89166 are all on the profile.
+
+**Ryan's call 2026-09-23:** leave the off-niche areas in place. Sun City
+Summerlin, Nellis AFB, Aliante and Tule Springs stay, because wide coverage
+matters more here than list order.
+
+**Still open on Zillow:** the About me text is the generic Ethical Vegas Realtor
+bio and never names the southwest valley or Summerlin. Reviews sit at 2.
+
 ### 4. Homes.com contradicts Zillow
 
 - Bio says "a local agent on a **Top Producing Las Vegas Real Estate Team**".
