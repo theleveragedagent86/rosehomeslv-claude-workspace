@@ -115,9 +115,20 @@ standardizing on the real number.
 
 1. **DONE 2026-09-23.** Google Business Profile description and six service
    descriptions rewritten to the southwest and Summerlin positioning.
-2. Create the HomeLight profile. **Blocked:** creating an account is something I
-   cannot do. Ryan signs up, then the drafted bio, specialties and areas in
-   `profile-copy-2026-09-23.md` get pasted in.
+2. **DONE 2026-09-23.** HomeLight. The account already existed, Ryan just had
+   not filled it in. The audit's "no HomeLight profile" finding was wrong on
+   that count. Filled in: the full bio, Education, and four specialties (First
+   Time Home Buyers, Relocations, New Construction, Luxury Specialist, with
+   Retirement Specialist, Investment Properties and Foreclosures deliberately
+   left unchecked). Also corrected stale data the audit had not caught: the
+   brokerage said Urban Nest Realty, both phone numbers were 626 area code
+   California numbers, and the office address was empty. All three now match
+   the rest of the NAP. Note that HomeLight keeps contact details private, so
+   this is referral routing, not a public citation.
+   Still open there: Year Licensed is blank (not filling it, "eight years" is
+   an inference, not a date), no profile photo, no reviews, no past
+   transactions uploaded, and Location Preferences and Referral Settings are
+   untouched because they route paid referrals and that is Ryan's call.
 3. Fix Zillow service areas and specialties, drop Senior Communities, push
    Summerlin and the southwest to the top.
 4. Fix the Homes.com bio and specialties.
