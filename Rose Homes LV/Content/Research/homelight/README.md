@@ -21,6 +21,10 @@ Total: 9 rows.
 
 ## Status
 
+**Uploaded to HomeLight 2026-09-23.** "Your transactions were sent successfully."
+All nine rows plus the Cross Property Agent Full DETAIL report as verification.
+HomeLight reviews before the rows count toward referral ranking.
+
 Complete. Every HomeLight-required column is filled on all nine rows. Ryan supplied
 the original list prices and the missing sides on 2026-09-23.
 
@@ -51,8 +55,9 @@ production report confirmed, so the transaction file is right about the listing 
 looks wrong about the close. The CSV uses the MLS figure, since that is what
 HomeLight verifies against. Worth correcting the transaction file.
 
-## Verification, the other half of the upload
+## Verification
 
-HomeLight will not count these toward referral ranking without proof. They want a
-link to the MLS site or a PDF or screenshot of the production report. Ryan has the
-report, it just needs to be saved as a PDF and uploaded alongside the CSV.
+Done. `~/Downloads/Agent_Full_DETAIL1223.pdf`, the Cross Property Agent Full DETAIL
+report, went up alongside the CSV. It names Ryan and his license on each property, so
+it is the right artifact for this. Keep it, it is also the source of the real List
+Dates and the only record of the four rentals that were correctly excluded here.

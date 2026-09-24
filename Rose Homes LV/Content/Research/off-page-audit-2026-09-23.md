@@ -127,10 +127,11 @@ Year Licensed is now set to 2018 on HomeLight.
    California numbers, and the office address was empty. All three now match
    the rest of the NAP. Note that HomeLight keeps contact details private, so
    this is referral routing, not a public citation.
-   Still open there: Year Licensed is blank (not filling it, "eight years" is
-   an inference, not a date), no profile photo, no reviews, no past
-   transactions uploaded, and Location Preferences and Referral Settings are
-   untouched because they route paid referrals and that is Ryan's call.
+   Year Licensed is 2018, confirmed by Ryan. Past transactions uploaded the same
+   day: nine closed deals plus the MLS detail report as verification, see
+   `homelight/README.md`. Still open there: no profile photo, no reviews, and
+   Location Preferences and Referral Settings are untouched because they route
+   paid referrals and that is Ryan's call.
 3. Fix Zillow service areas and specialties, drop Senior Communities, push
    Summerlin and the southwest to the top.
 4. Fix the Homes.com bio and specialties.
