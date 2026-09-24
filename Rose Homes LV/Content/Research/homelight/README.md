@@ -21,20 +21,20 @@ Total: 9 rows.
 
 ## What is still missing
 
-**ORIGINAL LISTING PRICE is blank on every row and HomeLight marks it REQUIRED.**
-It is not in the production report Ryan exported. It has to come from the MLS, or
-be filled from memory per deal.
+Ryan supplied original list prices and the missing sides on 2026-09-23, so the
+seven MLS rows are complete.
 
-**REPRESENTING is blank on three rows.** The production report does not say which
-side Ryan was on, and these three have no local transaction file:
+**The two new construction rows have no ORIGINAL LISTING PRICE**, which HomeLight
+marks REQUIRED. 3550 All Hallows and 659 Semitone were never listed in the MLS, so
+no original list price exists for them. Either supply the builder's pre-discount
+contract price, or drop those two rows. They also cannot be verified against a
+production report, for the same reason.
 
-- 3780 Territory St, closed 2025-12-15, $425,000
-- 146 Samantha Rose St, closed 2025-12-08, $405,000
-- 1275 White Dr, closed 2025-09-19, $461,000
-
-The other six sides are known from the transaction files: Moapa Water, Tardando
-and Robin Knot are buyer side, Amber Rock is dual agency (Both), and the two new
-construction deals are buyer side.
+**29 Amber Rock is entered as Both, not Buyer.** Ryan said buyer side for the three
+unknowns, and Amber Rock was not one of them:
+`Clients/Transactions/29-Amber-Rock-St/transaction.json` records it as dual agency,
+"Ryan represents both buyer and seller in this transaction." Change it to Buyer only
+if that note is wrong.
 
 ## Two things to know about the data
 
@@ -43,10 +43,11 @@ close approximation, not the MLS list date, because DOM does not count every day
 listing sits. Confirm before upload if HomeLight is strict about it.
 
 **29 Amber Rock St has a price conflict.** The MLS says $457,000 closed 5/29/2026.
-`Clients/Transactions/29-Amber-Rock-St/transaction.json` says $475,000 with a COE
-of 2026-06-01, and a list price of $485,000. The CSV uses the MLS figure, since
-that is what HomeLight verifies against. The transaction file may have a
-transposition, 457 and 475, and is worth a look either way.
+`Clients/Transactions/29-Amber-Rock-St/transaction.json` says $475,000 with a COE of
+2026-06-01. Both agree the original list price was $485,000, which is the figure the
+production report confirmed, so the transaction file is right about the listing and
+looks wrong about the close. The CSV uses the MLS figure, since that is what
+HomeLight verifies against. Worth correcting the transaction file.
 
 ## Verification, the other half of the upload
 
