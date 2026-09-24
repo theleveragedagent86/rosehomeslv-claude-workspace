@@ -19,7 +19,7 @@ Marketing/
 ├── Listing Marketing Plan/     master listing-launch playbook + letter campaigns
 ├── Listing Leads Content/      lead-gen content library
 ├── Lead-Magnets/               downloadable lead magnets            → its own CLAUDE.md
-├── Newsletter/                 The Rose Report weekly consumer newsletter template (fed by /local-news)
+├── Newsletter/                 The Rose Report: NEWSLETTER-TEMPLATE.md + issues/<send-date>/ (sections/, assets/, final email HTML)
 ├── Relocation Guide/           relocation guide site
 ├── Smart Plans/                Lofty nurture sequences
 ├── nrg-research/               NRG competitor teardown (New Construction hub spec)

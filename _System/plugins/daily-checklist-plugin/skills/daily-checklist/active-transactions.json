@@ -5,16 +5,16 @@
   "templates_root": "/Users/ryanrose/Downloads/Claude/_System/plugins/tc-plugin/skills/transaction-coordination/templates",
   "active": [
     {
-      "address_slug": "659-Semitone-Ln",
-      "type": "buyer-new-construction",
-      "coe_date": "2026-09-23",
-      "note": "Taylor Morrison, Opus at Cadence 25s, Lot 170. Buyers Eiven Ramph and Nadia Alvarado Andrade. $529,990. PA Q-213978 executed 2026-08-17. EMD $5,000 collected. Conditionally approved 2026-08-20 (Taylor Morrison Home Funding, Mike Marroquin). Escrow Inspired Title LV-NV-26803469FS, Christine Strouse. Inspection Inspect LV 2026-09-11 10AM. COE 9/23."
-    },
-    {
       "address_slug": "653-Semitone-Ln",
       "type": "buyer-new-construction",
+      "coe_date": "2026-11-03",
+      "note": "Taylor Morrison, Opus at Cadence 25s, Lot 167. Buyers Dillyn Jordan-McDill and Jay-Ar Tolentino. $445,000 confirmed on executed PA. PA Q-216064 dated 2026-08-14, final countersign 2026-08-17. EMD $5,000 collected 2026-08-13. $12,000 seller incentive confirmed. Conditionally approved 2026-08-26 (Taylor Morrison Home Funding, Mike Marroquin). Escrow Inspired Title LV-NV-26803470FS, Christine Strouse. Inspection 10/20 10AM, New Home Demo 10/27 10AM, Construction Sign Off 11/2 10AM. COE 11/3 is a buffer, not confirmed."
+    },
+    {
+      "address_slug": "5847-Park-Row-St",
+      "type": "buyer-new-construction",
       "coe_date": "TBD",
-      "note": "Taylor Morrison, Opus at Cadence 25s, Lot 167. Buyers Dillyn Jakob Jordan-McDill (dillynjakobjordan@gmail.com) and Jay-Ar Aguilar Tolentino (tolen.j96@gmail.com). Price $445,000. EMD $5,000 collected 2026-08-13. PA signed 2026-08-17. Escrow Inspired Title, Patrice Carmo, file #LV-NV-26803470FS. Affiliated lender Taylor Morrison Home Funding, loan officer TBD. COE not fixed yet (construction-driven, per contract)."
+      "note": "KB Home Las Vegas, Chelsea Commons Project 458, Lot 045, Plan 41/A. Buyer Rosa Mireya Venegas (Rosy). $375,750. PA executed 2026-09-17. EMD $5,000 check 1034135. Builder contribution up to $14,755, conditioned on KBHS Home Loans. Escrow First American Title, Rochelle Goldstein, escrow number NOT FOUND. Lender KBHS Home Loans, Mayra Sanchez. Builder rep Jeffrey Barth. COE = 3 business days after KB sets new home orientation, no date yet. Loan approval deadline 2026-10-17. Intro, W9 and home warranty emails deliberately skipped. Next step: Rosy picks inspector, then Template 5."
     }
   ],
   "completed": [
@@ -53,6 +53,13 @@
       "note": "Taylor Morrison, Opus at Cadence Lot 191. PA fully executed 2026-08-06. Target COE 2026-09-11 (incentive deadline). Independent inspection 2026-08-24 10:00 AM.",
       "status": "closed",
       "closed_date": "2026-09-04"
+    },
+    {
+      "address_slug": "659-Semitone-Ln",
+      "type": "buyer-new-construction",
+      "coe_date": "2026-09-23",
+      "note": "Taylor Morrison, Opus at Cadence 25s, Lot 170. Buyers Eiven Ramph and Nadia Alvarado Andrade. $529,990. PA Q-213978 executed 2026-08-17. EMD $5,000 collected. Conditionally approved 2026-08-20 (Taylor Morrison Home Funding, Mike Marroquin). Escrow Inspired Title LV-NV-26803469FS, Christine Strouse. Inspection Inspect LV 2026-09-11 10AM. COE 9/23.",
+      "closed_date": "2026-09-23"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "description": "One-off calendar events and appointments. Add new events here or ask the daily-checklist skill to add them for you.",
-  "last_updated": "2026-09-08",
+  "last_updated": "2026-09-23",
   "events": [
     {
       "date": "2026-04-01",
@@ -241,16 +241,6 @@
       "added": "2026-08-04"
     },
     {
-      "date": "2026-10-10",
-      "time": null,
-      "title": "Broker Registration Expires - 659 Semitone Ln",
-      "location": "659 Semitone Ln, Henderson, NV",
-      "notes": "Buyer: Eiven Ramph and Nadia Alvarado Andrade | ASSUMES the same 60 day Initial Term as the Lot 191 Broker Referral, counted from the Q-213978 Broker Referral completion 2026-08-11. VERIFY against the signed Broker Referral. If no executed purchase agreement by then, re-qualify or the 3% commission is at risk.",
-      "transaction": "659-Semitone-Ln",
-      "type": "contingency-deadline",
-      "added": "2026-08-12"
-    },
-    {
       "date": "2026-09-23",
       "time": null,
       "title": "COE - 659 Semitone Ln",
@@ -301,16 +291,6 @@
       "added": "2026-08-12"
     },
     {
-      "date": "TBD",
-      "time": null,
-      "title": "New Home Demonstration / Builder Orientation - 659 Semitone Ln",
-      "location": "659 Semitone Ln, Henderson, NV",
-      "notes": "Buyer: Eiven Ramph and Nadia Alvarado Andrade | Builder schedules. Independent inspector may NOT attend. Any inspection report must reach Seller ahead of it.",
-      "transaction": "659-Semitone-Ln",
-      "type": "builder-walkthrough",
-      "added": "2026-08-12"
-    },
-    {
       "date": "2026-09-22",
       "time": null,
       "title": "Final Walkthrough - 659 Semitone Ln",
@@ -318,16 +298,6 @@
       "notes": "Buyer: Eiven Ramph and Nadia Alvarado Andrade | Typically 1 to 2 days before COE. Confirm with builder.",
       "transaction": "659-Semitone-Ln",
       "type": "walkthrough",
-      "added": "2026-08-12"
-    },
-    {
-      "date": "TBD",
-      "time": null,
-      "title": "Signing - 659 Semitone Ln",
-      "location": "659 Semitone Ln, Henderson, NV",
-      "notes": "Buyer: Eiven Ramph and Nadia Alvarado Andrade | Ryan attends all signings. Confirm date and time with title once escrow is identified.",
-      "transaction": "659-Semitone-Ln",
-      "type": "signing",
       "added": "2026-08-12"
     },
     {
@@ -379,6 +349,86 @@
       "transaction": "94-Tardando-Ave",
       "type": "inspection",
       "added": "2026-08-12"
+    },
+    {
+      "date": "2026-10-20",
+      "time": "10:00 AM",
+      "title": "Independent 3rd Party Inspection - Inspect LV - 653 Semitone Ln",
+      "location": "653 Semitone Ln, Henderson, NV 89015",
+      "notes": "Buyers: Dillyn Jordan-McDill and Jay-Ar Tolentino | MEET AT THE SALES OFFICE FIRST, 304 Taylor Street, NOT the house. Inspect LV, (702) 210-5333, info@inspectlv.com. Property must be fit-and-finished with utilities on. Confirm site access with Toni the day before, on Lot 170 the inspector was left waiting.",
+      "transaction": "653-Semitone-Ln",
+      "type": "inspection",
+      "added": "2026-09-23"
+    },
+    {
+      "date": "2026-10-27",
+      "time": "10:00 AM",
+      "title": "New Home Demonstration / Builder Orientation - 653 Semitone Ln",
+      "location": "653 Semitone Ln, Henderson, NV 89015",
+      "notes": "Buyers: Dillyn Jordan-McDill and Jay-Ar Tolentino | Meet AT THE HOUSE. Do not enter the site until construction arrives with safety equipment.",
+      "transaction": "653-Semitone-Ln",
+      "type": "builder-walkthrough",
+      "added": "2026-09-23"
+    },
+    {
+      "date": "2026-11-02",
+      "time": "10:00 AM",
+      "title": "Construction Sign Off - 653 Semitone Ln",
+      "location": "653 Semitone Ln, Henderson, NV 89015",
+      "notes": "Buyers: Dillyn Jordan-McDill and Jay-Ar Tolentino | Meet at the house. Do not enter until construction provides safety equipment. Inspired Title (Christine Strouse, Janine Vidinha, Patrice Carmo) copied on the scheduling email.",
+      "transaction": "653-Semitone-Ln",
+      "type": "walkthrough",
+      "added": "2026-09-23"
+    },
+    {
+      "date": "2026-11-03",
+      "time": null,
+      "title": "COE - 653 Semitone Ln",
+      "location": "653 Semitone Ln, Henderson, NV 89015",
+      "notes": "Buyers: Dillyn Jordan-McDill and Jay-Ar Tolentino | $445,000 UNCONFIRMED. Taylor Morrison, Opus at Cadence 25s, Lot 167, 1856 sq ft. Incentives: refrigerator, washer, dryer, blinds, 3.99% rate, $12,000 closing credit. COE 11/3 is Ryan's buffer, actual contract COE not confirmed off the Q-216064 SOT.",
+      "transaction": "653-Semitone-Ln",
+      "type": "coe",
+      "added": "2026-09-23"
+    },
+    {
+      "date": "TBD",
+      "time": null,
+      "title": "Signing - 653 Semitone Ln",
+      "location": null,
+      "notes": "Buyers: Dillyn Jordan-McDill and Jay-Ar Tolentino | Ryan attends all signings. Confirm date and time with Christine Strouse at Inspired Title.",
+      "transaction": "653-Semitone-Ln",
+      "type": "signing",
+      "added": "2026-09-23"
+    },
+    {
+      "date": "2026-10-29",
+      "time": null,
+      "title": "Transfer Utilities - 653 Semitone Ln",
+      "location": "653 Semitone Ln, Henderson, NV 89015",
+      "notes": "Buyers: Dillyn Jordan-McDill and Jay-Ar Tolentino | Set up power, water, gas, internet in buyers' names ahead of closing.",
+      "transaction": "653-Semitone-Ln",
+      "type": "utility-transfer",
+      "added": "2026-09-23"
+    },
+    {
+      "date": "2026-10-17",
+      "time": null,
+      "title": "Loan Approval Deadline - 5847 Park Row St",
+      "location": null,
+      "notes": "Buyer: Rosa Mireya Venegas (Rosy) | KBHS Home Loans, Mayra Sanchez 702-324-5861, mayra.sanchez@kbhshomeloans.com | Confirm approval is on track",
+      "transaction": "5847-Park-Row-St",
+      "type": "contingency-deadline",
+      "added": "2026-09-23"
+    },
+    {
+      "date": "2026-09-30",
+      "time": null,
+      "title": "Follow up: escrow number + orientation date - 5847 Park Row St",
+      "location": null,
+      "notes": "Ask Rochelle Goldstein (rgoldstein@firstam.com, 702-266-9400) for the escrow number. Ask Jeff Barth (jbarth@kbhome.com) when KB will set the new home orientation, COE is 3 business days after it. Also confirm Rosy's inspector pick so Template 5 can go out.",
+      "transaction": "5847-Park-Row-St",
+      "type": "task",
+      "added": "2026-09-23"
     }
   ]
 }

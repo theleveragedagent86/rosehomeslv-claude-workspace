@@ -60,14 +60,14 @@ valley and Summerlin (719 of 750 characters), and descriptions were written for
 the six on-niche services: buying agent, first-time home buyer, luxury property,
 new construction, seller's agent, relocation. Google says they publish shortly.
 
-**Also done 2026-09-23:** the three off-niche services were deleted at Ryan's
+**Also done 2026-09-23:** four off-niche services were deleted at Ryan's
 direction (Real estate investing, Foreclosed property sales, Real estate
-development). Seven services remain, all on-niche. Google confirmed the update
-publishes shortly.
+development, Real estate sales management). Six services remain, every one of
+them on-niche and carrying a description. Google confirmed the update publishes
+shortly.
 
-**Still open on GBP:** Real estate sales management has no description yet, and
-reviews are the real lever. Five is thin, and review count is what the
-directories rank on.
+**Still open on GBP:** reviews are the real lever. Five is thin, and review
+count is what the directories rank on.
 
 ### 3. Zillow points away from the niche
 

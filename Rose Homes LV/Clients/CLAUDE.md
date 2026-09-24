@@ -21,4 +21,4 @@ Clients/
 
 **Maintenance rule:** When you add/rename a client or listing folder, update this map. Listing folder names are street addresses — skills match on them, so keep them exact. Never leave the map stale.
 
-**Active transactions in Transactions/ (as of 2026-08-17):** 94-Tardando-Ave, 659-Semitone-Ln, 653-Semitone-Ln (new construction, buyer-side, added 2026-08-17), 5847-Park-Row-St (KB Home new construction, buyer Rosy Venegas, added 2026-09-21), plus closed/cancelled: 2713-S-Miller-Ln, 8320-Moapa-Water-ST, 29-Amber-Rock-St, 3550-All-Hallows-Ave.
+**Active transactions in Transactions/ (as of 2026-09-23):** 653-Semitone-Ln (Taylor Morrison Opus Lot 167, buyer-side, folder created 2026-09-23), 5847-Park-Row-St (KB Home new construction, buyer Rosy Venegas, added 2026-09-21), plus closed/cancelled: 2713-S-Miller-Ln, 8320-Moapa-Water-ST, 29-Amber-Rock-St, 3550-All-Hallows-Ave, 94-Tardando-Ave, 659-Semitone-Ln (closed 2026-09-23).
