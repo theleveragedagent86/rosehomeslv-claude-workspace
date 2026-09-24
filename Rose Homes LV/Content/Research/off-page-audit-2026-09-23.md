@@ -106,10 +106,12 @@ areas and review count against this list.
 
 ### 7. Years of experience is inconsistent
 
-Zillow, Homes.com and Instagram all say 8 years. The AEO blog posts say
-"licensed more than five years", which was the approved conservative line. Both
-are true, but the blog is under claiming against his own profiles. Worth
-standardizing on the real number.
+**Resolved 2026-09-23. Ryan was licensed in 2018.** So 8 years is the real
+number and Zillow, Homes.com and Instagram are right. The AEO blog posts say
+"licensed more than five years", which was the approved conservative line. It
+is true but it under claims by three years against every profile. The fix is a
+one line substitution across the 184 AEO posts plus a republish, not a rewrite.
+Year Licensed is now set to 2018 on HomeLight.
 
 ## Suggested order
 
