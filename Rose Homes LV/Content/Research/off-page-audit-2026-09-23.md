@@ -78,11 +78,15 @@ Paradise, Blue Diamond, Mountain's Edge, Southern Highlands, Rhodes Ranch,
 Silverado Ranch, Summerlin, Summerlin North, Summerlin South, Summerlin West,
 Green Valley North, Green Valley Ranch.
 
-**Still open on GBP:** the business description still leads with "Top Producing
-Las Vegas Real Estate Team", the same stale line that was fixed on Homes.com. An
-earlier rewrite is sitting in review and may already replace it, so check before
-editing again. Reviews are the other lever. Five is thin, and review count is
-what the directories rank on.
+**Description checked 2026-09-24:** the live text still leads with "Top
+Producing Las Vegas Real Estate Team", but that is only because Google has not
+published yet. The About tab shows the old text struck through and the
+2026-09-23 rewrite queued underneath it, complete and correct. Google's banner
+says up to 7 days. Do not re-submit, that restarts the review clock. Check again
+around 2026-09-30.
+
+**Still open on GBP:** reviews. Five is thin, and review count is what the
+directories rank on.
 
 ### 3. Zillow points away from the niche
 
