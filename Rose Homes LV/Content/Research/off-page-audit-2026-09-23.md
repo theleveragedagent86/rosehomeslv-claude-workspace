@@ -152,11 +152,23 @@ years, $461K, 4.8 out of 5 across 4 reviews". Lower than his own Google rating
 and a thin sales figure, on a page he does not control. Worth claiming the
 profile to correct it, or at least knowing it is what a searcher sees.
 
-### 6. Realtor.com profile exists but could not be audited
+**Checked again 2026-09-24.** The numbers now read 6 to 7 recent sales depending
+on the page. The brokerage is correct, Real Broker, LLC, and so is the address.
+The bio is not. It still says "As part of Urban Nest Realty", a brokerage Ryan
+left in January 2025. He also sits on page 12 to 21 of Agent Pronto's own
+neighborhood lists, including Summerlin South, so the page ranks for his name but
+never surfaces him to anyone browsing.
 
-Listed at 9580 W. Sahara Ave Ste 200, 89117. The browser pane is blocked from
-realtor.com, so Ryan needs to open it himself and check the specialties, service
-areas and review count against this list.
+### 6. Realtor.com profile exists and is unclaimed
+
+**Audited 2026-09-24 through Ryan's Chrome.** The profile carries the right name,
+the right brokerage and the right address, and nothing else. The page itself says
+the profile is not ready to view and offers an "Are you Ryan Rose? Edit profile"
+link. No phone, no photo, no bio, no specialties, no service areas, no reviews.
+
+This is the cheapest win left on the list. The record already exists and already
+ranks for his name, it is simply empty. Claiming it and pasting the same bio used
+on Zillow and Homes.com would fill it in one sitting.
 
 ### 7. Years of experience is inconsistent
 
@@ -166,6 +178,50 @@ number and Zillow, Homes.com and Instagram are right. The AEO blog posts say
 is true but it under claims by three years against every profile. The fix is a
 one line substitution across the 184 AEO posts plus a republish, not a rewrite.
 Year Licensed is now set to 2018 on HomeLight.
+
+### 8. NAP sweep, 2026-09-24
+
+The canonical record, confirmed against the Nevada license directory:
+
+> Ryan Rose | Real Broker, LLC | 9580 W Sahara Ave, Ste 200, Las Vegas, NV 89117
+> | 702-747-5921 | rosehomeslv.com | Lic. S.0185572, first issued 2018-08-13
+
+That first-issuance date is independent confirmation of the 2018 licensure in
+item 7, from the state, not from a profile Ryan filled in himself.
+
+**Clean, name, address and phone all match:** Google Business Profile, Zillow,
+Homes.com, Yelp, MapQuest, Realtor Directory Nevada, Instagram, rosehomeslv.com.
+No wrong phone numbers anywhere. The 626 California numbers that were on
+HomeLight do not appear on any other profile.
+
+**Stale, needs fixing:**
+
+- **Facebook page.** The page bio reads "Welcome to Rose Homes, powered by Urban
+  Nest Realty, your premier destination for luxury real estate in Las Vegas."
+  Wrong brokerage, and it breaks the no-premier voice rule. This is the worst one
+  found, because it is the brokerage claim itself, not a stale phone number.
+- **Agent Pronto.** Urban Nest in the bio, see item 5.
+
+**Leave alone:**
+
+- **LinkedIn.** Urban Nest Realty appears as a past role, April 2024 to January
+  2025. That is accurate employment history, not an error.
+- **AeroLeads.** A third-party contact scraper, says "previously worked as", also
+  accurate. Not editable and not worth the effort.
+
+**No profile found at all:** Trulia, BBB, Nextdoor, Apple Maps, Bing Places. A
+Trulia profile normally mirrors Zillow automatically, so its absence is worth a
+look. The others are unclaimed ground.
+
+**The finding that matters most.** Google's own AI Overview for "Ryan Rose Real
+Broker Las Vegas" now describes his service areas as "Las Vegas, Henderson, North
+Las Vegas, Spring Valley, Centennial Hills, Summerlin", and cites Zillow as the
+source. The off-niche area list has already been absorbed into the AI answer
+layer. It also hedges the experience as "over 5 to 8 years", which is the item 7
+inconsistency showing up in a generated answer.
+
+That is the case for finishing the profile cleanup rather than stopping at the
+directories themselves. The directories are now training data.
 
 ## Suggested order
 
