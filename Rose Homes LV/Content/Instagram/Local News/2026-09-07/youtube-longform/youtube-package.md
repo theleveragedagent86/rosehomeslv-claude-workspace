@@ -39,13 +39,8 @@ sixth grade, given its own chapter because it is the most personal 2 minutes in 
 episode and people will want to find it. That is why the count says 19 stories but the
 chapter list has 20 entries.
 
-## TAGS
-las vegas news, las vegas real estate, ccsd wrong bus lawsuit, ccsd news, clark county school district,
-school zone tickets nevada, monument hills las vegas, blm land sale las vegas, northwest las vegas
-new homes, las vegas affordability, redfin las vegas, fed rate hike, mortgage rates las vegas,
-henderson city council, henderson retiree benefits, henderson sports complex, allegiant stadium
-renovation, raiders stadium, trevor connelly, vegas golden knights, pwhl las vegas, lees family forum,
-mesquite nevada, boulder city data center, ryan rose realtor
+## TAGS (345 characters, YouTube's limit is 500)
+las vegas news, las vegas real estate, ccsd wrong bus lawsuit, clark county school district, blm land sale las vegas, monument hills, northwest las vegas new homes, las vegas affordability, las vegas housing market, mortgage rates, fed rate hike, henderson city council, allegiant stadium, vegas golden knights, pwhl las vegas, ryan rose realtor
 
 ## THUMBNAIL
 Final: `thumbnail-LWT-grid-labeled.jpg` (1280x720 JPEG).

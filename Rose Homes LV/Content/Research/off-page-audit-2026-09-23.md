@@ -66,8 +66,23 @@ development, Real estate sales management). Six services remain, every one of
 them on-niche and carrying a description. Google confirmed the update publishes
 shortly.
 
-**Still open on GBP:** reviews are the real lever. Five is thin, and review
-count is what the directories rank on.
+**Service areas fixed 2026-09-24:** the live list was 16, not 24, so the count
+in the bullet above is wrong. North Las Vegas and Centennial Hills were removed
+and Southern Highlands, Enterprise, Rhodes Ranch and Paradise were added, which
+leaves 16 areas with nothing north of the 95. Google queued the edit for review,
+up to 10 minutes. The pending diff showed both removals struck through and all
+four additions highlighted, so it saved correctly.
+
+Areas now on the profile: Las Vegas, Henderson, Spring Valley, Enterprise,
+Paradise, Blue Diamond, Mountain's Edge, Southern Highlands, Rhodes Ranch,
+Silverado Ranch, Summerlin, Summerlin North, Summerlin South, Summerlin West,
+Green Valley North, Green Valley Ranch.
+
+**Still open on GBP:** the business description still leads with "Top Producing
+Las Vegas Real Estate Team", the same stale line that was fixed on Homes.com. An
+earlier rewrite is sitting in review and may already replace it, so check before
+editing again. Reviews are the other lever. Five is thin, and review count is
+what the directories rank on.
 
 ### 3. Zillow points away from the niche
 

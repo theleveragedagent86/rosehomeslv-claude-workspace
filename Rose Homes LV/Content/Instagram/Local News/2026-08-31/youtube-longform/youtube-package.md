@@ -18,13 +18,8 @@ at 17:53. Ryan cut the second pass (62 seconds) in the edit. The chapters in
 `description-FINAL.txt` are the TRIMMED timestamps and match the delivered cut. Runtime is
 about 23 minutes.
 
-## TAGS
-las vegas news, las vegas real estate, nevada water lawsuit, colorado river cuts, southern nevada
-water authority, ccsd board meeting, ccsd trustee lawsuit, flock safety cameras, license plate readers,
-nevada property tax reform, henderson ethics complaint, michelle romero, north las vegas master plan,
-enterprise casino hotel, hylo park ice arena, toll brothers reflection ridge, summerlin new construction,
-las vegas apartments shortage, redfin best time to buy, vegas golden knights, pwhl las vegas,
-athletics ballpark las vegas, clark county news, ryan rose realtor
+## TAGS (309 characters, YouTube's limit is 500)
+las vegas news, las vegas real estate, nevada water lawsuit, colorado river, clark county property tax, ccsd school board, las vegas casino project, las vegas housing market, new construction las vegas, henderson real estate, summerlin, north las vegas, mortgage rates, vegas golden knights, ryan rose realtor
 
 ## THUMBNAIL
 Final: `thumbnail-LWT-grid-labeled.jpg` (1280x720 JPEG).

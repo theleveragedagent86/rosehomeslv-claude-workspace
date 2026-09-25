@@ -44,13 +44,8 @@ Note: 7:27 is not one of the 20 news stories. It is Ryan's own segment on a new 
 community he toured with a client (under $400,000, $155 HOA, 1,600 to 1,800 sq ft, 2-car
 garages). Community name was not said on camera, so it is not named anywhere.
 
-## TAGS
-las vegas news, las vegas real estate, ccsd budget cuts, clark county school district, ccsd news,
-school zone safety las vegas, e-scooter crashes, las vegas median home price, las vegas housing market,
-new construction las vegas, kb home sandstone, north las vegas new homes, las vegas condos,
-mortgage rates nevada, snwa watering restrictions, las vegas grand prix road closures, lake mead boulevard,
-skye canyon school, veterans housing clark county, mark stone contract, braeden bowman, vegas golden knights,
-pwhl las vegas, fontainebleau ice rink, ryan rose realtor
+## TAGS (358 characters, YouTube's limit is 500)
+las vegas news, las vegas real estate, ccsd budget cuts, clark county school district, school zone safety, las vegas median home price, las vegas housing market, new construction las vegas, kb home sandstone, las vegas condos, mortgage rates nevada, watering restrictions, f1 road closures, mark stone, vegas golden knights, pwhl las vegas, ryan rose realtor
 
 ## THUMBNAIL
 Final: thumbnail-LWT-grid-labeled.jpg (1280x720). UNCUT variant says 25 MINUTES instead of 24.

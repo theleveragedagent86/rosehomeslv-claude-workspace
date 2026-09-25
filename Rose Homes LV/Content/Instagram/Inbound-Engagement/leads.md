@@ -313,3 +313,13 @@ Replied: "Gonna be honest, my finger slipped ..." (appears he accidentally liked
 
 
 </details>
+
+## 2026-09-24 (scheduled ig-commentor)
+
+- @kt___gram___ - commented on reel DdptVwWMeV_ ("Nearly 43 Percent of Clark County Homes Are Not Lived In by Their Owner"): says she is owner occupied but the previous owner never filed for the 3 percent cap, so she is paying about $1,200 a year more than a neighbor. Replied publicly 2026-09-24 asking her to DM (verified live). NO DM WAS SENT and none was claimed. Ryan, if she DMs, point her to the Clark County Assessor primary-residence / abatement claim.
+
+- @kyle_nord - commented on reel DdptVwWMeV_: "How do you turn up the brightness of this video? ... Asking for a friend!" Asked about how the videos are shot and edited. Replied publicly 2026-09-24 asking him to DM (verified live). NO DM WAS SENT and none was claimed. Soft relationship lead, not a buyer lead.
+
+- @ant_man3z - commented on reel DdptVwWMeV_: "Send link". Direct ask for something, so a real inbound. A reply pulling him to DMs was written but FAILED TO POST (silent throttle, see the 2026-09-24 note in research-log.md). He is still unanswered and is NOT checked off in the log. Ryan may want to reply or DM him directly.
+
+- NOTE 2026-09-24: no Instagram DMs were sent on this run and no reply claimed one was sent. The only outstanding DM promise on file is still @ryan_m_cavitt from 2026-09-20, which remains unresolved.

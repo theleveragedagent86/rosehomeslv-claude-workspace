@@ -91,8 +91,8 @@ Sources for this episode include the Las Vegas Review-Journal, CNN, Redfin, real
 
 #LasVegas #LasVegasRealEstate #Henderson #Summerlin #CentennialHills #ClarkCounty #LakeMead #VegasGoldenKnights #HendersonSilverKnights #CCSD #LasVegasNews #NorthLasVegas #SpringValley #GreenValley #VegasHousingMarket
 
-## TAGS (comma separated, paste into the tag field)
-las vegas news, las vegas real estate, las vegas housing market, lake mead record low, clark county news, ccsd news, airbnb clark county, short term rental las vegas, vegas golden knights, henderson silver knights, carter hart, summerlin, henderson nv, centennial hills, north las vegas, spring valley nevada, green valley henderson, las vegas home prices, nevada home insurance, las vegas valley water district, rtc red line maryland parkway, howard hughes summerlin, las vegas luxury homes, renting vs buying las vegas, ryan rose realtor
+## TAGS (371 characters, YouTube's limit is 500)
+las vegas news, las vegas real estate, lake mead record low, clark county school district, airbnb clark county, short term rentals, las vegas housing market, las vegas home prices, henderson nv, summerlin, centennial hills, north las vegas, spring valley, green valley, nevada home insurance, vegas golden knights, henderson silver knights, carter hart, ryan rose realtor
 
 ## THUMBNAIL
 Final: `thumbnail-LWT-grid-labeled.jpg` (1280x720 JPEG, 267KB). Last Week Tonight style

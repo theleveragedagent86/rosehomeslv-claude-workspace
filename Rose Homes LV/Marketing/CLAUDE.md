@@ -19,7 +19,11 @@ Marketing/
 ├── Listing Marketing Plan/     master listing-launch playbook + letter campaigns
 ├── Listing Leads Content/      lead-gen content library
 ├── Lead-Magnets/               downloadable lead magnets            → its own CLAUDE.md
-├── Newsletter/                 The Rose Report: NEWSLETTER-TEMPLATE.md + issues/<send-date>/ (sections/, assets/, final email HTML)
+├── Newsletter/                 The Rose Report: NEWSLETTER-TEMPLATE.md + issues/<send-date>/ (sections/, assets/, final email HTML).
+│                               Email styling = Leveraged Agent v2.0 "Vector" kit (SKOOL Community/Brandkit), adopted 2026-09-23.
+│                               issues/2026-09-24/newsletter-v1-navy-gold.html = archived pre-Vector version
+│                               issues/2026-09-24/beehiiv-snippet.html = body-only version pasted into a beehiiv HTML snippet block (no <style>, fluid width)
+│                               beehiiv strips sms: links, so its Text-me button goes to theleveragedagent86.github.io/rhlv-site-images/text-ryan/ (GitHub Pages redirect into Messages)
 ├── Relocation Guide/           relocation guide site
 ├── Smart Plans/                Lofty nurture sequences
 ├── nrg-research/               NRG competitor teardown (New Construction hub spec)

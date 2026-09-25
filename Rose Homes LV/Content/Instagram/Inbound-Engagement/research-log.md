@@ -1718,20 +1718,20 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @grossitskylecinnamon (Kyle Sheneman) — added 2026-06-17 - DMed 2026-09-22 (variant 1)
 - [x] @lisamariegrilione (Lisa Ritter-Grilione) — added 2026-06-17 - DMed 2026-09-22 (variant 2)
 - [x] @chelseadcode3 (Chelsea Davis) — added 2026-06-17 - DMed 2026-09-22 (variant 3)
-- [ ] @kcs702transportation (Kris B-KC's 702 Transportation) — added 2026-06-17
-- [ ] @kaitovconstruction (Kaitov Construction) — added 2026-06-17
-- [ ] @tuttlebrady (Brady) — added 2026-06-17
+- [x] @kcs702transportation (Kris B-KC's 702 Transportation) — added 2026-06-17 — DMed 2026-09-24 (variant 1)
+- [x] @kaitovconstruction (Kaitov Construction) — added 2026-06-17 — DMed 2026-09-24 (variant C)
+- [x] @tuttlebrady (Brady) — added 2026-06-17 — DMed 2026-09-24 (variant 2)
 - [x] @aliespie (a l i s o n e s p i e) — added 2026-06-17 — (skipped: already DMed 2026-08-05 as a liker, not re-messaging) 2026-09-23
 - [x] @jrdn.dwsn (Jordan Dawson) — added 2026-06-17 — DMed 2026-09-23 (variant 5)
 - [x] @g.ryanvega (Ryan Vega) — added 2026-06-17 — (skipped: realtor, eXp Realty S.76605) 2026-09-23
 - [x] @missjackieflores (Jackie Flores) — added 2026-06-17 — (skipped: real estate / STR investments) 2026-09-23
-- [ ] @martinez_287_ (Oswaldo Martinez) — added 2026-06-17
+- [x] @martinez_287_ (Oswaldo Martinez) — added 2026-06-17 — DMed 2026-09-24 (variant 3)
 - [x] @isaacvallejoreyes (no name) — added 2026-06-17 — (skipped: account no longer exists) 2026-09-23
-- [ ] @prettylittlebookmark (Pretty Little Bookmark) — added 2026-06-17
+- [x] @prettylittlebookmark (Pretty Little Bookmark) — added 2026-06-17 - skipped: bot pattern (private, 139 followers / 8,480 following)
 - [x] @catherinafromvegas (catherina adams) — added 2026-06-17 — DMed 2026-09-23 (variant 1)
-- [ ] @lawrencestackhouseiii (Lawrence Stackhouse III) — added 2026-06-17
-- [ ] @mama_sheepdog (Ana Salinas) — added 2026-06-17
-- [ ] @danualmeyers (Danual Meyers) — added 2026-06-17
+- [x] @lawrencestackhouseiii (Lawrence Stackhouse III) — added 2026-06-17 — DMed 2026-09-24 (variant 4)
+- [x] @mama_sheepdog (Ana Salinas) — added 2026-06-17 — DMed 2026-09-24 (variant 5)
+- [x] @danualmeyers (Danual Meyers) — added 2026-06-17 — DMed 2026-09-24 (variant 1)
 - [x] @peskypanda120 (Andrew Holcomb) — added 2026-06-17 — DMed 2026-09-23 (variant 2)
 - [ ] @sleeep333 (NT030) — added 2026-06-17
 - [ ] @jimwy (Jim Wy) — added 2026-06-17
@@ -4295,11 +4295,11 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @chrissywissy14 (no name) - added 2026-09-18 - skipped: 0 posts, 6 followers, no name / zero-info account - screened at research 2026-09-18
 
 <!-- inbound-research followers run 2026-09-20 (scheduled ig-commentor): followers dialog again stalled at 14 rows (spinner, no further pagination). All 14 visible checked; 3 already logged, 11 new and eligible (no realtors/brokers among them). -->
-- [ ] @thestingofscorpio (no name) - added 2026-09-20
-- [ ] @vegasbob1975 (Robert Bobby Macabagdal) - added 2026-09-20
-- [ ] @softremains.13 (no name) - added 2026-09-20
-- [ ] @mdolla____ (no name) - added 2026-09-20
-- [ ] @shahinazarmehr (Shahin Azarmehr) - added 2026-09-20
+- [x] @thestingofscorpio (no name) - added 2026-09-20 — DMed 2026-09-24 (variant B)
+- [x] @vegasbob1975 (Robert Bobby Macabagdal) - added 2026-09-20 — DMed 2026-09-24 (variant 5)
+- [x] @softremains.13 (no name) - added 2026-09-20 - skipped: not a prospect (persona account, no real name, reads as a minor)
+- [x] @mdolla____ (no name) - added 2026-09-20 — DMed 2026-09-24 (variant A)
+- [x] @shahinazarmehr (Shahin Azarmehr) - added 2026-09-20 — DMed 2026-09-24 (variant 4)
 - [x] @pokerstevie818 (Steven Smith) - added 2026-09-20 — DMed 2026-09-23 (variant 5)
 - [x] @energy.reimagined (no name - electrician, referral-source business) - added 2026-09-20 — DMed 2026-09-23 (variant A)
 - [x] @lopzeelizabeth313 (Elizabeth Lopez) - added 2026-09-20 - skipped 2026-09-22 (likely fake/bot: generic bear pfp, stock model content)
@@ -4333,19 +4333,57 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 
 <!-- NOTE 2026-09-21 (ig-dmlike-research): the followers dialog was HARD THROTTLED this run and never paginated past the first 14 rows. A same-session fetch to /api/v1/users/web_profile_info returned HTTP 429, which confirms rate limiting rather than a UI bug. Troubleshooting attempted before giving up: JS scrollTop-to-bottom loop; real mouse-wheel scrolls at 3/4/5/8 ticks with 3-9s pauses; repeated waits of 10-20s at the bottom of the list; closing and reopening the dialog; full profile reload plus reopen; direct navigation to /rosehomeslv/followers/; and two cool-down periods totalling roughly 8 minutes. After the second cool-down the dialog stopped rendering at all. NO block screen, NO challenge, NO 'Action Blocked', NO 'Try Again Later', NO logout, so per the run rules NO PAUSE file was written. Coverage reached: the 14 most recent followers only, well short of the ~200 target. Since the earlier run today had already captured 40 followers from the same top-of-list stretch, the 2-deep overlap at rows 13-14 (@austin_barkerrrrr, @jimmytheleo8390) suggests nothing new was missed, but this is NOT confirmed. Ryan may want to scroll the followers list manually and paste it in for deduping. -->
 - [x] @elite_tileandstone (Elite Tile & Stone Llc) - added 2026-09-22 — DMed 2026-09-23 (variant C)
-- [ ] @theessentialsinlife (Nichol Maurer) - added 2026-09-22
+- [x] @theessentialsinlife (Nichol Maurer) - added 2026-09-22 — DMed 2026-09-24 (variant 3)
 - [x] @nv_sabe (NV Association 4 Bilingual Ed) - added 2026-09-22 — DMed 2026-09-23 (variant B)
-- [ ] @aleremis78 (Alejandra Remis) - added 2026-09-22
-- [ ] @brit.bechtler (Melissa Brittany Bechtler) - added 2026-09-22
-- [ ] @serotepelicula33 (Jose Torres Dubina) - added 2026-09-22
-- [ ] @tcluv2fly (Tracy Christenson) - added 2026-09-23
-- [ ] @hufflepuffbulldog (Stephani Loffredo) - added 2026-09-23
+- [x] @aleremis78 (Alejandra Remis) - added 2026-09-22 — DMed 2026-09-24 (variant 2)
+- [x] @brit.bechtler (Melissa Brittany Bechtler) - added 2026-09-22 — DMed 2026-09-24 (variant 1)
+- [x] @serotepelicula33 (Jose Torres Dubina) - added 2026-09-22 — DMed 2026-09-24 (variant 5)
+- [x] @tcluv2fly (Tracy Christenson) - added 2026-09-23 — DMed 2026-09-24 (variant 1)
+- [x] @hufflepuffbulldog (Stephani Loffredo) - added 2026-09-23 — DMed 2026-09-24 (variant 2)
 - [x] @barajas_chef (Lorenzo Barajas) - added 2026-09-23 — DMed 2026-09-23 (variant 4)
 - [x] @smartlocal88 (SMART88) - added 2026-09-23 — DMed 2026-09-23 (variant A)
 - [x] @solideights (NO SERVICE) - added 2026-09-23 - skipped at research (bot pattern: private, 6 followers / 1,987 following)
 - [x] @si_ceej (Si_Cee) - added 2026-09-23 - skipped at research (0 posts, zero-info private: 1 follower / 885 following)
+- [x] @batutavegas_03 (Sandra Anderson) - added 2026-09-24 - skipped: realtor (Sandra Anderson Realtor)
+- [x] @cuddysmom (Marianne Asselta Wasserman) - added 2026-09-24 — DMed 2026-09-24 (variant 4)
+- [x] @joanngarcia0224 (Joann) - added 2026-09-24 - skipped: bot (0 posts, zero-info private)
+- [x] @irunkas (no name) - added 2026-09-24 - skipped: bot (private, 70 followers / 8,575 following)
+- [x] @luiscamargolv (Luis Camargo) - added 2026-09-24 - skipped: realtor (Sphere Real Estate S.198144)
+- [x] @dansincrediblelife (DANNY GERARD) - added 2026-09-24 - skipped: realtor (broker NM & TX)
+- [x] @jayarh (no name) - added 2026-09-24 - skipped: bot (0 posts, zero-info private, 88 followers / 1,079 following)
+- [x] @sky_bklyn (Nandito) - added 2026-09-24 — DMed 2026-09-24 (variant 3)
+- [ ] @mattchlite (Matt) - added 2026-09-24
+- [ ] @yoboythebarber (Ron - Las Vegas Master Barber) - added 2026-09-24
+- [ ] @irishguns (Alan O Neill) - added 2026-09-24
+- [x] @lyn_ette126 (Lyn) - added 2026-09-24 - skipped: bot (0 posts, zero-info private, 19 followers / 804 following)
+- [ ] @jyamilett (Jyamileth) - added 2026-09-24
+- [ ] @702_lvbigman (Armando) - added 2026-09-24
+- [ ] @hugo_flores__ (2tough) - added 2026-09-24
+- [ ] @panama_tiburon (Inniss) - added 2026-09-24
+- [ ] @bigpoppadion (Dion Bailey) - added 2026-09-24
+- [ ] @humblesmranr (Marvin Lespinasse) - added 2026-09-24
+- [ ] @mamaseid206 (Stephanie Seid) - added 2026-09-24
+- [ ] @mwhairfood (Mae Smith) - added 2026-09-24
+- [ ] @ilgxtto (felix) - added 2026-09-24
+- [ ] @chopstixxlulu (Cindy) - added 2026-09-24
+- [x] @ramthellama (RamTheLlama) - added 2026-09-24 - skipped: bot (0 posts, zero-info private, 28 followers / 6,885 following)
+- [ ] @remcovanlatum (Remco Van Latum) - added 2026-09-24
+- [ ] @nikkirosety (Nikki Rose) - added 2026-09-24
+- [ ] @willrankin (Will Rankin) - added 2026-09-24
+- [ ] @_.rpm._ (no usable first name) - added 2026-09-24
+- [x] @sandy.fink77 (Sandy Fink) - added 2026-09-24 - skipped: realtor/broker (Fink Commercial RE, NV B.0022765.corp)
+- [ ] @aca1b0wl (Kaytlin Isabelle) - added 2026-09-24
+- [ ] @_beasley_02 (Mariah) - added 2026-09-24
+- [ ] @andrew_11286 (Andrew) - added 2026-09-24
+- [x] @_bootney_lee_farnsworth (no name) - added 2026-09-24 - skipped: bot (0 posts, no name, 30 followers / 1,040 following)
+- [ ] @tvalcala (Theresa Alcala) - added 2026-09-24
+- [ ] @sketchyduran (Mrs. Duran) - added 2026-09-24
+- [ ] @thenameis_doctor (Doctor) - added 2026-09-24
+- [ ] @budesashannon (Shannon Budesa) - added 2026-09-24
 
 ## Likers  (worked by `/inbound-dm-likes`)
+
+> NOTE 2026-09-24 (dmlikes run): worked 81 of the oldest likers (reel DcmEFFKBGtj backlog, added 2026-08-29 to 09-01). Only 3 were DM-able; 78 were checked off as skips because they are private accounts and/or expose no Message button. Yield on this backlog segment is about 4 percent. Consider having inbound-research filter out private / no-Message accounts at harvest time, or work newest-first, before burning more runs on this segment.
 
 <!-- new likers added below by /inbound-research -->
 - [x] @miranda_.nx3l — "Noel.M" (reel DZdvc-FP25O) — added 2026-06-13 — skipped 2026-06-14 (skipped: 0 posts)
@@ -7252,10 +7290,10 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @xomariagodsprincessxo (Maria) (reel DcmEFFKBGtj) - added 2026-08-29 — DMed 2026-09-23 (variant 1)
 - [x] @annoyin_wanderer (Mike Casillas) (reel DcmEFFKBGtj) - added 2026-08-29 — skipped 2026-09-23 (no Message button on profile)
 - [x] @yemsz (Yemily) (reel DcmEFFKBGtj) - added 2026-08-29 — skipped 2026-09-23 (private, no Message button)
-- [ ] @ori0n_666 (no name) (reel DcmEFFKBGtj) - added 2026-08-29
+- [x] @ori0n_666 (no name) (reel DcmEFFKBGtj) - added 2026-08-29 — DMed 2026-09-24 (variant A)
 - [x] @winning_love_by_daylight (Sirya) (reel DcmEFFKBGtj) - added 2026-08-29 — skipped 2026-09-23 (private, no Message button)
 - [x] @_kasy__ (Kasy) (reel DcmEFFKBGtj) - added 2026-08-29 — skipped 2026-09-23 (no Message button on profile)
-- [ ] @_quinntanax (no name) (reel DcmEFFKBGtj) - added 2026-08-29
+- [x] @_quinntanax (no name) (reel DcmEFFKBGtj) - added 2026-08-29 — skipped 2026-09-24 (zero-info private account)
 - [x] @jamesleitner (James Leitner) (reel DcmEFFKBGtj) - added 2026-08-29 — skipped 2026-09-23 (no Message button on profile)
 - [x] @batmanofsandiego (Auri Aminpour) (reel DcmEFFKBGtj) - added 2026-08-29 — skipped 2026-09-23 (no Message button on profile)
 - [x] @isa.acchambers (Isaac Chambers) (reel DcmEFFKBGtj) - added 2026-08-29 - skipped: mass-follow pattern (268 followers / 6,843 following) 2026-08-29
@@ -7322,7 +7360,7 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @kimtastic15 (Kimberly Kim) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (private, no Message button)
 - [x] @sonysone_ (Sonia) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (private, no Message button)
 - [x] @yeslovve (Everlasting Love) (reel DcmEFFKBGtj) - added 2026-09-01 — DMed 2026-09-23 (variant B)
-- [ ] @_m.lic3a (no name) (reel DcmEFFKBGtj) - added 2026-09-01
+- [x] @_m.lic3a (no name) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (zero-info private account)
 - [x] @king_youngroyalty (Kingslynn) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (private, no Message button)
 - [x] @emelywren (Mrs.Wren) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (private, no Message button)
 - [x] @cezp (Cez Picornell) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (private, no Message button)
@@ -7330,92 +7368,92 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @daphnehopelee (QueenOfSpades) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (private, no Message button)
 - [x] @k_gedge_a (Ana & Kaleo Gedge) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (page unavailable)
 - [x] @jenunez45 (Jesus Eduardo Nuñez-Pulido) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (no Message button on profile)
-- [ ] @guapirta (no name) (reel DcmEFFKBGtj) - added 2026-09-01
+- [x] @guapirta (no name) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (zero-info private account)
 - [x] @_s.nichole.s (S.Nicole.S) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (private, no Message button)
 - [x] @fukkin.kana (Elijah Chu) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (private, no Message button)
 - [x] @steppinoutonfaith (Vanessa Valdez) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (private, no Message button)
 - [x] @dugg03 (Dugg) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (zero posts, fails eligibility)
 - [x] @yumumahoe (Luis Obregon) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (zero posts, fails eligibility)
 - [x] @293rina (Rina Perez) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-23 (private, no Message button)
-- [ ] @purple_mariposa21 (Vanessa) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @primetimejev (Yevie Nillz) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @mikecatalan75 (Mike Catalan) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @kriiztyr1505 (kriizty Rosado) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @awkwardinthe1st (Say-rah Liddell) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @yoomarcoss__ (Joe) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @kailismith10 ('ili girl) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @trishesco (Trisha) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @ethan_balgemino (Ethan) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @heart.shaped_cherries (Rosario) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @one_up_events (Valerie V.) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @yesss_sssssssi (Yess Si) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @instagramablechris (Chris Catoner) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @b1g.n4st13 (Nathan Alexander Ramirez) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @edvegas_ (Edgar Alcantara) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @uncle__casey (Casey) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @bigblazn98 (Bryson Blazn) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @24_figueroa_ (Kat Figueroa) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @roseboy_riots (Andy) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @valeriaceciliaaaa (Valeria Cecilia Cardenas) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @amomfindingjoy (Sarah Ansteth) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @mandahpandabear (Amanda) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @meliilani (Melissa) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @ethanlrios (Ethan Rios) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @jtica92 (Julisa) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @mariposaamia (mia) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @_.maddy_marie (Maddy) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @ginger_meilan_ (Scar's mama) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @barajas77 (Armando Diaz Barajas) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @momoemonte (La-Mont Hicks) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @evona_higby (Evona Higby) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @tiegurl944 (Krystal Burnette) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @swlasvegas (Beverly Peeples) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @avimaael (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @bigsleep92 (Zuriel Parra) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @pooks_mo_bettah (Pookeh Fa'amausili) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @asvptony (Anthony) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @tatscalzada (Tatiana Calzada) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @fenrir_incarnate (Joji Villalobos) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @smileyaracely (ARACELY) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @killabee89 (Brenda Reyna) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @franchescamurao (Jahriyah + Jaxton) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @ohheyitsamemario (ohheyitsamemario) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @chuey_702 (Chuey) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @not.dead.yet56 (Debbie Bernier) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @jenna._.banenna (Jenna Jean Gonzalez) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @selfloveskater (Christian Grey McAnally) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @mascasa93 (Jeremy MoreHouse) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @arclight06 (Sun Tea) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @thatsjustpeachfuzz (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @deedee_010 (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @cjc1987oc (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @earthsign_angelll (no name) (reel DcmEFFKBGtj) - added 2026-09-01
+- [x] @purple_mariposa21 (Vanessa) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @primetimejev (Yevie Nillz) (reel DcmEFFKBGtj) - added 2026-09-01 — DMed 2026-09-24 (variant 2)
+- [x] @mikecatalan75 (Mike Catalan) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (no Message button available)
+- [x] @kriiztyr1505 (kriizty Rosado) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @awkwardinthe1st (Say-rah Liddell) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @yoomarcoss__ (Joe) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @kailismith10 ('ili girl) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @trishesco (Trisha) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @ethan_balgemino (Ethan) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @heart.shaped_cherries (Rosario) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @one_up_events (Valerie V.) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (account unavailable/blank)
+- [x] @yesss_sssssssi (Yess Si) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @instagramablechris (Chris Catoner) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @b1g.n4st13 (Nathan Alexander Ramirez) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (no Message button available)
+- [x] @edvegas_ (Edgar Alcantara) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @uncle__casey (Casey) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (no posts)
+- [x] @bigblazn98 (Bryson Blazn) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private, no posts)
+- [x] @24_figueroa_ (Kat Figueroa) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @roseboy_riots (Andy) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (no Message button available)
+- [x] @valeriaceciliaaaa (Valeria Cecilia Cardenas) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @amomfindingjoy (Sarah Ansteth) (reel DcmEFFKBGtj) - added 2026-09-01 — DMed 2026-09-24 (variant 3)
+- [x] @mandahpandabear (Amanda) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @meliilani (Melissa) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @ethanlrios (Ethan Rios) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @jtica92 (Julisa) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (account no longer available)
+- [x] @mariposaamia (mia) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @_.maddy_marie (Maddy) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @ginger_meilan_ (Scar's mama) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @barajas77 (Armando Diaz Barajas) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @momoemonte (La-Mont Hicks) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (no Message button available)
+- [x] @evona_higby (Evona Higby) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @tiegurl944 (Krystal Burnette) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @swlasvegas (Beverly Peeples) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @avimaael (no name) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (no posts)
+- [x] @bigsleep92 (Zuriel Parra) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @pooks_mo_bettah (Pookeh Fa'amausili) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @asvptony (Anthony) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private, no posts)
+- [x] @tatscalzada (Tatiana Calzada) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @fenrir_incarnate (Joji Villalobos) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (no Message button available)
+- [x] @smileyaracely (ARACELY) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @killabee89 (Brenda Reyna) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @franchescamurao (Jahriyah + Jaxton) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @ohheyitsamemario (ohheyitsamemario) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @chuey_702 (Chuey) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private, no posts)
+- [x] @not.dead.yet56 (Debbie Bernier) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (no posts)
+- [x] @jenna._.banenna (Jenna Jean Gonzalez) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @selfloveskater (Christian Grey McAnally) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @mascasa93 (Jeremy MoreHouse) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @arclight06 (Sun Tea) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @thatsjustpeachfuzz (no name) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (no Message button available)
+- [x] @deedee_010 (no name) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private, no posts)
+- [x] @cjc1987oc (no name) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @earthsign_angelll (no name) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
 - [x] @st38l_c0n3s_fuck_h03s (Marisol?) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped: crude handle, not brand-appropriate to DM 2026-09-01
-- [ ] @itzel_you_later (Itzel Lopez) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @charityjohnson39 (Charity Johnson) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @maggiemay6695 (Maggie Haggie) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @victordlr_08 (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @wearemadeofstarstuffs (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @ginag0630 (Gina Gutierrez-Espino) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @moises0213 (Moises Gonzalez) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @chiocasi (Chio) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @laflaca_jas (Jazzy) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @juskricket (Kricket Olin) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @lety329 (Leticia Villanueva Rodríguez) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @sacrifice.steph (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @rahrah3.0 (Rageemah Davis) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @stormcloak_fermin (Fermin Vera) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @marbleslade (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @ejem89 (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @aintezbncheezee (AintEz Bein Cheezee) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @andrea__chaparrita (Andrea Cabrera) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @awnnie19228 (A) (reel DcmEFFKBGtj) - added 2026-09-01
+- [x] @itzel_you_later (Itzel Lopez) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @charityjohnson39 (Charity Johnson) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @maggiemay6695 (Maggie Haggie) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @victordlr_08 (no name) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private, no posts)
+- [x] @wearemadeofstarstuffs (no name) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @ginag0630 (Gina Gutierrez-Espino) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @moises0213 (Moises Gonzalez) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @chiocasi (Chio) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @laflaca_jas (Jazzy) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @juskricket (Kricket Olin) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @lety329 (Leticia Villanueva Rodríguez) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @sacrifice.steph (no name) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @rahrah3.0 (Rageemah Davis) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @stormcloak_fermin (Fermin Vera) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @marbleslade (no name) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @ejem89 (no name) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @aintezbncheezee (AintEz Bein Cheezee) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @andrea__chaparrita (Andrea Cabrera) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @awnnie19228 (A) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
 - [x] @sahm.7.07.bundle_of_joy (Cash App Donations account) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped: donation-solicitation account 2026-09-01
-- [ ] @edenhussey (edenhussey) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @j__ontiveros (J ONTIVEROS) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @jacquelineoprea (Jacqueline Gibbons) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @jbbrown240 (Jeannie Brown) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @suavecito2010.rp (Rosa Y Marcos) (reel DcmEFFKBGtj) - added 2026-09-01
+- [x] @edenhussey (edenhussey) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @j__ontiveros (J ONTIVEROS) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @jacquelineoprea (Jacqueline Gibbons) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
+- [x] @jbbrown240 (Jeannie Brown) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (no posts)
+- [x] @suavecito2010.rp (Rosa Y Marcos) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
 - [ ] @itzelioo (Itzel) (reel DcmEFFKBGtj) - added 2026-09-01
 - [ ] @juaninami11i0n (Juan Romero) (reel DcmEFFKBGtj) - added 2026-09-01
 - [ ] @quad_kritterz (Edgar DeSantiago) (reel DcmEFFKBGtj) - added 2026-09-01
@@ -8186,6 +8224,77 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [ ] @kyler_moulton (Kyler Moulton) (reel DdmCvq9s5Sj) - added 2026-09-23
 - [ ] @therealrileyholden17 (Riley Holden) (reel DdmCvq9s5Sj) - added 2026-09-23
 - [x] @jlevylasvegas (Joanne Lewey Levy) (reel DdkipaRM9W8) - added 2026-09-23 - skipped at research (realtor)
+<!-- inbound-research run 2026-09-24 (scheduled "Ig dmlike research"): followers walked 273 deep via the followers API, past the 200 target; 28 were new and every follower from position 60 to 273 was already in this log, so the top of the list is fully captured. No stall, no throttle, no block on the followers list. Instagram's profile-info API (users/web_profile_info and users/<pk>/info) returned 429 all run, so each new follower was screened by loading their profile page in Chrome instead; liker eligibility was screened on handle and display name only. Reels checked: Ddq8YSgm7Sq, DdptVwWMeV_, DdpR9Xam3Jx, DdoxTRqG4Tx, DdoXg8XMG2U, Ddoub-fsEZM. Likers: 195 unique across the 6 reels, 67 new and eligible. Five people who both followed and liked this run (@mattchlite, @budesashannon, @sandy.fink77, @andrew_11286, @ramthellama) were added under Followers only, so nobody gets two DMs. -->
+- [ ] @jen_lesure444 (JL) (reel Ddq8YSgm7Sq) - added 2026-09-24
+- [ ] @__jpx3 (JP) (reel Ddq8YSgm7Sq) - added 2026-09-24
+- [ ] @public.pilgrim (Eric) (reel Ddq8YSgm7Sq) - added 2026-09-24
+- [ ] @nighthawkbren (Brennan Ito) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @maxsiglesias (Max Iglesias) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @lenny_fisherman_v2 (Christopher Rhodes) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @yadi_onti (Yadira Ontiveros) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @rodrigue.omar (omar rodriguez) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @marilyn.gal (Marilyn Galan) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @amscarff1 (Ann) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @stan.peralta (Stan) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @icedteafairy (Frrobin) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @cabaskrilla (Brad Cabanilla) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @georgeowalks (Geo) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @_robertreyes (Rob) (reel DdptVwWMeV_) - added 2026-09-24
+- [x] @utahata1212 (Jay) (reel DdptVwWMeV_) - added 2026-09-24 - skipped at research (previously screened hostile/profane; also left a charged comment this run)
+- [ ] @asammich (sammich) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @chazclawson (Chaz Clawson) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @travtantan (Travis Tanner) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @meanswife (Meanswife) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @_modavi.doni_ (Mo Donielle) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @sasiad89 (Mateusz Sasiada) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @dingleberry214677 (Darin Law) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @lopez_arely (Arely Lopez) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @prininin (no usable first name) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @alcarazmarthagutierrez (Martha Gutierrez Alcaraz) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @lordjames (Lord Mckan) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @kc.carter24 (KcCarter) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @882and332 (Helen Choi Yu) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @mm_sh6n (Shannon) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @jonn_garr (Jimmy Karate) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @toxik97 (Marissa Hernandez) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @whitekobe231 (Jacob Tyler) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @_its_evie1 (Eve) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @erikasluckypaws (Erika's Lucky Paws) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @ms_quali_t (Ms. Fa'aana) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @foreign_phil (Foreign Phill) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @tinakish (Tina Kish) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @3silver_boxes (3Silver_Boxes Closet) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @mocha_allures (Mocha Allures) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @poriruayouthbrass (no name) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @ernan_702 (Ernan) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @theanthonyguerra (Anthony) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @elguerobandolero (El Guero) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @l_larson_53 (Logan) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @fili_dei_miserere (Christian) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @road_king_sole (Logo Hill) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @achillesduran13 (Achilles) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @greenizgold (no name) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @bklt55 (BKaltsas) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @stevenkarthur (Steven Arthur) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @mammothskier (CW) (reel DdptVwWMeV_) - added 2026-09-24
+- [x] @maggie_murillo_realestate_lv (Magdalena Murillo) (reel DdptVwWMeV_) - added 2026-09-24 - skipped at research (realtor)
+- [ ] @yuriazov (Yuri Azov) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @_carlosjc (Juan Carlos) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @charliephan3 (Charlie) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @thatonediaz (Bryan Diaz) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @miltechmoto (MilTech Moto) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @i_want_a_martini (Martin Carvajal) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @measuredinmoney (no name) (reel DdptVwWMeV_) - added 2026-09-24
+- [ ] @zhang_xueer.01 (Zhang Xue er) (reel DdpR9Xam3Jx) - added 2026-09-24
+- [ ] @702.sebas_ (sebas) (reel DdoxTRqG4Tx) - added 2026-09-24
+- [ ] @kim.troutman14 (Kim Troutman) (reel DdoXg8XMG2U) - added 2026-09-24
+- [ ] @bby.rozyy (no name) (reel DdoXg8XMG2U) - added 2026-09-24
+- [ ] @ambrose_lv (Richie The Barber) (reel DdoXg8XMG2U) - added 2026-09-24
+- [ ] @msaugust444 (no usable first name) (reel DdoXg8XMG2U) - added 2026-09-24
+- [x] @discover_lasvegas (Jayveer jayveer) (reel DdoXg8XMG2U) - added 2026-09-24 - skipped at research (spam/bot, screened 2026-09-24)
+- [ ] @maria4str8 (Maria Minori) (reel DdoXg8XMG2U) - added 2026-09-24
+- [ ] @smilelyj (Smiley Johnson) (reel DdoXg8XMG2U) - added 2026-09-24
+- [ ] @sir_hoel (Joel) (reel DdoXg8XMG2U) - added 2026-09-24
 
 ## Comments  (worked by `/inbound-comments`)
 
@@ -8921,6 +9030,16 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
      DdKz0nKBny9 and DdWsQV4M97Y were fully re-read; every comment on them was already in this log except the two added below. -->
 - [ ] @_jess_sanchez__ on reel Ddg3espMB59 : "@butterfliez4me 100 agree and it is more equitable. You can't have new buildings in the suburbs and let the Central Valley be all decrepit school buildings." - added 2026-09-22
 - [x] @kc.carter24 on reel DdfWNU-scOO : "Probably because buying right now is a bad decision, and buying condos are bad decisions" - added 2026-09-22 - replied 2026-09-22 (verified live: comment count 4 -> 5, box cleared)
+- [x] @kyle_nord on reel DdptVwWMeV_ : "How do you turn up the brightness of this video? Sorry but I’m always facilitated by how your videos always pop! Asking for a friend!" - added 2026-09-24 - replied 2026-09-24 (verified live on reload)
+- [ ] @freetobe_lne on reel DdptVwWMeV_ : "Imagine the traffic if they did 😮" - added 2026-09-24
+- [ ] @michael9838miller on reel DdptVwWMeV_ : "I love my house in Las Vegas 1250.00 for a year of property tax😂" - added 2026-09-24
+- [x] @neongoatentertainment on reel DdptVwWMeV_ : "City of second home for tax reasons" - added 2026-09-24 - replied 2026-09-24 (verified live on reload)
+- [ ] @silatcode on reel DdptVwWMeV_ : "Zillow, redfins, Black Rock owns a lot of homes" - added 2026-09-24
+- [x] @kt___gram___ on reel DdptVwWMeV_ : "I bet a large percentage of the houses are owner occupied in which they didn’t turn in the tax cap postcard or the county messed up and didn’t apply it. Also the tax structure is a scam. I’m owner occupied but because the previous owner(occupied) didn’t file for the 3% I’m stuck paying 1,200 more a year than a fellow neighbor that had the tax cap for all the years my house wasn’t capped." - added 2026-09-24 - replied 2026-09-24 (verified live on reload)
+- [ ] @max.the.berner2020 on reel DdptVwWMeV_ : "The assessor is not responsible to tell you about the caps. Quite frankly, if you had a good Real Estate agent, they should be informing you as well as when you go through the lending process. Like you said it’s an easy fix. All you do is go down to the assessors." - added 2026-09-24
+- [ ] @terp_torture on reel DdoXg8XMG2U : "Why did they even blow it down! It was perfectly usable makes no sense" - added 2026-09-24
+- [x] @mobileautocares on reel DdptVwWMeV_ : "In my neighborhood most don’t even live in this country" - added 2026-09-24 - skipped: charged/xenophobic - screened at research 2026-09-24
+- [x] @discover_lasvegas on reel DdoXg8XMG2U : "Seηd me this Post" - added 2026-09-24 - skipped: spam/bot (homoglyph) - screened at research 2026-09-24
 
 <!-- inbound-comments run 2026-09-22 (scheduled ig-commentor): 3 replies posted and verified live.
      POSTED AND VERIFIED LIVE:
@@ -9004,3 +9123,65 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
      scheduled task so future runs can verify.
 
      EXTENSION: Claude in Chrome disconnected once mid-run and recovered on retry. -->
+
+<!-- RESEARCH + COMMENT RUN 2026-09-24 (scheduled ig-commentor, Chrome, @rosehomeslv)
+
+     STEP 1 RESEARCH. Scope held to @rosehomeslv's OWN posts only. Walked the 6 most recent own reels:
+       DdptVwWMeV_ (10h, 43% not owner-occupied), DdpR9Xam3Jx (14h, 0 comments), DdoxTRqG4Tx (19h, 0 comments),
+       DdoXg8XMG2U (23h, Boyd/Eastside Cannery), Ddoub-fsEZM (1d, 0 comments), DdpKbRcswup (1d, 0 comments),
+       DdmCvq9s5Sj (1d, 0 comments).
+     Comments added: 8 new unchecked + 2 screened-and-checked-off.
+       Screened out at research: @mobileautocares (DdptVwWMeV_, xenophobic) and @discover_lasvegas (DdoXg8XMG2U,
+       spam/bot, homoglyph "Se(eta)d me this Post"). Also seen live but NOT added: @nancy_lvnv (political, Lombardo veto).
+     Followers added: 8 new. The followers dialog again refused to paginate past the first 14 rows (same throttle as
+       09-21 and 09-23), so coverage is the 14 newest followers only. 6 of those 14 were already in the log.
+     Likers: NOT harvested this run. The /liked_by/ dialog would not render and the Chrome extension was dropping
+       connection repeatedly, so the likers pass was skipped rather than burned on retries. Nothing was lost, it just
+       needs to be picked up by the next research run. Ryan: the dm-likes queue will be one run stale.
+
+     STEP 2 COMMENTS. 3 replies posted and VERIFIED LIVE on reload:
+       @kt___gram___ (DdptVwWMeV_) - tax cap complaint, lead, reply pulls her to DMs.
+       @kyle_nord (DdptVwWMeV_) - asked how the videos are shot/edited, lead, reply pulls him to DMs.
+       @neongoatentertainment (DdptVwWMeV_) - second-home tax point.
+
+     SILENT COMMENT THROTTLE RETURNED, SAME SIGNATURE AS 09-23. After the third successful reply, every further
+     attempt failed silently. Four comments left unchecked and unreplied:
+       @silatcode (DdptVwWMeV_)          - box stayed full, Post clicked 3x by element ref, never posted.
+       @michael9838miller (DdptVwWMeV_)  - box CLEARED on Post, which normally means success, but the reply never
+                                           appeared on reload. Worst case of the day: clearing is not a reliable signal.
+       @ant_man3z (DdptVwWMeV_)          - same as above, box cleared, reply never appeared.
+       @terp_torture (DdoXg8XMG2U)       - box stayed full, Post clicked 2x by element ref, never posted.
+     Pattern read: the account takes roughly 3 comments and then soft-drops the rest. Yesterday it took 0. It is not
+     post-age related (all four failures were on posts under 24h old) and it is not a missed click (the Reply prefill
+     "@handle " was confirmed in the textarea before typing every single time, and the Post button was resolved by
+     element reference, never by fixed coordinate).
+     VERIFIED NO DUPLICATES AND NO LEAKS: DdptVwWMeV_ was fully reloaded and its entire comment list read end to end.
+     Exactly three rosehomeslv replies are present. The comment box was explicitly selected-all-and-deleted after each
+     failure so no stranded text could attach itself to a later reply.
+
+     WHY NO PAUSE FILE: no true stop condition occurred. No "Action Blocked", no "Try Again Later", no captcha, no
+     verify-identity challenge, no logout. Still logged in as @rosehomeslv throughout. Stopped after the fourth
+     confirmed failure rather than spending the remaining ~16 replies into a throttle and risking a real action block.
+
+     NO DMS SENT. This task does not send DMs. Two replies ask the person to DM Ryan, which is the intended behavior,
+     and neither claims a DM was sent. No outstanding DM promises were found from earlier runs.
+
+     EXTENSION: Claude in Chrome disconnected roughly six times mid-run and recovered each time on retry. Several
+     browser_batch calls also hit the 180s timeout. Slower run than usual as a result.
+
+     CARRIED FORWARD, all still unchecked, check each thread for an existing rosehomeslv reply before posting next run:
+       @silatcode (DdptVwWMeV_), @michael9838miller (DdptVwWMeV_), @ant_man3z (DdptVwWMeV_ - not in the log yet, it
+       arrived after the harvest pass; it is a lead, "Send link"), @freetobe_lne (DdptVwWMeV_),
+       @max.the.berner2020 (DdptVwWMeV_), @terp_torture (DdoXg8XMG2U), plus the whole older backlog which was never
+       reached because the last-24h comments were not all cleared.
+
+     NOTE FOR RYAN: the guardrail files at /Users/ryanrose/.claude/skills/ig-engage/ and the deal records at
+     /Users/ryanrose/Downloads/Claude/Transactions/ are still outside this session's connected folders. No teamwork
+     claim came up this run, so nothing needed verifying against them, but connecting those folders to the scheduled
+     task would close that gap. -->
+
+- [ ] @ant_man3z on reel DdptVwWMeV_ : "Send link" - added 2026-09-24
+- [ ] @djordachian on reel DdptVwWMeV_ : "How many of those homes are paid up on their taxes? That's the story." - added 2026-09-24
+- [x] @dance.alchemist on reel DdptVwWMeV_ : "Chinese investors bought most of these houses in cash during 2008" - added 2026-09-24 - skipped: charged (nationality-framed claim) - screened at research 2026-09-24
+- [x] @nancy_lvnv on reel DdptVwWMeV_ : "And then theres Lombardo who vetoed the bill that would have stopped this." - added 2026-09-24 - skipped: political - screened at research 2026-09-24
+- [x] @utahata1212 on reel DdptVwWMeV_ : "property taxes are a scam" - added 2026-09-24 - skipped: political/charged - screened at research 2026-09-24

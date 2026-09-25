@@ -155,7 +155,7 @@ The v1 look (dark-teal radial gradient, gold underline, gold/navy/cream isometri
 | `tiles.html` | All seven covers on one contact sheet, scaled to fit. Serve or open it to review the set at once. |
 | `fit-title.js` | Steps the title size down by character count (>17 chars → `--md`, >34 → `--sm`) so a title never reaches a third line, then re-runs after the fonts land because the first pass measures Arial. |
 | `configs/` | One `<NN>-<slug>.json` per module: `{ "meta", "title", "subtitle" }`. The build only picks up files matching `NN-*.json`. |
-| `01-start-here.png` … `09-resources.png` | The rendered covers. `08-sellers` added 2026-09-17 (seller-side workflows, starting with the weekly seller update). `09-resources` added 2026-09-17, blank meta (no module number), same as `08-sellers`. |
+| `01-start-here.png` … `10-newsletters.png` | The rendered covers. `08-sellers` added 2026-09-17 (seller-side workflows, starting with the weekly seller update). `09-resources` added 2026-09-17 and `10-newsletters` added 2026-09-24, both blank meta (no module number), same as `08-sellers`. |
 
 The meta label carries the module number and **no runtime**, because a module holds several videos.
 
@@ -295,7 +295,7 @@ Brandkit/
     ├── tiles.html                       all 7 on one contact sheet
     ├── fit-title.js                     steps title size by length so nothing hits a 3rd line
     ├── configs/                         one <NN>-<slug>.json per module: meta/title/subtitle
-    └── 01-start-here.png … 09-resources.png   the 9 rendered covers, 1600x847 (08 + 09 added 2026-09-17; 08/09 have no module number)
+    └── 01-start-here.png … 10-newsletters.png   the 10 rendered covers, 1600x847 (08 + 09 added 2026-09-17, 10 added 2026-09-24; 08/09/10 have no module number)
 ```
 
 **Maintenance rule:** When you add, remove, or replace a brand asset here, update this map AND the parent `SKOOL Community/CLAUDE.md` map in the same change. **Brand images are build outputs, not artwork** — change `Design-System/` or a source HTML and rerun `node Design-System/build-assets.mjs`, never retouch a PNG by hand, or the next build silently reverts you. The ~29 per-project logo copies under `hyperframes-student-kit/video-projects/*/assets/` do NOT auto-update and are deliberately still v1; refresh one only when its composition is migrated. Never leave the map stale. `hyperframes-student-kit/render-thumbnail.mjs` still pairs with `YouTube-Thumbnails/` and has to live where Playwright is installed; `render-classroom-cover.mjs` is retired. `build-assets.mjs` hardcodes the absolute path to `hyperframes-student-kit/node_modules/playwright`, so if this folder or that one moves, fix it there too.

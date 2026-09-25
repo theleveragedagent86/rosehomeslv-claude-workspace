@@ -37,13 +37,8 @@ WHO THIS IS FOR, contact, subscribe, sources and disclaimer, hashtags.
 23:35 Valley Inventory Sits at 5,711 Homes, Up 19% Since January
 24:56 One-Bedroom Rents Fell in Every Las Vegas Submarket
 
-## TAGS
-las vegas news, las vegas real estate, colorado river water cuts, lake mead, nevada water allocation,
-robotaxi las vegas, tesla robotaxi, waymo las vegas, clark county news, ccsd news, marc andre fleury,
-summit club summerlin, vegas golden knights, henderson silver knights, george mcphee, athletics ballpark
-las vegas, airbnb clark county, short term rental las vegas, las vegas rent prices, zumper las vegas,
-las vegas home prices, mortgage rates las vegas, henderson charter schools, summerlin, north las vegas,
-spring valley nevada, ryan rose realtor
+## TAGS (312 characters, YouTube's limit is 500)
+las vegas news, las vegas real estate, nevada water cuts, colorado river, robotaxis las vegas, waymo, athletics ballpark, clark county school district, las vegas housing market, las vegas rents, henderson real estate, summerlin, new construction las vegas, mortgage rates, vegas golden knights, ryan rose realtor
 
 ## THUMBNAIL
 Final: `thumbnail-LWT-grid-labeled.jpg` (1280x720 JPEG, 246KB).
