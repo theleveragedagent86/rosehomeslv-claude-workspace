@@ -91,8 +91,8 @@ Claude/
 │   │                         #   fourplex_ranked.csv). Source PDFs in ~/Downloads.
 │   └── local-seo/            # rosehomeslv.com SEO work: audits, keyword research,
 │       │                     #   the Cowork prompt, and paste-ready page files
-│       ├── broken-links-remaining.md  # 385 internal blog links pointing at posts that
-│       │                     #   were never written; each needs the post or the link gone
+│       ├── posts-worth-writing.md  # 32 pillar guides that 120 existing internal links
+│       │                     #   already point at; each has an audience waiting on day one
 │       └── pages/
 │           ├── paste/                # New Construction hub (the OLD live hub, being replaced by /las-vegas-new-construction)
 │           ├── paste-relocation/     # Relocation hub (ready to paste, /moving-to-las-vegas)
