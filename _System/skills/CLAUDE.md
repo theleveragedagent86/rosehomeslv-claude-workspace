@@ -59,7 +59,17 @@ skills/
 │   │                      YouTube Studio via claude-in-chrome. Phase-B twin of /codename-history.
 │   └── references/        metadata-format.md (fields, description template, schedule.md layout),
 │                          publish-automation.md (Studio click steps, focus checks, verify)
+├── rose-report/           The Rose Report weekly Thursday newsletter (Rose Homes LV, beehiiv). Routine:
+│   ├── SKILL.md           update LAST week's web post with live reel links -> build this week's issue
+│   │                      from /local-news research + "Missed last week?" catch-up line -> beehiiv
+│   │                      snippet -> draft. Never sends/tests/schedules without Ryan's yes.
+│   ├── scripts/           swap_reels.py (Pxx marker -> live reel link, both HTML files),
+│   │                      beehiiv.py (list/get/create/update; key from Keychain; create+update Max-only)
+│   └── references/        beehiiv.md (plan limits, what beehiiv strips, snippet rules, browser paste flow)
 ```
+
+**`rose-report` is live as a symlink**, `~/.claude/skills/rose-report` → this folder. Issues live in
+`Rose Homes LV/Marketing/Newsletter/issues/<send-date>/`; if that moves, update the Paths table in its SKILL.md.
 
 **`skool-carousel` and `coach-teardown` are live as symlinks**, `~/.claude/skills/<name>` → this folder.
 It reads grounding files by absolute path from `SKOOL Community/`, so if that folder moves,

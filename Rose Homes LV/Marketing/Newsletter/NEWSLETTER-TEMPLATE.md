@@ -78,6 +78,10 @@ PREHEADER: Plus, [tease of the Out and About or Stats item]
 
 Hey #lead_first_name#,
 
+[Catch-up line, one small gray line: "Missed last week's Rose Report?
+Catch up here, now with every reel linked." "here" links to last
+week's web post, updated in step 1 of the weekly workflow.]
+
 [Hook: 4 to 6 one-line paragraphs. Open with the most surprising local
 fact of the week. Set up a tension. End with why it matters to people
 who live here.]
@@ -275,7 +279,16 @@ zip code and I'll send it.
 2. Wednesday: open that week's `top-stories.md` and `weekly-summary.md`. Pick 1 for Right Now, 4 to 5 for Out and About, 1 for Sold and Stats, 3 to 5 for Everything Else.
 3. Check that every Out and About event is still upcoming and every link works. (Ellavate's warning: one dead link or last year's festival hurts your credibility.)
 4. Fill in the template. Add Ryan's take, Ryan's Pick, and the reply question in your own voice. That personal layer is what AI can't fake.
-5. Swap in the matching IG reel links.
-6. Send Thursday morning. Reply to every response.
+5. Swap in the matching IG reel links for any reels already live.
+6. Thursday, before sending: update LAST week's issue. Swap every "Reel drops..." line for the real reel link (each one carries a hidden code comment naming its reel, like P06). Only the web version changes; sent emails can't. Instagram blocks Claude's lookups at times, so Ryan may need to paste the reel links.
+7. Add the catch-up line (under "Hey #lead_first_name#,") linking to that updated web post.
+8. Send Thursday morning. Reply to every response.
 
-**Note:** The name "The Rose Report" and Thursday send day are suggestions. Swap them freely.
+**Never send a second "updated" email for the same week.** It reads as spam and hurts deliverability. Late reels get caught up by step 6 and the catch-up line instead.
+
+**beehiiv facts behind steps 6 and 7 (checked 2026-09-24):**
+- Posts publish to both email and web by default (API `platform: "both"`), and each gets a web URL like `rosehomeslv.beehiiv.com/p/<slug>`. Link the catch-up line there.
+- beehiiv allows editing a sent post's web version (content, title, thumbnail). The email already delivered does not change.
+- The API can edit posts (`PATCH /publications/{id}/posts/{postId}` with `body_content`), but only on the **Max and Enterprise plans**, the same as creating posts. After the Max trial ends, on the free plan, do steps 6 and 7 in the beehiiv editor through Chrome instead.
+
+**Note:** Thursday send is confirmed by Ryan (2026-09-24), even though about half the week's reels aren't live yet. Steps 6 and 7 cover the gap.

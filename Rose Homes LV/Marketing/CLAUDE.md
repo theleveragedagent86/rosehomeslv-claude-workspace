@@ -23,6 +23,7 @@ Marketing/
 │                               Email styling = Leveraged Agent v2.0 "Vector" kit (SKOOL Community/Brandkit), adopted 2026-09-23.
 │                               issues/2026-09-24/newsletter-v1-navy-gold.html = archived pre-Vector version
 │                               issues/2026-09-24/beehiiv-snippet.html = body-only version pasted into a beehiiv HTML snippet block (no <style>, fluid width)
+│                               Weekly routine = /rose-report skill (source _System/skills/rose-report). Each issue has beehiiv.json (post id + web_url).
 │                               beehiiv strips sms: links, so its Text-me button goes to theleveragedagent86.github.io/rhlv-site-images/text-ryan/ (GitHub Pages redirect into Messages)
 ├── Relocation Guide/           relocation guide site
 ├── Smart Plans/                Lofty nurture sequences
