@@ -31,8 +31,8 @@ Plugins are distributed as `<name>-plugin.zip`. When you change a plugin's dev c
 _System/
 ├── plugins/    19 plugin dev-copies (blog-writer, tc-plugin, publish-blogs, ig-*, inbound-*, daily-checklist, excalidraw, etc.)  → _System/plugins/CLAUDE.md
 │            publish-blogs-plugin/lofty_api.py = shared background Lofty blog API tool (local-news scripts use it too)
-├── skills/     skill source copies (blog-writer, listing-marketing, publish-blogs, reverse-prospecting, expired-content, Reddit, skill-builder, Listing Marketing Plan, listing-video, yt-thumbnail, yt-shorts-publish, skool-carousel, coach-teardown, rose-report)  → _System/skills/CLAUDE.md
-│            skool-carousel + coach-teardown + rose-report are SYMLINKED live into ~/.claude/skills/
+├── skills/     skill source copies (blog-writer, listing-marketing, publish-blogs, reverse-prospecting, expired-content, Reddit, skill-builder, Listing Marketing Plan, listing-video, yt-thumbnail, yt-shorts-publish, skool-carousel, skool-manychat, skool-ig-post, coach-teardown, rose-report, skool-reels, skool-shorts-schedule)  → _System/skills/CLAUDE.md
+│            skool-carousel + coach-teardown + rose-report + skool-reels + skool-shorts-schedule are SYMLINKED live into ~/.claude/skills/
 ├── tools/      dev tools (claude-ads-main, scrape_listing_leads*.py, excalidraw_generator.py, listing-video/, longform-to-shorts/)  → _System/tools/CLAUDE.md
 ├── external-skills/  third-party skill repos cloned for evaluation, NOT installed (instagram-skills by
 │            sergebulaev; SlopMonster by ItsssssJack = AI-writing linter + rival-model cleanse, skill name `slopmonster`)

@@ -25,6 +25,17 @@ h1 em{font-style:normal;color:var(--acc)}
 .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;border-top:3px solid var(--line);padding-top:30px}
 .mark{font-weight:800;font-size:40px;letter-spacing:-.02em;color:var(--ink)}
 .tag{font-weight:600;font-size:26px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink2)}
+/* 16:9 variant for YouTube thumbnails: ?r=16x9 renders the same title at 1280x720. */
+.w169{width:1280px;height:720px}
+.w169 .rail{height:10px}
+.w169 .ghost{font-size:430px;top:90px;right:-40px}
+.w169 .band{left:60px;right:60px;top:52px;bottom:52px}
+.w169 .eyebrow{font-size:21px;gap:14px}
+.w169 .eyebrow .dot{width:10px;height:10px}
+.w169 .sub{font-size:27px;margin-top:26px;max-width:780px}
+.w169 .foot{padding-top:20px;border-top-width:2px}
+.w169 .mark{font-size:28px}
+.w169 .tag{font-size:18px}
 </style></head>
 <body>
 <div class="wash"></div><div class="rail"><i id="rail"></i></div>
@@ -69,7 +80,9 @@ const SETS={
 const q=new URLSearchParams(location.search), set=SETS[q.get("set")||"wsu"], n=+(q.get("n")||1), N=set.items.length, c=set.items[n-1]||["",""];
 // colour follows the POSTING order, not the reel number: the two sets alternate day by day,
 // so a whole set is one colour and the profile grid still alternates. "alt" = odd dark, even light.
-document.body.className = set.color==="alt" || !set.color ? (n%2 ? "dark" : "light") : set.color;
+const wide = q.get("r")==="16x9";
+document.body.className = (set.color==="alt" || !set.color ? (n%2 ? "dark" : "light") : set.color) + (wide ? " w169" : "");
+if (wide) document.documentElement.style.cssText = "width:1280px;height:720px";
 const h=document.getElementById("h"); h.innerHTML=c[0];
 document.getElementById("s").textContent=c[1];
 document.querySelector(".eyebrow span:nth-child(2)").textContent=set.label;
@@ -77,6 +90,7 @@ document.getElementById("part").textContent="Part "+n+" of "+N;
 document.getElementById("ghost").textContent=n;
 document.getElementById("rail").style.width=(n/N*100)+"%";
 // fit: largest size (max 166px) where no word overflows and the title stays under 600px tall
-window.fit=()=>{let fs=166;for(;fs>96;fs-=2){h.style.setProperty("--fs",fs+"px");if(h.scrollWidth<=h.clientWidth+1&&h.offsetHeight<=600)break}return fs};
+window.fit=()=>{let fs=wide?112:166, lo=wide?54:96, cap=wide?250:600;
+ for(;fs>lo;fs-=2){h.style.setProperty("--fs",fs+"px");if(h.scrollWidth<=h.clientWidth+1&&h.offsetHeight<=cap)break}return fs};
 </script>
 </body></html>

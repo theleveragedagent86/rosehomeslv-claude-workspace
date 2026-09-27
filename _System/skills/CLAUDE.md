@@ -38,8 +38,14 @@ skills/
 │       │                  SKOOL Community/hyperframes-student-kit/node_modules/.
 │       └── manychat-flow.md  the keyword-CTA automation architecture: comment trigger ->
 │                          rotated public reply -> DM sequence (1000-char IG cap) -> 3-button
-│                          branch -> tags -> 24h follow-up. Also the ManyChat build order for
-│                          driving the browser. Ryan does signup/payment/IG OAuth himself.
+│                          branch -> tags -> 24h follow-up, plus facts verified in the builder
+│                          (Meta one-DM rule, M1 needs a button). Build steps moved to skool-manychat.
+├── skool-manychat/        Step 2 after skool-carousel. SKILL.md builds a carousel's ManyChat flow
+│                          from automation/automation-NN-KEY.md in Ryan's Chrome (Basic Builder,
+│                          React value-setter fill, tags, trigger, Set Live). Then offers skool-ig-post.
+├── skool-ig-post/         Step 3. SKILL.md posts the carousel PNGs + caption + first comment to
+│                          @the.leveraged.agent (Publora if connected, else instagram.com +
+│                          file_upload, 10MB/call). Only on Ryan's explicit yes. Never @rosehomeslv.
 ├── coach-teardown/        Leveraged Agent COMPETITOR RESEARCH. Ryan gives a realtor-coach IG
 │   ├── SKILL.md           handle, this harvests every post/comment/liker via IG's own web API
 │   │                      from a logged-in Chrome, reverse-engineers the funnel mechanic, and
@@ -59,6 +65,15 @@ skills/
 │   │                      YouTube Studio via claude-in-chrome. Phase-B twin of /codename-history.
 │   └── references/        metadata-format.md (fields, description template, schedule.md layout),
 │                          publish-automation.md (Studio click steps, focus checks, verify)
+├── skool-reels/           Leveraged Agent long-form recording -> Reels/Shorts batch: whisper words.json,
+│   ├── SKILL.md           screen offset, approved cut list, build (copies Shorts-Build/weekly-seller-update/
+│   │                      build.py), privacy pass, covers, IG captions, YT metadata, schedule. -> skool-shorts-schedule
+│   ├── scripts/           transcribe.py (whisper-cli small.en -> words.json + txt dumps), offset.py (6-word-run median)
+│   └── references/        build-pipeline.md (layout, crops, VFR/concat/caption traps), copy-formats.md
+├── skool-shorts-schedule/ Step 2 after skool-reels. YouTube Studio (Leveraged Agent channel) draft fill + schedule +
+│   ├── SKILL.md           Related video via claude-in-chrome, then IG-POSTING-KIT.md (Ryan schedules IG by hand,
+│   │                      10MB upload cap) and a both-schedulers calendar check. Never Rose Homes LV.
+│   └── references/        youtube-studio.md (verified JS: Reuse details, calendar, related video), instagram.md
 ├── rose-report/           The Rose Report weekly Thursday newsletter (Rose Homes LV, beehiiv). Routine:
 │   ├── SKILL.md           update LAST week's web post with live reel links -> build this week's issue
 │   │                      from /local-news research + "Missed last week?" catch-up line -> beehiiv
@@ -71,7 +86,7 @@ skills/
 **`rose-report` is live as a symlink**, `~/.claude/skills/rose-report` → this folder. Issues live in
 `Rose Homes LV/Marketing/Newsletter/issues/<send-date>/`; if that moves, update the Paths table in its SKILL.md.
 
-**`skool-carousel` and `coach-teardown` are live as symlinks**, `~/.claude/skills/<name>` → this folder.
+**`skool-carousel`, `skool-manychat`, `skool-ig-post`, `coach-teardown`, `skool-reels` and `skool-shorts-schedule` are live as symlinks**, `~/.claude/skills/<name>` → this folder.
 It reads grounding files by absolute path from `SKOOL Community/`, so if that folder moves,
 update the table in its SKILL.md.
 
