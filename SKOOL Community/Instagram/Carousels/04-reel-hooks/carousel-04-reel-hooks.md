@@ -1,7 +1,7 @@
 # Carousel 04, 20 Reel Hooks For Realtors Who Hate Cameras
 
 The Leveraged Agent. Written 2026-09-11. Rewritten 2026-09-11, consumer-facing pass.
-6 slides, no keyword CTA, save/share pattern.
+6 slides. Keyword CTA HOOKS added 2026-09-27 (was save/share), automation in ../automation/automation-04-HOOKS.md.
 
 Pattern source: Whitney Bartlette teardown. Cover carries the number, the slides carry the
 full list, nothing is gated. Her swipe-file carousel ran three times over eight months and
@@ -64,7 +64,7 @@ column. A buyer will watch a cursor move across a number they care about.
 
 **The camera was never the problem.**
 Not having the first line was.
-**Save this. Use one tomorrow.**
+**DM me "HOOKS" to copy all 20.**
 
 ## CAPTION
 
@@ -85,8 +85,8 @@ discipline hack, it is a file structure.
 Pick one hook off this list, open your phone, and record it before you talk yourself out
 of it. The hook is the hard part and I just did that part for you.
 
-Save this so you have it the next time you open the camera and freeze.
+DM me HOOKS and I will send you all 20 as text, so you can copy them straight into your notes.
 
 Ryan Rose | Real Broker, LLC
 
-#realtorlife #realestateagent #realestatemarketing #realestatecontent #contentcreation #aiforrealtors #reelsforrealtors #agentproductivity
+#realestateagent #realestatemarketing #reelsforrealtors #aiforrealtors

@@ -152,9 +152,7 @@ On this beat the tone is conversational and a little bit "did you hear about thi
 
 [CLOSING QUESTION: 1 thought-provoking question driving comments]
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+[NEWSLETTER CTA: 1-2 warm sentences pointing to the newsletter at the link in bio. Rotate the wording across the week. No phone number, no brokerage line, no raw URL.]
 
 Source: [Publication Name] - "[Exact Article Title]"
 ```

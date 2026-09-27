@@ -33,7 +33,7 @@ files to this chat, you cannot read local paths.
 
 **Slide 5.** Text: micro-label "GREEN SCREEN, NEWS DESK". Hooks: 16 "Your county just changed something you should know about." / 17 "Four headlines this week that touch your buyers." / 18 "I read the news so your clients do not have to." / 19 "This one change affects every listing in the valley." / 20 "Nobody in this market is talking about this yet." Visual: white, identical spec.
 
-**Slide 6.** Text: "The camera was never the problem." then "Not having the first line was." then the action line "SAVE THIS. USE ONE TOMORROW." Visual: full-bleed black, closing the loop with slide 1. Both lines in `ink-inv`, with "the first line" in `accent-inv` `#5B9BFF`. Save line in an `accent` `#1768E5` filled block at 20px radius, text `accent-on` white. One action only. Full wordmark bottom-left.
+**Slide 6.** Text: "The camera was never the problem." then "Not having the first line was." then the action line "DM ME HOOKS TO COPY ALL 20." Visual: full-bleed black, closing the loop with slide 1. Both lines in `ink-inv`, with "the first line" in `accent-inv` `#5B9BFF`. DM line in an `accent` `#1768E5` filled block at 20px radius, text `accent-on` white. One action only. Full wordmark bottom-left.
 
 ---
 

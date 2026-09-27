@@ -41,6 +41,7 @@ Status values: `awaiting reply` (we reached out, ball in their court) | `needs R
 | @scottlgroves | Scott L Groves | follower | Sales coach. Reacted to a prior DM. | 2026-06-14. | partner | Sphere. |
 | @esther_bengio | - | inbound DM | "I have a story for you!" Accepted and moved to Primary. | 2026-06-20. | needs Ryan | Never followed up on. Find out what the story is. |
 | @artisticflavorz | Artistic Flavorz | follower DM (prior) | Anime/original art shop, 12.3K followers. Replied to an earlier DM: happy where they are now, but the one thing they want in future is **a storefront for the business**. Ryan asked Aug 1 what specs they need; message shows Seen, never answered. | 2026-08-01, never answered. | needs Ryan | Commercial/retail lease signal, not residential. Worth one more nudge about storefront specs, or archive if still silent. |
+| @thomas.haynie.5602 | Thomas Haynie | follower, inbound DM request | INBOUND, SITTING IN MESSAGE REQUESTS. He messaged first: "Call me / I grew up here / 702 782 5064 Anytime / Thaynie1926@gmail.com" plus a "Vegasleaks ground zero" message. Instagram auto-labeled the chat a lead. No welcome DM was sent (he beat us to it). | Never answered. Request not accepted. | needs Ryan | Open Message Requests, accept, and call or reply. He gave a phone number and email and asked to be called. |
 
 ---
 
@@ -320,6 +321,12 @@ Replied: "Gonna be honest, my finger slipped ..." (appears he accidentally liked
 
 - @kyle_nord - commented on reel DdptVwWMeV_: "How do you turn up the brightness of this video? ... Asking for a friend!" Asked about how the videos are shot and edited. Replied publicly 2026-09-24 asking him to DM (verified live). NO DM WAS SENT and none was claimed. Soft relationship lead, not a buyer lead.
 
-- @ant_man3z - commented on reel DdptVwWMeV_: "Send link". Direct ask for something, so a real inbound. A reply pulling him to DMs was written but FAILED TO POST (silent throttle, see the 2026-09-24 note in research-log.md). He is still unanswered and is NOT checked off in the log. Ryan may want to reply or DM him directly.
+- @ant_man3z - commented on reel DdptVwWMeV_: "Send link". Direct ask for something, so a real inbound. CORRECTED 2026-09-25: the reply DID post after all and is live on the comment ("Shoot me a DM and I will get you what you are after"). The 09-24 note calling it a failure was wrong. NO DM WAS SENT and none was claimed. He has been asked to DM and has not yet, so Ryan may want to follow up.
 
 - NOTE 2026-09-24: no Instagram DMs were sent on this run and no reply claimed one was sent. The only outstanding DM promise on file is still @ryan_m_cavitt from 2026-09-20, which remains unresolved.
+
+## 2026-09-26 (scheduled inbound-comments PM)
+
+- @discover_lasvegas (verified account) - commented "Send me this Post" on reel DdoXg8XMG2U ("Boyd Sold the Old Eastside Cannery Site for $16 Million Less Than It Paid"), 2026-09-26. Looks like a repost / collaboration ask from a local Vegas media account rather than a buyer lead. Replied publicly asking them to DM (verified live). NO DM WAS SENT and none was claimed. Ryan, if they DM, decide whether you want the post shared out.
+
+- NOTE 2026-09-26: no Instagram DMs were sent on this run and no reply claimed one was sent. The only outstanding DM promise still on file is @ryan_m_cavitt from 2026-09-20, which remains unresolved.

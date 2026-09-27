@@ -42,13 +42,27 @@ Write one caption per story. Each caption will accompany the green-screen video 
 - "Is the Strip losing the things that made it worth visiting?"
 - "Should taxpayers foot the bill for a stadium they may never use?"
 
-**7. Follow CTA (1 sentence):**
-- "For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com"
+**7. Newsletter CTA (1 to 2 sentences):**
 
-**8. Contact Block:**
-```
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
-```
+This replaces the old follow CTA and the old contact block. Instagram captions carry NO phone number, NO brokerage line, and NO "follow @rosehomeslv or visit rosehomeslv.com" line. The newsletter is the only call to action.
+
+Point people to the newsletter at the link in bio. Write it warm and human, like Ryan telling a neighbor about something he made, not like an ad. It should sound glad to have them rather than eager to convert them.
+
+Requirements:
+- Say the newsletter is at the link in bio. Never paste a raw URL and never use a tracking link.
+- Frame the value as local Las Vegas and Clark County news, the stuff that actually affects their street, their school zone, their commute, their house.
+- One or two sentences. Never more.
+- Vary the wording across the week. Do NOT reuse the same sentence on all 28 captions. Rotate through at least 5 distinct phrasings so a follower scrolling the grid does not see the same line every time.
+- No em-dashes, no emojis, no hashtags, no exclamation-point stacking. One exclamation point across the whole line at most, and usually none.
+- Never promise a delivery frequency, a subscriber count, or exclusive content unless Ryan has confirmed it.
+
+Approved phrasings to rotate and adapt:
+- "I started a newsletter for the local stuff that does not fit in a caption. It is in my bio if you want it in your inbox."
+- "There is a newsletter now, same Vegas news with room to actually explain it. Link is in my bio."
+- "If you would rather not rely on the algorithm to show you this, the newsletter is linked in my bio."
+- "I send this kind of Vegas news out in a newsletter too. Link in bio, would be glad to have you."
+- "Newsletter is live and linked in my bio, for neighbors who want the local news without the scrolling."
+- "The longer version of stories like this goes out in my newsletter. It is linked in my bio."
 
 **9. Source Line (REQUIRED, always the very last line):**
 ```

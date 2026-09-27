@@ -32,7 +32,7 @@ files to this chat, you cannot read local paths.
 
 **Slide 6.** Text: micro-label "AFTER IT GOES PENDING". Items: "11 The Friday seller report" / "12 Every escrow email for the next thirty days". Footer line "My sellers stopped calling for updates. The update just shows up." Visual: white. "12" gets the same treatment as 1 through 11, do not make the last one a special case.
 
-**Slide 7.** Text: "That is 3 to 4 hours of desk work per listing." then "Mine takes about twenty minutes now." then the action line "SAVE THIS BEFORE YOUR NEXT ONE." Visual: full-bleed black, closing the loop with slide 1. The two stat lines in `ink-inv`, with "3 to 4 hours" and "twenty minutes" in `accent-inv` `#5B9BFF`. The save line sits in an `accent` `#1768E5` filled block at 20px radius, text `accent-on` white. One action only, no second ask. Full wordmark bottom-left.
+**Slide 7.** Text: "That is 3 to 4 hours of desk work per listing." then "Mine takes about twenty minutes now." then the action line "DM ME LAUNCH FOR MY CHECKLIST." Visual: full-bleed black, closing the loop with slide 1. The two stat lines in `ink-inv`, with "3 to 4 hours" and "twenty minutes" in `accent-inv` `#5B9BFF`. The DM line sits in an `accent` `#1768E5` filled block at 20px radius, text `accent-on` white. One action only, no second ask. Full wordmark bottom-left.
 
 ---
 

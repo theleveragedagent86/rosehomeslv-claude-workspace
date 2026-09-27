@@ -38,9 +38,7 @@ This is not the end of data centers in Nevada. It is the state admitting the old
 
 Should Nevada keep offering tax breaks to data centers at all, or is the school funding cost too high? Tell me where you land.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+I started a newsletter for the local stuff that does not fit in a caption. It is linked in my bio if you want it in your inbox.
 
 Source: Las Vegas Review-Journal - "Data center developers must now agree to terms to obtain Nevada tax breaks"
 
@@ -78,9 +76,7 @@ The bigger picture is what a 43 percent number does to a neighborhood. Owner-occ
 
 Is a valley where 43 percent of homes are not owner-occupied a problem, or just what a growing city looks like?
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+There is a newsletter now, same Vegas news with room to actually explain it. Link is in my bio.
 
 Source: Las Vegas Review-Journal - "Nearly 43% of Clark County homes are not owner-occupied, records show"
 
@@ -120,9 +116,7 @@ That is a different kind of problem than not having it, and it deserves a cleare
 
 Should Nevada release more of that $800 million now, or is holding the reserve the responsible call? Tell me what you think.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+If you would rather not rely on the algorithm to show you this, my newsletter is linked in my bio.
 
 Source: News 3 Las Vegas - "CCSD faces $51.6M in cuts as millions remain in Nevada's education rainy-day fund"
 
@@ -160,9 +154,7 @@ Commissioners are now pointing at e-scooters and e-bikes as the next fight. A ki
 
 Are longer flasher windows and more tickets the right call, or does the fix need to start with drivers and parents?
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+I send this kind of Vegas news out in a newsletter too. Link in bio, would be glad to have you.
 
 Source: FOX5 Vegas - "Clark County boosts school zone safety to cut down pedestrian crashes"
 
@@ -202,9 +194,7 @@ Maryland Parkway is already changing with the light rail conversation and the me
 
 Is a revived venue good for that pocket of Clark County, or is $10 million of public money the wrong bet next to people's homes?
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+Newsletter is live and linked in my bio, for neighbors who want the local news without the scrolling.
 
 Source: Las Vegas Review-Journal - "$10M earmarked as EDC owner eyes event center redevelopment project"
 
@@ -244,9 +234,7 @@ One important note so nobody mixes numbers. This 2,427 figure is Redfin's count 
 
 Are you making a housing decision based on a national headline right now? Be honest in the comments.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+The longer version of stories like this goes out in my newsletter. It is linked in my bio.
 
 Source: Redfin - "Redfin Reports Pending Home Sales Dip to Lowest Level in Nearly 3 Years"
 
@@ -288,9 +276,7 @@ If you grew up in Henderson, you probably know somebody who spent Tuesday nights
 
 Should Henderson owe those 13 troops a replacement space as part of the redevelopment, or is that not the city's job? Let me know.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+Started a newsletter for Clark County news like this. Link in my bio whenever you want in.
 
 Source: News 3 Las Vegas - "Girl Scouts of Southern Nevada bid farewell to landmark Downtown Henderson home"
 
@@ -332,9 +318,7 @@ If you have a child at Rex Bell, the district is the right place to direct your 
 
 How quickly do you think a district should notify parents when an employee at their child's campus is arrested?
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+I started a newsletter for the local stuff that does not fit in a caption. It is linked in my bio if you want it in your inbox.
 
 Source: KTNV 13 - "CCSD police arrest teacher on child abuse and battery charges"
 
@@ -376,9 +360,7 @@ If you are shopping in Henderson, Southern Highlands, or Centennial Hills right 
 
 Are you still waiting for a better rate, or did this week change your mind?
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+There is a newsletter now, same Vegas news with room to actually explain it. Link is in my bio.
 
 Source: Freddie Mac - "Mortgage Rates Average 6.95%"
 
@@ -418,9 +400,7 @@ Neighbors will have opinions about density and traffic, and they should. But an 
 
 Is 279 homes the right use for the old Eastside Cannery site, or should that corridor be getting something else?
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+If you would rather not rely on the algorithm to show you this, my newsletter is linked in my bio.
 
 Source: Las Vegas Review-Journal - "Boyd sells former casino site for nearly $29M after housing project lands approvals"
 
@@ -460,9 +440,7 @@ A $2 billion federal request does not fix Lake Mead. It buys time.
 
 Has Southern Nevada done enough on water already, or should we be asked for more? Tell me honestly.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+I send this kind of Vegas news out in a newsletter too. Link in bio, would be glad to have you.
 
 Source: Las Vegas Review-Journal - "Southern Nevada business groups ask Congress for $2B for water crisis"
 
@@ -504,9 +482,7 @@ The bill has no vote scheduled.
 
 Should projects on federal land near Clark County towns require a fresh environmental review every time? Tell me where you stand.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+Newsletter is live and linked in my bio, for neighbors who want the local news without the scrolling.
 
 Source: Las Vegas Review-Journal - "Boulder City data center fight sparks push for tougher federal review"
 
@@ -544,9 +520,7 @@ Kids, seniors, and anyone with a lung condition carry the real cost of a four-da
 
 Did you feel it last week, or did you not notice until you saw the advisory?
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+The longer version of stories like this goes out in my newsletter. It is linked in my bio.
 
 Source: FOX5 Vegas - "Wildfire smoke from Mexico, Reno prompts air quality advisory across Clark County through Saturday"
 
@@ -586,9 +560,7 @@ For anyone selling a mid-market Henderson or Summerlin home, do not read luxury 
 
 Is a luxury high-rise boom good for Las Vegas, or is it a market talking only to itself?
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+Started a newsletter for Clark County news like this. Link in my bio whenever you want in.
 
 Source: Las Vegas Review-Journal - "High-rise condos sales to hit record-breaking year"
 
@@ -628,9 +600,7 @@ Go before October 2 if it meant something to you. Bring the friend you first wat
 
 What is the one Las Vegas restaurant you would be genuinely crushed to see close? Drop it below.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+I started a newsletter for the local stuff that does not fit in a caption. It is linked in my bio if you want it in your inbox.
 
 Source: Neon (Las Vegas Review-Journal) - "Restaurant inspired by hit anime franchise to close in Chinatown Vegas"
 
@@ -670,9 +640,7 @@ Thirty years of a free event in a town of this size does not happen by accident.
 
 Are you making the drive to Boulder City Saturday? Let me know in the comments.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+There is a newsletter now, same Vegas news with room to actually explain it. Link is in my bio.
 
 Source: Boulder City Review - "Wurst Fest celebrating 30th anniversary"
 
@@ -712,9 +680,7 @@ But the cost is not shared evenly. The people losing an hour a night are not the
 
 What is your backup route when they shut Harmon down at night? Tell me in the comments.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+If you would rather not rely on the algorithm to show you this, my newsletter is linked in my bio.
 
 Source: KTNV 13 - "Formula One construction brings road closures, lane reductions to parts of the Las Vegas Strip"
 
@@ -756,9 +722,7 @@ Enjoy the retirement, Reavo. The city is better for you having picked it.
 
 What is your favorite Ryan Reaves moment in a Golden Knights jersey? Drop it in the comments.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+I send this kind of Vegas news out in a newsletter too. Link in bio, would be glad to have you.
 
 Source: FOX5 Vegas - "'Reavo out': Former Golden Knights fan favorite Ryan Reaves retires after 16 NHL seasons"
 
@@ -800,9 +764,7 @@ Henderson has been careful with Water Street. Expect them to be careful here too
 
 Should Henderson require a meal with to-go drinks like Las Vegas does, or let restaurants sell them on their own?
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+Newsletter is live and linked in my bio, for neighbors who want the local news without the scrolling.
 
 Source: FOX5 Vegas - "Henderson takes first step toward allowing to-go alcoholic drinks"
 
@@ -842,9 +804,7 @@ And remember these ratings lag. They describe last year's campus, not the one yo
 
 Did your zoned school move up, hold, or drop this year? Tell me which campus.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+The longer version of stories like this goes out in my newsletter. It is linked in my bio.
 
 Source: FOX5 Vegas - "73% of Clark County Schools hold or boost star ratings"
 
@@ -884,9 +844,7 @@ Congratulations to all 88, and to the families who got them there.
 
 Which Clark County high school do you think punches above its weight the most? Drop it below.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+Started a newsletter for Clark County news like this. Link in my bio whenever you want in.
 
 Source: FOX5 Vegas - "88 CCSD high school seniors named National Merit semifinalists"
 
@@ -926,9 +884,7 @@ I am not quoting an asking price on this one, because the number circulating has
 
 Should Las Vegas do more to protect homes like this one, or is that just nostalgia getting in the way of property rights?
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+I started a newsletter for the local stuff that does not fit in a caption. It is linked in my bio if you want it in your inbox.
 
 Source: Las Vegas Review-Journal - "'Feel like Caesar': Historic casino founder's past home on market, PHOTOS"
 
@@ -966,9 +922,7 @@ Go early, bring the kids, and expect it to be busier than you think.
 
 Have you taken your family to a free practice at City National Arena, or is this the first you are hearing about it?
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+There is a newsletter now, same Vegas news with room to actually explain it. Link is in my bio.
 
 Source: Vegas Golden Knights - "Golden Knights Announce 2026 Training Camp Roster & Schedule"
 
@@ -1010,9 +964,7 @@ For a team that sits this close to so many Henderson neighborhoods, the free acc
 
 Have you ever actually gone and watched a Silver Knights practice, or did you not know you could?
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+If you would rather not rely on the algorithm to show you this, my newsletter is linked in my bio.
 
 Source: Henderson Silver Knights - "SILVER KNIGHTS ANNOUNCE SCHEDULE FOR 2026 TRAINING CAMP"
 
@@ -1052,9 +1004,7 @@ A Las Vegas seller planning around the national 46 day number is planning around
 
 Sellers, how long did your last Las Vegas home sit before it went under contract? Drop the number below.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+I send this kind of Vegas news out in a newsletter too. Link in bio, would be glad to have you.
 
 Source: Redfin - "High Costs Sideline Some Would-Be Homebuyers, Handing Upper Hand to Those Who Stay in the Market"
 
@@ -1094,9 +1044,7 @@ National real estate news is not local real estate news. It never has been.
 
 Buyers, are you writing offers over list right now, or holding firm? I want to hear it.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+Newsletter is live and linked in my bio, for neighbors who want the local news without the scrolling.
 
 Source: Redfin - "High Costs Sideline Some Would-Be Homebuyers, Handing Upper Hand to Those Who Stay in the Market"
 
@@ -1136,9 +1084,7 @@ Whether he plays three more years at this level is a real question. That he want
 
 Do you think Mark Stone finishes his career in Vegas, or does this end differently? Let me know.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+The longer version of stories like this goes out in my newsletter. It is linked in my bio.
 
 Source: FOX5 Vegas - "Mark Stone reacts to two-year extension deal with Vegas Golden Knights"
 
@@ -1180,9 +1126,7 @@ Tenth season, first-time coach, new system, same core. That is a lot of variable
 
 Is "starting over" the right message after a Cup Final loss, or is that changing too much? Drop your take below.
 
-For more Las Vegas local news, follow @rosehomeslv or visit rosehomeslv.com
-
-Ryan Rose | Real Broker, LLC | 702-747-5921 | rosehomeslv.com
+Started a newsletter for Clark County news like this. Link in my bio whenever you want in.
 
 Source: NHL.com - "Ryan Craig talks Vegas Golden Knights mindset entering season"
 

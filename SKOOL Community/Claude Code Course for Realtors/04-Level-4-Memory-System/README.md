@@ -16,8 +16,9 @@
 **The voice extraction prompt:**
 
 ```
-Here are 20 things I've actually written: emails to clients, texts,
-listing descriptions, social captions.
+Read the 20 files in Marketing/voice-samples. They're things I
+actually wrote: emails to clients and agents, texts, listing
+descriptions, social captions.
 
 Do not summarize them. Analyze how I write.
 
@@ -26,7 +27,8 @@ how I close, words I use constantly, words I never use, how formal I
 am with a client vs an agent, and three sentences that could only
 have been written by me.
 
-Then write it as a file I can save called voice.md.
+Don't quote any client names. Save it as voice.md in my Business
+Brain, right next to CLAUDE.md.
 ```
 
 ⏱️ Timestamps

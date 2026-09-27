@@ -1,6 +1,6 @@
 # Carousel 03, 12 Things To Automate Before Your Next Listing
 
-The Leveraged Agent. Written 2026-09-11. 7 slides, no keyword CTA, save/share pattern.
+The Leveraged Agent. Written 2026-09-11. 7 slides. Keyword CTA LAUNCH added 2026-09-27 (was save/share), automation in ../automation/automation-03-LAUNCH.md.
 
 Pattern source: Whitney Bartlette teardown, `Instagram/Competitor-Research/Whitney-Bartlette/`.
 Her two highest-performing carousel formats both put a number in the cover and make the
@@ -53,7 +53,7 @@ naming Claude Code carries the 2.4x title lift.
 
 **That is 3 to 4 hours of desk work per listing.**
 Mine takes about twenty minutes now.
-**Save this before your next one.**
+**DM me "LAUNCH" for my checklist.**
 
 ## CAPTION
 
@@ -68,11 +68,13 @@ why this home mattered to them. Nothing writes that part for you.
 
 Everything on this list runs in my brokerage right now on real deals, not as a demo.
 
-Save this and run it against your next one. Count how many of the twelve you are still
-typing from scratch.
+Count how many of the twelve you are still typing from scratch.
+
+DM me LAUNCH and I will send you the checklist in order, from the appointment to 30 days
+after pending.
 
 Meta housing ads must run in the Special Ad Category. No age, gender, or ZIP targeting.
 
 Ryan Rose | Real Broker, LLC
 
-#realtorlife #realestateagent #listingagent #realestatemarketing #aiforrealtors #claudecode #realestatetech #agentproductivity
+#realestateagent #listingagent #aiforrealtors #claudecode

@@ -50,6 +50,9 @@ whole thing. (19 words)
 
 **DM me "TC" and I will send you the folder structure I use.**
 
+Subline (changed 2026-09-26, no full TC build video exists yet): "More AI builds for agents on my
+YouTube, The Leveraged Agent. The community is linked in my bio."
+
 ## CAPTIONS (v2, routes to YouTube + Skool. Written 2026-08-21)
 
 Goal changed on 2026-08-21: the carousel now has to send working agents to Ryan's YouTube
@@ -85,7 +88,7 @@ you write once run the next file for free.
 If you are behind on a transaction right now, that is the one to build first.
 
 DM me TC and I will send you the folder structure I use.
-I walk through the whole build on my YouTube channel, The Leveraged Agent. Link in the first
+More AI builds for agents on my YouTube channel, The Leveraged Agent. Link in the first
 comment.
 The full system, the templates and the weekly calls live in the community. Link in my bio.
 
@@ -137,7 +140,7 @@ Templates and weekly calls are in the community, bio link.
 
 ### FIRST COMMENT (post immediately after the carousel goes live)
 
-Full build on YouTube here: https://www.youtube.com/channel/UCJ_t1LMeHXO2iTx1YLMs1OA
+More AI builds for agents on my YouTube: https://www.youtube.com/channel/UCJ_t1LMeHXO2iTx1YLMs1OA
 And the community I run for agents doing this: https://www.skool.com/the-leveraged-agent
 
 ### PINNED-COMMENT ALT, if you would rather not paste a bare URL

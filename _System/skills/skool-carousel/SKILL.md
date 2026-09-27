@@ -89,7 +89,7 @@ Nine slides total is deliberate. Instagram allows more, but completion rate is t
 that drives reach on educational carousels.
 
 **CAPTION**
-Expands the core idea in Ryan's voice, ends with the same single CTA, then 5 to 8 hashtags
+Expands the core idea in Ryan's voice, ends with the same single CTA, then 3 or 4 hashtags (Ryan, Sept 2026: never more than 4)
 mixing agent-audience and AI-tool tags. Never Las Vegas local tags, wrong brand.
 
 **DESIGN BRIEF**
@@ -253,12 +253,9 @@ window dump.
 - Maximum ONE question message before generating. Batch it. Accept messy input. Sensible
   defaults beat repeat questions. Offer variations AFTER delivering, never before.
 - You WRITE and PREPARE. Never post, schedule, or send on Ryan's behalf.
-- **Building the ManyChat flow is the one exception, and only when Ryan explicitly asks for
-  it in that run.** Then drive the ManyChat web UI in his logged-in Chrome and follow the
-  build order in `references/manychat-flow.md`. Three things are never attempted and always
-  handed back: signing up, paying, and connecting the Instagram account via OAuth. Screenshot
-  after each step, the builder is a drag-and-drop canvas that fails silently. A flow that has
-  never been triggered by a real test comment is not finished, do not report it as done.
+- **Building the ManyChat flow and posting are separate skills**, `skool-manychat` then
+  `skool-ig-post`. This skill never drives ManyChat or Instagram itself. It offers the
+  handoff at the end of the run and invokes the next skill only on Ryan's yes.
 
 ## End every run with
 
@@ -267,8 +264,10 @@ document?", then "A second topic from your pillars?", then the closing line:
 
 "Paste the design brief into Claude Design, designed carousel in 5 minutes."
 
-If the run produced an automation pack, add one line after that: whether Ryan wants the
-ManyChat flow built for him, and the reminder that he handles signup, payment and the
-Instagram connection himself.
+If the run produced an automation pack, end with exactly this question, then stop:
+
+"Want me to build the ManyChat automation for this one in your account? (runs skool-manychat)"
+
+On yes, invoke `skool-manychat`. It asks about posting (`skool-ig-post`) when it finishes.
 
 Never offer any of it before delivering.

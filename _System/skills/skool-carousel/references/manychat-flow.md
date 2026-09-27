@@ -94,39 +94,25 @@ Ship them as a numbered list so they paste straight into ManyChat's rotation fie
 
 ---
 
-## Build order, when driving the browser
+## Building it
 
-Ryan does the three things involving credentials, they are not automatable and never
-attempted: **sign up, pay, connect the Instagram account via OAuth.**
-
-Then, in ManyChat:
-
-1. Automation > New Automation > start from scratch. Name it `Carousel NN - KEYWORD`.
-2. Add trigger: Instagram > Comments. Select the specific post. Set the keyword, contains,
-   case-insensitive.
-3. Enable the public reply on the trigger. Paste all five rotation variants.
-4. Build the DM steps in order, one Instagram Message node each, with delay nodes between.
-5. On the last message node add the three buttons. Each button targets its own message node.
-6. Add a tag action on each branch. Tags: `TC-lead-self`, `TC-lead-hasTC`, `TC-lead-new`.
-7. Add the smart delay 24h + condition "has not tapped" > follow-up message.
-8. Preview the flow in ManyChat's own preview, then publish.
-9. Test live from a second Instagram account before telling Ryan it is done. A flow that
-   was never triggered has not been verified.
-
-Screenshot after each numbered step. The builder is a drag-and-drop canvas, so nodes land
-in the wrong place silently and connector lines fail to attach without any error.
+The build procedure lives in the `skool-manychat` skill (`_System/skills/skool-manychat/SKILL.md`),
+including the browser technique. Ryan still does signup, payment, login, the Instagram
+OAuth connection, and the live test comment from a second account.
 
 ---
 
-## Verify in the builder, do not assume
+## Verified in the builder (Sept 2026)
 
-These change with ManyChat and Meta releases. Check them live, mark NOT FOUND rather than
-guessing:
-
-- Max buttons per Instagram message node.
-- Whether the public comment reply supports rotation natively, or needs a randomizer step.
-- Whether a DM to a non-follower lands in the inbox or in Requests.
-- The current messaging window rules and which message tag, if any, the 24h follow-up needs.
+- **Meta allows ONE DM from a comment trigger until the person replies.** The opener (M1)
+  therefore carries a button, and everything after it fires on the tap. This replaces the
+  "delay 4s" chain from the comment straight into tc2a shown above: comment -> M1 + button
+  -> tap -> M2, M3, M4 (branch buttons).
+- Max 3 buttons per Instagram message.
+- Public comment reply rotation is native, 3 slots. Write 5, load the best 3.
+- Trigger can target "next post or reel", so the automation can go live before posting.
+- Quick Automations cannot branch or convert to a flow. Always start from scratch.
+- DM to a non-follower, message tags for the 24h follow-up: still NOT VERIFIED.
 
 ---
 

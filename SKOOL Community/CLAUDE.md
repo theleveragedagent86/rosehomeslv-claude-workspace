@@ -252,6 +252,8 @@ SKOOL Community/
 │                              placeholder.
 │                              automation/ = automation-NN-KEY.md per carousel (public replies,
 │                              DM M1..M6, tags, ManyChat URL/status), read by skool-manychat.
+│                              automation/KEYWORDS.md = the keyword registry (TC, BRAIN, LAUNCH,
+│                              HOOKS); 03 and 04 moved from save/share to keyword CTAs 2026-09-27.
 │                              render-v1-archive.html = the retired v1 cream/teal/gold, CSS-box,
 │                              03-listing-automation/ and 04-reel-hooks/ added 2026-09-11: the
 │                              first carousels built on the Whitney Bartlette numbered-list

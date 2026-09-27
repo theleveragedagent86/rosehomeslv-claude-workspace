@@ -157,7 +157,7 @@ fs.writeFileSync('Close.dc.html', wrap(`
   <div class="core">
     <div class="stat">The camera was never the problem.</div>
     <div class="stat">Not having <span class="hi">the first line</span> was.</div>
-    <div class="cta">Save this. Use one tomorrow.</div>
+    <div class="cta">DM me "HOOKS" to copy all 20.</div>
   </div>
   <div>
     <div class="rule"></div>

@@ -194,6 +194,12 @@ Homes.com, Yelp, MapQuest, Realtor Directory Nevada, Instagram, rosehomeslv.com.
 No wrong phone numbers anywhere. The 626 California numbers that were on
 HomeLight do not appear on any other profile.
 
+**Ryan's call 2026-09-27: skip Facebook and Realtor.com.** Realtor.com needs a
+Realtor.com PRO login before anything can be edited, which Claude cannot do, and
+Ryan chose not to sign in. The paste-ready bio is in the session notes if he
+changes his mind. Facebook is left as is. Both stay listed below so the stale
+brokerage claim is on the record, they are just not being worked.
+
 **Stale, needs fixing:**
 
 - **Facebook page.** The page bio reads "Welcome to Rose Homes, powered by Urban

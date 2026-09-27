@@ -54,6 +54,7 @@ ruby "/Users/ryanrose/Downloads/Claude/serve.rb"
 ```
 
 - Level 0: `http://localhost:8091/SKOOL%20Community/Claude%20Code%20Course%20for%20Realtors/deck/level-0.html`
+- Standalone voice video: `http://localhost:8091/SKOOL%20Community/Claude%20Code%20Course%20for%20Realtors/deck/voice.html`
 - Level 1: `http://localhost:8091/SKOOL%20Community/Claude%20Code%20Course%20for%20Realtors/deck/level-1.html`
 - YouTube Level 0: `http://localhost:8091/SKOOL%20Community/Claude%20Code%20Course%20for%20Realtors/deck/yt-level-0.html`
 
@@ -118,7 +119,7 @@ Rules that hold across every YouTube cut:
 
 Architecture, description template, delivery playbook and all 14 lesson descriptions are **written**. **Level 0 and Level 1 also have finished teleprompter scripts and working decks.** Nothing is recorded. Open items:
 
-- Scripts and decks exist for Levels 0 and 1 only. Levels 2 through 10 and the bonus drops still need both
+- Scripts and decks exist for Levels 0 and 1 only. Level 4 has a partial script (voice section only, no deck). Levels 2 through 10 and the bonus drops still need both
 - YouTube cuts exist for Levels 0 and 1 only, and only Level 0 has a YouTube deck
 - Reels exist for Levels 0 and 1 only, 24 total. Levels 2 through 10 and the bonus drops have none
 - The two listing descriptions in `deck/yt-level-0.html` are placeholder copy and must be regenerated from one of Ryan's real listings before that video is shot
@@ -157,6 +158,9 @@ Claude Code Course for Realtors/
 │   ├── deck.js                       keyboard nav, progress HUD, fit-to-screen zoom
 │   ├── level-0.html                  8 slides, Skool
 │   ├── level-1.html                  19 slides, Skool, no on-screen cues (they live in SCRIPT.md)
+│   ├── voice.html                    10 slides, STANDALONE 4:45 voice video. No .hint on slide 1.
+│   │                                 Slides 4-5 show stand-in samples; slide 9 side B = held-out
+│   │                                 email, side A = Brain's pre-run draft
 │   └── yt-level-0.html               13 slides, YOUTUBE. Not a cut of level-0.html. No .hint on
 │                                     slide 1 (it is on screen at 0:00). Listing copy on slides
 │                                     1 and 9 is PLACEHOLDER, swap in a real listing before shooting
@@ -164,7 +168,16 @@ Claude Code Course for Realtors/
 ├── 01-Level-1-Foundation-Setup/      40-45 min, longest level, Business Brain v1. README.md + SCRIPT.md
 ├── 02-Level-2-Landing-Pages/         32-36 min, first visible win, live URL
 ├── 03-Level-3-Power-Features/        32-36 min, skills and commands
-├── 04-Level-4-Memory-System/         32-36 min, voice, farm data, client history
+├── 04-Level-4-Memory-System/         32-36 min, voice, farm data, client history. README.md +
+│                                     SCRIPT.md (PARTIAL: only Part 4, the voice section 09:50-16:00,
+│                                     is written; no deck yet) + voice-extraction.md (the 5-prompt
+│                                     attachment the voice section reads out loud) +
+│                                     SCRIPT-Voice-Standalone.md (4:45 self-contained cut of the
+│                                     voice section, director version) + TELEPROMPTER-Voice-
+│                                     Standalone.md (words + cues only, read this on camera) +
+│                                     demo-voice-samples/ (20 FICTIONAL stand-in samples + 1 held-out
+│                                     blind-test email + voice.md + the slide 9 draft, by Claude in Ryan's voice, no real
+│                                     client data goes on camera). Deck = deck/voice.html
 ├── 05-Level-5-Listing-Launch/        38-42 min, absorbs old Module 1
 │   └── Weekly-Seller-Update-Prompt/  attachment set: weekly-seller-update-plan-prompt.md (paste into
 │                                     Plan Mode, builds the weekly seller report + email system, from

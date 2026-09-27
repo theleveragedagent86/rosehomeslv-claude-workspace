@@ -1733,21 +1733,21 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @mama_sheepdog (Ana Salinas) — added 2026-06-17 — DMed 2026-09-24 (variant 5)
 - [x] @danualmeyers (Danual Meyers) — added 2026-06-17 — DMed 2026-09-24 (variant 1)
 - [x] @peskypanda120 (Andrew Holcomb) — added 2026-06-17 — DMed 2026-09-23 (variant 2)
-- [ ] @sleeep333 (NT030) — added 2026-06-17
+- [x] @sleeep333 (NT030) — added 2026-06-17 — DMed 2026-09-26 (variant A)
 - [ ] @jimwy (Jim Wy) — added 2026-06-17
-- [ ] @rflmichelle (Michelle Cunningham) — added 2026-06-17
-- [ ] @jamesinvegas (James Regdos) — added 2026-06-17
-- [ ] @sandeesandra (Sandra Schulz) — added 2026-06-17
-- [ ] @chvyrod (Troy Ethan Warren) — added 2026-06-17
-- [ ] @carter_5536 (Nathan Carter) — added 2026-06-17
-- [ ] @calebpicker (Caleb J. Picker) — added 2026-06-17
+- [x] @rflmichelle (Michelle Cunningham) — added 2026-06-17 — DMed 2026-09-26 (variant 1)
+- [x] @jamesinvegas (James Regdos) — added 2026-06-17 — DMed 2026-09-26 (variant 2)
+- [x] @sandeesandra (Sandra Schulz) — added 2026-06-17 — DMed 2026-09-26 (variant 3)
+- [x] @chvyrod (Troy Ethan Warren) — added 2026-06-17 — DMed 2026-09-26 (variant 4)
+- [x] @carter_5536 (Nathan Carter) — added 2026-06-17 — DMed 2026-09-26 (variant 5)
+- [x] @calebpicker (Caleb J. Picker) — added 2026-06-17 — DMed 2026-09-26 (variant 1)
 - [x] @timothymotah (Timothy Motah) — added 2026-06-17 — (skipped: zero-info private account, 0 posts) 2026-09-23
-- [ ] @7sambag8869 (Samantha Baglioni) — added 2026-06-17
+- [x] @7sambag8869 (Samantha Baglioni) — added 2026-06-17 (skipped: bio is an active cancer-treatment GoFundMe; cold sales opener inappropriate, Ryan to decide personally)
 - [x] @damefame (damefame) — added 2026-06-17 — (skipped: already in a DM thread, replied 'No' 2026-08-17; referral offer already made) 2026-09-23
 - [x] @designs_4_dimes (designs_4_dimes) — added 2026-06-17 — DMed 2026-09-23 (variant B)
-- [ ] @neutron702 (Nicholas Colby Newton) — added 2026-06-17
-- [ ] @breeze_vegas (BREEZE) — added 2026-06-17
-- [ ] @gizmo_smoke_em (Jose Carranza) — added 2026-06-17
+- [x] @neutron702 (Nicholas Colby Newton) — added 2026-06-17 — DMed 2026-09-26 (variant 2)
+- [x] @breeze_vegas (BREEZE) — added 2026-06-17 — DMed 2026-09-26 (variant B)
+- [x] @gizmo_smoke_em (Jose Carranza) — added 2026-06-17 — DMed 2026-09-26 (variant 3)
 - [ ] @megzm801 (Megan Mitchell) — added 2026-06-17
 - [ ] @sweetpea_0214 (Michelle Allen) — added 2026-06-17
 - [ ] @aarona_the_false_prophet (Aarona the Demonic Preacher) — added 2026-06-17
@@ -3762,10 +3762,10 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [ ] @_tall__blonde_ (no name) — added 2026-08-10
 - [x] @iamshimonmag (Shimon Magrill) — added 2026-08-10 — DMed 2026-09-23 (variant 1)
 - [ ] @lesliejeann (Leslie Rochon Thorstensen) — added 2026-08-10
-- [ ] @melissa234522333333 (Melissa Martinez) — added 2026-08-10
-- [ ] @dcc_54 (Dez Dez) — added 2026-08-10
+- [x] @melissa234522333333 (Melissa Martinez) — added 2026-08-10 — DMed 2026-09-26 (variant 5)
+- [x] @dcc_54 (Dez Dez) — added 2026-08-10 — DMed 2026-09-26 (variant 4)
 - [x] @_nelson_101_ (Nelson) — added 2026-08-10 — (skipped: zero-info private account, 0 posts) 2026-09-23
-- [ ] @ladysheila_p (Sheila Pierce) — added 2026-08-10
+- [x] @ladysheila_p (Sheila Pierce) — added 2026-08-10 — DMed 2026-09-26 (variant 3)
 - [x] @therealdeztinee (Deztinee) — added 2026-08-10 — (skipped: zero-info private account, 0 posts) 2026-09-23
 - [x] @oscridge (no name) — added 2026-08-10 — DMed 2026-09-20 (variant C)
 - [x] @glam.grandma.glenda (Glenda Greenberg) — added 2026-08-10 — DMed 2026-09-20 (variant 5)
@@ -4352,34 +4352,58 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @dansincrediblelife (DANNY GERARD) - added 2026-09-24 - skipped: realtor (broker NM & TX)
 - [x] @jayarh (no name) - added 2026-09-24 - skipped: bot (0 posts, zero-info private, 88 followers / 1,079 following)
 - [x] @sky_bklyn (Nandito) - added 2026-09-24 — DMed 2026-09-24 (variant 3)
-- [ ] @mattchlite (Matt) - added 2026-09-24
-- [ ] @yoboythebarber (Ron - Las Vegas Master Barber) - added 2026-09-24
-- [ ] @irishguns (Alan O Neill) - added 2026-09-24
+- [x] @mattchlite (Matt) - added 2026-09-24 — DMed 2026-09-26 (variant 2)
+- [x] @yoboythebarber (Ron - Las Vegas Master Barber) - added 2026-09-24 — DMed 2026-09-26 (variant 1)
+- [x] @irishguns (Alan O Neill) - added 2026-09-24 — DMed 2026-09-26 (variant 5)
 - [x] @lyn_ette126 (Lyn) - added 2026-09-24 - skipped: bot (0 posts, zero-info private, 19 followers / 804 following)
-- [ ] @jyamilett (Jyamileth) - added 2026-09-24
-- [ ] @702_lvbigman (Armando) - added 2026-09-24
-- [ ] @hugo_flores__ (2tough) - added 2026-09-24
-- [ ] @panama_tiburon (Inniss) - added 2026-09-24
-- [ ] @bigpoppadion (Dion Bailey) - added 2026-09-24
-- [ ] @humblesmranr (Marvin Lespinasse) - added 2026-09-24
-- [ ] @mamaseid206 (Stephanie Seid) - added 2026-09-24
-- [ ] @mwhairfood (Mae Smith) - added 2026-09-24
-- [ ] @ilgxtto (felix) - added 2026-09-24
-- [ ] @chopstixxlulu (Cindy) - added 2026-09-24
+- [x] @jyamilett (Jyamileth) - added 2026-09-24 — DMed 2026-09-26 (variant 4)
+- [x] @702_lvbigman (Armando) - added 2026-09-24 — DMed 2026-09-26 (variant 3)
+- [x] @hugo_flores__ (2tough) - added 2026-09-24 — DMed 2026-09-25 (variant B)
+- [x] @panama_tiburon (Inniss) - added 2026-09-24 — DMed 2026-09-25 (variant A)
+- [x] @bigpoppadion (Dion Bailey) - added 2026-09-24 — DMed 2026-09-25 (variant 2)
+- [x] @humblesmranr (Marvin Lespinasse) - added 2026-09-24 — skipped 2026-09-25 (skipped: already DMed as liker 2026-07-22, no reply)
+- [x] @mamaseid206 (Stephanie Seid) - added 2026-09-24 — DMed 2026-09-25 (variant 1)
+- [x] @mwhairfood (Mae Smith) - added 2026-09-24 — DMed 2026-09-25 (variant 5)
+- [x] @ilgxtto (felix) - added 2026-09-24 — DMed 2026-09-25 (variant 4)
+- [x] @chopstixxlulu (Cindy) - added 2026-09-24 — DMed 2026-09-25 (variant 3)
 - [x] @ramthellama (RamTheLlama) - added 2026-09-24 - skipped: bot (0 posts, zero-info private, 28 followers / 6,885 following)
-- [ ] @remcovanlatum (Remco Van Latum) - added 2026-09-24
-- [ ] @nikkirosety (Nikki Rose) - added 2026-09-24
-- [ ] @willrankin (Will Rankin) - added 2026-09-24
-- [ ] @_.rpm._ (no usable first name) - added 2026-09-24
+- [x] @remcovanlatum (Remco Van Latum) - added 2026-09-24 — skipped 2026-09-25 (skipped: 0 posts)
+- [x] @nikkirosety (Nikki Rose) - added 2026-09-24 — DMed 2026-09-25 (variant 2)
+- [x] @willrankin (Will Rankin) - added 2026-09-24 — DMed 2026-09-25 (variant 1)
+- [x] @_.rpm._ (no usable first name) - added 2026-09-24 — DMed 2026-09-25 (variant C)
 - [x] @sandy.fink77 (Sandy Fink) - added 2026-09-24 - skipped: realtor/broker (Fink Commercial RE, NV B.0022765.corp)
-- [ ] @aca1b0wl (Kaytlin Isabelle) - added 2026-09-24
-- [ ] @_beasley_02 (Mariah) - added 2026-09-24
-- [ ] @andrew_11286 (Andrew) - added 2026-09-24
+- [x] @aca1b0wl (Kaytlin Isabelle) - added 2026-09-24 — DMed 2026-09-25 (variant 5)
+- [x] @_beasley_02 (Mariah) - added 2026-09-24 — skipped 2026-09-25 (skipped: already DMed as liker 2026-09-23, no reply)
+- [x] @andrew_11286 (Andrew) - added 2026-09-24 — DMed 2026-09-25 (variant 4)
 - [x] @_bootney_lee_farnsworth (no name) - added 2026-09-24 - skipped: bot (0 posts, no name, 30 followers / 1,040 following)
-- [ ] @tvalcala (Theresa Alcala) - added 2026-09-24
-- [ ] @sketchyduran (Mrs. Duran) - added 2026-09-24
-- [ ] @thenameis_doctor (Doctor) - added 2026-09-24
-- [ ] @budesashannon (Shannon Budesa) - added 2026-09-24
+- [x] @tvalcala (Theresa Alcala) - added 2026-09-24 — DMed 2026-09-25 (variant 3)
+- [x] @sketchyduran (Mrs. Duran) - added 2026-09-24 — DMed 2026-09-25 (variant B)
+- [x] @thenameis_doctor (Doctor) - added 2026-09-24 — DMed 2026-09-25 (variant A)
+- [x] @budesashannon (Shannon Budesa) - added 2026-09-24 — DMed 2026-09-25 (variant 2)
+
+- [x] @celiaeuredjian (Celia Euredjian) — added 2026-09-25 — DMed 2026-09-26 (variant 2)
+- [x] @animanukyan123 (Ani Manukyan) — added 2026-09-25 — DMed 2026-09-26 (variant 1)
+- [x] @lavenderlove44 (Lavender) — added 2026-09-25 (skipped: adult/spam account)
+- [x] @teddybbbb (John Lloyd Jr) — added 2026-09-25 — DMed 2026-09-26 (variant 5)
+- [x] @being.like.water (Jason G) — added 2026-09-25 — DMed 2026-09-26 (variant 4)
+- [x] @fortydev (Deven) — added 2026-09-25 (skipped: no posts)
+- [x] @frandaglasper (Franda Glasper) — added 2026-09-25 — DMed 2026-09-26 (variant 3)
+- [x] @twest702 (Travis West) — added 2026-09-25 — DMed 2026-09-26 (variant 2)
+- [x] @carly_baby_camacho (La Shonda Frierson) — added 2026-09-25 — DMed 2026-09-26 (variant 1)
+- [x] @only.juan.4.loans (JC Sandoval) — added 2026-09-25 — skipped: industry account (loan officer), not a consumer lead
+- [x] @thereal.g94 (Gerardo Hechevarria) - added 2026-09-25 — DMed 2026-09-26 (variant 5)
+- [x] @nom.8190 (no name) - added 2026-09-25 (skipped: bot)
+- [x] @bussengel (Sandy Buss) — added 2026-09-26 — DMed 2026-09-26 (variant 4)
+- [x] @thomas.haynie.5602 (Thomas Haynie) — added 2026-09-26 (lead: messaged Ryan first, flagged in leads.md 2026-09-26, no DM sent)
+- [x] @lifelonglrnr (Mary Sue) — added 2026-09-26 — DMed 2026-09-26 (variant 3)
+- [x] @belvamanley (Belva Manley) — added 2026-09-26 — DMed 2026-09-26 (variant 2)
+- [x] @mrsgoddess (Jacqueline Goddess) — added 2026-09-26 — DMed 2026-09-26 (variant 1)
+- [x] @ceeze07 (Ceeze07) — added 2026-09-26 — skipped: 0 posts, zero-info private account (bot pattern)
+- [ ] @iambrandiinecole (no name) - added 2026-09-26
+- [ ] @big_e1982 (no name) - added 2026-09-26
+- [ ] @altc.at (no name) - added 2026-09-26
+- [ ] @karencabo (no name) - added 2026-09-26
+- [ ] @alicia_griffith_moreland (Landscaping pro) - added 2026-09-26
 
 ## Likers  (worked by `/inbound-dm-likes`)
 
@@ -7480,7 +7504,7 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [ ] @ilyserenaexe (serena) (reel DcmEFFKBGtj) - added 2026-09-01
 - [ ] @rinnyroo848 (Karinne) (reel DcmEFFKBGtj) - added 2026-09-01
 - [ ] @thescottwerner (Scott) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @bulldog0921 (Paddington) (reel DcmEFFKBGtj) - added 2026-09-01
+- [x] @bulldog0921 (Paddington) (reel DcmEFFKBGtj) - added 2026-09-01 — checked off 2026-09-25 (already messaged)
 - [ ] @em0j1ca (Eva Mojica) (reel DcmEFFKBGtj) - added 2026-09-01
 - [ ] @kkaa4ly (Kkaa ly) (reel DcmEFFKBGtj) - added 2026-09-01
 - [ ] @vgvegas030_nt (Vinnyg030) (reel DcmEFFKBGtj) - added 2026-09-01
@@ -7516,8 +7540,8 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [ ] @tracyshelorartistry (Las Vegas Makeup & Hair Artist - Tracy Shelor) (reel DcxA_PuB5UG) - added 2026-09-02
 - [ ] @chuchi.face (Rhiannon Brush) (reel DcxA_PuB5UG) - added 2026-09-02
 - [ ] @amandanuchols (Amanda Nuchols) (reel DcxA_PuB5UG) - added 2026-09-02
-- [ ] @dandeely0n (Dani Eicher) (reel DcxA_PuB5UG) - added 2026-09-02
-- [ ] @queen.marysol (no name) (reel DcxA_PuB5UG) - added 2026-09-02
+- [x] @dandeely0n (Dani Eicher) (reel DcxA_PuB5UG) - added 2026-09-02 — checked off 2026-09-25 (already messaged)
+- [x] @queen.marysol (no name) (reel DcxA_PuB5UG) - added 2026-09-02 — checked off 2026-09-25 (already messaged)
 - [ ] @furious_fushsia (Victoria De La Hoya) (reel DcxA_PuB5UG) - added 2026-09-02
 - [ ] @thekingkeawe (Keawe) (reel DcxA_PuB5UG) - added 2026-09-02
 - [ ] @jonathansenda (Jonathan Senda) (reel DcxA_PuB5UG) - added 2026-09-02
@@ -8295,6 +8319,42 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [ ] @maria4str8 (Maria Minori) (reel DdoXg8XMG2U) - added 2026-09-24
 - [ ] @smilelyj (Smiley Johnson) (reel DdoXg8XMG2U) - added 2026-09-24
 - [ ] @sir_hoel (Joel) (reel DdoXg8XMG2U) - added 2026-09-24
+- [ ] @neto_949 (Ernesto Soto) (reel DdthKsfsBDd) - added 2026-09-25
+- [ ] @judocatch (Richie Lee) (reel DdsSN8ysQHG) - added 2026-09-25
+- [ ] @lovelylisette50 (Lisette Norton) (reel DdsSN8ysQHG) - added 2026-09-25
+- [ ] @rezdriver (no usable first name) (reel DdsSN8ysQHG) - added 2026-09-25
+- [ ] @jesseeejameees (Jesse) (reel DdsSN8ysQHG) - added 2026-09-25
+- [ ] @belivermom (Terry Lopez) (reel Ddq8YSgm7Sq) - added 2026-09-25
+- [x] @username9764267854 (reel Ddq8YSgm7Sq) - added 2026-09-25 - skipped: bot (default auto-generated username, no name)
+- [ ] @greymillla (Grey Milla) (reel Ddq8YSgm7Sq) - added 2026-09-25
+- [ ] @_jorgemoya (no name) (reel Ddq8YSgm7Sq) - added 2026-09-25
+- [ ] @dvidnino (David Nino) (reel Ddq8YSgm7Sq) - added 2026-09-25
+- [ ] @dylantbub8103 (Dylan Bub) (reel DdpR9Xam3Jx) - added 2026-09-25
+- [ ] @javayummm (Javier Garcia Castro) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @dannybeardelite (Daniel Velasquez) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @gabe_baumann22 (Gabriel Baumann) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @eurotoyz (Ruben Carle) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @krenlv (Krista Kisner) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @dwight.hayden (Dwight Hayden) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @v3ss311oops (no usable first name) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @sunny710dayz (no name) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @tblackm3 (TJ Blackman) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @_7blockian_ (no usable first name) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @alex_w_lemus (William Serrano) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @koaikaikalawaiaa (Brandon Medeiros) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @_elmzz_ (Elmer Bautista) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @mrjeffbagg (Mr jeffbagg) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @wina_oscar (Oscar) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @theghostofjeanrhys (oma b) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @flybygolfer (Dan Joyce) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @cristhiamcano (Cristhiam Cano) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @jesse_keenan (Jesse Keenan) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @thedanielmarch (TheDanielMarch) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @r0me.o0 (James) (reel DdptVwWMeV_) - added 2026-09-25
+- [ ] @a_dude_named_dave (Dave) (reel DdthKsfsBDd) - added 2026-09-26
+- [ ] @dvdesprza (David) (reel DdsSN8ysQHG) - added 2026-09-26
+- [ ] @chrisfalaniko92 (chris falaniko) (reel DdsSN8ysQHG) - added 2026-09-26
+- [ ] @alicia_818_702 (Alicia De Paz) (reel DdpKbRcswup) - added 2026-09-26
 
 ## Comments  (worked by `/inbound-comments`)
 
@@ -9032,12 +9092,12 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @kc.carter24 on reel DdfWNU-scOO : "Probably because buying right now is a bad decision, and buying condos are bad decisions" - added 2026-09-22 - replied 2026-09-22 (verified live: comment count 4 -> 5, box cleared)
 - [x] @kyle_nord on reel DdptVwWMeV_ : "How do you turn up the brightness of this video? Sorry but I’m always facilitated by how your videos always pop! Asking for a friend!" - added 2026-09-24 - replied 2026-09-24 (verified live on reload)
 - [ ] @freetobe_lne on reel DdptVwWMeV_ : "Imagine the traffic if they did 😮" - added 2026-09-24
-- [ ] @michael9838miller on reel DdptVwWMeV_ : "I love my house in Las Vegas 1250.00 for a year of property tax😂" - added 2026-09-24
+- [x] @michael9838miller on reel DdptVwWMeV_ : "I love my house in Las Vegas 1250.00 for a year of property tax😂" - added 2026-09-24 - (skipped: already replied - rosehomeslv reply verified live 2026-09-25; the 09-24 run logged this as a failed post but it did land)
 - [x] @neongoatentertainment on reel DdptVwWMeV_ : "City of second home for tax reasons" - added 2026-09-24 - replied 2026-09-24 (verified live on reload)
-- [ ] @silatcode on reel DdptVwWMeV_ : "Zillow, redfins, Black Rock owns a lot of homes" - added 2026-09-24
+- [ ] @silatcode on reel DdptVwWMeV_ : "Zillow, redfins, Black Rock owns a lot of homes" - added 2026-09-24 [2026-09-26: attempted twice more, box stayed full both times and count did not move, while a reply to another comment on the SAME reel posted fine seconds later. 4 failures across 2 runs on this one comment only. Likely blocked/restricted by @silatcode rather than a throttle. LEFT UNCHECKED.]
 - [x] @kt___gram___ on reel DdptVwWMeV_ : "I bet a large percentage of the houses are owner occupied in which they didn’t turn in the tax cap postcard or the county messed up and didn’t apply it. Also the tax structure is a scam. I’m owner occupied but because the previous owner(occupied) didn’t file for the 3% I’m stuck paying 1,200 more a year than a fellow neighbor that had the tax cap for all the years my house wasn’t capped." - added 2026-09-24 - replied 2026-09-24 (verified live on reload)
-- [ ] @max.the.berner2020 on reel DdptVwWMeV_ : "The assessor is not responsible to tell you about the caps. Quite frankly, if you had a good Real Estate agent, they should be informing you as well as when you go through the lending process. Like you said it’s an easy fix. All you do is go down to the assessors." - added 2026-09-24
-- [ ] @terp_torture on reel DdoXg8XMG2U : "Why did they even blow it down! It was perfectly usable makes no sense" - added 2026-09-24
+- [x] @max.the.berner2020 on reel DdptVwWMeV_ : "The assessor is not responsible to tell you about the caps. Quite frankly, if you had a good Real Estate agent, they should be informing you as well as when you go through the lending process. Like you said it’s an easy fix. All you do is go down to the assessors." - added 2026-09-24 - replied 2026-09-26 (verified: count 29 to 30, box cleared, replies link appeared)
+- [ ] @terp_torture on reel DdoXg8XMG2U : "Why did they even blow it down! It was perfectly usable makes no sense" - added 2026-09-24 [2026-09-26: attempted twice more, box stayed full both times and count did not move. Then a reply to @discover_lasvegas on the SAME reel posted and rendered seconds later (count 4 to 5), so this is NOT a throttle. Same pattern as @silatcode. 4 failures across 2 runs on this one comment only. Likely blocked/restricted by @terp_torture. LEFT UNCHECKED.]
 - [x] @mobileautocares on reel DdptVwWMeV_ : "In my neighborhood most don’t even live in this country" - added 2026-09-24 - skipped: charged/xenophobic - screened at research 2026-09-24
 - [x] @discover_lasvegas on reel DdoXg8XMG2U : "Seηd me this Post" - added 2026-09-24 - skipped: spam/bot (homoglyph) - screened at research 2026-09-24
 
@@ -9180,8 +9240,158 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
      claim came up this run, so nothing needed verifying against them, but connecting those folders to the scheduled
      task would close that gap. -->
 
-- [ ] @ant_man3z on reel DdptVwWMeV_ : "Send link" - added 2026-09-24
-- [ ] @djordachian on reel DdptVwWMeV_ : "How many of those homes are paid up on their taxes? That's the story." - added 2026-09-24
+- [x] @ant_man3z on reel DdptVwWMeV_ : "Send link" - added 2026-09-24 - (skipped: already replied - rosehomeslv reply verified live 2026-09-25; the 09-24 run logged this as a failed post but it did land)
+- [x] @djordachian on reel DdptVwWMeV_ : "How many of those homes are paid up on their taxes? That's the story." - added 2026-09-24 - replied 2026-09-26 (verified: count 31 to 32, replies link appeared)
 - [x] @dance.alchemist on reel DdptVwWMeV_ : "Chinese investors bought most of these houses in cash during 2008" - added 2026-09-24 - skipped: charged (nationality-framed claim) - screened at research 2026-09-24
 - [x] @nancy_lvnv on reel DdptVwWMeV_ : "And then theres Lombardo who vetoed the bill that would have stopped this." - added 2026-09-24 - skipped: political - screened at research 2026-09-24
 - [x] @utahata1212 on reel DdptVwWMeV_ : "property taxes are a scam" - added 2026-09-24 - skipped: political/charged - screened at research 2026-09-24
+- [x] @nevadapaintcontractors on reel DdthKsfsBDd : "We need lake mead drained😂 keepm coming😂 plus all the construction 😂" - added 2026-09-25 - replied 2026-09-25
+- [x] @bigdegendomtom on reel DdptVwWMeV_ : "43% are about to find out , 😂 . Expected even higher interest rate ." - added 2026-09-25 - replied 2026-09-26 (verified: count 30 to 31, box cleared)
+- [ ] @itsbigrick_ on reel DdptVwWMeV_ : "What a rip off" - added 2026-09-25
+- [x] @lifesizedlegends on reel DdthKsfsBDd : "How many times do I need to say this? We live in the fucking desert. Fuck off with data centers." - added 2026-09-25 - skipped: hostile/profane - screened at research 2026-09-25
+- [x] @lifesizedlegends on reel DdsSN8ysQHG : "Our fucking country is corrupt beyond words." - added 2026-09-25 - skipped: political/hostile - screened at research 2026-09-25
+- [x] @theycallmejuju on reel DdptVwWMeV_ : "@dance.alchemist only way to invest if you're from China btw they only allowed to take out $50k per yr" - added 2026-09-25 - skipped: reply to another commenter, nationality-framed thread - screened at research 2026-09-25
+- [x] @kyle_nord on reel DdptVwWMeV_ : "How do you turn up the brightness of this video? ... Asking for a friend!" - added 2026-09-25 - skipped: already replied (rosehomeslv reply verified live on post) 2026-09-25
+- [x] @michael9838miller on reel DdptVwWMeV_ : "@rosehomeslv I also currently owe 16,000, sooo close to being done on payments" - added 2026-09-25 - skipped: thread already has a rosehomeslv reply 2026-09-25
+
+<!-- RUN NOTES 2026-09-25 (Ig commentor, scheduled) -----------------------------------------
+
+     SCOPE HELD: @rosehomeslv's OWN posts only. Nothing touched on anyone else's post.
+
+     STEP 1 RESEARCH. Own posts walked: DdthKsfsBDd (3h, 2 comments), DdsSN8ysQHG (14h, 1 comment),
+       Ddr2ujHMOGJ (18h, 0 comments), DdptVwWMeV_ (1d, re-walked for new comments), DdpR9Xam3Jx (1d, 0 comments),
+       DdoXg8XMG2U (2d, re-walked).
+     Comments added: 3 new unchecked + 5 screened-and-checked-off.
+       Screened out: @lifesizedlegends x2 (hostile/profane on DdthKsfsBDd, political on DdsSN8ysQHG),
+       @theycallmejuju (reply to another commenter, nationality-framed thread).
+     Followers added: 9 new unchecked + 1 skipped (@only.juan.4.loans, loan officer, industry not consumer).
+       The followers dialog again refused to paginate past the first 10 rows (same throttle as 09-21, 09-23, 09-24),
+       so coverage is the 10 newest followers only.
+     Likers: NOT harvested, second run in a row. The /liked_by/ URL redirects straight back to the reel and clicking
+       the like count on a reel opens the reels player instead of a likers dialog. This looks like an Instagram
+       behavior change for reels, not a transient failure. Ryan: the dm-likes queue is now TWO runs stale and will
+       stay stale until someone finds another way in.
+
+     IMPORTANT CORRECTION TO THE 09-24 RUN. Two comments the 09-24 run recorded as FAILED had in fact POSTED:
+       @michael9838miller (DdptVwWMeV_) and @ant_man3z (DdptVwWMeV_). Both rosehomeslv replies are live on the post.
+       Both log lines have been checked off today as "already replied" so no second reply is ever attempted.
+     READ ON THE SIGNAL, this is the useful part: on 09-24 those two showed "comment box CLEARED but reply not
+       visible" and they SUCCEEDED, just rendered late. Today's two failures showed "comment box STAYED FULL" and
+       they genuinely FAILED. So box cleared = posted, box still full = not posted. The 09-24 note calling a cleared
+       box unreliable was wrong. Use the box state, then confirm on reload.
+
+     STEP 2 COMMENTS. 1 reply posted and VERIFIED LIVE on reload:
+       @nevadapaintcontractors (DdthKsfsBDd) - sarcastic water/data center comment, light factual reply.
+
+     THROTTLE HIT EARLY AND HARD. After that single success, both further attempts failed silently, each retried once
+     per the failed-post rule, box stayed full both times, comment counts did not move, no toast:
+       @silatcode (DdptVwWMeV_)    - Post clicked twice by element ref, never posted.
+       @terp_torture (DdoXg8XMG2U) - Post clicked twice by element ref, never posted.
+     Both left UNCHECKED for the next run. Both re-verified on a full reload several minutes later: still not posted,
+     so these are true failures, not late renders.
+     Yesterday the account took 3 replies before throttling. Today it took 1. The trend is tightening, so the run was
+     stopped after the second confirmed failure rather than spending the remaining ~18 replies into a throttle.
+
+     VERIFIED NO DUPLICATES AND NO LEAKS: DdptVwWMeV_ was fully reloaded and read end to end. Exactly five
+     rosehomeslv replies are present, all five from the 09-24 run (@neongoatentertainment, @kt___gram___, @kyle_nord,
+     @michael9838miller, @ant_man3z). The comment box was selected-all-and-deleted after each failure so no stranded
+     text could attach to a later reply.
+
+     ALSO NOTE: prefill only fires on a COORDINATE click on "Reply". Clicking the same Reply control by element
+     reference left the box empty with no "@handle " prefill. Every reply this run was typed only after the prefill
+     was confirmed in the textarea.
+
+     WHY NO PAUSE FILE: no true stop condition. No "Action Blocked", no "Try Again Later", no captcha, no
+     verify-identity challenge, no logout. Still logged in as @rosehomeslv throughout.
+
+     NO DMS SENT. This task does not send DMs. No reply this run claims a DM was sent. No outstanding DM promises
+     from earlier runs were found.
+
+     STILL NOT CONNECTED to this scheduled task: /Users/ryanrose/Downloads/Claude/Transactions/ and the ig-engage
+     guardrail files. No teamwork claim came up this run so nothing needed verifying, but the gap is still open.
+
+     CARRIED FORWARD, all unchecked, CHECK EACH THREAD FOR AN EXISTING ROSEHOMESLV REPLY BEFORE POSTING NEXT RUN:
+       @silatcode (DdptVwWMeV_), @terp_torture (DdoXg8XMG2U), @freetobe_lne (DdptVwWMeV_),
+       @max.the.berner2020 (DdptVwWMeV_), @djordachian (DdptVwWMeV_), @bigdegendomtom (DdptVwWMeV_),
+       @itsbigrick_ (DdptVwWMeV_), plus the whole older backlog, which was never reached. -->
+- [x] @hale_gordon on reel Ddq8YSgm7Sq : "It’s a personal interest. Some of these historical figures and places in Las Vegas ordinary folks don’t even know or care" - added 2026-09-25 - replied 2026-09-26 (verified live)
+- [x] @3freebird2013 on reel Ddq8YSgm7Sq : "Built in ’78, no sir, not for family living" - added 2026-09-25 - replied 2026-09-26 (count moved 3 to 4, box cleared)
+- [x] @neongoatentertainment on reel DdthKsfsBDd : "Your doing good" - added 2026-09-26 - replied 2026-09-26 (verified live on reload)
+- [x] @hugo_flores__ on reel DdthKsfsBDd : "😮" - added 2026-09-26 - skipped: emoji-only, no thread to build - 2026-09-26
+- [x] @hale_gordon on reel DdthKsfsBDd : "Nope! No more data centers in NEVADA" - added 2026-09-26 - skipped: political/charged - screened at research 2026-09-26
+- [x] @lenticsystem on reel DdsSN8ysQHG : "Why can’t they just pay all taxes in full, forever? Like everyone else." - added 2026-09-26 - skipped: tax-policy/charged - screened at research 2026-09-26
+- [x] @jai.tography on reel DdsSN8ysQHG : "Complacency and racism are the great filters" - added 2026-09-26 - skipped: racially charged - screened at research 2026-09-26
+- [ ] @isabella.24.ro on reel DdptVwWMeV_ : "Just a heads up, they can “mistakenly” bump it back up so you have to double check it ev..." - added 2026-09-26 [2026-09-26: NOT REPLYABLE FROM INSTAGRAM. The IG comment list on this reel ends after max.the.berner2020 and then shows 'This reel has 3 comments from Facebook.' These three are those Facebook crosspost comments, so they never render in the IG reel UI and cannot be replied to from Instagram. Ryan would need to answer these on the Facebook post. LEFT UNCHECKED.]
+- [ ] @phanson_53 on reel DdptVwWMeV_ : "I don’t really doubt your numbers, but do they account for properties held in a private ..." - added 2026-09-26 [2026-09-26: NOT REPLYABLE FROM INSTAGRAM. The IG comment list on this reel ends after max.the.berner2020 and then shows 'This reel has 3 comments from Facebook.' These three are those Facebook crosspost comments, so they never render in the IG reel UI and cannot be replied to from Instagram. Ryan would need to answer these on the Facebook post. LEFT UNCHECKED.]
+- [ ] @craminvegas on reel DdptVwWMeV_ : "To be fair, many houses are owned by a trust or an LLM of the owner and his/her family." - added 2026-09-26 [2026-09-26: NOT REPLYABLE FROM INSTAGRAM. The IG comment list on this reel ends after max.the.berner2020 and then shows 'This reel has 3 comments from Facebook.' These three are those Facebook crosspost comments, so they never render in the IG reel UI and cannot be replied to from Instagram. Ryan would need to answer these on the Facebook post. LEFT UNCHECKED.]
+- [x] @livenlove83 on reel DbnoVErSV7f : "CORRUPTION AT IT’S FINNEST" - added 2026-09-26 - skipped: charged/political - screened at research 2026-09-26
+- [x] @nevadapaintcontractors on reel DdthKsfsBDd (thread reply) : "@rosehomeslv lake powel ànd the Rio grande are both examples of what data centers do! We are doomed" - added 2026-09-26 - skipped: rosehomeslv already replied in this thread, one reply per comment - 2026-09-26
+- [x] @cormeli on reel DdubfB6G-J8 : "Go Clark!!! They are the best!!👏" - added 2026-09-26 - replied 2026-09-26 (verified: count 1 to 2, replies link appeared)
+- [x] @discover_lasvegas on reel DdoXg8XMG2U : "Send me this Post" - added 2026-09-26 - replied 2026-09-26 (verified live, count 4 to 5) - asked them to DM, no send promised
+
+<!-- RUN NOTES 2026-09-26 (scheduled inbound-research + inbound-comments, PM run, Chrome)
+
+     SCOPE CHECK: every post worked this run was verified as authored by @rosehomeslv by reading the
+     author line on the post page itself. NOTE: the profile grid (instagram.com/rosehomeslv) is serving
+     STALE data. Its newest non-pinned item is reel DZLFnYTP9pX and NONE of the current Dd... reels show
+     up there at all, so the grid is useless for finding recent posts right now. The notifications feed
+     is the reliable harvest surface, and the per-post author line is the reliable scope check.
+
+     RESEARCH. The 10:01 run today had already covered most of the last 24h. This PM sweep used the
+     notifications feed and found:
+       5 new followers added: @iambrandiinecole, @big_e1982, @altc.at, @karencabo,
+         @alicia_griffith_moreland (Landscaping pro, kept as a non competing referral source).
+       6 new comments added, of which 2 were screened and checked off immediately
+         (@livenlove83 political, @nevadapaintcontractors thread reply where rosehomeslv already replied).
+       A POST THE MORNING RUN MISSED: reel DdubfB6G-J8 ("88 Clark County Seniors Just Made National Merit
+         Semifinalist") is the NEWEST post on the account and was not in the log at all.
+       Likers: still NOT harvested, third run in a row. Unchanged from 09-25.
+
+     COMMENTS. 8 replies posted, every one verified. 5 were re read on a full page reload or rendered
+     visibly in thread; the other 3 were confirmed by the comment count moving plus a cleared box.
+       @neongoatentertainment (DdthKsfsBDd)  - verified live on reload
+       @hale_gordon        (Ddq8YSgm7Sq)     - rendered in thread
+       @3freebird2013      (Ddq8YSgm7Sq)     - count 3 to 4, box cleared
+       @max.the.berner2020 (DdptVwWMeV_)     - verified live on reload
+       @bigdegendomtom     (DdptVwWMeV_)     - count 30 to 31, box cleared
+       @djordachian        (DdptVwWMeV_)     - verified live on reload
+       @cormeli            (DdubfB6G-J8)     - count 1 to 2, replies link appeared
+       @discover_lasvegas  (DdoXg8XMG2U)     - rendered in thread, count 4 to 5
+     Checked off without replying: @hugo_flores__ (emoji only, no thread to build).
+
+     >>> BIG FINDING: THE TWO CARRIED FORWARD FAILURES ARE NOT A THROTTLE <<<
+     @silatcode (DdptVwWMeV_) and @terp_torture (DdoXg8XMG2U) failed again, twice each, box stayed full
+     and the comment count never moved. But on BOTH reels a reply to a DIFFERENT commenter posted fine
+     within a minute or two of the failure (@max.the.berner2020 on DdptVwWMeV_, @discover_lasvegas on
+     DdoXg8XMG2U). Same session, same post, same Post button. So this is comment specific, not rate
+     limiting. That is now 4 failed attempts each across 2 runs, and both are almost certainly blocked
+     or reply restricted by those two users. RECOMMEND: stop retrying these two, they will burn an
+     attempt every run forever. Ryan may want to check them by hand and then check them off.
+     This CORRECTS the 09-25 note, which read these as an account wide throttle tightening. The account
+     was NOT throttled today: 8 replies went out clean with no degradation.
+
+     FACEBOOK CROSSPOST COMMENTS, NEW PROBLEM: three real comments on DdptVwWMeV_
+     (@phanson_53, @isabella.24.ro, @craminvegas) are Facebook comments, not Instagram ones. The IG
+     comment list ends and then shows "This reel has 3 comments from Facebook" with a spinner that never
+     resolves, so they cannot be replied to from Instagram at all. @phanson_53 asked a real question
+     (whether the 43 percent accounts for homes held in a trust or LLC). Left unchecked and annotated.
+     Ryan, these need answering on the Facebook post.
+
+     Ddg3espMB59 (60 comments) was opened for @bigdegendomtom and @_jess_sanchez__ but the comment list
+     would not paginate past the first handful, so neither was reached. Both still unchecked.
+
+     LEADS: 1 flagged to leads.md (@discover_lasvegas, a repost ask from a verified local media account).
+     NO DMS SENT and no reply claimed or promised one. The only outstanding DM promise on file is still
+     @ryan_m_cavitt from 2026-09-20, unresolved.
+
+     TRANSACTIONS NOT ACCESSIBLE: /Users/ryanrose/Downloads/Claude/Transactions/ is still NOT connected to
+     this scheduled task, only the Inbound-Engagement folder is. No teamwork claim came up this run so
+     nothing needed verifying, and no reply this run asserted any shared history. Gap still open.
+
+     WHY NO PAUSE FILE: no true stop condition. No "Action Blocked", no "Try Again Later", no captcha,
+     no verify identity challenge, no logout. Logged in as @rosehomeslv throughout.
+
+     CARRIED FORWARD, all unchecked: @freetobe_lne and @itsbigrick_ (DdptVwWMeV_), @bigdegendomtom and
+     @_jess_sanchez__ (Ddg3espMB59), @cindylkahle (DdWsQV4M97Y), the 3 Facebook comments above, the two
+     blocked comments above, plus the whole older backlog. CHECK EACH THREAD FOR AN EXISTING ROSEHOMESLV
+     REPLY BEFORE POSTING NEXT RUN. -->
