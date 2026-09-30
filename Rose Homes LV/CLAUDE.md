@@ -10,7 +10,7 @@ Everything under this folder is the **Rose Homes LV** real estate business (Ryan
 
 - **Clients/** — active people: `Buyers/`, `Listings/` (sellers), `Transactions/` (per-deal working folders, git-ignored / private).
 - **Prospecting/** — outreach & lead-gen: `Expireds/`, `Active Cannonballs/`, `Digital Cannonballs/`, competitor intel.
-- **Content/** — the content factory: `Claude Blogs/`, `New-Construction/`, `Instagram/`, `Reddit/`, `YouTube/`, `CCSD/` and local-news, `Research/` (neighborhood research notes), `lofty-link-audit/`. Several of these carry their own `CLAUDE.md`.
+- **Content/** — the content factory: `Claude Blogs/`, `New-Construction/`, `Instagram/`, `Reddit/`, `YouTube/`, `CCSD/` and local-news, `Research/` (neighborhood research notes, GBP post calendars), `lofty-link-audit/`. Several of these carry their own `CLAUDE.md`.
 - **Marketing/** — listing & lead marketing: `Listing Marketing Plan/`, `Listing Leads Content/`, `Lead-Magnets/`, `Relocation Guide/`, `Smart Plans/` (Lofty nurture), templates.
 - **CMA Reports/** — `/seller-cma` output. `_template/` is the master (never edit for a client); each report is a self-contained `<Street Address>/` folder.
 - **Brand/** — personal-brand strategy, sales/cover letters, one-off HTML artifacts, strategy diagrams.
