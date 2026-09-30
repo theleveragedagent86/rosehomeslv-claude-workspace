@@ -241,9 +241,35 @@ Above each Instagram caption:
 **Post Time:** 9:45 AM
 **Slot:** Morning
 **Trial Reel:** No
+**Author IG:** @handle (Author Name, Outlet)
 ```
 
 Above each YouTube description, a short header with Post Order, Story ID, and the publish date.
+
+### Author IG line (header only, never in the caption)
+
+Every Instagram caption header carries an `**Author IG:**` line so Ryan can tag or mention the reporter when he posts and spread the reach. It goes in the header block above the caption, never inside the caption text, never in the YouTube description, and never in the source line.
+
+**The handle list:** `/Users/ryanrose/Downloads/Claude/_System/plugins/local-news-plugin/skills/local-news/author-handles.md`. Read it first, every run. The same reporters show up week after week, so most lookups should end there.
+
+**For each story:**
+1. Take the `Author` from the story data (for national-to-local stories, use the `Local Author` first, since that is the Las Vegas reporter; add the `National Author` as a second line if found).
+2. Look the name up in `author-handles.md` (match name plus outlet).
+   - Listed with a handle: use it.
+   - Listed as `none found` and last checked under 60 days ago: do not search again. Write the fallback line.
+   - Not listed, or `none found` older than 60 days: search for it (step 3).
+3. Search: WebSearch "[Author Name] [Outlet] instagram" and check the reporter's staff bio page, X/Threads profile, or link-in-bio for an Instagram link. Only accept a handle you can tie to that reporter from a reliable place: the outlet's staff page, the reporter's own verified profile or site, or an Instagram bio that names the outlet and the reporter. Never guess a handle from the name alone. A personal account that is plainly private life, not their journalism, is not worth tagging; skip it.
+4. Write the header line:
+   - Found: `**Author IG:** @handle (Author Name, Outlet)`
+   - Not found: `**Author IG:** none found (Author Name, Outlet). Outlet IG: @outlethandle` using the outlet's official Instagram handle if it is in the Outlets table of `author-handles.md` or you can verify it.
+   - Likely account that fails the verification test (for example, a bio that still names a previous station): keep it out of the Instagram column and add it after the fallback as `Unconfirmed, check before tagging: @handle`. Record it in the Candidate column of `author-handles.md`.
+   - Source is a brokerage (for example, Redfin): `**Author IG:** do not tag (source is a brokerage). No outlet tag.`
+   - No named author (Staff, a government agency, a press release): `**Author IG:** no byline. Outlet IG: @outlethandle` (or `none` if the source is an agency with no Instagram).
+5. Update `author-handles.md` before you finish: add every new reporter you looked up, found or not, with the date checked. Add any outlet handle you verified to the Outlets table. Keep both tables sorted alphabetically. Never delete an entry; update its row if a handle changes.
+
+**Never** add a handle for anyone at a competing Las Vegas brokerage, team, or agent blog (see content-rules.md BLOCKED SOURCES). The list is for journalists and news outlets only.
+
+The `HK-WEEK` roundup gets one `**Author IG:**` line per folded item, in the same order as the stacked source lines.
 
 The `HK-WEEK` roundup carries the same header, with its own Post Order number, its morning slot, and Trial Reel No. Label it plainly as the weekly roundup so it is not mistaken for one of the day's three news posts.
 

@@ -2,6 +2,9 @@
 
 Source: Leveraged Agent long-form lesson (not yet shot). Video covers using AI to write a full open house ad campaign for Meta (Facebook and Instagram): ad copy variations, a location-based targeting plan that respects the Housing Special Ad Category, a short video-ad script, and single-property landing-page copy. Chapter timestamps below are ordered; drop in real times once the edit is locked. Grounded in Jason Pantana (geo-targeted ads) and Jimmy Mackin / Curaytor (landing page plus boost).
 
+
+**Full word-for-word read:** [Open-House-Geo-Ads-Teleprompter.md](Open-House-Geo-Ads-Teleprompter.md)
+
 ---
 
 ## Title Options (5)

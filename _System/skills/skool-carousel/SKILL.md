@@ -75,8 +75,10 @@ the topic has fewer points than slides, spend the spare slides on a do-this-inst
 and a recap slide. Never filler. Each slide stands alone and pulls to the next.
 
 **FINAL SLIDE (slide 9)**
-The CTA. One action, stated plainly. **Default is a DM keyword**, e.g. 'DM me "TC"'. Ryan
-prefers DMs over comments, a DM starts a real conversation and he can answer it once.
+The CTA. One action, stated plainly. **Default is a COMMENT keyword**, e.g. 'Comment "SELLER"
+and I'll send you the prompt'. Ryan, Sept 2026: we want people to comment, not DM. A keyword
+comment is public engagement Instagram rewards with reach, and ManyChat still opens the DM.
+Keep a DM-keyword trigger in the automation as a backstop, but the art and caption say comment.
 Rotate the alternatives sparingly: save this, or the Skool join. Never stack two asks on
 one slide. When the CTA is a keyword, also write the AUTOMATION PACK, see below.
 

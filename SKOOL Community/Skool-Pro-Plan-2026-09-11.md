@@ -329,8 +329,12 @@ you can go ahead and change the url for skool for me. do the number 3 too."
 
 - **A real onboarding video.** Roughly 60 seconds, one take, Ryan's face, pointing at the pinned
   thread. The plugin is off until then.
-- **`[BRAIN_ASSET_URL]`** in `MANYCHAT-BRAIN-FLOW.md`, the published home of
-  `BUSINESS-BRAIN-STARTER.md`. Last bracket standing before that carousel can post.
+- ~~`[BRAIN_ASSET_URL]` in `MANYCHAT-BRAIN-FLOW.md`.~~ **Filled 2026-09-28.**
+  `BUSINESS-BRAIN-STARTER.md` is published as a Claude Artifact at
+  https://claude.ai/artifact/LYj8KoH5WPHYVpxncdepqP, Vector v2.0, view only, no signup gate, with a
+  copy button on the BROKER `CLAUDE.md` block. The flow doc's three brackets are all closed.
+  Sharing set to "anyone with the link" the same day, so it is live. A 7-page PDF of the same
+  document sits next to the source as `Business-Brain-Starter.pdf`.
 - ~~The YouTube channel's own About block.~~ **Fixed and published 2026-09-11** on Ryan's
   go-ahead, in YouTube Studio > Customization > Profile. Channel `UCJ_t1LMeHXO2iTx1YLMs1OA`.
   Description: two em-dashes and one en-dash removed ("I'm Ryan Rose, a licensed...",

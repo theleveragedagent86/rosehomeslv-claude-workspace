@@ -40,13 +40,18 @@ SKOOL Community/
 │                              thread, DRAFT (never send) 7 member DMs. All public copy is written out
 │                              verbatim in the prompt so Cowork never authors. 3 DECISIONS at the top
 │                              Ryan must fill in first. Hard rules: no deletes, no billing, no sending.
-├── Community-Audit-2026-09-01.md   live audit of skool.com/the-leveraged-agent-7674. 11 members,
-│                              8 posts ALL by Ryan, 0 member posts ever, dark since Jul 17. The pinned
-│                              welcome post routes to 3 things that don't exist (Welcome & Intros, Q&A,
-│                              Calendar tab); About sells weekly live calls that aren't happening;
-│                              Listing Launch Package is in DRAFT; feed sells the Cowork/Module ladder
-│                              being replaced and names stale models. Ordered fix list. Bottleneck =
-│                              recording Level 0 + 1, not writing. DO NOT turn the IG/YT funnel on first.
+├── Community-Audit.md          LIVING audit of skool.com/the-leveraged-agent (suffix now dropped).
+│                              Updated 2026-09-29; the 2026-09-01 baseline is kept at the bottom.
+│                              The loop CLOSED: Jessica Martin asked in the pinned task thread ->
+│                              Ryan built it -> shipped the Sellers module crediting her, 3 weeks.
+│                              Fixed since baseline: clean URL, Intros + Q&A categories, new "Start
+│                              here" post, Calendar promise removed from post AND About, em-dashes
+│                              swept, 11->15 members, April cohort re-engaged, first member comments
+│                              ever. STILL OPEN: Listing Launch Package in Draft 28 days (Newsletters
+│                              too), thread quiet 10d while 4 joined, joins drifting off-ICP (2 vendors
+│                              in the list), 0 reviews, no paid tier. THE FORK: Ryan is building the
+│                              OLD module classroom while the Level 0-10 ladder sits unrecorded. Both
+│                              at once is the expensive option; that call unblocks the IG/YT funnel.
 ├── Session-Record-Community-Fixes.md   what actually got executed on the live Skool, Sept 1 and
 │                              Sept 8 2026, from Cowork-Prompt-Community-Fixes.md. Records Ryan's
 │                              three decisions (D1 = no calls, kill the Calendar promise; D2 = leave
@@ -152,7 +157,7 @@ SKOOL Community/
 │                               Modules 01-10 (08 = Sellers, 09 = Resources, both 2026-09-17; 10 = Newsletters, 2026-09-24; none of 08-10 carry a module number). NOTE they do not match the live classroom or the
 │                               "one tile, Level 0-10" course decision, reconcile before uploading)
 │                                → Brandkit/CLAUDE.md
-├── Scripts/                    content scripts (per-lesson YouTube packages + IG/YouTube shorts; open house promo set = YouTube-Package-Open-House-*.md + Open-House-*-Instagram-Shorts.md + Open-House-Promotion-YouTube-Shorts-Descriptions.md; Saraev rebuttal set = YouTube-Package-Saraev-Rebuttal.md (beat outline, titles, thumbnail, compliance) + Saraev-Rebuttal-Teleprompter.md (full word-for-word read), both sourced from Mentor-Mining/); YouTube-Package-Weekly-Seller-Update.md = Level 5 weekly seller update YouTube cut (titles, description, chapters, tags, pinned comment; prompt deliberately NOT linked, Skool only) + Weekly-Seller-Update-Instagram-Shorts.md (5 scripts + captions, each with a B-roll timestamp from the long video; the paste-ready IG Reel captions for the clipped Reels are in their own file, Weekly-Seller-Update-Instagram-Reel-Captions.md, long-form local-news caption format, 250-400 word bodies, no hashtags); Open-House-Lead-Automation-Instagram-Reel-Captions.md = same-format paste-ready captions for the 12 clipped Final Videos/Open-House-Reel-*.mp4 (visitor, coworker and landmark kept anonymous); Shorts-Build/ = clipped-Reel builds (workflow is now the /skool-reels + /skool-shorts-schedule skills): weekly-seller-update/ (build.py + caps.mjs + words.json CUT 12 real clips from the raw Sept 17 footage, screen top / face bottom, Barlow captions, 9:16 bumper end, into Final Videos/Weekly-Seller-Update-Reel-NN-*.mp4, + covers/cover-01..12.png) and open-house-lead-automation/ (same pipeline, 12 face-only clips from the raw July 14 Final Cut media into Final Videos/Open-House-Reel-NN-*.mp4, prospect name/phone kept out, + covers/), and reel-covers/ = the shared cover template (cover.html SETS + shoot.mjs; each set has a fixed colour, weekly black and open house white, so the grid alternates in posting order), plus Shorts-Build/IG-POSTING-KIT.md = the 21 IG Reels in posting order (video link, cover link, date/time, paste-ready caption; W01-03 skipped, already posted), Shorts-Build/POSTING-SCHEDULE.md = the 24-Reel calendar (starts 2026-09-27, two slots a day at 5:00am and the evening peak, the two series swap slots every 3 posting days), covers-16x9/ in each set folder = the same titles at 1280x720 for YouTube thumbnails (node reel-covers/shoot.mjs --16x9), YOUTUBE-POSTING-TIMES-RESEARCH.md = 628 coach uploads analysed for YouTube timing (Shorts 9am and 2pm PT, never pre-dawn, long-form skip Friday), YOUTUBE-SHORTS-METADATA.md = the 24 YouTube titles, descriptions and tag blocks (Skool link only, prompt never linked), and yt_manifest.json + yt_upload.py = stdlib-only YouTube Data API uploader that posts all 24 as private-with-publishAt on that calendar (needs ~/.config/yt-upload/client.json once, state in yt_upload_state.json so reruns never double-post); Thumbnails/<slug>/ = per-video Leveraged Agent YouTube thumbnails (open-house-lead-automation/, weekly-seller-update/ with brief.md, thumb-a/b .html+.png, squint proofs, shoot.mjs)
+├── Scripts/                    content scripts (per-lesson YouTube packages + IG/YouTube shorts; open house promo set = YouTube-Package-Open-House-*.md + Open-House-*-Instagram-Shorts.md + Open-House-*-Teleprompter.md (word-for-word long-form reads for all 4 promotion-stage videos) + Open-House-Promotion-YouTube-Shorts-Descriptions.md; Saraev rebuttal set = YouTube-Package-Saraev-Rebuttal.md (beat outline, titles, thumbnail, compliance) + Saraev-Rebuttal-Teleprompter.md (full word-for-word read), both sourced from Mentor-Mining/); YouTube-Package-Transaction-Coordinator-Live-Demo.md = live /transaction-coordination demo on a real buyer deal (titles, description, chapters, tags, pinned comment; skill Skool only; notes flag spoken client names to bleep); YouTube-Package-Weekly-Seller-Update.md = Level 5 weekly seller update YouTube cut (titles, description, chapters, tags, pinned comment; prompt deliberately NOT linked, Skool only) + Weekly-Seller-Update-Instagram-Shorts.md (5 scripts + captions, each with a B-roll timestamp from the long video; the paste-ready IG Reel captions for the clipped Reels are in their own file, Weekly-Seller-Update-Instagram-Reel-Captions.md, long-form local-news caption format, 250-400 word bodies, no hashtags); Open-House-Lead-Automation-Instagram-Reel-Captions.md = same-format paste-ready captions for the 12 clipped Final Videos/Open-House-Reel-*.mp4 (visitor, coworker and landmark kept anonymous); Shorts-Build/ = clipped-Reel builds (workflow is now the /skool-reels + /skool-shorts-schedule skills): weekly-seller-update/ (build.py + caps.mjs + words.json CUT 12 real clips from the raw Sept 17 footage, screen top / face bottom, Barlow captions, 9:16 bumper end, into Final Videos/Weekly-Seller-Update-Reel-NN-*.mp4, + covers/cover-01..12.png) and open-house-lead-automation/ (same pipeline, 12 face-only clips from the raw July 14 Final Cut media into Final Videos/Open-House-Reel-NN-*.mp4, prospect name/phone kept out, + covers/), and reel-covers/ = the shared cover template (cover.html SETS + shoot.mjs; each set has a fixed colour, weekly black and open house white, so the grid alternates in posting order), plus Shorts-Build/IG-POSTING-KIT.md = the 21 IG Reels in posting order (video link, cover link, date/time, paste-ready caption; W01-03 skipped, already posted), Shorts-Build/POSTING-SCHEDULE.md = the 24-Reel calendar (starts 2026-09-27, two slots a day at 5:00am and the evening peak, the two series swap slots every 3 posting days), covers-16x9/ in each set folder = the same titles at 1280x720 for YouTube thumbnails (node reel-covers/shoot.mjs --16x9), YOUTUBE-POSTING-TIMES-RESEARCH.md = 628 coach uploads analysed for YouTube timing (Shorts 9am and 2pm PT, never pre-dawn, long-form skip Friday), YOUTUBE-SHORTS-METADATA.md = the 24 YouTube titles, descriptions and tag blocks (Skool link only, prompt never linked), and yt_manifest.json + yt_upload.py = stdlib-only YouTube Data API uploader that posts all 24 as private-with-publishAt on that calendar (needs ~/.config/yt-upload/client.json once, state in yt_upload_state.json so reruns never double-post); Thumbnails/<slug>/ = per-video Leveraged Agent YouTube thumbnails (open-house-lead-automation/, transaction-coordinator-live-demo/ (thumb-b "i don't pay a tc" ship, thumb-a "claude is my tc" test), weekly-seller-update/ with brief.md, thumb-a/b .html+.png, squint proofs, shoot.mjs)
 ├── Instagram/                  Skool-brand IG content (separate from Rose Homes LV IG); prospect
 │   │                          research TSVs + Outreach-Plan.md live at its root.
 │   │                          Posting-Times-Research.md = when realtors are on IG (2026-09-21),
@@ -254,13 +259,18 @@ SKOOL Community/
 │                              DM M1..M6, tags, ManyChat URL/status), read by skool-manychat.
 │                              automation/KEYWORDS.md = the keyword registry (TC, BRAIN, LAUNCH,
 │                              HOOKS); 03 and 04 moved from save/share to keyword CTAs 2026-09-27.
+│                              05-weekly-seller-update/ (2026-09-27) = carousel 05, keyword SELLER,
+│                              the first COMMENT-keyword CTA (Ryan: comment, not DM). .md copy +
+│                              claude-design-prompt.md; not designed or rendered yet.
 │                              render-v1-archive.html = the retired v1 cream/teal/gold, CSS-box,
 │                              03-listing-automation/ and 04-reel-hooks/ added 2026-09-11: the
 │                              first carousels built on the Whitney Bartlette numbered-list
 │                              finding (count in the cover, the list IS the deliverable, no
 │                              keyword gate, save/share CTA). 7 and 6 slides, not the usual 9.
 │                              Each now carries design/ = the .dc.html artboards, gen.mjs,
-│                              canvas.json and rendered png/. Both are published as Claude
+│                              canvas.json and rendered png/ (03's png/ mixes stale Sep 11
+│                              duplicates; 03 ships from design/post/, the clean 7-slide set).
+│                              Both are published as Claude
 │                              Design canvases. Every slide sits in the 4:5 safe band
 │                              (padding 152/64/166, nothing corner-pinned) so it survives the
 │                              1:1 profile-grid crop; check with check-slides.mjs in the
@@ -287,9 +297,14 @@ SKOOL Community/
 │                              BUSINESS-BRAIN-STARTER.md = the deliverable the DM promises, the
 │                              folder tree + paste-ready BROKER CLAUDE.md + starter skills +
 │                              level ladder + a Leveraged Agent links block + compliance footer.
-│                              Publish as a view-only Doc/PDF, NOT behind a Skool signup.
-│                              3 links still NOT FOUND and must be filled before posting:
-│                              YouTube URL, Leveraged Agent IG handle, the published asset URL.
+│                              PUBLISHED 2026-09-28 as a Claude Artifact at
+│                              https://claude.ai/artifact/LYj8KoH5WPHYVpxncdepqP, built on Vector v2.0 with a
+│                              copy button on the CLAUDE.md block. Source of truth is still the
+│                              .md; republish the same file to update that URL in place. All 3
+│                              formerly-missing links are now filled in MANYCHAT-BRAIN-FLOW.md.
+│                              Shared as "anyone with the link". Business-Brain-Starter.pdf =
+│                              the same document rendered to 7 pages via headless Chrome off
+│                              a print variant, for anyone who wants a file not a link.
 ├── Reddit Researcher/          Skool-brand Reddit research (has its own .claude)
 ├── Claude Code Course for Realtors/   RYAN'S FLAGSHIP COURSE BUILD. One Skool classroom tile,
 │                              Level 0-10 + 3 bonus "OS" drops, ~5h40m across 14 videos. Carried

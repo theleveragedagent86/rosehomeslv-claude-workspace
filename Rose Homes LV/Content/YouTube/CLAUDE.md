@@ -51,3 +51,11 @@ All content follows `~/.claude/skills/yt-long/content-rules.md` and the workspac
 - **6th grade reading level, warm and conversational.** Soft CTAs, never salesy.
 - **Local info wins** when the topic is Las Vegas, Henderson, or Clark County.
 - **Ryan Rose:** Real Broker, LLC | 702-747-5921 | ryan@rosehomeslv.com | rosehomeslv.com
+
+## Channel intro (post-hook)
+
+The intro that plays after Ryan's cold-open hook on every long-form upload lives in
+`SKOOL Community/hyperframes-student-kit/video-projects/rose-homes-yt-intro/renders/`:
+`rose-homes-yt-intro.mp4` (7.5s), `rose-homes-yt-intro-10s.mp4`, `rose-homes-yt-intro-15s.mp4`
+(15s adds Summerlin / Southwest / Henderson / Spring Valley cards to the flurry)
+(built 2026-09-28 with HyperFrames + the motion-showreel skill, Vector palette). YouTube only.

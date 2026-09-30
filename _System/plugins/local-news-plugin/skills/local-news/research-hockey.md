@@ -117,6 +117,7 @@ The Article Title is required on every story. It is the exact headline of the so
 - **Summary:** [2-3 sentence factual summary]
 - **Source:** [Publication Name]
 - **Article Title:** [exact headline of the source article, transcribed word for word]
+- **Author:** [reporter byline exactly as printed on the article, e.g. "Alan Halaly"; write "Staff" or "None listed" if there is no named author]
 - **URL:** [full URL]
 - **Date:** [publication date]
 - **Why It Matters:** [1 sentence]

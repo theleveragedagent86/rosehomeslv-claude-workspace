@@ -115,6 +115,7 @@ Return your findings in exactly this structure:
 - **Summary:** [2-3 sentence factual summary with specific names, dates, numbers, addresses]
 - **Source:** [Publication Name]
 - **Article Title:** [the exact headline of the source article]
+- **Author:** [reporter byline exactly as printed on the article, e.g. "Alan Halaly"; write "Staff" or "None listed" if there is no named author]
 - **URL:** [working source URL]
 - **Date:** [publication date]
 - **Why It Matters Locally:** [1-2 sentences on why a Las Vegas resident cares]

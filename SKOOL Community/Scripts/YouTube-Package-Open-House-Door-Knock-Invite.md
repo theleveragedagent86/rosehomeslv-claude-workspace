@@ -2,6 +2,9 @@
 
 Source: Leveraged Agent long-form lesson (not yet shot). Video covers using AI to write a natural neighbor door-knock invite for an open house, based on Tom Ferry's 4-step framework, plus a door-hanger and a follow-up text. Chapter timestamps below are ordered; drop in real times once the edit is locked. Grounded in Tom Ferry (the 4-step invite) and Andy Tse (personally inviting neighbors).
 
+
+**Full word-for-word read:** [Open-House-Door-Knock-Invite-Teleprompter.md](Open-House-Door-Knock-Invite-Teleprompter.md)
+
 ---
 
 ## Title Options (5)

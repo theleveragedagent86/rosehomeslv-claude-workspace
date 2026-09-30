@@ -72,6 +72,9 @@ Every story carries its source all the way through the pipeline so it can be cre
 - `Source:` the publication name exactly as it brands itself (Redfin, Las Vegas Review-Journal, FOX5 Vegas, KTNV 13, Clark County, LVMPD, GLVAR, Freddie Mac)
 - `Article Title:` the exact headline of the source article, transcribed word for word
 - `URL:` the working link
+- `Author:` the reporter byline exactly as printed on the article (write `Staff` or `None listed` when there is no named author). For national-to-local stories, capture `National Author` and `Local Author`.
+
+**The Author travels with the Source and Article Title through the whole pipeline.** The social media writer uses it to look up the reporter's Instagram handle, which goes in the scheduling header above each caption (never in the caption body) so Ryan can tag or mention the reporter when he posts. The shared handle list lives at `author-handles.md` in this skill folder.
 
 **The Article Title is not optional.** It is what appears in quotes in the Instagram caption so followers can go find the piece themselves. Do not paraphrase it, do not clean it up, do not title-case it differently than the original. Copy it exactly.
 

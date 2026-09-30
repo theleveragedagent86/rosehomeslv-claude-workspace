@@ -43,6 +43,7 @@ Every researched story that does NOT make the weekly selected set still gets a b
 - [content-rules.md](content-rules.md) - Content rules for all output
 - [source-registry.md](source-registry.md) - Research source URLs by category
 - [transcript-templates.md](transcript-templates.md) - Templates for all output formats
+- [author-handles.md](author-handles.md) - Running list of reporter and outlet Instagram handles. The social media writer reads it and adds to it every run.
 
 ---
 
@@ -394,7 +395,9 @@ POSTING SCHEDULE:
 
 Write Instagram captions, YouTube Shorts descriptions, and YouTube tags for every selected story, plus one set for the HK-WEEK hockey roundup if top-stories.md carries one. For national-to-local real estate stories, lead with the national-vs-Vegas contrast. The HK-WEEK caption is an extra post rather than a news slot, and it ends with stacked source lines crediting the Source and exact Article Title of EVERY item folded into the roundup, not just one.
 
-Order both files by Story ID, S01 first, matching top-stories.md exactly. Do NOT sort by Post Order. Above each caption add the same scheduling header block used in the transcripts: Post Order, Story ID, Day and Date, Post Time, Slot, Trial Reel. Above each YouTube description add a short header with Post Order, Story ID, and the publish date.
+Order both files by Story ID, S01 first, matching top-stories.md exactly. Do NOT sort by Post Order. Above each caption add the same scheduling header block used in the transcripts: Post Order, Story ID, Day and Date, Post Time, Slot, Trial Reel, plus an Author IG line with the reporter's Instagram handle. Above each YouTube description add a short header with Post Order, Story ID, and the publish date.
+
+AUTHOR IG: follow the "Author IG line" section of social-media-writer.md. Read /Users/ryanrose/Downloads/Claude/_System/plugins/local-news-plugin/skills/local-news/author-handles.md first, search only for reporters not already listed, put the handle in the caption HEADER only (never in the caption text or YouTube description), and add every new lookup, found or not, to author-handles.md before you finish.
 
 Save captions to [OUTPUT_DIR]/instagram-captions.md and save descriptions with tags to [OUTPUT_DIR]/youtube-descriptions.md
 ```
@@ -407,6 +410,7 @@ Store outputs as `TRANSCRIPTS_DATA` and `SOCIAL_DATA`.
 - One transcript per selected story, each with a length marker (15s/30s/45s/60s/75s) and appropriate CTAs. No 90s scripts. 75s only on Extremely Important stories.
 - One Instagram caption per story (long-form, 250-400 words, Dustin Fox style), each carrying the source line built from the story's Source and Article Title.
 - One YouTube description per story.
+- Every caption header has an `**Author IG:**` line (a handle, `none found` with an outlet fallback, or `no byline`). No handle appears inside caption text. author-handles.md was updated with this run's new lookups. Non-blocking: if lines are missing, flag and proceed.
 - If HK-WEEK exists: one extra transcript marked 15-25s, one extra caption of 150 to 250 words ending in stacked source lines, one per folded beat, and one extra YouTube description. No Reddit post for it.
 - If any are missing, flag but proceed.
 

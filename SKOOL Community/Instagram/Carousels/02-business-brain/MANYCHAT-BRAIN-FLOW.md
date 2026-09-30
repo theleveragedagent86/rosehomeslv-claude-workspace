@@ -25,19 +25,26 @@ it.** Do not put it behind a Skool signup. The DM promised the file, not a signu
 that in the first message is how the whole funnel loses trust. The community ask happens inside
 the doc and in DM 4, after the promise has already been kept.
 
-One link is still missing. The other two were confirmed on 2026-09-11 off Ryan's own Skool
-profile and the live channel:
+All three links are filled. The YouTube and Instagram handles were confirmed on 2026-09-11 off
+Ryan's own Skool profile and the live channel; the asset was published 2026-09-28:
 
 - `[YT_URL]` = `https://www.youtube.com/@theleveragedagent` (The Leveraged Agent w/ Ryan Rose,
   29 videos). It appears in DM 3 and inside the asset.
 - `[IG_HANDLE]` = `@the.leveraged.agent`. It appears inside the asset. Note the dots. The
   dotless `@theleveragedagent` on Instagram is somebody else's account, so never use it.
-- `[BRAIN_ASSET_URL]` = wherever you publish `BUSINESS-BRAIN-STARTER.md`. It appears in DM 2C.
-  **This is the only one still open.**
+- `[BRAIN_ASSET_URL]` = `https://claude.ai/artifact/LYj8KoH5WPHYVpxncdepqP`. It appears in DM 2C.
+  This is `BUSINESS-BRAIN-STARTER.md` published as a Claude Artifact on 2026-09-28: the full
+  doc, the folder tree, the paste-ready BROKER `CLAUDE.md` with a copy button, the level ladder
+  and the compliance footer. View only, no signup, no Skool gate, which is the point.
+  Sharing was set to "anyone with the link" on 2026-09-28, so the URL is live. Republishing
+  updates it in place and the URL does not change.
+  A PDF of the same document sits beside this file as `Business-Brain-Starter.pdf`, 7 pages,
+  for anyone who asks for a file instead of a link.
 
 Skool link is known and already written in: `https://www.skool.com/the-leveraged-agent`
 
-**Do not post the carousel until `[BRAIN_ASSET_URL]` is filled.**
+**Open the asset link in a logged-out browser once before the carousel goes up.** A DM that
+hands someone a link they cannot open is worse than no DM.
 
 ---
 
@@ -70,7 +77,7 @@ Story reply contains "brain" ─┘
                  │
                  ├─ button tapped ──> DM 2A  the folder structure
                  │                    DM 2B  the CLAUDE.md + BROKER
-                 │                    DM 2C  the link  [BRAIN_ASSET_URL]
+                 │                    DM 2C  the link  (the asset URL)
                  │                    Q      "what did you retype the most this week?"
                  │                              │
                  │                              └─ answer saved to field brain_task
@@ -230,7 +237,7 @@ it once eight months ago and I have not fixed one since.
 ```
 Here it is, the folder structure and my CLAUDE.md, no strings.
 
-[BRAIN_ASSET_URL]
+https://claude.ai/artifact/LYj8KoH5WPHYVpxncdepqP
 
 Don't build it for a future deal. Build it for the thing you're most behind on right now. The
 next deal inherits the whole thing for free.

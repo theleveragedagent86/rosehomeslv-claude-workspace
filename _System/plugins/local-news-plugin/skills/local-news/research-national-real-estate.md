@@ -114,8 +114,10 @@ Return your findings as a numbered list. Each story uses this format:
 - **Summary:** [2-3 sentence factual summary containing BOTH numbers]
 - **National Source:** [Publication Name] - [full URL]
 - **National Article Title:** [exact headline of the national source article, transcribed word for word]
+- **National Author:** [reporter byline of the national article, or "Staff" / "None listed"]
 - **Local Source:** [Publication Name] - [full URL]
 - **Local Article Title:** [exact headline of the local source article, transcribed word for word]
+- **Local Author:** [reporter byline of the local article, or "Staff" / "None listed"]
 - **Date:** [publication date of the national data]
 - **Why It Matters:** [1 sentence on local impact and why national != local]
 ```

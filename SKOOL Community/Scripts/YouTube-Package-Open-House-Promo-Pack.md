@@ -2,6 +2,9 @@
 
 Source: Leveraged Agent long-form lesson (not yet shot). Video covers using one AI prompt to turn a single listing into a full open house promotion kit: a Coming Soon teaser, a Just Listed post, an Open House event post, a walkthrough Reel script, a database email, a text blast, and a Nextdoor post. Chapter timestamps below are ordered; drop in real times once the edit is locked. Grounded in Jimmy Mackin ("market a listing like a movie") and Jason Pantana (value-first, video-first promotion).
 
+
+**Full word-for-word read:** [Open-House-Promo-Pack-Teleprompter.md](Open-House-Promo-Pack-Teleprompter.md)
+
 ---
 
 ## Title Options (5)

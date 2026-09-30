@@ -6,6 +6,7 @@ Fact check as of 2026-08-18: 3 deals with status "active" in
 "17 deadlines" is real, 29 Amber Rock St carried 17 entries in `contract_dates`.
 Said "on my board" not "in escrow" because two of the three have no COE date set yet.
 Written: 2026-08-18
+Posted: 2026-09-27 to @the.leveraged.agent. ManyChat keyword TC, pinned to this post.
 
 ## COVER HOOK, 3 options
 

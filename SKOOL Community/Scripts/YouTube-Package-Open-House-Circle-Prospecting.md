@@ -2,6 +2,9 @@
 
 Source: Leveraged Agent long-form lesson (not yet shot). Video covers using AI to write a full circle-prospecting script kit around a listing: Coming Soon, Just Listed, Just Sold, and Open House invite call scripts, plus objection handling and a voicemail. Chapter timestamps below are ordered; drop in real times once the edit is locked. Grounded in Jimmy Mackin (circle prospecting and the Coming Soon urgency window) and Tom Ferry (calling and inviting neighbors).
 
+
+**Full word-for-word read:** [Open-House-Circle-Prospecting-Teleprompter.md](Open-House-Circle-Prospecting-Teleprompter.md)
+
 ---
 
 ## Title Options (5)

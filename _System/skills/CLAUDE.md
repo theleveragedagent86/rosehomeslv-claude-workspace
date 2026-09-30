@@ -81,7 +81,20 @@ skills/
 │   ├── scripts/           swap_reels.py (Pxx marker -> live reel link, both HTML files),
 │   │                      beehiiv.py (list/get/create/update; key from Keychain; create+update Max-only)
 │   └── references/        beehiiv.md (plan limits, what beehiiv strips, snippet rules, browser paste flow)
+├── channel-intro/         REDISTRIBUTABLE (for Skool students / anyone): builds a unique 7.5/10/15 s
+│   ├── SKILL.md           post-hook YouTube intro with HyperFrames. Interview (PLAN.md -> INTRO-PLAN.md)
+│   ├── PLAN.md            -> 3 concepts -> storyboard -> hand-built chapters on a shared engine -> local
+│   │                      synth audio -> draft/fix loop -> final renders. Extracted 2026-09-29 from the
+│   │                      Rose Homes LV intro (student kit video-projects/rose-homes-yt-intro/), which is
+│   │                      now only a worked example with a DO-NOT-REUSE list. No API keys, no Ryan paths.
+│   ├── README.md          install/use for recipients
+│   ├── references/        method.md (8 rules, timing, audio roles), recipes.md (13 techniques w/ code),
+│   │                      worked-example.md
+│   └── templates/         engine.html, audio-synth.mjs (role-arranged, self-mixing, -14 LUFS),
+│                          build-variants.mjs, intro.config.example.json
 ```
+
+**`channel-intro` is live as a symlink** (`~/.claude/skills/channel-intro` → this folder); the shippable zip is `_dist/channel-intro-skill.zip`, re-zip after edits.
 
 **`rose-report` is live as a symlink**, `~/.claude/skills/rose-report` → this folder. Issues live in
 `Rose Homes LV/Marketing/Newsletter/issues/<send-date>/`; if that moves, update the Paths table in its SKILL.md.

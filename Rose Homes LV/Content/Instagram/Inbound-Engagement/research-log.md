@@ -1734,7 +1734,7 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @danualmeyers (Danual Meyers) — added 2026-06-17 — DMed 2026-09-24 (variant 1)
 - [x] @peskypanda120 (Andrew Holcomb) — added 2026-06-17 — DMed 2026-09-23 (variant 2)
 - [x] @sleeep333 (NT030) — added 2026-06-17 — DMed 2026-09-26 (variant A)
-- [ ] @jimwy (Jim Wy) — added 2026-06-17
+- [x] @jimwy (Jim Wy) — added 2026-06-17 — DMed 2026-09-28 (variant 1)
 - [x] @rflmichelle (Michelle Cunningham) — added 2026-06-17 — DMed 2026-09-26 (variant 1)
 - [x] @jamesinvegas (James Regdos) — added 2026-06-17 — DMed 2026-09-26 (variant 2)
 - [x] @sandeesandra (Sandra Schulz) — added 2026-06-17 — DMed 2026-09-26 (variant 3)
@@ -1748,28 +1748,28 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @neutron702 (Nicholas Colby Newton) — added 2026-06-17 — DMed 2026-09-26 (variant 2)
 - [x] @breeze_vegas (BREEZE) — added 2026-06-17 — DMed 2026-09-26 (variant B)
 - [x] @gizmo_smoke_em (Jose Carranza) — added 2026-06-17 — DMed 2026-09-26 (variant 3)
-- [ ] @megzm801 (Megan Mitchell) — added 2026-06-17
-- [ ] @sweetpea_0214 (Michelle Allen) — added 2026-06-17
-- [ ] @aarona_the_false_prophet (Aarona the Demonic Preacher) — added 2026-06-17
-- [ ] @thekamilyon (Lyon Brooks) — added 2026-06-17
-- [ ] @gabrielskerlich (Gabriel Skerlich) — added 2026-06-17
-- [ ] @notalottaknowledge (Jason stamp) — added 2026-06-17
-- [ ] @dickman750 (Linda Dickman) — added 2026-06-17
-- [ ] @cheway2023 (Che) — added 2026-06-17
+- [x] @megzm801 (Megan Mitchell) — added 2026-06-17 — DMed 2026-09-26 (variant 4) [verified in-thread 2026-09-28; the 09-26 run misread this as failed]
+- [x] @sweetpea_0214 (Michelle Allen) — added 2026-06-17 — DMed 2026-09-28 (variant 2)
+- [x] @aarona_the_false_prophet (Aarona the Demonic Preacher) — added 2026-06-17 — DMed 2026-09-28 (variant 3)
+- [x] @thekamilyon (Lyon Brooks) — added 2026-06-17 — DMed 2026-09-28 (variant 4)
+- [x] @gabrielskerlich (Gabriel Skerlich) — added 2026-06-17 — (skipped: realtor/broker - bio reads 'Commercial Real Estate Broker. Investor. Developer.') 2026-09-28
+- [x] @notalottaknowledge (Jason stamp) — added 2026-06-17 — DMed 2026-09-28 (variant 5)
+- [x] @dickman750 (Linda Dickman) — added 2026-06-17 — DMed 2026-09-28 (variant 1)
+- [x] @cheway2023 (Che) — added 2026-06-17 — DMed 2026-09-28 (variant 2)
 - [x] @zaniyamylove (Ty's Palace of Relaxation LLC) — added 2026-06-17 — DMed 2026-09-23 (variant C)
-- [ ] @myrab.brows (Myra Marilyn Barajas) — added 2026-06-17
-- [ ] @squiggars (Squiggars Alvarado) — added 2026-06-17
-- [ ] @rianntjones (Riann Jones, PMHNP-BC) — added 2026-06-17
-- [ ] @reybetiongjr (Reynaldo Betiong) — added 2026-06-17
-- [ ] @madasmell702 (Melanie Christofferson) — added 2026-06-17
-- [ ] @westside.sage (Stephen Velasquez) — added 2026-06-17
-- [ ] @msmedussa (Michelle Della Silva) — added 2026-06-17
-- [ ] @courtenayfonoti (Courtenay Moore) — added 2026-06-17
-- [ ] @severnstruck (Scott Bedell) — added 2026-06-17
-- [ ] @westgibson (West Gibson) — added 2026-06-17
-- [ ] @_russocutz_ (LAS VEGAS BARBER) — added 2026-06-17
-- [ ] @legalridetawnya (Tawnya Rose) — added 2026-06-17
-- [ ] @rosemary_luna (Rosemary) — added 2026-06-17
+- [x] @myrab.brows (Myra Marilyn Barajas) — added 2026-06-17 — DMed 2026-09-28 (variant 3)
+- [x] @squiggars (Squiggars Alvarado) — added 2026-06-17 — DMed 2026-09-28 (variant C)
+- [x] @rianntjones (Riann Jones, PMHNP-BC) — added 2026-06-17 — DMed 2026-09-28 (variant 4)
+- [x] @reybetiongjr (Reynaldo Betiong) — added 2026-06-17 — DMed 2026-09-28 (variant 5)
+- [x] @madasmell702 (Melanie Christofferson) — added 2026-06-17 — DMed 2026-09-28 (variant 1)
+- [x] @westside.sage (Stephen Velasquez) — added 2026-06-17 — DMed 2026-09-28 (variant 2)
+- [x] @msmedussa (Michelle Della Silva) — added 2026-06-17 — DMed 2026-09-28 (variant 3)
+- [x] @courtenayfonoti (Courtenay Moore) — added 2026-06-17 — DMed 2026-09-28 (variant 4)
+- [x] @severnstruck (Scott Bedell) — added 2026-06-17 — DMed 2026-09-28 (variant 5)
+- [x] @westgibson (West Gibson) — added 2026-06-17 — DMed 2026-09-28 (variant 1)
+- [x] @_russocutz_ (LAS VEGAS BARBER) — added 2026-06-17 — DMed 2026-09-28 (variant A)
+- [x] @legalridetawnya (Tawnya Rose) — added 2026-06-17 — DMed 2026-09-28 (variant 2)
+- [x] @rosemary_luna (Rosemary) — added 2026-06-17 — DMed 2026-09-28 (variant 3)
 - [ ] @rynsmom89 (Tasha ItsreallyLatosia Palmore) — added 2026-06-17
 - [ ] @lalalydiarae (Lydia O) — added 2026-06-17
 - [ ] @atm_brey (Brey) — added 2026-06-17
@@ -3739,29 +3739,29 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @debdmp (Debra Martinez Palafox) — added 2026-08-09 — (skipped: realtor) 2026-09-23
 - [ ] @midnitesnack (rachel clark) — added 2026-08-09
 - [ ] @jesslouise2232_ (Jessica) — added 2026-08-09
-- [ ] @macias.ray (Ray Macias) — added 2026-08-09
-- [ ] @montana_raven (no name) — added 2026-08-09
-- [ ] @kim.zilla (kim) — added 2026-08-09
-- [ ] @bmccallen (Becky McCallen Gregory) — added 2026-08-09
-- [ ] @jawbone33 (BJ Freeman) — added 2026-08-09
-- [ ] @lindaserafini (Linda Serafini) — added 2026-08-09
+- [x] @macias.ray (Ray Macias) — added 2026-08-09 — DMed 2026-09-28 (variant 5)
+- [x] @montana_raven (no name) — added 2026-08-09 — DMed 2026-09-28 (variant A)
+- [x] @kim.zilla (kim) — added 2026-08-09 — DMed 2026-09-28 (variant 1)
+- [x] @bmccallen (Becky McCallen Gregory) — added 2026-08-09 — DMed 2026-09-28 (variant 2)
+- [x] @jawbone33 (BJ Freeman) — added 2026-08-09 — DMed 2026-09-28 (variant 3)
+- [x] @lindaserafini (Linda Serafini) — added 2026-08-09 — DMed 2026-09-28 (variant 4)
 - [x] @kingsranchrodeo (Vickie Lela) — added 2026-08-09 — DMed 2026-09-23 (variant 2)
 
 <!-- inbound-research followers run 2026-08-09 pm -->
-- [ ] @jnalbor (jnalbor) — added 2026-08-09
-- [ ] @teddynbearbear (no name) — added 2026-08-09
-- [ ] @6starfish (no name) — added 2026-08-09
+- [x] @jnalbor (jnalbor) — added 2026-08-09 — DMed 2026-09-28 (variant B)
+- [x] @teddynbearbear (no name) — added 2026-08-09 — DMed 2026-09-28 (variant C)
+- [x] @6starfish (no name) — added 2026-08-09 — DMed 2026-09-28 (variant A)
 - [x] @henruhy27 (no name) — added 2026-08-09 — (skipped: account no longer exists) 2026-09-23
 
 <!-- inbound-research followers run 2026-08-10 -->
 - [x] @infernal.weaver (Rena) — added 2026-08-10 — (skipped: zero-info private account, 0 posts) 2026-09-23
-- [ ] @mvmac01 (Michael McLoughlin) — added 2026-08-10
-- [ ] @sugawolfs720 (David Fernandez) — added 2026-08-10
-- [ ] @sonyaaa_1524 (Sonya) — added 2026-08-10
-- [ ] @finnadventures519 (My Name is Finn) — added 2026-08-10
-- [ ] @_tall__blonde_ (no name) — added 2026-08-10
+- [x] @mvmac01 (Michael McLoughlin) — added 2026-08-10 — DMed 2026-09-28 (variant 1)
+- [x] @sugawolfs720 (David Fernandez) — added 2026-08-10 — DMed 2026-09-28 (variant 2)
+- [x] @sonyaaa_1524 (Sonya) — added 2026-08-10 — DMed 2026-09-28 (variant 3)
+- [x] @finnadventures519 (My Name is Finn) — added 2026-08-10 — DMed 2026-09-28 (variant B)
+- [x] @_tall__blonde_ (no name) — added 2026-08-10 — DMed 2026-09-28 (variant C)
 - [x] @iamshimonmag (Shimon Magrill) — added 2026-08-10 — DMed 2026-09-23 (variant 1)
-- [ ] @lesliejeann (Leslie Rochon Thorstensen) — added 2026-08-10
+- [x] @lesliejeann (Leslie Rochon Thorstensen) — added 2026-08-10 — DMed 2026-09-28 (variant 4)
 - [x] @melissa234522333333 (Melissa Martinez) — added 2026-08-10 — DMed 2026-09-26 (variant 5)
 - [x] @dcc_54 (Dez Dez) — added 2026-08-10 — DMed 2026-09-26 (variant 4)
 - [x] @_nelson_101_ (Nelson) — added 2026-08-10 — (skipped: zero-info private account, 0 posts) 2026-09-23
@@ -3786,7 +3786,7 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @dexter2424 (Dexter Revised) — added 2026-08-10 — skipped: bot
 - [x] @shelbzilla99 (Shelby Vincent) — added 2026-08-10 — DMed 2026-09-20 (variant 1)
 - [x] @sandradrainer (Sandra Drainer) — added 2026-08-10 — (skipped: zero-info private account, 0 posts) 2026-09-23
-- [ ] @adrian.p404 (Adrian) — added 2026-08-10
+- [x] @adrian.p404 (Adrian) — added 2026-08-10 — (skipped: cannot be DMed; profile restricts who can message it, attempted 2026-09-26 and 2026-09-28) 2026-09-28
 - [x] @hapamamatres (Lisa Lampros Lira) — added 2026-08-10 - DMed 2026-09-19 (variant 1)
 - [x] @chef_ivand (Ivan Daskalov) — added 2026-08-10 — DMed 2026-09-15 (variant 4)
 - [x] @mostloveablejenny (Jennyfer Valenzuela) — added 2026-08-10 — DMed 2026-09-15 (variant 3)
@@ -4399,11 +4399,45 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @belvamanley (Belva Manley) — added 2026-09-26 — DMed 2026-09-26 (variant 2)
 - [x] @mrsgoddess (Jacqueline Goddess) — added 2026-09-26 — DMed 2026-09-26 (variant 1)
 - [x] @ceeze07 (Ceeze07) — added 2026-09-26 — skipped: 0 posts, zero-info private account (bot pattern)
-- [ ] @iambrandiinecole (no name) - added 2026-09-26
-- [ ] @big_e1982 (no name) - added 2026-09-26
-- [ ] @altc.at (no name) - added 2026-09-26
-- [ ] @karencabo (no name) - added 2026-09-26
-- [ ] @alicia_griffith_moreland (Landscaping pro) - added 2026-09-26
+- [x] @iambrandiinecole (no name) - added 2026-09-26 — DMed 2026-09-28 (variant 1)
+- [x] @big_e1982 (no name) - added 2026-09-26 — DMed 2026-09-28 (variant A)
+- [x] @altc.at (no name) - added 2026-09-26 — DMed 2026-09-28 (variant 2)
+- [x] @karencabo (no name) - added 2026-09-26 — DMed 2026-09-28 (variant 3)
+- [x] @alicia_griffith_moreland (Landscaping pro) - added 2026-09-26 — DMed 2026-09-28 (variant B)
+- [ ] @tubachik82 (Leah Deiana) - added 2026-09-28
+- [ ] @dracogotum (Dracogotum) - added 2026-09-28
+- [ ] @jason.f.delile (Jason DeLile) - added 2026-09-28
+- [ ] @jeff_sal (Jeff Salas) - added 2026-09-28
+- [ ] @brendythebaddie (b smith) - added 2026-09-28
+- [ ] @kmommie03 (Jnini) - added 2026-09-28
+- [ ] @amyfromvegas (amy miller) - added 2026-09-28
+- [ ] @josue.1125 (Josue) - added 2026-09-28
+- [ ] @notchazthomas (CHAZ T) - added 2026-09-28
+- [ ] @rafaelcorrea101 (Rafael Correa) - added 2026-09-28
+- [ ] @jfad3d1987 (JFADED) - added 2026-09-28
+- [ ] @zyanya975 (Zyanya Valdovinos) - added 2026-09-28
+- [ ] @izakguava (Izak Altamirano) - added 2026-09-29
+- [ ] @ra_chael5829 (Rachael) - added 2026-09-29
+- [ ] @nevadaisgreat (Scott Shepston) - added 2026-09-29
+- [ ] @fabiangamboaaa (Fabe Gam) - added 2026-09-29
+- [ ] @gonzalogutierrez818 (Mr:.Anthony) - added 2026-09-29
+- [ ] @last_king_193 (Joel Medina) - added 2026-09-29
+- [ ] @crystalmarquezzz (Crystal) - added 2026-09-29
+- [ ] @fellowbelleauwoodsman (Steve Goathairs) - added 2026-09-29
+- [ ] @lilygasca (Liliana Gasca) - added 2026-09-29
+- [ ] @bhillpix (no name) - added 2026-09-29
+- [ ] @g_rant_coast2coast (Grant Sweeney) - added 2026-09-29
+- [ ] @mrsjoniyvonne (Joni Yvonne) - added 2026-09-29
+- [ ] @soleilstarr (Jessica Laessig) - added 2026-09-29
+- [ ] @wina_oscar (OS) - added 2026-09-29
+- [ ] @derrickboyce_ (Derrick Boyce) - added 2026-09-29
+- [ ] @fourbillion7 (Fourbillion) - added 2026-09-29
+- [ ] @jesse_keenan (Jesse Keenan) - added 2026-09-29
+- [ ] @jimchaissonjr (no name) - added 2026-09-29
+- [ ] @bruh_man_5th_floo (Dante Albert) - added 2026-09-29
+- [ ] @kennyredchapo (Kenny Red) - added 2026-09-29
+- [x] @mezakins99 (Alex Meza) - added 2026-09-29 — skipped 2026-09-29 (skipped: private account, no Message option)
+- [x] @craig_jungberg (Craig Jungberg) - added 2026-09-29 — skipped 2026-09-29 (skipped: private account, no Message option)
 
 ## Likers  (worked by `/inbound-dm-likes`)
 
@@ -7478,45 +7512,45 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @jacquelineoprea (Jacqueline Gibbons) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
 - [x] @jbbrown240 (Jeannie Brown) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (no posts)
 - [x] @suavecito2010.rp (Rosa Y Marcos) (reel DcmEFFKBGtj) - added 2026-09-01 — skipped 2026-09-24 (private profile, no Message button available)
-- [ ] @itzelioo (Itzel) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @juaninami11i0n (Juan Romero) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @quad_kritterz (Edgar DeSantiago) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @streetsc (Crystal Streets) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @aka_jzoarm__ (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @jessi2119 (jessiZ) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @steveenn__1998 (Steven Lopez) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @boi_m19 (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @marlyn._.3 (Marlyn Martinez) (reel DcmEFFKBGtj) - added 2026-09-01
+- [x] @itzelioo (Itzel) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped 2026-09-29 (profile unavailable/deactivated)
+- [x] @juaninami11i0n (Juan Romero) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 1)
+- [x] @quad_kritterz (Edgar DeSantiago) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 2)
+- [x] @streetsc (Crystal Streets) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped 2026-09-29 (private account, bio asks not to be DMed)
+- [x] @aka_jzoarm__ (no name) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped 2026-09-29 (profile unavailable/deactivated)
+- [x] @jessi2119 (jessiZ) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 3)
+- [x] @steveenn__1998 (Steven Lopez) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 4)
+- [x] @boi_m19 (no name) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant A)
+- [x] @marlyn._.3 (Marlyn Martinez) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 5)
 - [x] @fuckyou.ruth (no name) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped: crude handle, not brand-appropriate to DM 2026-09-01
-- [ ] @brnonmry (Bruno) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @702babyface_ (1for1aaliyah) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @r_craftylady (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @khzielke (Kristy Zielke) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @aliciaj72 (Alicia Ramirez Johnston) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @issas1979 (Issa SG) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @arnelrcapp (Arnel R Capp) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @sieanenome (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @damnyouwillwheaton (Dameyouwillwheaton) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @khaibamboo88 (KhaiBamboo88) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @propajon (jonathan faulkner) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @nov31111 (EVE malandra) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @702_lv_q (Sergio Q) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @ilyserenaexe (serena) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @rinnyroo848 (Karinne) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @thescottwerner (Scott) (reel DcmEFFKBGtj) - added 2026-09-01
+- [x] @brnonmry (Bruno) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped 2026-09-29 (zero-info private account, 0 posts)
+- [x] @702babyface_ (1for1aaliyah) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped 2026-09-29 (zero-info private account, 0 posts)
+- [x] @r_craftylady (no name) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant B)
+- [x] @khzielke (Kristy Zielke) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 1)
+- [x] @aliciaj72 (Alicia Ramirez Johnston) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 2)
+- [x] @issas1979 (Issa SG) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped 2026-09-29 (zero-info private account, 0 posts/0 followers)
+- [x] @arnelrcapp (Arnel R Capp) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 3)
+- [x] @sieanenome (no name) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped 2026-09-29 (appears to be a young/teen account, not a real estate prospect)
+- [x] @damnyouwillwheaton (Dameyouwillwheaton) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant A)
+- [x] @khaibamboo88 (KhaiBamboo88) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped 2026-09-29 (zero-info private account, 0 posts/1 follower)
+- [x] @propajon (jonathan faulkner) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 4)
+- [x] @nov31111 (EVE malandra) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped 2026-09-29 (profile unavailable/deactivated)
+- [x] @702_lv_q (Sergio Q) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped 2026-09-29 (private, 0 posts)
+- [x] @ilyserenaexe (serena) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 5)
+- [x] @rinnyroo848 (Karinne) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 1)
+- [x] @thescottwerner (Scott) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 2)
 - [x] @bulldog0921 (Paddington) (reel DcmEFFKBGtj) - added 2026-09-01 — checked off 2026-09-25 (already messaged)
-- [ ] @em0j1ca (Eva Mojica) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @kkaa4ly (Kkaa ly) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @vgvegas030_nt (Vinnyg030) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @yellow_bb11 (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @keepit_howyou_keptit (Keep it How You Kept it) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @humanoid_198 (Zinar Garcia Lomeli) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @73danamann (Dana Mann) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @hortonkatie66 (Katie Horton) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @camillaxoxo23 (Camilla) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @i_lob._.sn00py (no name) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @justme43andu (justme) (reel DcmEFFKBGtj) - added 2026-09-01
-- [ ] @gladyscernaoficial (Gladys Cerna) (reel DcmEFFKBGtj) - added 2026-09-01
+- [x] @em0j1ca (Eva Mojica) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped 2026-09-29 (private, 0 posts)
+- [x] @kkaa4ly (Kkaa ly) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant B)
+- [x] @vgvegas030_nt (Vinnyg030) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 3)
+- [x] @yellow_bb11 (no name) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant A)
+- [x] @keepit_howyou_keptit (Keep it How You Kept it) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant B)
+- [x] @humanoid_198 (Zinar Garcia Lomeli) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 4)
+- [x] @73danamann (Dana Mann) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 5)
+- [x] @hortonkatie66 (Katie Horton) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 1)
+- [x] @camillaxoxo23 (Camilla) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 2)
+- [x] @i_lob._.sn00py (no name) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant A)
+- [x] @justme43andu (justme) (reel DcmEFFKBGtj) - added 2026-09-01 - skipped 2026-09-29 (zero-info private account, 0 posts/0 followers)
+- [x] @gladyscernaoficial (Gladys Cerna) (reel DcmEFFKBGtj) - added 2026-09-01 - DMed 2026-09-29 (variant 3)
 - [ ] @dawnmariemanley_ (Dawn Marie Manley) (reel DcmEFFKBGtj) - added 2026-09-01
 - [ ] @craftbeerlv (no name) (reel DcmEFFKBGtj) - added 2026-09-01
 - [ ] @dawsonmonroe1993 (no name) (reel DcmEFFKBGtj) - added 2026-09-01
@@ -8355,6 +8389,121 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [ ] @dvdesprza (David) (reel DdsSN8ysQHG) - added 2026-09-26
 - [ ] @chrisfalaniko92 (chris falaniko) (reel DdsSN8ysQHG) - added 2026-09-26
 - [ ] @alicia_818_702 (Alicia De Paz) (reel DdpKbRcswup) - added 2026-09-26
+- [ ] @madisyn_wilds (Madisyn Wilds) (reel Ddz-zF5snU2) - added 2026-09-28
+- [ ] @yaylin_97 (no name) (reel Ddz-zF5snU2) - added 2026-09-28
+- [ ] @pkc5150 (no name) (reel Ddz-zF5snU2) - added 2026-09-28
+- [ ] @veronicka_arnold (Veronicka Arnold) (reel Ddz-zF5snU2) - added 2026-09-28
+- [ ] @yarity2x_ (yari) (reel Ddz-zF5snU2) - added 2026-09-28
+- [ ] @caitlino_18 (Caitlin Orozco) (reel Ddz-zF5snU2) - added 2026-09-28
+- [ ] @mattyv_33 (Matthew Vasquez) (reel Ddz-zF5snU2) - added 2026-09-28
+- [ ] @_f1_23lv (no name) (reel Ddz-zF5snU2) - added 2026-09-28
+- [ ] @r.diaz49 (R.Diaz) (reel Ddz-zF5snU2) - added 2026-09-28
+- [ ] @sspiderr (Lily🕷️🕸️) (reel Ddz-zF5snU2) - added 2026-09-28
+- [ ] @that_guy_with_thebird (Jonathan Demello) (reel Ddz-zF5snU2) - added 2026-09-28
+- [ ] @ihumpbackwhales (skyler c) (reel Ddz-zF5snU2) - added 2026-09-28
+- [ ] @kevinh702_ (Kevin) (reel Ddzkigam2fY) - added 2026-09-28
+- [ ] @mo.naeeeeee (12212020💔) (reel Ddzkigam2fY) - added 2026-09-28
+- [ ] @callthepsych (Gabriel Luna) (reel Ddzkigam2fY) - added 2026-09-28
+- [ ] @barbiedoll._.sienna (🙈🎊🎀💰🎆🍾) (reel Ddzkigam2fY) - added 2026-09-28
+- [ ] @90013._ (🧸) (reel Ddzkigam2fY) - added 2026-09-28
+- [ ] @_val3_ (Val) (reel Ddzkigam2fY) - added 2026-09-28
+- [ ] @grbiii_ (Gaetano Benza) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @gabrieldeschamps67 (Gb Thefields) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @r_cast_ (Rich Castro) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @trs2.17 (Tyler S) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @heavynn (Heavyn✨) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @emilee.masucci (Emilee) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @emma.s_man07 (Aiden Longmire) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @illestworldorder (xyyko) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @anthony_zlatin (Anthony Zlatin) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @xx_nate574_xx (Nate) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @thetaylorhanley_ (Taylor Hanley) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @vice_ridden_degenerate (vice ridden degenerate) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @pabloflores94 (Pablo Flores) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @geraldesta (Gerald Estares) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @rigger_ju (Judah Hofer) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @_paulosarmento (Paulo Sarmento) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @j_morales1122 (Jack Morales) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @scottonurplaylist (no name) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @rylen_ca (no name) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @trucker_chris22 (Big ape) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @julianlopez0812 (Julian Lopez) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @lasvegaskid_24 (Michael Galloway) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @mjbh3 (Mike Heron) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @angel_chevy18 (Angel) (reel DdyoLghmwts) - added 2026-09-28
+- [ ] @gaberod33 (Gabe Rodriguez) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @thelastofhizkind (Jacob Juaquin P) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @chall_lv (Chris Hall) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @j_64209_c (Joshua) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @775_dez0 (Dezmynd Ayala-Quicksey) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @groovynthia (no name) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @mel_su4ve (no name) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @purpleloca7 (Cynthia Uzueta) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @northtownmigo (8-Quiahuitl) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @quietstormh (QuietStorm D Holt) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @_trynnaafinddari (Ari) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @bigred8o5 (Acmepaintroller) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @soria.brad (Brad Soria) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @evilfuckingcat123 (no name) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @tmonti45 (Thomas Monti) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @beanmuncher1 (manny) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @sq13.04 (Sergio Quintero) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @chl03kinsz (Chloe) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @afairlyoddone (no name) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @cassiee._3 (cas) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @jobecape (Jobe Cape) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @milkdudhead1 (KXC) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @tanishiiim (T Mahiai) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @marctobago9892 (Marc Trinidad) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @shannonhoynes (no name) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @angel_torresd02 (Angel Torres) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @jjorgeromeo (Romeo Torres) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @chambitaguzman (Chambita Guzman) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @the_real_beto915 (Beto Jimenez) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @zoe_ogan (Zoe Ogan) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @jsuarez187 (Jorge Suarez) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @casualjaiden (Jaiden) (reel DdxaBVSsITf) - added 2026-09-28
+- [ ] @xiaoling0174 (Dominic Moreno) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @tvziv (no name) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @gabedagoat49 (no name) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @wesleyalonso2 (Wesley Alonso) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @cinsinner (Chinny) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @mustardleader10 (Caiden Guzman) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @vsituation_ (Dallas) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @camocrazy03 (no name) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @kobe_caiyba (Kobe caiyba) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @solace_reverie (Bleep Bloop) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @uhh.whos.he (Whos.He) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @adrian.goes.places (Adrian San Pedro) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @grave_digger25 (Angel) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @nick.novil (nick nova) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @0w0ashley0w0 (Ashley) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @forevvereverbaby (ruby) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @_mtz_nyc_ (no name) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @rosyvega.13 (Rosy) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @jack.gam (Jack Gamnerdsiri) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @mrhater310 (Herbert A Reyes) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @yma.p0peye (no name) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @horbeltmax (Max Horbelt) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @dave_allelite (David) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @miguel.a.munoz.33 (Miguel Angel Munoz) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @jhei_jellybean.psd (Jheilyn Valenzuela) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @jason.f.delile (Jason DeLile) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @underratedphotography (Maurice Anderson) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @umbreon_56 (Natalie.A) (reel Dd2J4KmsJ82) - added 2026-09-29
+- [ ] @josue.1125 (Josue) (reel Dd1pUCEMfX-) - added 2026-09-29
+- [ ] @j_umek (John Umek) (reel Dd1pUCEMfX-) - added 2026-09-29
+- [ ] @shana4me (Shana C) (reel Dd1pUCEMfX-) - added 2026-09-29
+- [ ] @soy.annakaren (AK) (reel Ddz-zF5snU2) - added 2026-09-29
+- [ ] @annalise._.kirkham (Short stack) (reel Ddz-zF5snU2) - added 2026-09-29
+- [ ] @sinistersen3 (YamYams) (reel Ddz-zF5snU2) - added 2026-09-29
+- [ ] @elijahgarzon_ (ELI) (reel Ddz-zF5snU2) - added 2026-09-29
+- [ ] @lexilluna (LEX) (reel Ddz-zF5snU2) - added 2026-09-29
+- [ ] @dapnet_flores (Dapnet) (reel Ddz-zF5snU2) - added 2026-09-29
+- [ ] @wesleyyy_b (Wesley Brule) (reel Ddz-zF5snU2) - added 2026-09-29
+- [ ] @goofycd (Craig Durnen) (reel Ddz-zF5snU2) - added 2026-09-29
+- [ ] @sashadecania (Sasha DeCania) (reel Ddz-zF5snU2) - added 2026-09-29
+- [ ] @kmommie03 (Jnini) (reel Ddzkigam2fY) - added 2026-09-29
 
 ## Comments  (worked by `/inbound-comments`)
 
@@ -8908,7 +9057,7 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @ctrlgod805 on reel DcwYZmZBsn8 : "emoji only" - added 2026-09-02 - skipped: emoji-only, no reply needed - screened at research 2026-09-02
 - [x] @blacky_tattooslv on reel DcvuFhhPONh : "good" - added 2026-09-02 - skipped: one-word, no engageable content - screened at research 2026-09-02
 <!-- inbound-research comments run 2026-09-08 (scheduled ig-dmlike-research) -->
-- [ ] @702.adrian.nlv on reel DdAdyykvwC8 : "That means no more mold !" - added 2026-09-08
+- [ ] @702.adrian.nlv on reel DdAdyykvwC8 : "That means no more mold !" - added 2026-09-08 [2026-09-28: POST FAILED TWICE. Text stayed in the box, comment count stayed at 1, no error toast. See OLD-POST FINDING below. LEFT UNCHECKED.]
 - [x] @fabionmedhanie on reel Dc_LXw2P4Az : "Great info" - added 2026-09-08 - replied 2026-09-14
 - [x] @mia.the.8 on reel Dc_LXw2P4Az : "Great 2018 pop incoming" - added 2026-09-08 - replied 2026-09-14
 - [ ] @loupedvintage on reel Dc66cLCPgjO : "I got a killer deal so I agree" - added 2026-09-08
@@ -8939,8 +9088,8 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 <!-- inbound-research comments run 2026-09-12 (scheduled ig-dmlike-research) -->
 - [x] @kimberger79 on reel DdKz0nKBny9 : "Yesssssss 100% safety push. I wish metro did this for the charter schools." - added 2026-09-12 - skipped: already replied (Ryan replied 18h prior) - 2026-09-14
 - [x] @ms.newnew0731 on reel DdKz0nKBny9 : "I'm sorry but if you want it to be a money grab then they deserve it !! I swear they zoom through school zones so I am all for it triple it for all I care it should be implemented near every school zone!!!" - added 2026-09-12 - replied 2026-09-14
-- [ ] @bigsleep92 on reel DdKz0nKBny9 : "I see noting wrong here" - added 2026-09-12
-- [ ] @herbie_c_hambers on reel DdHS9kohfxV : "This is less about the cusp players and more about the guys who will be playing 84+ games. Does it suck for those young guys? Yes. But guys will need to adapt" - added 2026-09-12
+- [ ] @bigsleep92 on reel DdKz0nKBny9 : "I see noting wrong here" - added 2026-09-12 [2026-09-28: POST FAILED TWICE. Text stayed in the box, comment count stayed at 20, no error toast. See OLD-POST FINDING below. LEFT UNCHECKED.]
+- [ ] @herbie_c_hambers on reel DdHS9kohfxV : "This is less about the cusp players and more about the guys who will be playing 84+ games. Does it suck for those young guys? Yes. But guys will need to adapt" - added 2026-09-12 [2026-09-28: POST FAILED TWICE. Text stayed in the box, comment count stayed at 8, no error toast, no block screen. See OLD-POST FINDING in the run notes below. LEFT UNCHECKED.]
 - [x] @tonyferrari_ on reel DdKz0nKBny9 : "Good" - added 2026-09-12 - skipped: one-word, no engageable content - screened at research 2026-09-12
 - [x] @shiftsix_ on reel DdKz0nKBny9 : "GOOD! Get your s*** together parents" - added 2026-09-12 - skipped: profanity / hostile - screened at research 2026-09-12
 - [x] @s204wrx on reel DdKz0nKBny9 : "emoji only" - added 2026-09-12 - skipped: emoji-only, no reply needed - screened at research 2026-09-12
@@ -9065,7 +9214,7 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @travelingwithmeg on reel Ddg3espMB59 : "Same issue in WCSD but they want to spend 108mil on an Admin building! Not even a school!" - added 2026-09-21 - replied 2026-09-21 (verified live)
 - [x] @chrisshootsphotos on reel Ddg3espMB59 : "Would change that area tho, huge community in that area. Cashman definitely needs a remodel" - added 2026-09-21 - replied 2026-09-21 (verified live)
 - [x] @yvedior on reel Ddg3espMB59 : "What about what they are doing at Chap? Is Bonanza next since it's the same footprint?" - added 2026-09-21 - replied 2026-09-21 (Post button appeared to fail twice, but comment count went 46 -> 47 -> 48 matching two posted replies; the comment list would not re-render far enough to eyeball the yvedior thread. Checked off deliberately so a later run does not double-reply.)
-- [ ] @bigdegendomtom on reel Ddg3espMB59 : "Combining 2 school into one saves everyone alot of money, smart move ." - added 2026-09-21
+- [ ] @bigdegendomtom on reel Ddg3espMB59 : "Combining 2 school into one saves everyone alot of money, smart move ." - added 2026-09-21 [2026-09-28: NOT REACHABLE. The IG comment list on this reel ends at @izach120 and then shows "This reel has 35 comments from Facebook." This is a Facebook crosspost comment, so it cannot be replied to from Instagram. Confirms the 2026-09-26 note. LEFT UNCHECKED.]
 - [x] @mindi_knows on reel Ddg3espMB59 : "Grrrr we don't need more damn buildings that look like prisons. We need teachers.." - added 2026-09-21 - skipped: charged / grievance subthread - screened at research 2026-09-21
 - [x] @cindydellavalle on reel Ddg3espMB59 : "What happened to the Pot money..." - added 2026-09-21 - skipped: charged (political) - screened at research 2026-09-21
 - [x] @cindydellavalle on reel Ddg3espMB59 : "Love it - cuz what's been happening isn't working! ... magnet and charter" - added 2026-09-21 - skipped: charged (school choice politics) - screened at research 2026-09-21
@@ -9088,10 +9237,10 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
      Both reels from the last 24 hours have ZERO comments, so there was no last-24h comment work. Per the priority rule the run moved straight into the backlog, most recent posts first.
      Ddg3espMB59 comment pagination was throttled again: it loads through @mindi_knows and then hangs on the spinner. @bigdegendomtom still could not be reached and stays unchecked.
      DdKz0nKBny9 and DdWsQV4M97Y were fully re-read; every comment on them was already in this log except the two added below. -->
-- [ ] @_jess_sanchez__ on reel Ddg3espMB59 : "@butterfliez4me 100 agree and it is more equitable. You can't have new buildings in the suburbs and let the Central Valley be all decrepit school buildings." - added 2026-09-22
+- [ ] @_jess_sanchez__ on reel Ddg3espMB59 : "@butterfliez4me 100 agree and it is more equitable. You can't have new buildings in the suburbs and let the Central Valley be all decrepit school buildings." - added 2026-09-22 [2026-09-28: skipped, charged/political framing (equity, Central Valley) and it sits inside @butterfliez4me thread that rosehomeslv already replied in. LEFT UNCHECKED, recommend Ryan check it off.]
 - [x] @kc.carter24 on reel DdfWNU-scOO : "Probably because buying right now is a bad decision, and buying condos are bad decisions" - added 2026-09-22 - replied 2026-09-22 (verified live: comment count 4 -> 5, box cleared)
 - [x] @kyle_nord on reel DdptVwWMeV_ : "How do you turn up the brightness of this video? Sorry but I’m always facilitated by how your videos always pop! Asking for a friend!" - added 2026-09-24 - replied 2026-09-24 (verified live on reload)
-- [ ] @freetobe_lne on reel DdptVwWMeV_ : "Imagine the traffic if they did 😮" - added 2026-09-24
+- [x] @freetobe_lne on reel DdptVwWMeV_ : "Imagine the traffic if they did 😮" - added 2026-09-24 - replied 2026-09-28 (verified live: reply rendered in thread)
 - [x] @michael9838miller on reel DdptVwWMeV_ : "I love my house in Las Vegas 1250.00 for a year of property tax😂" - added 2026-09-24 - (skipped: already replied - rosehomeslv reply verified live 2026-09-25; the 09-24 run logged this as a failed post but it did land)
 - [x] @neongoatentertainment on reel DdptVwWMeV_ : "City of second home for tax reasons" - added 2026-09-24 - replied 2026-09-24 (verified live on reload)
 - [ ] @silatcode on reel DdptVwWMeV_ : "Zillow, redfins, Black Rock owns a lot of homes" - added 2026-09-24 [2026-09-26: attempted twice more, box stayed full both times and count did not move, while a reply to another comment on the SAME reel posted fine seconds later. 4 failures across 2 runs on this one comment only. Likely blocked/restricted by @silatcode rather than a throttle. LEFT UNCHECKED.]
@@ -9328,6 +9477,29 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
 - [x] @nevadapaintcontractors on reel DdthKsfsBDd (thread reply) : "@rosehomeslv lake powel ànd the Rio grande are both examples of what data centers do! We are doomed" - added 2026-09-26 - skipped: rosehomeslv already replied in this thread, one reply per comment - 2026-09-26
 - [x] @cormeli on reel DdubfB6G-J8 : "Go Clark!!! They are the best!!👏" - added 2026-09-26 - replied 2026-09-26 (verified: count 1 to 2, replies link appeared)
 - [x] @discover_lasvegas on reel DdoXg8XMG2U : "Send me this Post" - added 2026-09-26 - replied 2026-09-26 (verified live, count 4 to 5) - asked them to DM, no send promised
+- [ ] @305rechris on reel Dd1pUCEMfX- : "Take all the money from marijuana tax, apply it to underground boring tunnel to ocean, build desalination plants in NV." - added 2026-09-28 (posted 29m after reel, LAST-24H) [2026-09-28: POST FAILED TWICE. Reply box accepted text, Post cleared the box, comment count stayed at 1 and no reply thread appeared after reload. No error toast, no block screen, still logged in. Other replies posted fine in the same session minutes later, so this is comment specific, not a throttle. LEFT UNCHECKED.]
+- [x] @hey_im_chris702 on reel DdzDHjxG6C1 : "Lately I've been having fun by searching Zillow and seeing house prices decline over the last year, knowing they're not selling because of unreasonable sellers" - added 2026-09-28 (LAST-24H) - replied 2026-09-28 (verified live: count 1 to 2, reply rendered in thread)
+- [x] @tomas_dank_engine on reel DdyoLghmwts : "Eichel absolutely needs to shoot more. He's a great quarterback on the pp but needs to shoot" - added 2026-09-28 (LAST-24H) - replied 2026-09-28 (verified live: count 4 to 5, reply thread rendered)
+- [x] @23ifan39 on reel DdyoLghmwts : "As a knights fan they didn't win the cup so there needs to be change. Call it a start over or something else. He is correct" - added 2026-09-28 (LAST-24H) - replied 2026-09-28 (verified live: count 5 to 6, reply thread rendered)
+- [x] @jamesinvegas on reel DdyoLghmwts : "Your a ridiculous clown. Of course its starting over. Whats your message ? Lets pick up where we left off ? Ridiculous" - added 2026-09-28 - skipped: hostile - screened at research 2026-09-28
+- [x] @the.pablo.magana on reel DdxaBVSsITf : "This is what the republicans want. They want private and charter schools not run by CCSD..." - added 2026-09-28 - skipped: political - screened at research 2026-09-28
+- [x] @battlebornknight on reel DdxaBVSsITf : "They need to get rid of the entire school board from CCSD and start a new one..." - added 2026-09-28 - skipped: charged/political - screened at research 2026-09-28
+- [x] @livesinfiction_ on reel DdxaBVSsITf : "Yeah good idea. Nevada is ranking 47, out of 50. Good idea" - added 2026-09-28 - skipped: charged/political (CCSD ratings) - screened at research 2026-09-28
+- [x] @kyle_nord on reel DdptVwWMeV_ : "How do you turn up the brightness of this video? ... Asking for a friend!" - added 2026-09-28 - replied 2026-09-28 *** DOUBLE REPLY, NEEDS RYAN *** rosehomeslv had ALREADY replied to this comment 4 days ago ("Send me a DM and I will walk you through exactly how these get shot and edited"). The existing reply was not rendered in the thread at the moment of the pre-check, so a second reply ("Ha, appreciate you noticing that. Lighting is the thing most people underrate.") posted at 2026-09-28. Ryan may want to delete the newer one. Not deleted by this run.
+- [ ] @erickj_86 on reel Dd2J4KmsJ82 : "There is one in Los Angeles" - added 2026-09-29 (LAST-24H)
+- [ ] @kimijonsey on reel Dd2J4KmsJ82 : "There's one in LA" - added 2026-09-29 (LAST-24H)
+- [ ] @johnvreal702 on reel Dd2J4KmsJ82 : "Well yeah it's a gimmick gimmicks don't last long" - added 2026-09-29 (LAST-24H)
+- [ ] @sabrinalrose on reel Dd2J4KmsJ82 : "It was always supposed to be a popup and it's said that on the website since it opened and the one in LA is permanent" - added 2026-09-29 (LAST-24H)
+- [ ] @drunkenartjv on reel Dd2J4KmsJ82 : "It's because the food was not that good sry to say" - added 2026-09-29 (LAST-24H)
+- [ ] @dxvid_1519 on reel Dd2J4KmsJ82 : "Place was as$" - added 2026-09-29 (LAST-24H)
+- [ ] @lvfoodgoddess on reel Dd2J4KmsJ82 : "we will miss @onepiececafeofficial" - added 2026-09-29 (LAST-24H)
+- [ ] @k_rayok on reel Dd2J4KmsJ82 : "What about the one in LA?" - added 2026-09-29 (LAST-24H)
+- [ ] @samanthajyee on reel Dd2J4KmsJ82 : "are the food/drinks actually good?" - added 2026-09-29 (LAST-24H)
+- [ ] @kingdom1stlv on reel Dd2J4KmsJ82 : "It sucked." - added 2026-09-29 (LAST-24H)
+- [ ] @mycardboardkingdom on reel Dd2J4KmsJ82 : "Waaaaaait was that placed an officially license placed?" - added 2026-09-29 (LAST-24H)
+- [ ] @faro_boss on reel Dd2J4KmsJ82 : "The one in LA is pretty cool, my daughter loves going there" - added 2026-09-29 (LAST-24H)
+- [ ] @that_guy_with_thebird on reel Dd2J4KmsJ82 : "Wasn't that great of food ngl" - added 2026-09-29 (LAST-24H)
+- [ ] @selfdiaqnosed on reel Dd2J4KmsJ82 : "We have one in Los Angeles" - added 2026-09-29 (LAST-24H)
 
 <!-- RUN NOTES 2026-09-26 (scheduled inbound-research + inbound-comments, PM run, Chrome)
 
@@ -9395,3 +9567,65 @@ This is the **single shared tracker** for all four inbound plugins. It lives out
      @_jess_sanchez__ (Ddg3espMB59), @cindylkahle (DdWsQV4M97Y), the 3 Facebook comments above, the two
      blocked comments above, plus the whole older backlog. CHECK EACH THREAD FOR AN EXISTING ROSEHOMESLV
      REPLY BEFORE POSTING NEXT RUN. -->
+
+<!-- RUN NOTES 2026-09-28 (scheduled /inbound-research + /inbound-comments, Chrome, @rosehomeslv)
+
+     PAUSE from 2026-09-26 was deleted by Ryan mid-session, so this run proceeded. No new PAUSE written.
+
+     RESEARCH (comments only this run): walked the 6 newest reels off /rosehomeslv/reels/.
+     Post times (UTC): Dd1pUCEMfX- 09-28 16:45 | Ddz-zF5snU2 09-28 01:15 | Ddzkigam2fY 09-27 21:25 |
+     DdzDHjxG6C1 09-27 16:33 | DdyoLghmwts 09-27 12:38 | DdxaBVSsITf 09-27 01:15 | Ddwegiwm1zw 09-26.
+     Added 4 new safe comments, checked off 4 more as screened-charged at research.
+     NO new carousel/photo post in the last 24h (newest non-pinned grid item is Dd1pUCEMfX-, a reel),
+     so nothing to harvest there. Ddz-zF5snU2 has 1 comment but it is a Facebook crosspost.
+     Ddzkigam2fY and Ddwegiwm1zw have zero comments.
+     FOLLOWERS AND LIKERS NOT HARVESTED THIS RUN: 1,879 followers and 808 likers are already sitting
+     unchecked and no DM plugin ran, so the run spent its budget on comments instead. Flagged to Ryan.
+
+     REPLIES POSTED AND VERIFIED LIVE (5 intended):
+       @hey_im_chris702  (DdzDHjxG6C1)  count 1 to 2, reply rendered
+       @tomas_dank_engine(DdyoLghmwts)  count 4 to 5, reply rendered
+       @23ifan39         (DdyoLghmwts)  count 5 to 6, reply rendered
+       @freetobe_lne     (DdptVwWMeV_)  reply rendered in thread
+       @kyle_nord        (DdptVwWMeV_)  reply rendered -- BUT SEE DOUBLE REPLY BELOW
+
+     *** DOUBLE REPLY, NEEDS RYAN *** @kyle_nord on DdptVwWMeV_. rosehomeslv had already replied to
+     that comment 4 days ago. At pre-check time the existing reply was NOT rendered in the thread
+     (no "View all replies" affordance showed under it), so the guard did not catch it and a second
+     reply posted. Content is harmless ("Ha, appreciate you noticing that. Lighting is the thing most
+     people underrate.") but it breaks the one-reply-ever rule. NOT deleted by this run, Ryan decides.
+     LESSON FOR NEXT RUN: expanding "View all replies" once is not enough on this reel. Re-read the
+     thread AFTER expansion and AFTER a reload before every post, and treat a missing affordance as
+     unknown rather than as "no reply exists".
+
+     >>> OLD-POST FINDING: REPLIES FAIL ON REELS ROUGHLY 2 WEEKS AND OLDER <<<
+     Every reply to a comment on a reel <= 4 days old posted clean (5 for 5, apart from @305rechris).
+     Every reply to a comment on a reel >= 2 weeks old failed, twice each, same signature: the reply
+     box accepted the text, Post left the text sitting in the box, the comment count never moved, no
+     error toast, no "Action Blocked", no challenge, still logged in as @rosehomeslv throughout.
+     Failed this way: @herbie_c_hambers (DdHS9kohfxV, 2w), @702.adrian.nlv (DdAdyykvwC8, 2w),
+     @bigsleep92 (DdKz0nKBny9, 2w). Three for three.
+     This is NOT an account throttle: successful replies were interleaved with these in the same
+     session minutes apart. RECOMMENDATION: future runs should work only the last week or so of posts
+     and stop spending attempts on the deep backlog until Ryan can post one reply by hand on a
+     2-week-old reel to see whether it is an Instagram restriction or something about those posts.
+
+     @305rechris (Dd1pUCEMfX-, 1h old reel) also failed twice, but with the opposite signature: the
+     box CLEARED on Post and nothing appeared after reload. Same as the @silatcode / @terp_torture
+     pattern, so almost certainly comment specific (that user restricting replies), not post age.
+
+     LEADS: none this run. No comment asked for a link, price, availability, an application or an
+     agent. Nothing appended to leads.md. NO DMS SENT and no reply promised or claimed one.
+     OUTSTANDING DM PROMISE still on file from a prior run: @ryan_m_cavitt (2026-09-20), unresolved.
+
+     TRANSACTIONS STILL NOT ACCESSIBLE: only the Inbound-Engagement folder is connected to this task,
+     /Users/ryanrose/Downloads/Claude/Transactions/ is not. No teamwork claim came up this run so
+     nothing needed verifying, and no reply asserted any shared history. Gap still open.
+
+     CARRIED FORWARD, all unchecked: @305rechris (Dd1pUCEMfX-), @herbie_c_hambers (DdHS9kohfxV),
+     @702.adrian.nlv (DdAdyykvwC8), @bigsleep92 (DdKz0nKBny9), @bigdegendomtom and @_jess_sanchez__
+     (Ddg3espMB59, both unreachable/charged), @silatcode and @terp_torture (blocked, 6 failures each
+     now across 3 runs, recommend Ryan check these two off by hand), @itsbigrick_ (DdptVwWMeV_, does
+     not render in the IG comment list), the 3 Facebook crosspost comments on DdptVwWMeV_, plus the
+     whole older Dc/Db backlog which the OLD-POST FINDING says is probably not postable right now.
+     CHECK EACH THREAD FOR AN EXISTING ROSEHOMESLV REPLY BEFORE POSTING NEXT RUN. -->

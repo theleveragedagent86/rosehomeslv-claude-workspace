@@ -248,14 +248,28 @@ directories themselves. The directories are now training data.
    `homelight/README.md`. Still open there: no profile photo, no reviews, and
    Location Preferences and Referral Settings are untouched because they route
    paid referrals and that is Ryan's call.
-3. Fix Zillow service areas and specialties, drop Senior Communities, push
-   Summerlin and the southwest to the top.
-4. Fix the Homes.com bio and specialties.
-5. Check Realtor.com.
-6. Claim or correct Agent Pronto.
-7. Start asking for reviews. Five is the real ceiling on all of this.
+3. **DONE 2026-09-23.** Zillow specialties, Spring Valley added, bio rewritten.
+   Off-niche areas left in place by Ryan's call.
+4. **DONE 2026-09-23.** Homes.com bio and specializations. Bio confirmed live
+   2026-09-24.
+5. **SKIPPED 2026-09-27, Ryan's call.** Realtor.com audited, unclaimed and
+   empty, needs a PRO login. Facebook page bio skipped too.
+6. **OPEN.** Claim or correct Agent Pronto. Bio still says Urban Nest Realty.
+7. **STARTED 2026-09-28.** Review asks drafted in Gmail for eight past clients:
+   Barbara, Justin, Eiven, Nadia, Nick, Kayla, Jerred, Anne. Direct link
+   https://g.page/r/CZuwWlQNsxIuEBM/review. Drafts only, Ryan sends.
+8. **DONE 2026-09-24.** GBP service areas re-niched, 16 areas.
+9. **DONE 2026-09-24.** NAP sweep, see item 8 above.
 
-Items 2 through 6 all need Ryan's logins, and item 2 needs Ryan to sign up.
+Still to do:
+
+- Check around 2026-09-30 that the GBP description and service-area edits
+  published. Do not re-submit before then.
+- Agent Pronto, item 6.
+- HomeLight profile photo.
+- The item 7 fix in the AEO posts: "licensed more than five years" to 8 years,
+  one line across 184 posts plus a republish.
+- Re-run the 10 AI-answer baseline queries mid to late October 2026.
 
 ## The thing profile edits cannot fix
 

@@ -45,7 +45,9 @@ Rose Homes LV/
 │                                "never built": daily-checklist, tc-status, deadlines,
 │                                money. transactions/pipeline/contacts.md are extras
 │                                with no button.) +
-│                    data/ (transactions.json, commissions.json, built by Rebuild data)
+│                    data/ (transactions.json, commissions.json, built by Rebuild data) +
+│                    lone-wolf/ (Transact API spec transact-api.json + TRANSACT-API-MAP.md;
+│                                not wired up, waiting on Lone Wolf credentials)
 └── Diverse Dispute/ Vendor dispute file: Diverse Marketing LLC $12k deposit refund. README.md · diverse-evidence-log.md · correspondence-log.md · contract/ · screenshots/<YYYY-MM-DD>/
 ```
 

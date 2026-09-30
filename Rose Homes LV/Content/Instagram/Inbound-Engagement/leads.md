@@ -330,3 +330,30 @@ Replied: "Gonna be honest, my finger slipped ..." (appears he accidentally liked
 - @discover_lasvegas (verified account) - commented "Send me this Post" on reel DdoXg8XMG2U ("Boyd Sold the Old Eastside Cannery Site for $16 Million Less Than It Paid"), 2026-09-26. Looks like a repost / collaboration ask from a local Vegas media account rather than a buyer lead. Replied publicly asking them to DM (verified live). NO DM WAS SENT and none was claimed. Ryan, if they DM, decide whether you want the post shared out.
 
 - NOTE 2026-09-26: no Instagram DMs were sent on this run and no reply claimed one was sent. The only outstanding DM promise still on file is @ryan_m_cavitt from 2026-09-20, which remains unresolved.
+
+## 2026-09-28 (scheduled inbound-dm-followers, run manually after PAUSE cleared)
+
+- REPLIES NOTICED IN THE INBOX during this run. None were answered by the plugin (the welcome DMs ask a question on purpose; replies are Ryan's to handle):
+  - @altc.at ("Kiki") - replied within minutes of the welcome DM sent 2026-09-28 11:29 AM. The thread shows a reply from Ryan's account ("Great! Were you looking to sell that...") sent during the run, so Ryan appears to already be working this one live. LIVE LEAD, possible seller.
+  - Kirsten Londo - "No, I'm trying to get out of Vegas, but thank you!" (unread, ~19h old at 11:20 AM). Not a Vegas buyer. Could still be a SELLER if she owns here, and a relocation-out referral. Ryan, worth one reply.
+  - Cory Marzocco - sent a voice message (1d old). Not listened to. Ryan to review.
+  - Quenton Marselles Brown Sr - sent an attachment (1d old). Not opened. Ryan to review.
+
+- CORRECTION, IMPORTANT: the PAUSE written 2026-09-26 was based on a misdiagnosis. @megzm801 (Megan Mitchell) DID receive her DM on 2026-09-26 at 5:03 AM - the message is live in the thread and was verified 2026-09-28. The 09-26 run read the composer clearing as a failed send and the inbox rendering empty as a soft block; both were display lag, not throttling. No Instagram block or restriction was ever in effect. Three days of scheduled runs (5 runs across 09-27 and 09-28) were halted for no reason. Megan's log line has been corrected and a dm-history row added.
+
+- @adrian.p404 cannot be DMed at all: Instagram returns "Not everyone can message this profile" (his own privacy setting, not a block on Ryan). Attempted 09-26 and 09-28. Now checked off as skipped so he is not retried forever.
+
+- @gabrielskerlich skipped as a competitor: bio reads "Las Vegas. Commercial Real Estate Broker. Investor. Developer."
+
+- NOTE: 40 follower DMs were sent and each was individually verified in-thread. No blocks, challenges, or failed sends of any kind across all 40.
+
+## 2026-09-29 - noticed during /inbound-dm-likes run
+- @brady.lv (Brady) - REPLIED with 2 unread messages (~46 min before the 09-29 run,
+  i.e. late morning PT) to Ryan's follower welcome DM sent 5 days earlier. Thread was
+  still unread at the time of this run. NOT auto-answered - Ryan to handle personally.
+  Note: several other "Brady" accounts in Vegas are realtors/brokers; this lead is the
+  personal account @brady.lv, not a brokerage.
+- Older replies still sitting in the inbox (may already be handled): @iambrandiinecole
+  (BrandiiDuuuh) said she owns her Las Vegas property and is "looking into getting into
+  flipping land" - possible investor lead; Kiki (asked about timing, few months out);
+  Michelle Allen declined.

@@ -102,6 +102,7 @@ Return your findings as a numbered list. Each story uses this format:
 - **Summary:** [2-3 sentence factual summary with numbers]
 - **Source:** [Publication Name]
 - **Article Title:** [exact headline of the source article, transcribed word for word]
+- **Author:** [reporter byline exactly as printed on the article, e.g. "Alan Halaly"; write "Staff" or "None listed" if there is no named author]
 - **URL:** [full URL]
 - **Date:** [publication date]
 - **Why It Matters:** [1 sentence on local impact to buyers, sellers, or homeowners]
