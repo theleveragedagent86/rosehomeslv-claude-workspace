@@ -29,7 +29,8 @@ Never print it, write it to a file, or put it in memory.
 
 So `beehiiv-snippet.html` must be:
 1. Body only, starting at the outer container table. No `<html>`, `<head>`, `<style>`, `<link>`.
-2. Container `width="100%" style="width:100%;max-width:600px;..."` (fluid, or phones side-scroll).
+2. Container `align="center" width="100%" style="width:100%;max-width:680px;margin:0 auto;..."`
+   (fluid, or phones side-scroll; centered + 680px or it sits left-aligned on the web post, Ryan 2026-10-01).
 3. Horizontal padding on content cells 16px (not 40, beehiiv already adds 40).
 4. Stat block sized to fit 375px phones: big number 60px, small stats 26px, black box padding
    `30px 12px 10px 12px`, stat-cell padding `14px 4px 4px 4px`.
