@@ -92,7 +92,8 @@ If `update-only` was passed, stop here and report.
 
 Derive `beehiiv-snippet.html` from `newsletter.html` using every rule in
 `references/beehiiv.md` ("What beehiiv does to our HTML"). Keep the reel marker comments.
-Check it is under 50,000 characters and contains no `<style`, `<link`, or `sms:`.
+Check it is under 50,000 characters and contains no `<style`, `<link`, `sms:`, `[RYAN:`, `SUGGESTED`, or
+yellow `#FFF1A8` placeholder highlights (issue 01 shipped with these; Ryan flagged it 2026-10-01).
 
 ### Step 4. Load into beehiiv as a draft
 
